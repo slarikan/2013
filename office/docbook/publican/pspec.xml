@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A tool for publishing material authored in DocBook XML</Summary>
         <Description>Publican is a tool for publishing material authored in DocBook XML. Publican takes DocBook XML input and outputs HTML, plain Unicode text and PDF</Description>
-        <Archive sha1sum="800f5821af9b2d3a51a0691a6a405818acaae575" type="targz">http://fedorahosted.org/released/publican/Publican-2.5.tar.gz</Archive>
+        <Archive sha1sum="b7fb62b443ee0a3950d2c27accbc7b86f3eba0a7" type="targz">http://fedorahosted.org/released/publican/Publican-2.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.12.2">perl</Dependency>
             <Dependency>perl-Devel-Cover</Dependency>
@@ -97,6 +97,13 @@
     </Package>
 
     <History>
+        <Update release="1">
+            <Date>2012-09-12</Date>
+            <Version>2.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="2">
             <Date>2011-01-27</Date>
             <Version>2.5</Version>
