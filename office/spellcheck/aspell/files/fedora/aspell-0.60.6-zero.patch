@@ -1,6 +1,6 @@
 diff -up aspell-0.60.6/common/convert.cpp.zero aspell-0.60.6/common/convert.cpp
 --- aspell-0.60.6/common/convert.cpp.zero	2007-12-03 07:55:45.000000000 +0100
-+++ aspell-0.60.6/common/convert.cpp	2008-05-29 10:51:39.000000000 +0200
++++ aspell-0.60.6/common/convert.cpp	2008-09-01 12:04:39.000000000 +0200
 @@ -813,6 +813,7 @@ namespace acommon {
    {
      ToUniLookup lookup;
