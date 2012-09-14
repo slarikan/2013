@@ -55,7 +55,7 @@ def install():
     #pisitools.dodir("/usr/share/ghostscript/Resource/Init")
 
     # Install missing header
-    pisitools.insinto("/usr/include/ghostscript", "base/errors.h")
+    #pisitools.insinto("/usr/include/ghostscript", "base/errors.h")
 
     # Install ijs
     autotools.rawInstall("-C ijs DESTDIR=%s" % get.installDIR())
