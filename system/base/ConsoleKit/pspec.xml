@@ -5,14 +5,14 @@
         <Name>ConsoleKit</Name>
         <Homepage>http://freedesktop.org/Software/Hal</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>S.Çağlar Onur</Name>
+            <Email>caglar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>A framework for defining and tracking users, login sessions, and seats</Summary>
         <Description>ConsoleKit is a system daemon for tracking what users are logged into the system and how they interact with the computer (e.g. which keyboard and mouse they use).</Description>
-        <Archive sha1sum="59f4d3d16f4cfef69ec2ab6afe2f1f2e8f8f70a2" type="tarbz2">http://www.freedesktop.org/software/ConsoleKit/dist/ConsoleKit-0.4.3.tar.bz2</Archive>
+        <Archive sha1sum="6f090c1ce0d459dd6904854532554323755bdeca" type="tarbz2">http://www.freedesktop.org/software/ConsoleKit/dist/ConsoleKit-0.4.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>pam</Dependency>
             <Dependency>dbus</Dependency>
@@ -70,6 +70,13 @@
     </Package>
 
     <History>
+        <Update release="21">
+            <Date>2012-08-23</Date>
+            <Version>0.4.5</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="20">
             <Date>2010-11-19</Date>
             <Version>0.4.3</Version>
