@@ -27,7 +27,7 @@ def install():
     # Adjust permissions
     chmod("/tmp", 01777)
     chmod("/var/tmp", 01777)
-    chmod("/var/lock", 0755)
+    chmod("/var/lock", 0775)
     chmod("/usr/share/baselayout/shadow", 0600)
 
     if get.ARCH() == "x86_64":

@@ -308,3 +308,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
 
     # Apply zemberek hack
     zemberek_hack()
+
+    # Fix permissions of /var/lock folder
+    os.chown("/var/lock", 0, 54)
+    os.chmod("/var/lock", 0775)
