@@ -98,7 +98,7 @@ def install():
     pisitools.dodir("%s/etc" % UCLIBC_ROOT)
 
     # Create the necessary symlinks into /usr/bin
-    create_symlinks()
+    #create_symlinks()
 
     remove_pardus_section("%s/usr/lib/uClibc/usr/lib" % get.installDIR())
 
