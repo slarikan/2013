@@ -20,7 +20,7 @@
             <Dependency>fontconfig-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">makefile_perms.patch</Patch-->
+            <Patch level="1">makefile_perms.patch</Patch>
             <Patch level="1">tclm4_soname.patch</Patch>
         </Patches>
     </Source>
