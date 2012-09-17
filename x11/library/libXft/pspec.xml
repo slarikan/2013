@@ -12,14 +12,14 @@
         <IsA>library</IsA>
         <Summary>X.Org Xft library</Summary>
         <Description>libXft is the X FreeType interface library.</Description>
-        <Archive sha1sum="ed29784259f4e26df78141035560ae8a7c62e83f" type="tarbz2">mirrors://xorg/individual/lib/libXft-2.2.0.tar.bz2</Archive>
+        <Archive sha1sum="c7ec1361e3d4f095910f8c58988ab42e32f314d9" type="tarbz2">mirrors://xorg/individual/lib/libXft-2.3.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>suse/libXft-2.1.7-lcd-filter-2.patch</Patch>
+            <!--Patch>suse/libXft-2.1.7-lcd-filter-2.patch</Patch-->
         </Patches>
     </Source>
 
@@ -80,6 +80,13 @@
     </Package>
 
     <History>
+         <Update release="11">
+            <Date>2012-09-15</Date>
+            <Version>2.3.1</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2011-04-26</Date>
             <Version>2.2.0</Version>
