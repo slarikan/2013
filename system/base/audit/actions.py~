@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vifs")
+    autotools.autoreconf("-fi")
     autotools.configure("--with-libwrap \
                          --with-libcap-ng=yes \
                          --with-prelude \
