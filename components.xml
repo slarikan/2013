@@ -958,6 +958,61 @@
             </Maintainer>
         </Component>
         <Component>
+            <Name>desktop.kde.base.kdeaccessibility</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.kde.base.kdebindings</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.kde.base.kdeedu</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.kde.base.kdegraphics</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.kde.base.kdeutils</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
             <Name>desktop.kde.admin</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
