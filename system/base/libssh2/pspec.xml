@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library implementing the SSH2 protocol</Summary>
         <Description>libssh2 is a library implementing the SSH2 protocol as defined by Internet Drafts: SECSH-TRANS, SECSH-USERAUTH, SECSH-CONNECTION, SECSH-ARCH, SECSH-FILEXFER, SECSH-DHGEX, SECSH-NUMBERS, and SECSH-PUBLICKEY.</Description>
-        <Archive sha1sum="812f9fd38ed1bc48d7511ab37ae63b2dcacfe441" type="targz">http://www.libssh2.org/download/libssh2-1.2.6.tar.gz</Archive>
+        <Archive sha1sum="7fc084254dabe14a9bc90fa3d569faa7ee943e19" type="targz">http://www.libssh2.org/download/libssh2-1.4.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>openssl</Dependency>
             <Dependency>zlib</Dependency>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-08-23</Date>
+            <Version>1.4.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-11</Date>
             <Version>1.2.6</Version>

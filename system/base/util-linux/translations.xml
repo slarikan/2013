@@ -11,6 +11,11 @@
         <Name>libuuid</Name>
         <Summary xml:lang="tr">UUID üretimi için bir kitaplık</Summary>
     </Package>
+    
+    <Package>
+        <Name>libblkid</Name>
+        <Summary xml:lang="tr">Disk tanımlama için bir kitaplık</Summary>
+    </Package>
 
     <Package>
         <Name>uuidd</Name>

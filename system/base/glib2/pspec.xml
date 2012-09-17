@@ -12,37 +12,28 @@
         <IsA>library</IsA>
         <Summary>A library of handy utility functions</Summary>
         <Description>glib2 is the low-level core library that forms the basis for projects such as GTK+ and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</Description>
-        <Archive sha1sum="70208757905037fa1f8b89797db0097c5e82a140" type="tarbz2">mirrors://gnome/glib/2.30/glib-2.30.2.tar.bz2</Archive>
+        <Archive sha1sum="5b6481cbb34f560e8ea78887200b6b7f5448dcb4" type="tarlzma">mirrors://gnome/glib/2.32/glib-2.32.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>perl</Dependency>
-            <Dependency>python</Dependency>
-            <Dependency>zlib-devel</Dependency>
-            <Dependency>libffi-devel</Dependency>
             <Dependency>libpcre-devel</Dependency>
+            <Dependency>zlib-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Don't fail check when run as root -->
             <Patch>glib-2.18.1-workaround-gio-test-failure-without-userpriv.patch</Patch>
-
-            <Patch level="1">fix-broken-gthread-pkgconfig.patch</Patch>
-
-            <!-- Fix for assert test failure https://bugzilla.gnome.org/show_bug.cgi?id=621368 -->
-            <Patch>glib-2.24-assert-test-failure.patch</Patch>
-            <Patch level="1">0001-closure-fix-handling-of-ENUMs-and-integral-return-ty.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>glib2</Name>
         <RuntimeDependencies>
-            <Dependency>zlib</Dependency>
             <Dependency>libpcre</Dependency>
+            <Dependency>zlib</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/etc/bash_completion.d</Path>
             <Path fileType="executable">/etc/profile.d</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/share/bash-completion/completions/</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -117,11 +108,11 @@
 
     <History>
         <Update release="55">
-            <Date>2011-12-14</Date>
-            <Version>2.30.2</Version>
+            <Date>2012-08-25</Date>
+            <Version>2.32.4</Version>
             <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="54">
             <Date>2011-09-30</Date>

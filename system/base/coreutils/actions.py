@@ -23,8 +23,8 @@ def setup():
     # shelltools.export("DEFAULT_POSIX2_VERSION", "199209")
     shelltools.export("DEFAULT_POSIX2_VERSION", "200112")
     shelltools.export("AUTOPOINT", "true")
-    shelltools.export("CFLAGS", "%s -fno-strict-aliasing -fPIC -D_GNU_SOURCE=1" % get.CFLAGS())
-
+    shelltools.export("CFLAGS", "%s -fno-strict-aliasing -fPIC -D_GNU_SOURCE=1 " % get.CFLAGS())
+    shelltools.export("FORCE_UNSAFE_CONFIGURE","1")
     shelltools.export("AT_M4DIR", "m4")
     autotools.autoreconf("-vfi")
 

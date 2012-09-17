@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>A user and group account administration library</Summary>
         <Description>libuser implements a standardized interface for manipulating and administering user and group accounts. The library uses pluggable back-ends to interface to its data sources.</Description>
-        <Archive sha1sum="03757ec8963d484863c3e87849f95883d9754755" type="tarxz">https://fedorahosted.org/releases/l/i/libuser/libuser-0.57.1.tar.xz</Archive>
+        <Archive sha1sum="306e441b7882ee961d51a72fbe12afe45c236d06" type="tarxz">https://fedorahosted.org/releases/l/i/libuser/libuser-0.57.6.tar.xz</Archive>
         <BuildDependencies>
             <!-- WARNING: To be removed in Bootstrap -->
-            <Dependency>openldap-client</Dependency>
-            <Dependency>cyrus-sasl-devel</Dependency>
+            <!--Dependency>openldap-client</Dependency>
+            <Dependency>cyrus-sasl-devel</Dependency-->
             <!--                                     -->
         </BuildDependencies>
         <Patches>
@@ -41,7 +41,7 @@
     </Package>
 
     <!-- WARNING: To be removed in Bootstrap -->
-    <Package>
+    <!--Package>
         <Name>libuser-ldap</Name>
         <PartOf>server.misc</PartOf>
         <Summary>LDAP library of libuser</Summary>
@@ -52,7 +52,7 @@
         <Files>
             <Path fileType="library">/usr/lib/libuser/*ldap*</Path>
         </Files>
-    </Package>
+    </Package-->
 
 
     <Package>
@@ -69,6 +69,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-23</Date>
+            <Version>0.57.6</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-02-04</Date>
             <Version>0.57.1</Version>

@@ -13,15 +13,14 @@
         <IsA>service</IsA>
         <Summary>A message bus system, a simple way for applications to talk to each other</Summary>
         <Description>D-Bus supplies both a system daemon (for events such as "new hardware device added" or "printer queue changed") and a per-user-login-session daemon (for general IPC needs among user applications). Also, the message bus is built on top of a general one-to-one message passing framework, which can be used by any two apps to communicate directly (without going through the message bus daemon). Currently the communicating applications are on one computer, but TCP/IP option is available and remote support planned.</Description>
-        <Archive sha1sum="112279ff58305027294fe0eb5bee600f68cf0b50" type="targz">http://dbus.freedesktop.org/releases/dbus/dbus-1.4.1.tar.gz</Archive>
+        <Archive sha1sum="17e619f008301592b7f01a60e7cf18e2752b5270" type="targz">http://dbus.freedesktop.org/releases/dbus/dbus-1.6.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>expat-devel</Dependency>
+            <Dependency>libXt-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
+            <Dependency>docbook-xml</Dependency>
             <Dependency>libcap-ng-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">all-your-service-names-are-belong-to-us.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -30,6 +29,7 @@
             <Dependency>expat</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libcap-ng</Dependency>
+            <Dependency>libXt</Dependency>
             <!--<Dependency>systemd-units</Dependency>-->
         </RuntimeDependencies>
         <Files>
@@ -79,7 +79,14 @@
     </Package>
 
     <History>
-        <Update release="55">
+        <Update release="56">
+            <Date>2012-08-23</Date>
+            <Version>1.6.4</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+         <Update release="55">
             <Date>2011-03-01</Date>
             <Version>1.4.1</Version>
             <Comment>Add main package as dep for 32-bit package</Comment>
@@ -466,4 +473,4 @@
             <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
-</PISI>
+  </PISI>

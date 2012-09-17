@@ -5,43 +5,40 @@
         <Name>tar</Name>
         <Homepage>http://www.gnu.org/software/tar/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv3+</License>
         <IsA>app:console</IsA>
         <Summary>A GNU file archiving program</Summary>
         <Description>The GNU tar program saves many files together in one archive and can restore individual files (or all of the files) from that archive.</Description>
-        <Archive sha1sum="70f298c3cd997b694864c55e6d8655324c87a0cc" type="tarbz2">mirrors://gnu/tar/tar-1.26.tar.bz2</Archive>
+        <Archive sha1sum="996ac2937d426c5a0b3be2a00fc6ae05c16f71d8" type="tarxz">http://ftp.gnu.org/gnu/tar/tar-1.26.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="doc/tar.1">tar.1</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>gzip</Dependency>
-            <Dependency>gawk</Dependency>
+            <Dependency>bzip2</Dependency>
             <Dependency>gettext</Dependency>
-            <Dependency>texinfo</Dependency>
-            <Dependency>help2man</Dependency>
             <Dependency>ncompress</Dependency>
-            <Dependency>acl-devel</Dependency>
-            <Dependency>bzip2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Fedora patches -->
             <Patch level="1">fedora/tar-1.14-loneZeroWarning.patch</Patch>
             <Patch level="1">fedora/tar-1.15.1-vfatTruncate.patch</Patch>
-            <Patch level="1">fedora/tar-1.24-xattrs.patch</Patch>
-            <Patch level="1">fedora/tar-1.17-wildcards.patch</Patch>
-            <Patch level="1">fedora/tar-1.22-atime-rofs.patch</Patch>
+            <!--<Patch level="1">fedora/tar-1.22-atime-rofs.patch</Patch>-->
             <Patch level="1">fedora/tar-1.23-oldarchive.patch</Patch>
+            <Patch level="1">fedora/tar-1.17-wildcards.patch</Patch>
+            <!--<Patch level="1">fedora/tar-1.25-listedincremental.patch</Patch>-->
+            <!--<Patch level="1">fedora/tar-1.25-sparse-names.patch</Patch> -->
             <Patch level="1">fedora/tar-sigpipe.patch</Patch>
-            <Patch level="1">fedora/tar-1.24-openat-partial-revert.patch</Patch>
 
             <!-- SuSE patches -->
             <Patch level="1">tar-disable_languages.patch</Patch>
 
-            <!-- Enable to refresh man page, copy it under files -->
+            <!-- Enable to refresh man page, copy it under files
             <Patch level="1">tar-manpage.patch</Patch>
+            -->
         </Patches>
     </Source>
 
@@ -49,13 +46,13 @@
         <Name>tar</Name>
         <RuntimeDependencies>
             <Dependency>xz</Dependency>
-            <Dependency>acl</Dependency>
             <Dependency>gzip</Dependency>
             <Dependency>bzip2</Dependency>
             <Dependency>ncompress</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -65,11 +62,11 @@
 
     <History>
         <Update release="27">
-            <Date>2011-12-21</Date>
+            <Date>2012-08-23</Date>
             <Version>1.26</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="26">
             <Date>2010-12-15</Date>

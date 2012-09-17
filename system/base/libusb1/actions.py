@@ -10,8 +10,14 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./autogen.sh")
-    autotools.configure("--disable-static")
+    options = "--disable-static"
+
+    if get.buildTYPE() == "emul32":
+        options += " --libdir=/usr/lib32"
+        shelltools.export("CC", "%s -m32" % get.CC())
+        shelltools.export("CXX", "%s -m32" % get.CXX())
+
+    autotools.configure(options)
 
 def build():
     autotools.make()

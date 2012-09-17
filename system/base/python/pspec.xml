@@ -5,14 +5,14 @@
         <Name>python</Name>
         <Homepage>http://www.python.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>PSF-2.2</License>
         <IsA>app:console</IsA>
         <Summary>An interpreted, interactive, object-orientated programming language</Summary>
         <Description>Python is a dynamic object-oriented programming language that can be used for many kinds of software development. It offers strong support for integration with other languages and tools, comes with extensive standard libraries, and can be learned in a few days.</Description>
-        <Archive sha1sum="417bdeea77abfaf1b9257fc6b4a04aaa209f4547" type="tarbz2">http://python.org/ftp/python/2.7.2/Python-2.7.2.tar.bz2</Archive>
+        <Archive sha1sum="b2b0ada7ebed4a8204a855193afbdb3aa3308357" type="tarxz">http://python.org/ftp/python/2.7.3/Python-2.7.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.1.3">zlib-devel</Dependency>
             <Dependency versionFrom="5.2">ncurses-devel</Dependency>
@@ -56,12 +56,13 @@
             <Patch level="1">sqlite-encoding.patch</Patch>
 
             <!-- some Turkish locale fixes, usually caused by tolower() -->
-            <Patch level="1">python-2.5.1-codec-ascii-tolower.patch</Patch>
+            <!--Patch level="1">python-2.5.1-codec-ascii-tolower.patch</Patch-->
             <Patch level="1">trfix_emaillib.patch</Patch>
 
             <!-- Other gentoo patches -->
-            <Patch level="1">gentoo/18_all_distutils-cxxflags.patch</Patch>
+            <!-- Ceheck this patch Patch level="1">gentoo/21_all_distutils_c++.patch</Patch-->
             <Patch level="1">gentoo/21_all_ctypes-execstack.patch</Patch>
+            <Patch>gentoo/61_all_process_data.patch</Patch>
 
             <!-- Use -lpthread rather than -pthread -->
             <Patch level="1">python-2.7-revised-linkage.patch</Patch>
@@ -170,6 +171,13 @@
     </Package>
 
     <History>
+        <Update release="71">
+            <Date>2012-09-15</Date>
+            <Version>2.7.3</Version>
+            <Comment>Version bump to 2.7.3</Comment>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
+        </Update>
         <Update release="70">
             <Date>2011-09-16</Date>
             <Version>2.7.2</Version>

@@ -5,14 +5,14 @@
         <Name>sqlite</Name>
         <Homepage>http://www.sqlite.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>
         <Summary>An SQL Database Engine in a C Library</Summary>
         <Description>SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine. Supports databases up to 2 terabytes in size.</Description>
-        <Archive sha1sum="a9da98a4bde4d9dae5c29a969455d11a03600e11" type="targz">http://www.sqlite.org/sqlite-autoconf-3070900.tar.gz</Archive>
+        <Archive sha1sum="d3833b6ad68db8505d1044f761dd962f415cd302" type="targz">http://www.sqlite.org/sqlite-autoconf-3071300.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>readline-devel</Dependency>
         </BuildDependencies>
@@ -46,11 +46,11 @@
 
     <History>
         <Update release="32">
-            <Date>2011-12-20</Date>
-            <Version>3.7.9</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Date>2012-08-23</Date>
+            <Version>3071300</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="31">
             <Date>2011-08-04</Date>

@@ -13,17 +13,13 @@ slshdoc = "/%s/slsh" % get.docDIR()
 slangdoc = "/%s/slang/" % get.docDIR()
 
 def setup():
-    autotools.configure("--disable-static \
-                         --with-pcre \
-                         --with-png \
-                         --with-z \
-                         --with-readline=gnu")
+    autotools.configure("--sysconfdir=/etc")
 
 def build():
     autotools.make("-j1 install_doc_dir=/%s/%s all" % (get.docDIR(), get.installDIR()))
 
-def check():
-    autotools.make("check")
+#def check():
+    #autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s INST_LIB_DIR=%s/usr/lib" % (get.installDIR(),get.installDIR()))

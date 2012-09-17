@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Au library</Summary>
         <Description>libXau provides functions to manage X authorization files</Description>
-        <Archive sha1sum="0e1ab449f98026e4599f6e0d7491810d36c8fe4d" type="tarbz2">mirrors://xorg/individual/lib/libXau-1.0.6.tar.bz2</Archive>
+        <Archive sha1sum="3ca5798bf9afbceacadeae79a88169c4890e5e82" type="targz">http://xorg.freedesktop.org/archive/individual/lib/libXau-1.0.7.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-23</Date>
+            <Version>1.0.7</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-03-01</Date>
             <Version>1.0.6</Version>

@@ -10,4 +10,9 @@
         <Name>xz-devel</Name>
         <Summary xml:lang="tr">XZ için geliştirme dosyaları</Summary>
     </Package>
+
+    <Package>
+        <Name>xz-32bit</Name>
+        <Summary xml:lang="tr">XZ için 32-bit paylaşımlı kitaplıklar</Summary>
+    </Package>
 </PISI>

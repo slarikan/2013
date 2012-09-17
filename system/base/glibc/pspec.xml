@@ -5,93 +5,95 @@
         <Name>glibc</Name>
         <Homepage>http://www.gnu.org/software/libc</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Admins</Name>
+            <Email>onur@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>GNU libc6 (also called glibc2) C library</Summary>
         <Description>The GNU C library is used as the C library in the GNU system and most systems with the Linux kernel. It defines the system calls and other basic C programming language facilities.</Description>
-        <!-- Upstream tarball
-        <Archive sha1sum="41ead3cdc99a40a17d5830672c36b49b1d7b79f7" type="tarxz">http://ftp.gnu.org/gnu/glibc/glibc-2.14.1.tar.xz</Archive>
-        -->
-        <!-- Fedora tarball
-        -->
-        <Archive sha1sum="3f99a23b72539b29516c6cadc7fe2ab49430ab1e" type="tarxz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/glibc-2.14-394-g8f3b1ff.tar.xz</Archive>
+        <Archive sha1sum="9d4fffc9c4ac93e7919e124fa38bb51dcaff5216" type="tarxz">http://ftp.gnu.org/gnu/glibc/glibc-2.16.0.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency versionFrom="3.2.5">kernel-headers</Dependency>
             <Dependency>gettext</Dependency>
-            <Dependency>kernel-headers</Dependency>
+            <Dependency versionFrom="2.22.52.0.4">binutils</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Ubuntu/Debian patches -->
-            <Patch level="1">all/local-alias-UTF-8.diff</Patch>
+            <Patch level="1">sandbox.patch</Patch>
+            <Patch level="1">pure64-new.patch</Patch>
+            <Patch level="1">locale-no-archive.patch</Patch>
+            <Patch level="1">no-sprintf-pre-truncate.diff</Patch>
+            <Patch level="1">translation-ldconfig-tr.patch</Patch>
+            <!-- all patches-->
             <Patch level="1">all/local-alias-et_EE.diff</Patch>
+            <Patch level="1">all/local-alias-UTF-8.diff</Patch>
             <Patch level="1">all/local-ru_RU.diff</Patch>
+            <!-- any patches-->
             <Patch level="1">any/local-ldconfig-fsync.diff</Patch>
             <Patch level="1">any/local-ldd.diff</Patch>
             <Patch level="1">any/local-nss-overflow.diff</Patch>
-            <Patch level="1">any/submitted-clock-settime.diff</Patch>
             <Patch level="1">any/submitted-date-and-unknown-tz.diff</Patch>
             <Patch level="1">any/submitted-fileops-and-signals.diff</Patch>
-            <Patch level="1">any/submitted-getcwd-sys_param_h.diff</Patch>
             <Patch level="1">any/submitted-nis-netgrp.diff</Patch>
             <Patch level="1">any/submitted-sched_h.diff</Patch>
+             <!-- Gentoo -->
+            <Patch level="1">gentoo/0020_all_glibc-tweak-rfc1918-lookup.patch</Patch>
+            <Patch level="1">gentoo/0068_all_glibc-2.16-glibc-revert-fseek-on-fclose.patch</Patch>
+            <Patch level="1">gentoo/0070_all_glibc-2.16-sunrpc-bootstrap.patch</Patch>
+            <Patch level="1">gentoo/0085_all_glibc-disable-ldconfig.patch</Patch>
+            <Patch level="1">gentoo/1005_all_glibc-sigaction.patch</Patch>
+            <Patch level="1">gentoo/1008_all_glibc-2.16-fortify.patch</Patch>
+            <Patch level="1">gentoo/1040_all_2.3.3-localedef-fix-trampoline.patch</Patch>
+            <Patch level="1">gentoo/1055_all_glibc-resolv-dynamic.patch</Patch>
+            <Patch level="1">gentoo/1070_all_glibc-fadvise64_64.patch</Patch>
+            <Patch level="1">gentoo/1095_all_glibc-2.14-assume-pipe2-dup3.patch</Patch>
+            <Patch>gentoo/3000_all_2.3.6-dl_execstack-PaX-support.patch</Patch>
+            <Patch>gentoo/3010_all_2.3.3_pre20040117-pt_pax.patch</Patch>
+            <Patch level="1">gentoo/5063_all_glibc-dont-build-timezone.patch</Patch>
+	    <!-- Fedora -->
+            <!--check glibc-fedora.patch-->
+            <!--Patch level="1">fedora/glibc-fedora.patch</Patch-->
+            <Patch level="1">fedora/glibc-rh179072.patch</Patch>
+            <Patch level="1">fedora/glibc-rh564528.patch</Patch>
+            <Patch level="1">fedora/glibc-rh657588.patch</Patch>
+            <Patch level="1">fedora/glibc-rh691912.patch</Patch>
+            <Patch level="1">fedora/glibc-rh697149.patch</Patch>
+            <Patch level="1">fedora/glibc-rh697421.patch</Patch>                                                                                                                              
+            <Patch level="1">fedora/glibc-rh730856.patch</Patch>                                                                                                                                 
+            <Patch level="1">fedora/glibc-rh739743.patch</Patch>                                                                                                                                 
+            <Patch level="1">fedora/glibc-rh740682.patch</Patch>                                                                                                                               
+            <Patch level="1">fedora/glibc-rh741105.patch</Patch>                                                                                                                                 
+            <Patch level="1">fedora/glibc-rh757881.patch</Patch>                                                                                                                                 
+            <Patch level="1">fedora/glibc-rh767693-2.patch</Patch>                                                                                                                               
+            <Patch level="1">fedora/glibc-rh769421.patch</Patch>
+            <Patch level="1">fedora/glibc-rh770439.patch</Patch>
+            <Patch level="1">fedora/glibc-rh788989-2.patch</Patch>
+            <Patch level="1">fedora/glibc-rh789209.patch</Patch>
+            <Patch level="1">fedora/glibc-rh789238.patch</Patch>
+            <Patch level="1">fedora/glibc-rh790292.patch</Patch>
+            <Patch level="1">fedora/glibc-rh790298.patch</Patch>
+            <Patch level="1">fedora/glibc-rh791161.patch</Patch>
+            <Patch level="1">fedora/glibc-rh800224.patch</Patch>
+            <Patch level="1">fedora/glibc-rh803286.patch</Patch>
+            <Patch level="1">fedora/glibc-rh804630.patch</Patch>
+            <Patch level="1">fedora/glibc-rh819430.patch</Patch>
+            <Patch level="1">fedora/glibc-rh825061.patch</Patch>
+            <Patch level="1">fedora/glibc-rh827510.patch</Patch>
+            <Patch level="1">fedora/glibc-stap-libm.patch</Patch>
+            <Patch level="1">fedora/glibc-stap.patch</Patch>
+            <!-- i386 -->
             <Patch level="1">i386/local-clone.diff</Patch>
             <Patch level="1">i386/local-cmov.diff</Patch>
-            <Patch level="1">i386/submitted-i686-timing.diff</Patch>
+            <!--check i686-timing-patch -->
+            <!--Patch level="1">i386/submitted-i686-timing.diff</Patch-->
+            <!-- locale -->
+            <!--check first_weekday-patch -->
+            <!--Patch level="1">locale/first_weekday.diff</Patch-->
             <Patch level="1">locale/LC_IDENTIFICATION-optional-fields.diff</Patch>
-            <Patch level="1">locale/first_weekday.diff</Patch>
-            <Patch level="1">locale/locale-print-LANGUAGE.diff</Patch>
-
-            <!-- Don't declare the fwrite and fwrite_unlocked functions with __attribute__((warn_unused_result)).
-                 See https://lists.ubuntu.com/archives/ubuntu-devel/2009-March/027832.html -->
-            <Patch level="0">ubuntu/local-fwrite-no-attr-unused.diff</Patch>
-
-            <!-- It may be a bad idea to allow this undefined behaviour, lets see
-                https://bugs.launchpad.net/ubuntu/+source/gcc-4.3/+bug/305901
-                http://sourceware.org/bugzilla/show_bug.cgi?id=7075 -->
-            <Patch level="1">ubuntu/no-sprintf-pre-truncate.diff</Patch>
-
-            <!-- Fedora patches -->
-            <Patch level="1">fedora/glibc-fedora.patch</Patch>
-            <Patch level="1">fedora/glibc-no-leaf-attribute.patch</Patch>
-
-            <!-- Suse patches -->
-
-            <Patch level="0">suse/glibc-resolv-reload.diff</Patch>
-
-            <!-- FIXME: Can't apply. check for mtime of resolv.conf
-            <Patch level="0">suse/glibc-2.4.90-nscd.diff</Patch>
-            -->
-
-            <!-- Gentoo patches -->
-            <Patch level="1">gentoo/0055_all_glibc-2.12-static-shared-getpagesize.patch</Patch>
-            <Patch level="1">gentoo/1010_all_glibc-queue-header-updates.patch</Patch>
-            <Patch level="1">gentoo/1030_all_glibc-manual-no-perl.patch</Patch>
-            <Patch level="1">gentoo/1040_all_2.3.3-localedef-fix-trampoline.patch</Patch>
-            <Patch level="1">gentoo/1070_all_glibc-fadvise64_64.patch</Patch>
-            <Patch level="1">gentoo/1120_all_glibc-2.11-longjmp-chk-fallback.patch</Patch>
-            <Patch level="1">gentoo/1160_all_glibc-2.8-nscd-one-fork.patch</Patch>
-            <Patch level="1">gentoo/5063_all_glibc-dont-build-timezone.patch</Patch>
-
-
-            <!-- Pardus specific patches -->
-
-            <Patch level="1">pardus/locale-no-archive.patch</Patch>
-
-            <!-- Fix paths in 64bit -->
-            <Patch level="1">pardus/pure64.patch</Patch>
-
-            <!-- Fix sandbox violation -->
-            <Patch level="1">pardus/sandbox.patch</Patch>
-
-            <!-- Turkish translations for ldconfig -->
-            <Patch level="1">pardus/translation-ldconfig-tr.patch</Patch>
-
+            <!--Patch level="1">locale/locale-print-LANGUAGE.diff</Patch-->
         </Patches>
     </Source>
-
     <Package>
         <Name>glibc</Name>
         <RuntimeDependencies>
@@ -112,19 +114,15 @@
             <Path fileType="localedata">/usr/share/locale/locale.alias</Path>
             <Path fileType="executable">/sbin</Path>
             <Path fileType="data">/var</Path>
-            <Path fileType="data">/usr/lib/tmpfiles.d</Path>
-            <Path fileType="data">/lib/systemd/system</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/host.conf">host.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/nsswitch.conf">nsswitch.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/nscd.conf">nscd.conf</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/lib/tmpfiles.d/nscd.conf">fedora/nscd.conf</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/nscd.service">fedora/nscd.service</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/nscd.socket">fedora/nscd.socket</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="nscd.py" name="nscd">System.Service</COMAR>
         </Provides>
     </Package>
 
@@ -146,13 +144,16 @@
     <Package>
         <Name>glibc-docs</Name>
         <PartOf>system.doc</PartOf>
+        <Replaces>
+            <Package>glibc-doc</Package>
+        </Replaces>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="info">/usr/share/info</Path>
         </Files>
     </Package>
 
-    <!-- FIXME: We'll see this later on
+ <!-- FIXME: We'll see this later on 
     <Package>
         <Name>glibc-32bit</Name>
         <PartOf>system.devel</PartOf>
@@ -163,15 +164,14 @@
             <Path fileType="executable">/usr/bin/lddlibc4</Path>
             <Path fileType="library">/usr/lib/misc/getconf/*LP32*</Path>
             <Path fileType="library">/lib/ld-linux.so.2</Path>
-            <Path fileType="library">/lib32</Path>
-            <Path fileType="library">/usr/lib32</Path>
+	    <Path fileType="library">/lib32/*.so</Path>
+	    <Path fileType="library">/usr/lib32/*.so</Path
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/ld.so.conf.d/60-glibc-32bit.conf">60-glibc-32bit.conf</AdditionalFile>
         </AdditionalFiles>
     </Package>
-    -->
-
+  -->
     <Package>
         <Name>glibc-locales-aa</Name>
         <IsA>locale:aa</IsA>
@@ -261,6 +261,16 @@
             <Path fileType="localedata">/usr/share/locale/be*</Path>
         </Files>
     </Package>
+    
+     <Package>
+        <Name>glibc-locales-bem</Name>
+        <IsA>locale:bem</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/bem_*</Path>
+            <Path fileType="localedata">/usr/share/locale/bem*</Path>
+        </Files>
+    </Package>
 
     <Package>
         <Name>glibc-locales-ber</Name>
@@ -282,6 +292,15 @@
             <Path fileType="localedata">/usr/share/locale/bg*</Path>
         </Files>
     </Package>
+    <Package>
+        <Name>glibc-locales-bho</Name>
+        <IsA>locale:bho</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/bho_*</Path>
+            <Path fileType="localedata">/usr/share/locale/bho*</Path>
+        </Files>
+    </Package>
 
     <Package>
         <Name>glibc-locales-bn</Name>
@@ -292,7 +311,17 @@
             <Path fileType="localedata">/usr/share/locale/bn*</Path>
         </Files>
     </Package>
-
+    
+     <Package>
+        <Name>glibc-locales-bo</Name>
+        <IsA>locale:bo</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/bo_*</Path>
+            <Path fileType="localedata">/usr/share/locale/bo*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-br</Name>
         <IsA>locale:br</IsA>
@@ -302,14 +331,14 @@
             <Path fileType="localedata">/usr/share/locale/br*</Path>
         </Files>
     </Package>
-
+    
     <Package>
-        <Name>glibc-locales-bo</Name>
-        <IsA>locale:bo</IsA>
+        <Name>glibc-locales-brx</Name>
+        <IsA>locale:brx</IsA>
         <PartOf>system.locale</PartOf>
         <Files>
-            <Path fileType="localedata">/usr/lib/locale/bo_*</Path>
-            <Path fileType="localedata">/usr/share/locale/bo*</Path>
+            <Path fileType="localedata">/usr/lib/locale/brx_*</Path>
+            <Path fileType="localedata">/usr/share/locale/brx*</Path>
         </Files>
     </Package>
 
@@ -344,6 +373,16 @@
     </Package>
 
     <Package>
+        <Name>glibc-locales-crh</Name>
+        <IsA>locale:crh</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/crh_*</Path>
+            <Path fileType="localedata">/usr/share/locale/crh*</Path>
+        </Files>
+    </Package>
+
+    <Package>
         <Name>glibc-locales-cs</Name>
         <IsA>locale:cs</IsA>
         <PartOf>system.locale</PartOf>
@@ -360,16 +399,6 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/csb_*</Path>
             <Path fileType="localedata">/usr/share/locale/csb*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>glibc-locales-crh</Name>
-        <IsA>locale:crh</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/crh_*</Path>
-            <Path fileType="localedata">/usr/share/locale/crh*</Path>
         </Files>
     </Package>
 
@@ -442,27 +471,7 @@
             <Path fileType="localedata">/usr/share/locale/el*</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>glibc-locales-et</Name>
-        <IsA>locale:et</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/et_*</Path>
-            <Path fileType="localedata">/usr/share/locale/et*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>glibc-locales-eu</Name>
-        <IsA>locale:eu</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/eu_*</Path>
-            <Path fileType="localedata">/usr/share/locale/eu*</Path>
-        </Files>
-    </Package>
-
+    
     <Package>
         <Name>glibc-locales-en</Name>
         <IsA>locale:en</IsA>
@@ -526,14 +535,34 @@
             <Path fileType="localedata">/usr/share/locale/en_ZW.utf8</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-es</Name>
-        <IsA>locale:es</IsA>
+        <IsA>locale:el</IsA>
         <PartOf>system.locale</PartOf>
         <Files>
-            <Path fileType="localedata">/usr/lib/locale/es_*</Path>
+            <Path fileType="localedata">/usr/lib/locale/es*</Path>
             <Path fileType="localedata">/usr/share/locale/es*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-et</Name>
+        <IsA>locale:et</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/et_*</Path>
+            <Path fileType="localedata">/usr/share/locale/et*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>glibc-locales-eu</Name>
+        <IsA>locale:eu</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/eu_*</Path>
+            <Path fileType="localedata">/usr/share/locale/eu*</Path>
         </Files>
     </Package>
 
@@ -544,6 +573,16 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/fa_*</Path>
             <Path fileType="localedata">/usr/share/locale/fa*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-ff</Name>
+        <IsA>locale:ff</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/ff_*</Path>
+            <Path fileType="localedata">/usr/share/locale/ff*</Path>
         </Files>
     </Package>
 
@@ -566,17 +605,7 @@
             <Path fileType="localedata">/usr/share/locale/fil*</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>glibc-locales-fur</Name>
-        <IsA>locale:fur</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/fur_*</Path>
-            <Path fileType="localedata">/usr/share/locale/fur*</Path>
-        </Files>
-    </Package>
-
+    
     <Package>
         <Name>glibc-locales-fo</Name>
         <IsA>locale:fo</IsA>
@@ -594,6 +623,16 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/fr_*</Path>
             <Path fileType="localedata">/usr/share/locale/fr*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-fur</Name>
+        <IsA>locale:fur</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/fur_*</Path>
+            <Path fileType="localedata">/usr/share/locale/fur*</Path>
         </Files>
     </Package>
 
@@ -676,27 +715,7 @@
             <Path fileType="localedata">/usr/share/locale/ha*</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>glibc-locales-hsb</Name>
-        <IsA>locale:hsb</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/hsb_*</Path>
-            <Path fileType="localedata">/usr/share/locale/hsb*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>glibc-locales-hy</Name>
-        <IsA>locale:hy</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/hy_*</Path>
-            <Path fileType="localedata">/usr/share/locale/hy*</Path>
-        </Files>
-    </Package>
-
+    
     <Package>
         <Name>glibc-locales-he</Name>
         <IsA>locale:he</IsA>
@@ -706,7 +725,7 @@
             <Path fileType="localedata">/usr/share/locale/he*</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-hi</Name>
         <IsA>locale:hi</IsA>
@@ -716,7 +735,7 @@
             <Path fileType="localedata">/usr/share/locale/hi*</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-hne</Name>
         <IsA>locale:hne</IsA>
@@ -726,7 +745,7 @@
             <Path fileType="localedata">/usr/share/locale/hne*</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-hr</Name>
         <IsA>locale:hr</IsA>
@@ -737,6 +756,16 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>glibc-locales-hsb</Name>
+        <IsA>locale:hsb</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/hsb_*</Path>
+            <Path fileType="localedata">/usr/share/locale/hsb*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-ht</Name>
         <IsA>locale:ht</IsA>
@@ -754,6 +783,16 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/hu_*</Path>
             <Path fileType="localedata">/usr/share/locale/hu*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-hy</Name>
+        <IsA>locale:hy</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/hy_*</Path>
+            <Path fileType="localedata">/usr/share/locale/hy*</Path>
         </Files>
     </Package>
 
@@ -776,7 +815,17 @@
             <Path fileType="localedata">/usr/share/locale/ig*</Path>
         </Files>
     </Package>
-
+    
+    <Package>
+        <Name>glibc-locales-ik</Name>
+        <IsA>locale:ik</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/ik_*</Path>
+            <Path fileType="localedata">/usr/share/locale/ik*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-is</Name>
         <IsA>locale:is</IsA>
@@ -794,16 +843,6 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/it_*</Path>
             <Path fileType="localedata">/usr/share/locale/it*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>glibc-locales-ik</Name>
-        <IsA>locale:ik</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/ik_*</Path>
-            <Path fileType="localedata">/usr/share/locale/ik*</Path>
         </Files>
     </Package>
 
@@ -866,6 +905,17 @@
             <Path fileType="localedata">/usr/share/locale/kl*</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>glibc-locales-km</Name>
+        <IsA>locale:km</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/km_*</Path>
+            <Path fileType="localedata">/usr/share/locale/km*</Path>
+        </Files>
+    </Package>
+
 
     <Package>
         <Name>glibc-locales-kn</Name>
@@ -898,16 +948,6 @@
     </Package>
 
     <Package>
-        <Name>glibc-locales-km</Name>
-        <IsA>locale:km</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/km_*</Path>
-            <Path fileType="localedata">/usr/share/locale/km*</Path>
-        </Files>
-    </Package>
-
-    <Package>
         <Name>glibc-locales-ks</Name>
         <IsA>locale:ks</IsA>
         <PartOf>system.locale</PartOf>
@@ -926,7 +966,17 @@
             <Path fileType="localedata">/usr/share/locale/ku*</Path>
         </Files>
     </Package>
-
+    
+    <Package>
+        <Name>glibc-locales-kw</Name>
+        <IsA>locale:kw</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/kw_*</Path>
+            <Path fileType="localedata">/usr/share/locale/kw*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-ky</Name>
         <IsA>locale:ky</IsA>
@@ -936,14 +986,13 @@
             <Path fileType="localedata">/usr/share/locale/ky*</Path>
         </Files>
     </Package>
-
     <Package>
-        <Name>glibc-locales-kw</Name>
-        <IsA>locale:kw</IsA>
+        <Name>glibc-locales-lb</Name>
+        <IsA>locale:lb</IsA>
         <PartOf>system.locale</PartOf>
         <Files>
-            <Path fileType="localedata">/usr/lib/locale/kw_*</Path>
-            <Path fileType="localedata">/usr/share/locale/kw*</Path>
+            <Path fileType="localedata">/usr/lib/locale/lb_*</Path>
+            <Path fileType="localedata">/usr/share/locale/lb*</Path>
         </Files>
     </Package>
 
@@ -956,17 +1005,28 @@
             <Path fileType="localedata">/usr/share/locale/lg*</Path>
         </Files>
     </Package>
-
+    
+    <Package>
+        <Name>glibc-locales-li</Name>
+        <IsA>locale:li</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/li_*</Path>
+            <Path fileType="localedata">/usr/share/locale/li*</Path>
+        </Files>
+    </Package>
+    
+    <!--FIXME: lo is dangerous, check often --> 
+    
     <Package>
         <Name>glibc-locales-lo</Name>
         <IsA>locale:lo</IsA>
         <PartOf>system.locale</PartOf>
         <Files>
             <Path fileType="localedata">/usr/lib/locale/lo_*</Path>
-            <!-- FIXME: this is dangerous, check often -->
             <Path fileType="localedata">/usr/share/locale/lo_*</Path>
         </Files>
-    </Package>
+      </Package>
 
     <Package>
         <Name>glibc-locales-lt</Name>
@@ -979,22 +1039,22 @@
     </Package>
 
     <Package>
-        <Name>glibc-locales-li</Name>
-        <IsA>locale:li</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/li_*</Path>
-            <Path fileType="localedata">/usr/share/locale/li*</Path>
-        </Files>
-    </Package>
-
-    <Package>
         <Name>glibc-locales-lv</Name>
         <IsA>locale:lv</IsA>
         <PartOf>system.locale</PartOf>
         <Files>
             <Path fileType="localedata">/usr/lib/locale/lv_*</Path>
             <Path fileType="localedata">/usr/share/locale/lv*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-mag</Name>
+        <IsA>locale:mag</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/mag_*</Path>
+            <Path fileType="localedata">/usr/share/locale/mag*</Path>
         </Files>
     </Package>
 
@@ -1015,6 +1075,16 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/mg_*</Path>
             <Path fileType="localedata">/usr/share/locale/mg*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-mhr</Name>
+        <IsA>locale:mhr</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/mhr_*</Path>
+            <Path fileType="localedata">/usr/share/locale/mhr*</Path>
         </Files>
     </Package>
 
@@ -1159,16 +1229,6 @@
     </Package>
 
     <Package>
-        <Name>glibc-locales-no</Name>
-        <IsA>locale:no</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/no_*</Path>
-            <Path fileType="localedata">/usr/share/locale/no*</Path>
-        </Files>
-    </Package>
-
-    <Package>
         <Name>glibc-locales-nr</Name>
         <IsA>locale:nr</IsA>
         <PartOf>system.locale</PartOf>
@@ -1217,7 +1277,17 @@
             <Path fileType="localedata">/usr/share/locale/or*</Path>
         </Files>
     </Package>
-
+    
+    <Package>
+        <Name>glibc-locales-os</Name>
+        <IsA>locale:os</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/os_*</Path>
+            <Path fileType="localedata">/usr/share/locale/os*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-pa</Name>
         <IsA>locale:pa</IsA>
@@ -1307,7 +1377,7 @@
             <Path fileType="localedata">/usr/share/locale/sa*</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-sc</Name>
         <IsA>locale:sc</IsA>
@@ -1387,17 +1457,7 @@
             <Path fileType="localedata">/usr/share/locale/sl*</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>glibc-locales-sr</Name>
-        <IsA>locale:sr</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/sr_*</Path>
-            <Path fileType="localedata">/usr/share/locale/sr*</Path>
-        </Files>
-    </Package>
-
+   
     <Package>
         <Name>glibc-locales-so</Name>
         <IsA>locale:so</IsA>
@@ -1407,7 +1467,7 @@
             <Path fileType="localedata">/usr/share/locale/so*</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-sq</Name>
         <IsA>locale:sq</IsA>
@@ -1415,6 +1475,25 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/sq_*</Path>
             <Path fileType="localedata">/usr/share/locale/sq*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>glibc-locales-sr</Name>
+        <IsA>locale:sr</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/sr_*</Path>
+            <Path fileType="localedata">/usr/share/locale/sr*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-ss</Name>
+        <IsA>locale:ss</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/ss_*</Path>
+            <Path fileType="localedata">/usr/share/locale/ss*</Path>
         </Files>
     </Package>
 
@@ -1427,17 +1506,7 @@
             <Path fileType="localedata">/usr/share/locale/st*</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>glibc-locales-ss</Name>
-        <IsA>locale:ss</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/ss_*</Path>
-            <Path fileType="localedata">/usr/share/locale/ss*</Path>
-        </Files>
-    </Package>
-
+    
     <Package>
         <Name>glibc-locales-sv</Name>
         <IsA>locale:sv</IsA>
@@ -1445,6 +1514,16 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/sv_*</Path>
             <Path fileType="localedata">/usr/share/locale/sv*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-sw</Name>
+        <IsA>locale:sw</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/sw_*</Path>
+            <Path fileType="localedata">/usr/share/locale/sw*</Path>
         </Files>
     </Package>
 
@@ -1487,17 +1566,7 @@
             <Path fileType="localedata">/usr/share/locale/th*</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>glibc-locales-tk</Name>
-        <IsA>locale:tk</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/tk_*</Path>
-            <Path fileType="localedata">/usr/share/locale/tk*</Path>
-        </Files>
-    </Package>
-
+    
     <Package>
         <Name>glibc-locales-ti</Name>
         <IsA>locale:ti</IsA>
@@ -1507,7 +1576,7 @@
             <Path fileType="localedata">/usr/share/locale/ti*</Path>
         </Files>
     </Package>
-
+    
     <Package>
         <Name>glibc-locales-tig</Name>
         <IsA>locale:tig</IsA>
@@ -1517,7 +1586,17 @@
             <Path fileType="localedata">/usr/share/locale/tig*</Path>
         </Files>
     </Package>
-
+    
+    <Package>
+        <Name>glibc-locales-tk</Name>
+        <IsA>locale:tk</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/tk_*</Path>
+            <Path fileType="localedata">/usr/share/locale/tk*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-tl</Name>
         <IsA>locale:tl</IsA>
@@ -1525,16 +1604,6 @@
         <Files>
             <Path fileType="localedata">/usr/lib/locale/tl_*</Path>
             <Path fileType="localedata">/usr/share/locale/tl*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>glibc-locales-tt</Name>
-        <IsA>locale:tt</IsA>
-        <PartOf>system.locale</PartOf>
-        <Files>
-            <Path fileType="localedata">/usr/lib/locale/tt_*</Path>
-            <Path fileType="localedata">/usr/share/locale/tt*</Path>
         </Files>
     </Package>
 
@@ -1557,6 +1626,16 @@
             <Path fileType="localedata">/usr/share/locale/ts*</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>glibc-locales-tt</Name>
+        <IsA>locale:tt</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/tt_*</Path>
+            <Path fileType="localedata">/usr/share/locale/tt*</Path>
+        </Files>
+    </Package>
 
     <Package>
         <Name>glibc-locales-ug</Name>
@@ -1577,7 +1656,17 @@
             <Path fileType="localedata">/usr/share/locale/uk*</Path>
         </Files>
     </Package>
-
+    
+    <Package>
+        <Name>glibc-locales-unm</Name>
+        <IsA>locale:unm</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/unm_*</Path>
+            <Path fileType="localedata">/usr/share/locale/unm*</Path>
+        </Files>
+    </Package>
+    
     <Package>
         <Name>glibc-locales-ur</Name>
         <IsA>locale:ur</IsA>
@@ -1627,6 +1716,26 @@
             <Path fileType="localedata">/usr/share/locale/wa*</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>glibc-locales-wae</Name>
+        <IsA>locale:wae</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/wae_*</Path>
+            <Path fileType="localedata">/usr/share/locale/wae*</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>glibc-locales-wal</Name>
+        <IsA>locale:wal</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/wal_*</Path>
+            <Path fileType="localedata">/usr/share/locale/wal*</Path>
+        </Files>
+    </Package>
 
     <Package>
         <Name>glibc-locales-wo</Name>
@@ -1667,6 +1776,16 @@
             <Path fileType="localedata">/usr/share/locale/yo*</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>glibc-locales-yue</Name>
+        <IsA>locale:yue</IsA>
+        <PartOf>system.locale</PartOf>
+        <Files>
+            <Path fileType="localedata">/usr/lib/locale/yue_*</Path>
+            <Path fileType="localedata">/usr/share/locale/yue*</Path>
+        </Files>
+    </Package>
 
     <Package>
         <Name>glibc-locales-zh</Name>
@@ -1687,38 +1806,21 @@
             <Path fileType="localedata">/usr/share/locale/zu*</Path>
         </Files>
     </Package>
-
+    
     <History>
-        <Update release="66">
-            <Date>2011-12-07</Date>
-            <Version>2.14.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="65">
-            <Date>2011-08-13</Date>
-            <Version>2.12_20100706</Version>
-            <Comment>Fix alignment of AVX safe area on x86-64, fixes pb#18943</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="64" type="security">
-            <Date>2011-05-14</Date>
-            <Version>2.12_20100706</Version>
-            <Comment>Report write error in addmnt even for cached streams, fixes CVE-2011-1089, pb#17676 #17677 #17678 #17679</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="63" type="security">
-            <Date>2011-04-21</Date>
-            <Version>2.12_20100706</Version>
-            <Comment>
-                Properly quote output of locale, fixes CVE-2011-1095, fixes #pb 17815 17816 17817 17818
-                Fix fnmatch stack corruption, use malloc instead of alloca, fixes CVE-2011-1071, fixes #pb 17680 17681 17682 17683
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
+        <Update release="64">
+            <Date>2012-07-22</Date>
+            <Version>2.16</Version>
+            <Comment>New toolchain.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>      
+        <Update release="63">
+            <Date>2012-04-29</Date>
+            <Version>2.15</Version>
+            <Comment>Bump version</Comment>
+            <Name>Kaan Akşit</Name>
+            <Email>kunguz@gmail.com</Email>
         </Update>
         <Update release="62">
             <Date>2010-12-24</Date>
@@ -2191,3 +2293,4 @@
         </Update>
     </History>
 </PISI>
+

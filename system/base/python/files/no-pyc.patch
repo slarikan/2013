@@ -1,9 +1,14 @@
---- Makefile.pre.in.orig	2010-04-12 03:10:46.000000000 +0300
-+++ Makefile.pre.in	2010-08-05 16:52:12.771857133 +0300
-@@ -919,26 +919,6 @@
+--- Makefile.pre.in	2012-04-10 02:07:33.000000000 +0300
++++ Makefile.pre.in	2012-09-15 03:42:31.424557725 +0300
+@@ -933,32 +933,7 @@
+ 			esac; \
  		done; \
  	done
- 	$(INSTALL_DATA) $(srcdir)/LICENSE $(DESTDIR)$(LIBDEST)/LICENSE.txt
+-	$(INSTALL_DATA) $(srcdir)/LICENSE $(DESTDIR)$(LIBDEST)/LICENSE.txt
+-	if test -d $(DESTDIR)$(LIBDEST)/distutils/tests; then \
+-		$(INSTALL_DATA) $(srcdir)/Modules/xxmodule.c \
+-			$(DESTDIR)$(LIBDEST)/distutils/tests ; \
+-	fi
 -	PYTHONPATH=$(DESTDIR)$(LIBDEST)  $(RUNSHARED) \
 -		./$(BUILDPYTHON) -Wi -tt $(DESTDIR)$(LIBDEST)/compileall.py \
 -		-d $(LIBDEST) -f \
@@ -24,6 +29,8 @@
 -		-x badsyntax $(DESTDIR)$(LIBDEST)/site-packages
 -	-PYTHONPATH=$(DESTDIR)$(LIBDEST) $(RUNSHARED) \
 -		./$(BUILDPYTHON) -Wi -t -c "import lib2to3.pygram, lib2to3.patcomp;lib2to3.patcomp.PatternCompiler()"
- 
+-
++	
  # Create the PLATDIR source directory, if one wasn't distributed..
  $(srcdir)/Lib/$(PLATDIR):
+ 	mkdir $(srcdir)/Lib/$(PLATDIR)

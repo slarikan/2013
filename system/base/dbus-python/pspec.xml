@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>D-Bus Python bindings</Summary>
         <Description>dbus-python provides a Python module which wraps the D-Bus programming API.</Description>
-        <Archive sha1sum="f3b3b9c969950ddafde75c86b55cf4694c960081" type="targz">http://dbus.freedesktop.org/releases/dbus-python/dbus-python-0.84.0.tar.gz</Archive>
+        <Archive sha1sum="3c15438a7ec1f0698d50557e3421564564d0e097" type="targz">http://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>dbus</Dependency>
             <Dependency>dbus-glib</Dependency>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-08-23</Date>
+            <Version>1.1.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="19">
             <Date>2011-07-04</Date>
             <Version>0.84.0</Version>

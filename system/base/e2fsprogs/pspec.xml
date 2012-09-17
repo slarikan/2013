@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Standard ext2/3/4 filesystem utilities</Summary>
         <Description>e2fsprogs provides the filesystem utilities for use with the ext2 filesystem. It also supports the ext3/4 filesystem with journaling support.</Description>
-        <Archive sha1sum="24f9364fa3d4c0d7d00cb627b819d0e51055d6c5" type="targz">mirrors://sourceforge/e2fsprogs/e2fsprogs-1.41.14.tar.gz</Archive>
+        <Archive sha1sum="41bc6d247238eac65864193e6de941956da493cb" type="targz">http://prdownloads.sourceforge.net/e2fsprogs/e2fsprogs-1.42.5.tar.gz</Archive>
         <BuildDependencies>
             <!-- The first release shipped within util-linux -->
             <Dependency releaseFrom="36">libuuid</Dependency>
@@ -68,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="33">
+            <Date>2012-08-23</Date>
+            <Version>1.42.5</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="32">
             <Date>2010-12-24</Date>
             <Version>1.41.14</Version>

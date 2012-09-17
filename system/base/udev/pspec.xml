@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Linux dynamic and persistent device naming support</Summary>
         <Description>udev allows Linux users to have a dynamic /dev directory and it provides the ability to have persistent device names.</Description>
-        <Archive sha1sum="e972335e21bb0c034a9c13d7ad205e6c995360c5" type="tarbz2">http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev-166.tar.bz2</Archive>
+        <Archive sha1sum="ad226ca222ada889621aae9bdb50fb6e90e77fd9" type="tarlzma">https://www.kernel.org/pub/linux/utils/kernel/hotplug/udev-182.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gperf</Dependency>
             <Dependency>glib2</Dependency>
@@ -20,12 +20,9 @@
             <Dependency>acl-devel</Dependency>
             <Dependency>libusb-devel</Dependency>
             <Dependency>pciutils-devel</Dependency>
+            <Dependency>libkmod-devel</Dependency>
             <Dependency versionFrom="0.4.1">ConsoleKit-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">prune-xsltproc-dep.patch</Patch>
-            <Patch level="1">revert-ata-id-changes.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -65,12 +62,15 @@
     <Package>
         <Name>libudev</Name>
         <Summary>Dynamic library to access udev device information</Summary>
+        <Conflicts>
+            <Package releaseTo="64">udev</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libudev.so*</Path>
         </Files>
     </Package>
 
-    <Package>
+    <!--Package>
         <Name>libudev-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for udev</Summary>
@@ -82,7 +82,7 @@
             <Path fileType="library">/usr/lib32</Path>
             <Path fileType="data">/usr/lib32/pkgconfig</Path>
         </Files>
-    </Package>
+    </Package-->
 
     <Package>
         <Name>libudev-devel</Name>
@@ -92,6 +92,9 @@
             <Dependency release="current">udev</Dependency>
             <Dependency release="current">libudev</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="64">udev</Package>
+        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include/libudev.h</Path>
             <Path fileType="data">/usr/lib/pkgconfig/libudev.pc</Path>
@@ -105,6 +108,9 @@
         <RuntimeDependencies>
             <Dependency>libudev</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="64">udev</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libgudev-1.0.so*</Path>
         </Files>
@@ -118,6 +124,9 @@
             <Dependency>libudev-devel</Dependency>
             <Dependency release="current">libgudev1</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="64">udev</Package>
+        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include/gudev-1.0</Path>
             <Path fileType="data">/usr/lib/pkgconfig/gudev-1.0*</Path>
@@ -126,6 +135,13 @@
     </Package>
 
     <History>
+        <Update release="78">
+            <Date>2012-06-05</Date>
+            <Version>182</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="77">
             <Date>2011-05-30</Date>
             <Version>166</Version>

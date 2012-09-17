@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>pipeline manipulation library</Summary>
         <Description>libpipeline is a C library for manipulating pipelines of subprocesses in a flexible and convenient way.</Description>
-        <Archive sha1sum="85638517d393c98465f7693f02afb4d02ed0f959" type="targz">http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.2.0.tar.gz</Archive>
+        <Archive sha1sum="6d9e6fe0a5f4d3441856ede7f9d0e4492e8e07f3" type="targz">http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.2.1.tar.gz</Archive>
     </Source>
 
     <Package>

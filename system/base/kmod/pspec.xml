@@ -3,58 +3,81 @@
 <PISI>
     <Source>
         <Name>kmod</Name>
-        <Homepage>http://git.profusion.mobi/cgit.cgi/kmod.git</Homepage>
+        <Homepage>http://git.kernel.org/?p=utils/kernel/kmod/kmod.git;a=summary</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
-        <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>Linux kernel module management utilities</Summary>
-        <Description>kmod provides various programs needed for automatic loading and unloading of modules under 2.6, 3.x and later kernels.</Description>
-        <Archive sha1sum="41f6d6082f72d2c4869f51844d7e9212c8091033" type="tarxz">http://packages.profusion.mobi/kmod/kmod-3.tar.xz</Archive>
+        <Description>Linux kernel module management utilities</Description>
+        <Archive sha1sum="d3576dd35095b600e6563613402c184f01b86f13" type="tarbz2">ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/kmod-8.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>xz-devel</Dependency>
-            <Dependency>zlib-devel</Dependency>
+            <Dependency>chrpath</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-split-usr-read-configs-from-lib-depmod.d-modprobe.d.patch</Patch>
+            <Patch level="1">0002-config-hardcode-the-path-to-modules-to-be-lib-module.patch</Patch>
+            <Patch level="1">0001-libkmod-file-gracefully-handle-errors-from-zlib.patch</Patch>
+            <Patch level="1">0002-depmod-report-failures-in-loading-symbols.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
         <Name>kmod</Name>
         <RuntimeDependencies>
-            <Dependency>xz</Dependency>
-            <Dependency>zlib</Dependency>
+            <Dependency version="current">libkmod</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>module-init-tools</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/lib/modprobe.d</Path>
-            <Path fileType="config">/etc/modprobe.d</Path>
-            <Path fileType="config">/etc/depmod.d</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="executable">/sbin</Path>
+            <Path fileType="manfile">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="config">/usr/lib/depmod.d/</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/depmod.d/search.conf">depmod-search.conf</AdditionalFile>
+        </AdditionalFiles>
     </Package>
-
     <Package>
-        <Name>kmod-devel</Name>
-        <Summary>Development files for kmod</Summary>
+        <Name>libkmod-devel</Name>
         <RuntimeDependencies>
-            <Dependency release="current">kmod</Dependency>
+            <Dependency version="current">libkmod</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libkmod</Name>
+        <Summary>kmod libraries</Summary>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libkmod-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32bit libraries of libkmod</Summary>
+        <BuildType>emul32</BuildType>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="1">
-            <Date>2012-01-07</Date>
-            <Version>3</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Date>2012-06-05</Date>
+            <Version>8</Version>
+            <Comment>First release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
     </History>
 </PISI>

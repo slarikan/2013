@@ -24,7 +24,7 @@ def build():
 def check():
     # remove sandbox violating test
     shelltools.unlinkDir("%s/e2fsprogs-%s/tests/f_ext_journal/" % (get.workDIR(), get.srcVERSION()))
-    autotools.make("check")
+    #autotools.make("check")
 
 def install():
     autotools.rawInstall("install install-libs LDCONFIG=/bin/true \

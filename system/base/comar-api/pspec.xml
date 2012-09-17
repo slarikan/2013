@@ -29,6 +29,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pardus</Path>
+	    <Path fileType="library">/usr/lib/python2.7</Path>
         </Files>
     </Package>
 

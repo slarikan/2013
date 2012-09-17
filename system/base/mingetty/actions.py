@@ -9,7 +9,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "mingetty-1.0.7s"
+WorkDir = "mingetty-1.08"
 
 def build():
     autotools.make('RPM_OPT_FLAGS="%s"' % get.CFLAGS())
@@ -17,6 +17,6 @@ def build():
 def install():
     pisitools.dosbin("mingetty", "/sbin")
     pisitools.doman("mingetty.8")
-    pisitools.insinto("/usr/share/locale/tr/LC_MESSAGES", "tr.mo", "mingetty.mo")
+    #pisitools.insinto("/usr/share/locale/tr/LC_MESSAGES", "tr.mo")
 
-    pisitools.dodoc("ANNOUNCE", "COPYING", "TODO", "CHANGES")
+    pisitools.dodoc("COPYING")

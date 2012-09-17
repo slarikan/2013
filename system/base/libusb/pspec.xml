@@ -8,26 +8,21 @@
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Packager>
-        <License>LGPLv2+</License>
+        <License>LGPLv2.1</License>
         <IsA>library</IsA>
-        <Summary>A library which allows userspace access to USB devices</Summary>
-        <Description>libusb is a wrapper around libusb1 to provide compatibility for old projects which still use libusb 0.1 API.</Description>
-        <Archive sha1sum="d5710d5bc4b67c5344e779475b76168c7ccc5e69" type="tarbz2">mirrors://sourceforge/libusb/libusb-compat-0.1.3.tar.bz2</Archive>
-        <Patches>
-            <Patch level="1">libusb-documentation.patch</Patch>
-            <Patch level="1">libusb-error-access-log-message.patch</Patch>
-            <Patch level="1">libusb-config-multilib.patch</Patch>
-            <Patch level="1">libusb-compat-0.1.git-ab21a0312fe2df754fd7a4cf4c45050233ee443d.patch</Patch>
-        </Patches>
+        <Summary>Userspace access to USB devices</Summary>
+        <Description>Project's main aim is to create a library for use by user level applications to access USB devices regardless of OS.</Description>
+        <Archive sha1sum="fdc1df6f5cf7b71de7a74292aeea1aa2a39552ae" type="tarbz2">mirrors://sourceforge/libusb/libusb-compat-0.1.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libtool</Dependency>
+	    <Dependency version="1.0.9">libusb1-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libusb</Name>
         <RuntimeDependencies>
-            <Dependency>libusb1</Dependency>
+            <Dependency version="1.0.9">libusb1</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -55,7 +50,11 @@
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libXt</Summary>
         <BuildType>emul32</BuildType>
+	 <BuildDependencies>
+            <Dependency>libusb1-32bit</Dependency>
+        </BuildDependencies>
         <RuntimeDependencies>
+	    <Dependency>libusb1-32bit</Dependency>
             <Dependency release="current">libusb</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -64,71 +63,12 @@
     </Package>
 
     <History>
-        <Update release="9">
-            <Date>2011-12-15</Date>
-            <Version>0.1.3</Version>
-            <Comment>Switch to libusb-compat layer</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2011-05-06</Date>
-            <Version>0.1.12</Version>
-            <Comment>Add emul32 compnent</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-10-11</Date>
-            <Version>0.1.12</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-08-17</Date>
-            <Version>0.1.12</Version>
-            <Comment>
-                - Split devel package,
-                - Add a fedora fix.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-02-23</Date>
-            <Version>0.1.12</Version>
-            <Comment>Disable documentation, Add 2 fedora patches.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-01-05</Date>
-            <Version>0.1.12</Version>
-            <Comment>Disable static libraries</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-05-06</Date>
-            <Version>0.1.12</Version>
-            <Comment>Version bump, now works with udev</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2005-10-24</Date>
-            <Version>0.1.10a</Version>
-            <Comment>Version bump for kdebase dep.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2005-09-08</Date>
-            <Version>0.1.8</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
+            <Date>2012-07-21</Date>
+            <Version>0.1.4</Version>
+            <Comment>First Release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Update>
     </History>
 </PISI>

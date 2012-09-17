@@ -10,7 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static")
+    autotools.configure("--libdir=/lib \
+                         --disable-static")
 
 def build():
     autotools.make()

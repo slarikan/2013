@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
+# Copyright 2005-2011 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -34,15 +35,22 @@ def install():
     if get.buildTYPE():
         return
 
+    # Copy zlib to /lib
+    pisitools.domove("/usr/lib/libz*", "/lib")
+
+    # Create symlinks in /usr/lib
+    pisitools.dosym("/lib/libz.so.%s" % get.srcVERSION(), "/usr/lib/libz.so.%s" % get.srcVERSION())
+    pisitools.dosym("libz.so.%s" % get.srcVERSION(), "/usr/lib/libz.so.1")
+    pisitools.dosym("libz.so.1", "/usr/lib/libz.so")
+
     pisitools.doman("zlib.3")
-    pisitools.dodoc("FAQ", "README", "ChangeLog", "doc/algorithm.txt", "example.c")
+    pisitools.dodoc("FAQ", "README", "ChangeLog", "doc/*", "examples/*")
 
 
 if get.buildTYPE() == "minizip":
     minizip_dir = "contrib/minizip"
 
     def setup():
-        shelltools.copy("minigzip.c", minizip_dir)
         shelltools.cd(minizip_dir)
         shelltools.makedirs("m4")
 
@@ -57,3 +65,4 @@ if get.buildTYPE() == "minizip":
 
     def install():
         autotools.rawInstall("-C %s DESTDIR=%s" % (minizip_dir, get.installDIR()))
+        #pisitools.removeDir("/usr/bin")

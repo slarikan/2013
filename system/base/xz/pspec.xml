@@ -15,11 +15,14 @@
         <IsA>library</IsA>
         <Summary>XZ compression utilities</Summary>
         <Description>XZ Utils provide a general purpose data compression library and command line tools. The .xz format supports multiple compression algorithms, which are called "filters" in context of XZ Utils. The primary filter is currently LZMA2.</Description>
-        <Archive sha1sum="79661fd1c24603437e325d76732046b1da683b32" type="tarbz2">http://tukaani.org/xz/xz-5.0.3.tar.bz2</Archive>
+        <Archive sha1sum="3e976d7715fde43422572c70f927bfdae56a94c3" type="targz">http://tukaani.org/xz/xz-5.0.4.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>xz</Name>
+        <Replaces>
+            <Package>lzma</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -41,14 +44,39 @@
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>xz-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32bit shared libraries for xz</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">xz</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-08-24</Date>
+            <Version>5.0.4</Version>
+            <Comment>
+                  * Version bump
+            </Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
-            <Date>2011-12-09</Date>
+            <Date>2012-06-04</Date>
             <Version>5.0.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Comment>
+                  * Version bump
+                  * Create 32bit subpackage
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="5">
             <Date>2010-11-05</Date>

@@ -13,7 +13,8 @@ from pisi.actionsapi import get
 def setup():
     options = " --prefix=/usr \
                 --libdir=lib \
-                --openssldir=/etc/pki/tls \
+                --openssldir=/etc/pki/ \
+                no-idea no-mdc2 no-rc5 no-ec no-ecdh no-ecdsa \
                 --enginesdir=/usr/lib/openssl/engines \
                 zlib enable-camellia enable-seed enable-tlsext enable-rfc3779 \
                 enable-cms enable-md2 threads shared -Wa,--noexecstack"
@@ -64,7 +65,10 @@ def install():
     # Certificate stuff
     pisitools.dobin("tools/c_rehash")
     pisitools.dosym("/etc/pki/tls/certs/ca-bundle.crt","/etc/pki/tls/cert.pem")
-
+    
+    # fix library name for other packages
+    pisitools.dosym("/usr/lib/libssl.so.1.0.0", "/usr/lib/libssl.so.10")
+    pisitools.dosym("/usr/lib/libcrypto.so.1.0.0", "/usr/lib/libcrypto.so.10")
 
     # Create CA dirs
     for cadir in ["CA", "CA/private", "CA/certs", "CA/crl", "CA/newcerts"]:

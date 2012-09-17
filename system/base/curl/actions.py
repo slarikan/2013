@@ -27,6 +27,7 @@ def setup():
                          --enable-telnet \
                          --enable-largefile \
                          --enable-nonblocking \
+                         --without-librtmp \
                          --enable-threaded-resolver \
                          --with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt")
 

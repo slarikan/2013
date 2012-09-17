@@ -5,68 +5,33 @@
         <Name>perl</Name>
         <Homepage>http://www.perl.org/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>Larry Wall's Practical Extraction and Reporting Language</Summary>
         <Description>Perl is a high-level programming language with roots in C, sed, awk and shell scripting. Perl is good at handling processes and files, and is especially good at handling text. Perl's hallmarks are practicality and efficiency. While it is used to do a lot of different things, Perl's most common applications are system administration utilities and web programming. A large proportion of the CGI scripts on the web are written in Perl. You need the perl package installed on your system so that your system can handle Perl scripts.</Description>
-        <Archive sha1sum="c157f214a93ce20fc06dc9d9c902c05ad1327cb1" type="targz">mirrors://cpan/authors/id/J/JE/JESSE/perl-5.12.2.tar.gz</Archive>
+        <Archive sha1sum="14955f9869eef5029fea7fcc48d0b2afabb16d1e" type="tarbz2">http://www.cpan.org/src/5.0/perl-5.16.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>groff</Dependency>
             <Dependency>db4-devel</Dependency>
             <Dependency>gdbm-devel</Dependency>
             <Dependency>bzip2</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!-- disable for Sandbox -->
-          <Patch level="1">perl-5.12.1-disable-syslog-test.patch</Patch>
-          <Patch level="1">perl-5.12.1-skip-compat-test.patch</Patch>
-
-          <Patch level="1">perl-5.12.1-gracefull-net-ftp.diff</Patch>
-          <Patch>perl-5.8.5-prelink-lpthread.patch</Patch>
-          <Patch>pod-disable-locale.patch</Patch>
-          <Patch>perl-fix_dbmclose_call.patch</Patch>
-          <Patch>perl-regexp-refoverflow.diff</Patch>
-          <Patch level="1">perl-5.12.1-netcmdutf8.diff</Patch>
-          <Patch>perl-5.12.1-nroff.diff</Patch>
-
-          <!-- Use system zlib library-->
-          <Patch level="1">disable-zlib-bundling.diff</Patch>
-
-          <!-- When missing packages are ready, this patch should be applied!
-          <Patch>deprecate-with-pisi.patch</Patch>
-          -->
-          <!-- Don't install .packlist or perllocal.pod for perl or vendor -->
-          <Patch level="1">gentoo/0006-gentoo_MakeMaker-delete__packlist.diff</Patch>
-
-          <Patch level="1">do_not_create_packlist_in_Module_Build.patch</Patch>
-
-          <!-- Update Compress-Raw-Bzip2 Module to 2.031 -->
-          <Patch level="1">bump_Compress-Raw-Bzip2_module_to_2.031.patch</Patch>
-
-          <!-- h2ph produces incorrect code in preamble, see [perl #74614] -->
-          <Patch level="1">perl-5.12.2-h2ph.patch</Patch>
-
-          <!-- PL_my_cxt_list was never freed and it leaks, see [perl #77352]-->
-          <Patch level="1">perl-5.12.1-fix_thread_leak.patch</Patch>
-
-          <!-- Apply the taint attribute to the return value upon processing tainted input
-          for lc, lcfirst, uc and ucfirst functions in Perl. CVE-2011-1487, pb #17819. -->
-          <Patch level="1">CVE-2011-1487.patch</Patch>
-
-          <!-- fix regexp crash in reg_numbered_buff_fetch CVE-2010-4777, pb #17573-->
-          <Patch>CVE-2010-4777.patch</Patch>
-
-        </Patches>
     </Source>
 
     <Package>
         <Name>perl-docs</Name>
         <PartOf>programming.language.perl</PartOf>
         <Summary>Documentation files for perl</Summary>
+        <Conflicts>
+            <Package releaseTo="43">perl</Package>
+        </Conflicts>
+        <Replaces>
+            <Package>perl-doc</Package>
+        </Replaces>
         <Files>
             <Path fileType="doc">/usr/share/doc/html</Path>
             <Path fileType="doc">/usr/share/doc/perl/html</Path>
@@ -81,6 +46,42 @@
             <Dependency>bzip2</Dependency>
             <Dependency versionFrom="1.8.3">gdbm</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <!-- These modules are included in perl core. -->
+            <Package>perl-Archive-Tar</Package>
+            <Package>perl-Attribute-Handlers</Package>
+            <Package>perl-CGI</Package>
+            <Package>perl-Class-ISA</Package>
+            <Package>perl-Compress-Raw-Zlib</Package>
+            <Package>perl-Compress-Zlib</Package>
+            <Package>perl-Digest-Base</Package>
+            <Package>perl-Digest-MD5</Package>
+            <Package>perl-Exporter</Package>
+            <Package>perl-ExtUtils-CBuilder</Package>
+            <Package>perl-ExtUtils-ParseXS</Package>
+            <Package>perl-File-Temp</Package>
+            <Package>perl-Getopt-Long</Package>
+            <Package>perl-IO-Compress-Base</Package>
+            <Package>perl-IO-Compress-Zlib</Package>
+            <Package>perl-IO-Zlib</Package>
+            <Package>perl-libnet</Package>
+            <Package>perl-Locale-Maketext-Simple</Package>
+            <Package>perl-Math-BigInt</Package>
+            <Package>perl-Math-Complex</Package>
+            <Package>perl-MIME-Base64</Package>
+            <Package>perl-Module-Pluggable</Package>
+            <Package>perl-PathTools</Package>
+            <Package>perl-Pod-Escapes</Package>
+            <Package>perl-Pod-Parser</Package>
+            <Package>perl-Pod-Simple</Package>
+            <Package>perl-Storable</Package>
+            <Package>perl-Sys-Syslog</Package>
+            <Package>perl-Test-Simple</Package>
+            <Package>perl-Text-Tabs+Wrap</Package>
+            <Package>perl-Time-HiRes</Package>
+            <Package>perl-Time-Local</Package>
+            <Package>perl-Time-Piece</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -88,11 +89,25 @@
         </Files>
         <AdditionalFiles>
             <!-- FIXME: Update perl version in target path  when Perl version changes! -->
-            <AdditionalFile owner="root" permission="0644" target="/usr/lib/perl5/vendor_perl/5.12.2/Turkish.pm">Turkish.pm</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/perl5/vendor_perl/5.16.1/Turkish.pm">Turkish.pm</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="45">
+            <Date>2012-09-06</Date>
+            <Version>5.16.1</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="44">
+            <Date>2012-06-27</Date>
+            <Version>5.14.1</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="43">
             <Date>2011-05-24</Date>
             <Version>5.12.2</Version>

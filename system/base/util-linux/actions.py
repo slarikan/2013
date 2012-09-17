@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="util-linux-ng-%s" % get.srcVERSION().replace("_","-")
+WorkDir="util-linux-%s" % get.srcVERSION().replace("_","-")
 
 def setup():
     shelltools.export("CFLAGS", "%s -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64" % get.CFLAGS())
@@ -20,12 +20,17 @@ def setup():
 
     options = "--bindir=/bin \
                --sbindir=/sbin \
-               --disable-login-utils \
                --disable-use-tty-group \
                --disable-makeinstall-chown \
                --disable-rpath \
+               --disable-sulogin \
+               --disable-su  \
+               --disable-utmpdump \
+               --disable-mountpoint \
+               --disable-login \
                --disable-static \
                --disable-wall"
+               
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 \
@@ -36,11 +41,10 @@ def setup():
                      --disable-partx \
                      --disable-raw \
                      --disable-write \
-                     --disable-libblkid \
                      --disable-mount \
                      --disable-fsck \
                      --disable-libmount \
-                     --without-audit"
+                     --with-audit=no"
 
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
 
@@ -67,7 +71,11 @@ def install():
     if get.buildTYPE() == "emul32":
         pisitools.domove("/emul32/lib32/libuuid.so", "/usr/lib32")
         pisitools.domove("/emul32/lib32/pkgconfig/uuid.pc", "/usr/lib32/pkgconfig")
+        pisitools.domove("/emul32/lib32/libblkid.so", "/usr/lib32")
+        pisitools.domove("/emul32/lib32/pkgconfig/blkid.pc", "/usr/lib32/pkgconfig")
         pisitools.removeDir("/emul32")
 
-    pisitools.dodoc("AUTHORS", "COPYING", "DEPRECATED", "README*", "TODO", "docs/*")
-    pisitools.insinto("/%s/%s" % (get.docDIR(), get.srcNAME()), "example.files")
+    #pisitools.doman("sys-utils/klogconsole.man")
+    pisitools.remove("/usr/share/man/man1/kill.1")
+    pisitools.dodoc("ABOUT-NLS", "AUTHORS", "ChangeLog", "COPYING", "README*")
+    pisitools.insinto("/%s/%s" % (get.docDIR(), get.srcNAME()), "Documentation")

@@ -12,15 +12,12 @@
         <IsA>library</IsA>
         <Summary>X.Org X11 library</Summary>
         <Description>Core X11 protocol client library.</Description>
-        <Archive sha1sum="2d9d38bfd7003ec60eea0b1999ab72cfd5fa3b90" type="tarbz2">mirrors://xorg/individual/lib/libX11-1.4.4.tar.bz2</Archive>
+        <Archive sha1sum="4ee6c6e1b3eb1aaa3f7402c90e2fa279bee5eda8" type="targz">http://cgit.freedesktop.org/xorg/lib/libX11/snapshot/libX11-1.5.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>xtrans</Dependency>
-            <Dependency>xorg-proto</Dependency>
             <Dependency>libxcb-devel</Dependency>
+            <Dependency releaseFrom="35">xorg-proto</Dependency>
+            <Dependency versionFrom="1.2.5">xtrans</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">dont-forward-keycode-0.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -28,6 +25,9 @@
         <RuntimeDependencies>
             <Dependency>libxcb</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="18">libX11-devel</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libX11*</Path>
             <Path fileType="data">/usr/lib/X11</Path>
@@ -41,9 +41,9 @@
         <PartOf>system.devel</PartOf>
         <Summary>Development files for X11 library</Summary>
         <RuntimeDependencies>
-            <Dependency>xorg-proto</Dependency>
-            <Dependency>libxcb-devel</Dependency>
             <Dependency release="current">libX11</Dependency>
+            <Dependency>libxcb-devel</Dependency>
+            <Dependency>xorg-proto</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/X11</Path>
@@ -62,8 +62,8 @@
             <Dependency>libxcb-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
-            <Dependency>libxcb-32bit</Dependency>
             <Dependency release="current">libX11</Dependency>
+            <Dependency>libxcb-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -71,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="32">
+            <Date>2012-08-23</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="31">
             <Date>2011-08-24</Date>
             <Version>1.4.3</Version>

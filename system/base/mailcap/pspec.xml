@@ -13,15 +13,19 @@
         <IsA>data</IsA>
         <Summary>Helper application and MIME type associations for file types</Summary>
         <Description>mailcap file is used by the metamail program. Metamail reads the mailcap file to determine how it should display non-text or multimedia material.</Description>
-        <Archive sha1sum="df234f2209d8c741b3d326d97781efce25a75c32" type="tarxz">https://fedorahosted.org/released/mailcap/mailcap-2.1.37.tar.xz</Archive>
+        <Archive sha1sum="6feb2e9938244fa7957fb787bb5e15e9fbffbeaf" type="tarxz">https://fedorahosted.org/released/mailcap/mailcap-2.1.40.tar.xz</Archive>
         <Patches>
-            <Patch level="1">sync-with-git-20110601.patch</Patch>
+            <!--<Patch level="1">sync-with-git-20110601.patch</Patch>-->
             <Patch level="1">extend-mailcap.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>mailcap</Name>
+        <Conflicts>
+            <Package releaseTo="167">baselayout</Package>
+            <Package releaseTo="2">metamail</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/etc</Path>
             <Path fileType="doc">/usr/share/doc</Path>

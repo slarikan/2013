@@ -61,6 +61,9 @@
             <Dependency>libidn</Dependency>
             <Dependency>openssl</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="5">traceroute</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/bin</Path>
             <Path fileType="executable">/usr/bin</Path>
@@ -90,6 +93,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-08-23</Date>
+            <Version>20101006</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2011-05-24</Date>
             <Version>20101006</Version>

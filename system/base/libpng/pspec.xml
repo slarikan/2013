@@ -12,22 +12,10 @@
         <IsA>library</IsA>
         <Summary>Portable Network Graphics library</Summary>
         <Description>The Portable Network Graphics (PNG) format was designed to replace the older and simpler GIF format and, to some extent, the much more complex TIFF format. Project's main aim is to concentrate on two major uses: the World Wide Web (WWW) and image-editing.</Description>
-        <Archive sha1sum="b4159fcdd3291a89b2b80cb332280136ed6f0bd7" type="tarbz2">mirrors://sourceforge/libpng/libpng-1.4.8.tar.bz2</Archive>
+        <Archive sha1sum="7ea36f6b26809cd1141c155feb2ad6c1af141702" type="tarxz">ftp://ftp.simplesystems.org/pub/png/src/libpng-1.5.12.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">pngconf-setjmp.patch</Patch>
-            <!-- APNG support
-                 http://littlesvr.ca/apng/
-                 http://hp.vector.co.jp/authors/VA013651/freeSoftware/apng.html
-                 http://sourceforge.net/projects/libpng-apng/ <- use this one
-            -->
-            <Patch level="1">apng.patch</Patch>
-            <!--
-            <Patch level="1">CVE-2011-2501.patch</Patch>
-            -->
-        </Patches>
     </Source>
 
     <Package>
@@ -75,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="31">
+            <Date>2012-08-23</Date>
+            <Version>1.5.12</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="30" type="security">
             <Date>2011-07-29</Date>
             <Version>1.4.8</Version>

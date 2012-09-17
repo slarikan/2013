@@ -21,6 +21,7 @@
             <Patch level="1">udhcp-rootpath-rq.patch</Patch>
             <Patch level="1">busybox-1.20.2-kernel_ver.patch</Patch>
             <Patch level="1">suppress-job-control-warning.patch</Patch>
+            <Patch level="1">fix-include.patch</Patch>
         </Patches>
     </Source>
 

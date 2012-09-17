@@ -26,7 +26,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")
+    pisitools.dodoc("AUTHORS", "COPYING", "NEWS", "README")
 
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/usr/lib32/X11")

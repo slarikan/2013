@@ -5,8 +5,8 @@
         <Name>bzip2</Name>
         <Homepage>http://www.bzip.org/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>S.Çağlar Onur</Name>
+            <Email>caglar@pardus.org.tr</Email>
         </Packager>
         <License>BZIP2</License>
         <IsA>app:console</IsA>
@@ -31,26 +31,23 @@
     <Package>
         <Name>bzip2</Name>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/bin</Path>
+            <Path fileType="library">/lib</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>bzip2-devel</Name>
-        <Summary>Development files for bzip2</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">bzip2</Dependency>
-        </RuntimeDependencies>
-        <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2010-10-11</Date>
+            <Version>1.0.6</Version>
+            <Comment>V.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2010-10-11</Date>
             <Version>1.0.6</Version>

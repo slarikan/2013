@@ -8,44 +8,29 @@
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Packager>
-        <License>GPLv3+</License>
+        <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>The standard GNU Bourne again shell</Summary>
         <Description>Bash is the GNU Project's Bourne Again SHell, a complete implementation of the IEEE POSIX and Open Group shell specification with interactive command line editing, csh-like features such as history substitution.</Description>
         <Archive sha1sum="487840ab7134eb7901fbb2e49b0ee3d22de15cb8" type="targz">mirrors://gnu/bash/bash-4.2.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>texinfo</Dependency>
             <Dependency>ncurses-devel</Dependency>
-            <Dependency>gettext-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Official Patches ftp://ftp.cwru.edu/pub/bash/bash-4.2-patches/ -->
-            <Patch level="0">official-patches/bash42-001</Patch>
-            <Patch level="0">official-patches/bash42-002</Patch>
-            <Patch level="0">official-patches/bash42-003</Patch>
-            <Patch level="0">official-patches/bash42-004</Patch>
-            <Patch level="0">official-patches/bash42-005</Patch>
-            <Patch level="0">official-patches/bash42-006</Patch>
-            <Patch level="0">official-patches/bash42-007</Patch>
-            <Patch level="0">official-patches/bash42-008</Patch>
-            <Patch level="0">official-patches/bash42-009</Patch>
-            <Patch level="0">official-patches/bash42-010</Patch>
-            <Patch level="0">official-patches/bash42-011</Patch>
-            <Patch level="0">official-patches/bash42-012</Patch>
-            <Patch level="0">official-patches/bash42-013</Patch>
-            <Patch level="0">official-patches/bash42-014</Patch>
-            <Patch level="0">official-patches/bash42-015</Patch>
-            <Patch level="0">official-patches/bash42-016</Patch>
-            <Patch level="0">official-patches/bash42-017</Patch>
-            <Patch level="0">official-patches/bash42-018</Patch>
-            <Patch level="0">official-patches/bash42-019</Patch>
-            <Patch level="0">official-patches/bash42-020</Patch>
+            <!-- Official Patches ftp://ftp.cwru.edu/pub/bash/bash-4.1-patches/ -->
+            <!--<Patch>official-patches/bash41-001</Patch>
+            <Patch>official-patches/bash41-002</Patch>
+            <Patch>official-patches/bash41-003</Patch>
+            <Patch>official-patches/bash41-004</Patch>
+            <Patch>official-patches/bash41-005</Patch>
+            <Patch>official-patches/bash41-006</Patch>
+            <Patch>official-patches/bash41-007</Patch> -->
 
             <!-- Fedora patches -->
             <Patch level="1">fedora/bash-2.02-security.patch</Patch>
             <Patch level="1">fedora/bash-2.03-paths.patch</Patch>
             <Patch level="1">fedora/bash-2.03-profile.patch</Patch>
-            <Patch level="1">fedora/bash-2.05a-interpreter.patch</Patch>
+            <!--<Patch level="1">fedora/bash-2.05a-interpreter.patch</Patch>-->
             <Patch level="1">fedora/bash-2.05b-debuginfo.patch</Patch>
             <Patch level="1">fedora/bash-2.05b-manso.patch</Patch>
             <Patch level="1">fedora/bash-2.05b-pgrp_sync.patch</Patch>
@@ -57,12 +42,9 @@
             <Patch level="1">fedora/bash-infotags.patch</Patch>
             <Patch level="1">fedora/bash-requires.patch</Patch>
             <Patch level="1">fedora/bash-setlocale.patch</Patch>
-            <Patch level="1">fedora/bash-tty-tests.patch</Patch>
-            <Patch level="1">fedora/bash-4.0-nobits.patch</Patch>
+            <!--<Patch level="1">fedora/bash-tty-tests.patch</Patch>
+            <Patch level="1">fedora/bash-4.0-nobits.patch</Patch>-->
             <Patch level="1">fedora/bash-4.1-examples.patch</Patch>
-            <Patch level="1">fedora/bash-4.1-broken_pipe.patch</Patch>
-            <Patch level="1">fedora/bash-4.2-rc2-logout.patch</Patch>
-            <Patch level="1">fedora/bash-4.2-coverity.patch</Patch>
 
             <!-- Mandriva patches -->
             <Patch level="1">mandriva/bash-4.0-profile.patch</Patch>
@@ -73,7 +55,11 @@
             <Patch level="1">mandriva/bash-3.2-lzma-copmpletion.patch</Patch>
             <Patch level="1">mandriva/bash-3.2-format-security.patch</Patch>
 
-            <Patch level="1">bash-4.1-fix-command-not-found-glitch.patch</Patch>
+            <!--<Patch level="1">bash-4.1-fix-command-not-found-glitch.patch</Patch>-->
+
+            <!-- honeypot
+            <Patch level="1">bash-3.1-bash-logger.patch</Patch>
+            -->
         </Patches>
     </Source>
 
@@ -99,11 +85,11 @@
 
     <History>
         <Update release="25">
-            <Date>2011-12-14</Date>
+            <Date>2012-08-23</Date>
             <Version>4.2</Version>
-            <Comment>Version bump to 4.2</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="24">
             <Date>2010-10-18</Date>

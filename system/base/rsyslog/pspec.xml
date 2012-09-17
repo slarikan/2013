@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>Enhanced system logging and kernel message trapping daemons</Summary>
         <Description>rsyslog is an enhanced multi-threaded syslogd supporting, among others, MySQL, syslog/tcp, RFC 3195, permitted sender lists, filtering on any message part, and fine grain output format control. It is quite compatible with stock sysklogd and can be used as a drop-in replacement.</Description>
-        <Archive sha1sum="1afe39077253dc9f636f676e8374d09a101a9c94" type="targz">http://www.rsyslog.com/files/download/rsyslog/rsyslog-5.8.6.tar.gz</Archive>
+        <Archive sha1sum="8cc93749654faec36b245fa1ec9625d8ad7610d7" type="targz">http://www.rsyslog.com/files/download/rsyslog/rsyslog-5.10.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>zlib-devel</Dependency>
         </BuildDependencies>
@@ -23,8 +23,11 @@
         <RuntimeDependencies>
             <Dependency>zlib</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>sysklogd</Package>
+        </Replaces>
         <Files>
-            <Path fileType="executable">/usr/sbin/rsyslogd</Path>
+            <Path fileType="executable">/sbin/rsyslogd</Path>
             <Path fileType="library">/usr/lib/rsyslog</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -39,17 +42,17 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/rsyslog">rsyslog.sysconfig</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-            <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="service.py">System.Service</COMAR>
         </Provides>
     </Package>
 
     <History>
         <Update release="6">
-            <Date>2011-11-04</Date>
-            <Version>5.8.6</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Date>2012-08-23</Date>
+            <Version>5.10.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="5">
             <Date>2011-01-07</Date>
