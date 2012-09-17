@@ -27,7 +27,7 @@ def build():
 def install():
     autotools.install()
 
-    pisitools.domove("/usr/bin/uuencode", "/usr/bin", "gmime-uuencode")
-    pisitools.domove("/usr/bin/uudecode", "/usr/bin", "gmime-uudecode")
+    #pisitools.domove("/usr/bin/uuencode", "/usr/bin", "gmime-uuencode")
+    #pisitools.domove("/usr/bin/uudecode", "/usr/bin", "gmime-uudecode")
 
     pisitools.dodoc("ChangeLog", "COPYING", "README", "TODO")

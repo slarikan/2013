@@ -5,17 +5,17 @@
         <Name>gmime</Name>
         <Homepage>http://spruce.sourceforge.net/gmime</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Utilities for creating and parsing messages using MIME</Summary>
         <Description>gmime contains gmime-uudecode and gmime-uuencode and will allow you to manipulate MIME messages. These utilities can also be used instead of uudecode and uuencode from the sharutils package.</Description>
-        <Archive sha1sum="67f4c5ef685b2a6a52bf3cb188b2fc683a1153eb" type="tarbz2">mirrors://gnome/gmime/2.5/gmime-2.5.4.tar.bz2</Archive>
+        <Archive sha1sum="1f5d8f38769d6057b3e40e8d783ecc62459b1906" type="tarxz">ftp://ftp.gnome.org/pub/GNOME/sources/gmime/2.6/gmime-2.6.10.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mono-devel</Dependency>
-            <Dependency>gtk-sharp</Dependency>
+            <Dependency>gtk-sharp-devel</Dependency>
             <Dependency>gpgme-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -51,6 +51,9 @@
         <RuntimeDependencies>
             <Dependency release="current">gmime</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="13">gmime</Package>
+        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
@@ -66,11 +69,26 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/gapi-2.0/</Path>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-09-03</Date>
+            <Version>2.6.10</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="15">
+            <Date>2012-09-03</Date>
+            <Version>2.5.10</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2011-01-04</Date>
             <Version>2.5.4</Version>
