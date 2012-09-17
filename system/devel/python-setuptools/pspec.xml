@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python setuptools</Summary>
         <Description>python-setuptools is a collection of enhancements to the Python distutils that allow you to more easily build and distribute Python packages, especially ones that have dependencies on other packages.</Description>
-        <Archive sha1sum="0670bdbba2be6892f67a6f946259776fa8331525" type="targz">http://pypi.python.org/packages/source/d/distribute/distribute-0.6.24.tar.gz</Archive>
+        <Archive sha1sum="709bd97d46050d69865d4b588c7707768dfe6711" type="targz">http://pypi.python.org/packages/source/d/distribute/distribute-0.6.28.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+      <Update release="12">
+            <Date>2012-08-19</Date>
+            <Version>0.6.28</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ramazan Utku</Name>
+            <Email>ramazanutku@gmail.com</Email>
+        </Update>
         <Update release="11">
             <Date>2011-12-09</Date>
             <Version>0.6.24</Version>

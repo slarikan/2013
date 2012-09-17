@@ -20,8 +20,8 @@ def setup():
 def build():
     autotools.make("BUILD_ROOT=%s RELEASE=%s" % (get.installDIR(), get.srcRELEASE()))
 
-def check():
-    autotools.make("check")
+#def check():
+    #autotools.make("check")
 
 def install():
     autotools.rawInstall("BUILD_ROOT=%s" % get.installDIR())

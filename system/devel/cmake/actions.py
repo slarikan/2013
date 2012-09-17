@@ -9,7 +9,7 @@ from pisi.actionsapi import get
 
 def setup():
     # Fix sandbox violation
-    shelltools.export("BZR_HOME", get.workDIR())
+    #shelltools.export("BZR_HOME", get.workDIR())
 
     autotools.rawConfigure("--parallel=%s \
                             --system-libs \

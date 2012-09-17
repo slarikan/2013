@@ -1,11 +1,8 @@
 Index: boehm-gc/finalize.c
 ===================================================================
-RCS file: /cvs/gcc/gcc/boehm-gc/finalize.c,v
-retrieving revision 1.11.28.1
-diff -u -p -r1.11.28.1 finalize.c
---- boehm-gc/finalize.c	24 Jan 2004 11:05:54 -0000	1.11.28.1
-+++ boehm-gc/finalize.c	9 Feb 2004 16:07:25 -0000
-@@ -164,6 +164,7 @@ signed_word * log_size_ptr;
+--- boehm-gc/finalize.c.orig	2007-03-11 13:17:59.000000000 +0100
++++ boehm-gc/finalize.c	2010-07-01 16:26:16.000000000 +0200
+@@ -165,6 +165,7 @@ signed_word * log_size_ptr;
      int index;
      struct disappearing_link * new_dl;
      DCL_LOCK_STATE;
@@ -13,7 +10,7 @@ diff -u -p -r1.11.28.1 finalize.c
      
      if ((word)link & (ALIGNMENT-1))
      	ABORT("Bad arg to GC_general_register_disappearing_link");
-@@ -176,7 +177,7 @@ signed_word * log_size_ptr;
+@@ -177,7 +178,7 @@ signed_word * log_size_ptr;
  #	ifndef THREADS
  	    DISABLE_SIGNALS();
  #	endif
@@ -22,7 +19,7 @@ diff -u -p -r1.11.28.1 finalize.c
      		      &log_dl_table_size);
  #	ifdef CONDPRINT
  	  if (GC_print_stats) {
-@@ -339,6 +340,7 @@ finalization_mark_proc * mp;
+@@ -348,6 +349,7 @@ finalization_mark_proc * mp;
      struct finalizable_object *new_fo;
      hdr *hhdr;
      DCL_LOCK_STATE;
@@ -30,7 +27,7 @@ diff -u -p -r1.11.28.1 finalize.c
  
  #   ifdef THREADS
  	DISABLE_SIGNALS();
-@@ -349,7 +351,7 @@ finalization_mark_proc * mp;
+@@ -358,7 +360,7 @@ finalization_mark_proc * mp;
  #	ifndef THREADS
      	    DISABLE_SIGNALS();
  #	endif

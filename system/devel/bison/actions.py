@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
+# Copyright 2005-2008 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -9,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-nls")
+    autotools.configure()
 
 def build():
     autotools.make()
@@ -20,9 +21,10 @@ def check():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.remove("/usr/bin/yacc")
-    pisitools.remove("/usr/share/man/man1/yacc.1")
-    pisitools.remove("/usr/share/bison/README")
+    #pisitools.rename("/usr/bin/yacc", "yacc.bison") 
+    #some applications does not find /usr/bin/yacc so, let's dosym instead od rename
+    pisitools.dosym("/usr/bin/yacc", "yacc.bison") 
+    pisitools.rename("/usr/share/man/man1/yacc.1", "yacc.bison.1")
 
     pisitools.removeDir("/usr/lib/")
 

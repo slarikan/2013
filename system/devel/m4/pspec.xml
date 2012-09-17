@@ -15,10 +15,12 @@
         <Archive sha1sum="44b3ed8931f65cdab02aee66ae1e49724d2551a4" type="targz">mirrors://gnu/m4/m4-1.4.16.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gettext-devel</Dependency>
-            <Dependency>libsigsegv-devel</Dependency>
+            <Dependency>libsigsegv</Dependency>
         </BuildDependencies>
-        <Patches>
+	<Patches>
             <Patch level="1">m4-1.4.16-readlink-einval.patch</Patch>
+	    <Patch level="1">m4-1.4.16-fix-gets-removal.patch</Patch>
+	    
         </Patches>
     </Source>
 
@@ -36,12 +38,12 @@
     </Package>
 
     <History>
-        <Update release="12">
-            <Date>2011-12-09</Date>
+       <Update release="12">
+            <Date>2012-07-12</Date>
             <Version>1.4.16</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Comment>New toolchain</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
         </Update>
         <Update release="11">
             <Date>2010-10-11</Date>

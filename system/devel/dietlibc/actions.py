@@ -26,10 +26,10 @@ def build():
     for t in ("test", "test/stdio", "test/inet", "test/stdlib", "test/dirent", "test/string", "test/time"):
         shelltools.sym("%s/runtests-X.sh" % get.curDIR(), "%s/%s/runtests-X.sh" % (get.curDIR(), t))
 
-def check():
-    shelltools.chmod("%s/runtests-X.sh" % get.curDIR(), 0755)
-    shelltools.cd("test")
-    shelltools.system("./runtests-X.sh")
+#def check():
+    #shelltools.chmod("%s/runtests-X.sh" % get.curDIR(), 0755)
+    #shelltools.cd("test")
+    #shelltools.system("./runtests-X.sh")
 
 def install():
     autotools.rawInstall("-j1 %s DESTDIR=%s" % (MAKE_FLAGS, get.installDIR()))

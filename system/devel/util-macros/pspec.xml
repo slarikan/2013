@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org X11 Autotools macros</Summary>
         <Description>X.Org X11 autotools macros are required for building the various packages that comprise the X Window System.</Description>
-        <Archive sha1sum="1c08e52ec492df85be49a3b157ec39f7d4e52fa4" type="tarbz2">mirrors://xorg/individual/util/util-macros-1.16.0.tar.bz2</Archive>
+        <Archive sha1sum="570783cbfb7ad44de34a939455eb645856361f28" type="targz">http://xorg.freedesktop.org/releases/individual/util/util-macros-1.17.tar.gz</Archive>
         <Patches>
             <Patch level="1">doc.patch</Patch>
         </Patches>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="21">
+            <Date>2012-08-19</Date>
+            <Version>1.17</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="20">
             <Date>2011-12-09</Date>
             <Version>1.16.0</Version>

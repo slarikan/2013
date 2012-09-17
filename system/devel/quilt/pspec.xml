@@ -12,12 +12,14 @@
         <IsA>app:console</IsA>
         <Summary>Scripts for working with series of patches</Summary>
         <Description>quilt allow one to manage a series of patches by keeping track of the changes each patch makes.</Description>
-        <Archive sha1sum="1e7c4e6cd62ae981332bd10e9ebb732dd876cddb" type="targz">http://download.savannah.gnu.org/releases/quilt/quilt-0.50.tar.gz</Archive>
+        <Archive sha1sum="c93c79598c55ba288f60babcc74a9fc9b04404b6" type="targz">http://download.savannah.gnu.org/releases/quilt/quilt-0.60.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gawk</Dependency>
+            <Dependency>gettext</Dependency>
+            <Dependency>util-linux</Dependency>
+        </BuildDependencies>
         <Patches>
             <Patch level="1">suse/expand.diff</Patch>
-            <Patch level="1">suse/docdir.diff</Patch>
-
-            <Patch level="1">fix-completion-extension.patch</Patch>
             <Patch level="1">dont-pass-unified-to-patch.patch</Patch>
         </Patches>
     </Source>
@@ -39,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-05-30</Date>
+            <Version>0.60</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2011-12-09</Date>
             <Version>0.50</Version>

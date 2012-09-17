@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Groovy little assembler</Summary>
         <Description>NASM is the Netwide Assembler, a free portable assembler for the Intel 80x86 microprocessor series.</Description>
-        <Archive sha1sum="ca57a7454b29e18c64018e49cdf5c832937497ab" type="tarbz2">http://www.nasm.us/pub/nasm/releasebuilds/2.09.10/nasm-2.09.10.tar.bz2</Archive>
+        <Archive sha1sum="97299ff4e484b699a11201e035d30af515722f38" type="tarxz">http://www.nasm.us/pub/nasm/releasebuilds/2.10.05/nasm-2.10.05.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>texinfo</Dependency>
         </BuildDependencies>
@@ -28,12 +28,19 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-09-15</Date>
+            <Version>2.10.05</Version>
+            <Comment>Bump</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="18">
-            <Date>2011-12-09</Date>
-            <Version>2.09.10</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Date>2012-07-14</Date>
+            <Version>2.10.01</Version>
+            <Comment>Bump</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
         </Update>
         <Update release="17">
             <Date>2010-11-09</Date>

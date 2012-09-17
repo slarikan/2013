@@ -1,7 +1,7 @@
-diff -Nur automake-1.11-old/lib/am/python.am automake-1.11/lib/am/python.am
---- automake-1.11-old/lib/am/python.am	2009-05-17 16:19:30.000000000 +0300
-+++ automake-1.11/lib/am/python.am	2009-09-15 21:33:54.056320691 +0300
-@@ -48,16 +48,7 @@
+diff -Nuar automake-1.11.6.old//lib/am/python.am automake-1.11.6/lib/am/python.am
+--- automake-1.11.6.old//lib/am/python.am	2012-07-08 09:40:09.000000000 +0000
++++ automake-1.11.6/lib/am/python.am	2012-07-13 22:34:05.499316140 +0000
+@@ -52,13 +52,7 @@
  ## Don't perform translation, since script name is important.
  	  echo " $(INSTALL_DATA) $$files '$(DESTDIR)$(%NDIR%dir)'"; \
  	  $(INSTALL_DATA) $$files "$(DESTDIR)$(%NDIR%dir)" || exit $$?; \
@@ -9,28 +9,22 @@ diff -Nur automake-1.11-old/lib/am/python.am automake-1.11/lib/am/python.am
 -## Byte-compile must be done at install time, since file times are
 -## encoded in the actual files.
 -	if test -n "$$dlist"; then \
--	  if test -z "$(DESTDIR)"; then \
--	    PYTHON=$(PYTHON) $(py_compile) --basedir "$(%NDIR%dir)" $$dlist; \
--	  else \
--	    PYTHON=$(PYTHON) $(py_compile) --destdir "$(DESTDIR)" --basedir "$(%NDIR%dir)" $$dlist; \
--	  fi; \
+-	  $(am__py_compile) --destdir "$(DESTDIR)" \
+-	                    --basedir "$(%NDIR%dir)" $$dlist; \
 -	else :; fi
 +	done || exit $$?;
  else !%?BASE%
  	@list='$(%DIR%_PYTHON)'; test -n "$(%NDIR%dir)" || list=; \
- 	$(am__nobase_list) | while read dir files; do \
-@@ -73,15 +64,6 @@
+ 	if test -n "$$list"; then \
+@@ -78,12 +72,6 @@
  ## Don't perform translation, since script name is important.
  	    echo " $(INSTALL_DATA) $$xfiles '$(DESTDIR)$(%NDIR%dir)/$$dir'"; \
  	    $(INSTALL_DATA) $$xfiles "$(DESTDIR)$(%NDIR%dir)/$$dir" || exit $$?; }; \
 -## Byte-compile must be done at install time, since file times are
 -## encoded in the actual files.
 -	  if test -n "$$dlist"; then \
--	    if test -z "$(DESTDIR)"; then \
--	      PYTHON=$(PYTHON) $(py_compile) --basedir "$(%NDIR%dir)" $$dlist; \
--	    else \
--	      PYTHON=$(PYTHON) $(py_compile) --destdir "$(DESTDIR)" --basedir "$(%NDIR%dir)" $$dlist; \
--	    fi; \
+-	    $(am__py_compile) --destdir "$(DESTDIR)" \
+-	                      --basedir "$(%NDIR%dir)" $$dlist; \
 -	  else :; fi \
  	done
  endif !%?BASE%

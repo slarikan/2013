@@ -1,7 +1,7 @@
 Index: gcc/ginclude/uchar.h
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ gcc/ginclude/uchar.h	2010-08-31 12:13:18.000000000 +0200
++++ gcc/ginclude/uchar.h	2011-11-09 12:00:01.000000000 +0100
 @@ -0,0 +1,38 @@
 +/* Copyright (C) 2008 Free Software Foundation, Inc.
 +
@@ -43,13 +43,13 @@ Index: gcc/ginclude/uchar.h
 +#endif
 Index: gcc/Makefile.in
 ===================================================================
---- gcc/Makefile.in.orig	2010-08-31 12:13:15.000000000 +0200
-+++ gcc/Makefile.in	2010-08-31 12:13:18.000000000 +0200
-@@ -364,6 +364,7 @@ USER_H = $(srcdir)/ginclude/float.h \
+--- gcc/Makefile.in.orig	2011-11-09 11:59:58.000000000 +0100
++++ gcc/Makefile.in	2011-11-09 12:00:01.000000000 +0100
+@@ -375,6 +375,7 @@ USER_H = $(srcdir)/ginclude/float.h \
  	 $(srcdir)/ginclude/stddef.h \
  	 $(srcdir)/ginclude/varargs.h \
  	 $(srcdir)/ginclude/stdfix.h \
 +	 $(srcdir)/ginclude/uchar.h \
+ 	 $(srcdir)/ginclude/stdnoreturn.h \
+ 	 $(srcdir)/ginclude/stdalign.h \
  	 $(EXTRA_HEADERS)
- 
- USER_H_INC_NEXT_PRE = @user_headers_inc_next_pre@

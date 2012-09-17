@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>X.Org trans library</Summary>
         <Description>xtrans includes a number of routines to make X implementations transport-independent.</Description>
-        <Archive sha1sum="99f019a6e6d4d2b8274c4a27f9c8482c7fc64e85" type="tarbz2">mirrors://xorg/individual/lib/xtrans-1.2.6.tar.bz2</Archive>
+        <Archive sha1sum="b6ed421edf577816f6e641e1846dc0bff337676c" type="tarbz2">mirrors://xorg/individual/lib/xtrans-1.2.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>xorg-proto</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">xtrans-1.0.3-avoid-gethostname.patch</Patch>
+            <!--Patch level="1">xtrans-1.0.3-avoid-gethostname.patch</Patch-->
         </Patches>
     </Source>
 
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-08-19</Date>
+            <Version>1.2.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="15">
             <Date>2010-11-30</Date>
             <Version>1.2.6</Version>

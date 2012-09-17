@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>High precision and correct rounding library</Summary>
         <Description>libmpc is a library for arithmetic of complex numbers with arbitrarily high precision and correct rounding.</Description>
-        <Archive sha1sum="229722d553030734d49731844abfef7617b64f1a" type="targz">http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz</Archive>
+        <Archive sha1sum="8c7e19ad0dd9b3b5cc652273403423d6cf0c5edf" type="targz">http://www.multiprecision.org/mpc/download/mpc-1.0.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gmp-devel</Dependency>
             <Dependency>mpfr-devel</Dependency>
@@ -45,11 +45,18 @@
 
     <History>
         <Update release="4">
-            <Date>2011-12-09</Date>
+            <Date>2012-09-09</Date>
+            <Version>1.0.1</Version>
+            <Comment>New toolchain</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
+        <Update release="4">
+            <Date>2010-10-11</Date>
             <Version>0.9</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Comment>New toolchain</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
         </Update>
         <Update release="3">
             <Date>2010-10-11</Date>
