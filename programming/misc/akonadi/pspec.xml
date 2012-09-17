@@ -3,40 +3,40 @@
 <PISI>
     <Source>
         <Name>akonadi</Name>
-        <Homepage>http://pim.kde.org/akonadi/</Homepage>
+        <Homepage>http://pim.kde.org/akonadi</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <Icon>akonadi</Icon>
         <IsA>library</IsA>
         <Summary>PIM (Personal Information Management) Storage Service</Summary>
         <Description>akonadi is an extensible cross-desktop storage service for PIM data and meta data providing concurrent read, write, and query access.</Description>
-        <Archive sha1sum="37764e0e5bc4769ce691e32a771966278e6c1084" type="tarbz2">http://download.akonadi-project.org/akonadi-1.5.3.tar.bz2</Archive>
+        <Archive sha1sum="82085e6c528daa042a17cc74e5c2a4722a04480d" type="tarbz2">http://download.kde.org/stable/akonadi/src/akonadi-1.8.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt-sql-mysql</Dependency>
-            <Dependency>mysql-server</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.0">qt-sql-mysql</Dependency>
+            <Dependency versionFrom="2.7.6">soprano-devel</Dependency>
+            <Dependency versionFrom="0.90">shared-mime-info</Dependency>
             <Dependency releaseFrom="47">mysql-client</Dependency>
-            <Dependency versionFrom="0.20">shared-mime-info</Dependency>
+            <Dependency>mysql-server</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>automoc4</Dependency>
             <Dependency>boost-devel</Dependency>
-            <Dependency versionFrom="2.4.1">soprano-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">akonadi-1.1.1-mysql_conf.patch</Patch>
+            <!--Patch level="1">akonadi-cleanup_orphan_resources.patch</Patch-->
         </Patches>
     </Source>
 
     <Package>
         <Name>akonadi</Name>
+        <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt-sql-mysql</Dependency>
-            <Dependency versionFrom="0.20">shared-mime-info</Dependency>
-            <Dependency>libxslt</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency versionFrom="4.8.0">qt-sql-mysql</Dependency>
+            <Dependency versionFrom="0.90">shared-mime-info</Dependency>
             <!-- 
             http://techbase.kde.org/Projects/PIM/Akonadi#Can_Akonadi_use_a_normal_MySQL_server_running_on_my_system.3F
             http://dot.kde.org/1209500572/1209540984/
@@ -44,15 +44,16 @@
             <Dependency>mysql-server</Dependency>
             <!-- mysql_upgrade is needed -->
             <Dependency releaseFrom="47">mysql-client</Dependency>
+            <Dependency versionFrom="2.7.6">soprano</Dependency>
             <Dependency>boost</Dependency>
-            <Dependency versionFrom="2.4.1">soprano</Dependency>
+            <Dependency>libxslt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/akonadi</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="library">/usr/qt/4/plugins</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/mime</Path>
             <Path fileType="doc">/usr/share/doc/</Path>
         </Files>
     </Package>
@@ -72,6 +73,20 @@
     </Package>
 
     <History>
+        <Update release="21">
+            <Date>2012-08-20</Date>
+            <Version>1.8.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="20">
+            <Date>2012-03-07</Date>
+            <Version>1.7.2</Version>
+            <Comment>For KDE4.8</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="19">
             <Date>2011-05-22</Date>
             <Version>1.5.3</Version>
