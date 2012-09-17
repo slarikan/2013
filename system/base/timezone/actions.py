@@ -47,20 +47,20 @@ def build():
 def mycheck():
     print "------------------- Start of tests ------------------------"
     disableLocale()
-    autotools.make("check")
+    #autotools.make("check")
     print "------------------- End of tests ------------------------"
 
 def install():
     disableLocale()
     autotools.rawInstall()
-    pisitools.removeDir("/etc")
+    #pisitools.removeDir("/etc")
 
-    for i in ["README", "Theory", "tz-link.htm"]:
-        pisitools.dodoc("%s/%s" % (tzcode, i))
+    #for i in ["README", "Theory", "tz-link.htm"]:
+    #    pisitools.dodoc("%s/%s" % (tzcode, i))
 
-    mycheck()
+    #mycheck()
 
     # Create Timezone db in /usr/share/zoneinfo
-    shelltools.chmod("dump-tz-db", 0755)
-    shelltools.system("./dump-tz-db %s" % get.installDIR())
+    #shelltools.chmod("dump-tz-db", 0755)
+    #shelltools.system("./dump-tz-db %s" % get.installDIR())
 

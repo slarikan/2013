@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>PolicyKit Authorization Framework</Summary>
         <Description>polkit is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes.</Description>
-        <Archive sha1sum="62907e1c9ffc45a8cd5f2cec2b5eabb168551f0e" type="targz">http://hal.freedesktop.org/releases/polkit-0.102.tar.gz</Archive>
+        <Archive sha1sum="d20aa07971226c86eafa4b8fd9f01d6880927e63" type="targz">http://www.freedesktop.org/software/polkit/releases/polkit-0.107.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>pam-devel</Dependency>
             <Dependency>dbus-devel</Dependency>
@@ -23,8 +23,8 @@
             <Dependency>dbus-glib-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">disable-docs.patch</Patch>
-            <Patch level="1">include-root-user.patch</Patch>
+            <!--Patch level="1">disable-docs.patch</Patch-->
+            <!--Patch level="1">include-root-user.patch</Patch-->
 
             <!-- Patch for getting action message and desc. in system locale when GObject API is used
             http://lists.freedesktop.org/archives/polkit-devel/2011-January/000338.html -->
@@ -86,6 +86,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-15</Date>
+            <Version>0.107</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="8" type="security">
             <Date>2011-10-20</Date>
             <Version>0.102</Version>

@@ -1,17 +1,16 @@
-Index: polkit-0.96/configure.ac
-===================================================================
---- polkit-0.96.orig/configure.ac
-+++ polkit-0.96/configure.ac
-@@ -45,8 +45,6 @@ AC_PATH_PROG([XSLTPROC], [xsltproc])
+diff -ur apolkit-0.104/configure.ac polkit-0.104/configure.ac
+--- apolkit-0.104/configure.ac	2012-01-03 18:25:49.000000000 +0200
++++ polkit-0.104/configure.ac	2012-09-16 03:28:48.620788336 +0300
+@@ -48,7 +48,7 @@
  fi
  AM_CONDITIONAL(MAN_PAGES_ENABLED, test x$enable_man_pages = xyes)
  
 -GTK_DOC_CHECK([1.3])
--
++
+ 
  #### gcc warning flags
  
- if test "x$GCC" = "xyes"; then
-@@ -435,11 +433,6 @@ src/polkitd/Makefile
+@@ -445,11 +445,6 @@
  src/programs/Makefile
  src/examples/Makefile
  src/nullbackend/Makefile
@@ -21,17 +20,17 @@ Index: polkit-0.96/configure.ac
 -docs/polkit/Makefile
 -docs/man/Makefile
  po/Makefile.in
- ])
- 
-Index: polkit-0.96/Makefile.am
-===================================================================
---- polkit-0.96.orig/Makefile.am
-+++ polkit-0.96/Makefile.am
-@@ -1,6 +1,6 @@
- ## Process this file with automake to produce Makefile.in
- 
--SUBDIRS = actions data src docs po
-+SUBDIRS = actions data src po
- 
- NULL =
- 
+ test/Makefile
+ test/polkit/Makefile
+diff -ur apolkit-0.104/Makefile.in polkit-0.104/Makefile.in
+--- apolkit-0.104/Makefile.in	2012-01-03 18:41:45.000000000 +0200
++++ polkit-0.104/Makefile.in	2012-09-16 03:29:21.560609886 +0300
+@@ -282,7 +282,7 @@
+ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-SUBDIRS = actions data src docs po test
++SUBDIRS = actions data src po test
+ NULL = 
+ EXTRA_DIST = \
+ 	HACKING 		\
