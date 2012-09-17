@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Implementation of the Open Collaboration Services API</Summary>
         <Description>attica is a Qt library that implements the Open Collaboration Services API version 1.4 of freedesktop.org.</Description>
-        <Archive sha1sum="417de33410b58a1f09647835e4ebb476fbdca9d7" type="tarbz2">mirrors://kde/stable/attica/attica-0.4.0.tar.bz2</Archive>
+        <Archive sha1sum="f4962636ec9282c32c4ceaec0c85f92ca5102b60" type="tarbz2">mirrors://kde/stable/attica/attica-0.4.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.1">qt-devel</Dependency>
         </BuildDependencies>
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-05-26</Date>
+            <Version>0.4.1</Version>
+            <Comment>Version bump to 0.4.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="12">
             <Date>2012-05-26</Date>
             <Version>0.4.0</Version>
