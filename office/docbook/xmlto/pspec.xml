@@ -19,7 +19,7 @@
             <Dependency releaseFrom="3">docbook-xml</Dependency>
         </BuildDependencies>
         <Patches>
-           <Patch level="1">xmlto-0.0.22-format_fo_passivetex_check.patch</Patch>
+           <!--Patch level="1">xmlto-0.0.22-format_fo_passivetex_check.patch</Patch-->
            <!--Patch level="1">xmlto-0.0.23-Lchapterpassivetex.patch</Patch-->
         </Patches>
     </Source>
@@ -42,13 +42,13 @@
     </Package>
 
     <History>
-        <Update release="10">
-            <Date>2012-09-12</Date>
+        <Update release="9">
+            <Date>2012-09-17</Date>
             <Version>0.0.25</Version>
-            <Comment>Version bump</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2011-06-01</Date>
             <Version>0.0.23</Version>
