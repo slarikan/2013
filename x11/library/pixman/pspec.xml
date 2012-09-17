@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Pixel manipulation library</Summary>
         <Description>Pixman contains lowlevel pixel manipulation routines.</Description>
-        <Archive sha1sum="d24ea233755d7dce9f0d93136ad99fba8d4e4fa0" type="tarbz2">mirrors://xorg/individual/lib/pixman-0.22.0.tar.bz2</Archive>
+        <Archive sha1sum="974a1ad699953a40ca9e481181aef9964ff54a2a" type="tarbz2">mirrors://xorg/individual/lib/pixman-0.27.2.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -50,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-09-15</Date>
+            <Version>0.27.2</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="18">
             <Date>2011-07-07</Date>
             <Version>0.22.0</Version>
