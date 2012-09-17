@@ -46,7 +46,7 @@ def install():
         pisitools.dosym("../conf.avail/%s" % cfg, "/etc/fonts/conf.d/%s" % cfg)
 
     for cfg in disabled_configs:
-        pisitools.remove("/etc/fonts/conf.d/%s" % cfg)
+        pisitools.remove("/usr/share/fontconfig/conf.avail/%s" % cfg)
 
     for i in ["fc-cat", "fc-list", "fc-match", "fc-cache"]:
         pisitools.doman("%s/*.1" % i)
