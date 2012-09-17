@@ -3,25 +3,25 @@
 <PISI>
     <Source>
         <Name>attica</Name>
-        <Homepage>http://www.kde.org</Homepage>
+        <Homepage>http://techbase.kde.org/Development/Tutorials/Collaboration/Attica/Introduction</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>Implementation of the Open Collaboration Services API</Summary>
         <Description>attica is a Qt library that implements the Open Collaboration Services API version 1.4 of freedesktop.org.</Description>
-        <Archive sha1sum="724c6e9aab662280ec5b6570b23cf1cfc6c28cc7" type="tarbz2">ftp://ftp.kde.org/pub/kde/stable/attica/attica-0.2.0.tar.bz2</Archive>
+        <Archive sha1sum="417de33410b58a1f09647835e4ebb476fbdca9d7" type="tarbz2">mirrors://kde/stable/attica/attica-0.4.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>attica</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -37,11 +37,25 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/libattica.pc</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-05-26</Date>
+            <Version>0.4.0</Version>
+            <Comment>Version bump to 0.4.0</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
+        <Update release="11">
+            <Date>2012-03-09</Date>
+            <Version>0.3.0</Version>
+            <Comment>Version bump to 0.3.0</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="10">
             <Date>2011-03-24</Date>
             <Version>0.2.0</Version>
@@ -118,4 +132,3 @@
         </Update>
     </History>
 </PISI>
-
