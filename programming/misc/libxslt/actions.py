@@ -11,9 +11,9 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    autotools.autoreconf("-fi")
+    autotools.autoreconf("-vifs")
     # don't remove --with-debugger as it is needed for reverse dependencies
-    options = "--with-python \
+    options = "--with-python=/usr/bin/python2.7 \
                --with-crypto \
                --with-debugger \
                --disable-static"
