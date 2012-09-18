@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>MSN connection manager for Telepathy</Summary>
         <Description>telepathy-butterfly is an MSN connection manager that handles presence, personal messages and conversations.</Description>
-        <Archive sha1sum="b49967cef43a586d06cdc2f73a62a66de374d61d" type="targz">http://telepathy.freedesktop.org/releases/telepathy-butterfly/telepathy-butterfly-0.5.12.tar.gz</Archive>
+        <Archive sha1sum="73c9dba9f97ae5a6d981485e5f51c5930168f8ce" type="targz">http://telepathy.freedesktop.org/releases/telepathy-butterfly/telepathy-butterfly-0.5.15.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.4.9">python-papyon</Dependency>
             <Dependency>telepathy-python</Dependency>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-01</Date>
+            <Version>0.5.15</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-07-14</Date>
             <Version>0.5.12</Version>
