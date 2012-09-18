@@ -1,7 +1,7 @@
 Index: choqok-1.0.1/po/tr/choqok.po
 ===================================================================
---- choqok-1.0.1.orig/po/tr/choqok.po
-+++ choqok-1.0.1/po/tr/choqok.po
+--- po/tr/choqok.po
++++ po/tr/choqok.po
 @@ -10,7 +10,7 @@ msgstr ""
  "Project-Id-Version: choqok\n"
  "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
