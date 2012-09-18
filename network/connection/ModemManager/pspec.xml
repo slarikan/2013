@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>A manager framework for mobile broadband modems</Summary>
         <Description>ModemManager provides a unified high level API for communicating with mobile broadband modems.</Description>
-        <Archive sha1sum="6fbfba6bd572fc44d890a22924df7fc6a97ab6a5" type="tarbz2">http://ftp.acc.umu.se/pub/GNOME/sources/ModemManager/0.5/ModemManager-0.5.tar.bz2</Archive>
+        <Archive sha1sum="165bceda0c9dd521610eaeaff7f79cf5999a7f88" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/ModemManager/0.5/ModemManager-0.5.3.96.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.4.5">ppp-devel</Dependency>
         </BuildDependencies>
@@ -49,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-08-28</Date>
+            <Version>5.3.96</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="15">
             <Date>2011-08-03</Date>
             <Version>0.5</Version>
