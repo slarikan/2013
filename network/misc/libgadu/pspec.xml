@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A Gadu-gadu protocol compatible communications library</Summary>
         <Description>libgadu is intended to make it easy to add Gadu-Gadu communication support to your software.</Description>
-        <Archive sha1sum="05268aeea8ba972b9fd50aeaa4761eb73d522800" type="targz">http://toxygen.net/libgadu/files/libgadu-1.11.0.tar.gz</Archive>
+        <Archive sha1sum="0e13836416b49212d5f17a74d8c2e72c5f915238" type="targz">http://toxygen.net/libgadu/files/libgadu-1.11.2.tar.gz</Archive>
         <Patches>
             <Patch level="1">no-pthread.diff</Patch>
         </Patches>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-08-03</Date>
+            <Version>1.11.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2011-09-19</Date>
             <Version>1.11.0</Version>

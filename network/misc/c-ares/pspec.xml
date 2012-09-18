@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A C library that performs DNS requests and name resolves asynchronously</Summary>
         <Description>c-ares is a C library that performs DNS requests and name resolves asynchronously. c-ares is a fork of the library named 'ares', written by Greg Hudson at MIT.</Description>
-        <Archive sha1sum="5f005f16cc6a02aa0ff3b4cd0aae573bc47c9bfe" type="targz">http://c-ares.haxx.se/download/c-ares-1.7.5.tar.gz</Archive>
+        <Archive sha1sum="fe41e47f300bfd587b7f552a141ad3bf85437b0f" type="targz">http://c-ares.haxx.se/download/c-ares-1.9.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-09-01</Date>
+            <Version>1.9.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-08-22</Date>
             <Version>1.7.5</Version>

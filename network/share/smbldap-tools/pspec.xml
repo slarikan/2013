@@ -13,15 +13,15 @@
         <IsA>library</IsA>
         <Summary>Idealx samba-ldap management tools</Summary>
         <Description>smbldap-tools contains a set of scripts, part of the official Samba project, able to manage POSIX accounts (users, groups, machines) for SAMBA, stored in a LDAP directory used as a (sort-of) SAM database. Edited by IDEALX in the OpenTrust suite (Cryptonit, IMC, IDX-PKI...).</Description>
-        <Archive sha1sum="05534385b6f7d031d0721d64f339bf8d166a68f5" type="targz">http://www.iallanis.info/smbldap-tools/smbldap-tools-0.9.5.tgz</Archive>
+        <Archive sha1sum="490aa023bd65f1563ed57c69c7e5adfe4f272c13" type="targz">http://download.gna.org/smbldap-tools/sources/0.9.9/smbldap-tools-0.9.9.tar.gz</Archive>
         <BuildDependencies>
              <Dependency>perl</Dependency>
          </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">smbldap-tools-0.9.5-chown.patch</Patch>
             <Patch level="1">smbldap-tools-0.9.5-utf-8.patch</Patch>
             <Patch level="1">smbldap-tools-0.9.5-config.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-05</Date>
+            <Version>0.9.9</Version>
+            <Comment>version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-18</Date>
             <Version>0.9.5</Version>

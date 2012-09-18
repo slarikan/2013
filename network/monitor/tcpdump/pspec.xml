@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A Tool for network monitoring and data acquisition</Summary>
         <Description>Tcpdump is a tool to print out (or save to file) the contents of packets on a network interface. It also allows limiting the number of packets collected using expressions.</Description>
-        <Archive sha1sum="8f356cbc781192ecb527623d68db90e06aa9d4b9" type="targz">http://www.tcpdump.org/release/tcpdump-4.1.1.tar.gz</Archive>
+        <Archive sha1sum="5d0432e4831ca81633a6c9da732caad77d64a9ac" type="targz">http://www.tcpdump.org/release/tcpdump-4.3.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libpcap-devel</Dependency>
             <Dependency>libsmi-devel</Dependency>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-09-01</Date>
+            <Version>4.3.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-13</Date>
             <Version>4.1.1</Version>

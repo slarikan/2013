@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Easy to use and powerful didactical tool for teachers</Summary>
         <Description>iTALC is a powerful didactical tool for teachers. It lets you view and control other computers in your network in several ways.</Description>
-        <Archive sha1sum="c5f83e3d7f4b9ab5ff4dac9d4745f47daffa9635" type="tarbz2">mirrors://sourceforge/italc/italc-1.0.13.tar.bz2</Archive>
+        <Archive sha1sum="a5aa531beddc24512a8818f285c07781bc9e4e47" type="tarbz2">mirrors://sourceforge/italc/italc-2.0.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
@@ -24,11 +24,11 @@
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">disable-tooltips-by-default.patch</Patch>
+        <!--<Patches>
+            <Patch level="1">disable-tooltips-by-default.patch</Patch> 
             <Patch level="1">remove-triple_commas-from-gecos.patch</Patch>
             <Patch level="1">autoarrange-windows.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -40,7 +40,8 @@
             <Dependency release="current">libitalc</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/italc</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man/man1/italc.1</Path>
             <Path fileType="data">/usr/share/pixmaps/italc.png</Path>
             <Path fileType="data">/usr/share/pixmaps/italc.xpm</Path>
@@ -94,6 +95,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-01</Date>
+            <Version>2.0.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-01-15</Date>
             <Version>1.0.13</Version>

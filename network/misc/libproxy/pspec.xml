@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Proxy configuration library</Summary>
         <Description>libproxy is a library that provides automatic proxy configuration management.</Description>
-        <Archive sha1sum="6e9745c87b774f34bf53f07a54284c0d72020e94" type="targz">http://libproxy.googlecode.com/files/libproxy-0.4.6.tar.gz</Archive>
+        <Archive sha1sum="b01ebbdf837babf63f38ee34e261d76f23dad319" type="targz">http://libproxy.googlecode.com/files/libproxy-0.4.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
             <Dependency versionFrom="4.5.1">kdelibs-devel</Dependency>
@@ -20,15 +20,13 @@
             <Dependency>libXmu-devel</Dependency>
             <Dependency>webkit-gtk-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-        <!--
+        <!--<Patches>        
             <Patch level="1">libproxy-libexecpath.patch</Patch>
             <Patch level="1">libproxy-pkgconfig.patch</Patch>
             <Patch level="1">libproxy-pysitelib.patch</Patch>
-            <Patch level="1">fix-werror.diff</Patch>
-        -->
+            <Patch level="1">fix-werror.diff</Patch>        
             <Patch level="1">fix-mozilla-js.diff</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -39,6 +37,7 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/libexec/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
@@ -105,6 +104,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-09-01</Date>
+            <Version>0.4.7</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-14</Date>
             <Version>0.4.6</Version>

@@ -13,11 +13,8 @@
         <IsA>app:gui</IsA>
         <Summary>Opera web browser</Summary>
         <Description>Opera is a standards-compliant graphical Web browser.</Description>
-        <Archive sha1sum="3c4a7b36016aa9727cb7805db504d0159fe8ac6e" type="tarxz">ftp://ftp.opera.com/pub/opera/linux/1152/opera-11.52-1100.i386.linux.tar.xz</Archive>
-        <Archive sha1sum="69eab27253f7dc9bb1e7ecf57983f0d675ec158e" type="tarxz">ftp://ftp.opera.com/pub/opera/linux/1152/opera-11.52-1100.x86_64.linux.tar.xz</Archive>
-        <Patches>
-            <Patch level="1">tr-desktop.patch</Patch>
-        </Patches>
+        <Archive sha1sum="69ddd3f49d9ec444e83e598a715499234020ea5e" type="tarxz" target="i686">ftp://ftp.opera.com/pub/opera/linux/1200/opera-12.00-1467.i386.linux.tar.xz</Archive>
+        <Archive sha1sum="7a8f9299901846c77ea162d616d19c2dcbcc755b" type="tarxz" target="x86_64">ftp://ftp.opera.com/pub/opera/linux/1200/opera-12.00-1467.x86_64.linux.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -56,6 +53,13 @@
     </Package>
 
     <History>
+       <Update release="38">
+            <Date>2012-07-08</Date>
+            <Version>12.00</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+       </Update>      
         <Update release="37" type="security">
             <Date>2011-10-20</Date>
             <Version>11.52</Version>

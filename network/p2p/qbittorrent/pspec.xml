@@ -13,26 +13,26 @@
         <IsA>app:gui</IsA>
         <Summary>Qt4 based BitTorrent client</Summary>
         <Description>qbittorrent is a BitTorrent client using the libtorrent library.</Description>
-        <Archive sha1sum="3b2655ad5668e451e10b0e9b0fbc88d9cffd0eb5" type="targz">mirrors://sourceforge/qbittorrent/qbittorrent-2.9.0.tar.gz</Archive>
+        <Archive sha1sum="9d25aa475766d21d611b712adc1c060158a97265" type="targz">mirrors://sourceforge/qbittorrent/qbittorrent-3.0.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>qt-devel</Dependency>
-            <Dependency versionFrom="0.15.7">libtorrent-devel</Dependency>
+            <Dependency versionFrom="4.6">qt-devel</Dependency>
+            <Dependency versionFrom="0.15.0">libtorrent-devel</Dependency>
             <Dependency>boost-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>geoip-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">default-bugzilla-address.patch</Patch>
-            <Patch level="1">fix-translations.patch</Patch>
+            <Patch>fix-translations.patch</Patch>
             <Patch level="1">default-settings.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
         <Name>qbittorrent</Name>
         <RuntimeDependencies>
-            <Dependency>qt</Dependency>
-            <Dependency versionFrom="0.15.7">libtorrent</Dependency>
+            <Dependency versionFrom="4.6">qt</Dependency>
+            <Dependency versionFrom="0.15.0">libtorrent</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>geoip</Dependency>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-09-04</Date>
+            <Version>3.0.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2011-10-21</Date>
             <Version>2.9.0</Version>

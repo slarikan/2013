@@ -16,4 +16,4 @@ def build():
 def install():
     autotools.install()
 
-    pisitools.dodoc("AUTHORS", "COPYING", "README", "TODO", "doc/rtorrent.rc")
+    pisitools.dodoc("AUTHORS", "COPYING", "README", "doc/rtorrent.rc")

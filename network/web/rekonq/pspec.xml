@@ -13,16 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>Web browser powered by WebKit</Summary>
         <Description>rekonq is a KDE web browser based on QtWebKit.</Description>
-        <Archive sha1sum="960cd9a3bfe5f87e577cc9324bbf1915c0f89dcc" type="tarbz2">mirrors://sourceforge/rekonq/rekonq-0.7.0.tar.bz2</Archive>
+        <Archive sha1sum="fe4d18cc030c8c43321bb68c90fd63a32e249e09" type="tarbz2">mirrors://sourceforge/rekonq/rekonq-0.9.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.5.5">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency>automoc4</Dependency>
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">default-preview.patch</Patch>
+            <!--<Patch level="1">default-preview.patch</Patch>-->
             <Patch level="0">tr-i18n.patch</Patch>
         </Patches>
     </Source>
@@ -31,7 +31,7 @@
         <Name>rekonq</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency versionFrom="4.5.5">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency>qt-webkit</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -47,6 +47,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="15">
+            <Date>2012-09-04</Date>
+            <Version>0.9.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2011-05-26</Date>
             <Version>0.7.0</Version>

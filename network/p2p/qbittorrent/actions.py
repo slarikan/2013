@@ -13,8 +13,8 @@ def setup():
     autotools.rawConfigure("--prefix=/usr")
 
 def build():
-    shelltools.system("lrelease src/lang/qbittorrent_tr.ts")
-    autotools.make("CXX=%s" % get.CXX())
+    #shelltools.system("lrelease src/lang/qbittorrent_tr.ts")
+    autotools.make()
 
 def install():
     autotools.rawInstall("INSTALL_ROOT=%s" % get.installDIR())

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Implementation of the SASL framework and a few common SASL mechanisms</Summary>
         <Description>GNU SASL is an implementation of the Simple Authentication and Security Layer framework and a few common SASL mechanisms. SASL is used by network servers (e.g., IMAP, SMTP) to request authentication from clients, and in clients to authenticate against servers.</Description>
-        <Archive sha1sum="3ddfae2199ef508d4459576cc585c3fe5e685a4b" type="targz">ftp://alpha.gnu.org/gnu/gsasl/libgsasl-1.7.0.tar.gz</Archive>
+        <Archive sha1sum="283d80c9710a07b96810d52d64649355d51f1d40" type="targz">ftp://alpha.gnu.org/gnu/gsasl/libgsasl-1.7.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libgcrypt-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-01</Date>
+            <Version>1.7.6</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-12-12</Date>
             <Version>1.7.0</Version>

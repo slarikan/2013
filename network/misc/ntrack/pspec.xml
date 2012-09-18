@@ -13,17 +13,17 @@
         <IsA>library</IsA>
         <Summary>Network Connectivity Tracking library for Desktop Applications</Summary>
         <Description>ntrack aims to be a lightweight and easy to use library for application developers that want to get events on network online status changes such as online, offline or route changes.</Description>
-        <Archive sha1sum="59f5a9d527d60af875edb9407725ca2223e31841" type="targz">http://launchpad.net/ntrack/main/014/+download/ntrack-014.tar.gz</Archive>
+        <Archive sha1sum="693f618198f65c9bbb7a9ace250d536f167b192a" type="targz">https://launchpad.net/ntrack/main/016/+download/ntrack-016.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libnl-devel</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="0">fix-infinite-loop.diff</Patch>
             <Patch level="1">ntrack-link.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -140,6 +140,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-03</Date>
+            <Version>0.016</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2011-10-29</Date>
             <Version>0.014</Version>

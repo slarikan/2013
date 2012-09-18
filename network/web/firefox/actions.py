@@ -17,7 +17,7 @@ WorkDir = "mozilla-release"
 # config.guess returns 'x86_64-unknown-linux-gnu' on x86_64 machines, and 'i686-pc-linux-gnu' on x86 machines
 ObjDir = "obj-%s-unknown-linux-gnu" % get.ARCH() if get.ARCH() == "x86_64" else "obj-%s-pc-linux-gnu" % get.ARCH()
 
-locales = ["be", "ca", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "ru", "sv-SE", "tr"]
+locales = ["ca", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "ru", "sv-SE", "tr"]
 
 def setup():
     # Mozilla sticks on with autoconf-213
@@ -59,9 +59,9 @@ def install():
     autotools.rawInstall("-f client.mk DESTDIR=%s" % get.installDIR())
 
     # Any reason to do this renaming ?
-    pisitools.rename("/usr/lib/%s-%s" %(get.srcNAME(), get.srcVERSION()), "MozillaFirefox")
+    pisitools.rename("/usr/lib/%s-%s" % (get.srcNAME(), get.srcVERSION()), "MozillaFirefox")
 
-    pisitools.remove("/usr/bin/firefox") # Additional file will replace that
+    pisitools.remove("/usr/bin/firefox") # new Additional File  will replace that
 
     #install locales
     for locale in locales:

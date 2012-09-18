@@ -17,14 +17,16 @@
         <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
 
         <!-- Use tools/{create-source.sh, create-locale.sh} scripts to create tarballs for both firefox source and l10n -->
-        <Archive sha1sum="cbf1fb0efe0a3a2b2dafaa324b136736e93de70c" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/10.0/source/firefox-10.0.source.tar.bz2</Archive>
-        <Archive sha1sum="a8cdfece0bce8e8d8c683b8ef0801425c86b6761" type="tarbz2" target="mozilla-release">http://cekirdek.pardus.org.tr/~metin/dist/firefox/l10n-10.0.tar.bz2</Archive>
+        <Archive sha1sum="8c835836f3c415964b07653364c0c26284ba280b" type="tarbz2">http://releases.mozilla.org/pub/mozilla.org/firefox/releases/14.0.1/source/firefox-14.0.1.source.tar.bz2</Archive>
+	<Archive sha1sum="fc11a58651c307872279e9969dee5a25a32d8544" type="tarbz2" target="mozilla-release">http://content.wuala.com/contents/erdinc/kern/ff-l10/compare-locales-14.0.1.tar.bz2</Archive>
+	<Archive sha1sum="2a5e61b28d989a2cfeb9ebdc501c683944be50c0" type="tarbz2" target="mozilla-release">http://content.wuala.com/contents/erdinc/kern/ff-l10/firefox-l10n-14.0.1.tar.bz2</Archive>
         <AdditionalFiles>
 
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
+	    <Dependency versionFrom="14.0.1">xulrunner-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -36,8 +38,8 @@
             <Dependency>dbus-glib-devel</Dependency>
             <Dependency>hunspell-devel</Dependency>
             <Dependency versionFrom="0.4.0">libproxy-devel</Dependency>
-            <Dependency versionFrom="4.8.9">nspr-devel</Dependency>
-            <Dependency versionFrom="3.13.1">nss-devel</Dependency>
+            <Dependency versionFrom="4.9.2">nspr-devel</Dependency>
+            <Dependency versionFrom="3.13.5">nss-devel</Dependency>
             <Dependency>libevent-devel</Dependency>
             <Dependency>libvpx-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -50,63 +52,45 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libXt-devel</Dependency>
+	    <Dependency>valgrind</Dependency>
 
             <!-- Those are checked by configure -->
             <Dependency>mesa-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>libXt-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--Patch level="1">suse/mozilla-kde.patch</Patch-->
-            <Patch level="1">suse/mozilla-language.patch</Patch>
-            <Patch level="1">suse/mozilla-a11y.patch</Patch>
-            <Patch level="1">suse/mozilla-nongnome-proxies.patch</Patch>
-            <Patch level="1">suse/mozilla-disable-neon-option.patch</Patch>
-            <Patch level="1">suse/mozilla-repo.patch</Patch>
-            <Patch level="1">suse/mozilla-dump_syms-static.patch</Patch>
-            <Patch level="1">suse/mozilla-ntlm-full-path.patch</Patch>
-            <Patch level="1">suse/mozilla-preferences.patch</Patch>
-            <Patch level="1">suse/mozilla-shared-nss-db.patch</Patch>
-            <Patch level="1">suse/mozilla-linux3.patch</Patch>
-            <Patch level="1">suse/mozilla-prefer_plugin_pref.patch</Patch>
-
-            <!--These are mainly integrations stuff like default browser-->
-            <!--Patch level="1">suse/firefox-kde.patch</Patch>
-            <Patch level="1">suse/firefox-kde-114.patch</Patch-->
-
-            <Patch level="1">suse/firefox-browser-css.patch</Patch>
-            <Patch level="1">suse/firefox-cross-desktop.patch</Patch>
+     <Patches>
             <Patch level="1">suse/firefox-branded-icons.patch</Patch>
+            <Patch level="1">suse/firefox-browser-css.patch</Patch>    
+            <Patch level="1">suse/firefox-multilocale-chrome.patch</Patch>    
             <Patch level="1">suse/firefox-no-default-ualocale.patch</Patch>
-            <Patch level="1">suse/firefox-multilocale-chrome.patch</Patch>
-            <Patch level="1">suse/firefox-no-sync-l10n.patch</Patch>
+            <Patch level="1">suse/mozilla-crashreporter-restart-args.patch</Patch>    
+            <Patch level="1">suse/mozilla-dump_syms-static.patch</Patch>
+            <Patch level="1">suse/mozilla-kde.patch</Patch>
+            <Patch level="1">suse/mozilla-language.patch</Patch>
+            <Patch level="1">suse/mozilla-nongnome-proxies.patch</Patch>
+            <Patch level="1">suse/mozilla-ntlm-full-path.patch</Patch>
+            <Patch level="1">suse/mozilla-ppc.patch</Patch>
+            <Patch level="1">suse/mozilla-preferences.patch</Patch>
+            <Patch level="1">suse/mozilla-prefer_plugin_pref.patch</Patch>
             <Patch level="1">suse/toolkit-download-folder.patch</Patch>
-
+            <Patch level="1">mageia/firefox-13-fix-cairo-build.patch</Patch>
+            <Patch level="1">mageia/firefox-15b2-native-nss-nspr.patch</Patch>	    
             <Patch level="1">fedora/firefox-5.0-asciidel.patch</Patch>
-
-            <!-- Disable addon check UI, non-advanced users might end up non-localized Firefox redhat#753551  -->
-            <Patch level="2">fedora/firefox-8.0-enable-addons.patch</Patch>
-
-            <!--
-            Add as needed patch to put .a files before libraries, especially -lplc4
-            check-sync-dirs.py does not allow differences between config files since 9.0, so apply changes both to {config, js/src/config}/rules.mk
-            -->
-            <Patch level="1">pardus/as-needed.diff</Patch>
-
+            <Patch level="2">fedora/firefox-8.0-enable-addons.patch</Patch>    
             <Patch level="1">pardus/autoconf-213-hack.diff</Patch>
-
             <!-- Disable for now on, needs more investigation -->
             <!--Patch level="0">pardus/zemberek-firefox5.patch</Patch-->
             <Patch level="0">pardus/fix-double-turkish-option.diff</Patch>
-            <Patch level="1">pardus/fix-langpack-prefs-path.patch</Patch>
-            <Patch level="1">pardus/add-twitter-search.diff</Patch>
-            <!--Patch level="1">Allow-.js-preference-files-to-set-locked-prefs-with-.patch</Patch-->
-        </Patches>
+            <!--<Patch level="1">pardus/fix-langpack-prefs-path.patch</Patch>-->
+	    <Patch level="1">pardus/add-twitter-search.diff</Patch>
+    </Patches>
     </Source>
 
     <Package>
         <Name>firefox</Name>
         <RuntimeDependencies>
+	    <Dependency versionFrom="14.0.1">xulrunner</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency versionFrom="2.18.5">gtk2</Dependency>
             <Dependency>pango</Dependency>
@@ -116,8 +100,8 @@
             <Dependency>dbus-glib</Dependency>
             <Dependency>hunspell</Dependency>
             <Dependency versionFrom="0.4.0">libproxy</Dependency>
-            <Dependency versionFrom="4.8.9">nspr</Dependency>
-            <Dependency versionFrom="3.13.1">nss</Dependency>
+            <Dependency versionFrom="4.9.2">nspr</Dependency>
+            <Dependency versionFrom="3.13.5">nss</Dependency>
             <Dependency>libevent</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>atk</Dependency>
@@ -132,6 +116,7 @@
             <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXrender</Dependency>
+	    <Dependency>valgrind</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/</Path>
@@ -155,7 +140,7 @@
             <AdditionalFile target="/usr/lib/MozillaFirefox/defaults/preferences/firefox-pardus.js" permission="0644" owner="root">pardus/default-prefs.js</AdditionalFile>
             <AdditionalFile target="/usr/lib/MozillaFirefox/defaults/preferences/firefox-l10n.js" permission="0644" owner="root">pardus/firefox-l10n.js</AdditionalFile>
             <AdditionalFile target="/usr/lib/MozillaFirefox/browserconfig.properties" permission="0644" owner="root">pardus/browserconfig.properties</AdditionalFile>
-            <AdditionalFile target="/usr/lib/MozillaFirefox/defaults/pref/kde.js" permission="0644">suse/kde.js</AdditionalFile>
+            <AdditionalFile target="/usr/lib/MozillaFirefox/defaults/pref/kde.js" permission="0644">mageia/kde.js</AdditionalFile>
 
             <!-- Pardus Bugzilla search plugin -->
             <AdditionalFile target="/usr/lib/MozillaFirefox/searchplugins/uluzilla.xml" permission="0644" owner="root">searchplugins/uluzilla.xml</AdditionalFile>
@@ -196,8 +181,66 @@
     </Package>
 
     <History>
-        <Update release="165">
-            <Date>2012-02-07</Date>
+        <Update release="172">
+            <Date>2012-07-18</Date>
+            <Version>14.0.1</Version>
+            <Comment>Version bump + add compare-locales</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+        <Update release="171">
+            <Date>2012-04-24</Date>
+            <Version>12.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>baho</Name>
+            <Email>baho888@hotmail.com</Email>
+        </Update>
+        <Update release="170">
+            <Date>2012-03-15</Date>
+            <Version>11.0</Version>
+            <Comment>version bump
+                * Firefox can now migrate your bookmarks, history, and cookies from Google Chrome
+                * With Sync enabled, add-ons can now be synchronized across your computers
+                * The CSS text-size-adjust property is now supported
+                * Redesigned media controls for HTML5 video
+                * The outerHTML property is now supported on HTML elements
+                * View source syntax highlighting now uses the HTML5 parser
+                * Various security fixes
+                * Firefox notifications may not work properly with Growl 1.3 or later
+            </Comment>
+	    <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+        <Update release="169">
+            <Date>2012-02-18</Date>
+            <Version>10.0.2</Version>
+            <Comment>version bump</Comment>
+	    <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+        <Update release="168" type="security">
+            <Date>2012-02-11</Date>
+            <Version>10.0.1</Version>
+            <Comment>version bump
+	        * Vulnerability can be used to run attacker code and install software, requiring no user interaction beyond normal browsing
+		* Vulnerability can be used to gather sensitive data from sites in other windows or inject data or code into those sites, requiring no more than normal browsing actions
+		* Vulnerabilities that would otherwise be High or Critical except they only work in uncommon non-default configurations or require the user to perform complicated and/or unlikely steps
+		* Minor security vulnerabilities such as Denial of Service attacks, minor data leaks, or spoofs
+		* Java applets sometimes caused text input to become unresponsive
+		* Most add-ons are now compatible with new versions of Firefox by defaults
+            </Comment>
+	    <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+        <Update release="167">
+            <Date>2012-02-04</Date>
+            <Version>10.0</Version>
+            <Comment>fix and add firefox-vendor.patch</Comment>
+	    <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+        <Update release="166">
+            <Date>2012-02-02</Date>
             <Version>10.0</Version>
             <Comment>Version bump to latest stable release:
                 * The forward button is now hidden until you navigate back
@@ -212,6 +255,13 @@
             <Name>Metin Akdere</Name>
             <Email>metin@pardus.org.tr</Email>
         </Update>
+	<Update release="165">
+            <Date>2012-01-09</Date>
+            <Version>9.0.1</Version>
+            <Comment>Version bump to new 9.0.1 release</Comment>
+	    <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
         <Update release="164">
             <Date>2011-12-29</Date>
             <Version>9.0</Version>

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 CHANNEL="release"
-RELEASE_TAG="FIREFOX_10_0_RELEASE"
-VERSION="10.0"
+RELEASE_TAG="FIREFOX_14_0_1_RELEASE"
+VERSION="14.0.1"
 
 # These are Pardus supported languages. This list may changed by time to time
 LOCALES="be ca de es-AR es-ES fr hu it nl pl ru sv-SE tr"
@@ -14,5 +14,5 @@ do
     [ "$RELEASE_TAG" == "default" ] || hg -R l10n/$locale up -C -r $RELEASE_TAG
 done
 
-tar cjf l10n-$VERSION.tar.bz2 --exclude=.hgtags --exclude=.hgignore --exclude=.hg l10n
+tar cjf firefox-l10n-$VERSION.tar.bz2 --exclude=.hgtags --exclude=.hgignore --exclude=.hg l10n
 

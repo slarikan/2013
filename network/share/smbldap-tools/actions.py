@@ -10,9 +10,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.dosed("smbldap_tools.pm", "/etc/opt/IDEALX/", "/etc/smbldap-tools/")
+    #pisitools.dosed("smbldap_tools.pm", "/etc/opt/IDEALX/", "/etc/smbldap-tools/")
     pisitools.dosed("smbldap.conf", "/etc/opt/IDEALX/", "/etc/smbldap-tools/")
-    pisitools.dosed("smbldap_tools.pm", "/opt/IDEALX/", "/etc/smbldap-tools/")
+    #pisitools.dosed("smbldap_tools.pm", "/opt/IDEALX/", "/etc/smbldap-tools/")
     pisitools.dosed("smbldap.conf", "/opt/IDEALX/", "/etc/smbldap-tools/")
 
     # Set SSL certs directory
@@ -26,13 +26,13 @@ def install():
     pisitools.dosbin("smbldap-*")
     pisitools.remove("/usr/sbin/smbldap-tools.spec")
 
-    pisitools.insinto("/usr/lib/perl5/vendor_perl/%s/" % get.curPERL(), "smbldap_tools.pm")
+    #pisitools.insinto("/usr/lib/perl5/vendor_perl/%s/" % get.curPERL(), "smbldap_tools.pm")
 
     pisitools.dodir("/etc/smbldap-tools")
     pisitools.insinto("/etc/smbldap-tools", "smbldap.conf")
     pisitools.insinto("/etc/smbldap-tools", "smbldap_bind.conf")
 
     pisitools.dodoc("CONTRIBUTORS", "COPYING", "ChangeLog", "FILES", "INFRA", \
-                    "README", "TODO", "configure.pl")
+                    "README", "TODO")
 
     pisitools.doman("doc/*.8")

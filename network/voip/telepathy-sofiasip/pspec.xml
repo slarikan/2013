@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>SIP connection manager for Telepathy</Summary>
         <Description>telepathy-sofiasip is a SIP connection manager for the Telepathy framework based on the SofiaSIP-stack.</Description>
-        <Archive sha1sum="02346934f0489762f9650bcee072a5fa5c41c420" type="targz">http://telepathy.freedesktop.org/releases/telepathy-sofiasip/telepathy-sofiasip-0.6.3.tar.gz</Archive>
+        <Archive sha1sum="f2b1cf4675fcc41e7488d73bd189b46aec10b1b4" type="targz">http://telepathy.freedesktop.org/releases/telepathy-sofiasip/telepathy-sofiasip-0.7.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>telepathy-glib-devel</Dependency>
             <Dependency>sofia-sip-devel</Dependency>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-01</Date>
+            <Version>0.7.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.6.3</Version>

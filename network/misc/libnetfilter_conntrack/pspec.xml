@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Connection tracking system API</Summary>
         <Description>Libnetfilter-conntrack is a userspace library providing API to the in-kernel connection tracking system.</Description>
-        <Archive sha1sum="75dd88f096345067a1fe254f408be49ecf5f5497" type="tarbz2">http://netfilter.org/projects/libnetfilter_conntrack/files/libnetfilter_conntrack-0.9.1.tar.bz2</Archive>
+        <Archive sha1sum="82ff80fc48d3f12b6c5bd66d207e95dfab152025" type="tarbz2">http://netfilter.org/projects/libnetfilter_conntrack/files/libnetfilter_conntrack-1.0.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libnfnetlink-devel</Dependency>
         </BuildDependencies>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-01</Date>
+            <Version>1.0.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-08-03</Date>
             <Version>0.9.1</Version>

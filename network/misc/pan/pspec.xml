@@ -5,19 +5,19 @@
         <Name>pan</Name>
         <Homepage>http://pan.rebelbase.com</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>pan</Icon>
         <IsA>app:gui</IsA>
         <Summary>A USENET newsreader for GNOME</Summary>
         <Description>Pan is a Usenet newsreader that's good at both text and binaries.</Description>
-        <Archive sha1sum="8cd97111dcc4dc3d6d9db7ffa0f9c61dc064cd81" type="targz">http://pan.rebelbase.com/download/releases/0.135/source/pan-0.135.tar.gz</Archive>
+        <Archive sha1sum="4a751ae403587a024db79f532a5db0818d7ac282" type="targz">http://pan.rebelbase.com/download/releases/0.139/source/pan-0.139.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency>gmime-devel</Dependency>
+            <Dependency versionFrom="2.4">gmime-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gtkspell-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -29,7 +29,7 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>gmime</Dependency>
+            <Dependency versionFrom="2.4">gmime</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gtkspell</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-03</Date>
+            <Version>0.139</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2011-08-12</Date>
             <Version>0.135</Version>

@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>Low level network library</Summary>
         <Description>libnet is a library to provide an API for commonly used low-level network functions.</Description>
-        <Archive sha1sum="86a2f75b52c5b15dbd41c3e03356167de9c883e4" type="targz">mirrors://sourceforge/libnet-dev/libnet-1.1.4.tar.gz</Archive>
-        <Patches>
+        <Archive sha1sum="dffff71c325584fdcf99b80567b60f8ad985e34c" type="targz">mirrors://sourceforge/libnet-dev/libnet-1.1.6.tar.gz</Archive>
+        <!--<Patches>
             <Patch level="1">libnet-1.1.2.1-format_not_a_string_literal_and_no_format_arguments.diff</Patch>
             <Patch level="1">libnet-1.1.4-zero-pointers-after-free.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -45,7 +45,7 @@
     <History>
         <Update release="3">
             <Date>2010-10-13</Date>
-            <Version>1.1.4</Version>
+            <Version>1.1.6</Version>
             <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
             <Name>Gökcen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>

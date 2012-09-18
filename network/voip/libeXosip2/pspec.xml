@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A library that hides the complexity of using the SIP protocol</Summary>
         <Description>libeXosip2 is a library that hides the complexity of using the SIP protocol for multimedia session establishement. This protocol is mainly to be used by VoIP telephony applications (endpoints or conference server) but might be also useful for any application that wish to establish sessions like multiplayer games.</Description>
-        <Archive sha1sum="4500790461038d85714afe37dd7cfd270b57cbcb" type="targz">http://ftp.cc.uoc.gr/mirrors/nongnu.org/exosip/libeXosip2-3.3.0.tar.gz</Archive>
+        <Archive sha1sum="a53d699208a22a4edf2d239e1dc3a2f4c1fee0d2" type="targz">http://ftp.cc.uoc.gr/mirrors/nongnu.org/exosip/libeXosip2-3.6.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libosip2-devel</Dependency>
         </BuildDependencies>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-04</Date>
+            <Version>3.6.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>3.3.0</Version>

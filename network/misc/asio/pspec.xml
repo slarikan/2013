@@ -5,14 +5,14 @@
         <Name>asio</Name>
         <Homepage>http://asio.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>Boost-1.0</License>
         <IsA>library</IsA>
         <Summary>Asynchronous network library</Summary>
         <Description>Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach.</Description>
-        <Archive sha1sum="e81bfdb5971a752a385c6192d009208e67fd521f" type="targz">mirrors://sourceforge/asio/asio-1.4.5.tar.gz</Archive>
+        <Archive sha1sum="d5d75c56e25605b246f1db519343bfcb4c2cdf8c" type="targz">mirrors://sourceforge/asio/asio-1.4.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-01</Date>
+            <Version>1.4.8</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>1.4.5</Version>

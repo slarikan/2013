@@ -12,27 +12,27 @@
         <IsA>library</IsA>
         <Summary>Audio/Video Communications Framework</Summary>
         <Description>The Farsight project is an effort to create a framework to deal with all known audio/video conferencing protocols. On one side it offers a generic API that makes it possible to write plugins for different streaming protocols, on the other side it offers an API for clients to use those plugins.</Description>
-        <Archive sha1sum="baf51f52eeeb81214b376ce1b9f33a22ccac7298" type="targz">http://farsight.freedesktop.org/releases/farsight2/farsight2-0.0.21.tar.gz</Archive>
+        <Archive sha1sum="d703ba05e645a3d91faf08aa2de5da618d131a0e" type="targz">http://farsight.freedesktop.org/releases/farsight2/farsight2-0.0.29.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gst-plugins-base-devel</Dependency>
-            <Dependency>libnice-devel</Dependency>
             <Dependency>gupnp-igd-devel</Dependency>
             <Dependency>gupnp-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>gst-python-devel</Dependency>
+            <Dependency versionFrom="0.1.0">libnice-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">fix-python-build.patch</Patch>
             <Patch level="1">tabify-eight-space.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
         <Name>farsight2</Name>
         <RuntimeDependencies>
             <Dependency>gst-plugins-base</Dependency>
-            <Dependency>libnice</Dependency>
+            <Dependency versionFrom="0.1.0">libnice</Dependency>
             <Dependency>gupnp-igd</Dependency>
             <Dependency>gupnp</Dependency>
             <Dependency>gstreamer</Dependency>
@@ -40,6 +40,7 @@
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/farsight2/0.0/fsrtpconference/</Path>
         </Files>
     </Package>
 
@@ -57,6 +58,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-09-02</Date>
+            <Version>0.0.29</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2010-10-14</Date>
             <Version>0.0.21</Version>

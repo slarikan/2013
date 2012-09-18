@@ -13,13 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>GTK GUI for Rsync</Summary>
         <Description>Grsync is a GTK GUI (Graphical User Interface) for rsync, the commandline directory synchronization tool.</Description>
-        <Archive sha1sum="aae1be1e609f64a9aebc417f6035495d196faa91" type="targz">http://www.opbyte.it/release/grsync-1.1.1.tar.gz</Archive>
+        <Archive sha1sum="e98aceb8df3abbf635bc7a304a6e49255ba6b2b7" type="targz">http://www.opbyte.it/release/grsync-1.2.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch>disable-pause-button.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-09-01</Date>
+            <Version>1.2.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-13</Date>
             <Version>1.1.1</Version>
