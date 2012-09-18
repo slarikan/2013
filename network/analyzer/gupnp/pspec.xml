@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>Object-oriented framework for creating UPnP devices and control points</Summary>
         <Description>GUPnP implements the UPnP specification: resource announcement and discovery, description, control, event notification, and presentation (GUPnP includes basic web server functionality through libsoup).</Description>
-        <Archive sha1sum="8c81b083668cafc4747a3b6741615992f2438abb" type="targz">http://www.gupnp.org/sites/all/files/sources/gupnp-0.13.2.tar.gz</Archive>
+        <Archive sha1sum="e2ae6fd8e62ab280c0808af9ab122c90f090f274" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/gupnp/0.18/gupnp-0.18.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gssdp-devel</Dependency>
+            <Dependency versionFrom="0.11.2">gssdp-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,13 +23,14 @@
     <Package>
         <Name>gupnp</Name>
         <RuntimeDependencies>
-            <Dependency>gssdp</Dependency>
+            <Dependency versionFrom="0.11.2">gssdp</Dependency>
             <Dependency>libsoup</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/gir-1.0/GUPnP-1.0.gir</Path>
         </Files>
     </Package>
 
@@ -46,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-01</Date>
+            <Version>0.18.4</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.13.2</Version>
