@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A free and open source program to connect MSN Messenger networks</Summary>
         <Description>aMSN is a free and open source MSN Messenger clone, with features like conferencing support, full-speed file transfers, webcam and audio-call support.</Description>
-        <Archive sha1sum="db4ed6d4fc05de87891bf7de28272d20434f9c59" type="targz">mirrors://sourceforge/amsn/amsn-0.98.4-src.tar.gz</Archive>
+        <Archive sha1sum="3ef8c136c16839f1edd392c25069bdc2b718f367" type="targz">mirrors://sourceforge/amsn/amsn-0.98.9-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="8.5.7">tcl</Dependency>
             <Dependency>tcl-devel</Dependency>
@@ -32,10 +32,10 @@
             <Patch level="1">disable-auto_update.patch</Patch>
             <Patch level="1">amsn-wish8_5.patch</Patch>
             <Patch level="1">fix-fonts.patch</Patch>
-            <Patch level="1">amsn-0.97_rc1-nostrip.patch</Patch>
+            <!--<Patch level="1">amsn-0.97_rc1-nostrip.patch</Patch>-->
             <Patch level="1">oxygen-skin.patch</Patch>
             <Patch level="1">defaultplugins.patch</Patch>
-            <Patch level="1">fix-linkage.patch</Patch>
+            <!--<Patch level="1">fix-linkage.patch</Patch>-->
             <Patch level="1">disable-check_update.patch</Patch>
         </Patches>
     </Source>
@@ -58,8 +58,12 @@
             <Dependency>alsa-utils</Dependency>
             <Dependency>jpeg</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>amsn-skin-oxygen</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/amsn</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -74,6 +78,9 @@
         <RuntimeDependencies>
             <Dependency releaseFrom="30">amsn</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>amsn-kde</Package>
+        </Replaces>
         <Files>
             <Path fileType="data">/usr/share/amsn/plugins</Path>
         </Files>
@@ -93,6 +100,13 @@
     </Package>
 
     <History>
+        <Update release="34">
+            <Date>2012-06-23</Date>
+            <Version>0.98.9</Version>
+            <Comment>version bump,bug fixes</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="33">
             <Date>2011-07-11</Date>
             <Version>0.98.4</Version>

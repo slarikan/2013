@@ -7,11 +7,10 @@
 
 from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
-from pisi.actionsapi import kde4
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import kde4
 
-WorkDir="konversation-1.3.1"
-#WorkDir="konversation-%s" % get.srcVERSION().replace('_','-')
+WorkDir="konversation-1.4"
 shelltools.export("HOME", get.workDIR())
 
 def setup():

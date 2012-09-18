@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A modern, cross-platform, distributed IRC client</Summary>
         <Description>Quassel IRC is a modern, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core --much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical.</Description>
-        <Archive sha1sum="5cb44cadd1520aa26675555aa5c967f2a28fb86e" type="tarbz2">http://quassel-irc.org/pub/quassel-0.7.3.tar.bz2</Archive>
+        <Archive sha1sum="b74967fa9f19b5d7c708279075cc0ef3a3dbbe8b" type="tarbz2">http://quassel-irc.org/pub/quassel-0.8.0.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">quassel.po</AdditionalFile>
         </AdditionalFiles>
@@ -109,6 +109,13 @@
     </Package>
 
     <History>
+        <Update release="7" type="security">
+            <Date>2012-09-01</Date>
+            <Version>0.8.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13" type="security">
             <Date>2011-09-11</Date>
             <Version>0.7.3</Version>

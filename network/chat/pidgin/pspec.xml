@@ -12,7 +12,7 @@
         <Icon>pidgin</Icon>
         <Summary>Instant messaging application previously known as gaim</Summary>
         <Description>Multi-protocol instant messaging tool for MSN, Yahoo, IRC, Jabber and Gadu-Gadu protocols.</Description>
-        <Archive sha1sum="859c6d9c9795c1adcf762b73e072e04a3a85a78d" type="tarbz2">mirrors://sourceforge/pidgin/pidgin-2.10.0.tar.bz2</Archive>
+        <Archive sha1sum="a0532e7ba2acd205d6a5a4e3624156a980fe3d43" type="tarbz2">mirrors://sourceforge/pidgin/pidgin-2.10.6.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -36,11 +36,11 @@
         </BuildDependencies>
         <Patches>
             <!--Enabling MSNP16 introduces regressions-->
-            <Patch level="0">pidgin-2.7.7-msn-disable-msnp16.patch</Patch>
-            <Patch level="1">nm09-more.patch</Patch>
+            <!--<Patch level="0">pidgin-2.7.7-msn-disable-msnp16.patch</Patch>-->
+            <!--<Patch level="1">nm09-more.patch</Patch>-->
             <Patch level="0">pidgin-desktop.patch</Patch>
 
-            <Patch level="1">CVE-2011-3594.patch</Patch>
+            <!--<Patch level="1">CVE-2011-3594.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -61,6 +61,9 @@
             <Dependency>xdg-utils</Dependency>
             <Dependency release="current">libpurple</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>gaim</Package>
+        </Replaces>
         <Files>
             <Path fileType="config">/etc/gconf/schemas</Path>
             <Path fileType="executable">/usr/bin</Path>
@@ -86,6 +89,9 @@
             <Dependency release="current">libpurple-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>gaim</Package>
+        </Replaces>
         <Files>
             <Path fileType="header">/usr/include/pidgin</Path>
             <Path fileType="executable">/usr/bin/dh_pidgin</Path>
@@ -102,6 +108,9 @@
             <Dependency release="current">libpurple</Dependency>
             <Dependency>gstreamer</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>gaim</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/finch</Path>
             <Path fileType="library">/usr/lib/finch</Path>
@@ -119,6 +128,9 @@
             <Dependency release="current">finch</Dependency>
             <Dependency release="current">libpurple-devel</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>gaim</Package>
+        </Replaces>
         <Files>
             <Path fileType="header">/usr/include/finch</Path>
             <Path fileType="header">/usr/include/gnt</Path>
@@ -141,6 +153,9 @@
             <Dependency>gstreamer</Dependency>
             <Dependency>libgadu</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>gaim</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/purple*</Path>
             <Path fileType="library">/usr/lib/libpurple*</Path>
@@ -155,6 +170,9 @@
         <RuntimeDependencies>
             <Dependency release="current">libpurple</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>gaim</Package>
+        </Replaces>
         <Files>
             <Path fileType="header">/usr/include/libpurple</Path>
             <Path fileType="data">/usr/lib/pkgconfig/purple.pc</Path>
@@ -164,6 +182,46 @@
     </Package>
 
     <History>
+        <Update release="56">
+            <Date>2012-07-25</Date>
+            <Version>2.10.6</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="55" type="security">
+            <Date>2012-05-07</Date>
+            <Version>2.10.4</Version>
+            <Comment>
+                * Support building against Farstream in addition to Farsight
+                * İRC: a. Disable periodic WHO timer. IRC channel user lists will no longer automatically display away status, 
+                  but libpurple will be much kinder to the network. 
+                       b. Print unknown numerics to channel windows if we can associate them. Thanks to Marien Zwart
+                * MSN :Fix a possible crash when receiving messages with certain characters or character encodings. Thanks to Fabian Yamaguchi for reporting this!
+                * XMPP:Fix a possible crash when receiving a series of specially crafted file transfer requests.(CVE-2012-2214) 
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+        <Update release="54" type="security">
+            <Date>2012-03-27</Date>
+            <Version>2.10.3</Version>
+            <Comment>
+                * MSN:Fix buddies not going offline
+                * Fix compilation on OpenBSD
+                * Fix remotely-triggerable crashes by validating strings in a few messages related to buddy list management
+                * IPv6 fixes (Linus Lüssing)
+                * Fix problems linking against GnuTLS
+                * Fix a memory leak when admitting UTF-8 text with a non-UTF-8 primary encoding
+                * Fix crashes and memory leaks when receiving malformed voice and video requests
+                * Separate "username" and "server" when adding new Sametime accounts
+                * Fix CVE-2011-3594, by UTF-8 validating incoming messages before passing them to glib or libpurple
+                * Fetch buddy icons in some cases where we previously weren't
+                * Fix compilation
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="53" type="security">
             <Date>2011-10-20</Date>
             <Version>2.10.0</Version>

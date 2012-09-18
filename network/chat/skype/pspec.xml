@@ -72,6 +72,7 @@
             <Dependency>fontconfig-32bit</Dependency>
             <Dependency>libXScrnSaver-32bit</Dependency>
             <Dependency>pulseaudio-libs-32bit</Dependency>
+	    <Dependency>json-c-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/32/skype.bin</Path>
@@ -79,6 +80,13 @@
     </Package>
 
     <History>
+        <Update release="23">
+            <Date>2012-06-19</Date>
+            <Version>2.2.0.35</Version>
+            <Comment>added json-c-32bit as runtime dependency</Comment>
+            <Name>Hamit Giray Nart</Name>
+            <Email>hamit@pardus-linux.org</Email>
+        </Update>
         <Update release="22">
             <Date>2011-08-05</Date>
             <Version>2.2.0.35</Version>
