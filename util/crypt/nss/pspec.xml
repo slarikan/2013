@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Network Security Services</Summary>
         <Description>Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards.</Description>
-        <Archive sha1sum="22cfe2cbccc93189699e6eed283eca288b45f6cb" type="targz">http://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_13_5_RTM/src/nss-3.13.5.tar.gz</Archive>
+        <Archive sha1sum="1f86a7c787e8fe3ebd1dd1cce127e57fb347dac3" type="targz">http://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_13_6_RTM/src/nss-3.13.6.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="dist/pkgconfig/nss.pc.in">nss.pc.in</AdditionalFile>
             <AdditionalFile target="dist/pkgconfig/nss-config.in">nss-config.in</AdditionalFile>
@@ -84,6 +84,13 @@
     </Package>
 
     <History>
+      <Update release="49" type="security">
+            <Date>2012-06-05</Date>
+            <Version>3.13.6</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
       <Update release="48" type="security">
             <Date>2012-06-05</Date>
             <Version>3.13.5</Version>
