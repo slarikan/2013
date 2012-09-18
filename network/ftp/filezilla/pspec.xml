@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Simple FTP Client</Summary>
         <Description>Easy-to-use FTP Client which also supports SFTP.</Description>
-        <Archive sha1sum="a3169625510a04914a790c9d1d960bc34a005847" type="tarbz2">mirrors://sourceforge/filezilla/FileZilla_3.5.2_src.tar.bz2</Archive>
+        <Archive sha1sum="4349495cd2bf8b9c2852bda6a2cfccc5a062b52a" type="tarbz2">mirrors://sourceforge/filezilla/FileZilla_3.5.3_src.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.8.9">wxGTK-devel</Dependency>
             <Dependency versionFrom="2.8.3">gnutls-devel</Dependency>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="43">
+            <Date>2012-09-01</Date>
+            <Version>3.5.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="42">
             <Date>2011-11-21</Date>
             <Version>3.5.2</Version>
