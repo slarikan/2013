@@ -13,10 +13,11 @@
         <IsA>service</IsA>
         <Summary>Set of tools for in-kernel connection tracking system</Summary>
         <Description>Connection tracking tools are set of applications for managing and viewing connection tracking system from userspace.</Description>
-        <Archive sha1sum="2e50741c0b22a0ad06e43a21106b97f67bbbd3d7" type="tarbz2">ftp://ftp.hu.netfilter.org/conntrack-tools/conntrack-tools-1.0.0.tar.bz2</Archive>
+        <Archive sha1sum="f6709c0b33b46c6d3517450b536e9a4f5a082e40" type="tarbz2">http://www.netfilter.org/projects/conntrack-tools/files/conntrack-tools-1.2.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libnfnetlink-devel</Dependency>
-            <Dependency>libnetfilter_conntrack-devel</Dependency>
+            <Dependency versionFrom="1.0.1">libnetfilter_conntrack-devel</Dependency>
+            <Dependency versionFrom="1.0.0">libnetfilter-cttimeout-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +25,8 @@
         <Name>conntrack-tools</Name>
         <RuntimeDependencies>
             <Dependency>libnfnetlink</Dependency>
-            <Dependency>libnetfilter_conntrack</Dependency>
+            <Dependency versionFrom="1.0.1">libnetfilter_conntrack</Dependency>
+            <Dependency versionFrom="1.0.0">libnetfilter-cttimeout</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/sbin</Path>
@@ -37,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-01</Date>
+            <Version>1.2.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2011-08-01</Date>
             <Version>1.0.0</Version>
