@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Parallized login guesser</Summary>
         <Description>hydra is a very fast login guesser supporting many protocols.</Description>
-        <Archive sha1sum="c878ac5a22e7693695921b215826c579117fd098" type="targz">http://freeworld.thc.org/releases/hydra-6.4-src.tar.gz</Archive>
+        <Archive sha1sum="9e4caddbc9f8b9f2997096ae958b9c10caf436dd" type="targz">http://freeworld.thc.org/releases/hydra-7.1-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libssh-devel</Dependency>
             <Dependency>subversion</Dependency>
@@ -26,8 +26,8 @@
             <Patch>hydra-5.4-free-without-malloc.patch</Patch>
             <Patch>hydra-5.4-libssh-0.4.0.patch</Patch>
             -->
-            <Patch level="1">overlink.patch</Patch>
-            <Patch level="1">mathlib.patch</Patch>
+            <!--<Patch level="1">overlink.patch</Patch>
+            <Patch level="1">mathlib.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-01</Date>
+            <Version>7.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-07-06</Date>
             <Version>6.4</Version>

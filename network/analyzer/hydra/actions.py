@@ -8,7 +8,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "hydra-%s-src" % get.srcVERSION()
+#WorkDir = "hydra-%s-src" % get.srcVERSION()
 
 moduleconfig = {"XDEFINES": "-DLIBOPENSSL -DLIBSSH",
                 "XLIBS": "-lcrypto -lssl -lssh -lm",
