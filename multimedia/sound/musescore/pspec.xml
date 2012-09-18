@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Free music notation program</Summary>
         <Description>musescore is a free WYSIWYG music notation program, that offers a cost-effective alternative to proprietary programs such as Sibelius and Finale.</Description>
-        <Archive sha1sum="a4e3963b995bbadf0f9a9ecdb6134d58414fd6cc" type="tarbz2">mirrors://sourceforge/mscore/mscore/MuseScore-1.1/mscore-1.1.tar.bz2</Archive>
+        <Archive sha1sum="378d9efe4e6f103284bd0b9a61a58ed0c429215e" type="tarbz2">http://sourceforge.net/projects/mscore/files/mscore/MuseScore-1.2/mscore-1.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
@@ -33,7 +33,7 @@
 
             <!-- Do not remove that! Musescore cannot play scores unless it's used with Jack or Portaudio, 
             portaudio is easier to use and configure than jack, so enable it by default -->
-            <Patch level="2">14-enable-portaudio-by-default.patch</Patch>
+            <!--<Patch level="2">14-enable-portaudio-by-default.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -61,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-31</Date>
+            <Version>1.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2011-10-24</Date>
             <Version>1.1</Version>

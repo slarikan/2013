@@ -3,7 +3,7 @@
 @@ -18,7 +18,7 @@
  ICONDIR = $(PREFIX)/share/pixmaps
  LOCALEDIR = $(PREFIX)/share/locale
- 
+ # CONFIGURE_IN = sed -e 's!prefix!$(PREFIX)!g'
 -CONFIGURE_IN = sed -e "s!prefix = '/usr'!prefix = '$(prefix)'!g"
 +CONFIGURE_IN = sed -e "s!prefix = '/usr'!prefix = '/usr'!g"
  

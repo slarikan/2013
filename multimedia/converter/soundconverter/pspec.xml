@@ -5,21 +5,21 @@
         <Name>soundconverter</Name>
         <Homepage>http://soundconverter.berlios.de</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>soundconverter</Icon>
         <IsA>app:gui</IsA>
         <Summary>Sound conversion application for linux</Summary>
         <Description>Soundconverter reads anything the GStreamer library can read and writes WAV, FLAC, MP3, AAC, and Ogg Vorbis files.</Description>
-        <Archive sha1sum="8dac0ca32a2c1274f6cc9b465f1debfead473898" type="targz">http://download.berlios.de/soundconverter/soundconverter-1.5.4.tar.gz</Archive>
+        <Archive sha1sum="ca9b0f001af2ad045a78cb2c453d621033d0a8c7" type="tarxz">https://launchpad.net/soundconverter/trunk/2.0.3/+download/soundconverter-2.0.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome-python-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>desktop.patch</Patch>
-            <Patch level="1">soundconverter-1.5.4-turkish-translation-fixes.patch</Patch>
+            <Patch level="0">soundconverter-tr.patch</Patch>
+            <Patch level="0">soundconverter.desktop.patch</Patch>
         </Patches>
     </Source>
 
@@ -42,6 +42,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/soundconverter</Path>
+	    <Path fileType="library">/usr/lib/soundconverter/python/</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -50,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-27</Date>
+            <Version>2.0.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-02-04</Date>
             <Version>1.5.4</Version>

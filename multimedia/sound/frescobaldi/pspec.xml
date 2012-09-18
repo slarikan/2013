@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A LilyPond sheet music editor for KDE4</Summary>
         <Description>Frescobaldi is a LilyPond sheet music editor for KDE4. It aims to be powerful, yet lightweight and easy to use.</Description>
-        <Archive sha1sum="cf5b9747920507bc2f02092735c5c40bbf1ac050" type="targz">http://lilykde.googlecode.com/files/frescobaldi-1.2.0.tar.gz</Archive>
+        <Archive sha1sum="1aeb344a9b3c4bb12f144d4fbb94948631d1407a" type="targz">https://github.com/downloads/wbsoft/frescobaldi/frescobaldi-2.0.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>python-kde</Dependency>
@@ -27,7 +27,6 @@
         <RuntimeDependencies>
             <Dependency>kdelibs</Dependency>
             <Dependency>python-kde</Dependency>
-            <Dependency>kdegraphics</Dependency>
             <Dependency>kdebase</Dependency>
             <Dependency>rumor</Dependency>
             <Dependency>lilypond</Dependency>
@@ -41,6 +40,7 @@
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/lib/python2.7/site-packages/frescobaldi_app</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/icons/hicolor/48x48/apps/frescobaldi.png">frescobaldi.png</AdditionalFile>
@@ -48,6 +48,27 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-08-29</Date>
+            <Version>2.0.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="14">
+            <Date>2012-06-02</Date>
+            <Version>2.0.2</Version>
+            <Comment>Recompile with new actions.py file</Comment>
+            <Name>Hamit Giray Nart</Name>
+            <Email>hamit@pardus-linux.org</Email>
+        </Update>
+        <Update release="13">
+            <Date>2012-05-27</Date>
+            <Version>2.0.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="12">
             <Date>2011-03-18</Date>
             <Version>1.2.0</Version>

@@ -1,7 +1,7 @@
-Index: ZynAddSubFX-2.4.1/src/Makefile
+Index: ZynAddSubFX-2.4.3/src/Makefile
 ===================================================================
---- ZynAddSubFX-2.4.1.orig/src/Makefile
-+++ ZynAddSubFX-2.4.1/src/Makefile
+--- ZynAddSubFX-2.4.3.orig/src/Makefile
++++ ZynAddSubFX-2.4.3/src/Makefile
 @@ -1,10 +1,6 @@
  include Makefile.inc
  
@@ -14,10 +14,10 @@ Index: ZynAddSubFX-2.4.1/src/Makefile
  
  CXXFLAGS += -DOS_$(OS_PORT) -D$(MIDIIN)MIDIIN -DFFTW_VERSION_$(FFTW_VERSION) -DASM_F2I_$(ASM_F2I) -ggdb
  
-Index: ZynAddSubFX-2.4.1/src/Makefile.inc
+Index: ZynAddSubFX-2.4.3/src/Makefile.inc
 ===================================================================
---- ZynAddSubFX-2.4.1.orig/src/Makefile.inc
-+++ ZynAddSubFX-2.4.1/src/Makefile.inc
+--- ZynAddSubFX-2.4.3.orig/src/Makefile.inc
++++ ZynAddSubFX-2.4.3/src/Makefile.inc
 @@ -31,7 +31,7 @@ LINUX_MIDIIN=ALSA
  #LINUX_AUDIOOUT=OSS_AND_JACK
  LINUX_AUDIOOUT=OSS

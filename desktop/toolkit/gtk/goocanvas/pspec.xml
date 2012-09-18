@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A cairo canvas widget for GTK+</Summary>
         <Description>GooCanvas is a canvas widget for GTK+ that uses the cairo 2D library for drawing.</Description>
-        <Archive sha1sum="1ddd882e225260c65dd1e6f429dc5a716d69bb68" type="tarbz2">mirrors://gnome/goocanvas/0.15/goocanvas-0.15.tar.bz2</Archive>
+        <Archive sha1sum="7f496b17d56467ed69d96e721f87af7497747204" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/goocanvas/2.0/goocanvas-2.0.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -64,6 +64,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-26</Date>
+            <Version>2.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>0.15</Version>

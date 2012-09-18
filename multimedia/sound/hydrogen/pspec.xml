@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Advanced drum machine for GNU/Linux</Summary>
         <Description>Hydrogen is an advanced drum machine for GNU/Linux. It's main goal is to bring professional yet simple and intuitive pattern-based drum programming.</Description>
-        <Archive sha1sum="7b20e40e90c4c1abdda8900109a5983a314719a9" type="targz">mirrors://sourceforge/hydrogen/Hydrogen/0.9.4 Sources/hydrogen-0.9.4.2.tar.gz</Archive>
+        <Archive sha1sum="7cb1578aac493483ca984b9f7c3918d3b264e460" type="targz">http://sourceforge.net/projects/hydrogen/files/Hydrogen/0.9.5%20Sources/hydrogen-0.9.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>flac-devel</Dependency>
@@ -30,7 +30,7 @@
         <Patches>
             <!-- Those are shipped with hydrogen package -->
             <Patch level="0">hydrogen-portaudio.patch</Patch>
-            <Patch level="1">fix-portmidi-build.patch</Patch>
+            <!--<Patch level="1">fix-portmidi-build.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -62,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-31</Date>
+            <Version>0.9.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-01-24</Date>
             <Version>0.9.4.2</Version>

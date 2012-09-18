@@ -14,9 +14,8 @@ def setup():
 
     autotools.autoreconf("-vfi")
 
-    options = "--disable-dependency-tracking \
-               --enable-largefile \
-               --disable-static"
+    options = "--disable-werror \
+	       --enable-largefile"
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 \

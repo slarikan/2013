@@ -9,9 +9,9 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.autoreconf("-vif")
-    autotools.configure("--disable-static \
-                         --enable-gtk-doc")
+    #autotools.autoreconf("-vif")
+    autotools.configure("--enable-static=no \
+			 --enable-introspection=yes")
 
 def build():
     autotools.make()

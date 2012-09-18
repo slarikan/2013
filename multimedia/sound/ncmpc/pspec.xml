@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>ncmpc</Name>
-        <Homepage>http://hem.bredband.net/kaw/ncmpc</Homepage>
+        <Homepage>http://mpd.wikia.com/wiki/Client:Ncmpc</Homepage>
         <Packager>
             <Name>H. İbrahim Güngör</Name>
             <Email>ibrahim@pardus.org.tr</Email>
@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Curses client for the Music Player Daemon (MPD)</Summary>
         <Description>ncmpc connects to an MPD running on a machine on the local network, and controls this with an interface inspired by cplay.</Description>
-        <Archive sha1sum="2e3ed1beb80821655f00578ffed1828efb6f3445" type="tarbz2">mirrors://sourceforge/musicpd/ncmpc/ncmpc-0.18.tar.bz2</Archive>
+        <Archive sha1sum="da106de4b11a48eb2d63619da1316713f95cc9cb" type="tarbz2">mirrors://sourceforge/musicpd/ncmpc/ncmpc-0.20.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libmpdclient-devel</Dependency>
             <Dependency>lirc-devel</Dependency>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+       <Update release="9">
+            <Date>2012-08-31</Date>
+            <Version>0.20</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>0.18</Version>

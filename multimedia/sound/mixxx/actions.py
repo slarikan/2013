@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import scons
 from pisi.actionsapi import get
 
-WorkDir = "mixxx-%s~release-1.9.x~bzr2720" % get.srcVERSION()
+WorkDir = "mixxx-%s" % get.srcVERSION()
 
 def build():
     shelltools.export("LINKFLAGS", get.LDFLAGS())

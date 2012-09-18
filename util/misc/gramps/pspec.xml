@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Genealogical research software</Summary>
         <Description>GRAMPS is a GNOME genealogy program for Linux that allows you to easily build and keep track of your family tree.</Description>
-        <Archive sha1sum="0e3343921400758668158bbfa072b37a702ea1b9" type="targz">mirrors://sourceforge/gramps/gramps-3.2.6.tar.gz</Archive>
+        <Archive sha1sum="6eec8629807ed84d196d83c43d0c20abd9cda544" type="targz">mirrors://sourceforge/gramps/gramps-3.4.0.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -63,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-05</Date>
+            <Version>3.4.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ertan Argüden</Name>
+            <Email>ert976@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2011-05-05</Date>
             <Version>3.2.6</Version>

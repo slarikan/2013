@@ -1,7 +1,7 @@
-Index: xine-ui-0.99.6_20110320/misc/desktops/Makefile.am
+Index: misc/desktops/Makefile.am
 ===================================================================
---- xine-ui-0.99.6_20110320.orig/misc/desktops/Makefile.am
-+++ xine-ui-0.99.6_20110320/misc/desktops/Makefile.am
+--- misc/desktops/Makefile.am
++++ misc/desktops/Makefile.am
 @@ -1,5 +1,4 @@
  EXTRA_DIST = $(pixmap_DATA) xine.wmconfig \
 -	xine.desktop.in \

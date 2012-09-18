@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>A panoramic photo stitcher</Summary>
         <Description>hugin can be used to stitch multiple images together. The resulting image can span 360 degrees. Another common use is the creation of very high resolution pictures by combining multiple images.</Description>
-        <Archive sha1sum="22e1ad3846291a9bbe58570683e213921a6f0116" type="tarbz2">mirrors://sourceforge/project/hugin/hugin/hugin-2011.0/hugin-2011.0.0.tar.bz2</Archive>
+        <Archive sha1sum="8f9aa64b86f799283d302d702de4ecb16976f07a" type="tarbz2">http://sourceforge.net/projects/hugin/files/hugin/hugin-2012.0/hugin-2012.0.0_beta1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>wxGTK-devel</Dependency>
             <Dependency>boost-devel</Dependency>
@@ -28,11 +28,12 @@
             <Dependency>tiff-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>lapack-devel</Dependency>
+	    <Dependency>tclap-devel</Dependency>
             <Dependency>blas-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">pthread.patch</Patch>
-            <Patch level="1">fix-desktop-files.patch</Patch>
+            <!--<Patch level="1">fix-desktop-files.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -46,6 +47,7 @@
             <Dependency>ilmbase</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>wxGTK</Dependency>
+	    <Dependency>tclap</Dependency>
             <Dependency>wxBase</Dependency>
             <Dependency>exiv2-libs</Dependency>
             <Dependency>glew</Dependency>
@@ -54,9 +56,12 @@
             <Dependency>make</Dependency>
             <Dependency>hugin-tools</Dependency>
             <Dependency>hugin-libs</Dependency>
-        </RuntimeDependencies>
+        </RuntimeDependencies> 
         <Files>
-            <Path fileType="executable">/usr/bin/PTBatcherGUI</Path>
+            <Path fileType="executable">/usr/bin/calibrate_lens_gui</Path>
+	    <Path fileType="executable">/usr/bin/pto_gen</Path>
+	    <Path fileType="executable">/usr/bin/linefind</Path>
+	    <Path fileType="executable">/usr/bin/PTBatcherGUI</Path>
             <Path fileType="executable">/usr/bin/PTBatcher</Path>
             <Path fileType="executable">/usr/bin/autopano-noop.sh</Path>
             <Path fileType="executable">/usr/bin/hugin_stitch_project</Path>
@@ -65,7 +70,7 @@
             <Path fileType="executable">/usr/bin/cpfind</Path>
             <Path fileType="executable">/usr/bin/checkpto</Path>
             <Path fileType="executable">/usr/bin/icpfind</Path>
-            <Path fileType="library">/usr/lib/hugin/libhuginbasewx.*</Path>
+            <Path fileType="library">/usr/lib/</Path>
             <Path fileType="library">/usr/lib/hugin/liblocalfeatures.*</Path>
             <Path fileType="library">/usr/lib/hugin/libicpfindlib.*</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -83,6 +88,7 @@
             <Path fileType="man">/usr/share/man/man1/icpfind.1.*</Path>
             <Path fileType="man">/usr/share/man/man1/cpfind.1.*</Path>
             <Path fileType="man">/usr/share/man/man1/hugin_stitch_project.1.*</Path>
+	    <Path fileType="man">/usr/share/man/man1</Path>
         </Files>
     </Package>
 
@@ -101,6 +107,9 @@
             <Dependency>freeglut</Dependency>
             <Dependency>ilmbase</Dependency>
         </RuntimeDependencies>
+         <Conflicts>
+             <Package releaseTo="15">hugin</Package>
+         </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin/align_image_stack</Path>
             <Path fileType="executable">/usr/bin/autooptimiser</Path>
@@ -151,6 +160,9 @@
             <Dependency>lapack</Dependency>
             <Dependency>jpeg</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="15">hugin</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/hugin/libceleste.*</Path>
             <Path fileType="library">/usr/lib/hugin/libflann_cpp.*</Path>
@@ -170,6 +182,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-08-28</Date>
+            <Version>2012.0.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update> 
         <Update release="18">
             <Date>2011-06-13</Date>
             <Version>2011.0.0</Version>

@@ -5,8 +5,8 @@
         <Name>mkvtoolnix</Name>
         <Homepage>http://www.bunkus.org/videotools/mkvtoolnix/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>mmg</Icon>
@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>A set of tools to create, alter and inspect Matroska files</Summary>
         <Description>MKVToolnix is a set of tools (mkvmerge, mkvinfo and mkvextract) With these tools one can get information about (mkvinfo) Matroska files, extract tracks/data from (mkvextract) Matroska files and create (mkvmerge) Matroska files from other media files.</Description>
-        <Archive sha1sum="afa101267882c1c9fe89b6e75b5818ebec4d2209" type="tarbz2">http://www.bunkus.org/videotools/mkvtoolnix/sources/mkvtoolnix-4.2.0.tar.bz2</Archive>
+        <Archive sha1sum="c0ec30ef79435b287d52253abe45b105c77434ce" type="tarbz2">http://www.bunkus.org/videotools/mkvtoolnix/sources/mkvtoolnix-5.7.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libmatroska-devel</Dependency>
             <Dependency>flac-devel</Dependency>
@@ -25,9 +25,9 @@
             <Dependency>libebml-devel</Dependency>
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">desktop.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -56,6 +56,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-08-27</Date>
+            <Version>5.7.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2010-10-12</Date>
             <Version>4.2.0</Version>

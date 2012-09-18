@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A Python module and program for processing ID3 tags</Summary>
         <Description>eyeD3 is a Python module and program for processing ID3 tags. Information about mp3 files (i.e bit rate, sample frequency, play time, etc.) is also provided. The formats supported are ID3 v1.0/v1.1 and v2.3/v2.4.</Description>
-        <Archive sha1sum="a607ce4355f395ef137c265f8dad60ac67ba4e47" type="targz">http://eyed3.nicfit.net/releases/eyeD3-0.6.17.tar.gz</Archive>
+        <Archive sha1sum="d8887f7b75306bd293e0b0d46a977e73225ae7b5" type="targz">http://eyed3.nicfit.net/releases/eyeD3-0.6.18.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="32">
+            <Date>2012-08-27</Date>
+            <Version>0.6.18</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2009-06-06</Date>
             <Version>0.6.17</Version>

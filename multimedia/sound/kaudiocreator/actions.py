@@ -10,8 +10,10 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 from pisi.actionsapi import kde4
 
-shelltools.export("HOME", get.workDIR())
-NoStrip = ["/usr/share"]
+workDir = "jack-1.9.8/jack-1.9.8"
+
+#shelltools.export("HOME", get.workDIR())
+#NoStrip = ["/usr/share"]
 
 def setup():
     kde4.configure()

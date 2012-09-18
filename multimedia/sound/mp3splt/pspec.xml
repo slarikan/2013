@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A command line utility to split MP3/OGG files</Summary>
         <Description>Mp3splt is a command-line utility to split mp3/ogg files selecting a begin and an end time position, without decoding. It's very useful to split large MP3/OGG to make smaller files or to split entire albums to obtain original tracks. If you want to split an album, you can select split points and filenames manually or you can get them automatically from CDDB (internet or a local file) or from .cue files. Supports also automatic silence split that can be used also to adjust cddb/cue splitpoints. You can extract tracks from Mp3Wrap or AlbumWrap files in few seconds.</Description>
-        <Archive sha1sum="4f33ca1edc5fb9c651d730a90bfedced732d9a0e" type="targz">http://prdownloads.sourceforge.net/mp3splt/mp3splt-2.2.9.tar.gz</Archive>
+        <Archive sha1sum="0a66b2e2cfc6091cfd0dc9fc303a0650de3bc738" type="targz">http://sourceforge.net/projects/mp3splt/files/mp3splt/2.4.2/mp3splt-2.4.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libogg-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-08-31</Date>
+            <Version>2.4.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-11-24</Date>
             <Version>2.9</Version>

@@ -9,8 +9,7 @@ from pisi.actionsapi import pisitools
 
 def setup():
     autotools.configure("--disable-static\
-                         --enable-animation\
-                         --enable-lua")
+                         --enable-animation")
     pisitools.dosed("libtool", " -shared ", \
                     " -Wl,--as-needed -shared ")
 

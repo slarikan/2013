@@ -32,10 +32,10 @@ def build():
     autotools.make()
     autotools.make("-C documentation all")
 
-def check():
-    shelltools.export("HOME", get.workDIR())
+#def check():
+#    shelltools.export("HOME", get.workDIR())
 
-    autotools.make("check")
+#    autotools.make("check")
 
 def install():
     autotools.install()

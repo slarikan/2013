@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>fluidsynth GUI</Summary>
         <Description>Qsynth is a fluidsynth GUI front-end application.</Description>
-        <Archive sha1sum="482960612dbc1ff921ff4e3dc6c61f82b9fb9d83" type="targz">mirrors://sourceforge/qsynth/qsynth-0.3.5.tar.gz</Archive>
+        <Archive sha1sum="dffba1d9125466ae4f6c3e408d2c8d9a6e884f4b" type="targz">mirrors://sourceforge/qsynth/qsynth-0.3.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.6.2">qt-devel</Dependency>
-            <Dependency>fluidsynth</Dependency>
+            <Dependency>fluidsynth-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+      <Update release="5">
+            <Date>2012-08-29</Date>
+            <Version>0.3.6</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2011-02-01</Date>
             <Version>0.3.5</Version>

@@ -9,6 +9,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
+shelltools.export("HOME", get.workDIR())
+
 def setup():
     shelltools.export("LIRC_CFLAGS", "-llirc_client")
     shelltools.export("LIRC_LDFLAGS", "-llirc_client")

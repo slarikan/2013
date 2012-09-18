@@ -7,7 +7,7 @@
 
 from pisi.actionsapi import pisitools
 
-WorkDir = "dvd-slideshow-0.8.2-2"
+WorkDir = "dvd-slideshow-0.8.4-2"
 
 def install():
     pisitools.dobin("dvd-slideshow")

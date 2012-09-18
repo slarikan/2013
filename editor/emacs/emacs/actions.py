@@ -20,7 +20,7 @@ def removeCruft():
                 shelltools.unlink(os.path.join(root, name))
 
 def setup():
-    autotools.autoreconf("-fvi")
+    #autotools.autoreconf("-fvi")
     autotools.configure("--with-x-toolkit=gtk \
                          --with-xft")
 

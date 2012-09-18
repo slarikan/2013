@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Image Processing and Analysis in Java</Summary>
         <Description>ImageJ is a fast free image processing and analysis tool purely written in Java. It supports many standard image formats as well as the DICOM file format used commonly in medical applications.</Description>
-        <Archive sha1sum="151f0d77c82aa4fb05818f037d2eb823fc0eef85" type="zip">http://rsb.info.nih.gov/ij/download/src/ij144n-src.zip</Archive>
+        <Archive sha1sum="5caa1fe3c467f9836e3ff393d52a29c3a39df1f8" type="zip">http://rsb.info.nih.gov/ij/download/src/ij147b-src.zip</Archive>
         <BuildDependencies>
             <Dependency>ant</Dependency>
         </BuildDependencies>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-28</Date>
+            <Version>1.47b</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update> 
         <Update release="5">
             <Date>2011-01-30</Date>
             <Version>1.44n</Version>

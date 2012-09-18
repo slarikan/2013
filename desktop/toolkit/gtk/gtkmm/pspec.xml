@@ -5,16 +5,17 @@
         <Name>gtkmm</Name>
         <Homepage>http://gtkmm.sourceforge.net</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>C++ binding for GTK+</Summary>
         <Description>gtkmm is the official C++ interface for the popular GUI library GTK+. Highlights include typesafe callbacks, and a comprehensive set of widgets that are easily extensible via inheritance.</Description>
-        <Archive sha1sum="ad53f52f18cc3021b7fd6cd06f965471039d5333" type="tarbz2">mirrors://gnome/gtkmm/2.20/gtkmm-2.20.3.tar.bz2</Archive>
+        <Archive sha1sum="e031431e24e7e8cb44111ffd994fca30c70e923e" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtkmm/3.4/gtkmm-3.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
+	    <Dependency>atkmm-devel</Dependency>
             <Dependency>glibmm-devel</Dependency>
             <Dependency>cairomm-devel</Dependency>
             <Dependency>pangomm-devel</Dependency>
@@ -55,6 +56,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-08-26</Date>
+            <Version>3.4.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2010-10-12</Date>
             <Version>2.20.3</Version>

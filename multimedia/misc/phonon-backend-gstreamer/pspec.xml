@@ -11,11 +11,11 @@
         <License>LGPLv2+</License>
         <IsA>library</IsA>
         <Summary>GStreamer phonon backend</Summary>
-        <Description>Phonon is the Qt multimedia API, which provides a task-oriented abstraction layer for capturing, mixing, processing, and playing audio and video content. phonon-backend-gstreamer contains the GStreamer backend for Phonon. </Description>
-        <Archive sha1sum="3f8c059bb60e78fc1eb61bde5ab2c3bba395ca98" type="tarbz2">mirrors://kde/stable/phonon/phonon-backend-gstreamer/4.5.1/src/phonon-backend-gstreamer-4.5.1.tar.bz2</Archive>
+        <Description>Phonon is the Qt multimedia API, which provides a task-oriented abstraction layer for capturing, mixing, processing, and playing audio and video content. phonon-backend-gstreamer contains the GStreamer backend for Phonon.</Description>
+        <Archive sha1sum="331451e6028f3b8ea356da1d8e979fbd6f8882e7" type="tarxz">mirrors://kde/stable/phonon/phonon-backend-gstreamer/4.6.0/src/phonon-backend-gstreamer-4.6.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
-            <Dependency>phonon-devel</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency>automoc4</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
@@ -29,7 +29,8 @@
     <Package>
         <Name>phonon-backend-gstreamer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.2">qt</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>mesa</Dependency>
@@ -41,7 +42,14 @@
     </Package>
 
     <History>
-        <Update release="31">
+        <Update release="32">
+            <Date>2012-03-14</Date>
+            <Version>4.6.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+	<Update release="31">
             <Date>2011-05-27</Date>
             <Version>4.5.1</Version>
             <Comment>Split phonon-backend-gstreamer as a new source package and keep release since we already have a phonon-backend-gstreamer binary package from old phonon.</Comment>

@@ -13,20 +13,20 @@
         <IsA>app:gui</IsA>
         <Summary>Icon editor for KDE4</Summary>
         <Description>kiconedit is a small icon drawing program especially for creating icons using the standard KDE icon palette.</Description>
-        <Archive sha1sum="2266ec2074e5e5d17241d6befef2e368d22fbef3" type="tarbz2">http://cekirdek.pardus.org.tr/~gokcen/files/kiconedit-4.4.0.tar.bz2</Archive>
+	<Archive sha1sum="5749085e809d9c9b414c3cb3a334ddfd713b3b7d" type="targz">http://dl.dropbox.com/u/60245852/kiconedit.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fix-docbook.diff</Patch>
-        </Patches>
+            <Patch level="0">kiconedit.desktop.patch</Patch>
+	  </Patches>
     </Source>
 
     <Package>
         <Name>kiconedit</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-27</Date>
+            <Version>4.4.0</Version>
+            <Comment>source file edit</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>4.4.0</Version>

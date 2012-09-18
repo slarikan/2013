@@ -5,15 +5,15 @@
         <Name>vcdimager</Name>
         <Homepage>http://www.vcdimager.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <IsA>library</IsA>
         <Summary>VCD and SVCD image file maker and converter</Summary>
         <Description>VCDImager is a full-featured mastering suite for authoring, disassembling and analyzing Video CD's and Super Video CD's.  The core functionality consists of directly making Video CD BIN/CUE-style CD images from mpeg files.</Description>
-        <Archive sha1sum="6d1a3125fa8b7fa88a993e0c028cadcc03ac6304" type="targz">mirrors://gnu/vcdimager/vcdimager-0.7.23.tar.gz</Archive>
+        <Archive sha1sum="8c245555c3e21dcbc3d4dbb2ecca74f609545424" type="targz">http://mirror.veriportal.com/gnu/vcdimager/vcdimager-0.7.24.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libcdio-devel</Dependency>
         </BuildDependencies>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-27</Date>
+            <Version>0.7.24</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>0.7.23</Version>

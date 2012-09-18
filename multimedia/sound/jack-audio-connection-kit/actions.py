@@ -9,14 +9,13 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 import os
 
-WorkDir = "jack-%s" % get.srcVERSION()
+a=get.srcVERSION()
+WorkDir = "jack-%s/jack-%s" % (a,a)
 del(os.environ["JOBS"])
 
 def setup():
     shelltools.system("./waf configure \
                         --prefix=/usr \
-                        --doxygen \
-                        --dbus \
                         --classic \
                         --firewire \
                         --freebob \

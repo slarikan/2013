@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Editor for text-based subtitle files</Summary>
         <Description>Gaupol is an editor for text-based subtitle files. It supports multiple subtitle file formats and provides means of correcting texts and timing subtitles to match video.</Description>
-        <Archive sha1sum="2f3a5fbf9e6eb6f4358085677622ee25428c2f6f" type="targz">http://download.gna.org/gaupol/0.19/gaupol-0.19.tar.gz</Archive>
+        <Archive sha1sum="33849f5ec1412f01f94eb87ac6d8ba0e7ffe6d8a" type="tarbz2">http://download.gna.org/gaupol/0.19/gaupol-0.19.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>gst-python-devel</Dependency>
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+      <Update release="6">
+            <Date>2012-08-17</Date>
+            <Version>0.19.2</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-08-01</Date>
             <Version>0.19</Version>

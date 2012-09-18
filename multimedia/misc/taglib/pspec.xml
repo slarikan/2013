@@ -5,18 +5,17 @@
         <Name>taglib</Name>
         <Homepage>http://developer.kde.org/~wheeler/taglib.html</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>A library for reading and editing audio meta data</Summary>
         <Description>TagLib is a library for reading and editing the meta data of several popular audio formats.</Description>
-        <Archive sha1sum="ee54f10c63f236ef1c29c82e39c227a75a7e3785" type="targz">http://developer.kde.org/~wheeler/files/src/taglib-1.6.3.tar.gz</Archive>
+        <Archive sha1sum="e657384ccf3284db2daba32dccece74534286012" type="targz">https://github.com/downloads/taglib/taglib/taglib-1.7.2.tar.gz</Archive>
         <Patches>
-            <Patch>wma-patches.patch</Patch>
             <Patch level="1">wma-files.patch</Patch>
-            <Patch>taglib-1.6-gcc43-tests.patch</Patch>
+            <Patch level="1">taglib-1.4_wchar.diff</Patch>
         </Patches>
     </Source>
 
@@ -42,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-08-22</Date>
+            <Version>1.7.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-12</Date>
             <Version>1.6.3</Version>

@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Software speech synthesizer (text-to-speech)</Summary>
         <Description>espeak produces good quality English speech. It uses a different synthesis method from other open source TTS engines and sounds quite different.</Description>
-        <Archive sha1sum="2c10c4b56561b7362ce16b628a68c457c7dc4f81" type="zip">mirrors://sourceforge/project/espeak/espeak/espeak-1.45/espeak-1.45.05-source.zip</Archive>
+        <Archive sha1sum="221e04faeaab04973c4fa19680633f7385198459" type="zip">http://sourceforge.net/projects/espeak/files/espeak/espeak-1.46/espeak-1.46.02-source.zip</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0755" target="compile-voices">compile-voices.sh</AdditionalFile>
         </AdditionalFiles>
@@ -23,7 +23,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">espeak-1.23-makefile_nostaticlibs.patch</Patch>
-            <Patch level="1">espeak-1.45.05-runtime-detection.patch</Patch>
+            <!--<Patch level="1">espeak-1.45.05-runtime-detection.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-08-29</Date>
+            <Version>1.46.02</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2011-11-21</Date>
             <Version>1.45.05</Version>

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Management tool for PulseAudio</Summary>
         <Description>paprefs is a simple GTK based configuration application for the PulseAudio sound server.</Description>
-        <Archive sha1sum="01ade3fc8295ef2a02cd97e32b6a5e353cd97c1c" type="targz">http://0pointer.de/lennart/projects/paprefs/paprefs-0.9.9.tar.gz</Archive>
+        <Archive sha1sum="5ee6d2e1383048d43f9af239d2930d8edb7e8b72" type="targz">http://freedesktop.org/software/pulseaudio/paprefs/paprefs-0.9.10.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>pulseaudio-gconf</Dependency>
@@ -30,9 +30,9 @@
             <Patch level="1">fix-desktop.patch</Patch>
 
             <!-- Mandriva & Upstream patches -->
-            <Patch level="1">mandriva/0100-packagekit-Tidy-up-packagekit-UI-integration-code.patch</Patch>
+            <!--<Patch level="1">mandriva/0100-packagekit-Tidy-up-packagekit-UI-integration-code.patch</Patch>
             <Patch level="1">mandriva/0101-Enable-the-PackageKit-install-buttons-only-when-Pack.patch</Patch>
-            <Patch level="1">mandriva/0102-Dynamically-build-the-paths-to-the-modules.patch</Patch>
+            <Patch level="1">mandriva/0102-Dynamically-build-the-paths-to-the-modules.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -59,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-30</Date>
+            <Version>0.9.10</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>0.9.9</Version>

@@ -11,7 +11,7 @@ from pisi.actionsapi import libtools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.dosed("configure", "-O3")
+    #pisitools.dosed("configure", "-O3")
     # libtools.libtoolize()
     autotools.configure("--disable-static")
 

@@ -5,8 +5,8 @@
         <Name>libv4l</Name>
         <Homepage>http://people.atrpms.net/~hdegoede/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2.1</License>
@@ -16,7 +16,7 @@
         <!--
         <Archive sha1sum="6fc2c490fb14a109e25745cf2df226bbddda8b0c" type="targz">http://people.fedoraproject.org/~jwrdegoede/libv4l-0.6.4.tar.gz</Archive>
         -->
-        <Archive sha1sum="4af47832cbe222b562e476f1fc1aea0d9ad98408" type="tarbz2">http://linuxtv.org/downloads/v4l-utils/v4l-utils-0.8.4.tar.bz2</Archive>
+        <Archive sha1sum="f7d4b6d2fd9244a27f756abfc7ef5787e1e2c9a2" type="tarbz2">http://linuxtv.org/downloads/v4l-utils/v4l-utils-0.8.8.tar.bz2</Archive>
             <!--
         <Patches>
             <Patch level="1">bug11603.patch</Patch>
@@ -87,6 +87,13 @@
     </Package>
 
     <History>
+        <Update release="34">
+            <Date>2012-08-29</Date>
+            <Version>0.8.8</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="33">
             <Date>2011-06-13</Date>
             <Version>0.8.4</Version>

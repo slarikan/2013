@@ -13,11 +13,11 @@ from pisi.actionsapi import get
 WorkDir = "portaudio"
 
 def setup():
-    autotools.configure("--disable-static --enable-cxx")
+    autotools.configure("--disable-static --prefix=/usr")
 
 def build():
     autotools.make()
-    shelltools.system("doxygen")
+
 
 def install():
     autotools.rawInstall('DESTDIR="%s" libdir=/usr/lib' % get.installDIR())

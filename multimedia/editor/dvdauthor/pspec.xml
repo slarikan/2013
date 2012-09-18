@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A simple DVD tool</Summary>
         <Description>dvdauthor is a set of simple tools to help you author a DVD.</Description>
-        <Archive sha1sum="7b6e190a3903f617d08368e3cc5e6fd80677e2fb" type="targz">mirrors://sourceforge/dvdauthor/dvdauthor-0.6.18.tar.gz</Archive>
+        <Archive sha1sum="a9636d165bf546e3e2b25b7397c33dbfa2895e6a" type="targz">http://sourceforge.net/projects/dvdauthor/files/dvdauthor/0.7.1/dvdauthor-0.7.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>fribidi-devel</Dependency>
             <Dependency>libdvdread-devel</Dependency>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-17</Date>
+            <Version>0.7.1</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-05-03</Date>
             <Version>0.6.18</Version>

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Text rendering and layout library</Summary>
         <Description>Pango is a library for laying out and rendering of text, with an emphasis on internationalization. Pango can be used anywhere that text layout is needed, though most of the work on Pango so far has been done in the context of the GTK+ widget toolkit. Pango forms the core of text and font handling for GTK+-2.x.</Description>
-        <Archive sha1sum="e72887d6e147b9abf54628c003836e61d97767a1" type="tarbz2">mirrors://gnome/pango/1.28/pango-1.28.3.tar.bz2</Archive>
+        <Archive sha1sum="f853a35758bed6aba6101e027ba7b4411448236f" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/pango/1.30/pango-1.30.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cairo-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
@@ -23,8 +23,8 @@
             <Dependency versionFrom="0.9.12">gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">CVE-2011-0020.patch</Patch>
-            <Patch level="1">CVE-2011-0064.patch</Patch>
+            <!--Patch level="1">CVE-2011-0020.patch</Patch-->
+            <!--Patch level="1">CVE-2011-0064.patch</Patch-->
         </Patches>
     </Source>
 
@@ -105,6 +105,13 @@
     </Package>
 
     <History>
+        <Update release="41">
+            <Date>2011-07-07</Date>
+            <Version>1.30.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="40">
             <Date>2011-07-07</Date>
             <Version>1.28.3</Version>

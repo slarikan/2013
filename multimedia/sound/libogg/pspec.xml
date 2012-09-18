@@ -5,14 +5,14 @@
         <Name>libogg</Name>
         <Homepage>http://www.vorbis.com</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>
         <Summary>The Ogg media file format library</Summary>
         <Description>libogg is a library for manipulating Ogg bitstream file formats. libogg supports both making Ogg bitstreams and getting packets from Ogg bitstreams.</Description>
-        <Archive sha1sum="135fb812282e08833295c91e005bd0258fff9098" type="targz">http://downloads.xiph.org/releases/ogg/libogg-1.2.0.tar.gz</Archive>
+        <Archive sha1sum="d74e7514f268d58a171b4b9baf15602fd8060c33" type="tarxz">http://downloads.xiph.org/releases/ogg/libogg-1.3.0.tar.xz</Archive>
         <Patches>
             <!-- Fix m4 file -->
             <Patch level="1">libogg-1.0-m4.patch</Patch>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-08-31</Date>
+            <Version>1.3.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-03-01</Date>
             <Version>1.2.0</Version>

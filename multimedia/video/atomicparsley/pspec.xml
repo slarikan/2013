@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>MPEG-4 metadata tool</Summary>
         <Description>A lightweight command line program for reading, parsing and setting metadata into MPEG-4 files.</Description>
-        <Archive sha1sum="5b8575a85f31a46399b6d52e80e99d420b5fe5bc" type="tarbz2">https://bitbucket.org/wez/atomicparsley/get/0.9.3.tar.bz2</Archive>
+        <Archive sha1sum="d38dee8fddf1d554d07a18edb28635c4eb6bedde" type="tarbz2">https://bitbucket.org/wez/atomicparsley/get/0.9.4.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-28</Date>
+            <Version>0.9.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update> 
         <Update release="4">
             <Date>2011-02-08</Date>
             <Version>0.9.3</Version>

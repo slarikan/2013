@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Emacs major mode for editing Python source code</Summary>
         <Description>emacs-python makes a number of editing and debugging features available to Python programmers who use GNU Emacs or XEmacs.</Description>
-        <Archive sha1sum="2fb1fad023e7efc5cb3ee1302c7c6ca837664114" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/python-mode-5.1.0.tar.bz2</Archive>
+        <Archive sha1sum="d70021a2405a544195e414ffe0b7d5b7b845c50a" type="targz">https://launchpad.net/python-mode/trunk/6.0.11/+download/python-mode.el-6.0.11.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-01</Date>
+            <Version>6.0.11</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>5.1.0</Version>

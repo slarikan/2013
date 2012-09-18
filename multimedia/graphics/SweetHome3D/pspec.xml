@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An interior design application</Summary>
         <Description>SweetHome3D is a free interior design application that helps you place your furniture on a house 2D plan, with a 3D preview.</Description>
-        <Archive sha1sum="2569567017ab81755bb5b9e19ce6ef430e521387" type="zip">mirrors://sourceforge/sweethome3d/SweetHome3D-3.0-src.zip</Archive>
+        <Archive sha1sum="7eeea2b63ddfc7c3ca5a4e6790a291aeded2b449" type="zip">http://sourceforge.net/projects/sweethome3d/files/SweetHome3D-source/SweetHome3D-3.5-src/SweetHome3D-3.5-src.zip</Archive>
         <BuildDependencies>
             <Dependency>sun-jdk</Dependency>
             <Dependency>ant</Dependency>
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-08-29</Date>
+            <Version>3.5</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2011-03-02</Date>
             <Version>3.0</Version>

@@ -5,17 +5,18 @@
         <Name>schroedinger</Name>
         <Homepage>http://www.diracvideo.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Dirac codec library</Summary>
         <Description>C-based libraries and GStreamer plugins for the Dirac video codec.</Description>
-        <Archive sha1sum="7abfdc8dae7185b70315b0c91757337b40b31610" type="targz">http://www.diracvideo.org/download/schroedinger/schroedinger-1.0.8.tar.gz</Archive>
+        <Archive sha1sum="c01ee0bed6c1bd7608763927f719f94ebc6aaa41" type="targz">http://www.diracvideo.org/download/schroedinger/schroedinger-1.0.11.tar.gz</Archive>
         <BuildDependencies>
             <!-- FIXME: new version depends on orc -->
             <Dependency>liboil-devel</Dependency>
+	    <Dependency>orc-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>ltmain_as-needed.patch</Patch>
@@ -29,6 +30,7 @@
         <Name>schroedinger</Name>
         <RuntimeDependencies>
             <Dependency>liboil</Dependency>
+	    <Dependency>orc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -50,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-29</Date>
+            <Version>1.0.11</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.0.8</Version>

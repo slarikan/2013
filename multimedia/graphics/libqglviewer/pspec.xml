@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>libQGLViewer is a C++ library based on Qt that eases the creation of OpenGL 3D viewers</Summary>
         <Description>libQGLViewer provides the possibility to move the camera using the mouse. Other features include mouse manipulated frames, interpolated keyFrames, object selection, stereo display, screenshot saving and much more</Description>
-        <Archive sha1sum="4d9089e8b5af2f52ece46a984efb5e54f5a90cfd" type="targz">http://www.libqglviewer.com/src/libQGLViewer-2.3.6.tar.gz</Archive>
+        <Archive sha1sum="03b1da73bdb07988184c1f5d7c1c360be27b2a0e" type="targz">http://www.libqglviewer.com/src/libQGLViewer-2.3.17.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lcms-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-08-29</Date>
+            <Version>2.3.17</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
           <Date>2010-10-27</Date>
             <Version>2.3.6</Version>

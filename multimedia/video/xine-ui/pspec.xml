@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A skinned xlib-based gui for xine-lib</Summary>
         <Description>xine-ui is the traditional, skinned GUI for xine-lib.</Description>
-        <Archive sha1sum="65c9007b75a26d45de9ac09d12d506f122086a77" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/xine-ui-0.99.6_20110320.tar.bz2</Archive>
+        <Archive sha1sum="ca82e09cf8245d038813bc4dbd8384ba79cbf197" type="tarxz">http://sourceforge.net/projects/xine/files/xine-ui/0.99.7/xine-ui-0.99.7.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>lirc-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -32,7 +32,7 @@
         <Patches>
             <Patch level="1">dont-generate-mime-cache.patch</Patch>
             <Patch level="1">disable-kbindings-check.patch</Patch>
-            <Patch level="1">disable-desktop-file.patch</Patch>
+            <!--<Patch level="0">disable-desktop-file.patch</Patch>-->
             <Patch level="1">xine-ui-0.99.5-utf8doc.patch</Patch>
         </Patches>
     </Source>
@@ -64,11 +64,19 @@
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/xine</Path>
-            <Path fileType="data">/usr/share/mime/packages</Path>
+            <Path fileType="data">/usr/share/mime/packages</Path>	    
+	    <Path fileType="data">/usr/share/applications/</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-08-29</Date>
+            <Version>0.99.7</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-03</Date>
             <Version>0.99.6_20110320</Version>

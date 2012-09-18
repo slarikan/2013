@@ -5,14 +5,14 @@
         <Name>cairomm</Name>
         <Homepage>http://cairographics.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>C++ binding for Cairo</Summary>
         <Description>cairomm package is the C++ binding for Cairo (it makes possible using Cairo in C++).</Description>
-        <Archive sha1sum="ce27835ac69f5b4bd88653655dabf09c868accf9" type="targz">http://cairographics.org/releases/cairomm-1.9.8.tar.gz</Archive>
+        <Archive sha1sum="f08bf8a331067f0d1e876523f07238fba6b26b99" type="targz">http://cairographics.org/releases/cairomm-1.10.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.10.2">cairo-devel</Dependency>
             <Dependency>libsigc++-devel</Dependency>
@@ -55,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-08-25</Date>
+            <Version>1.10.0</Version>
+            <Comment>Version bump to 1.10.0</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2011-01-03</Date>
             <Version>1.9.8</Version>

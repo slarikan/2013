@@ -5,8 +5,8 @@
         <Name>gedit</Name>
         <Homepage>http://projects.gnome.org/gedit/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>

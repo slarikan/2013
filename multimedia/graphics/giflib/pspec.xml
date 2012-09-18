@@ -5,22 +5,22 @@
         <Name>giflib</Name>
         <Homepage>http://sourceforge.net/projects/giflib</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>
         <Summary>Library to handle, display and manipulate GIF images</Summary>
         <Description>The giflib package contains a shared library of functions for loading and saving GIF format image files. It is API and ABI compatible with libungif, the library which supported uncompressed GIFs while the Unisys LZW patent was in effect.</Description>
-        <Archive sha1sum="22680f604ec92065f04caf00b1c180ba74fb8562" type="tarbz2">mirrors://sourceforge/giflib/giflib-4.1.6.tar.bz2</Archive>
+        <Archive sha1sum="0b032c2104a0956e2f91b6c11ff8c5515421cd8b" type="tarbz2">http://downloads.sourceforge.net/project/giflib/giflib-5.x/giflib-5.0.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXt-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">gif2rle.patch</Patch>
             <Patch level="1">constant.patch</Patch>
             <Patch level="1">giflib-4.1.6-giffix-null-Extension-fix.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -64,6 +64,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-28</Date>
+            <Version>5.0.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update> 
         <Update release="9">
             <Date>2011-05-03</Date>
             <Version>4.1.6</Version>

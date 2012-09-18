@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A cross-platform game library</Summary>
         <Description>Allegro is a cross-platform library intended for use in computer games and other types of multimedia programming.</Description>
-        <Archive sha1sum="1970570b54c4329c7bd6d103db01624c68f2e9be" type="targz">mirrors://sourceforge/alleg/allegro-4.4.1.1.tar.gz</Archive>
+        <Archive sha1sum="f90e4edcaa90f5a95c7475461c87bc7da9cba0df" type="targz">http://sourceforge.net/projects/alleg/files/allegro-unstable/5.1.3/allegro-5.1.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libXxf86dga-devel</Dependency>
@@ -25,12 +25,12 @@
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch>allegro-4.4.1.1-optional_drivers.patch</Patch>
             <Patch>allegro-4.4.1.1-rpath.patch</Patch>
             <Patch>allegro-4.4.1.1-shared.patch</Patch>
             <Patch>allegro-4.2.2-exec-stack.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -59,6 +59,9 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>alleggl</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -80,6 +83,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-29</Date>
+            <Version>5.1.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-12</Date>
             <Version>4.4.1.1</Version>

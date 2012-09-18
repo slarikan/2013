@@ -4,9 +4,9 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
@@ -17,6 +17,8 @@ def setup():
     # for using built-in qtsingleapplication.
     cmaketools.configure("-DUSE_SYSTEM_QXT=ON \
                           -DUSE_SYSTEM_QTSINGLEAPPLICATION=OFF \
+                          -DENABLE_SPOTIFY=OFF\
+                          -DENABLE_SPOTIFY_BLOB=OFF\
                           -DUSE_SYSTEM_GMOCK=ON \
                           -DSTATIC_SQLITE=OFF \
                           -DUSE_SYSTEM_PROJECTM=ON \

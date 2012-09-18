@@ -20,6 +20,9 @@
         <RuntimeDependencies>
             <Dependency>emacs</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>color-theme</Package>
+        </Replaces>
         <Files>
             <Path fileType="data">/etc/emacs/site-lisp</Path>
             <Path fileType="data">/usr/share/emacs/site-lisp/color-theme</Path>

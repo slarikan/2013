@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Audio Plugin Standard</Summary>
         <Description>LV2 is a standard for plugins and matching host applications, mainly targeted at audio processing and generation.</Description>
-        <Archive sha1sum="6f277b32b1ce60e211db95bf37b71045d505b55d" type="tarbz2">http://lv2plug.in/spec/lv2core-3.0.tar.bz2</Archive>
+        <Archive sha1sum="e57949ed9951ba4f6893137261887b07ef20c11d" type="tarbz2">http://lv2plug.in/spec/lv2core-6.0.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-08-29</Date>
+            <Version>6.0</Version>
+            <Comment>version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-11-03</Date>
             <Version>3.0</Version>

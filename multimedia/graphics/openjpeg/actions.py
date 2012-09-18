@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
-WorkDir="OpenJPEG_v1_3"
+#WorkDir="OpenJPEG_v1_5"
 
 def setup():
     shelltools.system("rm -rf jp3d libs")
@@ -32,4 +32,4 @@ def install():
 
     pisitools.dosym("openjpeg/openjpeg.h", "/usr/include/openjpeg.h")
 
-    pisitools.dodoc("ChangeLog", "README.linux", "license.txt")
+    pisitools.dodoc("README*")

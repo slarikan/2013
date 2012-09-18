@@ -5,14 +5,14 @@
         <Name>netpbm</Name>
         <Homepage>http://netpbm.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>A set of utilities to convert to/from the netpbm (and related) formats</Summary>
         <Description>Netpbm is a toolkit for manipulation of graphic images, including conversion of images between a variety of different formats. There are over 300 separate tools in the package including converters for about 100 graphics formats.</Description>
-        <Archive sha1sum="72db0cff9f805a3f84766dd8add82eaa30685ed3" type="tarlzma">http://cekirdek.pardus.org.tr/~onur/distfiles/netpbm-10.49.00.tar.lzma</Archive>
+	<Archive sha1sum="96af8c5500cf8a1d278d1b0b03116049f99ccde1" type="targz">http://dl.dropbox.com/u/60245852/netpbm-advanced.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="config.mk">config.mk</AdditionalFile>
         </AdditionalFiles>
@@ -22,24 +22,6 @@
             <Dependency>libpng-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">netpbm-10.17-time.patch</Patch>
-            <Patch level="1">netpbm-10.19-message.patch</Patch>
-            <Patch level="1">netpbm-10.24-nodoc.patch</Patch>
-            <Patch level="1">netpbm-10.28-gcc4.patch</Patch>
-            <Patch level="1">netpbm-10.27-bmptopnm.patch</Patch>
-            <Patch level="1">netpbm-10.28-CAN-2005-2471.patch</Patch>
-            <Patch level="1">netpbm-10.31-xwdfix.patch</Patch>
-            <Patch level="1">netpbm-10.33-ppmtompeg.patch</Patch>
-            <Patch level="1">netpbm-10.35-glibc.patch</Patch>
-            <Patch>CVE-2007-2721.patch</Patch>
-            <Patch>netpbm-10.31-build.patch</Patch>
-            <Patch level="1">netpbm-10.48.00-pnmtopng-zlib.patch</Patch>
-            <Patch level="1">netpbm-10.49.00-sigpower.patch</Patch>
-            <!--
-            <Patch>default-config.patch</Patch>
-            -->
-        </Patches>
     </Source>
 
     <Package>
@@ -72,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-08-29</Date>
+            <Version>10.57.06</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-12</Date>
             <Version>10.49.00</Version>

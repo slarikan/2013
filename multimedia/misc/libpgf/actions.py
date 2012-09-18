@@ -7,9 +7,14 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
+from pisi.actionsapi import get
+
+WorkDir = "libpgf"
 
 def setup():
-    pisitools.dosed("doc/Makefile.in", "^DOC_MODULE = .*$", "DOC_MODULE = ${PACKAGE}")
+    shelltools.system("./autogen.sh")
+    #pisitools.dosed("doc/Makefile.in", "^DOC_MODULE = .*$", "DOC_MODULE = ${PACKAGE}")
     autotools.configure("--disable-static")
 
 def build():
@@ -18,4 +23,4 @@ def build():
 def install():
     autotools.install()
 
-    pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "README", "NEWS", "FAQ")
+    pisitools.dodoc("AUTHORS", "COPYING", "README", "NEWS")

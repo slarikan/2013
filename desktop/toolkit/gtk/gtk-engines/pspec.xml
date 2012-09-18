@@ -5,17 +5,20 @@
         <Name>gtk-engines</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
-        <Summary>A collection of GTK+ 2.x engines</Summary>
-        <Description>gtk-engines is a collection of GTK+ 2.x engines written in C that transforms your GNOME/XFCE desktop into a modern looking environment. It is fast, and easy on the eyes.</Description>
-        <Archive sha1sum="908d24ae48e70a0ce2f047ba9f494f35153e3982" type="tarbz2">mirrors://gnome/gtk-engines/2.20/gtk-engines-2.20.1.tar.bz2</Archive>
+        <Summary>A collection of GTK+ 3.x engines</Summary>
+        <Description>gtk-engines is a collection of GTK+ 3.x engines written in C that transforms your GNOME/XFCE desktop into a modern looking environment. It is fast, and easy on the eyes.</Description>
+        <Archive sha1sum="a280063068ad223561ab69c0346a133afe6bfa8e" type="tarbz2">http://ftp.acc.umu.se/pub/GNOME/sources/gtk-engines/2.91/gtk-engines-2.91.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
+	<Patches>
+	  <Patch level="1">glib-timer.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
@@ -23,6 +26,9 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package>clearlooks</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -33,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-08-26</Date>
+            <Version>2.91.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="16">
             <Date>2010-10-12</Date>
             <Version>2.20.1</Version>

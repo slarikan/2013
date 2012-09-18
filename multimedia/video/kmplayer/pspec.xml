@@ -15,9 +15,9 @@
         <IsA>app:gui</IsA>
         <Summary>A multimedia mplayer/phonon frontend for KDE</Summary>
         <Description>kmplayer can play all the audio/video supported by mplayer/phonon from local file or url, be embedded inside Konqueror and KHTML and play DVD's.</Description>
-        <Archive sha1sum="d2bfd2e92e87575a76110b78f6c3b83a3ae049c6" type="tarbz2">http://kmplayer.kde.org/pkgs/kmplayer-0.11.2c.tar.bz2</Archive>
+        <Archive sha1sum="f43651d4252cf6d878b5b014c1e5e9b18b2e31c4" type="tarbz2">http://kmplayer.kde.org/pkgs/kmplayer-0.11.3d.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.5.5">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -33,7 +33,7 @@
     <Package>
         <Name>kmplayer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.5">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency>mplayer</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>cairo</Dependency>
@@ -52,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-08-29</Date>
+            <Version>0.11.3d</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="15">
             <Date>2011-01-30</Date>
             <Version>0.11.2c</Version>

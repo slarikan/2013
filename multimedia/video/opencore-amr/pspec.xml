@@ -5,14 +5,14 @@
         <Name>opencore-amr</Name>
         <Homepage>http://opencore-amr.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>library</IsA>
         <Summary>AMR speech codec implementation</Summary>
         <Description>Opencore AMR is an implementation of Adaptive Multi Rate Narrowband and Wideband speech codec.</Description>
-        <Archive sha1sum="289478d49701213255e9d63a93aae9ad472125cc" type="targz">mirrors://sourceforge/opencore-amr/opencore-amr-0.1.2.tar.gz</Archive>
+        <Archive sha1sum="737f00e97a237f4ae701ea55913bb38dc5513501" type="targz">http://sourceforge.net/projects/opencore-amr/files/opencore-amr/opencore-amr-0.1.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-29</Date>
+            <Version>0.1.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>0.1.2</Version>

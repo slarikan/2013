@@ -369,3 +369,55 @@ Individual patches for Vim 7.3:
  30504  7.3.336  encoding in tags file causes trouble
   1876  7.3.337  no screen update after resizing xterm until character typed
   2851  7.3.338  using getchar() in an expression mapping doesn't work well
+  1762  7.3.339  "make shadow" doesn't link all test files
+  1887  7.3.340  when 'verbosefile' is set ftplugof.vim can give an error
+  9335  7.3.341  translated and local help files are not listed in help.*
+  3079  7.3.342  code not in Vim style
+  6949  7.3.343  no mouse support for urxvt
+  3131  7.3.344  problem with GUI startup related to XInitThreads
+  1395  7.3.345  window title not updated when switching language with ":lang"
+  5238  7.3.346  it's hard to test netbeans commands
+  1689  7.3.347  dropped text is HTML although "html" is not in 'clipboard'
+  1634  7.3.348  "call range(1, 947948399)" causes a crash
+  2793  7.3.349  opening swapfile loops forever when out of memory in startup
+  1525  7.3.350  block of code after ":lua << EOF" may not work
+  1453  7.3.351  text formatting uses insert start position when it should not
+  3276  7.3.352  when completing functions script-local functions come first
+  4245  7.3.353  (after 7.3.343) missing urxvt patch for term.c
+  2182  7.3.354  ":set backspace+=eol" doesn't work when 'backspace' is 2
+  1683  7.3.355  GTK warnings when using netrw.vim
+  2453  7.3.356  using "o" with 'cindent' set may freeze Vim
+  1511  7.3.357  compiler warning in MS-Windows console build
+  1994  7.3.358  (after 7.3.353) mouse support doesn't work properly
+  1727  7.3.359  command line completion shows dict functions
+  2183  7.3.360  interrupting autoload function load may cause a crash
+  1733  7.3.361  accessing memory after it is freed when EXITFREE is defined
+  1828  7.3.362  ml_get error when using ":g" with folded lines
+  2914  7.3.363  C indenting is wrong after #endif followed by a semicolon
+  1924  7.3.364  (after 7.3.353) can't compile on HP-UX
+  3451  7.3.365  crash when using a large Unicode character with syntax highl.
+  2192  7.3.366  a tags file with an extremely long name causes errors
+  1650  7.3.367  :wundo and :rundo use a wrong checksum
+  4734  7.3.368  gcc complains about redefining _FORTIFY_SOURCE
+  1452  7.3.369  get an error message when using --help and compiled with Gnome
+  1766  7.3.370  compiler warns for unused variable in Lua interface
+  2155  7.3.371  crash in autocomplete
+  1603  7.3.372  command line mapping to <Up> doesn't work for file completion
+  2464  7.3.373  (after 7.3.366) infinite loop in tags file with long name
+  1670  7.3.374  ++encoding is not recognized
+  1716  7.3.375  duplicate return statement
+  1817  7.3.376  Win32: Toolbar repainting not always right
+ 12178  7.3.377  no support for bitwise AND, OR, XOR and invert
+  2773  7.3.378  configure fails when cross-compiling
+  2257  7.3.379  C-indenting wrong for static enum
+  7825  7.3.380  C-indenting wrong for function header
+  7960  7.3.381  configure can't be told to stop when a language is unavailable
+  4585  7.3.382  (after 7.3.376) IME characters are inserted twice
+  1489  7.3.383  for EBCDIC pound sign is defined as 't'
+  1869  7.3.384  mapping CTRL-K breaks CTRL-X CTRL-K for dictionary completion
+  2220  7.3.385  with expression mapping cursor may end up in the wrong place
+  1577  7.3.386  test 83 fails when iconv does not support cp932
+  1708  7.3.387  (after 7.3.386) test 83 may fail for some encodings
+  1378  7.3.388  crash on exit when EXITFREE is defined and using tiny features
+  2117  7.3.389  after typing at a prompt the "MORE" message appears too soon
+  4295  7.3.390  using NULL buffer pointer in a window

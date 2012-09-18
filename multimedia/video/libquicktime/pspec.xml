@@ -5,14 +5,14 @@
         <Name>libquicktime</Name>
         <Homepage>http://libquicktime.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>A library based on quicktime4linux with extensions</Summary>
         <Description>Libquicktime is based on the great quicktime4linux library with several enhancements. All 3rd-party libraries were removed from the sourcetree. Instead, the systemwide installed libraries are detected by the configure script. All original codecs were moved into dynamically loadable modules, and new codecs are in development.</Description>
-        <Archive sha1sum="11dad92fe9dbb67aa8ef42c3404d3acba7ae2a37" type="targz">mirrors://sourceforge/project/libquicktime/libquicktime/1.1.5/libquicktime-1.1.5.tar.gz</Archive>
+        <Archive sha1sum="7008b2dc27b9b40965bd2df42d39ff4cb8b6305e" type="targz">mirrors://sourceforge/project/libquicktime/libquicktime/1.2.4/libquicktime-1.2.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libdv-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
@@ -33,9 +33,6 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">gtk_2.22.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -83,6 +80,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-08-29</Date>
+            <Version>1.2.4</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="19">
             <Date>2011-06-16</Date>
             <Version>1.1.5</Version>

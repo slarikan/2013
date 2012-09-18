@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>PNG Optimizer</Summary>
         <Description>OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information. This program also converts external formats (BMP, GIF, PNM and TIFF) to optimized PNG, and performs PNG integrity checks and corrections.</Description>
-        <Archive sha1sum="91525748a0bbd9bbfa8355529da7c17a408173e5" type="targz">mirrors://sourceforge/optipng/optipng-0.6.5.tar.gz</Archive>
+        <Archive sha1sum="06c294ca6fd767ff59f5ef9afdb32ae390b40989" type="targz">http://sourceforge.net/projects/optipng/files/OptiPNG/optipng-0.7.2/optipng-0.7.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-29</Date>
+            <Version>0.7.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-03-28</Date>
             <Version>0.6.5</Version>

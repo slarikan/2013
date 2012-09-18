@@ -5,15 +5,16 @@
         <Name>cmus</Name>
         <Homepage>http://cmus.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>Small and fast text mode music player</Summary>
         <Description>Cmus is a small and fast text mode music player for Linux and many other UNIX like operating systems.</Description>
-        <Archive sha1sum="12573e96e03435eca9b8a4aaeeb13a2da66f40a4" type="tarbz2">mirrors://sourceforge/cmus/files/cmus-v2.4.2.tar.bz2</Archive>
-        <Archive sha1sum="129aba6c5f49a1137b9e7ce18c3124adcf084a1e" target="cmus-v2.4.2" type="binary">http://last-cmus.googlecode.com/files/last-cmus.py</Archive>
+        <!--<Archive sha1sum="12573e96e03435eca9b8a4aaeeb13a2da66f40a4" type="tarbz2">mirrors://sourceforge/cmus/files/cmus-v2.4.2.tar.bz2</Archive>-->
+        <Archive sha1sum="ba63a417b0df42fa9a4850dd8b922a95a426f7f5" type="tarbz2">https://sourceforge.net/projects/cmus/files/cmus-v2.4.3.tar.bz2</Archive>
+	<Archive sha1sum="129aba6c5f49a1137b9e7ce18c3124adcf084a1e" target="cmus-v2.4.3" type="binary">http://last-cmus.googlecode.com/files/last-cmus.py</Archive>
         <BuildDependencies>
             <Dependency>libao-devel</Dependency>
             <Dependency>flac-devel</Dependency>
@@ -29,9 +30,9 @@
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libmp4v2-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">install-lastfm-support.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -65,6 +66,13 @@
    </Package>
 
    <History>
+        <Update release="4">
+            <Date>2011-06-28</Date>
+            <Version>2.4.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2011-08-08</Date>
             <Version>2.4.2</Version>

@@ -5,8 +5,8 @@
         <Name>live555</Name>
         <Homepage>http://www.live555.com</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
@@ -15,7 +15,7 @@
         <!-- we can't use the upstream address as archive since older versions are removed too quickly
         <Archive sha1sum="6ea72f5d86b2b1c20bb2de1fe9ef92c8a906e6a5" type="targz">http://www.live555.com/liveMedia/public/live.2008.11.13.tar.gz</Archive>
         -->
-        <Archive sha1sum="3c480355b153847273b30f0ce30cf80dff12e170" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/live.2010.04.09.tar.gz</Archive>
+        <Archive sha1sum="776a339640b81800264d843dbdb433792df90a05" type="targz">http://www.live555.com/liveMedia/public/live.2012.08.20.tar.gz</Archive>
         <Patches>
             <Patch level="1">shared-config.patch</Patch>
             <Patch level="1">live-pic.patch</Patch>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-08-27</Date>
+            <Version>0.0_20120820</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2010-10-12</Date>
             <Version>0.0_20100409</Version>

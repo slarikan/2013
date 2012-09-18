@@ -5,14 +5,14 @@
         <Name>libdvdcss</Name>
         <Homepage>http://www.videolan.org/libdvdcss/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>A portable abstraction library for DVD decryption</Summary>
         <Description>libdvdcss is a simple and library portable abstraction library designed for accessing DVDs like a block device without having to bother about the decryption. A DVD player can be built around the libdvdcss API using no more than 4 or 5 library calls.</Description>
-        <Archive sha1sum="7c933d011e34c218048d48f0c1a8b4ff56798dcd" type="tarbz2">http://download.videolan.org/pub/libdvdcss/1.2.10/libdvdcss-1.2.10.tar.bz2</Archive>
+        <Archive sha1sum="f0977374f12fadbbeb45e1ff493adc259247bb09" type="tarbz2">http://download.videolan.org/pub/libdvdcss/1.2.12/libdvdcss-1.2.12.tar.bz2</Archive>
         <Patches>
             <Patch level="1">disable_tests.patch</Patch>
         </Patches>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-29</Date>
+            <Version>1.2.12</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>1.2.10</Version>

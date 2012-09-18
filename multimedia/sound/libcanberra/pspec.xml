@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A library for generating event sounds on free desktops</Summary>
         <Description>libcanberra is an implementation of the XDG Sound Theme and Name Specifications, for generating event sounds on free desktops, such as GNOME. It comes with several backends (ALSA, PulseAudio, OSS, GStreamer, null) and is designed to be portable.</Description>
-        <Archive sha1sum="cb86b88af99936134929e120b2a8d55466de1d0a" type="targz">http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.25.tar.gz</Archive>
+        <Archive sha1sum="74052db5d1369a52c00aa11cd2310111380345c1" type="tarxz">http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.29.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
@@ -21,14 +21,16 @@
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libtdb-devel</Dependency>
             <Dependency>gconf</Dependency>
-            <Dependency>gtk2</Dependency>
+	    <Dependency versionFrom="2.32.0">glib2-devel</Dependency>	
+            <Dependency>gtk2-devel</Dependency>	    
+            <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">fix-pthread.patch</Patch>
             <Patch level="1">fix-underlinking.patch</Patch>
 
             <!-- canberra-event-play to use with KDE 3 -->
-            <Patch level="1">add-basic-event-player.patch</Patch>
+            <!--    <Patch level="1">add-basic-event-player.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -40,10 +42,30 @@
             <Dependency>gconf</Dependency>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="4">libcanberra</Package>
+        </Conflicts>
         <Files>
-            <Path fileType="library">/usr/lib/gtk-2.0</Path>
-            <Path fileType="library">/usr/lib/libcanberra-gtk*</Path>
+            <Path fileType="library">/usr/lib/gtk-2*</Path>
+            <Path fileType="library">/usr/lib/libcanberra-gtk.so*</Path>
             <Path fileType="executable">/usr/bin/canberra-gtk-play</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libcanberra-gtk3</Name>
+        <Summary>GTK+ convenience API and utilities for libcanberra</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libcanberra</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>gtk3</Dependency>
+        </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="4">libcanberra</Package>
+        </Conflicts>
+        <Files>
+            <Path fileType="library">/usr/lib/gtk-3*</Path>
+            <Path fileType="library">/usr/lib/libcanberra-gtk3*</Path>
         </Files>
     </Package>
 
@@ -53,6 +75,7 @@
         <RuntimeDependencies>
             <Dependency release="current">libcanberra</Dependency>
             <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
@@ -80,6 +103,23 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-31</Date>
+            <Version>0.29</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="9">
+            <Date>2011-04-13</Date>
+            <Version>0.28</Version>
+            <Comment>
+                * Update to new release.
+                * Enable gtk3.
+            </Comment>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>0.25</Version>

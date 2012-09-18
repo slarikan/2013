@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A dynamic, any to any, pixel format translation library</Summary>
         <Description>babl is a library that allows converting between different methods of storing pixels known as pixel formats that have with different bitdepths and other data representations, color models and component permutations.</Description>
-        <Archive sha1sum="9f7186e5d968a4c9d81a63b20836b163f56df616" type="tarbz2">ftp://ftp.gimp.org/pub/babl/0.1/babl-0.1.4.tar.bz2</Archive>
+        <Archive sha1sum="ee60089e8e9d9390e730d3ae5e41074549928b7a" type="tarbz2">ftp://ftp.gtk.org/pub/babl/0.1/babl-0.1.10.tar.bz2</Archive>
         <BuildDependencies>
             <!-- For rsvg utility -->
             <Dependency>librsvg</Dependency>
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-28</Date>
+            <Version>0.1.10</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-08-08</Date>
             <Version>0.1.4</Version>

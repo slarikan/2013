@@ -10,6 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+#WorkDir = "libvpx"
 # libdir = "lib64" if get.ARCH() == "x86_64" else "lib"
 libdir = "lib"
 

@@ -5,8 +5,8 @@
         <Name>x264</Name>
         <Homepage>http://developers.videolan.org/x264.html</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -14,7 +14,7 @@
         <Summary>Open source H264/AVC encoder</Summary>
         <Description>x264 is a free library for encoding H264/AVC video streams.</Description>
         <!-- Archives come from http://download.videolan.org/pub/videolan/x264/snapshots/ -->
-        <Archive sha1sum="7b3203289c8dd9916eeb383f9055469162f96859" type="tarbz2">http://cekirdek.pardus.org.tr/~onur/distfiles/x264-snapshot-20110615-2245-stable.tar.bz2</Archive>
+        <Archive sha1sum="acc0cbaf258fff1eba89fdc702eee3f230aedd07" type="tarbz2">ftp://ftp.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20120826-2245.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.4.5">gpac-devel</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
             <Patch level="1">no_api_version.patch</Patch>
             <Patch level="1">nostrip.patch</Patch>
             -->
-            <Patch level="1">asneeded.patch</Patch>
+            <!--<Patch level="1">asneeded.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="35">
+            <Date>2011-06-16</Date>
+            <Version>0.0_20120826</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="34">
             <Date>2011-06-16</Date>
             <Version>0.0_20110615</Version>

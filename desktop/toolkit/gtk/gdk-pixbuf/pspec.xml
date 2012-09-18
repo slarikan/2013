@@ -5,14 +5,14 @@
         <Name>gdk-pixbuf</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>GDK pixbuf library</Summary>
         <Description>gdk-pixbuf is a library that provides image loading and scaling support for gtk+ applications</Description>
-        <Archive sha1sum="b452208963ddd84f7280865695b50255fcafaa2e" type="tarbz2">mirrors://gnome/gdk-pixbuf/2.22/gdk-pixbuf-2.22.1.tar.bz2</Archive>
+        <Archive sha1sum="8035170ecc8ae77d088c9c6e403b54f20c02bca0" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.26/gdk-pixbuf-2.26.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -22,9 +22,9 @@
             <Dependency>jasper-devel</Dependency>
             <Dependency versionFrom="0.9.12">gobject-introspection-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">new-gir.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -34,6 +34,9 @@
             <Dependency>jpeg</Dependency>
             <Dependency>jasper</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package versionTo="2.21.2">gtk2</Package>
+        </Conflicts>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
@@ -55,6 +58,9 @@
             <Dependency release="current">gdk-pixbuf</Dependency>
             <Dependency>libpng-devel</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package versionTo="2.21.2">gtk2-devel</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin/gdk-pixbuf-csource</Path>
             <Path fileType="header">/usr/include</Path>
@@ -67,6 +73,9 @@
     <Package>
         <Name>gdk-pixbuf-docs</Name>
         <Summary>Reference documents for gdk-pixbuf</Summary>
+        <Conflicts>
+            <Package versionTo="2.21.2">gtk2-docs</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
@@ -100,6 +109,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-25</Date>
+            <Version>2.26.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-09-30</Date>
             <Version>2.22.1</Version>

@@ -5,8 +5,8 @@
         <Name>kaffeine</Name>
         <Homepage>http://kaffeine.kde.org</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv1</License>
         <IsA>app:gui</IsA>

@@ -5,14 +5,14 @@
         <Name>jpeg</Name>
         <Homepage>http://www.ijg.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>
         <Summary>Library to load, handle and manipulate images in the JPEG format</Summary>
         <Description>jpeg is the library to load, handle and manipulate images in the JPEG format. It is used by many programs that operates on JPEG files.</Description>
-        <Archive sha1sum="15dc1939ea1a5b9d09baea11cceb13ca59e4f9df" type="targz">http://www.ijg.org/files/jpegsrc.v8b.tar.gz</Archive>
+        <Archive sha1sum="f080b2fffc7581f7d19b968092ba9ebc234556ff" type="targz">http://www.ijg.org/files/jpegsrc.v8d.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="debian/extra/Makefile.in">Makefile.in.extra</AdditionalFile>
         </AdditionalFiles>
@@ -61,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-08-29</Date>
+            <Version>8d</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2011-05-03</Date>
             <Version>8b</Version>

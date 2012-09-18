@@ -13,7 +13,7 @@ from pisi.actionsapi import kde4
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    kde4.configure("-DWITH_Ipod=ON -DWITH_IPOD=ON")
+    kde4.configure("-DWITH_IPOD=ON")
 
 def build():
     kde4.make()

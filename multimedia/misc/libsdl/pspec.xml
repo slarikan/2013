@@ -5,14 +5,14 @@
         <Name>libsdl</Name>
         <Homepage>http://www.libsdl.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>Simple Direct Media Layer</Summary>
         <Description>libsdl is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.</Description>
-        <Archive sha1sum="ba625b4b404589b97e92d7acd165992debe576dd" type="targz">http://www.libsdl.org/release/SDL-1.2.14.tar.gz</Archive>
+        <Archive sha1sum="0c5f193ced810b0d7ce3ab06d808cbb5eef03a2c" type="targz">http://www.libsdl.org/release/SDL-1.2.15.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>audiofile-devel</Dependency>
             <Dependency>DirectFB-devel</Dependency>
@@ -24,20 +24,18 @@
             <Dependency>libXrandr-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">SDL-1.2.10-fixrpath.patch</Patch>
+            <!--<Patch level="1">SDL-1.2.10-fixrpath.patch</Patch>
             <Patch level="1">SDL-1.2.14-anonymous-enums.patch</Patch>
             <Patch level="1">SDL-1.2.10-nasm-include.patch</Patch>
-            <Patch level="1">SDL-1.2.14-byteorder.patch</Patch>
+            <Patch level="1">SDL-1.2.14-byteorder.patch</Patch>-->
             <Patch level="1">SDL-1.2.14-dont-propagate-lpthread.patch</Patch>
             <Patch level="1">SDL-1.2.14-noproc.patch</Patch>
             <Patch level="1">SDL-1.2.13-rh484362.patch</Patch>
-            <Patch level="1">SDL-1.2.14-xio_error-rh603984.patch</Patch>
-
+            <!--<Patch level="1">SDL-1.2.14-xio_error-rh603984.patch</Patch>
             <Patch level="1">libsdl-1.2.14-click.patch</Patch>
-
             <Patch level="1">SDL-1.2.14-linux_2.6_joystick.patch</Patch>
             <Patch level="1">SDL-1.2.14-SDL_BlitCopyOverlap_memcpy.patch</Patch>
-            <Patch level="1">SDL-1.2.14-audiodriver.patch</Patch>
+            <Patch level="1">SDL-1.2.14-audiodriver.patch</Patch>-->
 
             <!-- Are we using XIM ?
             <Patch level="1">x11_keysym_fix.patch</Patch>
@@ -120,6 +118,13 @@
     </Package>
 
     <History>
+        <Update release="24">
+            <Date>2012-08-29</Date>
+            <Version>1.2.15</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="23">
             <Date>2011-08-25</Date>
             <Version>1.2.14</Version>

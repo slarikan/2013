@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>A VNC viewer widget for GTK</Summary>
         <Description>gtk-vnc is a VNC viewer widget for GTK. This widget is also used for displaying guest operating system screens within virt-manager. It is built using coroutines allowing it to be completely asynchronous while remaining single threaded.</Description>
-        <Archive sha1sum="78ad21b5fab59492f43c5f46f7d04425794c3b1d" type="targz">mirrors://gnome/gtk-vnc/0.4/gtk-vnc-0.4.3.tar.gz</Archive>
+        <Archive sha1sum="b3266137d9cdd8bca740b84adde33b98db81f3d1" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtk-vnc/0.5/gtk-vnc-0.5.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
@@ -26,15 +26,15 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>python-gtk-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">gtk-vnc-0.4.3-turkish-translations.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
         <Name>gtk-vnc</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gnutls</Dependency>
@@ -66,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-26</Date>
+            <Version>0.5.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-05-27</Date>
             <Version>0.4.3</Version>

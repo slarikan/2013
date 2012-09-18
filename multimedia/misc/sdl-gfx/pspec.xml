@@ -5,14 +5,14 @@
         <Name>sdl-gfx</Name>
         <Homepage>http://www.ferzkopp.net/Software/SDL_gfx-2.0/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>SDL graphics drawing primitives and other support functions</Summary>
         <Description>SDL_gfx library evolved out of the SDL_gfxPrimitives code which provided basic drawing routines such as lines, circles or polygons and SDL_rotozoom which implemented a interpolating rotozoomer for SDL surfaces.</Description>
-        <Archive sha1sum="6d384d8dbf7fe56e4dfef1aaa06a106f62ef91d1" type="targz">http://www.ferzkopp.net/Software/SDL_gfx-2.0/SDL_gfx-2.0.22.tar.gz</Archive>
+        <Archive sha1sum="34e8963188e4845557468a496066a8fa60d5f563" type="targz">http://www.ferzkopp.net/Software/SDL_gfx-2.0/SDL_gfx-2.0.24.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
         </BuildDependencies>
@@ -67,6 +67,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-08-29</Date>
+            <Version>2.0.24</Version>
+            <Comment>version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2011-08-22</Date>
             <Version>2.0.22</Version>

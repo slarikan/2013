@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library to access the contents of an iPod</Summary>
         <Description>libgpod is a library to access the contents of an iPod. It supports playlists, smart playlists, playcounts, ratings, podcasts, album artwork, photos, etc.</Description>
-        <Archive sha1sum="61b0d754fb1f3015751afc4a389276e5573b71a8" type="tarbz2">http://pardusarchives.googlecode.com/files/libgpod.tar.bz2</Archive>
+        <Archive sha1sum="f9ba70cd6f00ae59cdc6a43cc72c409a4d27606e" type="tarbz2">mirrors://sourceforge/gtkpod/libgpod-0.8.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libusb1-devel</Dependency>
@@ -24,13 +24,16 @@
             <Dependency>python-pygobject-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">fix-buffer-access-out-of-bounds.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
         <Name>libgpod</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-            <Dependency>libusb1</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libplist</Dependency>
             <Dependency>sg3_utils</Dependency>
             <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
@@ -74,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-08-22</Date>
+            <Version>0.8.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="18">
             <Date>2011-07-05</Date>
             <Version>0.8.0_20110129</Version>

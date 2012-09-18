@@ -10,12 +10,8 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.rawConfigure("--prefix=/usr \
-                            --enable-gstreamer \
-                            --enable-xine \
-                            --enable-mplayer \
-                            --disable-vlc \
-                            --enable-binding-python \
-                            --disable-static")
+                            --disable-gstreamer \
+                            --enable-xlib-hack")
 
 def build():
     autotools.make()

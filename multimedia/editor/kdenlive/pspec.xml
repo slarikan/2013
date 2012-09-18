@@ -12,28 +12,24 @@
         <IsA>app:gui</IsA>
         <Summary>A video editing GUI for KDE4 using the MLT video framework</Summary>
         <Description>kdenlive provides dual video monitors, a multi-track timeline and clip list. Other features include customizable layout support, basic effects and transitions.</Description>
-        <Archive sha1sum="b7ab03a05cb818c01a6eed68fe7cd9ce62ca0f27" type="targz">mirrors://sourceforge/kdenlive/kdenlive/0.8.2/kdenlive-0.8.2.tar.gz</Archive>
+        <Archive sha1sum="e943884ad88d106b80d1723055dca790c864fa20" type="tarbz2">http://download.kde.org/stable/kdenlive/0.9.2/src/kdenlive-0.9.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.5.0">kdelibs-devel</Dependency>
-            <Dependency versionFrom="0.7.6">mlt-devel</Dependency>
-            <Dependency versionFrom="4.6.3">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
+            <Dependency versionFrom="0.7.8">mlt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
             <Dependency>libqjson-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">desktop-l10n.patch</Patch>
-            <Patch level="1">tr.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
         <Name>kdenlive</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.0">kdelibs</Dependency>
-            <Dependency versionFrom="0.7.6">mlt</Dependency>
-            <Dependency versionFrom="4.6.3">qt</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
+            <Dependency versionFrom="0.7.8">mlt</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency>recordmydesktop</Dependency>
             <Dependency>qimageblitz</Dependency>
             <Dependency>dvdauthor</Dependency>
@@ -54,6 +50,20 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-06-03</Date>
+            <Version>0.9.2</Version>
+            <Comment>Version bump 0.9.2</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>    
+        <Update release="11">
+            <Date>2012-05-28</Date>
+            <Version>0.9</Version>
+            <Comment>Version bump 0.9</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="10">
             <Date>2011-11-02</Date>
             <Version>0.8.2</Version>

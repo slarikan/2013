@@ -8,7 +8,11 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.configure()
+    autotools.configure("--prefix=/usr \
+			 --with-mp3splt-includes=/usr/include/ \
+			 --with-mp3splt-libraries=/usr/lib \
+			 --disable-dependency-tracking \
+			 --enable-oggsplt_symlink")
 
 def build():
     autotools.make()

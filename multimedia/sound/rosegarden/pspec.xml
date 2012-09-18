@@ -13,9 +13,9 @@
         <IsA>app:gui</IsA>
         <Summary>MIDI, audio and notation editor</Summary>
         <Description>Rosegarden is a well-rounded audio and MIDI sequencer, notation editor, and general-purpose music composition and editing environment.</Description>
-        <Archive sha1sum="64b16a74b73e2de4fc4e987a43f6a613b199e1db" type="tarbz2">mirrors://sourceforge/rosegarden/rosegarden-11.06.tar.bz2</Archive>
+        <Archive sha1sum="8ea7575a79c00f1d8b73caad70eb670f3c6ad4c8" type="tarbz2">mirrors://sourceforge/rosegarden/rosegarden-12.04.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency>liblo-devel</Dependency>
             <Dependency>libsndfile-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
@@ -33,7 +33,7 @@
     <Package>
         <Name>rosegarden</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency>liblo</Dependency>
             <Dependency>libsndfile</Dependency>
             <Dependency>alsa-lib</Dependency>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+      <Update release="19">
+            <Date>2012-08-29</Date>
+            <Version>12.04</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
         <Update release="18">
             <Date>2011-05-17</Date>
             <Version>11.06</Version>

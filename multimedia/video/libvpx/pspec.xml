@@ -5,8 +5,8 @@
         <Name>libvpx</Name>
         <Homepage>http://www.webmproject.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>BSD</License>
         <IsA>app:console</IsA>
@@ -17,7 +17,7 @@
         <!-- using git for now
         <Archive sha1sum="" type="targz">http://webm.googlecode.com/files/libvpx-0.9.5.tar.bz2</Archive>
         -->
-        <Archive sha1sum="dacfefaf3363f781de43858f09cdd0b0d469e6fc" type="tarbz2">http://webm.googlecode.com/files/libvpx-v0.9.7-p1.tar.bz2</Archive>
+        <Archive sha1sum="356af5f770c50cd021c60863203d8f30164f6021" type="tarbz2">https://webm.googlecode.com/files/libvpx-v1.1.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
             <Dependency>php-cli</Dependency>
@@ -26,7 +26,7 @@
             <Patch level="1">regexp_logic.patch</Patch>
             <Patch level="1">libvpx-0.9.7-no-explicit-dep-on-static-lib.patch</Patch>
             <Patch level="1">01_enable-shared.patch</Patch>
-            <Patch level="1">reduce-grep.patch</Patch>
+            <!--<Patch level="1">reduce-grep.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -52,8 +52,15 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-29</Date>
+            <Version>1.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
-            <Date>2011-01-19</Date>
+            <Date>2012-01-13</Date>
             <Version>0.9.7_p1</Version>
             <Comment>Version bump</Comment>
             <Name>Metin Akdere</Name>

@@ -4,13 +4,13 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-import os
-
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
-from pisi.actionsapi import qt4
 from pisi.actionsapi import kde4
+from pisi.actionsapi import qt4
+from pisi.actionsapi import get
+
+import os
 
 WorkDir = "%s-%s" % (get.srcNAME(), get.srcVERSION().partition("_")[0])
 

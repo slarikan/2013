@@ -14,10 +14,9 @@ def setup():
     shelltools.export("LDFLAGS", get.LDFLAGS())
 
     autotools.configure("--enable-gpl \
-                         --enable-shared \
-                         --enable-shared-pp \
-                         --enable-pp \
-                         --enable-motion-est \
+			 --disable-gtk2 \
+			 --qimage-libdir=/usr/lib/ \
+			 --qimage-includedir=/usr/include/Qt \
                          --avformat-vdpau \
                          --avformat-swscale")
 

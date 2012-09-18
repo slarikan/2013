@@ -12,23 +12,12 @@
         <IsA>library</IsA>
         <Summary>An advanced MilkDrop-compatible music visualization library</Summary>
         <Description>libprojectM is an iterative music visualization library which uses OpenGL for hardware acceleration. It is a reimplementation of Winamp visualization plug-in MilkDrop which uses 3D graphics hardware, combined with iterative image-based rendering techniques and compatible with MilkDrop presets.</Description>
-        <Archive sha1sum="b35d3c8112531cae2abf8f298e762bd728575b6d" type="targz">mirrors://sourceforge/projectm/2.0.1/projectM-2.0.1-Source.tar.gz</Archive>
+        <Archive sha1sum="a1a966a410360926fee88ff253f929f0290a2405" type="targz">http://sourceforge.net/projects/projectm/files/2.1.0/projectM-complete-2.1.0-Source.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>glew-devel</Dependency>
             <Dependency>ftgl-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">libprojectM-soname.patch</Patch>
-            <Patch level="1">libprojectM-USE_THREADS.patch</Patch>
-            <Patch level="0">libprojectM-2.0.0-fix-linking.patch</Patch>
-            <Patch level="1">fix-pkgconfig.patch</Patch>
-            <Patch level="0">01-change-texture-size.patch</Patch>
-            <Patch level="0">04-change-preset-duration.patch</Patch>
-            <Patch level="0">05-fix-windows-crashes.patch</Patch>
-            <Patch level="0">06-fix-numeric-locale.patch</Patch>
-            <Patch level="1">fix-locale-issue.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -59,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-29</Date>
+            <Version>2.1.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-12</Date>
             <Version>2.0.1</Version>

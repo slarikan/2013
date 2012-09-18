@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>GUI for producing a multipage PDF from a scan</Summary>
         <Description>gscan2pdf is a GUI to ease the process of producing a multipage PDF from a scan. Scanning is handled with SANE via scanimage. PDF conversion is done by perl-PDF-API2 module. TIFF export is handled by tiff (faster and smaller memory footprint for multipage files).</Description>
-        <Archive sha1sum="6df3590b839a7bf04c36db515eff67b32a47187c" type="targz">mirrors://sourceforge/gscan2pdf/gscan2pdf/0.9.32/gscan2pdf-0.9.32.tar.gz</Archive>
+        <Archive sha1sum="a84443e074b21604af93c0368c14b7b64a732b07" type="targz">http://sourceforge.net/projects/gscan2pdf/files/gscan2pdf/1.0.6/gscan2pdf-1.0.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.12.2">perl</Dependency>
             <Dependency>perl-Gtk2</Dependency>
@@ -38,9 +38,9 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">gscan2pdf-gconftool-2.patch</Patch>
-            <Patch level="1">desktop.patch</Patch>
-            <Patch level="1">gscan2pdf-0.9.32-tesseract_languages.patch</Patch>
-            <Patch level="0">turkish_update.diff</Patch>
+            <!--<Patch level="1">desktop.patch</Patch>-->
+            <!--<Patch level="1">gscan2pdf-0.9.32-tesseract_languages.patch</Patch>-->
+            <!--<Patch level="0">turkish_update.diff</Patch>-->
         </Patches>
     </Source>
 
@@ -84,6 +84,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-08-28</Date>
+            <Version>1.0.6</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update> 
         <Update release="3">
             <Date>2011-09-22</Date>
             <Version>0.9.32</Version>

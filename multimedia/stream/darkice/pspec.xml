@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Live audio streamer</Summary>
         <Description>DarkIce as a live audio streamer. It records audio from an audio interface (e.g. sound card), encodes it and sends it to a streaming server.</Description>
-        <Archive sha1sum="dcf9b16f9421c57d5c4afdc601a5a482aa815028" type="targz">http://darkice.googlecode.com/files/darkice-1.0.tar.gz</Archive>
+        <Archive sha1sum="8379670b477ce72beabd3a2d920ee880f69d7a30" type="targz">https://darkice.googlecode.com/files/darkice-1.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lame-devel</Dependency>
             <Dependency>faac-devel</Dependency>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-08-27</Date>
+            <Version>1.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>  
        <Update release="6">
             <Date>2011-01-10</Date>
             <Version>1.0</Version>

@@ -13,7 +13,7 @@ from pisi.actionsapi import kde4
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    kde4.configure("-DWITH_ID3LIB=FALSE")
+    kde4.configure("-DWITH_MP4V2=OFF -DWITH_CHROMAPRINT:BOOL=OFF")
 
 def build():
     kde4.make()

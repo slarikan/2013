@@ -5,15 +5,15 @@
         <Name>ffmpeg</Name>
         <Homepage>http://ffmpeg.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>A command-line tool to record, convert and stream audio and video</Summary>
         <Description>FFmpeg is a complete solution to record, convert and stream audio and video.</Description>
-        <Archive sha1sum="a5cd434e3784347551101cb8d61a8c28f1051ff3" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/ffmpeg-26223.tar.gz</Archive>
-        <Archive sha1sum="f62bc1ed3b7270c9e7822162a0eaac8ae1647a73" type="targz" target="ffmpeg">http://cekirdek.pardus.org.tr/~onur/distfiles/libavfilter-5944.tar.gz</Archive>
+        <Archive sha1sum="bf01742be60c2e6280371fc4189d5d28933f1a56" type="tarbz2">http://ffmpeg.org/releases/ffmpeg-0.11.1.tar.bz2</Archive>
+        <Archive sha1sum="6af9fc0094de6190f5328cfc8405dd92f73cfc50" type="tarxz" target="ffmpeg-0.11.1">http://libav.org/releases/libav-0.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>faac-devel</Dependency>
             <Dependency>imlib2-devel</Dependency>
@@ -23,7 +23,7 @@
             <Dependency>libraw1394-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>texi2html</Dependency>
-            <Dependency releaseFrom="34">x264-devel</Dependency>
+            <Dependency versionfrom="x264-0.0_20120826">x264-devel</Dependency>
             <Dependency>xvid-devel</Dependency>
             <Dependency>libtheora-devel</Dependency>
             <Dependency>gsm-devel</Dependency>
@@ -41,34 +41,34 @@
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">dont-print-config.patch</Patch>
+            <!--<Patch level="1">dont-print-config.patch</Patch>-->
             <!-- FIXME: do it automatically, check actions.py change
             <Patch level="1">build.patch</Patch>
             -->
-            <Patch level="1">no-rle-warning.patch</Patch>
-            <Patch level="1">print-cpucaps.patch</Patch>
-            <Patch level="1">fix_pthread.patch</Patch>
-            <Patch level="1">remove_vfw_bframe_warning.patch</Patch>
+            <!--<Patch level="1">no-rle-warning.patch</Patch>-->
+            <!--<Patch level="1">print-cpucaps.patch</Patch>-->
+            <!--<Patch level="1">fix_pthread.patch</Patch>-->
+            <!--<Patch level="1">remove_vfw_bframe_warning.patch</Patch>-->
             <!-- no need for now
             <Patch>x264_revert.patch</Patch>
             -->
 
             <!-- fixes bug #13255 guess we should keep it for 32bit arch for a while -->
-            <Patch level="1">disable_wma_simd.patch</Patch>
+            <!--<Patch level="1">disable_wma_simd.patch</Patch>-->
 
             <!-- fixes bug #15950 -->
-            <Patch level="1">atom_generic_arch.patch</Patch>
+            <!--<Patch level="1">atom_generic_arch.patch</Patch>-->
 
             <!-- libavfilter soc patches -->
-            <Patch>00_configure.diff</Patch>
-            <Patch>01_build.diff</Patch>
-            <Patch>03_doc_filters.diff</Patch>
+            <!--<Patch>00_configure.diff</Patch>-->
+            <!--<Patch>01_build.diff</Patch>-->
+            <!--<Patch>03_doc_filters.diff</Patch>-->
 
             <!-- CVE-2011-1931 -->
-            <Patch level="1">ffmpeg.git-89f903b3d5ec38c9c5d90fba7e626fa0eda61a32.patch</Patch>
+           <!-- <Patch level="1">ffmpeg.git-89f903b3d5ec38c9c5d90fba7e626fa0eda61a32.patch</Patch>-->
 
             <!-- libavcodec insufficient boundary check -->
-            <Patch level="1">ffmpeg.git-c5cbda50793e311aa73489d12184ffd6761c9fbf.patch</Patch>
+            <!--<Patch level="1">ffmpeg.git-c5cbda50793e311aa73489d12184ffd6761c9fbf.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -82,7 +82,7 @@
             <Dependency>libsdl</Dependency>
             <Dependency>libraw1394</Dependency>
             <Dependency>libvorbis</Dependency>
-            <Dependency releaseFrom="34">x264</Dependency>
+            <Dependency versionFrom="x264-0.0_20120826">x264</Dependency>
             <Dependency>xvid</Dependency>
             <Dependency>libtheora</Dependency>
             <Dependency>gsm</Dependency>
@@ -122,6 +122,13 @@
     </Package>
 
     <History>
+        <Update release="96" type="security">
+            <Date>2012-0827</Date>
+            <Version>0.11.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="95" type="security">
             <Date>2011-09-14</Date>
             <Version>0.6.1_20110105</Version>

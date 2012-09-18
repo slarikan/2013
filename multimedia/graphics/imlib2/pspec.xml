@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Second version of the general image loading and rendering library</Summary>
         <Description>Imlib 2 is the successor to Imlib. It is not just a newer version - it is a completely new library. Imlib2 can be installed alongside Imlib 1.x without any problems since they are effectively different libraries - but they Have very similar functionality.</Description>
-        <Archive sha1sum="3e1fc356a78fbc902a6199241b75cd9830b7fa5f" type="targz">mirrors://sourceforge/enlightenment/imlib2-1.4.4.tar.gz</Archive>
+        <Archive sha1sum="a4c0329d152fff9cb87463709f0e4b54cf1f6121" type="targz">http://sourceforge.net/projects/enlightenment/files/imlib2-src/1.4.5/imlib2-1.4.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>giflib-devel</Dependency>
             <Dependency>libid3tag-devel</Dependency>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-08-29</Date>
+            <Version>1.4.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namsp-01@hotmail.it</Email>
+        </Update>
         <Update release="17">
             <Date>2010-10-12</Date>
             <Version>1.4.4</Version>

@@ -5,15 +5,15 @@
         <Name>puddletag</Name>
         <Homepage>http://puddletag.sourceforge.net</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>puddletag</Icon>
         <IsA>app:gui</IsA>
         <Summary>An audio tag editor for Linux loosely based on mp3tag</Summary>
         <Description>Puddletag is a tag editor for Linux. It uses spreadsheet-like layout so users can edit tags easily. ID3v1, ID3v2, mp4, ogg, flac,mps, ape, wv formats are supported.</Description>
-        <Archive sha1sum="538ce9e754348908a20f17ddec758343fd8a9261" type="targz">http://downloads.sourceforge.net/project/puddletag/puddletag-0.10.3.tar.gz</Archive>
+        <Archive sha1sum="725ad8a97e43593647ba5da0f14acf4d24e43341" type="targz">http://sourceforge.net/projects/puddletag/files/puddletag-0.10.6.3.tar.gz</Archive>
         <Patches>
             <Patch level="1">desktop.patch</Patch>
         </Patches>
@@ -33,11 +33,19 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
+	    <Path fileType="man">/usr/share/man/man1</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-08-27</Date>
+            <Version>0.10.6.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-02-04</Date>
             <Version>0.10.3</Version>

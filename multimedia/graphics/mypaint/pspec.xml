@@ -13,14 +13,14 @@
         <IsA>app:gui</IsA>
         <Summary>Painting application</Summary>
         <Description>MyPaint is a fast and easy painting application. It lets you focus on the art instead of the program</Description>
-        <Archive sha1sum="6c733a1bc87e237be18389aefb26a034b1229d24" type="tarbz2">http://download.gna.org/mypaint/mypaint-0.9.0.tar.bz2</Archive>
+        <Archive sha1sum="5f9221304bb8becd642b00d94af947edf1e18844" type="tarbz2">http://download.gna.org/mypaint/mypaint-1.0.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>python-numpy</Dependency>
             <Dependency>protobuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>desktop.patch</Patch>
+            <Patch>mypaint.desktop.patch</Patch>
         </Patches>
     </Source>
 
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-29</Date>
+            <Version>1.0.0</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-11-27</Date>
             <Version>0.9.0</Version>

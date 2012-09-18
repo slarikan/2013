@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>MIDI keyboard to Lilypond converter</Summary>
         <Description>Rumor is a realtime monophonic (with chords) MIDI keyboard to Lilypond converter. It receives MIDI events, quantizes them according to its metronome on the fly and outputs handwritten-like corresponding Lilypond notation.</Description>
-        <Archive sha1sum="b6bfacdd9512738403d025c0fd4fcbc7f230b8e2" type="tarbz2">http://www.volny.cz/smilauer/rumor/src/rumor-1.0.3b.tar.bz2</Archive>
+        <Archive sha1sum="46c2f24939ef2e442eab7192ab757a27097d56a9" type="tarbz2">https://launchpad.net/rumor/trunk/1.0.5/+download/rumor-1.0.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>guile-devel</Dependency>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+       <Update release="5">
+            <Date>2012-08-29</Date>
+            <Version>1.0.5</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.0.3b</Version>

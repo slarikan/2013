@@ -16,7 +16,7 @@
         <Archive sha1sum="7dc47153b1468056b0e30b1175c7fc57b184aaec" type="tarbz2">http://download.drobilla.net/slv2-0.6.6.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>redland-devel</Dependency>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
             <Dependency>lv2core-devel</Dependency>
             <Dependency>jack-audio-connection-kit-devel</Dependency>
         </BuildDependencies>
@@ -29,7 +29,7 @@
         <Name>slv2</Name>
         <RuntimeDependencies>
             <Dependency>redland</Dependency>
-            <Dependency>raptor</Dependency>
+            <Dependency>raptor2</Dependency>
             <Dependency>lv2core</Dependency>
             <Dependency>jack-audio-connection-kit</Dependency>
         </RuntimeDependencies>
@@ -47,7 +47,7 @@
         <RuntimeDependencies>
             <Dependency release="current">slv2</Dependency>
             <Dependency>lv2core-devel</Dependency>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
             <Dependency>redland-devel</Dependency>
             <Dependency>jack-audio-connection-kit-devel</Dependency>
         </RuntimeDependencies>
@@ -59,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-06-02</Date>
+            <Version>0.6.6</Version>
+            <Comment>Remove raptor dependency</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusufaydemir@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-12-29</Date>
             <Version>0.6.6</Version>

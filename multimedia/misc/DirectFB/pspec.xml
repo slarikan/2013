@@ -5,14 +5,14 @@
         <Name>DirectFB</Name>
         <Homepage>http://www.directfb.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>Thin library on top of the Linux framebuffer devices</Summary>
         <Description>DirectFB is a thin library that provides hardware graphics acceleration, input device handling and abstraction, integrated windowing system with support for translucent windows and multiple display layers.</Description>
-        <Archive sha1sum="be251588a84380b9e93977bfd2d718a9cf1ee1c4" type="targz">http://www.directfb.org/downloads/Core/DirectFB-1.4/DirectFB-1.4.5.tar.gz</Archive>
+        <Archive sha1sum="01653ab513e0bbaa9f9337a9127813f6e781e1c2" type="targz">http://www.directfb.org/downloads/Core/DirectFB-1.5/DirectFB-1.5.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>giflib-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -22,12 +22,12 @@
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>headers.patch</Patch>
+            <!--<Patch>headers.patch</Patch>
             <Patch level="1">cflags.patch</Patch>
-            <Patch level="1">pkgconfig.patch</Patch>
+            <Patch level="1">pkgconfig.patch</Patch>-->
             <!-- Do not use ld directly
                  find -name Makefile.in -exec sed -i '/[$](LD)/s:$(LD) -o $@ -r:$(CC) $(CFLAGS) -Wl,-r -nostdlib -o $@:' {} +  -->
-            <Patch level="1">no_direct_ld.patch</Patch>
+            <!--<Patch level="1">no_direct_ld.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -72,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-08-29</Date>
+            <Version>1.5.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-12</Date>
             <Version>1.4.5</Version>

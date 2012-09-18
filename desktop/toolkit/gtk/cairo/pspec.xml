@@ -5,15 +5,15 @@
         <Name>cairo</Name>
         <Homepage>http://cairographics.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <License>MPL-1.1</License>
         <IsA>library</IsA>
         <Summary>2D graphics library with bindings of many programming languages</Summary>
         <Description>Cairo is a 2D graphics library with support for multiple output devices (and fileformats).</Description>
-        <Archive sha1sum="ccce5ae03f99c505db97c286a0c9a90a926d3c6e" type="targz">http://cairographics.org/releases/cairo-1.10.2.tar.gz</Archive>
+        <Archive sha1sum="bc2ee50690575f16dab33af42a2e6cdc6451e3f9" type="tarxz">http://cairographics.org/releases/cairo-1.12.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -116,6 +116,13 @@
     </Package>
 
     <History>
+        <Update release="37">
+            <Date>2012-08-24</Date>
+            <Version>1.12.2</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="36">
             <Date>2011-07-07</Date>
             <Version>1.10.2</Version>

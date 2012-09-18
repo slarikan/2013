@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Console MP3 player</Summary>
         <Description>mpg123 is a fast and free console MP3 player. It does not require high system resources, it can even run in a 100MHz computer.</Description>
-        <Archive sha1sum="899af289bfcbbb13cbe66d5d0541c25cecf5400d" type="tarbz2">mirrors://sourceforge/mpg123/mpg123-1.13.3.tar.bz2</Archive>
+        <Archive sha1sum="9f53e27bb40b8df3d3b6df25f5f9a8a83b1fccfe" type="tarbz2">mirrors://sourceforge/mpg123/mpg123-1.14.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
         </BuildDependencies>
@@ -63,6 +63,15 @@
     </Package>
 
     <History>
+       <Update release="28">
+            <Date>2012-08-31</Date>
+            <Version>1.14.4</Version>
+            <Comment>
+                * New version 1.14.4, new functions and bug fixes
+            </Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
         <Update release="28">
             <Date>2011-05-04</Date>
             <Version>1.13.3</Version>

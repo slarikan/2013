@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>GStreamer streaming media framework runtime</Summary>
         <Description>GStreamer is a streaming media framework, based on graphs of filters which operate on media data. Applications using this library can do anything from real-time sound processing to playing videos, and just about anything else media-related.</Description>
-        <Archive sha1sum="91995a31f46f5e70a148f21bd212c610d7ef930d" type="tarbz2">http://gstreamer.freedesktop.org/src/gstreamer/pre/gstreamer-0.10.32.4.tar.bz2</Archive>
+        <Archive sha1sum="27931b00eb5d50bc477e32e2dda7440f4179e7ac" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gstreamer/0.10/gstreamer-0.10.36.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>check</Dependency>
         </BuildDependencies>
@@ -21,7 +21,7 @@
             <!-- FIXME: this is a workaround for following plugin changes, in case timestamp has not changed, it is a bit too complex though
             <Patch>wrapper-plugins.patch</Patch>
             -->
-            <Patch>ltmain_as-needed.patch</Patch>
+            <!--Patch>ltmain_as-needed.patch</Patch-->
         </Patches>
     </Source>
 
@@ -76,6 +76,13 @@
 
 
     <History>
+        <Update release="31">
+            <Date>2012-08-20</Date>
+            <Version>0.10.36</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="30">
             <Date>2011-05-06</Date>
             <Version>0.10.32.4</Version>

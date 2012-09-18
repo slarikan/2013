@@ -15,8 +15,9 @@
         <IsA>library</IsA>
         <Summary>A networked sound server with an advanced plugin system</Summary>
         <Description>pulseaudio is a sound server for POSIX and Win32 systems. It allows you to do advanced operations on your sound data as it passes between your application and your hardware.</Description>
-        <Archive sha1sum="361f7d89606e8423aad19691bb27f6552e0b679e" type="targz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-0.9.23.tar.gz</Archive>
+        <Archive sha1sum="56b4ad9207ea3aec0ad1b8be4b55793b426a4f01" type="tarxz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-2.1.tar.xz</Archive>
         <BuildDependencies>
+	    <Dependency>json-c-devel</Dependency>
             <Dependency>doxygen</Dependency>
             <Dependency>xcb-proto</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -48,15 +49,15 @@
             <Patch level="1">mandriva/0505-Mute-IEC958-Optical-Raw-for-AudigyX.patch</Patch>
 
             <!-- Pardus patches -->
-            <Patch level="1">pardus/change-default-buffering-fragments.patch</Patch>
+            <!--<Patch level="1">pardus/change-default-buffering-fragments.patch</Patch>-->
 
             <!-- Change default buffering and lazy load KDE theme sounds -->
-            <Patch level="1">pardus/load-sample-dir-lazy.patch</Patch>
+            <!--<Patch level="1">pardus/load-sample-dir-lazy.patch</Patch> -->
 
             <!-- Disable flat volumes -->
             <Patch level="1">pardus/daemon-conf-disable-flat-volumes.patch</Patch>
 
-            <Patch level="1">pardus/disable-valgrind.patch</Patch>
+             <!--<Patch level="1">pardus/disable-valgrind.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -71,6 +72,7 @@
     <Package>
         <Name>pulseaudio</Name>
         <RuntimeDependencies>
+	    <Dependency>json-c</Dependency>
             <Dependency>lirc</Dependency>
             <Dependency>speex</Dependency>
             <Dependency>rtkit</Dependency>
@@ -138,7 +140,7 @@
             <Dependency>gconf</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/pulse-0.9.23/modules/module-gconf.so</Path>
+            <Path fileType="library">/usr/lib/pulse-2.1/modules/module-gconf.so</Path>
             <Path fileType="executable">/usr/libexec/pulse/gconf-helper</Path>
         </Files>
     </Package>
@@ -151,7 +153,7 @@
             <Dependency>jack-audio-connection-kit</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/pulse-0.9.23/modules/module-jack*</Path>
+            <Path fileType="library">/usr/lib/pulse-2.1/modules/module-jack*</Path>
         </Files>
     </Package>
 
@@ -169,6 +171,9 @@
             <Dependency>libsndfile</Dependency>
             <Dependency>libsamplerate</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="22">pulseaudio</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/usr/lib/libpulse*</Path>
         </Files>
@@ -194,6 +199,7 @@
         <Summary>32-bit shared libraries for pulseaudio-libs</Summary>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
+            <Dependency>json-c-32bit</Dependency>
             <Dependency>dbus-32bit</Dependency>
             <Dependency>glib2-32bit</Dependency>
             <Dependency>speex-32bit</Dependency>
@@ -207,6 +213,7 @@
             <Dependency>glib2-32bit</Dependency>
             <Dependency>libcap-32bit</Dependency>
             <Dependency>libsndfile-32bit</Dependency>
+	    <Dependency>json-c-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -214,6 +221,49 @@
     </Package>
 
     <History>
+      <Update release="33">
+            <Date>2012-08-29</Date>
+            <Version>2.1</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+      </Update> 
+      <Update release="32">
+            <Date>2012-06-19</Date>
+            <Version>2.0</Version>
+            <Comment>add RuntimeDependencies json-c-32bit</Comment>
+            <Name>Hamit Giray Nart</Name>
+            <Email>hamit@pardus-linux.org</Email>
+      </Update>  
+      <Update release="31">
+            <Date>2012-06-17</Date>
+            <Version>2.0</Version>
+            <Comment>Recompile with old gcc</Comment>
+            <Name>Hamit Giray Nart</Name>
+            <Email>hamit@pardus-linux.org</Email>
+      </Update>
+      <Update release="30">
+            <Date>2012-06-01</Date>
+            <Version>2.0</Version>
+            <Comment>
+               * Alternate sample rates
+               * Jack detection
+               * Echo cancellation: WebRTC canceller, automatic gain control, drift compensation 
+               * Virtual Surround modules
+               * Xen Paravirtualised audio sink
+               * Fixed HURD support
+               * A2DP decoder quality improvements
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+      </Update>
+      <Update release="29">
+            <Date>2012-03-14</Date>
+            <Version>1.1</Version>
+            <Comment>Version bump to bugfix release</Comment>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
+        </Update>
         <Update release="28">
             <Date>2011-06-24</Date>
             <Version>0.9.23</Version>

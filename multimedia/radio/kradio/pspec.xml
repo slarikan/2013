@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 radio application</Summary>
         <Description>kradio is a comfortable KDE4 radio application with lirc support, mp3/ogg recording, etc.</Description>
-        <Archive sha1sum="d5ceac0e9260fc2fd1f4a0a567811b06edb0d175" type="tarbz2">mirrors://sourceforge/kradio/kradio4-4.0.2.tar.bz2</Archive>
+        <Archive sha1sum="26c3f8e1e9cd0e656ed6915d805807afe6d942fb" type="targz">http://sourceforge.net/projects/kradio/files/kradio/4.0.6/kradio4-4.0.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
             <Dependency>libsndfile-devel</Dependency>
@@ -27,8 +27,8 @@
         </BuildDependencies>
         <Patches>
             <Patch>izmir-antenna.patch</Patch>
-            <Patch>default-radiodev.patch</Patch>
-            <Patch level="1">desktop.patch</Patch>
+            <Patch>default-radiodev.patch</Patch><!--
+            <Patch level="1">desktop.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -46,6 +46,9 @@
             <Dependency>lame</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kradio-kde4</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -59,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-08-29</Date>
+            <Version>4.0.6</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-09-06</Date>
             <Version>4.0.2</Version>

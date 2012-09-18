@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>ShoutCast compatible streaming media server</Summary>
         <Description>Icecast is a streaming media server which currently supports Ogg Vorbis and MP3 audio streams. It can be used to create an Internet radio station or a privately running jukebox and many things in between.</Description>
-        <Archive sha1sum="a52b13505548c2eff2c64aab95a42dcafda11227" type="targz">http://downloads.xiph.org/releases/icecast/icecast-2.3.2.tar.gz</Archive>
+        <Archive sha1sum="61cf1bd5b4ed491aad488dc6cf1ca2d8eb657363" type="targz">http://downloads.xiph.org/releases/icecast/icecast-2.3.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-27</Date>
+            <Version>2.3.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>  
         <Update release="4">
             <Date>2010-10-11</Date>
             <Version>2.3.2</Version>

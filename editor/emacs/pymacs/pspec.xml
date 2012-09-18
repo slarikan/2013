@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Interface between Emacs Lisp and Python</Summary>
         <Description>Pymacs is a powerful tool which, once started from Emacs, allows two-way communication between Emacs Lisp and Python.</Description>
-        <Archive sha1sum="9f3702cb766edfcae2a8610a1a208b9cd6b23b63" type="targz">http://pymacs.progiciels-bpi.ca/archives/Pymacs-0.24-beta1.tar.gz</Archive>
+        <Archive sha1sum="b6d4183715da130568d2c8e21a5f0c5b3580ae6a" type="targz">http://svn.pardus-linux.org/pardus/playground/namso-01/dosyam/pinard-Pymacs-v0.25-0-g5989046.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -29,6 +29,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-01</Date>
+            <Version>0.25</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.24_beta1</Version>

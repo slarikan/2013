@@ -5,14 +5,14 @@
         <Name>sdl-ttf</Name>
         <Homepage>http://www.libsdl.org/projects/SDL_ttf/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>TrueType font support for SDL</Summary>
         <Description>SDL_ttf is a TrueType font rendering library that is used with the SDL library, and almost as portable.</Description>
-        <Archive sha1sum="98f6518ec71d94b8ad303a197445e0991850b887" type="targz">http://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-2.0.10.tar.gz</Archive>
+        <Archive sha1sum="0ccf7c70e26b7801d83f4847766e09f09db15cc6" type="targz">http://www.libsdl.org/projects/SDL_ttf/release/SDL_ttf-2.0.11.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -65,6 +65,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-08-29</Date>
+            <Version>2.0.11</Version>
+            <Comment>version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-08-22</Date>
             <Version>2.0.10</Version>

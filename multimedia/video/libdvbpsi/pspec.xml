@@ -5,14 +5,14 @@
         <Name>libdvbpsi</Name>
         <Homepage>http://www.videolan.org/libdvbpsi/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Library for MPEG TS/DVB PSI tables decoding and generation</Summary>
         <Description>libdvbpsi is a simple library designed for decoding and generation of MPEG TS and DVB PSI tables.</Description>
-        <Archive sha1sum="4fc21425068a42daf6b261b413e0107cc67fb37c" type="tarbz2">http://download.videolan.org/pub/libdvbpsi/0.1.7/libdvbpsi-0.1.7.tar.bz2</Archive>
+        <Archive sha1sum="562d46ce256a678309f7c39be8cf31eea4bf6757" type="tarbz2">http://download.videolan.org/pub/libdvbpsi/0.2.2/libdvbpsi-0.2.2.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-08-29</Date>
+            <Version>0.2.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-12</Date>
             <Version>0.1.7</Version>

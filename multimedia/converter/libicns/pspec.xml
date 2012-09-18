@@ -12,13 +12,13 @@
         <IsA>app:console</IsA>
         <Summary>Library for manipulations of icns files</Summary>
         <Description>libicns is a tool to convert MAC OS X .icns icon files to PNG images.</Description>
-        <Archive sha1sum="e12a6ca21988929d56320ac1b96a1a059af0fd43" type="targz">mirrors://sourceforge/icns/libicns-0.7.1.tar.gz</Archive>
+        <Archive sha1sum="6e8a27326dad93133b9575acfedb6fa7a7694bf2" type="targz">http://sourceforge.net/projects/icns/files/libicns-0.8.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>jasper-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">libpng.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -26,6 +26,9 @@
         <RuntimeDependencies>
             <Dependency>jasper</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>icns2png</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -40,6 +43,9 @@
         <RuntimeDependencies>
             <Dependency release="current">libicns</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+           <Package>icns2png-devel</Package>
+        </Replaces>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig/libicns.pc</Path>
@@ -47,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-27</Date>
+            <Version>0.8.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-02-03</Date>
             <Version>0.7.1</Version>

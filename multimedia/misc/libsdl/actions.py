@@ -79,7 +79,7 @@ def install():
     for i in ["html", "images", "index.html"]:
         pisitools.insinto(docdir, "docs/%s" % i)
 
-    pisitools.dodoc("BUGS", "CREDITS", "README", "README-SDL.txt", "README.CVS", "TODO", "WhatsNew")
+    pisitools.dodoc("BUGS", "CREDITS", "README", "README-SDL.txt", "TODO", "WhatsNew")
 
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")

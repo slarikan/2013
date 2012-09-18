@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A realtime software synthesizer</Summary>
         <Description>FluidSynth is a real-time software synthesizer based on the SoundFont 2 specifications.</Description>
-        <Archive sha1sum="566fc0eeb8fe9e150a280952b0760ce00e6d1331" type="tarbz2">mirrors://sourceforge/fluidsynth/fluidsynth-1.1.4/fluidsynth-1.1.4.tar.bz2</Archive>
+        <Archive sha1sum="1d45fc3263d85f867efd809bdacb5d6116243c35" type="tarbz2">mirrors://sourceforge/fluidsynth/fluidsynth-1.1.6/fluidsynth-1.1.6.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>lash-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
@@ -21,9 +21,9 @@
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>jack-audio-connection-kit-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">fluidsynth-no-abi-break.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-29</Date>
+            <Version>1.1.6</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-08-19</Date>
             <Version>1.1.4</Version>

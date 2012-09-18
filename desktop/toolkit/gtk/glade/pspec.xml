@@ -5,8 +5,8 @@
         <Name>glade</Name>
         <Homepage>http://glade.gnome.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2</License>
@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ Form Designer</Summary>
         <Description>Glade is a RAD tool to enable quick and easy development of user interfaces for the GTK+ toolkit and the GNOME desktop environment.</Description>
-        <Archive sha1sum="7621d5ae486ed42c35bb1d147b5693428481e733" type="tarbz2">mirrors://gnome/glade3/3.6/glade3-3.6.7.tar.bz2</Archive>
+        <Archive sha1sum="bdc2320bf226b52a55496e2823880be5762081b8" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -32,10 +32,10 @@
             <Dependency>docbook-xml</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fix-glade-desktop.patch</Patch>
+            <!--<Patch level="1">fix-glade-desktop.patch</Patch>-->
             <Patch>01_gladeui-types.patch</Patch>
-            <Patch level="1">02_spinbutton-adjustment.patch</Patch>
-            <Patch>99_ltmain_as-needed.patch</Patch>
+            <!--<Patch level="1">02_spinbutton-adjustment.patch</Patch>-->
+            <!--<Patch>99_ltmain_as-needed.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -92,6 +92,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-08-25</Date>
+            <Version>3.8.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="16">
             <Date>2010-11-01</Date>
             <Version>3.6.7</Version>

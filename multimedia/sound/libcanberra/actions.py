@@ -14,11 +14,11 @@ def setup():
     autotools.autoreconf("-fi")
     autotools.configure("--disable-oss \
                          --disable-lynx \
-                         --disable-gtk3 \
                          --disable-gtk-doc \
                          --disable-schemas-install \
                          --enable-gstreamer \
                          --enable-pulse \
+                         --enable-gtk3 \
                          --enable-alsa \
                          --enable-null \
                          --enable-gtk \

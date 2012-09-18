@@ -5,8 +5,8 @@
         <Name>libass</Name>
         <Homepage>http://code.google.com/p/libass/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -15,7 +15,7 @@
         <!-- Snapshots from http://repo.or.cz/w/libass.git
         <Archive sha1sum="fe851501ad4e4fdcfd7a89f92b986542850d87ec" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/libass-9839bd0a94b664d02ecc9b5e1d235144714cf5f7.tar.gz</Archive>
         -->
-        <Archive sha1sum="05e210bd081af3e542778bd3a687724547fcd2ca" type="tarxz">http://libass.googlecode.com/files/libass-0.9.13.tar.xz</Archive>
+        <Archive sha1sum="7a0ea048f687421f3e1314988ca02f04861fc5f0" type="tarxz">http://libass.googlecode.com/files/libass-0.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -49,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-08-29</Date>
+            <Version>0.10.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2011-09-15</Date>
             <Version>0.9.13</Version>

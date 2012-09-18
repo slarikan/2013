@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 KeepSpecial=["libtool"]
 
 def setup():
-    autotools.autoreconf("-vif")
+    #autotools.autoreconf("-vif")
 
     pisitools.dosed("configure", "DOCUMENTATION_RELATIVE_PATH=.*", "DOCUMENTATION_RELATIVE_PATH=%s/html" % get.srcNAME())
     autotools.configure("--with-gs-font-dir=/usr/share/fonts/default/ghostscript \

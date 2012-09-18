@@ -361,6 +361,59 @@
             <Patch>official/7.3.336</Patch>
             <Patch>official/7.3.337</Patch>
             <Patch>official/7.3.338</Patch>
+            <Patch>official/7.3.339</Patch>
+            <Patch>official/7.3.340</Patch>
+            <Patch>official/7.3.341</Patch>
+            <Patch>official/7.3.342</Patch>
+            <Patch>official/7.3.343</Patch>
+            <Patch>official/7.3.344</Patch>
+            <Patch>official/7.3.345</Patch>
+            <Patch>official/7.3.346</Patch>
+            <Patch>official/7.3.347</Patch>
+            <Patch>official/7.3.348</Patch>
+            <Patch>official/7.3.349</Patch>
+            <Patch>official/7.3.350</Patch>
+            <Patch>official/7.3.351</Patch>
+            <Patch>official/7.3.352</Patch>
+            <Patch>official/7.3.353</Patch>
+            <Patch>official/7.3.354</Patch>
+            <Patch>official/7.3.355</Patch>
+            <Patch>official/7.3.356</Patch>
+            <Patch>official/7.3.357</Patch>
+            <Patch>official/7.3.358</Patch>
+            <Patch>official/7.3.359</Patch>
+            <Patch>official/7.3.360</Patch>
+            <Patch>official/7.3.361</Patch>
+            <Patch>official/7.3.362</Patch>
+            <Patch>official/7.3.363</Patch>
+            <Patch>official/7.3.364</Patch>
+            <Patch>official/7.3.365</Patch>
+            <Patch>official/7.3.366</Patch>
+            <Patch>official/7.3.367</Patch>
+            <Patch>official/7.3.368</Patch>
+            <Patch>official/7.3.369</Patch>
+            <Patch>official/7.3.370</Patch>
+            <Patch>official/7.3.371</Patch>
+            <Patch>official/7.3.372</Patch>
+            <Patch>official/7.3.373</Patch>
+            <Patch>official/7.3.374</Patch>
+            <Patch>official/7.3.375</Patch>
+            <Patch>official/7.3.376</Patch>
+            <Patch>official/7.3.377</Patch>
+            <Patch>official/7.3.378</Patch>
+            <Patch>official/7.3.379</Patch>
+            <Patch>official/7.3.380</Patch>
+            <Patch>official/7.3.381</Patch>
+            <Patch>official/7.3.382</Patch>
+            <Patch>official/7.3.383</Patch>
+            <Patch>official/7.3.384</Patch>
+            <Patch>official/7.3.385</Patch>
+            <Patch>official/7.3.386</Patch>
+            <Patch>official/7.3.387</Patch>
+            <Patch>official/7.3.388</Patch>
+            <Patch>official/7.3.389</Patch>
+            <Patch>official/7.3.390</Patch>
+
             <!--
             Don't forget to update official/README everyime to add new patches
 
@@ -450,6 +503,13 @@
     </Package>
 
     <History>
+        <Update release="88">
+            <Date>2012-01-02</Date>
+            <Version>7.3.390</Version>
+            <Comment>Add official patches up to 390</Comment>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
+        </Update>
         <Update release="87">
             <Date>2011-10-13</Date>
             <Version>7.3.338</Version>

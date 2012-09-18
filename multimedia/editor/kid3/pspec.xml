@@ -12,9 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>A simple ID3 tag editor</Summary>
         <Description>kid3 is a simple KDE tool to manage ID3 tags of your audio files.</Description>
-        <Archive sha1sum="64701fa5ee575c6f66e4d0fb70fdaf6c16e54a82" type="targz">mirrors://sourceforge/kid3/kid3-1.6.tar.gz</Archive>
+        <Archive sha1sum="bdfad021123d41cdbe38dc02f92869786d9cdff6" type="targz">http://prdownloads.sourceforge.net/kid3/kid3-2.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>flac-devel</Dependency>
@@ -22,15 +22,16 @@
             <Dependency>tunepimp-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
             <Dependency versionFrom="1.9.1">libmp4v2-devel</Dependency>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
+	    <Dependency>libchromaprint-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kid3</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency>taglib</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>flac</Dependency>
@@ -38,8 +39,9 @@
             <Dependency>tunepimp</Dependency>
             <Dependency>libogg</Dependency>
             <Dependency versionFrom="1.9.1">libmp4v2</Dependency>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency>phonon</Dependency>
+	    <Dependency>libchromaprint</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -56,6 +58,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-08-27</Date>
+            <Version>2.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="18">
             <Date>2011-02-08</Date>
             <Version>1.6</Version>

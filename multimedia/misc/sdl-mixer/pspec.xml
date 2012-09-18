@@ -5,14 +5,14 @@
         <Name>sdl-mixer</Name>
         <Homepage>http://www.libsdl.org/projects/SDL_mixer/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>SDL mixer library</Summary>
         <Description>SDL_mixer is a SDL library for loading sound files.</Description>
-        <Archive sha1sum="ef5d45160babeb51eafa7e4019cec38324ee1a5d" type="targz">http://www.libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.11.tar.gz</Archive>
+        <Archive sha1sum="a20fa96470ad9e1052f1957b77ffa68fb090b384" type="targz">http://www.libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>libmikmod-devel</Dependency>
@@ -22,7 +22,7 @@
             <Dependency>timidity</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">dev_snd_seq.patch</Patch>
+            <!--<Patch level="1">dev_snd_seq.patch</Patch>-->
             <Patch level="1">ldflags.patch</Patch>
         </Patches>
     </Source>
@@ -83,6 +83,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-08-29</Date>
+            <Version>1.2.12</Version>
+            <Comment>version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2011-08-22</Date>
             <Version>1.2.11</Version>

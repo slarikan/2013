@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = get.srcNAME()
+WorkDir = "wez-atomicparsley-36099586d4c2"
 
 def setup():
     shelltools.system("./autogen.sh")

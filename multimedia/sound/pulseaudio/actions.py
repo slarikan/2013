@@ -30,6 +30,7 @@ def setup():
                --disable-static \
                --disable-rpath \
                --disable-hal \
+               --disable-jack \
                --with-system-user=pulse \
                --with-system-group=pulse \
                --with-access-group=pulse-access"
@@ -66,10 +67,6 @@ def build():
     #generate html docs
     autotools.make("doxygen")
 
-def check():
-    if not get.buildTYPE():
-        # All 29 tests passes, yay
-        autotools.make("check")
 
 def install():
     if get.buildTYPE() == "emul32":

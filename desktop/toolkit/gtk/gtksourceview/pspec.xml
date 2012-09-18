@@ -5,14 +5,14 @@
         <Name>gtksourceview</Name>
         <Homepage>http://www.gnome.org/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>A text widget implementing syntax highlighting and other features</Summary>
         <Description>Gtksourceview improves the gtk+ text widget by implementing syntax highlighting and other features typical of a source editor.</Description>
-        <Archive sha1sum="81365b66909c84fa31df6f11a749afd54ead8772" type="tarbz2">mirrors://gnome/gtksourceview/2.10/gtksourceview-2.10.4.tar.bz2</Archive>
+        <Archive sha1sum="122b24785b87fe716512688d99933ef87666f6d8" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtksourceview/3.5/gtksourceview-3.5.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
@@ -27,8 +27,8 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/gtksourceview-2.0/styles</Path>
-            <Path fileType="data">/usr/share/gtksourceview-2.0/language-specs</Path>
+            <Path fileType="data">/usr/share/gir-1.0/</Path>
+            <Path fileType="data">/usr/share/gtksourceview-3.0</Path>	    
         </Files>
     </Package>
 

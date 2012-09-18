@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyright 2006-2011 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -10,16 +9,15 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "%s" % get.srcNAME()
-
 def setup():
-    shelltools.system("./autogen.sh")
+    autotools.autoreconf("-fi")
     autotools.configure("--disable-static \
                          --disable-gtk-doc \
                          --without-hal \
                          --without-mono \
                          --with-temp-mount-dir=/var/run/libgpod \
-                         --enable-udev")
+                         --enable-udev \
+                         --with-html-dir=/usr/share/doc/%s/html" % get.srcNAME())
 
 def build():
     autotools.make()

@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>digikam</Name>
-        <Homepage>http://www.digikam.org/</Homepage>
+        <Homepage>http://www.digikam.org</Homepage>
         <Packager>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
@@ -13,15 +13,22 @@
         <IsA>app:gui</IsA>
         <Summary>A digital photo management application for KDE4</Summary>
         <Description>digikam is an advanced digital photo management application for KDE4, which makes importing and organizing digital photos a "snap". The photos can be organized in albums which can be sorted chronologically, by directory layout or by custom collections.</Description>
-        <Archive sha1sum="3958c47756e816b3ab8709fcbf41a945bcd4903c" type="tarbz2">mirrors://sourceforge/digikam/digikam-1.9.0.tar.bz2</Archive>
+        <Archive sha1sum="a7a9e4e342f118b603a11539c98a01c9970254df" type="tarbz2">mirrors://sourceforge/digikam/digikam/2.6.0/digikam-2.6.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.1">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.6.1">kdebase-runtime</Dependency> <!-- Trash protocol -->
-            <Dependency versionFrom="4.6.1">kdeedu-devel</Dependency> <!-- marble devel files are needed -->
-            <Dependency versionFrom="4.6.1">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.7.1">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.1">kdegraphics-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdebase-runtime</Dependency> <!-- Trash protocol -->
+            <Dependency versionFrom="4.8.2">marble</Dependency> <!-- marble devel files are needed -->
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">libkipi-devel</Dependency>
+            <Dependency versionFrom="0.7.1">libqjson-devel</Dependency>
+	    <Dependency versionFrom="0.22">exiv2-devel</Dependency>
+	    <Dependency versionFrom="4.8.2">libkdcraw-devel</Dependency>
+	    <Dependency versionFrom="4.8.2">libkexiv2-devel</Dependency>
+            <Dependency>atlas-devel</Dependency>    
             <Dependency>libgphoto2-devel</Dependency>
+	    <Dependency>libpng-devel</Dependency>
+	    <Dependency>jasper-devel</Dependency>
             <Dependency>qt-sql-sqlite</Dependency>
             <Dependency>lensfun-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
@@ -30,29 +37,35 @@
             <Dependency>jasper-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
-            <Dependency>lcms-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
             <Dependency releaseFrom="3">libpgf-devel</Dependency>
             <Dependency>mysql-server</Dependency> <!-- digikam looks for mysqld and mysql_install_db -->
+            <Dependency>qca2-devel</Dependency>
+            <Dependency>opencv-devel</Dependency>
+            <Dependency>libgomp</Dependency>
+            <Dependency>libxslt-devel</Dependency>
+            <Dependency>libksane-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>qt-webkit-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">digikam-1.4.0_marble_plugin_rpath.patch</Patch>
-
-            <!-- digikam tries to use libclapack.so from atlas package, but it's not real clapack and must be ignored. Real clapack brings f2c.h-->
-            <Patch level="1">fix-clapack-cmake.diff</Patch>
+            <Patch level="1">fedora/digikam-2.5.0-clapack-atlas.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>digikam</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.1">kdegraphics</Dependency>
-            <Dependency versionFrom="4.6.1">kdebase-runtime</Dependency>
-            <Dependency versionFrom="4.6.1">kdeedu-marble</Dependency>
-            <Dependency versionFrom="4.6.1">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.1">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.7.1">qt-sql-sqlite</Dependency> <!-- digikam uses mysqld by default but also works with sqlite -->
-            <Dependency versionFrom="4.7.1">qt</Dependency>
-            <Dependency releaseFrom="29">kipi-plugins</Dependency>
+            <Dependency versionFrom="4.8.2">libkipi</Dependency>
+            <Dependency versionFrom="4.8.2">kdebase-runtime</Dependency>
+            <Dependency versionFrom="4.8.2">marble</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.8.1">libkdcraw</Dependency>
+            <Dependency versionFrom="4.8.1">libkexiv2</Dependency>    
+            <Dependency versionFrom="4.8.2">qt-sql-sqlite</Dependency> <!-- digikam uses mysqld by default but also works with sqlite -->
+            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="0.7.1">libqjson</Dependency>
             <Dependency>libgphoto2</Dependency>
             <Dependency>lensfun</Dependency>
             <Dependency>soprano</Dependency>
@@ -62,8 +75,23 @@
             <Dependency>jasper</Dependency>
             <Dependency>tiff</Dependency>
             <Dependency>jpeg</Dependency>
-            <Dependency>lcms</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>qca2</Dependency>
+            <Dependency>opencv</Dependency>
+            <Dependency>libgomp</Dependency>
+            <Dependency>libxslt</Dependency>
+            <Dependency>libksane</Dependency>
+            <Dependency versionFrom="4.8.1">libkdcraw</Dependency>
+            <Dependency>libkexiv2</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>qt-webkit</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package>kipi-plugins</Package>
+        </Conflicts>
+        <Replaces>
+            <Package>digikam-kde4</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -88,6 +116,20 @@
     </Package>
 
     <History>
+        <Update release="32">
+            <Date>2012-06-05</Date>
+            <Version>2.6.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="31">
+            <Date>2012-03-05</Date>
+            <Version>2.6.0_beta2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="30">
             <Date>2011-03-25</Date>
             <Version>1.9.0</Version>
@@ -300,3 +342,4 @@
         </Update>
     </History>
 </PISI>
+

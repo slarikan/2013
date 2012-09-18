@@ -5,15 +5,15 @@
         <Name>gtk-doc</Name>
         <Homepage>http://www.gtk.org/gtk-doc</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv3</License>
         <License>FDL-1.1</License>
         <IsA>app:console</IsA>
         <Summary>GTK+ API documentation generator</Summary>
         <Description>Gtk-Doc is typically used to document the public API of GTK+ and GNOME libraries, but it can also be used to document application code.</Description>
-        <Archive sha1sum="fc1c593e8107cbe33451e3e938ca14b59104e999" type="tarbz2">mirrors://gnome/gtk-doc/1.15/gtk-doc-1.15.tar.bz2</Archive>
+        <Archive sha1sum="41703f523691e8ddc5d7a23f596b642751c46d39" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtk-doc/1.18/gtk-doc-1.18.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>openjade</Dependency>
             <Dependency>rarian</Dependency>
@@ -22,9 +22,6 @@
             <Dependency releaseFrom="3">docbook-xml</Dependency>
             <Dependency releaseFrom="9">docbook-xsl</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">fix_gtkdoc-fixxref.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -46,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-08-26</Date>
+            <Version>1.18</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2011-06-01</Date>
             <Version>1.15</Version>
