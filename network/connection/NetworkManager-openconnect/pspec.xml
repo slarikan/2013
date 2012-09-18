@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>NetworkManager VPN integration for openconnect</Summary>
         <Description>NetworkManager-openconnect contains software for integrating the openconnect VPN software with NetworkManager and the GNOME desktop.</Description>
-        <Archive sha1sum="c699a9b9af28c72850c686d6bde7276d7fdc5e47" type="tarbz2">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-openconnect/0.8/NetworkManager-openconnect-0.8.4.tar.bz2</Archive>
+        <Archive sha1sum="2a9a9a013594ec310d29cb83b9128e0089860107" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-openconnect/0.9/NetworkManager-openconnect-0.9.6.2.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -24,10 +24,10 @@
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency versionFrom="0.8.4.0">NetworkManager-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">add-gettext-tag.patch</Patch>
             <Patch level="1">fix-translation-domain.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-28</Date>
+            <Version>0.9.6.2</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-08-17</Date>
             <Version>0.8.4</Version>
