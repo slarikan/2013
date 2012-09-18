@@ -14,12 +14,11 @@ def setup():
 
 def build():
     autotools.make()
-    autotools.make("-C doc/design-paper tor-design.pdf")
+    #autotools.make("-C doc/design-paper tor-design.pdf")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dodoc("AUTHORS", "ChangeLog", "README", "doc/*.txt",
-                    "doc/design-paper/tor-design.pdf")
+    pisitools.dodoc("ChangeLog", "README", "doc/*.txt")
     # delete script that uses obsolete tsocks prg.
     # use usewithtor/torsocks which comes with torsocks
     # package instead
