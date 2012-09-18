@@ -12,7 +12,7 @@
         <Icon>licq</Icon>
         <Summary>Multi-threaded / multi-protocol ICQ clone</Summary>
         <Description>Licq is a multi-threaded ICQ (originally; now it supports AOL and MSN as well) clone written mostly in C++. It uses an extensive plugin system to manage many different functions.</Description>
-        <Archive sha1sum="b58014a370c3c0994e52553edf41e5978a4fabd3" type="tarbz2">mirrors://sourceforge/licq/licq-1.5.0.tar.bz2</Archive>
+        <Archive sha1sum="6d1e1a5b43c558e82f3a317fc0b27e12318f9692" type="tarbz2">mirrors://sourceforge/licq/licq-1.6.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
@@ -29,9 +29,9 @@
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">cmake_ldflags.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -180,6 +180,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-01</Date>
+            <Version>1.6.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-04-11</Date>
             <Version>1.5.0 </Version>
