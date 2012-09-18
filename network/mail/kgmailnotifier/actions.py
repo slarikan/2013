@@ -9,6 +9,8 @@ from pisi.actionsapi import get
 from pisi.actionsapi import kde4
 from pisi.actionsapi import pisitools
 
+WorkDir = "kgmailnotifier"
+
 shelltools.export("HOME", get.workDIR())
 
 def setup():

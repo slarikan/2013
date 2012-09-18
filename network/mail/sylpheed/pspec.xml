@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A lightweight email client and newsreader</Summary>
         <Description>Sylpheed is a simple and lightweight but featureful and easy-to-use e-mail client.</Description>
-        <Archive sha1sum="6a1cb770e7466c53f97529ab5b613c351f88e554" type="tarbz2">http://sylpheed.sraoss.jp/sylpheed/v3.2beta/sylpheed-3.2.0beta2.tar.bz2</Archive>
+        <Archive sha1sum="0aafa1a96a3b18a900866e5d13200cc626f4fbf2" type="tarbz2">http://sylpheed.sraoss.jp/sylpheed/v3.2/sylpheed-3.2.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>shared-mime-info</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -88,6 +88,13 @@
     </Package>
 
     <History>
+        <Update release="55">
+            <Date>2012-09-03</Date>
+            <Version>3.2.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="54">
             <Date>2011-08-12</Date>
             <Version>3.2.0_beta2</Version>

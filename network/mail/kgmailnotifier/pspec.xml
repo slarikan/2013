@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Gmail notifier applet for KDE</Summary>
         <Description>KGmailnotifier is an application for checking a Gmail account for new messages.</Description>
-        <Archive sha1sum="fea8165debf01d078fa87ecbf0819d699b9e77c5" type="tarbz2">http://www.kde-apps.org/CONTENT/content-files/55375-kgmailnotifier-0.5.1.tar.bz2</Archive>
+        <Archive sha1sum="20f0b2c0cb13e677bb739cc89a0d3b1c5fe357ff" type="targz">http://kde-apps.org/CONTENT/content-files/55375-kgmailnotifier-0.5.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
@@ -42,7 +42,14 @@
         </Files>
     </Package>
 
-    <History>
+     <History>
+        <Update release="7">
+            <Date>2012-09-03</Date>
+            <Version>0.5.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-01-23</Date>
             <Version>0.5.1</Version>

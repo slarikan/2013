@@ -7,7 +7,7 @@ References:
 diff --git a/config/autoconf.mk.in b/config/autoconf.mk.in
 --- a/config/autoconf.mk.in
 +++ b/config/autoconf.mk.in
-@@ -464,16 +464,20 @@ MOZ_PANGO_LIBS          = @MOZ_PANGO_LIB
+@@ -448,16 +448,20 @@ MOZ_PANGO_LIBS          = @MOZ_PANGO_LIB
  XT_LIBS			= @XT_LIBS@
  
  MOZ_ALSA_LIBS           = @MOZ_ALSA_LIBS@
@@ -25,19 +25,19 @@ diff --git a/config/autoconf.mk.in b/config/autoconf.mk.in
  MOZ_AUTO_DEPS	= @MOZ_AUTO_DEPS@
  COMPILER_DEPEND = @COMPILER_DEPEND@
  MDDEPDIR        := @MDDEPDIR@
- 
- MOZ_DEMANGLE_SYMBOLS = @MOZ_DEMANGLE_SYMBOLS@
+ CC_WRAPPER = @CC_WRAPPER@
+ CXX_WRAPPER = @CXX_WRAPPER@
  
 diff --git a/configure.in b/configure.in
 --- a/configure.in
 +++ b/configure.in
-@@ -6841,16 +6841,31 @@ AC_SUBST(MOZ_CAIRO_LIBS)
+@@ -6586,16 +6586,31 @@ AC_SUBST(QCMS_LIBS)
  
- dnl qcms
  dnl ========================================================
- 
- QCMS_LIBS='$(DEPTH)/mozilla/gfx/qcms/$(LIB_PREFIX)mozqcms.$(LIB_SUFFIX)'    
- AC_SUBST(QCMS_LIBS)
+ dnl HarfBuzz
+ dnl ========================================================
+ MOZ_HARFBUZZ_LIBS='$(DEPTH)/mozilla/gfx/harfbuzz/src/$(LIB_PREFIX)mozharfbuzz.$(LIB_SUFFIX)'
+ AC_SUBST(MOZ_HARFBUZZ_LIBS)
  
  dnl ========================================================
 +dnl Check for nss-shared-helper
@@ -66,21 +66,21 @@ diff --git a/configure.in b/configure.in
 diff --git a/mail/app/Makefile.in b/mail/app/Makefile.in
 --- a/mail/app/Makefile.in
 +++ b/mail/app/Makefile.in
-@@ -127,16 +127,17 @@ APP_XPCOM_LIBS = $(XPCOM_LIBS)
- endif
+@@ -94,16 +94,17 @@ LOCAL_INCLUDES += \
+   $(NULL)
+ 
+ DEFINES += -DXPCOM_GLUE
+ STL_FLAGS=
  
  LIBS += \
- 	$(STATIC_COMPONENTS_LINKER_PATH) \
- 	$(MOZ_JS_LIBS) \
  	$(EXTRA_DSO_LIBS) \
- 	$(APP_XPCOM_LIBS) \
- 	$(NSPR_LIBS) \
+ 	$(XPCOM_STANDALONE_GLUE_LDOPTS) \
 +	$(NSSHELPER_LIBS) \
- 	$(TK_LIBS) \
  	$(NULL)
  
- # Add explicit X11 dependency when building against X11 toolkits
- ifneq (,$(filter gtk gtk2 xlib,$(MOZ_WIDGET_TOOLKIT)))
- LIBS += $(XLDFLAGS) $(XLIBS)
+ ifdef MOZ_LINKER
+ LIBS += $(ZLIB_LIBS)
  endif
  
+ ifndef MOZ_WINCONSOLE
+ ifdef MOZ_DEBUG

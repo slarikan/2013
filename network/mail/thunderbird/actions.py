@@ -10,10 +10,10 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-WorkDir   = "thunderbird"
-MOZAPPDIR = "/usr/lib/MozillaThunderbird"
+WorkDir = "comm-release"
+MOZAPPDIR= "/usr/lib/MozillaThunderbird"
 
-locales = ["ca", "da", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "pt-BR", "ru", "sv-SE", "tr"]
+locales = ["ca", "da", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "pt-BR", "ru",]
 
 def setup():
     # Use autoconf 2.13, pff
@@ -22,49 +22,68 @@ def setup():
     # Set job count for make
     pisitools.dosed(".mozconfig", "%%JOBS%%", get.makeJOBS())
 
-    # Set distro info
     pisitools.dosed(".pardus-default-prefs.js", "DISTRIB_ID", get.lsbINFO()["DISTRIB_ID"])
     pisitools.dosed(".pardus-default-prefs.js", "DISTRIB_RELEASE", get.lsbINFO()["DISTRIB_RELEASE"])
 
 def build():
-    # Build thunderbird
     autotools.make("-f client.mk build")
 
-    # Prepare language packs
     for locale in locales:
         autotools.make("-C mail/locales langpack-%s" % locale)
+        pisitools.copy("mozilla/dist/xpi-stage/locale-%s/chrome/%s.manifest" % (locale, locale), "mozilla/dist/bin/chrome/")
 
     # Build enigmail
-    #shelltools.cd("mailnews/extensions/enigmail")
-    #shelltools.system("./makemake -r")
-    #autotools.make("MOZ_CHROME_FILE_FORMAT=jar")
-    #autotools.make("xpi")
+    """
+    shelltools.cd("mailnews/extensions/enigmail")
+    shelltools.system("./makemake -r")
+    autotools.make()
+    autotools.make("xpi")
+    """
 
 def install_enigmail():
     # Install enigmail
-    enigmail_dir = "extensions/{3550f703-e582-4d05-9a08-453d09bdfdc6}/{847b3a00-7ab1-11d4-8f02-006008948af5}"
+    pisitools.insinto(MOZAPPDIR, "mozilla/dist/bin/enigmail-*.xpi")
+
+    enigmail_dir = "mozilla/extensions/{3550f703-e582-4d05-9a08-453d09bdfdc6}/{847b3a00-7ab1-11d4-8f02-006008948af5}"
     pisitools.dodir("%s/%s" % (MOZAPPDIR, enigmail_dir))
 
-    shelltools.system("unzip %s/mozilla/dist/bin/enigmail-*.xpi -d %s/%s/%s" % (get.curDIR(), get.installDIR(), MOZAPPDIR, enigmail_dir))
-    pisitools.remove("%s/enigmail-*.xpi" % MOZAPPDIR)
+    old_dir = get.curDIR()
+
+    shelltools.cd("%s/%s/%s" % (get.installDIR(), MOZAPPDIR, enigmail_dir))
+    shelltools.system("unzip %s/%s/enigmail-*.xpi" % (get.installDIR(), MOZAPPDIR))
+    shelltools.cd(old_dir)
+
+    # Remove unwanted build artifacts from enigmail
+    for f in ("enigmail.jar", "enigmail-locale.jar", "enigmail-en-US.jar", "enigmail-skin.jar", "installed-chrome.txt", "enigmime.jar"):
+        pisitools.remove("%s/chrome/%s" % (MOZAPPDIR, f))
+
+    for f in ("libenigmime.so", "ipc.xpt", "enig*"):
+        pisitools.remove("%s/components/%s" % (MOZAPPDIR, f))
+
+    pisitools.removeDir("%s/defaults/preferences" % MOZAPPDIR)
+    pisitools.removeDir("%s/platform" % MOZAPPDIR)
+    pisitools.removeDir("%s/wrappers" % MOZAPPDIR)
+    pisitools.removeDir("%s/enigmail*.xpi" % MOZAPPDIR)
+
 
 def install():
     pisitools.insinto("/usr/lib/", "mozilla/dist/bin", "MozillaThunderbird", sym=False)
 
     # Install language packs
     for locale in locales:
-        pisitools.copytree("mozilla/dist/xpi-stage/locale-%s" % locale, "%s/usr/lib/MozillaThunderbird/extensions/langpack-%s@thunderbird.mozilla.org" % (get.installDIR(), locale))
-
-    #install_enigmail()
-
-    # Install default-prefs.js
+        pisitools.insinto("/usr/lib/MozillaThunderbird/extensions/langpack-%s@thunderbird.mozilla.org" % locale, "mozilla/dist/xpi-stage/locale-%s/*" % locale, sym=False)
+        
+    # Install fix language packs
+    pisitools.insinto("/usr/lib/MozillaThunderbird/extensions", "./fix-language/*")
+   
+   # Install default-prefs.js
     pisitools.insinto("%s/defaults/pref" % MOZAPPDIR, ".pardus-default-prefs.js", "all-pardus.js")
-
+    
     # Empty fake files to get Turkish spell check support working
-    pisitools.dodir("%s/extensions/langpack-tr@thunderbird.mozilla.org/dictionaries" % MOZAPPDIR)
-    shelltools.touch("%s/%s/%s/dictionaries/tr-TR.aff" % (get.installDIR(), MOZAPPDIR, "extensions/langpack-tr@thunderbird.mozilla.org"))
-    shelltools.touch("%s/%s/%s/dictionaries/tr-TR.dic" % (get.installDIR(), MOZAPPDIR, "extensions/langpack-tr@thunderbird.mozilla.org"))
-
+    #pisitools.dodir("%s/extensions/langpack-tr@thunderbird.mozilla.org/dictionaries" % MOZAPPDIR)
+    #shelltools.touch("%s/%s/%s/dictionaries/tr-TR.aff" % (get.installDIR(), MOZAPPDIR, "extensions/langpack-tr@thunderbird.mozilla.org"))
+    #shelltools.touch("%s/%s/%s/dictionaries/tr-TR.dic" % (get.installDIR(), MOZAPPDIR, "extensions/langpack-tr@thunderbird.mozilla.org"))
+    
     pisitools.removeDir("%s/dictionaries" % MOZAPPDIR)
     pisitools.dosym("/usr/share/hunspell", "%s/dictionaries" % MOZAPPDIR)
 
