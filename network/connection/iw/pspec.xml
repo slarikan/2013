@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>nl80211-based configuration utility for wireless devices</Summary>
         <Description>iw is a new nl80211 based CLI configuration utility for wireless devices using the mac80211 kernel stack.</Description>
-        <Archive sha1sum="a91226daab473d1aa0b6586c61f1c62db9618b7d" type="tarbz2">http://wireless.kernel.org/download/iw/iw-0.9.22.tar.bz2</Archive>
+        <Archive sha1sum="e3e0600ced24c05e84ba021c2629bf9dcafd5c3b" type="tarbz2">http://wireless.kernel.org/download/iw/iw-3.6.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libnl-devel</Dependency>
         </BuildDependencies>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-28</Date>
+            <Version>3.6</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-02-04</Date>
             <Version>0.9.22</Version>
