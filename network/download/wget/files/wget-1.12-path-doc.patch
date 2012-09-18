@@ -1,6 +1,6 @@
-diff -Nur wget-1.12-old/doc/sample.wgetrc wget-1.12/doc/sample.wgetrc
---- wget-1.12-old/doc/sample.wgetrc	2009-09-22 05:53:58.000000000 +0300
-+++ wget-1.12/doc/sample.wgetrc	2009-09-22 23:18:17.697670625 +0300
+diff -Nur wget-1.13.4-old/doc/sample.wgetrc wget-1.13.4/doc/sample.wgetrc
+--- wget-1.13.4-old/doc/sample.wgetrc	2009-09-22 05:53:58.000000000 +0300
++++ wget-1.13.4/doc/sample.wgetrc	2009-09-22 23:18:17.697670625 +0300
 @@ -7,7 +7,7 @@
  ## not contain a comprehensive list of commands -- look at the manual
  ## to find out what you can put into this file.
@@ -19,9 +19,9 @@ diff -Nur wget-1.12-old/doc/sample.wgetrc wget-1.12/doc/sample.wgetrc
  ## Think well before you change them, since they may reduce wget's
  ## functionality, and make it behave contrary to the documentation:
  ##
-diff -Nur wget-1.12-old/doc/sample.wgetrc.munged_for_texi_inclusion wget-1.12/doc/sample.wgetrc.munged_for_texi_inclusion
---- wget-1.12-old/doc/sample.wgetrc.munged_for_texi_inclusion	2009-09-22 07:08:52.000000000 +0300
-+++ wget-1.12/doc/sample.wgetrc.munged_for_texi_inclusion	2009-09-22 23:18:17.698671231 +0300
+diff -Nur wget-1.13.4-old/doc/sample.wgetrc.munged_for_texi_inclusion wget-1.13.4/doc/sample.wgetrc.munged_for_texi_inclusion
+--- wget-1.13.4-old/doc/sample.wgetrc.munged_for_texi_inclusion	2009-09-22 07:08:52.000000000 +0300
++++ wget-1.13.4/doc/sample.wgetrc.munged_for_texi_inclusion	2009-09-22 23:18:17.698671231 +0300
 @@ -7,7 +7,7 @@
  ## not contain a comprehensive list of commands -- look at the manual
  ## to find out what you can put into this file.
@@ -40,9 +40,9 @@ diff -Nur wget-1.12-old/doc/sample.wgetrc.munged_for_texi_inclusion wget-1.12/do
  ## Think well before you change them, since they may reduce wget's
  ## functionality, and make it behave contrary to the documentation:
  ##
-diff -Nur wget-1.12-old/doc/wget.info wget-1.12/doc/wget.info
---- wget-1.12-old/doc/wget.info	2009-09-22 19:30:20.000000000 +0300
-+++ wget-1.12/doc/wget.info	2009-09-22 23:18:17.709670169 +0300
+diff -Nur wget-1.13.4-old/doc/wget.info wget-1.13.4/doc/wget.info
+--- wget-1.13.4-old/doc/wget.info	2009-09-22 19:30:20.000000000 +0300
++++ wget-1.13.4/doc/wget.info	2009-09-22 23:18:17.709670169 +0300
 @@ -113,7 +113,7 @@
     * Most of the features are fully configurable, either through
       command line options, or via the initialization file `.wgetrc'
@@ -88,9 +88,9 @@ diff -Nur wget-1.12-old/doc/wget.info wget-1.12/doc/wget.info
       ## Think well before you change them, since they may reduce wget's
       ## functionality, and make it behave contrary to the documentation:
       ##
-diff -Nur wget-1.12-old/doc/wget.texi wget-1.12/doc/wget.texi
---- wget-1.12-old/doc/wget.texi	2009-09-05 00:22:04.000000000 +0300
-+++ wget-1.12/doc/wget.texi	2009-09-22 23:19:48.363920238 +0300
+diff -Nur wget-1.13.4-old/doc/wget.texi wget-1.13.4/doc/wget.texi
+--- wget-1.13.4-old/doc/wget.texi	2009-09-05 00:22:04.000000000 +0300
++++ wget-1.13.4/doc/wget.texi	2009-09-22 23:19:48.363920238 +0300
 @@ -190,12 +190,12 @@
  Most of the features are fully configurable, either through command line
  options, or via the initialization file @file{.wgetrc} (@pxref{Startup
@@ -125,7 +125,7 @@ diff -Nur wget-1.12-old/doc/wget.texi wget-1.12/doc/wget.texi
  Fascist admins, away!
  
  @node Wgetrc Syntax, Wgetrc Commands, Wgetrc Location, Startup File
-diff -Nur wget-1.12-old/NEWS wget-1.12/NEWS
+diff -Nur wget-1.13.4-old/NEWS wget-1.13.4/NEWS
 --- wget-1.12-old/NEWS	2009-09-22 05:53:35.000000000 +0300
 +++ wget-1.12/NEWS	2009-09-22 23:18:29.209672248 +0300
 @@ -562,7 +562,7 @@
@@ -137,7 +137,7 @@ diff -Nur wget-1.12-old/NEWS wget-1.12/NEWS
  
  ** Lots of bugfixes.
  
-diff -Nur wget-1.12-old/README wget-1.12/README
+diff -Nur wget-1.13.4-old/README wget-1.13.4/README
 --- wget-1.12-old/README	2009-09-21 01:59:32.000000000 +0300
 +++ wget-1.12/README	2009-09-22 23:18:33.547921666 +0300
 @@ -33,7 +33,7 @@
