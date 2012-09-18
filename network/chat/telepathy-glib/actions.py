@@ -12,8 +12,9 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    autotools.autoreconf("-fiv")
-    autotools.configure("--disable-static")
+    #autotools.autoreconf("-fiv")
+    autotools.configure("--disable-static \
+						 --enable-introspection")
 
 def build():
     autotools.make()
@@ -22,7 +23,7 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # empty dirs
-    pisitools.removeDir("/usr/bin")
-    pisitools.removeDir("/usr/libexec")
+    #pisitools.removeDir("/usr/bin")
+    #pisitools.removeDir("/usr/libexec")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")

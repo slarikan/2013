@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>IRC connection manager for Telepathy</Summary>
         <Description>telepathy-idle is a full-featured IRC connection manager for the Telepathy framework.</Description>
-        <Archive sha1sum="445cb728172e4a82a350cec1d562d8adcfc271f3" type="targz">http://telepathy.freedesktop.org/releases/telepathy-idle/telepathy-idle-0.1.6.tar.gz</Archive>
+        <Archive sha1sum="b350fe02abec01c020996d2ef2f70062a3bf0dc7" type="targz">http://telepathy.freedesktop.org/releases/telepathy-idle/telepathy-idle-0.1.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>telepathy-glib</Dependency>
             <Dependency>gtk-doc</Dependency>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-09-01</Date>
+            <Version>0.1.12</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-04-05</Date>
             <Version>0.1.6</Version>

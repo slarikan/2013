@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Portable, fast, light and extensible IRC client</Summary>
         <Description>WeeChat is a portable, fast, light and extensible IRC client. Everything can be done with a keyboard. It is customizable and extensible with scripts.</Description>
-        <Archive sha1sum="28e544f061d30c8cb31142b62f559c6727107176" type="targz">http://www.weechat.org/files/src/weechat-0.3.5.tar.gz</Archive>
+        <Archive sha1sum="72d60c1e17390f1fb5c7d27201697e9002369cb9" type="targz">http://www.weechat.org/files/src/weechat-0.3.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gnutls-devel</Dependency>
             <Dependency>lua-devel</Dependency>
@@ -55,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-09-01</Date>
+            <Version>0.3.8</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="17">
             <Date>2011-05-18</Date>
             <Version>0.3.5</Version>

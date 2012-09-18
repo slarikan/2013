@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A Jabber/XMPP connection manager for Telepathy</Summary>
         <Description>telepathy-gabble is a Jabber/XMPP connection manager, that handles single and multi-user chats and voice calls.</Description>
-        <Archive sha1sum="a28a6f888bc74d7bc1a5804a76efdf336c37247f" type="targz">http://telepathy.freedesktop.org/releases/telepathy-gabble/telepathy-gabble-0.8.15.tar.gz</Archive>
+        <Archive sha1sum="a2e3bde9ff7c74612aa5f5f6bbdf4188ae7809a5" type="targz">http://telepathy.freedesktop.org/releases/telepathy-gabble/telepathy-gabble-0.15.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>telepathy-glib-devel</Dependency>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="6" type="security">
+            <Date>2012-09-01</Date>
+            <Version>0.15.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5" type="security">
             <Date>2011-02-17</Date>
             <Version>0.8.15</Version>

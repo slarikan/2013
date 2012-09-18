@@ -10,7 +10,12 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vfi")
-    autotools.configure("--disable-static")
+    autotools.configure("--prefix=/usr \
+						 --sysconfdir=/etc \
+						 --libexecdir=/usr/lib/telepathy \
+						 --enable-call \
+						 --disable-static \
+						 --disable-scrollkeeper ")
 
 def build():
     autotools.make("-j1")

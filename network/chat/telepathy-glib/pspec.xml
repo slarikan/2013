@@ -12,10 +12,7 @@
         <IsA>library</IsA>
         <Summary>GLib bindings for the Telepathy D-Bus protocol</Summary>
         <Description>Telepathy-glib is the glib binding for the Telepathy unified framework for all forms of real time conversations, including instant messaging, IRC, voice calls and video calls.</Description>
-        <Archive sha1sum="f961b5a8e42a554e0c5e3262a744622f1726ee0b" type="targz">http://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.11.13.tar.gz</Archive>
-        <Patches>
-            <Patch level="1">fix-pkgconfig.patch</Patch>
-        </Patches>
+        <Archive sha1sum="f07e59e421f13b7bebe1e3757aa233585c518040" type="targz">http://telepathy.freedesktop.org/releases/telepathy-glib/telepathy-glib-0.18.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -56,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-08-19</Date>
+            <Version>0.18.1</Version>
+            <Comment>v.bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-13</Date>
             <Version>0.11.13</Version>

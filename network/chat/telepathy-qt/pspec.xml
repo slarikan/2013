@@ -12,16 +12,16 @@
         <IsA>library</IsA>
         <Summary>Qt based classes for Telepathy communication framework</Summary>
         <Description>The Telepathy project is about building a unified framework for many different kinds of real-time communications. telepathy-qt contains Qt-based base and proxy classes for use in connection managers and clients.</Description>
-        <Archive sha1sum="ff7f6d6ef0ae0a8be6ea366078cda8684897db51" type="targz">http://telepathy.freedesktop.org/releases/telepathy-qt4/telepathy-qt4-0.3.10.tar.gz</Archive>
+        <Archive sha1sum="d26a30a76c6536daa4a4b0dbdbee21dc1d8773bf" type="targz">http://telepathy.freedesktop.org/releases/telepathy-qt/telepathy-qt-0.9.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>telepathy-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-19</Date>
+            <Version>0.9.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2010-10-13</Date>
             <Version>0.3.10</Version>
