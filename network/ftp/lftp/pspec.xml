@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Command line FTP client</Summary>
         <Description>LFTP is sophisticated file transfer program with command line interface. It supports FTP, HTTP, FISH, SFTP, HTTPS and FTPS protocols. It has bookmarks, built-in mirror, can transfer several files in parallel. It was designed with reliability in mind.</Description>
-        <Archive sha1sum="b6220a2ea3e8ddbe06d6e429a7ea4ff902ffde84" type="tarxz">http://ftp.yars.free.net/pub/source/lftp/lftp-4.3.1.tar.xz</Archive>
+        <Archive sha1sum="7ccd24c1de8b92e59c08b8ec2ed5143e9dbe5e09" type="tarxz">http://ftp.yars.free.net/pub/source/lftp/lftp-4.3.7.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnutls-devel</Dependency>
             <Dependency>libtasn1-devel</Dependency>
@@ -49,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-09-01</Date>
+            <Version>4.3.7</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-08-12</Date>
             <Version>4.3.1</Version>
