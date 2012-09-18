@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Local network service discovery</Summary>
         <Description>avahi is a system which facilitates service discovery on a local network. This means that you can plug your laptop or computer into a network and instantly be able to view other people who you can chat with, find printers to print to or find files being shared.</Description>
-        <Archive sha1sum="af13ae6fdb3cd61b2eafa25a108773156d88b362" type="targz">http://avahi.org/download/avahi-0.6.29.tar.gz</Archive>
+        <Archive sha1sum="7e05bd78572c9088b03b1207a0ad5aba38490684" type="targz">http://avahi.org/download/avahi-0.6.31.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -157,6 +157,9 @@
             <Dependency release="current">avahi-glib</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>python-avahi</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/python*/site-packages</Path>
             <Path fileType="executable">/usr/bin/b*</Path>
@@ -178,6 +181,9 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="19">avahi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libhowl.so*</Path>
         </Files>
@@ -203,6 +209,9 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="19">avahi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libdns_sd.so*</Path>
         </Files>
@@ -225,6 +234,9 @@
     <Package>
         <Name>avahi-libs</Name>
         <Summary>Libraries needed to run programs that use avahi</Summary>
+        <Conflicts>
+            <Package releaseTo="19">avahi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/libavahi-common.so*</Path>
             <Path fileType="library">/usr/lib/libavahi-client.so*</Path>
@@ -267,6 +279,9 @@
         <RuntimeDependencies>
             <Dependency>libdaemon</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="19">avahi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/etc/avahi/avahi-autoipd.action</Path>
             <Path fileType="executable">/usr/sbin/avahi-autoipd</Path>
@@ -283,6 +298,9 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="19">avahi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="data">/etc/avahi/avahi-dnsconfd.action</Path>
             <Path fileType="executable">/usr/sbin/avahi-dnsconfd</Path>
@@ -300,6 +318,9 @@
             <Dependency release="current">avahi</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="19">avahi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="man">/usr/share/man/man1</Path>
@@ -322,6 +343,14 @@
     </Package>
 
     <History>
+        <Update release="27">
+            <Date>2012-08-20</Date>
+            <Version>0.6.31</Version>
+            <Comment>Version bump</Comment>
+            <Type>security</Type>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="26">
             <Date>2011-03-21</Date>
             <Version>0.6.29</Version>
