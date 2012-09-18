@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>NetworkManager VPN integration for OpenVPN</Summary>
         <Description>NetworkManager-openvpn contains software for integrating the openvpn VPN software with NetworkManager and the GNOME desktop.</Description>
-        <Archive sha1sum="272a6ee86b02e82c60c0a074953fce73e2aa04f0" type="tarbz2">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-openvpn/0.8/NetworkManager-openvpn-0.8.5.91.tar.bz2</Archive>
+        <Archive sha1sum="c5e3366dfac13497c1649a4337b72f9270491a2c" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-openvpn/0.9/NetworkManager-openvpn-0.9.6.0.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -21,12 +21,12 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
-            <Dependency versionFrom="0.8.4.0">NetworkManager-devel</Dependency>
+            <Dependency versionFrom="0.9.6.0">NetworkManager-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">add-gettext-tag.patch</Patch>
             <Patch level="1">fix-translation-domain.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -37,7 +37,7 @@
             <Dependency>openvpn</Dependency>
             <Dependency>libgnome-keyring</Dependency>
             <Dependency>shared-mime-info</Dependency>
-            <Dependency versionFrom="0.8.4.0">NetworkManager</Dependency>
+            <Dependency versionFrom="0.9.6.0">NetworkManager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
@@ -52,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-08-28</Date>
+            <Version>0.9.6.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-08-17</Date>
             <Version>0.8.4</Version>
