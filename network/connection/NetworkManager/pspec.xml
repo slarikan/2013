@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Network connection manager powered by D-Bus and UDEV</Summary>
         <Description>NetworkManager attempts to keep an active network connection available at all times.</Description>
-        <Archive sha1sum="ee3bd774e0feea5e570bc13e522384d62366afca" type="tarbz2">mirrors://gnome/NetworkManager/0.8/NetworkManager-0.8.5.92.tar.bz2</Archive>
+        <Archive sha1sum="245053ef24335107de9f021ffe7481d29f029ab4" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager/0.9/NetworkManager-0.9.6.0.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -23,17 +23,14 @@
             <Dependency versionFrom="1.4.12">iptables-devel</Dependency>
             <Dependency>wpa_supplicant</Dependency>
             <Dependency versionFrom="2.4.5">ppp-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>dhclient</Dependency>
+            <Dependency>gobject-introspection</Dependency>  
+            <Dependency versionFrom="0.94">dbus-glib-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">pardus/disable-gtk-doc.patch</Patch>
-            <Patch level="1">pardus/add-tr-to-LINGUAS.patch</Patch>
-            <Patch level="1">pardus/fix-dhcp-hostname-update.patch</Patch>
-            <Patch level="1">pardus/0001-backends-pardus-Add-nscd-support.patch</Patch>
-            <Patch level="1">pardus/add-insufficient-priv-error-to-i18n.diff</Patch>
-
-            <!-- Disabled patches
-            <Patch level="1">add-ifcfg-pardus.patch</Patch>
-            -->
+            <!--<Patch level="1">gentoo/networkmanager-0.9.4.0-fix-quote-handling.patch</Patch>-->
+            <Patch level="1">gentoo/networkmanager-0.9.4.0-force-libnl1.1.patch</Patch>
         </Patches>
     </Source>
 
@@ -51,6 +48,9 @@
             <Dependency>wpa_supplicant</Dependency>
             <Dependency versionFrom="2.4.5">ppp</Dependency>
             <Dependency>mobile-broadband-provider-info</Dependency>
+            <Dependency>polkit</Dependency>
+            <Dependency>udev</Dependency>
+            <Dependency versionFrom="0.94">dbus-glib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/lib/udev</Path>
@@ -69,11 +69,13 @@
             <Path fileType="data">/var/run/NetworkManager</Path>
             <Path fileType="data">/var/lib/NetworkManager</Path>
             <Path fileType="config">/etc</Path>
+            <Path fileType="config">/etc/polkit-1/localauthority/10-vendor.d</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/NetworkManager/NetworkManager.conf">NetworkManager.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/NetworkManager">NetworkManager.confd</AdditionalFile>
             <AdditionalFile owner="root" permission="0755" target="/usr/sbin/migrate-comar-network-profiles">migrate-comar-network-profiles</AdditionalFile>
+        <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/localauthority/10-vendor.d/01-org.freedesktop.NetworkManager.settings.modify.system.pkla">gentoo/01-org.freedesktop.NetworkManager.settings.modify.system.pkla</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="service.py">System.Service</COMAR>
@@ -94,6 +96,27 @@
     </Package>
 
     <History>
+        <Update release="23">
+            <Date>2012-08-28</Date>
+            <Version>0.9.6.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+      <Update release="22">
+            <Date>2012-02-17</Date>
+            <Version>0.9.4.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+      </Update>
+      <Update release="21">
+            <Date>2012-02-17</Date>
+            <Version>0.9.2.0</Version>
+            <Comment>new version</Comment>
+            <Name>Ramazan Utku</Name>
+            <Email>ramazanutku@gmail.com</Email>
+        </Update>
         <Update release="20">
             <Date>2011-09-20</Date>
             <Version>0.8.5.92</Version>
