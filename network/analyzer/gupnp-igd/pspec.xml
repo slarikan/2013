@@ -12,28 +12,29 @@
         <IsA>library</IsA>
         <Summary>A library to handle UPnP IGD port mapping</Summary>
         <Description>GUPnP-IGD is a plugin to handle Internet Gateway Device port mappings for UPnP connections.</Description>
-        <Archive sha1sum="b37d44af7172af3e4d0c7f331519bba7e31f752b" type="targz">http://www.gupnp.org/sites/all/files/sources/gupnp-igd-0.1.7.tar.gz</Archive>
+        <Archive sha1sum="3adc7ed75c470c1e2d05b87344e62c09e0f573f4" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/gupnp-igd/0.2/gupnp-igd-0.2.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gupnp-devel</Dependency>
-            <Dependency>gssdp-devel</Dependency>
+            <Dependency versionFrom="0.18.0">gupnp-devel</Dependency>
+            <Dependency versionFrom="0.12.0">gssdp-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch>disable-gtk-doc.patch</Patch>
             <Patch level="1">fix-python-build.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
         <Name>gupnp-igd</Name>
         <RuntimeDependencies>
-            <Dependency>gupnp</Dependency>
-            <Dependency>gssdp</Dependency>
+            <Dependency versionFrom="0.18.0">gupnp</Dependency>
+            <Dependency versionFrom="0.12.0">gssdp</Dependency>
             <Dependency>python-pygobject</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc/html/gupnp-igd</Path>
         </Files>
     </Package>
 
@@ -51,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-01</Date>
+            <Version>0.2.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-14</Date>
             <Version>0.1.7</Version>
