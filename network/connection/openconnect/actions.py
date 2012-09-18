@@ -9,7 +9,7 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-fi")
-    autotools.configure()
+    autotools.configure("--with-vpnc-script=/etc/vpnc/vpnc-script")
 
 def build():
     autotools.make()
