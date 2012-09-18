@@ -12,7 +12,7 @@
         <Icon>nmap</Icon>
         <Summary>Utility for network exploration or security auditing</Summary>
         <Description>Nmap is a utility for network exploration or security auditing.</Description>
-        <Archive sha1sum="b168afc2d5f27a0661bf9cdb5d9a92838681fae3" type="tarbz2">http://nmap.org/dist/nmap-5.59BETA1.tar.bz2</Archive>
+        <Archive sha1sum="e397e453893930d14e9bb33a847d15b94b7ee83a" type="tarbz2">http://nmap.org/dist/nmap-6.01.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libpcap-devel</Dependency>
             <Dependency>lua-devel</Dependency>
@@ -70,6 +70,13 @@
     </Package>
 
     <History>
+        <Update release="33">
+            <Date>2012-09-01</Date>
+            .<Version>6.0.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="32">
             <Date>2011-07-02</Date>
             <Version>5.59</Version>
