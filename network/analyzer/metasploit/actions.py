@@ -62,6 +62,6 @@ def install():
     # pisitools.dodoc("documentation/*.txt", "documentation/*.pdf", "documentation/COPYING")
     pisitools.insinto("/%s" % get.docDIR(), "documentation", get.srcNAME())
     pisitools.insinto("/%s/%s" % (get.docDIR(), get.srcNAME()), "test")
-    pisitools.dodoc("README", "HACKING")
+    pisitools.dodoc("HACKING")
 
 
