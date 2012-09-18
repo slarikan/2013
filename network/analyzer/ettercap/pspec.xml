@@ -14,20 +14,20 @@
         <IsA>app:console</IsA>
         <Summary>Network mapper and analyzer</Summary>
         <Description>ettercap is a suite for man in the middle attacks and network mapping.</Description>
-        <Archive sha1sum="7a2c3f848ca4f39c07fddeb0d6308641265bc4ff" type="targz">mirrors://sourceforge/ettercap/ettercap-NG-0.7.3.tar.gz</Archive>
+        <Archive sha1sum="f4263230a6065af96b33093f39ed9a387453e3b2" type="targz">http://prdownloads.sourceforge.net/ettercap/ettercap-0.7.4.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libnet-devel</Dependency>
             <Dependency>libpcap-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">ettercap-0.7.3-open_missing_mode.patch</Patch>
+            <!--<Patch level="1">ettercap-0.7.3-open_missing_mode.patch</Patch>-->
             <Patch level="1">config.patch</Patch>
             <Patch level="1">ettercap-NG-0.7.3-UI.patch</Patch>
             <Patch>ettercap-NG-0.7.3-daemon-ui.patch</Patch>
             <Patch>ettercap-NG-0.7.3-daemon-textmode.patch</Patch>
             <Patch>ettercap-NG-0.7.3-mitm-loop.patch</Patch>
-            <Patch>linkage.patch</Patch>
+            <!--<Patch>linkage.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-01</Date>
+            <Version>0.7.4.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.7.3</Version>

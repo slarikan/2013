@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "ettercap-NG-%s" % get.srcVERSION()
+WorkDir = "ettercap"
 KeepSpecial = ["libtool"]
 
 def setup():
