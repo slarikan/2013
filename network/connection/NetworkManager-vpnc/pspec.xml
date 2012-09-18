@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>NetworkManager VPN integration for vpnc</Summary>
         <Description>NetworkManager-vpnc contains software for integrating the vpnc VPN software with NetworkManager and the GNOME desktop.</Description>
-        <Archive sha1sum="1dbec4411b34987d198c1273bf549c51e6ee1c58" type="tarbz2">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-vpnc/0.8/NetworkManager-vpnc-0.8.5.91.tar.bz2</Archive>
+        <Archive sha1sum="06a45e6bc418fc315e3206b67a1eaca9c9e98e03" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/NetworkManager-vpnc/0.9/NetworkManager-vpnc-0.9.6.0.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -21,14 +21,14 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
-            <Dependency versionFrom="0.8.4.0">NetworkManager-devel</Dependency>
+            <Dependency versionFrom="0.9.6.0">NetworkManager-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">add-gettext-tag.patch</Patch>
             <Patch level="1">drop-hard-gtk-dep.patch</Patch>
             <Patch level="1">fix-translation-domain.patch</Patch>
             <Patch level="1">add-translatable-property.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -38,7 +38,7 @@
             <Dependency>vpnc</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>libgnome-keyring</Dependency>
-            <Dependency versionFrom="0.8.4.0">NetworkManager</Dependency>
+            <Dependency versionFrom="0.9.6.0">NetworkManager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
@@ -48,11 +48,19 @@
             <Path fileType="data">/usr/share/gnome-vpn-properties</Path>
             <Path fileType="data">/etc/dbus-1</Path>
             <Path fileType="data">/etc/NetworkManager/VPN</Path>
+	    <Path fileType="data">/usr/share/applications/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-08-28</Date>
+            <Version>0.9.6.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-08-17</Date>
             <Version>0.8.5.91</Version>
