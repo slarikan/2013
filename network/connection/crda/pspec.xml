@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Regulatory compliance daemon for 802.11 wireless networking</Summary>
         <Description>crda acts as the udev helper for communication between the kernel and userspace for regulatory compliance. It relies on nl80211 for communication. crda is intended to be run only through udev communication from the kernel.</Description>
-        <Archive sha1sum="73643b3f49b34c4150df4abb793a36792cc68fb7" type="tarbz2">http://wireless.kernel.org/download/crda/crda-1.1.1.tar.bz2</Archive>
+        <Archive sha1sum="a180b8cd2b3f37a157ca27da3fc603795e618906" type="tarbz2">http://wireless.kernel.org/download/crda/crda-1.1.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libnl-devel</Dependency>
             <Dependency>wireless-regdb</Dependency>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-08-28</Date>
+            <Version>1.1.2</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.1.1</Version>
