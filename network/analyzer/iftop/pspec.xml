@@ -12,13 +12,13 @@
         <IsA>app:console</IsA>
         <Summary>Bandwidth monitor</Summary>
         <Description>iftop displays bandwidth usage on an interface.</Description>
-        <Archive sha1sum="75ce6afc8c0bf851278b0a15e66f523af90cfda9" type="targz">http://www.ex-parrot.com/~pdw/iftop/download/iftop-0.17.tar.gz</Archive>
+        <Archive sha1sum="d4dc473f8263192334da6289b69e102a4ae7df9e" type="targz">http://www.ex-parrot.com/~pdw/iftop/download/iftop-1.0pre2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libpcap-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="1">bar_in_bytes.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-01</Date>
+            <Version>1.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.17</Version>
