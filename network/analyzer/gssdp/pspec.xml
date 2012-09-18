@@ -13,15 +13,15 @@
         <IsA>library</IsA>
         <Summary>A GObject-based API for doing SSDP transparently</Summary>
         <Description>GSSDP implements resource discovery and announcement over SSDP and is part of gUPnP.</Description>
-        <Archive sha1sum="db02986ef254c97cc8499973b7e3f79da20459b7" type="targz">http://www.gupnp.org/sites/all/files/sources/gssdp-0.7.2.tar.gz</Archive>
+        <Archive sha1sum="679d2c46f79dd969d7e1eea25628a20fc05be94a" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/gssdp/0.12/gssdp-0.12.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch>disable-gtk-doc.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -52,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-01</Date>
+            <Version>0.12.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.7.2</Version>
