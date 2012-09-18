@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
-    autotools.autoreconf("-vfi")
+    #autotools.autoreconf("-vfi")
     autotools.configure("--disable-silent-rules \
                          --disable-static \
                          --disable-rpath \
