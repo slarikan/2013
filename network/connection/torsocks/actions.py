@@ -18,5 +18,5 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     pisitools.dosym("/usr/bin/usewithtor", "/usr/bin/torify")
-    pisitools.dodoc("ChangeLog", "COPYING", "FAQ", "README", "README.TORDNS")
+    pisitools.dodoc("ChangeLog", "COPYING", "README")
 
