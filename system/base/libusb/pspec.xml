@@ -15,14 +15,14 @@
         <Archive sha1sum="fdc1df6f5cf7b71de7a74292aeea1aa2a39552ae" type="tarbz2">mirrors://sourceforge/libusb/libusb-compat-0.1.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libtool</Dependency>
-	    <Dependency version="1.0.9">libusb1-devel</Dependency>
+	    <Dependency version="1.0.9">libusbx-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libusb</Name>
         <RuntimeDependencies>
-            <Dependency version="1.0.9">libusb1</Dependency>
+            <Dependency version="1.0.9">libusbx</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -51,10 +51,10 @@
         <Summary>32-bit shared libraries for libXt</Summary>
         <BuildType>emul32</BuildType>
 	 <BuildDependencies>
-            <Dependency>libusb1-32bit</Dependency>
+            <Dependency>libusbx-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
-	    <Dependency>libusb1-32bit</Dependency>
+	    <Dependency>libusbx-32bit</Dependency>
             <Dependency release="current">libusb</Dependency>
         </RuntimeDependencies>
         <Files>

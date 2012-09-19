@@ -17,14 +17,14 @@
             <AdditionalFile target="usb.ids">usb.ids</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>usbutils</Name>
         <RuntimeDependencies>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
