@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Passive plugins for Zeitgeist daemon</Summary>
         <Description>zeitgeist-datahub provides passive plugins which insert events into Zeitgeist.</Description>
-        <Archive sha1sum="b17d1f0040edf7cf1677226b104655f4e8b5e97f" type="targz">http://launchpad.net/zeitgeist-datahub/0.7/0.7.0/+download/zeitgeist-datahub-0.7.0.tar.gz</Archive>
+        <Archive sha1sum="72ae675bc0361b58434d4a68a39ef6a98de1b92b" type="targz">https://launchpad.net/zeitgeist-datahub/0.9/0.9.5/+download/zeitgeist-datahub-0.9.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>vala-devel</Dependency>
             <Dependency>libzeitgeist-devel</Dependency>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-09-19</Date>
+            <Version>0.9.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
         <Update release="1">
             <Date>2011-04-18</Date>
             <Version>0.7.0</Version>
