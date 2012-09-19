@@ -5,18 +5,18 @@
         <Name>perl-HTML-Parser</Name>
         <Homepage>http://search.cpan.org/dist/HTML-Parser/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>HTML Parser</Summary>
         <Description>The HTML-Parser distribution is a collection of modules that parse and extract information from HTML documents.</Description>
-        <Archive sha1sum="0cf41883e9129bab1d74c714fc3a7bf65f485575" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/HTML-Parser-3.68.tar.gz</Archive>
+        <Archive sha1sum="8f67a793c593529405f2615b3fdb60e92b44ffa1" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/HTML-Parser-3.69.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-HTML-Tagset</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +24,7 @@
         <Name>perl-HTML-Parser</Name>
         <RuntimeDependencies>
             <Dependency>perl-HTML-Tagset</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -34,14 +34,19 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-06-29</Date>
+            <Version>3.69</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
-            <Date>2011-09-06</Date>
-            <Version>3.68</Version>
-            <Comment>Version bump, change in this release:
-                * Declare the encoding of the POD to be utf8
-            </Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Date>2012-06-29</Date>
+            <Version>3.69</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="12">
             <Date>2010-10-13</Date>

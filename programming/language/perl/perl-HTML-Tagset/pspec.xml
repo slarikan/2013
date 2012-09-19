@@ -5,8 +5,8 @@
         <Name>perl-HTML-Tagset</Name>
         <Homepage>http://search.cpan.org/dist/HTML-Tagset/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,14 +14,14 @@
         <Description>HTML-Tagset contains several data tables useful in various kinds of HTML parsing operations.</Description>
         <Archive sha1sum="cc906acec09b23d5ffa5e1d4f40441f9de1ad777" type="targz">mirrors://cpan/authors/id/P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-HTML-Tagset</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,7 +30,21 @@
         </Files>
     </Package>
 
-    <History>
+     <History>
+        <Update release="8">
+            <Date>2012-09-07</Date>
+            <Version>3.20</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-29</Date>
+            <Version>3.20</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>3.20</Version>

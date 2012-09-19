@@ -5,23 +5,23 @@
         <Name>perl-Class-Autouse</Name>
         <Homepage>http://search.cpan.org/dist/Class-Autouse</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>A perl module for loading a class the first time you call a method in it</Summary>
         <Description>Class::Autouse allows you to specify a class the will only load when a method of that class is called. For large classes that might not be used during the running of a program, such as Date::Manip, this can save you large amounts of memory, and decrease the script load time.</Description>
-        <Archive sha1sum="af8fbcaef6d6e812aad058f6c7967475bc0fbe93" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/Class-Autouse-2.00.tar.gz</Archive>
+        <Archive sha1sum="875dadc0c92d617f1f38089240bf07b1b360d8ae" type="targz">http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Class-Autouse-2.01.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Class-Autouse</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,19 +31,19 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-06</Date>
+            <Version>2.01</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
-            <Date>2011-09-06</Date>
-            <Version>2.00</Version>
-            <Comment>Version bump. Some changes in this release:
-                * Upgrade to Module::Install::DSL 1.00
-                * Fix indenting, style and layout issues
-                * Add debugging entries to all the new code
-                * Remove on use of _load_ancestors that was not needed
-                * Localising $@ during evals
-                * Fix some back-compatibility bugs in the new tests
-            </Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Date>2012-06-29</Date>
+            <Version>2.01</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="5">
             <Date>2009-12-04</Date>

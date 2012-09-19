@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>Simple, transparent data interface, with caching</Summary>
         <Description>perl-Data-ObjectDriver provides a simple and generic abstraction to databases (DBI and otherwise), along with support for partitioning and caching.</Description>
-        <Archive sha1sum="aa41a78a8619185c829d5119d11317ee26a2c9f8" type="targz">mirrors://cpan/authors/id/S/SI/SIXAPART/Data-ObjectDriver-0.08.tar.gz</Archive>
+        <Archive sha1sum="516031f61f1674934c747e763eb229155f196503" type="targz">http://search.cpan.org/CPAN/authors/id/S/SI/SIXAPART/Data-ObjectDriver-0.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>perl-DBD-SQLite</Dependency>
             <Dependency>perl-Class-Trigger</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>perl-Data-ObjectDriver</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>perl-DBD-SQLite</Dependency>
             <Dependency>perl-Class-Trigger</Dependency>
@@ -43,6 +43,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-06</Date>
+            <Version>0.09</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-01</Date>
+            <Version>0.09</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-01-26</Date>
             <Version>0.08</Version>

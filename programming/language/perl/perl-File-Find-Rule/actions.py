@@ -24,4 +24,4 @@ def install():
 
     pisitools.removeDir("/usr/lib/perl5/vendor_perl/%s/File/Find/Rule" % get.curPERL())
 
-    pisitools.dodoc("Changes", "README")
+    pisitools.dodoc("Changes")

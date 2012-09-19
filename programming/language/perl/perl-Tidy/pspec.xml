@@ -14,15 +14,15 @@
         <IsA>app:console</IsA>
         <Summary>Parses and beautifies perl source</Summary>
         <Description>perl-Tidy a Perl module that parses and beautifies perl source.</Description>
-        <Archive sha1sum="e14d4ec61e546a3208f3e790edacc500431c6253" type="targz">mirrors://cpan/authors/id/S/SH/SHANCOCK/Perl-Tidy-20090616.tar.gz</Archive>
+        <Archive sha1sum="f48e983371821d6a32d999d0864b9eaca7e42c50" type="targz">http://search.cpan.org/CPAN/authors/id/S/SH/SHANCOCK/Perl-Tidy-20120619.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Tidy</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-06</Date>
+            <Version>20120619</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-28</Date>
+            <Version>20120619</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>20090616</Version>

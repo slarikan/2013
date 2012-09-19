@@ -5,23 +5,23 @@
         <Name>perl-B-Keywords</Name>
         <Homepage>http://search.cpan.org/dist/B-Keywords/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Perl module consisting lists of reserved barewords and symbol names</Summary>
         <Description>perl-B-Keywords module consists of the lists of reserved barewords and symbol names.</Description>
-        <Archive sha1sum="e839451c3d986f5844c932b3a995134c076ce898" type="targz">mirrors://cpan/authors/id/F/FL/FLORA/B-Keywords-1.10.tar.gz</Archive>
+        <Archive sha1sum="a48ed0202a26c105bbe704bb97bf11d4ff7e807c" type="targz">mirrors://cpan/authors/id/F/FL/FLORA/B-Keywords-1.11.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-B-Keywords</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-06</Date>
+            <Version>1.11</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>1.11</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>1.10</Version>

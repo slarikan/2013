@@ -5,8 +5,8 @@
         <Name>perl-Data-Hierarchy</Name>
         <Homepage>http://search.cpan.org/dist/Data-Hierarchy/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,7 +14,7 @@
         <Description>Data::Hierarchy provides a simple interface for manipulating inheritable data attached to a hierarchical environment (like filesystem).</Description>
         <Archive sha1sum="23c1c0462b399395117be24f2c834e844c7acd73" type="targz">mirrors://cpan/authors/id/C/CL/CLKAO/Data-Hierarchy-0.34.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-Data-Hierarchy</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -32,7 +32,21 @@
         </Files>
     </Package>
 
-    <History>
+     <History>
+        <Update release="6">
+            <Date>2012-09-06</Date>
+            <Version>0.34</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-01</Date>
+            <Version>0.34</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2009-12-04</Date>
             <Version>0.34</Version>

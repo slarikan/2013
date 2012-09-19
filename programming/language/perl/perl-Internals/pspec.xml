@@ -5,8 +5,8 @@
         <Name>perl-Internals</Name>
         <Homepage>http://search.cpan.org/~stbey/Internals-1.1</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -14,14 +14,14 @@
         <Description>perl-Internals module allows to write-protect and write-enable Perl variables, objects and data structures.</Description>
         <Archive sha1sum="b3c0567f00fee3a72ecf52ea11ba3a362b407eb6" type="targz">mirrors://cpan/authors/id/S/ST/STBEY/Internals-1.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Internals</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-07-04</Date>
+            <Version>1.1</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-04</Date>
+            <Version>1.1</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2009-12-04</Date>
             <Version>1.1</Version>

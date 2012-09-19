@@ -13,16 +13,16 @@
         <IsA>library</IsA>
         <Summary>Perl module to implement minimal try/catch</Summary>
         <Description>perl-Try-Tiny is a Perl module which implements a minimal try/catch with proper localization of $@.</Description>
-        <Archive sha1sum="d296c21bcb7711efd97f192c6438f7abf7d38f83" type="targz">mirrors://cpan/authors/id/D/DO/DOY/Try-Tiny-0.09.tar.gz</Archive>
+        <Archive sha1sum="c53c083d494a3741c4f5e4c648a8b6971cc27a84" type="targz">http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Try-Tiny-0.11.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Try-Tiny</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-06</Date>
+            <Version>0.11</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-01</Date>
+            <Version>0.11</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-10</Date>
             <Version>0.09</Version>

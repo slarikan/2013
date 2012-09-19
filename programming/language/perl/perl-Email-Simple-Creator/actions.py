@@ -22,5 +22,7 @@ def check():
 
 def install():
     perlmodules.install()
+    pisitools.remove("/usr/share/man/man3/Email::Simple::Creator.3pm")
+    pisitools.remove("/usr/lib/perl5/vendor_perl/5.16.1/Email/Simple/Creator.pm")
 
     pisitools.dodoc("Changes", "README")

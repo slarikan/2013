@@ -5,17 +5,17 @@
         <Name>perl-Test-Warn</Name>
         <Homepage>http://search.cpan.org/dist/Test-Warn/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Perl extension to test methods for warnings</Summary>
         <Description>perl-Test-Warn module provides a few convenience methods for testing warning based code.</Description>
-        <Archive sha1sum="378ff7f44b5268c7b91b01da2e16e2e09aa2422b" type="targz">mirrors://cpan/authors/id/C/CH/CHORNY/Test-Warn-0.22.tar.gz</Archive>
+        <Archive sha1sum="f27fea108e6b0e37ed7879be63bd651434ee058d" type="targz">http://search.cpan.org/CPAN/authors/id/C/CH/CHORNY/Test-Warn-0.24.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Sub-Uplevel</Dependency>
             <Dependency>perl-Tree-DAG_Node</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>perl-Test-Warn</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Sub-Uplevel</Dependency>
             <Dependency>perl-Tree-DAG_Node</Dependency>
         </RuntimeDependencies>
@@ -37,6 +37,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-06</Date>
+            <Version>0.24</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-01</Date>
+            <Version>0.24</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>0.22</Version>

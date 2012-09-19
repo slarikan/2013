@@ -23,5 +23,3 @@ def check():
 def install():
     perlmodules.install()
 
-    pisitools.remove("/usr/lib/perl5/vendor_perl/%s/File/chdir.pod" % get.curPERL())
-

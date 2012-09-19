@@ -5,24 +5,27 @@
         <Name>perl-Email-Address</Name>
         <Homepage>http://search.cpan.org/dist/Email-Address</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>RFC 2822 Address Parsing and Creation</Summary>
         <Description>perl-Email-Address is a Perl module that is used to parse and create RFC 2822 Address</Description>
-        <Archive sha1sum="508aec815e8abb94e65bad452c5f5661bf26385f" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Email-Address-1.892.tar.gz</Archive>
+        <Archive sha1sum="aef751e93a150f48fc11a20eb6af7f6d801c8ef4" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Email-Address-1.895.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Email-Address</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>Email-Address</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -30,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-06-28</Date>
+            <Version>1.895</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="9">
+            <Date>2012-06-28</Date>
+            <Version>1.895</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-13</Date>
             <Version>1.892</Version>

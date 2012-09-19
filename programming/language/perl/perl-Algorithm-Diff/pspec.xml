@@ -5,8 +5,8 @@
         <Name>perl-Algorithm-Diff</Name>
         <Homepage>http://search.cpan.org/~tyemq/Algorithm-Diff</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,14 +14,14 @@
         <Description>This is a module for computing the difference between two files, two strings, or any other two lists of things. It uses an intelligent algorithm similar to (or identical to) the one used by the Unix diff program. It is guaranteed to find the *smallest possible* set of differences.</Description>
         <Archive sha1sum="f687d21fc0d42e6a065e465f326c97cd3f980639" type="targz">mirrors://cpan/authors/id/T/TY/TYEMQ/Algorithm-Diff-1.1902.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Algorithm-Diff</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-06</Date>
+            <Version>1.1902</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-28</Date>
+            <Version>1.1902</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2009-12-04</Date>
             <Version>1.1902</Version>

@@ -5,8 +5,8 @@
         <Name>perl-Crypt-Simple</Name>
         <Homepage>http://search.cpan.org/~kasei/Crypt-Simple-0.06</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -14,7 +14,7 @@
         <Description>Crypt::Simple module to encrypt stuff simply.</Description>
         <Archive sha1sum="12cd1419656855c10bd4b957235bf69ebde0e1e8" type="targz">mirrors://cpan/authors/id/K/KA/KASEI/Crypt-Simple-0.06.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-Blowfish</Dependency>
             <Dependency>perl-FreezeThaw</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Crypt-Simple</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-Blowfish</Dependency>
             <Dependency>perl-FreezeThaw</Dependency>
         </RuntimeDependencies>
@@ -35,6 +35,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-06</Date>
+            <Version>0.06</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-01</Date>
+            <Version>0.06</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2009-12-04</Date>
             <Version>0.06</Version>

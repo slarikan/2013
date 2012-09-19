@@ -14,9 +14,9 @@
         <IsA>app:console</IsA>
         <Summary>Checks if the documentation of a module is comprehensive</Summary>
         <Description>perl-Pod-Coverage checks if the documentation of a module is comprehensive.</Description>
-        <Archive sha1sum="d94cbb21f948a3660379edf73fb6b6ced8b98a0e" type="targz">mirrors://cpan/authors/id/R/RC/RCLAMP/Pod-Coverage-0.21.tar.gz</Archive>
+        <Archive sha1sum="fcecb32df23c4175d959ed4dc90340db9382bd3d" type="targz">mirrors://cpan/authors/id/R/RC/RCLAMP/Pod-Coverage-0.22.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Devel-Symdump</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Pod-Coverage</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Devel-Symdump</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
         </RuntimeDependencies>
@@ -36,6 +36,20 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-09-06</Date>
+            <Version>0.22</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="11">
+            <Date>2012-06-28</Date>
+            <Version>0.22</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>0.21</Version>

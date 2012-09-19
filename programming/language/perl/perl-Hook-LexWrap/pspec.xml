@@ -13,15 +13,15 @@
         <IsA>library</IsA>
         <Summary>Lexically scoped subroutine wrappers for Perl</Summary>
         <Description>perl-Hook-LexWrap is a Perl module that allows you to install a pre- or post-wrapper (or both) around an existing subroutine.</Description>
-        <Archive sha1sum="aba74c1d5d15ae0043148318c49222ee62de8ce8" type="targz">mirrors://cpan/authors/id/C/CH/CHORNY/Hook-LexWrap-0.23.tar.gz</Archive>
+        <Archive sha1sum="66988174944e4db5163057bc0f576426a834f0ec" type="targz">mirrors://cpan/authors/id/C/CH/CHORNY/Hook-LexWrap-0.24.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Hook-LexWrap</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,6 +30,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-06</Date>
+            <Version>0.24</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-06-28</Date>
+            <Version>0.24</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-13</Date>
             <Version>0.23</Version>

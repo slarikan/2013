@@ -5,23 +5,26 @@
         <Name>perl-Email-Simple</Name>
         <Homepage>http://search.cpan.org/dist/Email-Simple</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Simple parsing of RFC2822 message format and headers</Summary>
         <Description>perl-Email-Simple parses mails according to the RFC2822 message format.</Description>
-        <Archive sha1sum="7d5b9bb1326a6c51c5272ada87e76e051b3c61ec" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Email-Simple-2.005.tar.gz</Archive>
+        <Archive sha1sum="0e37a1ce0607725f3d759d269f6aaab13f4fd497" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Simple-2.101.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl-Test-Pod</Dependency>
+            <Dependency>perl-Test-Pod-Coverage</Dependency>
+            <Dependency>perl-Email-Date-Format</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Email-Simple</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +34,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-07</Date>
+            <Version>2.101</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>2.101</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2009-12-04</Date>
             <Version>2.005</Version>

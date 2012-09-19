@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>SQLite driver for the Perl5 Database Interface (DBI)</Summary>
         <Description>perl-DBD-SQLite is a Perl DBI driver for SQLite, that includes the entire thing in the distribution. So in order to get a fast transaction capable RDBMS working for your perl project you simply have to install this module, and nothing else.</Description>
-        <Archive sha1sum="6c189fba1a4ec4b7e792b3c0b9c9020d5cf7cb8e" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/DBD-SQLite-1.31.tar.gz</Archive>
+        <Archive sha1sum="80f8079831ccc5199fcabd30eb259e7a71f0271e" type="targz">http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/DBD-SQLite-1.37.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>sqlite</Dependency>
         </BuildDependencies>
@@ -23,10 +23,13 @@
     <Package>
         <Name>perl-DBD-SQLite</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>sqlite</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>DBD-SQLite</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/perl5</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -35,6 +38,20 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-09-06</Date>
+            <Version>1.37</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="10">
+            <Date>2012-07-01</Date>
+            <Version>1.37</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-13</Date>
             <Version>1.31</Version>

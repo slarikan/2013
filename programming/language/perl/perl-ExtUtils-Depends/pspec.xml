@@ -5,24 +5,27 @@
         <Name>perl-ExtUtils-Depends</Name>
         <Homepage>http://search.cpan.org/~tsch/ExtUtils-Depends-0.302</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Gökmen Görgen</Name>
+            <Email>gkmngrgn@gmail.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>A library for easily build XS extensions that depend on XS extensions</Summary>
         <Description>This module tries to make it easy to build Perl extensions that use functions and typemaps provided by other Perl extensions.</Description>
-        <Archive sha1sum="94a5e869b53acfd94632fcbabd7dd6568bb4f778" type="targz">mirrors://sourceforge/gtk2-perl/ExtUtils-Depends-0.302.tar.gz</Archive>
+        <Archive sha1sum="c75be8c019cd692f30d1e9325e2bb55f09ee9d98" type="targz">http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/ExtUtils-Depends-0.304.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-ExtUtils-Depends</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>ExtUtils-Depends</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -31,6 +34,20 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-06-28</Date>
+            <Version>0.304</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="9">
+            <Date>2012-06-28</Date>
+            <Version>0.304</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-26</Date>
             <Version>0.302</Version>

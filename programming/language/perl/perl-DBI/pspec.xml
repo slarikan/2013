@@ -5,26 +5,29 @@
         <Name>perl-DBI</Name>
         <Homepage>http://search.cpan.org/dist/DBI</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>The Perl Database Interface</Summary>
         <Description>The DBI is a database access module for the Perl programming language. It defines a set of methods, variables, and conventions that provide a consistent database interface, independent of the actual database being used.</Description>
-        <Archive sha1sum="086d0dc9f17db9d8e4f083a6236cca82d90694a6" type="targz">mirrors://cpan/authors/id/TIMB/DBI-1.615.tar.gz</Archive>
+        <Archive sha1sum="9845257712bdb3e7a123f53c53ed1f5b63a16d08" type="targz">http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.622.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-DBI</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Net-Daemon</Dependency>
             <Dependency>perl-PlRPC</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>DBI</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -35,6 +38,20 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-09-06</Date>
+            <Version>1.622</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="10">
+            <Date>2012-06-28</Date>
+            <Version>1.622</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-13</Date>
             <Version>1.615</Version>

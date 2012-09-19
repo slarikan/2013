@@ -5,8 +5,8 @@
         <Name>perl-Email-Reply</Name>
         <Homepage>http://search.cpan.org/dist/Email-Reply</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,22 +14,22 @@
         <Description>This package provides a simple way to reply to email messages.</Description>
         <Archive sha1sum="d8fbcfe67c0c8f7b2abf8e308ecd062faa0b48d7" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Email-Reply-1.202.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Email-Abstract</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>
             <Dependency>perl-Email-Address</Dependency>
-            <Dependency versionFrom="1.900">perl-Email-MIME</Dependency>
+            <Dependency versionFrom="1.910">perl-Email-MIME</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Email-Reply</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Email-Abstract</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>
             <Dependency>perl-Email-Address</Dependency>
-            <Dependency versionFrom="1.900">perl-Email-MIME</Dependency>
+            <Dependency versionFrom="1.910">perl-Email-MIME</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -39,6 +39,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-07</Date>
+            <Version>1.202</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-07-02</Date>
+            <Version>1.202</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-01-06</Date>
             <Version>1.202</Version>

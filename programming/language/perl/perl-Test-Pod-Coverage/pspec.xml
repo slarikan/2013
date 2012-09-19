@@ -14,14 +14,14 @@
         <Description>perl-Test-Pod-Coverage checks for pod coverage in your distribution.</Description>
         <Archive sha1sum="9d9669917092e24d0943589ea2dfa77ef4e9c853" type="targz">mirrors://cpan/authors/id/P/PE/PETDANCE/Test-Pod-Coverage-1.08.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Pod-Coverage</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Test-Pod-Coverage</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Pod-Coverage</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-06</Date>
+            <Version>1.08</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-28</Date>
+            <Version>1.08</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>1.08</Version>

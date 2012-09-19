@@ -5,8 +5,8 @@
         <Name>perl-Digest-SHA1</Name>
         <Homepage>http://search.cpan.org/dist/Digest-SHA1/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,14 +14,14 @@
         <Description>The Digest::SHA1 module allows you to use the NIST SHA-1 message digest algorithm from within Perl programs. The algorithm takes as input a message of arbitrary length and produces as output a 160-bit "fingerprint" or "message digest" of the input.</Description>
         <Archive sha1sum="77379a2775c744dd7a9890f5638da6362ae58013" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/Digest-SHA1-2.13.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Digest-SHA1</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-06</Date>
+            <Version>2.13</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="8">
+            <Date>2012-06-28</Date>
+            <Version>2.13</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-13</Date>
             <Version>2.13</Version>

@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>A Perl module that gives you lots of flexibility when testing deep structures</Summary>
         <Description>perl-Test-Deep is a Perl module that gives you lots of flexibility when testing deep structures.</Description>
-        <Archive sha1sum="940976c6ec01e693e7b8e0761b16f0a1abc1bb19" type="targz">mirrors://cpan/authors/id/F/FD/FDALY/Test-Deep-0.106.tar.gz</Archive>
+        <Archive sha1sum="b74b060e46d6179bc9ca208afd1dbe198962662e" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Test-Deep-0.110.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Test-Tester</Dependency>
             <Dependency>perl-Test-NoWarnings</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Test-Deep</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-06</Date>
+            <Version>0.110</Version>
+            <Comment>Depend on new perl 5.16.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-28</Date>
+            <Version>0.110</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.106</Version>

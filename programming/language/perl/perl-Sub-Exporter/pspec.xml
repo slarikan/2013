@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>A sophisticated exporter written in Perl for custom-built routines</Summary>
         <Description>perl-Sub-Exporter is a Perl module that is a sophisticated exporter for custom-built routines.</Description>
-        <Archive sha1sum="3612afd39fd8a0e2f2b9168de8d2d51104208396" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Sub-Exporter-0.982.tar.gz</Archive>
+        <Archive sha1sum="38af7552654a3ab327c4bdf28614c37934027832" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Sub-Exporter-0.984.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Data-OptList</Dependency>
             <Dependency>perl-Params-Util</Dependency>
             <Dependency>perl-Sub-Install</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Sub-Exporter</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Data-OptList</Dependency>
             <Dependency>perl-Params-Util</Dependency>
             <Dependency>perl-Sub-Install</Dependency>
@@ -36,6 +36,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-06</Date>
+            <Version>0.984</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-06-28</Date>
+            <Version>0.984</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-05-18</Date>
             <Version>0.982</Version>

@@ -13,10 +13,10 @@
         <IsA>library</IsA>
         <Summary>Perl module to keep imports and functions out of your namespace</Summary>
         <Description>perl-namespace-clean is Perl module which allows you to keep imports and functions out of your namespace.</Description>
-        <Archive sha1sum="2d47ab7f76719493564a43d55cee1bfbb97f60ff" type="targz">mirrors://cpan/authors/id/F/FL/FLORA/namespace-clean-0.20.tar.gz</Archive>
+        <Archive sha1sum="6f29fe96232cb87dd18b90eac3d8ee6ac82ee411" type="targz">http://search.cpan.org/CPAN/authors/id/R/RI/RIBASUSHI/namespace-clean-0.23.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-B-Hooks-EndOfScope</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Package-Stash</Dependency>
             <Dependency>perl-Sub-Identify</Dependency>
             <Dependency>perl-Sub-Name</Dependency>
@@ -27,7 +27,7 @@
         <Name>perl-namespace-clean</Name>
         <RuntimeDependencies>
             <Dependency>perl-B-Hooks-EndOfScope</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Package-Stash</Dependency>
             <Dependency>perl-Sub-Identify</Dependency>
             <Dependency>perl-Sub-Name</Dependency>
@@ -40,6 +40,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-0601</Date>
+            <Version>0.23</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-01</Date>
+            <Version>0.23</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-09</Date>
             <Version>0.20</Version>

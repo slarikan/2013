@@ -15,7 +15,7 @@
         <Description>perl-PPI is a Perl module that parses, analyzes and manipulates Perl.</Description>
         <Archive sha1sum="58fd00fcd5efaa625a18e2662ba1ea6ad8657b31" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/PPI-1.215.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Params-Util</Dependency>
             <Dependency>perl-Class-Inspector</Dependency>
             <Dependency>perl-Clone</Dependency>
@@ -31,7 +31,7 @@
     <Package>
         <Name>perl-PPI</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Params-Util</Dependency>
             <Dependency>perl-Class-Inspector</Dependency>
             <Dependency>perl-Clone</Dependency>
@@ -50,26 +50,19 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2011-03-07</Date>
+        <Update release="5">
+            <Date>2012-09-06</Date>
             <Version>1.215</Version>
-            <Comment>
-                * Version Bump.
-                * index_locations on an empty document no longer warns
-                * Corrected a bug in line-spanning attribute support
-                * Regression test for line-spanning attribute support
-                * Fixed #61305 return { foo => 1 } should parse curlys as hash
-                constructor, not block
-                * Updated copyright year to 2011
-                * Fixed RT #64247 bless {} probably contains a hash constructor
-                * Backed out glob fix
-                * Fixed RT #65199 Cast can trump braces in
-                PPI::Token::Symbol->symbol (WYANT)
-                * Fixed #63943 map and regexp confuse PPI?
-                * Confirmed new Perl::Critic works
-              </Comment>
-            <Name>Mesutcan Kurt</Name>
-            <Email>mesutcank@gmail.com</Email>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-28</Date>
+            <Version>1.215</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="3">
             <Date>2010-10-13</Date>

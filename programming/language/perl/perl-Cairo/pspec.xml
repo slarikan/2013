@@ -5,31 +5,28 @@
         <Name>perl-Cairo</Name>
         <Homepage>http://search.cpan.org/dist/Cairo</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>Perl bindings to the cairo graphics library</Summary>
         <Description>Cairo provides Perl bindings for the vector graphics library cairo. It supports multiple output targets, including PNG, PDF and SVG. Cairo produces identical output on all those targets.</Description>
-        <Archive sha1sum="2bc1929929ac74d8b051ee7847021b11a441853b" type="targz">mirrors://sourceforge/gtk2-perl/Cairo-1.070.tar.gz</Archive>
+        <Archive sha1sum="1f83c4d1153f2bf933d3da4bff1993a04baeaab5" type="targz">mirrors://sourceforge/gtk2-perl/Cairo-1.082.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Test-Number-Delta</Dependency>
-            <Dependency versionFrom="1.8.8">cairo</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency versionFrom="1.8.8">cairo-devel</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">disable_failing_tests.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
         <Name>perl-Cairo</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="1.8.8">cairo</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -39,6 +36,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-06</Date>
+            <Version>1.082</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>1.082</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-11-10</Date>
             <Version>1.070</Version>

@@ -5,25 +5,27 @@
         <Name>perl-XML-SAX</Name>
         <Homepage>http://search.cpan.org/dist/XML-SAX/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Perl module for using and building Perl SAX2 XML parsers, filters, and drivers</Summary>
         <Description>This module consists of several framework classes for using and building Perl SAX2 XML parsers, filters, and drivers.</Description>
-        <Archive sha1sum="ae050fcd129d247855bf480c1e44cdc2db823e9e" type="targz">mirrors://cpan/authors/id/G/GR/GRANTM/XML-SAX-0.96.tar.gz</Archive>
+        <Archive sha1sum="9685c417627d75ae18ab0be3b1562608ee093d5c" type="targz">http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-0.99.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
+            <Dependency>libxml2-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-XML-SAX</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
+            <Dependency>libxml2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -37,6 +39,20 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-09-07</Date>
+            <Version>0.99</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="13">
+            <Date>2012-06-29</Date>
+            <Version>0.99</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2011-05-20</Date>
             <Version>0.96</Version>

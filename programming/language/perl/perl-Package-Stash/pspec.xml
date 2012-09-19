@@ -13,11 +13,11 @@
         <IsA>library</IsA>
         <Summary>Perl module to manipulate stashes</Summary>
         <Description>perl-Package-Stash is a Perl module to manipulate stashes also known as Perl symbol tables.</Description>
-        <Archive sha1sum="ed70e74a94511cce94777146ad17b33e983cfbc3" type="targz">mirrors://cpan/authors/id/D/DO/DOY/Package-Stash-0.26.tar.gz</Archive>
+        <Archive sha1sum="9beb102a214c1307d9d948086197f337b4cdfe64" type="targz">http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Package-Stash-0.33.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Package-DeprecationManager</Dependency>
             <Dependency>perl-Dist-CheckConflicts</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Package-Stash-XS</Dependency>
             <Dependency>perl-Test-Requires</Dependency>
         </BuildDependencies>
@@ -28,7 +28,7 @@
         <RuntimeDependencies>
             <Dependency>perl-Package-DeprecationManager</Dependency>
             <Dependency>perl-Dist-CheckConflicts</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Package-Stash-XS</Dependency>
             <Dependency>perl-Test-Requires</Dependency>
         </RuntimeDependencies>
@@ -41,6 +41,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-06</Date>
+            <Version>0.33</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-01</Date>
+            <Version>0.33</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-10</Date>
             <Version>0.26</Version>

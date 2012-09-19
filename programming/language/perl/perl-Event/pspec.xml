@@ -5,24 +5,24 @@
         <Name>perl-Event</Name>
         <Homepage>http://search.cpan.org/dist/Event</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Event loop processing module in Perl</Summary>
         <Description>The Event module provide a central facility to watch for various types of events and invoke a callback when these events occur. The idea is to delay the handling of events so that they may be dispatched in priority order when it is safe for callbacks to execute.</Description>
-        <Archive sha1sum="227f1a3cb8a89875cdee452580e5042bd9842d42" type="targz">mirrors://cpan/authors/id/J/JP/JPRIT/Event-1.13.tar.gz</Archive>
+        <Archive sha1sum="5e0c499a06a814e501e5813be5ce7621f68954b0" type="targz">http://search.cpan.org/CPAN/authors/id/J/JP/JPRIT/Event-1.20.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Event</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-06</Date>
+            <Version>1.20</Version>
+            <Comment>Depend on new perl 5.16.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-06-28</Date>
+            <Version>1.20</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2009-12-04</Date>
             <Version>1.13</Version>

@@ -5,8 +5,8 @@
         <Name>perl-Class-Data-Inheritable</Name>
         <Homepage>http://search.cpan.org/dist/Class-Data-Inheritable/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,15 +14,18 @@
         <Description>perl-Class-Data-Inheritable is for creating accessor/mutators to class data. That is, if you want to store something about your class as a whole (instead of about a single object). This data is then inherited by your subclasses and can be overriden.</Description>
         <Archive sha1sum="522c7e948f126c0d0ab1f37b5e993f4fc5ce65de" type="targz">mirrors://cpan/authors/id/T/TM/TMTM/Class-Data-Inheritable-0.08.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Class-Data-Inheritable</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>Class-Data-Inheritable</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/perl</Path>
@@ -32,6 +35,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-06-28</Date>
+            <Version>0.08</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>0.08</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.08</Version>

@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>Perl module that parses and validates simple name/value option pairs</Summary>
         <Description>perl-Data-OptList is a Perl module that parses and validates simple name/value option pairs.</Description>
-        <Archive sha1sum="00f22cdb5ae1ef9f1e1db878078b23455d7bf573" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-OptList-0.106.tar.gz</Archive>
+        <Archive sha1sum="b802570a41b9393120e6a2d93971c3e3a6293ee5" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-OptList-0.107.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Params-Util</Dependency>
             <Dependency>perl-Sub-Install</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Data-OptList</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Params-Util</Dependency>
             <Dependency>perl-Sub-Install</Dependency>
         </RuntimeDependencies>
@@ -34,6 +34,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-06</Date>
+            <Version>0.107</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-06-28</Date>
+            <Version>0.107</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-05-19</Date>
             <Version>0.106</Version>

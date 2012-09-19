@@ -13,16 +13,16 @@
         <IsA>app:console</IsA>
         <Summary>A Perl module that reads the dimensions of an image in several popular formats</Summary>
         <Description>perl-Image-Size is a Perl module that read the dimensions of an image in several popular formats</Description>
-        <Archive sha1sum="8f1ff3662d8020c0e4daee4a7cb2312d06b86686" type="targz">mirrors://cpan/authors/id/R/RJ/RJRAY/Image-Size-3.230.tar.gz</Archive>
+        <Archive sha1sum="d37c27247099414b1d1fc8a85a3da768ba59569e" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJRAY/Image-Size-3.232.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Image-Size</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-07</Date>
+            <Version>3.232</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="3">
+            <Date>2012-07-04</Date>
+            <Version>3.232</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>3.230</Version>

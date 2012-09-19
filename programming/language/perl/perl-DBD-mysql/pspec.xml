@@ -5,16 +5,16 @@
         <Name>perl-DBD-mysql</Name>
         <Homepage>http://search.cpan.org/dist/DBD-mysql/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>MySQL driver for the Perl5 Database Interface (DBI)</Summary>
         <Description>DBD::mysql is an interface between the Perl programming language and the MySQL programming API that comes with the MySQL relational database management system. Most functions provided by this programming API are supported.</Description>
-        <Archive sha1sum="c0486d6860ec73e9ffd1c51d7c460c8ddf716981" type="targz">mirrors://cpan/authors/id/C/CA/CAPTTOFU/DBD-mysql-4.013.tar.gz</Archive>
+        <Archive sha1sum="624eca0943bbd98d2e256638b3ef88501625cea0" type="targz">http://search.cpan.org/CPAN/authors/id/C/CA/CAPTTOFU/DBD-mysql-4.021.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>mysql-lib</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-DBD-mysql</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>mysql-lib</Dependency>
         </RuntimeDependencies>
@@ -36,6 +36,20 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-09-06</Date>
+            <Version>4.021</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="11">
+            <Date>2012-07-01</Date>
+            <Version>4.021</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2009-12-04</Date>
             <Version>4.013</Version>

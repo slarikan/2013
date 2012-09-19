@@ -13,15 +13,15 @@
         <IsA>library</IsA>
         <Summary>A Perl module ensuring that a platform has weaken support</Summary>
         <Description>perl-Task-Weaken is a Perl module that ensures that a platform has weaken support.</Description>
-        <Archive sha1sum="1a958220f92ac11dd4548c9fe405ca9c9a0ffdc9" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/Task-Weaken-1.03.tar.gz</Archive>
+        <Archive sha1sum="a057c88cd98d1d81cad911f2d8bbd8c717310d43" type="targz">http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Task-Weaken-1.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Task-Weaken</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,6 +30,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-06</Date>
+            <Version>1.04</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-28</Date>
+            <Version>1.04</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>1.03</Version>

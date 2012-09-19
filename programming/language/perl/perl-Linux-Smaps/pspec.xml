@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Perl module to interface /proc/PID/smaps</Summary>
         <Description>perl-Linux-Smaps is a Perl module to easily interface the /proc/PID/smaps memory map.</Description>
-        <Archive sha1sum="d3395b41a228ff1eab9da86b9fe5fd01a517c830" type="targz">mirrors://cpan/authors/id/O/OP/OPI/Linux-Smaps-0.06.tar.gz</Archive>
+        <Archive sha1sum="7461271d8495ba288c93e8e121f7f85dbc1acfb4" type="targz">mirrors://cpan/authors/id/O/OP/OPI/Linux-Smaps-0.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Class-Member</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-Linux-Smaps</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Class-Member</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-07</Date>
+            <Version>0.09</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-05</Date>
+            <Version>0.09</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-09</Date>
             <Version>0.06</Version>

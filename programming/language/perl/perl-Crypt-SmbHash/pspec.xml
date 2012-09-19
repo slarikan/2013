@@ -5,8 +5,8 @@
         <Name>perl-Crypt-SmbHash</Name>
         <Homepage>http://search.cpan.org/dist/Crypt-SmbHash/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -15,7 +15,7 @@
         <Archive sha1sum="2fa36d9e6ef661876f5433e56c3803212a13a838" type="targz">mirrors://cpan/authors/id/B/BJ/BJKUIT/Crypt-SmbHash-0.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Digest-MD4</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Crypt-SmbHash</Name>
         <RuntimeDependencies>
             <Dependency>perl-Digest-MD4</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -34,6 +34,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-06</Date>
+            <Version>0.12</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-07-01</Date>
+            <Version>0.12</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2009-12-04</Date>
             <Version>0.12</Version>

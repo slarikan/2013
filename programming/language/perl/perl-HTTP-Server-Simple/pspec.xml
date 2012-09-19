@@ -5,16 +5,16 @@
         <Name>perl-HTTP-Server-Simple</Name>
         <Homepage>http://search.cpan.org/dist/HTTP-Server-Simple/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Lightweight HTTP Server</Summary>
         <Description>HTTP::Server::Simple is a very simple standalone HTTP daemon with no non-core module dependencies. It's ideal for building a standalone http-based UI to your existing tools.</Description>
-        <Archive sha1sum="638176797e104f58a4f7db1c929758a33ac3b8c1" type="targz">mirrors://cpan/authors/id/J/JE/JESSE/HTTP-Server-Simple-0.43.tar.gz</Archive>
+        <Archive sha1sum="be011542d86f036ece77fa6d04b21cf12ffb723a" type="targz">mirrors://cpan/authors/id/J/JE/JESSE/HTTP-Server-Simple-0.44.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-URI</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-HTTP-Server-Simple</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-URI</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-09-07</Date>
+            <Version>0.44</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="16">
+            <Date>2012-06-29</Date>
+            <Version>0.44</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-05-05</Date>
             <Version>0.43</Version>

@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>Perl module designed to provide basic RSA functionality</Summary>
         <Description>perl-Crypt-OpenSSL-RSA is an XS perl module designed to provide basic RSA functionality.</Description>
-        <Archive sha1sum="c566ca13eb58712105609fdc0307387526d260d0" type="targz">mirrors://cpan/authors/id/I/IR/IROBERTS/Crypt-OpenSSL-RSA-0.26.tar.gz</Archive>
+        <Archive sha1sum="9978e5fcac15ea691030181d2d12564fa3902e5e" type="targz">http://search.cpan.org/CPAN/authors/id/P/PE/PERLER/Crypt-OpenSSL-RSA-0.28.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Bignum</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Random</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Crypt-OpenSSL-RSA</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Bignum</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Random</Dependency>
         </RuntimeDependencies>
@@ -35,6 +35,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-06</Date>
+            <Version>0.28</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-07-01</Date>
+            <Version>0.28</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.26</Version>

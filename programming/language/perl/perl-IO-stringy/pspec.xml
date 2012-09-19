@@ -5,8 +5,8 @@
         <Name>perl-IO-stringy</Name>
         <Homepage>http://search.cpan.org/dist/IO-stringy</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -14,14 +14,14 @@
         <Description>This toolkit primarily provides modules for performing both traditional and object-oriented I/O) on things *other* than normal filehandles; in particular, IO::Scalar, IO::ScalarArray, and IO::Lines.</Description>
         <Archive sha1sum="3ef94404e51e3a6276ddddcce9ba7bbdd6b76a1f" type="targz">mirrors://cpan/authors/id/D/DS/DSKOLL/IO-stringy-2.110.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-IO-stringy</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-07</Date>
+            <Version>2.110</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-07-04</Date>
+            <Version>2.110</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2009-12-04</Date>
             <Version>2.110</Version>

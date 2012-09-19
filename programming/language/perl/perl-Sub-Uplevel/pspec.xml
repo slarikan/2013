@@ -12,16 +12,16 @@
         <IsA>library</IsA>
         <Summary>Module to apparently run a function in a higher stack frame</Summary>
         <Description>Like Tcl's uplevel() function, but not quite so dangerous. The idea is just to fool caller(). All the really naughty bits of Tcl's uplevel() are avoided.</Description>
-        <Archive sha1sum="c75150907d54fa51038fe70ee93993b45da96c8d" type="targz">mirrors://cpan/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.22.tar.gz</Archive>
+        <Archive sha1sum="08291d556929c75e5861a030f877323b60131694" type="targz">mirrors://cpan/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.24.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Sub-Uplevel</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-06</Date>
+            <Version>0.24</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-29</Date>
+            <Version>0.24</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.22</Version>

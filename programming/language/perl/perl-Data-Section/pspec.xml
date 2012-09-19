@@ -13,9 +13,9 @@
         <IsA>library</IsA>
         <Summary>Perl Module to read multiple hunks of data out of your DATA section</Summary>
         <Description>perl-Data-Section is Perl module reads multiple hunks of data out of your DATA section.</Description>
-        <Archive sha1sum="3120a042764aa2344f71250c9befefe1bd0e1d03" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-Section-0.101620.tar.gz</Archive>
+        <Archive sha1sum="0cae2fe42bb3fbe5132591a4019584e44aff6dc8" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-Section-0.101621.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-MRO-Compat</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Data-Section</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-MRO-Compat</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
         </RuntimeDependencies>
@@ -34,7 +34,21 @@
         </Files>
     </Package>
 
-    <History>
+     <History>
+        <Update release="4">
+            <Date>2012-09-06</Date>
+            <Version>0.101621</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="3">
+            <Date>2012-07-01</Date>
+            <Version>0.101621</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-07-07</Date>
             <Version>0.101620</Version>

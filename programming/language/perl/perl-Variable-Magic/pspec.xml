@@ -13,16 +13,16 @@
         <IsA>library</IsA>
         <Summary>Perl module to associate user-defined magic to variables</Summary>
         <Description>perl-Variable-Magic is a Perl module which allows associating user-defined magic from inside Perl.</Description>
-        <Archive sha1sum="27e35d10633dbfbb09db9d98ca5c10291f76bfa8" type="targz">mirrors://cpan/authors/id/V/VP/VPIT/Variable-Magic-0.46.tar.gz</Archive>
+        <Archive sha1sum="8d3a84d82380b7404f3c45839b3614f646e074b0" type="targz">mirrors://cpan/authors/id/V/VP/VPIT/Variable-Magic-0.50.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Variable-Magic</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-06</Date>
+            <Version>0.50</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-06-28</Date>
+            <Version>0.50</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-10</Date>
             <Version>0.46</Version>

@@ -5,8 +5,8 @@
         <Name>perl-GSSAPI</Name>
         <Homepage>http://search.cpan.org/dist/GSSAPI/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -15,7 +15,7 @@
         <Archive sha1sum="c857485532e92e266a75b56ed247284f94b2d3d4" type="targz">mirrors://cpan/authors/id/A/AG/AGROLMS/GSSAPI-0.28.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-GSSAPI</Name>
         <RuntimeDependencies>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-09-06</Date>
+            <Version>0.28</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="10">
+            <Date>2012-06-28</Date>
+            <Version>0.28</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-13</Date>
             <Version>0.28</Version>

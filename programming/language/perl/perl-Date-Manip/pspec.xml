@@ -5,40 +5,49 @@
         <Name>perl-Date-Manip</Name>
         <Homepage>http://search.cpan.org/dist/Date-Manip/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Date manipulation routines</Summary>
         <Description>Date::Manip is a set of routines designed to make any common date/time manipulation easy to do.</Description>
-        <Archive sha1sum="dde959503d447a68850064b73e698a73a22e2785" type="targz">mirrors://cpan/authors/id/S/SB/SBECK/Date-Manip-6.14.tar.gz</Archive>
+        <Archive sha1sum="c6c96bd06a4610db3358430a3e27e9f8228e1481" type="targz">http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/Date-Manip-6.34.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-YAML-Syck</Dependency>
-            <!-- perl-Test-Inter @ review now
-            <Dependency>perl-Test-Inter</Dependency>
-            -->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Date-Manip</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-YAML-Syck</Dependency>
-            <!-- perl-Test-Inter @ review now
-            <Dependency>perl-Test-Inter</Dependency>
-            -->
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-09-06</Date>
+            <Version>6.34</Version>
+            <Comment>Depend on new perl 5.16.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="9">
+            <Date>2012-07-01</Date>
+            <Version>6.32</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-28</Date>
             <Version>6.14</Version>

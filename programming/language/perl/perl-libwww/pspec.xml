@@ -5,23 +5,29 @@
         <Name>perl-libwww</Name>
         <Homepage>http://search.cpan.org/dist/libwww-perl</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Application programming interface to the World-Wide Web</Summary>
         <Description>libwww-perl collection is a set of Perl modules which provides a simple and consistent application programming interface to the World-Wide Web.</Description>
-        <Archive sha1sum="43b4b0449d9432be29a136a10545c8d1162bcc88" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/libwww-perl-5.837.tar.gz</Archive>
-        <BuildDependencies>
+        <Archive sha1sum="e61e33aeff9874e1727e1ebd74f691093bc4b77e" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/libwww-perl-6.04.tar.gz</Archive>       
+	<BuildDependencies>
             <Dependency>perl-URI</Dependency>
             <Dependency>perl-HTML-Tagset</Dependency>
+            <Dependency>perl-File-Listing</Dependency>
+            <Dependency>perl-Encode-Locale</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency>perl-HTTP-Date</Dependency>
+            <Dependency>perl-LWP-Mediatypes</Dependency>
+            <Dependency>perl-HTTP-Message</Dependency>
+            <Dependency>perl-HTTP-Daemon</Dependency>
+	    <Dependency>perl-HTTP-Negotiate</Dependency>
+	    <Dependency>perl-NET-HTTP</Dependency>
+	    <Dependency>perl-WWW-Robotrules</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">libwww-perl-CVE-2011-0633.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -29,8 +35,17 @@
         <RuntimeDependencies>
             <Dependency>perl-URI</Dependency>
             <Dependency>perl-HTML-Tagset</Dependency>
+            <Dependency>perl-File-Listing</Dependency>
+            <Dependency>perl-Encode-Locale</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency>perl-HTTP-Date</Dependency>
+            <Dependency>perl-LWP-Mediatypes</Dependency>
+            <Dependency>perl-HTTP-Message</Dependency>
+            <Dependency>perl-HTTP-Daemon</Dependency>
+	    <Dependency>perl-HTTP-Negotiate</Dependency>
+	    <Dependency>perl-NET-HTTP</Dependency>
+	    <Dependency>perl-WWW-Robotrules</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,6 +57,20 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-09-07</Date>
+            <Version>6.04</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="18">
+            <Date>2012-06-29</Date>
+            <Version>6.04</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="17">
             <Date>2011-09-05</Date>
             <Version>5.837</Version>

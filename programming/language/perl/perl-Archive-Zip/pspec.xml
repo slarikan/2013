@@ -5,24 +5,24 @@
         <Name>perl-Archive-Zip</Name>
         <Homepage>http://search.cpan.org/dist/Archive-Zip</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>Perl interface to ZIP archive files</Summary>
         <Description>The Archive::Zip module allows a Perl program to create, manipulate, read, and write Zip archive files. This module uses the Compress::Zlib library to read and write the compressed streams inside the files.</Description>
-        <Archive sha1sum="06237589a4f61c4b04d3e7c93719268fc3ae031a" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/Archive-Zip-1.30.tar.gz</Archive>
+        <Archive sha1sum="8171b3e9706d74c1bdf5ed5eb2b3b0142dc3503e" type="targz">http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-1.31_04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Archive-Zip</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/perl5</Path>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-09-06</Date>
+            <Version>1.31_04</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="11">
+            <Date>2012-06-28</Date>
+            <Version>1.31_04</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2010-10-13</Date>
             <Version>1.30</Version>

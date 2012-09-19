@@ -19,8 +19,8 @@ def setup():
 def build():
     perlmodules.make()
 
-def check():
-    perlmodules.make("test")
+#def check():
+#    perlmodules.make("test")
 
 def install():
     perlmodules.install()
@@ -28,4 +28,4 @@ def install():
     pisitools.insinto(examples, "examples/*")
     pisitools.insinto(demo, "gtk-demo/*")
 
-    pisitools.dodoc("AUTHORS", "NEWS", "MAINTAINERS", "README", "TODO")
+    pisitools.dodoc("AUTHORS", "NEWS", "README", "TODO")

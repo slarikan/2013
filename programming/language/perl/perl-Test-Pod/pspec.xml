@@ -5,23 +5,23 @@
         <Name>perl-Test-Pod</Name>
         <Homepage>http://search.cpan.org/dist/Test-Pod</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>A perl module to check for errors in POD files</Summary>
         <Description>Check POD files for errors or warnings in a test file, using Pod::Simple.</Description>
-        <Archive sha1sum="f682904b6c84e71e4756601a7e872303cf9eb3f3" type="targz">mirrors://cpan/authors/id/D/DW/DWHEELER/Test-Pod-1.44.tar.gz</Archive>
+        <Archive sha1sum="5f44b590877a33b7b09623dded15ee9c1dae224f" type="targz">mirrors://cpan/authors/id/D/DW/DWHEELER/Test-Pod-1.45.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Test-Pod</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,6 +30,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-06</Date>
+            <Version>1.45</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="8">
+            <Date>2012-06-28</Date>
+            <Version>1.45</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-13</Date>
             <Version>1.44</Version>

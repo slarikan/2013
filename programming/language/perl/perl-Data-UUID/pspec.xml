@@ -5,8 +5,8 @@
         <Name>perl-Data-UUID</Name>
         <Homepage>http://search.cpan.org/dist/Data-UUID/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>
@@ -14,14 +14,14 @@
         <Description>perl-Data-UUID provides a framework for generating v3 UUIDs (Universally Unique Identifiers, also known as GUIDs (Globally Unique Identifiers).</Description>
         <Archive sha1sum="c3e96f469d11a99bc84d1f3b069711c8c5d3a636" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-UUID-1.217.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Data-UUID</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-06</Date>
+            <Version>1.217</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="8">
+            <Date>2012-07-01</Date>
+            <Version>1.217</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-11-10</Date>
             <Version>1.217</Version>
