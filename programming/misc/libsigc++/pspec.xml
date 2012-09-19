@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Typesafe signal framework for C++</Summary>
         <Description>libsigc++ is a library which implements a full callback system for use in widget libraries, abstract interfaces, and general programming.</Description>
-        <Archive sha1sum="c26f57110629c16c0b5a873346b7c1cf0edc9c5e" type="tarbz2">mirrors://gnome/libsigc++/2.2/libsigc++-2.2.8.tar.bz2</Archive>
+        <Archive sha1sum="240d3e0a02e764a6362f6ce1b32de71401e50844" type="tarbz2">http://ftp.acc.umu.se/pub/GNOME/sources/libsigc++/2.2/libsigc++-2.2.10.tar.bz2</Archive>
         <Patches>
             <Patch level="1">gcc-4.3.patch</Patch>
         </Patches>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-08-26</Date>
+            <Version>2.2.10</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-12</Date>
             <Version>2.2.8</Version>

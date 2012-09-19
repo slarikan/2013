@@ -5,14 +5,14 @@
         <Name>libsoup</Name>
         <Homepage>http://live.gnome.org/LibSoup</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2</License>
         <IsA>library</IsA>
         <Summary>An HTTP library implementation in C</Summary>
         <Description>libsoup is an HTTP client/server library for GNOME.</Description>
-        <Archive sha1sum="d93cfbd8a44c8b8759c98bfc83d2e3a003973708" type="tarbz2">mirrors://gnome/libsoup/2.32/libsoup-2.32.2.tar.bz2</Archive>
+        <Archive sha1sum="8c551925a1b9da19a339a692b13ebf63942de5aa" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/libsoup/2.37/libsoup-2.37.92.tar.xz</Archive>
         <BuildDependencies>
             <Dependency releaseFrom="12">libgcrypt-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
@@ -20,17 +20,19 @@
             <Dependency releaseFrom="21">gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
+            <Dependency>tls-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+        <!--<Patches>
             <Patch level="0">CVE-2011-2524.patch</Patch>
-        </Patches>
+        </Patches>-->
     </Source>
 
     <Package>
         <Name>libsoup</Name>
         <RuntimeDependencies>
             <Dependency>gnutls</Dependency>
+            <Dependency>tls</Dependency>
             <Dependency releaseFrom="12">libgcrypt</Dependency>
             <Dependency releaseFrom="21">gconf</Dependency>
         </RuntimeDependencies>
@@ -84,6 +86,13 @@
     </Package>
 
     <History>
+        <Update release="21" type="security">
+            <Date>2012-09-03</Date>
+            <Version>2.37.92</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="20" type="security">
             <Date>2011-08-05</Date>
             <Version>2.32.2</Version>

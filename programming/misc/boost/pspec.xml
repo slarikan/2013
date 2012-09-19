@@ -9,10 +9,11 @@
             <Email>farslan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
+        <PartOf>programming.language</PartOf>
         <IsA>library</IsA>
         <Summary>Peer-reviewed portable C++ source libraries</Summary>
         <Description>Boost provides free portable peer-reviewed C++ libraries. The emphasis is on portable libraries which work well with the C++ Standard Library.</Description>
-        <Archive sha1sum="55b268b91665aa5de36100488bd0a7dfd657cdab" type="tarbz2">http://cekirdek.pardus.org.tr/~fatih/dist/boost/boost-cmake-1.44.0_20100821git074c1eb.tar.bz2</Archive>
+        <Archive sha1sum="52ef06895b97cc9981b8abf1997c375ca79f30c5" type="tarbz2">mirrors://sourceforge/boost/boost_1_51_0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>icu4c-devel</Dependency>
 
@@ -26,6 +27,9 @@
         <RuntimeDependencies>
             <Dependency versionFrom="4.2">icu4c</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="12">boost-devel</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -46,6 +50,20 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-08-21</Date>
+            <Version>0.1.51</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+	<Update release="15">
+            <Date>2012-07-21</Date>
+            <Version>1.50</Version>
+            <Comment>version bump</Comment>
+            <Name>Ramazan Utku</Name>
+	    <Email>ramazanutku@gmail.com</Email>
+	  </Update>
         <Update release="14">
             <Date>2010-10-12</Date>
             <Version>1.44.0_20100821</Version>

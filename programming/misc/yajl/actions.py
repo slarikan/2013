@@ -10,7 +10,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "lloyd-yajl-f4baae0"
+WorkDir = "lloyd-yajl-f4b2b1a"
 
 def setup():
     shelltools.makedirs("build")

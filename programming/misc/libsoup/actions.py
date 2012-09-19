@@ -15,6 +15,7 @@ def setup():
     autotools.autoreconf("-fiv")
     autotools.configure("--disable-static \
                          --enable-ssl \
+                         --disable-tls-check \
                          --without-apache-httpd \
                          --without-apache-module-dir")
 

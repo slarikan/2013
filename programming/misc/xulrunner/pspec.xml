@@ -12,14 +12,14 @@
         <IsA>library</IsA>
         <Summary>XUL Runtime for Gecko Applications</Summary>
         <Description>xulrunner provides the XUL Runtime environment for Gecko applications.</Description>
-        <Archive sha1sum="5c3a48087cfbe17477c6b39774f3a05054f52ebd" type="tarbz2">http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/15.0.1/source/xulrunner-15.0.1.source.tar.bz2</Archive>
+        <Archive sha1sum="1722361740521f6e8074d8528fc9277cfc0b53a7" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/15.0/source/xulrunner-15.0.source.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="20-xulrunner.conf" permission="0644">ld.so.conf</AdditionalFile>
             <AdditionalFile target=".mozconfig" permission="0644">pardus/mozconfig</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="3.13.6">nss-devel</Dependency>
-            <Dependency versionFrom="4.9.2">nspr-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
+            <Dependency>nspr-devel</Dependency>
             <Dependency versionFrom="3.6.22">sqlite-devel</Dependency>
             <Dependency versionFrom="1.8.8">cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -79,8 +79,8 @@
     <Package>
         <Name>xulrunner</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.13.6">nss</Dependency>
-            <Dependency versionFrom="4.9.2">nspr</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>nspr</Dependency>
             <Dependency versionFrom="0.4.0">libproxy</Dependency>
             <Dependency versionFrom="1.8.8">cairo</Dependency>
             <Dependency versionFrom="2.18.5">gtk2</Dependency>
@@ -142,13 +142,6 @@
     </Package>
 
     <History>
-        <Update release="56">
-            <Date>2012-09-18</Date>
-            <Version>15.0.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
         <Update release="55">
             <Date>2012-07-18</Date>
             <Version>15.0</Version>

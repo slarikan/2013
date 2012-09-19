@@ -6,44 +6,39 @@
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+from pisi.actionsapi import shelltools
 
-WorkDir = "boost-cmake-%s" % get.srcVERSION()
+WorkDir = "boost_1_51_0"
+binDir = "bin.linuxx86"
 
-def setup():
-    cmaketools.configure("-DBUILD_EXAMPLES=NONE \
-                          -DBUILD_PROJECTS=ALL \
-                          -DBUILD_SOVERSIONED=ON \
-                          -DBUILD_TESTS=NONE \
-                          -DBUILD_TOOLS=NONE \
-                          -DENABLE_DEBUG=OFF \
-                          -DENABLE_MULTI_THREADED=ON \
-                          -DENABLE_RELEASE=ON \
-                          -DENABLE_SHARED=ON \
-                          -DENABLE_SINGLE_THREADED=ON \
-                          -DENABLE_STATIC=OFF \
-                          -DINSTALL_VERSIONED=OFF \
-                          -DWITH_BZIP2=ON \
-                          -DWITH_DOXYGEN=ON \
-                          -DWITH_EXPAT=ON \
-                          -DWITH_ICU=ON \
-                          -DWITH_MPI=ON \
-                          -DWITH_PYTHON=ON \
-                          -DWITH_VALGRIND=OFF \
-                          -DWITH_XSLTPROC=ON \
-                          -DWITH_ZLIB=ON")
+#def setup():
+    
+    #shelltools.echo("%s/%s/tools/build/v2/user-config.jam" % (get.workDIR(),WorkDir),"using python : 2.7 : /usr/bin/python ; ")
+    #shelltools.echo("%s/%s/tools/build/v2/user-config.jam" % (get.workDIR(),WorkDir),"using python : 3.2 : /usr/bin/python3 : /usr/include/python3.2mu : /usr/lib ;")
+    #shelltools.echo("%s/%s/tools/build/v2/user-config.jam" % (get.workDIR(),WorkDir),"using mpi ;")
+    
 
 def build():
-    cmaketools.make()
+    shelltools.system("./bootstrap.sh")
+    
+    #shelltools.cd("%s/%s/tools/build/v2/engine" % (get.workDIR(),WorkDir))
+    #shelltools.system("./build.sh cc")
+    
+    #if get.ARCH() == "x86_64":
+    #  binDir = "bin.linuxx86_64"
+      
+    #shelltools.cd(binDir)
+    #shelltools.system("./bjam --toolset=gcc ../../../../")
+    #shelltools.copy("bjam","%s/%s/dist/bin/bjam" % (get.workDIR(),WorkDir))
+    #shelltools.cd("%s/%s" % (get.workDIR(),WorkDir))
+    #shelltools.system("dist/bin/bjam release debug-symbols=off threading=multi \
+	#		runtime-link=shared link=shared,static \
+	#		cflags=-fno-strict-aliasing \
+	#		toolset=gcc \
+	#		--prefix=dist/ \
+	#		-sTOOLS=gcc \
+	#		--layout=system")
 
 def install():
-    cmaketools.install()
-
-    # Remove .cmake files used to build boost
-    pisitools.remove("/usr/lib/*.cmake")
-
-    # Remove cmake modules. We will use cmake's FindBoost.
-    pisitools.removeDir("/usr/share/boost-*")
-    pisitools.removeDir("/usr/share/cmake")
-
-    pisitools.dohtml("doc/html/*")
-    pisitools.dodoc("LICENSE*")
+    pisitools.dodir("/usr")
+    shelltools.system("./b2 install --prefix=%s/usr" % get.installDIR());
