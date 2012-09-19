@@ -7,7 +7,7 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
-WorkDir = "libedit-20100424-3.0"
+WorkDir = "libedit-20120601-3.0"
 
 def setup():
     autotools.configure("--disable-static")
