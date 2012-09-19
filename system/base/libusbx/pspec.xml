@@ -2,21 +2,24 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>libusb1</Name>
-        <Homepage>http://libusb.sourceforge.net/</Homepage>
+        <Name>libusbx</Name>
+        <Homepage>http://libusbx.org//</Homepage>
         <Packager>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
         <Summary>Userspace access to USB devices</Summary>
         <Description>Project's main aim is to create a library for use by user level applications to access USB devices regardless of OS.</Description>
-        <Archive sha1sum="025582ff2f6216e2dbc2610ae16b2e073e1b3346" type="tarbz2">mirrors://sourceforge/libusb/libusb-1.0.9.tar.bz2</Archive>
+        <Archive sha1sum="53621af3f667844207de862fcc39f9b5a4e99c42" type="tarbz2">http://sourceforge.net/projects/libusbx/files/releases/1.0.12/source/libusbx-1.0.12.tar.bz2</Archive>
     </Source>
 
     <Package>
-        <Name>libusb1</Name>
+        <Name>libusbx</Name>
+        <Replaces>
+            <Package>libusb1</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -25,11 +28,14 @@
     </Package>
 
     <Package>
-        <Name>libusb1-devel</Name>
+        <Name>libusbx-devel</Name>
+        <Replaces>
+            <Package>libusb1-devel</Package>
+        </Replaces>
         <PartOf>system.devel</PartOf>
-        <Summary>Development files for libusb1</Summary>
+        <Summary>Development files for libusbx</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">libusb1</Dependency>
+            <Dependency release="current">libusbx</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -38,25 +44,25 @@
     </Package>
 
     <Package>
-        <Name>libusb1-32bit</Name>
+        <Name>libusbx-32bit</Name>
         <PartOf>emul32</PartOf>
-        <Summary>32-bit shared libraries for libusb</Summary>
+        <Summary>32-bit shared libraries for libusbx</Summary>
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
-            <Dependency release="current">libusb1</Dependency>
+            <Dependency release="current">libusbx</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
-    
+
     <History>
         <Update release="1">
-            <Date>2012-07-21</Date>
-            <Version>1.0.9</Version>
+            <Date>2012-07-11</Date>
+            <Version>1.0.12</Version>
             <Comment>First Release</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
-     </History>
+    </History>
 </PISI>
