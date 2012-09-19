@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Probabilistic Information Retrieval library</Summary>
         <Description>Xapian is an Open Source Probabilistic Information Retrieval Library. It offers a highly adaptable toolkit that allows developers to easily add advanced indexing and search facilities to applications.</Description>
-        <Archive sha1sum="342c140af6c4cc18f1922f79e3f2fb855127e9ff" type="targz">http://oligarchy.co.uk/xapian/1.2.6/xapian-core-1.2.6.tar.gz</Archive>
+        <Archive sha1sum="2b96800280fee41eed767289620172f5226c9c4f" type="targz">http://oligarchy.co.uk/xapian/1.2.12/xapian-core-1.2.12.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -58,6 +58,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-19</Date>
+            <Version>1.2.12</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="7">
             <Date>2011-08-02</Date>
             <Version>1.2.6</Version>
