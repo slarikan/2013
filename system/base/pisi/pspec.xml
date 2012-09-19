@@ -14,8 +14,8 @@
         <Description>PISI is a modern package management system implemented in Python. Some of its main features are: package sources are written in XML and python, implements all functions through a simple-to-use API, integrates low-level and high-level package management features.</Description>
         <Archive sha1sum="b0572744e239db699eda9e094f208567e6f69088" type="tarbz2">http://cekirdek.pardus.org.tr/~fatih/dist/pisi/pisi-2.4.tar.bz2</Archive>
         <AdditionalFiles>
-            <!--AdditionalFile permission="0644" target="pisi.conf-i686">pisi.conf-i686</AdditionalFile>
-            <AdditionalFile permission="0644" target="pisi.conf-x86_64">pisi.conf-x86_64</AdditionalFile-->
+            <AdditionalFile permission="0644" target="pisi.conf-i686">pisi.conf-i686</AdditionalFile>
+            <AdditionalFile permission="0644" target="pisi.conf-x86_64">pisi.conf-x86_64</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>gettext</Dependency>
@@ -53,7 +53,7 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/pisi/mirrors.conf">mirrors.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/pisi/sandbox.conf">sandbox.conf</AdditionalFile>
-            <!--AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile-->
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/pardus/pisi/actionsapi/pkgconfig.py">pkgconfig.py</AdditionalFile>
         </AdditionalFiles>
         <Provides>
