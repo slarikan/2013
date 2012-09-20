@@ -37,11 +37,11 @@ def install():
 
     pisitools.insinto("/usr/share/doc/ocaml/otherlibs/labltk","otherlibs/labltk/examples_*")
 
-    autotools.rawInstall("-C emacs \
+    '''autotools.rawInstall("-C emacs \
                         BINDIR=%(install)s/usr/bin \
                         EMACSDIR=%(install)s/usr/share/emacs/site-lisp"
                         % { "install": get.installDIR()})
-
+   '''
 
     # Remove rpaths from stublibs .so files
     shelltools.system("chrpath --delete %s/usr/lib/ocaml/stublibs/*.so" 
