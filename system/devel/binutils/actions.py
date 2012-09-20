@@ -12,7 +12,9 @@ from pisi.actionsapi import get
 
 # linker = "gold"
 linker = "ld"
-multilib = "--enable-multilib --enable-64-bit-bfd" if get.ARCH() == "x86_64" else ""
+multilib = "--enable-multilib" if get.ARCH() == "x86_64" else ""
+
+# WorkDir = "binutils-2.20.51"
 
 def setup():
     # Build binutils with LD_SYMBOLIC_FUNCTIONS=1 and reduce PLT relocations in libfd.so by 84%.
@@ -20,7 +22,6 @@ def setup():
 
     autotools.configure('--enable-shared \
                          --build=%s \
-                         --enable-ld=default \
                          --enable-gold \
                          --enable-plugins \
                          --enable-threads \
