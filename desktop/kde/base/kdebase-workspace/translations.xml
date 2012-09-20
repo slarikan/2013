@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>kdebase-workspace</Name>
-        <Summary xml:lang="tr">KDE4 çalışma ortamı ile ilgili temel bileşenleri içerir.</Summary>
+        <Summary xml:lang="tr">KDE4 çalışma ortamı ile ilgili temel bileşenleri içerir</Summary>
         <Description xml:lang="tr">kdebase-workspace; kdm (KDE giriş yöneticisi), khotkeys (kısayol yöneticisi), klipper (kopyala &amp; yapıştır geçmişi uygulaması), kmenuedit (menü editörü), krandrtray (X ekranlarını döndüren ve yeniden boyutlandıran uygulama), krunner (komut çalıştırma arayüzü), ksysguard (performans izleyici), kwin (KDe pencere yöneticisi), kxkb (klavye haritalarını değiştirmek için uygulama), plasma (KDE masaüstü, panelleri ve çalışma ortamı) ve systemsettings (yapılandırma uygulaması) uygulamalarını içerir.</Description>
     </Source>
 

@@ -1,8 +1,6 @@
-Index: kdebase-workspace-4.3.4/kcontrol/fonts/kxftconfig.h
-===================================================================
---- kdebase-workspace-4.3.4.orig/kcontrol/fonts/kxftconfig.h
-+++ kdebase-workspace-4.3.4/kcontrol/fonts/kxftconfig.h
-@@ -80,7 +80,7 @@ class KXftConfig
+--- kde-workspace-4.8.1.orig/kcontrol/fonts/kxftconfig.h	2012-03-03 00:11:07.000000000 +0200
++++ kde-workspace-4.8.1/kcontrol/fonts/kxftconfig.h	2012-03-10 16:37:42.101939660 +0200
+@@ -61,7 +61,7 @@
          SubPixel(Type t, QDomNode &n) : Item(n), type(t) {}
          SubPixel(Type t=None)         : type(t)          {}
  
@@ -11,7 +9,7 @@ Index: kdebase-workspace-4.3.4/kcontrol/fonts/kxftconfig.h
  
          Type type;
      };
-@@ -110,7 +110,7 @@ class KXftConfig
+@@ -91,7 +91,7 @@
          Hint(Style s, QDomNode &n) : Item(n), style(s) {}
          Hint(Style s=NotSet)       : style(s)          {}
  

@@ -1,10 +1,9 @@
-Index: kdm/config.def
-===================================================================
---- kdm/config.def.orig
-+++ kdm/config.def
-@@ -1254,10 +1254,10 @@ Type: enum
-  None/BO_NONE: no boot manager
-  Grub/BO_GRUB: Grub boot manager
+diff -Naur kde-workspace-4.8.1.orig/kdm/config.def kde-workspace-4.8.1/kdm/config.def
+--- kde-workspace-4.8.1.orig/kdm/config.def	2012-03-03 00:11:07.000000000 +0200
++++ kde-workspace-4.8.1/kdm/config.def	2012-03-10 15:57:29.595887293 +0200
+@@ -1259,10 +1259,10 @@
+  Grub2/BO_GRUB2: Grub2 boot manager
+  Burg/BO_BURG: Burg boot manager
   Lilo/BO_LILO: Lilo boot manager (Linux on i386 &amp; x86-64 only)
 -Default: None
 +Default: Grub
@@ -15,7 +14,7 @@ Index: kdm/config.def
  Merge: kdm:UseLilo(P_UseLilo)
  Comment: &
  Description:
-@@ -1343,7 +1343,7 @@ Description:
+@@ -1348,7 +1348,7 @@
  
  Key: ServerTimeout
  Type: int
@@ -24,7 +23,7 @@ Index: kdm/config.def
  User: core
  Instance: #:*/
  Comment:
-@@ -1471,7 +1471,7 @@ Description:
+@@ -1476,7 +1476,7 @@
  
  Key: TerminateServer
  Type: bool
@@ -33,7 +32,7 @@ Index: kdm/config.def
  User: core
  Instance: #:*/!
  Merge: xdm
-@@ -1548,7 +1548,7 @@ Description:
+@@ -1553,7 +1553,7 @@
  Key: Resources
  # XXX strictly speaking this is supposed to be a string list, i think.
  Type: string
@@ -42,7 +41,7 @@ Index: kdm/config.def
  User: core
  Instance: #*/""
  Update: cp_resources
-@@ -2166,7 +2166,7 @@ Description:
+@@ -2149,7 +2149,7 @@
  # This needs to come _in front_ of the font settings to be effective!
  Key: AntiAliasing
  Type: bool
@@ -51,7 +50,7 @@ Index: kdm/config.def
  User: greeter
  Instance: #*/!
  Comment: &
-@@ -2175,8 +2175,8 @@ Description:
+@@ -2158,8 +2158,8 @@
  
  Key: GreetFont
  Type: string
@@ -62,7 +61,7 @@ Index: kdm/config.def
  User: greeter:font
  Instance: #*/"Serif,20,-1,5,50,0,0,0,0,0"
  Comment: &
-@@ -2185,20 +2185,20 @@ Description:
+@@ -2168,20 +2168,20 @@
  
  Key: StdFont
  Type: string
@@ -89,7 +88,7 @@ Index: kdm/config.def
  Comment: &
  Description:
   The font used for the <quote>Login Failed</quote> message. The value is encoded.
-@@ -2339,9 +2339,9 @@ Type: enum
+@@ -2322,9 +2322,9 @@
   PreferAdmin/FACE_PREFER_ADMIN: prefer &lt;<option>FaceDir</option>&gt;, fallback on $<envar>HOME</envar>
   PreferUser/FACE_PREFER_USER: ... and the other way round
   UserOnly/FACE_USER_ONLY: from the user's <filename>$<envar>HOME</envar>/.face[.icon]</filename>
@@ -101,7 +100,7 @@ Index: kdm/config.def
  Comment:
   Specify, where the users' pictures should be taken from.
  Description:
-@@ -2691,7 +2691,7 @@ Description:
+@@ -2674,7 +2674,7 @@
  
  Key: UseTheme
  Type: bool
@@ -109,21 +108,20 @@ Index: kdm/config.def
 +Default: true
  User: greeter
  Instance: */true
- Comment: &
-@@ -2702,7 +2702,7 @@ Key: Theme
+ Comment:
+@@ -2689,7 +2689,7 @@
  Type: string
  Default: ""
  User: greeter
--Instance: */KDMDATA "/themes/horos"
+-Instance: */KDMDATA "/themes/ariya"
 +Instance: */KDMDATA "/themes/pardus"
  Comment: &
  Description:
   The theme to use for the greeter. Can point to either a directory or an XML
-Index: kdm/kfrontend/genkdmconf.c
-===================================================================
---- kdm/kfrontend/genkdmconf.c.orig
-+++ kdm/kfrontend/genkdmconf.c
-@@ -1623,8 +1623,8 @@ upd_servercmd(Entry *ce, Section *cs ATT
+diff -Naur kde-workspace-4.8.1.orig/kdm/kfrontend/genkdmconf.c kde-workspace-4.8.1/kdm/kfrontend/genkdmconf.c
+--- kde-workspace-4.8.1.orig/kdm/kfrontend/genkdmconf.c	2012-03-03 00:11:07.000000000 +0200
++++ kde-workspace-4.8.1/kdm/kfrontend/genkdmconf.c	2012-03-10 15:58:26.243174434 +0200
+@@ -1627,8 +1627,8 @@
          return;
      buf[fread(buf, 1, sizeof(buf) - 1, fp)] = 0;
      pclose(fp);

@@ -174,12 +174,18 @@ def install():
     # Nscd needs this to work
     pisitools.dodir("/var/run/nscd")
     pisitools.dodir("/var/db/nscd")
+    
+    #we need this headers #2013
+    #pisitools.dodir("/usr/include/rpc")
+    #pisitools.dodir("/usr/include/rpcsvc")
+    shelltools.copy("sunrpc/rpc/*.h","%s/usr/include/rpc" % get.installDIR())
+    shelltools.copy("nis/rpcsvc/*.h","%s/usr/include/rpcsvc" % get.installDIR())
 
     # remove zoneinfo files since they are coming from timezone packages
     # we disable timezone build with a patch, keeping these lines for easier maintenance
     if shelltools.isDirectory("%s/usr/share/zoneinfo" % get.installDIR()):
         pisitools.removeDir("/usr/share/zoneinfo")
-
+    #while bootstrapping whole system zic should not be removed. timezone package does not build without it. # 2013
     for i in ["zdump", "zic"]:
         if shelltools.isFile("%s/usr/sbin/%s" % (get.installDIR(), i)):
             pisitools.remove("/usr/sbin/%s" % i)

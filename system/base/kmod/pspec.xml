@@ -12,16 +12,10 @@
         <IsA>app:console</IsA>
         <Summary>Linux kernel module management utilities</Summary>
         <Description>Linux kernel module management utilities</Description>
-        <Archive sha1sum="d3576dd35095b600e6563613402c184f01b86f13" type="tarbz2">ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/kmod-8.tar.bz2</Archive>
+        <Archive sha1sum="6da4fa76fc5a4feed7926663587d9d41b0412d97" type="tarxz">ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/kmod-10.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>chrpath</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">0001-split-usr-read-configs-from-lib-depmod.d-modprobe.d.patch</Patch>
-            <Patch level="1">0002-config-hardcode-the-path-to-modules-to-be-lib-module.patch</Patch>
-            <Patch level="1">0001-libkmod-file-gracefully-handle-errors-from-zlib.patch</Patch>
-            <Patch level="1">0002-depmod-report-failures-in-loading-symbols.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -72,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-09-19</Date>
+            <Version>10</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2012-06-05</Date>
             <Version>8</Version>

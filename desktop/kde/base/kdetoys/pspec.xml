@@ -5,18 +5,18 @@
         <Name>kdetoys</Name>
         <Homepage>http://www.kde.org/</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf@aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>KDE4 toys and amusements</Summary>
         <Description>Contains KDE4 toys (small applications to make your desktop a more enjoyable environment).</Description>
-        <Archive type="tarbz2" sha1sum="0ce43a76f5b7005d60430692ae87421661281f1f">mirrors://kde/stable/4.6.5/src/kdetoys-4.6.5.tar.bz2</Archive>
+        <Archive sha1sum="dd5f63f0e833135bac73a2e12692b1e6dd412f67" type="tarxz">mirrors://kde/stable/4.8.4/src/kdetoys-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdebase-workspace-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase-workspace-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -27,9 +27,9 @@
     <Package>
         <Name>kdetoys</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.2">qt</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.5">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase-workspace</Dependency>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -39,6 +39,62 @@
         </Files>
     </Package>
     <History>
+        <Update release="49">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf@aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="48">
+            <Date>2012-05-07</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf@aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="47">
+            <Date>2012-04-11</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf@aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="46">
+            <Date>2012-03-13</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf@aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="45">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="44">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="43">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="42">
+            <Date>2011-09-20</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump to 4.7.1</Comment>
+            <Name>Bertan Gündoğdu</Name>
+            <Email>bertan@pardus.org.tr</Email>
+        </Update>
         <Update release="41">
             <Date>2011-07-11</Date>
             <Version>4.6.5</Version>

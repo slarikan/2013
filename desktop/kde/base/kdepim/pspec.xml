@@ -3,74 +3,68 @@
 <PISI>
     <Source>
         <Name>kdepim</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://community.kde.org/KDE_PIM</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>LGPLv2</License>
+        <Icon>kontact</Icon>
         <IsA>app:gui</IsA>
+        <IsA>library</IsA>
         <Summary>KDE4 PIM (Personal Information Managemant) applications</Summary>
         <Description>Contains KDE4 Personal Information Management applications. In package KMail (e-mail client), KNode (newsreader), and KOrganizer (organize journals, events, appointments), akregator (RSS feed aggregator), knotes (sticky notes for desktop) applications are included.</Description>
-        <Archive type="tarbz2" sha1sum="49dd6cc8406b0ef4bb681bfc0de6ad9368b4b5b2">mirrors://kde/stable/kdepim-4.4.11.1/src/kdepim-4.4.11.1.tar.bz2</Archive>
-        <Archive type="tarlzma" sha1sum="28133ffa5efd489d0e58d5da091dc66767a5a807" target="kdepim-4.4.11.1">http://cekirdek.pardus.org.tr/~gokcen/files/kdepim44-translations.tar.lzma</Archive>
+        <Archive sha1sum="aae8f027ab1ef75283d6e4b2bdf76c91d04087ea" type="tarxz">mirrors://kde/stable/4.8.4/src/kdepim-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.2">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.2">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="1.5.2">akonadi-devel</Dependency>
-            <Dependency versionFrom="4.4.3">phonon-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-webkit-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="1.7.1">akonadi-devel</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="2.0.0">libassuan-devel</Dependency>
-            <Dependency>soprano-devel</Dependency>
+            <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
+            <Dependency versionFrom="0.1.9">grantlee-devel</Dependency>
+            <Dependency>libstreamanalyzer-devel</Dependency>
+            <Dependency>libstreams-devel</Dependency>
             <Dependency>libindicate-qt-devel</Dependency>
-            <Dependency>strigi-devel</Dependency>
             <Dependency>boost-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>gpgme-devel</Dependency>
             <!-- xss for ktimetracker -->
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>pilot-link-devel</Dependency>
-            <Dependency>libgpg-error</Dependency>
-            <Dependency>qt-webkit-devel</Dependency>
-            <Dependency>strigi-libs</Dependency>
-            <Dependency>grantlee-devel</Dependency>
+            <Dependency>libgpg-error-devel</Dependency>
+            <Dependency>cyrus-sasl-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">fedora/kdepim-4.7.2-kmail-migration.patch</Patch>
+            <!-- Remove the oh so imporant print icon in composer toolbar -->
+            <Patch level="1">just-go-print-icon.patch</Patch>
+            <Patch level="1">akregator-useragent.diff</Patch>
             <Patch level="1">akregator_feeds.patch</Patch>
-            <Patch>akregator-useragent.diff</Patch>
-
-            <!--<Patch>kmail_remove_charsets.diff</Patch>-->
-            <!--<Patch>activity-aggregation-expand-default.diff</Patch>-->
-            <Patch level="1">offline-status-indicator.diff</Patch>
-            <!-- do not start korgac in autostart, starting korgac in startup also means starting an Akonadi server and mysql-server in background -->
+            <Patch level="1">kmail_remove_charsets.diff</Patch>
             <Patch level="1">korgac_no_autostart.patch</Patch>
-
-            <!--<Patch level="1">knote_clear_fix.patch</Patch>-->
-
-            <!-- Fedora patch for as-needed -->
-            <Patch level="1">fedora/kdepim-4.1.80-libqgpgme-link-fix.patch</Patch>
-            <!--<Patch>fedora/kdepim-4.3.1-kmail-saveAttachments.patch</Patch>-->
-
-            <!-- Cleaner kmail splash screen 
-            <Patch level="1">kmail-splash-drop-quickdescription.patch</Patch>
-            -->
-
             <Patch level="1">set-wordwrap-in-kmail-mailinglistproperties.patch</Patch>
-
-            <Patch level="1">add-po-directory.diff</Patch>
+            <!-- <Patch level="1">kmail-service-menu.patch</Patch> -->
         </Patches>
     </Source>
+
     <Package>
         <Name>kdepim</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.2">qt</Dependency>
-            <Dependency versionFrom="4.7.2">qt-webkit</Dependency>
-            <Dependency versionFrom="4.6.2">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.2">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.4.11.1">kdepim-runtime</Dependency>
-            <Dependency versionFrom="1.5.2">akonadi</Dependency>
-            <Dependency versionFrom="4.4.3">phonon</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.2">qt-webkit</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdepim-runtime</Dependency>
+            <Dependency versionFrom="1.7.1">akonadi</Dependency>
+            <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency versionFrom="2.0.0">libassuan</Dependency>
+            <Dependency versionFrom="2.7.5">soprano</Dependency>
+            <Dependency versionFrom="0.1.9">grantlee</Dependency>
+            <Dependency>libstreamanalyzer</Dependency>
+            <Dependency>libstreams</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>gpgme</Dependency>
             <Dependency>libXScrnSaver</Dependency>
@@ -78,21 +72,83 @@
             <Dependency>libindicate-qt</Dependency>
             <Dependency>pilot-link</Dependency>
             <Dependency>qca2</Dependency>
-            <Dependency>soprano</Dependency>
-            <Dependency>strigi-libs</Dependency>
-            <Dependency>grantlee</Dependency>
+            <Dependency>cyrus-sasl</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/etc/dbus-1</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/config.kcfg</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/akonadi</Path>
+            <Path fileType="data">/usr/share/autostart</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/kde4</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/ontology</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/kde4/services/kmail_send_as_attachment.desktop">kmail_send_as_attachment.desktop</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="50">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="49">
+            <Date>2012-05-05</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="48">
+            <Date>2012-04-06</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="47">
+            <Date>2012-03-09</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="46">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="45">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="44">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="43">
+            <Date>2011-09-19</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump to 4.7.1</Comment>
+            <Name>Gökmen Göksel</Name>
+            <Email>gokmen@pardus.org.tr</Email>
+        </Update>
         <Update release="42">
             <Date>2011-04-23</Date>
             <Version>4.4.11.1</Version>

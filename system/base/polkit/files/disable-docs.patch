@@ -1,7 +1,7 @@
-diff -ur apolkit-0.104/configure.ac polkit-0.104/configure.ac
---- apolkit-0.104/configure.ac	2012-01-03 18:25:49.000000000 +0200
-+++ polkit-0.104/configure.ac	2012-09-16 03:28:48.620788336 +0300
-@@ -48,7 +48,7 @@
+diff -Nuar apolkit-0.107/configure.ac polkit-0.107/configure.ac
+--- apolkit-0.107/configure.ac	2012-07-06 16:54:35.000000000 +0300
++++ polkit-0.107/configure.ac	2012-09-20 12:08:05.612322550 +0300
+@@ -47,7 +47,7 @@
  fi
  AM_CONDITIONAL(MAN_PAGES_ENABLED, test x$enable_man_pages = xyes)
  
@@ -10,10 +10,10 @@ diff -ur apolkit-0.104/configure.ac polkit-0.104/configure.ac
  
  #### gcc warning flags
  
-@@ -445,11 +445,6 @@
+@@ -473,11 +473,6 @@
+ src/polkitagent/Makefile
  src/programs/Makefile
  src/examples/Makefile
- src/nullbackend/Makefile
 -docs/version.xml
 -docs/extensiondir.xml
 -docs/Makefile
@@ -22,10 +22,10 @@ diff -ur apolkit-0.104/configure.ac polkit-0.104/configure.ac
  po/Makefile.in
  test/Makefile
  test/polkit/Makefile
-diff -ur apolkit-0.104/Makefile.in polkit-0.104/Makefile.in
---- apolkit-0.104/Makefile.in	2012-01-03 18:41:45.000000000 +0200
-+++ polkit-0.104/Makefile.in	2012-09-16 03:29:21.560609886 +0300
-@@ -282,7 +282,7 @@
+diff -Nuar apolkit-0.107/Makefile.in polkit-0.107/Makefile.in
+--- apolkit-0.107/Makefile.in	2012-07-06 16:54:39.000000000 +0300
++++ polkit-0.107/Makefile.in	2012-09-20 12:08:39.781895373 +0300
+@@ -296,7 +296,7 @@
  top_build_prefix = @top_build_prefix@
  top_builddir = @top_builddir@
  top_srcdir = @top_srcdir@

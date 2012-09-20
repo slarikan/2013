@@ -3,31 +3,38 @@
 <PISI>
     <Source>
         <Name>kdelibs</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://www.kde.org</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
-        <License>GPLv2</License>
-        <License>LGPLv2.1</License>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
+        <License>MIT</License>
+        <License>MPL-1.1</License>
+        <License>public-domain</License>
         <IsA>library</IsA>
         <Summary>KDE4 core libraries</Summary>
         <Description>Contains base KDE4 libraries needed by almost all KDE4 applications.</Description>
-        <Archive type="tarbz2" sha1sum="9bb948769a3a5d4d5b6c65e84a8cf570bd7bc120">mirrors://kde/stable/4.6.5/src/kdelibs-4.6.5.tar.bz2</Archive>
+        <Archive type="tarxz" sha1sum="35cd199a30d84eb37b2b213fed5ee3adf810ea49">mirrors://kde/stable/4.8.4/src/kdelibs-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.7.2">qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.5.0">phonon-devel</Dependency>
-            <Dependency versionFrom="2.6.0">soprano-devel</Dependency>
-            <Dependency versionFrom="2.6.0">soprano-plugin-redland</Dependency>
-            <Dependency versionFrom="0.7.2">strigi-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-webkit-devel</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
+            <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
+            <Dependency versionFrom="2.7.5">soprano-plugin-redland</Dependency>
             <Dependency versionFrom="0.99.0">polkit-qt_1-devel</Dependency>
             <Dependency versionFrom="0.2.0">attica-devel</Dependency>
-            <Dependency versionFrom="0.6.0">shared-desktop-ontologies</Dependency>
-
+            <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
+            <Dependency versionFrom="0.70">shared-mime-info</Dependency>
+            <Dependency versionFrom="0.2.0">grantlee-devel</Dependency>
+            <Dependency versionFrom="7.10.2">mesa-devel</Dependency>
+            <Dependency releaseFrom="3">docbook-xml</Dependency>
+            <Dependency>libstreamanalyzer-devel</Dependency>
+            <Dependency>strigi-devel</Dependency>
+            <Dependency>herqq-devel</Dependency>
             <Dependency>udisks</Dependency>
             <Dependency>upower</Dependency>
-
             <Dependency>automoc4</Dependency>
             <Dependency>cups-devel</Dependency>
             <Dependency>giflib-devel</Dependency>
@@ -37,7 +44,6 @@
             <Dependency>mit-kerberos</Dependency>
             <Dependency>avahi-devel</Dependency>
             <Dependency>utempter-devel</Dependency>
-            <Dependency versionFrom="0.70">shared-mime-info</Dependency>
             <Dependency>enchant-devel</Dependency>
             <Dependency>graphviz-devel</Dependency>
             <Dependency>ilmbase-devel</Dependency>
@@ -45,27 +51,29 @@
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
-            <Dependency versionFrom="7.10.2">mesa-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXScrnSaver-devel</Dependency>
-            <Dependency releaseFrom="3">docbook-xml</Dependency>
             <Dependency>docbook-xsl</Dependency>
-            <Dependency>xz-devel</Dependency>
             <Dependency>libdbusmenu-qt-devel</Dependency>
             <Dependency>gamin-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>libpng-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>openexr-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <!-- Gentoo Patches --> 
+            <Patch level="1">suse/76e0376d-kdelibs-soprano-276-1.diff</Patch>
+            <Patch level="1">suse/bde5aad1-kdelibs-soprano-276-2.diff</Patch> 
+    
+            <!-- Gentoo Patches --> 
+            <Patch level="1">gentoo/kdelibs-4.8.4-power.patch</Patch>
+    
             <!-- Fedora Patches -->
-            <Patch level="1">fedora/kdelibs-4.3.1-CVE-2009-2702.patch</Patch>
             <Patch level="1">fedora/kdelibs-4.5.80-no_rpath.patch</Patch>
-            <Patch>fedora/kdelibs-4.5.90-halectomy.patch</Patch>
+            <Patch level="1">fedora/kdelibs-4.8.3-kdeclarative-install-location.patch</Patch>
 
             <!-- Mandriva patches -->
             <Patch>mandriva/kdelibs-4.4.0-add-default-places.patch</Patch>
@@ -75,55 +83,53 @@
             <Patch level="1">ubuntu/14_hardcode_ptm_device.diff</Patch>
             <Patch level="1">ubuntu/kubuntu_06_user_disk_mounting.diff</Patch>
             <Patch level="1">ubuntu/kubuntu_77_no_kbookmark_write_error.diff</Patch>
-            <Patch level="1">ubuntu/kubuntu_77_ksambashare.diff</Patch>
-            <Patch level="1">ubuntu/kubuntu_78_hide_old_file_share.diff</Patch>
+            <!--<Patch level="1">ubuntu/kubuntu_77_ksambashare.diff</Patch>-->
 
             <!-- Pardus patches-->
             <Patch level="1">pardus/default-useragent.diff</Patch>
-            <Patch level="1">pardus/remove-trashid-prefix-from-filename-while-restoring.patch</Patch>
-
-            <!-- Disable hspell and aspell support of sonnet, they are included in enchant
-            <Patch level="1">pardus/disable-hspell-aspell.diff</Patch>
-            -->
-
+    
             <!-- Show Delete entry in context menus -->
             <Patch level="1">pardus/show-delete-command-default.diff</Patch>
-
+    
             <!-- Suppress harmless "hede specifies undefined mimetype/servicetype" messages of kbuildsycoca4-->
             <Patch level="1">pardus/quiet-kbuildsyscoca.patch</Patch>
-
-            <!-- Do not suppress encoding errors when kwrite is started with parameters #11486, related with kde#158806 -->
-            <Patch>pardus/do-not-suppress-encoding-errors-11486.diff</Patch>
-
+    
             <!-- Disable plasma theme caching on Live mediums, we don't have enough space for that -->
             <Patch>pardus/disable-plasma-cache-on-livemedium.diff</Patch>
-
+    
             <!-- Keep -g and -O gcc parameters while using -DCMAKE_BUILD_TYPE=RelWithDebInfo-->
             <Patch>pardus/dont-change-some-parameters-in-relwithdebinfo.diff</Patch>
-
+    
             <!-- Add Format option to context menu of removable devices if quick-format is found -->
-            <Patch>add-format-to-context-menu-for-removable-devices.diff</Patch>
-
-            <Patch level="1">pardus/change-default-wallpaper.diff</Patch>
-
+            <Patch>pardus/add-format-to-context-menu-for-removable-devices.diff</Patch>
+    
             <!-- Enable Video and SVG previews by default (pb#18857). Caution! Keep the list of plugins in sync with the similar named patch of kdebase package -->
             <Patch level="1">pardus/extend-default-preview-options.diff</Patch>
-
-            <!--Change exec from relative path to absolute path. Changing this allow us to use it by other applications-->
-            <Patch level="1">pardus/kdelibs-4.6.5-change-exec-kmailservice.patch</Patch>
+            <Patch level="1">pardus/remove-trashid-prefix-from-filename-while-restoring.patch</Patch>
+            <Patch level="1">pardus/kdelibs-4.3.1-CVE-2009-2702.patch</Patch>
+            <Patch level="1">pardus/default-browser-configuration-to-open-XML files.diff</Patch>
+    
+            <!-- FIXME -->
+            <!--<Patch level="1">pardus/change-default-wallpaper.diff</Patch>-->
         </Patches>
     </Source>
     <Package>
         <Name>kdelibs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.2">qt</Dependency>
-            <Dependency>qt-webkit</Dependency>
-            <Dependency versionFrom="4.5.0">phonon</Dependency>
-            <Dependency versionFrom="2.6.0">soprano</Dependency>
-            <Dependency versionFrom="0.7.2">strigi</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.2">qt-webkit</Dependency>
+            <Dependency versionFrom="4.6.0">phonon</Dependency>
+            <Dependency versionFrom="2.7.5">soprano</Dependency>
             <Dependency versionFrom="0.99.0">polkit-qt_1</Dependency>
             <Dependency versionFrom="0.2.0">attica</Dependency>
             <Dependency versionFrom="0.6.0">shared-desktop-ontologies</Dependency>
+            <Dependency versionFrom="0.70">shared-mime-info</Dependency>
+            <Dependency versionFrom="7.10.2">mesa</Dependency>
+            <Dependency versionFrom="2011.2">artwork-pardus-release</Dependency>
+            <Dependency versionFrom="0.2.0">grantlee</Dependency>
+            <Dependency>libstreamanalyzer</Dependency>
+            <Dependency>strigi-libs</Dependency>
+            <Dependency>herqq</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>aspell</Dependency>
             <Dependency>giflib</Dependency>
@@ -132,47 +138,37 @@
             <Dependency>jasper</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>avahi</Dependency>
-
             <Dependency>udisks</Dependency>
             <Dependency>upower</Dependency>
-
             <Dependency>utempter</Dependency>
-            <Dependency versionFrom="0.70">shared-mime-info</Dependency>
             <Dependency>enchant</Dependency>
             <Dependency>ilmbase</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libXtst</Dependency>
-            <Dependency versionFrom="7.10.2">mesa</Dependency>
             <Dependency>qca2</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXScrnSaver</Dependency>
-            <Dependency>xz</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
             <Dependency>gamin</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>libpng</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>openexr-libs</Dependency>
-            <Dependency>strigi-libs</Dependency>
-
             <Dependency>docbook-xml</Dependency>
             <Dependency>docbook-xsl</Dependency>
-
-            <Dependency versionFrom="2011.2">artwork-pardus-release</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc</Path>
             <Path fileType="config">/usr/share/config</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="library">/usr/qt/4/plugins/designer</Path>
+            <Path fileType="data">/usr/share</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share</Path>
-            <Path fileType="library">/usr/qt/4/plugins/designer</Path>
         </Files>
     </Package>
 
@@ -183,42 +179,86 @@
         <Summary>KDE4 development package</Summary>
         <Description>Development package of KDE4 including headers and tools to develop KDE4 applications and libraries</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.5">kdelibs</Dependency>
-            <!-- For compiling a KDE4 application, automoc4 and strigi-devel are needed -->
+            <Dependency release="current">kdelibs</Dependency>
+            <!-- For compiling a KDE4 application, automoc4 and libstreamanalyzer-devel are needed -->
             <Dependency>automoc4</Dependency>
+            <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>strigi-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency>soprano-plugin-redland</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/share/apps/cmake</Path>
-            <Path fileType="data">/usr/share/kde4/apps/cmake</Path>
-            <Path fileType="doc">/usr/share/apps/kdewidgets</Path>
             <Path fileType="executable">/usr/bin/kconfig_compiler</Path>
             <Path fileType="executable">/usr/bin/makekdewidgets</Path>
             <Path fileType="executable">/usr/bin/checkXML</Path>
             <Path fileType="executable">/usr/bin/kunittestmodrunner</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/apps/cmake</Path>
+            <Path fileType="data">/usr/share/kde4/apps/cmake</Path>
             <Path fileType="man">/usr/share/man/man1/checkXML.1</Path>
             <Path fileType="man">/usr/share/man/man1/makekdewidgets.1</Path>
+            <Path fileType="doc">/usr/share/apps/kdewidgets</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="119">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4
+                     Fix XML-based files are opened with the default browser instead of the associated application https://bugs.kde.org/show_bug.cgi?id=291177</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="118">
+            <Date>2012-05-05</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="117">
+            <Date>2012-04-06</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="116">
+            <Date>2012-03-08</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="115">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="114">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="113">
-            <Date>2011-09-23</Date>
-            <Version>4.6.5</Version>
-            <Comment>Apply patch for kio copy, move and linking jobs - remove trashid prefix from file name - pardus#9850, kde#267221 and kde#262881</Comment>
-            <Name>Renan Çakırerk</Name>
-            <Email>renan@pardus.org.tr</Email>
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
         </Update>
         <Update release="112">
-            <Date>2011-09-20</Date>
-            <Version>4.6.5</Version>
-            <Comment>Change exec from relative path to absolute path. Changing this allow us to use it by other applications</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Date>2011-09-16</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump to 4.7.1</Comment>
+            <Name>Gökmen Göksel</Name>
+            <Email>gokmen@pardus.org.tr</Email>
         </Update>
         <Update release="111">
             <Date>2011-09-06</Date>

@@ -1,43 +1,14 @@
-Index: kdebase-4.6.5/dolphin/src/panels/information/informationpanelcontent.cpp
+Index: kde-baseapps-4.7.1/dolphin/src/settings/general/previewssettingspage.cpp
 ===================================================================
---- kdebase-4.6.5.orig/dolphin/src/panels/information/informationpanelcontent.cpp
-+++ kdebase-4.6.5/dolphin/src/panels/information/informationpanelcontent.cpp
-@@ -179,7 +179,9 @@ void InformationPanelContent::showItem(c
-                 m_enabledPlugins = globalConfig.readEntry("Plugins", QStringList()
-                                                                      << "directorythumbnail"
-                                                                      << "imagethumbnail"
--                                                                     << "jpegthumbnail");
-+                                                                     << "svgthumbnail"
-+                                                                     << "ffmpegthumbs"
-+                                                                     << "jpegrotatedthumbnail");
-             }
- 
-             KIO::PreviewJob* job = KIO::filePreview(KFileItemList() << item, m_preview->width(), m_preview->height(),
-Index: kdebase-4.6.5/dolphin/src/settings/general/previewssettingspage.cpp
-===================================================================
---- kdebase-4.6.5.orig/dolphin/src/settings/general/previewssettingspage.cpp
-+++ kdebase-4.6.5/dolphin/src/settings/general/previewssettingspage.cpp
-@@ -168,6 +168,8 @@ void PreviewsSettingsPage::loadSettings(
+--- kde-baseapps-4.7.1.orig/dolphin/src/settings/general/previewssettingspage.cpp
++++ kde-baseapps-4.7.1/dolphin/src/settings/general/previewssettingspage.cpp
+@@ -205,7 +205,8 @@ void PreviewsSettingsPage::loadSettings(
      m_enabledPreviewPlugins = globalConfig.readEntry("Plugins", QStringList()
                                                       << QLatin1String("directorythumbnail")
                                                       << QLatin1String("imagethumbnail")
+-                                                     << QLatin1String("jpegthumbnail"));
 +                                                     << QLatin1String("svgthumbnail")
-+                                                     << QLatin1String("ffmpegthumbs")
-                                                      << QLatin1String("jpegrotatedthumbnail"));
++                                                     << QLatin1String("ffmpegthumbs"));
  
-     const int maxLocalByteSize = globalConfig.readEntry("MaximumSize", MaxLocalPreviewSize * 1024 * 1024);
-Index: kdebase-4.6.5/dolphin/src/views/tooltips/tooltipmanager.cpp
-===================================================================
---- kdebase-4.6.5.orig/dolphin/src/views/tooltips/tooltipmanager.cpp
-+++ kdebase-4.6.5/dolphin/src/views/tooltips/tooltipmanager.cpp
-@@ -176,7 +176,9 @@ void ToolTipManager::startContentRetriev
-         m_enabledPlugins = globalConfig.readEntry("Plugins", QStringList()
-                                                              << "directorythumbnail"
-                                                              << "imagethumbnail"
--                                                             << "jpegthumbnail");
-+                                                             << "svgthumbnail"
-+                                                             << "ffmpegthumbs"
-+                                                             << "jpegrotatedthumbnail");
-     }
-     KIO::PreviewJob* job = KIO::filePreview(KFileItemList() << m_item, 256, 256, true, true, &m_enabledPlugins);
- 
+     // If the user is upgrading from KDE <= 4.6, we must check if he had the 'jpegrotatedthumbnail' plugin enabled.
+     // This plugin does not exist any more in KDE >= 4.7, so we have to replace it with the 'jpegthumbnail' plugin.

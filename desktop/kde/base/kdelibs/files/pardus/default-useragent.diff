@@ -1,13 +1,13 @@
-Index: kde4libs-4.5.80/kio/kio/kprotocolmanager.cpp
+Index: kdelibs-4.7.1/kio/kio/kprotocolmanager.cpp
 ===================================================================
---- kde4libs-4.5.80.orig/kio/kio/kprotocolmanager.cpp	2010-11-05 06:48:26.000000000 -0400
-+++ kde4libs-4.5.80/kio/kio/kprotocolmanager.cpp	2010-11-21 15:54:23.000000000 -0500
-@@ -87,7 +87,7 @@
- QString::number(KDE::versionMajor()) % QL1C('.') % QString::number(KDE::versionMinor()) % \
- X % QL1S(") KHTML/") % \
- QString::number(KDE::versionMajor()) % QL1C('.') % QString::number(KDE::versionMinor()) % \
--QL1C('.') % QString::number(KDE::versionRelease()) % QL1S(" (like Gecko)")
-+QL1C('.') % QString::number(KDE::versionRelease()) % QL1S(" (like Gecko) Pardus")
+--- kdelibs-4.7.1.orig/kio/kio/kprotocolmanager.cpp
++++ kdelibs-4.7.1/kio/kio/kprotocolmanager.cpp
+@@ -632,7 +632,7 @@ QString KProtocolManager::defaultUserAge
+     }
  
- #define PRIVATE_DATA \
- KProtocolManagerPrivate *d = kProtocolManagerPrivate
+     // Full format: Mozilla/5.0 (Linux
+-    d->useragent = QL1S("Mozilla/5.0 (");
++    d->useragent = QL1S("Mozilla/5.0 (Pardus");
+     d->useragent += supp;
+     d->useragent += QL1S(") KHTML/");
+     d->useragent += QString::number(KDE::versionMajor());
