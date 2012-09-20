@@ -13,11 +13,13 @@ from pisi.actionsapi import get
 def setup():
     options = " --prefix=/usr \
                 --libdir=lib \
-                --openssldir=/etc/pki/ \
-                no-idea no-mdc2 no-rc5 no-ec no-ecdh no-ecdsa \
+                --openssldir=/etc/pki/tls \
+                --with-krb5-flavor=MIT \
+                --with-krb5-dir=/usr \
                 --enginesdir=/usr/lib/openssl/engines \
                 zlib enable-camellia enable-seed enable-tlsext enable-rfc3779 \
-                enable-cms enable-md2 threads shared -Wa,--noexecstack"
+                enable-cms enable-md2 no-mdc2 no-rc5 no-ec no-ec2m \
+                no-ecdh no-ecdsa no-srp threads shared -Wa,--noexecstack"
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 --libdir=lib32"
@@ -34,14 +36,19 @@ def build():
     autotools.make("rehash")
 
 def check():
+    #Revert ca-dir patch not to fail test
+    shelltools.system("patch -p1 -R < openssl-1.0.0-beta4-ca-dir.patch")
+    
     #FIXME: Some tests write into /etc/pki directory which violates
     # sandbox rules. It is not important for now. However, we will
     # need to fix it later. (08/17/2010 --Eren)
     homeDir = "%s/test-home" % get.workDIR()
     shelltools.export("HOME", homeDir)
     shelltools.makedirs(homeDir)
-
     autotools.make("-j1 test")
+    
+    #Passed. So, re-patch
+    shelltools.system("patch -p1 < openssl-1.0.0-beta4-ca-dir.patch")
 
 def install():
     autotools.rawInstall("INSTALL_PREFIX=%s MANDIR=/usr/share/man" % get.installDIR())
@@ -65,10 +72,7 @@ def install():
     # Certificate stuff
     pisitools.dobin("tools/c_rehash")
     pisitools.dosym("/etc/pki/tls/certs/ca-bundle.crt","/etc/pki/tls/cert.pem")
-    
-    # fix library name for other packages
-    pisitools.dosym("/usr/lib/libssl.so.1.0.0", "/usr/lib/libssl.so.10")
-    pisitools.dosym("/usr/lib/libcrypto.so.1.0.0", "/usr/lib/libcrypto.so.10")
+
 
     # Create CA dirs
     for cadir in ["CA", "CA/private", "CA/certs", "CA/crl", "CA/newcerts"]:

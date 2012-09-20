@@ -11,9 +11,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    #who knows pisitools.dosed :)
-    cmd="sed -i '/gets is a security hole/d' gnu/stdio.in.h"
-    shelltools.system(cmd)
     shelltools.export("AUTOPOINT", "true")
     autotools.autoreconf("-vfi")
 
@@ -32,8 +29,6 @@ def check():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    #pisitools.removeDir("/usr/sbin")
 
     pisitools.doman("doc/tar.1")
 

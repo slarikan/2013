@@ -13,24 +13,28 @@
         <IsA>library</IsA>
         <Summary>Toolkit for SSL v2/v3 and TLS v1</Summary>
         <Description>OpenSSL is a cryptography toolkit implementing the Secure Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) network protocols and related cryptography standards required by them.</Description>
-        <Archive sha1sum="91b684de947cb021ac61b8c51027cc4b63d894ce" type="targz">http://www.openssl.org/source/openssl-1.0.1c.tar.gz</Archive>
+        <Archive sha1sum="91b684de947cb021ac61b8c51027cc4b63d894ce" type="targz">ftp://ftp.openssl.org/source/openssl-1.0.1c.tar.gz</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="openssl-1.0.0-beta4-ca-dir.patch">openssl-1.0.0-beta4-ca-dir.patch</AdditionalFile>
+        </AdditionalFiles>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
             <Dependency>perl</Dependency>
             <Dependency>sed</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">/openssl-1.0.0-beta4-rh-dtls1-abi.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-gosta-pkcs12-fix.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-owl-alt-issetugid.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-alt-soversion.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-default-paths.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-enginesdir.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-env-nozlib.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-rpath.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-version-engines.diff</Patch>
-            <Patch level="1">/openssl-1.0.0b-rh-x509.diff</Patch>
-            <Patch level="1">/openssl-1.0.0d-suse-env.diff</Patch>
+            <Patch level="1">openssl-1.0.0a-ldflags-norpath.patch</Patch>
+            <Patch level="1">openssl-0.9.6-x509.patch</Patch>
+            <Patch level="1">openssl-0.9.8b-test-use-localhost.patch</Patch>
+            <Patch level="1">openssl-0.9.8j-env-nozlib.patch</Patch>
+            <Patch level="1">openssl-1.0.0-beta4-ca-dir.patch</Patch>
+            <Patch level="1">openssl-1.0.0-beta4-default-paths.patch</Patch>
+            <Patch level="1">openssl-1.0.0-beta4-dtls1-abi.patch</Patch>
+            <Patch level="1">openssl-1.0.0-beta5-enginesdir.patch</Patch>
+            <Patch level="1">openssl-1.0.0f-defaults.patch</Patch>
+            <Patch level="1">openssl-0.9.8j-version-add-engines.patch</Patch>
+            <Patch level="1">openssl-1.0.1-pkgconfig-krb5.patch</Patch>
+            <Patch level="1">openssl-1.0.1c-ipv6-apps.patch</Patch>
         </Patches>
     </Source>
 
@@ -93,11 +97,12 @@
 
     <History>
         <Update release="41">
-            <Date>2012-08-23</Date>
+            <Date>2012-08-31</Date>
             <Version>1.0.1c</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Comment>Version bump</Comment>
+            <Type package="openssl">security</Type>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="40">
             <Date>2011-09-06</Date>

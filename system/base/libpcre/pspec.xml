@@ -15,10 +15,12 @@
         <Archive sha1sum="1132276bb8bea7cb0662210fb812fbef7791621f" type="tarbz2">ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.31.tar.bz2</Archive>
         <Patches>
             <Patch level="1">pcre-8.21-multilib.patch</Patch>
-            <!--<Patch level="1">fedora/pcre-8.30-Fix-look-behind-assertion-in-UTF-8-JIT-mode.patch</Patch>
-            <Patch level="1">fedora/pcre-8.30-Fix-ovector-overflow.patch</Patch>-->
-            <Patch level="1">fedora/pcre-8.30-refused_spelling_terminated.patch</Patch>
+            <Patch level="1">pcre-8.30-refused_spelling_terminated.patch</Patch>
+            <Patch>pcre-8.31-re_nsub.patch</Patch>
         </Patches>
+        <BuildDependencies>
+            <Dependency>readline-devel</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>
@@ -65,11 +67,11 @@
 
     <History>
         <Update release="21">
-            <Date>2012-08-19</Date>
+            <Date>2011-03-11</Date>
             <Version>8.31</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Comment>Version bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="20">
             <Date>2011-03-11</Date>
