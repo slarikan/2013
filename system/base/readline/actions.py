@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 def setup():
     #Force link to ncurses instead of tinfo, which we don't have, will be needed when we use as-needed ;)
-    #Not needed anymore: pisitools.dosed("support/shobj-conf", "SHLIB_LIBS='-ltinfo'", "SHLIB_LIBS=-lncurses")
+    pisitools.dosed("support/shobj-conf", "SHLIB_LIBS='-ltinfo'", "SHLIB_LIBS=-lncurses")
     shelltools.export("CFLAGS", "%s -D_GNU_SOURCE" % get.CFLAGS())
 
     options = "--with-curses \
@@ -29,7 +29,7 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s install" % get.installDIR())
-
+    pisitools.removeDir("/usr/bin")
     if get.buildTYPE() == "emul32":
         return
 
