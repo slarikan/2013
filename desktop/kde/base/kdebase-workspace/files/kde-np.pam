@@ -1,7 +1,7 @@
 #%PAM-1.0
 
 auth       required     pam_nologin.so
-auth	   required     pam_permit.so
+auth       required     pam_permit.so
 
 account    include      system-auth
 

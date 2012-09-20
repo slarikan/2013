@@ -42,7 +42,7 @@
             <Dependency>baselayout</Dependency>
             <Dependency>pardus-python</Dependency>
             <Dependency>wireless-tools</Dependency>
-            <Dependency>module-init-tools</Dependency>
+            <Dependency>kmod</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/conf.d</Path>

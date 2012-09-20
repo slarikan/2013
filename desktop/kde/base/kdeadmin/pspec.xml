@@ -3,44 +3,112 @@
 <PISI>
     <Source>
         <Name>kdeadmin</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://www.kde.org</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>KDE4 Administration Applications</Summary>
         <Description>kdeadmin contains administration related applications of KDE4. In this package, kcron (Task Scheduler module in System Settings), ksystemlog (system log viewer) and system-config-printer-kde (printer configuration application) applications are included.</Description>
-        <Archive type="tarbz2" sha1sum="010912294a12461a8a0bfdce69c5373b37342cb6">mirrors://kde/stable/4.6.5/src/kdeadmin-4.6.5.tar.bz2</Archive>
+        <Archive sha1sum="b825e40b29b4ae684265cb13b7935737d7ae6d68" type="tarxz">mirrors://kde/stable/4.8.4/src/kdeadmin-4.8.4.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
             <Dependency releaseFrom="30">system-config-printer</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
             <Dependency>python-cups</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">do-not-compile-kuser.diff</Patch>
-            <Patch level="1">kubuntu_02_system_config_printer_trunk.diff</Patch>
-            <Patch level="1">select-new-printer-by-default.patch</Patch>
+            <Patch level="1">kdeadmin-4.7.1-printing.patch</Patch>
+
+            <!-- FIXME: is this patch really needed? -->
+            <!--<Patch level="1">kdeadmin-4.6.2-kcmprinter_root_privs.patch</Patch>-->
+
+            <!-- FIXME: Dont translate localhost in the ui code -->
+            <Patch level="1">add-cups-webui-button.patch</Patch>
         </Patches>
     </Source>
+
     <Package>
         <Name>kdeadmin</Name>
         <RuntimeDependencies>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
             <!-- needed by printer configuration GUI system-config-printer-kde -->
             <Dependency releaseFrom="30">system-config-printer</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs</Dependency>
-            <Dependency versionFrom="4.7.2">qt</Dependency>
             <Dependency>python-cups</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/config.kcfg</Path>
+            <Path fileType="data">/usr/share/kde4</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
+
     <History>
+        <Update release="64">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="63">
+            <Date>2012-05-05</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="62">
+            <Date>2012-04-06</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="61">
+            <Date>2012-03-12</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="60">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="59">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump to 4.7.3</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="58">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="57">
+            <Date>2011-09-23</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="56">
             <Date>2011-07-11</Date>
             <Version>4.6.5</Version>

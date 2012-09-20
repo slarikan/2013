@@ -5,18 +5,18 @@
         <Name>kdewebdev</Name>
         <Homepage>http://www.kde.org/</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>KDE4 web development applications</Summary>
         <Description>Contains web development applications that ship with KDE4.</Description>
-        <Archive type="tarbz2" sha1sum="b7ec635c438f865337f5ef1e7bbaca23643ed871">mirrors://kde/stable/4.6.5/src/kdewebdev-4.6.5.tar.bz2</Archive>
+        <Archive sha1sum="bab86ef6c04515a454298cee46eccb25e590f972" type="tarxz">mirrors://kde/stable/4.8.4/src/kdewebdev-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.0">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
             <Dependency>tidy-devel</Dependency>
             <Dependency>ruby</Dependency>
             <Dependency>libxml2-devel</Dependency>
@@ -27,9 +27,9 @@
     <Package>
         <Name>kdewebdev</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.0">qt</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.5">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
             <Dependency>tidy</Dependency>
             <Dependency>ruby</Dependency>
             <Dependency>libxslt</Dependency>
@@ -52,8 +52,56 @@
         </Files>
     </Package>
 
-
     <History>
+        <Update release="49">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="48">
+            <Date>2012-05-07</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="47">
+            <Date>2012-04-06</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="46">
+            <Date>2012-03-12</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="45">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="44">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="43">
+            <Date>2011-10-19</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="42">
             <Date>2011-07-11</Date>
             <Version>4.6.5</Version>

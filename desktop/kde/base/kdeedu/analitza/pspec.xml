@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>analitza</Name>
+        <Homepage>https://projects.kde.org/projects/kde/kdeedu/analitza</Homepage>
+        <Packager>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <IsA>library</IsA>
+        <Summary>A KDE library for mathematical features</Summary>
+        <Description>analitza is a library to add mathematical features to programs.</Description>
+        <Archive sha1sum="d3b831730408078c31b686bc49c1d465de5e80da" type="tarxz">mirrors://kde/stable/4.8.4/src/analitza-4.8.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>readline-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>analitza</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency>readline</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdeedu</Package>
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>analitza-devel</Name>
+        <Summary>Development files for analitza</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">analitza</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="5">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="4">
+            <Date>2012-05-07</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="3">
+            <Date>2012-03-09</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-03-09</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-01-29</Date>
+            <Version>4.8.0</Version>
+            <Comment>First release</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

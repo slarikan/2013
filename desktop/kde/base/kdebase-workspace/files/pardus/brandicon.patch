@@ -1,7 +1,6 @@
-Index: systemsettings/app/SettingsBase.cpp
-===================================================================
---- systemsettings/app/SettingsBase.cpp.orig
-+++ systemsettings/app/SettingsBase.cpp
+diff -Naur kde-workspace-4.8.1.orig/systemsettings/app/SettingsBase.cpp kde-workspace-4.8.1/systemsettings/app/SettingsBase.cpp
+--- kde-workspace-4.8.1.orig/systemsettings/app/SettingsBase.cpp	2012-03-03 00:11:07.000000000 +0200
++++ kde-workspace-4.8.1/systemsettings/app/SettingsBase.cpp	2012-03-10 16:05:24.433529492 +0200
 @@ -34,6 +34,7 @@
  #include <KCModuleInfo>
  #include <KXMLGUIFactory>
@@ -10,7 +9,7 @@ Index: systemsettings/app/SettingsBase.cpp
  #include <KActionCollection>
  #include <KServiceTypeTrader>
  
-@@ -60,6 +61,12 @@ SettingsBase::SettingsBase( QWidget * pa
+@@ -60,6 +61,12 @@
  
      spacerWidget = new QWidget( this );
      spacerWidget->setSizePolicy( QSizePolicy::MinimumExpanding, QSizePolicy::Maximum );
@@ -23,7 +22,7 @@ Index: systemsettings/app/SettingsBase.cpp
      // Initalise the window so we don't flicker
      initToolBar();
      // We can now launch the delayed loading safely
-@@ -134,13 +141,19 @@ void SettingsBase::initToolBar()
+@@ -134,13 +141,19 @@
      spacerAction = new KAction( this );
      spacerAction->setDefaultWidget(spacerWidget);
      actionCollection()->addAction( "spacer", spacerAction );
@@ -32,7 +31,7 @@ Index: systemsettings/app/SettingsBase.cpp
      searchAction = new KAction( this );
      searchAction->setDefaultWidget(searchText);
      searchAction->setShortcut(KShortcut(QKeySequence(Qt::CTRL + Qt::Key_F)));
-     connect( searchAction, SIGNAL(triggered(Qt::MouseButtons, Qt::KeyboardModifiers)),
+     connect( searchAction, SIGNAL(triggered(Qt::MouseButtons,Qt::KeyboardModifiers)),
           searchText, SLOT(setFocus()));
      actionCollection()->addAction( "searchText", searchAction );
 +
@@ -44,7 +43,7 @@ Index: systemsettings/app/SettingsBase.cpp
      // Initialise the Window
      setupGUI(Save|Create,QString());
      menuBar()->hide();
-@@ -364,7 +377,7 @@ void SettingsBase::changeToolBar( BaseMo
+@@ -366,7 +379,7 @@
      guiFactory()->unplugActionList( this, "quit" );
      if ( BaseMode::Search & toolbar ) {
          QList<QAction*> searchBarActions;
@@ -53,10 +52,9 @@ Index: systemsettings/app/SettingsBase.cpp
          guiFactory()->plugActionList( this, "search", searchBarActions );
      }
      if ( BaseMode::Configure & toolbar ) {
-Index: systemsettings/app/SettingsBase.h
-===================================================================
---- systemsettings/app/SettingsBase.h.orig
-+++ systemsettings/app/SettingsBase.h
+diff -Naur kde-workspace-4.8.1.orig/systemsettings/app/SettingsBase.h kde-workspace-4.8.1/systemsettings/app/SettingsBase.h
+--- kde-workspace-4.8.1.orig/systemsettings/app/SettingsBase.h	2012-03-03 00:11:07.000000000 +0200
++++ kde-workspace-4.8.1/systemsettings/app/SettingsBase.h	2012-03-10 16:07:40.180424873 +0200
 @@ -27,6 +27,7 @@
  
  #include <QMap>
@@ -65,7 +63,7 @@ Index: systemsettings/app/SettingsBase.h
  
  #include <KService>
  #include <KLineEdit>
-@@ -70,6 +71,8 @@ private:
+@@ -70,6 +71,8 @@
      // The search bar
      KLineEdit * searchText;
      QWidget * spacerWidget;
@@ -74,10 +72,9 @@ Index: systemsettings/app/SettingsBase.h
      // The toolbar
      KAction * searchAction;
      KAction * spacerAction;
-Index: systemsettings/app/systemsettingsui.rc
-===================================================================
---- systemsettings/app/systemsettingsui.rc.orig
-+++ systemsettings/app/systemsettingsui.rc
+diff -Naur kde-workspace-4.8.1.orig/systemsettings/app/systemsettingsui.rc kde-workspace-4.8.1/systemsettings/app/systemsettingsui.rc
+--- kde-workspace-4.8.1.orig/systemsettings/app/systemsettingsui.rc	2012-03-03 00:11:07.000000000 +0200
++++ kde-workspace-4.8.1/systemsettings/app/systemsettingsui.rc	2012-03-10 16:08:26.017038899 +0200
 @@ -18,7 +18,9 @@
      <Separator />
      <ActionList name="configure" />

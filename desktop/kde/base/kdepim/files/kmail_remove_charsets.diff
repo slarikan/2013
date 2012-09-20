@@ -1,13 +1,13 @@
-Index: kmail/kmkernel.cpp
+Index: kdepim-4.7.3/messagecomposer/messagecomposer.kcfg.cmake
 ===================================================================
---- kmail/kmkernel.cpp.orig
-+++ kmail/kmkernel.cpp
-@@ -1440,7 +1440,7 @@ void KMKernel::init()
-     KConfigGroup group(cfg, "Composer");
-     if (group.readEntry("pref-charsets", QStringList() ).isEmpty())
-     {
--      group.writeEntry("pref-charsets", "us-ascii,iso-8859-1,locale,utf-8");
-+      group.writeEntry("pref-charsets", "locale,utf-8");
-     }
-   }
-   readConfig();
+--- kdepim-4.7.3.orig/messagecomposer/messagecomposer.kcfg.cmake
++++ kdepim-4.7.3/messagecomposer/messagecomposer.kcfg.cmake
+@@ -50,7 +50,7 @@ xsi:schemaLocation="http://www.kde.org/s
+     </entry>
+ 
+     <entry name="PreferredCharsets" key="pref-charsets" type="StringList">
+-        <default>us-ascii,iso-8859-1,locale,utf-8</default>
++        <default>locale,utf-8</default>
+     </entry>
+ 
+     <entry name="AutoTextSignature" type="String" key="signature">

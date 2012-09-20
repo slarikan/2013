@@ -3,22 +3,24 @@
 <PISI>
     <Source>
         <Name>kdegames</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://games.kde.org</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
-        <IsA>app:gui</IsA>
         <Summary>KDE Games</Summary>
         <Description>Contains various logic, strategy, card, board and arcade games that ship with KDE4.</Description>
-        <Archive type="tarbz2" sha1sum="28c4908439f493fa30436875a77de01a21e88f4c">mirrors://kde/stable/4.6.5/src/kdegames-4.6.5.tar.bz2</Archive>
+        <Archive sha1sum="00a68215c3e8b41ec8b7949c5d82af8e54766e97" type="tarxz">mirrors://kde/stable/4.8.4/src/kdegames-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.5.0">phonon-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+            <Dependency>libsndfile-devel</Dependency>
+            <Dependency>ggz-base-libs-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
             <Dependency>python-Twisted</Dependency>
         </BuildDependencies>
         <Patches>
@@ -29,23 +31,102 @@
     <Package>
         <Name>kdegames</Name>
         <RuntimeDependencies>
-            <Dependency>ktuberling</Dependency>
-            <Dependency>kdegames-arcade</Dependency>
-            <Dependency>kdegames-board</Dependency>
-            <Dependency>kdegames-card</Dependency>
-            <Dependency>kdegames-logic</Dependency>
-            <Dependency>kdegames-strategy</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
+            <Dependency release="current">kdegames-devel</Dependency>
+            <Dependency release="current">bomber</Dependency>
+            <Dependency release="current">bovo</Dependency>
+            <Dependency release="current">kapman</Dependency>
+            <Dependency release="current">katomic</Dependency>
+            <Dependency release="current">kbattleship</Dependency>
+            <Dependency release="current">kblackbox</Dependency>
+            <Dependency release="current">kblocks</Dependency>
+            <Dependency release="current">kbounce</Dependency>
+            <Dependency release="current">kbreakout</Dependency>
+            <Dependency release="current">kdesnake</Dependency>
+            <Dependency release="current">kdiamond</Dependency>
+            <Dependency release="current">kfourinline</Dependency>
+            <Dependency release="current">KGoldrunner</Dependency>
+            <Dependency release="current">killbots</Dependency>
+            <Dependency release="current">kiriki</Dependency>
+            <Dependency release="current">kjumpingcube</Dependency>
+            <Dependency release="current">klines</Dependency>
+            <Dependency release="current">kmahjongg</Dependency>
+            <Dependency release="current">kmines</Dependency>
+            <Dependency release="current">knetwalk</Dependency>
+            <Dependency release="current">kolf</Dependency>
+            <Dependency release="current">kollision</Dependency>
+            <Dependency release="current">konquest</Dependency>
+            <Dependency release="current">kpat</Dependency>
+            <Dependency release="current">kreversi</Dependency>
+            <Dependency release="current">ksame</Dependency>
+            <Dependency release="current">kshisen</Dependency>
+            <Dependency release="current">ksirk</Dependency>
+            <Dependency release="current">ksirkskineditor</Dependency>
+            <Dependency release="current">kspaceduel</Dependency>
+            <Dependency release="current">ksquares</Dependency>
+            <Dependency release="current">ksudoku</Dependency>
+            <Dependency release="current">ktron</Dependency>
+            <Dependency release="current">ktuberling</Dependency>
+            <Dependency release="current">kubrick</Dependency>
+            <Dependency release="current">lskat</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
         <Files>
-            <Path fileType="data">/usr/share/doc/kdegames/README</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kdegames-common</Name>
+        <IsA>data</IsA>
+        <IsA>library</IsA>
+        <Summary>Common files for KDE games</Summary>
+        <Description>KDEGames-Common contains common files that using by KDE based games.</Description>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>ggz-base-libs</Dependency>
+            <Dependency>qca2</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+  
+        <Files>
+            <Path fileType="config">/etc/ggz.modules.d/kdegames</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kdegames</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kwin4.kcfg</Path>
+            <Path fileType="data">/usr/share/kde4/config/kcardtheme.knsrc</Path>
+            <Path fileType="library">/usr/lib/libkdegames*</Path>
+            <Path fileType="library">/usr/lib/libkggzgames*</Path>
+            <Path fileType="library">/usr/lib/libkggzmod*</Path>
+            <Path fileType="library">/usr/lib/libkggznet*</Path>
+            <Path fileType="library">/usr/lib/libkcardgame*</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>kdegames-devel</Name>
-        <Summary>Development files for kdegames</Summary>
+        <IsA>data</IsA>
+        <Summary>KDE games header files</Summary>
+        <Description>KDEGames-Devel contains header files for devoloping KDE based games.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">kdegames</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -54,354 +135,1182 @@
     </Package>
 
     <Package>
-        <Name>kdegames-core</Name>
-        <Summary>Core files for kdegames i.e. common libraries, application data files etc.</Summary>
+        <Name>bomber</Name>
+        <Icon>bomber</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Arcade bombing game</Summary>
+        <Description>Bomber is a single player arcade game. The player is invading various cities in a plane that is decreasing in height.</Description>
         <RuntimeDependencies>
-            <Dependency>qt</Dependency>
-            <Dependency version="current">kdelibs</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
         <Files>
-            <Path fileType="library">/usr/lib/libkdegames*</Path>
-            <Path fileType="library">/usr/lib/libkcardgame*</Path>
-            <Path fileType="library">/usr/lib/libkggz*</Path>
-            <Path fileType="data">/etc/ggz.modules.d/kdegames</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kdegames</Path>
-            <!-- needed by kreversi and kigo -->
-            <Path fileType="data">/usr/share/icons/*/*/*/lastmoves*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/legalmoves*</Path>
-            <Path fileType="data">/usr/share/doc/kdegames</Path>
+            <Path fileType="executable">/usr/bin/bomber</Path>
+            <Path fileType="data">/usr/share/applications/kde4/bomber.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/bomber</Path>
+            <Path fileType="data">/usr/share/config.kcfg/bomber.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/bomber</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>bovo</Name>
+        <Icon>bovo</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Five in a row board game</Summary>
+        <Description>Bovo is a Gomoku like game for two players, where the opponents alternate in placing their respective pictogram on the game board.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/bovo</Path>
+            <Path fileType="data">/usr/share/applications/kde4/bovo.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/bovo</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/bovo</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kapman</Name>
+        <Icon>kapman</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Pac-Man clone</Summary>
+        <Description>Kapman is a clone of the well known game Pac-Man. You must go through the levels escaping ghosts in a maze. You lose a life when a ghost eats you, but you can eat the ghosts for a few seconds when eating an energizer.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kapman</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kapman.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kapman</Path>
+            <Path fileType="data">/usr/share/sounds/kapman</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kapman</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>katomic</Name>
+        <Icon>katomic</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Sokoban like logic game</Summary>
+        <Description>KAtomic is both fun and educational game built around molecular geometry.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/katomic</Path>
+            <Path fileType="data">/usr/share/applications/kde4/katomic.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/katomic</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kconf_update/katomic*</Path>
+            <Path fileType="data">/usr/share/kde4/config/katomic.knsrc</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/katomic</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kbattleship</Name>
+        <Icon>kbattleship</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Battleship game</Summary>
+        <Description>KBattleship is a Battle Ship game for KDE. Ships are placed on a board which represents the sea. Players try to hit each others ships in turns without knowing where they are placed. The first player to destroy all ships wins the game.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kbattleship</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kbattleship.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kbattleship</Path>>
+            <Path fileType="data">/usr/share/kde4/services/kbattleship.protocol</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kbattleship</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kblackbox</Name>
+        <Icon>kblackbox</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Blackbox logic game</Summary>
+        <Description>KBlackBox is a game of hide and seek played on a grid of boxes. The computer has hidden several balls within this box. By shooting beams into the box and observing where they emerge it is possible to deduce the positions of the hidden balls.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kblackbox</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kblackbox.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kblackbox</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kblackbox</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kblocks</Name>
+        <Icon>kblocks</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Falling blocks game</Summary>
+        <Description>KBlocks is the classic falling blocks game. The idea is stack the falling blocks in a way that lines are completely filled. When a line is completed it is removed, and more space is available in the play area. When there is not enough space for blocks to fall, the game is over.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kblocks</Path>
+            <Path fileType="library">/usr/lib/hede.so</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kblocks.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kblocks</Path>
+            <Path fileType="data">/usr/share/config/kblocks.knsrc</Path>
+            <Path fileType="data">/usr/share/kde4/config/kblocks.knsrc</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kblocks.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kblocks</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kbounce</Name>
+        <Icon>kbounce</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Ball bouncing game</Summary>
+        <Description>KBounce is a single player arcade game with the elements of puzzle. It is played on a field, surrounded by walls, with two or more balls that move about in the field bouncing off of walls. The player can build new walls, decreasing the size of the active field. The goal of the game is to fill at least 75% of the field and advance to the next level.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kbounce</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kbounce.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kbounce</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kbounce</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kbreakout</Name>
+        <Icon>kbreakout</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Breakout like game</Summary>
+        <Description>KBreakout is a Breakout like game. The object of the game is to destroy as many bricks as possible without losing the ball.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kbreakout</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kbreakout.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kbreakout</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kbreakout</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kdesnake</Name>
+        <Icon>kdesnake</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Snake like game</Summary>
+        <Description>KSnake is a simple Snake-like game for the K Desktop Environment. The aim of KSnake is to survive as long as possible and eat as many fruits as you can.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kdesnake</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kdesnake.desktop</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kdiamond</Name>
+        <Icon>kdiamond</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Three in a row game</Summary>
+        <Description>KDiamond is a single player puzzle game. The object of the game is to build lines of three similar diamonds.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kdiamond</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kdiamond.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kdiamond</Path>
+            <Path fileType="data">/usr/share/config/kdiamond.knsrc</Path>
+            <Path fileType="data">/usr/share/kde4/config/kdiamond.knsrc</Path>
+            <Path fileType="data">/usr/share/sounds/KDiamond*</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kdiamond</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kfourinline</Name>
+        <Icon>kfourinline</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Four in a row board game</Summary>
+        <Description>KFourInLine is a board game for two players based on the Connect-Four game.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kfourinline*</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kfourinline.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kfourinline</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kfourinline</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>KGoldrunner</Name>
+        <Icon>KGoldrunner</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Hunt gold, dodge enemies and solve puzzles</Summary>
+        <Description>KGoldrunner is an action game where the hero runs through a maze and dodges enemies. You must guide the hero with the mouse or keyboard and collect all the gold nuggets, then you can climb up into the next level. Your enemies are also after the gold. Worse still, they are after you.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kgoldrunner</Path>
+            <Path fileType="data">/usr/share/applications/kde4/KGoldrunner.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kgoldrunner</Path>
+            <Path fileType="data">/usr/share/kde4/config/kgoldrunner.knsrc</Path>
+            <Path fileType="data">/usr/share/config/kgoldrunner.knsrc</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kgoldrunner</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>killbots</Name>
+        <Icon>killbots</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Run for your life</Summary>
+        <Description>Killbots is a simple game of evading killer robots. Who created the robots and why they have been programmed to destroy, no one knows. All that is known is that the robots are numerous and their sole objective is to destroy you.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/killbots</Path>
+            <Path fileType="data">/usr/share/applications/kde4/killbots.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/killbots</Path>
+            <Path fileType="data">/usr/share/config.kcfg/killbots.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/killbots</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kiriki</Name>
+        <Icon>kiriki</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Yahtzee like dice game</Summary>
+        <Description>Kiriki is an addictive and fun dice game for KDE, designed to be played by as many as six players.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kiriki</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kiriki.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kiriki</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kiriki</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kjumpingcube</Name>
+        <Icon>kjumpingcube</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Territory capture game</Summary>
+        <Description>KJumpingCube is a simple tactical game.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kjumpingcube</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kjumpingcube.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kjumpingcube</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kjumpingcube.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kjumpingcube</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>klines</Name>
+        <Icon>klines</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Kolor Lines</Summary>
+        <Description>Kolor Lines is a simple but highly addictive, one player game for KDE. Kolor Lines has been inspired by well known game of Color Lines. The goal of Kolor Lines is quite plain. The player has to move the colored balls around the game board, gathering them into the lines of the same color by five.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/klines</Path>
+            <Path fileType="data">/usr/share/applications/kde4/klines.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/klines</Path>
+            <Path fileType="data">/usr/share/config.kcfg/klines.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/klines</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kmahjongg</Name>
+        <Icon>kmahjongg</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Mahjongg Solitaire</Summary>
+        <Description>KMahjongg is a fun board game created after the famous oriental game of Mahjong. Unlike the original however, KMahjongg is a tile matching game for one or two players, a variation usually known as Mahjong Solitaire.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kmahjongg</Path>
+            <Path fileType="library">/usr/lib/libkmahjongglib*</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kmahjongg.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kmahjongg</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kmahjongglib</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kmahjongg.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kmahjongg</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kmines</Name>
+        <Icon>kmines</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Minesweeper like game</Summary>
+        <Description>KMines is the classic Minesweeper game. The idea is to uncover all the squares without blowing up any mines. When a mine is blown up, the game is over.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kmines</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kmines.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kmines</Path>
+            <Path fileType="data">/usr/share/config/kmines.knsrc</Path>
+            <Path fileType="data">/usr/share/kde4/config/kmines.knsrc</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kmines</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>knetwalk</Name>
+        <Icon>knetwalk</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Network construction game</Summary>
+        <Description>KNetWalk is a single player logic game. The object of the game is to start the LAN, connecting all the terminals to the server, in as few turns as possible.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/knetwalk</Path>
+            <Path fileType="data">/usr/share/applications/kde4/knetwalk.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/knetwalk</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/knetwalk</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kolf</Name>
+        <Icon>kolf</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Miniature golf</Summary>
+        <Description>Kolf is a miniature golf game with 2d top-down view. Courses are dynamic, and up to 10 people can play at once in competition.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kolf</Path>
+            <Path fileType="library">/usr/lib/libkolf*</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kolf.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kolf</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kolf</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kollision</Name>
+        <Icon>kollision</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A simple ball dodging game</Summary>
+        <Description>Kollision is ball dodging game. Click on the empty field to start a game: a blue ball immediately replaces your mouse cursor, and a number of red balls start to fade into the field.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kollision</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kollision.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kollision</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kollision</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>konquest</Name>
+        <Icon>konquest</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Galactic strategy game</Summary>
+        <Description>Konquest is the KDE version of Gnu-Lactic. Players conquer other planets by sending ships to them.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/konquest</Path>
+            <Path fileType="data">/usr/share/applications/kde4/konquest.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/konquest</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/konquest</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kpat</Name>
+        <Icon>kpat</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Patience card game</Summary>
+        <Description>To play KPatience you need, as the name suggests, patience. For simple games, where the way the game goes depends only upon how the cards fall, your patience might be the only thing you need.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kpat</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kpat.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kpat</Path>
+            <Path fileType="data">/usr/share/mime/packages/kpatience.xml</Path>
+            <Path fileType="data">/usr/share/kde4/apps/carddecks</Path>
+            <Path fileType="data">/usr/share/kde4/config/kpat.knsrc</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kpat.kcfg</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kconf_update/kpat*</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kpat</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kreversi</Name>
+        <Icon>kreversi</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Reversi board game</Summary>
+        <Description>KReversi is a simple one player strategy game played against the computer.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kreversi</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kreversi.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kreversi</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kreversi</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>ksame</Name>
+        <Icon>ksame</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A board game</Summary>
+        <Description>SameGame is a simple game. It is played by one player, so there is only one winner. You play for fun and against the high score. It has been inspired by SameGame, which is only really famous on the Macintosh.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/ksame</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ksame.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/ksame</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ksame</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kshisen</Name>
+        <Icon>kshisen</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Shisen-Sho Mahjongg like tile game</Summary>
+        <Description>Shisen-Sho is a solitaire-like game played using the standard set of Mahjong tiles. Unlike Mahjong however, Shisen-Sho has only one layer of scrambled tiles.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kshisen</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kshisen.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kshisen</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kshisen.kcfg</Path>
+            <Path fileType="data">/usr/share/sounds/kshisen</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kshisen</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>ksirk</Name>
+        <Icon>ksirk</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>World domination strategy game</Summary>
+        <Description>The goal of the KsirK is simply to conquer the World... It is done by attacking your neighbors with your armies.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/ksirk</Path>
+            <Path fileType="library">/usr/lib/libiris_ksirk*</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ksirk.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/ksirk</Path>
+            <Path fileType="data">/usr/share/kde4/config/ksirk.knsrc</Path>
+            <Path fileType="data">/usr/share/config/ksirk.knsrc</Path>
+            <Path fileType="data">/usr/share/config.kcfg/ksirksettings.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ksirk</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>ksirkskineditor</Name>
+        <Icon>ksirkskineditor</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>KsirK skin editor</Summary>
+        <Description>Skin editor for the world domination strategy game</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+            <Dependency release="current">ksirk</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/ksirkskineditor</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ksirkskineditor.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/ksirkskineditor</Path>
+            <Path fileType="data">/usr/share/config.kcfg/ksirkskineditor*.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ksirkskineditor</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kspaceduel</Name>
+        <Icon>kspaceduel</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Space arcade game</Summary>
+        <Description>In KSpaceDuel, each of two possible players controls a satellite spaceship orbiting the sun. As the game progresses players have to eliminate opponent's spacecraft. As soon as the opponent's satellite is destroyed, the remaining player wins the round.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kspaceduel</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kspaceduel.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kspaceduel</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kspaceduel.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kspaceduel</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>ksquares</Name>
+        <Icon>ksquares</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Connect the dots to create squares</Summary>
+        <Description>KSquares is a fun and exciting game that modeled after the well known pen and paper based game of Dots and Boxes.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/ksquares</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ksquares.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/ksquares</Path>
+            <Path fileType="data">/usr/share/config.kcfg/ksquares.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ksquares</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>ksudoku</Name>
+        <Icon>ksudoku</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Sudoku game</Summary>
+        <Description>Ksudoku is a logic-based symbol placement puzzle.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/ksudoku</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ksudoku.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/ksudoku</Path>
+            <Path fileType="data">/usr/share/kde4/config/ksudokurc</Path>
+            <Path fileType="data">/usr/share/config/ksudoku*</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ksudoku</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>ktron</Name>
+        <Icon>ktron</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Tron like game</Summary>
+        <Description>KTron is a simple Tron-Clone for the K Desktop Environment. You can play KTron against the computer or a friend. The aim of the game is to live longer than your opponent. To do that, avoid running into a wall, your own tail and that of your opponent.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/ktron</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ktron.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/ktron</Path>
+            <Path fileType="data">/usr/share/config/ktron.knsrc</Path>
+            <Path fileType="data">/usr/share/config.kcfg/ktron.kcfg</Path>
+            <Path fileType="data">/usr/share/kde4/config/ktron.knsrc</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ktron</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>ktuberling</Name>
-        <Summary>ktuberling is a simple constructor game suitable for children and adults alike. The idea of the game is based around a once popular doll making concept.</Summary>
+        <Icon>ktuberling</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Picture game for children</Summary>
+        <Description>KTuberling a simple constructor game suitable for children and adults alike. The idea of the game is based around a once popular doll making concept.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">kdegames-core</Dependency>
-            <Dependency>qt</Dependency>
-            <Dependency>kdelibs</Dependency>
-            <Dependency>phonon</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/ktuberling</Path>
+            <Path fileType="data">/usr/share/applications/kde4/ktuberling.desktop</Path>
             <Path fileType="data">/usr/share/kde4/apps/ktuberling</Path>
-            <Path fileType="data">/usr/share/applications/kde4/ktuberling*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/*tuberling*</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/ktuberling</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/ktuberling</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>kdegames-logic</Name>
-        <Summary>Logic games for KDE including: KSudoku, KDiamond, Kubrick and Palapeli (jigsaw puzzle game)</Summary>
+        <Name>kubrick</Name>
+        <Icon>kubrick</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>3-D game based on Rubik's Cube</Summary>
+        <Description>Kubrick is based on the famous Rubik's Cube™ puzzle, invented by Professor Erno Rubik in Hungary in the 1970s.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">kdegames-core</Dependency>
-            <Dependency>qt</Dependency>
-            <Dependency>mesa</Dependency>
-            <Dependency>kdelibs</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
         <Files>
-            <Path fileType="executable">/usr/bin/kdiamond</Path>
-            <Path fileType="executable">/usr/bin/ksudoku</Path>
             <Path fileType="executable">/usr/bin/kubrick</Path>
-            <Path fileType="executable">/usr/bin/palapeli</Path>
-            <Path fileType="executable">/usr/bin/libpala*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kdiamond*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/ksudoku*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kubrick*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/palapeli*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/*kdiamond*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/*ksudoku*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/*kubrick*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/*palapeli*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kdiamond</Path>
-            <Path fileType="data">/usr/share/kde4/apps/ksudoku</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kubrick.desktop</Path>
             <Path fileType="data">/usr/share/kde4/apps/kubrick</Path>
-            <Path fileType="data">/usr/share/kde4/apps/palapeli</Path>
-            <Path fileType="data">/usr/share/kde4/config/kdiamond*</Path>
-            <Path fileType="data">/usr/share/kde4/config/ksudoku*</Path>
-            <Path fileType="data">/usr/share/kde4/config/palapeli*</Path>
-            <Path fileType="data">/usr/share/kde4/services/pala*</Path>
-            <Path fileType="data">/usr/share/kde4/services/*/pala*</Path>
-            <Path fileType="data">/usr/share/kde4/servicetypes/libpala*</Path>
-            <Path fileType="data">/usr/share/mime/packages/palapeli*</Path>
-            <Path fileType="data">/usr/share/sounds/KDiamond*</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kdiamond</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/ksudoku</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kubrick</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/palapeli</Path>
-            <Path fileType="library">/usr/lib/kde4/pala*</Path>
-            <Path fileType="library">/usr/lib/libpala*</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kubrick</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>kdegames-card</Name>
-        <Summary>Card games of KDE including: LSkat and KPatience</Summary>
+        <Name>lskat</Name>
+        <Icon>lskat</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A card game</Summary>
+        <Description>Lieutnant Skat is a fun and engaging card game for two players, where the second player is either live opponent, or built in artificial intelligence.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">kdegames-core</Dependency>
-            <Dependency>qt</Dependency>
-            <Dependency>kdelibs</Dependency>
-            <Dependency>phonon</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
         <Files>
-            <Path fileType="executable">/usr/bin/kpat</Path>
             <Path fileType="executable">/usr/bin/lskat</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kpat.desktop</Path>
             <Path fileType="data">/usr/share/applications/kde4/lskat.desktop</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kpat.kcfg</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kpat.*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/lskat*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/carddecks</Path>
             <Path fileType="data">/usr/share/kde4/apps/lskat</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kpat</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kconf_update/kpat_*</Path>
-            <Path fileType="data">/usr/share/kde4/config/kcardtheme*</Path>
-            <Path fileType="data">/usr/share/kde4/config/kpat.knsrc</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kpat</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/lskat</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/lskat</Path>
         </Files>
     </Package>
 
-     <Package>
-        <Name>kdegames-arcade</Name>
-        <Summary>Arcade games for KDE including: KGoldRunner, Bomber, Granatier, KBreakOut, Kollision, Kolf, Kapman, KBlocks, KBounce, KTron, KSnake, KSpaceDuel.</Summary>
+    <Package>
+        <Name>kigo</Name>
+        <Icon>kigo</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A go board game</Summary>
+        <Description>Kigo is an open-source implementation of the popular Go game. Go is a strategic board game for two players.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">kdegames-core</Dependency>
-            <Dependency>qt</Dependency>
-            <Dependency>kdelibs</Dependency>
-            <Dependency>phonon</Dependency>
-            <Dependency>openal</Dependency>
-            <Dependency>libsndfile</Dependency>
+            <Dependency release="current">kdegames-common</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
         <Files>
-            <Path fileType="executable">/usr/bin/kgoldrunner</Path>
-            <Path fileType="executable">/usr/bin/bomber</Path>
-            <Path fileType="executable">/usr/bin/kdesnake</Path>
-            <Path fileType="executable">/usr/bin/kollision</Path>
-            <Path fileType="executable">/usr/bin/kolf</Path>
-            <Path fileType="executable">/usr/bin/kblocks</Path>
-            <Path fileType="executable">/usr/bin/granatier</Path>
-            <Path fileType="executable">/usr/bin/ktron</Path>
-            <Path fileType="executable">/usr/bin/kspaceduel</Path>
-            <Path fileType="executable">/usr/bin/kbounce</Path>
-            <Path fileType="executable">/usr/bin/kapman</Path>
-            <Path fileType="executable">/usr/bin/kbreakout</Path>
-            <Path fileType="library">/usr/lib/libkolf*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/[Kk][Gg]oldrunner.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/granatier.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kbreakout.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kollision.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/bomber.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kapman.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kspaceduel.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kdesnake.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kolf.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/ktron.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kbounce.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kblocks.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kgoldrunner</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/bomber</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kapman</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kolf</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/ktron</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kbounce</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kspaceduel</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kblocks</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kollision</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/granatier</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kbreakout</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kgoldrunner*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kolf*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/bomber*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kapman*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kblocks*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/ktron*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kdesnake*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kspaceduel*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kbounce*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kollision*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kbreakout*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/granatier*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kgoldrunner</Path>
-            <Path fileType="data">/usr/share/kde4/apps/bomber</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kapman</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kblocks</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kbounce</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kspaceduel</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kolf</Path>
-            <Path fileType="data">/usr/share/kde4/apps/ktron</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kollision</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kbreakout</Path>
-            <Path fileType="data">/usr/share/kde4/apps/granatier</Path>
-            <Path fileType="data">/usr/share/kde4/config/kgoldrunner*</Path>
-            <Path fileType="data">/usr/share/kde4/config/kblocks*</Path>
-            <Path fileType="data">/usr/share/kde4/config/ktron*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/bomber*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kblocks*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kspaceduel*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/ktron*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/granatier*</Path>
-            <Path fileType="data">/usr/share/sounds/kapman</Path>
-        </Files>
-    </Package>
-
-     <Package>
-        <Name>kdegames-strategy</Name>
-        <Summary>Strategy games for KDE including: KNetWalk, KBattleShip, KJumpingCube, KsirK, Konquest, Killbots, KsirK Skin Editor, KMines (minesweeper game), Katomic, KSame, and KLines</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdegames-core</Dependency>
-            <Dependency>qt</Dependency>
-            <Dependency>qca2</Dependency>
-            <Dependency>phonon</Dependency>
-            <Dependency>kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/knetwalk</Path>
-            <Path fileType="executable">/usr/bin/killbots</Path>
-            <Path fileType="executable">/usr/bin/kmines</Path>
-            <Path fileType="executable">/usr/bin/klickety</Path>
-            <Path fileType="executable">/usr/bin/katomic</Path>
-            <Path fileType="executable">/usr/bin/klines</Path>
-            <Path fileType="executable">/usr/bin/kbattleship</Path>
-            <Path fileType="executable">/usr/bin/kjumpingcube</Path>
-            <Path fileType="executable">/usr/bin/konquest</Path>
-            <Path fileType="executable">/usr/bin/ksirk*</Path>
-            <Path fileType="library">/usr/lib/libiris_ksirk*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/knetwalk.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kbattleship.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/klickety.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/konquest.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/katomic.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kjumpingcube.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/klines.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/killbots.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/ksame.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kmines.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/ksirk*.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/knetwalk</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/konquest</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/klickety</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kmines</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/klines</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/katomic</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/killbots</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kbattleship</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/ksirk*</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kjumpingcube</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/knetwalk*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kbattleship*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/konquest*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/klickety*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kmines*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/ksame*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/klines*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/killbots*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/katomic*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/ksirk*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kjumpingcube*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/knetwalk</Path>
-            <Path fileType="data">/usr/share/kde4/apps/killbots</Path>
-            <Path fileType="data">/usr/share/kde4/apps/klickety</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kmines</Path>
-            <Path fileType="data">/usr/share/kde4/apps/katomic</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kjumpingcube</Path>
-            <Path fileType="data">/usr/share/kde4/apps/klines</Path>
-            <Path fileType="data">/usr/share/kde4/apps/konquest</Path>
-            <Path fileType="data">/usr/share/kde4/apps/ksirk*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kbattleship</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kconf_update/katomic*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kconf_update/klickety*</Path>
-            <Path fileType="data">/usr/share/kde4/services/kbattleship*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kjumpingcube*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/klines*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/killbots*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/ksirk*</Path>
-            <Path fileType="data">/usr/share/kde4/config/ksirk*</Path>
-            <Path fileType="data">/usr/share/kde4/config/kmines*</Path>
-            <Path fileType="data">/usr/share/kde4/config/katomic*</Path>
-        </Files>
-    </Package>
-
-     <Package>
-        <Name>kdegames-board</Name>
-        <Summary>Board games for KDE including: Bovo, KFourInLine, KBlackBox, Kigo (go game), Kajongg, KMahjongg, KSquares, KReversi, Shisen-sho, Kiriki</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdegames-core</Dependency>
-            <Dependency>qt</Dependency>
-            <Dependency>kdelibs</Dependency>
-            <Dependency>phonon</Dependency>
-            <!-- needed by kigo -->
-            <Dependency>gnugo</Dependency>
-
-            <!-- needed by kajongg -->
-            <Dependency>python-Twisted</Dependency>
-            <Dependency>vorbis-tools</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/bovo</Path>
-            <Path fileType="executable">/usr/bin/kblackbox</Path>
-            <Path fileType="executable">/usr/bin/ksquares</Path>
-            <Path fileType="executable">/usr/bin/kshisen</Path>
-            <Path fileType="executable">/usr/bin/kiriki</Path>
-            <Path fileType="executable">/usr/bin/kreversi</Path>
-            <Path fileType="executable">/usr/bin/kajongg*</Path>
-            <Path fileType="executable">/usr/bin/kmahjongg</Path>
             <Path fileType="executable">/usr/bin/kigo</Path>
-            <Path fileType="executable">/usr/bin/kfourinline*</Path>
-            <Path fileType="library">/usr/lib/libkmahjongg*</Path>
-            <Path fileType="data">/usr/share/applications/kde4/bovo.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kblackbox.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kajongg.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kreversi.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kshisen.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/ksquares.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kiriki.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kmahjongg.desktop</Path>
             <Path fileType="data">/usr/share/applications/kde4/kigo.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kfourinline.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/bovo</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kigo</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kajongg</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kreversi</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kshisen</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kmahjongg</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/ksquares</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kiriki</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kblackbox</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kfourinline</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/bovo*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kigo*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kmahjongg*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/*kajongg*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kblackbox*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kshisen*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kiriki*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kreversi*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/ksquares*</Path>
-            <Path fileType="data">/usr/share/icons/*/*/*/kfourinline*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/bovo</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kblackbox</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kajongg</Path>
-            <Path fileType="data">/usr/share/kde4/apps/ksquares</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kmahjongg*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kiriki*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kshisen*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kreversi*</Path>
             <Path fileType="data">/usr/share/kde4/apps/kigo</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kfourinline</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kigo*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/ksquares*</Path>
-            <!-- needeed by kfourinline -->
-            <Path fileType="data">/usr/share/config.kcfg/kwin4*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kshisen*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/kmahjongg*</Path>
             <Path fileType="data">/usr/share/kde4/config/kigo*</Path>
-            <Path fileType="data">/usr/share/sounds/kshisen</Path>
+            <Path fileType="data">/usr/share/config.kcfg/kigo.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kigo</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>klickety</Name>
+        <Icon>klickety</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A kind of solitary game</Summary>
+        <Description>Klickety is a kind of solitary game that takes place on a Tetris-like board.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/klickety</Path>
+            <Path fileType="data">/usr/share/applications/kde4/klickety.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/klickety</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kconf_update/klickety*</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/klickety</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>palapeli</Name>
+        <Icon>palapeli</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A jigsaw puzzle game</Summary>
+        <Description>Palapeli is a single-player jigsaw puzzle game. Unlike other games in that genre, you are not limited to aligning pieces on imaginary grids.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/palapeli</Path>
+            <Path fileType="library">/usr/lib/*pala*</Path>
+            <Path fileType="library">/usr/lib/kde4/*pala*</Path>
+            <Path fileType="library">/usr/lib/libpala</Path>
+            <Path fileType="data">/usr/share/mime/packages/palapeli-mimetypes.xml</Path>
+            <Path fileType="data">/usr/share/applications/kde4/palapeli.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/services/pala*</Path>
+            <Path fileType="data">/usr/share/kde4/apps/palapeli</Path>
+            <Path fileType="data">/usr/share/kde4/servicetypes/libpala-slicerplugin.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/services/ServiceMenus/palapeli_servicemenu.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/config/palapeli-collectionrc</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/palapeli</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>granatier</Name>
+        <Icon>granatier</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A Bomberman game</Summary>
+        <Description>Granatier is a clone of the classic Bomberman game, inspired by the work of the Clanbomber clone.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/granatier</Path>
+            <Path fileType="data">/usr/share/applications/kde4/granatier.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/granatier</Path>
+            <Path fileType="data">/usr/share/config.kcfg/granatier.kcfg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/granatier</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>kajongg</Name>
+        <Icon>kajongg</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Mah Jongg</Summary>
+        <Description>Kajongg is the ancient Chinese board game for 4 players. Kajongg can be used in two different ways: Scoring a manual game where you play as always and use Kajongg for the computation of scores and for bookkeeping.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">kdegames-common</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegames4</Package>
+            <Package>kdegames-arcade</Package>
+            <Package>kdegames-board</Package>  
+            <Package>kdegames-card</Package>
+            <Package>kdegames-core</Package>     
+            <Package>kdegames-logic</Package>
+            <Package>kdegames-strategy</Package>   
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin/kajongg</Path>
+            <Path fileType="executable">/usr/bin/kajonggserver</Path>
+            <Path fileType="data">/usr/share/applications/kde4/kajongg.desktop</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kajongg</Path>
+            <Path fileType="doc">/usr/share/doc/HTML/en/kajongg</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="55">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
+        <Update release="54">
+            <Date>2012-05-07</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="53">
+            <Date>2012-03-11</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="52">
+            <Date>2012-03-11</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="51">
+            <Date>2012-02-02</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="50">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="49">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="48">
+            <Date>2011-09-20</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump to 4.7.1</Comment>
+            <Name>Bertan Gündoğdu</Name>
+            <Email>bertan@pardus.org.tr</Email>
+        </Update>
         <Update release="47">
             <Date>2011-07-11</Date>
             <Version>4.6.5</Version>

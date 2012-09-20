@@ -3,22 +3,25 @@
 <PISI>
     <Source>
         <Name>kdenetwork</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://www.kde.org</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
+        <IsA>library</IsA>
         <Summary>KDE4 network applications</Summary>
         <Description>Contains KDE4 network applications. In package, kget (downloader manager), kopete (chat client), kppp (dialer and front end for pppd), krdc (a client for Desktop Sharing and other VNC servers), krfb (Desktop Sharing server, allow others to access your desktop via VNC) applications are included.</Description>
-        <Archive type="tarbz2" sha1sum="cc398063da61f9f9ef0db4455dc0c989a4e68a25">mirrors://kde/stable/4.6.5/src/kdenetwork-4.6.5.tar.bz2</Archive>
+        <Archive sha1sum="b3926c5cd929cec209421c2f1cb8659cc1c82458" type="tarxz">mirrors://kde/stable/4.8.4/src/kdenetwork-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.5">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdebase-workspace</Dependency>
-            <Dependency versionFrom="4.6.5">kdebase-devel</Dependency>
-            <Dependency versionFrom="4.6.5">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="4.1">libmsn-devel</Dependency>
+            <Dependency versionFrom="0.3.2">telepathy-qt-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>openslp-devel</Dependency>
             <Dependency>libvncserver-devel</Dependency>
@@ -29,35 +32,31 @@
             <Dependency>meanwhile-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
             <Dependency>libgadu-devel</Dependency>
-            <Dependency versionFrom="0.3.2">telepathy-qt-devel</Dependency>
             <Dependency>mediastreamer2-devel</Dependency>
             <Dependency>libktorrent-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
             <Dependency>libgpg-error-devel</Dependency>
             <Dependency>kwebkitpart-devel</Dependency>
+            <Dependency>jpeg-devel</Dependency>
+            <Dependency>jasper-devel</Dependency>
+            <Dependency>libmms-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Kubuntu patches -->
             <Patch level="1">kubuntu/kubuntu_01_fix_kopete_notifications_away.diff</Patch>
-            <Patch level="1">kubuntu/kubuntu_05_samba_sharing.diff</Patch>
-
             <Patch level="1">fedora/kdenetwork-4.2.98-kdrc-icon.patch</Patch>
-
-            <!-- Workaround for #15492
-            TODO: kcmsambaconf is removed, we user usershare now
-            <Patch level="1">change-samba-systemsettings-category-to-workaround-kdesu-issue.diff</Patch>
-            -->
         </Patches>
     </Source>
+
     <Package>
         <Name>kdenetwork</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.5">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.5">kdebase-workspace</Dependency>
-            <Dependency versionFrom="4.6.5">kdebase</Dependency>
-            <Dependency versionFrom="4.6.5">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase</Dependency>
+            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency versionFrom="4.1">libmsn</Dependency>
-            <Dependency>phonon</Dependency>
+            <Dependency versionFrom="0.3.2">telepathy-qt</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>soprano</Dependency>
             <Dependency>qca2</Dependency>
@@ -68,14 +67,12 @@
             <Dependency>qimageblitz</Dependency>
             <Dependency>gmp</Dependency>
             <Dependency>speex</Dependency>
-            <Dependency>libidn</Dependency>
             <Dependency>ortp</Dependency>
             <Dependency>libotr</Dependency>
             <Dependency>meanwhile</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>libgadu</Dependency>
             <Dependency>libktorrent</Dependency>
-            <Dependency versionFrom="0.3.2">telepathy-qt</Dependency>
             <Dependency>mediastreamer2</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>giflib</Dependency>
@@ -85,13 +82,24 @@
             <Dependency>libXtst</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>kwebkitpart</Dependency>
+            <Dependency>jpeg</Dependency>
+            <Dependency>jasper</Dependency>
+            <Dependency>libmms</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/config.kcfg</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/services</Path>
+            <Path fileType="data">/usr/share/kde4</Path>
+            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
+
     <Package>
         <Name>kdenetwork-devel</Name>
         <Summary>Development files for kdenetwork</Summary>
@@ -104,6 +112,62 @@
     </Package>
 
     <History>
+        <Update release="66">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="65">
+            <Date>2012-05-06</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="64">
+            <Date>2012-04-06</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="63">
+            <Date>2012-01-28</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="62">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="61">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="60">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="59">
+            <Date>2011-09-22</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="58">
             <Date>2011-07-11</Date>
             <Version>4.6.5</Version>

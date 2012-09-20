@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kstars</Name>
+        <Homepage>http://edu.kde.org/applications/all/kstars</Homepage>
+        <Packager>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A desktop planetarium for KDE</Summary>
+        <Description>KStars is a Desktop Planetarium for KDE. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects, all 8 planets, the Sun and Moon, and thousands of comets and asteroids.</Description>
+        <Archive sha1sum="579cec66cfb172258d2967872a2b9c32d4514c75" type="tarxz">mirrors://kde/stable/4.8.4/src/kstars-4.8.4.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="2.0.15">eigen</Dependency>
+            <Dependency>xplanet</Dependency>
+            <Dependency versionFrom="0.9">indilib-devel</Dependency>
+            <Dependency>cfitsio-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kstars</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency>xplanet</Dependency>
+            <Dependency versionFrom="0.9">indilib</Dependency>
+            <Dependency>cfitsio</Dependency>
+        </RuntimeDependencies>
+        <Replaces>
+            <Package>kdeedu</Package>
+        </Replaces>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/config.kcfg</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/kde4</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="8">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="7">
+            <Date>2012-05-07</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-04-11</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-03-08</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-02-12</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="3">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump to 4.7.3</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="2">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="1">
+            <Date>2011-09-22</Date>
+            <Version>4.7.1</Version>
+            <Comment>First release.</Comment>
+            <Name>Bertan Gündoğdu</Name>
+            <Email>bertan@pardus.org.tr</Email>
+        </Update>
+    </History>
+</PISI>
