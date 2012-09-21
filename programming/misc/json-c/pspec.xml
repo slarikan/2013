@@ -35,8 +35,25 @@
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
+    
+     <Package>
+        <Name>json-c-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for json-c</Summary>
+        <BuildType>emul32</BuildType>
+        <Files>
+	    <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-04-02</Date>
+            <Version>0.9</Version>
+            <Comment>Add lib32 package for json-c.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-01-16</Date>
             <Version>0.9</Version>
