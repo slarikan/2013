@@ -10,6 +10,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
+WorkDir = "linux-firmware-7560108"
+
 def setup():
     # Remove source files
     shelltools.unlink("usbdux/*dux")
