@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 #
 # Licensed under the GNU General Public License, version 2.
@@ -8,26 +9,45 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import kde4
+from pisi.actionsapi import pkgconfig
 
+WorkDir = "%s-%s.src" % (get.srcNAME(), get.srcVERSION())
 libdir = "/usr/lib/llvm"
 
 def setup():
-    shelltools.move("tools/clang-%s" % get.srcVERSION(), "tools/clang")
+    if not shelltools.isDirectory("tools/clang"):
+        shelltools.move("tools/clang-%s.src" % get.srcVERSION(), "tools/clang")
 
-    pisitools.dosed("tools/llvm-config/llvm-config.in.in",
-                    r'"(\$ABS_RUN_DIR/lib.*)"', r'"\1/llvm"')
+    pisitools.dosed("utils/llvm-build/llvm-build", "python", "python2.7")
+    pisitools.dosed("bindings/ocaml/Makefile.ocaml", '\$\(PROJ_libdir\)', "/usr/lib/llvm")
+    pisitools.dosed("Makefile.config.in", "\$\(PROJ_prefix\)/etc/llvm", "/etc/llvm")
+    pisitools.dosed("Makefile.config.in", "\$\(PROJ_prefix\)/lib", "$(PROJ_prefix)/lib/llvm")
+    pisitools.dosed("Makefile.config.in", "\$\(PROJ_prefix\)/docs/llvm", "$(PROJ_prefix)/share/doc/llvm")
+    pisitools.dosed("tools/llvm-config/llvm-config.cpp", '(ActiveLibDir\s=\sActivePrefix\s\+\s\"\/lib)(.*)', r'\1/llvm\2')
+    pisitools.dosed("autoconf/configure.ac", '\LLVM_LIBDIR="\$\{prefix\}/lib"', 'LLVM_LIBDIR="${prefix}/lib/llvm"')
 
+    #autotools.configure()
+    
+    pisitools.dosed("Makefile.rules", "\$\(RPATH\)\s-Wl,\$\(ExmplDir\)\s\$\(DynamicFlag\)", "$(DynamicFlag)")
+    pisitools.dosed("Makefile.rules", "\$\(RPATH\)\s-Wl,\$\(ToolDir\)\s\$\(DynamicFlag\)", "$(DynamicFlag)")
+    
+    #shelltools.export("CPPFLAGS",get.CXXFLAGS())
+    shelltools.export("CPPFLAGS","%s %s" % (get.CXXFLAGS(),pkgconfig.getLibraryCFLAGS("libffi")))
+    
+    shelltools.export("CC",get.CC())
+    shelltools.export("CXX",get.CXX())
+    
     pic_option = "enable" if get.ARCH() == "x86_64" else "disable"
-
+    
     options = "--libdir=%s \
                --datadir=/usr/share/llvm \
-               --enable-optimized \
-               --disable-assertions \
+               --sysconfdir=/etc \
                --disable-expensive-checks \
-               --enable-debug-runtime \
+               --disable-assertions \
+               --disable-debug-runtime \
+               --enable-optimized \
                --enable-debug-symbols \
                --enable-jit \
-               --disable-doxygen \
                --enable-threads \
                --%s-pic \
                --enable-shared \
@@ -35,8 +55,6 @@ def setup():
                --enable-bindings=all \
                --with-binutils-include=/usr/include \
                --enable-libffi \
-               --enable-llvmc-dynamic \
-               --enable-llvmc-dynamic-plugins \
                " % (libdir, pic_option)
 
     if get.buildTYPE() == "emul32":
@@ -47,15 +65,16 @@ def setup():
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
 
+    
     autotools.configure(options)
 
 
-def check():
-    autotools.make("check")
-    autotools.make("-C tools/clang test")
+#def check():
+#    autotools.make("check")
+#    autotools.make("-C tools/clang test")
 
 def build():
-    autotools.make()
+    autotools.make("REQUIRES_RTTI=1")
 
 def install():
     if get.buildTYPE() == "emul32":
@@ -106,3 +125,5 @@ def install():
     pisitools.insinto("%s/katepart/syntax" % kde4.appsdir, "utils/kate/*.xml")
 
     pisitools.dodoc("CREDITS.TXT", "LICENSE.TXT", "README.txt")
+
+ 

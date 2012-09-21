@@ -1,16 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyright 2005-2009 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
-from pisi.actionsapi import get
-from pisi.actionsapi import qt4
 from pisi.actionsapi import kde4
+from pisi.actionsapi import qt4
+from pisi.actionsapi import get
 
 import os
 
@@ -33,7 +32,8 @@ def setup():
             "PARDUS_LDFLAGS":   get.LDFLAGS()}
 
     for k, v in vars.items():
-        pisitools.dosed("mkspecs/common/g++.conf", k, v)
+        pisitools.dosed("mkspecs/common/g++-base.conf", k, v)
+        pisitools.dosed("mkspecs/common/g++-unix.conf", k, v)
 
     shelltools.export("CFLAGS", filteredCFLAGS)
     shelltools.export("CXXFLAGS", filteredCXXFLAGS)
@@ -95,7 +95,7 @@ def install():
     #Remove phonon, we use KDE's phonon but we have to build Qt with Phonon support for webkit and some other stuff
     pisitools.remove("%s/libphonon*" % qt4.libdir)
     pisitools.removeDir("%s/phonon" % qt4.includedir)
-    pisitools.removeDir("%s/phonon_backend" % qt4.plugindir)
+    # -no-phonon-backend : pisitools.removeDir("%s/phonon_backend" % qt4.plugindir)
     pisitools.remove("%s/pkgconfig/phonon*" % qt4.libdir)
     # Phonon 4.5 provides libphononwidgets.so file
     pisitools.remove("%s/designer/libphononwidgets.so" % qt4.plugindir)
@@ -122,3 +122,5 @@ def install():
 
     # Remove useless image directory, images of HTML docs are in doc/html/images
     pisitools.removeDir("%s/src" % qt4.docdir)
+
+    pisitools.dodoc("changes-*", "LGPL_EXCEPTION.txt", "LICENSE.*", "README")

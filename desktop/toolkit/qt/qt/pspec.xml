@@ -3,17 +3,17 @@
 <PISI>
     <Source>
         <Name>qt</Name>
-        <Homepage>http://www.trolltech.com/</Homepage>
+        <Homepage>http://qt.nokia.com</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <License>GPLv3</License>
         <IsA>library</IsA>
         <Summary>Qt toolkit version 4</Summary>
         <Description>Qt is a cross platform GUI toolkit.</Description>
-        <Archive sha1sum="84414f82bbc9e8d356b986d5d1ebee89d06e4f2e" type="targz">http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.7.2.tar.gz</Archive>
+        <Archive sha1sum="bc352a283610e0cd2fe0dbedbc45613844090fcb" type="targz">http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="3.4.1">sqlite-devel</Dependency>
             <Dependency>firebird-superserver</Dependency>
@@ -23,7 +23,7 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>mysql-lib</Dependency>
             <Dependency>libXrandr-devel</Dependency>
-            <Dependency>unixODBC</Dependency>
+            <Dependency>unixODBC-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>cups-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -47,36 +47,38 @@
         </BuildDependencies>
         <Patches>
             <!-- Fedora Patches -->
-            <Patch level="1">fedora/4d3b9aa83cf7f6d9f9b88d9936e5980629daac2a.patch</Patch>
+            <!-- http://pkgs.fedoraproject.org/gitweb/?p=qt.git -->
 
-            <Patch level="1">fedora/0002-This-patch-makes-override-redirect-windows-popup-men.patch</Patch>
-            <Patch level="1">fedora/0005-When-tabs-are-inserted-or-removed-in-a-QTabBar.patch</Patch>
-            <Patch level="1">fedora/0012-Add-context-to-tr-calls-in-QShortcut.patch</Patch>
+            <!-- https://build.opensuse.org/package/show?package=qt&project=home%3Amysocials%3AFedora12%3AQt4.6 -->
+            <!-- patches from above dropped (2, 5, 12), if we really need them we can add another section-->
 
             <Patch level="1">fedora/qt-x11-opensource-src-4.5.0-fix-qatomic-inline-asm.patch</Patch>
             <Patch level="1">fedora/qt-x11-opensource-src-4.5.1-enable_ft_lcdfilter.patch</Patch>
-            <Patch level="1">fedora/qt-4.6.3-bn-rendering-bz562049.patch</Patch>
-            <Patch level="1">fedora/qt-4.6.3-bn-rendering-bz562058.patch</Patch>
             <Patch level="1">fedora/qt-4.6.3-indic-rendering-bz631732.patch</Patch>
-            <Patch level="1">fedora/qt-4.6.3-indic-rendering-bz636399.patch</Patch>
+            <!--Patch level="1">fedora/qt-4.8.1-webkit-no_Werror.patch</Patch-->
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.6.2-cups.patch</Patch>
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.6.3-glib_eventloop_nullcheck.patch</Patch>
-            <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.0-CVE-2010-1822-crash-svg-image.patch</Patch>
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.0-beta2-kde4_plugins.patch</Patch>
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.0-beta2-mysql_config.patch</Patch>
-            <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.0-bpp24.patch</Patch>
-            <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.1-webkit_debug_javascriptcore.patch</Patch>
-
-            <Patch level="1">fedora/qt-ssl-QTBUG-18338.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.1-QTBUG-14467.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.4-tds_no_strict_aliasing.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-beta1-s390.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-icu_no_spam.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-ld-gold.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-QTBUG-14724.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-QTBUG-21900.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-QTBUG-22037.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-rc1-moc-boost148.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-s390-atomic.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-timestamp.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-tp-multilib-optflags.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.0-tp-qtreeview-kpackagekit-crash.patch</Patch>
+            <Patch level="1">fedora/qt-everywhere-opensource-src-4.8.1-qtgahandle.patch</Patch>
+            <Patch level="1">fedora/qt-ppc64-crash.patch</Patch>
             <Patch level="1">fedora/qt-ssl-QTBUG-18338-2.patch</Patch>
 
-            <Patch level="1">uitools-sharedlib.patch</Patch>
-            <Patch level="1">no-hardcoded-font-aliases.patch</Patch>
-
-            <!-- Turkish Translations -->
-            <Patch compressionType="bz2">turkish.patch.bz2</Patch>
-
             <!-- Kubuntu/Debian patches -->
+            <!-- http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/precise/qt4-x11/precise/files/head:/debian/patches/ -->
             <Patch level="1">kubuntu/0180-window-role.diff</Patch>
             <Patch level="1">kubuntu/0209-prevent-qt-mixing.diff</Patch>
             <Patch level="1">kubuntu/08_configure_quilt_compat.diff</Patch>
@@ -84,30 +86,27 @@
             <Patch level="1">kubuntu/10_config_tests_fixes.diff</Patch>
             <Patch level="1">kubuntu/12_add_nostrip_for_debug_packages.diff</Patch>
             <Patch level="1">kubuntu/15_fix_qmake_makefile_generation.diff</Patch>
-            <Patch level="1">kubuntu/18_enable_qt3support_qtwebkit_debug_info.diff</Patch>
             <Patch level="1">kubuntu/41_disable_opengl_visibility.diff</Patch>
             <Patch level="1">kubuntu/kubuntu_18_fix_qtreeview_regression.diff</Patch>
-            <Patch level="1">kubuntu/kubuntu_23_syncqt_no_timestamp_change.diff</Patch>
-            <Patch level="1">kubuntu/kubuntu_26_dbusconnection_pointer.diff</Patch>
-            <Patch level="1">kubuntu/kubuntu_27_dbus_signal_filter_passes_not_handled.diff</Patch>
-
-            <!-- Sort QListWidgetItems in locale aware manner #11535 -->
-            <Patch level="1">sort-qlistwidgetitems-in-locale-aware-manner.diff</Patch>
 
             <!-- SuSE patches -->
-            <Patch>suse/0188-fix-moc-parser-same-name-header.diff</Patch>
-            <Patch>suse/0191-listview-alternate-row-colors.diff</Patch>
-            <Patch>suse/konsole-nvidia-font-speed.diff</Patch>
-            <Patch>suse/qfatal-noreturn.diff</Patch>
-            <Patch>suse/qt-debug-timer.diff</Patch>
-            <Patch>suse/use-freetype-default.diff</Patch>
-            <Patch>suse/no-moc-date.diff</Patch>
-            <Patch>suse/qt-never-strip.diff</Patch>
-            <Patch>suse/qtreeview-fix-QTBUG-16292.diff</Patch>
+            <Patch level="0">suse/0188-fix-moc-parser-same-name-header.diff</Patch>
+            <Patch level="0">suse/0191-listview-alternate-row-colors.diff</Patch>
+            <Patch level="0">suse/konsole-nvidia-font-speed.diff</Patch>
+            <Patch level="0">suse/qfatal-noreturn.diff</Patch>
+            <Patch level="0">suse/qt-debug-timer.diff</Patch>
+            <Patch level="0">suse/use-freetype-default.diff</Patch>
+            <Patch level="0">suse/qt-never-strip.diff</Patch>
             <Patch level="1">suse/rcc-stable-dirlisting.diff</Patch>
-            <Patch>suse/libqt4-libtool-nodate.diff</Patch>
+            <Patch level="0">suse/libqt4-libtool-nodate.diff</Patch>
 
-            <Patch level="1">mkspecs.patch</Patch>
+            <Patch level="1">uitools-sharedlib.patch</Patch>
+            <Patch level="1">no-hardcoded-font-aliases.patch</Patch>
+
+            <!-- Turkish Translations -->
+            <Patch compressionType="bz2">turkish.patch.bz2</Patch>
+
+            <Patch level="0">mkspecs.patch</Patch>
 
             <Patch level="1">fix-undefined-errors.diff</Patch>
 
@@ -134,6 +133,9 @@
             <Dependency>mesa</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4</Package>
+        </Replaces>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin/qdbus</Path>
@@ -163,11 +165,14 @@
             <Dependency version="current">qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="87">qt-webkit</Package>
+        </Conflicts>
         <Files>
-            <Path fileType="data">/usr/lib/pkgconfig/*WebKit*</Path>
             <Path fileType="header">/usr/include/Qt/*WebKit*</Path>
             <Path fileType="header">/usr/include/Qt/*webkit*</Path>
             <Path fileType="header">/usr/include/QtWebKit</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/*WebKit*</Path>
         </Files>
     </Package>
 
@@ -179,12 +184,15 @@
             <!-- qgl.h requires gl.h from mesa -->
             <Dependency>mesa-devel</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="76">qt</Package>
+        </Conflicts>
         <Files>
             <!-- binaries are for development -->
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/share/qt4/mkspecs</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
-            <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/share/qt4/q3porting.xml</Path>
         </Files>
     </Package>
@@ -193,6 +201,9 @@
         <Name>qt-l10n</Name>
         <IsA>locale</IsA>
         <Summary>Translation files for Qt library and tools. Supported languages are: da, de, fr, ja, pl, ru, zh_CN, zh_TW</Summary>
+        <Conflicts>
+            <Package releaseTo="76">qt</Package>
+        </Conflicts>
         <Files>
             <Path fileType="localedata">/usr/share/qt4/translations</Path>
         </Files>
@@ -207,6 +218,9 @@
             <Dependency version="current">qt-webkit</Dependency>
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-designer</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/designer</Path>
             <Path fileType="library">/usr/lib/qt4/plugins/designer</Path>
@@ -225,6 +239,9 @@
         <RuntimeDependencies>
             <Dependency version="current">qt</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-linguist</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/linguist</Path>
             <Path fileType="data">/usr/share/qt4/phrasebooks</Path>
@@ -246,12 +263,17 @@
             <Dependency version="current">qt-webkit</Dependency>
             <Dependency version="current">qt-sql-sqlite</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-doc</Package>
+            <Package>qt-doc</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/assistant</Path>
-            <Path fileType="doc">/usr/share/doc/qt4/qch</Path>
             <Path fileType="data">/usr/share/applications/assistant.desktop</Path>
             <Path fileType="data">/usr/share/pixmaps/assistant.png</Path>
             <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/doc/qt4/qch</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/assistant.desktop">data/assistant.desktop</AdditionalFile>
@@ -279,12 +301,16 @@
             <Dependency>mesa</Dependency>
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package versionTo="4.5.3">qt-doc</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin/qtdemo</Path>
             <Path fileType="library">/usr/lib/qt4/demos</Path>
             <Path fileType="library">/usr/lib/qt4/examples</Path>
             <Path fileType="library">/usr/lib/qt4/plugins/designer/libarthurplugin.so</Path>
             <Path fileType="data">/usr/share/applications/qtdemo.desktop</Path>
+            <Path fileType="data">/usr/tests/qt4</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/qtdemo.desktop">data/qtdemo.desktop</AdditionalFile>
@@ -297,6 +323,9 @@
             <Dependency version="current">qt</Dependency>
             <Dependency>mysql-lib</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-sql-mysql</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/qt4/plugins/sqldrivers/libqsqlmysql.so</Path>
         </Files>
@@ -308,6 +337,9 @@
             <Dependency version="current">qt</Dependency>
             <Dependency>postgresql-lib</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-sql-postgresql</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/qt4/plugins/sqldrivers/libqsqlpsql.so</Path>
         </Files>
@@ -319,6 +351,9 @@
             <Dependency version="current">qt</Dependency>
             <Dependency versionFrom="3.4.1">sqlite</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-sql-sqlite</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/qt4/plugins/sqldrivers/libqsqlite.so</Path>
         </Files>
@@ -330,6 +365,9 @@
             <Dependency version="current">qt</Dependency>
             <Dependency>unixODBC</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-sql-odbc</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/qt4/plugins/sqldrivers/libqsqlodbc.so</Path>
         </Files>
@@ -342,6 +380,9 @@
             <Dependency>firebird-devel</Dependency>
             <Dependency>firebird-superserver</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>qt4-sql-ibase</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/qt4/plugins/sqldrivers/libqsqlibase.so</Path>
         </Files>
@@ -385,6 +426,34 @@
     -->
 
     <History>
+        <Update release="92">
+            <Date>2012-09-21</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="91">
+            <Date>2012-05-21</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="90">
+            <Date>2012-03-28</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="89">
+            <Date>2012-02-12</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Kaan Akşit</Name>
+            <Email>kunguz@gmail.com</Email>
+        </Update>
         <Update release="88">
             <Date>2011-08-01</Date>
             <Version>4.7.2</Version>
