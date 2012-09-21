@@ -55,7 +55,7 @@
             <Patch level="1">fedora/qt-x11-opensource-src-4.5.0-fix-qatomic-inline-asm.patch</Patch>
             <Patch level="1">fedora/qt-x11-opensource-src-4.5.1-enable_ft_lcdfilter.patch</Patch>
             <Patch level="1">fedora/qt-4.6.3-indic-rendering-bz631732.patch</Patch>
-            <!--Patch level="1">fedora/qt-4.8.1-webkit-no_Werror.patch</Patch-->
+            <Patch level="1">fedora/qt-4.8.1-webkit-no_Werror.patch</Patch>
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.6.2-cups.patch</Patch>
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.6.3-glib_eventloop_nullcheck.patch</Patch>
             <Patch level="1">fedora/qt-everywhere-opensource-src-4.7.0-beta2-kde4_plugins.patch</Patch>
