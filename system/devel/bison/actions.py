@@ -23,7 +23,7 @@ def install():
 
     #pisitools.rename("/usr/bin/yacc", "yacc.bison") 
     #some applications does not find /usr/bin/yacc so, let's dosym instead od rename
-    pisitools.dosym("/usr/bin/yacc", "yacc.bison") 
+    pisitools.dosym("/usr/bin/yacc", "/usr/bin/yacc.bison") 
     pisitools.rename("/usr/share/man/man1/yacc.1", "yacc.bison.1")
 
     pisitools.removeDir("/usr/lib/")
