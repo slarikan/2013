@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/fedora
+END
+firefox-15.0-enable-addons.patch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/fedora/firefox-15.0-enable-addons.patch
+END
+firefox-5.0-asciidel.patch
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/fedora/firefox-5.0-asciidel.patch
+END
