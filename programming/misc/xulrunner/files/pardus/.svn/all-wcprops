@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus
+END
+pardus-nsplugin-path.patch
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/pardus-nsplugin-path.patch
+END
+zemberek-firefox4.patch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/zemberek-firefox4.patch
+END
+xulrunner-mozconfig.patch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/xulrunner-mozconfig.patch
+END
+mozconfig
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/mozconfig
+END
+zemberek.diff
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/zemberek.diff
+END
+as-needed.diff
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/as-needed.diff
+END
+autoconf-213-hack.diff
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/autoconf-213-hack.diff
+END
+workaround-dbus-glib-build-error.diff
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/workaround-dbus-glib-build-error.diff
+END
+change-kmozillahelper-directory.diff
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/pardus/change-kmozillahelper-directory.diff
+END

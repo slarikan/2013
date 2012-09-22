@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files
+END
+all-pardus.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/all-pardus.js
+END
+mozilla-191-pkgconfig.patch
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/mozilla-191-pkgconfig.patch
+END
+mozilla-ps-pdf-simplify-operators.patch
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/mozilla-ps-pdf-simplify-operators.patch
+END
+ld.so.conf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/ld.so.conf
+END
+xulrunner-version.patch
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/xulrunner-version.patch
+END
+4.0-4.0.1.diff
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/4.0-4.0.1.diff
+END
+gio-extension7-0.6.diff
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/gio-extension7-0.6.diff
+END
+mozilla-191-path.patch
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/mozilla-191-path.patch
+END
+sqlite-version-strip.diff
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/sqlite-version-strip.diff
+END
+toolkit-lockdown.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pardus/!svn/ver/1697/playground/COMMON/programming/misc/xulrunner/files/toolkit-lockdown.js
+END
