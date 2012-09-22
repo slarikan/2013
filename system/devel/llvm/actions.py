@@ -42,19 +42,9 @@ def setup():
     options = "--libdir=%s \
                --datadir=/usr/share/llvm \
                --sysconfdir=/etc \
-               --disable-expensive-checks \
-               --disable-assertions \
-               --disable-debug-runtime \
-               --enable-optimized \
-               --enable-debug-symbols \
                --enable-jit \
                --enable-threads \
                --%s-pic \
-               --enable-shared \
-               --enable-targets=host \
-               --enable-bindings=all \
-               --with-binutils-include=/usr/include \
-               --enable-libffi \
                " % (libdir, pic_option)
 
     if get.buildTYPE() == "emul32":
@@ -74,7 +64,7 @@ def setup():
 #    autotools.make("-C tools/clang test")
 
 def build():
-    autotools.make("REQUIRES_RTTI=1")
+    autotools.make()
 
 def install():
     if get.buildTYPE() == "emul32":
