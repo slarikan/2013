@@ -12,17 +12,16 @@
         <IsA>app:gui</IsA>
         <Summary>Lightweight IDE for C++ development centering around Qt</Summary>
         <Description>Qt Creator is a new cross-platform integrated development environment (IDE) tailored to the needs of Qt developers.</Description>
-        <Archive sha1sum="819b038601e00a7fa20443ca02558c1c30be8229" type="targz">http://get.qt.nokia.com/qtcreator/qt-creator-2.5.0-src.tar.gz</Archive>
+        <Archive sha1sum="819b038601e00a7fa20443ca02558c1c30be8229" type="targz">http://download.qt.nokia.com/qtcreator/qt-creator-2.5.2-src.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.0">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>qt-creator</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.0">qt</Dependency>
-            <Dependency versionFrom="4.8.0">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency>qt-sql-sqlite</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -36,7 +35,14 @@
     </Package>
 
     <History>
-		<Update release="9">
+	<Update release="10">
+            <Date>2012-09-20</Date>
+            <Version>2.5.2</Version>
+            <Comment>Bump to latest stable release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+	<Update release="9">
             <Date>2012-07-20</Date>
             <Version>2.5.0</Version>
             <Comment>Bump to latest stable release</Comment>
