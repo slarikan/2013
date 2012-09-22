@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/tools
+END
+compare-locales.sh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/tools/compare-locales.sh
+END
+create-tar.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/tools/create-tar.sh
+END
+be.xpi
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/tools/be.xpi
+END
+create-locale.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/tools/create-locale.sh
+END
+create-source.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/pardus/!svn/ver/1809/playground/COMMON/network/web/firefox/files/tools/create-source.sh
+END
