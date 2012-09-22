@@ -11,6 +11,11 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    #Use it for root user instead of wheel group
+    #shelltools.system("sed -i -e 's|unix-group:wheel|unix-user:0|' src/polkitbackend/*-default.rules")
+    # Use it if we have spidermonkey 1.8.7 or newer...
+    #shelltools.system("sed -i -e '/mozjs/s:185:187:g' configure")
+    #look http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/sys-auth/polkit/polkit-0.107.ebuild
     autotools.autoreconf("-fi")
     autotools.configure("--with-pam-module-dir=/lib/security/ \
                          --with-os-type=Pardus \
@@ -18,9 +23,11 @@ def setup():
                          --enable-introspection \
                          --libexecdir=/usr/libexec/polkit-1 \
                          --disable-man-pages \
+                         --disable-gtk-doc \
                          --disable-static")
 
 def build():
+    shelltools.export('HOME', get.workDIR())
     autotools.make()
 
 def install():
@@ -28,6 +35,8 @@ def install():
 
     pisitools.dodir("/var/lib/polkit-1")
     shelltools.chmod("%s/var/lib/polkit-1" % get.installDIR(), mode=00700)
-    shelltools.chmod("%s/etc/polkit-1/localauthority" % get.installDIR(), mode=00700)
+    shelltools.chmod("%s/etc/polkit-1/rules.d" % get.installDIR(), mode=00700)
 
     pisitools.dodoc("AUTHORS", "NEWS", "README", "HACKING", "COPYING")
+    
+    

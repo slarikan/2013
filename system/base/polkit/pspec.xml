@@ -66,6 +66,7 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
+	    <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/var/lib/polkit-1</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -78,7 +79,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/man/man1/pkcheck.1">man/pkcheck.1</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/man/man1/pkexec.1">man/pkexec.1</AdditionalFile>
 
-            <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/localauthority.conf.d/70-desktop-policy.conf">70-desktop-policy.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/rules.d/70-desktop-policy.conf">70-desktop-policy.conf</AdditionalFile>
             <!-- Example policy files from fedora
             <AdditionalFile owner="root" permission="0644" target="/var/lib/polkit-1/localauthority/10-vendor.d/10-desktop-policy.pkla">10-desktop-policy.pkla</AdditionalFile>
             -->
