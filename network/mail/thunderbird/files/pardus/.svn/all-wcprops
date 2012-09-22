@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus
+END
+tr.patch
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/tr.patch
+END
+sound.wav
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/sound.wav
+END
+thunderbird-8.0-enable-addons.patch
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/thunderbird-8.0-enable-addons.patch
+END
+fix-tr-translations.patch
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/fix-tr-translations.patch
+END
+fix-mozilla-launcher.patch
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/fix-mozilla-launcher.patch
+END
+pardus-default-prefs.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/pardus-default-prefs.js
+END
+thunderbird-install-dir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/thunderbird-install-dir.patch
+END
+fix-langpack-prefs-path.patch
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/fix-langpack-prefs-path.patch
+END
+mozconfig
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/mozconfig
+END
+autoconf-213-hack.diff
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/pardus/!svn/ver/1807/playground/COMMON/network/mail/thunderbird/files/pardus/autoconf-213-hack.diff
+END
