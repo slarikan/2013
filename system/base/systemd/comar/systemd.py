@@ -53,11 +53,11 @@ def migrate_modules_autoload_d():
 
 
 def postInstall(fromVersion, fromRelease, toVersion, toRelease):
-    # Generate machine-id
     os.system("/bin/systemd-machine-id-setup &> /dev/null")
-
-    # Re-execute daemon
+    os.system("/lib/systemd/systemd-random-seed save &> /dev/null")
     os.system("/bin/systemctl daemon-reexec &> /dev/null")
+    os.system("/usr/bin/systemctl start systemd-udevd.service &> /dev/null")
+    os.system("/usr/bin/systemctl try-restart systemd-logind.service &>/dev/null")
 
     # Make sure pam_systemd is enabled
 

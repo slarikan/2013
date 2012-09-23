@@ -9,11 +9,10 @@
             <Email>erdem@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <Icon>systemd</Icon>
         <IsA>app:cli</IsA>
         <Summary>System and service manager</Summary>
         <Description>System and service manager</Description>
-        <Archive sha1sum="1bd025aec82929f4c7eb19b3fd3a0c25435e7bbb" type="tarlzma">http://www.freedesktop.org/software/systemd/systemd-187.tar.xz</Archive>
+        <Archive sha1sum="6140f66b14e00fc9911c3a0aadc15814160d774e" type="tarlzma">http://www.freedesktop.org/software/systemd/systemd-191.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.20">libblkid-devel</Dependency>
             <Dependency>libkmod-devel</Dependency>
@@ -27,6 +26,7 @@
         <Name>systemd</Name>
         <RuntimeDependencies>
             <Dependency version="current">libudev</Dependency>
+            <Dependency version="current">libsystemd</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/bin</Path>
@@ -52,8 +52,26 @@
     </Package>
 
     <Package>
+        <Name>libsystemd</Name>
+        <Files>
+            <Path fileType="library">/usr/lib/libsystemd-*.so*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libsystemd-devel</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">libsystemd</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/systemd</Path>
+            <Path fileType="header">/usr/lib/pkgconfig/libsystemd-*</Path>
+            <Path fileType="header">/usr/share/pkgconfig/systemd.pc</Path>
+        </Files>
+    </Package>
+
+    <Package>
         <Name>udev</Name>
-        <PartOf>system.base</PartOf>
         <RuntimeDepedencies>
             <Dependency version="current">libudev</Dependency>
         </RuntimeDepedencies>
@@ -130,79 +148,6 @@
     </Package>
 
     <Package>
-        <Name>libsystemd-daemon</Name>
-        <Summary>systemd-daemon libraries</Summary>
-        <Files>
-            <Path fileType="library">/usr/lib/libsystemd-daemon*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-id128</Name>
-        <Summary>systemd-id128 libraries</Summary>
-        <Files>
-            <Path fileType="library">/usr/lib/libsystemd-id128*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-journal</Name>
-        <Summary>systemd-journal libraries</Summary>
-        <Files>
-            <Path fileType="library">/usr/lib/libsystemd-journal*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-login</Name>
-        <Summary>systemd-login libraries</Summary>
-        <Files>
-            <Path fileType="library">/usr/lib/libsystemd-login*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-daemon-devel</Name>
-        <Summary>header files for systemd-daemon libraries</Summary>
-        <Files>
-            <Path fileType="header">/usr/include/systemd/sd-daemon.h</Path>
-            <Path fileType="header">/usr/include/systemd/sd-messages.h</Path>
-            <Path fileType="header">/usr/include/systemd/sd-readahead.h</Path>
-            <Path fileType="header">/usr/include/systemd/sd-shutdown.h</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/libsystemd-daemon.pc</Path>
-            <Path fileType="data">/usr/share/pkgconfig/systemd.pc</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/systemd.pc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-id128-devel</Name>
-        <Summary>header files for systemd-id128 libraries</Summary>
-        <Files>
-            <Path fileType="header">/usr/include/systemd/sd-id128.h</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/libsystemd-id128.pc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-journal-devel</Name>
-        <Summary>header files for systemd-journal libraries</Summary>
-        <Files>
-            <Path fileType="header">/usr/include/systemd/sd-journal.h</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/libsystemd-journal.pc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libsystemd-login-devel</Name>
-        <Summary>header files for systemd-login libraries</Summary>
-        <Files>
-            <Path fileType="header">/usr/include/systemd/sd-login.h</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/libsystemd-login.pc</Path>
-        </Files>
-    </Package>
-
-    <Package>
         <Name>pam_systemd</Name>
         <RuntimeDependencies>
             <Dependency version="current">libsystemd-daemon</Dependency>
@@ -240,6 +185,20 @@
     </Package>
 
     <History>
+        <Update release="80">
+            <Date>2012-09-24</Date>
+            <Version>190</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
+        <Update release="79">
+            <Date>2012-09-20</Date>
+            <Version>189</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <!-- Since last release number of udev is 77, start release number from 78 -->
         <Update release="78">
             <Date>2012-06-17</Date>
