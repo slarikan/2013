@@ -12,9 +12,10 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    autotools.autoreconf("-vfi")
+    #autotools.autoreconf("-vfi")
     options = "--enable-shared \
                --disable-static \
+               --disable-ld-version-script \
                --enable-maxmem=64 \
                --disable-dependency-tracking"
 

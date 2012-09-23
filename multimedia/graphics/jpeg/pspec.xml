@@ -20,7 +20,7 @@
             <!-- From Debian -->
             <Patch level="1">libjpeg7_7-2.diff</Patch>
             <Patch level="1">maxmem-sysconf.patch</Patch>
-            <Patch level="1">makefile.patch</Patch>
+            <!--<Patch level="1">makefile.patch</Patch>-->
 
             <!-- probably not needed but since it is non-UNIX I am keeping it for now -->
             <Patch level="1">libjpeg-buf-oflo.patch</Patch>
