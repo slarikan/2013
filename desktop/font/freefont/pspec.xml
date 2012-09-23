@@ -5,8 +5,8 @@
         <Name>freefont</Name>
         <Homepage>http://savannah.gnu.org/projects/freefont/</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>GPLv3</License>
         <IsA>data:font</IsA>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-20</Date>
+            <Version>0.0_20090104</Version>
+            <Comment>Builf for pardus-anka</Comment>
+            <Name>Çağlar Kilimci</Name>
+            <Email>ckilimci@pardus.org.tr</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-13</Date>
             <Version>0.0_20090104</Version>

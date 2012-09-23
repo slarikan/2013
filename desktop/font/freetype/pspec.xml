@@ -5,15 +5,15 @@
         <Name>freetype</Name>
         <Homepage>http://www.freetype.org/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>FTL</License>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>A high-quality and portable font engine</Summary>
         <Description>FreeType 2 is a software font engine that is designed to be small, efficient, highly customizable, and portable while capable of producing high-quality output. It can be used in graphics libraries, display servers, font conversion tools, text image generation tools, and many other products as well.</Description>
-        <Archive sha1sum="73b2c28fcaf1ff5b8beef3af4c5abe4cb1ecb7dc" type="tarbz2">http://download.savannah.gnu.org/releases/freetype/freetype-2.4.10.tar.bz2</Archive>
+        <Archive sha1sum="9d874398118c805478e81d80449dc4aa5a40b6f2" type="tarbz2">http://download.savannah.gnu.org/releases/freetype/freetype-2.4.6.tar.bz2</Archive>
         <Patches>
             <!-- Pardus patches -->
             <Patch level="1">pardus/disable-old-internals.patch</Patch>
@@ -26,6 +26,9 @@
 
             <!-- Enable Subpixel Rendering -->
             <Patch level="1">fedora/freetype-2.3.0-enable-spr.patch</Patch>
+
+            <!--2.4.7 includes this patch-->
+            <Patch level="1">freetype-2.4.6-CVE-2011-3256.patch</Patch>
         </Patches>
     </Source>
 
@@ -69,12 +72,12 @@
         </Files>
     </Package>
     <History>
-       <Update release="52">
-            <Date>2012-09-15</Date>
-            <Version>2.4.10</Version>
-            <Comment>Bump.</Comment>
-            <Name>Serdar Soytetir</Name>
-            <Email>tulliana@gmail.com</Email>
+        <Update release="52">
+            <Date>2012-09-20</Date>
+            <Version>2.4.6</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Update>
         <Update release="51">
             <Date>2011-10-21</Date>

@@ -5,8 +5,8 @@
         <Name>droid-fonts</Name>
         <Homepage>http://www.droidfonts.com</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>data:font</IsA>
@@ -30,6 +30,12 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-20</Date>
+            <Version>0.0_20100821</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>0.0_20100821</Version>

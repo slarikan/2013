@@ -5,8 +5,8 @@
         <Name>aquafont</Name>
         <Homepage>http://aquablue.milkcafe.to/</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>as-is</License>
         <IsA>data</IsA>
@@ -23,6 +23,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-20</Date>
+            <Version>2.8</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="4">
             <Date>2011-01-13</Date>
             <Version>2.8</Version>

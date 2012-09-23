@@ -5,14 +5,14 @@
         <Name>scheherazade-fonts</Name>
         <Homepage>http://scripts.sil.org</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>OFL</License>
         <IsA>data</IsA>
         <Summary>An Arabic true type font</Summary>
         <Description>Scheherazade font is providing a single Unicode-based font family that would contain a comprehensive inventory of glyphs needed for almost any Arabic-based writing system.</Description>
-        <Archive sha1sum="910b8e8f32d2712ad7342af90327ea7dbeb4e149" type="zip">ftp://ftp.sudrap.org/mnurolcay/source/ScheherazadeRegOT_1.001.zip</Archive>
+        <Archive sha1sum="f3f42177ce4393b1403c1d40840880752e7b7415" type="zip">http://pisikaynak.googlecode.com/files/ScheherazadeRegOT-1.005.zip</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-05-24</Date>
+            <Version>1.005</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="2">
             <Date>2009-05-01</Date>
             <Version>1.001</Version>

@@ -5,8 +5,8 @@
         <Name>gnu-gs-fonts-std</Name>
         <Homepage>http://www.ghostscript.com/awki</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>data</IsA>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-20</Date>
+            <Version>8.11</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-12</Date>
             <Version>8.11</Version>

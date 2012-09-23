@@ -5,8 +5,8 @@
         <Name>gbdfed</Name>
         <Homepage>http://crl.nmsu.edu/~mleisher/gbdfed.html</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>BSD</License>
         <Icon>gbdfed</Icon>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-20</Date>
+            <Version>1.6</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
+        </Update>
         <Update release="8">
             <Date>2011-02-01</Date>
             <Version>1.6</Version>

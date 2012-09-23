@@ -5,14 +5,14 @@
         <Name>Stix-fonts</Name>
         <Homepage>http://www.stixfonts.org</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>Royalty-Free</License>
         <IsA>data:font</IsA>
         <Summary>Stix Fonts</Summary>
         <Description>Comprehensive OpenType font set of mathematical symbols and alphabets.</Description>
-        <Archive sha1sum="1548195ac7450445deda25e29fc8b55870b9afa6" type="tarbz2">http://pardusarchives.googlecode.com/files/stix.tar.bz2</Archive>
+        <Archive sha1sum="e5395468199e04d4c5f4e1639c77141ce6cd54f2" type="zip">http://pisikaynak.googlecode.com/files/STIXv1.1.0.zip</Archive>
     </Source>
 
     <Package>
@@ -20,6 +20,7 @@
         <Files>
             <Path fileType="config">/etc/fonts</Path>
             <Path fileType="data">/usr/share/fonts</Path>
+            <Path fileType="data">/usr/share/doc</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/fonts/conf.avail/stix-fonts-fontconfig.conf">stix-fonts-fontconfig.conf</AdditionalFile>
@@ -31,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-05-24</Date>
+            <Version>1.1.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-13</Date>
             <Version>0.9</Version>
