@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
+#shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-vfi")
@@ -20,6 +20,7 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", \
-                    "NOTES", "README", "THANKS", "TODO", "VERSION")
+    
+    pisitools.domove("usr/share/pkgconfig/", "/usr/lib/")
+    
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "THANKS", "TODO", "VERSION")
