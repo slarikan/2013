@@ -11,8 +11,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    for i in ["mtools.texi"]:
-        pisitools.dosed(i, "/usr/local/etc", "/etc")
+    #for i in ["mtools.texi"]:
+    #    pisitools.dosed(i, "/usr/local/etc", "/etc")
 
     shelltools.export("INSTALL_PROGRAM", "install")
     autotools.autoreconf("-fi")
