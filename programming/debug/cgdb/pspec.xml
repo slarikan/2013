@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A curses frontend for GDB</Summary>
         <Description>An ncurses frontend for the GNU debugger (GDB). The goal of CGDB is to be lightweight and responsive; not encumbered with unnecessary features. The interface is designed to deliver the familiar GDB text interface, with a split screen showing the source as it executes. If you are a VI user, you will feel at home with CGDB.</Description>
-        <Archive sha1sum="a47892b3eee5d3520e5f99f207e8ca2bc18ecf43" type="targz">mirrors://sourceforge/cgdb/cgdb-0.6.5.tar.gz</Archive>
+        <Archive sha1sum="bf1d9a66909a03220438a4126bb39850bdbfea65" type="targz">mirrors://sourceforge/cgdb/cgdb-0.6.6.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-23</Date>
+            <Version>0.6.6</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmal.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.6.5</Version>
