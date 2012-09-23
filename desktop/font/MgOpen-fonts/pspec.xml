@@ -5,8 +5,8 @@
         <Name>MgOpen-fonts</Name>
         <Homepage>http://www.ellak.gr/fonts/mgopen/</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>as-is</License>
         <IsA>data:font</IsA>
@@ -27,6 +27,13 @@
    </Package>
 
    <History>
+        <Update release="5">
+            <Date>2012-09-21</Date>
+            <Version>1.1</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="4">
             <Date>2011-02-01</Date>
             <Version>1.1</Version>

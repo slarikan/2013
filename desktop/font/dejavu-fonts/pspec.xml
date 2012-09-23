@@ -5,14 +5,14 @@
         <Name>dejavu-fonts</Name>
         <Homepage>http://www.dejavu-fonts.org</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>as-is</License>
         <IsA>data:font</IsA>
         <Summary>DejaVu fonts</Summary>
         <Description>Contains DejaVu fonts that are based on Bitstream fonts, with improvements.</Description>
-        <Archive sha1sum="48fa596a40bff0e26008f84626bafe8de0fdd85c" type="tarbz2">mirrors://sourceforge/dejavu/dejavu/dejavu-fonts-2.32.tar.bz2</Archive>
+        <Archive sha1sum="62ac49903e40fcad156f153bcd96858bee0854f5" type="tarbz2">http://garr.dl.sourceforge.net/project/dejavu/dejavu/2.33/dejavu-fonts-2.33.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>fontforge</Dependency>
             <Dependency>perl-Font-TTF</Dependency>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="36">
+            <Date>2012-05-24</Date>
+            <Version>2.33</Version>
+            <Comment>Version bump</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="35">
             <Date>2011-01-18</Date>
             <Version>2.32</Version>

@@ -5,8 +5,8 @@
         <Name>Charis-compact-fonts</Name>
         <Homepage>http://scripts.sil.org/CharisSILFont</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Packager>
         <License>OFL</License>
         <IsA>data:font</IsA>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-20</Date>
+            <Version>4.106</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Sezai Yeniay</Name>
+            <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-01-13</Date>
             <Version>4.106</Version>
