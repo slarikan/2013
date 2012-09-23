@@ -15,7 +15,7 @@ WorkDir = "gdb-%s" % get.srcVERSION().replace("_", ".")
 def setup():
     pisitools.dosed("configure", "^ppl_minor_version=10", "ppl_minor_version=11")
     pisitools.dosed("configure.ac", "^ppl_minor_version=10", "ppl_minor_version=11")
-    pisitools.dosed("config/override.m4", "2.64", "2.68")
+    pisitools.dosed("config/override.m4", "2.64", "2.69")
 
     autotools.autoreconf("-vfi")
     autotools.configure("--with-system-readline \
@@ -28,7 +28,6 @@ def setup():
                          --disable-rpath \
                          --disable-werror \
                          --without-rpm \
-                         --with-libunwind \
                          --with-python \
                          --with-expat" % get.curPYTHON())
 
