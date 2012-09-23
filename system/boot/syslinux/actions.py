@@ -36,5 +36,5 @@ def install():
     #for f in tools:
     #    pisitools.insinto(datadir, f)
 
-    pisitools.dodoc("README*", "NEWS", "doc/*")
+    pisitools.dodoc("README", "NEWS", "doc/*.txt", "doc/logo/LICENSE")
 
