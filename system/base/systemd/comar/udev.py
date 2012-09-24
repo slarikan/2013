@@ -23,7 +23,9 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
 
     if os.path.exists("/lib/udev/devices/rtc"):
         os.unlink("/lib/udev/devices/rtc")
+    
+    os.system("/usr/bin/systemctl --quiet try-restart systemd-udevd.service &> /dev/null")
 
     # Migrate UDEV database
-    if fromVersion and int(fromVersion) < 165:
+    if fromVersion and int(fromVersion) < 191:
         os.system("/sbin/udevadm info --convert-db &> /dev/null")

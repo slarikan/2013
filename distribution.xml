@@ -1,8 +1,8 @@
 <PISI>
     <SourceName>Pardus</SourceName>
-    <Version>2011</Version>
-    <Description xml:lang="tr">Pardus Anka 2013 Deposu</Description>
-    <Description xml:lang="en">Pardus Anka 2013 Repository</Description>
+    <Version>2013</Version>
+    <Description xml:lang="tr">Pardus ANKA 2013 Deposu</Description>
+    <Description xml:lang="en">Pardus ANKA 2013 Repository</Description>
     <Type>Core</Type>
     <BinaryName>Pardus</BinaryName>
 </PISI>

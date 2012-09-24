@@ -6,18 +6,19 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoconf()
+    #autotools.autoconf()    
     autotools.configure("--with-rootprefix= \
                          --libexecdir=/lib \
                          --localstatedir=/var \
                          --sysconfdir=/etc \
                          --with-pamlibdir=/lib/security \
-                         --with-distro=pardus \
                          --with-usb-ids-path=/usr/share/misc/usb.ids \
                          --with-pci-ids-path=/usr/share/misc/pci.ids \
                          --with-firmware-path=/lib/firmware:/lib/firmware/updates \
                          --enable-split-usr \
                          --disable-static \
+			 --with-sysvinit-path= \
+			 --with-sysvrcd-path= \
                          --disable-selinux")
 def build():
     autotools.make()
