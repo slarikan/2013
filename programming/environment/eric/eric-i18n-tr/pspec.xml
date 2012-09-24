@@ -12,13 +12,13 @@
         <Icon>eric</Icon>
         <Summary>Turkish localication for the Eric Python IDE</Summary>
          <Description>Turkish localication for the Eric Python IDE.</Description>
-       <Archive sha1sum="cfe5a673b60ad670ee0088142439ee402a1f104c" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-tr-4.4.13.tar.gz</Archive>
+       <Archive sha1sum="4acf673a0ba737e78a6574ff369a4c5a1e4f6e34" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-tr-4.5.5.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>eric-i18n-tr</Name>
         <RuntimeDependencies>
-            <Dependency version="4.4.13">eric</Dependency>
+            <Dependency version="4.5.5">eric</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="localedata">/usr/lib</Path>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-24</Date>
+            <Version>4.5.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-04-08</Date>
             <Version>4.4.13</Version>

@@ -17,14 +17,14 @@
         Scintilla editor control. It is designed to be usable as everdays' quick and dirty
         editor as well as being usable as a professional project management tool integrating
         many advanced features Python offers the professional coder.</Description>
-        <Archive sha1sum="7f2fb8b05b7bdd7c3ce07865ecf37e5cc9a43543" type="targz">mirrors://sourceforge/eric-ide/eric4-4.4.13.tar.gz</Archive>
+        <Archive sha1sum="61a3ca02ec5e8b408a8c1891c6cfd72e38815f9b" type="targz">http://sourceforge.net/projects/eric-ide/files/eric4/stable/4.5.5/eric4-4.5.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qscintilla2-python</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">paths.patch</Patch>
+            <!--<Patch level="1">paths.patch</Patch>-->
             <Patch level="1">shebang.patch</Patch>
-            <Patch level="1">hideUpgradeMenus.patch</Patch>
+            <!--<Patch level="1">hideUpgradeMenus.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-09-24</Date>
+            <Version>4.5.5</Version>
+            <Comment>Version bump to 4.5.5</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="21">
             <Date>2011-04-08</Date>
             <Version>4.4.13</Version>
