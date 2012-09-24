@@ -6,7 +6,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    #autotools.autoconf()    
+    autotools.autoconf()    
     autotools.configure("--with-rootprefix= \
                          --libexecdir=/lib \
                          --localstatedir=/var \
