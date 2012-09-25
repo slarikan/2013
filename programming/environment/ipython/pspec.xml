@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>An enhanced interactive Python shell</Summary>
         <Description>ipython provides a replacement for the interactive Python interpreter with extra functionality.</Description>
-        <Archive sha1sum="d45b97b0f458fd517cb2bfa9ebb3c671c46a21c0" type="targz">http://ipython.scipy.org/dist/0.10.2/ipython-0.10.2.tar.gz</Archive>
+        <Archive sha1sum="6d7db4be5bc1c0caefdca8d84236be08967249d9" type="targz">https://github.com/downloads/ipython/ipython/ipython-0.13.tar.gz</Archive>
         <BuildDependencies>
             <!-- For syntax highlighting -->
             <Dependency>python-Pygments</Dependency>
@@ -30,20 +30,20 @@
             <Dependency>python-sphinx</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">clearscreen.patch</Patch>
+            <!--<Patch level="1">clearscreen.patch</Patch>-->
 
             <!-- see https://bugs.launchpad.net/ipython/+bug/339642 -->
-            <Patch>ipython_source_encode_fix.diff</Patch>
+            <!--<Patch>ipython_source_encode_fix.diff</Patch>-->
 
             <!-- Let CTRL+L clear the screen once again yay :) -->
-            <Patch level="1">fix-control-l.patch</Patch>
+            <!--<Patch level="1">fix-control-l.patch</Patch>-->
 
             <!-- Warn human friendly when wxPython is not available -->
-            <Patch level="1">debian/06_ipythonwx_importerror.patch</Patch>
+            <!--<Patch level="1">debian/06_ipythonwx_importerror.patch</Patch>-->
 
             <!-- pycolor: Wrong filename given -> print error See https://bugzilla.redhat.com/show_bug.cgi?id=628742
             will be fixed in 0.11 -->
-            <Patch level="1">ipython-0.10-pycolor-wrong-filename.patch</Patch>
+            <!--<Patch level="1">ipython-0.10-pycolor-wrong-filename.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -109,6 +109,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-09-25</Date>
+            <Version>0.13</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="17">
             <Date>2011-04-09</Date>
             <Version>0.10.2</Version>
