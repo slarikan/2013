@@ -11,7 +11,7 @@
         <License>MIT</License>
         <Summary>X.Org X Server</Summary>
         <Description>X server is the main application that allows a graphical interface.</Description>
-        <Archive sha1sum="03be24d6906f3ed3237057a5a7df2b02723c9749" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.9.5.tar.bz2</Archive>
+        <Archive sha1sum="b29aef6ab4924e2b034ccb26b289e929d61a2555" type="tarbz2">mirrors://xorg/individual/xserver/xorg-server-1.13.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>font-util</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -40,83 +40,36 @@
         </BuildDependencies>
         <Patches>
             <!--Fedoras package name is named as "xorg-x11-server" (same as the git repo)-->
-            <!--The origin/f14/master branch currently maintains the 1.9.x version, look there for patches-->
-            <Patch level="1">fedora/xserver-1.4.99-pic-libxf86config.patch</Patch>
             <Patch level="1">fedora/xserver-1.4.99-ssh-isnt-local.patch</Patch>
-            <Patch level="1">fedora/xserver-1.5.0-bg-none-root.patch</Patch>
-            <Patch level="1">fedora/xserver-1.5.0-projector-fb-size.patch</Patch>
-            <Patch level="1">fedora/xserver-1.5.1-mode-debug.patch</Patch>
-            <Patch level="1">fedora/xserver-1.6.0-displayfd.patch</Patch>
             <Patch level="1">fedora/xserver-1.6.0-less-acpi-brokenness.patch</Patch>
-            <Patch level="1">fedora/xserver-1.6.99-hush-prerelease-warning.patch</Patch>
-            <Patch level="1">fedora/xserver-1.9.0-tcflush-fix.patch</Patch>
-            <Patch level="1">fedora/xserver-1.9.0-vbe-panelid-sanity.patch</Patch>
-            <Patch level="1">fedora/xserver-1.9.0-classic-default-mode.patch</Patch>
-            <Patch level="1">fedora/xserver-1.9.99.901-xkb-repeat-issues.patch</Patch>
-            <Patch level="1">fedora/xserver-1.10.1-memcpy-abuse.patch</Patch>
+            <Patch level="1">fedora/xserver-1.6.99-right-of.patch</Patch>
+            <Patch level="1">fedora/xserver-1.12.2-xorg-touch-test.patch</Patch>
+            <Patch level="1">fedora/xserver-1.12-xkb-fill-in-keycode-and-event-type-for-slow-keys-ena.patch</Patch>
 
-            <!--Suse patches can be found just like the VNC patches under X11:common-->
-            <!--Package name is like the Fedora one "xorg-x11-server"-->
-            <Patch level="1">suse/bug534768-prefer_local_symbols.patch</Patch>
-            <Patch level="1">suse/xserver-1.6.1-nouveau.patch</Patch>
-            <Patch level="0">suse/autoconfig_fallback_fbdev_first.diff</Patch>
-            <Patch level="1">suse/CVE-2010-2240-address_space_limit.patch</Patch>
-            <Patch level="1">suse/CVE-2010-2240-tree_depth_limit.patch</Patch>
-            <Patch level="0">suse/fix_fglrx_screendepth_issue.patch</Patch>
-            <Patch level="0">suse/p_xkills_wrong_client.diff</Patch>
-            <Patch level="1">suse/Replace-malloc-with-calloc-to-initialize-the-buffers.patch</Patch>
-
-            <!--Actually there is no Vnc support at X at all. But we add custom Suse patches just for that.-->
-            <!--These patches can be found on build.opensuse.org under X11:common category-->
-            <Patch level="1">suse/xorg-server-xf4vnc.patch</Patch>
-            <Patch level="0">suse/xorg-server-xf4vnc-disable-dmxvnc.diff</Patch>
-            <Patch level="1">suse/xorg-server-xf4vnc-TranslateNone.diff</Patch>
-            <Patch level="0">suse/xorg-server-xf4vnc-abi-version.diff</Patch>
-            <Patch level="0">suse/xorg-server-xf4vnc-cutpaste.diff</Patch>
-            <Patch level="1">suse/xorg-server-xf4vnc-busyloop.diff</Patch>
-            <Patch level="1">suse/xorg-server-xf4vnc-clientTimeout.diff</Patch>
-            <Patch level="1">suse/xorg-server-xf4vnc-fix.diff</Patch>
-            <Patch level="0">suse/xorg-server-xf4vnc-fixes_1_8.diff</Patch>
-            <Patch level="1">suse/xorg-server-xf4vnc-fixes_1_9.diff</Patch>
-
-
-            <!--
-            <Patch level="1">ubuntu/111_armel-drv-fallbacks.patch</Patch>
-            <Patch level="1">ubuntu/112_xaa-fbcomposite-fix-negative-size.patch</Patch>
-            <Patch level="1">ubuntu/184_virtual_devices_autodetect.patch</Patch>
-            <Patch level="1">ubuntu/196_xvfb-fbscreeninit-handling.patch</Patch>
-            <Patch level="1">ubuntu/199_xfvb-help-typo.patch</Patch>
-            -->
-            <Patch level="1">ubuntu/121_only_switch_vt_when_active.diff</Patch>
+            <!--Ubuntu Patches -->
+            <Patch level="1">ubuntu/001_fedora_extramodes.patch</Patch>
+            <Patch level="1">ubuntu/02_Add-libnettle-as-option-for-sha1.diff</Patch>
+            <Patch level="1">ubuntu/105_nvidia_fglrx_autodetect.patch</Patch>
             <Patch level="1">ubuntu/122_xext_fix_card32_overflow_in_xauth.patch</Patch>
             <Patch level="1">ubuntu/157_check_null_modes.patch</Patch>
             <Patch level="1">ubuntu/162_null_crtc_in_rotation.patch</Patch>
-            <Patch level="1">ubuntu/166_nullptr_xinerama_keyrepeat.patch</Patch>
+            <Patch level="1">ubuntu/165_man_xorg_conf_no_device_ident.patch</Patch>
             <Patch level="1">ubuntu/167_nullptr_xisbread.patch</Patch>
-            <Patch level="1">ubuntu/169_mipointer_nullptr_checks.patch</Patch>
-            <Patch level="1">ubuntu/172_cwgetbackingpicture_nullptr_check.patch</Patch>
-            <Patch level="1">ubuntu/187_edid_quirk_hp_nc8430.patch</Patch>
+            <Patch level="1">ubuntu/168_glibc_trace_to_stderr.patch</Patch>
             <Patch level="1">ubuntu/188_default_primary_to_first_busid.patch</Patch>
-            <Patch level="1">ubuntu/197_xvfb-randr.patch</Patch>
-            <Patch level="1">ubuntu/200_randr-null.patch</Patch>
+            <Patch level="1">ubuntu/190_cache-xkbcomp_output_for_fast_start_up.patch</Patch>
+            <Patch level="1">ubuntu/208_switch_on_release.diff</Patch>
+            <Patch level="1">ubuntu/226_fall_back_to_autoconfiguration.patch</Patch>
+            <Patch level="1">ubuntu/227_null_ptr_midispcur.patch</Patch>
+            <Patch level="1">ubuntu/228_autobind_gpu.patch</Patch>
+            <Patch level="1">ubuntu/229_udev-fix.diff</Patch>
+            <Patch level="1">ubuntu/230-fix-compat-output-selection.patch</Patch>
+            <Patch level="1">ubuntu/231-scan-pci-after-probing-devices.patch</Patch>
 
             <Patch level="1">edid-quirk-for-apple-lcd.patch</Patch>
 
-            <!-- xserver 1.9 ABI/API changes for xf4vnc -->
-<!--            <Patch level="1">xf4vnc-xserver19-abi.patch</Patch>-->
-
             <!-- Default module path -->
             <Patch level="1">default-module-path.patch</Patch>
-
-            <!-- Improve autoconfiguration -->
-            <!--This patch defines the order which drivers are loaded automatically-->
-            <!--If one card fails to load (i.e older Nvidia cards), this is the first place to look-->
-            <!--Upstream has a different solution, thus review this patch at every update-->
-            <Patch level="1">autoconfigure.patch</Patch>
-
-            <!--Security fixes CVE-4028, 4029-->
-            <Patch level="1">fix-cve-2011-4029-file-permission-change-vulnerability.patch</Patch>
-            <Patch level="1">fix-cve-2011-4028-file-disclosure-vulnerability.patch</Patch>
         </Patches>
     </Source>
 
@@ -274,6 +227,13 @@
     </Package>
 
     <History>
+        <Update release="90">
+            <Date>2012-09-25</Date>
+            <Version>1.13.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="89" type="security">
             <Date>2011-10-19</Date>
             <Version>1.9.5</Version>
