@@ -5,8 +5,8 @@
         <Name>b43-firmware</Name>
         <Homepage>http://www.linuxwireless.org/en/users/Drivers/b43</Homepage>
         <Packager>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>freedist</License>
         <IsA>data</IsA>

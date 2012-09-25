@@ -5,8 +5,8 @@
         <Name>libgdiplus</Name>
         <Homepage>http://www.mono-project.com</Homepage>
         <Packager>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>

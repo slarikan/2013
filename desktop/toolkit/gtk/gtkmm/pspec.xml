@@ -5,8 +5,8 @@
         <Name>gtkmm</Name>
         <Homepage>http://gtkmm.sourceforge.net</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
@@ -15,7 +15,7 @@
         <Archive sha1sum="e031431e24e7e8cb44111ffd994fca30c70e923e" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtkmm/3.4/gtkmm-3.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-	    <Dependency>atkmm-devel</Dependency>
+        <Dependency>atkmm-devel</Dependency>
             <Dependency>glibmm-devel</Dependency>
             <Dependency>cairomm-devel</Dependency>
             <Dependency>pangomm-devel</Dependency>

@@ -3,8 +3,8 @@
         <Name>leptonica</Name>
         <Homepage>http://code.google.com/p/leptonica/</Homepage>
         <Packager>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
 	<PartOf>multimedia.plugin</PartOf>

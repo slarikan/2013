@@ -5,8 +5,8 @@
         <Name>herqq</Name>
         <Homepage>http://www.herqq.org</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv3+</License>
         <IsA>library</IsA>

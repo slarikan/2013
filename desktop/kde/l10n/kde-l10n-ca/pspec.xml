@@ -5,8 +5,8 @@
         <Name>kde-l10n-ca</Name>
         <Homepage>http://www.kde.org/</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>locale:ca</IsA>

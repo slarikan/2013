@@ -5,8 +5,8 @@
         <Name>qjackctl</Name>
         <Homepage>http://qjackctl.sourceforge.net</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>qjackctl</Icon>

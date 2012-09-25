@@ -5,8 +5,8 @@
         <Name>libgssglue</Name>
         <Homepage>http://www.citi.umich.edu/projects/nfsv4/linux</Homepage>
         <Packager>
-            <Name>Serdar Soytetir</Name>
-	    <Email>tulliana@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+	    <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

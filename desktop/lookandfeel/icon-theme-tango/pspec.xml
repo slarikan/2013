@@ -5,8 +5,8 @@
         <Name>icon-theme-tango</Name>
         <Homepage>http://tango.freedesktop.org</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>CCPL-Attribution-ShareAlike-2.5</License>
         <IsA>data</IsA>

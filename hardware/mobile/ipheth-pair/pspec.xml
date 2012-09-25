@@ -5,8 +5,8 @@
         <Name>ipheth-pair</Name>
         <Homepage>http://giagio.com/wiki/moin.cgi/iPhoneEthernetDriver</Homepage>
         <Packager>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>app:console</IsA>

@@ -5,8 +5,8 @@
         <Name>telepathy-sunshine</Name>
         <Homepage>http://telepathy.freedesktop.org/wiki</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3+</License>
         <IsA>library</IsA>

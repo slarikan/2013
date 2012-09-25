@@ -3,8 +3,8 @@
         <Name>kadu</Name>
         <Homepage>http://www.kadu.im/w/English:Main_Page</Homepage>
         <Packager>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
         <PartOf>network.chat</PartOf>

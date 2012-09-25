@@ -5,8 +5,8 @@
         <Name>iotop</Name>
         <Homepage>http://guichaz.free.fr/iotop/</Homepage>
         <Packager>
-            <Name>Hüseyin Berberoğlu</Name>
-            <Email>hberberoglu@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

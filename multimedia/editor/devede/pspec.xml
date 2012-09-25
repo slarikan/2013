@@ -5,8 +5,8 @@
         <Name>devede</Name>
         <Homepage>http://www.rastersoft.com/programas/devede.html</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3+</License>
         <PartOf>multimedia.editor</PartOf>

@@ -5,8 +5,8 @@
         <Name>nginx</Name>
         <Homepage>http://www.nginx.net/</Homepage>
         <Packager>
-            <Name>Kaan Özdinçer</Name>
-            <Email>kozdincer@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>service</IsA>

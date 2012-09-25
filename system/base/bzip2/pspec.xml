@@ -5,8 +5,8 @@
         <Name>bzip2</Name>
         <Homepage>http://www.bzip.org/</Homepage>
         <Packager>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BZIP2</License>
         <IsA>app:console</IsA>

@@ -5,8 +5,8 @@
         <Name>ddrescue</Name>
         <Homepage>http://www.gnu.org/software/ddrescue/ddrescue.html</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
         <IsA>app:console</IsA>

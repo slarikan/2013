@@ -5,8 +5,8 @@
         <Name>openclipart</Name>
         <Homepage>http://www.openclipart.org</Homepage>
         <Packager>
-            <Name>Bertan Gündoğdu</Name>
-            <Email>bertan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>public-domain</License>
         <IsA>data</IsA>

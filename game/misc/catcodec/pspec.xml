@@ -5,8 +5,8 @@
         <Name>catcodec</Name>
         <Homepage>http://www.openttd.org/download-catcodec</Homepage>
         <Packager>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

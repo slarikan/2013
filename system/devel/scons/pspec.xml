@@ -5,8 +5,8 @@
         <Name>scons</Name>
         <Homepage>http://www.scons.org</Homepage>
         <Packager>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <IsA>app:console</IsA>

@@ -5,8 +5,8 @@
         <Name>systemd</Name>
         <Homepage>http://www.freedesktop.org/wiki/Software/systemd</Homepage>
         <Packager>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:cli</IsA>
@@ -150,9 +150,9 @@
     <Package>
         <Name>pam_systemd</Name>
         <RuntimeDependencies>
-            <Dependency version="current">libsystemd-daemon</Dependency>
+            <Dependency version="current">libsystemd</Dependency>
         </RuntimeDependencies>
-        <Summary>systemd libraries</Summary>
+        <Summary>systemd pam library</Summary>
         <Files>
             <Path fileType="library">/lib/security/pam_systemd.so</Path>
         </Files>

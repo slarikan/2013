@@ -5,8 +5,8 @@
         <Name>rubygems</Name>
         <Homepage>http://rubyforge.org/projects/rubygems</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Ruby</License>
         <IsA>app:console</IsA>

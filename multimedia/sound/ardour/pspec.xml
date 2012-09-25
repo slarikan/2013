@@ -5,8 +5,8 @@
         <Name>ardour</Name>
         <Homepage>http://www.ardour.org/</Homepage>
         <Packager>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>

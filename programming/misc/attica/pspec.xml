@@ -5,8 +5,8 @@
         <Name>attica</Name>
         <Homepage>http://techbase.kde.org/Development/Tutorials/Collaboration/Attica/Introduction</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
         <Name>hunspell</Name>
         <Homepage>http://hunspell.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MPL-1.1</License>
         <License>GPLv2</License>

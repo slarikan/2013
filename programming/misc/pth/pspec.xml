@@ -5,8 +5,8 @@
         <Name>pth</Name>
         <Homepage>http://www.gnu.org/software/pth/</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

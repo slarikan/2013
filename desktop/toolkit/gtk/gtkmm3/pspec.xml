@@ -5,8 +5,8 @@
         <Name>gtkmm3</Name>
         <Homepage>http://gtkmm.sourceforge.net</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
@@ -15,14 +15,14 @@
         <Archive sha1sum="e031431e24e7e8cb44111ffd994fca30c70e923e" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtkmm/3.4/gtkmm-3.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="3.4.0">gtk3-devel</Dependency>
-	    <Dependency versionFrom="2.22.1">atkmm-devel</Dependency>
+        <Dependency versionFrom="2.22.1">atkmm-devel</Dependency>
             <Dependency versionFrom="2.32.0">glibmm-devel</Dependency>
             <Dependency versionFrom="1.9.2">cairomm-devel</Dependency>
             <Dependency versionFrom="2.27.1">pangomm-devel</Dependency>
-	    <Dependency versionFrom="2.22.1">gdk-pixbuf-devel</Dependency>
+        <Dependency versionFrom="2.22.1">gdk-pixbuf-devel</Dependency>
             <Dependency>libsigc++-devel</Dependency>
-	    <Dependency>libXrandr-devel</Dependency>
-	    <Dependency>libXcursor-devel</Dependency>
+        <Dependency>libXrandr-devel</Dependency>
+        <Dependency>libXcursor-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,13 +30,13 @@
         <Name>gtkmm3</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="3.4.0">gtk3</Dependency>
-	    <Dependency versionFrom="2.22.1">atkmm</Dependency>
+        <Dependency versionFrom="2.22.1">atkmm</Dependency>
             <Dependency versionFrom="2.32.0">glibmm</Dependency>
             <Dependency versionFrom="1.9.2">cairomm</Dependency>
             <Dependency versionFrom="2.27.1">pangomm</Dependency>
-	    <Dependency versionFrom="2.22.1">gdk-pixbuf</Dependency>
-	    <Dependency>libXrandr</Dependency>
-	    <Dependency>libXcursor</Dependency>
+        <Dependency versionFrom="2.22.1">gdk-pixbuf</Dependency>
+        <Dependency>libXrandr</Dependency>
+        <Dependency>libXcursor</Dependency>
             <Dependency>libsigc++</Dependency>
         </RuntimeDependencies>
         <Files>

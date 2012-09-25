@@ -5,8 +5,8 @@
         <Name>python-papyon</Name>
         <Homepage>http://www.freedesktop.org/wiki/Software/papyon</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
         <IsA>library</IsA>

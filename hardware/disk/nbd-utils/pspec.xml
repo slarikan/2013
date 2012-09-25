@@ -5,8 +5,8 @@
         <Name>nbd-utils</Name>
         <Homepage>http://nbd.sourceforge.net</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Summary>Network Block Device user-space tools</Summary>

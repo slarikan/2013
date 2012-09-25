@@ -5,8 +5,8 @@
         <Name>istanbul</Name>
         <Homepage>http://live.gnome.org/Istanbul</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>istanbul</Icon>

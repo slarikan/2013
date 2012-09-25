@@ -5,8 +5,8 @@
         <Name>gtkhtml3</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2</License>
@@ -26,7 +26,7 @@
             <Dependency>iso-codes</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>icon-theme-gnome</Dependency>
-	    <Dependency>gsettings-desktop-schemas-devel</Dependency>
+        <Dependency>gsettings-desktop-schemas-devel</Dependency>
         </BuildDependencies>
         <!--<Patches>
             <Patch level="1">components.editor.patch</Patch>
@@ -44,7 +44,7 @@
             <Dependency>enchant</Dependency>
             <Dependency>iso-codes</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-	    <Dependency>gsettings-desktop-schemas</Dependency>
+        <Dependency>gsettings-desktop-schemas</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -5,8 +5,8 @@
         <Name>python-docs</Name>
         <Homepage>http://docs.python.org/release/2.7.1/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>PSF-2.2</License>
         <IsA>data:doc</IsA>

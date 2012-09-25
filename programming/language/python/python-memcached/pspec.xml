@@ -5,8 +5,8 @@
         <Name>python-memcached</Name>
         <Homepage>http://www.tummy.com/Community/software/python-memcached/</Homepage>
         <Packager>
-            <Name>Meltem Parmaksız</Name>
-            <Email>meltem@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>PYTHON</License>
         <IsA>library</IsA>

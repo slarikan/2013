@@ -5,8 +5,8 @@
         <Name>pymol</Name>
         <Homepage>http://www.pymol.org</Homepage>
         <Packager>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <License>BSD</License>

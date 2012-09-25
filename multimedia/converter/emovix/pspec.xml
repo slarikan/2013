@@ -6,8 +6,8 @@
         <Name>emovix</Name>
         <Homepage>http://movix.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

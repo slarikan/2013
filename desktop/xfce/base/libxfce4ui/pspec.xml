@@ -5,8 +5,8 @@
         <Name>libxfce4ui</Name>
         <Homepage>http://xfce.org</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2</License>
         <IsA>library</IsA>
@@ -53,7 +53,7 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share</Path>
-	    <Path fileType="data">/usr/bin</Path>
+        <Path fileType="data">/usr/bin</Path>
         </Files>
     </Package>
 

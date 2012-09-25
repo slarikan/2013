@@ -5,8 +5,8 @@
         <Name>pbzip2</Name>
         <Homepage>http://compression.ca/pbzip2/</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>app:console</IsA>

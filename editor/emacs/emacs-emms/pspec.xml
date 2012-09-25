@@ -5,8 +5,8 @@
         <Name>emacs-emms</Name>
         <Homepage>http://www.gnu.org/software/emms/</Homepage>
         <Packager>
-            <Name>Aşkın Yollu</Name>
-            <Email>askin@askin.ws</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

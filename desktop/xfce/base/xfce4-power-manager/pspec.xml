@@ -5,8 +5,8 @@
         <Name>xfce4-power-manager</Name>
         <Homepage>http://www.xfce.org</Homepage>
         <Packager>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
@@ -18,15 +18,15 @@
         <BuildDependencies>>
             <Dependency>upower</Dependency>
             <Dependency>libXrandr-devel</Dependency>
-	    <Dependency>libnotify-devel</Dependency>
+        <Dependency>libnotify-devel</Dependency>
             <Dependency version="4.10.0">xfconf-devel</Dependency>
             <Dependency version="4.10.0">libxfce4util-devel</Dependency>
-	    <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
-	    <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
+        <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
+        <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
-	    <Dependency>polkit-devel</Dependency>
-	    <Dependency>ConsoleKit-devel</Dependency>
-	    <Dependency>hal-devel</Dependency>
+        <Dependency>polkit-devel</Dependency>
+        <Dependency>ConsoleKit-devel</Dependency>
+        <Dependency>hal-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -38,25 +38,25 @@
         <Name>xfce4-power-manager</Name>
         <RuntimeDependencies>
             <Dependency>libXrandr</Dependency>
-	    <Dependency>libnotify</Dependency>
+        <Dependency>libnotify</Dependency>
             <Dependency version="4.10.0">xfconf</Dependency>
             <Dependency version="4.10.0">libxfce4util</Dependency>
-	    <Dependency version="4.10.0">libxfce4ui</Dependency>
-	    <Dependency version="4.10.0">xfce4-panel</Dependency>
+        <Dependency version="4.10.0">libxfce4ui</Dependency>
+        <Dependency version="4.10.0">xfce4-panel</Dependency>
             <Dependency>libglade</Dependency>
-	    <Dependency>polkit</Dependency>
-	    <Dependency>ConsoleKit</Dependency>
-	    <Dependency>hal</Dependency>
+        <Dependency>polkit</Dependency>
+        <Dependency>ConsoleKit</Dependency>
+        <Dependency>hal</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>upower</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="data">/usr/sbin</Path>
-	    <Path fileType="data">/usr/bin</Path>
-	    <Path fileType="data">/usr/share</Path>
-	    <Path fileType="data">/usr/lib/xfce4</Path>
-	    <Path fileType="data">/etc/xdg/autostart</Path>
+        <Path fileType="data">/usr/sbin</Path>
+        <Path fileType="data">/usr/bin</Path>
+        <Path fileType="data">/usr/share</Path>
+        <Path fileType="data">/usr/lib/xfce4</Path>
+        <Path fileType="data">/etc/xdg/autostart</Path>
         </Files>
     </Package>
 

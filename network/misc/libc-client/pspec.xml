@@ -5,8 +5,8 @@
         <Name>libc-client</Name>
         <Homepage>http://www.washington.edu/imap/</Homepage>
         <Packager>
-            <Name>Mete Bilgin</Name>
-            <Email>mbilgin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>service</IsA>

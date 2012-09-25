@@ -5,8 +5,8 @@
         <Name>python-kaa-metadata</Name>
         <Homepage>http://doc.freevo.org/2.0/Kaa</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

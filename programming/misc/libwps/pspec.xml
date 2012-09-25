@@ -5,8 +5,8 @@
         <Name>libwps</Name>
         <Homepage>http://sourceforge.net/projects/libwps</Homepage>
         <Packager>
-            <Name>Bertan Gündoğdu</Name>
-            <Email>bertan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

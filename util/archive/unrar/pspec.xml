@@ -5,8 +5,8 @@
         <Name>unrar</Name>
         <Homepage>http://www.rarsoft.com/rar_add.htm</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>unRAR</License>
         <IsA>app:console</IsA>

@@ -5,8 +5,8 @@
         <Name>pd</Name>
         <Homepage>http://puredata.info/</Homepage>
         <Packager>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

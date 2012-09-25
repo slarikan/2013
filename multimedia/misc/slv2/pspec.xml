@@ -5,8 +5,8 @@
         <Name>slv2</Name>
         <Homepage>http://drobilla.net/software/slv2</Homepage>
         <Packager>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
         <IsA>library</IsA>

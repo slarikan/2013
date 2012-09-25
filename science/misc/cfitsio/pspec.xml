@@ -5,8 +5,8 @@
         <Name>cfitsio</Name>
         <Homepage>http://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>

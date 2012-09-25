@@ -5,14 +5,14 @@
         <Name>memtest86</Name>
         <Homepage>http://www.memtest.org/</Homepage>
         <Packager>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>Memory tester</Summary>
         <Description>Memory tester for x86 and x86_64 devices for x86 and 64bit x86 compatible computers. It should be started from boot menu.</Description>
-        <Archive sha1sum="a5a912be36d27e8886a07ae3ab2a2531711eca1e" type="targz">http://www.memtest.org/download/4.10/memtest86+-4.10.tar.gz</Archive>
+        <Archive sha1sum="df49a3d0b003c575d5a26dedc3d66dbe905db1b6" type="targz">http://www.memtest.org/download/4.20/memtest86+-4.20.tar.gz</Archive>
         <Patches>
             <Patch level="1">no-hardcoded-cc.patch</Patch>
             <Patch level="1">linkonce.patch</Patch>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-09-24</Date>
+            <Version>4.20</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2010-10-12</Date>
             <Version>4.10</Version>

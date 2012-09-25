@@ -6,8 +6,8 @@
         <Name>eclipse</Name>
         <Homepage>http://www.eclipse.org</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>EPL-1.0</License>
         <Icon>eclipse</Icon>

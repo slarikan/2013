@@ -5,8 +5,8 @@
         <Name>metis</Name>
         <Homepage>http://glaros.dtc.umn.edu/gkhome/metis/metis/overview</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>

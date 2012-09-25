@@ -6,8 +6,8 @@
         <Name>linuxdcpp</Name>
         <Homepage>https://launchpad.net/linuxdcpp</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>linuxdcpp</Icon>

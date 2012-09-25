@@ -5,8 +5,8 @@
         <Name>kmouth</Name>
         <Homepage>http://kde.org/applications/utilities/kmouth</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>kmouth</Icon>
@@ -74,6 +74,6 @@
             <Comment>First release</Comment>
             <Name>Anıl Özbek</Name>
             <Email>ozbekanil@gmail.com</Email>
-	  </Update>
+      </Update>
     </History>
 </PISI>

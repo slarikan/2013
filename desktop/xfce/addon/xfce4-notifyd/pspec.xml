@@ -5,12 +5,12 @@
         <Name>xfce4-notifyd</Name>
         <Homepage>http://goodies.xfce.org/projects/applications/xfce4-notifyd</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+    <PartOf>desktop.xfce.addon</PartOf>
         <Summary>A notification deamon</Summary>
         <Description>The Xfce Notify Daemon (xfce4-notifyd for short) is a smallish program that implements the “server-side” portion of the Freedesktop desktop notifications specification.</Description>
         <Archive sha1sum="31888132d949cc7b47d12889b8aaf5dabc546d8b" type="tarbz2">http://archive.xfce.org/src/apps/xfce4-notifyd/0.2/xfce4-notifyd-0.2.2.tar.bz2</Archive>
@@ -23,7 +23,7 @@
             <Dependency version="4.10.0">xfconf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-	    <Patch level="1">settings-manager.patch</Patch>
+        <Patch level="1">settings-manager.patch</Patch>
             <Patch level="1">translations.patch</Patch>
         </Patches>
     </Source>

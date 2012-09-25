@@ -5,8 +5,8 @@
         <Name>flashplugin</Name>
         <Homepage>http://labs.adobe.com/technologies/flashplayer10</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Macromedia</License>
         <IsA>library</IsA>

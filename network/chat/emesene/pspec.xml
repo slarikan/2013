@@ -5,8 +5,8 @@
         <Name>emesene</Name>
         <Homepage>http://www.emesene.org</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <Icon>emesene</Icon>

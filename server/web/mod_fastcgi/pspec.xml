@@ -5,8 +5,8 @@
         <Name>mod_fastcgi</Name>
         <Homepage>http://www.fastcgi.com</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>FastCGI</License>
         <IsA>library</IsA>

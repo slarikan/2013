@@ -5,8 +5,8 @@
         <Name>gtk-style-oxygen</Name>
         <Homepage>https://projects.kde.org/projects/playground/artwork/oxygen-gtk</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>data</IsA>
@@ -59,7 +59,7 @@
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
         </Update>
-	<Update release="19">
+    <Update release="19">
             <Date>2011-05-22</Date>
             <Version>1.0.5</Version>
             <Comment>Version bump to 1.0.5</Comment>

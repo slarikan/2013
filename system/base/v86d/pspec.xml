@@ -5,8 +5,8 @@
         <Name>v86d</Name>
         <Homepage>http://dev.gentoo.org/~spock/projects/uvesafb/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>

@@ -5,8 +5,8 @@
         <Name>fop</Name>
         <Homepage>http://xmlgraphics.apache.org/fop</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
         <Icon>fop</Icon>

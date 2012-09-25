@@ -5,8 +5,8 @@
         <Name>cg</Name>
         <Homepage>http://developer.nvidia.com/object/cg_toolkit.html</Homepage>
         <Packager>
-            <Name>Meltem Parmaksız</Name>
-            <Email>meltem@comu.edu.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>NVIDIA</License>
         <IsA>library</IsA>

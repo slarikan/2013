@@ -5,8 +5,8 @@
         <Name>byobu</Name>
         <Homepage>https://launchpad.net/byobu</Homepage>
         <Packager>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
         <IsA>app:console</IsA>

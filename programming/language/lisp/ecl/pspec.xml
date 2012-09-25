@@ -5,8 +5,8 @@
         <Name>ecl</Name>
         <Homepage>http://ecls.sourceforge.net</Homepage>
         <Packager>
-            <Name>Güngör Erseymen</Name>
-            <Email>gelurine@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2+</License>
         <IsA>app:console</IsA>

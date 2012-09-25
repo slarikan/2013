@@ -5,8 +5,8 @@
         <Name>audacious-plugins</Name>
        <Homepage>http://audacious-media-player.org</Homepage>
         <Packager>
-        <Name>Erdem Artan</Name>
-        <Email>baDibere@gmail.com</Email>
+        <Name>Pardus ANKA Admins</Name>
+        <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>data</IsA>

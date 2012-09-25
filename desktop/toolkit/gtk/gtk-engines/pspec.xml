@@ -5,8 +5,8 @@
         <Name>gtk-engines</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
@@ -16,9 +16,9 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-	  <Patch level="1">glib-timer.patch</Patch>
-	</Patches>
+    <Patches>
+      <Patch level="1">glib-timer.patch</Patch>
+    </Patches>
     </Source>
 
     <Package>

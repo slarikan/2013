@@ -5,8 +5,8 @@
         <Name>python-icu</Name>
         <Homepage>http://pyicu.osafoundation.org/</Homepage>
         <Packager>
-            <Name>Renan Çakırerk</Name>
-            <Email>renan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>

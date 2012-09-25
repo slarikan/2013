@@ -5,8 +5,8 @@
         <Name>python-gdmodule</Name>
         <Homepage>http://newcenturycomputers.net/projects/gdmodule.html</Homepage>
         <Packager>
-            <Name>Renan Çakırerk</Name>
-            <Email>renan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

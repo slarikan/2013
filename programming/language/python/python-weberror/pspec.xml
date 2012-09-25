@@ -5,8 +5,8 @@
         <Name>python-weberror</Name>
         <Homepage>http://pythonpaste.org/webob/</Homepage>
         <Packager>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>

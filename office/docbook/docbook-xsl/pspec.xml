@@ -5,8 +5,8 @@
         <Name>docbook-xsl</Name>
         <Homepage>http://wiki.docbook.org/topic/DocBookXslStylesheets</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>data</IsA>

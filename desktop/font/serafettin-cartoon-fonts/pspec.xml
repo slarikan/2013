@@ -5,8 +5,8 @@
         <Name>serafettin-cartoon-fonts</Name>
         <Homepage>http://serafettin.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Sezai Yeniay</Name>
-	    <Email>sezaiyeniay@ozgurlukicin.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+        <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>data:font</IsA>
@@ -40,7 +40,7 @@
             <Version>0.5.1</Version>
                 <Comment>First release.</Comment>
             <Name>Sezai Yeniay</Name>
-	    <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Update>
     </History>
 </PISI>

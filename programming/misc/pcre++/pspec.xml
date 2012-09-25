@@ -5,8 +5,8 @@
         <Name>pcre++</Name>
         <Homepage>http://www.daemon.de/PCRE</Homepage>
         <Packager>
-            <Name>Mete Bilgin</Name>
-            <Email>metebilgin48@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
         <Name>irrlicht</Name>
         <Homepage>http://irrlicht.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>ZLIB</License>
         <IsA>library</IsA>

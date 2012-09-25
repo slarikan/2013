@@ -5,8 +5,8 @@
         <Name>postfix</Name>
         <Homepage>http://www.postfix.com/</Homepage>
         <Packager>
-            <Name>Kaan Özdinçer</Name>
-            <Email>kozdincer@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>IPL-1</License>
         <IsA>service</IsA>

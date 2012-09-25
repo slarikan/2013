@@ -5,8 +5,8 @@
         <Name>exaile</Name>
         <Homepage>http://www.exaile.org/</Homepage>
         <Packager>
-            <Name>Erdem Artan</Name>
-            <Email>baDibere@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPL-2</License>
         <IsA>app:gui</IsA>

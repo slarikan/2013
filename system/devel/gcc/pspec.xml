@@ -5,8 +5,8 @@
         <Name>gcc</Name>
         <Homepage>http://gcc.gnu.org</Homepage>
         <Packager>
-            <Name>Admins</Name>
-            <Email>kimkimdir@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3+</License>
         <License>LGPLv3+</License>

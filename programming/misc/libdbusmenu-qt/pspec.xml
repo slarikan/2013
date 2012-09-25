@@ -5,8 +5,8 @@
         <Name>libdbusmenu-qt</Name>
         <Homepage>https://launchpad.net/libdbusmenu-qt</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2</License>
         <IsA>library</IsA>

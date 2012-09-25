@@ -5,8 +5,8 @@
         <Name>vim-plugin-surround</Name>
         <Homepage>http://www.vim.org/scripts/script.php?script_id=1697</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>vim</License>
         <IsA>data</IsA>

@@ -5,8 +5,8 @@
         <Name>fltk</Name>
         <Homepage>http://www.fltk.org</Homepage>
         <Packager>
-            <Name>Bertan Gündoğdu</Name>
-            <Email>bertan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

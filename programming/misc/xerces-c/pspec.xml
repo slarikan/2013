@@ -5,8 +5,8 @@
         <Name>xerces-c</Name>
         <Homepage>http://xml.apache.org/xerces-c</Homepage>
         <Packager>
-            <Name>Mete Bilgin</Name>
-            <Email>metebilgin48@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>library</IsA>

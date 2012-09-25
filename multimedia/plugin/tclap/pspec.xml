@@ -3,8 +3,8 @@
         <Name>tclap</Name>
         <Homepage>http://sourceforge.net/projects/tclap/</Homepage>
         <Packager>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>multimedia.plugin</PartOf>

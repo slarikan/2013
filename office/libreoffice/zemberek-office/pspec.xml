@@ -5,8 +5,8 @@
         <Name>zemberek-office</Name>
         <Homepage>http://code.google.com/p/zemberek/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>data</IsA>

@@ -5,8 +5,8 @@
         <Name>nx</Name>
         <Homepage>http://www.nomachine.com/sources.php</Homepage>
         <Packager>
-            <Name>Emre Erenoglu</Name>
-            <Email>paketci@erenoglu.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
         <Name>libEMF</Name>
         <Homepage>http://libemf.sourceforge.net</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2</License>
         <IsA>library</IsA>

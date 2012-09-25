@@ -5,8 +5,8 @@
         <Name>strace</Name>
         <Homepage>http://sourceforge.net/projects/strace/</Homepage>
         <Packager>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>app:console</IsA>

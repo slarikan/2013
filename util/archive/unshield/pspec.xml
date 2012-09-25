@@ -5,8 +5,8 @@
         <Name>unshield</Name>
         <Homepage>http://sourceforge.net/project/showfiles.php?group_id=30550</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>app:console</IsA>

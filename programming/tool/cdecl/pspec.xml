@@ -5,8 +5,8 @@
         <Name>cdecl</Name>
         <Homepage>http://www.boutell.com/lsm/lsmbyid.cgi/002103</Homepage>
         <Packager>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>public-domain</License>
         <IsA>app:console</IsA>

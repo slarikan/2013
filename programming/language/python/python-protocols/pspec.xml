@@ -5,8 +5,8 @@
         <Name>python-protocols</Name>
         <Homepage>http://peak.telecommunity.com/PyProtocols.html</Homepage>
         <Packager>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>ZPL</License>
         <IsA>library</IsA>

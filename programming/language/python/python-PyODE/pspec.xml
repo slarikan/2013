@@ -5,8 +5,8 @@
         <Name>python-PyODE</Name>
         <Homepage>http://pyode.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <License>BSD</License>

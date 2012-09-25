@@ -5,8 +5,8 @@
         <Name>apr-util</Name>
         <Homepage>http://apr.apache.org/</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>library</IsA>
