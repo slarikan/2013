@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org ark video driver</Summary>
         <Description>xorg-video-ark contains the X.Org driver for ARK Logic graphics chipsets.</Description>
-        <Archive sha1sum="56901ec6097a83433689f208268281f9c98c238b" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-ark-0.7.3.tar.bz2</Archive>
+        <Archive sha1sum="d95cb9aa56e7db542b3ac8fed9cb519b11f77556" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-ark-0.7.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -29,6 +29,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-05-30</Date>
+            <Version>0.7.4</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>0.7.3</Version>

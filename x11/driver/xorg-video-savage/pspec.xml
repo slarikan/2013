@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org savage video driver</Summary>
         <Description>xorg-video-savage contains the X.Org driver for S3 Savage cards.</Description>
-        <Archive sha1sum="9115b4259842502b42128bf7eb35e7460da51a3a" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-savage-2.3.3.tar.bz2</Archive>
+        <Archive sha1sum="e2eb14a6d7dc6a031e22a243afab0181ed9d568d" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-savage-2.3.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+		<Update release="7">
+            <Date>2012-05-31</Date>
+            <Version>2.3.4</Version>
+            <Comment>Bump to newest stable</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="6">
             <Date>2011-10-13</Date>
             <Version>2.3.3</Version>

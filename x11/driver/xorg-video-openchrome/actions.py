@@ -6,6 +6,7 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
+from pisi.actionsapi import pisitools
 
 WorkDir = "xf86-video-openchrome-%s" % get.srcVERSION()
 
@@ -18,3 +19,4 @@ def build():
 
 def install():
     autotools.install()
+    pisitools.dodoc("COPYING", "NEWS", "README")

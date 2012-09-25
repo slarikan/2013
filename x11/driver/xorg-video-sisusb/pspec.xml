@@ -16,6 +16,9 @@
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">sisusb-0.9.4-git.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -30,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-05-31</Date>
+            <Version>0.9.4</Version>
+            <Comment>Mass rebuild for Pardus ANKA</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>0.9.4</Version>

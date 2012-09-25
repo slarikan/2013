@@ -4,14 +4,15 @@
 # See the file http://www.gnu.org/copyleft/gpl.txt.
 
 from pisi.actionsapi import autotools
+from pisi.actionsapi import pisitools
 
 
 def setup():
-    autotools.autoreconf("-vif")
-    autotools.configure()
+    autotools.configure("--enable-dri")
 
 def build():
     autotools.make()
 
 def install():
     autotools.install()
+    pisitools.dodoc("COPYING")

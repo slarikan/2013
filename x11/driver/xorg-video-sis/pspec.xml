@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org sis video driver</Summary>
         <Description>xorg-video-sis contains the X.Org driver for SiS cards.</Description>
-        <Archive sha1sum="158673747e240b0c33499685a32d46bdaead7cd5" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-sis-0.10.3.tar.bz2</Archive>
+        <Archive sha1sum="e17fabf160939cef3128f4b10f70fd5f9b0e6442" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-sis-0.10.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-05-31</Date>
+            <Version>0.10.4</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>0.10.3</Version>

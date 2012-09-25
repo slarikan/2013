@@ -12,26 +12,19 @@
         <IsA>driver</IsA>
         <Summary>X.Org nouveau video driver</Summary>
         <Description>xorg-video-nouveau contains the X.Org driver for NVIDIA cards.</Description>
-        <Archive sha1sum="db6ff4b005f652fedad6ba4401901a92be2e07c2" type="tarbz2">http://cekirdek.pardus.org.tr/~farslan/dist/x/xf86-video-nouveau-0.0.16_pre20110413git8378443.tar.bz2</Archive>
+        <Archive sha1sum="2697505fc49593737d162517238f0d861a1749c4" type="tarbz2">http://paketler.pardus-linux.org/sources/xf86-video-nouveau-0.0.16-pre20120530.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.4.25">libdrm-nouveau</Dependency>
             <Dependency>libpciaccess-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">nouveau-bgnr.patch</Patch>
-            <!--
-            <Patch level="1">nouveau-nva0-corruption-fix.patch</Patch>
-            <Patch level="1">nouveau-zfill-fallback.patch</Patch>
-            -->
-        </Patches>
     </Source>
 
     <Package>
         <Name>xorg-video-nouveau</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.4.23">libdrm-nouveau</Dependency>
+            <Dependency versionFrom="2.4.25">libdrm-nouveau</Dependency>
             <Dependency>libpciaccess</Dependency>
             <Dependency versionFrom="1.8.99">xorg-server</Dependency>
         </RuntimeDependencies>
@@ -42,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="21">
+            <Date>2012-05-30</Date>
+            <Version>0.0.16_pre20120530</Version>
+            <Comment>Sync with master branch</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="20">
             <Date>2011-04-13</Date>
             <Version>0.0.16_pre20110413</Version>

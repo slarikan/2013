@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org vmware video driver</Summary>
         <Description>xorg-video-vmware contains the X.Org driver for VMWare virtual machines.</Description>
-        <Archive sha1sum="7598145097971437cf0bfc0445e4435602159b41" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-vmware-11.0.2.tar.bz2</Archive>
+        <Archive sha1sum="efa47f365d88da245804a9934719ff860ed04f95" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-vmware-12.0.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -24,12 +24,20 @@
             <Dependency versionFrom="1.8.99">xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/xorg</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-05-31</Date>
+            <Version>12.0.2</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>11.0.2</Version>

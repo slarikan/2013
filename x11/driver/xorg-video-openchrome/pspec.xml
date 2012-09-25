@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org openchrome video driver</Summary>
         <Description>xorg-video-openchrome contains the X.Org driver for VIA video chipsets.</Description>
-        <Archive sha1sum="1e95025839fe6651bcfdd1c90cfc147b94ea3a9e" type="tarbz2">http://cekirdek.pardus.org.tr/~farslan/dist/x/xf86-video-openchrome-0.2.904_980.tar.bz2</Archive>
+        <Archive sha1sum="1c49bf722326442393288db490ff48d437e337f9" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-openchrome-0.2.906.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -20,10 +20,6 @@
             <Dependency>libXvMC-devel</Dependency>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch>openchrome-0.2.904-fix_tvout_flickering.patch</Patch>
-            <Patch level="1">openchrome-0.2.904-I420_Xv_surface_for_CME.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -36,12 +32,21 @@
             <Dependency versionFrom="1.8.99">xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-05-30</Date>
+            <Version>0.2.906</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2011-09-16</Date>
             <Version>0.2.904_980</Version>

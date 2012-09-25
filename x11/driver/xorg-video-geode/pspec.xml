@@ -8,12 +8,11 @@
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <ExcludeArch>x86_64</ExcludeArch>
         <License>MIT</License>
         <IsA>driver</IsA>
         <Summary>X.Org geode video driver</Summary>
         <Description>xorg-video-geode contains the X.Org driver for AMD Geode video cards.</Description>
-        <Archive sha1sum="c5e548f7e0b497ed28fa5a460b7d36b3f8e8527a" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-geode-2.11.11.tar.bz2</Archive>
+        <Archive sha1sum="0e5e9952de93c024e92b57bfb9e7078f9e163a29" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-geode-2.11.13.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -30,6 +29,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-05-30</Date>
+            <Version>2.11.13</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="9">
             <Date>2011-01-12</Date>
             <Version>2.11.11</Version>

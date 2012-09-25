@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>Input driver for Wacom tablets and drawing devices</Summary>
         <Description>xorg-input-wacom includes the drivers and tools for Wacom devices.</Description>
-        <Archive sha1sum="e8b0ec91a95a13a897d34c6ebe2af564e1ce3cb2" type="tarbz2">mirrors://sourceforge/linuxwacom/xf86-input-wacom/xf86-input-wacom-0.11.1.tar.bz2</Archive>
+        <Archive sha1sum="6e8e4fa2ccc2448cae97119c6f2842fe283f9b29" type="tarbz2">mirrors://sourceforge/linuxwacom/xf86-input-wacom/xf86-input-wacom-0.15.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXi-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
@@ -56,6 +56,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-05-30</Date>
+            <Version>0.15.0</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="11">
             <Date>2011-05-31</Date>
             <Version>0.11.1</Version>

@@ -6,7 +6,7 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
-WorkDir = "xf86-video-nouveau-%s" % get.srcVERSION()
+WorkDir = "xf86-video-nouveau"
 
 def setup():
     autotools.autoreconf("-vif")

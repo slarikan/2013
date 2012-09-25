@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org dummy video driver</Summary>
         <Description>xorg-video-dummy is a dummy video driver for X.Org.</Description>
-        <Archive sha1sum="876ed7165ea2821bbddd73232a1ce0b79c1f14ff" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-dummy-0.3.4.tar.bz2</Archive>
+        <Archive sha1sum="41cfcaec986ab13e931d260953c5a3f626fd1d2b" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-dummy-0.3.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -29,6 +29,13 @@
     </Package>
 
     <History>
+		<Update release="6">
+            <Date>2011-05-30</Date>
+            <Version>0.3.5</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>0.3.4</Version>

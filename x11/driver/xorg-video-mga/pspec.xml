@@ -12,7 +12,12 @@
         <IsA>driver</IsA>
         <Summary>X.Org mga video driver</Summary>
         <Description>xorg-video-mga contains the X.Org driver for Matrox cards.</Description>
-        <Archive sha1sum="55aa185cf381def4b5905c8b93694b8dfbd5c378" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-mga-1.4.13.tar.bz2</Archive>
+        <Archive sha1sum="de82e4dc8d05fe1306498e3067f9e65479cfa5a1" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-mga-1.5.0.tar.bz2</Archive>
+        <Patches>
+            <Patch level="1">mga-1.4.5-no-hal-advertising.patch</Patch>
+            <Patch level="1">mga-1.4.12-bigendian.patch</Patch>
+            <Patch level="1">0001-mga-don-t-bind-to-device-if-there-is-a-kernel-driver.patch</Patch>
+        </Patches>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -32,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-05-30</Date>
+            <Version>1.5.0</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.4.13</Version>

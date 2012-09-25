@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org intel video driver</Summary>
         <Description>xorg-video-intel contains the X.Org driver for Intel video chipsets.</Description>
-        <Archive sha1sum="78ec39a4470cfc0bf13d269fb915f6c5a498ee62" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-intel-2.15.0.tar.bz2</Archive>
+        <Archive sha1sum="7738d19bc36b49215b560c29c0b27c2fa3a56557" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-intel-2.20.6.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXv-devel</Dependency>
             <Dependency>libXvMC-devel</Dependency>
@@ -22,9 +22,6 @@
             <Dependency>xcb-util-devel</Dependency>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">intel-2.11.0-vga-clock-max.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -45,6 +42,20 @@
     </Package>
 
     <History>
+        <Update release="28">
+            <Date>2012-09-25</Date>
+            <Version>2.20.6</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
+        <Update release="27">
+            <Date>2012-05-30</Date>
+            <Version>2.19.0</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="26">
             <Date>2011-04-14</Date>
             <Version>2.15.0</Version>

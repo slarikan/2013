@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org tdfx video driver</Summary>
         <Description>xorg-video-tdfx contains the X.Org driver for Voodoo cards.</Description>
-        <Archive sha1sum="d091d3c93b500b361c083bc1b54c4f5d5fac0943" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-tdfx-1.4.3.tar.bz2</Archive>
+        <Archive sha1sum="40cb1395c3af4526819d10d3ef22c52f3a1ad2d2" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-tdfx-1.4.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-05-31</Date>
+            <Version>1.4.4</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.4.3</Version>

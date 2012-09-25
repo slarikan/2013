@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org radeon video driver</Summary>
         <Description>xorg-video-radeon contains the X.Org driver for ATI video chipsets.</Description>
-        <Archive sha1sum="2733b3c126ad9e082ea18b7e7663d6d87fce4d49" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-ati-6.14.2.tar.bz2</Archive>
+        <Archive sha1sum="75ad000bc00599e1797134f2d20d3094cba6af92" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-ati-6.14.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>libpciaccess-devel</Dependency>
@@ -21,9 +21,9 @@
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fedora/radeon-6.9.0-bgnr-enable.patch</Patch>
             <Patch level="1">fedora/radeon-6.12.2-lvds-default-modes.patch</Patch>
             <Patch level="1">fedora/fix-default-modes.patch</Patch>
+            <Patch level="1">fedora/radeon-no-ums.patch</Patch>
         </Patches>
     </Source>
 
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="28">
+            <Date>2012-05-30</Date>
+            <Version>6.14.4</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="27">
             <Date>2011-05-26</Date>
             <Version>6.14.2</Version>

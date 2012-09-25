@@ -13,16 +13,16 @@
         <Summary>X.Org elographics input driver</Summary>
         <Description>xorg-input-elographics contains the X.Org driver for Elographics touchscreen devices.</Description>
         <!--1.3.0 need at least xorg-server 1.10-->
-        <Archive sha1sum="17784ec8c5bcbf62d4ce462cee69e1af304c308e" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-elographics-1.2.4.tar.bz2</Archive>
+        <Archive sha1sum="1f8480019607e0e366eb5ce4a3f3278fc164d7f7" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-elographics-1.3.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency versionFrom="1.10.0">xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-input-elographics</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency versionFrom="1.10.0">xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-05-30</Date>
+            <Version>1.3.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.2.4</Version>
