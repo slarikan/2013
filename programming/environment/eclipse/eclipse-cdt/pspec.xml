@@ -13,13 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>C/C++ Development Tools (CDT) for Eclipse</Summary>
         <Description>eclipse-cdt provides a fully functional C and C++ Integrated Development Environment (IDE) for the Eclipse platform.</Description>
-        <Archive sha1sum="2693b4ebcbe603e45d5b6611e932f2ac8bfbd3b0" type="zip">http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/tools/cdt/releases/indigo/dist/cdt-master-8.0.1.zip</Archive>
+        <Archive sha1sum="98fb36e97c2c5613bb6b4f8a554709da0696355e" type="zip">http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/tools/cdt/releases/indigo/dist/cdt-master-8.0.2.zip</Archive>
     </Source>
 
     <Package>
         <Name>eclipse-cdt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.7">eclipse</Dependency>
+            <Dependency versionFrom="3.8">eclipse</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt</Path>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-09-23</Date>
+            <Version>8.0.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="16">
             <Date>2011-10-13</Date>
             <Version>8.0.1</Version>
