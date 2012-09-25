@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org ICE library</Summary>
         <Description>libICE is the Inter-Client Exchange library.</Description>
-        <Archive sha1sum="c7d0f4c5b0e999385445b8be1bc89aec4e5de71d" type="tarbz2">mirrors://xorg/individual/lib/libICE-1.0.7.tar.bz2</Archive>
+        <Archive sha1sum="ddb14df8bbc43df7322978f5f9f802936e2a7324" type="tarbz2">mirrors://xorg/individual/lib/libICE-1.0.8.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-06-01</Date>
+            <Version>1.0.8</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2011-03-01</Date>
             <Version>1.0.7</Version>

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X Athena Widgets Library</Summary>
         <Description>Xaw is a widget set based on the X Toolkit Intrinsics (Xt) Library.</Description>
-        <Archive sha1sum="a27556b14e2b4c250afcb98b6e99eebd7623816f" type="tarbz2">mirrors://xorg/individual/lib/libXaw-1.0.11.tar.bz2</Archive>
+        <Archive sha1sum="8caa4c692e28f9681678a22168978b7668df57be" type="tarbz2">mirrors://xorg/individual/lib/libXaw-1.0.10.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
@@ -79,11 +79,11 @@
 
     <History>
         <Update release="17">
-            <Date>2012-09-23</Date>
-            <Version>1.0.11</Version>
-            <Comment>version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Date>2012-06-01</Date>
+            <Version>1.0.10</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="16">
             <Date>2011-08-05</Date>

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xv library</Summary>
         <Description>LibXv is the X Window System video extension library.</Description>
-        <Archive sha1sum="9ebb6d7936a7b247b9b0f6dc81def39a18e4214c" type="tarbz2">mirrors://xorg/individual/lib/libXv-1.0.6.tar.bz2</Archive>
+        <Archive sha1sum="49c87e0ccb999966b7b1b4e72cb927f05e0835bd" type="tarbz2">mirrors://xorg/individual/lib/libXv-1.0.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
@@ -64,6 +64,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-06-01</Date>
+            <Version>1.0.7</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2011-03-01</Date>
             <Version>1.0.6</Version>

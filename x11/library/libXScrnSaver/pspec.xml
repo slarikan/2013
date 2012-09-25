@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org XScrnSaver library</Summary>
         <Description>LibXScrnSaver allows using screensavers in X clients.</Description>
-        <Archive sha1sum="3c29e2222fd68e26e408234c51c6d8b2edf6ab19" type="tarbz2">mirrors://xorg/individual/lib/libXScrnSaver-1.2.1.tar.bz2</Archive>
+        <Archive sha1sum="7b8298eec371c33a71232e3653370a98f03c6c88" type="tarbz2">mirrors://xorg/individual/lib/libXScrnSaver-1.2.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
@@ -23,6 +23,9 @@
         <RuntimeDependencies>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="25">xorg-proto</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -64,6 +67,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-06-01</Date>
+            <Version>1.2.2</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2011-03-01</Date>
             <Version>1.2.1</Version>

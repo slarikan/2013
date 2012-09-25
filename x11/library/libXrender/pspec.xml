@@ -56,11 +56,11 @@
 
     <History>
         <Update release="13">
-            <Date>2012-09-15</Date>
+            <Date>2012-06-01</Date>
             <Version>0.9.7</Version>
-            <Comment>Bump.</Comment>
-            <Name>Serdar Soytetir</Name>
-            <Email>tulliana@gmail.com</Email>
+            <Comment>Version bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="12">
             <Date>2011-03-01</Date>

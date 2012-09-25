@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Pixel manipulation library</Summary>
         <Description>Pixman contains lowlevel pixel manipulation routines.</Description>
-        <Archive sha1sum="974a1ad699953a40ca9e481181aef9964ff54a2a" type="tarbz2">mirrors://xorg/individual/lib/pixman-0.27.2.tar.bz2</Archive>
+        <Archive sha1sum="d772cf794ec5da0966eba3cb360919a0a5e0d23f" type="tarbz2">mirrors://xorg/individual/lib/pixman-0.26.0.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -51,11 +51,11 @@
 
     <History>
         <Update release="19">
-            <Date>2012-09-15</Date>
-            <Version>0.27.2</Version>
-            <Comment>Bump.</Comment>
-            <Name>Serdar Soytetir</Name>
-            <Email>tulliana@gmail.com</Email>
+            <Date>2012-05-28</Date>
+            <Version>0.26.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="18">
             <Date>2011-07-07</Date>

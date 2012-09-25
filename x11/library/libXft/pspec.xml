@@ -12,14 +12,14 @@
         <IsA>library</IsA>
         <Summary>X.Org Xft library</Summary>
         <Description>libXft is the X FreeType interface library.</Description>
-        <Archive sha1sum="c7ec1361e3d4f095910f8c58988ab42e32f314d9" type="tarbz2">mirrors://xorg/individual/lib/libXft-2.3.1.tar.bz2</Archive>
+        <Archive sha1sum="687f38a810b9ae58e1169c295d9d438370235e23" type="tarbz2">mirrors://xorg/individual/lib/libXft-2.3.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch>suse/libXft-2.1.7-lcd-filter-2.patch</Patch-->
+            <Patch level="1">libXft-2.3.0-bold-fix.patch</Patch>
         </Patches>
     </Source>
 
@@ -80,12 +80,12 @@
     </Package>
 
     <History>
-         <Update release="11">
-            <Date>2012-09-15</Date>
-            <Version>2.3.1</Version>
-            <Comment>Bump.</Comment>
-            <Name>Serdar Soytetir</Name>
-            <Email>tulliana@gmail.com</Email>
+        <Update release="11">
+            <Date>2012-06-01</Date>
+            <Version>2.3.0</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="10">
             <Date>2011-04-26</Date>

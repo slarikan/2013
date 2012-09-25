@@ -26,6 +26,9 @@
         <RuntimeDependencies>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="14">xorg-proto</Package>
+        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -63,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-06-01</Date>
+            <Version>1.0.0</Version>
+            <Comment>Rebuild for Pardus ANKA</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="9">
             <Date>2011-08-10</Date>
             <Version>1.0.0</Version>

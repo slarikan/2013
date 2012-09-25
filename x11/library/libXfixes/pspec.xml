@@ -57,17 +57,24 @@
     </Package>
 
     <History>
-        <Update release="11">
-            <Date>2011-05-20</Date>
+        <Update release="12">
+            <Date>2012-06-01</Date>
             <Version>5.0</Version>
-            <Comment>Add lib32 package for libXfixes</Comment>
+            <Comment>Mass rebuild for Pardus ANKA</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
+        <Update release="11">
+            <Date>2011-03-23</Date>
+            <Version>5.0</Version>
+            <Comment>New stable release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
         </Update>
         <Update release="10">
-            <Date>2011-03-24</Date>
-            <Version>5.0</Version>
-            <Comment>New stable release</Comment>
+            <Date>2011-03-03</Date>
+            <Version>4.0.5</Version>
+            <Comment>Add lib32 package for libXfixes</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
         </Update>

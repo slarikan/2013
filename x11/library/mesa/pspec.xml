@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="a896152e67bafca8899fa27f3327276af4dde173" type="tarbz2">http://cekirdek.pardus.org.tr/~farslan/dist/mesa/mesa-7.10.3.tar.bz2</Archive>
+        <Archive sha1sum="768bdb2fe133bbcccd3323b79484d0d17bc0d05d" type="tarbz2">ftp://ftp.freedesktop.org/pub/mesa/8.0.3/MesaLib-8.0.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -25,8 +25,9 @@
             <Dependency releaseFrom="27">xorg-proto</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">nouveau-fix-header.patch</Patch>
-            <Patch level="1">mesa-7.10.2-i915-no-gen3-arbfs.patch</Patch>
+            <Patch level="1">mesa-8.0-llvmpipe-shmget.patch</Patch>
+            <Patch level="1">mesa-8.0-nouveau-tfp-blacklist.patch</Patch>
+            <Patch level="1">mesa-8.0.1-fix-16bpp.patch</Patch>
         </Patches>
     </Source>
 
@@ -43,6 +44,13 @@
             <Dependency>libdrm-nouveau</Dependency>
             <Dependency>libtalloc</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="48">xorg-server</Package>
+            <Package versionTo="7.3">xorg-proto</Package>
+        </Conflicts>
+        <Replaces>
+            <Package>mesa-experimental</Package>
+        </Replaces>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
@@ -112,6 +120,13 @@
         </Provides>
     </Package>
     <History>
+        <Update release="47">
+            <Date>2012-05-31</Date>
+            <Version>8.0.3</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="46">
             <Date>2011-11-04</Date>
             <Version>7.10.3</Version>

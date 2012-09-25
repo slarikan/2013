@@ -66,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-06-01</Date>
+            <Version>0.5.6</Version>
+            <Comment>Rebuild for Pardus ANKA</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="6">
             <Date>2011-07-07</Date>
             <Version>0.5.6</Version>

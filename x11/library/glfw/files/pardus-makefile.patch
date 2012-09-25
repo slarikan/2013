@@ -1,6 +1,7 @@
---- lib/x11/Makefile.x11.in.orig	2007-07-01 12:46:46.000000000 +0300
-+++ lib/x11/Makefile.x11.in	2008-01-22 23:39:51.000000000 +0200
-@@ -2,13 +2,13 @@
+diff -Nuar glfw-2.7.5.orig/lib/x11/Makefile.x11.in glfw-2.7.5/lib/x11/Makefile.x11.in
+--- glfw-2.7.5.orig/lib/x11/Makefile.x11.in	2012-02-07 20:05:06.000000000 +0200
++++ glfw-2.7.5/lib/x11/Makefile.x11.in	2012-06-01 16:59:43.000000000 +0300
+@@ -2,7 +2,7 @@
  ##########################################################################
  # Installation prefix (default to /usr/local)
  ##########################################################################
@@ -9,19 +10,12 @@
  
  
  ##########################################################################
- # Default: Build GLFW static library
- ##########################################################################
--default: libglfw.a libglfw.so
-+default: libglfw.so
- 
- 
- ##########################################################################
-@@ -19,45 +19,21 @@
- SED      = sed
+@@ -20,19 +20,20 @@
  INSTALL  = install
  ARFLAGS  = -rcs
+ HEADERS     = ../../include/GL/glfw.h ../internal.h platform.h
+-
 +LN_S     = ln -s
- 
  
  ##########################################################################
  # Install GLFW static library
@@ -34,32 +28,6 @@
 -	$(INSTALL) -d $(PREFIX)/lib/pkgconfig
 -	$(INSTALL) -c -m 644 libglfw.pc $(PREFIX)/lib/pkgconfig/libglfw.pc
 -
--
--##########################################################################
--# Object files which are part of the GLFW library
--##########################################################################
--STATIC_OBJS = \
--       enable.o \
--       fullscreen.o \
--       glext.o \
--       image.o \
--       init.o \
--       input.o \
--       joystick.o \
--       stream.o \
--       tga.o \
--       thread.o \
--       time.o \
--       window.o \
--       x11_enable.o \
--       x11_fullscreen.o \
--       x11_glext.o \
--       x11_init.o \
--       x11_joystick.o \
--       x11_keysym2unicode.o \
--       x11_thread.o \
--       x11_time.o \
--       x11_window.o
 +install: libglfw.pc
 +	$(INSTALL) -d $(DESTDIR)$(PREFIX)/lib
 +	$(INSTALL) -d $(DESTDIR)$(PREFIX)/include/GL
@@ -70,28 +38,17 @@
 +	$(INSTALL) -d $(DESTDIR)$(PREFIX)/lib/pkgconfig
 +	$(INSTALL) -c -m 644 libglfw.pc $(DESTDIR)$(PREFIX)/lib/pkgconfig/libglfw.pc
  
- 
  ##########################################################################
-@@ -93,19 +69,13 @@
- libglfw.pc: libglfw.pc.in
- 	$(SED) -e 's,\@PREFIX\@,$(PREFIX),' libglfw.pc.in > libglfw.pc
- 
--
--##########################################################################
--# Rule for building static library
--##########################################################################
--libglfw.a: $(STATIC_OBJS)
--	$(AR) $(ARFLAGS) $@ $(STATIC_OBJS)
--
--
- ##########################################################################
+ # Install GLFW static and shared libraries
+@@ -113,8 +114,9 @@
  # Rule for building shared library
  ##########################################################################
  libglfw.so: $(SHARED_OBJS)
--	$(CC) $(LDFLAGS) -o $@ $(SHARED_OBJS) $(LFLAGS) $(LIBS)
-+	$(CC) $(LDFLAGS) -Wl,-soname=libglfw.so.0 -o libglfw.so.0.0 $(SHARED_OBJS) $(LFLAGS) $(LIBS)
+-	$(CC) $(SOFLAGS) -o $@ $(SHARED_OBJS) $(LFLAGS) $(LIBS)
+-
++	$(CC) $(SOFLAGS)-Wl,-soname=libglfw.so.0 -o libglfw.so.0.0 $(SHARED_OBJS) $(LFLAGS) $(LIBS)
 +	$(LN_S) libglfw.so.0.0 libglfw.so.0
 +	$(LN_S) libglfw.so.0.0 libglfw.so
  
- 
  ##########################################################################
+ # Rules for building static library object files

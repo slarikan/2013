@@ -8,7 +8,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-#WorkDir = "Mesa-%s" % get.srcVERSION().replace("_", "-")
+WorkDir = "Mesa-%s" % get.srcVERSION().replace("_", "-")
 
 if get.buildTYPE() == "emul32":
     Libdir = "/usr/lib32"
@@ -22,25 +22,13 @@ def setup():
 
     # gallium-lvm is enabled by default by commit a86fc719d6402eb482657707741890e69e81700f
     options ="--enable-pic \
-              --disable-xcb \
               --enable-glx-tls \
-              --disable-gl-osmesa \
               --disable-egl \
-              --disable-glw \
-              --disable-glut \
               --enable-gallium \
-              --enable-gallium-llvm \
-              --disable-gallium-svga \
-              --disable-gallium-i915 \
-              --disable-gallium-i965 \
-              --enable-gallium-radeon \
-              --enable-gallium-r600 \
-              --enable-gallium-nouveau \
-              --enable-gallium-swrast \
+              --with-gallium-drivers=r300,r600,nouveau,swrast \
               --with-driver=dri \
               --with-dri-driverdir=/usr/lib/xorg/modules/dri \
-              --with-dri-drivers=i810,i915,i965,mach64,nouveau,r128,r200,r600,radeon,sis,tdfx \
-              --with-state-trackers=dri,glx"
+              --with-dri-drivers=i915,i965,nouveau,r200,radeon,swrast"
 
 
     if get.buildTYPE() == "emul32":
@@ -48,6 +36,7 @@ def setup():
         options += " --libdir=/usr/lib32 \
                      --with-dri-driverdir=/usr/lib32/xorg/modules/dri \
                      --disable-gallium-llvm \
+                     --with-gallium-drivers=r600,nouveau,swrast \
                      --enable-32-bit"
 
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
@@ -59,18 +48,11 @@ def setup():
     pisitools.dosed("configs/autoconf", "(PYTHON_FLAGS) = .*", r"\1 = -t")
 
 def build():
+    autotools.make("-C src/glsl glsl_lexer.cpp")
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    # Don't install unused headers
-    #for header in ("[a-fh-wyz]*.h", "glf*.h"):
-    for header in ("[a-fh-wyz]*.h", "glf*.h", "*glut*.h"):
-        pisitools.remove("/usr/include/GL/%s" % header)
-
-    # Use llvmpipe instead of classic swrast driver
-    pisitools.rename("%s/xorg/modules/dri/swrastg_dri.so" % Libdir, "swrast_dri.so")
 
     # Moving libGL for dynamic switching
     pisitools.domove("%s/libGL.so.1.2" % Libdir, "%s/mesa" % Libdir)

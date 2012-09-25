@@ -12,14 +12,16 @@
         <IsA>library</IsA>
         <Summary>GL extrusion library</Summary>
         <Description>The GLE Tubing and Extrusion Library is a graphics application programming interface (API). The library consists of a number of "C" language subroutines for drawing tubing and extrusions.</Description>
-        <Archive sha1sum="f591ea7356797d1e16e7c4b9edfb7f950df87da9" type="targz">mirrors://sourceforge/glx/gle-graphics-4.2.2-src.tar.gz</Archive>
+        <Archive sha1sum="5528528dfe54c74f69bfad174105d55a3dd90e49" type="targz">mirrors://sourceforge/glx/gle-graphics-4.2.4cf-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>tiff-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
+<!--
             <Patch level="1">64bit.patch</Patch>
+-->
         </Patches>
     </Source>
 
@@ -39,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-06-01</Date>
+            <Version>4.2.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="5">
             <Date>2011-05-20</Date>
             <Version>4.2.2</Version>

@@ -12,16 +12,14 @@
         <IsA>library</IsA>
         <Summary>The OpenGL Utility Toolkit (Freeglut)</Summary>
         <Description>Freeglut is the OpenGL Utility Toolkit, a window system independent toolkit for writing OpenGL programs. It implements a simple windowing application programming interface (API) for OpenGL. Freeglut makes it considerably easier to learn about and explore OpenGL Programming.</Description>
-        <Archive sha1sum="68306c4486c13d005a4e4d54035e0c0b1bdc220b" type="targz">mirrors://sourceforge/freeglut/freeglut-2.6.0.tar.gz</Archive>
+        <Archive sha1sum="4debbe559c6c9841ce1abaddc9d461d17c6083b1" type="targz">mirrors://sourceforge/freeglut/freeglut-2.8.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mesa-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
             <Dependency>libXxf86vm-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">freeglut-2.6.0-fixld.patch</Patch>
-            <Patch level="1">freeglut-2.6.0-noxwarn.patch</Patch>
-            <Patch>2.6.0-GFX_radeon.patch</Patch>
+            <Patch level="1">freeglut-2.8.0-fixld.patch</Patch>
         </Patches>
     </Source>
 
@@ -32,6 +30,9 @@
             <Dependency>libXi</Dependency>
             <Dependency>libXxf86vm</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>glut</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc/freeglut</Path>
@@ -72,6 +73,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="4">
+            <Date>2012-05-31</Date>
+            <Version>2.8.0</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2011-04-26</Date>
             <Version>2.6.0</Version>
