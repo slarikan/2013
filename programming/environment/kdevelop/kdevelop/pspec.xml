@@ -5,8 +5,8 @@
         <Name>kdevelop</Name>
         <Homepage>http://www.kdevelop.org</Homepage>
         <Packager>
-            <Name>David Stegbauer</Name>
-            <Email>daaste@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>kdevelop</Icon>
