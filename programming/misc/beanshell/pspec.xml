@@ -3,8 +3,8 @@
         <Name>beanshell</Name>
         <Homepage>http://www.beanshell.org/home.html</Homepage>
         <Packager>
-            <Name>Ramazan Utku</Name>
-            <Email>ramazanutku@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPL</License>
         <PartOf>programming.language.java</PartOf>

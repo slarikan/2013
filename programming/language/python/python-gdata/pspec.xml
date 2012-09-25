@@ -5,8 +5,8 @@
         <Name>python-gdata</Name>
         <Homepage>http://code.google.com/p/gdata-python-client/</Homepage>
         <Packager>
-            <Name>Akın Ömeroğlu</Name>
-            <Email>akin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>library</IsA>

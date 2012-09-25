@@ -5,8 +5,8 @@
         <Name>antlr</Name>
         <Homepage>http://www.antlr2.org</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>ANTLR</License>
         <IsA>library</IsA>

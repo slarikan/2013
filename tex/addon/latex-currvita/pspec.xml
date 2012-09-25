@@ -5,8 +5,8 @@
         <Name>latex-currvita</Name>
         <Homepage>http://www.ctan.org/tex-archive/macros/latex/contrib/currvita/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app</IsA>

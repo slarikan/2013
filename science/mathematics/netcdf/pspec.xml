@@ -5,8 +5,8 @@
         <Name>netcdf</Name>
         <Homepage>http://my.unidata.ucar.edu/content/software/netcdf/index.html</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>UCAR-Unidata</License>
         <IsA>library</IsA>

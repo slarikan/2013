@@ -5,8 +5,8 @@
         <Name>libssh</Name>
         <Homepage>http://www.libssh.org</Homepage>
         <Packager>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

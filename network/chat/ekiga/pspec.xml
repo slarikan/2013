@@ -5,8 +5,8 @@
         <Name>ekiga</Name>
         <Homepage>http://www.ekiga.org/</Homepage>
         <Packager>
-            <Name>Fahri Tuğrul Gürkaynak</Name>
-            <Email>tugrul@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2-with-linking-exception</License>
         <IsA>app:gui</IsA>

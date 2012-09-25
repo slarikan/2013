@@ -3,8 +3,8 @@
         <Name>itstool</Name>
         <Homepage>http://itstool.org/</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
         <Summary>XML to PO and back again</Summary>

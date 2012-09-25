@@ -5,8 +5,8 @@
         <Name>emacs-color-theme</Name>
         <Homepage>http://www.emacswiki.org/cgi-bin/wiki?ColorTheme</Homepage>
         <Packager>
-            <Name>Aşkın Yollu</Name>
-            <Email>askin@askin.ws</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>data</IsA>

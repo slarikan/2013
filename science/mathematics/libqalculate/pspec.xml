@@ -5,8 +5,8 @@
         <Name>libqalculate</Name>
         <Homepage>http://qalculate.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Enes Albay</Name>
-            <Email>albayenes@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

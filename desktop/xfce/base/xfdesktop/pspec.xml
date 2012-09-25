@@ -5,8 +5,8 @@
         <Name>xfdesktop</Name>
         <Homepage>http://www.xfce.org</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>xfce4_xicon1</Icon>
@@ -69,7 +69,7 @@
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/icons</Path>
-	    <Path fileType="data">/usr/share/backgrounds</Path>
+        <Path fileType="data">/usr/share/backgrounds</Path>
             <Path fileType="data">/usr/share/desktop-directories</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>

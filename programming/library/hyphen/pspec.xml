@@ -3,8 +3,8 @@
         <Name>hyphen</Name>
         <Homepage>http://hunspell.sf.net/</Homepage>
         <Packager>
-            <Name>Ramazan Utku</Name>
-            <Email>ramazanutku@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPL-2</License>
         <PartOf>programming.tool</PartOf>

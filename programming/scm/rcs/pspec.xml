@@ -5,8 +5,8 @@
         <Name>rcs</Name>
         <Homepage>http://www.gnu.org/software/rcs</Homepage>
         <Packager>
-            <Name>Mete Bilgin</Name>
-            <Email>metebilgin48@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

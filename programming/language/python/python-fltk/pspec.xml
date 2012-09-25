@@ -5,8 +5,8 @@
         <Name>python-fltk</Name>
         <Homepage>http://pyfltk.sourceforge.net</Homepage>
         <Packager>
-            <Name>Emre Yılmaz</Name>
-            <Email>yilmazyemre@yahoo.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
         <Name>pythonmagick</Name>
         <Homepage>http://www.imagemagick.org</Homepage>
         <Packager>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>

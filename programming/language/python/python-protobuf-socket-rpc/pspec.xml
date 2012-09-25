@@ -5,8 +5,8 @@
         <Name>python-protobuf-socket-rpc</Name>
         <Homepage>http://code.google.com/p/protobuf-socket-rpc</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>

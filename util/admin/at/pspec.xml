@@ -5,8 +5,8 @@
         <Name>at</Name>
         <Homepage>http://packages.qa.debian.org/a/at.html</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>

@@ -5,8 +5,8 @@
         <Name>blender</Name>
         <Homepage>http://www.blender.org/</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>blender</Icon>

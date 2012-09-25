@@ -5,8 +5,8 @@
         <Name>cppunit</Name>
         <Homepage>http://cppunit.sourceforge.net</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

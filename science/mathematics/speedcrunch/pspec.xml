@@ -5,8 +5,8 @@
         <Name>speedcrunch</Name>
         <Homepage>http://speedcrunch.org/</Homepage>
         <Packager>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>

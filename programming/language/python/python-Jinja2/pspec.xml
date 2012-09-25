@@ -5,8 +5,8 @@
         <Name>python-Jinja2</Name>
         <Homepage>http://jinja.pocoo.org/2/</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>app:console</IsA>

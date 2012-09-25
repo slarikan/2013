@@ -5,8 +5,8 @@
         <Name>systemd</Name>
         <Homepage>http://www.freedesktop.org/wiki/Software/systemd</Homepage>
         <Packager>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:cli</IsA>

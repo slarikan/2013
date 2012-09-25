@@ -5,8 +5,8 @@
         <Name>python-sqlalchemy</Name>
         <Homepage>http://www.sqlalchemy.org/</Homepage>
         <Packager>
-            <Name>Jérôme Schneider</Name>
-            <Email>jerome.schneider@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>

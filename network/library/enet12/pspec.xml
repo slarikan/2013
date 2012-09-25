@@ -5,8 +5,8 @@
         <Name>enet12</Name>
         <Homepage>http://enet.bespin.org/</Homepage>
         <Packager>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <Icon>enet</Icon>

@@ -5,8 +5,8 @@
         <Name>atlas</Name>
         <Homepage>http://math-atlas.sourceforge.net</Homepage>
         <Packager>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

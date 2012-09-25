@@ -5,12 +5,12 @@
         <Name>xfprint</Name>
         <Homepage>http://archive.xfce.org/src/archive/xfprint/</Homepage>
         <Packager>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+    <PartOf>desktop.xfce.addon</PartOf>
         <Summary>Print dialog and printer manager for Xfce</Summary>
         <Description>Print dialog and printer manager for Xfce.</Description>
         <Archive sha1sum="4ce98c49d49b2d4c1a8fb5d76597b8e9ab9a51e8" type="tarbz2">http://archive.xfce.org/src/archive/xfprint/4.6/xfprint-4.6.1.tar.bz2</Archive>
@@ -18,7 +18,7 @@
             <Dependency>a2ps</Dependency>
             <Dependency>chrpath</Dependency>
             <Dependency>cups-devel</Dependency>
-	    <Dependency>desktop-file-utils</Dependency>
+        <Dependency>desktop-file-utils</Dependency>
             <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
             <Dependency versionFrom="4.10.0">xfconf-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -31,12 +31,12 @@
             <Dependency>a2ps</Dependency>
             <Dependency>chrpath</Dependency>
             <Dependency>cups</Dependency>
-	    <Dependency>desktop-file-utils</Dependency>
+        <Dependency>desktop-file-utils</Dependency>
             <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
             <Dependency versionFrom="4.10.0">xfconf</Dependency>
             <Dependency>glib2</Dependency>
         </RuntimeDependencies>
-	<Files>
+    <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/</Path>

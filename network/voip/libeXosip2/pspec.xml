@@ -5,8 +5,8 @@
         <Name>libeXosip2</Name>
         <Homepage>http://savannah.nongnu.org/projects/exosip</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

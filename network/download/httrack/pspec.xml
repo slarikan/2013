@@ -5,8 +5,8 @@
         <Name>httrack</Name>
         <Homepage>http://www.httrack.com/</Homepage>
         <Packager>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>httrack</Icon>

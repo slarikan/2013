@@ -5,8 +5,8 @@
         <Name>qbittorrent</Name>
         <Homepage>http://www.qbittorrent.org</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
         <Icon>qbittorrent</Icon>

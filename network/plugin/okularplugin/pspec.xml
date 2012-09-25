@@ -5,8 +5,8 @@
         <Name>okularplugin</Name>
         <Homepage>https://github.com/jeremysanders/okularplugin</Homepage>
         <Packager>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>plugin</IsA>

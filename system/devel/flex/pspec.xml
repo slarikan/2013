@@ -5,8 +5,8 @@
         <Name>flex</Name>
         <Homepage>http://flex.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>FLEX</License>
         <IsA>app:console</IsA>

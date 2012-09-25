@@ -6,8 +6,8 @@
         <Name>eclipse-pydev</Name>
         <Homepage>http://pydev.org</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>EPL</License>
         <IsA>app:gui</IsA>

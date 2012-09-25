@@ -5,8 +5,8 @@
         <Name>module-fglrx</Name>
         <Homepage>http://www.ati.com/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>ATI</License>
         <Summary>ATI display drivers</Summary>

@@ -5,8 +5,8 @@
         <Name>kdeutils-filelight</Name>
         <Homepage>http://utils.kde.org/projects/filelight</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>filelight</Icon>

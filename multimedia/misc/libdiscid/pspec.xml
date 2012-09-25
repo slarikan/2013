@@ -5,8 +5,8 @@
         <Name>libdiscid</Name>
         <Homepage>http://musicbrainz.org/doc/libdiscid</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

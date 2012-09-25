@@ -5,25 +5,25 @@
         <Name>kelimeleme</Name>
         <Homepage>http://code.google.com/p/kelimeleme/</Homepage>
         <Packager>
-            <Name>Sezai Yeniay</Name>
-	    <Email>sezaiyeniay@ozgurlukicin.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+        <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
         <IsA>app:gui</IsA>
         <Summary xml:lang="tr">Kelime Tekrarlayıcı</Summary>
         <Description xml:lang="tr">Sistem tepsisine yerleşip, ekranın sol üstünde, belirlediğiniz bir süre görünüp kaybolan, belirlediğiniz sayıda kelime gösteren bir kelime tekrar programı.</Description>
-	<Archive sha1sum="fab85478bb355135458cc0d9139c5bab299bd2b9" type="targz">http://kelimeleme.googlecode.com/files/Kelimeleme-1.1.tar.gz</Archive>
+    <Archive sha1sum="fab85478bb355135458cc0d9139c5bab299bd2b9" type="targz">http://kelimeleme.googlecode.com/files/Kelimeleme-1.1.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>kelimeleme</Name>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="data">/usr/applications/</Path>
+        <Path fileType="data">/usr/share/</Path>
+        <Path fileType="data">/usr/applications/</Path>
         </Files>
-	    <AdditionalFiles>
-		    <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/kelimeleme.desktop">Kelimeleme.desktop</AdditionalFile>
-	    </AdditionalFiles>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/kelimeleme.desktop">Kelimeleme.desktop</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
@@ -32,14 +32,14 @@
             <Version>1.1</Version>
             <Comment>Build for pardus-anka</Comment>
             <Name>Sezai Yeniay</Name>
-	    <Email>sezaiyeniay@ozgurlukicin.com</Email>
+        <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Update>
         <Update release="1">
             <Date>2010-30-05</Date>
             <Version>1.1</Version>
             <Comment>First release.</Comment>
             <Name>Hamit Giray Nart</Name>
-	    <Email>hamit@pardus-linux.org</Email>
+        <Email>hamit@pardus-linux.org</Email>
         </Update>
     </History>
 </PISI>

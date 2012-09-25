@@ -5,8 +5,8 @@
         <Name>python-h5py</Name>
         <Homepage>http://code.google.com/p/h5py/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

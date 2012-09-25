@@ -3,8 +3,8 @@
         <Name>python3</Name>
         <Homepage>http://www.python.org/</Homepage>
         <Packager>
-            <Name>Ramazan Utku</Name>
-            <Email>ramazanutku@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>custom</License>
         <PartOf>programming.language</PartOf>

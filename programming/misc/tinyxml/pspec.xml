@@ -5,8 +5,8 @@
         <Name>tinyxml</Name>
         <Homepage>http://www.grinninglizard.com/tinyxml</Homepage>
         <Packager>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>ZLIB</License>
         <IsA>library</IsA>

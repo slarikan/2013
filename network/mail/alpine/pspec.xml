@@ -5,8 +5,8 @@
         <Name>alpine</Name>
         <Homepage>http://re-alpine.sourceforge.net</Homepage>
         <Packager>
-            <Name>Kenan Pelit</Name>
-            <Email>kpelit@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>Apache-2.0</License>
         <IsA>app:console</IsA>

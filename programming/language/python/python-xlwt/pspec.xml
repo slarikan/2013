@@ -5,8 +5,8 @@
         <Name>python-xlwt</Name>
         <Homepage>https://secure.simplistix.co.uk/svn/xlwt/trunk</Homepage>
         <Packager>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

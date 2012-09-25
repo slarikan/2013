@@ -5,8 +5,8 @@
         <Name>gsettings-desktop-schemas</Name>
         <Homepage>http://www.gnome.org/</Homepage>
         <Packager>
-            <Name>Aydan Taşdemir</Name>
-            <Email>aydantasdemir@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Isa>data</Isa>

@@ -4,8 +4,8 @@
         <Name>db4-java</Name>
         <Homepage>http://www.oracle.com/database/berkeley-db/index.html</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>DB</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
 		<Name>guitar-tuner</Name>
 		<Homepage>http://bertozlabs.awardspace.biz/Projects/guitar-tuner.php</Homepage>
 		<Packager>
-			<Name>Hamit Giray Nart</Name>
-			<Email>hamit@pardus-linux.org</Email>
+			<Name>Pardus ANKA Admins</Name>
+			<Email>pisiciftligi@pardus-linux.org</Email>
 		</Packager>
 		<License>GNU/GPLv2</License>
 		<IsA>app:gui</IsA>

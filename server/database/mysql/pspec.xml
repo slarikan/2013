@@ -5,8 +5,8 @@
         <Name>mysql</Name>
         <Homepage>http://www.mysql.com/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Summary>A fast, multi-threaded, multi-user SQL database server</Summary>

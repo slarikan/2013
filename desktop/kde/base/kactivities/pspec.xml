@@ -5,8 +5,8 @@
         <Name>kactivities</Name>
         <Homepage>https://projects.kde.org/projects/kde/kdelibs/kactivities</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

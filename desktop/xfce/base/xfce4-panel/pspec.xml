@@ -5,8 +5,8 @@
         <Name>xfce4-panel</Name>
         <Homepage>http://www.xfce.org</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2</License>
@@ -33,7 +33,7 @@
             <Dependency>docbook-xsl</Dependency>
         </BuildDependencies>
         <Patches>
-	    <Patch level="1">translation.patch</Patch>
+        <Patch level="1">translation.patch</Patch>
         </Patches>
     </Source>
 
@@ -76,7 +76,7 @@
             <Dependency releaseFrom="current">xfce4-panel</Dependency>
             <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
             <Dependency version="0.8.0">exo-devel</Dependency>
-	    <Dependency version="0.2.0">garcon</Dependency>
+        <Dependency version="0.2.0">garcon</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency version="4.10.0">libxfce4util-devel</Dependency>
         </RuntimeDependencies>

@@ -5,8 +5,8 @@
         <Name>iputils</Name>
         <Homepage>http://www.linux-ipv6.org</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>app:console</IsA>

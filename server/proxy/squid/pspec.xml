@@ -5,8 +5,8 @@
         <Name>squid</Name>
         <Homepage>http://www.squid-cache.org</Homepage>
         <Packager>
-            <Name>Kaan Özdinçer</Name>
-            <Email>kozdincer@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>

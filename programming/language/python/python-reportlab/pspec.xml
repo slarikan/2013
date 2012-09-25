@@ -5,8 +5,8 @@
         <Name>python-reportlab</Name>
         <Homepage>http://www.reportlab.org/</Homepage>
         <Packager>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

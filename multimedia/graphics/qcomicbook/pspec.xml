@@ -5,8 +5,8 @@
         <Name>qcomicbook</Name>
         <Homepage>http://qcomicbook.linux-projects.net/</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>qcomicbook</Icon>

@@ -5,8 +5,8 @@
         <Name>module-nvidia96</Name>
         <Homepage>http://www.nvidia.com</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>NVIDIA</License>
         <IsA>driver</IsA>

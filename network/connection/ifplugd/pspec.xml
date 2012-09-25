@@ -5,8 +5,8 @@
         <Name>ifplugd</Name>
         <Homepage>http://0pointer.de/lennart/projects/ifplugd/</Homepage>
         <Packager>
-            <Name>Nihat Ciddi</Name>
-            <Email>nakof@zig.gen.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>

@@ -5,8 +5,8 @@ db<?xml version="1.0" ?>
         <Name>zlib</Name>
         <Homepage>http://www.gzip.org/zlib/</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>ZLIB</License>
         <IsA>library</IsA>

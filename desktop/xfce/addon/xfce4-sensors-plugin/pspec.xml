@@ -3,8 +3,8 @@
         <Name>xfce4-sensors-plugin</Name>
         <Homepage>http://goodies.xfce.org/projects/panel-plugins/xfce4-sensors-plugin</Homepage>
         <Packager>
-            <Name>Utku Berberoglu</Name>
-            <Email>utku.berber@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
         <PartOf>editor.emacs</PartOf>

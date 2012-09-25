@@ -5,8 +5,8 @@
         <Name>libshout</Name>
         <Homepage>http://www.icecast.org</Homepage>
         <Packager>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2+</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
         <Name>libnjb</Name>
         <Homepage>http://libnjb.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <Icon>ipod_mount</Icon>

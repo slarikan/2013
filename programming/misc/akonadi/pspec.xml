@@ -5,8 +5,8 @@
         <Name>akonadi</Name>
         <Homepage>http://pim.kde.org/akonadi</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <Icon>akonadi</Icon>

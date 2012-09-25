@@ -5,8 +5,8 @@
         <Name>dcmtk</Name>
         <Homepage>http://dicom.offis.de</Homepage>
         <Packager>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>

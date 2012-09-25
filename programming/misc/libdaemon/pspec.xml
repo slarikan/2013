@@ -5,8 +5,8 @@
         <Name>libdaemon</Name>
         <Homepage>http://0pointer.de/lennart/projects/libdaemon</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

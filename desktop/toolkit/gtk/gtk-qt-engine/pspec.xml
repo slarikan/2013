@@ -5,8 +5,8 @@
         <Name>gtk-qt-engine</Name>
         <Homepage>http://code.google.com/p/gtk-qt-engine</Homepage>
         <Packager>
-            <Name>Pardus</Name>
-            <Email>admins@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>kcmgtk</Icon>
@@ -20,9 +20,9 @@
             <Dependency versionFrom="2.24.7">gtk2</Dependency>
             <Dependency>automoc4</Dependency>
         </BuildDependencies>
-	<Patches>
-	  <Patch level="1">qt-theme-draw.patch</Patch>
-	</Patches>
+    <Patches>
+      <Patch level="1">qt-theme-draw.patch</Patch>
+    </Patches>
     </Source>
 
     <Package>

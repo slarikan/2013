@@ -5,8 +5,8 @@
         <Name>atool</Name>
         <Homepage>http://www.nongnu.org/atool</Homepage>
         <Packager>
-            <Name>Kenan Pelit</Name>
-            <Email>kpelit@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

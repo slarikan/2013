@@ -5,8 +5,8 @@
         <Name>freeradius</Name>
         <Homepage>http://www.freeradius.org/</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>

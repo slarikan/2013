@@ -5,8 +5,8 @@
         <Name>python-pycha</Name>
         <Homepage>https://bitbucket.org/lgs/pycha/wiki/Home</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv3</License>
         <Icon>pycha</Icon>

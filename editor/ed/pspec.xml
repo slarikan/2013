@@ -5,8 +5,8 @@
         <Name>ed</Name>
         <Homepage>http://www.gnu.org/software/ed/</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
         <IsA>app:console</IsA>

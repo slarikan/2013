@@ -3,8 +3,8 @@
         <Name>gimp-lqr-plugin</Name>
         <Homepage>http://liquidrescale.wikidot.com/</Homepage>
         <Packager>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <IsA>library</IsA>
         <License>GPLv2</License>

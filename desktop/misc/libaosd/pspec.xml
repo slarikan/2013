@@ -5,8 +5,8 @@
         <Name>libaosd</Name>
         <Homepage>http://www.atheme.org/project/libaosd</Homepage>
         <Packager>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>

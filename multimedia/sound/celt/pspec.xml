@@ -5,8 +5,8 @@
         <Name>celt</Name>
         <Homepage>http://www.celt-codec.org/</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <Summary>An audio codec for use in low-delay speech and audio communication</Summary>

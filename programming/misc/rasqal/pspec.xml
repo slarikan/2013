@@ -5,8 +5,8 @@
         <Name>rasqal</Name>
         <Homepage>http://librdf.org/rasqal</Homepage>
         <Packager>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2</License>
         <License>Apache-2.0</License>

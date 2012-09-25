@@ -5,8 +5,8 @@
         <Name>imlib2</Name>
         <Homepage>http://enlightenment.org/Libraries/Imlib2</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

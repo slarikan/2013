@@ -5,8 +5,8 @@
         <Name>fcgi</Name>
         <Homepage>http://www.fastcgi.com/drupal</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>

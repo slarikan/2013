@@ -5,8 +5,8 @@
         <Name>aiksaurus</Name>
         <Homepage>http://sourceforge.net/projects/aiksaurus</Homepage>
         <Packager>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Summary>An English thesaurus library</Summary>

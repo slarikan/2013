@@ -5,8 +5,8 @@
         <Name>hunspell-dict-ru</Name>
         <Homepage>ftp://ftp.vsu.ru/mirrors/scon155.phys.msu.su/pub/russian/ispell/myspell</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>BSD</License>
         <IsA>locale:ru</IsA>

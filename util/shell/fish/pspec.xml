@@ -5,8 +5,8 @@
         <Name>fish</Name>
         <Homepage>http://fishshell.org/</Homepage>
         <Packager>
-            <Name>Mesutcan Kurt</Name>
-            <Email>mesutcank@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>

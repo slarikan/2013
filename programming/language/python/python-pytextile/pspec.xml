@@ -5,8 +5,8 @@
         <Name>python-pytextile</Name>
         <Homepage>http://cheeseshop.python.org/pypi/textile</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>freedist</License>
         <IsA>library</IsA>

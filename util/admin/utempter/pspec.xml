@@ -5,8 +5,8 @@
         <Name>utempter</Name>
         <Homepage>http://www.redhat.com/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <License>LGPLv2.1</License>

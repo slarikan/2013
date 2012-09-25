@@ -5,8 +5,8 @@
         <Name>python-PyXML</Name>
         <Homepage>http://pypi.python.org/pypi/PyXML</Homepage>
         <Packager>
-            <Name>Renan Çakırerk</Name>
-            <Email>renan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>PYTHON</License>
         <IsA>library</IsA>

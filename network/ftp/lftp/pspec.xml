@@ -5,8 +5,8 @@
         <Name>lftp</Name>
         <Homepage>http://lftp.yar.ru/</Homepage>
         <Packager>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
         <Icon>lftp</Icon>

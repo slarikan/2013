@@ -5,8 +5,8 @@
         <Name>telepathy-sofiasip</Name>
         <Homepage>http://sourceforge.net/projects/tp-sofiasip</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2+</License>
         <IsA>library</IsA>

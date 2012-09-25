@@ -5,8 +5,8 @@
         <Name>python-flickrapi</Name>
         <Homepage>http://stuvel.eu/projects/flickrapi</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>

@@ -5,8 +5,8 @@
         <Name>django-notification</Name>
         <Homepage>http://github.com/jtauber/django-notification</Homepage>
         <Packager>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>

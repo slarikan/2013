@@ -5,8 +5,8 @@
         <Name>plasma-applet-adjustable-clock</Name>
         <Homepage>http://www.kde-look.org/content/show.php/Adjustable+Clock?content=92825</Homepage>
         <Packager>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>chronometer</Icon>

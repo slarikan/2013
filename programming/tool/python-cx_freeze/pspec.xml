@@ -5,8 +5,8 @@
         <Name>python-cx_freeze</Name>
         <Homepage>http://cx-freeze.sourceforge.net</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>PSF-2.2</License>
         <IsA>app:console</IsA>

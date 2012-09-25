@@ -5,8 +5,8 @@
         <Name>hevea</Name>
         <Homepage>http://pauillac.inria.fr/~maranget/hevea</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>OPL</License>
         <IsA>app:console</IsA>

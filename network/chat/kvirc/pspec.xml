@@ -5,8 +5,8 @@
         <Name>kvirc</Name>
         <Homepage>http://www.kvirc.net</Homepage>
         <Packager>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>

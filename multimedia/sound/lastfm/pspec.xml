@@ -5,8 +5,8 @@
         <Name>lastfm</Name>
         <Homepage>http://www.last.fm/</Homepage>
         <Packager>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>lastfm</Icon>

@@ -5,8 +5,8 @@
         <Name>xfce4-appfinder</Name>
         <Homepage>http://www.xfce.org</Homepage>
         <Packager>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>xfce4-appfinder</Icon>
@@ -25,7 +25,7 @@
             <Dependency version="0.2.0">garcon-devel</Dependency>
         </BuildDependencies>
         <Patches>
-	    <Patch level="1">translation.patch</Patch>
+        <Patch level="1">translation.patch</Patch>
         </Patches>
 
     </Source>
