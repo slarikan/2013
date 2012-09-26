@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>dracut</Name>
+        <Summary xml:lang="tr">udev kullanan initramfs oluşturucusu</Summary>
+        <Description xml:lang="tr">udev kullanan initramfs oluşturucusu</Description>
+    </Source>
+</PISI>

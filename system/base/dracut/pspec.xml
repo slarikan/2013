@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>dracut</Name>
+        <Homepage>https://dracut.wiki.kernel.org/</Homepage>
+        <Packager>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <IsA>app:cli</IsA>
+        <Summary>initramfs generator using udev</Summary>
+        <Description>initramfs generator using udev</Description>
+        <Archive sha1sum="219e6b991be4eb8bd83822fda9bf6c43894b6719" type="tarxz">https://www.kernel.org/pub/linux/utils/boot/dracut/dracut-023.tar.xz</Archive>
+<!--
+        <BuildDependencies>
+            <Dependency versionFrom=""></Dependency>
+            <Dependency></Dependency>
+        </BuildDependencies>
+-->
+        <Patches>
+            <Patch level="1">0001-COPYING-updated-to-recent-version-of-http-www.gnu.or.patch</Patch>
+            <Patch level="1">0002-dracut.conf.d-gentoo.conf.example-fix-header.patch</Patch>
+            <Patch level="1">0003-dracut.conf.5.asc-s-dracut-conf.d-dracut.conf.d-g.patch</Patch>
+            <Patch level="1">0004-include-the-omap_hsmmc-module-on-arm.patch</Patch>
+            <Patch level="1">0005-mdraid-always-create-need_shutdown-if-we-have-assemb.patch</Patch>
+            <Patch level="1">0006-add-back-scsi_wait_scan.patch</Patch>
+            <Patch level="1">0007-network-reintroduce-rd.neednet.patch</Patch>
+            <Patch level="1">0008-fips-set-boot-as-symlink-to-sysroot-boot-if-no-boot-.patch</Patch>
+            <Patch level="1">0009-install-dracut-install.c-Ensure-deps-are-resolved-wh.patch</Patch>
+            <Patch level="1">0010-install-dracut-install.c-Deal-gracefully-with-paths-.patch</Patch>
+            <Patch level="1">0011-install-dracut-install.c-No-need-to-compare-the-NULL.patch</Patch>
+            <Patch level="1">0012-udev-rules-Pre-usrmove-systemd-installs-might-not-fi.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>dracut</Name>
+<!--
+        <RuntimeDependencies>
+        </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="29">sleep</Package>
+        </Conflicts>
+-->
+        <Files>
+            <Path fileType="data">/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/dracut.conf.d/pardus.conf">pardus.conf</AdditionalFile>
+        </AdditionalFiles>
+        <!--
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
+        -->
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-09-25</Date>
+            <Version>023</Version>
+            <Comment>First release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
+    </History>
+</PISI>
