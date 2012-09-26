@@ -14,8 +14,6 @@ WorkDir = "talloc-%s" % get.srcVERSION()
 libdir = "lib32" if get.buildTYPE() == "emul32" else "lib"
 
 def setup():
-    shelltools.system("./autogen.sh")
-
     options = "--enable-talloc-compat1"
 
     if get.buildTYPE() == "emul32":
@@ -25,7 +23,7 @@ def setup():
     autotools.configure(options)
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
