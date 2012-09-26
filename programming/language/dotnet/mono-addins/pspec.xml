@@ -5,18 +5,18 @@
         <Name>mono-addins</Name>
         <Homepage>http://www.mono-project.com/Mono.Addins</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Gökmen Göksel</Name>
+            <Email>gokmen@pardus.org.tr</Email>
         </Packager>
         <License>MIT</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>A generic framework for creating extensible applications</Summary>
         <Description>Mono.Addins is a framework for creating extensible applications, and for creating libraries which extend those applications.</Description>
-        <Archive sha1sum="e40ebbf541315efdf54bf727084f90dc73e00cf4" type="tarbz2">http://ftp.novell.com/pub/mono/sources/mono-addins/mono-addins-0.5.tar.bz2</Archive>
+        <Archive sha1sum="6db5066b2a37a562910c8907279e4601dca05993" type="targz">https://launchpad.net/ubuntu/+archive/primary/+files/mono-addins_0.6.2.orig.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mono-devel</Dependency>
-            <Dependency>gtk-sharp</Dependency>
+            <Dependency>gtk-sharp-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-26</Date>
+            <Version>0.6.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-06-30</Date>
             <Version>0.5</Version>
