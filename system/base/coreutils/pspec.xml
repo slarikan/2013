@@ -5,8 +5,8 @@
         <Name>coreutils</Name>
         <Homepage>http://www.gnu.org/software/coreutils/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv3+</License>
         <IsA>app:console</IsA>
