@@ -11,7 +11,7 @@
         <License>LGPLv2.1</License>
         <Summary>The GIMP Toolkit version 2</Summary>
         <Description>GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
-        <Archive sha1sum="0b0e39f4c0030c783ff3e454d1761d3a054f1b74" type="tarbz2">mirrors://gnome/gtk+/2.24/gtk+-2.24.7.tar.bz2</Archive>
+        <Archive sha1sum="8091fc47f8ea7f05af3400e683662068b1ef4d7b" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gtk+/2.24/gtk+-2.24.13.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
@@ -178,6 +178,13 @@
     </Package>
 
     <History>
+        <Update release="80">
+            <Date>2012-09-25</Date>
+            <Version>2.24.13</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="79">
             <Date>2011-10-18</Date>
             <Version>2.24.7</Version>

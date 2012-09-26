@@ -9,6 +9,7 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
+    shelltools.export("PYTHONDONTWRITEBYTECODE","1")
     options = "--disable-static \
                --disable-specs \
                --without-xmlto"
