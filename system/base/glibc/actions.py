@@ -187,7 +187,7 @@ def install():
     if shelltools.isDirectory("%s/usr/share/zoneinfo" % get.installDIR()):
         pisitools.removeDir("/usr/share/zoneinfo")
     #while bootstrapping whole system zic should not be removed. timezone package does not build without it. # 2013
-    for i in ["zdump", "zic"]:
+    for i in ["zdump"]:
         if shelltools.isFile("%s/usr/sbin/%s" % (get.installDIR(), i)):
             pisitools.remove("/usr/sbin/%s" % i)
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyleft 2012 Pardus ANKA Community
-# Copyright 2005-2011 TUBITAK/UEAKE
+# Copyright 2009-2010 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/copyleft/gpl.txt.
 
@@ -12,8 +12,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 WorkDir = "tzdata"
-tzcode  = "tzcode2011d"
-tzdata  = "tzdata2011d"
+tzcode  = "tzcode2012f"
+tzdata  = "tzdata2012f"
 
 configTemplate = """
 objpfx = %(pwd)s/obj/
@@ -38,6 +38,8 @@ def disableLocale():
 def setup():
     shelltools.sym("Makeconfig.in", "Makeconfig")
     shelltools.echo("config.mk", configTemplate % configVars)
+    shelltools.cd("tzcode2012f")
+    autotools.make("version.h")
 
 def build():
     disableLocale()
@@ -48,20 +50,19 @@ def build():
 def mycheck():
     print "------------------- Start of tests ------------------------"
     disableLocale()
-    #autotools.make("check")
+    autotools.make("check")
     print "------------------- End of tests ------------------------"
 
 def install():
     disableLocale()
     autotools.rawInstall()
-    #pisitools.removeDir("/etc")
 
-    #for i in ["README", "Theory", "tz-link.htm"]:
-    #    pisitools.dodoc("%s/%s" % (tzcode, i))
+    for i in ["README", "Theory", "tz-link.htm"]:
+        pisitools.dodoc("%s/%s" % (tzcode, i))
 
-    #mycheck()
+    mycheck()
 
     # Create Timezone db in /usr/share/zoneinfo
-    #shelltools.chmod("dump-tz-db", 0755)
-    #shelltools.system("./dump-tz-db %s" % get.installDIR())
+    shelltools.chmod("dump-tz-db", 0755)
+    shelltools.system("./dump-tz-db %s" % get.installDIR())
 
