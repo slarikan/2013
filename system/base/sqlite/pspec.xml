@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An SQL Database Engine in a C Library</Summary>
         <Description>SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine. Supports databases up to 2 terabytes in size.</Description>
-        <Archive sha1sum="d3833b6ad68db8505d1044f761dd962f415cd302" type="targz">http://www.sqlite.org/sqlite-autoconf-3071300.tar.gz</Archive>
+        <Archive sha1sum="7b429809918201555f4c0fa639183a1c663d3fe0" type="targz">http://www.sqlite.org/sqlite-autoconf-3071400.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>readline-devel</Dependency>
         </BuildDependencies>
@@ -45,12 +45,48 @@
     </Package>
 
     <History>
+        <Update release="34">
+            <Date>2012-09-11</Date>
+            <Version>3.7.14</Version>
+            <Comment>Version bump to latest release:
+                * Ensure that floating point values are preserved exactly when reconstructing a database from the output of the ".dump" command of the command-line shell.
+                * Added the sqlite3_close_v2() interface.
+                * Updated the command-line shell so that it can be built using SQLITE_OMIT_FLOATING_POINT and SQLITE_OMIT_AUTOINIT.
+                * Improvements to the windows makefiles and build processes.
+                * Enhancements to PRAGMA integrity_check and PRAGMA quick_check so that they can optionally check just a single attached database instead of all attached databases.
+                * Enhancements to WAL mode processing that ensure that at least one valid read-mark is available at all times, so that read-only processes can always read the database.
+                * Performance enhancements in the sorter used by ORDER BY and CREATE INDEX.
+                * Added the SQLITE_DISABLE_FTS4_DEFERRED compile-time option.
+                * Better handling of aggregate queries where the aggregate functions are contained within subqueries.
+                * Enhance the query planner so that it will try to use a covering index on queries that make use of or optimization
+                </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
+        <Update release="33">
+            <Date>2012-06-12</Date>
+            <Version>3.7.13</Version>
+            <Comment>Version bump to latest release:
+                * In-memory databases that are specified using URI filenames are allowed to use shared cache, so that the same in-memory database can be accessed from multiple database connections.
+                * Recognize and use the mode=memory query parameter in URI filenames.
+                * Avoid resetting the schema of shared cache connections when any one connection closes. Instead, wait for the last connection to close before reseting the schema.
+                * In the RTREE extension, when rounding 64-bit floating point numbers to 32-bit for storage, always round in a direction that causes the bounding box to get larger.
+                * Adjust the unix driver to avoid unnecessary calls to fchown().
+                * Add interfaces sqlite3_quota_ferror() and sqlite3_quota_file_available() to the test_quota.c module.
+                * The sqlite3_create_module() and sqlite3_create_module_v2() interfaces return SQLITE_MISUSE on any attempt to overload or replace a virtual table module. The destructor is always called in this case, in accordance with historical and current documentation.  
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="32">
-            <Date>2012-08-23</Date>
-            <Version>3071300</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Date>2012-06-09</Date>
+            <Version>3.7.12.1</Version>
+            <Comment>Version bump to latest release:
+                * Fix a bug (ticket c2ad16f997) in the 3.7.12 release that can cause a segfault for certain obscure nested aggregate queries.
+                * Fix various other minor test script problems. 
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="31">
             <Date>2011-08-04</Date>
