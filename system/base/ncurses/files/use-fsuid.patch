@@ -46,10 +46,10 @@ diff -Naurp ncurses-5.6+20071103.orig/ncurses/tinfo/read_termcap.c ncurses-5.6+2
 @@ -1097,8 +1125,20 @@ _nc_read_termcap_entry(const char *const
  	for (i = 0; i < filecount; i++) {
  
- 	    T(("Looking for %s in %s", tn, termpaths[i]));
+ 	    TR(TRACE_DATABASE, ("Looking for %s in %s", tn, termpaths[i]));
 +#ifndef __linux__
  	    if (_nc_access(termpaths[i], R_OK) == 0
- 		&& (fp = fopen(termpaths[i], "r")) != (FILE *) 0) {
+		&& (fp = fopen(termpaths[i], "r")) != (FILE *) 0) {
 +#else
 +	    fp = (FILE *) 0;
 +	    if (_nc_access(termpaths[i], R_OK) == 0) {
