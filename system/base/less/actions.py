@@ -20,11 +20,10 @@ def build():
 def install():
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
 
-    #pisitools.dobin("less")
-    #pisitools.dobin("lessecho")
-    #pisitools.dobin("lesskey")
-
-    #pisitools.newman("lesskey.nro", "lesskey.1")
-    #pisitools.newman("less.nro", "less.1")
+    pisitools.dobin("less")
+    pisitools.dobin("lessecho")
+    pisitools.dobin("lesskey")
+    pisitools.newman("lesskey.nro", "lesskey.1")
+    pisitools.newman("less.nro", "less.1")
 
     pisitools.dodoc("NEWS", "README", "COPYING")

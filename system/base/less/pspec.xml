@@ -17,19 +17,12 @@
             <Dependency versionFrom="5.2">ncurses</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">less-444-Foption.v2.patch</Patch>
+            <Patch level="1">less-394-search.patch</Patch>
             <Patch level="1">less-394-time.patch</Patch>
-            <!-- Define HAVE_FSYNC if fsync() on a tty works. -->
             <Patch level="1">less-418-fsync.patch</Patch>
-            <!-- enable the script returning zero if the output was
-            valid and non-zero otherwise, so less could detect even
-            a valid empty output (for example while uncompressing
-            gzipped empty file) This is not enabled by default, if you
-            want to enable it, put another vertical bar (|) straight
-            after the first one in the LESSOPEN environment variable, eg.
-            LESSOPEN="||lesspipe.sh %s".
-            -->
-            <!--Patch level="1">less-436-empty-lessopen-pipe.patch</Patch-->
-            <Patch level="1">less-443-Foption.patch</Patch>
+            <Patch level="1">less-436-manpage-add-old-bot-option.patch</Patch>
+            <Patch level="1">less-436-help.patch</Patch>
         </Patches>
     </Source>
 
