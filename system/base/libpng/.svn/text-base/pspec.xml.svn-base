@@ -5,20 +5,19 @@
         <Name>libpng</Name>
         <Homepage>http://www.libpng.org/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Gökhan Özbulak</Name>
+            <Email>gozbulak@pardus.org.tr</Email>
         </Packager>
         <License>as-is</License>
         <IsA>library</IsA>
         <Summary>Portable Network Graphics library</Summary>
         <Description>The Portable Network Graphics (PNG) format was designed to replace the older and simpler GIF format and, to some extent, the much more complex TIFF format. Project's main aim is to concentrate on two major uses: the World Wide Web (WWW) and image-editing.</Description>
-        <Archive sha1sum="e45110a5e6787819be50f31092f1a1d43b717de0" type="tarbz2">mirrors://sourceforge/libpng/libpng-1.5.12.tar.bz2</Archive>
+        <Archive sha1sum="50ad8033fd05dd1403be00736264a68e102bc303" type="tarbz2">mirrors://sourceforge/libpng/libpng-1.5.11.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>zlib</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1" compressionType="gz">libpng-1.5.12-apng.patch.gz</Patch>
-            <Patch level="1">libpng-multilib.patch</Patch>
+            <Patch level="1" compressionType="gz">libpng-1.5.11-apng.patch.gz</Patch>
         </Patches>
     </Source>
 
@@ -67,13 +66,6 @@
     </Package>
 
     <History>
-        <Update release="33" type="security">
-            <Date>2012-09-27</Date>
-            <Version>1.5.12</Version>
-            <Comment>New stable release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
         <Update release="32" type="security">
             <Date>2012-07-11</Date>
             <Version>1.5.11</Version>
