@@ -3,8 +3,8 @@
         <Name>grub2</Name>
         <Homepage>http://www.gnu.org/software/grub/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Packager>
         <License>GPLv3</License>
         <PartOf>system.base</PartOf>
@@ -28,7 +28,9 @@
 	    <Dependency>lvm2-devel</Dependency>
             <Dependency versionFrom="0.17">gettext-devel</Dependency>
         </BuildDependencies>
-        <Patches/>
+	<Patches>
+	  <Patch level="0">stdio.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
