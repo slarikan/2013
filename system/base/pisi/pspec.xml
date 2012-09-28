@@ -5,8 +5,8 @@
         <Name>pisi</Name>
         <Homepage>http://www.pardus.org.tr/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Fatih Aşıcı</Name>
+            <Email>fatih@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
@@ -55,6 +55,7 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/pisi/sandbox.conf">sandbox.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/lib/pardus/pisi/actionsapi/pkgconfig.py">pkgconfig.py</AdditionalFile>
+	    <AdditionalFile owner="root" permission="0644" target="/usr/lib/pardus/pisi/actionsapi/kerneltools.py">kerneltools.py</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
