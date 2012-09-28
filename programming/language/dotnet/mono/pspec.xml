@@ -5,8 +5,8 @@
         <Name>mono</Name>
         <Homepage>http://www.mono-project.com</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2.1</License>
@@ -15,12 +15,11 @@
         <IsA>library</IsA>
         <Summary>Mono runtime and class libraries, a C# compiler/interpreter</Summary>
         <Description>Mono is a C# compiler and interpreter. It also includes mono runtime and class libraries.</Description>
-        <Archive sha1sum="234ee4eca6c80dda9d8fe955f3aafa25530921a7" type="tarbz2">http://ftp.novell.com/pub/mono/sources/mono/mono-2.10.1.tar.bz2</Archive>
+        <Archive sha1sum="1a6e8c5a0c3d88d87982259aa04402e028a283de" type="tarbz2">http://pkgs.fedoraproject.org/repo/pkgs/mono/mono-2.10.9.tar.bz2/bbbff9d3d0c36b904437ada36a27eb9e/mono-2.10.9.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.8.1">libgdiplus</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">mono-2.6-format-strings.patch</Patch>
             <Patch level="1">mono-dllmap.patch</Patch>
             <Patch level="1">mono-2.6-selfexe.patch</Patch>
         </Patches>
@@ -31,6 +30,9 @@
         <RuntimeDependencies>
             <Dependency versionFrom="2.8.1">libgdiplus</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="config">/etc/mono</Path>
             <Path fileType="executable">/usr/bin/mono</Path>
@@ -120,6 +122,9 @@
             <Dependency>mono-extras</Dependency>
             <Dependency>mono-locale-extras</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="header">/usr/include</Path>
@@ -142,6 +147,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/mdoc*</Path>
             <Path fileType="executable">/usr/bin/monodoc*</Path>
@@ -161,6 +169,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/sql*</Path>
             <Path fileType="library">/usr/lib/mono/*/sql*.ex*</Path>
@@ -196,6 +207,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/Mono.Data.Sqlit*</Path>
         </Files>
@@ -208,6 +222,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/Npgsql*</Path>
         </Files>
@@ -220,6 +237,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/System.Data.OracleClient*</Path>
         </Files>
@@ -232,6 +252,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/IBM.Data.DB2*</Path>
         </Files>
@@ -243,6 +266,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/nunit*</Path>
             <Path fileType="library">/usr/lib/mono/*/nunit*</Path>
@@ -256,6 +282,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/System.Design*</Path>
             <Path fileType="library">/usr/lib/mono/*/System.Drawing.Design*</Path>
@@ -271,6 +300,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="config">/etc/mono/mconfig/config.xml</Path>
             <Path fileType="config">/etc/mono/browscap.ini</Path>
@@ -308,6 +340,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/svcutil</Path>
             <Path fileType="library">/usr/lib/mono/*/svcutil*</Path>
@@ -327,6 +362,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/WindowsBase*</Path>
         </Files>
@@ -338,6 +376,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin/mono-service*</Path>
             <Path fileType="library">/usr/lib/mono/*/mono-service*</Path>
@@ -360,6 +401,9 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>mono</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/mono/*/I18N.MidEast*</Path>
             <Path fileType="library">/usr/lib/mono/*/I18N.Rare*</Path>
@@ -369,6 +413,13 @@
     </Package>
 
     <History>
+       <Update release="35">
+            <Date>2012-06-25</Date>
+            <Version>2.10.9</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="34">
             <Date>2011-02-27</Date>
             <Version>2.10.1</Version>

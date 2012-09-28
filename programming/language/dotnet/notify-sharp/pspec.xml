@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>notify-sharp</Name>
+        <Homepage>http://www.galago-project.org</Homepage>
+        <Packager>
+            <Name>Alper Tekinalp</Name>
+            <Email>alper.tekinalp@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>C# bindings for desktop notification</Summary>
+        <Description>notify-sharp contains C# bindings for desktop notification.</Description>
+        <Archive sha1sum="8cfc23eef30de3829e3f8b9feae9e4bfcfe68487" type="targz">https://launchpad.net/debian/sid/+source/notify-sharp/0.4.0~r3032-5/+files/notify-sharp_0.4.0~r3032.orig.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mono-devel</Dependency>
+            <Dependency>gtk-sharp-devel</Dependency>
+            <Dependency>gtk-sharp-devel</Dependency>	    
+            <Dependency>dbus-sharp-glib</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">01_pkg-config-path.patch</Patch>
+            <Patch level="1">02_reverse_cap_check.patch</Patch>
+            <Patch level="1">04-fix-app-name-derivation.patch</Patch>
+        </Patches>	
+    </Source>
+
+    <Package>
+        <Name>notify-sharp</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk-sharp</Dependency>
+            <Dependency>ndesk-dbus-glib</Dependency>
+	    <Dependency>dbus-sharp-glib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2011-03-23</Date>
+            <Version>0.4.0</Version>
+            <Comment>
+                * add patchs
+                * version bump
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>      
+        <Update release="1">
+            <Date>2011-03-23</Date>
+            <Version>0.0_20110323</Version>
+            <Comment>First release.</Comment>
+            <Name>Alper Tekinalp</Name>
+            <Email>alper.tekinalp@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
