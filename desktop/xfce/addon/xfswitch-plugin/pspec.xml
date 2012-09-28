@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xfswitch-plugin</Name>
+        <Homepage>http://goodies.xfce.org/projects/panel-plugins/xfswitch-plugin</Homepage>
+        <Packager>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+	<PartOf>desktop.xfce.addon</PartOf>
+        <Summary>A user switching plugin for the Xfce4 Panel</Summary>
+        <Description>Xfswitch-plugin is a user switching plugin for the Xfce4 Panel. It allows you to leave the current session opened and open a new session with another user.</Description>
+        <Archive sha1sum="98d48a836493fbbf72188d74afba7c2505579b4a" type="targz">http://comak.comu.edu.tr/source/xfswitch-plugin-0.0.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xfswitch-plugin</Name>
+        <RuntimeDependencies>
+            <Dependency version="4.10.0">xfce4-panel</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency version="4.10.0">libxfcegui4</Dependency>
+            <Dependency version="4.10.0">libxfce4util</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/xfce4/doc</Path>
+            <Path fileType="data">/usr/share/xfce4</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="2">
+            <Date>2012-05-03</Date>
+            <Version>0.0.1</Version>
+            <Comment>rebuild for xfce 4.10.0</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2011-03-17</Date>
+            <Version>0.0.1</Version>
+            <Comment>First release.</Comment>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
