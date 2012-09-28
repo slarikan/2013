@@ -6,8 +6,9 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import get
 
-WorkDir="python-elementary"
+WorkDir = "python-evas"
 
 def setup():
     autotools.autoreconf("-vfi")
@@ -17,6 +18,6 @@ def build():
     autotools.make()
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "COPYING", "README")
