@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmatenotify</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+	<IsA>library</IsA>
+        <Summary>A library that sends desktop notifications to a notification daemon</Summary>
+        <Description>A library that sends desktop notifications to a notification daemon, as defined in the Desktop Notifications spec. These notifications can be used to inform the user about an event or display some form ofinformation without getting in the user's way.</Description>
+        <Archive sha1sum="bf21fc19bf31aae1ec8773e33a5638a5119ac0cf" type="tarxz">http://pub.mate-desktop.org/releases/1.2/libmatenotify-1.2.0.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>dbus-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
+	    <Dependency relaseFrom="3">mate-conf</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>libxklavier-devel</Dependency>
+	    <Dependency>mate-common</Dependency>
+	 </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libmatenotify</Name>
+        <RuntimeDependencies>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>dbus</Dependency>
+            <Dependency>dbus-glib</Dependency>
+	    <Dependency relaseFrom="3">mate-conf</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>libxklavier</Dependency>
+	    <Dependency>mate-common</Dependency>
+	</RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2012-07-15</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
+ 
+ 
+ 
+
+ 

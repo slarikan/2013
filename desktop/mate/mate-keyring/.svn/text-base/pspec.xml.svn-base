@@ -1,0 +1,72 @@
+<PISI>
+    <Source>
+        <Name>mate-keyring</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+	<License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Password and keyring managing daemon</Summary>
+        <Description>The mate-keyring session daemon manages passwords and other types of secrets for the user, storing them encrypted with a main password. Applications can use the mate-keyring library to integrate with the keyring.</Description>
+        <Archive sha1sum="5142bf62f2720287c46ffd76e21f1995a8b46427" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-keyring-1.2.1.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+            <Dependency>libtasn1-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>libtasn1-devel</Dependency>
+            <Dependency>libgcrypt-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+	    <Dependency>libmatekeyring</Dependency>
+	 </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>mate-keyring</Name>
+	 <RuntimeDependencies>
+	   <Dependency>gtk2</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>glib2</Dependency>
+            <Dependency>libtasn1</Dependency>
+	    <Dependency>pango</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>libtasn1</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>cairo</Dependency>
+	    <Dependency>libmatekeyring</Dependency>
+	 </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="config">/etc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="executable">/usr/libexec</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2012-07-14</Date>
+            <Version>1.2.1</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
+ 
+ 
+ 
+
+ 

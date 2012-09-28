@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-icon-theme</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>data</IsA>
+        <Summary>Mate icon theme</Summary>
+        <Description>mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
+        <Archive sha1sum="60b5a1f3871420948f5e1f93d213373c68d043cf" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-icon-theme-1.2.0.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>icon-naming-utils</Dependency>
+	    <Dependency>intltool</Dependency>
+	 </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>mate-icon-theme</Name>
+	<RuntimeDependencies>
+	   <Dependency>icon-naming-utils</Dependency>
+	   <Dependency>intltool</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/icons</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="data">/usr/share/pkgconfig</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2012-07-08</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
+ 
+ 
+ 
+
+ 

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mate-conf</Name>
+        <Summary xml:lang="tr">Mate Konfigürasyon Sistemi</Summary>
+        <Description xml:lang="tr">mateconf, Mate Konfigürasyon Sistemidir.</Description>
+    </Source>
+</PISI>

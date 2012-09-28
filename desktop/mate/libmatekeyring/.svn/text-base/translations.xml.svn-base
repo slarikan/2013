@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>libmatekeyring</Name>
+        <Summary xml:lang="tr">mate-keyring'e ulaşmak için uyumluluk kitaplığı.</Summary>
+        <Description xml:lang="tr">libmate-keyring, mate-keyring sistemine uyumlu olmak için programlar tarafından kullanılan bir kitaplığıdır.</Description>
+    </Source>
+</PISI>

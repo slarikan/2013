@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatecanvas/files
+END
+disable-gtk-doc-Makefile.patch
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatecanvas/files/disable-gtk-doc-Makefile.patch
+END
+disable-gtk-doc-configure_in.patch
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatecanvas/files/disable-gtk-doc-configure_in.patch
+END

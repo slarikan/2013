@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-notification-daemon</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>Mate notification daemon</Summary>
+        <Description>mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
+        <Archive sha1sum="3b57578e33d044c924ea4a7714b8ee136c90a3f7" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-notification-daemon-1.2.0.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>mate-desktop</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
+	    <Dependency>libcanberra-devel</Dependency>
+	    <Dependency>libwnck-devel</Dependency>
+	    <Dependency>libglade-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
+	    <Dependency>atk-devel</Dependency>
+	 </BuildDependencies>
+	 <Patches>
+<!-- 	   in every relase we need to change it FIXME -->
+            <Patch level="1">schemas.patch</Patch>
+	 </Patches>
+    </Source>
+    <Package>
+        <Name>mate-notification-daemon</Name>
+	 <RuntimeDependencies>
+	   <Dependency>atk</Dependency>
+           <Dependency>libglade</Dependency>
+           <Dependency>libnotify</Dependency>
+	   <Dependency>mate-desktop</Dependency>
+	   <Dependency>intltool</Dependency>
+	   <Dependency>glib2</Dependency>
+	   <Dependency>gtk2</Dependency>
+	   <Dependency>mate-doc-utils</Dependency>
+	   <Dependency>mate-conf</Dependency>
+	   <Dependency>libcanberra-gtk</Dependency>
+	   <Dependency>libcanberra</Dependency>
+	   <Dependency>libwnck</Dependency>	    
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="executable">/usr/libexec</Path>
+	    <Path fileType="config">/etc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2012-07-16</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
+ 
+ 
+ 
+
+ 
