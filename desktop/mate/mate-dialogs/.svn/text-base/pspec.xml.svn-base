@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-dialogs</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <IsA>app:gui</IsA>
+        <Summary>mate-dialogs</Summary>
+        <Description>mate-dialogs is a part of Mate project.</Description>
+        <Archive sha1sum="a7215a2041385a2576905ec71bf03bd568770d48" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-dialogs-1.2.0.tar.xz</Archive>
+        <BuildDependencies>
+	   <Dependency>libmatenotify</Dependency>
+	   <Dependency>mate-doc-utils</Dependency>
+	   <Dependency>mate-common</Dependency>
+	   <Dependency>glib2-devel</Dependency>
+	   <Dependency>gtk2-devel</Dependency>
+	</BuildDependencies>
+    </Source>
+    <Package>
+        <Name>mate-dialogs</Name>
+	<RuntimeDependencies>
+	   <Dependency>libmatenotify</Dependency>
+	   <Dependency>mate-doc-utils</Dependency>
+	   <Dependency>mate-common</Dependency>
+	   <Dependency>glib2-devel</Dependency>
+	   <Dependency>gtk2-devel</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	   <Path fileType="data">/usr/share/omf</Path>
+	   <Path fileType="data">/usr/share/mate</Path>
+	   <Path fileType="data">/usr/share/matedialog</Path>
+	   <Path fileType="doc">/usr/share/doc</Path>
+	   <Path fileType="man">/usr/share/man</Path>
+	   <Path fileType="localedata">/usr/share/locale</Path>
+	   <Path fileType="executable">/usr/bin</Path>	  
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2012-07-15</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
+ 
+ 
+ 
+
+ 

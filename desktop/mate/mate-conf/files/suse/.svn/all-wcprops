@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/mate-conf/files/suse
+END
+mate-conf-1.2.1-set_default_paths.patch
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/mate-conf/files/suse/mate-conf-1.2.1-set_default_paths.patch
+END
+mate-conf-1.2.1-mateconf_xml_defaults.patch
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/mate-conf/files/suse/mate-conf-1.2.1-mateconf_xml_defaults.patch
+END

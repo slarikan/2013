@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-file-manager</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <Icon>caja</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Default file manager for the Mate desktop.</Summary>
+        <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
+        <Archive sha1sum="26b2723e757ddee579d1feaab8b450fecd39df15" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-1.4.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">suse/mate-1.2.2-add_gmodules_to_linker.patch</Patch>
+	</Patches>
+    </Source>
+    <Package>
+        <Name>mate-file-manager</Name>
+	<RuntimeDependencies>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gobject-introspection</Dependency>	    
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="executable">/usr/libexec</Path>
+	    <Path fileType="config">/etc</Path>
+        </Files>
+	<Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+    
+    <Package>
+        <Name>mate-file-manager-devel</Name>
+        <Summary>mate-file-manager için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency release="current">mate-file-manager</Dependency>
+	 </RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="2">
+            <Date>2012-08-23</Date>
+            <Version>1.4.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-07-15</Date>
+            <Version>1.2.2</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

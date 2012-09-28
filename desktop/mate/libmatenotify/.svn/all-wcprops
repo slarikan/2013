@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatenotify
+END
+translations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatenotify/translations.xml
+END
+actions.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatenotify/actions.py
+END
+pspec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pardus/!svn/ver/990/playground/hitaf/desktop/mate/libmatenotify/pspec.xml
+END

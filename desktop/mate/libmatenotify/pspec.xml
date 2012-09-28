@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmatenotify</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+	<IsA>library</IsA>
+        <Summary>A library that sends desktop notifications to a notification daemon</Summary>
+        <Description>A library that sends desktop notifications to a notification daemon, as defined in the Desktop Notifications spec. These notifications can be used to inform the user about an event or display some form ofinformation without getting in the user's way.</Description>
+        <Archive sha1sum="101fe7f32240471a6428ba51f441cd677db0754e" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatenotify-1.4.0.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
+	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>mate-corba-devel</Dependency>
+	    <Dependency>libxklavier-devel</Dependency>
+	    <Dependency>mate-common</Dependency>
+	 </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libmatenotify</Name>
+        <RuntimeDependencies>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>libxklavier</Dependency>
+	    <Dependency>mate-common</Dependency>
+	</RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>    
+
+    <Package>
+        <Name>libmatenotify-devel</Name>
+        <Summary>libmatenotify için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency release="current">libmatenotify</Dependency>
+	 </RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="2">
+            <Date>2012-08-23</Date>
+            <Version>1.4.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-07-15</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

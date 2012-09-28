@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libmatecomponent</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>libmatecomponent is an part of Mate Project.</Summary>
+        <Description>libmatecomponent is the non-GUI part of the matecomponent component infrastructure.</Description>
+        <Archive sha1sum="033b7b542954948948065321064f5dcaf0cba6b1" type="tarxz">http://pub.mate-desktop.org/releases/1.2/libmatecomponent-1.2.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mate-common</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>gtk-doc</Dependency>
+	    <Dependency>fdupes</Dependency>
+	    <Dependency>intltool</Dependency>
+            <Dependency>mate-corba</Dependency>
+            <Dependency>flex</Dependency>
+	    <Dependency>popt-devel</Dependency>
+	    <Dependency>bison</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>libmatecomponent</Name>
+        <RuntimeDependencies>
+	    <Dependency>mate-common</Dependency>
+            <Dependency>mate-corba</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="config">/etc</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="executable">/usr/libexec</Path>
+	    <Path fileType="executable">/usr/sbin</Path>
+        </Files>
+	<AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/matecomponent-activation/matecomponent-activation-config.xml">matecomponent-activation-config.xml</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2012-07-26</Date>
+            <Version>1.2.1</Version>
+            <Comment>Fixes</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-07-11</Date>
+            <Version>1.2.1</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 

@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-doc-utils</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>A collection of documentation utilities for the Mate project</Summary>
+        <Description>mate-doc-utils is a collection of documentation utilities for the Mate project.</Description>
+        <Archive sha1sum="f527d97fa1f7a7f01da2c2cf9ff0b0422f59fe5f" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-doc-utils-1.4.0.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>intltool</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>libxslt-devel</Dependency>
+	    <Dependency>libxslt-32bit</Dependency>
+	    <Dependency>rarian-devel</Dependency>
+	    <Dependency>docbook-xml</Dependency>
+        </BuildDependencies>
+	<Patches>
+	    <Patch level="1">pardus/do-not-update-scrollkeeper-database.patch</Patch>
+        </Patches>
+    </Source>
+    <Package>
+        <Name>mate-doc-utils</Name>
+	<RuntimeDependencies>
+            <Dependency>intltool</Dependency>
+            <Dependency>libxml2</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>libxslt</Dependency>
+	    <Dependency>rarian</Dependency>
+	    <Dependency>docbook-xml</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="executable">/usr/bin/mate-doc-prepare</Path>
+	    <Path fileType="executable">/usr/bin/mate-doc-tool</Path>
+	    <Path fileType="executable">/usr/bin/xml2po</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="data">/usr/share/aclocal/mate-doc-utils.m4</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/mate</Path>
+	    <Path fileType="data">/usr/share/mate-doc-utils</Path>
+	    <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/pkgconfig</Path>
+            <Path fileType="data">/usr/share/xml</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+    <History>
+      <Update release="3">
+            <Date>2012-08-11</Date>
+            <Version>1.4.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-21</Date>
+            <Version>1.2.1</Version>
+            <Comment>Some fixes</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-07-08</Date>
+            <Version>1.2.1</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 

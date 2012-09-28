@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>libmateui</Name>
+        <Summary xml:lang="tr">Gerekli Mate Kütüphaneleri Kullanıcı Arayüzü</Summary>
+    </Source>
+</PISI>

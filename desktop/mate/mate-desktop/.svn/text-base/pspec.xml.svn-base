@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-desktop</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Basic Mate libraries and dialogs</Summary>
+        <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
+        <Archive sha1sum="5c76d72c118fa1b834538b61ae74c31fc899cc04" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-desktop-1.2.0.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>startup-notification-devel</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>libmatenotify</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>mate-conf</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency versionFrom="2.23.3">gdk-pixbuf-devel</Dependency>
+	    <Dependency>docbook-xml</Dependency>
+	 </BuildDependencies>
+	 <RuntimeDependencies>
+	    <Dependency>startup-notification</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>libxml2</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>libmatenotify</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>mateconf</Dependency>
+	    <Dependency>cairo</Dependency>
+            <Dependency versionFrom="2.23.3">gdk-pixbuf</Dependency>
+	    <Dependency>docbook-xml</Dependency>
+	 </RuntimeDependencies>
+    </Source>
+    <Package>
+        <Name>mate-desktop</Name>
+        <Files>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="data">/usr/share</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc</Path>
+	    <Path fileType="config">/etc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2012-07-15</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>turgelfatih@gmail.com</Email>
+        </Update>
+    </History>
+</PISI> 
+ 
+ 
+ 
+
+ 

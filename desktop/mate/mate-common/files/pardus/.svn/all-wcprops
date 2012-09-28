@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/934/playground/hitaf/desktop/mate/mate-common/files/pardus
+END
+always-copy.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pardus/!svn/ver/934/playground/hitaf/desktop/mate/mate-common/files/pardus/always-copy.patch
+END
+do-not-update-scrollkeeper.patch
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/pardus/!svn/ver/934/playground/hitaf/desktop/mate/mate-common/files/pardus/do-not-update-scrollkeeper.patch
+END
