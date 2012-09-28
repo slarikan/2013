@@ -1,0 +1,53 @@
+Author: Erdinç Gültekin <erdincgultekin@gmail.com>
+
+diff -Nuar lxde-common-0.5.5.orig//desktop.conf lxde-common-0.5.5//desktop.conf
+--- lxde-common-0.5.5.orig//desktop.conf	2012-07-01 13:15:11.693000004 +0200
++++ lxde-common-0.5.5//desktop.conf	2012-07-01 14:14:11.392000316 +0200
+@@ -2,8 +2,8 @@
+ window_manager=openbox-lxde
+ 
+ [GTK]
+-sNet/ThemeName=Clearlooks
+-sNet/IconThemeName=nuoveXT2
++sNet/ThemeName=Oxygen
++sNet/IconThemeName=milky
+ sGtk/FontName=Sans 10
+ iGtk/ToolbarStyle=3
+ iGtk/ButtonImages=1
+diff -uNr old-lxde-common-0.5.5//lxpanel/panel.in lxde-common-0.5.5/lxpanel/panel.in
+--- old-lxde-common-0.5.5//lxpanel/panel.in	2012-07-01 14:30:15.999518898 +0200
++++ lxde-common-0.5.5/lxpanel/panel.in	2012-07-01 14:45:27.876518849 +0200
+@@ -29,7 +29,7 @@
+ Plugin {
+     type = menu
+     Config {
+-        image=@prefix@/share/lxde/images/lxde-icon.png
++        image=@prefix@/share/lxde/images/PardusAnkaLogo.png
+         system {
+         }
+         separator {
+@@ -114,10 +114,6 @@
+ }
+ 
+ Plugin {
+-    type = cpu
+-}
+-
+-Plugin {
+     type = tray
+ }
+ 
+diff -Naurp lxde-common.orig/lxpanel/panel.in lxde-common/lxpanel/panel.in
+--- lxde-common.orig/lxpanel/panel.in	2012-07-01 15:49:00.131258426 +0200
++++ lxde-common/lxpanel/panel.in	2012-07-01 16:32:13.444863442 +0200
+@@ -53,7 +53,7 @@ Plugin {
+             id=pcmanfm.desktop
+         }
+         Button {
+-            id=firefox.desktop
++            id=/usr/share/applications/mozillafirefox.desktop
+         }
+     }
+ }
+ 
+
