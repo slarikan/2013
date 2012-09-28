@@ -815,6 +815,171 @@
             </Maintainer>
         </Component>
         <Component>
+            <Name>desktop.mate</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.lxde</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.lxde.base</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.lxde.addon</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.fluxbox</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+        <Name>desktop.fluxbox.base</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.fluxbox.addon</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.enlightenment</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.enlightenment.base</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+        <Name>desktop.enlightenment.addon</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+        <Name>desktop.xfce</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.xfce.base</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.xfce.addon</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.xfce.lookandfeel</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.xfce.admin</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Yusuf Aydemir</Name>
+                <Email>yusuf.aydemir@istanbul.com</Email>
+            </Maintainer>
+        </Component>
+        <Component>
             <Name>desktop.misc</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
