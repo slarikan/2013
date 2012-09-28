@@ -11,12 +11,13 @@ from pisi.actionsapi import get
 docdir = "/%s/%s" % (get.docDIR(), get.srcNAME())
 
 def setup():
-    autotools.configure("--disable-static \
-                         --enable-pcre \
-                         --enable-xml2 \
-                         --with-regex-library=pcre \
+    # autotools.autoreconf("-fi")
+
+    autotools.configure("--with-xml-parser=libxml\
+                         --with-www=curl \
                          --disable-gtk-doc \
-                         --with-html-dir=%s" % docdir)
+                         --with-html-dir=%s/html\
+                         --disable-static" % docdir)
 
 def build():
     autotools.make()
@@ -24,7 +25,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.insinto("%s/html" % docdir, "%s/%s/rasqal/*" % (get.installDIR(), docdir))
-    pisitools.removeDir("%s/rasqal" % docdir)
+    pisitools.insinto("%s/html" % docdir, "%s/%s/html/raptor2/*" % (get.installDIR(), docdir))
+    pisitools.removeDir("%s/html/raptor2" % docdir)
     pisitools.dohtml("*.html")
-    pisitools.dodoc("AUTHORS", "ChangeLog*", "COPYING*", "NEWS", "README")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README")
