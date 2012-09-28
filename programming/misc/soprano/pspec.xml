@@ -3,28 +3,26 @@
 <PISI>
     <Source>
         <Name>soprano</Name>
-        <Homepage>http://soprano.sourceforge.net/</Homepage>
+        <Homepage>http://soprano.sourceforge.net</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Qt wrapper API to different RDF storage solutions</Summary>
         <Description>soprano is a library which provides a highly usable object-oriented C++/Qt4 framework for RDF data. It uses different RDF storage solutions as backends through a simple plugin system.</Description>
-        <Archive sha1sum="72cc2e55597adbf9d2d0b416171d854fddbde503" type="tarbz2">mirrors://sourceforge/project/soprano/Soprano/2.6.0/soprano-2.6.0.tar.bz2</Archive>
+        <Archive sha1sum="55882adb68f90ec36b79ecf64206521226e74c8f" type="tarbz2">mirrors://sourceforge/soprano/Soprano/2.8.0/soprano-2.8.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
-            <Dependency>redland-devel</Dependency>
+            <Dependency versionFrom="1.0.15">redland-devel</Dependency>
             <Dependency>clucene-devel</Dependency>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
             <!-- JNI is needed by sesame2 backend -->
             <Dependency>sun-jdk</Dependency>
             <Dependency>libiodbc-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">soprano-2.4.1-fix_version.patch</Patch>-->
-
             <!-- Locale workaround for "Data source name not found and no default driver specified." error of iODBC -->
             <Patch level="1">locale-workaround-for-datasourcenamenotfound-error.diff</Patch>
         </Patches>
@@ -35,7 +33,7 @@
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>clucene</Dependency>
-            <Dependency>raptor</Dependency>
+            <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -43,18 +41,19 @@
             <Path fileType="data">/usr/share/dbus-1/interfaces</Path>
             <Path fileType="library">/usr/share/soprano/plugins</Path>
             <Path fileType="data">/usr/share/soprano/rules</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/kde/4/share/apps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
    </Package>
 
     <Package>
         <Name>soprano-plugin-sesame2</Name>
+        <Summary>Sesame2 backend for Soprano</Summary>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <!-- Sesame2 backend is linked to libjvm.so -->
             <Dependency>sun-jre</Dependency>
-            <Dependency>soprano</Dependency>
+            <Dependency release="current">soprano</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/soprano/libsoprano_sesame2*</Path>
@@ -65,11 +64,12 @@
 
     <Package>
         <Name>soprano-plugin-virtuoso</Name>
+        <Summary>Virtuoso backend for Soprano</Summary>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>virtuoso</Dependency>
             <Dependency>libiodbc</Dependency>
-            <Dependency>soprano</Dependency>
+            <Dependency release="current">soprano</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/soprano/libsoprano_virtuoso*</Path>
@@ -79,10 +79,11 @@
 
     <Package>
         <Name>soprano-plugin-redland</Name>
+        <Summary>Redland backend for Soprano</Summary>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency>redland</Dependency>
-            <Dependency>soprano</Dependency>
+            <Dependency versionFrom="1.0.14">redland</Dependency>
+            <Dependency release="current">soprano</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/soprano/libsoprano_redland*</Path>
@@ -105,7 +106,28 @@
     </Package>
 
     <History>
-        <Update release="21">
+       <Update release="24">
+           <Date>2012-07-11</Date>
+           <Version>2.8.0</Version>
+           <Comment>Version bump</Comment>
+           <Name>Yusuf Aydemir</Name>
+           <Email>yusuf.aydemir@istanbul.com</Email>
+       </Update>       
+       <Update release="23">
+           <Date>2012-05-26</Date>
+           <Version>2.7.6</Version>
+           <Comment>Version bump</Comment>
+           <Name>Yusuf Aydemir</Name>
+           <Email>yusuf.aydemir@istanbul.com</Email>
+       </Update>      
+       <Update release="22">
+           <Date>2012-03-08</Date>
+           <Version>2.7.5</Version>
+           <Comment>Version bump</Comment>
+           <Name>İsmail Dönmez</Name>
+           <Email>ismail@pardus.org.tr</Email>
+       </Update>
+       <Update release="21">
             <Date>2011-03-24</Date>
             <Version>2.6.0</Version>
             <Comment>Version bump to 2.6.0</Comment>
