@@ -57,13 +57,13 @@
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
-	<Update release="15">
+        <Update release="15">
             <Date>2012-07-21</Date>
             <Version>1.50</Version>
             <Comment>version bump</Comment>
             <Name>Ramazan Utku</Name>
-	    <Email>ramazanutku@gmail.com</Email>
-	  </Update>
+           <Email>ramazanutku@gmail.com</Email>
+        </Update>
         <Update release="14">
             <Date>2010-10-12</Date>
             <Version>1.44.0_20100821</Version>
