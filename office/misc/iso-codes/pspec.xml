@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>International country codes</Summary>
         <Description>iso-codes provides IS0-639_3, ISO-4127, ISO-3166, ISO-3166_2, ISO-15924 standards.</Description>
-        <Archive sha1sum="0943e41688a7a5b2b61310b91b4c53fcc96273d2" type="tarbz2">http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.29.tar.bz2</Archive>
+        <Archive sha1sum="8514f22e9292e54c990746bc7aa51a34e20097db" type="tarxz">http://pkg-isocodes.alioth.debian.org/downloads/iso-codes-3.38.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-08-25</Date>
+            <Version>3.38</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="7">
             <Date>2011-10-04</Date>
             <Version>3.29</Version>
