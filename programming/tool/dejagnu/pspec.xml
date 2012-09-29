@@ -12,22 +12,22 @@
         <IsA>library</IsA>
         <Summary>Framework for testing other programs</Summary>
         <Description>DejaGnu is an Expect/Tcl based framework for testing other programs. DejaGnu has several purposes: to make it easy to write tests for any program; to allow you to write tests which will be portable to any host or target where a program must be tested; and to standardize the output format of all tests (making it easier to integrate the testing into software development).</Description>
-        <Archive sha1sum="fd82ffd396eba5b595f76d2f4a068cb7fcc6cffb" type="targz">mirrors://gnu/dejagnu/dejagnu-1.4.4.tar.gz</Archive>
+        <Archive sha1sum="bd84c71e0587af0278a9b6a404d6da1b92df66cd" type="targz">mirrors://gnu/dejagnu/dejagnu-1.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>expect</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">dejagnu-1.4.4-rsh-username.patch</Patch>
+            <!--Patch level="1">dejagnu-1.4.4-rsh-username.patch</Patch-->
             <Patch level="1">dejagnu-1.4.4-runtest.patch</Patch>
-            <Patch level="1">dejagnu-1.4.4-smp-1.patch</Patch>
-            <Patch level="1">dejagnu-1.4.4-testglue-protos.patch</Patch>
-            <Patch level="1">dejagnu-1.4.4-testsuite.patch</Patch>
-            <Patch level="1">dejagnu-ignore-libwarning.patch</Patch>
+            <!--Patch level="1">dejagnu-1.4.4-smp-1.patch</Patch-->
+            <!--Patch level="1">dejagnu-1.4.4-testglue-protos.patch</Patch-->
+            <!--Patch level="1">dejagnu-1.4.4-testsuite.patch</Patch-->
+            <!--Patch level="1">dejagnu-ignore-libwarning.patch</Patch-->
 
             <Patch level="1">env-timeout.patch</Patch>
             <Patch level="1">etc-dejagnu.patch</Patch>
-            <Patch level="1">host-execute-matching.patch</Patch>
-            <Patch level="1">diff-encodings.patch</Patch>
+            <!--Patch level="1">host-execute-matching.patch</Patch-->
+            <!--Patch level="1">diff-encodings.patch</Patch-->
         </Patches>
     </Source>
 
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-29</Date>
+            <Version>1.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.4.4</Version>
