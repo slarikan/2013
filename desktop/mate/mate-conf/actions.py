@@ -14,11 +14,16 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     shelltools.system("./autogen.sh")
-    autotools.configure("--prefix=/usr --sysconfdir=/etc \
+    autotools.configure("--prefix=/usr \
+                        --sysconfdir=/etc \
 			--libexecdir=/usr/lib/MateConf \
-			--localstatedir=/var --disable-static \
-			--enable-defaults-service --enable-gsettings-backend=yes \
-			--enable-introspection --enable-gtk-doc --enable-deprecation-flags")
+			--localstatedir=/var \
+			--disable-static \
+			--enable-defaults-service \
+			--enable-gsettings-backend=yes \
+			--enable-introspection \
+			--disable-gtk-doc \
+			--enable-deprecation-flags")
 
 def build():
     autotools.make()
