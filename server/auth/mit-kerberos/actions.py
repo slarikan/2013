@@ -29,32 +29,24 @@ def rename_man_pages():
 
 def setup():
     shelltools.cd("src")
+    shelltools.system("sed -i -e 's/^YYSTYPE yylval/&={0}/' lib/krb5/krb/deltat.c")
 
     # Rebuild configure scripts
-    shelltools.chmod("rebuild-configure-scripts.sh")
-    shelltools.system("./rebuild-configure-scripts.sh")
+    #shelltools.chmod("rebuild-configure-scripts.sh")
+    #shelltools.system("./rebuild-configure-scripts.sh")
 
     # Rename man pages to regenerate them
-    rename_man_pages()
-
+    #rename_man_pages()
     shelltools.export("CFLAGS", "-I/usr/include/et -fPIC -fno-strict-aliasing %s" % get.CFLAGS())
 
     # Fix pthread linking
     pisitools.dosed("configure", "-lthread", "-lpthread")
     pisitools.dosed("configure", "-pthread", "-lpthread")
 
-    autotools.configure("--with-system-et \
+    autotools.configure("--prefix=/usr \
+                         --localstatedir=/var/lib \
+                         --with-system-et \
                          --with-system-ss \
-                         --with-pam \
-                         --with-ldap \
-                         --with-netlib=-lresolv \
-                         --without-selinux \
-                         --without-tcl \
-                         --localstatedir=/var/lib/kerberos \
-                         --disable-rpath \
-                         --enable-shared \
-                         --enable-pkinit \
-                         --enable-dns \
                          --enable-dns-for-realm")
 
     # Fix krb5-config script to remove rpaths and CFLAGS
@@ -63,12 +55,12 @@ def setup():
 def build():
     autotools.make("-C src/")
 
-def check():
-    import tempfile
-    import shutil
-    tmpdir = tempfile.mkdtemp(prefix='pisitest')
-    autotools.make("-C src/ check TMPDIR=%s -j1" % tmpdir)
-    shutil.rmtree("rm -rf %s" % tmpdir)
+#def check():
+   # import tempfile
+   # import shutil
+   # tmpdir = tempfile.mkdtemp(prefix='pisitest')
+   # autotools.make("-C src/ check TMPDIR=%s -j1" % tmpdir)
+   # shutil.rmtree("rm -rf %s" % tmpdir)
 
 def install():
     shelltools.cd("src")
@@ -79,13 +71,13 @@ def install():
         pisitools.insinto("/usr/include/%s" % d, "include/%s/*.h" % d)
 
     # Add "k" prefix to some apps and manpages to resolve conflicts
-    for app in ["telnetd", "ftpd"]:
-        pisitools.rename("/usr/share/man/man8/%s.8" % app, "k%s.8" % app)
-        pisitools.rename("/usr/sbin/%s" % app, "k%s" % app)
+    #for app in ["telnetd", "ftpd"]:
+     #   pisitools.rename("/usr/share/man/man8/%s.8" % app, "k%s.8" % app)
+      #  pisitools.rename("/usr/sbin/%s" % app, "k%s" % app)
 
-    for app in ["rcp", "rsh", "telnet", "ftp", "rlogin"]:
-        pisitools.rename("/usr/share/man/man1/%s.1" % app, "k%s.1" % app)
-        pisitools.rename("/usr/bin/%s" % app, "k%s" % app)
+    #for app in ["rcp", "rsh", "telnet", "ftp", "rlogin"]:
+     #   pisitools.rename("/usr/share/man/man1/%s.1" % app, "k%s.1" % app)
+      #  pisitools.rename("/usr/bin/%s" % app, "k%s" % app)
 
     # Install info and docs
     pisitools.doinfo("../doc/*.info")
