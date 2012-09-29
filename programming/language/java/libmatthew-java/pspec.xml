@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Matthew Johnson's java libraries</Summary>
         <Description>Unix Sockets, Debug, CGI, I/O and Hexdump java libraries written by Matthew Johnson.</Description>
-        <Archive sha1sum="f696dcbda0f2430bab60047afc5ca0ab69b96d3e" type="targz">http://www.matthew.ath.cx/projects/java/libmatthew-java-0.7.2.tar.gz</Archive>
+        <Archive sha1sum="22967469304ed17be551277bc594db673f075d1d" type="targz">http://www.matthew.ath.cx/projects/java/libmatthew-java-0.7.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sun-jdk</Dependency>
         </BuildDependencies>
