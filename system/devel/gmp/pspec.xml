@@ -39,7 +39,27 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>gmp-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for gmp</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">gmp</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
     <History>
+       <Update release="20">
+            <Date>2012-09-30</Date>
+            <Version>5.0.5</Version>
+            <Comment>-32bit package</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
        <Update release="19">
             <Date>2012-07-13</Date>
             <Version>5.0.5</Version>

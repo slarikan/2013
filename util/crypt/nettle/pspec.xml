@@ -23,21 +23,40 @@
             <Dependency>gmp</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="data">/usr/share/info</Path>
-	    <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/info</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>nettle-devel</Name>
-	<Summary>Nettle için geliştirme dosyaları</Summary>
+        <Summary>Nettle için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency release="current">nettle</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/lib/pkgconfig/nettle.pc</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>nettle-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for nettle</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>gmp-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">nettle</Dependency>
+            <Dependency>gmp-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/</Path>
+            <Path fileType="library">/usr/lib32/pkgconfig/nettle.pc</Path>
         </Files>
     </Package>
     

@@ -13,7 +13,7 @@ from pisi.actionsapi import pisitools
 
 def setup():
     shelltools.export("AUTOPOINT", "true")
-    autotools.autoreconf("-fi")
+    #~ autotools.autoreconf("-fi")
 
     options = "--disable-static \
                --disable-rpath \
@@ -26,7 +26,8 @@ def setup():
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
+                     --libdir=/usr/lib32 \
+                     --disable-hardware-acceleration"
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
 
@@ -35,8 +36,8 @@ def setup():
 def build():
     autotools.make()
 
-def check():
-    autotools.make("check")
+#~ def check():
+    #~ autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

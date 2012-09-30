@@ -12,16 +12,14 @@
         <IsA>library</IsA>
         <Summary>GNU TLS Library</Summary>
         <Description>gnutls is a project that aims to develop a library which provides a secure layer, over a reliable transport layer. Currently the GnuTLS library implements the proposed standards by the IETF's TLS working group.</Description>
-        <Archive sha1sum="1799bdea6b373e312b055fa7caf06effecb9c033" type="tarbz2">ftp://ftp.gnu.org/pub/gnu/gnutls/gnutls-2.12.3.tar.bz2</Archive>
+        <Archive sha1sum="38591da6484e7f47effaf301adde5fec00b18c2d" type="tarxz">ftp://ftp.gnu.org/gnu/gnutls/gnutls-3.1.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>lzo-devel</Dependency>
             <Dependency>guile-devel</Dependency>
             <Dependency>libtasn1-devel</Dependency>
             <Dependency>libgcrypt-devel</Dependency>
+            <Dependency versionFrom="2.5">nettle-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">gnutls-2.8.6-link-libgcrypt.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -30,6 +28,7 @@
             <Dependency>lzo</Dependency>
             <Dependency>libtasn1</Dependency>
             <Dependency>libgcrypt</Dependency>
+            <Dependency versionFrom="2.5">nettle</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -82,11 +81,15 @@
         <BuildDependencies>
             <Dependency>zlib-32bit</Dependency>
             <Dependency>libgcrypt-32bit</Dependency>
+            <Dependency versionFrom="2.5">nettle-32bit</Dependency>
+            <Dependency versionFrom="2.5">libidn-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">gnutls</Dependency>
             <Dependency>zlib-32bit</Dependency>
             <Dependency>libgcrypt-32bit</Dependency>
+            <Dependency versionFrom="2.5">nettle-32bit</Dependency>
+            <Dependency versionFrom="2.5">libidn-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -94,6 +97,13 @@
     </Package>
 
     <History>
+        <Update release="27">
+            <Date>2012-09-30</Date>
+            <Version>3.1.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="26">
             <Date>2011-07-12</Date>
             <Version>2.12.3</Version>
