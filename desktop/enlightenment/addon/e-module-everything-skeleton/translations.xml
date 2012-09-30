@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-everything-skeleton</Name>
+        <Summary xml:lang="tr">"everything" modulü için SKEL eklentisi</Summary>
+        <Description xml:lang="tr">e-module-everything-skeleton, "everything" modulü için bir SKEL eklentisidir</Description>
+    </Source>
+</PISI>
+

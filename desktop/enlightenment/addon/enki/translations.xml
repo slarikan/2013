@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>enki</Name>
+        <Summary xml:lang="tr">Enlightenment için fotoğraf ve albüm yöneticisi</Summary>
+        <Description xml:lang="tr">Enki,Enlightenment için fotoğraf ve albüm yöneticisidir, resimlerinizi ver albümlerinizi yönetmenizi sağlar.</Description>
+    </Source>
+</PISI>
+

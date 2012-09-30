@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>e-module-weather</Name>
+        <Homepage>http://www.enlightenment.org</Homepage>
+        <Packager>
+            <Name>Mehmet Zahit Şamat</Name>
+            <Email>m.z.samat@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>Weather module for Enlightenment</Summary>
+        <Description>e-module-weather is a simple weather module that fetches estimated weather condition, for Enlightenment.</Description>
+        <Archive sha1sum="03d28535b2bfd879245eac6970c14c2afadf5545" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/weather-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>git</Dependency><!--autopoint is not working-->
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+            <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+            <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">desktop.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>e-module-weather</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.0">eina</Dependency>
+            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
+            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
+            <Dependency versionFrom="1.7.0">efreet</Dependency>
+            <Dependency versionFrom="1.7.0">e_dbus</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+	    <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/enlightenment/modules/weather/</Path>
+            <Path fileType="library">/usr/lib/enlightenment/modules/weather/*.so</Path>
+            <Path fileType="localedata">/usr/lib/enlightenment/modules/weather/locale/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2012-07-12</Date>
+            <Version>1.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+        <Update release="2">
+            <Date>2011-02-18</Date>
+            <Version>0.2.0</Version>
+            <Comment>Update</Comment>
+            <Name>Mehmet Zahit Şamat</Name>
+            <Email>m.z.samat@gmail.com</Email>
+        </Update>
+        <Update release="1">
+            <Date>2010-07-08</Date>
+            <Version>0.2.0_49539</Version>
+            <Comment>First release</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+    </History>
+</PISI>

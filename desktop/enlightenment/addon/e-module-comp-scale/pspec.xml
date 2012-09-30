@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>e-module-comp-scale</Name>
+        <Homepage>http://www.enlightenment.org</Homepage>
+        <Packager>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>Skeleton module for Enlightenment</Summary>
+        <Description>Skeleton module for Enlightenment</Description>
+	<Archive sha1sum="5fada5edbfb0f5c96aefb3acdc079a93a542fdef" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/comp-scale-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>comp-scale</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.0">eina</Dependency>
+            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
+            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/enlightenment/modules/scale/*/module.so</Path>
+	    <Path fileType="localedata">/usr/lib/enlightenment/modules/scale/locale</Path>
+	    <Path fileType="library">/usr/lib/enlightenment/modules/scale/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+         <Update release="6">
+            <Date>2012-07-09</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+    </History>
+</PISI>

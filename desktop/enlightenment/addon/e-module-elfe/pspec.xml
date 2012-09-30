@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>e-module-elfe</Name>
+        <Homepage>http://www.enlightenment.org</Homepage>
+        <Packager>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>A Enlightenment Launcher for embedded devices</Summary>
+        <Description>e-module-elfe its a Enlightenment Launcher Module for embedded devices</Description>
+        <Archive sha1sum="e2a99b373d55415cc609bf1a1c1b37ae1dc696af" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/elfe-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>e-module-elfe</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.0">eina</Dependency>
+            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
+            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/enlightenment/modules/elfe/*.so</Path>
+            <Path fileType="localedata">/usr/lib/enlightenment/modules/elfe/locale/</Path>
+            <Path fileType="data">/usr/lib/enlightenment/modules/elfe/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+         <Update release="1">
+            <Date>2012-07-09</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+    </History>
+</PISI>
+

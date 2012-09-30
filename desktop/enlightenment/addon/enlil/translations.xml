@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>enlil</Name>
+        <Summary xml:lang="tr">Enlightenment fotoğraf ve albüm yöneticisi için gerekli kütüphane</Summary>
+        <Description xml:lang="tr">Enlil,resimlerinizi ver albümlerinizi yönetmenizi sağlayan,Enlightenment albüm yöneticisi için gerekli kütüphanedir.</Description>
+    </Source>
+</PISI>
+

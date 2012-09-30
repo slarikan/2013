@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-eektool</Name>
+        <Summary xml:lang="tr">Bir kabuk komut çalıştıran ve çıktısını gösteren modul</Summary>
+        <Description xml:lang="tr">Bir kabuk komut çalıştıran ve çıktısını gösteren Enlightenment modülüdür.</Description>
+    </Source>
+</PISI>
+

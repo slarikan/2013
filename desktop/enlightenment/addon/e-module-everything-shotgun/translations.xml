@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-everything-shotgun</Name>
+        <Summary xml:lang="tr">"everything" modulü için bir e17 shotgun eklentisi</Summary>
+        <Description xml:lang="tr">"everything" modulü için bir e17 shotgun eklentisi</Description>
+    </Source>
+</PISI>
+

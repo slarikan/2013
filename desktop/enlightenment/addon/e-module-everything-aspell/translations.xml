@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-everything-aspell</Name>
+        <Summary xml:lang="tr">kelimelerin yazımının kontrolü için bir enlightenment modülü</Summary>
+        <Description xml:lang="tr">e-module-everything-aspell , kelimelerin yazımının kontrolü için bir enlightenment modülüdür, aspell gerektirir.</Description>
+    </Source>
+</PISI>
+

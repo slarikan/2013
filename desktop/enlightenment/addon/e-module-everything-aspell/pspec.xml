@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>e-module-everything-aspell</Name>
+        <Homepage>http://www.enlightenment.org</Homepage>
+        <Packager>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Packager>
+        <License>As-Is</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>A Enlightenment application launcher</Summary>
+        <Description>Aspell module for everything: checks spelling of words,requires aspell installed</Description>
+        <Archive sha1sum="b98c5e726d175dccd4a2389df7fb6f01c3342254" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/everything-aspell-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>e-module-everything-aspell</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+	    <Dependency>aspell</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="library">/usr/lib/enlightenment/modules/everything-aspell/*/module.so</Path>
+            <Path fileType="localedata">/usr/lib/enlightenment/modules/everything-aspell/locale</Path>
+	    <Path fileType="data">/usr/lib/enlightenment/modules/everything-aspell</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+         <Update release="1">
+            <Date>2012-07-10</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+    </History>
+</PISI>
+

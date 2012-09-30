@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>e-module-taskbar</Name>
+        <Homepage>http://www.enlightenment.org</Homepage>
+        <Packager>
+            <Name>Alper Tekinalp</Name>
+            <Email>alper.tekinalp@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>Taskbar module for Enlightenment</Summary>
+        <Description>e-module-taskbar, is a module to display a taskbar.</Description>
+        <Archive sha1sum="698dab2ac89a1834fce59218f96cc85c20224f57" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/taskbar-1.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>git</Dependency><!--autopoint is not working-->
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+            <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>e-module-taskbar</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.0">eina</Dependency>
+            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
+            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
+            <Dependency versionFrom="1.7.0">efreet</Dependency>
+            <Dependency versionFrom="1.7.0">e_dbus</Dependency>
+            <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/enlightenment/modules/taskbar/*.so</Path>
+            <Path fileType="localedata">/usr/lib/enlightenment/modules/taskbar/locale/</Path>
+            <Path fileType="data">/usr/lib/enlightenment/modules/taskbar/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2012-07-12</Date>
+            <Version>1.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+        <Update release="2">
+            <Date>2011-03-27</Date>
+            <Version>0.0.1_58042</Version>
+            <Comment>
+                * Version Bump.
+                * added translations.
+            </Comment>
+            <Name>Engin Manap</Name>
+            <Email>engin@comu.edu.tr</Email>
+        </Update>
+        <Update release="1">
+            <Date>2011-03-10</Date>
+            <Version>0.0.1_55225</Version>
+            <Comment>First release.</Comment>
+            <Name>Alper Tekinalp</Name>
+            <Email>alper.tekinalp@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

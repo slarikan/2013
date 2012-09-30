@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-else</Name>
+        <Summary xml:lang="tr">Gömülü cihazlar için bir Enlightenment başlatıcı modulü</Summary>
+        <Description xml:lang="tr">e-module-else, gömülü cihazlar için bir Enlightenment başlatıcı modulüdür.</Description>
+    </Source>
+</PISI>
+

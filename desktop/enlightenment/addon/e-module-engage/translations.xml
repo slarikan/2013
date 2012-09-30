@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-engage</Name>
+        <Summary xml:lang="tr">Enlightenment için uygulama başlatıcısı modulü</Summary>
+        <Description xml:lang="tr">e-module-engage , açık olan tüm uygulamalarınızı hızlı bir şekilde erişiminiz için tutan bir başlatıcı modulüdür.</Description>
+    </Source>
+</PISI>
+

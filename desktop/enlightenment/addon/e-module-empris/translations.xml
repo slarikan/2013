@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>e-module-calendar</Name>
+        <Summary xml:lang="tr">Amarok, Audacious, xmms2 (mpris köprüsü ile) gibi  müzik çalarlar vlc ve diğerlerini kontrol eden bir Enlightenment modülü</Summary>
+        <Description xml:lang="tr">Amarok, Audacious, xmms2 (mpris köprüsü ile) gibi  müzik çalarlar vlc ve diğerlerini kontrol eden bir Enlightenment modülüdür.</Description>
+    </Source>
+</PISI>

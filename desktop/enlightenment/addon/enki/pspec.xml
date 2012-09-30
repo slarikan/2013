@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>enki</Name>
+        <Homepage>http://www.enlightenment.org</Homepage>
+        <Packager>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app-gui</IsA>
+	<PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>A photo and album manager for Enlightenment</Summary>
+        <Description>Enki is a photo manager using the EFL and allows the user to manage a list of albums and photos.</Description>
+        <Archive sha1sum="2d3e18f2cc0c6f40d3f2760578298d54f44c229c" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/enki-1.0.tar.gz</Archive>
+        <BuildDependencies>
+	    <Dependency>git</Dependency>
+            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+	    <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
+	    <Dependency versionFrom="1.0">enlil</Dependency>
+	    <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>enki</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.0">eina</Dependency>
+            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
+            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
+	    <Dependency versionFrom="1.7.0">e_dbus</Dependency>
+	    <Dependency versionFrom="1.0">enlil</Dependency>
+	    <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/enki</Path>
+	    <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-07-11</Date>
+            <Version>1.0</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+	</Update>
+    </History>
+</PISI>

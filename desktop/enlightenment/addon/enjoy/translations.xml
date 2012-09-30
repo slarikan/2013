@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>enjoy</Name>
+        <Summary xml:lang="tr">Enlightenment Foundation Libraries (ELF) kullanılarak yazılmış bir müzik oynatıcı</Summary>
+        <Description xml:lang="tr">Enjoy hız ve mobil kullanım göz önüne alınarak ELF kullanılarak yazılmış bir müzik çalma programıdır.</Description>
+    </Source>
+</PISI>
