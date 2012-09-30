@@ -13,9 +13,9 @@
         <IsA>app:console</IsA>
         <Summary>ACPI daemon that dispatches ACPI events to user-space programs</Summary>
         <Description>acpid is a flexible and extensible daemon for ACPI (Advanced Configuration and Power Interface) event dispatching.</Description>
-        <Archive sha1sum="11a4b4fbeae22fcb6c39ab0fe9bf1ff63ab39a49" type="targz">http://tedfelix.com/linux/acpid-2.0.10.tar.gz</Archive>
+        <Archive sha1sum="11a4b4fbeae22fcb6c39ab0fe9bf1ff63ab39a49" type="tarxz">http://tedfelix.com/linux/acpid-2.0.17.tar.xz</Archive>
         <Patches>
-            <Patch level="1">fedora/acpid-2.0.2-makefile.patch</Patch>
+            <Patch level="1">fedora/acpid-2.0.15-mk.patch</Patch>
         </Patches>
     </Source>
 
@@ -38,12 +38,18 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/acpid">fedora/acpid.sysconfig</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/acpid.service">fedora/acpid.service</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
     </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-10-01</Date>
+            <Version>2.0.17</Version>
+            <Comment> * Version bump
+                      * Systemd migration: remove comar service script
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="21">
             <Date>2011-06-06</Date>
             <Version>2.0.10</Version>
