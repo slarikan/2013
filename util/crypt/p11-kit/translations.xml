@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>p11-kit</Name>
+        <Summary xml:lang="en">Library to work with PKCS#11 modules</Summary>
+        <Description xml:lang="en">The p11-kit package Provides a way to load and enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.</Description>
+    </Source>
+
+    <Package>
+        <Name>p11-kit-devel</Name>
+        <Summary xml:lang="tr">p11-kit için geliştirme dosyaları.</Summary>
+    </Package>
+</PISI>
