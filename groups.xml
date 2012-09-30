@@ -157,6 +157,16 @@
       <Icon>kde</Icon>
     </Group>
     <Group>
+      <Name>e17.desktop</Name>
+      <LocalName xml:lang="en">Enlightenment Desktop</LocalName>
+      <Icon>e17</Icon>
+    </Group>
+    <Group>
+      <Name>xfce.desktop</Name>
+      <LocalName xml:lang="en">Xfce Desktop</LocalName>
+      <Icon>xfce</Icon>
+    </Group>
+    <Group>
       <Name>other.desktop</Name>
       <LocalName xml:lang="en">Other Desktops</LocalName>
       <LocalName xml:lang="nl">Overige Desktop</LocalName>

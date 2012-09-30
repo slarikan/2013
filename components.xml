@@ -7,8 +7,8 @@
             <Description xml:lang="en">32-bit emulation packages are needed to run 32-bit applications on amd64 and ia64 systems.</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -18,8 +18,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -29,8 +29,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -40,8 +40,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -51,8 +51,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>electronics</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -62,8 +62,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -73,8 +73,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -84,8 +84,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -95,8 +95,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>İnanç Yıldırgan</Name>
-                <Email>inancyildirgan@gmail.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -106,8 +106,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Çağlar Kilimci</Name>
-                <Email>ckilimci@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -117,8 +117,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>electronics</Group>
             <Maintainer>
-                <Name>Gürer Özen</Name>
-                <Email>gurer@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -128,8 +128,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>science</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -139,8 +139,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Kaan Özdinçer</Name>
-                <Email>kozdincer@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -150,8 +150,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -161,8 +161,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -172,8 +172,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>communication</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -183,8 +183,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -194,8 +194,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>communication</Group>
             <Maintainer>
-                <Name>Mehmet Emre Atasever</Name>
-                <Email>memre@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -205,8 +205,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -216,8 +216,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -227,8 +227,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -238,8 +238,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -249,8 +249,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -260,8 +260,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>H. İbrahim Güngör</Name>
-                <Email>ibrahim@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -271,8 +271,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -282,8 +282,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -293,8 +293,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Emre Atasever</Name>
-                <Email>memre@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -304,8 +304,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -315,8 +315,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>network</Group>
             <Maintainer>
-                <Name>Mehmet Emre Atasever</Name>
-                <Email>memre@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -326,8 +326,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>communication</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -337,8 +337,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -348,8 +348,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -359,8 +359,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -370,8 +370,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -381,8 +381,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Metin Akdere</Name>
-                <Email>metin@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -392,8 +392,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -403,8 +403,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Metin Akdere</Name>
-                <Email>metin@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -414,8 +414,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -425,8 +425,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -436,8 +436,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>graphics</Group>
             <Maintainer>
-                <Name>Metin Akdere</Name>
-                <Email>metin@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -447,8 +447,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>graphics</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -458,8 +458,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>graphics</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -469,8 +469,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>localization</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -480,8 +480,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>multimedia</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -491,8 +491,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Mete Alpaslan</Name>
-                <Email>mete@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -502,8 +502,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -513,8 +513,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Mete Alpaslan</Name>
-                <Email>mete@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -524,8 +524,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -535,8 +535,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -546,8 +546,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -557,8 +557,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -568,8 +568,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -579,8 +579,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -590,8 +590,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -601,8 +601,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -612,8 +612,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -623,8 +623,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -634,8 +634,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -645,8 +645,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -656,8 +656,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Aşıcı</Name>
-                <Email>fatih@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -667,8 +667,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -678,8 +678,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -689,8 +689,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -700,8 +700,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Metin Akdere</Name>
-                <Email>metin@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -711,8 +711,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -722,8 +722,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -733,8 +733,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -744,8 +744,8 @@
             <Description xml:lang="en">Programming libraries, tools, debuggers, profilers, etc.</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -755,8 +755,8 @@
             <Description xml:lang="en">Several debugging tools for programmers</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -766,8 +766,8 @@
             <Description xml:lang="en">Default 32-bit kernel flavour for Pardus</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -777,8 +777,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -788,8 +788,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -799,8 +799,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -810,8 +810,8 @@
             <Description xml:lang="en">kernel component contains the linux kernel for Pardus and related kernel drivers</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -821,8 +821,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -832,8 +832,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -843,8 +843,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -854,8 +854,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -865,8 +865,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -876,8 +876,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -887,8 +887,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -896,10 +896,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>e17.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -907,10 +907,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>e17.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -918,10 +918,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>e17.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -929,10 +929,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>xfce.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -940,10 +940,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>xfce.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -951,10 +951,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>xfce.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -962,10 +962,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>xfce.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -973,10 +973,10 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>xfce.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -986,8 +986,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>other</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -997,8 +997,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>gnome.desktop</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1008,8 +1008,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1019,8 +1019,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1030,8 +1030,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1041,8 +1041,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1052,8 +1052,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1063,8 +1063,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1074,8 +1074,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>other</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1085,8 +1085,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>other</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1096,8 +1096,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1107,8 +1107,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>localization</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1118,8 +1118,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1129,8 +1129,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1140,8 +1140,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1151,8 +1151,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1162,8 +1162,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1173,8 +1173,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Yusuf Aydemir</Name>
-                <Email>yusuf.aydemir@istanbul.com</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1184,8 +1184,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>admin.tools</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1195,8 +1195,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1206,8 +1206,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>fonts</Group>
             <Maintainer>
-                <Name>Bertan Gündoğdu</Name>
-                <Email>bertan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1217,8 +1217,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Aşıcı</Name>
-                <Email>fatih@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1228,8 +1228,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1239,8 +1239,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1250,8 +1250,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1261,8 +1261,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1272,8 +1272,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1283,8 +1283,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1294,8 +1294,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Kaan Özdinçer</Name>
-                <Email>kozdincer@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1305,8 +1305,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1316,8 +1316,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1327,8 +1327,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1338,8 +1338,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1349,8 +1349,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Gökhan Özbulak</Name>
-                <Email>gozbulak@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1360,8 +1360,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Kaan Özdinçer</Name>
-                <Email>kozdincer@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1371,8 +1371,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>servers</Group>
             <Maintainer>
-                <Name>Kaan Özdinçer</Name>
-                <Email>kozdincer@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1382,8 +1382,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1393,8 +1393,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1404,8 +1404,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1415,8 +1415,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1426,8 +1426,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1437,8 +1437,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1448,8 +1448,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1459,8 +1459,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1470,8 +1470,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1481,8 +1481,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1492,8 +1492,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1503,8 +1503,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1514,8 +1514,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1525,8 +1525,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1536,8 +1536,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1547,8 +1547,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1558,8 +1558,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1569,8 +1569,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1580,8 +1580,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>power.management</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1591,8 +1591,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1602,8 +1602,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Mete Alpaslan</Name>
-                <Email>mete@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1613,8 +1613,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1624,8 +1624,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1635,8 +1635,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1646,8 +1646,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Mete Alpaslan</Name>
-                <Email>mete@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1657,8 +1657,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1668,8 +1668,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>other</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1679,8 +1679,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1690,8 +1690,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>virtualization</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1701,8 +1701,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1712,8 +1712,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1723,8 +1723,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1735,8 +1735,8 @@
             <!-- XXX documentation? -->
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1746,8 +1746,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1757,8 +1757,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1768,8 +1768,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1779,8 +1779,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1790,8 +1790,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Bertan Gündoğdu</Name>
-                <Email>bertan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1801,8 +1801,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1812,8 +1812,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Bertan Gündoğdu</Name>
-                <Email>bertan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1823,8 +1823,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Ozan Çağlayan</Name>
-                <Email>ozan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1834,8 +1834,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Bertan Gündoğdu</Name>
-                <Email>bertan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1845,8 +1845,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>office</Group>
             <Maintainer>
-                <Name>Bertan Gündoğdu</Name>
-                <Email>bertan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1856,8 +1856,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Renan Çakırerk</Name>
-                <Email>renan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1868,8 +1868,8 @@
             <!-- FIXME should be documentation -->
             <Group>system</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1879,8 +1879,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1890,8 +1890,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>programming</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1901,8 +1901,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1912,8 +1912,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>security</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1923,8 +1923,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1934,8 +1934,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Gökmen Göksel</Name>
-                <Email>gokmen@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1945,8 +1945,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Serdar Dalgıç</Name>
-                <Email>serdar@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1956,8 +1956,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1967,8 +1967,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>security</Group>
             <Maintainer>
-                <Name>Fatih Aşıcı</Name>
-                <Email>fatih@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1978,8 +1978,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -1989,8 +1989,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>accessories</Group>
             <Maintainer>
-                <Name>Mehmet Özdemir</Name>
-                <Email>mehmet@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -2000,8 +2000,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>admin.tools</Group>
             <Maintainer>
-                <Name>Bahadır Kandemir</Name>
-                <Email>bahadir@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -2011,8 +2011,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>admin.tools</Group>
             <Maintainer>
-                <Name>Fatih Arslan</Name>
-                <Email>farslan@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
         <Component>
@@ -2022,8 +2022,8 @@
             <Description xml:lang="en">FIXME</Description>
             <Group>localization</Group>
             <Maintainer>
-                <Name>Pardus</Name>
-                <Email>admins@pardus.org.tr</Email>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
     </Components>
