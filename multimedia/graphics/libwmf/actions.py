@@ -37,7 +37,9 @@ def install():
                           wmfdocdir=/usr/share/doc/%s" %
                           ( get.installDIR(), get.srcNAME(), get.srcNAME() ) )
 
-    pisitools.removeDir("/usr/lib/gtk-2.0")
+    if shelltools.isDirectory("%s/usr/lib/gtk-2.0" % get.installDIR()):
+        # seems "/usr/lib/gtk-2.0" no longer exists, so need check
+        pisitools.removeDir("/usr/lib/gtk-2.0")
 
     # These fonts included in gnu-gs-fonts-std package.
     pisitools.remove("/usr/share/libwmf/fonts/*afm")
