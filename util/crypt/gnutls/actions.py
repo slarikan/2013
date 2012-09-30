@@ -13,7 +13,6 @@ from pisi.actionsapi import pisitools
 
 def setup():
     shelltools.export("AUTOPOINT", "true")
-    #~ autotools.autoreconf("-fi")
 
     options = "--disable-static \
                --disable-rpath \
@@ -36,8 +35,8 @@ def setup():
 def build():
     autotools.make()
 
-#~ def check():
-    #~ autotools.make("check")
+def check():
+    autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

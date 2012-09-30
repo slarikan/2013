@@ -13,9 +13,6 @@ from pisi.actionsapi import get
 
 
 def setup():
-    # FIXME: check if we need sse2 libs too, if yes recompile in different dir and put in prefix/lib/sse2
-    #~ shelltools.export("CCAS","%s -c -Wa,--noexecstack" % get.CC())
-
     options = "--enable-cxx \
                --enable-mpbsd \
                --enable-fft \
@@ -28,14 +25,15 @@ def setup():
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
         shelltools.export("ABI", "32")
-
+    else:
+        shelltools.export("CCAS","%s -c -Wa,--noexecstack" % get.CC())
     autotools.configure(options)
 
 def build():
     autotools.make()
 
-#~ def check():
-    #~ autotools.make("check")
+def check():
+    autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
