@@ -11,71 +11,60 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "ffmpeg-0.11.1"
-version = "26223"
 minimumcpu = "" if get.ARCH() == "x86_64" else "--cpu=atom"
 
 
 def setup():
-    # http://gcc.gnu.org/bugzilla/show_bug.cgi?id=11203
-    shelltools.export("CFLAGS","%s -DRUNTIME_CPUDETECT -O3 -fomit-frame-pointer -fPIC" % get.CFLAGS())
-    pisitools.dosed("configure", "die_li.*aac")
-
-    # to keep the source tarball small and to prevent sandbox problem of subversion, write svn version by hand
-    shelltools.unlink("version.sh")
-    shelltools.echo("version.sh", '#!/bin/bash\necho "#define FFMPEG_VERSION  \\\"SVN-r%s\\\"" > version.h' % version)
-    shelltools.chmod("version.sh", 0755)
+    shelltools.export("CFLAGS","%s -fPIC" % get.CFLAGS())
 
     # CPU thing is just used for CMOV detection
     autotools.rawConfigure("--prefix=/usr \
                             %s \
                             --mandir=/usr/share/man \
-                            --enable-runtime-cpudetect \
-                            --enable-gpl \
-                            --enable-version3 \
-                            --enable-pthreads \
+                            --disable-stripping \
                             --enable-postproc \
-                            --enable-lsp \
+                            --enable-gpl \
+                            --enable-pthreads \
+                            --enable-libtheora \
+                            --enable-libvorbis --disable-encoder=vorbis \
+                            --enable-libvpx \
                             --enable-x11grab \
+                            --enable-runtime-cpudetect \
                             --enable-libdc1394 \
-                            --enable-libfaac \
+                            --enable-libschroedinger \
+                            --enable-librtmp \
+                            --enable-libspeex \
                             --enable-libfreetype \
-                            --enable-libgsm \
-                            --enable-libmp3lame \
                             --enable-libnut \
+                            --enable-libgsm \
+                            --enable-libcelt \
+                            --enable-libopenjpeg \
+                            --enable-frei0r \
+                            --enable-libmodplug \
+                            --enable-libass \
+                            --enable-gnutls \
+                            --enable-libcdio \
+                            --enable-libpulse \
+                            --enable-libv4l2 \
+                            --enable-libmp3lame \
                             --enable-libopencore-amrnb \
                             --enable-libopencore-amrwb \
-                            --enable-libschroedinger \
-                            --enable-libspeex \
-                            --enable-libtheora \
-                            --enable-libvorbis \
-                            --enable-libvpx \
+                            --enable-version3 \
                             --enable-libx264 \
+                            --enable-libvo-aacenc \
+                            --enable-libvo-amrwbenc \
                             --enable-libxvid \
+                            --enable-nonfree \
+                            --enable-libfaac \
                             --enable-shared \
-                            --enable-mmx \
-                            --enable-mmx2 \
-                            --enable-sse \
-                            --enable-vaapi \
-                            --enable-vdpau \
-                            --enable-yasm \
-                            --disable-stripping \
                             --disable-static \
                             --disable-debug" % minimumcpu)
 
-                            # Not yet
-                            # --enable-avfilter \
-                            # --enable-avfilter-lavf \
-                            # FIXME: this may be nice, or not
-                            # --enable-hardcoded-tables \
-                            # --disable-optimizations \
-
 def build():
     autotools.make()
+    autotools.make('tools/qt-faststart')
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    pisitools.insinto("/etc","doc/ffserver.conf")
-
-    pisitools.dodoc("Changelog", "README")
+    autotools.rawInstall("DESTDIR=%s install-man" % get.installDIR())
+    pisitools.dobin("tools/qt-faststart")
+    pisitools.dodoc("Changelog", "README", "COPYING*")

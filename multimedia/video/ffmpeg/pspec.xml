@@ -9,10 +9,13 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <License>GPLv3</License>
+        <License>LGPLv2</License>
+        <License>LGPLv3</License>
         <IsA>app:console</IsA>
         <Summary>A command-line tool to record, convert and stream audio and video</Summary>
         <Description>FFmpeg is a complete solution to record, convert and stream audio and video.</Description>
-        <Archive sha1sum="bf01742be60c2e6280371fc4189d5d28933f1a56" type="tarbz2">http://ffmpeg.org/releases/ffmpeg-0.11.1.tar.bz2</Archive>
+        <Archive sha1sum="bf1f917c4fa26cf225616f2063e60c33cac546be" type="tarbz2">http://ffmpeg.org/releases/ffmpeg-1.0.tar.bz2</Archive>
         <Archive sha1sum="6af9fc0094de6190f5328cfc8405dd92f73cfc50" type="tarxz" target="ffmpeg-0.11.1">http://libav.org/releases/libav-0.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>faac-devel</Dependency>
@@ -39,37 +42,13 @@
             <Dependency releaseFrom="9">libva-devel</Dependency>
             <Dependency>libvpx-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
+            <Dependency>frei0r-plugins-devel</Dependency>
+            <Dependency>celt-devel</Dependency>
+            <Dependency>openjpeg-devel</Dependency>
+            <Dependency>opencore-amr-devel</Dependency>
+            <Dependency>libvo-aacenc-devel</Dependency>
+            <Dependency>libvo-amrwbenc-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--<Patch level="1">dont-print-config.patch</Patch>-->
-            <!-- FIXME: do it automatically, check actions.py change
-            <Patch level="1">build.patch</Patch>
-            -->
-            <!--<Patch level="1">no-rle-warning.patch</Patch>-->
-            <!--<Patch level="1">print-cpucaps.patch</Patch>-->
-            <!--<Patch level="1">fix_pthread.patch</Patch>-->
-            <!--<Patch level="1">remove_vfw_bframe_warning.patch</Patch>-->
-            <!-- no need for now
-            <Patch>x264_revert.patch</Patch>
-            -->
-
-            <!-- fixes bug #13255 guess we should keep it for 32bit arch for a while -->
-            <!--<Patch level="1">disable_wma_simd.patch</Patch>-->
-
-            <!-- fixes bug #15950 -->
-            <!--<Patch level="1">atom_generic_arch.patch</Patch>-->
-
-            <!-- libavfilter soc patches -->
-            <!--<Patch>00_configure.diff</Patch>-->
-            <!--<Patch>01_build.diff</Patch>-->
-            <!--<Patch>03_doc_filters.diff</Patch>-->
-
-            <!-- CVE-2011-1931 -->
-           <!-- <Patch level="1">ffmpeg.git-89f903b3d5ec38c9c5d90fba7e626fa0eda61a32.patch</Patch>-->
-
-            <!-- libavcodec insufficient boundary check -->
-            <!--<Patch level="1">ffmpeg.git-c5cbda50793e311aa73489d12184ffd6761c9fbf.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>
@@ -98,6 +77,12 @@
             <Dependency releaseFrom="9">libva</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>freetype</Dependency>
+            <Dependency>frei0r-plugins</Dependency>
+            <Dependency>celt</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>opencore-amr</Dependency>
+            <Dependency>libvo-aacenc</Dependency>
+            <Dependency>libvo-amrwbenc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -122,8 +107,15 @@
     </Package>
 
     <History>
+        <Update release="97" type="security">
+            <Date>2012-09-29</Date>
+            <Version>1.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="96" type="security">
-            <Date>2012-0827</Date>
+            <Date>2012-08-27</Date>
             <Version>0.11.1</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>

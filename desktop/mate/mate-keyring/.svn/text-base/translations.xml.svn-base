@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>mate-keyring</Name>
-        <Summary xml:lang="tr">Parola ve Anahtar yönetim servisi</Summary>
-    </Source>
-</PISI>

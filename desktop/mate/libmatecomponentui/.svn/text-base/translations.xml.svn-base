@@ -1,9 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>libmatecomponentui</Name>
-        <Summary xml:lang="tr">libmatecomponentui Mate Projesi'nin bir parçasıdır.</Summary>
-        <Description xml:lang="tr">libmatecomponentui Mate proje'si için belgelendirme araçları koleksiyonudur.</Description>
-    </Source>
-</PISI>
- 

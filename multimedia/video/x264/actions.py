@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="x264-snapshot-%s-2245" % get.srcVERSION().split("_")[1]
+WorkDir="x264-snapshot-%s-2245-stable" % get.srcVERSION().split("_")[1]
 verMAJOR = "0"
 verMINOR = "0"
 staticlibfile = "/usr/lib/libx264.a"

@@ -26,5 +26,6 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.insinto("/usr/share/enlightenment/data/themes/","%s/*.edj" % get.workDIR())
 
     pisitools.dodoc("AUTHORS", "COPYING", "README")
