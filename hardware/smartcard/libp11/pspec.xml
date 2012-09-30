@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>PKCS#11 library</Summary>
         <Description>Libp11 is a library implementing a small layer on top of PKCS#11 to make using PKCS#11 implementations easier.</Description>
-        <Archive sha1sum="aa794f4c114eb41f03b9c844ec31fb932b1aed02" type="targz">http://www.opensc-project.org/files/libp11/libp11-0.2.7.tar.gz</Archive>
+        <Archive sha1sum="2d1f6dc4200038f55a0cb7e22858f93e484b0724" type="targz">http://www.opensc-project.org/files/libp11/libp11-0.2.8.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-30</Date>
+            <Version>0.2.8</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-11-10</Date>
             <Version>0.2.7</Version>
