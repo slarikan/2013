@@ -28,8 +28,6 @@ def install():
     #remove static link
     pisitools.remove("/usr/lib/libgpm.a")
 
-    pisitools.removeDir("/usr/share/emacs")
-
     pisitools.insinto("/etc/gpm", "conf/gpm-*.conf")
 
     pisitools.dodoc("BUGS", "Changes", "README", "TODO", "doc/Announce", "doc/FAQ", "doc/README*")
