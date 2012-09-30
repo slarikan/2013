@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
 def setup():
-    # autotools.autoreconf("-vfi")
+    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --disable-wimax \
                          --enable-more-warnings=yes \
@@ -18,7 +18,8 @@ def setup():
                          --with-distro=pardus \
                          --with-resolvconf=/etc/resolv.conf \
                          --with-iptables=/usr/sbin/iptables \
-                         --with-systemdsystemunitdir=/lib/systemd/system")
+                         --with-systemdsystemunitdir=/lib/systemd/system \
+                         --with-session-tracking=systemd")
 
 def build():
     shelltools.export("HOME", get.workDIR())
