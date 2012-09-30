@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Official Linux Bluetooth protocol stack</Summary>
         <Description>bluez contains the tools and libraries that provides support for the core Bluetooth layers and protocols.</Description>
-        <Archive sha1sum="c9327784cbcf1efc03cc547ceb18de90c8fb4c7c" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/bluez-4.96.tar.gz</Archive>
+        <Archive sha1sum="2ba46754eb2d79c4d491eb24c9883355324cd08a" type="targz">http://www.kernel.org/pub/linux/bluetooth/bluez-4.101.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
             <Dependency>libnl-devel</Dependency>
@@ -25,16 +25,20 @@
             <Dependency>gst-plugins-base-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Add OUI file for finding out the maker of bluetooth devices -->
-            <Patch compressionType="bz2">add-oui-file-patch.bz2</Patch>
+            <!-- Gentoo -->
+            <Patch level="2">gentoo/bluez-4.101-network1.patch</Patch>
+            <Patch level="1">gentoo/bluez-4.101-network2.patch</Patch>
+            <Patch level="1">gentoo/bluez-4.101-network3.patch</Patch>
+            <Patch level="1">gentoo/bluez-4.101-network4.patch</Patch>
+            <Patch level="1">gentoo/bluez-plugdev.patch</Patch>
+            <Patch>gentoo/cups-location.patch</Patch>
 
             <!-- Fedora patches -->
             <Patch level="1">fedora/bluez-socket-mobile-cf-connection-kit.patch</Patch>
             <Patch level="1">fedora/0001-Add-sixaxis-cable-pairing-plugin.patch</Patch>
-            <Patch level="1">fedora/0001-systemd-install-systemd-unit-files.patch</Patch>
-
-            <!-- Gentoo patches -->
-            <Patch>cups-location.patch</Patch>
+            <Patch level="1">fedora/0001-input-Add-helper-function-to-request-disconnect.patch</Patch>
+            <Patch level="1">fedora/0002-fakehid-Disconnect-from-PS3-remote-after-10-mins.patch</Patch>
+            <Patch level="1">fedora/0003-fakehid-Use-the-same-constant-as-declared.patch</Patch>
         </Patches>
     </Source>
 
@@ -65,9 +69,9 @@
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="config">/etc</Path>
         </Files>
-        <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/misc/oui.txt">oui-20121001.txt</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <Package>
@@ -108,6 +112,16 @@
     </Package>
 
     <History>
+        <Update release="70">
+            <Date>2012-10-01</Date>
+            <Version>4.101</Version>
+            <Comment> *Version bump
+                      *Remove COMAR service script add systemd script
+                      *Update oui.txt
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="69">
             <Date>2011-09-23</Date>
             <Version>4.96</Version>

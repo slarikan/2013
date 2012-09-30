@@ -31,7 +31,7 @@ def setup():
                          --enable-pand \
                          --enable-test \
                          --enable-pcmcia \
-                         --with-systemdsystemunitdir=/lib/systemd/system \
+                         --with-systemdunitdir=/lib/systemd/system \
                          --with-ouifile=/usr/share/misc/oui.txt \
                          --disable-hid2hci \
                          --libexecdir=/lib")
@@ -41,20 +41,19 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    # Install oui file
-    pisitools.insinto("/usr/share/misc", "oui.txt")
-
     # Install conf files
     for i in ["audio", "input", "network"]:
         pisitools.insinto("/etc/bluetooth", "%s/%s.conf" % (i,i))
 
     # Simple test tools
-    for i in ["simple-agent", "simple-service", "monitor-bluetooth",
-              "list-devices", "apitest", "hsmicro", "hsplay",
-              "test-adapter", "test-device", "test-discovery",
-              "test-manager", "test-serial", "test-service",
-              "test-telephony", "hstest", "attest", "sdptest",
-              "scotest"]:
+    for i in ["test-adapter", "test-audio", "test-discovery",
+              "test-health-sink", "test-manager", "test-network",
+              "test-proximity", "test-serial", "test-service",
+              "test-attrib", "test-device", "test-health", "test-input",
+              "test-nap", "test-oob", "test-sap-server", "test-serial-proxy",
+              "test-telephony", "test-thermometer", "monitor-bluetooth",
+              "simple-agent", "simple-endpoint", "simple-player",
+              "simple-service", "sap-client", "list-devices", "hsplay", "hsmicro"]:
         pisitools.dobin("test/%s" % i)
 
     # Additional tools
