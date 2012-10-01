@@ -22,7 +22,7 @@ hardware/cpu/microcode-ctl/comar/service.py                             XXXXXXXX
 hardware/disk/mdadm/comar/service.py                                    +
 hardware/disk/nbd-utils/comar/service.py                                +
 hardware/disk/smartmontools/comar/service.py                            +
-hardware/info/gkrellm/comar/service.py
+hardware/info/gkrellm/comar/service.py                                  +
 hardware/info/hal/comar/service.py
 hardware/info/smolt/comar/service.py
 hardware/irda/irda-utils/comar/service.py
