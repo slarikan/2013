@@ -16,8 +16,7 @@ def build():
     autotools.make("CFLAGS='%s'" % get.CFLAGS())
 
 def install():
-    pisitools.insinto("/lib/systemd/system", "misc/irqbalance.service")
     pisitools.doman("irqbalance.1")
     pisitools.dosbin("irqbalance")
 
-    pisitools.dodoc("COPYING", "NEWS", "README")
+    pisitools.dodoc("COPYING", "AUTHORS")

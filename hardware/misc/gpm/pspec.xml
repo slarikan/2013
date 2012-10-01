@@ -43,9 +43,6 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/gpm">gpm.conf.d</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/gpm.service">fedora/gpm.service</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
    </Package>
 
     <History>
