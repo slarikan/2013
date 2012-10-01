@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>Distribute hardware interrupts across processors</Summary>
         <Description>Daemon to balance IRQs across multiple CPUs on systems.This can lead to better performance and I/O balance on SMP systems.</Description>
-        <Archive sha1sum="d7596796190dc1855f53680e1a6221790fe5a05f" type="targz">http://irqbalance.googlecode.com/files/irqbalance-1.0.3.tar.gz</Archive>
+        <Archive sha1sum="01ad859a1eb0266e4ccbcffd7990a729c2befedb" type="tarbz2">https://irqbalance.googlecode.com/files/irqbalance-1.0.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>numactl-devel</Dependency>
         </BuildDependencies>
@@ -32,10 +32,18 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/irqbalance">irqbalance.confd</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/irqbalance.service">irqbalance.service</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-10-01</Date>
+            <Version>1.0.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="12">
             <Date>2012-01-19</Date>
             <Version>1.0.3</Version>
