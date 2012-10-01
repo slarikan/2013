@@ -5,8 +5,8 @@
         <Name>e-module-exebuf</Name>
         <Homepage>http://www.enlightenment.org</Homepage>
         <Packager>
-            <Name>Özge Barbaros</Name>
-            <Email>ozgebarbaros@gmail.com</Email>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -25,13 +25,13 @@
             <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
         </BuildDependencies>
-
+    </Source>
     <Package>
         <Name>e-module-exebuf</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
             <Dependency versionFrom="1.7.0">eet</Dependency>
-            <Dependency versionFrom="1.7.0">edje/Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
             <Dependency versionFrom="1.7.0">evas</Dependency>
             <Dependency versionFrom="1.2.0">eeze</Dependency>
             <Dependency versionFrom="1.7.0">eina</Dependency>
