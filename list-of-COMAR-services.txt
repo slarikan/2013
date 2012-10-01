@@ -18,7 +18,7 @@ hardware/powermanagement/acpid/comar/service.py                         +
 hardware/bluetooth/bluez/comar/service.py                               +
 network/connection/NetworkManager/comar/service.py                      +
 hardware/cpu/irqbalance/comar/service.py                                +
-hardware/cpu/microcode-ctl/comar/service.py
+hardware/cpu/microcode-ctl/comar/service.py                             XXXXXXXXXX
 hardware/disk/mdadm/comar/service.py
 hardware/disk/nbd-utils/comar/service.py
 hardware/disk/smartmontools/comar/service.py
