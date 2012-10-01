@@ -11,11 +11,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 
-def setup():
-    for d in ["po", "server", "src"]:
-        pisitools.dosed("%s/Makefile" % d, "-O2")
-        pisitools.dosed("%s/Makefile" % d, "override CC", "CFLAGS")
-
 def build():
     autotools.make('CC=%s \
                     INSTALLROOT=/usr \

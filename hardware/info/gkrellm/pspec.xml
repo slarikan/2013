@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>A compact and clean system monitoring tool</Summary>
         <Description>A program to monitor system status, and to collect system information such as memory usage, cpu temperature etc.</Description>
-        <Archive sha1sum="f02c7a3093df3b5c52123a79a3ddbe573da36a49" type="tarbz2">http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.4.tar.bz2</Archive>
+        <Archive sha1sum="bcfc2efb5fd3f27e9bb703bda73f6a1d96b080df" type="tarbz2">http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.12.3">gnutls-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -26,8 +26,6 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">drop_privileges.patch</Patch>
-            <Patch>gnutls.patch</Patch>
-            <Patch>gkrellm-2.3.4-fix-link.patch</Patch>
         </Patches>
     </Source>
 
@@ -51,14 +49,13 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="lib">/lib/systemd/system</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/gkrellm.desktop">gkrellm.desktop</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gkrellm.png">gkrellm.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/gkrellmd.service">gkrellmd.service</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
     </Package>
 
     <Package>
@@ -75,6 +72,15 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-01</Date>
+            <Version>2.3.5</Version>
+            <Comment>* Version Bump
+                     * Remove comar script, use systemd
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="10">
             <Date>2011-05-06</Date>
             <Version>2.3.4</Version>
