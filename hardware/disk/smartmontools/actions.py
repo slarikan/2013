@@ -14,16 +14,16 @@ from pisi.actionsapi import get
 def setup():
     shelltools.touch("ChangeLog")
     autotools.autoreconf("-fi")
-    autotools.configure("--with-libcap-ng=yes")
+    autotools.configure("--with-libcap-ng=yes \
+                         --enable-drivedb \
+                         --with-systemdsystemunitdir=/lib/systemd/system")
 
 def build():
     autotools.make("CXXFLAGS='%s -fpie'" % get.CXXFLAGS())
 
 def install():
+    pisitools.dosed("smartd.service","sysconfig/smartmontools","conf.d/smartd")
+    pisitools.dosed("smartd.service","smartd_opts","SMARTD_ARGS")
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    #pisitools.insinto("/etc/", "smartd.conf")
-
-    pisitools.removeDir("/etc/rc.d")
 
     pisitools.dodoc("AUTHORS", "NEWS", "README", "WARNINGS", "smartd.conf")
