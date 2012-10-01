@@ -11,11 +11,7 @@
         <License>GPLv2</License>
         <Summary>Network Block Device user-space tools</Summary>
         <Description>Tools for the Linux Kernel's network block device, allowing you to use remote block devices over a TCP/IP network.</Description>
-        <Archive sha1sum="dd61bf6ed6018db0171dfb6a5b6468a68a62b9de" type="tarbz2">mirrors://sourceforge/nbd/nbd/2.9.24/nbd-2.9.24.tar.bz2</Archive>
-        <Patches>
-            <Patch level="1">nbd-2.9.13-close.diff</Patch>
-            <Patch level="1">allow-comments-in-allow-file.patch</Patch>
-        </Patches>
+        <Archive sha1sum="321823aff24227a10324df407ada18c887e7860c" type="tarbz2">mirrors://sourceforge/nbd/nbd/3.2/nbd-3.2.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -26,17 +22,25 @@
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/nbd-server/config">nbd-config</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/nbd-server/allow">nbd-allow</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/nbd.service">nbd.service</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-            <COMAR script="service.py" name="nbd">System.Service</COMAR>
-        </Provides>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-10-01</Date>
+            <Version>3.2</Version>
+            <Comment>* Version Bump
+                     * Systemd service script
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2011-10-06</Date>
             <Version>2.9.24</Version>
