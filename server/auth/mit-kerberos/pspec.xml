@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>MIT Kerberos Library</Summary>
         <Description>Kerberos is a network authentication protocol. It is designed to provide strong authentication for client/server applications by using secret-key cryptography.</Description>
-        <Archive sha1sum="83bbfdb596be6cab5c7b73e554401a8b1d7987e1" type="tarxz">https://dl.dropbox.com/s/7ajc6tw2u15ju8k/krb5-1.10.3.tar.xz?dl=1</Archive>
+        <Archive sha1sum="83bbfdb596be6cab5c7b73e554401a8b1d7987e1" type="tarxz">http://sources.pardus-linux.org/krb5-1.10.3.tar.xz</Archive>
 
         <BuildDependencies>
             <Dependency>keyutils</Dependency>
