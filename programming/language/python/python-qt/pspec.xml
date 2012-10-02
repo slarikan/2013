@@ -5,8 +5,8 @@
         <Name>python-qt</Name>
         <Homepage>http://www.riverbankcomputing.co.uk/software/pyqt</Homepage>
         <Packager>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
+            <Name>Pardus ANKA Community</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <License>GPLv3</License>
