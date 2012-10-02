@@ -6,4 +6,9 @@
         <Summary xml:lang="tr">KDE4 için Bulgarca yerelleştirme desteği</Summary>
         <Description xml:lang="tr">kde-l10n-bg, KDE4 uygulamaları için Bulgarca çevirileri içeren yerelleştirme paketidir.</Description>
     </Source>
+
+    <Package>
+        <Name>kde-l10n-bg-doc</Name>
+        <Summary xml:lang="tr">KDE4 için Bulgarca belgeler</Summary>
+    </Package>
 </PISI>

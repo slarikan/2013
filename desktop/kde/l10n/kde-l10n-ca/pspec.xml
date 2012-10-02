@@ -3,35 +3,95 @@
 <PISI>
     <Source>
         <Name>kde-l10n-ca</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://i18n.kde.org</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>locale:ca</IsA>
         <Summary>Catalan KDE4 internationalization package</Summary>
         <Description>kde-l10n-ca is the KDE4 internationalization package that provides Catalan translations for KDE4 applications.</Description>
-        <Archive type="tarbz2" sha1sum="515ab7fb4b6ceeddc326cf4d8d7398c3d4cf0ac9">mirrors://kde/stable/4.6.5/src/kde-l10n/kde-l10n-ca-4.6.5.tar.bz2</Archive>
+        <Archive type="tarxz" sha1sum="43227a18c3ae97fdb8b72227ae93f10f1d8b8b9b">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ca-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
+
     <Package>
         <Name>kde-l10n-ca</Name>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
+
     <Package>
         <Name>kde-l10n-ca-doc</Name>
+        <Summary>Catalan documentation files for KDE</Summary>
         <Files>
             <Path fileType="data">/usr/share/kde4</Path>
-            <Path fileType="doc">/usr/share/doc/kde4</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
+
     <History>
+        <Update release="39">
+            <Date>2012-06-05</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="38">
+            <Date>2012-05-25</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="37">
+            <Date>2012-04-09</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="41">
+            <Date>2012-03-08</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="40">
+            <Date>2012-02-08</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="39">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump to 4.7.3</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="38">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="37">
+            <Date>2011-09-23</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump to 4.7.1</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="36">
             <Date>2011-07-11</Date>
             <Version>4.6.5</Version>

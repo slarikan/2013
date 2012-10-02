@@ -5,8 +5,8 @@
         <Name>kde-l10n-ml</Name>
         <Homepage>http://www.kde.org/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>locale:ml</IsA>
@@ -19,6 +19,10 @@
     </Source>
     <Package>
         <Name>kde-l10n-ml</Name>
+        <Replaces>
+            <Package>kde4-i18n-ml</Package>
+            <Package>kde-i18n-ml</Package>
+        </Replaces>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/kde4</Path>
