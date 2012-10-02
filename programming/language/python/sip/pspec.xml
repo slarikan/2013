@@ -3,16 +3,16 @@
 <PISI>
     <Source>
         <Name>sip</Name>
-        <Homepage>http://www.riverbankcomputing.co.uk/sip/</Homepage>
+        <Homepage>http://www.riverbankcomputing.co.uk/sip</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Gökmen Göksel</Name>
+            <Email>gokmen@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
         <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
-        <Archive sha1sum="3f80e5784233820fe42822ab9eb5ad743b4cbf81" type="targz">http://www.riverbankcomputing.co.uk/static/Downloads/sip4/sip-4.12.4.tar.gz</Archive>
+        <Archive sha1sum="6b4e4bec0a80fcb872c3a8b1eed152a1d4528d0b" type="targz">http://downloads.sourceforge.net/project/pyqt/sip/sip-4.14/sip-4.14.tar.gz</Archive>
         <Patches>
             <Patch level="1">no-strip.patch</Patch>
             <Patch>disable-rpaths.diff</Patch>
@@ -41,6 +41,28 @@
     </Package>
 
     <History>
+        <Update release="45">
+            <Date>2012-10-02</Date>
+            <Version>4.14</Version>
+            <Comment>Version bump to 4.14</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+      <Update release="47">
+            <Date>2012-02-18</Date>
+            <Version>4.13.2</Version>
+            <Comment>
+                  -Deprecation warnings can no longer be disabled.
+                  -Added the all_raise_py_exception argument to the %Module directive.
+                  -Added the /NoRaisesPyException/ function annotation.
+                  -Added the /PyName/ typedef annotation.
+                  -Class templates now allow super-classes to be defined as template arguments.
+                  -Added support for public preceding the name of a class in a super-class list.
+                  -Added support for protected and private preceding the name of a class in a super-class list. Any such super-class will be ignored.
+            </Comment>
+            <Name>Ramazan Utku</Name>
+            <Email>ramazanutku@gmail.com</Email>
+        </Update>
         <Update release="46">
             <Date>2011-09-26</Date>
             <Version>4.12.4</Version>
