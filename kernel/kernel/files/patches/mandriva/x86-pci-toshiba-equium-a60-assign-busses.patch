@@ -12,7 +12,7 @@ Signed-off-by: Thomas Backlund <tmb@mandriva.org>
 
 --- a/arch/x86/pci/common.c
 +++ b/arch/x86/pci/common.c
-@@ -196,6 +196,14 @@ static struct dmi_system_id __devinitdat
+@@ -245,6 +245,14 @@ static const struct dmi_system_id __devi
  			DMI_MATCH(DMI_PRODUCT_NAME, "SX20S"),
  		},
  	},
@@ -26,4 +26,4 @@ Signed-off-by: Thomas Backlund <tmb@mandriva.org>
 +	},
  #endif		/* __i386__ */
  	{
- 		.callback = set_bf_sort,
+ 		.callback = find_sort_method,
