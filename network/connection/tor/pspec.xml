@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+      <Update release="22" type="security">
+            <Date>2012-10-02</Date>
+            <Version>0.2.2.39</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="21" type="security">
             <Date>2012-08-28</Date>
             <Version>0.2.2.38</Version>
