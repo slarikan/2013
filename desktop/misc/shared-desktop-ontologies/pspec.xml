@@ -13,7 +13,7 @@
         <IsA>data</IsA>
         <Summary>Shared ontologies needed for semantic environments</Summary>
         <Description>An ontology is a formal representation of a set of concepts within a domain and the relationships between those concepts. This package provides shared ontologies created by OSCAF needed for semantic environments.</Description>
-        <Archive sha1sum="065e2e0526324bae909ef259190a65d3abd5d9d6" type="tarbz2">mirrors://sourceforge/project/oscaf/shared-desktop-ontologies/0.6/shared-desktop-ontologies-0.6.0.tar.bz2</Archive>
+        <Archive sha1sum="cfa3dee770ca979aea0362064c0ba5c5df3f8c9b" type="tarbz2">http://downloads.sourceforge.net/oscaf/shared-desktop-ontologies-0.10.0.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-08-25</Date>
+            <Version>0.10.0</Version>
+            <Comment>Version bump to 0.10.0</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="5">
+            <Date>2012-04-05</Date>
+            <Version>0.9.0</Version>
+            <Comment>Version bump to 0.9.0</Comment>
+            <Name>Mete Alpaslan</Name>
+            <Email>mete@pardus.org.tr</Email>
+        </Update>
         <Update release="4">
             <Date>2011-03-24</Date>
             <Version>0.6.0</Version>

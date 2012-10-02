@@ -13,13 +13,13 @@
         <IsA>library</IsA>
         <Summary>POSIX 1003.1e capabilities library</Summary>
         <Description>libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.</Description>
-        <Archive sha1sum="7753165ca685a0c78735fa0db25b815d9576b1fe" type="targz">http://ftp.de.debian.org/debian/pool/main/libc/libcap2/libcap2_2.22.orig.tar.gz</Archive>
+        <Archive sha1sum="7753165ca685a0c78735fa0db25b815d9576b1fe" type="targz">ftp://ftp.archlinux.org/other/libcap/libcap-2.22.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>pam</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>libcap-2.16-linkage_fix.diff</Patch>
-            <!--Patch level="1">flags.patch</Patch-->
+            <!--<Patch level="1">flags.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -69,9 +69,9 @@
             <Date>2012-10-01</Date>
             <Version>2.22</Version>
             <Comment>Version bump</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2011-03-02</Date>
             <Version>2.19</Version>

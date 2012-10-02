@@ -13,15 +13,15 @@
         <IsA>service</IsA>
         <Summary>Port of OpenBSD's free SSH release</Summary>
         <Description>OpenSSH is a FREE version of the SSH connectivity tools that technical users of the Internet rely on. Users of telnet, rlogin, and ftp may not realize that their password is transmitted across the Internet unencrypted, but it is. OpenSSH encrypts all traffic (including passwords) to effectively eliminate eavesdropping, connection hijacking, and other attacks.</Description>
-        <Archive sha1sum="347dd39c91c3529f41dae63714d452fb95efea1e" type="targz">http://ftp.belnet.be/packages/openbsd/OpenSSH/portable/openssh-5.6p1.tar.gz</Archive>
+        <Archive sha1sum="751c92c912310c3aa9cadc113e14458f843fc7b3" type="targz">http://ftp.belnet.be/packages/openbsd/OpenSSH/portable/openssh-6.1p1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libedit-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fedora/openssh-5.6p1-keygen.patch</Patch>
+            <!--<Patch level="1">fedora/openssh-5.6p1-keygen.patch</Patch>
             <Patch level="1">fedora/openssh-4.3p1-fromto-remote.patch</Patch>
-            <Patch level="1">fedora/openssh-5.1p1-log-in-chroot.patch</Patch>
+            <Patch level="1">fedora/openssh-5.1p1-log-in-chroot.patch</Patch>-->
             <Patch level="1">fedora/openssh-5.6p1-exit-deadlock.patch</Patch>
             <Patch level="1">fedora/openssh-5.1p1-askpass-progress.patch</Patch>
             <Patch level="1">fedora/openssh-4.3p2-askpass-grab-info.patch</Patch>
@@ -30,9 +30,9 @@
             <Patch level="1">fedora/openssh-5.2p1-edns.patch</Patch>
             <Patch level="1">fedora/openssh-5.3p1-randclean.patch</Patch>
             <Patch level="1">fedora/openssh-5.5p1-x11.patch</Patch>
-            <Patch level="1">fedora/openssh-5.6p1-biguid.patch</Patch>
+            <!--<Patch level="1">fedora/openssh-5.6p1-biguid.patch</Patch>
             <Patch level="1">CVE-2011-0539.patch</Patch>
-            <Patch level="1">fix-portable-keysign-rand-helper-vuln.patch</Patch>
+            <Patch level="1">fix-portable-keysign-rand-helper-vuln.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -62,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="35" type="security">
+            <Date>2012-10-30</Date>
+            <Version>6.1_p1</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="34" type="security">
             <Date>2011-05-09</Date>
             <Version>5.6_p1</Version>

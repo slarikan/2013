@@ -3,40 +3,24 @@
 <PISI>
     <Source>
         <Name>kde-l10n-tr</Name>
-        <Homepage>http://www.kde.org/</Homepage>
+        <Homepage>http://l10n.kde.org</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>locale:tr</IsA>
         <Summary>Turkish KDE4 internationalization package</Summary>
         <Description>kde-l10n-tr is the KDE4 internationalization package that provides Turkish translations for KDE4 applications.</Description>
-        <Archive type="tarbz2" sha1sum="81c51b15ebc60f3b56373687029d3dddd491e8e8">mirrors://kde/stable/4.6.5/src/kde-l10n/kde-l10n-tr-4.6.5.tar.bz2</Archive>
+        <Archive sha1sum="69da4db987bffdcf176ec682e35f5243920244e0" type="tarxz">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-tr-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Sync translations from branches/stable/l10n-kde/tr using sync-branch-translations.sh
-            <Patch level="1">BRANCH.patch</Patch> -->
-
             <!-- Include playground-network translations too -->
             <Patch level="1">add-playground-network-dir.patch</Patch>
 
-
             <!-- Translations for Pardus specific modifications, won't go upstream -->
-
-
-            <!-- Panel show only icons label translation (Feature not forward-ported to 4.4
-            <Patch level="1">panel-show-only-icons.patch</Patch>
-            -->
-
-            <!-- Configure Date & Time' translation -->
-            <Patch level="1">configure-datetime-translation.diff</Patch>
-
-            <!-- Back button's translation for systemsettings
-            <Patch level="1">systemsettings-back-button.patch</Patch>
-            -->
 
             <!-- plasma_engine_hotplug translations -->
             <Patch level="1">notification-translation.diff</Patch>
@@ -44,68 +28,94 @@
             <!-- KMix' context menu link for pavucontrol -->
             <Patch level="1">kmix-add-pavucontrol-i18n.patch</Patch>
 
-            <!-- Translation for 'Manage Printers' option added to printer-applet
-            <Patch level="1">printer-applet-manager-printers.diff</Patch>
-            -->
-
-            <!-- Not enough disk space error while moving a file into trash -->
-            <Patch level="1">not-enough-disk-space.diff</Patch>
-
-            <!-- Suspend, sleep and hibernate fixes
-            <Patch level="1">suspend-hibernate-fixes.patch</Patch>-->
-
             <!-- Fix for #13842 -->
             <Patch level="1">fix-xdg-user-dirs-translations.diff</Patch>
 
-            <Patch level="1">remove-kdepim-translations.diff</Patch>
-            <Patch level="1">add-kdepim44-translations.diff</Patch>
-
-            <Patch level="1">fix-details-translation.diff</Patch>
-
-            <Patch level="1">may-to-mayis.patch</Patch>
-
-            <Patch>fix_tasks_applet.patch</Patch>
-
             <!-- Fix for #15845 -->
             <Patch level="1">fix-kteatime-trans.diff</Patch>
-            <Patch level="1">kcmlocale_systemwide.patch</Patch>
-
-            <!-- Fix missing space in restart dialog translation -->
-            <Patch level="1">fix-missing-space-in-restart-dialog-translation.diff</Patch>
 
             <!-- Fix translation of tiklayin in Okular -->
             <Patch level="1">fix-tuklayin.diff</Patch>
-            <Patch level="1">add_kcmkeyboard.patch</Patch>
-
-            <Patch level="1">fix-email-contributor.diff</Patch>
-            <Patch level="1">fix-kalzium-translations.diff</Patch>
-
-            <!-- system-config-printer-kde translations -->
-            <!--<Patch level="1">sync-scp-kde-translations-from-trunk.patch</Patch>-->
 
             <!--Translations for our custom randr informatin bar-->
-            <Patch level="1">randr_information_bar.patch</Patch>
-
-            <!-- Translation fix for KSudoku 273403 -->
-            <Patch level="1">fix-ksudoku-translation-273403.diff</Patch>
+            <!-- Patch level="1">randr_information_bar.patch</Patch -->
         </Patches>
     </Source>
+
     <Package>
         <Name>kde-l10n-tr</Name>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
+
     <Package>
         <Name>kde-l10n-tr-doc</Name>
+        <Summary>Turkish documentation files for KDE</Summary>
         <Files>
             <Path fileType="data">/usr/share/kde4</Path>
-            <Path fileType="doc">/usr/share/doc/kde4</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="87">
+            <Date>2012-06-08</Date>
+            <Version>4.8.4</Version>
+            <Comment>Version bump to 4.8.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="86">
+            <Date>2012-05-06</Date>
+            <Version>4.8.3</Version>
+            <Comment>Version bump to 4.8.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="85">
+            <Date>2012-04-06</Date>
+            <Version>4.8.2</Version>
+            <Comment>Version bump to 4.8.2</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="84">
+            <Date>2012-03-08</Date>
+            <Version>4.8.1</Version>
+            <Comment>Version bump to 4.8.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="83">
+            <Date>2012-01-28</Date>
+            <Version>4.8.0</Version>
+            <Comment>Version bump to 4.8.0</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+        <Update release="82">
+            <Date>2011-11-03</Date>
+            <Version>4.7.3</Version>
+            <Comment>Version bump to 4.7.3</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
+        <Update release="81">
+            <Date>2011-10-09</Date>
+            <Version>4.7.2</Version>
+            <Comment>Version bump to 4.7.2</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>
+        <Update release="80">
+            <Date>2011-09-23</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump to 4.7.1</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="79">
             <Date>2011-08-01</Date>
             <Version>4.6.5</Version>

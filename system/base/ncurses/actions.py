@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "ncurses-%s" % get.srcVERSION().split("_", 1)[0]
+WorkDir = "ncurses-%s-%s" % (get.srcVERSION().split("_", 1)[0], get.srcVERSION().split("_", 1)[1])
 
 
 def linknonwide(targetDir):

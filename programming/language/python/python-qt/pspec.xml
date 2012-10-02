@@ -5,7 +5,7 @@
         <Name>python-qt</Name>
         <Homepage>http://www.riverbankcomputing.co.uk/software/pyqt</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
+            <Name>Pardus ANKA Community</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
@@ -13,12 +13,12 @@
         <IsA>library</IsA>
         <Summary>A set of Python bindings for the Qt 4.x Toolkit</Summary>
         <Description>Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
-        <Archive sha1sum="df253c6267c7bf80ddb33cd5357aadbc0629492d" type="targz">http://www.riverbankcomputing.co.uk/static/Downloads/PyQt4/PyQt-x11-gpl-4.8.5.tar.gz</Archive>
+        <Archive sha1sum="1f0d10fff6bcd6008a980589fd889ccdbc8eb1c8" type="targz">http://downloads.sourceforge.net/project/pyqt/PyQt4/PyQt-4.9.5/PyQt-x11-gpl-4.9.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.1">qt-devel</Dependency>
-            <Dependency versionFrom="4.12.4">sip-devel</Dependency>
-            <Dependency versionFrom="4.7.1">qt-webkit</Dependency>
-            <Dependency versionFrom="4.4.4">phonon-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency versionFrom="4.13.2">sip-devel</Dependency>
+            <Dependency versionFrom="4.8.1">qt-webkit</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>add_gettext_support.patch</Patch>
@@ -33,7 +33,7 @@
             <Dependency release="current">python-qt</Dependency>
             <Dependency release="current">python-qt-webkit</Dependency>
             <Dependency release="current">python-qt-phonon</Dependency>
-            <Dependency versionFrom="4.12.4">sip-devel</Dependency>
+            <Dependency versionFrom="4.13.2">sip-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -44,8 +44,8 @@
     <Package>
         <Name>python-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.1">qt</Dependency>
-            <Dependency versionFrom="4.12.4">sip</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency versionFrom="4.13.2">sip</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -60,7 +60,7 @@
         <Summary>Python bindings for QtWebkit library</Summary>
         <RuntimeDependencies>
             <Dependency release="current">python-qt</Dependency>
-            <Dependency versionFrom="4.7.1">qt-webkit</Dependency>
+            <Dependency versionFrom="4.8.1">qt-webkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python*/site-packages/PyQt4/*WebKit*</Path>
@@ -73,7 +73,7 @@
         <Summary>Python bindings for Phonon multimedia library</Summary>
         <RuntimeDependencies>
             <Dependency release="current">python-qt</Dependency>
-            <Dependency versionFrom="4.4.4">phonon</Dependency>
+            <Dependency versionFrom="4.6.0">phonon</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python*/site-packages/PyQt4/*phonon*</Path>
@@ -93,6 +93,20 @@
     </Package>
 
     <History>
+      <Update release="60">
+            <Date>2012-10-02</Date>
+            <Version>4.9.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+      <Update release="59">
+            <Date>2012-02-17</Date>
+            <Version>4.9.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Ramazan Utku</Name>
+            <Email>ramazanutku@gmail.com</Email>
+        </Update>
         <Update release="58">
             <Date>2011-09-26</Date>
             <Version>4.8.5</Version>

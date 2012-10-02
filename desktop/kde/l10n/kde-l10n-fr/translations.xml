@@ -6,4 +6,9 @@
         <Summary xml:lang="tr">KDE4 için Fransızca yerelleştirme paketi</Summary>
         <Description xml:lang="tr">kde-l10n-fr, KDE4 uygulamaları için Fransızca çevirileri içeren yerelleştirme paketidir.</Description>
     </Source>
+
+    <Package>
+        <Name>kde-l10n-fr-doc</Name>
+        <Summary xml:lang="tr">KDE4 için Fransızca belgeler</Summary>
+    </Package>
 </PISI>

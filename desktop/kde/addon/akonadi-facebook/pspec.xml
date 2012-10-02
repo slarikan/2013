@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>akonadi-facebook</Name>
+        <Homepage>https://projects.kde.org/projects/playground/pim/akonadi-facebook</Homepage>
+        <Packager>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>akonadi-facebook</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Facebook Akonadi resource</Summary>
+        <Description>akonadi-facebook makes events, contacts, notes and messages from Facebook available in KDE.</Description>
+        <Archive sha1sum="8ef9bb5a8a86fff9f2502f4f8d42b0fc285dca35" type="tarxz">http://dl.dropbox.com/u/63729954/akonadi-facebook.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>akonadi-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>libqjson-devel</Dependency>
+            <Dependency>libxslt-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>akonadi-facebook</Name>
+        <RuntimeDependencies>
+            <Dependency>akonadi</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>libqjson</Dependency>
+            <Dependency>libxslt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-04-13</Date>
+            <Version>2012.04.13</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+    </History>
+</PISI>

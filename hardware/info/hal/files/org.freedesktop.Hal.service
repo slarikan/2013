@@ -1,4 +1,0 @@
-[D-BUS Service]
-Name=org.freedesktop.Hal
-Exec=/bin/service hal start
-User=root

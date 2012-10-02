@@ -13,34 +13,19 @@
         <IsA>service</IsA>
         <Summary>Linux Infrared Remote Control system</Summary>
         <Description>lirc is a package that allows you to decode and send infra-red signals of many (but not all) commonly used remote controls.</Description>
-        <!-- using snapshot
-        <Archive sha1sum="199aad7381e785945e4634f9a002e5ac35bf8930" type="tarbz2">http://prdownloads.sourceforge.net/lirc/lirc-0.8.6.tar.bz2</Archive>
-        -->
-        <Archive sha1sum="fac03b06a1b3476e24d2bbc70b96059ccda5d7e3" type="tarbz2">http://lirc.org/software/snapshots/lirc-0.9.0-pre1.tar.bz2</Archive>
+        <Archive sha1sum="8456bf7101d4f2d31d61c5073357a4981b458581" type="tarbz2">http://sourceforge.net/projects/lirc/files/LIRC/0.9.0/lirc-0.9.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libftdi-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">lirc-0.8.4-make-remote-names-all-unique.patch</Patch>
-            <Patch level="1">lirc-0.8.6-firefly-def.patch</Patch>
-            <!-- FIXME: two hunks bork, port them
-            <Patch level="1">lirc-0.8.6-standardized-remote-keycodes.patch</Patch>
-            -->
-
-            <Patch level="1">lirc-0.8.4-portaudio_check.patch</Patch>
-            <Patch level="1">lirc-0.8.3_pre1-remotewonderplus.patch</Patch>
-            <!--<Patch level="1">noparallel.patch</Patch>-->
             <Patch level="1">devicenode.patch</Patch>
             <Patch level="1">cflags.patch</Patch>
             <!-- FIXME: this summons bug 8693 -->
             <Patch level="1">nogpio.patch</Patch>
-            <!-- FIXME: Build system fails to decide wheter to use ftdi, enable this patch if there is no ftdi library installed
-            <Patch level="1">noftdi_in_all.patch</Patch>
-            -->
-
             <!-- use fixed instead of courier font -->
             <Patch level="1">xmode2_defaultfont.patch</Patch>
+            <Patch level="1">lirc-0.9.0-libusb-config-is-no-more.patch</Patch>
         </Patches>
     </Source>
 
@@ -59,17 +44,13 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/var/run</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/lirc">lirc.conf.d</AdditionalFile>
-
-            <!-- FIXME: Why do we need this!? Install the one shipped within the tarball
-            <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/10-lirc.rules">10-lirc.rules</AdditionalFile>
-            -->
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/lirc.service">lirc.service</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/lircmd.service">lircmd.service</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
     </Package>
 
     <Package>
@@ -84,6 +65,15 @@
     </Package>
 
     <History>
+        <Update release="29">
+            <Date>2012-10-01</Date>
+            <Version>0.9.0</Version>
+            <Comment>* Version Bump
+                     * Replace comar service script with systemd script
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="28">
             <Date>2010-12-27</Date>
             <Version>0.9.0_pre1</Version>
