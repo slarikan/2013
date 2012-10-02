@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>ATA S.M.A.R.T. Disk Health Monitoring Library</Summary>
         <Description>A small and lightweight parser library for ATA S.M.A.R.T. hard disk health monitoring.</Description>
-        <Archive sha1sum="33135e67bf6a3ea87b902944a80190e8f4427b2a" type="targz">http://0pointer.de/public/libatasmart-0.17.tar.gz</Archive>
+        <Archive sha1sum="0d0745b6bd2e5b9461d15966b5daac6c98302de8" type="tarxz">http://0pointer.de/public/libatasmart-0.19.tar.xz</Archive>
         <Patches>
             <Patch level="1">libatasmart-uninitialized-var.patch</Patch>
         </Patches>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-10-02</Date>
+            <Version>0.19</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-06-14</Date>
             <Version>0.17</Version>
