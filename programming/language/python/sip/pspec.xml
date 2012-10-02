@@ -41,7 +41,7 @@
     </Package>
 
     <History>
-        <Update release="45">
+        <Update release="48">
             <Date>2012-10-02</Date>
             <Version>4.14</Version>
             <Comment>Version bump to 4.14</Comment>
