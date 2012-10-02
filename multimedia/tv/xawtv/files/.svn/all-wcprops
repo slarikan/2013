@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files
+END
+030_all_autocolor.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/030_all_autocolor.patch
+END
+region.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/region.patch
+END
+oss_audio.patch
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/oss_audio.patch
+END
+dqbuf-fix.patch
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/dqbuf-fix.patch
+END
+dirty-xawtv-unicode.patch
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/dirty-xawtv-unicode.patch
+END
+curses-utf8.patch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/curses-utf8.patch
+END
+xawtv-3.95-jpeg-7.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/xawtv-3.95-jpeg-7.patch
+END
+audio_unmute.patch
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/audio_unmute.patch
+END
+glib2.patch
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/glib2.patch
+END
+libquicktime-compat.patch
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/libquicktime-compat.patch
+END
+v4l2-old-drop.patch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/v4l2-old-drop.patch
+END
+page_size.patch
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/page_size.patch
+END
+man.patch
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/man.patch
+END
+scantv_input_override.patch
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/scantv_input_override.patch
+END
+libv4l2.patch
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/libv4l2.patch
+END
+010_all_nox11.patch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/010_all_nox11.patch
+END
+gcc4.patch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/gcc4.patch
+END
+xawtv.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/xawtv.desktop
+END
+v4l2_fixes.patch
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/v4l2_fixes.patch
+END
+000_all_xlibs-search-path.patch
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/000_all_xlibs-search-path.patch
+END
+plugins_memory_leaks.patch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/plugins_memory_leaks.patch
+END
+libquicktime-headers.patch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/libquicktime-headers.patch
+END
+radio_fixes.patch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/radio_fixes.patch
+END
+xorg7_headers.patch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/xorg7_headers.patch
+END
+open.patch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/open.patch
+END
+fbtv_radeonfb.patch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/fbtv_radeonfb.patch
+END
+no-dga.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/no-dga.patch
+END
+font.patch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/font.patch
+END
+050_all_nostrip.patch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/050_all_nostrip.patch
+END
+bpl.patch
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/bpl.patch
+END
+060_all_gcc41.patch
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/pardus/!svn/ver/157/playground/e.gultekin/multimedia/xawtv/files/060_all_gcc41.patch
+END
