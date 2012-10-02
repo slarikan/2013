@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>GNU scientific library</Summary>
         <Description>The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers.</Description>
-        <Archive sha1sum="e1a600e4fe359692e6f0e28b7e12a96681efbe52" type="targz">mirrors://gnu/gsl/gsl-1.14.tar.gz</Archive>
+        <Archive sha1sum="d914f84b39a5274b0a589d9b83a66f44cd17ca8e" type="targz">http://ftp.gnu.org/gnu/gsl/gsl-1.15.tar.gz</Archive>
         <Patches>
-            <Patch level="1">gsl-1.14-cblas.patch</Patch>
+            <!--<Patch level="1">gsl-1.14-cblas.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-02</Date>
+            <Version>1.15</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2010-10-13</Date>
             <Version>1.14</Version>
