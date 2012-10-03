@@ -11,8 +11,8 @@
         <License>GPLv2</License>
         <License>LGPL</License>
         <IsA>app:gui</IsA>
-        <Summary>free and open source media-player and entertainment hub</Summary>
-        <Description>free and open source media-player and entertainment hub</Description>
+        <Summary>A free and open source media-player and entertainment hub</Summary>
+        <Description>XBMC is an award-winning free and open source (GPL) software media player and entertainment hub for digital media</Description>
         <Archive sha1sum="d836a0a1e8ed239a339ec7e0c19f893e29df741d" type="targz">http://mirrors.xbmc.org/releases/source/xbmc-11.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libplist-devel</Dependency>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>XBMC</Name>
+        <Summary xml:lang="tr">Ücretsiz, açık kaynak kodlu medya oynatıcı ve eğlence merkezi</Summary>
+        <Description xml:lang="tr">XBMC  ödüllü, ücretsiz ve açık kaynak kodlu(GPL), dijital medyalar için bir medya oynatıcı ve eğlence merkezidir.</Description>
+    </Source>
+</PISI> 
