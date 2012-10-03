@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>Linear Algebra PACKage</Summary>
         <Description>LAPACK is a standard library for numerical linear algebra.  LAPACK provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems.</Description>
-        <Archive sha1sum="3ce437e05f0e9a3c8148ec41922f6efeef0ebdac" type="targz">http://www.netlib.org/lapack/lapack-3.3.1.tgz</Archive>
+        <Archive sha1sum="93a6e4e6639aaf00571d53a580ddc415416e868b" type="targz">http://www.netlib.org/lapack/lapack-3.4.2.tgz</Archive>
         <Patches>
             <Patch level="1">lapack-sharedlib.patch</Patch>
-            <Patch level="1">lapack-parallel-make.patch</Patch>
-            <Patch level="1">lapack-3.3.1-cmake-sover.patch</Patch>
+            <!--Patch level="1">lapack-parallel-make.patch</Patch-->
+            <!--Patch level="1">lapack-3.3.1-cmake-sover.patch</Patch-->
         </Patches>
     </Source>
 
@@ -73,6 +73,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-03</Date>
+            <Version>3.4.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2011-08-01</Date>
             <Version>3.3.1</Version>
