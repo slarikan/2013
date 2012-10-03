@@ -24,10 +24,9 @@ else:
 
 XDir = "xpic" + ("_64a" if Target == "x86_64" else "")
 
-
 def setup():
     shelltools.export("SETUP_NOCHECK", "1")
-    shelltools.system("sh ati-driver-installer-%s-x86.x86_64.run --extract ." % get.srcVERSION().replace(".", "-"))
+    shelltools.system("sh amd-driver-installer-*-x86.x86_64.run --extract .")
 
     if get.buildTYPE() == "emul32":
         return
@@ -61,16 +60,16 @@ def install():
     # The other files under /usr/share are common files like icon,man,doc ,etc ..
     DIRS = {
             "common/usr/share/doc/fglrx/examples/etc/acpi/events":  "/etc/acpi",
-            "common/etc/ati":                       "/etc",
+            "common/etc/*":                         "/etc",
             "arch/%s/usr/X11R6/lib*/*" % Target:    Libdir,
             "arch/%s/usr/lib*/*" % Target:          Libdir,
-            "common/usr/share":                     "/usr"
+            "common/usr/share/*":                     "/usr/share"
             }
 
     # Emul32 package don't need files that belongs to /usr/share
     if get.buildTYPE() == "emul32":
-        del DIRS["common/usr/share"]
-        del DIRS["common/etc/ati"]
+        del DIRS["common/usr/share/*"]
+        del DIRS["common/etc/*"]
         del DIRS["common/usr/share/doc/fglrx/examples/etc/acpi/events"]
 
     for source, target in DIRS.items():
@@ -103,6 +102,7 @@ def install():
     pisitools.dosym("libXvBAW.so.1.0", "%s/libXvBAW.so.1" % Libdir)
     pisitools.dosym("libXvBAW.so.1", "%s/libXvBAW.so" % Libdir)
 
+
     # remove static libs
     pisitools.remove("%s/*.a" % Libdir)
     if shelltools.isFile("%s%s/fglrx/modules/esut.a" % (get.installDIR(), Libdir)):
@@ -111,12 +111,35 @@ def install():
     # compatibility links
     pisitools.dosym("xorg/modules", "%s/modules" % Libdir)
 
+    #OpenCL
+    DIRS = {
+            "arch/%s/usr/bin/clinfo" % Target                : "/usr/bin",
+            "arch/%s/etc/*" % Target                         : "/etc",
+            "arch/%s/usr/lib*/libamdocl*" % Target            : Libdir,
+            "arch/%s/usr/lib*/libOpenCL*" % Target            : Libdir,
+            }
+    
+    if get.buildTYPE() == "emul32":
+        del DIRS["arch/%s/usr/bin/clinfo" % Target]
+        del DIRS["arch/%s/etc/*" % Target]
+
+    for source, target in DIRS.items():
+        pisitools.insinto(target, source)
+    
+    pisitools.dosym("libOpenCL.so.1", "%s/libOpenCL.so" % Libdir)
+
     # OK, That's the end of emul32 build, it's time to exit.
     if get.buildTYPE() == "emul32":
         return
 
+    # Header Files
+    pisitools.insinto("/usr/include/ATI/GL","common/usr/include/ATI/GL/*")
+    pisitools.insinto("/usr/include/GL","common/usr/include/GL/*")
+
     # Another compatibility link
     pisitools.dosym("/usr", "/usr/X11R6")
+
+    pisitools.dosym("../security/console.apps/amdcccle-su", "/etc/pam.d/amdcccle-su")
 
     # copy compiled kernel module
     pisitools.insinto("/lib/modules/%s/extra" % KDIR, "common/lib/modules/fglrx/fglrx.%s.ko" % KDIR, "fglrx.ko")
@@ -124,11 +147,14 @@ def install():
     # control script for ACPI lid state and AC adapter state
     pisitools.insinto("/etc/acpi", "common/usr/share/doc/fglrx/examples/etc/acpi/ati-powermode.sh")
 
+    pisitools.domove("/usr/share/icons/ccc_large.xpm", "/usr/share/pixmaps", "amdcccle.xpm")
+    pisitools.removeDir("/usr/share/icons")
+
     # not needed as xdg-utils package provides xdg-su
     pisitools.remove("/usr/bin/amdxdg-su")
 
-    pisitools.domove("/usr/share/icons/ccc_large.xpm", "/usr/share/pixmaps", "amdcccle.xpm")
-    pisitools.removeDir("/usr/share/icons")
+    #LICENSE information
+    pisitools.dodoc("LICENSE.txt")
 
     # Fix file permissions
     exec_file_suffixes = (".sh", ".so", ".so.1.2")
