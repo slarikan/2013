@@ -18,7 +18,6 @@ def setup():
                          --enable-posix \
                          --enable-networking \
                          --enable-regex \
-                         --enable-elisp \
                          --enable-nls \
                          --disable-rpath \
                          --with-threads \
@@ -26,14 +25,11 @@ def setup():
 
     # Put flags in front of the libs. Needed for --as-needed.
     replace = (r"(\\\$deplibs) (\\\$compiler_flags)", r"\2 \1")
-    pisitools.dosed("libtool", *replace)
-    pisitools.dosed("*/libtool", *replace)
+    #pisitools.dosed("libtool", *replace)
+    #pisitools.dosed("*/libtool", *replace)
 
 def build():
     autotools.make()
-
-def check():
-    autotools.make("check")
 
 def install():
     autotools.install()
