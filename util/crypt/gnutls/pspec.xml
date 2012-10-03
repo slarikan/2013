@@ -68,8 +68,8 @@
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
         <AdditionalFiles>
-            #<AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-config">libgnutls-config</AdditionalFile>
-            #<AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-extra-config">libgnutls-config</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-config">libgnutls-config</AdditionalFile>
+            <AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-extra-config">libgnutls-config</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
@@ -82,14 +82,14 @@
             <Dependency>zlib-32bit</Dependency>
             <Dependency>libgcrypt-32bit</Dependency>
             <Dependency versionFrom="2.5">nettle-32bit</Dependency>
-            <Dependency versionFrom="2.5">libidn-32bit</Dependency>
+            <Dependency versionFrom="1.25">libidn-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">gnutls</Dependency>
             <Dependency>zlib-32bit</Dependency>
             <Dependency>libgcrypt-32bit</Dependency>
             <Dependency versionFrom="2.5">nettle-32bit</Dependency>
-            <Dependency versionFrom="2.5">libidn-32bit</Dependency>
+            <Dependency versionFrom="1.25">libidn-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
