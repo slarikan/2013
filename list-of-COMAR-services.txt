@@ -39,7 +39,7 @@ hardware/virtualization/libvirt/comar/service.py
 hardware/virtualization/lxc/comar/service.py
 hardware/virtualization/qemu/comar/ksm-service.py
 hardware/virtualization/qemu/comar/ksmtuned-service.py
-kernel/default/drivers/module-fglrx/comar/service.py
+kernel/default/drivers/module-fglrx/comar/service.py                    +
 multimedia/sound/timidity/comar/service.py
 multimedia/stream/icecast/comar/service.py
 multimedia/stream/mediatomb/comar/service.py
