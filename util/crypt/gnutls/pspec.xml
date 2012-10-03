@@ -82,14 +82,14 @@
             <Dependency>zlib-32bit</Dependency>
             <Dependency>libgcrypt-32bit</Dependency>
             <Dependency versionFrom="2.5">nettle-32bit</Dependency>
-            <Dependency versionFrom="1.25">libidn-32bit</Dependency>
+            <Dependency versionFrom="2.5">libidn-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">gnutls</Dependency>
             <Dependency>zlib-32bit</Dependency>
             <Dependency>libgcrypt-32bit</Dependency>
             <Dependency versionFrom="2.5">nettle-32bit</Dependency>
-            <Dependency versionFrom="1.25">libidn-32bit</Dependency>
+            <Dependency versionFrom="2.5">libidn-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
