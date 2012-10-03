@@ -68,8 +68,8 @@
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
         <AdditionalFiles>
-            #<AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-config">libgnutls-config</AdditionalFile>
-            #<AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-extra-config">libgnutls-config</AdditionalFile>
+            <!--AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-config">libgnutls-config</AdditionalFile-->
+            <!--AdditionalFile owner="root" permission="0755" target="/usr/bin/libgnutls-extra-config">libgnutls-config</AdditionalFile-->
         </AdditionalFiles>
     </Package>
 
