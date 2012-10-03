@@ -5,14 +5,14 @@
         <Name>hplip</Name>
         <Homepage>http://hplip.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2+</License>
         <License>MIT</License>
         <Summary>HP Linux Imaging and Printing System</Summary>
         <Description>HP Linux Imaging and Printing (HPLIP) System includes printer and scanner drivers and related service tools.</Description>
-        <Archive sha1sum="716dea09c1570356b359e5b6d4a50f8b2654d760" type="targz">mirrors://sourceforge/hplip/hplip-3.11.10.tar.gz</Archive>
+        <Archive sha1sum="e7c16d788d9c4c493ea97f1d9cc995439d6f4206" type="targz">http://fossies.org/linux/misc/hplip-3.12.9.tar.gz</Archive>
         <AdditionalFiles>
             <!-- PPD patcher -->
             <AdditionalFile permission="0755" target="patch-ppds">patch-ppds.sh</AdditionalFile>
@@ -43,100 +43,6 @@
 
             <!-- Make sure to avoid handwritten asm -->
             <Patch level="1">fedora/hplip-no-asm.patch</Patch>
-
-            <!-- Corrected several IEEE 1284 Device IDs using foomatic data -->
-            <Patch level="1">fedora/hplip-deviceIDs-drv.patch</Patch>
-
-            <!-- Stopped hpcups pointlessly trying to read spool files directly -->
-            <Patch level="1">fedora/hplip-mucks-with-spooldir.patch</Patch>
-
-            <!-- Removed SYSFS use in udev rules and actually made them work -->
-            <Patch level="1">fedora/hplip-udev-rules.patch</Patch>
-
-            <!-- Retry when connecting to device fails -->
-            <Patch level="1">fedora/hplip-retry-open.patch</Patch>
-
-            <!-- Mark SNMP quirks in PPD for HP OfficeJet Pro 8500 -->
-            <Patch level="1">fedora/hplip-snmp-quirks.patch</Patch>
-
-            <!-- Fixed hp-setup traceback when discovery page is skipped -->
-            <Patch level="1">fedora/hplip-discovery-method.patch</Patch>
-
-            <!--  Fixed bogus low ink warnings from hpijs driver -->
-            <Patch level="1">fedora/hplip-hpijs-marker-supply.patch</Patch>
-
-            <!-- Clear old printer-state-reasons we used to manage -->
-            <Patch level="1">fedora/hplip-clear-old-state-reasons.patch</Patch>
-
-            <!-- Catch DBusException in hp-systray -->
-            <Patch level="1">fedora/hplip-systray-dbus-exception.patch</Patch>
-
-            <!-- Avoid busy loops in hpcups when backend has exited -->
-            <Patch level="1">fedora/hplip-hpcups-sigpipe.patch</Patch>
-
-            <!-- Use correct fax PPD name for Qt3 UI -->
-            <Patch level="1">fedora/hplip-fax-ppd.patch</Patch>
-
-            <!-- Fixed Device ID parsing code in hpijs's dj9xxvip.c -->
-            <Patch level="1">fedora/hplip-bad-low-ink-warning.patch</Patch>
-
-            <!-- Add Device IDs -->
-            <!-- UNPACKEDPATCH 1 -->
-
-            <!-- Hpcups (ljcolor) was putting black lines where should be blank lines -->
-            <Patch level="1">fedora/hplip-skip-blank-lines.patch</Patch>
-
-            <!-- Added missing newline to string argument in dbglog() call -->
-            <Patch level="1">fedora/hplip-dbglog-newline.patch</Patch>
-
-            <!-- Wait longer to see if a system tray becomes available -->
-            <Patch level="1">fedora/hplip-no-system-tray.patch</Patch>
-
-            <!-- Fix ImageableArea for LaserJet 8150/9000 -->
-            <!-- UNPACKEDPATCH 2 -->
-
-            <!-- Fixed traceback on error condition in device.py -->
-            <Patch level="1">fedora/hplip-raw_deviceID-traceback.patch</Patch>
-
-            <!-- Avoid UnicodeDecodeError in printsettingstoolbox.py -->
-            <Patch level="1">fedora/hplip-UnicodeDecodeError.patch</Patch>
-
-            <!-- Don't emit SIGNALs in ui4.setupdialog.SetupDialog the PyQt3 way -->
-            <Patch level="1">fedora/hplip-emit-SIGNAL.patch</Patch>
-
-            <!-- Prevent hp-fab traceback when run as root -->
-            <Patch level="1">fedora/hplip-fab-root-crash.patch</Patch>
-
-            <!-- Call cupsSetUser in cupsext's addPrinter method before connecting so
-                 that we can get an authentication callback -->
-            <Patch level="1">fedora/hplip-addprinter.patch</Patch>
-
-            <!-- Catch D-Bus exceptions in fax dialog -->
-            <Patch level="1">fedora/hplip-dbus-exception.patch</Patch>
-
-            <!-- Prevent hpaio segfaulting on invalid URIs -->
-            <Patch level="1">fedora/hplip-hpaio-segfault.patch</Patch>
-
-            <!-- Another missing newline in filter output -->
-            <Patch level="1">fedora/hplip-newline.patch</Patch>
-
-            <!-- Enable D-Bus threading (and require pygobject2) -->
-            <Patch level="1">fedora/hplip-dbus-threads.patch</Patch>
-
-            <!-- Catch GError exception when notification showing failed -->
-            <Patch level="1">fedora/hplip-notification-exception.patch</Patch>
-
-            <!-- Applied patch to fix CVE-2010-4267, remote stack overflow vulnerability -->
-            <Patch level="1">fedora/hplip-CVE-2010-4267.patch</Patch>
-
-            <!-- Avoid KeyError in ui4/wifisetupdialog.py -->
-            <Patch level="1">fedora/hplip-wifisetup.patch</Patch>
-
-            <!-- Pay attention to the SANE localOnly flag in hpaio -->
-            <Patch level="1">fedora/hplip-hpaio-localonly.patch</Patch>
-
-            <!-- Revert prnt/hpcups/HPCupsFilter.cpp 3.11.5->3.11.7 change -->
-            <Patch level="1">fedora/hplip-top-margins-not-respected.patch</Patch>
 
             <!-- Pardus patches -->
             <Patch level="1">pardus/desktop-i18n.patch</Patch>
@@ -174,11 +80,14 @@
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/PolicyKit</Path>
             <Path fileType="data">/usr/share/hplip/prnt/plugins</Path>
+            <Path fileType="data">/var/log/hp</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="config">/etc/cron.daily/</Path>    
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/hpcups-update-ppds">fedora/hpcups-update-ppds.sh</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/sane.d/dll.d/hpaio">hpaio</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/hplip/data/localization/hplip_tr.qm">hplip_tr.qm</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
@@ -223,12 +132,29 @@
         <RuntimeDependencies>
             <Dependency release="current">hplip</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>hplip-doc</Package>
+        </Replaces>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="50">
+            <Date>2012-10-03</Date>
+            <Version>3.12.9</Version>
+            <Comment>Version bump to 3.12.9</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="49">
+            <Date>2012-04-15</Date>
+            <Version>3.12.4</Version>
+            <Comment>Version bump to 3.12.4</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="48" type="security">
             <Date>2011-12-08</Date>
             <Version>3.11.10</Version>
