@@ -26,7 +26,7 @@ hardware/info/gkrellm/comar/service.py                                  +
 hardware/info/hal/comar/service.py                                      XXXXXXXXXX
 hardware/info/smolt/comar/service.py
 hardware/irda/irda-utils/comar/service.py                               +
-hardware/irda/lirc/comar/service.py
+hardware/irda/lirc/comar/service.py                                     +
 hardware/misc/setserial/comar/service.py
 hardware/mobile/gnokii/comar/service.py
 hardware/powermanagement/nut/comar/service.py
