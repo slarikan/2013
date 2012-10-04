@@ -16,7 +16,6 @@ def setup():
                          --disable-static \
                          --with-python \
                          --with-python-ldflags='-shared -lrdf' \
-                         --with-redland=system \
                          --with-perl \
                          --with-php \
                          --with-ruby")

@@ -1,10 +1,15 @@
 <?xml version="1.0" ?>
 <PISI>
     <Source>
-        <Name>redland-bindings-common</Name>
+        <Name>redland-bindings</Name>
         <Summary xml:lang="tr">Redland RDF programlama dili bağlayıcıları</Summary>
         <Description xml:lang="tr">redland-bindings Perl, Python, Php ve Ruby için Redland RDF bağlayıcılarını sunar.</Description>
     </Source>
+
+    <Package>
+        <Name>php-redland</Name>
+        <Summary xml:lang="tr">Redland dil bağlayıcılarının kullandığı ortak dosyalar</Summary>
+    </Package>
 
     <Package>
         <Name>php-redland</Name>
