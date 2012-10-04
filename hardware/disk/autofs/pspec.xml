@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A tool for automatically mounting and unmounting filesystems</Summary>
         <Description>autofs is a daemon which automatically mounts filesystems when you use them, and unmounts them later when you are not using them.</Description>
-        <Archive sha1sum="7f8a320cc126cb233be23749669735320fe6933c" type="tarbz2">http://www.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.0.5.tar.bz2</Archive>
+        <Archive sha1sum="682d94538c96049bb6b9db8725fb60ded4d0dd7f" type="tarxz">ftp://ftp.kernel.org/pub/linux/daemons/autofs/v5/autofs-5.0.7.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libtirpc</Dependency>
             <Dependency>nfs-utils</Dependency>
@@ -21,7 +21,7 @@
             <Dependency>openldap-client</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">autofs-5.0.5-fix-included-map-read-fail-handling.patch</Patch>
+            <!--<Patch level="1">autofs-5.0.5-fix-included-map-read-fail-handling.patch</Patch>
             <Patch level="1">autofs-5.0.5-refactor-ldap-sasl-bind.patch</Patch>
             <Patch level="1">autofs-5.0.4-add-mount-wait-parameter.patch</Patch>
             <Patch level="1">autofs-5.0.5-special-case-cifs-escapes.patch</Patch>
@@ -80,10 +80,9 @@
             <Patch level="1">autofs-5.0.5-fix-add-simple-bind-auth.patch</Patch>
             <Patch level="1">autofs-5.0.5-add-dump-maps-option.patch</Patch>
             <Patch level="1">autofs-5.0.5-fix-submount-shutdown-wait.patch</Patch>
-            <Patch level="1">autofs-5.0.5-wait-for-master-map-available-at-start.patch</Patch>
-
+	    <Patch level="1">autofs-5.0.5-wait-for-master-map-available-at-start.patch</Patch>-->
             <Patch level="1">mandriva/autofs-5.0.4-link-with-kerberos-lib.patch</Patch>
-            <Patch level="0">makefile.patch</Patch>
+            <!--<Patch level="0">makefile.patch</Patch>-->
             <Patch level="1">disable-default-cd-mount.patch</Patch>
         </Patches>
     </Source>
@@ -103,7 +102,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="data">/var/run/autofs</Path>
+            <Path fileType="data">/var/run</Path>
         </Files>
         <Provides>
             <COMAR script="autofs.py">System.Service</COMAR>
@@ -111,6 +110,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-10-04</Date>
+            <Version>5.0.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-11-10</Date>
             <Version>5.0.5</Version>
