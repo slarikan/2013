@@ -11,10 +11,10 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "tidy-%s" % get.srcVERSION().split("_", 1)[1]
+#WorkDir = "tidy-%s" % get.srcVERSION().split("_", 1)[1]
 
 def setup():
-    shelltools.system("sh build/gnuauto/setup.sh")
+    #shelltools.system("sh build/gnuauto/setup.sh")
     autotools.configure("--disable-static \
                          --includedir=%s/usr/include/tidy " % get.installDIR())
 
@@ -24,4 +24,4 @@ def build():
 def install():
     autotools.install()
 
-    pisitools.dodoc("readme.txt")
+    #pisitools.dodoc("readme.txt")

@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>HTML and XML error checking</Summary>
         <Description>tidy, as the name suggests, tidies the layout of and corrects errors in HTML and XML documents.</Description>
-        <Archive sha1sum="a72b6a6df4d9ad290bbd23ee8ea58255d4c530bb" type="tarbz2">http://cekirdek.pardus.org.tr/~onur/distfiles/tidy-20080409.tar.bz2</Archive>
+        <Archive sha1sum="3688e2cc254e7ee49756def8cd5b1c91721edc00" type="tarbz2">http://anduin.linuxfromscratch.org/sources/BLFS/svn/t/tidy-cvs_20101110.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-10-04</Date>
+            <Version>20101110</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-12</Date>
             <Version>0.99_20080409</Version>
