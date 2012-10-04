@@ -8,6 +8,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    pisitools.dosed("xdm.service.in", "^Alias=.*$", "Alias=display-manager.service")
+
     autotools.autoreconf("-vif")
 
     autotools.configure("--disable-static \
@@ -23,7 +25,8 @@ def setup():
                          --with-default-vt=vt7 \
                          --with-config-type=ws \
                          --with-xft \
-                         --with-pixmapdir=/usr/share/X11/xdm/pixmaps")
+                         --with-pixmapdir=/usr/share/X11/xdm/pixmaps \
+                         --with-systemdsystemunitdir=/lib/systemd/system")
 
 def build():
     autotools.make()
