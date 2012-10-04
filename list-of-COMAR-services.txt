@@ -93,7 +93,7 @@ system/base/vixie-cron/comar/service.py
 util/admin/at/comar/service.py
 util/admin/sysstat/comar/service.py
 util/antivirus/clamav/comar/service.py
-x11/misc/xdm/comar/service.py
+x11/misc/xdm/comar/service.py                                           +
 
 NOTE:
 -----
