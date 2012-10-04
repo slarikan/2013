@@ -36,20 +36,20 @@ def build():
     autotools.make("-j1")
     autotools.make("rehash")
 
-#~ def check():
-    #~ #Revert ca-dir patch not to fail test
-    #~ shelltools.system("patch -p1 -R < openssl-1.0.0-beta4-ca-dir.patch")
-    #~ 
-    #~ #FIXME: Some tests write into /etc/pki directory which violates
-    #~ # sandbox rules. It is not important for now. However, we will
-    #~ # need to fix it later. (08/17/2010 --Eren)
-    #~ homeDir = "%s/test-home" % get.workDIR()
-    #~ shelltools.export("HOME", homeDir)
-    #~ shelltools.makedirs(homeDir)
-    #~ autotools.make("-j1 test")
-    #~ 
-    #~ #Passed. So, re-patch
-    #~ shelltools.system("patch -p1 < openssl-1.0.0-beta4-ca-dir.patch")
+def check():
+    #Revert ca-dir patch not to fail test
+    shelltools.system("patch -p1 -R < openssl-1.0.0-beta4-ca-dir.patch")
+    
+    #FIXME: Some tests write into /etc/pki directory which violates
+    # sandbox rules. It is not important for now. However, we will
+    # need to fix it later. (08/17/2010 --Eren)
+    homeDir = "%s/test-home" % get.workDIR()
+    shelltools.export("HOME", homeDir)
+    shelltools.makedirs(homeDir)
+    autotools.make("-j1 test")
+    
+    #Passed. So, re-patch
+    shelltools.system("patch -p1 < openssl-1.0.0-beta4-ca-dir.patch")
 
 def install():
     autotools.rawInstall("INSTALL_PREFIX=%s MANDIR=/usr/share/man" % get.installDIR())
