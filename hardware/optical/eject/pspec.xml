@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A command to eject a disc from the CD-ROM drive</Summary>
         <Description>Eject allows removable media (typically a CD/DVD-ROM/R/RW, floppy disk, tape, or JAZ or ZIP disk) to be ejected with software control. The command can also control some multi-disc CD-ROM changers, the auto-eject feature supported by some devices, and can close the disc tray of some CD/DVD-ROM/R/RW drives.</Description>
-        <Archive sha1sum="17986aa4732f1c33ecae15db32d1e379bbbd99f8" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/eject-2.1.5.tar.gz</Archive>
+        <Archive sha1sum="792b7aec1019cf1811bb285c78743d1c98d86a2d" type="tarbz2">http://www.paldo.org/paldo/sources/eject/eject-2.1.5.tar.bz2</Archive>
         <Patches>
             <Patch>eject-2.0.13-xmalloc.patch</Patch>
             <Patch level="1">eject-2.1.4-scsi-rdwr.patch</Patch>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-10-04</Date>
+            <Version>2.1.5</Version>
+            <Comment>Fixed.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-13</Date>
             <Version>2.1.5</Version>
