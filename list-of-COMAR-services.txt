@@ -45,8 +45,8 @@ multimedia/stream/icecast/comar/service.py
 multimedia/stream/mediatomb/comar/service.py
 multimedia/stream/mpd/comar/service.py
 multimedia/stream/ushare/comar/service.py
-network/analyzer/avahi/comar/avahi-daemon-service.py
-network/analyzer/avahi/comar/avahi-dnsconfd-service.py
+network/analyzer/avahi/comar/avahi-daemon-service.py                    +
+network/analyzer/avahi/comar/avahi-dnsconfd-service.py                  +
 network/analyzer/ntop/comar/service.py
 network/chat/quassel/comar/service.py
 network/connection/dnsmasq/comar/service.py
