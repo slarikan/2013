@@ -3,38 +3,43 @@
 <PISI>
     <Source>
         <Name>strigi</Name>
-        <Homepage>http://strigi.sourceforge.net/</Homepage>
+        <Homepage>http://strigi.sourceforge.net</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Gökmen Göksel</Name>
+            <Email>gokmen@pardus.org.tr</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>app:console</IsA>
         <IsA>library</IsA>
         <Summary>An indexing engine based on CLucene</Summary>
         <Description>Strigi is a daemon that indexes data on your harddrive.</Description>
-        <Archive sha1sum="b4c1472ef068536acf9c5c4c8f033a97f9c69f9f" type="tarbz2">http://www.vandenoever.info/software/strigi/strigi-0.7.2.tar.bz2</Archive>
+        <Archive sha1sum="5bd09b8f0585b64d529525b7a2eabb6873b178ce" type="tarbz2">http://sources.pardus-linux.org/strigi-0.7.7.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency>clucene-devel</Dependency>
             <Dependency>exiv2-devel</Dependency>
-            <!--<Dependency>ffmpeg-devel</Dependency>-->
+            <Dependency>libstreams-devel</Dependency>
+            <Dependency>libstreamanalyzer-devel</Dependency>
+            <Dependency>log4cxx-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">fix-streamanalyzer-lib.diff</Patch>-->
-            <Patch level="1">strigi-0.7.2-kdebug234398.patch</Patch>
+            <Patch level="1">use-external-libstreams.patch</Patch>
+            <Patch level="1">strigi-0.7.7-gcc47.patch</Patch>   
         </Patches>
     </Source>
 
     <Package>
         <Name>strigi</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
             <Dependency>clucene</Dependency>
             <Dependency>gamin</Dependency>
             <Dependency>exiv2-libs</Dependency>
             <Dependency>strigi-common</Dependency>
             <Dependency>strigi-libs</Dependency>
+            <Dependency>libstreams</Dependency>
+            <Dependency>libstreamanalyzer</Dependency>
+            <Dependency>log4cxx</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -46,11 +51,11 @@
         <Name>strigi-libs</Name>
         <Summary>strigi library files</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
             <Dependency>clucene</Dependency>
             <Dependency>exiv2-libs</Dependency>
             <Dependency>strigi-common</Dependency>
-            <!--<Dependency>ffmpeg</Dependency>-->
+            <Dependency>libstreamanalyzer</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -79,6 +84,20 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-03-08</Date>
+            <Version>0.7.7</Version>
+            <Comment>Version bump</Comment>
+            <Name>Anıl Özbek</Name>
+            <Email>ozbekanil@gmail.com</Email>
+        </Update>
+         <Update release="17">
+            <Date>2011-09-26</Date>
+            <Version>0.7.5</Version>
+            <Comment>New version.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="16">
             <Date>2011-03-24</Date>
             <Version>0.7.2</Version>
