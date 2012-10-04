@@ -12,24 +12,24 @@
         <IsA>app:console</IsA>
         <Summary>Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol</Summary>
         <Description>Pinentry is a collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol as described by the aegypten project.</Description>
-        <Archive sha1sum="381f9ee47b9f198e1be5d3ec4e043067a7e97912" type="targz">ftp://ftp.gnupg.org/gcrypt/pinentry/pinentry-0.8.0.tar.gz</Archive>
+        <Archive sha1sum="eeee9e80ea02f63bdac1cb03eb1785ab2cd57f90" type="tarbz2">ftp://ftp.gnupg.org/gcrypt/pinentry/pinentry-0.8.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">disable-inputmethod-for-passords.patch</Patch>
             <Patch level="1">moreSecureMemoryForPinentry-qt.diff</Patch>
-            <Patch>pinentry-0.7.2-curses-utf-8.diff</Patch>
-            <Patch level="1">pinentry-qt-utf8.diff</Patch>
+            <!--<Patch>pinentry-0.7.2-curses-utf-8.diff</Patch>
+            <Patch level="1">pinentry-qt-utf8.diff</Patch>-->
             <Patch level="1">change-default-pinentry.diff</Patch>
 
             <!-- Fedora patches -->
-            <Patch level="1">0001-Fix-pinentry-gtk-2-SIGSEGV-when-unfocusing-with-g-ar.patch</Patch>
+            <!--<Patch level="1">0001-Fix-pinentry-gtk-2-SIGSEGV-when-unfocusing-with-g-ar.patch</Patch>
             <Patch>0002-Fix-sigabrt-on-fail-grab-r229.patch</Patch>
             <Patch level="1">0003-pinentry-gtk-x11-race.patch</Patch>
-            <Patch level="1">0004-Fix-qt4-pinentry-window-created-in-the-background.patch</Patch>
+            <Patch level="1">0004-Fix-qt4-pinentry-window-created-in-the-background.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -71,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-10-04</Date>
+            <Version>0.8.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-0"@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2010-10-12</Date>
             <Version>0.8.0</Version>

@@ -14,7 +14,6 @@ def setup():
     autotools.configure("--disable-dependency-tracking \
                          --disable-rpath \
                          --disable-pinentry-gtk \
-                         --enable-pinentry-qt4 \
                          --enable-pinentry-curses \
                          --infodir=/usr/share/info")
 
