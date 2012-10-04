@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>The automated text and program generation tool</Summary>
         <Description>autogen is a tool designed to simplify the creation and maintenance of programs that contain large amounts of repetitious text.</Description>
-        <Archive sha1sum="23f7dbe37ba85fe663f61baa9cb87c88605f7ae6" type="tarxz">http://ftp.gnu.org/gnu/autogen/rel5.15/autogen-5.15.tar.xz</Archive>
+        <Archive sha1sum="748bd9a3ebbad6f529bf2040ad9059e2b5412dc7" type="tarxz">ftp://ftp.gnu.org/gnu/autogen/rel5.16.2/autogen-5.16.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.1">guile-devel</Dependency>
         </BuildDependencies>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-10-04</Date>
+            <Version>5.16.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2012-09-23</Date>
             <Version>5.15</Version>
