@@ -12,7 +12,7 @@
         <IsA>app:cli</IsA>
         <Summary>System and service manager</Summary>
         <Description>System and service manager</Description>
-        <Archive sha1sum="2e6546b0d889424f81024ee49697116ad745f0e8" type="tarlzma">http://www.freedesktop.org/software/systemd/systemd-192.tar.xz</Archive>
+        <Archive sha1sum="da4c5075d536ada7d74b7a1c2a8634d28c0b0d84" type="tarlzma">http://www.freedesktop.org/software/systemd/systemd-194.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.20">libblkid-devel</Dependency>
             <Dependency>libkmod-devel</Dependency>
@@ -186,6 +186,13 @@
     </Package>
 
     <History>
+        <Update release="82">
+            <Date>2012-10-05</Date>
+            <Version>194</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="81">
             <Date>2012-09-28</Date>
             <Version>192</Version>
