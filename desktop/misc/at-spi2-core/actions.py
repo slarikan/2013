@@ -24,6 +24,5 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.removeDir("/etc")
-    pisitools.removeDir("/usr/bin")
 
     pisitools.dodoc("AUTHORS", "COPYING", "README", "NEWS")
