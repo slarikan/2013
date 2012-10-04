@@ -1,16 +1,17 @@
-diff -Naur redland-1.0.9-orig/configure.ac redland-1.0.9/configure.ac
---- redland-1.0.9-orig/configure.ac	2009-07-28 14:59:04.361703816 +0300
-+++ redland-1.0.9/configure.ac	2009-07-28 14:59:16.608454149 +0300
-@@ -977,8 +977,6 @@
+Index: redland-1.0.14/configure.ac
+===================================================================
+--- redland-1.0.14.orig/configure.ac
++++ redland-1.0.14/configure.ac
+@@ -1308,8 +1308,6 @@ AM_SILENT_RULES([no])
  
  AC_CONFIG_FILES([Makefile
  redland.rdf
 -docs/Makefile
 -docs/version.xml
  examples/Makefile
+ scripts/Makefile
  src/Makefile
- src/redland.spec
-@@ -990,9 +988,6 @@
+@@ -1324,9 +1322,6 @@ redland.pc])
  AC_CONFIG_FILES([redland-config], [chmod +x redland-config])
  AC_CONFIG_FILES([redland-src-config], [chmod +x redland-src-config])
  
@@ -20,15 +21,16 @@ diff -Naur redland-1.0.9-orig/configure.ac redland-1.0.9/configure.ac
  AC_OUTPUT
  
  AC_MSG_RESULT([
-diff -Naur redland-1.0.9-orig/Makefile.am redland-1.0.9/Makefile.am
---- redland-1.0.9-orig/Makefile.am	2009-07-28 14:59:04.365626697 +0300
-+++ redland-1.0.9/Makefile.am	2009-07-28 14:59:24.224454025 +0300
-@@ -34,7 +34,7 @@
+Index: redland-1.0.14/Makefile.am
+===================================================================
+--- redland-1.0.14.orig/Makefile.am
++++ redland-1.0.14/Makefile.am
+@@ -34,7 +34,7 @@ pkgconfig_DATA = redland.pc
  DISTCHECK_CONFIGURE_FLAGS=--enable-gtk-doc
  
  # Subdirectories to build/install/distribute etc.
--SUBDIRS=$(subdirs) src examples utils demos docs data
-+SUBDIRS=$(subdirs) src examples utils demos data
+-SUBDIRS=$(subdirs) src examples utils demos docs data scripts
++SUBDIRS=$(subdirs) src examples utils demos data scripts
  
  EXTRA_DIST=ChangeLog ChangeLog.1 ChangeLog.2 ChangeLog.3 ChangeLog.4 \
- ChangeLog.5 ChangeLog.6 ChangeLog.7 \
+ ChangeLog.5 ChangeLog.6 ChangeLog.7 ChangeLog.8 ChangeLog.9 ChangeLog.10 \

@@ -5,18 +5,18 @@
         <Name>redland</Name>
         <Homepage>http://librdf.org</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Packager>
         <License>LGPLv2</License>
         <License>Apache-2.0</License>
         <IsA>library</IsA>
         <Summary>High-level interface for the Resource Description Framework</Summary>
         <Description>Redland is a set of free software C libraries that provide support for the Resource Description Framework (RDF).</Description>
-        <Archive sha1sum="94b0f972a62c7eed0574c0e46c79cf78ece46570" type="targz">http://download.librdf.org/source/redland-1.0.12.tar.gz</Archive>
+        <Archive sha1sum="e93d6fafaeebdf9f15a1044be6f4a88270f007af" type="targz">http://download.librdf.org/source/redland-1.0.15.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>rasqal-devel</Dependency>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency versionFrom="0.9.27">rasqal-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
             <Dependency>libiodbc-devel</Dependency>
             <Dependency>mysql-lib</Dependency>
             <Dependency>postgresql-lib</Dependency>
@@ -29,9 +29,10 @@
 
     <Package>
         <Name>redland</Name>
+        <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency>rasqal</Dependency>
-            <Dependency>raptor</Dependency>
+            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -44,8 +45,9 @@
 
     <Package>
         <Name>redland-mysql</Name>
+        <Summary>MySQL storage support for redland</Summary>
         <RuntimeDependencies>
-            <Dependency>redland</Dependency>
+            <Dependency release="current">redland</Dependency>
             <Dependency>mysql-lib</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -56,8 +58,9 @@
 
     <Package>
         <Name>redland-virtuoso</Name>
+        <Summary>Virtuoso storage support for redland</Summary>
         <RuntimeDependencies>
-            <Dependency>redland</Dependency>
+            <Dependency release="current">redland</Dependency>
             <Dependency>virtuoso</Dependency>
             <Dependency>libiodbc</Dependency>
         </RuntimeDependencies>
@@ -68,8 +71,9 @@
 
     <Package>
         <Name>redland-postgresql</Name>
+        <Summary>PostgreSQL storage support for redland</Summary>
         <RuntimeDependencies>
-            <Dependency>redland</Dependency>
+            <Dependency release="current">redland</Dependency>
             <Dependency>postgresql-lib</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -83,8 +87,8 @@
         <RuntimeDependencies>
             <Dependency release="current">redland</Dependency>
             <!-- librdf.h includes headers from packages below -->
-            <Dependency>raptor-devel</Dependency>
-            <Dependency>rasqal-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
+            <Dependency versionFrom="0.9.27">rasqal-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -95,6 +99,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-01-28</Date>
+            <Version>1.0.15</Version>
+            <Comment>Version bump</Comment>
+            <Name>Murat Şenel</Name>
+            <Email>muratasenel@gmail.com</Email>
+        </Update>
         <Update release="16">
             <Date>2010-11-01</Date>
             <Version>1.0.12</Version>
