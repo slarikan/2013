@@ -14,11 +14,16 @@ from pisi.actionsapi import get
 def setup():
     shelltools.sym("makefiles/configure.in", "configure.in")
     shelltools.sym("makefiles/Makefile.am", "Makefile.am")
+    shelltools.sym("makefiles/makefile.linux", "Makefile")
+    #shelltools.sym("contrib/gcc/sdl-mngplay/acinclude.m4", "acinclude.m4")
+    
+    shelltools.system("sed -i -e 's/unroll-loops/& -fPIC/' Makefile ")
 
-    autotools.autoreconf("-vfi")
+    autotools.autoreconf("-fiv")
     autotools.configure("--with-jpeg \
                          --with-lcms \
-                         --disable-static")
+                         --disable-static \
+                         --disable-dependency-tracking")
 
 def build():
     autotools.make()
