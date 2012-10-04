@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 import os
 
 def setup():
-    autotools.autoreconf("-vfi")
+    #autotools.autoreconf("-vfi")
 
     #R support is disabled because of its deps.
     autotools.configure("--disable-static \
@@ -39,6 +39,9 @@ def install():
     #remove empty directories
     for lang in ["io", "lua", "ocaml", "php", "python23", "python24", "python25", "R", "sharp"]:
         pisitools.removeDir("/usr/lib/graphviz/%s" % lang)
+        
+    pisitools.domove("usr/lib64/tcl8.5", "/usr/lib")
+    pisitools.removeDir("usr/lib64")
 
     pisitools.dohtml(".")
     pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README*")
