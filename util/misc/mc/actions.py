@@ -15,7 +15,7 @@ cflags = "-DUTF8=1 -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE %s -fgnu89-inline 
 
 def setup():
     shelltools.export("CFLAGS", cflags)
-    shelltools.move("po/no.po",  "po/nb.po")
+    #shelltools.move("po/no.po",  "po/nb.po")
     # shelltools.move("po/no.gmo", "po/nb.gmo")
     # shelltools.unlink("po/tr.gmo")
 
@@ -46,12 +46,12 @@ def build():
 def install():
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "MAINTAINERS", "FAQ", "HACKING", "README*", "TODO")
+    pisitools.dodoc("ABOUT*", "AUTHORS", "ChangeLog", "NEWS", "README*")
 
     # Do not mess with glibc files
     # pisitools.remove("/usr/share/locale/locale.alias")
 
     # Do not carry empty dirs
-    pisitools.removeDir("/usr/sbin")
-    pisitools.removeDir("/usr/share/man/man8")
-    pisitools.removeDir("/usr/share/man/sr/man8")
+    #pisitools.removeDir("/usr/sbin")
+    #pisitools.removeDir("/usr/share/man/man8")
+    #pisitools.removeDir("/usr/share/man/sr/man8")
