@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>XFS filesystem utilities</Summary>
         <Description>xfsprogs contains a number of administrative utilities to work with and manage XFS filesystems.</Description>
-        <Archive sha1sum="e96465819b496adf0156bb53313fc1ad884debc6" type="targz">ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-3.1.2.tar.gz</Archive>
+        <Archive sha1sum="f730d38cd7081861253d0439166f4ce54ceca4bd" type="targz">ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-3.1.8.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-10-05</Date>
+            <Version>3.1.8</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="18">
             <Date>2010-10-13</Date>
             <Version>3.1.2</Version>
