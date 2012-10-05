@@ -5,8 +5,8 @@
         <Name>redland</Name>
         <Homepage>http://librdf.org</Homepage>
         <Packager>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>LGPLv2</License>
         <License>Apache-2.0</License>
@@ -15,29 +15,29 @@
         <Description>Redland is a set of free software C libraries that provide support for the Resource Description Framework (RDF).</Description>
         <Archive sha1sum="e93d6fafaeebdf9f15a1044be6f4a88270f007af" type="targz">http://download.librdf.org/source/redland-1.0.15.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.9.27">rasqal-devel</Dependency>
-            <Dependency>raptor2-devel</Dependency>
+            <Dependency>rasqal-devel</Dependency>
+            <Dependency>raptor-devel</Dependency>
             <Dependency>libiodbc-devel</Dependency>
             <Dependency>mysql-lib</Dependency>
             <Dependency>postgresql-lib</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">remove-docs.diff</Patch>
+            <!--<Patch level="1">remove-docs.diff</Patch>-->
             <Patch level="1">fix-uri-test-crash.diff</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>redland</Name>
-        <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
-            <Dependency>raptor2</Dependency>
+            <Dependency>rasqal</Dependency>
+            <Dependency>raptor</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="doc">/usr/share/gtk-doc/html/redland/</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/redland</Path>
         </Files>
@@ -45,9 +45,8 @@
 
     <Package>
         <Name>redland-mysql</Name>
-        <Summary>MySQL storage support for redland</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">redland</Dependency>
+            <Dependency>redland</Dependency>
             <Dependency>mysql-lib</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -58,9 +57,8 @@
 
     <Package>
         <Name>redland-virtuoso</Name>
-        <Summary>Virtuoso storage support for redland</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">redland</Dependency>
+            <Dependency>redland</Dependency>
             <Dependency>virtuoso</Dependency>
             <Dependency>libiodbc</Dependency>
         </RuntimeDependencies>
@@ -71,9 +69,8 @@
 
     <Package>
         <Name>redland-postgresql</Name>
-        <Summary>PostgreSQL storage support for redland</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">redland</Dependency>
+            <Dependency>redland</Dependency>
             <Dependency>postgresql-lib</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -87,8 +84,8 @@
         <RuntimeDependencies>
             <Dependency release="current">redland</Dependency>
             <!-- librdf.h includes headers from packages below -->
-            <Dependency>raptor2-devel</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal-devel</Dependency>
+            <Dependency>raptor-devel</Dependency>
+            <Dependency>rasqal-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -100,11 +97,11 @@
 
     <History>
         <Update release="17">
-            <Date>2012-01-28</Date>
+            <Date>2012-10-05</Date>
             <Version>1.0.15</Version>
             <Comment>Version bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="16">
             <Date>2010-11-01</Date>

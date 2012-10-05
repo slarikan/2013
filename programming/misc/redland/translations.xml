@@ -7,22 +7,7 @@
     </Source>
 
     <Package>
-        <Name>redland-mysql</Name>
-        <Summary xml:lang="tr">Redland için MySQL depolama desteği</Summary>
-    </Package>
-
-    <Package>
-        <Name>redland-virtuoso</Name>
-        <Summary xml:lang="tr">Redland için Virtuoso depolama desteği</Summary>
-    </Package>
-
-    <Package>
-        <Name>redland-postgresql</Name>
-        <Summary xml:lang="tr">Redland için PostgreSQL depolama desteği</Summary>
-    </Package>
-
-    <Package>
         <Name>redland-devel</Name>
-        <Summary xml:lang="tr">Redland için geliştirme dosyaları</Summary>
+        <Summary xml:lang="tr">redland için geliştirme dosyaları</Summary>
     </Package>
 </PISI>
