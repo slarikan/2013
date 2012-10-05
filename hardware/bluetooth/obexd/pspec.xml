@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>D-Bus service for Obex Client access</Summary>
         <Description>obexd contains obex-client, a D-Bus service to allow sending files using the Obex Push protocol, common on mobile phones and other Bluetooth equipped devices.</Description>
-        <Archive sha1sum="5b9f701ef562c0f900af792b024367d3383f41ad" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/obexd-0.42.tar.gz</Archive>
+        <Archive sha1sum="faf5272e342cde91238eda5a1f515ee0149d8ea3" type="tarxz">ftp://ftp.kernel.org/pub/linux/bluetooth/obexd-0.47.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>openobex-devel</Dependency>
             <Dependency>bluez-libs-devel</Dependency>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="24">
+            <Date>2012-10-05</Date>
+            <Version>0.47</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="23">
             <Date>2011-09-23</Date>
             <Version>0.42</Version>
