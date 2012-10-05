@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>bluez</Dependency>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency>mysql-server</Dependency>
             <Dependency>mysql-lib</Dependency>
             <Dependency>postgresql-lib</Dependency>
@@ -31,7 +31,7 @@
         <Name>gammu</Name>
         <RuntimeDependencies>
             <Dependency>bluez</Dependency>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>mysql-server</Dependency>
             <Dependency>mysql-lib</Dependency>
@@ -73,6 +73,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-05</Date>
+            <Version>1.29.0</Version>
+            <Comment>Fix dependency</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="8">
             <Date>2011-01-24</Date>
             <Version>1.29.0</Version>

@@ -15,7 +15,7 @@
         <Description>ccid provides the source code for a generic USB CCID (Chip/Smart Card Interface Devices) driver and ICCD (Integrated Circuit(s) Card Devices).</Description>
         <Archive sha1sum="ef66f6cc401110e673dcf8bd05bbdec12cacd6cc" type="tarbz2">http://alioth.debian.org/frs/download.php/3518/ccid-1.4.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
             <Dependency versionFrom="1.7.0">pcsc-lite-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>ccid</Name>
         <RuntimeDependencies>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency versionFrom="1.7.0">pcsc-lite</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-05</Date>
+            <Version>1.4.2</Version>
+            <Comment>Fix dependency</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="9">
             <Date>2011-03-18</Date>
             <Version>1.4.2</Version>

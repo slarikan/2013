@@ -26,7 +26,9 @@
         <Patches>
             <Patch level="1">dotPath.patch</Patch>
             <Patch level="1">ntop-running-user.patch</Patch>
-            <!--<Patch level="1">ntop-disable-etter_fingerprint_download.patch</Patch>-->
+            <Patch level="1">ntop-dbfile-default-dir.patch</Patch>
+            <Patch level="1">ntop-http_c.patch</Patch>
+            <Patch level="1">ntop-disable-svn-requirement.patch</Patch>
         </Patches>
     </Source>
 
@@ -51,17 +53,22 @@
             <Path fileType="data">/usr/share/ntop</Path>
             <Path fileType="data">/var/lib/ntop</Path>
             <Path fileType="data">/var/log/ntop</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/etc/conf.d/ntop" owner="ntop" group="ntop" permission="0600">ntop.conf</AdditionalFile>
+            <AdditionalFile target="/lib/systemd/system/ntop.service" owner="root" group="root" permission="0644">ntop.service</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-            <COMAR script="package.py">System.Package</COMAR>
-            <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-10-05</Date>
+            .<Version>5.0.1</Version>
+            <Comment>Use COMAR service script</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="6">
             <Date>2012-09-01</Date>
             .<Version>5.0.1</Version>

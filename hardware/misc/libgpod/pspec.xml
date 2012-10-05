@@ -15,7 +15,7 @@
         <Archive sha1sum="f9ba70cd6f00ae59cdc6a43cc72c409a4d27606e" type="tarbz2">mirrors://sourceforge/gtkpod/libgpod-0.8.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
             <Dependency>python-mutagen</Dependency>
             <Dependency>libplist-devel</Dependency>
             <Dependency>sg3_utils-devel</Dependency>
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-10-05</Date>
+            <Version>0.8.2</Version>
+            <Comment>Fix dependency</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="19">
             <Date>2012-08-22</Date>
             <Version>0.8.2</Version>
