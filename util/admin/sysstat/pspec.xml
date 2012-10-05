@@ -12,10 +12,10 @@
         <IsA>app:console</IsA>
         <Summary>System performance tools for Linux</Summary>
         <Description>System performance tools including sar, sadf, mpstat, iostat, pidstat and sa.</Description>
-        <Archive sha1sum="264810b9408589fd63afb973d515c7a724b97e6b" type="tarbz2">http://pagesperso-orange.fr/sebastien.godard/sysstat-10.0.0.tar.bz2</Archive>
+        <Archive sha1sum="8386be30020864727033e45d8fa74c5c4af23be7" type="tarbz2">http://perso.wanadoo.fr/sebastien.godard/sysstat-10.0.5.tar.bz2</Archive>
         <Patches>
             <Patch level="1">sysstat-10.0.0-cpu.patch</Patch>
-            <Patch level="1">sysstat-10.0.0-makefile.patch</Patch>
+            <!--<Patch level="1">sysstat-10.0.0-makefile.patch</Patch>-->
             <Patch level="1">sysstat-9.0.6.1-sec.patch</Patch>
             <Patch level="1">paths.patch</Patch>
         </Patches>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-05</Date>
+            <Version>10.0.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-04-19</Date>
             <Version>10.0.0</Version>
