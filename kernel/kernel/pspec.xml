@@ -23,7 +23,7 @@
             <AdditionalFile permission="0755" target="update_configs">scripts/update_configs</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency release="212">pisi</Dependency>
+            <Dependency releaseFrom="212">pisi</Dependency>
             <Dependency>cpio</Dependency>
             <Dependency>unifdef</Dependency>
             <Dependency>elfutils</Dependency>
