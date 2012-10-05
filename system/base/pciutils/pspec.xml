@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Various utilities dealing with the PCI bus</Summary>
         <Description>The PCI Utilities are a collection of programs for inspecting and manipulating configuration of PCI devices.</Description>
-        <Archive sha1sum="6b0fc73ec0fe6a4fa4acb7dab13f3a83f3a45098" type="targz">ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/pciutils-3.1.9.tar.gz</Archive>
+        <Archive sha1sum="117c403d0df84a256d98f54eb8e8f8d4c223e405" type="tarxz">ftp://ftp.kernel.org/pub/software/utils/pciutils/pciutils-3.1.10.tar.xz</Archive>
         <AdditionalFiles>
             <!-- 20100714
                  from: http://pciids.sourceforge.net/v2.2/pci.ids
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="23">
+            <Date>2012-10-05</Date>
+            <Version>3.1.10</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="22">
             <Date>2012-08-23</Date>
             <Version>3.1.9</Version>

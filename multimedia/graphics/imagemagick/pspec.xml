@@ -12,8 +12,6 @@
         <IsA>app:gui</IsA>
         <Summary>A collection of tools and libraries for many image file formats</Summary>
         <Description>ImageMagick is a software suite to create, edit, and compose bitmap images. It can read, convert and write images in a variety of formats (over 100) including DPX, EXR, GIF, JPEG, JPEG-2000, PDF, PhotoCD, PNG, Postscript, SVG, and TIFF. You can use ImageMagick to translate, flip, mirror, rotate, scale, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.</Description>
-        <!--<Archive sha1sum="f9da0a07d4defebe303ceed8c55fab2e63839be8" type="tarbz2">ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.7.9-2.tar.bz2</Archive>-->
-	<!--<Archive sha1sum="c3c3f7d0caf84a92e918b259d660c3da1f7abf1f" type="tarxz">ftp://ftp.imagemagick.org/pub/ImageMagick/alpha/ImageMagick-7.0.0-0.tar.xz</Archive>-->
 	<Archive sha1sum="265318f35c35e86eea4cfa2ff063d3840ae9fa4e" type="tarxz">ftp://ftp.imagemagick.org/pub/ImageMagick/ImageMagick-6.7.9-9.tar.xz</Archive>
 	<BuildDependencies>
             <Dependency versionFrom="9.00">ghostscript-devel</Dependency>
@@ -72,7 +70,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-	    <Path filtType="config">/etc/ImageMagick/</Path>
+	    <Path fileType="config">/etc/ImageMagick/</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/ImageMagick-*</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -309,7 +307,7 @@
         <Update release="15" type="security">
             <Date>2007-09-21</Date>
             <Version>6.3.5.9</Version>
-            <Comment>Version bump to fix CVE-2007-4985, CVE-2007-4986, CVE-2007-4987 and  CVE-2007-4988</Comment>
+            <Comment>Version bump to fix CVE-2007-4985, CVE-2007-4986, CVE-2007-4987 and CVE-2007-4988</Comment>
             <Name>İsmail Dönmez</Name>
             <Email>ismail@pardus.org.tr</Email>
         </Update>
