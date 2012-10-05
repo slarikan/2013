@@ -56,8 +56,9 @@ if get.buildTYPE() == "minizip":
         shelltools.makedirs("m4")
 
         autotools.autoreconf("-vif")
-        # we don't need empty /usr/bin dir, so if --bindir=/usr then /usr/bin will not be created
-        autotools.configure("--bindir=/usr")
+        # Don't create unnecessary empty /usr/bin
+        pisitools.dosed("Makefile.in", "install-exec-am: install-binPROGRAMS install-libLTLIBRARIES", "install-exec-am: install-libLTLIBRARIES")
+        autotools.configure("")
 
     def build():
         autotools.make("-C %s" % minizip_dir)

@@ -18,6 +18,6 @@ def install():
 
     pisitools.insinto("/etc/bash_completion.d/", "contrib/bash/bzr")
     pisitools.insinto("%s/%s" % (get.docDIR(), get.srcNAME()), "doc/*")
-    pisitools.removeDir("/usr/lib/%s/site-packages/bzrlib/util/elementtree" % get.curPYTHON())
+    #pisitools.removeDir("/usr/lib/%s/site-packages/bzrlib/util/elementtree" % get.curPYTHON())
 
     pisitools.dodoc("COPYING.txt", "README", "NEWS", "TODO")
