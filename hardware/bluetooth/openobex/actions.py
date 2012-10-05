@@ -11,14 +11,14 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fi")
+    #autotools.autoreconf("-fi")
     autotools.configure("--disable-static \
-                         --disable-dependency-tracking \
-                         --enable-apps \
+                         --enable-bluetooth \
+                         --enable-irda \
                          --enable-usb")
 
 def build():
-    autotools.make("CFLAGS=\"%s\"" % (get.CFLAGS()))
+    autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
