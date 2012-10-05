@@ -1,0 +1,11 @@
+[Unit]
+Description=Distributed IRC Core
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/conf.d/quassel
+PIDFile=/var/run/quasselcore.pid
+ExecStart=/bin/su - quasselcore -c "/usr/bin/quasselcore --datadir=/var/cache/quassel"
+
+[Install]
+WantedBy=multi-user.target
