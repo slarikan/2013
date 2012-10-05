@@ -14,7 +14,7 @@ from pisi.actionsapi import get
 def setup():
     shelltools.export("CFLAGS", "%s -fPIC" % get.CFLAGS())
 
-    autotools.autoreconf("-fi")
+    #autotools.autoreconf("-fi")
     autotools.configure("--disable-static")
 
 def build():
