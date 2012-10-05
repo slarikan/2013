@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>device-mapper</Name>
+        <Summary xml:lang="en">Device mapper ioctl library for use with LVM2 utilities.</Summary>
+        <Description xml:lang="tr">Mantıksal Hacim Yöneticisi ile kullanılacak aygıt eşleyici girdi-çıktı kontrol kütüphanesi araçlarını içerir</Description>
+    </Source>
+
+    <Package>
+        <Name>device-mapper</Name>
+	<Summary xml:lang="tr">Device-mapper için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>
