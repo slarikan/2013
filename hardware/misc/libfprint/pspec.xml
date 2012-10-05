@@ -17,7 +17,7 @@
             <Dependency>doxygen</Dependency>
             <Dependency>nss-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -31,7 +31,7 @@
         <RuntimeDependencies>
             <Dependency>nss</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-10-05</Date>
+            <Version>0.3.0</Version>
+            <Comment>Fix dependency</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="7">
             <Date>2011-02-08</Date>
             <Version>0.3.0</Version>

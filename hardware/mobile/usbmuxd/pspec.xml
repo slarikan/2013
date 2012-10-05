@@ -16,7 +16,7 @@
         <Description>usbmuxd is a daemon used for communicating with Apple's iPod Touch and iPhone devices. It allows multiple services on the device to be accessed simultaneously.</Description>
         <Archive sha1sum="48b0e7d8a4e42b0af1e17ba59ce78e27bed94df1" type="tarbz2">http://marcansoft.com/uploads/usbmuxd/usbmuxd-1.0.6.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
             <Dependency>libplist-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -28,7 +28,7 @@
     <Package>
         <Name>usbmuxd</Name>
         <RuntimeDependencies>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency>libplist</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-10-05</Date>
+            <Version>1.0.6</Version>
+            <Comment>Fix dependency</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="16">
             <Date>2010-10-24</Date>
             <Version>1.0.6</Version>

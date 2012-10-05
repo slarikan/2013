@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>libraw1394-devel</Dependency>
             <Dependency>libXv-devel</Dependency>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>libraw1394</Dependency>
             <Dependency>libXv</Dependency>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-05</Date>
+            <Version>2.1.2</Version>
+            <Comment>Fix dependency</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-13</Date>
             <Version>2.1.2</Version>
