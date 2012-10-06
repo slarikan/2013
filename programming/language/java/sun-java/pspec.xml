@@ -18,8 +18,8 @@
         <Archive sha1sum="06e0357207c18202f7fea04df5570de1845ddd28" type="binary">http://pakete.pardususer.de/source-files/dummy.zip</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0755" target="construct">construct.sh</AdditionalFile>
-            <AdditionalFile permission="0644" target="jdk-6u34-linux-i586.bin.sha1">jdk-6u34-linux-i586.bin.sha1</AdditionalFile>
-            <AdditionalFile permission="0644" target="jdk-6u34-linux-amd64.bin.sha1">jdk-6u34-linux-x64.bin.sha1</AdditionalFile>
+            <AdditionalFile permission="0644" target="jdk-6u35-linux-i586.bin.sha1">jdk-6u35-linux-i586.bin.sha1</AdditionalFile>
+            <AdditionalFile permission="0644" target="jdk-6u35-linux-amd64.bin.sha1">jdk-6u35-linux-x64.bin.sha1</AdditionalFile>
             <!-- For no downloading binary file every time you run pisi bi
                  place appropriate binary in files folder and uncomment one from below lines.
             <AdditionalFile permission="0644" target="jdk-6u34-linux-i586.bin">jdk-6u34-linux-i586.bin</AdditionalFile>
@@ -133,6 +133,13 @@
     </Package>
 
     <History>
+        <Update release="38">
+            <Date>2012-10-06</Date>
+            <Version>1.6.0_p35</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="37">
             <Date>2012-08-15</Date>
             <Version>1.6.0_p34</Version>

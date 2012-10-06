@@ -11,15 +11,15 @@ from pisi.util import run_batch, check_file_hash, Error
 
 WorkDir = get.ARCH()
 NoStrip = "/"
-Name = "6u34"
+Name = "6u35"
 BinName = "jdk-%s-linux-%s.bin" % (Name, get.ARCH().replace("i6", "i5").replace("86_", ""))
-UrlName = "http://download.oracle.com/otn-pub/java/jdk/6u34-b04/%s" % BinName
+UrlName = "http://download.oracle.com/otn-pub/java/jdk/6u35-b10/%s" % BinName
 Arch = "amd64" if get.ARCH() == "x86_64" else "i586"
 
 def setup():
     if not shelltools.isFile(BinName):
         shelltools.system('/usr/bin/curl -fLC - --retry 3 --retry-delay 3 -o %s %s  --header "Cookie:oraclelicensejdk-%s-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com"' % (BinName, UrlName, Name))
-    hash = run_batch("cat jdk-6u34-linux-%s.bin.sha1" % Arch)[1].split()[0]
+    hash = run_batch("cat jdk-6u35-linux-%s.bin.sha1" % Arch)[1].split()[0]
     if not check_file_hash(BinName, hash): raise Error("Wrong sha1sum.")
     shelltools.makedirs("unbundle-jdk")
     shelltools.cd("unbundle-jdk")
