@@ -86,7 +86,7 @@ server/proxy/privoxy/comar/service.py
 server/proxy/squid/comar/service.py
 server/rpcbind/comar/service.py
 server/samba/comar/service.py
-server/web/apache/comar/service.py
+server/web/apache/comar/service.py                                      +
 server/web/nginx/comar/service.py
 server/zemberek-server/comar/service.py
 system/base/vixie-cron/comar/service.py
