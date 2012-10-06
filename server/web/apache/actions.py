@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyleft 2012 Pardus ANKA Community
-# Copyright 2005-2011 TUBITAK/UEAKE
+# Copyright 2005-2008 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -69,8 +68,8 @@ def setup():
     shelltools.echo("config.layout", config_layout())
     pisitools.dosed("config.layout", "version", get.srcNAME())
 
-    for d in ["apr","apr-util","pcre"]:
-        shelltools.unlinkDir("srclib/%s" % d)
+    #for d in ["apr","apr-util","pcre"]:
+        #shelltools.unlinkDir("srclib/%s" % d)
 
     # this fixes segfaults, remember omit-frame-pointer will be default soon
     if get.ARCH() == "i686":
@@ -120,8 +119,8 @@ def install():
     pisitools.dosbin("apache2")
 
     pisitools.domove("/usr/sbin/envvars*", "/usr/lib/apache2/build")
-    pisitools.dosed("%s/usr/sbin/apxs" % get.installDIR(), \
-                    "my \$envvars = get_vars\(\"sbindir\"\) \. \"/envvars\";", \
+    pisitools.dosed("%s/usr/bin/apxs" % get.installDIR(), \
+                    "my \$envvars = get_vars\(\"bindir\"\) \. \"/envvars\";", \
                     "my $envvars = \"$installbuilddir/envvars\";")
 
     # Clean-up
@@ -142,7 +141,5 @@ def install():
     # Remove cgi scripts which are vulnerable, see CVE-2007-4049
     pisitools.remove("/var/www/localhost/cgi-bin/*")
 
-    # remove empty bin dir
-    pisitools.removeDir("/usr/bin")
 
     pisitools.dodoc("ABOUT_APACHE", "CHANGES", "LAYOUT", "LICENSE", "README*")
