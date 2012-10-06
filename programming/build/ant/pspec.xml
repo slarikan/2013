@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Java-based build tool</Summary>
         <Description>Apache Ant is a Java-based build tool. In theory, it is kind of like Make, but without Make's wrinkles.</Description>
-        <Archive sha1sum="212b742e4c224cfcdf3ab63425d2ed91bf72d242" type="targz">mirrors://apache/ant/source/apache-ant-1.8.2-src.tar.gz</Archive>
+        <Archive sha1sum="27cd949506fede3fece7e090470c76fd492b5a79" type="targz">http://ftp.itu.edu.tr/Mirror/Apache//ant/source/apache-ant-1.8.4-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sun-jdk</Dependency>
         </BuildDependencies>
@@ -20,7 +20,8 @@
             <!-- This is the patch from 1.7.1
             <Patch>ubuntu/10_ant_native2ascii.patch</Patch>
             -->
-            <Patch level="1">disable_junit_testing.patch</Patch>
+            <!--<Patch level="1">disable_junit_testing.patch</Patch>-->
+	    <Patch level="1">apache-ant-no-test-jar.patch</Patch>
         </Patches>
     </Source>
 
@@ -49,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-06</Date>
+            <Version>1.8.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-02-02</Date>
             <Version>1.8.2</Version>

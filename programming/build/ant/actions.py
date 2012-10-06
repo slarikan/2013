@@ -53,4 +53,4 @@ def install():
     pisitools.insinto(os.path.join(anthome, "etc"), "src/etc/*.xsl")
 
     pisitools.dodoc("KEYS", "NOTICE", "README", "WHATSNEW", "LICENSE")
-    pisitools.dohtml("docs/*")
+    #pisitools.dohtml("docs/*")
