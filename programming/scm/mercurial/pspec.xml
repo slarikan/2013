@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A distributed SCM tool</Summary>
         <Description>A fast, lightweight Source Control Management system designed for efficient handling of very large distributed projects.</Description>
-        <Archive sha1sum="5ede1b3f54d3be2af0657901e7013dde7c19b7c5" type="targz">http://www.selenic.com/mercurial/release/mercurial-2.0.tar.gz</Archive>
+        <Archive sha1sum="59e42fd0aebabe8ec9bd59ca6a41416032f7ca48" type="targz">http://mercurial.selenic.com/release/mercurial-2.3.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="23">
+            <Date>2012-10-06</Date>
+            <Version>2.3.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="22">
             <Date>2011-11-03</Date>
             <Version>2.0</Version>
