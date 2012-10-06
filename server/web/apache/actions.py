@@ -78,6 +78,7 @@ def setup():
 
     autotools.rawConfigure('--with-mpm=prefork \
                             --enable-layout=Pardus \
+                            --enable-mods-shared=all \
                             --with-ssl=/usr \
                             --enable-ssl=shared \
                             %s \
@@ -105,7 +106,7 @@ def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s INSTALL_SUEXEC='setuid'" % get.installDIR())
 
     pisitools.dosym("/usr/lib", "/usr/lib/apache2/lib")
     pisitools.dosym("/var/log/apache2", "/usr/lib/apache2/logs")

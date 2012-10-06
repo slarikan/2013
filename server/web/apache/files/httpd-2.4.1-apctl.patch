@@ -10,7 +10,7 @@ Upstream-Status: Vendor-specific changes for better initscript integration
 
 --- httpd-2.4.1/support/apachectl.in.apctl
 +++ httpd-2.4.1/support/apachectl.in
-@@ -44,19 +44,25 @@ ARGV="$@"
+@@ -44,19 +44,25 @@
  # the path to your httpd binary, including options if necessary
  HTTPD='@exp_sbindir@/@progname@'
  #
@@ -33,15 +33,15 @@ Upstream-Status: Vendor-specific changes for better initscript integration
  # have one, then status and fullstatus will not work.
  STATUSURL="http://localhost:@PORT@/server-status"
 +
-+# Source /etc/sysconfig/httpd for $HTTPD setting, etc.
-+if [ -r /etc/sysconfig/httpd ]; then
-+   . /etc/sysconfig/httpd
++# Source /etc/conf.d/apache2 for $HTTPD setting, etc.
++if [ -r /etc/conf.d/apache2 ]; then
++   . /etc/conf.d/apache2
 +fi
 +
  #
  # Set this variable to a command that increases the maximum
  # number of file descriptors allowed per child process. This is
-@@ -76,9 +82,27 @@ if [ "x$ARGV" = "x" ] ; then 
+@@ -76,9 +82,16 @@
      ARGV="-h"
  fi
  
@@ -52,17 +52,6 @@ Upstream-Status: Vendor-specific changes for better initscript integration
 +fi
 +}
 +
-+function testconfig() {
-+# httpd is denied terminal access in SELinux, so run in the
-+# current context to get stdout from $HTTPD -t.
-+if test -x /usr/sbin/selinuxenabled && /usr/sbin/selinuxenabled; then
-+  runcon -- `id -Z` $HTTPD $OPTIONS -t
-+else
-+  $HTTPD $OPTIONS -t
-+fi
-+ERROR=$?
-+}
-+
  case $ACMD in
  start|stop|restart|graceful|graceful-stop)
 -    $HTTPD -k $ARGV
@@ -70,7 +59,7 @@ Upstream-Status: Vendor-specific changes for better initscript integration
      ERROR=$?
      ;;
  startssl|sslstart|start-SSL)
-@@ -88,17 +112,18 @@ startssl|sslstart|start-SSL)
+@@ -88,17 +101,18 @@
      ERROR=2
      ;;
  configtest)

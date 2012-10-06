@@ -20,15 +20,18 @@
             <Dependency>libpcre-devel</Dependency>
         </BuildDependencies>
         <Patches>
-	    <Patch level="1">httpd-2.4.1-apctl.patch</Patch>
-	    <Patch level="1">httpd-2.4.1-apxs.patch</Patch>
-	    <Patch level="1">httpd-2.4.1-corelimit.patch</Patch>
-	    <Patch level="1">httpd-2.4.1-deplibs.patch</Patch>
-	    <Patch level="1">httpd-2.4.1-export.patch</Patch>
-	    <!--<Patch level="1">httpd-2.4.1-layout.patch</Patch>-->
-	    <Patch level="1">httpd-2.4.1-selinux.patch</Patch>
-	    <!--<Patch level="1">httpd-2.4.2-restart.patch</Patch>-->
-	    <Patch level="1">httpd-2.4.2-iconlink.patch</Patch>
+            <Patch level="1">httpd-2.4.1-apctl.patch</Patch>
+            <Patch level="1">httpd-2.4.3-apxs.patch</Patch>
+            <Patch level="1">httpd-2.4.1-deplibs.patch</Patch>
+            <Patch level="1">httpd-2.4.3-apctl-systemd.patch</Patch>
+            <Patch level="1">httpd-2.4.1-export.patch</Patch>
+            <Patch level="1">httpd-2.4.1-corelimit.patch</Patch>
+            <Patch level="1">httpd-2.4.2-r1337344+.patch</Patch>
+            <Patch level="1">httpd-2.4.2-icons.patch</Patch>
+            <Patch level="1">httpd-2.4.2-r1332643+.patch</Patch>
+            <Patch level="1">httpd-2.4.3-mod_systemd.patch</Patch>
+            <Patch level="1">httpd-2.4.2-r1374214+.patch</Patch>
+            <Patch level="1">httpd-2.4.3-r1387633+.patch</Patch>
         </Patches>
     </Source>
 
@@ -51,8 +54,11 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
         </Files>
         <AdditionalFiles>
+            <!-- systemd service file -->
+            <AdditionalFile target="/lib/systemd/system/apache.service" permission="0644" owner="root">apache.service</AdditionalFile>
             <!-- Init script & configuration -->
             <AdditionalFile target="/etc/conf.d/apache2" permission="0644" owner="root">apache2.confd</AdditionalFile>
             <!-- HTTPD configuration -->
@@ -157,13 +163,18 @@
             <AdditionalFile target="/var/www/localhost/htdocs/icons/small/up.gif" permission="0755" owner="root">webroot/icons/small/up.gif</AdditionalFile>
             <AdditionalFile target="/var/www/localhost/htdocs/icons/small/up.png" permission="0755" owner="root">webroot/icons/small/up.png</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
-             <COMAR script="package.py">System.Package</COMAR>
-             <COMAR script="service.py">System.Service</COMAR>
-        </Provides>
     </Package>
 
     <History>
+        <Update release="43">
+            <Date>2012-10-07</Date>
+            <Version>2.4.3</Version>
+            <Comment>*Delete unnecessary patches
+                     *Use systemd service file
+            </Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="42" type="security">
             <Date>2012-07-15</Date>
             <Version>2.4.3</Version>

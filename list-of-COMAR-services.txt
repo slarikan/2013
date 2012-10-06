@@ -40,7 +40,7 @@ hardware/virtualization/lxc/comar/service.py
 hardware/virtualization/qemu/comar/ksm-service.py
 hardware/virtualization/qemu/comar/ksmtuned-service.py
 kernel/default/drivers/module-fglrx/comar/service.py                    +
-multimedia/sound/timidity/comar/service.py
+multimedia/sound/timidity/comar/service.py                              +
 multimedia/stream/icecast/comar/service.py
 multimedia/stream/mediatomb/comar/service.py
 multimedia/stream/mpd/comar/service.py
@@ -55,7 +55,7 @@ network/connection/wpa_supplicant/comar/service.py
 network/filter/conntrack-tools/comar/service.py
 network/filter/iptables/comar/service.py
 network/mail/spamassassin/comar/service.py
-network/share/rsync/comar/service.py
+network/share/rsync/comar/service.py                                    +
 network/share/usbip/comar/service.py
 network/voip/mumble/comar/service.py
 programming/language/python/python-pyro/comar/service.py

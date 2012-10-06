@@ -30,6 +30,7 @@ def setup():
                --with-optim="%s -fstack-protector-all -DLDAP_DEPRECATED=1" \
                --with-php=/usr/bin/php-cgi \
                --without-java \
+               --with-systemdsystemunitdir=/lib/systemd/system \
                --enable-slp \
                --enable-acl \
                --enable-libpaper \
