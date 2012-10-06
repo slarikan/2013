@@ -22,7 +22,6 @@
             <Dependency>gettext</Dependency>
             <Dependency>cracklib</Dependency>
             <Dependency>audit-devel</Dependency>
-            <Dependency>libtirpc-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Sandbox -->
@@ -46,7 +45,6 @@
         <RuntimeDependencies>
             <Dependency>audit</Dependency>
             <Dependency>cracklib</Dependency>
-            <Dependency>libtirpc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
