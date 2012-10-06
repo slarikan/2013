@@ -22,7 +22,7 @@ def install():
     autotools.install()
 
     # Create dictionary files
-    shelltools.system("cat /usr/share/dict/words|%s/usr/sbin/cracklib-packer %s/usr/share/cracklib/pw_dict" % (get.installDIR(),get.installDIR()))
+    shelltools.system("cat /usr/share/cracklib/cracklib-small|%s/usr/sbin/cracklib-packer %s/usr/share/cracklib/pw_dict" % (get.installDIR(),get.installDIR()))
 
     # pisitools.domo("po/tr.po","tr","cracklib.mo")
     pisitools.dodoc("ChangeLog", "README*", "NEWS", "COPYING.LIB", "AUTHORS")
