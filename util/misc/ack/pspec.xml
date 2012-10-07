@@ -36,7 +36,7 @@
     <History>
         <Update release="13">
             <Date>2012-10-07</Date>
-            <Version>1.05</Version>
+            <Version>1.96</Version>
             <Comment>Depend on new perl 5.16.1</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
