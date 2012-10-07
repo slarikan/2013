@@ -69,7 +69,7 @@ server/auth/ypbind/comar/service.py
 server/auth/ypserv/comar/service.py
 server/database/firebird/comar/service.py
 server/database/memcached/comar/service.py
-server/database/mysql/comar/service.py
+server/database/mysql/comar/service.py                                  +
 server/database/postgresql/comar/service.py
 server/ejabberd/comar/service.py
 server/ftp/tftp/comar/service.py
