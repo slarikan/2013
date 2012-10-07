@@ -13,10 +13,9 @@
         <Summary>Distributed C(++) compiling tool</Summary>
         <Description>Icecream is a program for distributed compiling of C/C++ code across several machines based on ideas and code by distcc.</Description>
         <Archive sha1sum="3699b6dacdc873a22a478b5959cfe0e7dd7115aa" type="tarbz2">ftp://ftp.suse.com/pub/projects/icecream/icecc-0.9.7.tar.bz2</Archive>
-	<Patches>
-	  <Patch level="0">0.9.7-automake-1.11.2.patch</Patch>
-	  <Patch level="0">fix-rusage.diff</Patch>
-	  
+        <Patches>
+            <Patch level="0">0.9.7-automake-1.11.2.patch</Patch>
+            <Patch level="0">fix-rusage.diff</Patch>
         </Patches>
     </Source>
 
@@ -29,6 +28,7 @@
             <Path fileType="executable">/opt/icecream/bin</Path>
             <Path fileType="header">/opt/icecream/include/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icecc</Path>
         </Files>
         <Provides>
             <COMAR script="daemon.py">System.Service</COMAR>
