@@ -5,4 +5,7 @@
     <Description xml:lang="en">Pardus ANKA 2013 Repository</Description>
     <Type>Core</Type>
     <BinaryName>Pardus</BinaryName>
+    <Obsoletes>
+        <Package>grub</Package>
+    </Obsoletes>
 </PISI>
