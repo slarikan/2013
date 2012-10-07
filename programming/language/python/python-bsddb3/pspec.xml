@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python bindings for Berkeley DB</Summary>
         <Description>The new version of the python adaptor library for berkeley db.</Description>
-        <Archive sha1sum="1be67a8fa21359571c0c63a742c08f6407f56c7c" type="targz">http://pypi.python.org/packages/source/b/bsddb3/bsddb3-4.8.4.tar.gz</Archive>
+        <Archive sha1sum="8743f6d7a2f5471094941a46859723aae88f3915" type="targz">http://pypi.python.org/packages/source/b/bsddb3/bsddb3-5.3.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-07</Date>
+            <Version>5.3.0</Version>
+            <Comment>Versipn bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-11-22</Date>
             <Version>4.8.4</Version>
