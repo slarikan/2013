@@ -11,26 +11,27 @@
         <License>GPLv2</License>
         <Summary>A fast, multi-threaded, multi-user SQL database server</Summary>
         <Description>MySQL is a multithreaded, multi-user, robust SQL Database Management System (DBMS).</Description>
-        <Archive sha1sum="cfd70bee07ad99576eecde01785b7b2a74ec87ab" type="targz">http://mysql.mirror.iweb.ca/Downloads/MySQL-5.1/mysql-5.1.58.tar.gz</Archive>
+        <Archive sha1sum="d53dfbe4ac1119e4c4a33d639f2904abdd0f226d" type="targz">http://cdn.mysql.com/Downloads/MySQL-5.5/mysql-5.5.27.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ed</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">mysql-ssl-multilib.patch</Patch>
+            <!--<Patch level="1">mysql-ssl-multilib.patch</Patch>-->
             <Patch level="1">mysql-errno.patch</Patch>
-            <Patch level="1">mysql-testing.patch</Patch>
+            <!--<Patch level="1">mysql-testing.patch</Patch>-->
             <Patch level="1">mysql-install-test.patch</Patch>
             <!-- this is not forgotten, it is left just for reference
             <Patch level="1">mysql-stack.patch</Patch>
             -->
-            <Patch level="1">mysql-stack-guard.patch</Patch>
+            <!--<Patch level="1">mysql-stack-guard.patch</Patch>
             <Patch level="1">mysql-setschedparam.patch</Patch>
-            <Patch level="1">mysql-no-docs.patch</Patch>
+            <Patch level="1">mysql-no-docs.patch</Patch>-->
             <Patch level="1">mysql-strmov.patch</Patch>
-            <Patch level="1">mysql-cve-2008-7247.patch</Patch>
+            <!--<Patch level="1">mysql-cve-2008-7247.patch</Patch>-->
             <Patch level="1">mysql-expired-certs.patch</Patch>
-            <Patch level="1">mysql-missing-string-code.patch</Patch>
+            <!--<Patch level="1">mysql-missing-string-code.patch</Patch>-->
             <Patch level="1">mysql-chain-certs.patch</Patch>
+	    <Patch level="1">mysql-5.5.27-fix_client_only-1.patch</Patch>
         </Patches>
     </Source>
 
@@ -68,6 +69,7 @@
             <Path fileType="data">/usr/share/mysql/swedish</Path>
             <Path fileType="data">/usr/share/mysql/ukrainian</Path>
             <Path fileType="data">/usr/share/mysql/errmsg.txt</Path>
+	    <Path fileType="data">/usr/share/mysql</Path>
         </Files>
     </Package>
 
@@ -141,6 +143,13 @@
     </Package>
 
     <History>
+        <Update release="58">
+            <Date>2012-10-06</Date>
+            <Version>5.5.27</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="57">
             <Date>2011-07-13</Date>
             <Version>5.1.58</Version>

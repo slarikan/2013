@@ -1,0 +1,23 @@
+Submitted By: Ragnar Thomsen (rthomsen at linuxfromscratch dot org)
+Date: 2012-08-15
+Initial Package Version: 5.5.27
+Origin: MySQL Bugzilla
+Description: Fixes building MySQL with the -DWITHOUT_SERVER=ON option
+
+--- mysql/CMakeLists.txt	2012-08-03 16:37:52.234629566 -0400
++++ mysql.new/CMakeLists.txt	2012-08-03 16:35:47.797340969 -0400
+@@ -320,6 +320,13 @@
+   IF(UNIX)
+     ADD_SUBDIRECTORY(man)
+   ENDIF()
++ELSE()
++  ADD_SUBDIRECTORY(client)
++  ADD_SUBDIRECTORY(sql/share)
++  ADD_SUBDIRECTORY(scripts)
++  IF(UNIX)
++    ADD_SUBDIRECTORY(man)
++  ENDIF()
+ ENDIF()
+
+ INCLUDE(cmake/abi_check.cmake)
+
