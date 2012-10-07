@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir="ruby-%s" % get.srcVERSION().replace("_","-")
+#WorkDir="ruby-%s" % get.srcVERSION().replace("_","-")
 
 def setup():
     autotools.configure("--enable-shared \
