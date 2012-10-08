@@ -20,7 +20,6 @@
             <Dependency>fuse-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
             <Dependency>libarchive-devel</Dependency>
             <Dependency>libcdio-devel</Dependency>
             <Dependency>libgphoto2-devel</Dependency>
@@ -97,7 +96,6 @@
         <RuntimeDependencies>
             <Dependency>gvfs-common</Dependency>
             <Dependency>bluez</Dependency>
-            <Dependency>hal</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec/gvfsd-obexftp</Path>
