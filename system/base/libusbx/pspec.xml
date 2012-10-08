@@ -17,9 +17,6 @@
 
     <Package>
         <Name>libusbx</Name>
-        <Replaces>
-            <Package>libusb1</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -29,9 +26,6 @@
 
     <Package>
         <Name>libusbx-devel</Name>
-        <Replaces>
-            <Package>libusb1-devel</Package>
-        </Replaces>
         <PartOf>system.devel</PartOf>
         <Summary>Development files for libusbx</Summary>
         <RuntimeDependencies>
