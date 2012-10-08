@@ -18,7 +18,7 @@
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
             <Dependency>libnl-devel</Dependency>
-            <Dependency>libusb1-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>libsndfile-devel</Dependency>
@@ -47,7 +47,7 @@
         <RuntimeDependencies>
             <Dependency>cups</Dependency>
             <Dependency>libnl</Dependency>
-            <Dependency>libusb1</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>setserial</Dependency>
             <Dependency>gstreamer</Dependency>
