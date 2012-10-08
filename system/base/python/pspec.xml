@@ -84,7 +84,11 @@
             
             <!-- skip semaphore test, as it requires /dev/shm -->
             <Patch level="1">python-2.7.1-skip-shm-test.patch</Patch>
+<!--
             <Patch level="1">db5-full.patch</Patch>
+-->
+            <Patch level="1">Python-2.7.1-berkeley-db-5.3.patch</Patch>
+            <Patch level="1">Python-2.7.1-berkeley-db-5.3-2.patch</Patch>
         </Patches>
     </Source>
 
