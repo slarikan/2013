@@ -29,10 +29,11 @@
             <Path fileType="header">/opt/icecream/include/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icecc</Path>
+            <Path fileType="data">/lib/systemd/system/icecream-daemon.service</Path>
         </Files>
-        <Provides>
-            <COMAR script="daemon.py">System.Service</COMAR>
-        </Provides>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/icecream-daemon.service">icecream-daemon.service</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <Package>
@@ -43,13 +44,21 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt/icecream/sbin/scheduler</Path>
+            <Path fileType="data">/lib/systemd/system/icecream-scheduler.service</Path>
         </Files>
-        <Provides>
-            <COMAR script="scheduler.py">System.Service</COMAR>
-        </Provides>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/icecream-scheduler.service">icecream-scheduler.service</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
+      <Update release="17">
+            <Date>2012-10-09</Date>
+            <Version>0.9.7</Version>
+            <Comment>Use systemd service file</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
       <Update release="16">
             <Date>2012-08-18</Date>
             <Version>0.9.7</Version>
