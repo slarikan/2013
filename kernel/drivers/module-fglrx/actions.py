@@ -154,7 +154,7 @@ def install():
     pisitools.remove("/usr/bin/amdxdg-su")
 
     #LICENSE information
-    pisitools.dodoc("LICENSE.txt")
+    pisitools.dodoc("LICENSE.TXT")
 
     # Fix file permissions
     exec_file_suffixes = (".sh", ".so", ".so.1.2")
