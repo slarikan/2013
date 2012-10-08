@@ -12,7 +12,7 @@
         <IsA>kernel</IsA>
         <Summary>The Linux kernel (the core of the Linux operating system) for Pardus Linux</Summary>
         <Description>kernel contains the Linux kernel, the core of any Linux operating system. The kernel handles the basic functions of the operating system: memory allocation, process allocation, device input and output, etc.</Description>
-        <Archive sha1sum="8e32c6c3bdfa50c6e232dba0bf50a67628b7d6c3" type="tarxz">file:///home/erdinc/linux-3.5.5.tar.xz</Archive>
+        <Archive sha1sum="8e32c6c3bdfa50c6e232dba0bf50a67628b7d6c3" type="tarxz">http://www.kernel.org/pub/linux/kernel/v3.0/linux-3.5.5.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="configs/kernel-i686-config">configs/kernel-i686-config</AdditionalFile>
             <AdditionalFile target="configs/kernel-x86_64-config">configs/kernel-x86_64-config</AdditionalFile>
