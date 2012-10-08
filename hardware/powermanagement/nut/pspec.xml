@@ -16,7 +16,6 @@
         <BuildDependencies>
             <Dependency>gd-devel</Dependency>
             <Dependency>net-snmp-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
             <Dependency>neon-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -48,7 +47,6 @@
         <RuntimeDependencies>
             <Dependency>gd</Dependency>
             <Dependency>net-snmp</Dependency>
-            <Dependency>hal</Dependency>
             <Dependency>neon</Dependency>
         </RuntimeDependencies>
         <Files>
