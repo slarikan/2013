@@ -16,7 +16,6 @@
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
             <Dependency>gd-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libexif-devel</Dependency>
         </BuildDependencies>
@@ -38,7 +37,6 @@
             <Dependency>gd</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>libexif</Dependency>
-            <Dependency>hal-libs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
