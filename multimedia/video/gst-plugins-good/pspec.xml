@@ -40,7 +40,6 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>flac-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
             <Dependency>libproxy-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
@@ -79,7 +78,6 @@
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>flac</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>libproxy</Dependency>
             <Dependency>jpeg</Dependency>
         </RuntimeDependencies>
