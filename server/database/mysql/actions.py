@@ -79,10 +79,10 @@ def install():
     pisitools.remove("/usr/share/mysql/mysql-log-rotate")
     pisitools.remove("/usr/share/mysql/my-*.cnf")
     pisitools.remove("/usr/share/mysql/config.*")
-    pisitools.removeDir("/usr/share/aclocal")
+    #pisitools.removeDir("/usr/share/aclocal")
 
     # Move libs to /usr/lib
-    pisitools.domove("/usr/lib/mysql/libmysqlclient*.so*", "/usr/lib")
+    #pisitools.domove("/usr/lib/mysql/libmysqlclient*.so*", "/usr/lib")
 
     # Links to libs
     pisitools.dosym("../libmysqlclient.so", "/usr/lib/mysql/libmysqlclient.so")
