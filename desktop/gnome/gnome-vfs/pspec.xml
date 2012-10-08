@@ -22,7 +22,6 @@
             <Dependency>orbit2-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>samba-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">fedora/gnome-vfs-2.9.90-modules-conf.patch</Patch>
@@ -73,7 +72,6 @@
             <Dependency>mit-kerberos</Dependency>
             <Dependency>avahi-glib</Dependency>
             <Dependency>avahi-libs</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>orbit2</Dependency>
             <Dependency>gconf</Dependency>
         </RuntimeDependencies>
@@ -105,7 +103,6 @@
         <Name>gnome-vfs-devel</Name>
         <Summary>Development files for gnome-vfs</Summary>
         <RuntimeDependencies>
-            <Dependency>hal-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency release="current">gnome-vfs</Dependency>
         </RuntimeDependencies>
