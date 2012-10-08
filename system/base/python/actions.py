@@ -29,6 +29,8 @@ def setup():
     # Bump required autoconf version
     pisitools.dosed("configure.in", r"\(2.65\)", "(2.68)")
 
+    pisitools.dosed("setup.py","ndbm_libs =.*","ndbm_libs = ['gdbm', 'gdbm_compat']")
+
     autotools.autoreconf("-vif")
     autotools.configure("--with-fpectl \
                          --enable-shared \

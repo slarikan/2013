@@ -13,6 +13,7 @@
         <Description>Fglrx is a driver written by AMD(ATI) for ATI graphics cards.</Description>
         <Archive sha1sum="30de341aeaf360a77b0f62b1c7646d13fcde95df" type="zip">http://www2.ati.com/drivers/beta/amd-driver-installer-12-9-beta-x86.x86_64.zip</Archive>
         <AdditionalFiles>
+            <AdditionalFile target="do_mmap.patch">do_mmap.patch</AdditionalFile>
             <AdditionalFile target="desktop-files.patch">desktop-files.patch</AdditionalFile>
             <AdditionalFile target="ati-powermode.patch">ati-powermode.patch</AdditionalFile>
         </AdditionalFiles>
@@ -23,6 +24,9 @@
 
     <Package>
         <Name>module-fglrx</Name>
+        <Conflicts>
+            <Package>module-fglrx-legacy</Package>
+        </Conflicts>
         <IsA>driver</IsA>
         <Summary>Kernel module for ATI display drivers</Summary>
         <RuntimeDependencies>
@@ -36,6 +40,9 @@
 
     <Package>
         <Name>module-fglrx-userspace</Name>
+        <Conflicts>
+            <Package>module-fglrx-legacy-userspace</Package>
+        </Conflicts>
         <IsA>data</IsA>
         <Summary>Modprobe rules for fglrx kernel driver</Summary>
         <Files>
@@ -48,6 +55,9 @@
 
     <Package>
         <Name>fglrx-devel</Name>
+        <Conflicts>
+            <Package>fglrx-legacy-devel</Package>
+        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
         </Files>
@@ -55,6 +65,9 @@
 
     <Package>
         <Name>fglrx-opencl</Name>
+        <Conflicts>
+            <Package>fglrx-legacy-opencl</Package>
+        </Conflicts>
         <RuntimeDependencies>
             <Dependency version="current">xorg-video-fglrx</Dependency>
         </RuntimeDependencies>
@@ -67,6 +80,9 @@
     </Package>
     <Package>
         <Name>fglrx-opencl-32bit</Name>
+        <Conflicts>
+            <Package>fglrx-opencl-legacy-32bit</Package>
+        </Conflicts>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for fglrx-opencl</Summary>
         <BuildType>emul32</BuildType>
@@ -82,6 +98,9 @@
 
     <Package>
         <Name>xorg-video-fglrx</Name>
+        <Conflicts>
+            <Package>xorg-video-fglrx-legacy</Package>
+        </Conflicts>
         <IsA>driver</IsA>
         <PartOf>x11.driver</PartOf>
         <RuntimeDependencies>
@@ -130,6 +149,9 @@
 
     <Package>
         <Name>xorg-video-fglrx-32bit</Name>
+        <Conflicts>
+            <Package>xorg-video-fglrx-legacy-32bit</Package>
+        </Conflicts>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for xorg-video-fglrx</Summary>
         <BuildType>emul32</BuildType>
