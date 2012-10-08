@@ -44,7 +44,6 @@
             <Dependency>mjpegtools</Dependency>
             <Dependency>ogmtools</Dependency>
             <Dependency>xine-lib</Dependency>
-            <Dependency>hal</Dependency>
             <Dependency>lsdvd</Dependency>
             <Dependency>subtitleripper</Dependency>
         </RuntimeDependencies>
