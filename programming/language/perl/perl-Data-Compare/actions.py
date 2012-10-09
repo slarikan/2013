@@ -12,10 +12,6 @@ from pisi.actionsapi import get
 
 def setup():
     perlmodules.configure()
-    # we don't need perllocal.pod
-    pisitools.dosed("Makefile", "(install :: pure_install) doc_install", r"\1")
-    # and empty dirs
-    pisitools.dosed("Makefile", "^.*?write.*?\.packlist(.*?)", r"\1")
 
 def build():
     perlmodules.make()
