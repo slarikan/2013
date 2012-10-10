@@ -45,17 +45,17 @@ def setup():
 
     autotools.configure(options)
 
-    pisitools.dosed("configs/autoconf", "(PYTHON_FLAGS) = .*", r"\1 = -t")
+    #pisitools.dosed("configs/autoconf", "(PYTHON_FLAGS) = .*", r"\1 = -t")
 
 def build():
-    autotools.make("-C src/glsl glsl_lexer.cpp")
+#    autotools.make("-C src/glsl glsl_lexer.cpp")
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # Moving libGL for dynamic switching
-    pisitools.domove("%s/libGL.so.1.2" % Libdir, "%s/mesa" % Libdir)
+    #pisitools.domove("%s/libGL.so.1.2" % Libdir, "%s/mesa" % Libdir)
 
     if get.buildTYPE() == "emul32":
         return
