@@ -77,24 +77,3 @@ diff -ruNp docbook-xsl-1.74.0.orig/fo/param.xsl docbook-xsl-1.74.0/fo/param.xsl
    <xsl:attribute name="hyphenate">false</xsl:attribute>
    <xsl:attribute name="text-align">
      <xsl:choose>
-diff -urNp docbook-xsl-1.75.0-orig/fo/pagesetup.xsl docbook-xsl-1.75.0/fo/pagesetup.xsl
---- docbook-xsl-1.75.0-orig/fo/pagesetup.xsl	2009-05-11 11:40:49.000000000 +0200
-+++ docbook-xsl-1.75.0/fo/pagesetup.xsl	2009-05-11 11:42:29.000000000 +0200
-@@ -30,16 +30,7 @@
- </xsl:param>
- 
- <xsl:param name="margin.left.inner">
--  <xsl:choose>
--    <xsl:when test="$passivetex.extensions != 0">
--      <xsl:value-of select="$page.margin.inner"/>
--    </xsl:when>
--    <xsl:otherwise>
--      <xsl:value-of select="$page.margin.inner"/>
--      <xsl:text> - </xsl:text>
--      <xsl:value-of select="$title.margin.left"/>
--    </xsl:otherwise>
--  </xsl:choose>
-+  <xsl:value-of select="$page.margin.inner"/>
- </xsl:param>
- 
- <xsl:template name="setup.pagemasters">
