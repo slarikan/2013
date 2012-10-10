@@ -33,7 +33,6 @@
             <Path fileType="manfile">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="config">/etc</Path>
-            <Path fileType="config">/usr/lib/depmod.d/</Path>
         </Files>
     </Package>
     <Package>

@@ -24,7 +24,6 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">disable-sandbox-for-emul32-builds.patch</Patch>
-            <Patch>2013-release.patch</Patch>
             <Patch>kerneltools-fix.patch</Patch>
             <Patch>better_cleaning_perl_packages.patch</Patch>
         </Patches>
