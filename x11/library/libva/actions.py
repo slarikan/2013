@@ -9,18 +9,16 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    pisitools.dosed("test/Makefile.am", "^(SUBDIRS =).*$", r"\1 vainfo")
-
     autotools.autoreconf("-vif")
     options = "--enable-glx \
-               --enable-dummy-driver \
-               --enable-i965-driver"
+               --disable-static"
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 \
                      --libdir=/usr/lib32"
 
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
+        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
 
     autotools.configure(options)
 
