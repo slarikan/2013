@@ -15,6 +15,7 @@
         <Archive sha1sum="fb84ee401b6e094503056b030ce31fcbcc9d06aa" type="targz">http://samba.org/ftp/talloc/talloc-2.0.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxslt-devel</Dependency>
+            <Dependency>docbook-xsl</Dependency>
         </BuildDependencies>
     </Source>
 
