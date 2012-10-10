@@ -16,7 +16,8 @@
         <Description>Enjoy is a music player written using Enlightenment Foundation Libraries (EFL) with focus on speed and mobile usability, yet should be usable on desktops as well.</Description>
         <Archive sha1sum="2b84d174d325e1ce7959a4f2760d13f33850f258" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/enjoy-1.0.tar.gz</Archive>
         <BuildDependencies>
-	    <Dependency>git</Dependency>
+            <Dependency>git</Dependency>
+            <Dependency>lightmediascanner-devel</Dependency>
             <Dependency versionFrom="1.7.0">eina-devel</Dependency>
             <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
@@ -33,6 +34,7 @@
     <Package>
         <Name>enjoy</Name>
         <RuntimeDependencies>
+            <Dependency>lightmediascanner</Dependency>
             <Dependency versionFrom="1.7.0">eina</Dependency>
             <Dependency versionFrom="1.7.0">ecore</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus</Dependency>
