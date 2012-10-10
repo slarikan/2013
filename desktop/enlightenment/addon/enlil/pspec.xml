@@ -26,29 +26,29 @@
             <Dependency versionFrom="1.7.0">ethumb-devel</Dependency>
             <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
             <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-ethumb-devel</Dependency>
+            <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
             <Dependency>libiptcdata-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
-            <Dependency>libkexiv2-devel</Dependency>
+	    <!--<Dependency>libkexiv2-devel</Dependency>-->
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>enlil</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
-	    <Dependency versionFrom="1.2.3">flickcurl-devel</Dependency>
-	    <Dependency versionFrom="1.7.0">ethumb-devel</Dependency>
-	    <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
-	    <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
-	    <Dependency versionFrom="1.7.0">python-ethumb-devel</Dependency>
-            <Dependency>libxml2-devel</Dependency>
-            <Dependency>libkexiv2-devel</Dependency>
-            <Dependency>libiptcdata-devel</Dependency>
+            <Dependency versionFrom="1.7.0">eina</Dependency>
+            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
+            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.0">edje</Dependency>
+	    <Dependency versionFrom="1.2.3">flickcurl</Dependency>
+	    <Dependency versionFrom="1.7.0">ethumb</Dependency>
+	    <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+	    <Dependency versionFrom="1.7.0">python-evas</Dependency>
+	    <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
+            <Dependency>libxml2</Dependency>
+            <!--<Dependency>libkexiv2</Dependency>-->
+            <Dependency>libiptcdata</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib/</Path>
