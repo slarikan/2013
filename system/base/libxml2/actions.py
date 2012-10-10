@@ -12,13 +12,14 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    options = "--without-python \
-	       --without-threads "
+    options = "--without-threads "
 
     if get.buildTYPE() == "emul32":
         options += " --libdir=/usr/lib32 \
-                     --bindir=/emul32/bin "
+                     --bindir=/emul32/bin \
+                     --without-python"
         shelltools.export("CC", "%s -m32" % get.CC())
+    else: options += " --with-python"
 
     autotools.configure(options)
 
