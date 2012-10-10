@@ -9,7 +9,7 @@
         </Packager>
         <License>AS-IS</License>
         <IsA>library</IsA>
-	<PartOf>desktop.enlightenment.addon</PartOf>
+        <PartOf>desktop.enlightenment.addon</PartOf>
         <Summary>A terminal emulator for Enlightenment</Summary>
         <Description>A EFL terminal emulator with some extra bells and whistles for Enlightenment.</Description>
         <Archive sha1sum="ffcc2de40f1ceaef8ca1d16a552bcb55f45ae1f5" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/base/terminology-0.1.0.tar.gz</Archive>
