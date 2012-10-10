@@ -1,5 +1,4 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
 <PISI>
     <Source>
         <Name>enlightenment</Name>
@@ -15,7 +14,6 @@
         <Description>Enlightenment is a window manager for the X Window System that is designed to be powerful, extensible, configurable and pretty darned good looking! It is one of the more graphically intense window managers.</Description>
         <Archive sha1sum="ebcc0e6adffeb04e8c65df712e474c3fccc761a9" type="targz">http://download.enlightenment.org/snapshots/2012-09-18/enlightenment-0.16.999.76819.tar.gz</Archive>
         <Archive sha1sum="a8def4ecf130fa3053d2d0051d9f6fbfa1392ea5" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/A-Angelic-v2.edj</Archive>
-        <Archive sha1sum="b8cd40ec97a3269ee3155a6b759e02c750d71c42" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/A-Blue-23oz.edj</Archive>
         <Archive sha1sum="6cb9bd2eb3343b41f9dc2272e1a8e5c027bc1642" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/efenniht.edj</Archive>
         <Archive sha1sum="540dfcccd9785021adde851a640c3f86e7d346cc" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/Nitrous0.2_E17.edj</Archive>
         <Archive sha1sum="351b0ee32a04bae844905f54912d25010777e861" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/ANKA-brotherhood.edj</Archive>
