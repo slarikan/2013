@@ -51,7 +51,7 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # remove empty dir
-    pisitools.removeDir("/usr/share/man")
+    #pisitools.removeDir("/usr/share/man")
     pisitools.dodoc("AUTHORS", "README*", "HACKING", "ChangeLog*", "NEWS*")
 
     if get.buildTYPE() == "emul32":
