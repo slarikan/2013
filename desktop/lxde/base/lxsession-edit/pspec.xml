@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency releaseFrom="2">lxde-common</Dependency>
+            <Dependency releaseFrom="3">lxde-common</Dependency>
             <Dependency releaseFrom="5">lxsession</Dependency>
         </BuildDependencies>
         <Patches>
@@ -30,7 +30,7 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency releaseFrom="2">lxde-common</Dependency>
+            <Dependency releaseFrom="3">lxde-common</Dependency>
             <Dependency releaseFrom="5">lxsession</Dependency>
         </RuntimeDependencies>
         <Files>
