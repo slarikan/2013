@@ -9,7 +9,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.chmod("hw/vnc/symlink-vnc.sh")
+#    shelltools.chmod("hw/vnc/symlink-vnc.sh")
 
     autotools.autoreconf("-fiv")
     autotools.configure("--enable-install-libxf86config \

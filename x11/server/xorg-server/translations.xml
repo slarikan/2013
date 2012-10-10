@@ -5,7 +5,9 @@
         <Summary xml:lang="tr">X.Org X Sunucu</Summary>
         <Summary xml:lang="fr">Serveur X X.Org</Summary>
         <Summary xml:lang="de">X.Org X Server</Summary>
+        <Summary xml:lang="pl">X.Org X Serwer</Summary>
         <Description xml:lang="tr">X sunucu, grafiksel arayüz için gerekli ana uygulamadır.</Description>
+        <Description xml:lang="pl">X serwer to główna aplikacja, która umożliwia interfejs graficzny.</Description>
     </Source>
 
     <Package>
