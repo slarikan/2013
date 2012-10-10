@@ -13,7 +13,7 @@
         <PartOf>desktop.enlightenment.addon</PartOf>
         <Summary>Execute a shell command and display the output</Summary>
         <Description>Execute a shell command and display the output</Description>
-        <Archive sha1sum="43521fdea8dc7c256566f5539f168913675b2061" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/eektool-1.0.tar.gz</Archive>
+        <Archive sha1sum="ce587a643f0b9c7c5fb6fc0a1e29f452932f8cb6" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/eektool-1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.0">eina-devel</Dependency>
             <Dependency versionFrom="1.7.0">eet-devel</Dependency>
