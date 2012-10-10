@@ -23,8 +23,8 @@
             <Dependency versionFrom="1.7.0">edje-devel</Dependency>
             <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
             <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.1">elementary-devel</Dependency>
-            <Dependency versionFrom="1.0.1">emotion-devel</Dependency>
+            <Dependency versionFrom="1.7.0">elementary-devel</Dependency>
+            <Dependency versionFrom="1.7.0">emotion-devel</Dependency>
 	    <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
 
         </BuildDependencies>
@@ -39,8 +39,8 @@
             <Dependency versionFrom="1.7.0">edje</Dependency>
             <Dependency versionFrom="1.7.0">efreet</Dependency>
             <Dependency versionFrom="1.7.0">evas</Dependency>
-            <Dependency versionFrom="1.7.">elementary</Dependency>
-            <Dependency versionFrom="1.0.1">emotion</Dependency>
+            <Dependency versionFrom="1.7.0">elementary</Dependency>
+            <Dependency versionFrom="1.7.0">emotion</Dependency>
 	    <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
         </RuntimeDependencies>
         <Files>
