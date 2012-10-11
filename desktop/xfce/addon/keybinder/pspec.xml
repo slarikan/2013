@@ -23,10 +23,10 @@
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/</Path>
-            <Path fileType="library">/usr/lib/pkgconfig</Path>
-            <Path fileType="data">/usr/share/gtk-doc/html/keybinder/</Path>
-            <Path fileType="data"> /usr/share/gir-1.0/</Path>
+            <Path fileType="library">/usr/lib/*</Path>
+            <Path fileType="data">/usr/share/gtk-doc/*</Path>
+            <Path fileType="data">/usr/share/gir-1.0/*</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
     
@@ -42,6 +42,13 @@
     </Package>
     
     <History>
+        <Update release="1">
+            <Date>2012-10-11</Date>
+            <Version>0.3.0</Version>
+            <Comment>regulation</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-13</Date>
             <Version>0.3.0</Version>
