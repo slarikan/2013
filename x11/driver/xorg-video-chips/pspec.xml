@@ -12,10 +12,14 @@
         <IsA>driver</IsA>
         <Summary>X.Org chips video driver</Summary>
         <Description>xorg-video-chips contains the X.Org driver for Chips and Technologies boards.</Description>
-        <Archive sha1sum="79d1592dacbdd5ff0419dcb2fef2a2ca541dd329" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-chips-1.2.3.tar.bz2</Archive>
+        <Archive sha1sum="5642e1d1bf3a05d24a0b8db48ca3b522c1962b00" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-chips-1.2.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">x11-driver-video-chips-1.2.5-debian-iopl_h.patch</Patch>
+            <Patch level="1">0001-Import-existing-patches-that-were-originally-Red-Ha.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -25,11 +29,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-10-11</Date>
+            <Version>1.2.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.2.3</Version>
