@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>libusb</Name>
+        <Name>libusb-compat</Name>
         <Homepage>http://libusb.sourceforge.net/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -20,7 +20,10 @@
     </Source>
 
     <Package>
-        <Name>libusb</Name>
+        <Name>libusb-compat</Name>
+        <Replaces>
+            <Package>libusb</Package>
+        </Replaces>
         <RuntimeDependencies>
             <Dependency>libusbx</Dependency>
         </RuntimeDependencies>
@@ -31,11 +34,14 @@
     </Package>
 
     <Package>
-        <Name>libusb-devel</Name>
+        <Name>libusb-compat-devel</Name>
         <PartOf>system.devel</PartOf>
         <Summary>Development files for libusb</Summary>
+        <Replaces>
+            <Package>libusb</Package>
+        </Replaces>
         <RuntimeDependencies>
-            <Dependency release="current">libusb</Dependency>
+            <Dependency release="current">libusb-compat</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -46,16 +52,19 @@
     </Package>
 
     <Package>
-        <Name>libusb-32bit</Name>
+        <Name>libusb-compat-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libXt</Summary>
+        <Replaces>
+            <Package>libusb-32bit</Package>
+        </Replaces>
         <BuildType>emul32</BuildType>
-	 <BuildDependencies>
+        <BuildDependencies>
             <Dependency>libusbx-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
-	    <Dependency>libusbx-32bit</Dependency>
-            <Dependency release="current">libusb</Dependency>
+            <Dependency>libusbx-32bit</Dependency>
+            <Dependency release="current">libusb-compat</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
