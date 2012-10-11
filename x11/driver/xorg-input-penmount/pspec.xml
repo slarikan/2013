@@ -12,8 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org penmount input driver</Summary>
         <Description>xorg-input-penmount contains the X.Org driver for PenMount devices.</Description>
-        <!--1.5.0 need at least xorg-server 1.10-->
-        <Archive sha1sum="a6923fe92ffbc698813063a5426b4ba2edfe465f" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-penmount-1.4.1.tar.bz2</Archive>
+        <Archive sha1sum="39ed2dd2b22f8bf9366b187e4d7801a24c24cb31" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-penmount-1.5.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -26,11 +25,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-10-11</Date>
+            <Version>1.5.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.4.1</Version>
