@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org r128 video driver</Summary>
         <Description>xorg-video-r128 contains the X.Org driver for ATI Rage128 video cards.</Description>
-        <Archive sha1sum="bb01cbdc173dbb53070c4ac06f3eeb3ad2645164" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-r128-6.8.2.tar.bz2</Archive>
+        <Archive sha1sum="39d2b3667a5796e9333a41abaf1197cc0f0590ff" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-r128-6.8.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -27,11 +27,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-10-11</Date>
+            <Version>6.8.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2012-05-30</Date>
             <Version>6.8.2</Version>
