@@ -12,10 +12,13 @@
         <IsA>driver</IsA>
         <Summary>X.Org mouse input driver</Summary>
         <Description>xorg-input-mouse contains the X.Org driver for mice.</Description>
-        <Archive sha1sum="0da6390c6f3d7d636110a52f08193739929ae4ae" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-mouse-1.7.2.tar.bz2</Archive>
+        <Archive sha1sum="e00e825c9506b7b9c31bf4b8a3a609df8ef408c1" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-mouse-1.8.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">0001-Don-t-disable-3-button-emulation-if-third-mouse-butt.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -25,11 +28,31 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
+    <Package>
+        <Name>xorg-input-mouse-devel</Name>
+        <Summary>Development files for xorg-input-mouse</Summary>
+        <RuntimeDependencies>
+            <Dependency version="current">xorg-input-mouse</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/xorg/xf86-mouse-properties.h</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/xorg-mouse.pc</Path>
+        </Files>
+    </Package>
+
     <History>
+        <Update release="7">
+            <Date>2012-10-11</Date>
+            <Version>1.8.1</Version>
+            <Comment>Version bump, split devel files</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="6">
             <Date>2012-05-30</Date>
             <Version>1.7.2</Version>
