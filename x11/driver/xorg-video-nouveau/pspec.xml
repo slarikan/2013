@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org nouveau video driver</Summary>
         <Description>xorg-video-nouveau contains the X.Org driver for NVIDIA cards.</Description>
-        <Archive sha1sum="2697505fc49593737d162517238f0d861a1749c4" type="tarbz2">http://paketler.pardus-linux.org/sources/xf86-video-nouveau-0.0.16-pre20120530.tar.bz2</Archive>
+        <Archive sha1sum="8f89db34187e3476c22de85fa5156a4296241b52" type="tarbz2">http://nouveau.freedesktop.org/release/xf86-video-nouveau-1.0.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.4.25">libdrm-nouveau</Dependency>
             <Dependency>libpciaccess-devel</Dependency>
@@ -30,11 +30,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-10-11</Date>
+            <Version>1.0.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="21">
             <Date>2012-05-30</Date>
             <Version>0.0.16_pre20120530</Version>

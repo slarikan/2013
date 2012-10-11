@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org intel video driver</Summary>
         <Description>xorg-video-intel contains the X.Org driver for Intel video chipsets.</Description>
-        <Archive sha1sum="7738d19bc36b49215b560c29c0b27c2fa3a56557" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-intel-2.20.6.tar.bz2</Archive>
+        <Archive sha1sum="43c789bae74dceeb5a5e5ff099679f28c6dfa057" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-intel-2.20.9.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXv-devel</Dependency>
             <Dependency>libXvMC-devel</Dependency>
@@ -37,11 +37,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="29">
+            <Date>2012-10-11</Date>
+            <Version>2.20.9</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="28">
             <Date>2012-09-25</Date>
             <Version>2.20.6</Version>

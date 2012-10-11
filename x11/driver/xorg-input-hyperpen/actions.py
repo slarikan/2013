@@ -18,5 +18,5 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("COPYING", "ChangeLog", "README")
+    pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "README")
     pisitools.removeDir("/usr/share/man")
