@@ -5,20 +5,14 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
-#from pisi.actionsapi import pisitools
+from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 
-# You can use these as variables, they will replace GUI values before build.
-# Package Name : keybinder
-# Version : 0.3.0
-# Summary : keybinder is a library for registering global keyboard shortcuts.
-
-# If the project that you are tying to compile is in a sub directory in the 
-# source archive, than you can define working directory. For example; 
-# WorkDir="keybinder-"+ get.srcVERSION() +"/sub_project_dir/"
+shelltools.export("HOME", get.workDIR())
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
 
 def setup():
-    autotools.configure("--disable-lua \
-                         --disable-python")
+    autotools.configure("--disable-static --enable-python")
 
 def build():
     autotools.make()
@@ -26,8 +20,6 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-# Take a look at the source folder for these file as documentation.
-#    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
-# If there is no install rule for a runnable binary, you can 
-# install it to binary directory.
-#    pisitools.dobin("keybinder")
+
+    pisitools.dodoc("AUTHORS", "NEWS", "COPYING", "README").
+
