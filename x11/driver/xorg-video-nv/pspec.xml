@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org nv video driver</Summary>
         <Description>xorg-video-nv contains the X.Org driver for NVIDIA cards.</Description>
-        <Archive sha1sum="d35b2fa5a26a507a9cc95b69243d9fd0c0f32aa2" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-nv-2.1.18.tar.bz2</Archive>
+        <Archive sha1sum="42b129be471d16444c5a7b443491e8d9e3e5df1a" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-nv-2.1.20.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libpciaccess-devel</Dependency>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
@@ -27,11 +27,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-10-11</Date>
+            <Version>2.1.20</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2012-05-30</Date>
             <Version>2.1.18</Version>
