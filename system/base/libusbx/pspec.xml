@@ -13,6 +13,9 @@
         <Summary>Userspace access to USB devices</Summary>
         <Description>Project's main aim is to create a library for use by user level applications to access USB devices regardless of OS.</Description>
         <Archive sha1sum="53621af3f667844207de862fcc39f9b5a4e99c42" type="tarbz2">http://sourceforge.net/projects/libusbx/files/releases/1.0.12/source/libusbx-1.0.12.tar.bz2</Archive>
+        <Patches>
+            <Patch level="1">fix-libusb-compat-conflicts.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
