@@ -760,42 +760,9 @@
             </Maintainer>
         </Component>
         <Component>
-            <Name>kernel.default</Name>
+            <Name>kernel.drivers</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
-            <Summary xml:lang="en">Default 32-bit kernel flavour</Summary>
-            <Description xml:lang="en">Default 32-bit kernel flavour for Pardus</Description>
-            <Group>system</Group>
-            <Maintainer>
-                <Name>Pardus ANKA Admins</Name>
-                <Email>pisiciftligi@pardus-linux.org</Email>
-            </Maintainer>
-        </Component>
-        <Component>
-            <Name>kernel.default.drivers</Name>
-            <LocalName xml:lang="en">FIXME</LocalName>
-            <Summary xml:lang="en">Kernel drivers for the default kernel</Summary>
-            <Description xml:lang="en">FIXME</Description>
-            <Group>system</Group>
-            <Maintainer>
-                <Name>Pardus ANKA Admins</Name>
-                <Email>pisiciftligi@pardus-linux.org</Email>
-            </Maintainer>
-        </Component>
-        <Component>
-            <Name>kernel.rt</Name>
-            <LocalName xml:lang="en">FIXME</LocalName>
-            <Summary xml:lang="en">Real-time kernel flavour</Summary>
-            <Description xml:lang="en">FIXME</Description>
-            <Group>system</Group>
-            <Maintainer>
-                <Name>Pardus ANKA Admins</Name>
-                <Email>pisiciftligi@pardus-linux.org</Email>
-            </Maintainer>
-        </Component>
-        <Component>
-            <Name>kernel.rt.drivers</Name>
-            <LocalName xml:lang="en">FIXME</LocalName>
-            <Summary xml:lang="en">Kernel drivers for real-time kernel flavour</Summary>
+            <Summary xml:lang="en">Kernel drivers</Summary>
             <Description xml:lang="en">FIXME</Description>
             <Group>system</Group>
             <Maintainer>
