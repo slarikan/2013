@@ -76,7 +76,7 @@
             <Dependency>lua-devel</Dependency>
             <Dependency>libdvbpsi-devel</Dependency>
             <Dependency>faad2-devel</Dependency>
-            <Dependency>live555-devel</Dependency>
+            <Dependency versionFrom="0.0_20121004">live555-devel</Dependency>
             <Dependency>libproxy-devel</Dependency>
             <Dependency>libass-devel</Dependency>
             <Dependency>libcaca-devel</Dependency>
@@ -217,7 +217,7 @@
             <Dependency releaseFrom="9">libva</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>lirc</Dependency>
-            <Dependency>live555</Dependency>
+            <Dependency versionFrom="0.0_20121004">live555</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>minizip</Dependency>
             <Dependency versionFrom="0.9.22">pulseaudio-libs</Dependency>
