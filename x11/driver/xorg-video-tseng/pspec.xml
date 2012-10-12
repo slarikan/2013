@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org tseng video driver</Summary>
         <Description>xorg-video-tseng contains the X.Org driver for Tseng cards.</Description>
-        <Archive sha1sum="1b45f55657b2c92f30abb0769cae57fca98d93b7" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-tseng-1.2.4.tar.bz2</Archive>
+        <Archive sha1sum="95c35b28a19ab486f0bb7482df944d5b0076bdd5" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-tseng-1.2.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -28,11 +28,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-10-12</Date>
+            <Version>1.2.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>1.2.4</Version>
