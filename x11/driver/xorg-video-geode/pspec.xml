@@ -16,6 +16,9 @@
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">geode-git.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -25,10 +28,18 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-12</Date>
+            <Version>2.11.13</Version>
+            <Comment>added geode-git.patch</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2012-05-30</Date>
             <Version>2.11.13</Version>

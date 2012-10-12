@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org voodoo video driver</Summary>
         <Description>xorg-video-voodoo contains the X.Org driver for Voodoo1 and Voodoo2 video adapters.</Description>
-        <Archive sha1sum="7ecd232cc0b7fe507e18e08799791eefa9fdaf48" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-voodoo-1.2.4.tar.bz2</Archive>
+        <Archive sha1sum="7316df33814694ad2fb1617bcd92e6e42c3d184f" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-voodoo-1.2.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -25,11 +25,19 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-10-12</Date>
+            <Version>1.2.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="6">
             <Date>2012-05-31</Date>
             <Version>1.2.4</Version>
