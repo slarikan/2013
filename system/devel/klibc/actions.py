@@ -26,6 +26,17 @@ docs = {"usr/klibc/arch/README.klibc.arch": "README.arch",
         "usr/gzip/COPYING": "COPYING.gzip",
         "usr/kinit/README": "README.kinit"}
 
+configh = """
+#ifndef _LINUX_CONFIG_H
+#define _LINUX_CONFIG_H
+
+#include <linux/autoconf.h>
+
+#endif
+"""
+
+shelltools.export("C_INCLUDE_PATH", "/usr/include")
+
 def fixperms(d):
     for root, dirs, files in os.walk(d):
         for name in dirs:
@@ -46,6 +57,8 @@ def setup():
     shelltools.echo("70klibc", 'PRELINK_PATH_MASK="/usr/lib/klibc"')
 
     pisitools.dosed("Makefile", "/man", "/share/man")
+
+    shelltools.echo("linux/include/linux/config.h", configh)
 
 def build():
     shelltools.export("ARCH", "")

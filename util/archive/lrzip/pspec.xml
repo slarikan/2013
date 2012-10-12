@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A (de)compressor optimised for large files</Summary>
         <Description>This is a compression program optimised for large files. The larger the file and the more memory you have, the better the compression advantage this program will provide, especially for files larger than 100MB.</Description>
-        <Archive sha1sum="6460537a6f13eb0c5706e03242e7af744c0bc5c4" type="tarbz2">http://ck.kolivas.org/apps/lrzip/lrzip-0.608.tar.bz2</Archive>
+        <Archive sha1sum="b3c2149c9ca353f595d7f2774262244cc56a7500" type="tarbz2">http://ck.kolivas.org/apps/lrzip/lrzip-0.614.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>lzo-devel</Dependency>
         </BuildDependencies>
@@ -25,12 +25,32 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/liblrzip.so*</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
+    <Package>
+        <Name>lrzip-devel</Name>
+        <Summary>Development files for lrzip</Summary>
+        <RuntimeDependencies>
+            <Dependency version="current">lrzip</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="headers">/usr/include/Lrzip.h</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/lrzip.pc</Path>
+        </Files>
+    </Package>
+
     <History>
+        <Update release="11">
+            <Date>2012-10-12</Date>
+            <Version>0.614</Version>
+            <Comment>Version bump. Split devel files.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2011-10-04</Date>
             <Version>0.608</Version>

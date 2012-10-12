@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>X.Org rendition video driver</Summary>
         <Description>xorg-video-rendition contains the X.Org driver for Rendition (Micron) cards.</Description>
-        <Archive sha1sum="16148c25183f7829c22bc9dfdb588c1a16bf4565" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-rendition-4.2.4.tar.bz2</Archive>
+        <Archive sha1sum="930e99e4d44418b1e55f11a2a8525b42b0e2d3b5" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-rendition-4.2.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
@@ -26,11 +26,19 @@
         <Files>
             <Path fileType="library">/usr/lib/xorg/modules/drivers</Path>
             <Path fileType="data">/usr/lib/xorg/modules/*.uc</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-10-11</Date>
+            <Version>4.2.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>4.2.4</Version>

@@ -11,8 +11,7 @@ from pisi.actionsapi import get
 
 
 def setup():
-    autotools.autoreconf("-vfi")
-    autotools.configure("--docdir=/%s/%s" % (get.docDIR(), get.srcNAME()))
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()

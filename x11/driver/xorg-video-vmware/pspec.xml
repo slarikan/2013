@@ -16,6 +16,9 @@
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">xf86-video-vmware-12.0.2-xorg-server-1.13.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -26,11 +29,19 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/xorg</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-12</Date>
+            <Version>12.0.2</Version>
+            <Comment>fixed issue with xorg-server-1.13</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2012-05-31</Date>
             <Version>12.0.2</Version>
