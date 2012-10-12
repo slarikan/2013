@@ -35,6 +35,8 @@ configh = """
 #endif
 """
 
+shelltools.export("C_INCLUDE_PATH", "/usr/include")
+
 def fixperms(d):
     for root, dirs, files in os.walk(d):
         for name in dirs:
