@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>xfce4-volumed</Name>
-        <Summary xml:lang="en">A volume keys control daemon for Xfce.</Summary>
-        <Description xml:lang="en">Basic daemon enabling the XF86 Volume keys and supporting synchronous volume notifications.</Description>
+        <Summary xml:lang="tr">Xfce için bir ses tuşları kontrolü eklentisi</Summary>
+        <Description xml:lang="tr">Bu temel eklenti, xf86 Ses tuşlarını etkinleştirmek ve senkronize ses bildirimlerini destekler</Description>
     </Source>
 </PISI>
