@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>PHP5 is an HTML-embedded scripting language. The goal of the language is to allow web developers to write dynamically generated pages quickly</Summary>
         <Description>PHP5 is an HTML-embedded scripting language. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly.</Description>
-        <Archive sha1sum="311b44b2c0f2eea8ab8dab876d2a6b6e7a55632e" type="tarbz2">http://museum.php.net/php5/php-5.2.14.tar.bz2</Archive>
+        <Archive sha1sum="b6c5e6653ba28e2f071bafe30c9691eddb950ba0" type="tarbz2">http://us2.php.net/distributions/php-5.4.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gd-devel</Dependency>
             <Dependency>apache</Dependency>
@@ -28,29 +28,29 @@
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">file_path_injection_in_rfc1867.patch</Patch>
+            <!--<Patch level="1">file_path_injection_in_rfc1867.patch</Patch>
             <Patch level="1">stack_buffer_overflow_in_socket_connect.patch</Patch>
             <Patch level="1">use_after_free_in_substr_replace.patch</Patch>
             <Patch level="1">buffer_overflow_in_strval.patch</Patch>
             <Patch level="1">int_overflow_in_SdnToJulian.patch</Patch>
             <Patch level="1">int_overflow_in_shmop_read.patch</Patch>
             <Patch level="1">exif_read_data_crash_on_crafted_tags.patch</Patch>
-            <Patch level="1">denial_of_service_in_pcntl_ext.patch</Patch>
+            <Patch level="1">denial_of_service_in_pcntl_ext.patch</Patch>-->
             <Patch level="1">int_overflow_in_mt_rand.patch</Patch>
-            <Patch level="1">use_of_uninitialized_vars_in_mt_rand.patch</Patch>
+            <!--<Patch level="1">use_of_uninitialized_vars_in_mt_rand.patch</Patch>
             <Patch level="1">no_overwrite_for_GLOBALS_and_this_in_extract.patch</Patch>
-            <Patch level="1">use_after_free_in_zend.patch</Patch>
+            <Patch level="1">use_after_free_in_zend.patch</Patch>-->
             <Patch level="1">stack_buffer_overflow_in_imagepstext.patch</Patch>
             <Patch level="1">denial_of_service_in_getArchiveComment.patch</Patch>
-            <Patch level="1">denial_of_service_in_filter_var.patch</Patch>
-            <Patch level="1">double_free_in_imap.patch</Patch>
+            <!--<Patch level="1">denial_of_service_in_filter_var.patch</Patch>
+            <Patch level="1">double_free_in_imap.patch</Patch>-->
             <Patch>php5-imap-symlink.diff</Patch>
-            <Patch>php5.2.0-mysqli-readmycnf.patch</Patch>
+            <!--<Patch>php5.2.0-mysqli-readmycnf.patch</Patch>
             <Patch>php5.2.0-mysql-readmycnf.patch</Patch>
             <Patch>use-devurandom.patch</Patch>
             <Patch compressionType="gz" level="1">suhosin-patch-5.2.14-0.9.7.patch.gz</Patch>
             <Patch>system-timezone.patch</Patch>
-            <Patch level="1">autoconf-2.65.patch</Patch>
+            <Patch level="1">autoconf-2.65.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -169,6 +169,13 @@
 
 
     <History>
+        <Update release="104" type="security">
+            <Date>2012-10-13</Date>
+            <Version>5.4.5</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="103">
             <Date>2011-07-06</Date>
             <Version>5.2.14</Version>
