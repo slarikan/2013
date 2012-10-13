@@ -15,6 +15,7 @@
         <Archive sha1sum="57adaafd29d59b3685c923342717e767a0323474" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-evdev-2.7.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>libmtdev-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,6 +24,7 @@
         <RuntimeDependencies>
             <Dependency>xkeyboard-config</Dependency>
             <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>libmtdev</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
