@@ -8,9 +8,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "glfw-%s" % get.srcVERSION()
-
 def build():
+    pisitools.dosed("compile.sh", '(GLFW_LFLAGS="\$LFLAGS\s-lGL)"', r'\1 -lrt"')
     autotools.make("x11")
 
 def install():
