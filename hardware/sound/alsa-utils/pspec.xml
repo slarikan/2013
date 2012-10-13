@@ -5,18 +5,18 @@
         <Name>alsa-utils</Name>
         <Homepage>http://www.alsa-project.org/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
         <Summary>Advanced Linux Sound Architecture (ALSA) utilities</Summary>
         <Description>alsa-utils contains command line utilities for the Advanced Linux Sound Architecture (ALSA).</Description>
-        <Archive sha1sum="09921047d94369b9bc9f84fb29c61a6baae91bbb" type="tarbz2">ftp://ftp.alsa-project.org/pub/utils/alsa-utils-1.0.24.2.tar.bz2</Archive>
+        <Archive sha1sum="f94de00eca0671c38b7af9828c0ec8b59f9ee3f0" type="tarbz2">https://github.com/circass/pisi-work/raw/master/cekirdek/alsa-utils-1.0.26.5.g60178.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
-            <Dependency versionFrom="1.0.24.1">alsa-lib-devel</Dependency>
+            <Dependency versionFrom="1.0.25.20121013">alsa-lib-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>dialog</Dependency>
             <Dependency>libsamplerate</Dependency>
-            <Dependency versionFrom="1.0.24.1">alsa-lib</Dependency>
+            <Dependency versionFrom="1.0.25.20121013">alsa-lib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -41,6 +41,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/alsa/alsactl.conf">alsactl.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/alsa/01beep.conf">01beep.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0755" target="/usr/bin/alsaunmute">alsaunmute</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/man/man1/alsaunmute.1">alsaunmute.1</AdditionalFile>
         </AdditionalFiles>
@@ -50,6 +51,20 @@
     </Package>
 
     <History>
+        <Update release="52">
+            <Date>2012-10-13</Date>
+            <Version>1.0.25.20121013</Version>
+            <Comment>version bump frome git snapshot</Comment> 
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+      <Update release="47">
+            <Date>2012-01-29</Date>
+            <Version>1.0.25</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="46">
             <Date>2011-02-09</Date>
             <Version>1.0.24.2</Version>
