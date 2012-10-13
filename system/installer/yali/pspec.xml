@@ -31,7 +31,7 @@
         <Name>yali</Name>
         <RuntimeDependencies>
             <Dependency>python-qt</Dependency>
-            <Dependency>eject</Dependency>
+            <Dependency versionFrom="2.22">util-linux</Dependency>
             <!--
             <Dependency>gptsync</Dependency>
             -->
