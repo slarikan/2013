@@ -20,5 +20,8 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
+    pisitools.remove("/usr/share/man/man1/eject.1")
+    pisitools.remove("/usr/bin/eject")
 
     pisitools.dodoc("ChangeLog", "README", "PORTING", "TODO", "AUTHORS", "NEWS", "PROBLEMS")
