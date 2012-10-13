@@ -12,14 +12,10 @@
         <IsA>library</IsA>
         <Summary>Python binding for the ALSA library</Summary>
         <Description>python-alsa contains Python bindings for the ALSA library.</Description>
-        <Archive sha1sum="eb29e3ebb5df85df4f68cbef69478cb0c52e8199" type="tarbz2">ftp://ftp.alsa-project.org/pub/pyalsa/pyalsa-1.0.22.tar.bz2</Archive>
+        <Archive sha1sum="eb29e3ebb5df85df4f68cbef69478cb0c52e8199" type="tarbz2">https://github.com/circass/pisi-work/raw/master/cekirdek/pyalsa-1.0.26.0.g6485f.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">alsa-python.git-be65a15ded5055ba69e0b619c66f977eb529e794.patch</Patch>
-            <Patch level="1">alsa-python.git-cf1395da1fe8734ae4a33bca970547a176a1e2fd.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -34,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-10-13</Date>
+            <Version>1.0.26.20121013</Version>
+            <Comment>version bump frome git snapshot</Comment> 
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-01-15</Date>
             <Version>1.0.22</Version>
