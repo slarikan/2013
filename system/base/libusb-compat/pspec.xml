@@ -17,9 +17,6 @@
             <Dependency>libtool</Dependency>
             <Dependency>libusbx-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-	    <Patch level="0">libusb-0.1-libusbx.patch</Patch>
-	</Patches> 
     </Source>
 
     <Package>
