@@ -12,7 +12,7 @@ WorkDir = "cfitsio"
 
 def setup():
     autotools.autoreconf("-fi")
-    autotools.configure("--disable-static")
+    autotools.configure()
 
 def build():
     autotools.make("shared")
@@ -21,6 +21,9 @@ def build():
         autotools.make(t)
 
     pisitools.dosed("cfitsio.pc", "\\$\\{prefix\\}/include", "${prefix}/include/%s" % get.srcNAME())
+
+def check():
+    autotools.make("testprog")
 
 def install():
     for t in ("fpack", "funpack", "imcopy", "fitscopy"):
