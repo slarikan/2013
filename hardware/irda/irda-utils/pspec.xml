@@ -40,13 +40,16 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/irda">irda.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/irda.service">irda.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
         <Update release="12">
             <Date>2012-10-01</Date>
             <Version>0.9.18</Version>
-            <Comment>Remove comar service script, use systemd</Comment>
+            <Comment>systemd service file</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
         </Update>

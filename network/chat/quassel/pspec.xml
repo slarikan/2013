@@ -90,6 +90,7 @@
         </Files>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="service.py">System.Service</COMAR>
         </Provides>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="755" target="/lib/systemd/system/quassel.service">quassel.service</AdditionalFile>
@@ -115,7 +116,7 @@
         <Update release="8">
             <Date>2012-10-05</Date>
             <Version>0.8.0</Version>
-            <Comment>Use systemd service script instead of COMAR one</Comment>
+            <Comment>systemd service file</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
         </Update>

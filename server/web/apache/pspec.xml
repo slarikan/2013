@@ -163,6 +163,10 @@
             <AdditionalFile target="/var/www/localhost/htdocs/icons/small/up.gif" permission="0755" owner="root">webroot/icons/small/up.gif</AdditionalFile>
             <AdditionalFile target="/var/www/localhost/htdocs/icons/small/up.png" permission="0755" owner="root">webroot/icons/small/up.png</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+             <COMAR script="package.py">System.Package</COMAR>
+             <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
@@ -170,7 +174,7 @@
             <Date>2012-10-07</Date>
             <Version>2.4.3</Version>
             <Comment>*Delete unnecessary patches
-                     *Use systemd service file
+                     *systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>

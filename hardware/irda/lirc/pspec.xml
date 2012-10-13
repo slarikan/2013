@@ -51,6 +51,9 @@
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/lirc.service">lirc.service</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/lircmd.service">lircmd.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <Package>
@@ -69,7 +72,7 @@
             <Date>2012-10-01</Date>
             <Version>0.9.0</Version>
             <Comment>* Version Bump
-                     * Replace comar service script with systemd script
+                     * systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>

@@ -34,15 +34,16 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/smartd">smartmontools.sysconf</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
         <Update release="9">
             <Date>2012-10-01</Date>
             <Version>5.43</Version>
-            <Comment>* Version bump
-                     * Remove comar service script
-            </Comment>
+            <Comment>Version bump</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
         </Update>
