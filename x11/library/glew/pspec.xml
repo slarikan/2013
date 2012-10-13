@@ -20,6 +20,7 @@
         <BuildDependencies>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
@@ -36,6 +37,7 @@
         <RuntimeDependencies>
             <Dependency>freeglut</Dependency>
             <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>libXmu</Dependency>
@@ -67,13 +69,16 @@
         <BuildType>emul32</BuildType>
         <BuildDependencies>
             <Dependency>mesa-32bit</Dependency>
+            <Dependency>mesa-glu-32bit</Dependency>
             <Dependency>libXi-32bit</Dependency>
             <Dependency>libX11-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">glew</Dependency>
             <Dependency>mesa-32bit</Dependency>
+            <Dependency>mesa-glu-32bit</Dependency>
             <Dependency>libXi-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
         </RuntimeDependencies>
 
         <Files>

@@ -34,6 +34,9 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/irqbalance">irqbalance.confd</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/irqbalance.service">irqbalance.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>

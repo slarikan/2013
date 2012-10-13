@@ -29,6 +29,9 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/nbd-server/allow">nbd-allow</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/nbd.service">nbd.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>

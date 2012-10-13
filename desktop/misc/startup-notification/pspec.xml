@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Application startup notification and feedback library</Summary>
         <Description>startup-notification is a sample implementation of startup notification (telling the desktop environment when an app is done starting up).</Description>
-        <Archive sha1sum="670c5e44f59e3844e2ca0c67730ba9ca5f5228fc" type="targz">http://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.10.tar.gz</Archive>
+        <Archive sha1sum="4198bce2808d03160454a2940d989f3a5dc96dbb" type="targz">http://www.freedesktop.org/software/startup-notification/releases/startup-notification-0.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>xcb-util-devel</Dependency>
         </BuildDependencies>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-13</Date>
+            <Version>0.12</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>0.10</Version>

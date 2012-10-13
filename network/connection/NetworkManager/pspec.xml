@@ -83,6 +83,9 @@
             <AdditionalFile owner="root" permission="0755" target="/usr/sbin/migrate-comar-network-profiles">migrate-comar-network-profiles</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/polkit-1/localauthority/10-vendor.d/01-org.freedesktop.NetworkManager.settings.modify.system.pkla">gentoo/01-org.freedesktop.NetworkManager.settings.modify.system.pkla</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <Package>

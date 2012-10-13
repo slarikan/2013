@@ -41,6 +41,9 @@
 
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/mdadm.service">mdadm.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <Package>

@@ -38,6 +38,9 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/acpid">fedora/acpid.sysconfig</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/acpid.service">fedora/acpid.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
@@ -45,7 +48,7 @@
             <Date>2012-10-01</Date>
             <Version>2.0.17</Version>
             <Comment> * Version bump
-                      * Systemd migration: remove comar service script
+                      * Systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>

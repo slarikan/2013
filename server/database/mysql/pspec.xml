@@ -129,7 +129,7 @@
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/mysql-server.service">mysqld.service</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-             <COMAR script="package.py">System.Package</COMAR>
+             <COMAR script="service.py">System.Service</COMAR>
         </Provides>
     </Package>
 
@@ -147,7 +147,7 @@
             <Date>2012-10-08</Date>
             <Version>5.5.28</Version>
             <Comment>* Version bump
-                     * Use systemd service file
+                     * systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>

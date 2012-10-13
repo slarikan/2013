@@ -144,6 +144,7 @@
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
+            <COMAR script="service.py" name="atieventsd">System.Service</COMAR>
         </Provides>
     </Package>
 

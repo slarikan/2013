@@ -1,0 +1,74 @@
+<PISI>
+    <Source>
+        <Name>colord</Name>
+        <Homepage>http://www.freedesktop.org/software/colord</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <PartOf>x11.misc</PartOf>
+        <IsA>library</IsA>
+        <Summary>Colord is a system activated daemon that maps devices to color profiles</Summary>
+        <Description>Colord is a system activated daemon that maps devices to color profiles. It is used by GNOME Color Manager for system integration and use when there are no users logged in.</Description>
+        <Archive sha1sum="08019c86f89b1675e4e155772cc555ed748f319e" type="tarxz">http://www.freedesktop.org/software/colord/releases/colord-0.1.23.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>lcms2-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>polkit-devel</Dependency>
+        </BuildDependencies>
+	<Patches>
+	    <Patch level="0">colord-0.1.11-fix-automagic-vala.patch</Patch>
+	</Patches>
+    </Source>
+    
+    <Package>
+        <Name>colord</Name>
+        <RuntimeDependencies>
+            <Dependency>lcms2</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>polkit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+	    <Path fileType="library">/lib</Path>
+	    <Path fileType="data">/var/lib/colord/icc/</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="executable">/usr/libexec/colord</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="data">/usr/share/color</Path>
+	    <Path fileType="data">/usr/share/dbus-1</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/gir-1.0</Path>
+	    <Path fileType="data">/usr/share/polkit-1</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="data">/var</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>colord-devel</Name>
+	<Summary> Colord için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">colord</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2012-10-13</Date>
+            <Version>0.1.23</Version>
+            <Comment>First Release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+    </History>
+</PISI>

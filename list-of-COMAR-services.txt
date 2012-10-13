@@ -24,7 +24,7 @@ hardware/disk/nbd-utils/comar/service.py                                +
 hardware/disk/smartmontools/comar/service.py                            +
 hardware/info/gkrellm/comar/service.py                                  +
 hardware/info/hal/comar/service.py                                      XXXXXXXXXX
-hardware/info/smolt/comar/service.py
+hardware/info/smolt/comar/service.py                                    XXXXXXXXXX
 hardware/irda/irda-utils/comar/service.py                               +
 hardware/irda/lirc/comar/service.py                                     +
 hardware/misc/setserial/comar/service.py
