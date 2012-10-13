@@ -13,7 +13,7 @@ from pisi.actionsapi import shelltools
 
 
 def setup():
-    autotools.autoreconf("-vfi")
+#    autotools.autoreconf("-vfi")
 
     options = "--disable-warnings \
              --disable-warnings-as-errors \
