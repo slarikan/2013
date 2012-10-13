@@ -1,12 +1,11 @@
 <?xml version="1.0" ?>
-<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>alsa-utils</Name>
         <Homepage>http://www.alsa-project.org/</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
@@ -16,7 +15,7 @@
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
-            <Dependency versionFrom="1.0.25.20121013">alsa-lib-devel</Dependency>
+            <Dependency versionFrom="1.0.26.20121013">alsa-lib-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +24,7 @@
         <RuntimeDependencies>
             <Dependency>dialog</Dependency>
             <Dependency>libsamplerate</Dependency>
-            <Dependency versionFrom="1.0.25.20121013">alsa-lib</Dependency>
+            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -51,9 +50,9 @@
     </Package>
 
     <History>
-        <Update release="52">
+        <Update release="48">
             <Date>2012-10-13</Date>
-            <Version>1.0.25.20121013</Version>
+            <Version>1.0.26.20121013</Version>
             <Comment>version bump frome git snapshot</Comment> 
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>

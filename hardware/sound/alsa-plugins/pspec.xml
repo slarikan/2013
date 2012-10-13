@@ -4,8 +4,8 @@
         <Name>alsa-plugins</Name>
         <Homepage>http://www.alsa-project.org/</Homepage>
         <Packager>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -16,7 +16,7 @@
             <Dependency>jack-audio-connection-kit-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
-            <Dependency versionFrom="1.0.25.20121013">alsa-lib-devel</Dependency>
+            <Dependency versionFrom="1.0.26.20121013">alsa-lib-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
             <Dependency>speex-devel</Dependency>
         </BuildDependencies>
@@ -33,7 +33,7 @@
             <Dependency>jack-audio-connection-kit</Dependency>
             <Dependency>libsamplerate</Dependency>
             <Dependency>alsa-utils</Dependency>
-            <Dependency versionFrom="1.0.25.20121013">alsa-lib</Dependency>
+            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
             <Dependency>ffmpeg</Dependency>
             <Dependency>speex</Dependency>
         </RuntimeDependencies>
@@ -58,8 +58,8 @@
         <Name>alsa-plugins-pulseaudio</Name>
         <Summary>alsa-plugins-pulseaudio allows any program that uses the ALSA API to access a PulseAudio daemon</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.25.20121013">alsa-lib</Dependency>
-            <Dependency versionFrom="1.0.25.20121013">alsa-utils</Dependency>
+            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
+            <Dependency versionFrom="1.0.26.20121013">alsa-utils</Dependency>
             <Dependency>pulseaudio</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
         </RuntimeDependencies>
@@ -79,17 +79,17 @@
     <History>
         <Update release="19">
             <Date>2012-01-29</Date>
-            <Version>1.0.25.20121013</Version>
+            <Version>1.0.26.20121013</Version>
             <Comment>version bump frome git snapshot</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="18">
-            <Date>2012-01-29</Date>
-            <Version>1.0.25</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
+      <Update release="51">
+            <Date>2012-10-05</Date>
+            <Version>1.0.26</Version>
+            <Comment>version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="17">
             <Date>2011-02-03</Date>
