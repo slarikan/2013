@@ -53,8 +53,8 @@ diff -Nur net-tools-1.60.orig/config.h net-tools-1.60/config.h
 +#define HAVE_HWSLIP 1
 +#define HAVE_HWPPP 1
 +#define HAVE_HWTUNNEL 1
-+#define HAVE_HWSTRIP 1
-+#define HAVE_HWTR 1
++#define HAVE_HWSTRIP 0
++#define HAVE_HWTR 0
 +#define HAVE_HWAX25 1
 +#define HAVE_HWROSE 1
 +#define HAVE_HWNETROM 1
@@ -99,8 +99,8 @@ diff -Nur net-tools-1.60.orig/config.make net-tools-1.60/config.make
 +HAVE_HWSLIP=1
 +HAVE_HWPPP=1
 +HAVE_HWTUNNEL=1
-+HAVE_HWSTRIP=1
-+HAVE_HWTR=1
++HAVE_HWSTRIP=0
++HAVE_HWTR=0
 +HAVE_HWAX25=1
 +HAVE_HWROSE=1
 +HAVE_HWNETROM=1

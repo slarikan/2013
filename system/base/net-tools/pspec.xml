@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="48">
+            <Date>2012-10-13</Date>
+            <Version>1.60</Version>
+            <Comment>Disable HWTR and HWSTRIP for kernel >= 3.6</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="47">
             <Date>2011-06-01</Date>
             <Version>1.60</Version>
