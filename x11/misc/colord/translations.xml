@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>colord</Name>
+	<Summary xml:lang="en">Colord is a system activated daemon that maps devices to color profiles.</Summary>
+        <Description xml:lang="en">Colord is a system activated daemon that maps devices to color profiles. It is used by GNOME Color Manager for system integration and use when there are no users logged in. </Description>
+    </Source>
+
+    <Package>
+        <Name>colord-devel</Name>
+        <Summary xml:lang="tr">Colord için geliştirme başlıkları</Summary>
+    </Package>
+</PISI>
