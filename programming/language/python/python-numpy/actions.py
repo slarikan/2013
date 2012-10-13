@@ -29,5 +29,4 @@ def install():
     pisitools.doman("numpy/f2py/f2py.1")
 
     pisitools.insinto(f2py_docs, "numpy/f2py/docs/*.txt")
-    pisitools.remove("/usr/lib/%s/site-packages/numpy/*.txt" % get.curPYTHON())
-    pisitools.dodoc("COMPATIBILITY", "DEV_README.txt", "THANKS.txt")
+    pisitools.dodoc("COMPATIBILITY", "DEV_README.txt", "LICENSE.txt", "THANKS.txt")
