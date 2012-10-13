@@ -63,6 +63,9 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/X11/xorg-safe-fbdev.conf">xorg-safe-fbdev.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/X11/xorg-safe-vesa.conf">xorg-safe-vesa.conf</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+             <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
@@ -70,7 +73,7 @@
             <Date>2012-10-04</Date>
             <Version>1.1.11</Version>
             <Comment>* Version Bump
-                     * Use systemd service instead of COMAR
+                     * systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>

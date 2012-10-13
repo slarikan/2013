@@ -72,6 +72,9 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/misc/oui.txt">oui-20121001.txt</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <Package>
@@ -116,7 +119,7 @@
             <Date>2012-10-01</Date>
             <Version>4.101</Version>
             <Comment> *Version bump
-                      *Remove COMAR service script add systemd script
+                      *systemd service file
                       *Update oui.txt
             </Comment>
             <Name>Erdem Artan</Name>

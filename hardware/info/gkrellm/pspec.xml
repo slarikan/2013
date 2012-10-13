@@ -56,6 +56,9 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/gkrellm.png">gkrellm.png</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/gkrellmd.service">gkrellmd.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <Package>
@@ -76,7 +79,7 @@
             <Date>2012-10-01</Date>
             <Version>2.3.5</Version>
             <Comment>* Version Bump
-                     * Remove comar script, use systemd
+                     * Systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>

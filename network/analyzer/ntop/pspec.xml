@@ -59,13 +59,16 @@
             <AdditionalFile target="/etc/conf.d/ntop" owner="ntop" group="ntop" permission="0600">ntop.conf</AdditionalFile>
             <AdditionalFile target="/lib/systemd/system/ntop.service" owner="root" group="root" permission="0644">ntop.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
         <Update release="7">
             <Date>2012-10-05</Date>
             .<Version>5.0.1</Version>
-            <Comment>Use COMAR service script</Comment>
+            <Comment>systemd service file</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
         </Update>

@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libao-devel</Dependency>
-	    <Dependency>libXaw-devel</Dependency>
+            <Dependency>libXaw-devel</Dependency>
             <Dependency>flac-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>speex-devel</Dependency>
@@ -24,12 +24,11 @@
             <Dependency>libogg-devel</Dependency>
             <Dependency>jack-audio-connection-kit-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
-	    <Dependency>Xaw3d-devel</Dependency>
+            <Dependency>Xaw3d-devel</Dependency>
         </BuildDependencies>
-    <Patches>
-            <Patch level="1">timidity++-2.14.0-revert-for-required-ctl_speana_data-function.patch</Patch>
-           
-	  </Patches>
+        <Patches>
+                <Patch level="1">timidity++-2.14.0-revert-for-required-ctl_speana_data-function.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -37,7 +36,7 @@
         <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
             <Dependency>libao</Dependency>
-	    <Dependency>libXaw</Dependency>
+            <Dependency>libXaw</Dependency>
             <Dependency>flac</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>speex</Dependency>
@@ -46,7 +45,7 @@
             <Dependency>jack-audio-connection-kit</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>timidity-shompatches</Dependency>
-	    <Dependency>Xaw3d</Dependency>
+            <Dependency>Xaw3d</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
