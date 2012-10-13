@@ -42,7 +42,6 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>gsm-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>libXinerama-devel</Dependency>
