@@ -29,7 +29,6 @@
             <Dependency version="4.10.0">xfce4-dev-tools</Dependency>
             <Dependency>gtk-doc</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -47,7 +46,6 @@
             <Dependency>libnotify</Dependency>
             <Dependency>python-gtk</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>hal</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
