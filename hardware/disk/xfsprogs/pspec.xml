@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>XFS filesystem utilities</Summary>
         <Description>xfsprogs contains a number of administrative utilities to work with and manage XFS filesystems.</Description>
-        <Archive sha1sum="f730d38cd7081861253d0439166f4ce54ceca4bd" type="targz">ftp://oss.sgi.com/projects/xfs/cmd_tars/xfsprogs-3.1.8.tar.gz</Archive>
+        <Archive sha1sum="f730d38cd7081861253d0439166f4ce54ceca4bd" type="targz">ftp://ftp.archlinux.org/other/xfsprogs/xfsprogs-3.1.8.tar.gz</Archive>
     </Source>
 
     <Package>
