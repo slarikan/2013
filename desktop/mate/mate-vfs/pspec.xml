@@ -24,7 +24,6 @@
 	    <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
 	    <Dependency>samba-devel</Dependency>
-	    <Dependency>hal-devel</Dependency>
 	    <Dependency>openssl-devel</Dependency>
 	    <Dependency>gtk-doc</Dependency>
 	    <Dependency>libxml2-devel</Dependency>
@@ -59,7 +58,6 @@
 	    <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>mate-conf</Dependency>
 	    <Dependency>samba</Dependency>
-	    <Dependency>hal</Dependency>
 	    <Dependency>openssl-devel</Dependency>
 	    <Dependency>gtk-doc</Dependency>
 	    <Dependency>libxml2</Dependency>
