@@ -22,4 +22,4 @@ def install():
     #pisitools.insinto("%s/share/proj" % get.defaultprefixDIR(), "nad/test*")
     #pisitools.insinto("%s/share/proj" % get.defaultprefixDIR(), "nad/pj_out*.dist")
 
-    #pisitools.dodoc("nad/README.NAD", "nad/README.NADUS")
+    pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "NEWS", "README")
