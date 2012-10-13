@@ -5,15 +5,15 @@
         <Name>alsa-lib</Name>
         <Homepage>http://www.alsa-project.org/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>The Advanced Linux Sound Architecture (ALSA) library</Summary>
         <Description>alsa-lib provides ALSA runtime libraries to simplify application programming and provide higher level functionality as well as support for the older OSS API, providing binary compatibility for most OSS programs.</Description>
-        <Archive sha1sum="3928ec629d66892394d1f87d8b2f87500b973e59" type="tarbz2">http://alsa.cybermirror.org/lib/alsa-lib-1.0.26.tar.bz2</Archive>
+        <Archive sha1sum="62f8339b7c4174ed4f6571b0c8f3a91fc411f539" type="tarbz2">https://github.com/circass/pisi-work/raw/master/cekirdek/alsa-lib-1.0.26.30.g4bdb0.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -56,12 +56,19 @@
     </Package>
 
     <History>
-        <Update release="51">
-            <Date>2012-10-05</Date>
-            <Version>1.0.26</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+        <Update release="52">
+            <Date>2012-10-13</Date>
+            <Version>1.0.25.20121013</Version>
+            <Comment>version bump frome git snapshot</Comment> 
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+      <Update release="51">
+            <Date>2012-01-29</Date>
+            <Version>1.0.25</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Update>
         <Update release="50">
             <Date>2011-03-01</Date>
