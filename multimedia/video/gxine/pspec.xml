@@ -16,7 +16,6 @@
         <Archive sha1sum="dc01b617641d6eac4152259c592f15f31b9d9bf0" type="tarbz2">http://prdownloads.sourceforge.net/xine/gxine-0.5.905.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXaw-devel</Dependency>
             <Dependency>libXinerama-devel</Dependency>
@@ -44,7 +43,6 @@
         <Name>gxine</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXaw</Dependency>
             <Dependency>libXinerama</Dependency>

@@ -19,9 +19,9 @@
             <Dependency>gettext</Dependency>
         </BuildDependencies>
         <Patches>
-			<Patch level="1">dont_compile_pyo.patch</Patch>
-			<Patch level="1">dont_use_local.patch</Patch>
-		</Patches>
+            <Patch level="1">dont_compile_pyo.patch</Patch>
+            <Patch level="1">dont_use_local.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -37,7 +37,6 @@
             <Dependency>libgpod</Dependency>
             <Dependency>gst-plugins-ugly</Dependency>
             <Dependency>sexy-python</Dependency>
-            <Dependency>hal</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

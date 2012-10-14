@@ -31,7 +31,6 @@
             <Dependency>gconf</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>libgnome-keyring</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>libnotify</Dependency>
         </RuntimeDependencies>
