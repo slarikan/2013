@@ -17,7 +17,7 @@ def setup():
 def build():
     # For fixing links' sandbox violations
     shelltools.export("HOME", get.workDIR())
-    autotools.make("-C scripts scripts")
+    autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
