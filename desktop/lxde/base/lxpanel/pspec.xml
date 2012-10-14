@@ -38,6 +38,7 @@
             <Dependency releaseFrom="3">lxde-menu-cache</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
 	    <Dependency>libwnck</Dependency>
+            <Dependency>network-manager-applet</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
