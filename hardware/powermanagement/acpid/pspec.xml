@@ -38,6 +38,9 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/conf.d/acpid">fedora/acpid.sysconfig</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/acpid.service">fedora/acpid.service</AdditionalFile>
         </AdditionalFiles>
+	<Provides>
+            <COMAR script="service.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
