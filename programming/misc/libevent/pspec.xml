@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library to execute a function when a specific event occurs on a file descriptor</Summary>
         <Description>The libevent API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. libevent is meant to replace the asynchronous event loop found in event driven network servers. An application just needs to call event_dispatch() and can then add or remove events dynamically without having to change the event loop.</Description>
-        <Archive sha1sum="fa2e1643101a8f8eba8e6fcffdce97cb9309c1d2" type="targz">http://monkey.org/~provos/libevent-2.0.12-stable.tar.gz</Archive>
+        <Archive sha1sum="20bb4a1a296ac93c08dfc32ae19ab874cab67a0c" type="targz">https://github.com/downloads/libevent/libevent/libevent-2.0.20-stable.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-10-14</Date>
+            <Version>2.0.20</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2011-06-28</Date>
             <Version>2.0.12</Version>
