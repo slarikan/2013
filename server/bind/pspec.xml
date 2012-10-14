@@ -5,29 +5,20 @@
         <Name>bind</Name>
         <Homepage>http://www.isc.org/products/BIND/bind9.html</Homepage>
         <Packager>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>as-is</License>
         <IsA>service</IsA>
         <Summary>The Berkeley Internet Name Domain (BIND) DNS (Domain Name System) server</Summary>
         <Description>bind is an implementation of the DNS protocols, bind includes a DNS server (named), a resolver library and tools for verifying that the DNS server is operating properly.</Description>
-        <Archive sha1sum="78e14b3d3e653a8c21b098361b645dee5ed66238" type="targz">http://ftp.isc.org/isc/bind9/9.7.3/bind-9.7.3.tar.gz</Archive>
+        <Archive sha1sum="eb9fa7b497d67ce61a120cb96c302381bc385324" type="targz">ftp://ftp.isc.org/isc/bind9/9.9.2/bind-9.9.2.tar.gz</Archive>
         <Patches>
             <Patch level="1">nslookup-pardus.patch</Patch>
-
+            <Patch level="0">bind-9.7.3-odbc-dlz-detect.patch</Patch>
             <Patch level="1">fedora/bind-nonexec.patch</Patch>
             <Patch level="1">fedora/bind-9.5-PIE.patch</Patch>
             <Patch level="1">fedora/bind-96-dyndb.patch</Patch>
-
-            <!--<Patch level="1">fedora/bind-96-old-api.patch</Patch>-->
-            <!--<Patch level="1">fedora/bind-9.3.2b2-sdbsrc.patch</Patch>-->
-            <!--<Patch level="1">fedora/bind-9.5-sdb.patch</Patch>-->
-            <!--<Patch level="1">fedora/bind-9.3.2b1-fix_sdb_ldap.patch</Patch>-->
-            <!--<Patch level="1">fedora/bind-9.5-sdb-sqlite-bld.patch</Patch>-->
-
-            <Patch level="1">fedora/bind-9.5-overflow.patch</Patch>
-            <Patch level="1">fedora/bind-9.5-dlz-64bit.patch</Patch>
             <Patch level="1">fedora/bind-9.5-libidn.patch</Patch>
             <Patch level="1">fedora/bind-9.5-libidn2.patch</Patch>
             <Patch level="1">fedora/bind-9.5-libidn3.patch</Patch>
@@ -43,7 +34,9 @@
             <Patch level="1">fedora/bind97-exportlib.patch</Patch>
             <Patch level="1">fedora/bind97-rh645544.patch</Patch>
 
-            <Patch level="1">bind97-CVE-2011-2464.patch</Patch>
+            <Patch level="1">fedora/bind99-buildfix.patch</Patch>
+            <Patch level="1">fedora/bind99-forward.patch</Patch>
+            <Patch level="1">fedora/bind99-stat.patch</Patch>
         </Patches>
     </Source>
 
@@ -138,6 +131,13 @@
     </Package>
 
     <History>
+        <Update release="36">
+            <Date>2012-10-14</Date>
+            <Version>9.9.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="35">
             <Date>2011-08-12</Date>
             <Version>9.7.3</Version>
