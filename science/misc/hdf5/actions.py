@@ -11,16 +11,20 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="%s-%s" % (get.srcNAME(), get.srcVERSION().replace("_p", "-patch"))
-
 def setup():
+    # do not install examples
+    pisitools.dosed("Makefile.am", "^(install:\s.*?)install-examples", r"\1")
     autotools.autoreconf("-vif")
 
     autotools.configure("--enable-cxx \
                          --enable-fortran \
-                         --enable-production=no \
+                         --enable-production \
+                         --enable-linux-lfs \
                          --disable-static \
                          --disable-parallel \
+                         --disable-sharedlib-rpath \
+                         --disable-dependency-tracking \
+                         --with-pthread \
                          --with-pic")
 
 def build():
