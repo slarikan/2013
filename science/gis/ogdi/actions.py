@@ -22,7 +22,7 @@ def setup():
 def build():
     shelltools.export("TARGET", "Linux")
     shelltools.export("CFG", "release")
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     pisitools.dolib_so("bin/Linux/*.so")

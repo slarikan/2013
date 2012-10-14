@@ -16,7 +16,7 @@ WorkDir = "pygobject-%s" % get.srcVERSION()
 def setup():
     # autoreconf is for under linking problem
     autotools.autoreconf("-fi")
-    autotools.configure()
+    autotools.configure("--disable-introspection")
 
 def build():
     autotools.make()
@@ -24,5 +24,5 @@ def build():
 def install():
     autotools.install()
 
-    shelltools.chmod("%s/usr/share/pygobject/xsl/fixxref.py" % get.installDIR(), 0755)
+    #shelltools.chmod("%s/usr/share/pygobject/xsl/fixxref.py" % get.installDIR(), 0755)
     pisitools.dodoc("AUTHORS", "NEWS", "ChangeLog", "README")

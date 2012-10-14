@@ -40,4 +40,4 @@ def install():
     pisitools.dosym("links", "/usr/bin/links2")
 
     pisitools.dohtml("doc/links_cal")
-    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "NEWS", "README", "SITES", "TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README", "SITES")

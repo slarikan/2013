@@ -22,6 +22,7 @@
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
         <Patches>
+	    <Patch level="0">DirectFB-1.4.9-libpng-1.5.patch</Patch>
             <!--<Patch>headers.patch</Patch>
             <Patch level="1">cflags.patch</Patch>
             <Patch level="1">pkgconfig.patch</Patch>-->

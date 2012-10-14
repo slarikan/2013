@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>An HTTP library implementation in C</Summary>
         <Description>libsoup is an HTTP client/server library for GNOME.</Description>
-        <Archive sha1sum="8c551925a1b9da19a339a692b13ebf63942de5aa" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/libsoup/2.37/libsoup-2.37.92.tar.xz</Archive>
+        <Archive sha1sum="223e9243ab5434c5bdf7ce31032c27be3bda4400" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/libsoup/2.40/libsoup-2.40.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency releaseFrom="12">libgcrypt-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
@@ -38,6 +38,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="localedata">/usr/share/locale/</Path>
             <Path fileType="library">/usr/lib/girepository-1.0/Soup-2.4.typelib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
@@ -86,6 +87,13 @@
     </Package>
 
     <History>
+        <Update release="22" type="security">
+            <Date>2012-10-14</Date>
+            <Version>2.40.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="21" type="security">
             <Date>2012-09-03</Date>
             <Version>2.37.92</Version>

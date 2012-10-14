@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright 2007-2010 TUBITAK/UEKAE
+# Copyleft 2012 Pardus ANKA Community
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -11,7 +12,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="%s-%s" % (get.srcNAME(), get.srcVERSION().replace("_", "-").upper())
+#~ WorkDir="%s-%s" % (get.srcNAME(), get.srcVERSION().replace("_", "-").upper())
 
 BINDDIR="/var/named"
 CHROOT="%s/chroot" % BINDDIR
@@ -19,7 +20,7 @@ CHROOT="%s/chroot" % BINDDIR
 shelltools.export("CPPFLAGS", "%s -DDIG_SIGCHASE" % get.CXXFLAGS())
 
 def setup():
-    shelltools.makedirs("%s/%s/m4" % (get.workDIR(), WorkDir))
+    shelltools.makedirs("m4")
     # Fix PATHs in manpages
     pisitools.dosed("bin/named/named.8", "/etc/named.conf", "/etc/bind/named.conf")
     pisitools.dosed("bin/check/named-checkconf.8", "/etc/named.conf", "/etc/bind/named.conf")
@@ -50,7 +51,7 @@ def setup():
                          --disable-static")
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
@@ -75,6 +76,6 @@ def install():
 
     # Documentation
     pisitools.dodoc("CHANGES", "COPYRIGHT", "FAQ", "README")
-    pisitools.dodoc("doc/misc/*", "doc/draft/*", "doc/rfc/*", "contrib/named-bootconf/named-bootconf.sh", "contrib/nanny/nanny.pl")
+    pisitools.dodoc("doc/misc/*", "contrib/named-bootconf/named-bootconf.sh", "contrib/nanny/nanny.pl")
     pisitools.dohtml("doc/arm/*")
     pisitools.remove("/usr/share/doc/%s/Makefile*" % get.srcNAME())

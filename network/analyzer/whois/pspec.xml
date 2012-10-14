@@ -12,10 +12,10 @@
         <IsA>app:console</IsA>
         <Summary>Improved whois client</Summary>
         <Description>This is a new whois (RFC 3912) client rewritten from scratch. It is inspired from and compatible with the usual BSD and RIPE whois programs. It is intelligent and can automatically select the appropriate whois server for most queries.</Description>
-        <Archive sha1sum="0bcd40d78f9a3e0b64261aaa3be482d929a3343f" type="tarxz">http://ftp.debian.org/debian/pool/main/w/whois/whois_5.0.17.tar.xz</Archive>
+        <Archive sha1sum="0fe1c6b4cc8434bb7f4af1a51bae82868208c50b" type="tarxz">ftp://ftp.debian.org/debian/pool/main/w/whois/whois_5.0.20.tar.xz</Archive>
         <Patches>
             <Patch>whois-4.7.2-config-file.patch</Patch>
-            <Patch>whois-5.0.0-Makefile.patch</Patch>
+            <!--<Patch>whois-5.0.0-Makefile.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -24,13 +24,20 @@
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path filetype="localedata">/usr/share/locale</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc/whois</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="24">
+            <Date>2012-10-14</Date>
+            <Version>5.0.20</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="23">
             <Date>2012-09-01</Date>
             <Version>5.0.18</Version>
@@ -145,7 +152,7 @@
             <Comment>Version bump :
              * mkpasswd: use /dev/urandom to generate the salt. If it is not present, initialize srand(3) with gettimeofday(2) instead of time(2) to have a larger randomness space.
              * mkpasswd: added preliminary support for variable length salts.
-             * Updated the .co.za SLD, .tel, .gg and .je TLD servers. 
+             * Updated the .co.za SLD, .tel, .gg and .je TLD servers.
              * Added new ASN allocations.
             </Comment>
             <Name>Doruk Fişek</Name>
@@ -159,7 +166,7 @@
              * Added support for automatically determining the server for in-addr.arpa domains.
              * Added new IPv4 allocations.
              * Updated the .gi, .lc and .mn TLD servers.
-             * Translation fix.             
+             * Translation fix.
             </Comment>
             <Name>Doruk Fişek</Name>
             <Email>dfisek@fisek.com.tr</Email>
