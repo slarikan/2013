@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>icon-theme-elemantary</Name>
-        <Homepage>http://www.pardus.org.tr/</Homepage>
+        <Homepage>https://github.com/circass/elemantary-icon</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
