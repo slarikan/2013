@@ -10,6 +10,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
 
 def setup():
     autotools.configure()
