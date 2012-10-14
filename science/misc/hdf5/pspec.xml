@@ -13,12 +13,11 @@
         <IsA>library</IsA>
         <Summary>NCSA Hierarchical Data Format (HDF) Software Library and Utilities</Summary>
         <Description>HDF5 is a general purpose library and file format for storing scientific data.</Description>
-        <Archive sha1sum="68a073656e3b50fca5f6c6b58956bf1531ca94f9" type="tarbz2">http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.5-patch1.tar.bz2</Archive>
+        <Archive sha1sum="7d5e5e8caa5970c65e70a5b4ad6787efe0bf70bb" type="tarbz2">http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.9.tar.bz2</Archive>
         <Patches>
             <Patch level="1">noreturn.patch</Patch>
-            <Patch level="1">hdf5-1.8.5-tstlite.patch</Patch>
-            <Patch level="1">respect_doc_path.patch</Patch>
-            <Patch>hdf5-1.8.4-as-needed.patch</Patch>
+            <Patch level="1">hdf5-1.8.8-buildsystem.patch</Patch>
+            <Patch level="1">hdf5-ph5diff.patch</Patch>
         </Patches>
     </Source>
 
@@ -54,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-13</Date>
+            <Version>1.8.9</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-13</Date>
             <Version>1.8.5_p1</Version>
