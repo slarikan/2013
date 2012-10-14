@@ -35,7 +35,7 @@ configh = """
 #endif
 """
 
-shelltools.export("C_INCLUDE_PATH", "/usr/include")
+#~ shelltools.export("C_INCLUDE_PATH", "/usr/include")
 
 def fixperms(d):
     for root, dirs, files in os.walk(d):
@@ -48,10 +48,11 @@ def setup():
     # we must include headers, but kernel headers chango too fast, maybe we should
     # go back to adding them as a patch
     # shelltools.sym("/lib/modules/%s/build" % KDIR, "linux")
-    shelltools.copytree("/lib/modules/%s/build" % KDIR, "linux")
+    #~ shelltools.copytree("/lib/modules/%s/build" % KDIR, "linux")
 
     # set the build directory
-    shelltools.echo("MCONFIG", "KRNLOBJ = /lib/modules/%s/build" % KDIR)
+    #~ shelltools.echo("MCONFIG", "KRNLOBJ = /lib/modules/%s/build" % KDIR)
+    shelltools.sym("../linux-3.2.31","linux")
 
     # Workaround for prelink warnings
     shelltools.echo("70klibc", 'PRELINK_PATH_MASK="/usr/lib/klibc"')
