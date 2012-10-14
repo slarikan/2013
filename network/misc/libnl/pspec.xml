@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library for applications dealing with netlink sockets</Summary>
         <Description>libnl is a convenience library to simplify the usage of the Linux kernel's netlink sockets interface for network manipulation.</Description>
-        <Archive sha1sum="35f145de8553e9eac8c076d40b58a82cb2891be9" type="targz">http://www.infradead.org/~tgr/libnl/files/libnl-3.2.12.tar.gz</Archive>
+        <Archive sha1sum="3c0c93fd4c62ac441b5e4ff162eb8a5c5c0b0be9" type="targz">http://www.infradead.org/~tgr/libnl/files/libnl-3.2.13.tar.gz</Archive>
 
     </Source>
 
@@ -40,9 +40,16 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-14</Date>
+            <Version>3.2.13</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2012-09-01</Date>
-            <Version>3.12</Version>
+            <Version>3.2.12</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
