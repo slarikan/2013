@@ -14,6 +14,7 @@
         <Summary>A minimal libc subset for use with initramfs</Summary>
         <Description>klibc, or "early userspace", is library part of an effort which tries to move as much initialization code in Linux as possible out of the kernel.</Description>
         <Archive sha1sum="b6de46fccedeb294e8366c7134db7e1f8638fe6a" type="tarxz">http://ftp.kernel.org/pub/linux/libs/klibc/2.0/klibc-2.0.2.tar.xz</Archive>
+        <Archive sha1sum="19bfb6ff3cd14b0f7351c56404b0e133427e098a" type="tarbz2">https://www.kernel.org/pub/linux/kernel/v3.0/linux-3.2.31.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
             <!-- it is not a kernel module, should not depend on a spesific version -->
