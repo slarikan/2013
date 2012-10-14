@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>IEEE 802.1X/WPA supplicant for secure wireless transfers</Summary>
         <Description>wpa_supplicant is a WPA supplicant with support for WPA and WPA2.</Description>
-        <Archive sha1sum="ca51db8931fabf386352c87422f3e62fb44c3fe3" type="targz">http://hostap.epitest.fi/releases/wpa_supplicant-0.7.3.tar.gz</Archive>
+        <Archive sha1sum="22ce2a70863ee47768808453066b635293804e64" type="targz">http://hostap.epitest.fi/releases/wpa_supplicant-1.0.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="wpa_supplicant/.config">wpa_supplicant.config</AdditionalFile>
         </AdditionalFiles>
@@ -22,23 +22,24 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">ubuntu/01_use_pkg-config_for_pcsc-lite_module.patch</Patch>
-
+	    <Patch level="1">wpa_supplicant-1.0-generate-libeap-peer.patch</Patch>
+	    <Patch level="1">wpa_supplicant-1.0-dbus-path-fix.patch</Patch>
+	    <Patch level="1">wpa_supplicant-1.0-do-not-call-dbus-functions-with-NULL-path.patch</Patch>
             <Patch level="1">mandriva/wpa_supplicant-0.6.3-WEP232.patch</Patch>
-
             <Patch level="1">fedora/wpa_supplicant-openssl-more-algs.patch</Patch>
             <Patch level="1">fedora/wpa_supplicant-flush-debug-output.patch</Patch>
-            <Patch level="1">fedora/wpa_supplicant-squelch-driver-disconnect-spam.patch</Patch>
-            <Patch level="1">fedora/wpa_supplicant-dbus-service-file-args.patch</Patch>
+            <!--<Patch level="1">fedora/wpa_supplicant-squelch-driver-disconnect-spam.patch</Patch>-->
+            <!--<Patch level="1">fedora/wpa_supplicant-dbus-service-file-args.patch</Patch>-->
             <Patch level="1">fedora/wpa_supplicant-assoc-timeout.patch</Patch>
-            <Patch level="1">fedora/wpa_supplicant-quiet-scan-results-message.patch</Patch>
+            <!--<Patch level="1">fedora/wpa_supplicant-quiet-scan-results-message.patch</Patch>-->
 
             <Patch>suse/wpa_supplicant-driver-wext-debug.patch</Patch>
             <Patch>suse/wpa_supplicant-errormsg.patch</Patch>
 
             <!-- Add 3 patches from git://w1.fi/srv/git/hostap-07.git -->
-            <Patch level="1">0001-AP-Verify-that-HT40-secondary-channel-is-supported.patch</Patch>
-            <Patch level="1">0002-nl80211-Set-cipher-suites-when-using-user-space-SME.patch</Patch>
-            <Patch level="1">0003-dbus-Emit-property-changed-events-when-adding-removi.patch</Patch>
+            <Patch level="1">0001-AP-Verify-that-HT40-secondary-channel-is-supported.patch</Patch>-->
+            <!--<Patch level="1">0002-nl80211-Set-cipher-suites-when-using-user-space-SME.patch</Patch>-->
+            <!--<Patch level="1">0003-dbus-Emit-property-changed-events-when-adding-removi.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -74,6 +75,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-14</Date>
+            <Version>1.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="39">
             <Date>2011-03-04</Date>
             <Version>0.7.3</Version>
