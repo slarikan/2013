@@ -48,7 +48,7 @@
             <Date>2012-10-01</Date>
             <Version>2.0.17</Version>
             <Comment> * Version bump
-                      * Systemd migration: remove comar service script
+                      * Systemd service file
             </Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
