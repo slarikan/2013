@@ -10,7 +10,7 @@ diff -Nuar lxde-common-0.5.5.orig//desktop.conf lxde-common-0.5.5//desktop.conf
 -sNet/ThemeName=Clearlooks
 -sNet/IconThemeName=nuoveXT2
 +sNet/ThemeName=Oxygen
-+sNet/IconThemeName=milky
++sNet/IconThemeName=elemantary
  sGtk/FontName=Sans 10
  iGtk/ToolbarStyle=3
  iGtk/ButtonImages=1
