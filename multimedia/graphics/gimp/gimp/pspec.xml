@@ -14,8 +14,7 @@
         <Archive sha1sum="64ad90cedc5e8e348310b6eb6b7821ec110c0886" type="tarbz2">ftp://ftp.gimp.org/pub/gimp/v2.8/gimp-2.8.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>xdg-utils</Dependency>
-	    <Dependency>pkgconfig</Dependency>
-            <Dependency>hal-devel</Dependency>
+            <Dependency>pkgconfig</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>lcms-devel</Dependency>
@@ -83,7 +82,6 @@
             <Dependency>libXext</Dependency>
             <Dependency>librsvg</Dependency>
             <Dependency>libexif</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>libXfixes</Dependency>

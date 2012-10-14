@@ -17,7 +17,6 @@
         <Archive sha1sum="9f161d997eae613bc6431bcb2459e1aefad8d529" type="tarxz">ftp://ftp.videolan.org/pub/videolan/vlc/2.0.3/vlc-2.0.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.6.2">qt-devel</Dependency>
-            <Dependency>hal-devel</Dependency>
             <Dependency>dbus-devel</Dependency>
             <Dependency>libdvdread-devel</Dependency>
             <Dependency>libavc1394-devel</Dependency>

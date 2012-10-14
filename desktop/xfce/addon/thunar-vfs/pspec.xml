@@ -41,7 +41,6 @@
             <Dependency>gamin</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency>hal-libs</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
             <Dependency>startup-notification</Dependency>
