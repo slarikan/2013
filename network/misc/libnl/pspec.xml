@@ -23,7 +23,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="config">/etc/libnl</Path>
-            <Path filetype="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
         </Files>
     </Package>
 
