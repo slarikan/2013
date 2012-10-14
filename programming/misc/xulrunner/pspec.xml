@@ -114,7 +114,7 @@
             <Path fileType="data">/etc/gre.d</Path>
             <Path fileType="data">/etc/ld.so.conf.d</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib/xulrunner-15.0</Path>
+            <Path fileType="library">/usr/lib/xulrunner-16.0</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/lib/xulrunner-15.0/defaults/pref/all-pardus.js" permission="0644" owner="root">all-pardus.js</AdditionalFile>
