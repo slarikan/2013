@@ -19,7 +19,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.domove("/usr/include/libnl3/netlink", "/usr/include")
-    pisitools.removeDir("/usr/include/libnl3")
-
     pisitools.dodoc("COPYING", "ChangeLog")

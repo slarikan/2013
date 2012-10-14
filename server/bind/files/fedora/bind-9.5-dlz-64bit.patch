@@ -1,6 +1,6 @@
-diff -up bind-9.5.1b1/contrib/dlz/config.dlz.in.64bit bind-9.5.1b1/contrib/dlz/config.dlz.in
---- bind-9.5.1b1/contrib/dlz/config.dlz.in.64bit	2008-06-17 06:03:31.000000000 +0200
-+++ bind-9.5.1b1/contrib/dlz/config.dlz.in	2008-07-11 12:08:43.000000000 +0200
+diff -up bind-9.9.0/contrib/dlz/config.dlz.in.64bit bind-9.9.0/contrib/dlz/config.dlz.in
+--- bind-9.9.0/contrib/dlz/config.dlz.in.64bit	2011-11-05 06:14:28.000000000 +0100
++++ bind-9.9.0/contrib/dlz/config.dlz.in	2012-04-24 14:52:08.398511143 +0200
 @@ -17,6 +17,13 @@
  #
  dlzdir='${DLZ_DRIVER_DIR}'
@@ -28,7 +28,7 @@ diff -up bind-9.5.1b1/contrib/dlz/config.dlz.in.64bit bind-9.5.1b1/contrib/dlz/c
  				mysql_lib=$d/lib
  			fi
 @@ -274,11 +281,11 @@ case "$use_dlz_bdb" in
- 			bdb_libnames="db42 db-4.2 db41 db-4.1 db"
+ 			bdb_libnames="db48 db-4.8 db47 db-4.7 db46 db-4.6 db45 db-4.5 db44 db-4.4 db43 db-4.3 db42 db-4.2 db41 db-4.1 db"
  			for d in $bdb_libnames
  			do
 -				if test -f "$dd/lib/lib${d}.so"
