@@ -117,8 +117,8 @@
             <Path fileType="library">/usr/lib/xulrunner-16.0</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile target="/usr/lib/xulrunner-15.0/defaults/pref/all-pardus.js" permission="0644" owner="root">all-pardus.js</AdditionalFile>
-            <AdditionalFile target="/usr/lib/xulrunner-15.0/defaults/pref/lockdown.js" permission="0644" owner="root">toolkit-lockdown.js</AdditionalFile>
+            <AdditionalFile target="/usr/lib/xulrunner-16.0/defaults/pref/all-pardus.js" permission="0644" owner="root">all-pardus.js</AdditionalFile>
+            <AdditionalFile target="/usr/lib/xulrunner-16.0/defaults/pref/lockdown.js" permission="0644" owner="root">toolkit-lockdown.js</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script='package.py'>System.Package</COMAR>
