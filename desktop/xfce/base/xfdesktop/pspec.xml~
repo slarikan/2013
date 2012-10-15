@@ -35,11 +35,11 @@
             <Dependency version="4.10.0">xfce4-dev-tools</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">xfdesktop-4.10.0-background-location.patch</Patch>
             <Patch level="1">translations.patch</Patch>
-            <Patch level="1">xfdesktop-4.10.0-fix-use-after-free.patch</Patch>
-            <Patch level="1">xfdesktop-4.10.0-single-clock.patch</Patch>
-            <Patch level="1">xfdesktop-4.9.0-default-mdv-color.patch</Patch>
+            <Patch level="1">translations.patch</Patch>
+            <Patch level="1">translations.patch</Patch>
+            <Patch level="1">translations.patch</Patch>
+            <Patch level="1">translations.patch</Patch>
         </Patches>
     </Source>
 
