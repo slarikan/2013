@@ -9,7 +9,7 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    autotools.autoreconf("-vif")
+#    autotools.autoreconf("-vif")
 
     options = "--disable-static"
 
