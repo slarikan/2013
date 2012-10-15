@@ -48,15 +48,22 @@
             <Path fileType="data">/usr/share</Path>
         </Files>
         <AdditionalFiles>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/wallpapers/lxde-pardus.png">lxde-pardus.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/wallpapers/pardus-blue.png">pardus-blue.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/images/lxde_pardus2012_menu.png">pardus-2012_menu.png</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/images/PardusAnkaLogo.png">PardusAnkaLogo.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/wallpapers/lxde-pardus.png">lxde-pardus.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/wallpapers/pardus-blue.png">pardus-blue.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/images/lxde_pardus2012_menu.png">pardus-2012_menu.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxde/images/PardusAnkaLogo.png">PardusAnkaLogo.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/lxpanel/images/background-anka.png">background-anka.png</AdditionalFile>
         </AdditionalFiles>
-
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-10-15</Date>
+            <Version>0.5.5</Version>
+            <Comment>revision patchs</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
          <Update release="3">
             <Date>2012-07-01</Date>
             <Version>0.5.5</Version>
