@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86_64 3.5.6 Kernel Configuration
+# Linux/x86_64 3.5.7 Kernel Configuration
 #
 CONFIG_64BIT=y
 # CONFIG_X86_32 is not set
@@ -60,8 +60,8 @@ CONFIG_HAVE_KERNEL_BZIP2=y
 CONFIG_HAVE_KERNEL_LZMA=y
 CONFIG_HAVE_KERNEL_XZ=y
 CONFIG_HAVE_KERNEL_LZO=y
-CONFIG_KERNEL_GZIP=y
-#CONFIG_KERNEL_BZIP2 is not set
+# CONFIG_KERNEL_GZIP is not set
+CONFIG_KERNEL_BZIP2=y
 # CONFIG_KERNEL_LZMA is not set
 # CONFIG_KERNEL_XZ is not set
 # CONFIG_KERNEL_LZO is not set
@@ -5246,6 +5246,8 @@ CONFIG_CORDIC=m
 #
 # Unofficial 3rd party kernel additions
 #
+CONFIG_VIAHSS=m
+# CONFIG_ACERHK is not set
 
 #
 # RF Switch
@@ -5253,5 +5255,3 @@ CONFIG_CORDIC=m
 CONFIG_RFSWITCH=y
 CONFIG_AVERATEC_5100P=y
 CONFIG_PACKARDBELL_E5=y
-CONFIG_VIAHSS=m
-# CONFIG_ACERHK is not set
