@@ -14,19 +14,78 @@ diff -Nuar lxde-common-0.5.5.orig//desktop.conf lxde-common-0.5.5//desktop.conf
  sGtk/FontName=Sans 10
  iGtk/ToolbarStyle=3
  iGtk/ButtonImages=1
-diff -uNr old-lxde-common-0.5.5//lxpanel/panel.in lxde-common-0.5.5/lxpanel/panel.in
---- old-lxde-common-0.5.5//lxpanel/panel.in	2012-07-01 14:30:15.999518898 +0200
-+++ lxde-common-0.5.5/lxpanel/panel.in	2012-07-01 14:45:27.876518849 +0200
-@@ -29,7 +29,7 @@
+diff -ur old-lxde-common-0.5.5/lxpanel/panel.in lxde-common-0.5.5/lxpanel/panel.in
+--- old-lxde-common-0.5.5/lxpanel/panel.in	2011-07-29 17:04:03.000000000 +0300
++++ lxde-common-0.5.5/lxpanel/panel.in	2012-10-15 17:32:44.901000018 +0300
+@@ -11,12 +11,17 @@
+     transparent=0
+     tintcolor=#000000
+     alpha=0
++    autohide=0
++    heightwhenhidden=2
+     setdocktype=1
+     setpartialstrut=1
+     usefontcolor=1
++    fontsize=10
+     fontcolor=#ffffff
++    usefontsize=0
+     background=1
+-    backgroundfile=@prefix@/share/lxpanel/images/background.png
++    backgroundfile=/usr/share/lxpanel/images/background-anka.png
++    iconsize=24
+ }
+ 
+ Plugin {
+@@ -29,7 +34,7 @@
  Plugin {
      type = menu
      Config {
 -        image=@prefix@/share/lxde/images/lxde-icon.png
-+        image=@prefix@/share/lxde/images/PardusAnkaLogo.png
++        image=/usr/share/lxde/images/PardusAnkaLogo.png
          system {
          }
          separator {
-@@ -114,10 +114,6 @@
+@@ -53,7 +58,10 @@
+             id=pcmanfm.desktop
+         }
+         Button {
+-            id=firefox.desktop
++            id=/usr/share/applications/mozillafirefox.desktop
++        }
++        Button {
++            id=/usr/share/applications/kde4/package-manager.desktop
+         }
+     }
+ }
+@@ -68,8 +76,10 @@
+ Plugin {
+     type = wincmd
+     Config {
++        image=window-manager
+         Button1=iconify
+         Button2=shade
++        Toggle=0
+     }
+ }
+ 
+@@ -97,15 +107,13 @@
+     Config {
+         tooltips=1
+         IconsOnly=0
+-        AcceptSkipPager=1
+-        ShowIconified=1
+-        ShowMapped=1
+         ShowAllDesks=0
+         UseMouseWheel=1
+         UseUrgencyHint=1
+         FlatButton=0
+         MaxTaskWidth=150
+         spacing=1
++        GroupedTasks=0
+     }
+ }
+ 
+@@ -114,10 +122,6 @@
  }
  
  Plugin {
@@ -37,17 +96,27 @@ diff -uNr old-lxde-common-0.5.5//lxpanel/panel.in lxde-common-0.5.5/lxpanel/pane
      type = tray
  }
  
-diff -Naurp lxde-common.orig/lxpanel/panel.in lxde-common/lxpanel/panel.in
---- lxde-common.orig/lxpanel/panel.in	2012-07-01 15:49:00.131258426 +0200
-+++ lxde-common/lxpanel/panel.in	2012-07-01 16:32:13.444863442 +0200
-@@ -53,7 +53,7 @@ Plugin {
-             id=pcmanfm.desktop
-         }
-         Button {
--            id=firefox.desktop
-+            id=/usr/share/applications/mozillafirefox.desktop
-         }
+@@ -126,16 +130,21 @@
+     Config {
+         ClockFmt=%R
+         TooltipFmt=%A %x
+-        BoldFont=0
++        BoldFont=1
++        IconOnly=0
++        CenterText=0
      }
  }
  
-
+ Plugin {
++    type = cpu
++}
++
++Plugin {
+     type = launchbar
+     Config {
+         Button {
+             id=lxde-logout.desktop
+         }
+     }
+-}
+ 
