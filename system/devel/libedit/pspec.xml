@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libedit</Name>
+        <Homepage>http://www.thrysoee.dk/editline/</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>BSD-2</License>
+        <IsA>app:console</IsA>
+        <Summary>BSD replacement for libreadline.</Summary>
+        <Description>This Berkeley-style licensed command line editor library provides generic line editing, history, and tokenization functions, similar to those found in GNU Readline.</Description>
+        <Archive sha1sum="18ec27120f6abb222754e9f283d000fec0dcfc08" type="targz">http://www.thrysoee.dk/editline/libedit-20120601-3.0.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">libedit-ncursesprivate.patch</Patch>
+            <Patch level="1">libedit-20120311-3.0-el_fn_sh_complete.patch</Patch>
+            <Patch level="1">libedit-20110709.3.0-weak-reference.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>libedit</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-10-16</Date>
+            <Version>20120601.3.0</Version>
+            <Comment>First release</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
