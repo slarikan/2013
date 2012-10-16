@@ -18,7 +18,7 @@
         <Description>Thunderbird is a redesign of the Mozilla Mail Component. It is written using the XUL user interface language and designed to be cross-platform.</Description>
         <Archive sha1sum="827255a821d09764279e6ccaf7e7bcd13e20f25c" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/16.0.1/source/thunderbird-16.0.1.source.tar.bz2</Archive>
         <!-- with-fix-langpack: ca,tr,sv-SE-->
-        <Archive sha1sum="18b3e0df8b51624ded65288c2a58753bf2b79cbc" type="tarbz2" target="comm-release">http://content.wuala.com/contents/erdinc/kern/ff-l10/thunderbird-l10n-16.0.1.tar.bz2</Archive>	
+        <Archive sha1sum="2a4b3482ce7299dab3d9cddcf2c20346821eb365" type="tarbz2" target="comm-release">http://content.wuala.com/contents/erdinc/kern/ff-l10/thunderbird-l10n-16.0.1.tar.bz2</Archive>	
         <AdditionalFiles>
             <AdditionalFile target=".mozconfig">pardus/mozconfig</AdditionalFile>
             <AdditionalFile target=".pardus-default-prefs.js">pardus/pardus-default-prefs.js</AdditionalFile>
