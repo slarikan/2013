@@ -26,11 +26,14 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
     #sysvinit compability
+    #remove for now. continue at systemd branch
     for binary in ["reboot","halt","poweroff","shutdown","telinit","runlevel"]:
-        pisitools.dosym("../bin/systemctl","/sbin/%s" % binary)
-    pisitools.dosym("../lib/systemd/systemd","/bin/systemd")
-    pisitools.dosym("../bin/systemd","/sbin/init")
-    pisitools.dosym("loginctl","/bin/systemd-loginctl")
+        pisitools.remove("/usr/share/man/man8/%s.8", % i) # remove for now. shipping with sysvinit
+        #~ pisitools.dosym("../bin/systemctl","/sbin/%s" % binary)
+    #~ pisitools.dosym("../lib/systemd/systemd","/bin/systemd")
+    #~ pisitools.dosym("../bin/systemd","/sbin/init")
+    #~ pisitools.dosym("loginctl","/bin/systemd-loginctl")
+    
 
     #udev
     pisitools.dosym("../lib/udev/scsi_id", "/sbin/scsi_id")
