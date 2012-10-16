@@ -107,6 +107,27 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
         # for "include" statement.
         shutil.copy("/usr/share/baselayout/ld.so.conf", "/etc")
 
+    if fromRelease and int(fromRelease) < 177:
+        # Release 177 starts using /run and /run/lock instead of
+        # /var/run and /var/lock respectively
+        for i in os.listdir("/var/run"):
+            path = os.path.join("/var/run",i)
+            try:
+                if os.path.isdir(path):
+                    shutil.copytree(path, "/run/"+i)
+                if os.path.isfile(path):
+                    shutil.copy2(path, "/run/"+i)
+            except:
+                pass
+
+        shutil.rmtree("/run/lock")
+        shutil.copytree("/var/lock","/run/lock")
+
+        shutil.rmtree("/var/lock")
+        os.symlink("../run/lock", "/var/lock")
+        shutil.rmtree("/var/run")
+        os.symlink("../run", "/var/run")
+
     ##################################
     # Merge new system groups
     # addGroup(gid, name)
