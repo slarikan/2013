@@ -111,10 +111,7 @@
 
             <!-- OpenSuSE Kernel Patches -->
             <Patch level="1" compressionType="bz2">patches/suse/patches.apparmor.tar.bz2</Patch>
-            <Patch level="1">patches/suse/patches.drivers/ehea-modinfo.patch</Patch>
-            <Patch level="1">patches/suse/patches.drivers/elousb.patch</Patch>
-            <Patch level="1">patches/suse/patches.drivers/spi-orion-convert-to-new-infrastructure.patch</Patch>
-            <Patch level="1">patches/suse/patches.drivers/x86_acpi_cpufreq_autoload.patch</Patch>
+	    <Patch level="1" compressionType="bz2">patches/suse/patches.drivers.tar.bz2</Patch>
 
             <Patch level="1">patches/suse/patches.fixes/acpi_ec_sys_access_user_space_with_get_user.patch</Patch>
             <Patch level="1">patches/suse/patches.fixes/bridge-module-get-put.patch</Patch>
