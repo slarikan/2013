@@ -14,7 +14,7 @@ from pisi.actionsapi import shelltools
 WorkDir = "comm-release"
 MOZAPPDIR= "/usr/lib/MozillaThunderbird"
 
-locales = ["ca", "da", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "pt-BR", "ru",]
+locales = ["da", "de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "pt-BR", "ru",]
 
 def setup():
     # Use autoconf 2.13, pff
