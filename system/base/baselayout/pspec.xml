@@ -35,6 +35,7 @@
             <Path fileType="data" permanent="true">/mnt</Path>
             <Path fileType="data" permanent="true">/opt</Path>
             <Path fileType="data" permanent="true">/dev</Path>
+            <Path fileType="data" permanent="true">/run</Path>
             <Path fileType="data" permanent="true">/sys</Path>
             <Path fileType="data" permanent="true">/srv</Path>
             <Path fileType="data" permanent="true">/tmp</Path>
