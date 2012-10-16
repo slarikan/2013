@@ -20,7 +20,6 @@
 
             <!-- This causes unicode errors when mudur=safe, drop it (#16388) -->
             <Patch level="1">fix-unicode-error-on-mudur-safe.patch</Patch>
-            <Patch>mount_run_as_tmpfs.patch</Patch>
         </Patches>
     </Source>
 
@@ -65,16 +64,6 @@
     </Package>
 
     <History>
-        <Update release="127">
-            <Date>2012-10-16</Date>
-            <Version>4.1.3</Version>
-            <Comment>
-                    * /var/run -> /run
-                    * Mount /run as tmpfs
-            </Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
         <Update release="126">
             <Date>2011-01-24</Date>
             <Version>4.1.3</Version>

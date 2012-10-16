@@ -15,18 +15,30 @@ from pisi.actionsapi import get
 WorkDir="Firebird-%s-0" % get.srcVERSION()
 
 def setup():
-    shelltools.chmod("./src/misc/writeBuildNum.sh")
+    pisitools.dosed("src/isql/isql.epp", '"isql\s', '"fbsql ')
+    pisitools.dosed("src/msgs/history2.sql", 'isql\s', 'fbsql ')
+    pisitools.dosed("src/msgs/messages2.sql", 'isql\s', 'fbsql ')
+    pisitools.dosed("src/msgs/messages2.sql", 'ISQL\s', 'FBSQL ')
+    shelltools.system("find ./ -name \*.sh -print0 | xargs -0 chmod +x")
+    for d in ("btyacc", "editline", "icu"):
+        shelltools.unlinkDir("extern/%s" % d)
     autotools.autoreconf("-fi")
     autotools.configure("--prefix=/opt/firebird \
                          --disable-static \
                          --enable-superserver \
+                         --with-editline \
+                         --with-gnu-ld \
+                         --with-system-editline \
                          --with-system-icu \
-                         --with-editline")
+                         ")
 
 def build():
     #Parallel build is broken
     autotools.make("-j1")
     shelltools.cd("gen")
+    pisitools.dosed("install/makeInstallImage.sh", "exit 1", "# exit 1")
+    pisitools.dosed("install/makeInstallImage.sh", "chown", 'echo ""# chown')
+    pisitools.dosed("install/makeInstallImage.sh", "chmod", 'echo ""# chmod')
     autotools.make("-f Makefile.install buildRoot")
 
 def install():
@@ -38,9 +50,10 @@ def install():
     pisitools.domove("/opt/firebird/include", "/usr/include", "firebird")
 
     # Fix client libraries symlinks
-    pisitools.remove("/usr/lib/*")
+    pisitools.removeDir("/usr/lib*")
     for libs in os.listdir("%s/opt/firebird/lib" % get.installDIR()):
         pisitools.dosym("/opt/firebird/lib/%s" % libs, "/usr/lib/%s" % libs)
+    pisitools.dosym("/opt/firebird/plugins/libfbtrace.so", "/usr/lib/libfbtrace.so")
 
     # Add support for old client's
     pisitools.dosym("libfbclient.so", "/usr/lib/libgds.so")
