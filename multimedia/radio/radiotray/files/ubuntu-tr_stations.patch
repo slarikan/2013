@@ -1,232 +1,177 @@
-diff -Nuar radiotray-0.6.4.orig//data/bookmarks.xml radiotray-0.6.4/data/bookmarks.xml
---- radiotray-0.6.4.orig//data/bookmarks.xml	2011-01-21 02:07:28.000000000 +0200
-+++ radiotray-0.6.4/data/bookmarks.xml	2011-08-23 22:23:57.394000010 +0300
-@@ -1,9 +1,1872 @@
-+<!--
-+
-+Bu liste Sabri Ünal <yakusha> tarafından RadioTray linux uygulaması için
-+Türkçe radyo kaynakları oluşturulması amacıyla derlenmiştir.
-+
-+
-+Creative Common ve GNU FDL lisansı ile lisanslanmıştır.
-+
-+Hataları ve çalışmayan radyoları lütfen bildiriniz:
-+http://forum.ubuntu-tr.net/index.php?topic=28866.0
-+
-+-->
-+
-+<!--
-+//linux altında calışmayan protokoller
-+bu protokollerde yayın yapan radyolar için lütfen talepte bulunmayınız.
-+! rtmp
-+! mmsh
-+-->
-+
- <bookmarks>
- <group name="root">
--    <group name="Jazz"><bookmark name="Smooth Jazz" url="http://smoothjazz.com/streams/smoothjazz_128.pls"/>
--<bookmark name="Cool Jazz" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=30773"/><bookmark name="Trumpet Jazz" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1377234"/></group><group name="Latin"><bookmark name="Onda Tropical" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=506392"/><bookmark name="Top Latino Radio" url="http://online.radiodifusion.net:8020/listen.pls"/><bookmark name="Salsa Stream" url="http://listen.sky.fm/public3/salsa.pls"/></group><group name="Classic Rock"><bookmark name="181.FM Classic Hits" url="http://sc-rly.181.fm:80/stream/1094"/><bookmark name=".977 Classic Rock" url="http://www.977music.com/tunein/web/classicrock.asx"/></group><group name="Classical"><bookmark name="KDFC" url="http://provisioning.streamtheworld.com/pls/KDFCFM.pls"/><bookmark name="Classic FM" url="http://media-ice.musicradio.com/ClassicFMMP3.m3u"/><bookmark name="WCPE" url="http://www.ibiblio.org/wcpe/wcpe.pls"/><bookmark name="CINEMIX" url="http://cinemix.us/cine.asx"/></group><group name="Pop / Rock"><bookmark name="Radio Paradise" url="http://www.radioparadise.com/musiclinks/rp_128aac.m3u"/>
--    <bookmark name=".977 The Hitz Channel" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1280356"/><bookmark name="Enjoy Station" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1377285"/><bookmark name="80s Sky.FM" url="http://listen.sky.fm/public3/the80s.pls"/>
--    </group><group name="Oldies"><bookmark name="AM 1710" url="http://lin2.ash.fast-serv.com:9022/listen.pls"/><bookmark name="WNAR" url="http://live.wnar-am.com:8500/listen.pls"/></group><group name="Chill"><bookmark name="Groove Salad" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1325107"/>
--    <bookmark name="181.FM" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1275050"/><bookmark name="Lounge Radio" url="http://yp.shoutcast.com/sbin/tunein-station.pls?id=1288934"/></group>
-+	<group name="Alfabetik Karma Fm">
-+
-+		<bookmark name="Abuzer Fm" url="http://live.radyotvonline.com:9030"/>
-+		<bookmark name="Adana Efsane Radyo" url="http://sunucu2.radyolarburada.com:9080"/>
-+		<bookmark name="Adana Süper Fm" url="http://sunucu2.radyolarburada.com:9010"/>
-+		<bookmark name="Afşin Fm" url="http://sunucu2.radyolarburada.com:7546"/>
-+		<bookmark name="Akdenİz Radyo" url="http://sunucu1.radyolarburada.com:7077"/>
-+		<bookmark name="Aktif Radyo" url="http://sunucu2.radyolarburada.com:5484"/>
-+		<bookmark name="Avrasya Türk" url="http://radyoavrasya.radyolarburada.com:1071"/>
-+		<bookmark name="Aşk Fm Türkİye" url="http://askfm.radyolarburada.com:8060"/>
-+		<bookmark name="Batı Radyo" url="http://46.20.4.4:8050"/>
-+		<bookmark name="Delta Fm" url="http://deltafm.radyolarburada.com:2030"/>
-+		<bookmark name="Ender Fm" url="http://sunucu1.radyolarburada.com:9028"/>
-+		<bookmark name="Erdemli Fm" url="http://sunucu2.radyolarburada.com:9056"/>
-+		<bookmark name="FG 93.7" url="http://live2.radyotvonline.com:9370"/>
-+		<bookmark name="Flash Fm" url="http://sunucu2.radyolarburada.com:8122"/>
-+		<bookmark name="FM 19" url="http://live5.radyotvonline.com:9900"/>
-+		<bookmark name="Gurbetci Fm" url="http://live2.radyotvonline.com:8750"/>
-+		<bookmark name="Hatay Genç Radyo" url="http://sunucu2.radyolarburada.com:4440"/>
-+		<bookmark name="Jest Fm" url="http://jestfm.radyolarburada.com:8070"/>
-+		<bookmark name="Kalp Fm" url="http://kalpfm.radyolarburada.com:8088"/>
-+		<bookmark name="Lokum Fm" url="http://sunucu2.radyolarburada.com:9070"/>
-+		<bookmark name="Love Türk" url="http://loveturk.radyolarburada.com:8077"/>
-+		<bookmark name="Live 5" url="http://live5.radyotvonline.com:8070"/>
-+		<bookmark name="Mavi Radyo" url="http://sunucu2.radyolarburada.com:7535"/>
-+		<bookmark name="Medya Fm" url="http://live2.radyotvonline.com:9390"/>
-+		<bookmark name="Mersin Fm" url="http://sunucu1.radyolarburada.com:9990"/>
-+		<bookmark name="One Fm" url="http://sunucu1.radyolarburada.com:9085"/>
-+		<bookmark name="Ordu Fm" url="http://sunucu2.radyolarburada.com:5060"/>
-+		<bookmark name="Ortaca Fm" url="http://live.radyotvonline.com:9100"/>
-+		<bookmark name="Star Fm" url="http://sunucu2.radyolarburada.com:7572"/>
-+		<bookmark name="Türkü Radyo" url="http://82.192.78.129:4591"/>
-+		<bookmark name="Yunus Fm" url="http://sunucu4.radyolarburada.com:7171"/>
-+		<bookmark name="Yön Radyo" url="http://yonradyo.radyolarburada.com:8020"/>
-+		<bookmark name="Yörük Fm" url="http://sunucu2.radyolarburada.com:7075"/>
-+	</group>
-+	<group name="Alfabetik Radyo Fm">
-+		<bookmark name="Radyo 2000" url="http://sunucu1.radyolarburada.com:2277"/>
-+		<bookmark name="Radyo 35" url="http://sunucu2.radyolarburada.com:1717"/>
-+		<bookmark name="Radyo 90" url="http://live.radyotvonline.com:9400"/>
-+		<bookmark name="Radyo Başkent" url="http://sunucu1.radyolarburada.com:5590"/>
-+		<bookmark name="Radyo Çukurova" url="http://sunucu2.radyolarburada.com:6543"/>
-+		<bookmark name="Radyo Dost" url="http://sunucu1.radyolarburada.com:5151"/>
-+		<bookmark name="Radyo Ekspres" url="http://live.radyotvonline.com:8210"/>
-+		<bookmark name="Radyo Erkan" url="http://sunucu2.radyolarburada.com:8095"/>
-+		<bookmark name="Radyo Fresh" url="http://sunucu4.radyolarburada.com:9040"/>
-+		<bookmark name="Radyo GÜl" url="http://sunucu2.radyolarburada.com:5686"/>
-+		<bookmark name="Radyo Güney" url="http://sunucu2.radyolarburada.com:9920"/>
-+		<bookmark name="Radyo İz" url="http://yayin4.selcuklu.net:7070"/>
-+		<bookmark name="Radyo İhsan" url="http://sunucu1.radyolarburada.com:7473"/>
-+		<bookmark name="Radyo Martı" url="http://sunucu4.radyolarburada.com:9880"/>
-+		<bookmark name="Radyo Mavi" url="http://sunucu2.radyolarburada.com:6560"/>
-+		<bookmark name="Radyo Mega" url="http://sunucu4.radyolarburada.com:1054"/>
-+		<bookmark name="Radyo Mer" url="http://sunucu2.radyolarburada.com:9620"/>
-+		<bookmark name="Radyo Metropol" url="http://radyometropol.radyolarburada.com:5544"/>
-+		<bookmark name="Radyo On" url="http://radyoon.radyolarburada.com:8040"/>
-+		<bookmark name="Radyo Ostim" url="http://radyoostim.radyolarburada.com:8079"/>
-+		<bookmark name="Radyo Özden" url="http://live.radyotvonline.com:9050"/>
-+		<bookmark name="Radyo Özgür" url="http://ozgurradyo.radyolarburada.com:8720"/>
-+		<bookmark name="Radyo Pause" url="http://live5.radyotvonline.com:8010"/>
-+		<bookmark name="Radyo Piramit" url="http://live.radyotvonline.com:9000"/>
-+		<bookmark name="Radyo Romantik Türk" url="http://live.radyotvonline.com:7610"/>
-+		<bookmark name="Radyo Ses" url="http://live2.radyotvonline.com:8095"/>
-+		<bookmark name="Radyo Seyhan" url="http://live5.radyotvonline.com:7025"/>
-+		<bookmark name="Radyo Slow Time" url="http://live5.radyotvonline.com:8180"/>
-+		<bookmark name="Radyo Tansaş" url="http://46.254.50.21:8500"/>
-+		<bookmark name="Radyo Trafik" url="http://live2.radyotvonline.com:8000"/>
-+		<bookmark name="Radyo Türküm" url="http://live2.radyotvonline.com:8270"/>
-+		<bookmark name="Radyo Ülkü" url="http://sunucu4.radyolarburada.com:7878"/>
-+		<bookmark name="Radyo Yıldız" url="http://sunucu2.radyolarburada.com:2006"/>
-+	</group>	
-+
-+	<group name="Türk Pop">
-+	
-+		<bookmark name="Açık Radyo" url="mms://wms.45FB.edgecastcdn.net/2045FB/acikradyo"/>
-+		<bookmark name="Aşk Fm" url="http://askfm.radyolarburada.com:8060"/>
-+		<!--<bookmark name="Aşk Fm" url="http://radyoask.radyolarburada.com:8020"/>-->
-+	
-+		<bookmark name="Best Fm" url="http://77.92.128.10:7105"/>
-+		<bookmark name="Dünya Fm" url="http://88.255.168.86:8000"/>
-+
-+		<bookmark name="İstanbul Fm" url="http://85.25.122.231:8057"/>
-+		<bookmark name="izmir Metropol Fm" url="http://live2.radyotvonline.com:7300"/>
-+
-+		<bookmark name="JoyTürk" url="http://94.23.13.108:9055"/>
-+		<!--<bookmark name="Joy TÜrk" url="http://joyturk.radyolarburada.com:8900"/>-->
-+
-+		<bookmark name="Klas Fm" url="http://sunucu2.radyolarburada.com:9123"/>
-+		<bookmark name="Kral Fm" url="http://kralfmaac.radyolarburada.com:80"/>
-+		<bookmark name="Kral TÜrk" url="http://sunucu2.radyolarburada.com:6565"/>
-+		
-+		<bookmark name="Kırık Plaklar" url="http://217.20.122.130:3255"/>
-+		
-+		<bookmark name="Mavi Fm" url="http://yayin4.mavifm.com:8000"/>
-+		<bookmark name="Mydonose Türk" url="http://mydonoseturk.radyolarburada.com:7555"/>
-+
-+
-+		<bookmark name="Power Türk" url="http://46.20.4.58:8040"/>
-+		
-+		<bookmark name="Radyo Alaturka 91.0" url="http://92.48.118.17:9100"/>
-+		<bookmark name="Radyo D" url="mms://84.16.230.44/Radyod"/>
-+		<bookmark name="Radyo Klas" url="http://78.159.117.225:3332"/>
-+		<!--<bookmark name="Radyo Klas" url="http://sunucu2.radyolarburada.com:9123"/>-->
-+		<bookmark name="Radyo Tatlıses" url="http://live5.radyotvonline.com:9770"/>
-+		
-+		<bookmark name="Radyo 35" url="http://85.25.122.231:8287"/>
-+		<bookmark name="Radio Viva" url="mms://84.16.235.95/rv"/>
-+
-+		<bookmark name="Show Radyo" url="http://89.149.226.130:7050"/>
-+		<bookmark name="Slow Türk" url="mms://84.16.252.120/slowturk"/>
-+		<bookmark name="Süper Fm" url="http://94.23.13.108:9235"/>
-+		<!--<bookmark name="SÜper Fm" url="http://superfmaac.radyolarburada.com:9235"/>-->
-+	</group>
-+
-+	<group name="Yabancı Pop">
-+		<bookmark name="Joy Fm" url="http://94.23.13.108:9100"/>
-+		<!--<bookmark name="Joy Fm" url="http://listenaac.joyfm.com.tr:9100"/>-->
-+
-+		<bookmark name="Lounge 02" url="http://live2.radyotvonline.com:1020"/>
-+
-+		<bookmark name="Max Fm" url="http://live2.radyotvonline.com:8025"/>
-+		<bookmark name="Max Jazz Fm" url="http://live2.radyotvonline.com:8035"/>
-+		<bookmark name="Metro Fm" url="http://94.23.13.108:9000"/>
-+		<bookmark name="Mix Fm" url="http://sunucu2.radyolarburada.com:8015"/>
-+
-+		<bookmark name="Number1 Fm" url="http://1numara.radyoyayini.com:3330"/>
-+
-+		<bookmark name="Power XL" url="http://46.20.4.34:8130"/>
-+
-+		<bookmark name="Radyo Aktif" url="http://sunucu1.radyolarburada.com:5588"/>
-+		<bookmark name="Radyo Bilkent" url="http://sunucu2.radyolarburada.com:5000"/>
-+		<bookmark name="Radio Eksen" url="http://rd1.cdntr.com/eksen.mp3"/>
-+		<bookmark name="Radio Mydonose" url="http://mydonose.radyolarburada.com:5255"/>
-+		<bookmark name="Radio Odtü" url="http://144.122.152.54:8000"/>
-+		<bookmark name="Radio Paradise" url="http://www.radioparadise.com/musiclinks/rp_128.m3u"/>
-+		
-+		<bookmark name="Virgin Radio" url="http://rd1.cdntr.com/radyo_virgin.aac"/>
-+	</group>
-+
-+	<group name="TRT Ailesi">
-+		<bookmark name="Radyo 1" url="mms://95.0.159.133/RADYO1"/>
-+		<bookmark name="Radyo 3" url="mms://95.0.159.133/RADYO3"/>
-+		<bookmark name="Radyo 4" url="mms://95.0.159.133/RADYO4"/>
-+		<bookmark name="Radyo 6" url="mms://95.0.159.133/RADYO6"/>
-+		<bookmark name="TRT Fm" url="mms://95.0.159.133/RADYOFM"/>
-+		<bookmark name="TRT Türkü" url="mms://95.0.159.133/TURKU"/>
-+		<bookmark name="TRT Nağme" url="mms://95.0.159.133/TSM"/>
-+		<bookmark name="TRT Radyo Haber" url="mms://95.0.159.133/KENT"/>
-+		<bookmark name="TRT Antalya" url="mms://95.0.159.133/ANTALYA"/>
-+		<bookmark name="TRT Çukurova" url="mms://95.0.159.133/CUKUROVA"/>
-+		<bookmark name="TRT Gap Diyarbakır" url="mms://95.0.159.133/TRTGAP"/>
-+		<bookmark name="TRT Erzurum" url="mms://95.0.159.133/ERZURUM"/>
-+		<bookmark name="TRT Trabzon" url="mms://95.0.159.133/TRABZON"/>
-+		<bookmark name="TRT Avrupa Fm" url="mms://95.0.159.133/AVRUPA"/>
-+		<bookmark name="TRT Vot East" url="mms://95.0.159.133/RDVOT2"/>
-+		<bookmark name="TRT Vot World" url="mms://95.0.159.133/RDVOT"/>
-+		<bookmark name="TRT Vot West" url="mms://95.0.159.133/RDTSR2"/>
-+		<bookmark name="TRT TSR" url="mms://95.0.159.133/RDTSR"/>
-+		<bookmark name="Adana Polis Radyosu" url="http://www.radyolarburada.com:6868"/>
-+		<bookmark name="Eskişehir Polis Radyosu" url="http://sunucu1.radyolarburada.com:7272"/>
-+	</group>
-+
-+	<group name="Dini">
-+		<bookmark name="Akra Fm" url="http://209.85.107.35:7895"/>
-+		<bookmark name="Bayram Fm" url="http://217.20.112.150:3395"/>
-+		<bookmark name="Dost Fm" url="http://www.dosttv.com:8000"/>
-+		<bookmark name="Hatay Fm" url="http://beyzafm.radyolarburada.com:3400"/>
-+		<bookmark name="Mesaj Fm" url="http://yayin.canlitv.com:8010"/>
-+		<bookmark name="Moral Fm" url="mms://93.187.203.30/moralfm"/>
-+		<bookmark name="Radyo Denge" url="http://yayin1.canliyayin.org:8278"/>
-+		<bookmark name="Yıldız Fm" url="http://live.radyotvonline.com:8150"/>
-+	</group>
-+
-+	<group name="Trans">
-+		<bookmark name="New Age" url="http://scfire-ntc-aa06.stream.aol.com:80/stream/1002"/>
-+		<bookmark name="Radyo Voyage" url="http://rd1.cdntr.com/voyage.mp3"/>
-+	</group>
-+
-+	<group name="Spor Haber Bilgi">
-+		<bookmark name="Ntv Radyo" url="http://rd1.cdntr.com/ntv.mp3"/>
-+		<bookmark name="Ntv Spor" url="http://rd1.cdntr.com/ntvspor.mp3"/>
-+		<bookmark name="Radyo Spor" url="http://live4.radyotvonline.com:8160"/>
-+	</group>
-+	
-+<group name="Anadolu Radyoları 600+ - Test Edilmedi">
-+	<bookmark name="Adana Akdeniz Fm" url="http://89.149.196.17:4790"/>
-+	<bookmark name="Adana Ceyhan Crt Fm" url="http://yayin2.yayindakiler.com:4018"/>
-+	<bookmark name="Adana Energy Fm" url="http://yayin2.yayindakiler.com:4102"/>
-+	<bookmark name="Adana Fm" url="http://yayin1.yayindakiler.com:3182"/>
-+	<bookmark name="Adana Kozan Radyo Barış" url="http://89.149.244.39:3737"/>
-+	<bookmark name="Adana Lider Fm" url="http://84.16.230.129:2955"/>
-+	<bookmark name="Adana Polis Radyosu" url="http://www.radyolarburada.com:6868"/>
-+	<bookmark name="Adana Radio One " url="http://89.149.244.39:9085"/>
-+	<bookmark name="Adana Radyo Erkan" url="http://sunucu2.radyolarburada.com:8095"/>
-+	<bookmark name="Adana Radyo Hayat" url="http://radyolarburada.com:9450"/>
-+	<bookmark name="Adana Radyo Ses" url="http://yayin2.yayindakiler.com:4014"/>
-+	<bookmark name="Adana Radyo Seyhan" url="http://live5.radyotvonline.com:7025"/>
-+	<bookmark name="Adana Radyo Groseri" url="http://89.149.196.240:5555"/>
+diff -ur old-radiotray-0.7.3/data/bookmarks.xml radiotray-0.7.3/data/bookmarks.xml
+--- old-radiotray-0.7.3/data/bookmarks.xml	2012-08-08 13:43:43.000000000 +0300
++++ radiotray-0.7.3/data/bookmarks.xml	2012-10-17 03:35:36.219000034 +0300
+@@ -70,5 +70,1821 @@
+         <bookmark name="WCRS LPFM Columbus" url="http://sh4.audio-stream.com/tunein.php/pleonard/playlist.pls"/>
+         <bookmark name="WBEZ" url="http://wbez.ic.llnwd.net/stream/wbez_91_5_fm.pls"/>
+     </group>
++    <group name="Alfabetik Turkish Fm">
++        <bookmark name="Abuzer Fm" url="http://live.radyotvonline.com:9030"/>
++        <bookmark name="Adana Efsane Radyo" url="http://sunucu2.radyolarburada.com:9080"/>
++        <bookmark name="Adana Süper Fm" url="http://sunucu2.radyolarburada.com:9010"/>
++        <bookmark name="Afşin Fm" url="http://sunucu2.radyolarburada.com:7546"/>
++        <bookmark name="Akdenİz Radyo" url="http://sunucu1.radyolarburada.com:7077"/>
++        <bookmark name="Aktif Radyo" url="http://sunucu2.radyolarburada.com:5484"/>
++        <bookmark name="Avrasya Türk" url="http://radyoavrasya.radyolarburada.com:1071"/>
++        <bookmark name="Aşk Fm Türkİye" url="http://askfm.radyolarburada.com:8060"/>
++        <bookmark name="Batı Radyo" url="http://46.20.4.4:8050"/>
++        <bookmark name="Delta Fm" url="http://deltafm.radyolarburada.com:2030"/>
++        <bookmark name="Ender Fm" url="http://sunucu1.radyolarburada.com:9028"/>
++        <bookmark name="Erdemli Fm" url="http://sunucu2.radyolarburada.com:9056"/>
++        <bookmark name="FG 93.7" url="http://live2.radyotvonline.com:9370"/>
++        <bookmark name="Flash Fm" url="http://sunucu2.radyolarburada.com:8122"/>
++        <bookmark name="FM 19" url="http://live5.radyotvonline.com:9900"/>
++        <bookmark name="Gurbetci Fm" url="http://live2.radyotvonline.com:8750"/>
++        <bookmark name="Hatay Genç Radyo" url="http://sunucu2.radyolarburada.com:4440"/>
++        <bookmark name="Jest Fm" url="http://jestfm.radyolarburada.com:8070"/>
++        <bookmark name="Kalp Fm" url="http://kalpfm.radyolarburada.com:8088"/>
++        <bookmark name="Lokum Fm" url="http://sunucu2.radyolarburada.com:9070"/>
++        <bookmark name="Love Türk" url="http://loveturk.radyolarburada.com:8077"/>
++        <bookmark name="Live 5" url="http://live5.radyotvonline.com:8070"/>
++        <bookmark name="Mavi Radyo" url="http://sunucu2.radyolarburada.com:7535"/>
++        <bookmark name="Medya Fm" url="http://live2.radyotvonline.com:9390"/>
++        <bookmark name="Mersin Fm" url="http://sunucu1.radyolarburada.com:9990"/>
++        <bookmark name="One Fm" url="http://sunucu1.radyolarburada.com:9085"/>
++        <bookmark name="Ordu Fm" url="http://sunucu2.radyolarburada.com:5060"/>
++        <bookmark name="Ortaca Fm" url="http://live.radyotvonline.com:9100"/>
++        <bookmark name="Star Fm" url="http://sunucu2.radyolarburada.com:7572"/>
++        <bookmark name="Türkü Radyo" url="http://82.192.78.129:4591"/>
++        <bookmark name="Yunus Fm" url="http://sunucu4.radyolarburada.com:7171"/>
++        <bookmark name="Yön Radyo" url="http://yonradyo.radyolarburada.com:8020"/>
++        <bookmark name="Yörük Fm" url="http://sunucu2.radyolarburada.com:7075"/>
++    </group>
++    <group name="Alfabetik Turkish Radyo Fm">
++        <bookmark name="Radyo 2000" url="http://sunucu1.radyolarburada.com:2277"/>
++        <bookmark name="Radyo 35" url="http://sunucu2.radyolarburada.com:1717"/>
++        <bookmark name="Radyo 90" url="http://live.radyotvonline.com:9400"/>
++        <bookmark name="Radyo Başkent" url="http://sunucu1.radyolarburada.com:5590"/>
++        <bookmark name="Radyo Çukurova" url="http://sunucu2.radyolarburada.com:6543"/>
++        <bookmark name="Radyo Dost" url="http://sunucu1.radyolarburada.com:5151"/>
++        <bookmark name="Radyo Ekspres" url="http://live.radyotvonline.com:8210"/>
++        <bookmark name="Radyo Erkan" url="http://sunucu2.radyolarburada.com:8095"/>
++        <bookmark name="Radyo Fresh" url="http://sunucu4.radyolarburada.com:9040"/>
++        <bookmark name="Radyo GÜl" url="http://sunucu2.radyolarburada.com:5686"/>
++        <bookmark name="Radyo Güney" url="http://sunucu2.radyolarburada.com:9920"/>
++        <bookmark name="Radyo İz" url="http://yayin4.selcuklu.net:7070"/>
++        <bookmark name="Radyo İhsan" url="http://sunucu1.radyolarburada.com:7473"/>
++        <bookmark name="Radyo Martı" url="http://sunucu4.radyolarburada.com:9880"/>
++        <bookmark name="Radyo Mavi" url="http://sunucu2.radyolarburada.com:6560"/>
++        <bookmark name="Radyo Mega" url="http://sunucu4.radyolarburada.com:1054"/>
++        <bookmark name="Radyo Mer" url="http://sunucu2.radyolarburada.com:9620"/>
++        <bookmark name="Radyo Metropol" url="http://radyometropol.radyolarburada.com:5544"/>
++        <bookmark name="Radyo On" url="http://radyoon.radyolarburada.com:8040"/>
++        <bookmark name="Radyo Ostim" url="http://radyoostim.radyolarburada.com:8079"/>
++        <bookmark name="Radyo Özden" url="http://live.radyotvonline.com:9050"/>
++        <bookmark name="Radyo Özgür" url="http://ozgurradyo.radyolarburada.com:8720"/>
++        <bookmark name="Radyo Pause" url="http://live5.radyotvonline.com:8010"/>
++        <bookmark name="Radyo Piramit" url="http://live.radyotvonline.com:9000"/>
++        <bookmark name="Radyo Romantik Türk" url="http://live.radyotvonline.com:7610"/>
++        <bookmark name="Radyo Ses" url="http://live2.radyotvonline.com:8095"/>
++        <bookmark name="Radyo Seyhan" url="http://live5.radyotvonline.com:7025"/>
++        <bookmark name="Radyo Slow Time" url="http://live5.radyotvonline.com:8180"/>
++        <bookmark name="Radyo Tansaş" url="http://46.254.50.21:8500"/>
++        <bookmark name="Radyo Trafik" url="http://live2.radyotvonline.com:8000"/>
++        <bookmark name="Radyo Türküm" url="http://live2.radyotvonline.com:8270"/>
++        <bookmark name="Radyo Ülkü" url="http://sunucu4.radyolarburada.com:7878"/>
++        <bookmark name="Radyo Yıldız" url="http://sunucu2.radyolarburada.com:2006"/>
++    </group>	
++    <group name="Türkish Pop">	
++        <bookmark name="Açık Radyo" url="mms://wms.45FB.edgecastcdn.net/2045FB/acikradyo"/>
++        <bookmark name="Aşk Fm" url="http://askfm.radyolarburada.com:8060"/>
++        <bookmark name="Best Fm" url="http://77.92.128.10:7105"/>
++        <bookmark name="Dünya Fm" url="http://88.255.168.86:8000"/>
++        <bookmark name="İstanbul Fm" url="http://85.25.122.231:8057"/>
++        <bookmark name="izmir Metropol Fm" url="http://live2.radyotvonline.com:7300"/>
++        <bookmark name="JoyTürk" url="http://94.23.13.108:9055"/>
++        <bookmark name="Klas Fm" url="http://sunucu2.radyolarburada.com:9123"/>
++        <bookmark name="Kral Fm" url="http://kralfmaac.radyolarburada.com:80"/>
++        <bookmark name="Kral TÜrk" url="http://sunucu2.radyolarburada.com:6565"/>
++        <bookmark name="Kırık Plaklar" url="http://217.20.122.130:3255"/>	
++        <bookmark name="Mavi Fm" url="http://yayin4.mavifm.com:8000"/>
++        <bookmark name="Mydonose Türk" url="http://mydonoseturk.radyolarburada.com:7555"/>
++        <bookmark name="Power Türk" url="http://46.20.4.58:8040"/>	
++        <bookmark name="Radyo Alaturka 91.0" url="http://92.48.118.17:9100"/>
++        <bookmark name="Radyo D" url="mms://84.16.230.44/Radyod"/>
++        <bookmark name="Radyo Klas" url="http://78.159.117.225:3332"/>
++        <bookmark name="Radyo Tatlıses" url="http://live5.radyotvonline.com:9770"/>
++        <bookmark name="Radyo 35" url="http://85.25.122.231:8287"/>
++        <bookmark name="Radio Viva" url="mms://84.16.235.95/rv"/>
++        <bookmark name="Show Radyo" url="http://89.149.226.130:7050"/>
++        <bookmark name="Slow Türk" url="mms://84.16.252.120/slowturk"/>
++        <bookmark name="Süper Fm" url="http://94.23.13.108:9235"/>
++    </group>
++    <group name="Yabancı Pop">
++        <bookmark name="Joy Fm" url="http://94.23.13.108:9100"/>
++        <bookmark name="Lounge 02" url="http://live2.radyotvonline.com:1020"/>
++        <bookmark name="Max Fm" url="http://live2.radyotvonline.com:8025"/>
++        <bookmark name="Max Jazz Fm" url="http://live2.radyotvonline.com:8035"/>
++        <bookmark name="Metro Fm" url="http://94.23.13.108:9000"/>
++        <bookmark name="Mix Fm" url="http://sunucu2.radyolarburada.com:8015"/>
++        <bookmark name="Number1 Fm" url="http://1numara.radyoyayini.com:3330"/>
++        <bookmark name="Power XL" url="http://46.20.4.34:8130"/>
++        <bookmark name="Radyo Aktif" url="http://sunucu1.radyolarburada.com:5588"/>
++        <bookmark name="Radyo Bilkent" url="http://sunucu2.radyolarburada.com:5000"/>
++        <bookmark name="Radio Eksen" url="http://rd1.cdntr.com/eksen.mp3"/>
++        <bookmark name="Radio Mydonose" url="http://mydonose.radyolarburada.com:5255"/>
++        <bookmark name="Radio Odtü" url="http://144.122.152.54:8000"/>
++        <bookmark name="Radio Paradise" url="http://www.radioparadise.com/musiclinks/rp_128.m3u"/>
++        <bookmark name="Virgin Radio" url="http://rd1.cdntr.com/radyo_virgin.aac"/>
++    </group>
++    <group name="TRT Ailesi">
++        <bookmark name="Radyo 1" url="mms://95.0.159.133/RADYO1"/>
++        <bookmark name="Radyo 3" url="mms://95.0.159.133/RADYO3"/>
++        <bookmark name="Radyo 4" url="mms://95.0.159.133/RADYO4"/>
++        <bookmark name="Radyo 6" url="mms://95.0.159.133/RADYO6"/>
++        <bookmark name="TRT Fm" url="mms://95.0.159.133/RADYOFM"/>
++        <bookmark name="TRT Türkü" url="mms://95.0.159.133/TURKU"/>
++        <bookmark name="TRT Nağme" url="mms://95.0.159.133/TSM"/>
++        <bookmark name="TRT Radyo Haber" url="mms://95.0.159.133/KENT"/>
++        <bookmark name="TRT Antalya" url="mms://95.0.159.133/ANTALYA"/>
++        <bookmark name="TRT Çukurova" url="mms://95.0.159.133/CUKUROVA"/>
++        <bookmark name="TRT Gap Diyarbakır" url="mms://95.0.159.133/TRTGAP"/>
++        <bookmark name="TRT Erzurum" url="mms://95.0.159.133/ERZURUM"/>
++        <bookmark name="TRT Trabzon" url="mms://95.0.159.133/TRABZON"/>
++        <bookmark name="TRT Avrupa Fm" url="mms://95.0.159.133/AVRUPA"/>
++        <bookmark name="TRT Vot East" url="mms://95.0.159.133/RDVOT2"/>
++        <bookmark name="TRT Vot World" url="mms://95.0.159.133/RDVOT"/>
++        <bookmark name="TRT Vot West" url="mms://95.0.159.133/RDTSR2"/>
++        <bookmark name="TRT TSR" url="mms://95.0.159.133/RDTSR"/>
++        <bookmark name="Adana Polis Radyosu" url="http://www.radyolarburada.com:6868"/>
++        <bookmark name="Eskişehir Polis Radyosu" url="http://sunucu1.radyolarburada.com:7272"/>
++    </group>
++    <group name="Dini">
++        <bookmark name="Akra Fm" url="http://209.85.107.35:7895"/>
++        <bookmark name="Bayram Fm" url="http://217.20.112.150:3395"/>
++        <bookmark name="Dost Fm" url="http://www.dosttv.com:8000"/>
++        <bookmark name="Hatay Fm" url="http://beyzafm.radyolarburada.com:3400"/>
++        <bookmark name="Mesaj Fm" url="http://yayin.canlitv.com:8010"/>
++        <bookmark name="Moral Fm" url="mms://93.187.203.30/moralfm"/>
++        <bookmark name="Radyo Denge" url="http://yayin1.canliyayin.org:8278"/>
++        <bookmark name="Yıldız Fm" url="http://live.radyotvonline.com:8150"/>
++    </group>
++    <group name="Trans">
++        <bookmark name="New Age" url="http://scfire-ntc-aa06.stream.aol.com:80/stream/1002"/>
++        <bookmark name="Radyo Voyage" url="http://rd1.cdntr.com/voyage.mp3"/>
++    </group>
++    <group name="Spor Haber Bilgi">
++        <bookmark name="Ntv Radyo" url="http://rd1.cdntr.com/ntv.mp3"/>
++        <bookmark name="Ntv Spor" url="http://rd1.cdntr.com/ntvspor.mp3"/>
++        <bookmark name="Radyo Spor" url="http://live4.radyotvonline.com:8160"/>
++    </group>	
++    <group name="Anadolu Radyoları 600+ - Test Edilmedi">
++        <bookmark name="Adana Akdeniz Fm" url="http://89.149.196.17:4790"/>
++        <bookmark name="Adana Ceyhan Crt Fm" url="http://yayin2.yayindakiler.com:4018"/>
++        <bookmark name="Adana Energy Fm" url="http://yayin2.yayindakiler.com:4102"/>
++        <bookmark name="Adana Fm" url="http://yayin1.yayindakiler.com:3182"/>
++        <bookmark name="Adana Kozan Radyo Barış" url="http://89.149.244.39:3737"/>
++        <bookmark name="Adana Lider Fm" url="http://84.16.230.129:2955"/>
++        <bookmark name="Adana Polis Radyosu" url="http://www.radyolarburada.com:6868"/>
++        <bookmark name="Adana Radio One " url="http://89.149.244.39:9085"/>
++        <bookmark name="Adana Radyo Erkan" url="http://sunucu2.radyolarburada.com:8095"/>
++        <bookmark name="Adana Radyo Hayat" url="http://radyolarburada.com:9450"/>
++        <bookmark name="Adana Radyo Ses" url="http://yayin2.yayindakiler.com:4014"/>
++        <bookmark name="Adana Radyo Seyhan" url="http://live5.radyotvonline.com:7025"/>
++        <bookmark name="Adana Radyo Groseri" url="http://89.149.196.240:5555"/>
 +	<bookmark name="Adana Radyo Güney" url="http://sunucu2.radyolarburada.com:9920"/>
 +	<bookmark name="Adana Radyo Yıldız" url="http://sunucu2.radyolarburada.com:2006"/>
 +	<bookmark name="Adana Seyhan Mavi Radyo" url="http://sunucu2.radyolarburada.com:6560"/>
@@ -1871,11 +1816,10 @@ diff -Nuar radiotray-0.6.4.orig//data/bookmarks.xml radiotray-0.6.4/data/bookmar
 +	<bookmark name="İslam Nuru Sohbet Fm" url="http://radyo.mavigecem.com:1453"/>
 +	<bookmark name="İslam Radyo" url="http://yayin.akrahosting.net:3059"/>
 +	<bookmark name="İslam Radyo2" url="http://radyo.islamiradyolar.net:7247"/>
-+	<bookmark name="İstiklal Radyo" url="http://yayin2.canliyayin.org:8888"/>
-+	<bookmark name="İsviçre Radyo İslam" url="http://server5.digital-webstream.de:33725"/>
-+	<bookmark name="Şiir Radyo" url="http://85.17.137.50:7432"/>
-+	<bookmark name="??" url="http://85.17.137.50:7432"/>
-+</group>
-+
++        <bookmark name="İstiklal Radyo" url="http://yayin2.canliyayin.org:8888"/>
++        <bookmark name="İsviçre Radyo İslam" url="http://server5.digital-webstream.de:33725"/>
++        <bookmark name="Şiir Radyo" url="http://85.17.137.50:7432"/>
++        <bookmark name="??" url="http://85.17.137.50:7432"/>
++    </group>
  </group>
  </bookmarks>
