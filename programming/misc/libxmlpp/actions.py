@@ -25,4 +25,4 @@ def install():
     pisitools.dohtml("docs/reference/html/*")
 
     pisitools.dodoc("ChangeLog", "AUTHORS", "NEWS", "README*")
-    pisitools.removeDir("/usr/share/doc/libxml++-2.6")
+    #pisitools.removeDir("/usr/share/doc/libxml++-2.6")
