@@ -27,4 +27,4 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.remove("/usr/bin/LinuxVNC")
+    pisitools.remove("/usr/bin/linuxvnc")
