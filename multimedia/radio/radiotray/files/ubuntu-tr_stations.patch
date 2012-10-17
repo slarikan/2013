@@ -7,10 +7,7 @@ diff -ur old-radiotray-0.7.3/data/bookmarks.xml radiotray-0.7.3/data/bookmarks.x
      </group>
 +    <group name="Alfabetik Turkish Fm">
 +        <bookmark name="Abuzer Fm" url="http://live.radyotvonline.com:9030"/>
-+        <bookmark name="Adana Efsane Radyo" url="http://sunucu2.radyolarburada.com:9080"/>
-+        <bookmark name="Adana Süper Fm" url="http://sunucu2.radyolarburada.com:9010"/>
 +        <bookmark name="Afşin Fm" url="http://sunucu2.radyolarburada.com:7546"/>
-+        <bookmark name="Akdenİz Radyo" url="http://sunucu1.radyolarburada.com:7077"/>
 +        <bookmark name="Aktif Radyo" url="http://sunucu2.radyolarburada.com:5484"/>
 +        <bookmark name="Avrasya Türk" url="http://radyoavrasya.radyolarburada.com:1071"/>
 +        <bookmark name="Aşk Fm Türkİye" url="http://askfm.radyolarburada.com:8060"/>
