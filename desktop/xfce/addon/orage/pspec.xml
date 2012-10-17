@@ -28,13 +28,14 @@
         <Name>orage</Name>
         <RuntimeDependencies>
             <Dependency version="4.10.0">xfce4-panel</Dependency>
+            <Dependency version="4.10.0">libxfcegui4-devel</Dependency>
+            <Dependency version="4.10.0">libxfce4util</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libical</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency version="4.10.0">libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
