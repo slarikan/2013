@@ -1,0 +1,22 @@
+[Desktop Entry]
+Categories=System;
+Comment[en_US]=none
+Comment=
+Encoding=UTF-8
+Exec=/opt/sun-jdk/jre/bin/javaws
+GenericName[en_US]=javaws
+GenericName=javaws
+Icon=/opt/sun-jdk/jre/lib/desktop/icons/hicolor/48x48/apps/sun-javaws.png
+MimeType=application/x-java-jnlp-file;
+Name[en_US]=Java Web Start
+Name=Java Web Start
+NoDisplay=True
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
