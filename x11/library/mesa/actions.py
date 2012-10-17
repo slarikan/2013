@@ -18,6 +18,10 @@ else:
 def setup():
     shelltools.export("CFLAGS", "%s -DNDEBUG" % get.CFLAGS())
 
+    # Fix sandbox violations
+    pisitools.dosed("src/gallium/auxiliary/Makefile", "(\$\(PYTHON2\))", r"\1 -B")
+    pisitools.dosed("src/gallium/drivers/llvmpipe/Makefile", "(\$\(PYTHON_FLAGS\))", r"\1 -B")
+
     autotools.autoreconf("-vif")
 
     # gallium-lvm is enabled by default by commit a86fc719d6402eb482657707741890e69e81700f
