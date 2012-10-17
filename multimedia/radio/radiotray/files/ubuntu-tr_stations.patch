@@ -1,7 +1,24 @@
 diff -ur old-radiotray-0.7.3/data/bookmarks.xml radiotray-0.7.3/data/bookmarks.xml
 --- old-radiotray-0.7.3/data/bookmarks.xml	2012-08-08 13:43:43.000000000 +0300
-+++ radiotray-0.7.3/data/bookmarks.xml	2012-10-17 03:35:36.219000034 +0300
-@@ -70,5 +70,1821 @@
++++ radiotray-0.7.3/data/bookmarks.xml	2012-10-17 04:08:35.574000040 +0300
+@@ -1,5 +1,8 @@
+ <bookmarks>
+ <group name="root">
++    <group name="Radio-ANKA">
++        <bookmark name="Radio C" url="http://yayin.radyoc.com:8091"/>
++    </group>  
+     <group name="Jazz">
+         <bookmark name="Smooth Jazz" url="http://smoothjazz.com/streams/smoothjazz_128.pls"/>
+         <bookmark name="SKY.fm Piano Jazz" url="http://listen.sky.fm/public1/pianojazz.pls"/>
+@@ -36,6 +39,7 @@
+         <bookmark name="SKY.fm Top Hits" url="http://listen.sky.fm/public1/tophits.pls"/>
+         <bookmark name="Indie Pop Rocks!" url="http://somafm.com/indiepop.pls"/>
+         <bookmark name="PopTron" url="http://somafm.com/poptron.pls"/>
++	<bookmark name="RadioVeronika" url="http://dir.xiph.org/listen/636582/listen.m3u"/>
+     </group>
+     <group name="Oldies">
+         <bookmark name="AM 1710" url="http://lin2.ash.fast-serv.com:9022/listen.pls"/>
+@@ -70,5 +74,1818 @@
          <bookmark name="WCRS LPFM Columbus" url="http://sh4.audio-stream.com/tunein.php/pleonard/playlist.pls"/>
          <bookmark name="WBEZ" url="http://wbez.ic.llnwd.net/stream/wbez_91_5_fm.pls"/>
      </group>
