@@ -433,6 +433,8 @@
             <Patch level="1">pardus/grub_conf.patch</Patch>
             <Patch level="1">pardus/grub_locations.patch</Patch>
             <Patch level="1">pardus/xorg_conf.patch</Patch>
+            <!-- http://www.mail-archive.com/vim_dev@googlegroups.com/msg16664.html -->
+            <Patch level="1">f1f6ac67acd8.patch</Patch>
         </Patches>
     </Source>
 
@@ -503,6 +505,13 @@
     </Package>
 
     <History>
+        <Update release="89">
+            <Date>2012-10-18</Date>
+            <Version>7.3.390</Version>
+            <Comment>Fix build fail with new toolchain</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="88">
             <Date>2012-01-02</Date>
             <Version>7.3.390</Version>
