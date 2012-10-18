@@ -2,7 +2,7 @@
 # $Id$
 # Update CUPS PPDs for Gutenprint queues.
 # Copyright (C) 2002-2003 Roger Leigh (rleigh@debian.org)
-# Copyright (C) 2009 Red Hat, Inc.
+# Copyright (C) 2009, 2011 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -767,7 +767,7 @@ def get_ppd_fh (ppd_source_filename, filename, driver, locale, region):
                                                                 "w"))
                         server_multicat_initialized = mc_proc
 
-                    print >>server_multicat_initialized.stdin, "%s\n" % url
+                    print >>server_multicat_initialized.stdin, "%s" % url
                     server_multicat_initialized.stdin.flush ()
                     return (new_ppd_filename,
                             server_multicat_initialized.stdout)

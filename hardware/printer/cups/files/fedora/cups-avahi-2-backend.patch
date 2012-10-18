@@ -1,6 +1,6 @@
-diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
---- cups-1.4.7/backend/dnssd.c.avahi-2-backend	2011-06-28 12:51:40.491366359 +0100
-+++ cups-1.4.7/backend/dnssd.c	2011-06-28 12:53:39.969213688 +0100
+diff -up cups-1.5.3/backend/dnssd.c.avahi-2-backend cups-1.5.3/backend/dnssd.c
+--- cups-1.5.3/backend/dnssd.c.avahi-2-backend	2012-05-15 16:53:18.164774446 +0200
++++ cups-1.5.3/backend/dnssd.c	2012-05-15 17:09:07.684155704 +0200
 @@ -15,14 +15,21 @@
   *
   * Contents:
@@ -43,7 +43,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
  
  /*
-@@ -52,7 +70,12 @@ typedef enum
+@@ -53,7 +71,12 @@ typedef enum
  
  typedef struct
  {
@@ -56,7 +56,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
    char		*name,			/* Service name */
  		*domain,		/* Domain name */
  		*fullName,		/* Full name */
-@@ -64,6 +87,20 @@ typedef struct
+@@ -65,6 +88,20 @@ typedef struct
  		sent;			/* Did we list the device? */
  } cups_device_t;
  
@@ -77,7 +77,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
  /*
   * Local globals...
-@@ -77,6 +114,7 @@ static int		job_canceled = 0;
+@@ -78,6 +115,7 @@ static int		job_canceled = 0;
   * Local functions...
   */
  
@@ -85,23 +85,24 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  static void		browse_callback(DNSServiceRef sdRef,
  			                DNSServiceFlags flags,
  				        uint32_t interfaceIndex,
-@@ -92,12 +130,6 @@ static void		browse_local_callback(DNSSe
- 					      const char *regtype,
+@@ -95,13 +133,6 @@ static void		browse_local_callback(DNSSe
  					      const char *replyDomain,
- 					      void *context);
+ 					      void *context)
+ 					      __attribute__((nonnull(1,5,6,7,8)));
 -static int		compare_devices(cups_device_t *a, cups_device_t *b);
 -static void		exec_backend(char **argv);
 -static cups_device_t	*get_device(cups_array_t *devices,
 -			            const char *serviceName,
 -			            const char *regtype,
--				    const char *replyDomain);
+-				    const char *replyDomain)
+-				    __attribute__((nonnull(1,2,3,4)));
  static void		query_callback(DNSServiceRef sdRef,
  			               DNSServiceFlags flags,
  				       uint32_t interfaceIndex,
-@@ -106,9 +138,118 @@ static void		query_callback(DNSServiceRe
- 				       uint16_t rrclass, uint16_t rdlen,
+@@ -111,10 +142,119 @@ static void		query_callback(DNSServiceRe
  				       const void *rdata, uint32_t ttl,
- 				       void *context);
+ 				       void *context)
+ 				       __attribute__((nonnull(1,5,9,11)));
 +#endif /* HAVE_DNSSD */
 +#ifdef HAVE_AVAHI
 +static void		avahi_client_callback (AvahiClient *client,
@@ -117,7 +118,6 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 +					       AvahiLookupResultFlags flags,
 +					       void *context);
 +#endif /* HAVE_AVAHI */
-+
 +static cups_device_t *	find_device (cups_array_t *devices,
 +				     cups_txt_records_t *txt,
 +				     cups_device_t *dkey);
@@ -126,9 +126,11 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 +static cups_device_t	*get_device(cups_array_t *devices,
 +			            const char *serviceName,
 +			            const char *regtype,
-+				    const char *replyDomain);
++				    const char *replyDomain)
++				    __attribute__((nonnull(1,2,3,4)));
  static void		sigterm_handler(int sig);
- static void		unquote(char *dst, const char *src, size_t dstsize);
+ static void		unquote(char *dst, const char *src, size_t dstsize)
+ 			    __attribute__((nonnull(1,2)));
  
 +#ifdef HAVE_AVAHI
 +static AvahiSimplePoll *simple_poll = NULL;
@@ -174,7 +176,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 +  */
 +
 +  datalen = *data++;
-+  if (!datalen || (data + datalen) >= txt->dataend)
++  if (!datalen || (data + datalen) > txt->dataend)
 +    return NULL;
 +  txt->datanext = data + datalen;
 +
@@ -217,7 +219,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
  /*
   * 'main()' - Browse for printers.
-@@ -119,6 +260,13 @@ main(int  argc,				/* I - Number of comm
+@@ -125,6 +265,13 @@ main(int  argc,				/* I - Number of comm
       char *argv[])			/* I - Command-line arguments */
  {
    const char	*name;			/* Backend name */
@@ -231,7 +233,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
    DNSServiceRef	main_ref,		/* Main service reference */
  		fax_ipp_ref,		/* IPP fax service reference */
  		ipp_ref,		/* IPP service reference */
-@@ -130,12 +278,11 @@ main(int  argc,				/* I - Number of comm
+@@ -138,12 +285,11 @@ main(int  argc,				/* I - Number of comm
  		pdl_datastream_ref,	/* AppSocket service reference */
  		printer_ref,		/* LPD service reference */
  		riousbprint_ref;	/* Remote IO service reference */
@@ -249,7 +251,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  #if defined(HAVE_SIGACTION) && !defined(HAVE_SIGSET)
    struct sigaction action;		/* Actions for POSIX signals */
  #endif /* HAVE_SIGACTION && !HAVE_SIGSET */
-@@ -194,6 +341,49 @@ main(int  argc,				/* I - Number of comm
+@@ -203,6 +349,49 @@ main(int  argc,				/* I - Number of comm
    * Browse for different kinds of printers...
    */
  
@@ -299,7 +301,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
    if (DNSServiceCreateConnection(&main_ref) != kDNSServiceErr_NoError)
    {
      perror("ERROR: Unable to create service connection");
-@@ -245,6 +435,7 @@ main(int  argc,				/* I - Number of comm
+@@ -263,6 +452,7 @@ main(int  argc,				/* I - Number of comm
    riousbprint_ref = main_ref;
    DNSServiceBrowse(&riousbprint_ref, kDNSServiceFlagsShareConnection, 0,
                     "_riousbprint._tcp", NULL, browse_callback, devices);
@@ -307,7 +309,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
   /*
    * Loop until we are killed...
-@@ -252,6 +443,9 @@ main(int  argc,				/* I - Number of comm
+@@ -270,6 +460,9 @@ main(int  argc,				/* I - Number of comm
  
    while (!job_canceled)
    {
@@ -317,7 +319,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
      FD_ZERO(&input);
      FD_SET(fd, &input);
  
-@@ -271,11 +465,35 @@ main(int  argc,				/* I - Number of comm
+@@ -289,11 +482,35 @@ main(int  argc,				/* I - Number of comm
      }
      else
      {
@@ -353,15 +355,15 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
        cups_device_t *best;		/* Best matching device */
        char	device_uri[1024];	/* Device URI */
        int	count;			/* Number of queries */
-@@ -285,6 +503,7 @@ main(int  argc,				/* I - Number of comm
-                best = NULL, count = 0;
-            device;
- 	   device = (cups_device_t *)cupsArrayNext(devices))
+@@ -307,6 +524,7 @@ main(int  argc,				/* I - Number of comm
+         if (device->sent)
+ 	  sent ++;
+ 
 +#ifdef HAVE_DNSSD
-         if (!device->ref && !device->sent)
- 	{
- 	 /*
-@@ -313,14 +532,23 @@ main(int  argc,				/* I - Number of comm
+         if (device->ref)
+ 	  count ++;
+ 
+@@ -338,14 +556,23 @@ main(int  argc,				/* I - Number of comm
  	      count ++;
            }
  	}
@@ -386,7 +388,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
            if (!best)
  	    best = device;
-@@ -368,6 +596,7 @@ main(int  argc,				/* I - Number of comm
+@@ -406,6 +633,7 @@ main(int  argc,				/* I - Number of comm
  }
  
  
@@ -394,7 +396,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  /*
   * 'browse_callback()' - Browse devices.
   */
-@@ -456,6 +685,7 @@ browse_local_callback(
+@@ -494,6 +722,7 @@ browse_local_callback(
  	  device->fullName);
    device->sent = 1;
  }
@@ -402,7 +404,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
  
  /*
-@@ -530,6 +760,37 @@ exec_backend(char **argv)		/* I - Comman
+@@ -574,6 +803,41 @@ exec_backend(char **argv)		/* I - Comman
  
  
  /*
@@ -413,17 +415,21 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 +device_type (const char *regtype)
 +{
 +#ifdef HAVE_AVAHI
-+  if (!strcmp(regtype, "_ipp._tcp") ||
-+      !strcmp(regtype, "_ipp-tls._tcp"))
++  if (!strcmp(regtype, "_ipp._tcp"))
 +    return (CUPS_DEVICE_IPP);
++  else if (!strcmp(regtype, "_ipps._tcp") ||
++	   !strcmp(regtype, "_ipp-tls._tcp"))
++    return (CUPS_DEVICE_IPPS);
 +  else if (!strcmp(regtype, "_fax-ipp._tcp"))
 +    return (CUPS_DEVICE_FAX_IPP);
 +  else if (!strcmp(regtype, "_printer._tcp"))
 +    return (CUPS_DEVICE_PDL_DATASTREAM);
 +#else
-+  if (!strcmp(regtype, "_ipp._tcp.") ||
-+      !strcmp(regtype, "_ipp-tls._tcp."))
++  if (!strcmp(regtype, "_ipp._tcp."))
 +    return (CUPS_DEVICE_IPP);
++  else if (!strcmp(regtype, "_ipps._tcp.") ||
++	   !strcmp(regtype, "_ipp-tls._tcp."))
++    return (CUPS_DEVICE_IPPS);
 +  else if (!strcmp(regtype, "_fax-ipp._tcp."))
 +    return (CUPS_DEVICE_FAX_IPP);
 +  else if (!strcmp(regtype, "_printer._tcp."))
@@ -440,14 +446,16 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
   * 'get_device()' - Create or update a device.
   */
  
-@@ -550,18 +811,7 @@ get_device(cups_array_t *devices,	/* I -
+@@ -594,20 +858,7 @@ get_device(cups_array_t *devices,	/* I -
    */
  
    key.name = (char *)serviceName;
 -
--  if (!strcmp(regtype, "_ipp._tcp.") ||
--      !strcmp(regtype, "_ipp-tls._tcp."))
+-  if (!strcmp(regtype, "_ipp._tcp."))
 -    key.type = CUPS_DEVICE_IPP;
+-  else if (!strcmp(regtype, "_ipps._tcp.") ||
+-	   !strcmp(regtype, "_ipp-tls._tcp."))
+-    key.type = CUPS_DEVICE_IPPS;
 -  else if (!strcmp(regtype, "_fax-ipp._tcp."))
 -    key.type = CUPS_DEVICE_FAX_IPP;
 -  else if (!strcmp(regtype, "_printer._tcp."))
@@ -460,7 +468,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
    for (device = cupsArrayFind(devices, &key);
         device;
-@@ -581,8 +831,14 @@ get_device(cups_array_t *devices,	/* I -
+@@ -627,8 +878,14 @@ get_device(cups_array_t *devices,	/* I -
          free(device->domain);
  	device->domain = strdup(replyDomain);
  
@@ -475,7 +483,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  	free(device->fullName);
  	device->fullName = strdup(fullName);
        }
-@@ -602,6 +858,9 @@ get_device(cups_array_t *devices,	/* I -
+@@ -648,6 +905,9 @@ get_device(cups_array_t *devices,	/* I -
    device->domain   = strdup(replyDomain);
    device->type     = key.type;
    device->priority = 50;
@@ -485,7 +493,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
    cupsArrayAdd(devices, device);
  
-@@ -609,13 +868,20 @@ get_device(cups_array_t *devices,	/* I -
+@@ -655,13 +915,20 @@ get_device(cups_array_t *devices,	/* I -
    * Set the "full name" of this service, which is used for queries...
    */
  
@@ -506,7 +514,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  /*
   * 'query_callback()' - Process query data.
   */
-@@ -639,7 +905,7 @@ query_callback(
+@@ -685,7 +952,7 @@ query_callback(
  		*ptr;			/* Pointer into string */
    cups_device_t	dkey,			/* Search key */
  		*device;		/* Device */
@@ -515,13 +523,15 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  
    fprintf(stderr, "DEBUG2: query_callback(sdRef=%p, flags=%x, "
                    "interfaceIndex=%d, errorCode=%d, fullName=\"%s\", "
-@@ -673,84 +939,232 @@ query_callback(
+@@ -719,94 +986,233 @@ query_callback(
    if ((ptr = strstr(name, "._")) != NULL)
      *ptr = '\0';
  
--  if (strstr(fullName, "_ipp._tcp.") ||
--      strstr(fullName, "_ipp-tls._tcp."))
+-  if (strstr(fullName, "_ipp._tcp."))
 -    dkey.type = CUPS_DEVICE_IPP;
+-  else if (strstr(fullName, "_ipps._tcp.") ||
+-           strstr(fullName, "_ipp-tls._tcp."))
+-    dkey.type = CUPS_DEVICE_IPPS;
 -  else if (strstr(fullName, "_fax-ipp._tcp."))
 -    dkey.type = CUPS_DEVICE_FAX_IPP;
 -  else if (strstr(fullName, "_printer._tcp."))
@@ -630,7 +640,8 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
    else
 -    dkey.type = CUPS_DEVICE_RIOUSBPRINT;
 +    fprintf (stderr, "DEBUG: Ignoring TXT record for \"%s\"...\n", name);
-+
+ 
+-  for (device = cupsArrayFind(devices, &dkey);
 +  avahi_service_resolver_free (resolver);
 +}
 +
@@ -651,8 +662,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 +		      void *context)
 +{
 +  AvahiClient *client = avahi_service_browser_get_client (browser);
- 
--  for (device = cupsArrayFind(devices, &dkey);
++
 +  switch (event)
 +  {
 +  case AVAHI_BROWSER_FAILURE:
@@ -723,10 +733,10 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
         device;
         device = cupsArrayNext(devices))
    {
--    if (strcasecmp(device->name, dkey.name) ||
--        strcasecmp(device->domain, dkey.domain))
-+    if (strcasecmp(device->name, dkey->name) ||
-+        strcasecmp(device->domain, dkey->domain))
+-    if (_cups_strcasecmp(device->name, dkey.name) ||
+-        _cups_strcasecmp(device->domain, dkey.domain))
++    if (_cups_strcasecmp(device->name, dkey->name) ||
++        _cups_strcasecmp(device->domain, dkey->domain))
      {
        device = NULL;
        break;
@@ -771,17 +781,17 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 -
 -        datalen = *data++;
 -
--        if (!datalen || (data + datalen) >= dataend)
+-        if (!datalen || (data + datalen) > dataend)
 -	  break;
-+	char *key;
-+	char *value;
- 
+-
 -        datanext = data + datalen;
 -
 -        for (ptr = key; data < datanext && *data != '='; data ++)
 -	  *ptr++ = *data;
 -	*ptr = '\0';
--
++	char *key;
++	char *value;
+ 
 -	if (data < datanext && *data == '=')
 -	{
 -	  data ++;
@@ -789,18 +799,27 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
 -	  if (data < datanext)
 -	    memcpy(value, data, datanext - data);
 -	  value[datanext - data] = '\0';
--	}
--	else
--	  continue;
 +	if (parse_txt_record_pair (txt))
 +	  goto next;
  
+-	  fprintf(stderr, "DEBUG2: query_callback: \"%s=%s\".\n",
+-	          key, value);
+-	}
+-	else
+-	{
+-	  fprintf(stderr, "DEBUG2: query_callback: \"%s\" with no value.\n",
+-	          key);
+-	  continue;
+-	}
+-
+-        if (!_cups_strncasecmp(key, "usb_", 4))
 +	key = txt->key;
 +	value = txt->value;
-         if (!strncasecmp(key, "usb_", 4))
++        if (!strncasecmp(key, "usb_", 4))
  	{
  	 /*
-@@ -805,6 +1219,10 @@ query_callback(
+ 	  * Add USB device ID information...
+@@ -861,6 +1267,10 @@ query_callback(
  	  if (device->type == CUPS_DEVICE_PRINTER)
  	    device->sent = 1;
  	}
@@ -811,7 +830,7 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
        }
  
        if (device->device_id)
-@@ -861,11 +1279,9 @@ query_callback(
+@@ -917,11 +1327,9 @@ query_callback(
      }
    }
  
@@ -824,13 +843,13 @@ diff -up cups-1.4.7/backend/dnssd.c.avahi-2-backend cups-1.4.7/backend/dnssd.c
  /*
   * 'sigterm_handler()' - Handle termination signals...
   */
-diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-support.c
---- cups-1.4.7/cups/http-support.c.avahi-2-backend	2010-10-01 23:40:38.000000000 +0100
-+++ cups-1.4.7/cups/http-support.c	2011-06-28 12:53:39.971213652 +0100
-@@ -41,6 +41,10 @@
+diff -up cups-1.5.3/cups/http-support.c.avahi-2-backend cups-1.5.3/cups/http-support.c
+--- cups-1.5.3/cups/http-support.c.avahi-2-backend	2012-02-15 02:06:12.000000000 +0100
++++ cups-1.5.3/cups/http-support.c	2012-05-15 17:04:51.045944634 +0200
+@@ -43,6 +43,10 @@
   *   http_copy_decode()   - Copy and decode a URI.
   *   http_copy_encode()   - Copy and encode a URI.
-  *   resolve_callback()   - Build a device URI for the given service name.
+  *   http_resolve_cb()    - Build a device URI for the given service name.
 + *   avahi_resolve_uri_client_cb()
 + *                        - Avahi client callback for resolving URI.
 + *   avahi_resolve_uri_resolver_cb()
@@ -838,9 +857,9 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
   */
  
  /*
-@@ -55,6 +59,11 @@
- #  include <dns_sd.h>
- #  include <poll.h>
+@@ -60,6 +64,11 @@
+ #    include <sys/select.h>
+ #  endif /* WIN32 */
  #endif /* HAVE_DNSSD */
 +#ifdef HAVE_AVAHI
 +#  include <avahi-client/client.h>
@@ -850,8 +869,8 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
  
  
  /*
-@@ -121,6 +130,24 @@ static void		resolve_callback(DNSService
- 					 void *context);
+@@ -127,6 +136,24 @@ static void DNSSD_API	http_resolve_cb(DN
+ 					void *context);
  #endif /* HAVE_DNSSD */
  
 +#ifdef HAVE_AVAHI
@@ -875,7 +894,7 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
  
  /*
   * 'httpAssembleURI()' - Assemble a uniform resource identifier from its
-@@ -1351,6 +1378,9 @@ _httpResolveURI(
+@@ -1434,6 +1461,9 @@ _httpResolveURI(
  
    if (strstr(hostname, "._tcp"))
    {
@@ -883,12 +902,12 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
 +    char		*regtype,	/* Pointer to type in hostname */
 +			*domain;	/* Pointer to domain in hostname */
  #ifdef HAVE_DNSSD
-     DNSServiceRef	ref,		/* DNS-SD master service reference */
- 			domainref,	/* DNS-SD service reference for domain */
-@@ -1361,6 +1391,16 @@ _httpResolveURI(
- 			*domain;	/* Pointer to domain in hostname */
-     _http_uribuf_t	uribuf;		/* URI buffer */
-     struct pollfd	polldata;	/* Polling data */
+ #  ifdef WIN32
+ #    pragma comment(lib, "dnssd.lib")
+@@ -1452,6 +1482,17 @@ _httpResolveURI(
+     fd_set		input_set;	/* Input set for select() */
+     struct timeval	stimeout;	/* Timeout value for select() */
+ #endif /* HAVE_POLL */
 +#else /* HAVE_AVAHI */
 +    AvahiSimplePoll	*simple_poll;
 +    AvahiClient		*client;
@@ -899,24 +918,28 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
 +      _http_uribuf_t	uribuf;
 +    } user_data;
 +#endif /* HAVE_DNSSD */
++
  
- 
-     if (logit)
-@@ -1398,8 +1438,13 @@ _httpResolveURI(
+     if (options & _HTTP_RESOLVE_STDERR)
+       fprintf(stderr, "DEBUG: Resolving \"%s\"...\n", hostname);
+@@ -1488,9 +1529,16 @@ _httpResolveURI(
      if (domain)
        *domain++ = '\0';
  
 +#ifdef HAVE_DNSSD
-     uribuf.buffer  = resolved_uri;
-     uribuf.bufsize = resolved_size;
+     uribuf.buffer   = resolved_uri;
+     uribuf.bufsize  = resolved_size;
+     uribuf.options  = options;
 +#else
 +    user_data.uribuf.buffer = resolved_uri;
 +    user_data.uribuf.bufsize = resolved_size;
++    user_data.uribuf.options = options;
 +#endif
- 
++
      resolved_uri[0] = '\0';
  
-@@ -1414,6 +1459,7 @@ _httpResolveURI(
+     DEBUG_printf(("6_httpResolveURI: Resolving hostname=\"%s\", regtype=\"%s\", "
+@@ -1504,6 +1552,7 @@ _httpResolveURI(
  
      uri = NULL;
  
@@ -924,7 +947,7 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
      if (DNSServiceCreateConnection(&ref) == kDNSServiceErr_NoError)
      {
        localref = ref;
-@@ -1500,6 +1546,36 @@ _httpResolveURI(
+@@ -1611,6 +1660,36 @@ _httpResolveURI(
  
        DNSServiceRefDeallocate(ref);
      }
@@ -959,9 +982,9 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
 +    }
 +#endif /* HAVE_DNSSD */
  
-     if (logit)
+     if (options & _HTTP_RESOLVE_STDERR)
      {
-@@ -1511,13 +1587,13 @@ _httpResolveURI(
+@@ -1622,13 +1701,13 @@ _httpResolveURI(
        fputs("STATE: -connecting-to-device,offline-report\n", stderr);
      }
  
@@ -975,11 +998,11 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
 -#endif /* HAVE_DNSSD */
 +#endif /* HAVE_DNSSD || HAVE_AVAHI */
  
-     if (logit && !uri)
-       _cupsLangPuts(stderr, _("Unable to find printer!\n"));
-@@ -1723,6 +1799,116 @@ resolve_callback(
+     if ((options & _HTTP_RESOLVE_STDERR) && !uri)
+       _cupsLangPrintFilter(stderr, "ERROR", _("Unable to find printer."));
+@@ -1916,6 +1995,115 @@ http_resolve_cb(
+ }
  #endif /* HAVE_DNSSD */
- 
  
 +#ifdef HAVE_AVAHI
 +/*
@@ -1090,7 +1113,6 @@ diff -up cups-1.4.7/cups/http-support.c.avahi-2-backend cups-1.4.7/cups/http-sup
 +}
 +#endif /* HAVE_AVAHI */
 +
-+
+ 
  /*
-  * End of "$Id: http-support.c 9322 2010-10-01 22:40:38Z mike $".
-  */
+  * End of "$Id: http-support.c 10284 2012-02-15 01:06:12Z mike $".

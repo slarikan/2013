@@ -118,6 +118,7 @@
     </Package>
 
 <!-- sysvinit compability -->
+<!--
     <Package>
         <Name>systemd-sysvinit</Name>
         <Summary>sysvinit compability for systemd</Summary>
@@ -143,10 +144,13 @@
             <Path fileType="manfile">/usr/share/man/man8/poweroff.8</Path>
         </Files>
         <Provides>
+-->
             <!-- FIXME: This may need a rework -->
+<!--
             <COMAR script="sysvinit.py">System.Package</COMAR>
         </Provides>
     </Package>
+-->
 
     <Package>
         <Name>pam_systemd</Name>

@@ -6,16 +6,21 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import get
 
 WorkDir = "libedit-20120601-3.0"
 
 def setup():
-    autotools.configure("--disable-static")
+    autotools.configure("--disable-static \
+                         --enable-widec \
+                         --disable-dependency-tracking \
+                         --enable-fast-install")
 
 def build():
     autotools.make()
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("ChangeLog", "COPYING", "THANKS")
+    pisitools.remove("/usr/lib/libedit.la")

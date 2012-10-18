@@ -5,14 +5,14 @@
         <Name>gutenprint</Name>
         <Homepage>http://gimp-print.sourceforge.net/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>data</IsA>
         <Summary>High quality printer drivers</Summary>
         <Description>gutenprint contains drivers for Canon, Epson, Lexmark, Sony, Olympus, and PCL printers for use with Ghostscript, CUPS, Foomatic, and the Gimp.</Description>
-        <Archive sha1sum="e49c259607dc6372d4f6316a26fb146715c437c8" type="tarbz2">mirrors://sourceforge/gimp-print/gutenprint-5.2.7.tar.bz2</Archive>
+        <Archive sha1sum="ecfd3757c5f8ddc994e4e60f713f5b9561b8cf28" type="tarbz2">mirrors://sourceforge/gimp-print/gutenprint-5.2/5.2.9/gutenprint-5.2.9.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="src/cups/cups-genppdupdate.in">fedora/cups-genppdupdate.py.in</AdditionalFile>
         </AdditionalFiles>
@@ -22,11 +22,11 @@
             <Dependency>ghostscript-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">fedora/gutenprint-build.patch</Patch>
+            <Patch level="1">fedora/gutenprint-device-ids.patch</Patch>
+            <Patch level="1">fedora/gutenprint-menu.patch</Patch>
             <Patch level="1">fedora/gutenprint-O6.patch</Patch>
             <Patch level="1">fedora/gutenprint-postscriptdriver.patch</Patch>
-            <Patch level="1">fedora/gutenprint-device-ids.patch</Patch>
-            <Patch level="1">fedora/gutenprint-null-pointer.patch</Patch>
-            <Patch level="1">fedora/gutenprint-build.patch</Patch>
         </Patches>
     </Source>
 
@@ -74,6 +74,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-07-08</Date>
+            <Version>5.2.9</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="17">
             <Date>2011-12-08</Date>
             <Version>5.2.7</Version>

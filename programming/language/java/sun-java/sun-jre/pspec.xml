@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sun-jre</Name>
+        <Homepage>http://www.java.com/tr/</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>dlj-1.1</License>
+        <IsA>app:console</IsA>
+        <IsA>library</IsA>
+        <Summary>Sun's Java Runtime Environment for Standard Edition</Summary>
+        <Description>This package provides Java Runtime Environment that is necessary to run the programs written in Java.</Description>
+        <!--Archive sha1sum="d4663717f022d6463d16f2b30bc4d88d63ad956c" type="binary" target="i686">http://download.oracle.com/otn-pub/java/jdk/6u34-b04/jdk-6u34-linux-i586.bin</Archive>
+<Archive sha1sum="7413367b8fe65db6613c07daef508ea8c0bdc298" type="binary" target="x86_64">http://download.oracle.com/otn-pub/java/jdk/6u34-b04/jdk-6u34-linux-x64.bin</Archive-->
+        <Archive sha1sum="b33a6faeb22b9c25445e83528dfc37794438ec93" type="targz">http://javadl.sun.com/webapps/download/AutoDL?BundleId=69467</Archive>
+    </Source>
+
+    <Package>
+        <Name>sun-jre</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>unixODBC</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>libXtst</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/opt/sun-jdk/jre/bin</Path>
+	    <Path fileType="library">/opt/sun-jdk/jre/lib</Path>
+	    <Path fileType="man">/opt/sun-jdk/jre/man</Path>
+	    <Path fileType="data">/opt/sun-jdk/jre/plugin</Path>
+	    <Path fileType="doc">/opt/sun-jdk/jre</Path>
+            <Path fileType="config">/etc/env.d/20java_jre</Path>
+            <Path fileType="data">/usr/lib/browser-plugins</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/env.d/20java_jre">20java_jre</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/javaws.desktop">javaws.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2012-17-10</Date>
+            <Version>1.7.0_09</Version>
+            <Comment>Version bump</Comment>
+            <Name>canatan</Name>
+            <Email>qazsew@mynet.com</Email>
+        </Update>
+    </History>
+</PISI> 

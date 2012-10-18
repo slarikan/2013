@@ -1,7 +1,8 @@
-diff -urNad cups~/scheduler/ipp.c cups/scheduler/ipp.c
---- cups~/scheduler/ipp.c	2009-06-23 11:48:45.000000000 +0100
-+++ cups/scheduler/ipp.c	2009-06-23 14:48:06.000000000 +0100
-@@ -7790,6 +7790,11 @@
+Author: till.kamppeter@gmail.com
+
+--- a/scheduler/ipp.c
++++ b/scheduler/ipp.c
+@@ -9639,6 +9639,11 @@
    ipp_attribute_t	*attr,		/* Current attribute */
  			*attr2,		/* Job attribute */
  			*prev2;		/* Previous job attribute */
@@ -13,7 +14,7 @@ diff -urNad cups~/scheduler/ipp.c cups/scheduler/ipp.c
  
  
   /*
-@@ -7853,6 +7858,85 @@
+@@ -9700,6 +9705,85 @@
    }
  
   /*

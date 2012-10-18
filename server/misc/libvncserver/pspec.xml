@@ -12,12 +12,8 @@
         <IsA>app:console</IsA>
         <Summary>Library for creating VNC (Virtual Network Computing) servers</Summary>
         <Description>libvncserver provides a C library to create VNC servers.</Description>
-        <Archive sha1sum="681b0f3d000ad8c18d3643e1148e1ae5052c8a9a" type="targz">mirrors://sourceforge/libvncserver/LibVNCServer-0.9.7.tar.gz</Archive>
+        <Archive sha1sum="2004c6ae493baeff3da40b61e0a0f73c83182dad" type="targz">mirrors://sourceforge/libvncserver/LibVNCServer-0.9.9.tar.gz</Archive>
         <Patches>
-            <Patch level="1">filetransfer-overflow.diff</Patch>
-            <Patch level="1">libvnc-0215l.patch</Patch>
-            <Patch level="1">stack-check.patch</Patch>
-            <Patch level="1">LibVNCServer-0.9.7-fix-format-errors.patch</Patch>
         </Patches>
     </Source>
 
@@ -42,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-10-17</Date>
+            <Version>0.9.9</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.9.7</Version>

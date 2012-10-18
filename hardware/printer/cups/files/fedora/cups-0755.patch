@@ -1,13 +1,14 @@
-diff -up cups-1.4.5/Makedefs.in.0755 cups-1.4.5/Makedefs.in
---- cups-1.4.5/Makedefs.in.0755	2010-12-06 17:19:03.335315249 +0000
-+++ cups-1.4.5/Makedefs.in	2010-12-06 17:19:03.416307263 +0000
-@@ -41,13 +41,13 @@ SHELL		=	/bin/sh
+diff -up cups-1.5.3/Makedefs.in.0755 cups-1.5.3/Makedefs.in
+--- cups-1.5.3/Makedefs.in.0755	2012-05-15 16:51:31.000000000 +0200
++++ cups-1.5.3/Makedefs.in	2012-05-15 16:52:59.246906315 +0200
+@@ -41,14 +41,14 @@ SHELL		=	/bin/sh
  # Installation programs...
  #
  
 -INSTALL_BIN	=	$(LIBTOOL) $(INSTALL) -c -m 555 @INSTALL_STRIP@
 +INSTALL_BIN	=	$(LIBTOOL) $(INSTALL) -c -m 755 @INSTALL_STRIP@
  INSTALL_CONFIG	=	$(INSTALL) -c -m @CUPS_CONFIG_FILE_PERM@
+ INSTALL_COMPDATA =	$(INSTALL) -c -m 444 @INSTALL_GZIP@
  INSTALL_DATA	=	$(INSTALL) -c -m 444
  INSTALL_DIR	=	$(INSTALL) -d
 -INSTALL_LIB	=	$(LIBTOOL) $(INSTALL) -c -m 555 @INSTALL_STRIP@
@@ -18,10 +19,10 @@ diff -up cups-1.4.5/Makedefs.in.0755 cups-1.4.5/Makedefs.in
  
  #
  # Default user, group, and system groups for the scheduler...
-diff -up cups-1.4.5/scheduler/Makefile.0755 cups-1.4.5/scheduler/Makefile
---- cups-1.4.5/scheduler/Makefile.0755	2010-12-06 17:28:58.562552167 +0000
-+++ cups-1.4.5/scheduler/Makefile	2010-12-06 17:29:07.087756415 +0000
-@@ -174,7 +174,7 @@ install-data:
+diff -up cups-1.5.3/scheduler/Makefile.0755 cups-1.5.3/scheduler/Makefile
+--- cups-1.5.3/scheduler/Makefile.0755	2011-05-12 00:17:34.000000000 +0200
++++ cups-1.5.3/scheduler/Makefile	2012-05-15 16:51:31.703516547 +0200
+@@ -213,7 +213,7 @@ install-data:
  install-exec:
  	echo Installing programs in $(SBINDIR)...
  	$(INSTALL_DIR) -m 755 $(SBINDIR)

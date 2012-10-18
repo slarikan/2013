@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyleft 2012 Pardus ANKA Community
-# Copyright 2005-2011 TUBITAK/UEAKE
+# Copyright 2005-2011 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -30,7 +29,6 @@ def setup():
                --with-optim="%s -fstack-protector-all -DLDAP_DEPRECATED=1" \
                --with-php=/usr/bin/php-cgi \
                --without-java \
-               --with-systemdsystemunitdir=/lib/systemd/system \
                --enable-slp \
                --enable-acl \
                --enable-libpaper \
@@ -67,8 +65,8 @@ def setup():
 def build():
     autotools.make("V=1")
 
-def check():
-    autotools.make("check")
+#def check():
+    #autotools.make("check")
 
 def install():
     if get.buildTYPE() == "emul32":

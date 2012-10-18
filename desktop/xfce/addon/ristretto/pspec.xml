@@ -13,7 +13,7 @@
         <Summary>Image viewer for Xfce</Summary>
 	<PartOf>desktop.xfce.addon</PartOf>
         <Description>Ristretto is a fast and lightweight picture-viewer for the Xfce desktop environment.</Description>
-        <Archive sha1sum="ca068006a69087e841c219dda89b0b177aed5ca6" type="tarbz2">http://git.xfce.org/apps/ristretto/snapshot/ristretto-0.6.0.tar.bz2</Archive>
+        <Archive sha1sum="b1e9c18fd7c41bed6d7d52e1f1d2022f8cedf3e8" type="tarbz2">http://git.xfce.org/apps/ristretto/snapshot/ristretto-0.6.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency version="1.2.0">thunar-vfs-devel</Dependency>
@@ -49,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-10-17</Date>
+            <Version>0.6.3</Version>
+            <Comment>Version Bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2012-05-03</Date>
             <Version>0.6.0</Version>

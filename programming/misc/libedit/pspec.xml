@@ -16,6 +16,9 @@
         <Patches>
             <Patch level="1">libedit-3.0-sigwinch.patch</Patch>
             <Patch level="0">workaround-for-unicode-problem.patch</Patch>
+            <Patch level="1">libedit-ncursesprivate.patch</Patch>
+            <Patch level="1">libedit-20120311-3.0-el_fn_sh_complete.patch</Patch>
+            <Patch level="1">libedit-20110709.3.0-weak-reference.patch</Patch>
         </Patches>
     </Source>
 
@@ -42,6 +45,13 @@
     </Package>
 
     <History>
+       <Update release="5">
+            <Date>2012-10-17</Date>
+            <Version>3.0_20120601</Version>
+            <Comment>Add gentoo patches.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
        <Update release="4">
             <Date>2012-09-19</Date>
             <Version>3.0_20120601</Version>

@@ -5,14 +5,14 @@
         <Name>cups</Name>
         <Homepage>http://www.cups.org/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>
         <Summary>Common Unix Printing System</Summary>
         <Description>cups provides a portable printing layer for *nix-based operating systems.</Description>
-        <Archive sha1sum="cf10a0fd7f5b02f61c087bf44c1df20b34f888e0" type="tarbz2">http://ftp.easysw.com/pub/cups/1.6.1/cups-1.6.1-source.tar.bz2</Archive>
+        <Archive sha1sum="cb39961cbaf1851a47694828ad9a7cdf4da51fbd" type="tarbz2">ftp://ftp.easysw.com/pub/cups/1.5.4/cups-1.5.4-source.tar.bz2</Archive>
         <Archive sha1sum="062beea95c6f8dda0a5e7eed51604e22806ffad3" type="tar" target="cups-1.4.8">http://cekirdek.pardus.org.tr/~ibrahim/dist/cups-tr.tar</Archive>
         <BuildDependencies>
             <Dependency>cyrus-sasl-devel</Dependency>
@@ -28,15 +28,14 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>php-devel</Dependency>
+	    <Dependency>libusb-compat-devel</Dependency>
+	    <Dependency>libusbx-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Fedora patches -->
 
             <!-- Don't gzip man pages in the Makefile, let rpmbuild do it. -->
             <Patch level="1">fedora/cups-no-gzip-man.patch</Patch>
-
-            <!-- Use the system pam configuration. -->
-            <Patch level="1">fedora/cups-1.1.16-system-auth.patch</Patch>
 
             <!-- Fix compilation of serial backend. -->
             <Patch level="1">fedora/cups-serial.patch</Patch>
@@ -56,8 +55,6 @@
             <!-- Maintain a cupsd.pid file. -->
             <Patch level="1">fedora/cups-pid.patch</Patch>
 
-            <!-- Fix orientation of page labels. -->
-            <Patch level="1">fedora/cups-page-label.patch</Patch>
 
             <!-- Fix implementation of com.redhat.PrinterSpooler D-Bus object. -->
             <Patch level="1">fedora/cups-eggcups.patch</Patch>
@@ -79,6 +76,8 @@
 
             <!-- Simplify the DNSSD parts so they can build using the compat library. -->
             <Patch level="1">fedora/cups-build.patch</Patch>
+	    
+	    <Patch level="1">fedora/cups-banners.patch</Patch>
 
             <!-- Re-initialise the resolver on failure in httpAddrGetList(). -->
             <Patch level="1">fedora/cups-res_init.patch</Patch>
@@ -91,15 +90,10 @@
 
             <!-- Fix support for older CUPS servers in cupsGetDests. -->
             <Patch level="1">fedora/cups-cups-get-classes.patch</Patch>
+	    
+	    <!-- Support extra liblarys -->
+            <Patch level="1">fedora/cups-multilib.patch</Patch>
 
-            <!-- Fix temporary filename creation. -->
-            <Patch level="1">fedora/cups-str3382.patch</Patch>
-
-            <!-- Force the use of gnutls despite thread-safety concerns -->
-            <Patch level="1">fedora/cups-force-gnutls.patch</Patch>
-
-            <!-- Perform locking for gnutls and avoid libgcrypt's broken locking -->
-            <Patch level="1">fedora/cups-serialize-gnutls.patch</Patch>
 
             <!-- Use mode 0755 for binaries and libraries where appropriate. -->
             <Patch level="1">fedora/cups-0755.patch</Patch>
@@ -116,23 +110,10 @@
             <!-- Add an SNMP query for Ricoh's device ID OID -->
             <Patch level="1">fedora/cups-ricoh-deviceid-oid.patch</Patch>
 
-            <!-- Adjust texttops output to be in natural orientation -->
-            <Patch level="1">fedora/cups-texttops-rotate-page.patch</Patch>
-
-            <!-- Till's patch to fix USB-Parallel adapter cable problem -->
-            <Patch level="1">fedora/cups-usb-parallel.patch</Patch>
 
             <!-- Increase default RIP cache to 128MB -->
-            <Patch level="1">fedora/cups-str3535.patch</Patch>
+            <Patch level="1">fedora/cups-str3382.patch</Patch>
 
-            <!-- Avoid busy loop in cups-polld -->
-            <Patch level="1">fedora/cups-polld-busy-loop.patch</Patch>
-
-            <!-- Accept "Host: ::1" (bzrh: #497393) -->
-            <Patch level="1">fedora/cups-localhost-ipv6.patch</Patch>
-
-            <Patch level="1">fedora/cups-str3754.patch</Patch>
-            <Patch level="1">fedora/cups-usb-buffer-size.patch</Patch>
 
             <!-- Avahi support in the dnssd backend. -->
             <Patch level="1">fedora/cups-avahi-1-config.patch</Patch>
@@ -145,17 +126,21 @@
             <!-- Ubuntu patches -->
 
             <!-- One USB backend for both libusb-based and usblp-based accesses -->
-            <Patch level="1">ubuntu/usb-backend-both-usblp-and-libusb.patch</Patch>
+            <Patch level="1">ubuntu/tests-ignore-usb-crash.patch</Patch>
+	    <!--<Patch level="1">ubuntu/usb-backend-busy-loop-fix.patch</Patch>
+	    <Patch level="1">ubuntu/usb-backend-detach-usblp-earlier-crash-guards.patch</Patch>-->
+	    <Patch level="1">ubuntu/usb-backend-initialize-usblp-attached-state.patch</Patch>
 
-            <!-- Retry job when it's failed instead of stopping -->
+             <!--Retry job when it's failed instead of stopping -->
             <Patch level="1">ubuntu/ubuntu-default-error-policy-retry-job.patch</Patch>
 
             <!-- Poppler fixes -->
-            <Patch level="1">ubuntu/poppler-based-pdftops-fixes.patch</Patch>
             <Patch level="1">ubuntu/read-embedded-options-from-incoming-postscript-and-add-to-ipp-attrs.patch</Patch>
 
-            <!-- Suppress bonjour warnings -->
-            <!--<Patch level="1">ubuntu/quiesce-bonjour-warning.patch</Patch>-->
+            <!-- ipp-backend -->
+            <Patch level="1">ubuntu/add-ipp-backend-of-cups-1.4.patch</Patch>
+	    <!--<Patch level="1">ubuntu/ipp-backend-cups-1.5.4-fixes.patch</Patch>-->
+	    
 
             <!-- Don't mess with cupsd.conf permission -->
             <Patch level="1">ubuntu/confdirperms.patch</Patch>
@@ -168,21 +153,19 @@
 
             <!-- Don't write timestamps in conf files to keep them unchanged between releases -->
             <Patch level="1">ubuntu/no-conffile-timestamp.patch</Patch>
+	    
+	          <!-- Supporting-->
+            <Patch level="1">ubuntu/airprint-support.patch</Patch>
+            <Patch level="1">ubuntu/colord-support.patch</Patch>
+	    <Patch level="1">ubuntu/snmp-dont-stop-without-ipv6.patch</Patch>
+	    
 
 
             <!-- Other patches -->
-
-            <!-- Create symbolic link backend/https -->
-            <Patch level="1">pardus/backend-https.patch</Patch>
+	    
 
             <!-- Don't strip debugging symbols -->
             <Patch level="1">pardus/nostrip.patch</Patch>
-
-            <!-- Don't locale dependently manage case conversions (#17066) -->
-            <Patch level="1">pardus/fix-case-conversion-in-web-interface.patch</Patch>
-
-            <!-- Don't install desktop file (pb#18840) -->
-            <Patch level="1">pardus/dont-install-desktopfile.patch</Patch>
         </Patches>
     </Source>
 
@@ -201,13 +184,17 @@
             <Dependency>libpng</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>tiff</Dependency>
+            <Dependency>libusb-compat</Dependency>
+            <Dependency>libusbx</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>cupsddk</Package>
+        </Replaces>
         <Files>
             <Path fileType="config">/etc/cups/*conf</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="data">/lib/systemd/system</Path>
             <Path fileType="data">/var/cache/cups/rss</Path>
             <Path fileType="data">/var/spool/cups/tmp</Path>
             <Path fileType="data">/var/run/cups/certs</Path>
@@ -255,7 +242,7 @@
         <Name>cups-php</Name>
         <Summary>CUPS API for PHP programming language</Summary>
         <RuntimeDependencies>
-            <Dependency>cups</Dependency>
+            <Dependency release="current">cups</Dependency>
             <Dependency>php-cli</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -288,7 +275,9 @@
             <Dependency>zlib-32bit</Dependency>
             <Dependency>jpeg-32bit</Dependency>
             <Dependency>tiff-32bit</Dependency>
+            <Dependency>dbus-32bit</Dependency>
             <Dependency>libusb-compat-32bit</Dependency>
+            <Dependency>libusbx-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">cups</Dependency>
@@ -297,7 +286,9 @@
             <Dependency>zlib-32bit</Dependency>
             <Dependency>jpeg-32bit</Dependency>
             <Dependency>tiff-32bit</Dependency>
+            <Dependency>dbus-32bit</Dependency>
             <Dependency>libusb-compat-32bit</Dependency>
+            <Dependency>libusbx-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -305,14 +296,19 @@
     </Package>
 
     <History>
-        <Update release="90">
-            <Date>2012-10-05</Date>
-            <Version>1.6.1</Version>
-            <Comment>*Version bump
-                     *Use systemd service
-            </Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
+       <Update release="91">
+            <Date>2012-10-18</Date>
+            <Version>1.5.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+       <Update release="90">
+            <Date>2011-08-02</Date>
+            <Version>1.5.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Update>
         <Update release="89">
             <Date>2011-08-02</Date>

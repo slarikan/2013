@@ -1,7 +1,7 @@
-diff -up cups-1.4.7/config.h.in.avahi-1-config cups-1.4.7/config.h.in
---- cups-1.4.7/config.h.in.avahi-1-config	2011-01-10 07:39:37.000000000 +0000
-+++ cups-1.4.7/config.h.in	2011-06-28 12:53:16.860630055 +0100
-@@ -345,6 +345,13 @@
+diff -up cups-1.5.2/config.h.in.avahi-1-config cups-1.5.2/config.h.in
+--- cups-1.5.2/config.h.in.avahi-1-config	2011-06-16 21:12:16.000000000 +0100
++++ cups-1.5.2/config.h.in	2012-03-14 15:04:51.365347165 +0000
+@@ -390,6 +390,13 @@
  
  
  /*
@@ -15,10 +15,10 @@ diff -up cups-1.4.7/config.h.in.avahi-1-config cups-1.4.7/config.h.in
   * Do we have <sys/ioctl.h>?
   */
  
-diff -up cups-1.4.7/config-scripts/cups-dnssd.m4.avahi-1-config cups-1.4.7/config-scripts/cups-dnssd.m4
---- cups-1.4.7/config-scripts/cups-dnssd.m4.avahi-1-config	2009-08-28 23:54:34.000000000 +0100
-+++ cups-1.4.7/config-scripts/cups-dnssd.m4	2011-06-28 12:53:16.860630055 +0100
-@@ -27,6 +27,21 @@ AC_ARG_WITH(dnssd-includes, [  --with-dn
+diff -up cups-1.5.2/config-scripts/cups-dnssd.m4.avahi-1-config cups-1.5.2/config-scripts/cups-dnssd.m4
+--- cups-1.5.2/config-scripts/cups-dnssd.m4.avahi-1-config	2011-05-12 06:21:56.000000000 +0100
++++ cups-1.5.2/config-scripts/cups-dnssd.m4	2012-03-14 15:04:51.365347165 +0000
+@@ -23,6 +23,21 @@ AC_ARG_WITH(dnssd-includes, [  --with-dn
  DNSSDLIBS=""
  DNSSD_BACKEND=""
  
