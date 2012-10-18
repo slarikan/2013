@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>PDF rendering library</Summary>
         <Description>poppler is a PDF rendering library based on xpdf.</Description>
-        <Archive sha1sum="fd808cfcd249b7079a09a97f99ffb08db8c62b93" type="targz">http://poppler.freedesktop.org/poppler-0.20.4.tar.gz</Archive>
+        <Archive sha1sum="5eb351381e6d7994bdf7f09bb5c1075f41d79381" type="targz">http://poppler.freedesktop.org/poppler-0.20.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>lcms-devel</Dependency>
@@ -154,13 +154,20 @@
     </Package>
 
     <History>
+        <Update release="41">
+            <Date>2012-10-18</Date>
+            <Version>0.20.5</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="40">
             <Date>2012-09-12</Date>
             <Version>0.20.4</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="39">
             <Date>2011-06-09</Date>
             <Version>0.16.6</Version>

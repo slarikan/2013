@@ -9,6 +9,9 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+from pisi.actionsapi import shelltools
+
+shelltools.export("CXXFLAGS", "%s -I/usr/include/openjpeg-1.5" % get.CXXFLAGS())
 
 def setup():
     autotools.autoreconf("-fi")
