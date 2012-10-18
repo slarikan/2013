@@ -17,7 +17,7 @@
         <IsA>data</IsA>
         <Summary>Firmware files used by the Linux kernel</Summary>
         <Description>linux-firmware contains different firmware files required for some devices to operate correctly.</Description>
-        <Archive sha1sum="9d475b7c4b36468b5c7c0998490b4a0400260967" type="tarbz2">/home/erdinc/İndirilenler/linux-firmware-20121016.tar.bz2</Archive>
+        <Archive sha1sum="9d475b7c4b36468b5c7c0998490b4a0400260967" type="tarbz2">https://github.com/downloads/circass/elemantary-icon/linux-firmware-20121016.tar.bz2</Archive>
         <Archive sha1sum="9673bfb64fad340d24b95d6415d05220e905bdff" type="tarbz2" target="linux-firmware-20121016">https://github.com/downloads/pardus-anka/2013/firmware-ipw.tar.bz2</Archive>
         <Archive sha1sum="6c18b28e62637fb809eaff89fff623ae1d470500" type="tarbz2" target="linux-firmware-20121016">http://cekirdek.pardus.org.tr/~ozan/dist/sources/ar9170.tar.bz2</Archive>
         <Archive sha1sum="aa3b414c2948be5f226a25fa5f37e56fd659a3bb" type="tarbz2" target="linux-firmware-20121016">http://cekirdek.pardus.org.tr/~ozan/dist/sources/ipw2x00-firmware.tar.bz2</Archive>
