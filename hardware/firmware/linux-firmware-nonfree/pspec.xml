@@ -11,7 +11,7 @@
         <IsA>data</IsA>
         <Summary>Firmware nonfree files used by the Linux kernel</Summary>
         <Description>linux-firmware contains different nonfree firmware files required for some devices to operate correctly.</Description>
-	<Archive sha1sum="f1fd4165ff4e69e59f74f50bdc7daf3cec2bb6d5" type="tarbz2">https://github.com/downloads/pardus-anka/2013/firmware-nonfreebox-1.tar.bz2</Archive>
+	<Archive sha1sum="406af4262aa18e1376f71803b1f581c7ad4453e1" type="tarbz2">https://github.com/downloads/pardus-anka/2013/firmware-nonfreebox-1.tar.bz2</Archive>
 </Source>
 
     <Package>
