@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>sun-jdk</Name>
-        <Homepage>https://jdk-distros.dev.java.net</Homepage>
+        <Homepage>http://www.oracle.com/technetwork/java/index.html</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -12,18 +12,10 @@
         <IsA>app:console</IsA>
         <IsA>library</IsA>
         <Summary>Sun's Java Development Kit for Standard Edition</Summary>
-        <Description>This package provides Java Development Environment for hardcode with Java.</Description>
-        <Archive sha1sum="06e0357207c18202f7fea04df5570de1845ddd28" type="binary"></Archive>
-        <BuildDependencies>
-            <Dependency>alsa-lib</Dependency>
-            <Dependency>unixODBC</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>libXtst</Dependency>
-        </BuildDependencies>
+        <Description>This package provides Java Development Environment need hardcode with Java.</Description>
+        <Archive sha1sum="dfa082cece7054b05e52eca07c565b202f284998" type="targz">http://download.oracle.com/otn-pub/java/jdk/7u7-b10/jdk-7u7-linux-x64.tar.gz</Archive>
     </Source>
-
-    
+  
     <Package>
         <Name>sun-jdk</Name>
         <Summary>Sun's J2SE Development Kit</Summary>
@@ -36,7 +28,9 @@
             <Path fileType="header">/opt/sun-jdk/include</Path>
             <Path fileType="library">/opt/sun-jdk/lib</Path>
             <Path fileType="data">/opt/sun-jdk/src.zip</Path>
+	    <Path fileType="data">/opt/sun-jdk/db</Path>
             <Path fileType="man">/opt/sun-jdk/man</Path>
+	    <Path fileType="doc">/opt/sun-jdk</Path>
             <Path fileType="config">/etc/env.d/21java_jdk</Path>
         </Files>
         <AdditionalFiles>
@@ -44,25 +38,10 @@
         </AdditionalFiles>
     </Package>
 
-    <Package>
-        <Name>sun-jdk-doc</Name>
-        <Summary>Documentation files for Apache Derby database engine</Summary>
-        <Description>This package contains documentation about Apache Derby database engine that is implemented completely in Java.</Description>
-        <RuntimeDependencies>
-            <Dependency versionFrom="current">sun-jdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="doc">/opt/sun-jdk/db/index.html</Path>
-            <Path fileType="doc">/opt/sun-jdk/db/register.html</Path>
-            <Path fileType="doc">/opt/sun-jdk/db/docs</Path>
-            <Path fileType="data">/opt/sun-jdk/db/javadoc</Path>
-        </Files>
-    </Package>
-
     <History>
         <Update release="1">
             <Date>2012-17-10</Date>
-            <Version>1.7.0_p35</Version>
+            <Version>1.7.0_07</Version>
             <Comment>Version bump</Comment>
             <Name>canatan</Name>
             <Email>qazsew@mynet.com</Email>
