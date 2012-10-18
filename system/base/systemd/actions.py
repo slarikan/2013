@@ -5,6 +5,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("PYTHONDONTWRITEBYTECODE","1")
+shelltools.export("HOME",get.workDIR())
+
 def setup():
     autotools.autoconf()
     autotools.configure("--with-rootprefix= \
@@ -28,7 +31,7 @@ def install():
     #sysvinit compability
     #remove for now. continue at systemd branch
     for binary in ["reboot","halt","poweroff","shutdown","telinit","runlevel"]:
-        pisitools.remove("/usr/share/man/man8/%s.8" % i) # remove for now. shipping with sysvinit
+        pisitools.remove("/usr/share/man/man8/%s.8" % binary) # remove for now. shipping with sysvinit
         #~ pisitools.dosym("../bin/systemctl","/sbin/%s" % binary)
     #~ pisitools.dosym("../lib/systemd/systemd","/bin/systemd")
     #~ pisitools.dosym("../bin/systemd","/sbin/init")
