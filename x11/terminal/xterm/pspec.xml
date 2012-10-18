@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Terminal emulator for the X Window System</Summary>
         <Description>The xterm program is a terminal emulator for the X Window System. It provides DEC VT102 and Tektronix 4014 compatible terminals for programs that can't use the window system directly.</Description>
-        <Archive sha1sum="c19b73bea2f43c676699e914c8a059d8b69fc89b" type="targz">ftp://invisible-island.net/xterm/xterm-261.tgz</Archive>
+        <Archive sha1sum="522fd17211bb2b01ffcb8181ef4c558a1c61c4f5" type="targz">ftp://invisible-island.net/xterm/xterm.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
@@ -25,8 +25,8 @@
             <Dependency>xorg-app</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">xterm-226-man-page_paths.patch</Patch>
-            <Patch level="1">xterm-238-windowfontops.patch</Patch>
+<!--             <Patch level="1">xterm-226-man-page_paths.patch</Patch> -->
+<!--             <Patch level="1">xterm-238-windowfontops.patch</Patch> -->
 
             <!-- ftp://invisible-island.net/xterm/16colors.txt -->
             <Patch>16colors.txt.diff</Patch>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-10-18</Date>
+            <Version>284</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="13">
             <Date>2010-10-12</Date>
             <Version>261</Version>
