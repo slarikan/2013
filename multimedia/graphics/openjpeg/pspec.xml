@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>JPEG2000 decoding library</Summary>
         <Description>openjpeg is an open-source JPEG 2000 codec written in C. It has been developed in order to promote the use of JPEG 2000, the new still-image compression standard from the Joint Photographic Experts Group (JPEG).</Description>
-        <Archive sha1sum="dce705ae45f137e4698a8cf39d1fbf22bc434fa8" type="targz">http://openjpeg.googlecode.com/files/openjpeg-1.5.0.tar.gz</Archive>
+        <Archive sha1sum="1b0b74d1af4c297fd82806a9325bb544caf9bb8b" type="targz">http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
@@ -44,9 +44,9 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="data">/usr/share/pkgconfig/</Path>
-	    <Path fileType="data">/usr/share/openjpeg-1.5</Path>
-	    <Path fileType="data">/usr/share/man/man1</Path>
+            <Path fileType="data">/usr/share/pkgconfig/</Path>
+            <Path fileType="data">/usr/share/openjpeg-1.5</Path>
+            <Path fileType="data">/usr/share/man/man1</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
@@ -66,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-10-18</Date>
+            <Version>1.5.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="11">
             <Date>2012-08-29</Date>
             <Version>1.5</Version>
