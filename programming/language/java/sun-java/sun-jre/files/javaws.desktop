@@ -1,22 +1,16 @@
 [Desktop Entry]
-Categories=System;
-Comment[en_US]=none
-Comment=
+Categories=Settings;
+Comment[en_US]=some settings about java
+Comment[tr_TR]=java'yla ilgili birtakım ayarlar
 Encoding=UTF-8
 Exec=/opt/sun-jdk/jre/bin/javaws -viewer
-GenericName[en_US]=javaws
-GenericName=javaws
+GenericName[en_US]=java-options
+GenericName=java-settings
 Icon=/opt/sun-jdk/jre/lib/desktop/icons/hicolor/48x48/apps/sun-javaws.png
 MimeType=application/x-java-jnlp-file;
 Name[en_US]=Java Web Start
 Name=Java Web Start
-NoDisplay=True
-Path=
 StartupNotify=true
 Terminal=false
 TerminalOptions=
 Type=Application
-X-DBUS-ServiceName=
-X-DBUS-StartupType=
-X-KDE-SubstituteUID=false
-X-KDE-Username=
