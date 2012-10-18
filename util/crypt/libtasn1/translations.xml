@@ -10,4 +10,9 @@
         <Name>libtasn1-devel</Name>
         <Summary xml:lang="tr">libtasn1 için geliştirme dosyaları</Summary>
     </Package>
+
+    <Package>
+        <Name>libtasn1-32bit</Name>
+	<Summary xml:lang="tr">libtasn1 için 32bit kütüphanesi</Summary>
+    </Package>
 </PISI>

@@ -38,7 +38,7 @@
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>libtasn1-32bit</Name>
         <PartOf>emul32</PartOf>
@@ -46,6 +46,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libtasn1</Dependency>
+            <Dependency>gmp-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/</Path>
@@ -57,9 +58,9 @@
         <Update release="8">
             <Date>2012-10-18</Date>
             <Version>2.14</Version>
-            <Comment>Add emul32 package.</Comment>
-            <Name>Serdar Soytetir</Name>
-	    <Email>tulliana@gmail.com</Email>
+            <Comment>libtasn1-32bit paketi eklendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="7">
             <Date>2012-09-30</Date>
