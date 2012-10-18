@@ -38,8 +38,29 @@
             <Path fileType="man">/usr/share/man/man3</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>libtasn1-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libtasn1</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">libtasn1</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/</Path>
+            <Path fileType="library">/usr/lib32/pkgconfig/libtasn1.pc</Path>
+        </Files>
+    </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-10-18</Date>
+            <Version>2.14</Version>
+            <Comment>Add emul32 package.</Comment>
+            <Name>Serdar Soytetir</Name>
+	    <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2012-09-30</Date>
             <Version>2.14</Version>
