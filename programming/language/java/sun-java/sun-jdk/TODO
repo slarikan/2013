@@ -1,0 +1,21 @@
+######  This file is our own TODO file.Someone can edit it free, for adding TODO,feature request,bug reporting etc.  ######
+
+1-Kullandığım http://download.oracle.com/otn-pub/java/jdk/7u7-b10/jdk-7u7-linux-x64.tar.gz kaynak dosyasını pspec.xml'e hedef olarak yazdığımda
+
+konsoldan inşa sırasında otomatik olarak indiremiyor.Hata veriyor.Browserde da dosyanın inebilmesi için lisans kabuluyle ilgili kutucuğa tik atmak gerekiyor.
+
+Konsoldaki hataya da muhtemelen bu tik olayı neden oluyor.Bunun önüne geçmek için kaynak nette başka bir yere konulabilir.Ben şimdilik geçici bir çözüm buldum.
+
+Hatayıda bilgi amaçlı veriyom.
+
+Fetching source from: http://download.oracle.com/otn-pub/java/jdk/7u7-b10/jdk-7u7-linux-x64.tar.gz
+jdk-7u7-linux-x64.tar.gz       (5.0 KB)100%     16.28 MB/s [00:00:00] [complete]
+Source archive is stored: /var/cache/pisi/archives/jdk-7u7-linux-x64.tar.gz
+Unpacking archive(s)...
+*** 0 error(s), 1 warning(s)
+Program terminated.
+unpack: check_file_hash failed
+
+2-jdk7u9 (yani jdk1.7.0_09) release çıksada daha upstreame konulmamış.Konulduğu zaman sürüm ona çekilecek.
+
+3-Test etmek gerekiyor.
