@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Qt based Bluetooth library</Summary>
         <Description>libbluedevil is a Qt based library written in C++ to handle all Bluetooth functionality.</Description>
-        <Archive sha1sum="36adeb6bedbeae45d96d70a47fa3028023496a40" type="tarbz2">https://github.com/downloads/pardus-anka/2013/libbluedevil-20121018.tar.bz2</Archive>
+        <Archive sha1sum="36adeb6bedbeae45d96d70a47fa3028023496a40" type="tarbz2">https://github.com/downloads/pardus-anka/2013/libbluedevil-1.9.2_20121018.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
@@ -43,7 +43,7 @@
     <History>
         <Update release="6">
             <Date>2012-10-18</Date>
-            <Version>20121018</Version>
+            <Version>1.9.2_20121018</Version>
             <Comment>Bump to git snapshot</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
