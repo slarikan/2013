@@ -190,6 +190,7 @@
             <!-- FIXME: Should be replaced by dracut -->
             <Dependency>mkinitramfs</Dependency>
             <Dependency>linux-firmware</Dependency>
+	    <Dependency>linux-firmware-nonfree</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>module-lirc</Package>
