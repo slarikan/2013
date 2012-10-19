@@ -14,7 +14,7 @@
         <IsA>data</IsA>
         <Summary>Filesystem baselayout</Summary>
         <Description>baselayout creates the Pardus Linux main filesystem hierarchy.</Description>
-        <Archive sha1sum="8a999a756262bd4727c89a0739632581c9adf6c1" type="targz">http://sources.pardus-linux.org/baselayout-3.6.1.tar.gz</Archive>
+        <Archive sha1sum="c95eafbe0f5466a604c111421d89ec3f46c8968e" type="targz">http://sources.pardus-linux.org/baselayout-3.6.1.tar.gz</Archive>
     </Source>
 
     <Package>
