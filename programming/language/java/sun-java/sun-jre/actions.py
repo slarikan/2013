@@ -20,6 +20,6 @@ def install():
     pisitools.dodir("/usr/lib/browser-plugins")
     pisitools.dosym("/opt/sun-jdk/jre/lib/amd64/libnpjp2.so" , "/usr/lib/browser-plugins/javaplugin.so")
     
-    shutil.rmtree("/var/pisi/sun-jre-1.7.0_09-1/install/opt/sun-jdk/jre/plugin/desktop/")  # what dont do anything (at me?)
+    shutil.rmtree("/var/pisi/sun-jre-1.7.0_09-1/install/opt/sun-jdk/jre/plugin/desktop/") 
    
     pisitools.dosym("/opt/sun-jdk/jre" , "/opt/sun-jre")
