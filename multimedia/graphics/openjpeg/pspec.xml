@@ -15,31 +15,18 @@
         <Description>openjpeg is an open-source JPEG 2000 codec written in C. It has been developed in order to promote the use of JPEG 2000, the new still-image compression standard from the Joint Photographic Experts Group (JPEG).</Description>
         <Archive sha1sum="1b0b74d1af4c297fd82806a9325bb544caf9bb8b" type="targz">http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>lcms-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">openjpeg-20070717svn-codec-libtiff.patch</Patch>
-            <Patch level="1">openjpeg-svn480-cmake.patch</Patch>
-            <Patch level="1">openjpeg-svn480-use-stdbool.patch</Patch>
-            <Patch level="1">openjpeg-1.3-tcd_init_encode-alloc-fix.patch</Patch>
-            <Patch level="1">openjpeg-1.3-reverse-bogus-aligned-malloc.patch</Patch>
-            <Patch level="1">openjpeg-svn468-mj2-noscroll.patch</Patch>-->
             <Patch level="1">openjpeg-20070717svn-mqc-optimize.patch</Patch>
-            <!--<Patch level="1">openjpeg-20070821svn-t1-remove-macro.patch</Patch>
-            <Patch level="1">openjpeg-20070719svn-t1-x86_64-flags-branchless.patch</Patch>
-            <Patch level="1">openjpeg-20070719svn-t1-t1_dec_sigpass_step-optimize.patch</Patch>
-            <Patch level="1">openjpeg-20070821svn-t1-flags-stride.patch</Patch>
-            <Patch level="1">openjpeg-20070821svn-t1-updateflags-x86_64.patch</Patch>
-            <Patch level="1">openjpeg-svn470-t1-flags-mmx.patch</Patch>
-            <Patch level="1">openjpeg-20070719svn-mqc-more-optimize.patch</Patch>
-            <Patch level="1">openjpeg-1.3-Makefile.patch</Patch>-->
-            <Patch level="1">openjpeg-1.3-libm.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>openjpeg</Name>
         <RuntimeDependencies>
+            <Dependency>lcms</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>
         <Files>
