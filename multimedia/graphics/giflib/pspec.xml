@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Library to handle, display and manipulate GIF images</Summary>
         <Description>The giflib package contains a shared library of functions for loading and saving GIF format image files. It is API and ABI compatible with libungif, the library which supported uncompressed GIFs while the Unisys LZW patent was in effect.</Description>
-        <Archive sha1sum="0b032c2104a0956e2f91b6c11ff8c5515421cd8b" type="tarbz2">http://downloads.sourceforge.net/project/giflib/giflib-5.x/giflib-5.0.0.tar.bz2</Archive>
+        <Archive sha1sum="98477ca6224e3f42e443255a93c5c86d0723e2d6" type="tarbz2">http://sourceforge.net/projects/giflib/files/giflib-5.x/giflib-5.0.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXt-devel</Dependency>
         </BuildDependencies>
@@ -64,13 +64,20 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-19</Date>
+            <Version>5.0.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2012-08-28</Date>
             <Version>5.0.0</Version>
             <Comment>Version bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update> 
+        </Update>
         <Update release="9">
             <Date>2011-05-03</Date>
             <Version>4.1.6</Version>
