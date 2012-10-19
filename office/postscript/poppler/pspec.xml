@@ -21,15 +21,13 @@
             <Dependency>cairo-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
             <Dependency>openjpeg-devel</Dependency>
+            <Dependency>tiff-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--Patch level="1">poppler-0.12.4-annot-appearance.patch</Patch-->
-
-            <!-- Implement tiling/patterns in SplashOutputDev (fdo#13518) -->
-            <!--Patch level="1">abf167af8b15e5f3b510275ce619e6fdb42edd40.patch</Patch-->
+            <Patch level="1">poppler-0.12-CVE-2009-3608,3609.patch</Patch>
         </Patches>
     </Source>
 
@@ -40,6 +38,7 @@
             <Dependency>jpeg</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>openjpeg</Dependency>
+            <Dependency>tiff</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>poppler-data</Dependency>
