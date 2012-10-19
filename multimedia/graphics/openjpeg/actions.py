@@ -15,21 +15,22 @@ from pisi.actionsapi import get
 #WorkDir="OpenJPEG_v1_5"
 
 def setup():
-    shelltools.system("rm -rf jp3d libs")
+#    shelltools.system("rm -rf thirdparty")
 
-    shelltools.makedirs("build")
-    shelltools.cd("build")
+#    shelltools.makedirs("build")
+#    shelltools.cd("build")
 
-    cmaketools.configure("-DBUILD_EXAMPLES:BOOL=ON \
-                          -DBUILD_SHARED_LIBS:BOOL=ON \
-                          -DINCLUDE_INSTALL_DIR=/%s/include" % get.defaultprefixDIR(), sourceDir="..")
+#    cmaketools.configure("-DBUILD_EXAMPLES:BOOL=ON \
+#                          -DBUILD_SHARED_LIBS:BOOL=ON \
+#                          -DINCLUDE_INSTALL_DIR=/%s/include" % get.defaultprefixDIR(), sourceDir="..")
 
+    autotools.configure("--disable-static --disable-silent-rules")
 
 def build():
-    autotools.make("-C build")
+    autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s -C build" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dosym("openjpeg/openjpeg.h", "/usr/include/openjpeg.h")
 
