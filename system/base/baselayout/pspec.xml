@@ -14,7 +14,7 @@
         <IsA>data</IsA>
         <Summary>Filesystem baselayout</Summary>
         <Description>baselayout creates the Pardus Linux main filesystem hierarchy.</Description>
-        <Archive sha1sum="16dd364f1506211d9a82c43b5c33cdd82553a569" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/baselayout-3.5.2.tar.gz</Archive>
+        <Archive sha1sum="8a999a756262bd4727c89a0739632581c9adf6c1" type="targz">http://sources.pardus-linux.org/baselayout-3.6.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -35,6 +35,7 @@
             <Path fileType="data" permanent="true">/mnt</Path>
             <Path fileType="data" permanent="true">/opt</Path>
             <Path fileType="data" permanent="true">/dev</Path>
+            <Path fileType="data" permanent="true">/run</Path>
             <Path fileType="data" permanent="true">/sys</Path>
             <Path fileType="data" permanent="true">/srv</Path>
             <Path fileType="data" permanent="true">/tmp</Path>
@@ -63,6 +64,20 @@
     </Package>
 
     <History>
+        <Update release="178">
+            <Date>2012-10-16</Date>
+            <Version>3.6.1</Version>
+            <Comment>New release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
+        <Update release="177">
+            <Date>2012-10-16</Date>
+            <Version>3.6.0</Version>
+            <Comment>New release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="176">
             <Date>2012-01-31</Date>
             <Version>3.5.2</Version>
