@@ -1,5 +1,2 @@
-######     yapılacak işler,eknenecek özellikler buraya               ######
-
-1-Yaw her paketin bööle TODO belgesi olsa fena mı olur.
-
-2-
+* package signing
+* preinstall hook
