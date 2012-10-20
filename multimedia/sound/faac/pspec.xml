@@ -19,6 +19,8 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">external-mp4v2.patch</Patch>
+            <Patch>inttypes.patch</Patch>
+            <Patch>faac-1.28-libmp4v2_r479_compat.patch</Patch>
         </Patches>
     </Source>
     <Package>
