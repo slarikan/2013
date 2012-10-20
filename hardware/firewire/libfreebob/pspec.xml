@@ -23,6 +23,7 @@
         <Patches>
             <Patch level="1">libfreebob-1.0.11-includes.patch</Patch>
             <Patch level="1">gcc-4.5.patch</Patch>
+            <Patch level="1">fix_usleep.patch</Patch>
         </Patches>
     </Source>
 
