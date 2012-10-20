@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Programming interface for IEEE 1394 based cameras</Summary>
         <Description>libdc1394 is a library that is intended to provide a high level programming interface for application developers who wish to control IEEE 1394 based cameras that conform to the 1394-based Digital Camera Specification (found at http://www.1394ta.org/).</Description>
-        <Archive sha1sum="d9ad4834f23b555d04f255945117a4420ae40977" type="targz">mirrors://sourceforge/libdc1394/libdc1394-2.1.2.tar.gz</Archive>
+        <Archive sha1sum="7e831258a65e7e111a9d52d8062aec6d28a1e4c4" type="targz">http://sourceforge.net/projects/libdc1394/files/libdc1394-2/2.2.0/libdc1394-2.2.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libraw1394-devel</Dependency>
             <Dependency>libXv-devel</Dependency>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-20</Date>
+            <Version>2.2.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2012-10-05</Date>
             <Version>2.1.2</Version>
