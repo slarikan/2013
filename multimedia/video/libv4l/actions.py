@@ -24,6 +24,7 @@ else:
     args += " LIBDIR=/usr/lib"
 
 def build():
+    pisitools.dosed("Make.rules", "^CFLAGS\s:=.*")
     autotools.make(args)
 
 def install():
