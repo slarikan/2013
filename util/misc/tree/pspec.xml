@@ -12,10 +12,8 @@
         <IsA>app:console</IsA>
         <Summary>Recursive directory listing tool</Summary>
         <Description>Tree lists directories recursively, and produces an indented listing of files.</Description>
-        <Archive sha1sum="329e05e500754109ff1f648c14924d8cac42c6ea" type="targz">ftp://mama.indstate.edu/linux/tree/tree-1.5.3.tgz</Archive>
+        <Archive sha1sum="350f851f68859a011668362dd0e7ee81fd1b713a" type="targz">ftp://mama.indstate.edu/linux/tree/tree-1.6.0.tgz</Archive>
         <Patches>
-            <Patch level="1">tree-1.5.2.2-fix-typo.patch</Patch>
-            <Patch level="1">tree-1.5.2.2-link-flags.patch</Patch>
             <Patch>tree-1.5.1.1-nostrip.diff</Patch>
         </Patches>
     </Source>
@@ -34,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-20</Date>
+            <Version>1.6.0</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>1.5.3</Version>

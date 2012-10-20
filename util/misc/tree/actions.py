@@ -18,5 +18,5 @@ def build():
 def install():
     pisitools.dobin("tree")
 
-    pisitools.doman("man/tree.1")
+    pisitools.doman("doc/tree.1")
     pisitools.dodoc("CHANGES", "README*")
