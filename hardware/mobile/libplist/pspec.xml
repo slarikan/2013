@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Library for manipulating Apple Binary and XML Property Lists</Summary>
         <Description>libplist is a library for manipulating Apple Binary and XML Property Lists.</Description>
-        <Archive sha1sum="021202473d59165f5ee2acb4946f0b12f7752ae4" type="tarbz2">http://pardusarchives.googlecode.com/files/libplist-1.3_20101024.tar.bz2</Archive>
+        <Archive sha1sum="dea18ac31cc497dba959bdb459a2a49fb41664c3" type="tarbz2">http://www.libimobiledevice.org/downloads/libplist-1.8.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-20</Date>
+            <Version>1.8</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2010-10-24</Date>
             <Version>1.3_20101024</Version>
