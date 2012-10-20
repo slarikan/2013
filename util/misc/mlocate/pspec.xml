@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A utility for finding files by name</Summary>
         <Description>mlocate is a locate/updatedb implementation. It keeps a database of all existing files and allows you to lookup files by name. There is an example cron job in docs folder to update the database, you may place it under one of your cron directories according to your needs.</Description>
-        <Archive sha1sum="7beb0572c9cfdef0db3e2f34cd71c616344e2d53" type="tarxz">https://fedorahosted.org/releases/m/l/mlocate/mlocate-0.24.tar.xz</Archive>
+        <Archive sha1sum="c6e6d81b25359c51c545f4b8ba0f3b469227fcbc" type="tarxz">https://fedorahosted.org/releases/m/l/mlocate/mlocate-0.26.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="doc/mlocate.cron.example">mlocate.cron</AdditionalFile>
         </AdditionalFiles>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+       <Update release="2">
+            <Date>2012-10-20</Date>
+            <Version>0.26</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-07-19</Date>
             <Version>0.24</Version>
