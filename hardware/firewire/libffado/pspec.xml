@@ -29,6 +29,8 @@
             <Patch level="1">libffado-api-doc-only.patch</Patch>
             <Patch level="1">libffado-libconfig145.patch</Patch>
             <Patch level="1">flags.patch</Patch>
+            <Patch level="1">libffado-gcc47.patch</Patch>
+            <Patch level="3">fix-segfault-on-close.patch</Patch>
         </Patches>
     </Source>
 
