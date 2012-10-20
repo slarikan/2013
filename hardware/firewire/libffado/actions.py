@@ -14,7 +14,7 @@ WorkDir = "libffado-2.1.0"
 
 def build():
     scons.make('PREFIX=/usr \
-                COMPILE_FLAGS="%s %s" \
+                COMPILE_FLAGS="%s %s -lpthread" \
                 BUILD_TESTS=0' % (get.CXXFLAGS(), get.LDFLAGS()))
 
 def install():
