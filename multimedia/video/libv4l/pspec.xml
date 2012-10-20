@@ -17,13 +17,14 @@
         <Archive sha1sum="6fc2c490fb14a109e25745cf2df226bbddda8b0c" type="targz">http://people.fedoraproject.org/~jwrdegoede/libv4l-0.6.4.tar.gz</Archive>
         -->
         <Archive sha1sum="f7d4b6d2fd9244a27f756abfc7ef5787e1e2c9a2" type="tarbz2">http://linuxtv.org/downloads/v4l-utils/v4l-utils-0.8.8.tar.bz2</Archive>
-            <!--
         <Patches>
+            <Patch level="1">fix-missing-includes.patch</Patch>
+            <!--
             <Patch level="1">bug11603.patch</Patch>
             <Patch level="1">disabled_utils.patch</Patch>
             <Patch level="1">keytables_sandbox.patch</Patch>
-        </Patches>
             -->
+        </Patches>
         <!-- we don't build qt dependent programs for now, will enable later
         -->
         <BuildDependencies>
