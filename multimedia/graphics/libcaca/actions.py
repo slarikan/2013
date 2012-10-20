@@ -36,6 +36,6 @@ def install():
 
     # we remove la files but symlinks stay there, so we remove by hand
     pisitools.remove("/usr/lib/*.la")
-    pisitools.removeDir("/usr/share/java")
+    #pisitools.removeDir("/usr/share/java")
 
     pisitools.dodoc("AUTHORS", "COPYING*", "ChangeLog", "NEWS","NOTES", "README", "THANKS")
