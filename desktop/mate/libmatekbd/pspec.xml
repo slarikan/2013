@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
-        <Archive sha1sum="cf6c2845fc5318c4adc980d097b6642b9f1ea6c8" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatekbd-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="8fcf02eb9cbb3ea0dd799480067cb5ed1b646040" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatekbd-1.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-conf-devel</Dependency>
 	    <Dependency>glib2-devel</Dependency>
@@ -28,17 +28,18 @@
 	   <Dependency>libxklavier</Dependency>
            <Dependency>gdk-pixbuf</Dependency>
 	</RuntimeDependencies>
-        <Files>            
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
 	    <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/libmatekbd</Path>
 	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="data">/usr/share/glib-2.0/</Path>
 	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="config">/etc/mateconf/schemas/</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>libmatekbd-devel</Name>
         <Summary>libmatekbd için geliştirme dosyaları</Summary>
@@ -51,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2012-08-23</Date>
             <Version>1.4.0</Version>
