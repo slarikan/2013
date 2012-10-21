@@ -24,7 +24,7 @@ def install():
 
     # Fixup libs and remove static one
     pisitools.dosym("libxvidcore.so.4",  "/usr/lib/libxvidcore.so")
-    pisitools.dosym("libxvidcore.so.4.2",  "/usr/lib/libxvidcore.so.4")
+    pisitools.dosym("libxvidcore.so.4.3",  "/usr/lib/libxvidcore.so.4")
     pisitools.remove("/usr/lib/libxvidcore.a")
 
     shelltools.cd("../..")
