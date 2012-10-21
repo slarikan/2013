@@ -8,7 +8,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = get.srcNAME()
+WorkDir = "eigen-eigen-0938af7840b0"
 
 def setup():
     cmaketools.configure()
