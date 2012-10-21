@@ -40,6 +40,7 @@
             <Dependency>faad2-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
+	    <Dependency>vcdimager-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">external-a52.patch</Patch>
@@ -99,6 +100,7 @@
             <Dependency>faad2</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
+	    <Dependency>vcdimager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
