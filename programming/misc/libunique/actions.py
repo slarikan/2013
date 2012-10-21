@@ -12,7 +12,9 @@ from pisi.actionsapi import get
 shelltools.export('HOME', get.workDIR())
 def setup():
     autotools.configure("--disable-static \
-                         --enable-gtk-doc")
+                         --enable-gtk-doc \
+                         --enable-maintainer-flags=no \
+                         --enable-introspection=yes")
 
 def build():
     autotools.make()
