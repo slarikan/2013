@@ -54,13 +54,13 @@ def build():
     cmaketools.make("VERBOSE=1")
 
 def install():
-    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # Move other docs and samples under standart doc dir
     doc_dir = "usr/share/doc/" + get.srcNAME()
 
     pisitools.domove("usr/share/OpenCV/doc", doc_dir)
-    pisitools.domove("usr/share/opencv/samples", doc_dir)
+    #pisitools.domove("usr/share/opencv/samples", doc_dir)
 
     pisitools.dodoc("doc/license.txt")
 
