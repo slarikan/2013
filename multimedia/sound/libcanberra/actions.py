@@ -31,7 +31,7 @@ def build():
     autotools.make()
 
 def install():
-    autotools.install()
+    autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
 
     pisitools.removeDir("/usr/share/gnome")
     pisitools.removeDir("/usr/share/gtk-doc")
