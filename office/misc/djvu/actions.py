@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "djvulibre-%s" % get.srcVERSION()
+WorkDir = "djvulibre-%s" % get.srcVERSION() if len(get.srcVERSION().split(".")) < 4 else "djvulibre-%s" % get.srcVERSION()[:get.srcVERSION().rfind(".")]
 
 def setup():
     autotools.aclocal("-I config")
@@ -33,4 +33,4 @@ def install():
     for size in ["22", "32", "48", "64"]:
         pisitools.insinto("/usr/share/icons/hicolor/%sx%s/mimetypes" %(size, size), "desktopfiles/hi%s-djvu.png" % size, "image-vnd.djvu.png")
 
-    pisitools.dodoc("README", "TODO", "NEWS")
+    pisitools.dodoc("COPY*", "README", "NEWS")
