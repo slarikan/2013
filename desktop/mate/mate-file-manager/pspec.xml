@@ -13,8 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the Mate desktop.</Summary>
         <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
-	<!--<Archive sha1sum="26b2723e757ddee579d1feaab8b450fecd39df15" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-1.4.0.tar.xz</Archive>-->
-        <Archive sha1sum="ad8ba9ad04c15bbf6bc6bf9f22db74fa47c1ce19" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-1.5.0.tar.xz</Archive>
+	<Archive sha1sum="ad8ba9ad04c15bbf6bc6bf9f22db74fa47c1ce19" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-1.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
