@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Basic Mate libraries and dialogs</Summary>
         <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
-        <Archive sha1sum="804602f4fc3f7f19d14698491ccd8ef30fa6a4dc" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-desktop-1.4.1.tar.xz</Archive>
+        <Archive sha1sum="f0298553b4ccfbb530b7f8dc67d749ce73ce6803" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-desktop-1.5.0.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>startup-notification-devel</Dependency>
 	    <Dependency>libxml2-devel</Dependency>
@@ -27,7 +27,7 @@
             <Dependency>gtk-doc</Dependency>
 	 </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>mate-desktop</Name>
 	 <RuntimeDependencies>
@@ -52,7 +52,7 @@
 	    <Path fileType="config">/etc</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>mate-desktop-devel</Name>
         <summary>mate-desktop için geliştirme dosyaları</summary>
@@ -63,8 +63,15 @@
 	    <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="3">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2012-08-22</Date>
             <Version>1.4.1</Version>
