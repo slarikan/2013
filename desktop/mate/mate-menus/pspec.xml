@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate Menus</Summary>
         <Description>mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>
-        <Archive sha1sum="3546d0a78f10f4b877b4a5d48325ffc1636a60a5" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-menus-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="47873602fe6aa78c9171dbe016f4b8d16ade26e0" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-menus-1.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-common</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -24,7 +24,7 @@
 	    <Patch level="1">python-underlinking.patch</Patch>
         </Patches>
     </Source>
-    
+
     <Package>
         <Name>mate-menus</Name>
         <RuntimeDependencies>
@@ -40,7 +40,7 @@
 	  <Path fileType="data">/etc/xdg</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>mate-menus-devel</Name>
         <Summary>mate-menus için geliştirme dosyaları</Summary>
@@ -51,8 +51,15 @@
 	    <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="3">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2012-08-23</Date>
             <Version>1.4.0</Version>
