@@ -31,6 +31,7 @@
 
             <!-- Segfault patch from SuSE -->
             <Patch>recode-3.6-segfault.patch</Patch>
+	    <Patch level="1">recode-automake.patch</Patch>
         </Patches>
     </Source>
 
