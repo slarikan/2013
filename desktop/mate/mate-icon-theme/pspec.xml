@@ -13,14 +13,14 @@
         <IsA>data</IsA>
         <Summary>Mate icon theme</Summary>
         <Description>mate-icon-theme package contains the default icon theme used by the Mate desktop.</Description>
-        <Archive sha1sum="e5c8a4c23aaf2ed86d67a3f162684d7e2d7f3cc8" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-icon-theme-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="50d53c231a9ca948d0f5a937a46fcbf61bf0f9ee" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-icon-theme-1.5.0.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>icon-naming-utils</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>gtk2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>mate-icon-theme</Name>
 	<RuntimeDependencies>
@@ -35,8 +35,15 @@
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="3">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2012-08-23</Date>
             <Version>1.4.0</Version>
