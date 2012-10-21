@@ -16,8 +16,8 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.export("AT_M4DIR", get.curDIR())
-    libtools.libtoolize("--copy --force")
-    autotools.autoreconf("-fi")
+    #libtools.libtoolize("--copy --force")
+    #autotools.autoreconf("-fi")
 
     shelltools.makedirs("libmp3lame/i386/.libs")
     autotools.configure("--disable-mp3x \
@@ -27,7 +27,7 @@ def setup():
                          --enable-nasm")
 
 def build():
-    autotools.make("-j1")
+    autotools.make()
 
 def install():
     autotools.rawInstall('DESTDIR="%s" pkghtmldir="/%s/%s/html"' % (get.installDIR(), get.docDIR(), get.srcNAME()))
