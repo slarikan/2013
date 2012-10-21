@@ -18,6 +18,7 @@
             <Dependency>guile-devel</Dependency>
             <Dependency>libtasn1-devel</Dependency>
             <Dependency>libgcrypt-devel</Dependency>
+            <Dependency>libtasn1-32bit</Dependency>            
             <Dependency versionFrom="2.5">nettle-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -27,6 +28,7 @@
         <RuntimeDependencies>
             <Dependency>lzo</Dependency>
             <Dependency>libtasn1</Dependency>
+            <Dependency>libtasn1-32bit</Dependency>            
             <Dependency>libgcrypt</Dependency>
             <Dependency versionFrom="2.5">nettle</Dependency>
         </RuntimeDependencies>
