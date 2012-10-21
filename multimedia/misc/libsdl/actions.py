@@ -18,10 +18,10 @@ def setup():
     shelltools.export("CXXFLAGS", "%s -fPIC -O3" % get.CXXFLAGS())
 
     # for libtool version matching
-    shelltools.copy("/usr/share/aclocal/ltversion.m4", "acinclude/")
+    #shelltools.copy("/usr/share/aclocal/ltversion.m4", "acinclude/")
     shelltools.system("./autogen.sh")
 
-    libtools.libtoolize("--force --copy")
+    #libtools.libtoolize("--force --copy")
 
     options = "--enable-events \
                --enable-cpuinfo \
