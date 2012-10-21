@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Firewall, NAT and packet mangling tools</Summary>
         <Description>Contains iptables firewall, NAT and packet mangling tools.</Description>
-        <Archive sha1sum="56ab3b143af2ad443c9652db3a38ef8869cd2207" type="tarbz2">http://ftp.netfilter.org/pub/iptables/iptables-1.4.15.tar.bz2</Archive>
+        <Archive sha1sum="819949fdf4276a04c5061b82898b515f139b0117" type="tarbz2">ftp://ftp.netfilter.org/pub/iptables/iptables-1.4.16.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libnfnetlink-devel</Dependency>
         </BuildDependencies>
@@ -21,7 +21,7 @@
             <Patch>iptables-1.4.2-as-needed.patch</Patch>
             <Patch>iptables-1.4.2-no-ldconfig.patch</Patch>
             -->
-            <Patch>iptables-1.4.2-glibc.patch</Patch>
+            <!--<Patch>iptables-1.4.2-glibc.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -61,6 +61,16 @@
     </Package>
 
     <History>
+        <Update release="41">
+            <Date>2012-10-21</Date>
+            <Version>1.4.16.3</Version>
+            <Comment>Version Bump.</Comment>
+            <Requires>
+                <Action>reverseDependencyUpdate</Action>
+            </Requires>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="40">
             <Date>2011-08-03</Date>
             <Version>1.4.12</Version>
