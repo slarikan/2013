@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library for reading and editing audio meta data</Summary>
         <Description>TagLib is a library for reading and editing the meta data of several popular audio formats.</Description>
-        <Archive sha1sum="e657384ccf3284db2daba32dccece74534286012" type="targz">https://github.com/downloads/taglib/taglib/taglib-1.7.2.tar.gz</Archive>
+        <Archive sha1sum="bdbfd746fde42401d3a77cd930c7802d374a692d" type="targz">https://github.com/downloads/taglib/taglib/taglib-1.8.tar.gz</Archive>
         <Patches>
             <Patch level="1">wma-files.patch</Patch>
             <Patch level="1">taglib-1.4_wchar.diff</Patch>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-10-22</Date>
+            <Version>1.8</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="12">
             <Date>2012-08-22</Date>
             <Version>1.7.2</Version>
