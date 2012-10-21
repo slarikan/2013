@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Common files for development of Mate packages</Summary>
         <Description>maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>
-        <Archive sha1sum="b351bddb8e9e6674c3f004808e5c64766a17f3f6" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-common-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="954c5341704ffdc4671e0cdec076601fa9dda220" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-common-1.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>autoconf</Dependency>
 	    <Dependency>automake</Dependency>
@@ -32,8 +32,15 @@
 	    <Path fileType="doc">/usr/share/doc/</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="3">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
       <Update release="3">
             <Date>2012-07-21</Date>
             <Version>1.4.0</Version>
@@ -56,4 +63,4 @@
             <Email>emrefirat93@gmail.com</Email>
         </Update>
     </History>
-</PISI> 
+</PISI>
