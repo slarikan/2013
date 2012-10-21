@@ -34,6 +34,9 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/icecream-daemon.service">icecream-daemon.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="daemon.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <Package>
@@ -49,6 +52,9 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/lib/systemd/system/icecream-scheduler.service">icecream-scheduler.service</AdditionalFile>
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="scheduler.py">System.Service</COMAR>
+        </Provides>
     </Package>
 
     <History>
