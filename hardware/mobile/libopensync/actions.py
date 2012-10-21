@@ -10,8 +10,13 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
+from pisi.actionsapi import shelltools
 
 def setup():
+    for i in shelltools.ls("."):
+        if shelltools.isDirectory(i) and shelltools.isFile("%s/Makefile.am" % i):
+            pisitools.dosed("%s/Makefile.am" % i, "-Werror")
+
     autotools.autoreconf("-fi")
 
     #Do not create pyo/pyc
