@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Lightweight C++ template library for linear algebra</Summary>
         <Description>eigen is a lightweight C++ template library for vector and matrix math, a.k.a. linear algebra.</Description>
-        <Archive sha1sum="25f38a50939b35e482b22221998d862b860dbe9e" type="tarbz2">http://bitbucket.org/eigen/eigen/get/2.0.15.tar.bz2</Archive>
+        <Archive sha1sum="7f8bef25d23527fa5c2ac4be7cc66bc193424bc4" type="tarbz2">http://bitbucket.org/eigen/eigen/get/2.0.15.tar.bz2</Archive>
     </Source>
 
     <Package>
