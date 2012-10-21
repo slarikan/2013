@@ -15,6 +15,8 @@ browserPath = "/usr/lib/browser-plugins"
 
 def setup():
     autotools.configure()
+    pisitools.dosed("nsdejavu/Makefile", "netscape", "mozilla")
+    pisitools.dosed("src/qdjvuwidget.cpp", "swap", "rofl_swap")
 
 def build():
     autotools.make()
