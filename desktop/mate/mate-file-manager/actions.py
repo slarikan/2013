@@ -13,18 +13,19 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-  
     shelltools.system("./autogen.sh --prefix=/usr \
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \
+				    --enable-unique \
 				    --disable-static \
+				    --enable-introspection \
 				    --libexecdir=/usr/lib/mate-file-manager")
     autotools.configure()
-    
-    
+
+
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())

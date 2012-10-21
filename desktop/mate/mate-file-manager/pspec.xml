@@ -13,7 +13,8 @@
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the Mate desktop.</Summary>
         <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
-        <Archive sha1sum="26b2723e757ddee579d1feaab8b450fecd39df15" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-1.4.0.tar.xz</Archive>
+	<!--<Archive sha1sum="26b2723e757ddee579d1feaab8b450fecd39df15" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-1.4.0.tar.xz</Archive>-->
+        <Archive sha1sum="ad8ba9ad04c15bbf6bc6bf9f22db74fa47c1ce19" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-1.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -26,6 +27,7 @@
             <Patch level="1">suse/mate-1.2.2-add_gmodules_to_linker.patch</Patch>
 	</Patches>
     </Source>
+
     <Package>
         <Name>mate-file-manager</Name>
 	<RuntimeDependencies>
@@ -34,7 +36,7 @@
             <Dependency>glib2</Dependency>
             <Dependency>libxml2</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>gobject-introspection</Dependency>	    
+            <Dependency>gobject-introspection</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
@@ -50,7 +52,7 @@
             <COMAR script="package.py">System.Package</COMAR>
         </Provides>
     </Package>
-    
+
     <Package>
         <Name>mate-file-manager-devel</Name>
         <Summary>mate-file-manager için geliştirme dosyaları</Summary>
@@ -61,8 +63,15 @@
 	    <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="3">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2012-08-23</Date>
             <Version>1.4.0</Version>
