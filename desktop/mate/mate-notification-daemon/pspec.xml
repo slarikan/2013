@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Mate notification daemon</Summary>
         <Description>mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
-        <Archive sha1sum="10977f669d27925c552220c17e9c3a8c563176f4" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-notification-daemon-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="5e1cb6a5b3ebacd9b61500e1cfd51b5ad4b32ee3" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-notification-daemon-1.5.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libmatewnck-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
@@ -26,7 +26,7 @@
             <Dependency>libnotify-devel</Dependency>
 	 </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>mate-notification-daemon</Name>
 	 <RuntimeDependencies>
@@ -37,7 +37,7 @@
             <Dependency>mate-conf</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>libnotify</Dependency> 
+            <Dependency>libnotify</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin</Path>
@@ -50,8 +50,15 @@
 	    <Path fileType="config">/etc</Path>
         </Files>
     </Package>
-    
+
     <History>
+        <Update release="3">
+            <Date>2012-10-21</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2012-08-23</Date>
             <Version>1.4.0</Version>
