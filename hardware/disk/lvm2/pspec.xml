@@ -12,14 +12,14 @@
         <IsA>app:console</IsA>
         <Summary>Userland logical volume management tools</Summary>
         <Description>LVM2 includes all of the support for handling read/write operations physical and logical volumes.</Description>
-        <Archive sha1sum="297feef08dced7d64bff9f5f8a47c1916fcb2afa" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.73.tgz</Archive>
+        <Archive sha1sum="ca92d976628246745f0981d1514a79a4a8e32314" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.97.tgz</Archive>
         <Patches>
-            <Patch level="1">lvm2-no-floor.patch</Patch>
-            <Patch level="1">lvm2-diet.patch</Patch>
-            <Patch level="1">lvm2-set-default-preferred_names.patch</Patch>
-            <Patch level="1">fix-build-error.patch</Patch>
-            <Patch level="1">fix-underlinking.patch</Patch>
-            <Patch level="1">udev-rules.patch</Patch>
+<!--             <Patch level="1">lvm2-no-floor.patch</Patch> -->
+<!--             <Patch level="1">lvm2-diet.patch</Patch> -->
+<!--             <Patch level="1">lvm2-set-default-preferred_names.patch</Patch> -->
+<!--             <Patch level="1">fix-build-error.patch</Patch> -->
+<!--             <Patch level="1">fix-underlinking.patch</Patch>  -->
+<!--             <Patch level="1">udev-rules.patch</Patch>  -->
         </Patches>
     </Source>
 
@@ -36,6 +36,8 @@
             <Path fileType="doc">/usr/share/doc/VERSION_DM</Path>
             <Path fileType="doc">/usr/share/doc/WHATS_NEW_DM</Path>
             <Path fileType="man">/usr/share/man/man8/dmsetup.8</Path>
+            <Path fileType="data">/usr/lib/libdevmapper-event-lvm2raid.so</Path>
+            <Path fileType="data">/usr/lib/device-mapper/libdevmapper-event-lvm2raid.so</Path>
        </Files>
     </Package>
 
@@ -160,6 +162,13 @@
     </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-10-21</Date>
+            <Version>2.02.97</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="21">
             <Date>2010-10-13</Date>
             <Version>2.02.73</Version>
