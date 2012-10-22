@@ -16,7 +16,6 @@
         <BuildDependencies>
             <Dependency releaseFrom="12">libgcrypt-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
-            <Dependency>libproxy-devel</Dependency>
             <Dependency releaseFrom="21">gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
@@ -49,7 +48,6 @@
         <RuntimeDependencies>
             <Dependency>libsoup</Dependency>
             <Dependency>gnutls</Dependency>
-            <Dependency>libproxy</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>libgnome-keyring</Dependency>
         </RuntimeDependencies>
