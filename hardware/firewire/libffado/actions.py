@@ -7,10 +7,14 @@
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import scons
 from pisi.actionsapi import get
 
 WorkDir = "libffado-2.1.0"
+
+shelltools.export("HOME", get.workDIR())
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
 
 def build():
     scons.make('PREFIX=/usr \
