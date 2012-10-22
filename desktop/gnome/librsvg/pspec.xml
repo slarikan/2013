@@ -48,8 +48,9 @@
             <Path fileType="man">/usr/share/man/man1</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/themes</Path>
+            <Path fileType="data">/usr/share/vala</Path>
 	    <Path fileType="doc">/usr/share/gtk-doc</Path>
-	    <Path fileType="data">/usr/share/gir-1.0/Rsvg-2.0.gir</Path>
+            <Path fileType="data">/usr/share/gir-1.0/Rsvg-2.0.gir</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
