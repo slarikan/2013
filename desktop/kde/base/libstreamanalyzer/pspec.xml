@@ -19,6 +19,9 @@
             <Dependency>exiv2-devel</Dependency>
             <Dependency>libstreams-devel</Dependency>
         </BuildDependencies>
+	<Patches>
+	    <Patch level="0">libstreamanalyzer-0.7.7-ffmpeg-0.11.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
@@ -31,8 +34,8 @@
             <Dependency>libstreams</Dependency>
         </RuntimeDependencies>
         <Conflicts>
-            <Package versionTo="0.7.2">strigi</Package>  
-        </Conflicts> 
+            <Package versionTo="0.7.2">strigi</Package>
+        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
