@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Version 2 of the library to manipulate XML files</Summary>
         <Description>Libxml2 is the XML C parser and toolkit developed for the Gnome project (but usable outside of the Gnome platform).</Description>
-        <Archive sha1sum="a0c553bd51ba79ab6fff26dc700004c6a41f5250" type="targz">ftp://ftp.xmlsoft.org/libxml/libxml2-2.8.0.tar.gz</Archive>
+        <Archive sha1sum="a43d7c0a8e463ac5a7846254f2a732a9af146fab" type="targz">ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python</Dependency>
             <Dependency>zlib-devel</Dependency>
@@ -82,6 +82,13 @@
     </Package>
 
     <History>
+        <Update release="28">
+            <Date>2012-10-22</Date>
+            <Version>2.9.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="27">
             <Date>2012-08-23</Date>
             <Version>2.8.0</Version>
