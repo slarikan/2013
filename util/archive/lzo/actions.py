@@ -12,8 +12,14 @@ from pisi.actionsapi import get
 examples = "%s/%s/examples" % (get.docDIR(), get.srcNAME())
 
 def setup():
-    autotools.configure("--enable-shared \
-                         --disable-dependency-tracking")
+    options = "--enable-shared \
+               --disable-dependency-tracking"
+               
+    if get.buildTYPE() == "emul32":
+        options += " --libdir=/usr/lib32"
+        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
+
+    autotools.configure(options)
 
     shelltools.chmod("examples/*", 0644)
 

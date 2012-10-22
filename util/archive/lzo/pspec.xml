@@ -33,8 +33,25 @@
             <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
+    
+     <Package>
+        <Name>lzo-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for lzo</Summary>
+        <BuildType>emul32</BuildType>
+        <Files>
+	    <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-23</Date>
+            <Version>2.06</Version>
+            <Comment>add 32 emule</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2011-09-19</Date>
             <Version>2.06</Version>
