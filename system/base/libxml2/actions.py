@@ -12,7 +12,12 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    options = "--without-threads "
+    options = "--with-zlib \
+               --with-python \
+               --with-readline \
+               --enable-ipv6 \
+               --disable-static \
+               --with-threads"
 
     if get.buildTYPE() == "emul32":
         options += " --libdir=/usr/lib32 \
@@ -42,4 +47,3 @@ def install():
         #pisitools.rename("/%s/libxml2%s-%s" % (get.docDIR(), i, get.srcVERSION()), "libxml2%s" % i)
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README", "TODO")
-    pisitools.removeDir("/usr/share/gtk-doc")
