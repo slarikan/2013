@@ -14,14 +14,14 @@
         <Description>A Perl module converts strings from and to 2-byte Unicode UCS2 format.</Description>
         <Archive sha1sum="896bcbfe370b939b4c5fb5866df9059fbdc5b683" type="targz">mirrors://cpan/authors/id/M/MS/MSCHWARTZ/Unicode-Map-0.112.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Unicode-Map</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

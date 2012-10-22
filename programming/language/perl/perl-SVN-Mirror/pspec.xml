@@ -23,7 +23,7 @@
             <Dependency>perl-File-chdir</Dependency>
             <Dependency>perl-Class-Accessor</Dependency>
             <Dependency>perl-Data-UUID</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,7 +38,7 @@
             <Dependency>perl-File-chdir</Dependency>
             <Dependency>perl-Class-Accessor</Dependency>
             <Dependency>perl-Data-UUID</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

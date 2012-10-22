@@ -17,7 +17,7 @@
             <Dependency versionFrom="0.46">perl-Net-DNS</Dependency>
             <Dependency>perl-Net-CIDR-Lite</Dependency>
             <Dependency>perl-Sys-Hostname-Long</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,7 +27,7 @@
             <Dependency versionFrom="0.46">perl-Net-DNS</Dependency>
             <Dependency>perl-Net-CIDR-Lite</Dependency>
             <Dependency>perl-Sys-Hostname-Long</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -15,14 +15,14 @@
         <Description>Locale::Maketext::Lexicon provides lexicon-handling backends for Locale::Maketext to read from other localization formats, such as PO files, MO files, or from databases via the Tie interface.</Description>
         <Archive sha1sum="8d5872de333e34b92a8d4ac23776842a02212ed0" type="targz">mirrors://cpan/authors/id/D/DR/DRTECH/Locale-Maketext-Lexicon-0.91.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Locale-Maketext-Lexicon</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

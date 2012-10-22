@@ -15,14 +15,14 @@
         <Archive sha1sum="548ffe58b1059df6def108b2ac38c2440fe56b06" type="targz">mirrors://cpan/authors/id/M/MA/MARKOV/MailTools-2.06.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Test-Pod</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-MailTools</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

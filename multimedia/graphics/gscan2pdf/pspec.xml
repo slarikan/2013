@@ -15,7 +15,7 @@
         <Description>gscan2pdf is a GUI to ease the process of producing a multipage PDF from a scan. Scanning is handled with SANE via scanimage. PDF conversion is done by perl-PDF-API2 module. TIFF export is handled by tiff (faster and smaller memory footprint for multipage files).</Description>
         <Archive sha1sum="a84443e074b21604af93c0368c14b7b64a732b07" type="targz">http://sourceforge.net/projects/gscan2pdf/files/gscan2pdf/1.0.6/gscan2pdf-1.0.6.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>perl-Sane</Dependency>
             <Dependency>perl-Gtk2-Ex-Simple-List</Dependency>
@@ -47,7 +47,7 @@
     <Package>
         <Name>gscan2pdf</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>perl-Sane</Dependency>
             <Dependency>perl-Gtk2-Ex-Simple-List</Dependency>

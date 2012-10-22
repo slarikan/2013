@@ -16,7 +16,7 @@
         <Description>Dvd::rip provides an easy to use but feature-rich Gtk+ GUI to control almost all aspects of the ripping and transcoding process. It uses the widely known video processing swissknife transcode and many other Open Source tools.</Description>
         <Archive sha1sum="b91d65e7307b5fecd1509ace03c02564ac9591c0" type="targz">http://www.exit1.org/dvdrip/dist/dvdrip-0.98.11.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>transcode</Dependency>
             <Dependency>imagemagick-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
@@ -31,7 +31,7 @@
     <Package>
         <Name>dvdrip</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>transcode</Dependency>
             <Dependency>imagemagick</Dependency>
             <Dependency>ffmpeg</Dependency>

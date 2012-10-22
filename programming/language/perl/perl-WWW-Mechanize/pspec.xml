@@ -16,7 +16,7 @@
         <Description>perl-WWW-Mechanize includes perl modules for simulating a browser in code.</Description>
         <Archive sha1sum="6cc3663d3d380538bf113bb84cce6aabeddae4f3" type="targz">mirrors://cpan/authors/id/P/PE/PETDANCE/WWW-Mechanize-1.60.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
             <Dependency>perl-Test-Taint</Dependency>
             <Dependency>perl-Test-Warn</Dependency>
@@ -31,7 +31,7 @@
     <Package>
         <Name>perl-WWW-Mechanize</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
             <Dependency>perl-libwww</Dependency>
             <Dependency>perl-URI</Dependency>

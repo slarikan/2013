@@ -15,14 +15,14 @@
         <Description>Parse::Yapp is a collection of modules that let you generate and use yacc like thread safe parsers with perl object oriented interface.</Description>
         <Archive sha1sum="b696a07bb7678755141596db00e3de855e38e834" type="targz">mirrors://cpan/authors/id/F/FD/FDESAR/Parse-Yapp-1.05.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Parse-Yapp</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

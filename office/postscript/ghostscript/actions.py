@@ -64,10 +64,17 @@ def install():
 
     # Remove ijs examples
     pisitools.remove("/usr/bin/ijs_*_example")
+    pisitools.remove("/usr/lib/libijs-0.35.so")
+    pisitools.remove("/usr/share/man/man1/ijs-config.1")
+    pisitools.remove("/usr/lib/libijs.so")
+    pisitools.remove("/usr/include/ijs/ijs_client.h")
+    pisitools.remove("/usr/bin/ijs-config")
+    pisitools.remove("/usr/include/ijs/ijs_server.h")
+    pisitools.remove("/usr/include/ijs/ijs.h")
 
     # Install docs
-    pisitools.remove("/usr/share/doc/ghostscript/*.htm*")
-    pisitools.remove("/usr/share/doc/ghostscript/*.css")
+    #pisitools.remove("/usr/share/doc/ghostscript/*.htm*")
+    #pisitools.remove("/usr/share/doc/ghostscript/*.css")
 
     pisitools.dohtml("doc/*")
     pisitools.dodoc("doc/AUTHORS", "doc/COPYING")

@@ -14,7 +14,7 @@
         <Description>perl-Sane module allows you to access SANE-compatible scanners in a Perlish and object-oriented way, freeing you from the casting and memory management in C, yet remaining very close in spirit to original API.</Description>
         <Archive sha1sum="6fb92cb65e6d2f3158f6abed84746511b5ab478d" type="targz">mirrors://cpan/authors/id/R/RA/RATCLIFFE/Sane-0.03.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>sane-backends-devel</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Sane</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>sane-backends</Dependency>
         </RuntimeDependencies>
         <Files>
