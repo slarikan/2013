@@ -36,6 +36,7 @@
             <Path fileType="config">/etc/env.d/20java_jre</Path>
             <Path fileType="data">/usr/lib/browser-plugins</Path>
             <Path fileType="data">/usr/share/applications</Path>
+	    <Path fileType="data">/opt/sun-jre/</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/env.d/20java_jre">20java_jre</AdditionalFile>
