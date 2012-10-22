@@ -15,7 +15,7 @@
         <Description>perl-Mail-DKIM is a Perl module that signs/verifies Internet mail with DKIM/DomainKey signatures.</Description>
         <Archive sha1sum="913e836b30eca64b5e16400a68ab99e410b3df96" type="targz">mirrors://cpan/authors/id/J/JA/JASLONG/Mail-DKIM-0.38.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-RSA</Dependency>
             <Dependency>perl-MailTools</Dependency>
             <Dependency>perl-Net-DNS</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>perl-Mail-DKIM</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-RSA</Dependency>
             <Dependency>perl-MailTools</Dependency>
             <Dependency>perl-Net-DNS</Dependency>

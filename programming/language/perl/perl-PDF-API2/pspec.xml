@@ -14,7 +14,7 @@
         <Description>perl-PDF-API2 is a Perl module chain to facilitate the Creation and Modification of High-Quality PDF Files.</Description>
         <Archive sha1sum="9f4ec9c1da939100f63d208d3d6eeaa778047f0a" type="targz">mirrors://cpan/authors/id/S/SS/SSIMMS/PDF-API2-2.017.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Font-TTF</Dependency>
             <Dependency>dejavu-fonts</Dependency>
         </BuildDependencies>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-PDF-API2</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Font-TTF</Dependency>
             <Dependency>dejavu-fonts</Dependency>
         </RuntimeDependencies>

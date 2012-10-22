@@ -14,14 +14,14 @@
         <Description>Perl modules to handle various Unicode issues.</Description>
         <Archive sha1sum="7cc47c5a1c5e38f23886bbc613b27a4a4a3d5459" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/Unicode-String-2.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Unicode-String</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

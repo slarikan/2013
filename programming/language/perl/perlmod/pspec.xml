@@ -14,7 +14,7 @@
         <Description>perlmod can install perl modules and all dependent modules, uninstall perl modules, list all perl modules in system, search for a perl module in cpan.org and system, list all files of a perl module and show details of a perl module.</Description>
         <Archive sha1sum="9a4ceb5c2d2b72591b2190d9e05eb71c5a15e816" type="zip">mirrors://sourceforge/perlmod/v1.1.0/perlmod.v.1.1.0.zip</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-SOAP-Lite</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perlmod</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-SOAP-Lite</Dependency>
         </RuntimeDependencies>
         <Files>

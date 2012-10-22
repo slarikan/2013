@@ -33,6 +33,7 @@
             <Patch level="1">autoreconf-foreign.patch</Patch>
             <Patch level="1">remove_gconf_default_browser.patch</Patch>
             <Patch level="1">xchat-2.8.8-glib-2.31-1.patch</Patch>
+            <Patch level="1">xchat_libgmodule_2.patch</Patch>
         </Patches>
     </Source>
 

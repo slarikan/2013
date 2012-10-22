@@ -16,7 +16,7 @@
         <Archive sha1sum="1076d736e43fdf416c664bde0e4c3d035d6903e3" type="targz">mirrors://cpan/authors/id/S/SR/SREZIC/Tk-804.029.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>tcltk-devel</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- modified version of http://ftp.de.debian.org/debian/pool/main/p/perl-tk/perl-tk_804.027-8.diff.gz -->
@@ -35,7 +35,7 @@
         <Name>perl-Tk</Name>
         <RuntimeDependencies>
             <Dependency>tcltk</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

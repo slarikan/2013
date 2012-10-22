@@ -14,14 +14,14 @@
         <Description>perl-Test-Inter is another framework for writing test scripts. It is loosely inspired by Test::More, and has most of it's functionality, but it is not a drop-in replacement.</Description>
         <Archive sha1sum="ebf5dda03fa6470ca18aa9cacc6b49d528c1f140" type="targz">mirrors://cpan/authors/id/S/SB/SBECK/Test-Inter-1.01.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Test-Inter</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

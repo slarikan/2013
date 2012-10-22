@@ -20,7 +20,7 @@
             <Dependency>sdl-image</Dependency>
             <Dependency>sdl-mixer</Dependency>
             <Dependency versionFrom="2.0.16">sdl-gfx</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
         <Patches>
           <Patch>030_glu_nurbs.patch</Patch>
@@ -38,7 +38,7 @@
             <Dependency>sdl-image</Dependency>
             <Dependency>sdl-mixer</Dependency>
             <Dependency versionFrom="2.0.16">sdl-gfx</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
