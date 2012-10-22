@@ -51,9 +51,9 @@
 
     <Package>
         <Name>libwnck2-devel</Name>
-        <Summary>Development files for libwnck</Summary>
+        <Summary>Development files for libwnck2</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">libwnck</Dependency>
+            <Dependency release="current">libwnck2</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libXres-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
