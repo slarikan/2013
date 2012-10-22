@@ -23,7 +23,7 @@
             <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
             <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
             <Dependency version="4.10.0">xfconf-devel</Dependency>
-            <Dependency version="0.10.32.4">gstreamer-devel</Dependency>
+            <Dependency version="0.10.36">gstreamer-devel</Dependency>
             <Dependency version="0.10.32.4">gst-plugins-base-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -41,8 +41,8 @@
             <Dependency version="4.10.0">libxfce4ui</Dependency>
             <Dependency version="4.10.0">xfce4-panel</Dependency>
             <Dependency version="4.10.0">xfconf</Dependency>
-            <Dependency version="0.10.32.4">gstreamer</Dependency>
-            <Dependency version="0.10.32.4">gst-plugins-base</Dependency>
+            <Dependency version="0.10.36">gstreamer</Dependency>
+	    <Dependency version="0.10.32.4">gst-plugins-base</Dependency>
         </RuntimeDependencies>
         <Files>
            <Path fileType="executable">/usr/bin</Path>
