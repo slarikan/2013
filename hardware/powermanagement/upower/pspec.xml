@@ -39,7 +39,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/lib</Path>
             <Path fileType="data">/etc/dbus-1</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
