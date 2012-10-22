@@ -51,6 +51,7 @@
             <Dependency>libvo-amrwbenc-devel</Dependency>
             <Dependency>rtmpdump-devel</Dependency>
             <Dependency>libcdio-devel</Dependency>
+            <Dependency>gnutls-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -89,6 +90,7 @@
             <Dependency>libvo-amrwbenc</Dependency>
             <Dependency>rtmpdump</Dependency>
             <Dependency>libcdio</Dependency>
+	    <Dependency>gnutls</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
