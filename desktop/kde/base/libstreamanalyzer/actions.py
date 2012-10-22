@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    kde4.configure("--without-threads")
+    kde4.configure()
 
 def build():
     kde4.make()
