@@ -10,6 +10,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
+WorkDir = "mudur"
+
 def install():
     shelltools.system("./setup.py install %s" % get.installDIR())
 
