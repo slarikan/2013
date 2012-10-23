@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>PHP5 is an HTML-embedded scripting language. The goal of the language is to allow web developers to write dynamically generated pages quickly</Summary>
         <Description>PHP5 is an HTML-embedded scripting language. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly.</Description>
-        <Archive sha1sum="b6c5e6653ba28e2f071bafe30c9691eddb950ba0" type="tarbz2">http://us2.php.net/distributions/php-5.4.5.tar.bz2</Archive>
+        <Archive sha1sum="ed9c4e31da827af8a4d4b1adf3dfde17d11c0b34" type="tarbz2">http://us2.php.net/distributions/php-5.4.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gd-devel</Dependency>
             <Dependency>apache</Dependency>
@@ -169,6 +169,13 @@
 
 
     <History>
+        <Update release="105" type="security">
+            <Date>2012-10-23</Date>
+            <Version>5.4.8</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="104" type="security">
             <Date>2012-10-13</Date>
             <Version>5.4.5</Version>

@@ -105,6 +105,7 @@ def setup():
 
 def build():
     shelltools.cd("fcgi")
+    shelltools.export("LC_ALL", "en_US.UTF-8")
     autotools.make()
 
     shelltools.cd("../apache")
