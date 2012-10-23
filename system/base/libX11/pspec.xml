@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org X11 library</Summary>
         <Description>Core X11 protocol client library.</Description>
-        <Archive sha1sum="9d56d8f51cd4ad5de619eb546b37a19f92ab98b0" type="targz">http://cgit.freedesktop.org/xorg/lib/libX11/snapshot/libX11-1.5.0.tar.gz</Archive>
+        <Archive sha1sum="b428d53c3f85ad00aae0647c1dc9e0c5a6e45e57" type="targz">http://cgit.freedesktop.org/xorg/lib/libX11/snapshot/libX11-1.5.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxcb-devel</Dependency>
             <Dependency releaseFrom="35">xorg-proto</Dependency>
