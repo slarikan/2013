@@ -22,7 +22,7 @@
             <Dependency>pango-devel</Dependency>
             <Dependency>libart_lgpl</Dependency>
             <Dependency>dejavu-fonts</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001_rrdtool-1.4.7-configure.ac.patch</Patch>
@@ -40,7 +40,7 @@
             <Dependency>pango</Dependency>
             <Dependency>libart_lgpl</Dependency>
             <Dependency>dejavu-fonts</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -14,14 +14,14 @@
         <Description>Term-Readline library provides a set of functions for use by applications that allow users to edit command lines as they are typed in.</Description>
         <Archive sha1sum="7326a70b5ce676f6e19d1ddb76839413fbe5f6bd" type="targz">mirrors://cpan/authors/id/I/IL/ILYAZ/modules/Term-ReadLine-Perl-1.0303.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Term-ReadLine-Perl</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

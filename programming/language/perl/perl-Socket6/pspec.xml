@@ -14,14 +14,14 @@
         <Description>Socket6 module provides glue routines to the various IPv6 functions.</Description>
         <Archive sha1sum="f6598055e40d71fe3bab9881d38995f8677ee90a" type="targz">mirrors://cpan/authors/id/U/UM/UMEMOTO/Socket6-0.23.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Socket6</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

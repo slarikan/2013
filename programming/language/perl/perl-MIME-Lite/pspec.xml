@@ -18,7 +18,7 @@
             <Dependency>perl-Email-Address</Dependency>
             <Dependency>perl-MailTools</Dependency>
             <Dependency>perl-MIME-Types</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,7 +29,7 @@
             <Dependency>perl-Email-Address</Dependency>
             <Dependency>perl-MailTools</Dependency>
             <Dependency>perl-MIME-Types</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

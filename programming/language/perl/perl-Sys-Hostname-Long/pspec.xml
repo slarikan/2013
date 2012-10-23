@@ -14,14 +14,14 @@
         <Description>This module lets you get the host full name in perl on multiple operating systems (mac, windows, unix* etc).</Description>
         <Archive sha1sum="3e2f64ca953ab9123fa9994e6fcfb709b049f6c0" type="targz">mirrors://cpan/authors/id/S/SC/SCOTT/Sys-Hostname-Long-1.4.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Sys-Hostname-Long</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

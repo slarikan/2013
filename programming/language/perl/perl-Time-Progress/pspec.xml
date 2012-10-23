@@ -14,14 +14,14 @@
         <Description>Perl module to report progress. Reports elapsed and estimated finish time. Displays progress bar.</Description>
         <Archive sha1sum="5b7ba82de9a2dc30994ee0e0b40c4fbdff6e3e58" type="targz">mirrors://cpan/authors/id/C/CA/CADE/Time-Progress-1.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Time-Progress</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

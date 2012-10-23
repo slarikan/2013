@@ -43,7 +43,7 @@
         <Name>subversion</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="0.28.4">neon</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency releaseFrom="14">apr</Dependency>
             <Dependency>cyrus-sasl</Dependency>
             <Dependency>apr-util</Dependency>

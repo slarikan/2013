@@ -15,7 +15,7 @@
         <Description>The RPC::XML package is an implementation of the XML-RPC standard. The package provides a set of classes for creating values to pass to the constructors for requests and responses.</Description>
         <Archive sha1sum="9a200c98bff26e88241d5cb581493d65d21a0e1d" type="targz">mirrors://cpan/authors/id/R/RJ/RJRAY/RPC-XML-0.73.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-RPC-XML</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
         </RuntimeDependencies>
         <Files>

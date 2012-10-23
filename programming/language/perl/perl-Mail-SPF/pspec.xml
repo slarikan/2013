@@ -15,7 +15,7 @@
         <Description>perl-Mail-SPF is an object-oriented Perl implementation of the Sender Policy Framework (SPF) e-mail sender authentication system.</Description>
         <Archive sha1sum="df53baf018134481591317baf1b5d3a10702d4e7" type="targz">mirrors://cpan/authors/id/J/JM/JMEHNLE/mail-spf/Mail-SPF-v2.007.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Net-DNS-Resolver-Programmable</Dependency>
             <Dependency>perl-Mail-SPF-Test</Dependency>
             <Dependency>perl-version</Dependency>
@@ -29,7 +29,7 @@
     <Package>
         <Name>perl-Mail-SPF</Name>
         <RuntimeDependencies>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-version</Dependency>
             <Dependency>perl-Error</Dependency>
             <Dependency>perl-NetAddr-IP</Dependency>
