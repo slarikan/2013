@@ -19,12 +19,13 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libXt-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
+	    <Dependency>ijs-devel</Dependency>
             <Dependency>jasper-devel</Dependency>
             <Dependency>libpaper-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>poppler-data</Dependency>
         </BuildDependencies>
-        <Patches>
+	        <Patches>
             <!-- Ubuntu patches -->
             <Patch level="1">ubuntu/01_docdir-fix-for-debian.patch</Patch>
             <Patch level="1">ubuntu/02_gs-man-fix-for-debian.patch</Patch>
@@ -75,8 +76,8 @@
 
             <!-- Other stuff -->
             <!--Patch level="1">ghostscript-pagesize.patch</Patch-->
-            <Patch level="1">link-explicitly-with-lm.patch</Patch>
-            <Patch level="1">fix-linking-with-gs.patch</Patch>
+            <!--<Patch level="1">link-explicitly-with-lm.patch</Patch>-->
+            <!--<Patch level="1">fix-linking-with-gs.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -88,6 +89,7 @@
             <Dependency>tiff</Dependency>
             <Dependency>libXt</Dependency>
             <Dependency>libpng</Dependency>
+	    <Dependency>ijs</Dependency>
             <Dependency>jasper</Dependency>
             <Dependency>libpaper</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -141,7 +143,7 @@
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="38">
             <Date>2011-05-05</Date>
             <Version>9.02</Version>
