@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-panel</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>GNOME panel</Summary>
+        <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
+        <Archive sha1sum="ca2eb4ec33cc622b9a47abab6cb2b9a954f54012" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-panel-1.2.1.tar.xz</Archive>
+        <BuildDependencies>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>NetworkManager-devel</Dependency>
+	    <Dependency>dbus-glib-devel</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>gobject-introspection-devel</Dependency>
+	    <Dependency>gtk+extra-devel</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
+	    <Dependency>libmatecomponent</Dependency>
+	    <Dependency>libmatecomponentui</Dependency>
+	    <Dependency>librsvg-devel</Dependency>
+	    <Dependency>mate-desktop</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>libmateweather</Dependency>
+	    <Dependency>popt-devel</Dependency>
+	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>NetworkManager-devel</Dependency>
+            <Dependency>evolution-data-server-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+	 </BuildDependencies>
+	 <Patches>
+            <!--<Patch level="1">suse/mate-panel-1.3.1-add_gmodules_to_linker.patch</Patch>-->
+	    <!-- <Patch level="1">panel-default-settings.patch</Patch>-->
+	 </Patches>
+    </Source>
+    <Package>
+        <Name>mate-panel</Name>
+	<RuntimeDependencies>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>intltool</Dependency>
+	    <Dependency>libxml2</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>NetworkManager</Dependency>
+	    <Dependency>dbus-glib</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>gobject-introspection</Dependency>
+	    <Dependency>gtk+extra</Dependency>
+	    <Dependency>libcanberra-gtk</Dependency>
+	    <Dependency>libmatecomponent</Dependency>
+	    <Dependency>libmatecomponentui</Dependency>
+	    <Dependency>librsvg</Dependency>
+	    <Dependency>mate-desktop</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>libmateweather</Dependency>
+	    <Dependency>popt</Dependency>
+	    <Dependency>libICE</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>NetworkManager</Dependency>
+            <Dependency>evolution-data-server</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libXrandr</Dependency>
+	    <Dependency>orbit2</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	   <Path fileType="library">/usr/lib</Path>
+	   <Path fileType="data">/usr/lib/pkgconfig</Path>
+	   <Path fileType="data">/usr/share</Path>
+	   <Path fileType="data">/usr/share/omf</Path>
+	   <Path fileType="localedata">/usr/share/locale</Path>
+	   <Path fileType="data">/usr/share/applications</Path>
+	   <Path fileType="data">/usr/share/idl</Path>
+	   <Path fileType="man">/usr/share/man</Path>
+	   <Path fileType="data">/usr/share/mate-panel/pixmaps</Path>
+	   <Path fileType="data">/usr/share/icons</Path>
+	   <Path fileType="executable">/usr/bin</Path>
+	   <Path fileType="header">/usr/include</Path>
+	   <Path fileType="executable">/usr/libexec</Path>
+	   <Path fileType="config">/etc</Path>
+        </Files>
+	 <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2012-07-19</Date>
+            <Version>1.2.1</Version>
+            <Comment>First release</Comment>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Update>
+
+    </History>
+</PISI> 
+ 
+ 
+ 
+ 

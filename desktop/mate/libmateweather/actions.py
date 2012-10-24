@@ -10,21 +10,25 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("HOME", get.workDIR())
+
 def setup():
-  
+
     shelltools.system("./autogen.sh --prefix=/usr \
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \
 				    --disable-static \
+				    --enable-python \
+				    --disable-schemas-install \
 				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
 				    --enable-locations-compression")
     autotools.configure()
-    shelltools.export("HOME", get.workDIR())
-    
+
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())     
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "INSTALL", "NEWS", "README")
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")

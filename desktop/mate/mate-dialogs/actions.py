@@ -11,15 +11,13 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./autogen.sh --prefix=/usr \
-				    --sysconfdir=/etc \
-				    --localstatedir=/var \
-				    --disable-scrollkeeper") 
-    autotools.configure()
+    shelltools.system("./autogen.sh")
+    autotools.configure("--disable-static \
+			 --enable-libmatenotify")
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     pisitools.dodoc("README", "TODO", "THANKS", "NEWS", "ChangeLog", "HACKING", "AUTHORS", "COPYING")

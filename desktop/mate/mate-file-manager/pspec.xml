@@ -13,17 +13,30 @@
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the Mate desktop.</Summary>
         <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
-	<Archive sha1sum="ad8ba9ad04c15bbf6bc6bf9f22db74fa47c1ce19" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-1.5.0.tar.xz</Archive>
+	<Archive sha1sum="26b2723e757ddee579d1feaab8b450fecd39df15" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-1.4.0.tar.xz</Archive>
+	<!--<Archive sha1sum="ad8ba9ad04c15bbf6bc6bf9f22db74fa47c1ce19" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
             <Dependency>mate-desktop-devel</Dependency>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
+	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>startup-notification-devel</Dependency>
+	    <Dependency>libexif-devel</Dependency>
+	    <Dependency>exempi-devel</Dependency>
+	    <Dependency>libunique-devel</Dependency>
+            <Dependency>mate-conf-devel</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
+	    <Dependency>dbus-glib-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">suse/mate-1.2.2-add_gmodules_to_linker.patch</Patch>
+            <Patch level="1">mate-1.2.2-add_gmodules_to_linker.patch</Patch>
+	    <Patch level="0">caja-filetype-symlink-fix.patch</Patch>
+	    <Patch level="1">caja-gvfs-desktop-key-2.patch</Patch>
+	    <Patch level="1">caja-rtl-fix.patch</Patch>
+	    <Patch level="1">mate-file-manager-1.4.0-docfix.patch</Patch>
+	    <Patch level="1">no_session_delay.patch</Patch>
 	</Patches>
     </Source>
 
@@ -31,10 +44,17 @@
         <Name>mate-file-manager</Name>
 	<RuntimeDependencies>
             <Dependency>mate-desktop</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>glib2</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>startup-notification</Dependency>
+	    <Dependency>libexif</Dependency>
+	    <Dependency>exempi</Dependency>
+	    <Dependency>libunique</Dependency>
+            <Dependency>mate-conf</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>libxml2</Dependency>
-            <Dependency>pango</Dependency>
+	    <Dependency>dbus-glib</Dependency>
             <Dependency>gobject-introspection</Dependency>
 	</RuntimeDependencies>
         <Files>
@@ -64,15 +84,15 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-10-21</Date>
             <Version>1.5.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
-            <Date>2012-08-23</Date>
+            <Date>2012-10-23</Date>
             <Version>1.4.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>

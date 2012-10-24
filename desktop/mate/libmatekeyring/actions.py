@@ -14,13 +14,13 @@ def setup():
     shelltools.system("./autogen.sh --prefix=/usr \
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \
-				    --disable-static") 
+				    --disable-static")
     autotools.configure()
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
-    
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
     pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README")

@@ -12,21 +12,22 @@ from pisi.actionsapi import get
 
 
 def setup():
-  
-    shelltools.system("./autogen.sh --prefix=/usr --sysconfdir=/etc \
-        --localstatedir=/var --libexecdir=/usr/bin \
-        --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-        --disable-static")
+    shelltools.system("./autogen.sh --prefix=/usr \
+				    --sysconfdir=/etc \
+				    --localstatedir=/var \
+				    --libexecdir=/usr/bin \
+				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
+				    --disable-static \
+				    --enable-gstreamer \
+				    --enable-profiling \
+				    --with-x \
+				    --with-nssdb")
     autotools.configure()
-    
-    
+
+
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
-    #shelltools.export("MATECONF_CONFIG_SOURCE", "xml::"+ get.installDIR() +"/etc/mateconf/mateconf.xml.defaults")
-    #shelltools.system("install -v -d -m755 "+ get.installDIR() +"/etc/mateconf/mateconf.xml.defaults")
-    #shelltools.system("mateconftool-2 --makefile-install-rule "+ get.installDIR() +"/etc/mateconf/schemas/*.schemas")
-    #shelltools.chmod(get.installDIR() +"/etc/mateconf", 0755) 
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())

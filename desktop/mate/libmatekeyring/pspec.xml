@@ -12,22 +12,25 @@
         <IsA>library</IsA>
         <Summary>Compatibility library for accessing mate-keyring</Summary>
         <Description>libmatekeyring is a library that used by applications to integrate with the mate-keyring system.</Description>
-        <Archive sha1sum="d83655afa119c16b8ea16d2aff8c8f20f87d5220" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatekeyring-1.5.0.tar.xz</Archive>
+	<Archive sha1sum="f968361eef9efec46f059bc94fe8cdbe7e595be5" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatekeyring-1.4.0.tar.xz</Archive>
+        <!--<Archive sha1sum="d83655afa119c16b8ea16d2aff8c8f20f87d5220" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatekeyring-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
 	   <Dependency>libgcrypt-devel</Dependency>
+	   <Dependency>glib2-devel</Dependency>
 	   <Dependency>mate-common</Dependency>
+	   <Dependency>gtk-doc</Dependency>
 	</BuildDependencies>
     </Source>
     <Package>
         <Name>libmatekeyring</Name>
 	<RuntimeDependencies>
 	   <Dependency>libgcrypt</Dependency>
+	   <Dependency>glib2</Dependency>
 	   <Dependency>mate-common</Dependency>
+	   <Dependency>gtk-doc</Dependency>
 	</RuntimeDependencies>
         <Files>
-           <Path fileType="doc">/usr/share/doc</Path>
-	   <Path fileType="doc">/usr/share/gtk-doc</Path>
-	   <Path fileType="localedata">/usr/share/locale</Path>
+           <Path fileType="data">/usr/share</Path>
 	   <Path fileType="library">/usr/lib</Path>
         </Files>
     </Package>
@@ -46,7 +49,7 @@
     <History>
         <Update release="3">
             <Date>2012-10-21</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>

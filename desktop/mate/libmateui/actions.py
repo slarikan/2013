@@ -11,16 +11,17 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./autogen.sh  --prefix=/usr --sysconfdir=/etc \
-        --localstatedir=/var --disable-static \
-        --libexecdir=/usr/lib/libmateui")
+    shelltools.system("./autogen.sh  --prefix=/usr \
+				     --sysconfdir=/etc \
+				     --localstatedir=/var \
+				     --disable-static \
+				     --libexecdir=/usr/lib/libmateui")
     autotools.configure()
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "README")
-    

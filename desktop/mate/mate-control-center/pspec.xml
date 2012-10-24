@@ -81,9 +81,18 @@
 	  <Path fileType="executable">/usr/bin</Path>
 	  <Path fileType="executable">/usr/sbin</Path>
 	  <Path fileType="library">/usr/lib</Path>
-	  <Path fileType="header">/usr/include</Path>
 	  <Path fileType="data">/usr/share</Path>
-	  <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-control-center-devel</Name>
+        <summary>mate-control-center için geliştirme dosyaları</summary>
+	 <RuntimeDependencies>
+	    <Dependency versionFrom="current">mate-control-center</Dependency>
+	 </RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 

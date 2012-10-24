@@ -14,27 +14,29 @@
         <Description>Mate is a user-friendly set of GUI applications and desktop tools to be used in conjunction with a window manager for the X Window System. The libmate package includes non-GUI-related libraries that are needed to run Mate. The libmateui package contains X11-dependent Mate library features.</Description>
         <Archive sha1sum="a5210c48cc76928ba947d5b9f3d779c8e324af7c" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmate-1.4.0.tar.xz</Archive>
         <BuildDependencies>
-	    <Dependency>mate-conf-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
 	    <Dependency>mate-common</Dependency>
-            <Dependency>gobject-introspection-devel</Dependency>
-            <Dependency>mate-vfs-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>libmatecomponent-devel</Dependency>
+	    <Dependency>mate-desktop-devel</Dependency>
+	    <Dependency>mate-corba-devel</Dependency>
+	    <Dependency>mate-vfs-devel</Dependency>
+	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>libmatecomponent-devel</Dependency>
+	    <Dependency>libcanberra-devel</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>popt-devel</Dependency>
 	 </BuildDependencies>
     </Source>
     <Package>
         <Name>libmate</Name>
 	<RuntimeDependencies>
-	    <Dependency>mate-conf</Dependency>
-            <Dependency>glib2</Dependency>
 	    <Dependency>mate-common</Dependency>
-            <Dependency>gobject-introspection</Dependency>
-            <Dependency>mate-vfs</Dependency>
-            <Dependency>libcanberra</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>libmatecomponent</Dependency>
+	    <Dependency>mate-desktop</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>mate-vfs</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>libmatecomponent</Dependency>
+	    <Dependency>libcanberra</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>popt</Dependency>
 	</RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -43,7 +45,7 @@
 	    <Path fileType="config">/etc</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>libmate-devel</Name>
         <Summary>libmate için geliştirme dosyaları</Summary>

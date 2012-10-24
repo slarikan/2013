@@ -13,13 +13,15 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    shelltools.system("./autogen.sh --prefix=/usr --sysconfdir=/etc \
-			--localstatedir=/var  --disable-static") 
-    autotools.configure()
+    shelltools.system("./autogen.sh")
+    autotools.configure("--disable-static \
+			 --enable-python \
+			 --enable-introspection=yes")
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")

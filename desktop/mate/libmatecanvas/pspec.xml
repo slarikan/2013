@@ -14,14 +14,9 @@
         <Description>libmatecanvas package contains the Mate canvas library. It is an engine for structured graphics and one of the essential Mate libraries.</Description>
         <Archive sha1sum="5db8db8c7a25985de28a9372cc81983db677b3f6" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatecanvas-1.4.0.tar.xz</Archive>
         <BuildDependencies>
-	    <Dependency>atk-devel</Dependency>
 	    <Dependency>mate-common</Dependency>
-	    <Dependency>glib2-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
-            <Dependency>gtk+extra-devel</Dependency>
 	    <Dependency>libart_lgpl-devel</Dependency>
-	    <Dependency>pango-devel</Dependency>
-	    <Dependency>gdk-pixbuf-devel</Dependency>	    
 	    <Dependency>libglade-devel</Dependency>
 	 </BuildDependencies>
         <Patches>
@@ -29,17 +24,12 @@
 	    <Patch level="1">disable-gtk-doc-Makefile.patch</Patch>
         </Patches>
     </Source>
-    
+
     <Package>
         <Name>libmatecanvas</Name>
 	<RuntimeDependencies>
-	    <Dependency>atk</Dependency>
 	    <Dependency>mate-common</Dependency>
-	    <Dependency>glib2</Dependency>
 	    <Dependency>gtk2</Dependency>
-	    <Dependency>libart_lgpl</Dependency>
-	    <Dependency>pango</Dependency>
-	    <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libart_lgpl</Dependency>
 	    <Dependency>libglade</Dependency>
 	 </RuntimeDependencies>

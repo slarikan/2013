@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>mate-settins-daemon</Name>
+        <Summary xml:lang="">Mate masaüstü için sistem ayar yöneticisi</Summary>
+        <Description xml:lang="">mate-settings-daemon Mate'e özgü ayarları diğer programlara DBus bağlantısı aracılığıyla paylaştırır.</Description>
+    </Source>
+</PISI>
+

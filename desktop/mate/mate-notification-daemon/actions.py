@@ -13,18 +13,19 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-  
+
     shelltools.system("./autogen.sh --prefix=/usr \
-                        --libexecdir=/usr/lib/mate-notification-daemon \
-                        --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-                        --disable-static \
-                        --disable-schemas-install")
+				    --libexecdir=/usr/lib/mate-notification-daemon \
+				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
+				    --disable-static \
+				    --disable-schemas-install")
     autotools.configure()
+
 def build():
     autotools.make()
-    
+
 def install():
-    shelltools.makedirs("%s/etc/mateconf/mateconf.xml.defaults" % get.installDIR()) 
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    shelltools.makedirs("%s/etc/mateconf/mateconf.xml.defaults" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
 
