@@ -18,6 +18,7 @@ def setup():
                --enable-silent-rules \
                --enable-introspection \
                --with-libjasper \
+               --with-x11 \
                --with-included-loaders=png"
 
     if get.buildTYPE() == "emul32":

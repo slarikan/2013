@@ -16,6 +16,7 @@
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>glib2-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
@@ -93,6 +94,7 @@
             <Dependency>libX11-32bit</Dependency>
             <Dependency>libpng-32bit</Dependency>
             <Dependency>jasper-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">gdk-pixbuf</Dependency>
@@ -102,6 +104,7 @@
             <Dependency>libX11-32bit</Dependency>
             <Dependency>libpng-32bit</Dependency>
             <Dependency>jasper-32bit</Dependency>
+            <Dependency>libX11-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
