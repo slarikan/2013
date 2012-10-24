@@ -24,11 +24,9 @@ def setup():
     autotools.configure("--disable-static \
                          --with-jdk=/opt/sun-jdk/ \
                          --enable-javahl \
-                         --with-kwallet \
                          --with-neon=/usr \
                          --with-apr=/usr \
                          --with-apr-util=/usr \
-                         --with-apxs=/usr/sbin/apxs \
                          --with-zlib=/usr \
                          --with-jikes=no \
                          --disable-mod-activation")
@@ -76,11 +74,11 @@ def install():
     pisitools.insinto("/etc/bash_completion.d", "tools/client-side/bash_completion", "subversion")
 
     # Documentation and etc.
-    pisitools.insinto("/usr/share/doc/%s" % get.srcNAME(), "contrib")
+    #pisitools.insinto("/usr/share/doc/%s" % get.srcNAME(), "contrib")
     pisitools.insinto("/usr/share/doc/%s" % get.srcNAME(), "tools/xslt")
     pisitools.insinto("/var/www/localhost/htdocs", "tools/xslt/*")
 
     # Create virtual repository root
     pisitools.dodir("/var/svn")
 
-    pisitools.dodoc("COPYING", "README")
+    pisitools.dodoc("README")

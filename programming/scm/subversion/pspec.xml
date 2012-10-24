@@ -13,7 +13,7 @@
         <IsA>service</IsA>
         <Summary>A compelling replacement for CVS</Summary>
         <Description>SVN is a version controlling system to store files and control their change history in a repository.</Description>
-        <Archive sha1sum="6e3ed7c87d98fdf5f0a999050ab601dcec6155a1" type="tarbz2">http://subversion.tigris.org/downloads/subversion-1.6.17.tar.bz2</Archive>
+        <Archive sha1sum="c9fc0c5992eda36ba9affd93a15929e25958a951" type="tarbz2">http://ftp.itu.edu.tr/Mirror/Apache/subversion/subversion-1.7.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.28.4">neon-devel</Dependency>
             <Dependency releaseFrom="14">apr</Dependency>
@@ -25,17 +25,17 @@
             <Dependency>cyrus-sasl-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">subversion.header_wrappers.patch</Patch>
-            <Patch level="1">subversion.java14.patch</Patch>
-            <Patch level="1">subversion.libtool-verbose.patch</Patch>
+<!--             <Patch level="1">subversion.header_wrappers.patch</Patch> -->
+<!--             <Patch level="1">subversion.java14.patch</Patch> -->
+<!--             <Patch level="1">subversion.libtool-verbose.patch</Patch> -->
             <Patch level="1">subversion.perl.LD_RUN_PATH.patch</Patch>
             <Patch level="1">subversion-swig-perl-install_vendor.patch</Patch>
             <Patch level="1">dont_compile_pyc.patch</Patch>
 
             <Patch level="1">subversion-1.6.0-rpath.patch</Patch>
-            <Patch level="1">subversion-1.6.0-disable_linking_against_unneeded_libraries.patch</Patch>
+<!--             <Patch level="1">subversion-1.6.0-disable_linking_against_unneeded_libraries.patch</Patch> -->
 
-            <Patch level="1">fix-kde-detection.patch</Patch>
+<!--             <Patch level="1">fix-kde-detection.patch</Patch> -->
         </Patches>
     </Source>
 
@@ -118,6 +118,13 @@
     </Package>
 
     <History>
+        <Update release="69" type="security">
+            <Date>2012-10-24</Date>
+            <Version>1.7.7</Version>
+            <Comment>Version bump to 1.7.7</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="68" type="security">
             <Date>2011-08-02</Date>
             <Version>1.6.17</Version>
