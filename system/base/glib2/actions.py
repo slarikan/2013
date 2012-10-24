@@ -17,7 +17,9 @@ def setup():
                --with-pcre=system \
                --disable-fam \
                --disable-static \
-               --disable-systemtap"
+               --enable-shared \
+               --enable-man \
+               --enable-systemtap"
 
 
     if get.buildTYPE() == "emul32":
