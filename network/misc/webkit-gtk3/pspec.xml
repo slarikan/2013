@@ -40,6 +40,7 @@
     <Package>
         <Name>webkit-gtk3</Name>
         <RuntimeDependencies>
+	    <Dependency>gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libwebkit*</Path>
@@ -54,7 +55,7 @@
         <IsA>data:doc</IsA>
         <Summary>Development files for GTK+ port of WebKit</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">webkit-gtk3/Dependency>
+            <Dependency release="current">webkit-gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
