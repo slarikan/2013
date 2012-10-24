@@ -54,6 +54,9 @@
             <Dependency>gnutls-devel</Dependency>
             <Dependency>libass-devel</Dependency>
             <Dependency>libmodplug-devel</Dependency>
+            <Dependency>openjpeg-devel</Dependency>
+            <Dependency>libv4l-devel</Dependency>
+            <Dependency>xvid-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -95,6 +98,9 @@
             <Dependency>gnutls</Dependency>
             <Dependency>libass</Dependency>
             <Dependency>libmodplug</Dependency>
+            <Dependency>openjpeg</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>xvid</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
