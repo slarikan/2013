@@ -24,4 +24,4 @@ def install():
 
     pisitools.insinto("%s/%s" % (get.docDIR(), get.srcNAME()),"doc/*")
 
-    pisitools.dodoc("CHANGES.txt", "README.txt", "LICENSES.txt", "TODO.txt")
+    pisitools.dodoc("CHANGES.txt", "LICENSES.txt", "TODO.txt")

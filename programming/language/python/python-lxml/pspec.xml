@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>lxml is the most feature-rich and easy-to-use library</Summary>
         <Description>lxml is the most feature-rich and easy-to-use library for working with XML and HTML in the Python language.</Description>
-        <Archive sha1sum="3e0ba542d4f56bc4e69187ae1eba34778ab10db8" type="targz">http://codespeak.net/lxml/lxml-2.2.7.tgz</Archive>
+        <Archive sha1sum="bb7fa04e1a49091151608df347cf12e10e9ed7f1" type="targz">http://lxml.de/files/lxml-3.0.1.tgz</Archive>
         <BuildDependencies>
             <Dependency>cython</Dependency>
         </BuildDependencies>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-10-24</Date>
+            <Version>3.0.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="14">
             <Date>2010-11-25</Date>
             <Version>2.2.7</Version>
