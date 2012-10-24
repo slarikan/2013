@@ -32,8 +32,8 @@
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency releaseFrom="6">libfm</Dependency>
-	    <Dependency>polkit-gnome</Dependency>
-	    <Dependency>gnome-mount</Dependency>	    
+	    <!--<Dependency>polkit-gnome</Dependency>
+	    <Dependency>gnome-mount</Dependency>-->	    
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
