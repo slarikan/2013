@@ -10,17 +10,20 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("HOME", get.workDIR())
+
 def setup():
-  
+
     shelltools.system("./autogen.sh --prefix=/usr")
-    autotools.configure()
-    shelltools.export("HOME", get.workDIR())
-    
+    autotools.configure("--enable-icon-mapping \
+			 --disable-static")
+
+
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
-    
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
     pisitools.dodoc("COPYING", "TODO", "README", "NEWS", "AUTHORS")

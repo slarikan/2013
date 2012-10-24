@@ -18,24 +18,27 @@
             <Dependency>mate-common</Dependency>
             <Dependency>mate-corba-devel</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>popt-devel</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
         </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>libmatecomponent</Name>
         <RuntimeDependencies>
 	    <Dependency>mate-common</Dependency>
             <Dependency>mate-corba</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>popt</Dependency>
+	    <Dependency>libxml2</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="localedata">/usr/share/locale</Path>
 	    <Path fileType="data">/usr/share</Path>
 	    <Path fileType="executable">/usr/libexec</Path>
-	    <Path fileType="executable">/usr/sbin</Path>
+	    <Path fileType="executable">/usr/sbin/matecomponent-activation-sysconf</Path>
         </Files>
 	<AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/matecomponent-activation/matecomponent-activation-config.xml">matecomponent-activation-config.xml</AdditionalFile>
@@ -76,4 +79,4 @@
             <Email>turgelfatih@gmail.com</Email>
         </Update>
     </History>
-</PISI> 
+</PISI>

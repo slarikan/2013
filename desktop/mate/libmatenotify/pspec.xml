@@ -12,14 +12,11 @@
 	<IsA>library</IsA>
         <Summary>A library that sends desktop notifications to a notification daemon</Summary>
         <Description>A library that sends desktop notifications to a notification daemon, as defined in the Desktop Notifications spec. These notifications can be used to inform the user about an event or display some form ofinformation without getting in the user's way.</Description>
-        <Archive sha1sum="2d12f5743fcff4d55ae4d3cfeed991085ca85830" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatenotify-1.5.0.tar.xz</Archive>
+	<Archive sha1sum="101fe7f32240471a6428ba51f441cd677db0754e" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatenotify-1.4.0.tar.xz</Archive>
+        <!--<Archive sha1sum="2d12f5743fcff4d55ae4d3cfeed991085ca85830" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatenotify-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
 	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>glib2-devel</Dependency>
             <Dependency>dbus-glib-devel</Dependency>
-	    <Dependency>mate-conf-devel</Dependency>
-	    <Dependency>mate-corba-devel</Dependency>
-	    <Dependency>libxklavier-devel</Dependency>
 	    <Dependency>mate-common</Dependency>
 	 </BuildDependencies>
     </Source>
@@ -27,17 +24,13 @@
         <Name>libmatenotify</Name>
         <RuntimeDependencies>
 	    <Dependency>gtk2</Dependency>
-	    <Dependency>glib2</Dependency>
-	    <Dependency>mate-conf</Dependency>
-	    <Dependency>mate-corba</Dependency>
-	    <Dependency>libxklavier</Dependency>
+            <Dependency>dbus-glib</Dependency>
 	    <Dependency>mate-common</Dependency>
 	</RuntimeDependencies>
         <Files>
-            <Path fileType="doc">/usr/share/gtk-doc</Path>
-	    <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
 
@@ -53,15 +46,15 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-10-21</Date>
             <Version>1.5.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
-            <Date>2012-08-23</Date>
+            <Date>2012-10-24</Date>
             <Version>1.4.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>

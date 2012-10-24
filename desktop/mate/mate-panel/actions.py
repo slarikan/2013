@@ -11,16 +11,24 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
-shelltools.export("CFLAGS", "%s" % get.CFLAGS()) 
+shelltools.export("CFLAGS", "%s" % get.CFLAGS())
+
 def setup():
-    shelltools.system("./autogen.sh --prefix=/usr --sysconfdir=/etc \
-			--localstatedir=/var --disable-static \
-			--libexecdir=/usr/lib/mate-panel --enable-deprecation-flags\
-			--disable-scrollkeeper --enable-introspection --enable-matecomponent") 
+    shelltools.system("./autogen.sh --prefix=/usr \
+				    --localstatedir=/var \
+				    --disable-static \
+				    --sysconfdir=/etc \
+				    --with-x \
+				    --libexecdir=/usr/lib/mate-panel \
+				    --enable-deprecation-flags \
+				    --disable-schemas-install \
+				    --disable-scrollkeeper \
+				    --enable-introspection \
+				    --enable-matecomponent")
     autotools.configure()
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())

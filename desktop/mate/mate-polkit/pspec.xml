@@ -14,7 +14,8 @@
         <IsA>library</IsA>
         <Summary>Authentication agent for polkit</Summary>
         <Description>mate-polkit package provides an authentication agent for polkit that integrates well with the Mate desktop environment.</Description>
-        <Archive sha1sum="49e8aaef5167a63cc35915f3f7014df14feacfde" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-polkit-1.5.0.tar.xz</Archive>
+	<Archive sha1sum="72062ccebf424497a30fe825116f2c70102d0b08" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-polkit-1.4.0.tar.xz</Archive>
+        <!--<Archive sha1sum="49e8aaef5167a63cc35915f3f7014df14feacfde" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-polkit-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
 	    <Dependency>glib2-devel</Dependency>
 	    <Dependency>polkit-devel</Dependency>
@@ -54,15 +55,15 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-10-21</Date>
             <Version>1.5.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
-            <Date>2012-08-23</Date>
+            <Date>2012-10-24</Date>
             <Version>1.4.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>

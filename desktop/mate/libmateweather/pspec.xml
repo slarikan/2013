@@ -12,13 +12,16 @@
         <IsA>library</IsA>
         <Summary>libmateweather</Summary>
         <Description>libmateweather is a collection of documentation utilities for the Mate project.</Description>
-        <Archive sha1sum="c19a3344cf35b618de8af9eadb929003beffd1a5" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmateweather-1.5.0.tar.xz</Archive>
+	<Archive sha1sum="067cded2ab7285b570722575fd7bb32056f78e39" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmateweather-1.4.0.tar.xz</Archive>
+        <!--<Archive sha1sum="c19a3344cf35b618de8af9eadb929003beffd1a5" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmateweather-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
+	    <Dependency>libsoup-devel</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>python-gudev</Dependency>
+	    <Dependency>python-gtk-devel</Dependency>
             <Dependency>mate-conf-devel</Dependency>
 	    <Dependency>libsoup-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>libxml2-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
 
@@ -26,20 +29,17 @@
         <Name>libmateweather</Name>
 	 <RuntimeDependencies>
 	    <Dependency>libsoup</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>python-gudev</Dependency>
+	    <Dependency>python-gtk</Dependency>
             <Dependency>mate-conf</Dependency>
+	    <Dependency>libsoup</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>libxml2</Dependency>
-            <Dependency>glib2</Dependency>
 	 </RuntimeDependencies>
         <Files>
-            <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="doc">/usr/share/gtk-doc</Path>
-	    <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/libmateweather</Path>
-	    <Path fileType="data">/usr/share/glib-2.0/</Path>
-	    <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="data">/usr/share</Path>
 	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="config">/etc/mateconf/schemas/</Path>
+	    <Path fileType="config">/etc/mateconf/schemas/mateweather.schemas</Path>
         </Files>
     </Package>
 
@@ -55,15 +55,15 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-10-21</Date>
             <Version>1.5.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
-            <Date>2012-08-23</Date>
+            <Date>2012-10-23</Date>
             <Version>1.4.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>

@@ -11,20 +11,17 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./autogen.sh  --prefix=/usr \
-				     --sysconfdir=/etc \
-				     --localstatedir=/var \
-				     --libexecdir=/usr/lib/mate-keyring \
-				     --disable-static \
-				     --disable-schemas-install \
+    shelltools.system("./autogen.sh  --disable-static \
+				     --with-gtk=2.0 \
+				     --enable-pam \
 				     --with-pam-dir=/lib/security \
-				     --with-root-certs=/etc/")
+				     --with-root-certs=/etc")
     autotools.configure()
 
 def build():
     autotools.make()
-    
+
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 
-    
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
     pisitools.dodoc("COPYING", "README", "NEWS", "AUTHORS", "ChangeLog")

@@ -10,24 +10,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-
 def setup():
-    shelltools.system("./autogen.sh --prefix=/usr \
-				    --sysconfdir=/etc \
-				    --localstatedir=/var \
-				    --libexecdir=/usr/bin \
-				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-				    --disable-static \
-				    --enable-gstreamer \
-				    --enable-profiling \
-				    --with-x \
-				    --with-nssdb")
+    shelltools.system("./autogen.sh --prefix=/usr")
     autotools.configure()
-
-
 
 def build():
     autotools.make()
-
+    
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR()) 

@@ -13,7 +13,8 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ based window manager</Summary>
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
-        <Archive sha1sum="ff0a9b38548af0310587524de40daa4a825c8a85" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-window-manager-1.5.1.tar.xz</Archive>
+	<Archive sha1sum="e2a20dae26025d6ef7690d34bf401e389abaa674" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-window-manager-1.4.0.tar.xz</Archive>
+        <!--<Archive sha1sum="ff0a9b38548af0310587524de40daa4a825c8a85" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-window-manager-1.5.1.tar.xz</Archive>-->
         <BuildDependencies>
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
@@ -70,15 +71,15 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-10-24</Date>
             <Version>1.5.1</Version>
             <Comment>Güncellendi.</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
-            <Date>2012-08-23</Date>
+            <Date>2012-10-24</Date>
             <Version>1.4.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>

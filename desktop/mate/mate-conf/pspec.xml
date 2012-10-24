@@ -17,16 +17,17 @@
         <Archive sha1sum="07a0c599b4eee4a305a0fe8f59be5aa215520249" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-conf-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>dbus-glib-devel</Dependency>
+	    <Dependency>rarian-devel</Dependency>
+	    <Dependency>mate-conf</Dependency>
             <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>mate-corba-devel</Dependency>
 	    <Dependency>polkit-devel</Dependency>
-            <Dependency>perl-XML-Parser</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
 	</BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>mate-conf</Name>
 	<RuntimeDependencies>
@@ -36,23 +37,14 @@
 	    <Dependency>libxml2</Dependency>
 	    <Dependency>mate-corba</Dependency>
 	    <Dependency>polkit</Dependency>
-            <Dependency>perl-XML-Parser</Dependency>
             <Dependency>gobject-introspection</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="localedata">/usr/share/locale</Path>
-	    <Path fileType="man">/usr/share/man</Path>
 	    <Path fileType="data">/usr/share/</Path>
 	    <Path fileType="bin">/usr/bin</Path>
 	    <Path fileType="config">/etc/</Path>
         </Files>
-	<AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/etc/mateconf/2/path">path</AdditionalFile>
-	</AdditionalFiles>
-	<Provides>
-            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
-        </Provides>
     </Package>
 
     <Package>
@@ -64,6 +56,12 @@
         <Files>
 	    <Path fileType="header">/usr/include/mateconf</Path>
         </Files>
+	<AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/etc/mateconf/2/path">path</AdditionalFile>
+	</AdditionalFiles>
+	<Provides>
+            <COMAR script="pakhandler.py">System.PackageHandler</COMAR>
+        </Provides>
     </Package>
 
     <History>
@@ -96,5 +94,5 @@
             <Email>emrefirat93@gmail.com</Email>
         </Update>
     </History>
-</PISI> 
-  
+</PISI>
+

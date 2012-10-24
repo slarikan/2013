@@ -18,18 +18,17 @@
         </Patches>
 	<BuildDependencies>
             <Dependency>mate-common</Dependency>
-	    <Dependency>shared-mime-info</Dependency>
+	    <Dependency>glib2-devel</Dependency>
         </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>mate-mime-data</Name>
         <RuntimeDependencies>
             <Dependency>mate-common</Dependency>
-	    <Dependency>shared-mime-info</Dependency>
+	    <Dependency>glib2</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="localedata">/usr/share/locale</Path>
 	    <Path fileType="config">/etc</Path>
 	    <Path fileType="data">/usr/share</Path>
         </Files>
@@ -58,4 +57,4 @@
             <Email>turgelfatih@gmail.com</Email>
         </Update>
     </History>
-</PISI> 
+</PISI>
