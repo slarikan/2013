@@ -53,6 +53,7 @@
             <Dependency>libcdio-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
             <Dependency>libass-devel</Dependency>
+            <Dependency>libmodplug-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -91,8 +92,9 @@
             <Dependency>libvo-amrwbenc</Dependency>
             <Dependency>rtmpdump</Dependency>
             <Dependency>libcdio</Dependency>
-	    <Dependency>gnutls</Dependency>
+            <Dependency>gnutls</Dependency>
             <Dependency>libass</Dependency>
+            <Dependency>libmodplug</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
