@@ -15,11 +15,12 @@
         <!-- Snapshots from http://repo.or.cz/w/libass.git
         <Archive sha1sum="fe851501ad4e4fdcfd7a89f92b986542850d87ec" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/libass-9839bd0a94b664d02ecc9b5e1d235144714cf5f7.tar.gz</Archive>
         -->
-        <Archive sha1sum="7a0ea048f687421f3e1314988ca02f04861fc5f0" type="tarxz">http://libass.googlecode.com/files/libass-0.10.0.tar.xz</Archive>
+        <Archive sha1sum="6ebc6c4762c95c5abb96db33289b81780a4fbda6" type="tarxz">http://libass.googlecode.com/files/libass-0.10.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>enca-devel</Dependency>
+	    <Dependency>fribidi-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,6 +30,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency versionFrom="2.4.6">freetype</Dependency>
             <Dependency>enca</Dependency>
+            <Dependency>fribidi</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -49,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-25</Date>
+            <Version>0.10.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-08-29</Date>
             <Version>0.10.0</Version>
