@@ -38,6 +38,7 @@
 	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="data">/usr/share</Path>
 	    <Path fileType="executable">/usr/libexec</Path>
+	    <Path fileType="executable">/usr/sbin/matecomponent-activation-sysconf</Path>
         </Files>
 	<AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/matecomponent-activation/matecomponent-activation-config.xml">matecomponent-activation-config.xml</AdditionalFile>
