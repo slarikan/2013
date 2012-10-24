@@ -52,6 +52,7 @@
             <Dependency>rtmpdump-devel</Dependency>
             <Dependency>libcdio-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
+            <Dependency>libass-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -91,6 +92,7 @@
             <Dependency>rtmpdump</Dependency>
             <Dependency>libcdio</Dependency>
 	    <Dependency>gnutls</Dependency>
+            <Dependency>libass</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
