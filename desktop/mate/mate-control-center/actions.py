@@ -10,13 +10,25 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+
 def setup():
-    shelltools.system("./autogen.sh --disable-static --disable-schemas-install")
-    autotools.configure()
+
+    shelltools.system("./autogen.sh")
+    autotools.configure(" --prefix=/usr \
+			  --sysconfdir=/etc \
+			  --localstatedir=/var \
+			  --disable-static \
+			  --disable-update-mimedb \
+			  --disable-appindicator \
+			  --disable-schemas-install \
+			  --disable-scrollkeeper  \
+			  --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
+			  --disable-schemas-install")
+
+
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.dodoc("NEWS", "README", "COPYING*", "AUTHORS", "ChangeLog")
