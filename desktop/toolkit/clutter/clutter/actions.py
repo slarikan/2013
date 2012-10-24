@@ -10,8 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-# WorkDir = ""
-# NoStrip = "/"
+# WorkDir = ""
+# NoStrip = "/"
 
 def setup():
     # autotools.configure("--enable-introspection")
@@ -27,5 +27,5 @@ def build():
 def install():
     autotools.rawInstall('DESTDIR=%s INSTALL="install -p -c"' % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog*", "COPYING", "TODO", "README*", "NEWS")
+    pisitools.dodoc("ChangeLog*", "COPYING", "README*", "NEWS")
 

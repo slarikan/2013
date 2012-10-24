@@ -12,9 +12,11 @@
         <IsA>library</IsA>
         <Summary>OpenGL GUI toolkit</Summary>
         <Description>clutter is an open source software library for creating fast, visually rich graphical user interfaces. The most obvious example of potential usage is in media center type applications.</Description>
-        <Archive sha1sum="a965479015562e1cfd9da9a7e44c879301da2312" type="targz">http://www.clutter-project.org/sources/clutter/1.4/clutter-1.4.0.tar.gz</Archive>
+        <Archive sha1sum="291aae6e396aad037e6f74a519c3c1456e8f28fd" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/clutter/1.12/clutter-1.12.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>pango</Dependency>
+            <Dependency>cogl-devel</Dependency>
+            <!--Dependency>cogl-pango</Dependency-->            
             <Dependency>cairo</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>mesa</Dependency>
@@ -56,6 +58,13 @@
     </Package>
 
     <History>
+         <Update release="2">
+            <Date>2012-10-11</Date>
+            <Version>1.12.0</Version>
+            <Comment>Version dump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
         <Update release="2">
             <Date>2010-10-20</Date>
             <Version>1.4.0</Version>
