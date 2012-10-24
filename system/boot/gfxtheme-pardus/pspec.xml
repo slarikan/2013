@@ -70,7 +70,7 @@
         <RuntimeDependencies>
             <Dependency>gfxtheme-base</Dependency>
             <!-- make sure these packages are installed before we are -->
-            <Dependency>grub</Dependency>
+            <Dependency>grub2</Dependency>
             <Dependency>cpio</Dependency>
         </RuntimeDependencies>
         <Files>
