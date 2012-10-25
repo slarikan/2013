@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-text-editor</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>mate-conf-editor</Icon>
+        <PartOf>desktop.mate.extras</PartOf>
+        <IsA>app</IsA>
+        <Summary>Mate metin editörü</Summary>
+        <Description>mate için metin editörü.</Description>
+        <Archive sha1sum="23b45bbb172f481ae503984e12604bd3eb845844" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-text-editor-1.4.0.tar.xz</Archive>
+	<BuildDependencies>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>glib2-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>enchant-devel</Dependency>
+	    <Dependency>iso-codes</Dependency>
+	    <Dependency>attr-devel</Dependency>
+	    <Dependency>gtksourceview-devel</Dependency>
+	    <Dependency>rarian-devel</Dependency>
+	    <Dependency>python-gtk-devel</Dependency>
+	    <Dependency>pygobject2-devel</Dependency>
+	    <Dependency>python-gtksourceview</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>gettext-devel</Dependency>
+	</BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>mate-text-editor</Name>
+	<RuntimeDependencies>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>glib2</Dependency>
+	    <Dependency>pango</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>enchant</Dependency>
+	    <Dependency>iso-codes</Dependency>
+	    <Dependency>attr</Dependency>
+	    <Dependency>gtksourceview</Dependency>
+	    <Dependency>rarian</Dependency>
+	    <Dependency>python-gtk</Dependency>
+	    <Dependency>pygobject2</Dependency>
+	    <Dependency>python-gtksourceview</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>gettext</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/</Path>
+	    <Path fileType="bin">/usr/bin</Path>
+	    <Path fileType="config">/etc/</Path>
+        </Files>
+    </Package>
+
+    <History>
+      <Update release="1">
+            <Date>2012-10-25</Date>
+            <Version>1.4.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+    </History>
+</PISI>
