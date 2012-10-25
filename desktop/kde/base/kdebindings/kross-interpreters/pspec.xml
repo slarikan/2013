@@ -18,6 +18,9 @@
             <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
             <Dependency>sun-jdk</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">kross-interpreters-ruby19.patch</Patch>           
+        </Patches>         
     </Source>
 
     <Package>

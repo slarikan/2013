@@ -27,8 +27,8 @@ def install():
     shelltools.cd("build")
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.doman("doc/man/*/*")
-    pisitools.dohtml("doc/html/*")
+    #pisitools.doman("doc/man/*/*")
+    pisitools.dohtml("doc/*")
 
     shelltools.cd("..")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "INSTALL", "README")

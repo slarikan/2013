@@ -79,6 +79,7 @@
             <Dependency>samba-devel</Dependency>
             <Dependency>libvdpau-devel</Dependency>
             <Dependency>yajl-devel</Dependency>
+            <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
         </BuildDependencies>
     </Source>
 
@@ -151,6 +152,7 @@
             <Dependency>python-gtk</Dependency>
             <Dependency>libvdpau</Dependency>
             <Dependency>xinit</Dependency>
+	    <Dependency>libbluray</Dependency><!--bluray suppport-->
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
