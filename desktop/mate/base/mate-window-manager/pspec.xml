@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>mate-window-manager</Name>
+        <Homepage>http://www.mate-desktop.org</Homepage>
+        <Packager>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>desktop.mate</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>GTK+ based window manager</Summary>
+        <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
+	<Archive sha1sum="e2a20dae26025d6ef7690d34bf401e389abaa674" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-window-manager-1.4.0.tar.xz</Archive>
+        <!--<Archive sha1sum="ff0a9b38548af0310587524de40daa4a825c8a85" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-window-manager-1.5.1.tar.xz</Archive>-->
+        <BuildDependencies>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>libcanberra-devel</Dependency>
+	    <Dependency>libsoup-devel</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>mate-corba-devel</Dependency>
+	    <Dependency>mate-dialogs</Dependency>
+	    <Dependency>libSM-devel</Dependency>
+	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>startup-notification-devel</Dependency>
+	</BuildDependencies>
+	<Patches>
+	  <Patch level="1">Allow-breaking-out-from-maximization-during-mouse.patch</Patch>
+	</Patches>
+    </Source>
+    <Package>
+        <Name>mate-window-manager</Name>
+	<RuntimeDependencies>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>libcanberra</Dependency>
+	    <Dependency>libsoup</Dependency>
+	    <Dependency>mate-common</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>mate-conf</Dependency>
+	    <Dependency>mate-corba</Dependency>
+	    <Dependency>mate-dialogs</Dependency>
+	    <Dependency>libSM</Dependency>
+	    <Dependency>libICE</Dependency>
+	    <Dependency>startup-notification</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	  <Path fileType="library">/usr/lib</Path>
+	  <Path fileType="localedata">/usr/share/locale</Path>
+	  <Path fileType="man">/usr/share/man</Path>
+	  <Path fileType="data">/usr/share</Path>
+	  <Path fileType="executable">/usr/bin</Path>
+	  <Path fileType="config">/etc/mateconf</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-window-manager-devel</Name>
+        <Summary>mate-window-manager için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency release="current">mate-window-manager</Dependency>
+	 </RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <!--<Update release="3">
+            <Date>2012-10-24</Date>
+            <Version>1.5.1</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>-->
+        <Update release="2">
+            <Date>2012-10-24</Date>
+            <Version>1.4.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-07-16</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Emre FIRAT</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
