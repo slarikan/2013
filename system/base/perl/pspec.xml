@@ -33,6 +33,10 @@
           <Patch level="1">perl-5.16.1-perl-113980-pp_syscall-I32-retval-truncates-the-retu.patch</Patch>
           <Patch level="1">disable-zlib-bundling.diff</Patch>
           <Patch level="1">perl-5.12.1-gracefull-net-ftp.diff</Patch>
+	  <Patch level="0">perl-5.16.1-perl-114764-Stop-my-vars-with-attrs-from-leaking.patch</Patch>
+	  <Patch level="1">perl-5.16.1-perl-115206-Don-t-crash-when-vivifying.patch</Patch>
+	  <Patch level="1">perl-perlbug-tag.patch</Patch>
+	  <Patch level="1">perl-disable_test_hosts.patch</Patch>
         </Patches>
     </Source>
 
