@@ -94,6 +94,7 @@
             <Dependency>libid3tag-devel</Dependency>
             <Dependency releaseFrom="6">libprojectM-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
         </BuildDependencies>
         <Patches>
             <Patch level="1">link-vlc-cache-gen-with-c++.patch</Patch>
@@ -231,6 +232,7 @@
             <Dependency>xcb-util</Dependency>
             <Dependency>zvbi</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
         </RuntimeDependencies>
         <Conflicts>
             <Package releaseTo="58">vlc</Package>
