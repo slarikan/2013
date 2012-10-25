@@ -2,56 +2,79 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-applets</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Packager>
-        <License>GPL-3.0</License>
-        <Icon>mate-conf-editor</Icon>
-        <PartOf>desktop.mate</PartOf>
+        <License>GPLv2</License>
+        <PartOf>desktop.mate.extras</PartOf>
         <IsA>library</IsA>
-        <Summary>Mate Configuration System</Summary>
-        <Description>mate-conf-editor allows you to browse and modify MateConf configuration.</Description>
-        <Archive sha1sum="23b45bbb172f481ae503984e12604bd3eb845844" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-conf-editor-1.4.0.tar.xz</Archive>
+        <Summary>Applets for MATE panel</Summary>
+        <Description>Applets for the MATE Desktop and Panel</Description>
+        <Archive sha1sum="3edb5dd482b2e0a06e9a24b21f081bc71200da64" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-applets-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
-	    <Dependency>dbus-glib-devel</Dependency>
-            <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>gettext-devel</Dependency>
-	    <Dependency>rarian-devel</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>glib2-devel</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>mate-panel-devel</Dependency>
+	    <Dependency>libxklavier-devel</Dependency>
+	    <Dependency>libmatenotify-devel</Dependency>
+	    <Dependency>dbus-devel</Dependency>
+	    <Dependency>dbus-glib-devel</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>mate-icon-theme</Dependency>
+            <Dependency>libmateweather-devel</Dependency>
+	    <Dependency>libX11-devel</Dependency>
+	    <Dependency>mate-settings-daemon-devel</Dependency>
+	    <Dependency>libmate-devel</Dependency>
+	    <Dependency>libgtop-devel</Dependency>
+	    <Dependency>gstreamer-devel</Dependency>
+	    <Dependency>gst-plugins-base-devel</Dependency>
+	    <Dependency>NetworkManager-devel</Dependency>
+	    <Dependency>polkit-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
     <Package>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-applets</Name>
 	<RuntimeDependencies>
-	    <Dependency>dbus-glib</Dependency>
-            <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2</Dependency>
-	    <Dependency>gettext</Dependency>
-	    <Dependency>rarian</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>glib2</Dependency>
 	    <Dependency>mate-conf</Dependency>
+	    <Dependency>mate-panel</Dependency>
+	    <Dependency>libxklavier</Dependency>
+	    <Dependency>libmatenotify</Dependency>
+	    <Dependency>dbus</Dependency>
+	    <Dependency>dbus-glib</Dependency>
+	    <Dependency>libxml2</Dependency>
+	    <Dependency>mate-icon-theme</Dependency>
+            <Dependency>libmateweather</Dependency>
+	    <Dependency>libX11</Dependency>
+	    <Dependency>mate-settings-daemon</Dependency>
+	    <Dependency>libmate</Dependency>
+	    <Dependency>libgtop</Dependency>
+	    <Dependency>gstreamer</Dependency>
+	    <Dependency>gst-plugins-base</Dependency>
+	    <Dependency>NetworkManager</Dependency>
+	    <Dependency>polkit</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
+	    <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="config">/etc/</Path>
+	    <Path fileType="library">/usr/lib</Path>
         </Files>
     </Package>
 
     <History>
-      <Update release="4">
+      <Update release="1">
             <Date>2012-08-22</Date>
             <Version>1.4.0</Version>
-            <Comment>v.bump</Comment>
+            <Comment>ilk sürüm</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>
-

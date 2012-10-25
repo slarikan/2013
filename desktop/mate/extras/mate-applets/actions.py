@@ -15,8 +15,19 @@ shelltools.export("HOME", get.workDIR())
 def setup():
     shelltools.system("./autogen.sh")
     autotools.configure("--prefix=/usr \
-                        --disable-scrollkeeper \
-                        --disable-schemas-install")
+			 --sysconfdir=/etc \
+			 --localstatedir=/var \
+			 --libexecdir=/usr/lib/mate-applets \
+			 --disable-static \
+			 --disable-scrollkeeper \
+			 --disable-cpufreq \
+			 --enable-polkit \
+			 --enable-networkmanager \
+			 --enable-mixer-applet \
+			 --enable-mini-commander \
+			 --enable-frequency-selector \
+			 --enable-ipv6 \
+			 --disable-schemas-install")
 
 def build():
     autotools.make()

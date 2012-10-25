@@ -22,7 +22,7 @@ def setup():
                          --enable-filters \
                          --with-font-backend=pango \
                          --with-unicode-backend=icu \
-                         --libexecdir=/usr/lib/webkitgtk2 \
+                         --libexecdir=/usr/lib/webkitgtk3 \
                          --with-gtk=3.0 \
                          --enable-gtk-doc")
 
