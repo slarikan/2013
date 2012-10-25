@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <PISI>
     <Source>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-bluetooth</Name>
         <Summary xml:lang="tr">Mate Konfigürasyon Sistemi</Summary>
-        <Description xml:lang="en">mate-conf-editor allows you to browse and modify MateConf configuration.</Description>
+        <Description xml:lang="tr">Mate masaüstüsü için bluetooth sağlayıcısı.</Description>
     </Source>
 </PISI>
