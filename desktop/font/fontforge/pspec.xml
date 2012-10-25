@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Font editor and converter</Summary>
         <Description>FontForge is a font editor that lets you create your own postscript, truetype, opentype, cid-keyed, multi-master, cff, svg and bitmap (bdf, FON, NFNT) fonts, or edit existing ones. Also lets you convert one format to another. FontForge also has support for many macintosh font formats.</Description>
-        <Archive sha1sum="8fada07647f102351bb1d7d1c4da487356e7142f" type="tarbz2">mirrors://sourceforge/fontforge/fontforge_full-20110222.tar.bz2</Archive>
+        <Archive sha1sum="b520f532b48e557c177dffa29120225066cc4e84" type="tarbz2">mirrors://sourceforge/project/fontforge/fontforge-source/fontforge_full-20120731-b.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
@@ -31,13 +31,7 @@
             <Dependency>libuninameslist-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">024_def_background.diff</Patch>
             <Patch level="1">008_libgif.diff</Patch>
-            <!--<Patch level="1">link-with-dl.patch</Patch>-->
-
-            <!-- This is for multilib, not necessary right now
-            <Patch level="1">fontforge-20090224-pythondl.patch</Patch>
-            -->
             <Patch level="1">fontforge-20100501-python27.patch</Patch>
         </Patches>
     </Source>
@@ -86,6 +80,13 @@
     </Package>
 
     <History>
+        <Update release="21">
+            <Date>2012-10-25</Date>
+            <Version>20120731</Version>
+            <Comment>Build for pardus-anka</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="20">
             <Date>2012-09-20</Date>
             <Version>0.0_20110222</Version>

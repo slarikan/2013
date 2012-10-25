@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import libtools
 from pisi.actionsapi import get
 
-WorkDir = "fontforge-%s" % get.srcVERSION().split('_')[-1]
+WorkDir = "fontforge-%s-b" % get.srcVERSION().split('_')[-1]
 
 def setup():
     libtools.libtoolize()
@@ -32,7 +32,7 @@ def install():
     autotools.install()
 
     pisitools.insinto("/usr/share/applications", "Packaging/fontforge.desktop")
-    pisitools.insinto("/usr/share/pixmaps", "Packaging/fontforge.png")
+    #pisitools.insinto("/usr/share/pixmaps", "Packaging/fontforge.png")
     pisitools.insinto("/usr/share/mime/packages", "Packaging/fontforge.xml")
 
     shelltools.cd("pyhook")
