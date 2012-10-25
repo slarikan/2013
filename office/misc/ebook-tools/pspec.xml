@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A tool for accessing and converting various ebook file formats</Summary>
         <Description>ebook-tools is a programming library for accessing and converting various ebook file formats. It also contains a console application.</Description>
-        <Archive sha1sum="1f10bef62c9125cf804366134e486a58308f07ff" type="targz">mirrors://sourceforge/project/ebook-tools/ebook-tools/0.2.2/ebook-tools-0.2.2.tar.gz</Archive>
+        <Archive sha1sum="1340eb7141b453088d39e62bba771413053a6d18" type="targz">mirrors://sourceforge/project/ebook-tools/ebook-tools/0.2.1/ebook-tools-0.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libzip-devel</Dependency>
             <Dependency>doxygen</Dependency>
@@ -56,20 +56,6 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2012-10-25</Date>
-            <Version>0.2.2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Yusuf aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="4">
-            <Date>2011-01-05</Date>
-            <Version>0.2.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.1.1</Version>
