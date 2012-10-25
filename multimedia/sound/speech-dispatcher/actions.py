@@ -16,7 +16,6 @@ def setup():
                          --without-nas \
                          --with-ivona \
                          --with-alsa \
-                         --with-flite \
                          --with-espeak \
                          --with-libao \
                          --with-pulse")
