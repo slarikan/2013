@@ -12,10 +12,11 @@
         <IsA>library</IsA>
         <Summary>Meanwhile (Sametime protocol) library</Summary>
         <Description>Meanwhile library provides the basic Lotus Sametime session functionality.</Description>
-        <Archive sha1sum="e0e9836581da3c4a569135cb238eaa566c324540" type="targz">mirrors://sourceforge/meanwhile/meanwhile-1.0.2.tar.gz</Archive>
+        <Archive sha1sum="3d6ce66e58fa7979dcf77012f9fa44050712c07a" type="targz">http://pkgs.fedoraproject.org/repo/pkgs/meanwhile/meanwhile-1.1.0.tar.gz/129dc61c82401962b3948249992a00d7/meanwhile-1.1.0.tar.gz</Archive>
         <Patches>
-            <Patch level="1">meanwhile-1.0.2-presence.patch</Patch>
             <Patch level="1">sampledir.patch</Patch>
+            <Patch level="1">meanwhile-fix-glib-headers.patch</Patch>
+            <Patch>meanwhile-crash.patch</Patch>            
         </Patches>
     </Source>
 
@@ -41,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-10-26</Date>
+            <Version>1.1.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>1.0.2</Version>
