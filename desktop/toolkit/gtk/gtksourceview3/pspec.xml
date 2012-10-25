@@ -28,7 +28,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/gir-1.0/</Path>
-            <Path fileType="data">/usr/share/gtksourceview-3.0</Path>        
+            <Path fileType="data">/usr/share/gtksourceview-3.0</Path>
         </Files>
     </Package>
 
@@ -45,7 +45,7 @@
         <Name>gtksourceview3-devel</Name>
         <Summary>Development files for gtksourceview</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">gtksourceview</Dependency>
+            <Dependency release="current">gtksourceview3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
