@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>An opensource web browser engine for GTK+ applications</Summary>
         <Description>The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
-        <Archive sha1sum="ccf567fdfd7fbc63a3340777278e41b17522b80d" type="tarxz">http://www.webkitgtk.org/releases/webkit-1.8.3.tar.xz</Archive>
+        <Archive sha1sum="3a2df2eb42ffdd7f3b39873d5461c347a6330493" type="tarxz">http://www.webkitgtk.org/releases/webkitgtk-1.10.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>geoclue</Dependency>
@@ -40,7 +40,7 @@
     <Package>
         <Name>webkit-gtk3</Name>
         <RuntimeDependencies>
-	    <Dependency>gtk3</Dependency>
+            <Dependency>gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libwebkit*</Path>
@@ -69,7 +69,7 @@
     <History>
         <Update release="1">
             <Date>2012-10-23</Date>
-            <Version>1.8.3</Version>
+            <Version>1.10.1</Version>
             <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
