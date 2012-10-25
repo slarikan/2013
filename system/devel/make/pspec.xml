@@ -20,19 +20,20 @@
             <Dependency>patch</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">make-3.82-upstream_fixes-3.patch</Patch>
+
             <!-- Fedora -->
             <Patch level="1">make-3.80-gfortran.patch</Patch>
             <Patch level="1">make-3.82-err-reporting.patch</Patch>
             <Patch level="1">make-3.82-getcwd.patch</Patch>
             <Patch level="1">make-3.82-j8k.patch</Patch>
             <Patch level="1">make-3.82-jobserver.patch</Patch>
-            <Patch level="1">make-3.82-newlines.patch</Patch>
             <Patch level="1">make-3.82-noclock_gettime.patch</Patch>
             <Patch level="1">make-3.82-weird-shell.patch</Patch>
+            <!-- included to make-3.82-upstream_fixes-3.patch
+            <Patch level="1">make-3.82-newlines.patch</Patch>
             <Patch level="1">make-bug-30723.patch</Patch>
-
-            <!-- Gentoo -->
-            <Patch>make-3.82-archives-many-objs.patch</Patch>
+            <Patch>make-3.82-archives-many-objs.patch</Patch-->
         </Patches>
     </Source>
 
@@ -48,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-10-24</Date>
+            <Version>3.82</Version>
+            <Comment>Add patch for several bug fixes from upstream cvs.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-07-14</Date>
             <Version>3.82</Version>
