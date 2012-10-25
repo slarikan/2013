@@ -18,8 +18,12 @@
             <Dependency>alsa-lib-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">flite-1.4-sharedlibs.patch</Patch>
-            <Patch level="1">flite-1.4-fix-overlinking.patch</Patch>
+<!--            <Patch level="1">flite-1.4-sharedlibs.patch</Patch>  -->
+<!--             <Patch level="1">flite-1.4-fix-overlinking.patch</Patch> -->
+<!--             <Patch>flite-1.4-audio-interface.patch</Patch> -->
+<!--              <Patch level="1">flite-1.4-fix-parallel-builds.patch</Patch>   -->
+<!--             <Patch>flite-1.4-ldflags.patch</Patch> -->
+<!--             <Patch level="1">flite-1.4-respect-destdir.patch</Patch>             -->
         </Patches>
     </Source>
 
