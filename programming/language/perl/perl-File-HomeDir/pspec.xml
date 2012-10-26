@@ -5,8 +5,8 @@
         <Name>perl-File-HomeDir</Name>
         <Homepage>http://search.cpan.org/dist/File-HomeDir</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>

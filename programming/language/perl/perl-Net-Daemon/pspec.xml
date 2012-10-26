@@ -5,14 +5,14 @@
         <Name>perl-Net-Daemon</Name>
         <Homepage>http://search.cpan.org/dist/Net-Daemon/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Perl extension for portable daemons</Summary>
         <Description>Net::Daemon is an abstract base class for implementing portable server applications in a very simple way.</Description>
-        <Archive sha1sum="15c1dc7744079a2c283de4129652b7c9b5024f12" type="targz">mirrors://cpan/authors/id/M/MN/MNOONING/Net-Daemon/Net-Daemon-0.43.tar.gz</Archive>
+        <Archive sha1sum="b322436fd9e5cc52fa1da9db345838026351bcea" type="targz">http://search.cpan.org/CPAN/authors/id/M/MN/MNOONING/Net-Daemon-0.48.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
@@ -23,6 +23,9 @@
         <RuntimeDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>Net-Daemon</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/perl</Path>
@@ -32,6 +35,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-11</Date>
+            <Version>0.48</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>0.48</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.43</Version>

@@ -5,8 +5,8 @@
         <Name>perlconsole</Name>
         <Homepage>http://www.sukria.net/perlconsole.html</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:console</IsA>
@@ -40,6 +40,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-11</Date>
+            <Version>0.4</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="8">
+            <Date>2012-07-09</Date>
+            <Version>0.4</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2009-12-04</Date>
             <Version>0.4</Version>

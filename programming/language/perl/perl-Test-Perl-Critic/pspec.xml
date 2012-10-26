@@ -5,8 +5,8 @@
         <Name>perl-Test-Perl-Critic</Name>
         <Homepage>http://search.cpan.org/dist/Test-Perl-Critic/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
@@ -16,7 +16,6 @@
         <Archive sha1sum="40a54c3e668bfae7ca02164c9e7dfa45856e215a" type="targz">mirrors://cpan/authors/id/T/TH/THALJEF/Test-Perl-Critic-1.02.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
-            <Dependency>perl-Critic</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
             <Dependency>perl-Test-Pod-Coverage</Dependency>
         </BuildDependencies>
@@ -34,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-09-11</Date>
+            <Version>1.02</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-06-29</Date>
+            <Version>1.02</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>1.02</Version>

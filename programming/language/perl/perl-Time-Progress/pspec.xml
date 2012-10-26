@@ -5,14 +5,14 @@
         <Name>perl-Time-Progress</Name>
         <Homepage>http://search.cpan.org/~cade/Time-Progress-1.5</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Perl module used for elapsed and estimated finish time reporting</Summary>
         <Description>Perl module to report progress. Reports elapsed and estimated finish time. Displays progress bar.</Description>
-        <Archive sha1sum="5b7ba82de9a2dc30994ee0e0b40c4fbdff6e3e58" type="targz">mirrors://cpan/authors/id/C/CA/CADE/Time-Progress-1.5.tar.gz</Archive>
+        <Archive sha1sum="98e7d807141457089657f33f679a5f758552fe9c" type="targz">mirrors://cpan/authors/id/C/CA/CADE/Time-Progress-1.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
@@ -30,6 +30,20 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-07-10</Date>
+            <Version>1.7</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="4">
+            <Date>2012-07-10</Date>
+            <Version>1.7</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2009-12-04</Date>
             <Version>1.5</Version>

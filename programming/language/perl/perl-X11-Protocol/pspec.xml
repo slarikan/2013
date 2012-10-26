@@ -5,8 +5,8 @@
         <Name>perl-X11-Protocol</Name>
         <Homepage>http://search.cpan.org/dist/X11-Protocol/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-11</Date>
+            <Version>0.56</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-10</Date>
+            <Version>0.56</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2009-12-04</Date>
             <Version>0.56</Version>

@@ -5,15 +5,15 @@
         <Name>perl-RPC-XML</Name>
         <Homepage>http://search.cpan.org/dist/RPC-XML/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>app:console</IsA>
         <IsA>library</IsA>
         <Summary>A set of classes for core data, message and XML handling</Summary>
         <Description>The RPC::XML package is an implementation of the XML-RPC standard. The package provides a set of classes for creating values to pass to the constructors for requests and responses.</Description>
-        <Archive sha1sum="9a200c98bff26e88241d5cb581493d65d21a0e1d" type="targz">mirrors://cpan/authors/id/R/RJ/RJRAY/RPC-XML-0.73.tar.gz</Archive>
+        <Archive sha1sum="a2f807a2d3e8ac85bf83f4722706f69e25a38fe5" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJRAY/RPC-XML-0.76.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
@@ -26,6 +26,9 @@
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>RPC-XML</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -34,6 +37,20 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-09-12</Date>
+            <Version>0.76</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="11">
+            <Date>2012-07-09</Date>
+            <Version>0.76</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2010-03-18</Date>
             <Version>0.73</Version>

@@ -5,14 +5,14 @@
         <Name>perl-SGMLSpm</Name>
         <Homepage>http://search.cpan.org/dist/SGMLSpm</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>SGML and NSGML parsers' output postprocessor</Summary>
         <Description>perl-SGMLSpm is a class to postprocess the output of SGML and NSGML parsers.</Description>
-        <Archive sha1sum="1ff07104fd70a1d1bf05f3523b94413049c1fc95" type="targz">mirrors://cpan/authors/id/D/DM/DMEGG/SGMLSpm-1.03ii.tar.gz</Archive>
+        <Archive sha1sum="31d4199d71d5d809f5847bac594c03348c82e2e2" type="targz">http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz</Archive>
         <BuildDependencies>
              <Dependency version="5.16.1">perl</Dependency>
          </BuildDependencies>
@@ -23,14 +23,32 @@
         <RuntimeDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>SGMLSpm</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc/perl-SGMLSpm</Path>
+            <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-12</Date>
+            <Version>1.1</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-10</Date>
+            <Version>1.1</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.03</Version>

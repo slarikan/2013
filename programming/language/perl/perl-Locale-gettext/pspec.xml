@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-11</Date>
+            <Version>1.05</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-07-05</Date>
+            <Version>1.05</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>1.05</Version>

@@ -5,8 +5,8 @@
         <Name>perl-String-ShellQuote</Name>
         <Homepage>http://search.cpan.org/~rosch/String-ShellQuote</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -24,6 +24,9 @@
         <RuntimeDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>String-ShellQuote</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -33,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-07-10</Date>
+            <Version>1.04</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-13</Date>
             <Version>1.04</Version>

@@ -5,8 +5,8 @@
         <Name>perl-Locale-Maketext-Gettext</Name>
         <Homepage>http://search.cpan.org/dist/Locale-Maketext-Gettext/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>Artistic</License>
@@ -34,6 +34,20 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-11</Date>
+            <Version>1.28</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="3">
+            <Date>2012-07-05</Date>
+            <Version>1.28</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>1.28</Version>

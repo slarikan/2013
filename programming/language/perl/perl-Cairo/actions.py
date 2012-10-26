@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyleft 2012 Pardus ANKA Community
-# Copyright 2005-2011 TUBITAK/UEAKE
+# Copyright 2008-2009 TUBITAK/UEKAE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -18,8 +17,8 @@ def setup():
 def build():
     perlmodules.make()
 
-def check():
-    perlmodules.make("test")
+#def check():
+    #perlmodules.make("test")
 
 def install():
     perlmodules.install()

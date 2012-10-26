@@ -5,14 +5,14 @@
         <Name>perl-PDF-API2</Name>
         <Homepage>http://search.cpan.org/dist/PDF-API2</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mehmet Özdemir</Name>
+            <Email>mehmet@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Perl facilitates the creation and modification of PDF files</Summary>
         <Description>perl-PDF-API2 is a Perl module chain to facilitate the Creation and Modification of High-Quality PDF Files.</Description>
-        <Archive sha1sum="9f4ec9c1da939100f63d208d3d6eeaa778047f0a" type="targz">mirrors://cpan/authors/id/S/SS/SSIMMS/PDF-API2-2.017.tar.gz</Archive>
+        <Archive sha1sum="794de9d6d83e8d0ae04b6c1c314238411d151aa8" type="targz">http://search.cpan.org/CPAN/authors/id/S/SS/SSIMMS/PDF-API2-2.019.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Font-TTF</Dependency>
@@ -38,6 +38,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-07-09</Date>
+            <Version>2.019</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-09</Date>
+            <Version>2.019</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-02-23</Date>
             <Version>2.017</Version>

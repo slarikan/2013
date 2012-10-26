@@ -5,14 +5,14 @@
         <Name>perl-NetAddr-IP</Name>
         <Homepage>http://search.cpan.org/dist/NetAddr-IP/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Manages IPv4 and IPv6 addresses and subnets</Summary>
         <Description>perl-NetAddr-IP is designed as a help for managing (ranges of) IP addresses.</Description>
-        <Archive sha1sum="b5eefd47380ffa0bf7823105c91b202e9927a7a2" type="targz">mirrors://cpan/authors/id/M/MI/MIKER/NetAddr-IP-4.030.tar.gz</Archive>
+        <Archive sha1sum="99b57f48b331c57c52917abf26c442689a46b53a" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIKER/NetAddr-IP-4.062.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
@@ -30,6 +30,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-11</Date>
+            <Version>4.062</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-07-05</Date>
+            <Version>4.062</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>4.030</Version>

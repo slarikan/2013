@@ -5,15 +5,15 @@
         <Name>perl-Tk</Name>
         <Homepage>http://search.cpan.org/~ni-s/Tk</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>A Perl module for Tkinter</Summary>
         <Description>A Perl module for Tkinter</Description>
-        <Archive sha1sum="1076d736e43fdf416c664bde0e4c3d035d6903e3" type="targz">mirrors://cpan/authors/id/S/SR/SREZIC/Tk-804.029.tar.gz</Archive>
+        <Archive sha1sum="f5a85cee56de9679e49260e6e80d6dc384e60a5e" type="targz">mirrors://cpan/authors/id/S/SR/SREZIC/Tk-804.030.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>tcltk-devel</Dependency>
             <Dependency version="5.16.1">perl</Dependency>
@@ -26,8 +26,6 @@
             <Patch level="1">perl-Tk-seg.patch</Patch>
             <!-- PATCH-FIX-UPSTREAM compile with recent Xorg versions too - coolo@novell.com -->
             <Patch>Tk-804.029-xorg.diff</Patch>
-            <!-- Fix the Txgrid manpage region->margin. -->
-            <Patch level="1">tixgrid-manpage.patch</Patch>
         </Patches>
     </Source>
 
@@ -46,6 +44,20 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-09-11</Date>
+            <Version>804.030</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="9">
+            <Date>2012-07-10</Date>
+            <Version>804.030</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-02-08</Date>
             <Version>804.029</Version>

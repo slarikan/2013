@@ -5,15 +5,15 @@
         <Name>perl-PPIx-Regexp</Name>
         <Homepage>http://search.cpan.org/dist/PPIx-Regexp</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Perl module represents a regular expression of some sort</Summary>
         <Description>perl-PPIx-Regexp is a Perl module that represents a regular expression of some sort.</Description>
-        <Archive sha1sum="eaa68855a4f6cd6665af49a1d8c7f0e813243837" type="targz">mirrors://cpan/authors/id/W/WY/WYANT/PPIx-Regexp-0.012.tar.gz</Archive>
+        <Archive sha1sum="7a675e323fef2e4cc61df813f4c2e2eafad5c512" type="targz">http://search.cpan.org/CPAN/authors/id/W/WY/WYANT/PPIx-Regexp-0.028.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
@@ -41,6 +41,20 @@
     </Package>
 
     <History>
+       <Update release="8">
+            <Date>2012-09-12</Date>
+            <Version>0.028</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+       <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>0.028</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-10-13</Date>
             <Version>0.012</Version>

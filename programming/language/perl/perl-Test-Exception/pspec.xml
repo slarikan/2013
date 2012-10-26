@@ -5,8 +5,8 @@
         <Name>perl-Test-Exception</Name>
         <Homepage>http://search.cpan.org/dist/Test-Exception/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>

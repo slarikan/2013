@@ -5,14 +5,14 @@
         <Name>perl-MIME-tools</Name>
         <Homepage>http://search.cpan.org/~dskoll/MIME-tools</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Modules for parsing and creating MIME entities</Summary>
         <Description>MIME-tools - modules for parsing (and creating!) MIME entities. Modules in this toolkit: Abstract message holder (file, scalar, etc.), OO interface for decoding MIME messages, an extracted and decoded MIME entity, Mail::Field subclasses for parsing fields, a parsed MIME header (Mail::Header subclass), parser and tool for building your own MIME parser, and utilities.</Description>
-        <Archive sha1sum="f7fd3daf1b3a792d4b62414d9c2fbd40f2b62d70" type="targz">mirrors://cpan/authors/id/D/DO/DONEILL/MIME-tools-5.428.tar.gz</Archive>
+        <Archive sha1sum="2bf3b0cb99b1a13119777055deac98dfc9b743c4" type="targz">http://search.cpan.org/CPAN/authors/id/D/DS/DSKOLL/MIME-tools-5.503.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-MailTools</Dependency>
             <Dependency>perl-IO-stringy</Dependency>
@@ -34,6 +34,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-11</Date>
+            <Version>5.503</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-07-09</Date>
+            <Version>5.503</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2010-04-23</Date>
             <Version>5.428</Version>

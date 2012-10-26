@@ -5,8 +5,8 @@
         <Name>perl-Goo-Canvas</Name>
         <Homepage>http://search.cpan.org/dist/Goo-Canvas</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mehmet Özdemir</Name>
+            <Email>mehmet@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -25,7 +25,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>perltetris_pl-undefined.diff</Patch>
+            <Patch level="0">perltetris_pl-undefined.diff</Patch>
         </Patches>
     </Source>
 

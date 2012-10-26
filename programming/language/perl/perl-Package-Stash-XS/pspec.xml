@@ -5,8 +5,8 @@
         <Name>perl-Package-Stash-XS</Name>
         <Homepage>http://search.cpan.org/dist/Package-Stash-XS</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>Artistic-2</License>
         <License>GPLv1</License>

@@ -5,8 +5,8 @@
         <Name>perl-Tree-DAG_Node</Name>
         <Homepage>http://search.cpan.org/dist/Tree-DAG_Node/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>

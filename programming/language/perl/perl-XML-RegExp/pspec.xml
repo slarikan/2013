@@ -5,14 +5,14 @@
         <Name>perl-XML-RegExp</Name>
         <Homepage>http://search.cpan.org/dist/XML-RegExp/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>A Perl module which contains some regular expressions for XML tokens</Summary>
         <Description>Contains regular expressions for the following XML tokens: BaseChar, Ideographic, Letter, Digit, Extender, CombiningChar, NameChar, EntityRef, CharRef, Reference, Name, NmToken, and AttValue.</Description>
-        <Archive sha1sum="76850b067670a4bebea7780bd52a1f9505fcf62c" type="targz">mirrors://cpan/authors/id/T/TJ/TJMATHER/XML-RegExp-0.03.tar.gz</Archive>
+        <Archive sha1sum="94da8c1448259d7463525dd8c8203e811fe4f4d1" type="targz">http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-0.04.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
@@ -21,7 +21,6 @@
     <Package>
         <Name>perl-XML-RegExp</Name>
         <RuntimeDependencies>
-            <Dependency>perl-XML-Parser</Dependency>
             <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -32,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-11</Date>
+            <Version>0.04</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-09</Date>
+            <Version>0.04</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-28</Date>
             <Version>0.03</Version>
