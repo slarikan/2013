@@ -14,11 +14,10 @@ shelltools.export("HOME", get.workDIR())
 shelltools.export("XDG_DATA_HOME",  get.workDIR())
 
 def setup():
-    pisitools.dosed("configure", "-O2")
-
     autotools.configure("--enable-dependency-tracking \
+                         --disable-silent-rules \
                          --enable-introspection \
-                         --enable-video \
+                         --with-gstreamer=0.10 \
                          --enable-filters \
                          --with-font-backend=pango \
                          --with-unicode-backend=icu \
@@ -26,10 +25,8 @@ def setup():
                          --with-gtk=3.0 \
                          --enable-gtk-doc")
 
-    pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
-
 def build():
-    autotools.make("-j1")
+    autotools.make("-j2")
 
 def install():
     autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
