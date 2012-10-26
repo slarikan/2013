@@ -26,7 +26,7 @@ def setup():
                          --enable-gtk-doc")
 
 def build():
-    autotools.make("-j2")
+    autotools.make("-j1")
 
 def install():
     autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
