@@ -18,8 +18,8 @@ def build():
     perlmodules.make()
 
 # FIXME: requires user input
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     perlmodules.install()
