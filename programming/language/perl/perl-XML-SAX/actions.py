@@ -18,8 +18,8 @@ def setup():
 def build():
     perlmodules.make()
 
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     # pure_install avoids touching system's ParserDetails.ini
