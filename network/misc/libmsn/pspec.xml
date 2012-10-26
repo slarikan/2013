@@ -13,9 +13,9 @@
         <Summary>MSN Messenger library</Summary>
         <Description>libmsn is a reusable, open-source, fully documented library for connecting to Microsoft's MSN Messenger service.</Description>
         <Archive sha1sum="038e63f21fd1bcca073667e8e603a47ad6fd9d14" type="tarbz2">mirrors://sourceforge/libmsn/libmsn/4.2/libmsn-4.2.1.tar.bz2</Archive>
-        <!--<Patches>
-            <Patch level="1">libmsn-4.1-openssl.patch</Patch>
-        </Patches>-->
+        <Patches>
+            <Patch level="1">libmsn-4.2.1-unistd.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
