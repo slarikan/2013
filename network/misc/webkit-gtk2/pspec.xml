@@ -36,6 +36,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-Build-fix-with-newer-bison-2.6.patch</Patch>
+            <Patch level="1">webkit-1.6.3_typefdef_dups.patch</Patch>
         </Patches>
     </Source>
 
