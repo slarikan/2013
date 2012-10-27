@@ -5,8 +5,8 @@
         <Name>perl-Regexp-IPv6</Name>
         <Homepage>http://search.cpan.org/~salva/Regexp-IPv6/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-Regexp-IPv6</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+           <Dependency version="5.16.1">perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-12</Date>
+            <Version>0.03</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.03</Version>

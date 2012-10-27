@@ -5,15 +5,15 @@
         <Name>perl-XML-Twig</Name>
         <Homepage>http://search.cpan.org/~mirod/XML-Twig</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>A perl module for processing huge XML documents in tree mode</Summary>
         <Description>This module provides a way to process XML documents. It is build on top of XML::Parser. XML::Twig offers a tree interface to the document, while allowing you to output the parts of it that have been completely processed. It allows minimal resource (CPU and memory) usage by building the tree only for the parts of the documents that need actual processing, through the use of the twig_roots and twig_print_outside_roots options.</Description>
-        <Archive sha1sum="3960a55727720592dc4741c14468136a84bec4bf" type="targz">mirrors://cpan/authors/id/M/MI/MIROD/XML-Twig-3.38.tar.gz</Archive>
+        <Archive sha1sum="37fec67bd2c60d53e861f13a64c1c9e0426858c2" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIROD/XML-Twig-3.40.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-XML-Simple</Dependency>
             <Dependency>perl-Text-Iconv</Dependency>
@@ -40,6 +40,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-09-11</Date>
+            <Version>3.40</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="8">
+            <Date>2012-07-09</Date>
+            <Version>3.40</Version>
+            <Comment>Depend on new perl 5.14.1 and. v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2011-03-02</Date>
             <Version>3.38</Version>

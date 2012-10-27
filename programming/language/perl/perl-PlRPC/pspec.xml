@@ -5,8 +5,8 @@
         <Name>perl-PlRPC</Name>
         <Homepage>http://search.cpan.org/dist/PlRPC/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -28,6 +28,9 @@
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Net-Daemon</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>PlRPC</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/perl</Path>
@@ -37,6 +40,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-11</Date>
+            <Version>0.2020</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-06-28</Date>
+            <Version>0.2020</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>0.2020</Version>

@@ -3,8 +3,8 @@
         <Name>perl-CGI-PSGI</Name>
         <Homepage>http://search.cpan.org/~miyagawa/CGI-PSGI-0.15/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>

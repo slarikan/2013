@@ -5,14 +5,14 @@
         <Name>perl-Test-LongString</Name>
         <Homepage>http://search.cpan.org/dist/Test-LongString/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Perl library to test long strings</Summary>
         <Description>This module provides some drop-in replacements for the string comparison functions of Test::More, but which are more suitable when you test against long strings. If you've ever had to search for text in a multi-line string like an HTML document, or find specific items in binary data, this is the module for you.</Description>
-        <Archive sha1sum="2d57d768b26d48a3f60519e09a9251a9bdea6904" type="targz">mirrors://cpan/authors/id/R/RG/RGARCIA/Test-LongString-0.13.tar.gz</Archive>
+        <Archive sha1sum="bba84d86eb94db11fbacc3f1992990b8460483f4" type="targz">mirrors://cpan/authors/id/R/RG/RGARCIA/Test-LongString-0.15.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
@@ -32,6 +32,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-11</Date>
+            <Version>0.15</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-10</Date>
+            <Version>0.15</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-02-11</Date>
             <Version>0.13</Version>

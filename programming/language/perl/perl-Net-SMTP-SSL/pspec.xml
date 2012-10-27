@@ -5,8 +5,8 @@
         <Name>perl-Net-SMTP-SSL</Name>
         <Homepage>http://search.cpan.org/dist/Net-SMTP-SSL/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
@@ -33,6 +33,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-11</Date>
+            <Version>1.01</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-07-09</Date>
+            <Version>1.01</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-13</Date>
             <Version>1.01</Version>

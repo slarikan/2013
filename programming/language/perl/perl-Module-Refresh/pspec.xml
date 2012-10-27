@@ -5,14 +5,14 @@
         <Name>perl-Module-Refresh</Name>
         <Homepage>http://search.cpan.org/dist/Module-Refresh</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Refresh %INC files when updated on disk</Summary>
         <Description>It's designed to make it easy to do simple iterative development when working in a persistent environment.</Description>
-        <Archive sha1sum="a7f0dc88312c863bd873c67e7ce414b485c05388" type="targz">mirrors://cpan/authors/id/J/JE/JESSE/Module-Refresh-0.13.tar.gz</Archive>
+        <Archive sha1sum="4bf652127661d1c8f11ff3334bfc75ecc5ab2cfa" type="targz">http://search.cpan.org/CPAN/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
@@ -31,6 +31,20 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-09-11</Date>
+            <Version>0.17</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="6">
+            <Date>2012-07-09</Date>
+            <Version>0.17</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2009-12-04</Date>
             <Version>0.13</Version>

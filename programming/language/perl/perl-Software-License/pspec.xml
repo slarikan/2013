@@ -5,15 +5,15 @@
         <Name>perl-Software-License</Name>
         <Homepage>http://search.cpan.org/dist/Software-License/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Perl Module that provides templated software licenses</Summary>
         <Description>perl-Software-License is a Perl module that provides templated software licenses.</Description>
-        <Archive sha1sum="3fe541e9cadcb9e325f5a784e0bc2894649f1c4d" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Software-License-0.102340.tar.gz</Archive>
+        <Archive sha1sum="30a9427836f7b4d80b0f1869c3439cca86637df9" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Software-License-0.103004.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Data-Section</Dependency>
@@ -37,6 +37,20 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-09-12</Date>
+            <Version>0.103004</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="5">
+            <Date>2012-07-10</Date>
+            <Version>0.103004</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-08-25</Date>
             <Version>0.102340</Version>

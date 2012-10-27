@@ -5,20 +5,23 @@
         <Name>perl-Net-DBus</Name>
         <Homepage>http://search.cpan.org/dist/Net-DBus</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Perl extension for the DBus message system</Summary>
         <Description>perl-Net-DBus provides a Perl API for the DBus message system.</Description>
-        <Archive sha1sum="6f55ed159622239d3727273d0a14fdb0b37e9c1c" type="targz">mirrors://cpan/authors/id/D/DA/DANBERR/Net-DBus-0.33.6.tar.gz</Archive>
+        <Archive sha1sum="87afae86669f0a7963d7b5542afbd0ac767bc7ab" type="targz">http://search.cpan.org/CPAN/authors/id/D/DA/DANBERR/Net-DBus-1.0.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-XML-Twig</Dependency>
+            <Dependency>perl-Test-Pod</Dependency>
+            <Dependency>perl-Pod-Coverage</Dependency>
+            <Dependency>glibc-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,6 +39,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-11</Date>
+            <Version>1.0.0</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-09</Date>
+            <Version>1.0.0</Version>
+            <Comment>Depend on new perl 5.14.1 and. v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-03-08</Date>
             <Version>0.33.6</Version>

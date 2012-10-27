@@ -5,15 +5,15 @@
         <Name>perl-Mail-DKIM</Name>
         <Homepage>http://search.cpan.org/dist/Mail-DKIM</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <Summary>Signs/verifies Internet mail with DKIM/DomainKey signatures</Summary>
         <Description>perl-Mail-DKIM is a Perl module that signs/verifies Internet mail with DKIM/DomainKey signatures.</Description>
-        <Archive sha1sum="913e836b30eca64b5e16400a68ab99e410b3df96" type="targz">mirrors://cpan/authors/id/J/JA/JASLONG/Mail-DKIM-0.38.tar.gz</Archive>
+        <Archive sha1sum="910966a7dac98fae9d2f73907080ca8bbc6087c5" type="targz">http://search.cpan.org/CPAN/authors/id/J/JA/JASLONG/Mail-DKIM-0.39.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-RSA</Dependency>
@@ -38,6 +38,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-11</Date>
+            <Version>0.39</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-05</Date>
+            <Version>0.39</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-07-02</Date>
             <Version>0.38</Version>

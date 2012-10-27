@@ -5,8 +5,8 @@
         <Name>perl-Glib</Name>
         <Homepage>http://gtk2-perl.sourceforge.net</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Gökmen Görgen</Name>
+            <Email>gkmngrgn@gmail.com</Email>
         </Packager>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>

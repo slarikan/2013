@@ -5,8 +5,8 @@
         <Name>perl-Daemon-Generic</Name>
         <Homepage>http://search.cpan.org/~muir/Daemon-Generic</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>Artistic-2</License>
         <License>GPLv1</License>

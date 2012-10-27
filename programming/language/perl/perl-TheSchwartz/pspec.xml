@@ -5,8 +5,8 @@
         <Name>perl-TheSchwartz</Name>
         <Homepage>http://search.cpan.org/~sixapart/TheSchwartz</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <License>GPLv1</License>
@@ -17,10 +17,6 @@
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Data-ObjectDriver</Dependency>
-            <!-- Included in 5.12.2, enable for Corporate 2
-            <Dependency>perl-Digest-MD5</Dependency>
-            <Dependency>perl-Storable</Dependency>
-            -->
         </BuildDependencies>
     </Source>
 
@@ -29,10 +25,6 @@
         <RuntimeDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-Data-ObjectDriver</Dependency>
-            <!-- Included in 5.12.2, enable for Corporate 2
-            <Dependency>perl-Digest-MD5</Dependency>
-            <Dependency>perl-Storable</Dependency>
-            -->
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -43,6 +35,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-09-11</Date>
+            <Version>1.10</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="2">
+            <Date>2012-07-10</Date>
+            <Version>1.10</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2011-01-26</Date>
             <Version>1.10</Version>

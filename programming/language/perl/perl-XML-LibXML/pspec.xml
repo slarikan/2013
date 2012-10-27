@@ -5,22 +5,20 @@
         <Name>perl-XML-LibXML</Name>
         <Homepage>http://search.cpan.org/dist/XML-LibXML</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>Perl Binding for libxml2</Summary>
         <Description>This module implements much of the DOM Level 2 API as an interface to the Gnome libxml2 library. This makes it a fast and highly capable validating XML parser library, as well as a high performance DOM.</Description>
-        <Archive sha1sum="c3400e61282e08e84ab16d5d8cc4557aa5bf3984" type="targz">mirrors://cpan/authors/id/P/PA/PAJAS/XML-LibXML-1.70.tar.gz</Archive>
+        <Archive sha1sum="aa9d9814a3360b915c09e28cff1b278c34a5da19" type="targz">http://mirror.vit.com.tr/mirror/CPAN/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0008.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-SAX</Dependency>
+	    <Dependency>Perl-XML-SAX-BASE</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">sax.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -30,6 +28,9 @@
             <Dependency>perl-XML-SAX</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>perl-XML-LibXML-Common</Package>
+        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -38,6 +39,27 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-26</Date>
+            <Version>2.0008</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="9">
+            <Date>2012-09-11</Date>
+            <Version>2.0002</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="8">
+            <Date>2012-07-09</Date>
+            <Version>2.0002</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-13</Date>
             <Version>1.70</Version>
@@ -62,7 +84,7 @@
               * added getAttributeHash to the reader interface
               * provide context and more accurate column number in
                 structured errors
-              * fix bogus validation results if revalidating a modified document		
+              * fix bogus validation results if revalidating a modified document
               * various fixes and improvements in the documentation
 	    </Comment>
             <Name>Faik Uygur</Name>

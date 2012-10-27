@@ -5,8 +5,8 @@
         <Name>perl-Mail-SPF-Test</Name>
         <Homepage>http://search.cpan.org/dist/Mail-SPF-Test/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Mesutcan Kurt</Name>
+            <Email>mesutcank@gmail.com</Email>
         </Packager>
         <License>BSD</License>
         <IsA>library</IsA>
@@ -38,6 +38,20 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-09-11</Date>
+            <Version>1.001</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="3">
+            <Date>2012-07-05</Date>
+            <Version>1.001</Version>
+            <Comment>Depend on new perl 5.14.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-11-11</Date>
             <Version>1.001</Version>

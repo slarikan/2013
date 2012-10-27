@@ -5,14 +5,14 @@
         <Name>perl-SOAP-Lite</Name>
         <Homepage>http://www.soaplite.com/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>Artistic</License>
         <IsA>library</IsA>
         <Summary>A collection of Perl modules which provides a simple and lightweight interface to the Simple Object Access Protocol</Summary>
         <Description>SOAP::Lite is a collection of Perl modules which provides a simple and lightweight interface to the Simple Object Access Protocol (SOAP) both on client and server side.</Description>
-        <Archive sha1sum="46445cdf32e245b867abf0036a83d442351475c0" type="targz">mirrors://cpan/authors/id/M/MK/MKUTTER/SOAP-Lite-0.712.tar.gz</Archive>
+        <Archive sha1sum="e7257cb41b4f6016d2fef6d07bdd0a04c3223fe3" type="targz">mirrors://cpan/authors/id/M/MK/MKUTTER/SOAP-Lite-0.714.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Crypt-SSLeay</Dependency>
             <Dependency>perl-Class-Inspector</Dependency>
@@ -24,6 +24,7 @@
             <Dependency>perl-IO-Socket-SSL</Dependency>
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>perl-Task-Weaken</Dependency>
+            <Dependency>perl-SOAP-Transport-Ftp</Dependency>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
         <Patches>
@@ -54,6 +55,20 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-09-12</Date>
+            <Version>0.714</Version>
+            <Comment>Depend on new perl 5.16.1</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+        <Update release="7">
+            <Date>2012-06-28</Date>
+            <Version>0.714</Version>
+            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-01-27</Date>
             <Version>0.712</Version>

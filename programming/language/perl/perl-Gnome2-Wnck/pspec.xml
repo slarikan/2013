@@ -5,8 +5,8 @@
         <Name>perl-Gnome2-Wnck</Name>
         <Homepage>http://search.cpan.org/dist/Gnome2-Wnck</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
@@ -19,7 +19,7 @@
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Glib</Dependency>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>libwnck-devel</Dependency>
+            <Dependency>libwnck2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -29,7 +29,7 @@
         <RuntimeDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>libwnck</Dependency>
+            <Dependency>libwnck2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
