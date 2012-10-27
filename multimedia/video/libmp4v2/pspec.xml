@@ -5,15 +5,15 @@
         <Name>libmp4v2</Name>
         <Homepage>http://code.google.com/p/mp4v2</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
         </Packager>
         <License>MPL-1.1</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>MPEG4 library</Summary>
         <Description>MPEG4 library extracted from MPEG4IP, usually used in 3D sound systems.</Description>
-        <Archive sha1sum="193260cfb7201e6ec250137bcca1468d4d20e2f0" type="tarbz2">https://mp4v2.googlecode.com/files/mp4v2-2.0.0.tar.bz2</Archive>
+        <Archive sha1sum="c62d00e99b65efce16accd83c501fb8a57206aa8" type="tarbz2">http://mp4v2.googlecode.com/files/mp4v2-1.9.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>help2man</Dependency>
         </BuildDependencies>
@@ -41,13 +41,6 @@
     </Package>
 
     <History>
-        <Update release="8">
-            <Date>2012-08-29</Date>
-            <Version>2.0.0</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
         <Update release="7">
             <Date>2010-10-12</Date>
             <Version>1.9.1</Version>
