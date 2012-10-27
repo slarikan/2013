@@ -9,13 +9,11 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "webkitgtk-%s" % get.srcVERSION()
+WorkDir = "webkit-%s" % get.srcVERSION()
 shelltools.export("HOME", get.workDIR())
 shelltools.export("XDG_DATA_HOME",  get.workDIR())
 
 def setup():
-    pisitools.dosed("configure", "-O2")
-
     autotools.configure("--enable-dependency-tracking \
                          --enable-introspection \
                          --enable-video \
@@ -27,10 +25,8 @@ def setup():
                          --disable-webkit2 \
                          --enable-gtk-doc")
 
-    pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
-
 def build():
-    autotools.make("-j1")
+    autotools.make("V=1 -j1")
 
 def install():
     autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())

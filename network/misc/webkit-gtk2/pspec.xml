@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>An opensource web browser engine for GTK+ applications</Summary>
         <Description>The GTK+ port of WebKit is intended to provide a browser component primarily for users of the portable GTK+ UI toolkit on platforms like Linux.</Description>
-        <Archive sha1sum="3a2df2eb42ffdd7f3b39873d5461c347a6330493" type="tarxz">http://www.webkitgtk.org/releases/webkitgtk-1.10.1.tar.xz</Archive>
+        <Archive sha1sum="138f86894e0a7ed0a41c18c4ac30fcaf961d8d79" type="tarxz">http://www.webkitgtk.org/releases/webkit-1.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>geoclue</Dependency>
@@ -35,6 +35,7 @@
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">0001-Build-fix-with-newer-bison-2.6.patch</Patch>
         </Patches>
     </Source>
 
@@ -69,7 +70,7 @@
     <History>
         <Update release="1">
             <Date>2012-10-23</Date>
-            <Version>1.10.1</Version>
+            <Version>1.8.2</Version>
             <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
