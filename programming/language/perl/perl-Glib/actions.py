@@ -14,14 +14,14 @@ WorkDir="Glib-%s" % get.srcVERSION()
 def setup():
     perlmodules.configure()
 
-    pisitools.dosed("Makefile", " -shared ", " -shared %s -lperl " % get.LDFLAGS())
+    #pisitools.dosed("Makefile", " -shared ", " -shared %s -lperl " % get.LDFLAGS())
 
 def build():
     perlmodules.make()
 
 #FIXME: tests failed
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     perlmodules.install()
