@@ -13,14 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>A collection manager for KDE</Summary>
         <Description>Tellico is a KDE application for organizing your collections. It provides default templates for books, bibliographies, videos, music, video games, coins, stamps, trading cards, comic books, and wines.</Description>
-        <Archive sha1sum="7e753d99d701d01aea6c89eb8405150daa8ddcfc" type="tarbz2">http://tellico-project.org/files/tellico-2.3.4.tar.bz2</Archive>
+        <Archive sha1sum="a362664cf90ccdc588e8fbe8392e82ee5fda36cd" type="tarbz2">http://tellico-project.org/files/tellico-2.3.6.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
-            <Dependency versionFrom="4.3">kdemultimedia-devel</Dependency>
-            <Dependency versionFrom="4.3">kdegraphics-devel</Dependency>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.4.3">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdemultimedia-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdepimlibs-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
             <Dependency>yaz-devel</Dependency>
             <Dependency>exempi-devel</Dependency>
@@ -29,18 +28,18 @@
             <Dependency>libqjson-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libkcddb</Dependency>
+            <Dependency>libxml2-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>tellico</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
             <Dependency>taglib</Dependency>
-            <Dependency versionFrom="4.3">kdemultimedia</Dependency>
-            <Dependency versionFrom="4.3">kdegraphics</Dependency>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.4.3">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdemultimedia</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">kdepimlibs</Dependency>
             <Dependency>qimageblitz</Dependency>
             <Dependency>yaz</Dependency>
             <Dependency>exempi</Dependency>
@@ -69,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="32">
+            <Date>2012-10-28</Date>
+            <Version>2.3.6</Version>
+            <Comment>Version bump to 2.3.6.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="31">
             <Date>2011-10-12</Date>
             <Version>2.3.4</Version>
