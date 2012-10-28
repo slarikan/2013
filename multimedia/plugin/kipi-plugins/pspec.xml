@@ -19,7 +19,6 @@
             <Dependency versionFrom="4.6.1">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.6.1">kdelibs-devel</Dependency>
             <!-- For libkdcraw and libkexiv2 >= 1.1.0 -->
-            <Dependency versionFrom="4.6.1">kdegraphics-devel</Dependency>
             <Dependency versionFrom="4.7.1">qt-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>libgpod-devel</Dependency>
@@ -38,7 +37,6 @@
         <Name>kipi-plugins</Name>
         <RuntimeDependencies>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.6.1">kdegraphics</Dependency>
             <Dependency versionFrom="4.6.1">kdepimlibs</Dependency>
             <Dependency versionFrom="4.6.1">kdelibs</Dependency>
             <Dependency versionFrom="4.7.1">qt</Dependency>
