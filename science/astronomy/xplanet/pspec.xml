@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Render a planetary image into an X window</Summary>
         <Description>Xplanet was inspired by Xearth, which renders an image of the earth into the X root window. All of the major planets and most satellites can be drawn, similar to the Solar System Simulator. A number of different map projections are also supported, including azimuthal, Lambert, Mercator, Mollweide, orthographic, and rectangular.</Description>
-        <Archive sha1sum="c3810c303af8f0cb40520112d9cd1f24fa8b42b5" type="targz">mirrors://sourceforge/xplanet/xplanet-1.2.1.tar.gz</Archive>
+        <Archive sha1sum="7c5208b501b441a0184cbb334a5658d0309d7dac" type="targz">mirrors://sourceforge/project/xplanet/xplanet/1.3.0/xplanet-1.3.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>pango-devel</Dependency>
             <Dependency>netpbm-devel</Dependency>
@@ -23,7 +23,7 @@
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">netpbm-includedir.diff</Patch>
+<!--             <Patch level="1">netpbm-includedir.diff</Patch> -->
             <Patch>xplanet-1.2.1-fix-gcc44.patch</Patch>
         </Patches>
     </Source>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-10-28</Date>
+            <Version>1.3.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>1.2.1</Version>
