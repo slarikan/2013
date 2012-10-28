@@ -18,8 +18,8 @@ def build():
     perlmodules.make()
 
 # disable because they need an x screen
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     perlmodules.install()
