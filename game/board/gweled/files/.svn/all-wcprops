@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pardus/!svn/ver/1/2012/game/board/gweled/files
+END
+turkish.patch
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pardus/!svn/ver/1/2012/game/board/gweled/files/turkish.patch
+END
+gweled-0.9.1-fix-open.patch
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/1/2012/game/board/gweled/files/gweled-0.9.1-fix-open.patch
+END
+translate-paused-string.patch
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/pardus/!svn/ver/1/2012/game/board/gweled/files/translate-paused-string.patch
+END

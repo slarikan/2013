@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pardus/!svn/ver/1/2012/game/fps/WoP/files
+END
+fix-linking-order.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/fps/WoP/files/fix-linking-order.patch
+END
+fix-strcpy.patch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/fps/WoP/files/fix-strcpy.patch
+END
+use_48khz_default.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/fps/WoP/files/use_48khz_default.patch
+END
+wop.png
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pardus/!svn/ver/1/2012/game/fps/WoP/files/wop.png
+END
+wop-smp.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/fps/WoP/files/wop-smp.desktop
+END
+wop.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pardus/!svn/ver/1/2012/game/fps/WoP/files/wop.desktop
+END

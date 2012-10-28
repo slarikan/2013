@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/arcade/extreme-tuxracer/files
+END
+fix_segfault_in_race_select_menu.diff
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/pardus/!svn/ver/1/2012/game/arcade/extreme-tuxracer/files/fix_segfault_in_race_select_menu.diff
+END
+extreme-tuxracer.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/1/2012/game/arcade/extreme-tuxracer/files/extreme-tuxracer.desktop
+END
+localedir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pardus/!svn/ver/1/2012/game/arcade/extreme-tuxracer/files/localedir.patch
+END
+libpng14.patch
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pardus/!svn/ver/1/2012/game/arcade/extreme-tuxracer/files/libpng14.patch
+END

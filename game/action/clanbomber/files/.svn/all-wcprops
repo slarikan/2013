@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files
+END
+clanbomber-1.05-gcc3_4.patch
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/clanbomber-1.05-gcc3_4.patch
+END
+clanbomber-1.05-includes.patch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/clanbomber-1.05-includes.patch
+END
+clanbomber.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/clanbomber.png
+END
+tab-fix.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/tab-fix.patch
+END
+clanbomber-1.02a-gcc-3.3.patch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/clanbomber-1.02a-gcc-3.3.patch
+END
+clanbomber.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/clanbomber.desktop
+END
+destdir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/destdir.patch
+END
+sandbox.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/action/clanbomber/files/sandbox.patch
+END

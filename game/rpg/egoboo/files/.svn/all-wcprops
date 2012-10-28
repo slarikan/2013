@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files
+END
+controls.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/controls.txt
+END
+pathfix.patch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/pathfix.patch
+END
+egoboo.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/egoboo.desktop
+END
+datadir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/datadir.patch
+END
+egoboo
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/egoboo
+END
+makefile.patch
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/makefile.patch
+END
+enet12.patch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/enet12.patch
+END
+pardus.patch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/pardus.patch
+END
+egoboo.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/egoboo.png
+END
+setup.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pardus/!svn/ver/1/2012/game/rpg/egoboo/files/setup.txt
+END

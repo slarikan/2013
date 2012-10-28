@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pardus/!svn/ver/1/2012/game/action/btanks/files
+END
+btanks.png
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/action/btanks/files/btanks.png
+END
+data_dir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pardus/!svn/ver/1/2012/game/action/btanks/files/data_dir.patch
+END
+scons-blows.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/action/btanks/files/scons-blows.patch
+END
+btanks.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pardus/!svn/ver/1/2012/game/action/btanks/files/btanks.desktop
+END
+btanks-editor.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/1/2012/game/action/btanks/files/btanks-editor.desktop
+END

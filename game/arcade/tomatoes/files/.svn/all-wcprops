@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pardus/!svn/ver/1/2012/game/arcade/tomatoes/files
+END
+gcc43.patch
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/arcade/tomatoes/files/gcc43.patch
+END
+tomatoes.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/arcade/tomatoes/files/tomatoes.desktop
+END
+tomatoes-1.55-c_str.patch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/pardus/!svn/ver/1/2012/game/arcade/tomatoes/files/tomatoes-1.55-c_str.patch
+END
+makefile.patch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/arcade/tomatoes/files/makefile.patch
+END

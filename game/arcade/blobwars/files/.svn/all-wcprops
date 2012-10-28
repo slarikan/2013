@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pardus/!svn/ver/1/2012/game/arcade/blobwars/files
+END
+pardus.config.patch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/1/2012/game/arcade/blobwars/files/pardus.config.patch
+END
+pak_location.patch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/arcade/blobwars/files/pak_location.patch
+END
+desktop.patch
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/1/2012/game/arcade/blobwars/files/desktop.patch
+END
+flags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/arcade/blobwars/files/flags.patch
+END

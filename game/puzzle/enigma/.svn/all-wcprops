@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pardus/!svn/ver/1/2012/game/puzzle/enigma
+END
+translations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/translations.xml
+END
+actions.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/actions.py
+END
+pspec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/pspec.xml
+END

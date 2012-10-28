@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files
+END
+tecnoballz.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files/tecnoballz.png
+END
+tecnoballz-0.92-gcc43.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files/tecnoballz-0.92-gcc43.patch
+END
+tecnoballz.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files/tecnoballz.desktop
+END
+deps.patch
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files/deps.patch
+END
+tecnoballz-0.92-dropsgid.patch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files/tecnoballz-0.92-dropsgid.patch
+END
+makefile.patch
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/arcade/tecnoballz/files/makefile.patch
+END

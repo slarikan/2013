@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pardus/!svn/ver/1/2012/game/rpg/scourge/files
+END
+gcc43.patch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/rpg/scourge/files/gcc43.patch
+END
+wxGTK-2.8.patch
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/rpg/scourge/files/wxGTK-2.8.patch
+END
+scourge-tools.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pardus/!svn/ver/1/2012/game/rpg/scourge/files/scourge-tools.desktop
+END
+scourge.desktop.patch
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pardus/!svn/ver/1/2012/game/rpg/scourge/files/scourge.desktop.patch
+END

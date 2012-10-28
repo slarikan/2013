@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files
+END
+exename.patch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/exename.patch
+END
+define_png_infopp_NULL.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/define_png_infopp_NULL.patch
+END
+imagelib-flags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/imagelib-flags.patch
+END
+sdlroot.patch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/sdlroot.patch
+END
+datadir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/datadir.patch
+END
+blockout2.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/blockout2.png
+END
+imagelib.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/imagelib.patch
+END
+BlockOutII-2.3-syslibs.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/BlockOutII-2.3-syslibs.patch
+END
+BlockOutII-jpegdecoder.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/BlockOutII-jpegdecoder.patch
+END
+blockout2.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/blockout2.desktop
+END
+blockout2-2.4-alt-x86_64.patch
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/pardus/!svn/ver/1/2012/game/puzzle/blockout2/files/blockout2-2.4-alt-x86_64.patch
+END

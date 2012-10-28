@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pardus/!svn/ver/1/2012/game/strategy/freeciv
+END
+translations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/strategy/freeciv/translations.xml
+END
+actions.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/strategy/freeciv/actions.py
+END
+pspec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pardus/!svn/ver/1/2012/game/strategy/freeciv/pspec.xml
+END

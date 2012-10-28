@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pardus/!svn/ver/1/2012/game/action/nogravity/files
+END
+configure.patch
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/configure.patch
+END
+strcpy-abuse.patch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/strcpy-abuse.patch
+END
+sdlmixer_c-powerpc-fix.diff
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/sdlmixer_c-powerpc-fix.diff
+END
+nogravity
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/nogravity
+END
+nogravity-64-bit.patch
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/nogravity-64-bit.patch
+END
+bufer-overflows.patch
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/bufer-overflows.patch
+END
+nogravity.png
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/nogravity.png
+END
+fixed_path_to_game_data.diff
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/fixed_path_to_game_data.diff
+END
+nogravity.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/nogravity.desktop
+END
+fullscreen_as_option.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/fullscreen_as_option.patch
+END
+missing_png_and_libz.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pardus/!svn/ver/1/2012/game/action/nogravity/files/missing_png_and_libz.patch
+END

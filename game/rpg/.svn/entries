@@ -1,0 +1,92 @@
+10
+
+dir
+1793
+http://svn.pardus-linux.org/pardus/2012/game/rpg
+http://svn.pardus-linux.org/pardus
+
+
+
+2012-05-20T19:52:57.581390Z
+1
+badibere
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+67c4a01c-05ab-4d37-8c02-ee50c6ad45cd
+
+eternal-lands-data
+dir
+
+egoboo-data
+dir
+
+component.xml
+file
+
+
+
+
+2012-09-15T05:26:26.558956Z
+34f42233587c06e12f1873297fb117c9
+2012-05-20T19:52:57.581390Z
+1
+badibere
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+41
+
+eternal-lands-music
+dir
+
+scourge
+dir
+
+eternal-lands
+dir
+
+egoboo
+dir
+
+daimonin-music
+dir
+
+freedroidrpg
+dir
+
+daimonin
+dir
+
+scourge-data
+dir
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pardus/!svn/ver/1/2012/game/puzzle/memonix/files
+END
+memonix.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pardus/!svn/ver/1/2012/game/puzzle/memonix/files/memonix.png
+END
+memonix.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/puzzle/memonix/files/memonix.desktop
+END
+datadir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pardus/!svn/ver/1/2012/game/puzzle/memonix/files/datadir.patch
+END
+cmake_fixes.patch
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/puzzle/memonix/files/cmake_fixes.patch
+END

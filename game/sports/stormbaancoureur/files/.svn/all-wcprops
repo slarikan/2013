@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files
+END
+stormbaancoureur.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/stormbaancoureur.desktop
+END
+gamedir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/gamedir.patch
+END
+shared-ode.patch
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/shared-ode.patch
+END
+flags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/flags.patch
+END
+fix-underlinking.patch
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/fix-underlinking.patch
+END
+destdir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/destdir.patch
+END
+stormbaancoureur.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/1/2012/game/sports/stormbaancoureur/files/stormbaancoureur.png
+END

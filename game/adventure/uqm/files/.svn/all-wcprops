@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pardus/!svn/ver/1/2012/game/adventure/uqm/files
+END
+uqm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pardus/!svn/ver/1/2012/game/adventure/uqm/files/uqm
+END
+config.patch
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pardus/!svn/ver/1/2012/game/adventure/uqm/files/config.patch
+END
+uqm.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/adventure/uqm/files/uqm.png
+END
+uqm-sdl.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/1/2012/game/adventure/uqm/files/uqm-sdl.desktop
+END
+uqm-opengl.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/adventure/uqm/files/uqm-opengl.desktop
+END

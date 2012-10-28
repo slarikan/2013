@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files
+END
+default-lang.patch
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/default-lang.patch
+END
+gcc43.patch
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/gcc43.patch
+END
+ppracer-turkish.patch
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/ppracer-turkish.patch
+END
+ppracer.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/ppracer.desktop
+END
+new_openal.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/new_openal.patch
+END
+external_squirrel.patch
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/external_squirrel.patch
+END
+ppracer-multiplayer.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/ppracer-multiplayer.desktop
+END
+candy.patch
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/candy.patch
+END
+new_squirrel.patch
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pardus/!svn/ver/1/2012/game/arcade/ppracer/files/new_squirrel.patch
+END

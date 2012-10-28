@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/arcade/blobAndConquer/files
+END
+pardus-config.patch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/pardus/!svn/ver/1/2012/game/arcade/blobAndConquer/files/pardus-config.patch
+END
+blobAndConquer-1.0-defines.patch
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/pardus/!svn/ver/1/2012/game/arcade/blobAndConquer/files/blobAndConquer-1.0-defines.patch
+END
+blobAndConquer.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/1/2012/game/arcade/blobAndConquer/files/blobAndConquer.desktop
+END
+blobAndConquer-1.0-64bit.patch
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/pardus/!svn/ver/1/2012/game/arcade/blobAndConquer/files/blobAndConquer-1.0-64bit.patch
+END

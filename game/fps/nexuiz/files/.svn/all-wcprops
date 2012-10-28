@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files
+END
+nexuiz-glx.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/nexuiz-glx.desktop
+END
+nexuiz-2.5.2-watercrash.patch
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/nexuiz-2.5.2-watercrash.patch
+END
+nexuiz.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/nexuiz.png
+END
+datadir.patch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/datadir.patch
+END
+nexuiz-use-system-libjpeg.patch
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/nexuiz-use-system-libjpeg.patch
+END
+flags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/flags.patch
+END
+libjpeg.patch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/libjpeg.patch
+END
+nexuiz-sdl.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/1/2012/game/fps/nexuiz/files/nexuiz-sdl.desktop
+END

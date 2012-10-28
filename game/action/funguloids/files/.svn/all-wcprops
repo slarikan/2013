@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pardus/!svn/ver/1/2012/game/action/funguloids/files
+END
+funguloids-gcc44.patch
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/funguloids-gcc44.patch
+END
+lua.patch
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/lua.patch
+END
+stringstream.patch
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/stringstream.patch
+END
+funguloids-1.06-fix_new_ogre.diff
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/funguloids-1.06-fix_new_ogre.diff
+END
+gcc43.patch
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/gcc43.patch
+END
+alc_error.patch
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/alc_error.patch
+END
+funguloids.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/funguloids.desktop
+END
+funguloids-ogre-1.7.0.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/funguloids-ogre-1.7.0.patch
+END
+disable-Plugin_CgProgramManager.patch
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/disable-Plugin_CgProgramManager.patch
+END
+fix_install.patch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/fix_install.patch
+END
+disable_mouse_capture.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/disable_mouse_capture.patch
+END
+size_chunks_reverse.patch
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/pardus/!svn/ver/1/2012/game/action/funguloids/files/size_chunks_reverse.patch
+END

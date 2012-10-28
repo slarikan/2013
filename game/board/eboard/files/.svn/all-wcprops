@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pardus/!svn/ver/1/2012/game/board/eboard/files
+END
+eboard-1.1.1-ovflfix.patch
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pardus/!svn/ver/1/2012/game/board/eboard/files/eboard-1.1.1-ovflfix.patch
+END
+eboard.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/board/eboard/files/eboard.desktop
+END
+eboard-1.1.1-gcc44.patch
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pardus/!svn/ver/1/2012/game/board/eboard/files/eboard-1.1.1-gcc44.patch
+END
+eboard-1.1.1-as-needed.patch
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/pardus/!svn/ver/1/2012/game/board/eboard/files/eboard-1.1.1-as-needed.patch
+END

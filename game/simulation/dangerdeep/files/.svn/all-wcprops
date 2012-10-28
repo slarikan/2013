@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/simulation/dangerdeep/files
+END
+ccflags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pardus/!svn/ver/1/2012/game/simulation/dangerdeep/files/ccflags.patch
+END
+stderr.patch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/simulation/dangerdeep/files/stderr.patch
+END
+dangerdeep.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pardus/!svn/ver/1/2012/game/simulation/dangerdeep/files/dangerdeep.desktop
+END
+date.patch
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/simulation/dangerdeep/files/date.patch
+END
+helper.patch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/simulation/dangerdeep/files/helper.patch
+END

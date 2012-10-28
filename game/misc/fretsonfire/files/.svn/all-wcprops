@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files
+END
+fretsonfire.sh
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/fretsonfire.sh
+END
+keep_sound_when_failed.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/keep_sound_when_failed.patch
+END
+fix_window_height_bug.patch
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/fix_window_height_bug.patch
+END
+datapath.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/datapath.patch
+END
+fonts_lower_cpu.patch
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/fonts_lower_cpu.patch
+END
+font-revert.patch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/font-revert.patch
+END
+fretsonfire.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/fretsonfire.png
+END
+typeerror.patch
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/typeerror.patch
+END
+credits_music.patch
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/credits_music.patch
+END
+fretsonfire.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/fretsonfire.desktop
+END
+settings.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/misc/fretsonfire/files/settings.patch
+END

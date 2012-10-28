@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pardus/!svn/ver/1/2012/game/strategy/widelands/files
+END
+fix-paths.patch
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pardus/!svn/ver/1/2012/game/strategy/widelands/files/fix-paths.patch
+END
+widelands.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pardus/!svn/ver/1/2012/game/strategy/widelands/files/widelands.desktop
+END
+default-config.patch
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pardus/!svn/ver/1/2012/game/strategy/widelands/files/default-config.patch
+END
+widelands-0.15-gcc45.patch
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/pardus/!svn/ver/1/2012/game/strategy/widelands/files/widelands-0.15-gcc45.patch
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pardus/!svn/ver/1/2012/game/fps/warsow/files
+END
+filedirs.patch
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/filedirs.patch
+END
+jpeg.patch
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/jpeg.patch
+END
+warsow.png
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/warsow.png
+END
+dga.patch
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/dga.patch
+END
+warsow.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/warsow.desktop
+END
+openal.patch
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/openal.patch
+END
+build.patch
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/build.patch
+END
+do_not_delete_angelscript.patch
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/pardus/!svn/ver/1/2012/game/fps/warsow/files/do_not_delete_angelscript.patch
+END

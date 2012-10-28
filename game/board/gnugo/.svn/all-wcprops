@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pardus/!svn/ver/1/2012/game/board/gnugo
+END
+translations.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pardus/!svn/ver/1/2012/game/board/gnugo/translations.xml
+END
+actions.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pardus/!svn/ver/1/2012/game/board/gnugo/actions.py
+END
+pspec.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pardus/!svn/ver/1/2012/game/board/gnugo/pspec.xml
+END

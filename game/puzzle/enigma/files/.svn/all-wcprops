@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files
+END
+gcc43.patch
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/gcc43.patch
+END
+gcc44.patch
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/gcc44.patch
+END
+autotools.patch
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/autotools.patch
+END
+xerces-c.patch
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/xerces-c.patch
+END
+amflags.patch
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/amflags.patch
+END
+enet-secfix.patch
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/enet-secfix.patch
+END
+enigma.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/enigma.desktop
+END
+enet.patch
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/enet.patch
+END
+netgame.patch
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pardus/!svn/ver/1/2012/game/puzzle/enigma/files/netgame.patch
+END
