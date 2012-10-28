@@ -48,6 +48,8 @@
 	    <Path fileType="localedata">/usr/share/locale</Path>
 	    <Path fileType="man">/usr/share/man</Path>
 	    <Path fileType="data">/var</Path>
+            <Path fileType="data">/usr/share/vala/vapi/colord.vapi</Path>
+            <Path fileType="data">/usr/libexec/colord-sane</Path> 
         </Files>
     </Package>
     
