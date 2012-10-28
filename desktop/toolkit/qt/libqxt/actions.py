@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 from pisi.actionsapi import qt4
 
-WorkDir = get.srcNAME()
+WorkDir = 'libqxt-libqxt-dadc327c2a6a'
 
 def setup():
     autotools.rawConfigure("-prefix /usr \
