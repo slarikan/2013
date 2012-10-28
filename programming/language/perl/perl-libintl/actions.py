@@ -18,8 +18,8 @@ def build():
     perlmodules.make()
 
 # FIXME: needs glibc-locale packages to work
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     perlmodules.install()
