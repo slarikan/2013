@@ -51,7 +51,7 @@
             <Patch>gentoo/3000_all_2.3.6-dl_execstack-PaX-support.patch</Patch>
             <Patch>gentoo/3010_all_2.3.3_pre20040117-pt_pax.patch</Patch>
             <Patch level="1">gentoo/5063_all_glibc-dont-build-timezone.patch</Patch>
-	    <!-- Fedora -->
+            <!-- Fedora -->
             <!--check glibc-fedora.patch-->
             <!--Patch level="1">fedora/glibc-fedora.patch</Patch-->
             <Patch level="1">fedora/glibc-rh179072.patch</Patch>
@@ -92,6 +92,13 @@
             <!--Patch level="1">locale/first_weekday.diff</Patch-->
             <Patch level="1">locale/LC_IDENTIFICATION-optional-fields.diff</Patch>
             <!--Patch level="1">locale/locale-print-LANGUAGE.diff</Patch-->
+            
+            <!-- Arch Linux -->
+            <Patch level="1">arch/glibc-2.16-detect-fma.patch</Patch>
+            <Patch level="1">arch/glibc-2.16-glob-use-size_t.patch</Patch>
+            <Patch level="1">arch/glibc-2.16-rpcgen-cpp-path.patch</Patch>
+            <Patch level="1">arch/glibc-2.16-strncasecmp-segfault.patch</Patch>                                                                                                                              
+            <Patch level="1">arch/glibc-2.16-strtod-overflow.patch</Patch>             
         </Patches>
     </Source>
     <Package>
