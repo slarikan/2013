@@ -17,7 +17,7 @@ WorkDir = "QScintilla-gpl-%s" % get.srcVERSION()
 NoStrip = ["/usr/share/doc"]
 
 def setup():
-    shelltools.cd("Qt4/")
+    shelltools.cd("Qt4Qt5")
     qt4.configure()
 
     # Change C/XXFLAGS
@@ -33,7 +33,7 @@ def setup():
     pisitools.dosed("Makefile", "^CXXFLAGS.*\\$\\(DEFINES\\)", "CXXFLAGS   = %s -fPIC $(DEFINES)" % get.CXXFLAGS())
 
 def build():
-    shelltools.cd("Qt4/")
+    shelltools.cd("Qt4Qt5")
     autotools.make("all staticlib CC=\"%s\" CXX=\"%s\" LINK=\"%s\"" % (get.CC(), get.CXX(), get.CXX()))
 
     shelltools.cd("../designer-Qt4/")
@@ -41,30 +41,22 @@ def build():
 
     # Get Makefile of qscintilla-python via sip
     shelltools.cd("../Python")
-    pythonmodules.run("configure.py -p 4 -n ../Qt4 -o ../Qt4")
+    pythonmodules.run("configure.py -p 4 -n ../Qt4Qt5 -o ../Qt4Qt5")
     autotools.make()
 
 def install():
-    # installs not managed by the build system
-    shelltools.cd("Qt4/")
-    libraryFile = shelltools.ls("libqscintilla2.so.?.?.?")[0]
-    pisitools.dolib(libraryFile)
-    pisitools.dosym("/usr/lib/%s" % libraryFile, "/usr/lib/libqscintilla2.so")
-    pisitools.dosym("/usr/lib/%s" % libraryFile, "/usr/lib/%s" % libraryFile[:-4])
+    shelltools.cd("Qt4Qt5")
+    qt4.install()
 
-    pisitools.dodir("/usr/include")
-    shelltools.copytree("Qsci", "%s/usr/include/Qsci" % get.installDIR())
-    pisitools.insinto(qt4.translationdir, "qscintilla*.qm")
-
-    shelltools.cd("../")
-    pisitools.insinto("%s/designer" % qt4.plugindir, "designer-Qt4/libqscintillaplugin.so")
+    shelltools.cd("../designer-Qt4/")
+    qt4.install()
 
     #build and install qscintilla-python
-    shelltools.cd("Python")
+    shelltools.cd("../Python")
     autotools.install("DESTDIR=%s" % get.installDIR())
 
     shelltools.cd("..")
-    pisitools.dohtml("doc/html-Qt4/")
+    pisitools.dohtml("doc/html-Qt4Qt5/")
     pisitools.insinto("/usr/share/doc/%s/Scintilla" % get.srcNAME(), "doc/Scintilla/*")
 
     pisitools.dodoc("GPL*", "LICENSE*", "NEWS", "README", "OPENSOURCE-NOTICE.TXT")
