@@ -18,6 +18,7 @@
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-File-Flock</Dependency>
             <Dependency>perl-File-Slurp</Dependency>
+	    <Dependency>perl-Eval-LineNumbers</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,6 +28,7 @@
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-File-Flock</Dependency>
             <Dependency>perl-File-Slurp</Dependency>
+	    <Dependency>perl-Eval-LineNumbers</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
