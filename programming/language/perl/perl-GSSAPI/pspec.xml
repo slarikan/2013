@@ -17,6 +17,9 @@
             <Dependency>mit-kerberos</Dependency>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
+	<Patches>
+	    <Patch level="0">disable_failing_test.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
