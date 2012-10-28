@@ -12,11 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Lite scanning tool for KDE4</Summary>
         <Description>Skanlite, provides to use scanner device plugged in your system with Sane backend.</Description>
-        <Archive sha1sum="3d4a28de8780afeb41e256c1cd5eda4f34d506db" type="tarbz2">mirrors://sourceforge/project/sanewidget/Skanlite/skanlite-0.7.tar.bz2</Archive>
+        <Archive sha1sum="d70dfd0b6038c8ac3d0533d428abb8b13377ffb5" type="tarbz2">http://sourceforge.net/projects/sanewidget/files/Skanlite/skanlite-0.9.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.5.2">kdelibs-devel</Dependency>
             <Dependency>sane-backends-devel</Dependency>
-            <Dependency>kdegraphics-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,7 +24,6 @@
         <Name>skanlite</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="4.5.2">kdebase-workspace</Dependency>
-            <Dependency versionFrom="4.5.2">kdegraphics</Dependency>
             <Dependency versionFrom="4.5.2">kdelibs</Dependency>
             <Dependency>sane-backends</Dependency>
             <Dependency>qt</Dependency>
@@ -40,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-10-28</Date>
+            <Version>0.9</Version>
+            <Comment>Version bump to 0.9</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2010-12-15</Date>
             <Version>0.7</Version>
