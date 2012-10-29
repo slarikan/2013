@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A printer administration tool</Summary>
         <Description>system-config-printer is a graphical user interface that allows the user to configure a CUPS print server.</Description>
-        <Archive sha1sum="1ae5ae31eec04405e15754e305c809cb459b325d" type="tarxz">http://cyberelk.net/tim/data/system-config-printer/1.3/system-config-printer-1.3.2.tar.xz</Archive>
+        <Archive sha1sum="9b4489236774147b207f871713036b6ce2f94875" type="tarxz">http://cyberelk.net/tim/data/system-config-printer/1.3/system-config-printer-1.3.12.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
@@ -26,10 +26,10 @@
             <Patch level="1">fix-icon.patch</Patch>
 
             <!-- Improvements for check-device-ids from upstream -->
-            <Patch level="1">system-config-printer-check-device-ids.patch</Patch>
+            <!--<Patch level="1">system-config-printer-check-device-ids.patch</Patch>-->
 
             <!-- Fixed traceback in newprinter.py -->
-            <Patch level="1">system-config-printer-self.printers.patch</Patch>
+            <!--<Patch level="1">system-config-printer-self.printers.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -51,6 +51,7 @@
             <Path fileType="data">/usr/share/system-config-printer/smburi.py</Path>
             <Path fileType="data">/usr/share/system-config-printer/config.py</Path>
             <Path fileType="data">/usr/share/system-config-printer/ppdippstr.py</Path>
+	    <Path fileType="library">/lib/systemd/system/configure-printer@.service</Path>
             <Path fileType="data">/var/run/udev-configure-printer</Path>
             <Path fileType="executable">/lib/udev</Path>
             <Path fileType="executable">/usr/libexec</Path>
@@ -76,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="31">
+            <Date>2012-10-29</Date>
+            <Version>1.3.12</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="30">
             <Date>2011-05-06</Date>
             <Version>1.3.2</Version>
