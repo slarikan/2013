@@ -35,6 +35,9 @@
         <Patches>
             <Patch level="1">clisp-link.in</Patch>
             <Patch level="1">init.lisp</Patch>
+            <Patch>clisp-arm.patch</Patch>
+            <Patch>clisp-libsvm.patch</Patch>
+            <Patch level="1">clisp-linux.patch</Patch>
         </Patches>
     </Source>
 
