@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.autoreconf("-vfi")
 
-    autotools.configure("--disable-gtk-doc --disable-static --enable-introspection")
+    autotools.configure()
 
 def build():
     autotools.make()
