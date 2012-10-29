@@ -14,8 +14,7 @@ WorkDir = "%s-snapshot-%s" % (get.srcNAME(), get.srcVERSION())
 def setup():
     autotools.configure("--disable-static \
                          --disable-debug \
-                         --with-gcrypt \
-                         --with-tls=GnuTLS")
+                         --with-gcrypt ")
 
 def build():
     autotools.make()

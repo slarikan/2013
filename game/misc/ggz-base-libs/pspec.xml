@@ -17,6 +17,9 @@
             <Dependency>gnutls</Dependency>
             <Dependency>libgcrypt-devel</Dependency>
         </BuildDependencies>
+	<Patches>
+	    <Patch level="1">ggz-base-libs-snapshot-0.99.5-tls_nss3.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
