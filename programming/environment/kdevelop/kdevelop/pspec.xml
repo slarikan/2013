@@ -43,7 +43,6 @@
             <Dependency versionFrom="4.7.0">qt</Dependency>
             <Dependency versionFrom="4.6.1">kdelibs</Dependency>
             <Dependency versionFrom="4.6.1">kdebase-workspace</Dependency>
-            <Dependency versionFrom="4.6.1">kdeutils</Dependency>
             <Dependency>libXfixes</Dependency>
         </RuntimeDependencies>
         <Files>
