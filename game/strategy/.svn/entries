@@ -1,137 +1,0 @@
-10
-
-dir
-1793
-http://svn.pardus-linux.org/pardus/2012/game/strategy
-http://svn.pardus-linux.org/pardus
-
-
-
-2012-05-20T19:52:57.581390Z
-1
-badibere
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-67c4a01c-05ab-4d37-8c02-ee50c6ad45cd
-
-freecol
-dir
-
-megaglest-data
-dir
-
-boswars
-dir
-
-scorched3d
-dir
-
-openttd-opengfx
-dir
-
-warmux
-dir
-
-freeciv
-dir
-
-glest-data
-dir
-
-wesnoth
-dir
-
-warzone2100
-dir
-
-warmux-bonusmaps
-dir
-
-component.xml
-file
-
-
-
-
-2012-09-15T05:26:16.243956Z
-d599c606badd074e869654da1999a6a6
-2012-05-20T19:52:57.581390Z
-1
-badibere
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-46
-
-liquidwar
-dir
-
-ufoai
-dir
-
-openttd-openmsx
-dir
-
-0ad
-dir
-
-glob2
-dir
-
-megaglest
-dir
-
-risk
-dir
-
-unknown-horizons
-dir
-
-hedgewars
-dir
-
-ufoai-data
-dir
-
-widelands
-dir
-
-openttd
-dir
-
-glest
-dir
-
-crimson-fields
-dir
-

@@ -1,92 +1,0 @@
-10
-
-dir
-1793
-http://svn.pardus-linux.org/pardus/2012/game/board
-http://svn.pardus-linux.org/pardus
-
-
-
-2012-05-20T19:52:57.581390Z
-1
-badibere
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-67c4a01c-05ab-4d37-8c02-ee50c6ad45cd
-
-gnuchess
-dir
-
-gnugo
-dir
-
-component.xml
-file
-
-
-
-
-2012-09-15T05:26:22.933956Z
-78af622988b23842fc5f512dc6198ffc
-2012-05-20T19:52:57.581390Z
-1
-badibere
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-43
-
-gnubg
-dir
-
-gnuchess-book
-dir
-
-gweled
-dir
-
-knights
-dir
-
-crafty
-dir
-
-eboard
-dir
-
-pokerth
-dir
-
-dreamchess
-dir
-
