@@ -13,7 +13,6 @@
         <Description>C++ client library for the CMIS interface</Description>
         <BuildDependencies>
             <Dependency>cppunit-devel</Dependency>
-            <Dependency>docbook2x</Dependency>
             <Dependency>pkgconfig</Dependency>
         </BuildDependencies>
         <Archive sha1sum="9cc8d29cc129d1aca1a1f24e799eebd6f2f1b93d" type="targz">mirrors://sourceforge/libcmis/libcmis-0.2.3.tar.gz</Archive>
