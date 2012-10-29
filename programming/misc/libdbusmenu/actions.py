@@ -13,10 +13,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.autoreconf("-fvi")
     #autotools.autoconf("-f")
-    autotools.configure("--disable-static \
-                         --disable-introspection \
-                         --disable-gtk-doc-html \
-                         --disable-tests")
+    autotools.configure()
 
 def build():
     autotools.make()

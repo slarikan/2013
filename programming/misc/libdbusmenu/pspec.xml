@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Library for applications to pass a menu scructure accross DBus</Summary>
         <Description>libdbusmenu is a small little library that was created by pulling out some common code out of indicator-applet. It passes a menu structure across DBus so that a program can create a menu simply without worrying about how it is displayed on the other side of the bus.</Description>
-        <Archive sha1sum="13bffbdcbb134e9de0d40909a81d98c75da9e651" type="targz">http://launchpad.net/dbusmenu/0.3/0.3.10/+download/libdbusmenu-0.3.10.tar.gz</Archive>
+        <Archive sha1sum="067b77564f90633aa58494e54b99d733a21f3142" type="targz">https://launchpad.net/dbusmenu/12.10/12.10.2/+download/libdbusmenu-12.10.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gnome-doc-utils</Dependency>
@@ -20,8 +20,8 @@
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>libdbusmenu-0.2.8-2-optional-tests.patch</Patch>
-            <Patch>libdbusmenu-0.2.8-no-gobject-introspection.patch</Patch>
+<!--             <Patch>libdbusmenu-0.2.8-2-optional-tests.patch</Patch> -->
+<!--             <Patch>libdbusmenu-0.2.8-no-gobject-introspection.patch</Patch> -->
         </Patches>
     </Source>
 
@@ -56,6 +56,9 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libdbusmenu-gtk*</Path>
+            <Path fileType="library">/usr/share/vala/vapi</Path>
+            <Path fileType="library">/usr/share/gir-1.0</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0</Path>
         </Files>
     </Package>
 
@@ -87,6 +90,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-10-29</Date>
+            <Version>12.10.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>0.3.10</Version>
