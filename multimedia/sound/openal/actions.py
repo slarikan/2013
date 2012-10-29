@@ -16,7 +16,8 @@ WorkDir = "openal-soft-%s" % get.srcVERSION()
 def setup():
     options = "-DALSA=1 \
                -DPULSEAUDIO=1 \
-               -DOSS=1"
+               -DOSS=1 \
+               -DEXAMPLES=OFF"
 
     if get.buildTYPE() == "emul32":
         options += " -DCMAKE_INSTALL_PREFIX=/emul32 \

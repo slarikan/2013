@@ -19,6 +19,9 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">pthread.patch</Patch>
+	    <Patch level="0">no-fpuextended.patch</Patch>
+	    <Patch level="1">openal-soft-1.14-x86.patch</Patch>
+	    <Patch level="0">libsndio-dlopen-change.patch</Patch>
         </Patches>
     </Source>
 
