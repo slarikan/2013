@@ -12,8 +12,8 @@
         <IsA>data:doc</IsA>
         <Summary>Tex Live binaries</Summary>
         <Description>Texlive binaries that are an essential part of TeXLive component.</Description>
-        <Archive sha1sum="41dc4a5958a415cad24d3da771439b572eb33a27" type="tarxz">http://cekirdek.pardus.org.tr/~farslan/dist/texlive-bin/texlive-bin-texmf-20110121.tar.xz</Archive>
-        <Archive sha1sum="21ded88efa1c8aa4c9ea669af6f72c3027e2f647" type="tarxz">http://cekirdek.pardus.org.tr/~farslan/dist/texlive-bin/texlive-bin-source-20110121.tar.xz</Archive>
+        <Archive sha1sum="7fdc8972d22347880d1117bec8c3b75f82c4fbd5" type="tarxz">http://mirrors.kernel.org/archlinux/other/texlive/texlive-bin-texmf-20120623.tar.xz</Archive>
+        <Archive sha1sum="3f428b3a8f1c9d986cba56104e8a3030ccdcd2b0" type="tarxz">http://mirrors.kernel.org/archlinux/other/texlive/texlive-bin-source-20120623.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0644" target="texmf.cnf">texmf.cnf</AdditionalFile>
             <AdditionalFile permission="0644" target="09-texlive-fonts.conf">09-texlive-fonts.conf</AdditionalFile>
@@ -30,6 +30,8 @@
         </BuildDependencies>
         <Patches>
             <Patch level="0">fix-fontforge-encoding.patch</Patch>
+	    <Patch level="0">luatex-r4449-radical-rule-thickness.patch</Patch>
+	    <Patch level="0">poppler-0.20.patch</Patch>
         </Patches>
     </Source>
 
@@ -71,6 +73,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-10-29</Date>
+            <Version>0.0_20120623</Version>
+            <Comment>Güncelelndi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2011-11-18</Date>
             <Version>0.0_20110121</Version>

@@ -188,8 +188,8 @@ def install():
                           "vpe",
                           "tlmgr"]
 
-    for symlink in symlinks_to_remove:
-        pisitools.remove("/usr/bin/%s" % symlink)
+    #for symlink in symlinks_to_remove:
+        #pisitools.remove("/usr/bin/%s" % symlink)
 
 
     # remove files form disabled packages
