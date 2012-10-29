@@ -21,6 +21,7 @@
             <Patch level="1">pilot-link-0.12.1-var.patch</Patch>
             <Patch level="1">pilot-link-0.12.2-open.patch</Patch>
             <Patch level="1">pilot-link-0.12.3-clio.patch</Patch>
+	    <Patch level="1">pilot-link-0.12.5-redefinePerlsymbols.patch</Patch>
             <Patch level="1">pilot-link-0.12.3-fix-format-strings.patch</Patch>
             <Patch level="1">pilot-link-0.12.3-no-werror-messup.patch</Patch>
             <Patch>pilot-link-0.12.5-libpng-include.patch</Patch>
@@ -60,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-10-29</Date>
+            <Version>0.12.5</Version>
+            <Comment>Hatası giderildi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2010-10-13</Date>
             <Version>0.12.5</Version>
