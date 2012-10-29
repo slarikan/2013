@@ -25,7 +25,6 @@
             <Dependency versionFrom="4.6.1">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.6.1">kdebase-workspace-devel</Dependency>
             <Dependency versionFrom="4.7.0">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.1">kdeutils</Dependency>
             <!--Dependency>valgrind</Dependency-->
             <Dependency>subversion</Dependency>
         </BuildDependencies>
