@@ -26,7 +26,10 @@
         </BuildDependencies>
         <Patches>
             <Patch>config.patch</Patch>
+            <Patch level="1">pygame-1.9.1-config.patch</Patch>
+            <Patch level="1">pygame-1.9.1-no-test-install.patch</Patch>
             <Patch level="1">pygame-1.9.1-porttime.patch</Patch>
+            <Patch level="1">pygame-remove-v4l.patch</Patch>
         </Patches>
     </Source>
 
