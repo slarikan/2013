@@ -24,7 +24,11 @@
             <Dependency>python-dateutil</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">use-png-accessor-functions.patch</Patch>
             <Patch level="1">setup.patch</Patch>
+            <Patch level="1">0001-Bugfix-propagate-timezone-info-in-plot_date-xaxis_da.patch</Patch>
+            <Patch level="1">matplotlib-1.0.1-plot_directive.patch</Patch>
+            <Patch level="1">matplotlib-1.0.1-tkinter.patch</Patch> 
         </Patches>
     </Source>
 
