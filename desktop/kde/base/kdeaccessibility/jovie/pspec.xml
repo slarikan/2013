@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE text to speech daemon</Summary>
         <Description>Jovie KDE Text-to-Speech is a subsystem within the KDE desktop for conversion of text to audible speech. Jovie is currently under development and aims to become the standard subsystem for all KDE applications to provide speech output.</Description>
-        <Archive sha1sum="d9d829c09312bc6f962c36521629ba1bee8f1431" type="tarxz">mirrors://kde/stable/4.8.4/src/jovie-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="fbf63de8b286e8238383f49991ffb7651f9099d2" type="tarxz">http://download.kde.org/stable/4.9.2/src/jovie-4.9.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
@@ -43,12 +43,12 @@
 
     <History>
         <Update release="5">
-            <Date>2012-06-08</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>  
+            <Date>2012-10-29</Date>
+            <Version>4.9.2</Version>
+            <Comment>Version bump to 4.9.2</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>nams-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2012-05-23</Date>
             <Version>4.8.3</Version>
