@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A set of classes for core data, message and XML handling</Summary>
         <Description>The RPC::XML package is an implementation of the XML-RPC standard. The package provides a set of classes for creating values to pass to the constructors for requests and responses.</Description>
-        <Archive sha1sum="a2f807a2d3e8ac85bf83f4722706f69e25a38fe5" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJRAY/RPC-XML-0.76.tar.gz</Archive>
+        <Archive sha1sum="0dba1cbd6443dd0d23027914cdaaf392cbbfc96e" type="targz">http://mirror.vit.com.tr/mirror/CPAN/authors/id/R/RJ/RJRAY/RPC-XML-0.77.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-10-29</Date>
+            <Version>0.77</Version>
+            <Comment>Güncellendi</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2012-09-12</Date>
             <Version>0.76</Version>
