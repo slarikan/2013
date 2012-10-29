@@ -15,7 +15,7 @@ def build():
 
 # Package stalls while testing, just skip this part.
 #def check():
-#    perlmodules.make("test")
+    #perlmodules.make("test")
 
 def install():
     perlmodules.install()

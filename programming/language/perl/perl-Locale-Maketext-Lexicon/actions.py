@@ -21,8 +21,8 @@ def build():
 #   Failed test 'no warnings on blank lines'
 #   at t/1-basic.t line 25.
 #
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     perlmodules.install()
