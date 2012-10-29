@@ -24,7 +24,6 @@
             <Dependency>boost-devel</Dependency>
             <Dependency versionFrom="4.6.1">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.6.1">kdebase-workspace-devel</Dependency>
-            <Dependency versionFrom="1.2.0">kdevplatform-devel</Dependency>
             <Dependency versionFrom="4.7.0">qt-devel</Dependency>
             <Dependency versionFrom="4.6.1">kdeutils</Dependency>
             <!--Dependency>valgrind</Dependency-->
@@ -37,7 +36,6 @@
         <RuntimeDependencies>
             <Dependency>libXrender</Dependency>
             <Dependency>libXcursor</Dependency>
-            <Dependency versionFrom="1.2.0">kdevplatform</Dependency>
             <Dependency>strigi</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>libXtst</Dependency>
