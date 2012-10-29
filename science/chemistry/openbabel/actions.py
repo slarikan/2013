@@ -19,8 +19,8 @@ def setup():
 def build():
     cmaketools.make()
 
-    shelltools.cd("scripts/python")
-    pythonmodules.compile()
+    #shelltools.cd("scripts/python")
+    #pythonmodules.compile()
 
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A chemical toolbox</Summary>
         <Description>Open Babel is a chemical toolbox designed to speak the many languages of chemical data.</Description>
-        <Archive sha1sum="e396b27551a106e001ca6c953181657a0a53f43f" type="targz">mirrors://sourceforge/openbabel/openbabel-2.2.3.tar.gz</Archive>
+        <Archive sha1sum="b8831a308617d1c78a790479523e43524f07d50d" type="targz">http://sourceforge.net/projects/openbabel/files/openbabel/2.3.2/openbabel-2.3.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>boost-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
@@ -21,8 +21,13 @@
             <Dependency>swig</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>doxyfile.patch</Patch>
-            <Patch level="1">rpath.patch</Patch>
+            <!--<Patch>doxyfile.patch</Patch>-->
+            <!--<Patch level="1">rpath.patch</Patch>-->
+	    <Patch level="1">openbabel-2.3.0-plugindir.patch</Patch>
+	    <Patch level="1">openbabel-2.3.1-gcc47-darwin.patch</Patch>
+	    <Patch level="1">openbabel-2.3.1-noswig-rubymethod.patch</Patch>
+	    <Patch level="1">openbabel-2.3.1-ruby19-vendorarch.patch</Patch>
+	    <Patch level="1">openbabel-rpm.patch</Patch>
         </Patches>
     </Source>
 
@@ -57,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-10-29</Date>
+            <Version>2.3.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-01-31</Date>
             <Version>2.2.3</Version>
