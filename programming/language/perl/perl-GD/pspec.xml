@@ -19,8 +19,14 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
+	    <Dependency>libpng-devel</Dependency>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
+	<Patches>
+	    <Patch level="1">perl-GD-skip-3.patch</Patch>
+	    <Patch level="1">perl-GD-2.41-Group.patch</Patch>
+	    <Patch level="1">perl-GD-ccflags.patch</Patch>
+      </Patches>
     </Source>
 
     <Package>

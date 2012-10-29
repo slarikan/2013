@@ -19,7 +19,7 @@ def build():
 
 # Disable tests temporarily
 #def check():
-#    perlmodules.make("test")
+    #perlmodules.make("test")
 
 def install():
     perlmodules.install()
