@@ -16,6 +16,9 @@
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
         </BuildDependencies>
+	<Patches>
+	    <Patch level="1">Switch-2.16-perl514.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
