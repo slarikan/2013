@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Testing with Python</Summary>
         <Description>py.test is a simple and popular testing tool for Python.</Description>
-        <Archive sha1sum="d9593ccb603a246918ee651cd7d71fdfd7fbfc33" type="zip">http://pypi.python.org/packages/source/p/pytest/pytest-2.1.0.zip</Archive>
+        <Archive sha1sum="78615e83184e60c1aea4b91d07374d42115a4e75" type="zip">http://pypi.python.org/packages/source/p/pytest/pytest-2.3.2.zip</Archive>
         <BuildDependencies>
             <Dependency>python-py</Dependency>
             <Dependency>python-sphinx</Dependency>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-10-29</Date>
+            <Version>2.3.2</Version>
+            <Comment>Version bump to 2.3.2</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="2">
             <Date>2011-07-12</Date>
             <Version>2.1.0</Version>

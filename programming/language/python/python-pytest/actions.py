@@ -14,12 +14,12 @@ from pisi.actionsapi import pythonmodules
 
 def build():
     pythonmodules.compile()
-    autotools.make("-C doc html")
-    autotools.make("-C doc man")
+    autotools.make("-C doc en")
+    autotools.make("-C doc ja")
 
 
 def install():
     pythonmodules.install()
-    pisitools.dohtml("doc/_build/html/")
-    pisitools.doman("doc/_build/man/pytest.1")
-    pisitools.insinto("%s/python-pytest" % get.docDIR(), "doc/example")
+    #pisitools.dohtml("doc/en/html/")
+    #pisitools.doman("doc/_build/man/pytest.1")
+    pisitools.insinto("%s/python-pytest" % get.docDIR(), "doc/en/example")
