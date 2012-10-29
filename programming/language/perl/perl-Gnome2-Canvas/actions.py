@@ -16,8 +16,8 @@ def build():
     perlmodules.make()
 
 # Tests try to reach root/.config/oxygen-gtk so disable for now.
-#def check():
-#    perlmodules.make("test")
+def check():
+    perlmodules.make("test")
 
 def install():
     perlmodules.install()
