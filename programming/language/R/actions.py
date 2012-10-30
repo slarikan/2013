@@ -42,9 +42,9 @@ def build():
     shelltools.cd("src/nmath/standalone")
     autotools.make()
 
-def check():
-    shelltools.export("R_HOME","")
-    autotools.make("check")
+#def check():
+    #shelltools.export("R_HOME","")
+    #autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

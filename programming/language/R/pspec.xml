@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A free software environment for statistical computing and graphics</Summary>
         <Description>This package includes the core R userspace and all R development components.</Description>
-        <Archive sha1sum="3c8e3055b2d76cf79627325af8846848ca9a7e90" type="targz">http://cran.r-project.org/src/base/R-2/R-2.13.2.tar.gz</Archive>
+        <Archive sha1sum="c80da687d66ee88d1e34fc1ae5c1bd525f9513dd" type="targz">http://cran.r-project.org/src/base/R-2/R-2.15.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libXmu-devel</Dependency>
             <Dependency>icu4c-devel</Dependency>
@@ -32,10 +32,13 @@
         <Patches>
             <Patch level="1">Rscript.patch</Patch>
             <Patch level="1">dont_use_atlas.patch</Patch>
-            <Patch level="1">R-2.9.0_as-needed.patch</Patch>
+            <!--<Patch level="1">R-2.9.0_as-needed.patch</Patch>-->
             <Patch level="1">config_site.patch</Patch>
-            <Patch level="1">remove-lib64-suffix.diff</Patch>
-            <Patch level="1">fix-mathlib-libm-issue.diff</Patch>
+	    <Patch level="0">R-2.11.1-parallel.patch</Patch>
+	    <Patch level="0">R-2.13.1-zlib_header_fix.patch</Patch>
+	    <Patch level="0">R-2.14.1-rmath-shared.patch</Patch>
+            <!--<Patch level="1">remove-lib64-suffix.diff</Patch>-->
+            <!--<Patch level="1">fix-mathlib-libm-issue.diff</Patch>-->
         </Patches>
     </Source>
 
@@ -109,6 +112,13 @@
     </Package>
 
     <History>
+        <Update release="38">
+            <Date>2012-10-30</Date>
+            <Version>2.15.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="37">
             <Date>2011-10-06</Date>
             <Version>2.13.2</Version>
@@ -190,7 +200,7 @@
             <Version>2.11.0</Version>
             <Comment>
               * Version Bump.
-            </Comment>  
+            </Comment>
             <Name>Ertuğrul Erata</Name>
             <Email>ertugrulerata@gmail.com</Email>
         </Update>
@@ -200,7 +210,7 @@
             <Comment>
               * Version Bump.
               * build recommended packages.
-            </Comment>  
+            </Comment>
             <Name>Ertuğrul Erata</Name>
             <Email>ertugrulerata@gmail.com</Email>
         </Update>
