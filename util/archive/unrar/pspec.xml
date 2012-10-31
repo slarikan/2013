@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>RAR decompressor</Summary>
         <Description>unrar is a program to decompress RAR archives.</Description>
-        <Archive sha1sum="8654c4c539a0a05b8cf52ff1aa2fca180601c8e9" type="targz">http://www.rarlab.com/rar/unrarsrc-3.9.10.tar.gz</Archive>
+        <Archive sha1sum="1cc29603fb4e4df16a3aa9bfc7da1afaf0923259" type="targz">http://www.rarlab.com/rar/unrarsrc-4.2.4.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-10-31</Date>
+            <Version>4.2.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Richard de Bruin</Name>
+            <Email>rr.debruin@gmail.com</Email>
+        </Update>
         <Update release="15">
             <Date>2010-10-12</Date>
             <Version>3.9.10</Version>
