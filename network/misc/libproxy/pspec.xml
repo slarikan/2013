@@ -14,17 +14,17 @@
         <Description>libproxy is a library that provides automatic proxy configuration management.</Description>
         <Archive sha1sum="b01ebbdf837babf63f38ee34e261d76f23dad319" type="targz">http://libproxy.googlecode.com/files/libproxy-0.4.7.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
-            <Dependency versionFrom="4.5.1">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency releaseFrom="18">gconf-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
-            <Dependency>webkit-gtk-devel</Dependency>
+            <Dependency>webkit-gtk2-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>        
+        <!--<Patches>
             <Patch level="1">libproxy-libexecpath.patch</Patch>
             <Patch level="1">libproxy-pkgconfig.patch</Patch>
             <Patch level="1">libproxy-pysitelib.patch</Patch>
-            <Patch level="1">fix-werror.diff</Patch>        
+            <Patch level="1">fix-werror.diff</Patch>
             <Patch level="1">fix-mozilla-js.diff</Patch>
         </Patches>-->
     </Source>
@@ -32,7 +32,7 @@
     <Package>
         <Name>libproxy</Name>
         <RuntimeDependencies>
-            <Dependency>webkit-gtk</Dependency>
+            <Dependency>webkit-gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -60,8 +60,8 @@
         <Name>libproxy-kde</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="0.4.6">libproxy</Dependency>
-            <Dependency versionFrom="4.5.1">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.2">qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libproxy/*/modules/config_kde*</Path>
