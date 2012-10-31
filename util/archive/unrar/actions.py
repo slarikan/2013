@@ -13,10 +13,13 @@ from pisi.actionsapi import get
 WorkDir = "%s" % get.srcNAME()
 
 def build():
-    autotools.make('-f makefile.unix \
-                    CXXFLAGS="%s" \
-                    CXX="%s" \
-                    STRIP="true"' % (get.CXXFLAGS(), get.CXX()))
+#changed for version 4.2.4
+    autotools.make('-f makefile.unix')
+#autotools.make for older version
+#    autotools.make('-f makefile.unix \
+#                    CXXFLAGS="%s" \
+#                    CXX="%s" \
+#                    STRIP="true"' % (get.CXXFLAGS(), get.CXX()))
 
 def install():
     pisitools.dobin("unrar")
