@@ -3,8 +3,10 @@
     <Source>
         <Name>poppler</Name>
         <Summary xml:lang="tr">Xpdf koduna dayanan bir PDF kitaplığı</Summary>
+        <Summary xml:lang="pl">Biblioteka renderująca PDF</Summary>
         <Description xml:lang="tr">Poppler, xpdf koduna dayanan bir PDF hazırlama kitaplığıdır.</Description>
         <Description xml:lang="fr">Poppler est une librairie de rendu PDF basée sur le code source de xpdf-3.0.</Description>
+        <Description xml:lang="pl">Wspólna biblioteka renderująca PDF do integrowania oglądania PDF w aplikacjach desktopowych (oparta na kodzie xpdf-3.0).</Description>
     </Source>
 
     <Package>

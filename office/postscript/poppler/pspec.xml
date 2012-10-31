@@ -152,11 +152,59 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>poppler-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for poppler</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>lcms2-32bit</Dependency>
+            <Dependency>jpeg-32bit</Dependency>
+            <Dependency>libpng-32bit</Dependency>
+            <Dependency>openjpeg-32bit</Dependency>
+            <Dependency>tiff-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">poppler</Dependency>
+            <Dependency>lcms2-32bit</Dependency>
+            <Dependency>jpeg-32bit</Dependency>
+            <Dependency>libpng-32bit</Dependency>
+            <Dependency>openjpeg-32bit</Dependency>
+            <Dependency>tiff-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/libpoppler.so*</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig/poppler.pc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>poppler-glib-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for poppler-glib</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>glib2-devel</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">poppler-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32/libpoppler-glib.so*</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig/poppler-glib.pc</Path>
+        </Files>
+    </Package>
+
     <History>
         <Update release="41">
             <Date>2012-10-18</Date>
             <Version>0.20.5</Version>
-            <Comment>Version bump</Comment>
+            <Comment>Version bump, added emul32</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>
