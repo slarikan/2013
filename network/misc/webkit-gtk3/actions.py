@@ -9,24 +9,44 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "webkitgtk-%s" % get.srcVERSION()
+WorkDir = "webkit-%s" % get.srcVERSION()
+
 shelltools.export("HOME", get.workDIR())
-shelltools.export("XDG_DATA_HOME",  get.workDIR())
+shelltools.export("XDG_DATA_HOME", get.workDIR())
+shelltools.export("CXXFLAGS", get.CXXFLAGS().replace(" -ggdb3", ""))
+
+opt = " -fPIC" if get.ARCH() == "x86_64" else ""
+paths = ["JavaScriptCore", "WebCore", "WebKit"]
+docs = ["AUTHORS", "ChangeLog", "COPYING.LIB", "THANKS", \
+        "LICENSE-LGPL-2", "LICENSE-LGPL-2.1", "LICENSE"]
 
 def setup():
+    pisitools.dosed("configure", " -O2", opt)
     autotools.configure("--enable-dependency-tracking \
-                         --disable-silent-rules \
+                         --with-gnu-ld \
                          --enable-introspection \
-                         --with-gstreamer=0.10 \
+                         --enable-video \
                          --enable-filters \
                          --with-font-backend=pango \
                          --with-unicode-backend=icu \
-                         --libexecdir=/usr/lib/webkitgtk3 \
                          --with-gtk=3.0 \
                          --enable-gtk-doc")
+    pisitools.dosed("GNUmakefile", "(Programs_DumpRenderTree_LDFLAGS\s=\s)", r"\1-lfontconfig ")
 
 def build():
-    autotools.make("-j1")
+    autotools.make("DerivedSources/WebCore/JSNode.h")
+    autotools.make()
 
 def install():
     autotools.rawInstall("-j1 DESTDIR=%s" % get.installDIR())
+
+    # remove empty dir
+    pisitools.removeDir("usr/libexec")
+
+    pisitools.dodoc("NEWS")
+    shelltools.cd("Source")
+    for path in paths:
+        for doc in docs:
+            if shelltools.isFile("%s/%s" % (path, doc)):
+                pisitools.insinto("%s/%s/%s" % (get.docDIR(), get.srcNAME(), path),
+                                  "%s/%s" % (path, doc))
