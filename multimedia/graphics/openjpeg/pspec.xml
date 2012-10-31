@@ -15,7 +15,7 @@
         <Description>openjpeg is an open-source JPEG 2000 codec written in C. It has been developed in order to promote the use of JPEG 2000, the new still-image compression standard from the Joint Photographic Experts Group (JPEG).</Description>
         <Archive sha1sum="1b0b74d1af4c297fd82806a9325bb544caf9bb8b" type="targz">http://openjpeg.googlecode.com/files/openjpeg-1.5.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>lcms-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -26,7 +26,7 @@
     <Package>
         <Name>openjpeg</Name>
         <RuntimeDependencies>
-            <Dependency>lcms</Dependency>
+            <Dependency>lcms2</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -47,8 +47,23 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="man">/usr/share/man/man3</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>openjpeg-32bit</Name>
+        <Summary>32-bit shared libraries for openjpeg</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">openjpeg</Dependency>
+            <Dependency>lcms2-32bit</Dependency>
+            <Dependency>tiff-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 
@@ -56,7 +71,7 @@
         <Update release="12">
             <Date>2012-10-18</Date>
             <Version>1.5.1</Version>
-            <Comment>version bump</Comment>
+            <Comment>version bump, added emul32</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>
