@@ -119,7 +119,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libpoppler-glib.so*</Path>
-            <Path fileType="library">/usr/lib/girepository-1.0/Poppler-0.16.typelib</Path>
+            <Path fileType="library">/usr/lib/girepository-1.0/Poppler-0.18.typelib</Path>
         </Files>
     </Package>
 
