@@ -43,6 +43,8 @@ def install():
     # remove empty dir
     pisitools.removeDir("usr/libexec")
 
+    pisitools.domove("/usr/share/gtk-doc/html/webkitgtk", "/usr/share/gtk-doc/html/webkitgtk3")
+
     pisitools.dodoc("NEWS")
     shelltools.cd("Source")
     for path in paths:
