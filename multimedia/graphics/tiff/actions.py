@@ -22,7 +22,7 @@ def setup():
                --with-pic"
 
     if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32"
+        options += " --prefix=/emul32 --libdir=/usr/lib32"
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
 
@@ -35,6 +35,9 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     if get.buildTYPE() == "emul32":
+        pisitools.removeDir("/emul32")
+        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
+        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
         return
 
     pisitools.rename("/%s/tiff-%s" % (get.docDIR(), get.srcVERSION()), get.srcNAME())
