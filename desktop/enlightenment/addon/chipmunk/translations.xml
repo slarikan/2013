@@ -3,6 +3,7 @@
     <Source>
         <Name>chipmunk</Name>
         <Summary xml:lang="tr">Fizik kitaplığı</Summary>
+        <Summary xml:lang="nl">Natuurkunde bibliotheek in C</Summary>
         <Description xml:lang="tr">Chipmunk, C ile yazılmış hızlı, hafif, taşınabilir fizik kitaplığıdır.</Description>
     </Source>
 
