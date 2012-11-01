@@ -30,12 +30,17 @@ def check():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("ChangeLog*", "LICENSE", "README*")
 
-    # Remove duplicated header files
     if get.buildTYPE() == "emul32":
+        # Remove duplicated header files
         pisitools.removeDir("/usr/lib32/%s" % get.srcDIR())
-    # Fix emul32 includedir
-    if get.buildTYPE() == "emul32":
+        # Fix emul32 includedir
         pisitools.dosym("/usr/lib/%s/include" % get.srcDIR(),
         "/usr/lib32/%s/include" % get.srcDIR())
+
+        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
+        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
+        return
+
+    pisitools.dodoc("ChangeLog*", "LICENSE", "README*")
+

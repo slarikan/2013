@@ -33,8 +33,10 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE():
+    if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
+        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
+        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
         return
 
     pisitools.insinto("/etc/fonts", "fonts.conf", "fonts.conf.new")
