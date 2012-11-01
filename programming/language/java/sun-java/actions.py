@@ -11,40 +11,33 @@ from pisi.util import run_batch, check_file_hash, Error
 
 WorkDir = get.ARCH()
 NoStrip = "/"
-Name = "6u%s" % get.srcVERSION().split("p")[1]
+Name = "7u%s" % get.srcVERSION().split("p")[1]
 Arch = "x64" if get.ARCH() == "x86_64" else "i586"
-BinName = "jdk-%s-linux-%s.bin" % (Name, Arch)
-Url = "http://download.oracle.com/otn-pub/java/jdk/%s-b06/%s" % (Name, BinName)
-
+Archive = "jdk-%s-linux-%s.tar.gz" % (Name, Arch)
+Url = "http://download.oracle.com/otn-pub/java/jdk/%s-b05/%s" % (Name, Archive)
 def setup():
-    if not shelltools.isFile(BinName):
-        shelltools.system('/usr/bin/curl -fLC - --retry 3 --retry-delay 3 -o %s %s  --header "Cookie:oraclelicensejdk-%s-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com"' % (BinName, Url, Name))
+    if not shelltools.isFile(Archive):
+        shelltools.system('/usr/bin/curl -fLC - --retry 3 --retry-delay 3 -o %s %s  --header "Cookie:oraclelicensejdk-%s-oth-JPR=accept-securebackup-cookie;gpw_e24=http://edelivery.oracle.com"' % (Archive, Url, Name))
     hash = run_batch("cat %s.sha1" % Arch)[1].split()[0]
-    if not check_file_hash(BinName, hash): raise Error("Wrong sha1sum.")
-    shelltools.makedirs("unbundle-jdk")
-    shelltools.cd("unbundle-jdk")
-    shelltools.system("sh ../%s --noregister" % BinName)
+    if not check_file_hash(Archive, hash): raise Error("Wrong sha1sum.")
+    shelltools.system("tar -xzf %s" % Archive)
 
 def install():
-    pisitools.dodir("/opt")
-    shelltools.system("./construct unbundle-jdk %s/opt/sun-jdk %s/opt/sun-jre"% (get.installDIR(),get.installDIR()))
+    for d in shelltools.ls("."):
+        if shelltools.isDirectory(d) and d.startswith("jdk"):
+            shelltools.cd(d)
+            break
+
+    for d in ("bin", "db", "include", "lib", "man"):
+        pisitools.insinto("/opt/sun-jdk/%s" % d, "%s" %d)
+
+    pisitools.insinto("/opt/sun-jre", "jre/*")
+    pisitools.dosym("../sun-jre", "/opt/sun-jdk/jre")
+
+    pisitools.dodoc("COPYRIGHT", "LICENSE", "*README*")
+    path = "%s/opt/sun-jre"
+    for f in shelltools.ls(path): 
+        if isFile(f): shelltools.unlink(f)
 
     pisitools.dodir("/usr/lib/browser-plugins")
-
-    # Next generation Java plugin is needed by Firefox 3.6+
-    # http://java.sun.com/javase/6/webnotes/install/jre/manual-plugin-install-linux.html
-    pisitools.dosym("/opt/sun-jre/lib/%s/libnpjp2.so" % Arch.replace("i586", "i386"), "/usr/lib/browser-plugins/javaplugin.so")
-
-    for doc in ["COPYRIGHT", "LICENSE", "README.html", "THIRDPARTYLICENSEREADME.txt",
-                "register.html", "register_ja.html", "register_zh_CN.html"]:
-        file = "%s/opt/sun-jdk/%s" % (get.installDIR(), doc)
-        pisitools.dodoc(file)
-        shelltools.unlink(file)
-
-    # Bug #18115
-    if Arch == "x64":
-        pisitools.remove("/opt/sun-jdk/man/ja_JP.eucJP/man1/javaws.1")
-        #additional missing links to man file
-        pisitools.remove("/opt/sun-jdk/man/ja_JP.eucJP/man1/kinit.1")
-        pisitools.remove("/opt/sun-jdk/man/ja_JP.eucJP/man1/klist.1")
-        pisitools.remove("/opt/sun-jdk/man/ja_JP.eucJP/man1/ktab.1")
+    pisitools.dosym("/opt/sun-jre/lib/%s/libnpjp2.so" % Arch.replace("i586", "i386").replace("x", "amd"), "/usr/lib/browser-plugins/javaplugin.so")
