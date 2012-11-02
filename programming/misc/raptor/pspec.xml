@@ -17,6 +17,9 @@
             <Dependency>mpfr</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
+        <Patches> 
+            <Patch level="1">fix-build.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
