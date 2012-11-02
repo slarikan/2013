@@ -11,6 +11,7 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.export("LIBASSUAN_CONFIG", "/usr/bin/libassuan-config")
+    shelltools.export("LDAPLIBS", "-lldap -llber")
     autotools.configure("--exec-prefix=/usr")
 
 def build():
