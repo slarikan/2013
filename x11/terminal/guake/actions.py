@@ -9,10 +9,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fiv")
-    autotools.configure("--disable-static \
-                         --disable-dependency-tracking \
-                         --disable-schemas-install")
+    #autotools.autoreconf("-fiv")
+    autotools.configure("--disable-static ")
 
 def build():
     autotools.make()
