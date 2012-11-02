@@ -29,6 +29,7 @@ def install():
     
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
+        pisitools.dosed("%s/usr/lib32/pkgconfig/libkmod.pc" % get.installDIR(), "emul32", "usr")
         return
 
     pisitools.dosym("modprobe.d.5.gz","/usr/share/man/man5/modprobe.conf.5.gz")

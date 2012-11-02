@@ -41,3 +41,4 @@ def install():
 
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
+        pisitools.dosed("%s/usr/lib32/pkgconfig/libidn.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
