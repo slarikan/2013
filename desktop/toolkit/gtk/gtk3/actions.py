@@ -23,6 +23,7 @@ def setup():
                --enable-shm \
                --enable-silent-rules \
                --enable-introspection \
+               --enable-gtk2-dependency \
                --disable-papi"
 
     shelltools.export("CFLAGS", get.CFLAGS().replace("-fomit-frame-pointer",""))
@@ -58,4 +59,3 @@ def install():
         for binaries in ["gtk-query-immodules-3.0"]:
             pisitools.domove("/emul32/bin/%s" % binaries, "/usr/bin/", "%s-32bit" % binaries)
         pisitools.removeDir("/emul32")
-

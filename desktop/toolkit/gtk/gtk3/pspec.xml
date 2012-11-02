@@ -16,6 +16,7 @@
             <Dependency>cups-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
+            <Dependency>colord-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
@@ -52,6 +53,7 @@
             <Dependency>cups</Dependency>
             <Dependency>libXi</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>colord</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>libXfixes</Dependency>
