@@ -31,7 +31,6 @@
             <Dependency>gnome-doc-utils</Dependency>
             <Dependency releaseFrom="3">docbook-xml</Dependency>
             <Dependency>sgml-common</Dependency>
-            <Dependency>vim</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

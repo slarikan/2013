@@ -12,8 +12,8 @@
         <IsA>app:console</IsA>
         <Summary>Galago notification daemon</Summary>
         <Description>notification-daemon is the server implementation of the freedesktop.org desktop notification specification.</Description>
-        <Archive sha1sum="1dfea9c637717f993099cfca564e700776083854" type="tarbz2">http://ftp.gnome.org/pub/GNOME/sources/notification-daemon/0.5/notification-daemon-0.5.0.tar.bz2</Archive>
-        <Archive sha1sum="57030a6b85c16bebdb319593923b8dd4b747e84b" target="notification-daemon-0.5.0" type="targz">https://fedorahosted.org/releases/n/o/nodoka/notification-daemon-engine-nodoka-0.1.0.tar.gz</Archive>
+        <Archive sha1sum="4963043fc5d80cbeccaf682b8b90cc364bc8c129" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/notification-daemon/0.7/notification-daemon-0.7.6.tar.xz</Archive>
+        <Archive sha1sum="57030a6b85c16bebdb319593923b8dd4b747e84b" target="notification-daemon-0.7.6" type="targz">https://fedorahosted.org/releases/n/o/nodoka/notification-daemon-engine-nodoka-0.1.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -34,10 +34,10 @@
             <Patch>fedora/notification-daemon-engine-nodoka-window-type.patch</Patch>
             <Patch>notification-daemon-engine-nodoka-pie-color.patch</Patch>
 
-            <Patch level="1">translation.patch</Patch>
+            <!--<Patch level="1">translation.patch</Patch>-->
 
             <!-- use nodoka -->
-            <Patch level="1">fedora/set-theme-to-nodoka.patch</Patch>
+            <!--<Patch level="1">fedora/set-theme-to-nodoka.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -68,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-11-02</Date>
+            <Version>0.7.6</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2011-02-02</Date>
             <Version>0.5.0</Version>
