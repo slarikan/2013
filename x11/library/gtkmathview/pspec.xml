@@ -23,8 +23,12 @@
         <Patches>
             <Patch level="1">gtkmathview-0.8.0-cond-t1.patch</Patch>
             <Patch level="1">gtkmathview-0.8.0-fix-template.patch</Patch>
+	    <Patch level="1">gtkmathview-0.8.0-underlinking.patch</Patch>
+	    <Patch level="1">gtkmathview-0.8.0-gcc47.patch</Patch>
             <Patch level="1">gtkmathview-0.8.0-gcc43.patch</Patch>
             <Patch level="0">gtkmathview-0.8.0-gcc44.patch</Patch>
+	    <Patch level="1">missinglib-01.patch</Patch>
+	    <Patch level="1">missinglib-02.patch</Patch>
         </Patches>
     </Source>
 
@@ -68,8 +72,8 @@
             <Date>2011-10-25</Date>
             <Version>0.8.0</Version>
             <Comment>First release</Comment>
-            <Name></Name>
-            <Email></Email>
+            <Name>Erdem Artan</Name>
+            <Email>badibere@gmail.com</Email>
         </Update>
     </History>
 </PISI>

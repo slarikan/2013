@@ -2,9 +2,9 @@ diff -urN gtkmathview-0.8.0_old/src/widget/gtkmathview_common.h gtkmathview-0.8.
 --- gtkmathview-0.8.0_old/src/widget/gtkmathview_common.h	2011-03-01 12:17:35.000000000 +0300
 +++ gtkmathview-0.8.0/src/widget/gtkmathview_common.h	2011-03-01 12:25:00.000000000 +0300
 @@ -22,6 +22,20 @@
- 
+
  #include <gtk/gtkwidget.h>
- 
+
 +#if GTKMATHVIEW_USES_CUSTOM_READER
 +#include "c_customXmlReader.h"
 +#define GTKMATHVIEW_METHOD_NAME(name) gtk_math_view_##name##__##custom_reader
@@ -24,7 +24,7 @@ diff -urN gtkmathview-0.8.0_old/src/widget/gtkmathview_common.h gtkmathview-0.8.
  #endif /* __cplusplus */
 @@ -45,24 +59,16 @@
    typedef void*                     GtkMathViewReaderData;
- 
+
  #if GTKMATHVIEW_USES_CUSTOM_READER
 -#include "c_customXmlReader.h"
 -#define GTKMATHVIEW_METHOD_NAME(name) gtk_math_view_##name##__##custom_reader

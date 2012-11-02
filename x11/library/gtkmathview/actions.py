@@ -10,16 +10,16 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--enable-popt \
-                        --enable-libxml2 \
-                        --enable-libxml2-reader \
-                        --enable-ps \
-                        --enable-tfm=2 \
-                        --enable-builder-cache \
-                        --enable-breaks \
-                        --enable-boxml \
-                        --sysconfdir=/etc \
-                        --with-t1lib \
-                        --enable-svg")
+                         --enable-libxml2 \
+                         --enable-libxml2-reader \
+                         --enable-ps \
+                         --enable-tfm=2 \
+                         --enable-builder-cache \
+                         --enable-breaks \
+                         --enable-boxml \
+                         --sysconfdir=/etc \
+                         --with-t1lib \
+                         --enable-svg")
 
 def build():
     autotools.make()
