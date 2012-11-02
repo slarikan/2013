@@ -29,7 +29,7 @@ def install():
             break
 
     for d in ("bin", "db", "include", "lib", "man"):
-        pisitools.insinto("/opt/sun-jdk/%s" % d, "%s" %d)
+        pisitools.insinto("/opt/sun-jdk", "%s" %d)
 
     pisitools.insinto("/opt/sun-jre", "jre/*")
     pisitools.dosym("../sun-jre", "/opt/sun-jdk/jre")
