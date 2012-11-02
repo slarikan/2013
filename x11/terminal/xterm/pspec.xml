@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Terminal emulator for the X Window System</Summary>
         <Description>The xterm program is a terminal emulator for the X Window System. It provides DEC VT102 and Tektronix 4014 compatible terminals for programs that can't use the window system directly.</Description>
-        <Archive sha1sum="522fd17211bb2b01ffcb8181ef4c558a1c61c4f5" type="targz">ftp://invisible-island.net/xterm/xterm.tar.gz</Archive>
+        <Archive sha1sum="a6d7da878baf384dbd718bc3f535c0d8ced74574" type="targz">ftp://invisible-island.net/xterm/xterm.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
@@ -59,7 +59,7 @@
     <History>
         <Update release="14">
             <Date>2012-10-18</Date>
-            <Version>284</Version>
+            <Version>286</Version>
             <Comment>Bump.</Comment>
             <Name>Serdar Soytetir</Name>
             <Email>tulliana@gmail.com</Email>
