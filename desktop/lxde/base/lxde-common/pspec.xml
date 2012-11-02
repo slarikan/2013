@@ -38,7 +38,7 @@
             <Dependency>libfm</Dependency>
             <Dependency>pcmanfm</Dependency>
             <Dependency>openbox</Dependency>
-            <Dependency>icon-theme-elementary</Dependency>
+            <Dependency>icon-theme-elemantary</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
