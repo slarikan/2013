@@ -55,3 +55,13 @@ def install():
     pisitools.dosym("/usr/share/texmf-dist/scripts/tex4ht/htxelatex.sh" ,"/usr/bin/htxelatex")
     pisitools.dosym("/usr/share/texmf-dist/scripts/tex4ht/htxetex.sh" ,"/usr/bin/htxetex")
     pisitools.dosym("/usr/share/texmf-dist/scripts/tex4ht/mk4ht.pl" ,"/usr/bin/mk4ht")
+
+    pisitools.remove("/usr/bin/htlatex")
+    pisitools.remove("/usr/bin/httexi")
+    pisitools.remove("/usr/bin/ht")
+    pisitools.remove("/usr/bin/htcontext")
+    pisitools.remove("/usr/bin/htxelatex")
+    pisitools.remove("/usr/bin/mk4ht")
+    pisitools.remove("/usr/bin/httex")
+    pisitools.remove("/usr/bin/htxetex")
+    pisitools.remove("/usr/bin/htmex")
