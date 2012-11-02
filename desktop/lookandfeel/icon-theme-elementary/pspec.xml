@@ -15,7 +15,7 @@
     </Source>
 
     <Package>
-        <Name>icon-theme-elementary</Name>
+        <Name>icon-theme-elemantary</Name>
         <Files>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
