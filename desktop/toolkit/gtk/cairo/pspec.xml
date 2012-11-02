@@ -17,7 +17,6 @@
         <BuildDependencies>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
-            <Dependency>glitz-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
             <Dependency>pixman-devel</Dependency>
@@ -44,7 +43,6 @@
             <Dependency>libXrender</Dependency>
             <Dependency>xcb-util</Dependency>
             <Dependency>pixman</Dependency>
-            <Dependency>glitz</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>freetype</Dependency>
         </RuntimeDependencies>
@@ -64,7 +62,6 @@
             <Dependency release="current">cairo</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
-            <Dependency>glitz-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
             <Dependency>xcb-util-devel</Dependency>
@@ -86,7 +83,6 @@
             <Dependency>fontconfig-32bit</Dependency>
             <Dependency>freetype-32bit</Dependency>
             <Dependency>glib2-32bit</Dependency>
-            <Dependency>glitz-32bit</Dependency>
             <Dependency>libX11-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>libpng-32bit</Dependency>
@@ -100,7 +96,6 @@
             <Dependency>fontconfig-32bit</Dependency>
             <Dependency>freetype-32bit</Dependency>
             <Dependency>glib2-32bit</Dependency>
-            <Dependency>glitz-32bit</Dependency>
             <Dependency>libX11-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>libpng-32bit</Dependency>
