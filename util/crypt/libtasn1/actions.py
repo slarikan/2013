@@ -14,8 +14,7 @@ def setup():
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32 \
-                     --includedir=/usr/include"  #to have correct .pc
+                     --libdir=/usr/lib32"
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
     else:
@@ -36,6 +35,8 @@ def install():
 
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
+        # to have correct .pc file
+        pisitools.dosed("%s/usr/lib32/pkgconfig/libtasn1.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
         return
 
     pisitools.dodoc("ChangeLog", "README", "NEWS", "AUTHORS", "COPYING")
