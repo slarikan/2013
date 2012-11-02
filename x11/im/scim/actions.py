@@ -13,6 +13,7 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vfi")
+    shelltools.system("intltoolize --force")
     autotools.configure("--with-x \
                          --disable-static \
                          --enable-ld-version-script \
