@@ -64,6 +64,8 @@ def install():
         copy_tree("%s/emul32/lib32/" % get.installDIR(), "%s/usr/lib32" % get.installDIR())
         pisitools.removeDir("/emul32")
         pisitools.remove("/usr/lib32/*.a")
+        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
+        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
         return
 
     # Move engines to /usr/lib/openssl/engines

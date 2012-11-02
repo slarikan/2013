@@ -36,5 +36,6 @@ def install():
 
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
+        pisitools.dosed("%s/usr/lib32/pkgconfig/alsa.pc" % get.installDIR(), "emul32", "usr")
 
     pisitools.dodoc("ChangeLog", "TODO", "COPYING", "doc/*.txt")
