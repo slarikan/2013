@@ -27,8 +27,6 @@ def setup():
 
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
 
-    autotools.autoreconf("-fiv")
-
     autotools.configure(options)
 
 def build():
