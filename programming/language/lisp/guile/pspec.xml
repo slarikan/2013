@@ -15,6 +15,9 @@
         <Summary>GNU Scheme interpreter and library</Summary>
         <Description>GUILE (GNU's Ubiquitous Intelligent Language for Extension) is a library implementation of the Scheme programming language, written in C. GUILE provides a machine-independent execution platform that can be linked in as a library during the building of extensible programs.</Description>
         <Archive sha1sum="aee330029ea48160071fdbd09271d80c92498669" type="targz">mirrors://gnu/guile/guile-2.0.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gc-devel</Dependency>
+        </BuildDependencies>
         <Patches>
             <!--Patch level="1">as-needed.patch</Patch-->
             <!--Patch level="1">guile-1.8.7-linemarkers.patch</Patch-->
@@ -27,6 +30,7 @@
         <Name>guile</Name>
         <RuntimeDependencies>
             <Dependency>gmp</Dependency>
+            <Dependency>gc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
