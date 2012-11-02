@@ -21,7 +21,6 @@
             <Dependency>libpng-devel</Dependency>
             <Dependency>pixman-devel</Dependency>
             <Dependency>xcb-util-devel</Dependency>
-            <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Mozilla patches from Firefox 3.1 beta 2 -->
@@ -46,7 +45,6 @@
             <Dependency>pixman</Dependency>
             <Dependency>libpng</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -92,7 +90,6 @@
             <Dependency>pixman-32bit</Dependency>
             <Dependency>xcb-util-32bit</Dependency>
             <Dependency>zlib-32bit</Dependency>
-            <Dependency>mesa-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">cairo</Dependency>
@@ -106,7 +103,6 @@
             <Dependency>pixman-32bit</Dependency>
             <Dependency>xcb-util-32bit</Dependency>
             <Dependency>zlib-32bit</Dependency>
-            <Dependency>mesa-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/lib*</Path>
