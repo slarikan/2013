@@ -40,4 +40,5 @@ def install():
 
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
-
+        # to have correct .pc file
+        pisitools.dosed("%s/usr/lib32/pkgconfig/gnutls.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
