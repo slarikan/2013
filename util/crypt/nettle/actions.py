@@ -33,6 +33,7 @@ def install():
     if get.buildTYPE() == "emul32":
         pisitools.removeDir("/emul32")
         pisitools.remove("/usr/lib32/*.a")
+        pisitools.dosed("%s/usr/lib32/pkgconfig/nettle.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
         return
     pisitools.remove("/usr/lib/*.a")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "README", "nettle.pdf")
