@@ -31,7 +31,6 @@ def setup():
                --disable-login \
                --disable-static \
                --disable-wall"
-               
 
     if get.buildTYPE() == "emul32":
         options += " --prefix=/emul32 \
@@ -75,6 +74,8 @@ def install():
         pisitools.domove("/emul32/lib32/libblkid.so", "/usr/lib32")
         pisitools.domove("/emul32/lib32/pkgconfig/blkid.pc", "/usr/lib32/pkgconfig")
         pisitools.removeDir("/emul32")
+        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
+        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "emul32", "usr")
 
     #pisitools.doman("sys-utils/klogconsole.man")
     pisitools.remove("/usr/share/man/man1/kill.1")
