@@ -14,7 +14,6 @@ from pisi.actionsapi import get
 def setup():
     options = "--disable-static \
                --disable-gtk-doc \
-               --enable-glitz \
                --enable-xlib \
                --enable-xlib-xrender \
                --enable-xcb \
