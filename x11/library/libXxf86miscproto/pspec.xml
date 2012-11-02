@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xxf86miscproto library</Summary>
         <Description>LibXxf86miscproto is the client library for the XFree86-miscproto extension.</Description>
-        <Archive sha1sum="735e44dd5846ec4c4213d4a7b60b8361f214f06c" type="targz">http://cgit.freedesktop.org/xorg/proto/xf86miscproto/snapshot/xf86miscproto-0.9.2.tar.gz</Archive>
+        <Archive sha1sum="be1e91331865dafefabc46c21879154697db4f8e" type="targz">http://cgit.freedesktop.org/xorg/proto/xf86miscproto/snapshot/xf86miscproto-0.9.2.tar.gz</Archive>
         <BuildDependencies>
 	      <Dependency>libXext-devel</Dependency>
 	     <Dependency>xorg-proto</Dependency>
