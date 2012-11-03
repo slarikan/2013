@@ -7,6 +7,7 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
+from pisi.actionsapi import perlmodules
 from pisi.actionsapi import get
 
 def setup():
@@ -20,3 +21,6 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc('AUTHORS', 'ChangeLog', 'NEWS', 'README', 'TODO', 'COPYING')
+
+    # remove unneeded files
+    perlmodules.removePodfiles()
