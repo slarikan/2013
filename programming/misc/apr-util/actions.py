@@ -11,7 +11,9 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
+# to avoid sandbox violations during make test
 shelltools.export("ODBCINI", get.workDIR())
+shelltools.export("ODBCSYSINI", get.workDIR())
 
 def setup():
     autotools.autoreconf("-vfi")
