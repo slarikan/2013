@@ -15,8 +15,6 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--enable-shared \
                          --enable-pthread \
-                         --enable-doc \
-                         --enable-ipv6 \
                          --disable-rpath \
                          --with-sitedir=/usr/lib/ruby/site_ruby")
 
