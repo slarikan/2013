@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Instrumentation System</Summary>
         <Description>systemtap is an instrumentation system for systems running Linux 2.6. Developers can write instrumentation to collect data on the operation of the system.</Description>
-        <Archive sha1sum="d22184031c69e6844b34a874d573b0f8ac8f450f" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/systemtap-1.4.tar.gz</Archive>
+        <Archive sha1sum="3d5c456782fcdf32355cf2c32ff13062dd731191" type="targz">ftp://sourceware.org/pub/systemtap/releases/systemtap-2.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>elfutils</Dependency>
@@ -27,9 +27,10 @@
             <Dependency>libglademm-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">stap-report-pisi-support.patch</Patch>
+            <!--<Patch level="1">stap-report-pisi-support.patch</Patch>
             <Patch level="1">fix-nss-path.patch</Patch>
-            <Patch level="1">sdt-regtable.patch</Patch>
+            <Patch level="1">sdt-regtable.patch</Patch>-->
+	    <Patch level="0">systemtab-2.0-configure.patch</Patch>
         </Patches>
     </Source>
 
@@ -50,6 +51,7 @@
             <Path fileType="data">/etc/logrotate.d</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/var/run/systemtap</Path>
             <Path fileType="data">/var/run/stap-server</Path>
             <Path fileType="data">/var/log/stap-server</Path>
@@ -101,6 +103,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-11-03</Date>
+            <Version>2.0</Version>
+            <Comment>güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2011-02-07</Date>
             <Version>1.4</Version>

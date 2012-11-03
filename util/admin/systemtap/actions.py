@@ -49,6 +49,6 @@ def install():
     pisitools.insinto("/etc/systemtap", "initscript/config.systemtap", "config")
 
     # Clean uprobes directory
-    autotools.make("-C %s/usr/share/systemtap/runtime/uprobes clean" % get.installDIR())
+    #autotools.make("-C %s/usr/share/systemtap/runtime/uprobes clean" % get.installDIR())
 
     pisitools.dodoc("COPYING", "HACKING", "INTERNALS", "initscript/README.*")
