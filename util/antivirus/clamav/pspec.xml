@@ -17,6 +17,12 @@
         <Archive sha1sum="27d47c6ad22edc87c030f6d483fab1e13320cbf7" type="targz">mirrors://sourceforge/clamav/clamav-0.97.2.tar.gz</Archive>
         <Patches>
             <Patch level="1">clamav-0.95.1-nls.patch</Patch>
+	    <Patch level="1">clamav-0.92-open.patch</Patch>
+	    <Patch level="1">clamav-0.95.3-umask.patch</Patch>
+	    <Patch level="1">clamav-0.95-cliopts.patch</Patch>
+	    <Patch level="1">clamav-0.92-private.patch</Patch>
+	    <Patch level="1">clamav-0.96.2-jitoff.patch</Patch>
+	    <Patch level="1">llvm-glibc.patch</Patch>
         </Patches>
     </Source>
 
