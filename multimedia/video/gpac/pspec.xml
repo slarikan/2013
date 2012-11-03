@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A multimedia framework based on the MPEG-4 Systems standard (ISO/IEC 14496-1)</Summary>
         <Description>GPAC is a multimedia framework, supports recent multimedia standarts (SVG/SMIL, VRML, X3D, SWF, 3GPP(2) tools etc.), based on MPEG-4 Systems standart.</Description>
-        <Archive sha1sum="2ec03c1d7dc3f4d10c0f7b47696cc1e753a56fc8" type="targz">mirrors://sourceforge/gpac/gpac-0.4.5.tar.gz</Archive>
+        <Archive sha1sum="48ba16272bfa153abb281ff8ed31b5dddf60cf20" type="targz">mirrors://sourceforge/gpac/gpac-0.5.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>faad2-devel</Dependency>
             <Dependency>libmad-devel</Dependency>
@@ -33,22 +33,11 @@
             <Dependency>openjpeg-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">no-ldconfig.patch</Patch>
-            <Patch level="1">010_all_picdeps.patch</Patch>
-            <Patch level="1">100_all_ffmpegheaders.patch</Patch>
             <Patch level="1">110_all_implicitdecls.patch</Patch>
-            <Patch level="1">120_all_newffmpeg.patch</Patch>
-            <Patch level="1">130_all_swscalecall.patch</Patch>
-            <Patch level="1">140_all_paconfig.patch</Patch>
-            <Patch level="1">150_all_ffmpeglink.patch</Patch>
-            <Patch level="1">160_all_externalamr.patch</Patch>
-            <Patch level="1">170_all_xlink.patch</Patch>
-            <Patch level="1">180_all_bof.patch</Patch>
-            <Patch level="2">190_all_glx-define-prototype.patch</Patch>
-            <Patch>200_all_libpng14.patch</Patch>
+            <Patch>160_all_externalamr.patch</Patch>
             <Patch>210_all_system_libogg.patch</Patch>
-            <Patch>220_all_respect_ldflags.patch</Patch>
             <Patch level="1">nolib64.patch</Patch>
+            <Patch>mozjs185.patch</Patch>
         </Patches>
     </Source>
 
@@ -94,11 +83,11 @@
 
     <History>
         <Update release="25">
-            <Date>2011-06-16</Date>
+            <Date>2012-11-03</Date>
             <Version>0.5.0</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Comment>Version Bump</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
         <Update release="24">
             <Date>2010-10-12</Date>

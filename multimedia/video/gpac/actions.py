@@ -35,22 +35,22 @@ def setup():
                          --use-js=system \
                          --use-mad=system \
                          --cc="%s" \
-                         --disable-oss-audio' % get.CC())
+                         --disable-oss-audio ' % get.CC())
+
+    shelltools.copy("config.h", "include/gpac/")
 
 def build():
-    autotools.make('-j1 OPTFLAGS="%s -fno-strict-aliasing"' % get.CFLAGS())
+    autotools.make('-j1 OPTFLAGS="%s -fno-strict-aliasing -fPIC"' % get.CFLAGS())
 
 def install():
     autotools.rawInstall('STRIP="true" DESTDIR="%s"' % get.installDIR())
     autotools.rawInstall('STRIP="true" DESTDIR="%s"' % get.installDIR(), "install-lib")
-
-    # No static libs
-    pisitools.remove("/usr/lib/libgpac_static.a")
 
     pisitools.dosym("/usr/bin/MP4Box","/usr/bin/mp4box")
     pisitools.dosym("/usr/bin/MP4Client","/usr/bin/mp4client")
 
     pisitools.dohtml("doc/*.html")
     pisitools.dodoc("doc/*.txt")
+    pisitools.dodoc("doc/*.doc")
     pisitools.doman("doc/man/*.1")
 
