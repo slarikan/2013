@@ -14,7 +14,7 @@
 	<PartOf>desktop.lxde.addon</PartOf>
         <Summary>A Simple and Fast Image Viewer for X</Summary>
         <Description>GPicView is a simple and fast image viewer for X.</Description>
-        <Archive sha1sum="bde109c23dc9497f18a06944cd38c95dc8f34821" type="targz">mirrors://sourceforge/lxde/gpicview-0.2.2.tar.gz</Archive>
+        <Archive sha1sum="56e736dc328e206a3f7a72e4aa8da74d3eac5714" type="targz">mirrors://sourceforge/lxde/gpicview-0.2.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -42,6 +42,13 @@
     </Package>
 
     <History>
+	    <Update release="6">
+            <Date>2012-11-03</Date>
+            <Version>0.2.3</Version>
+            <Comment>Rebuild for Pardus-Anka</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2012-06-17</Date>
             <Version>0.2.2</Version>
