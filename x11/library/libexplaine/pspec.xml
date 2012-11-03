@@ -12,11 +12,9 @@
         <Summary>Explain errno values returned by libc functions</Summary>
         <Description>The libexplain package provides a library which may be used to explain Unix and Linux system call errors</Description>
         <Archive sha1sum="5eef359cab4910f94ffa6d2e2953eaa0cbbe1473" type="targz">http://svn.pardus-linux.org/pardus/playground/e.gultekin/cekirdek/libexplain-1.0.D001.tar.gz</Archive>
-        <BuildDependencies/>
     </Source>
     <Package>
         <Name>libexplain</Name>
-        <RuntimeDependencies/>
         <Files>
          <Path fileType="executable">/usr/bin</Path>
          <Path fileType="library">/usr/lib</Path>
