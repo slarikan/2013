@@ -27,7 +27,6 @@
             <Dependency>libXext-devel</Dependency>
             <Dependency>cups-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
-            <Dependency releaseFrom="176">pisi</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
