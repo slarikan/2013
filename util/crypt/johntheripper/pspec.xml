@@ -12,16 +12,16 @@
         <IsA>app:console</IsA>
         <Summary>Fast password cracker</Summary>
         <Description>John the Ripper is a fast password cracker, currently available for many flavors of Unix (11 are officially supported, not counting different architectures), Windows, DOS, BeOS, and OpenVMS. Its primary purpose is to detect weak Unix passwords. Besides several crypt(3) password hash types most commonly found on various Unix flavors, supported out of the box are Kerberos AFS and Windows NT/2000/XP/2003 LM hashes, plus several more with contributed patches.</Description>
-        <Archive sha1sum="a767b65d8387d264238db7c5613986fc88b730aa" type="tarbz2">http://www.openwall.com/john/g/john-1.7.6.tar.bz2</Archive>
+        <Archive sha1sum="e58d5d8fa0b5ec0e6f00cd0d396843eff9a94866" type="targz">http://www.openwall.com/john/g/john-1.7.9.tar.gz</Archive>
         <Patches>
-            <Patch level="1" compressionType="gz">john-1.7.6-jumbo-7.diff.gz</Patch>
+            <!--<Patch level="1" compressionType="gz">john-1.7.6-jumbo-7.diff.gz</Patch>-->
             <Patch level="1">johntheripper-1.7.3.1-mkdir-sandbox.patch</Patch>
             <Patch level="1">johntheripper-1.7.3.1-params.h.patch</Patch>
             <!--
             <Patch>johntheripper-1.7.3.1-cflags.patch</Patch>
             -->
             <!-- sed -e "s/LDFLAGS  *=  */override LDFLAGS += /" -e "/LDFLAGS/s/-s//" -e "/LDFLAGS/s/-L[^ ]*//g" -e "/CFLAGS/s/-[IL][^ ]*//g" -i src/Makefile -->
-            <Patch level="1">ldflags.patch</Patch>
+            <!--<Patch level="1">ldflags.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-03</Date>
+            <Version>1.7.9</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-12</Date>
             <Version>1.7.6</Version>

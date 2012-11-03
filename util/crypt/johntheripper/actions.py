@@ -45,7 +45,7 @@ def install():
     for f in ["unafs", "unique", "unshadow", "undrop"]:
         pisitools.dosym("john", "/usr/sbin/%s" % f)
 
-    for f in ["john.conf", "password.lst", "*chr", "netscreen.py", "sap_prepare.pl"]:
+    for f in ["john.conf", "password.lst", "*chr"]:
         pisitools.insinto("/etc/john", "run/%s" % f)
 
     pisitools.dodoc("doc/*")
