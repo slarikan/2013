@@ -12,7 +12,11 @@
         <IsA>app:console</IsA>
         <Summary>System resource accounting utilities</Summary>
         <Description>acct contains utilities to be used for accounting system resources.</Description>
-        <Archive sha1sum="f88f6a9b91d97ccc99b5868f0faef3ceac47ed56" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/acct-6.4-pre1.tar.gz</Archive>
+        <Archive sha1sum="907456b1dcf14c5079f834338e2de32cd7371a73" type="targz">http://ftp.gnu.org/gnu/acct/acct-6.5.5.tar.gz</Archive>
+	<Patches>
+	    <Patch level="1">acct-6.5.5-no-gets.patch</Patch>
+	    <Patch level="1">acct-6.5.5-cross-compile.patch</Patch>
+	</Patches>
     </Source>
 
     <Package>
@@ -32,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-03</Date>
+            <Version>6.5.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-29</Date>
             <Version>6.4_pre1</Version>

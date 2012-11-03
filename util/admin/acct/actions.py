@@ -10,10 +10,11 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "acct-6.4-pre1"
+#WorkDir = "acct-6.4-pre1"
 
 def setup():
-    autotools.configure("--enable-linux-multiformat")
+    autotools.autoreconf("-fiv")
+    autotools.configure("--enable-linux-multiformat --prefix=/usr")
 
 def build():
     autotools.make()
