@@ -30,7 +30,7 @@ hardware/irda/lirc/comar/service.py                                     +
 hardware/misc/setserial/comar/service.py
 hardware/mobile/gnokii/comar/service.py
 hardware/powermanagement/nut/comar/service.py
-hardware/printer/cups/comar/service.py
+hardware/printer/cups/comar/service.py                                  +
 hardware/security/trousers/comar/service.py
 hardware/smartcard/openct/comar/service.py
 hardware/smartcard/pcsc-lite/comar/service.py

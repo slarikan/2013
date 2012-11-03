@@ -47,7 +47,8 @@ def setup():
                --enable-threads \
                --enable-gnutls \
                --disable-launchd \
-               --without-rcdir' % get.CFLAGS()
+               --without-rcdir \
+               --with-systemdsystemunitdir=/lib/systemd/system' % get.CFLAGS()
 
     if get.buildTYPE() == "emul32":
         shelltools.export("CC", "%s -m32" % get.CC())
