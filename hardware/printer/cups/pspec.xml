@@ -201,6 +201,7 @@
             <Path fileType="data">/var/log/cups</Path>
             <Path fileType="data">/etc</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="data">/lib/systemd/system</Path>
             <Path fileType="data">/usr/share/cups</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/applications</Path>
