@@ -31,9 +31,7 @@
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency releaseFrom="6">libfm</Dependency>
-	    <!--<Dependency>polkit-gnome</Dependency>
-	    <Dependency>gnome-mount</Dependency>-->	    
+            <Dependency releaseFrom="6">libfm</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,7 +40,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/pcmanfm</Path>
-	    <Path fileType="data">/usr/share/man/</Path>
+            <Path fileType="data">/usr/share/man/</Path>
         </Files>
     </Package>
 

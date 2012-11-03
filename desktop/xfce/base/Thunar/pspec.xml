@@ -48,9 +48,8 @@
         <Name>Thunar</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-	    <Dependency>gtk2-engines-murrine</Dependency>
-	    <Dependency>gnome-mount</Dependency>
-	    <Dependency>polkit-gnome</Dependency>
+            <Dependency>gtk2-engines-murrine</Dependency>
+            <Dependency>polkit-gnome</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libICE</Dependency>
