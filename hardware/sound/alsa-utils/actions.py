@@ -13,7 +13,8 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--sbindir=/sbin \
-                         --disable-alsaconf")
+                         --disable-alsaconf \
+                         --with-systemdsystemunitdir=/lib/systemd/system")
 
 def build():
     autotools.make()

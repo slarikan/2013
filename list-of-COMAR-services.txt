@@ -34,7 +34,7 @@ hardware/printer/cups/comar/service.py                                  +
 hardware/security/trousers/comar/service.py
 hardware/smartcard/openct/comar/service.py
 hardware/smartcard/pcsc-lite/comar/service.py
-hardware/sound/alsa-utils/comar/service.py
+hardware/sound/alsa-utils/comar/service.py                              +
 hardware/virtualization/libvirt/comar/service.py
 hardware/virtualization/lxc/comar/service.py
 hardware/virtualization/qemu/comar/ksm-service.py
