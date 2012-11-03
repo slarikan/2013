@@ -35,7 +35,6 @@
             <Dependency>libmodplug-devel</Dependency>
             <Dependency>wavpack-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
-            <Dependency>gnome-vfs-devel</Dependency>
             <Dependency>a52dec-devel</Dependency>
             <Dependency>faad2-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
@@ -95,7 +94,6 @@
             <Dependency>libmodplug</Dependency>
             <Dependency>wavpack</Dependency>
             <Dependency>ffmpeg</Dependency>
-            <Dependency>gnome-vfs</Dependency>
             <Dependency>a52dec</Dependency>
             <Dependency>faad2</Dependency>
             <Dependency>libv4l</Dependency>

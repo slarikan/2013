@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org Xxf86misc library</Summary>
         <Description>LibXxf86misc is the client library for the XFree86-misc extension.</Description>
-        <Archive sha1sum="a08d69e90923320b8f561393b6fb92992428b712" type="targz">http://cgit.freedesktop.org/xorg/lib/libXxf86misc/snapshot/libXxf86misc-1.0.3.tar.gz</Archive>
+        <Archive sha1sum="ebdeb90a4920f675aef2feda577056dad1b52d7b" type="targz">http://cgit.freedesktop.org/xorg/lib/libXxf86misc/snapshot/libXxf86misc-1.0.3.tar.gz</Archive>
         <BuildDependencies>
 	     <Dependency>libXext-devel</Dependency>
 	     <Dependency>libXxf86miscproto-devel</Dependency>
