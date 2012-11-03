@@ -15,7 +15,7 @@
         <IsA>library</IsA>
         <Summary>libZ-based ZIP-access Library</Summary>
         <Description>zziplib provides read access to zipped files in a zip-archive, using compression based solely on free algorithms provided by zlib.</Description>
-        <Archive sha1sum="ddbce25cb36c3b4c2b892e2c8a88fa4a0be29a71" type="tarbz2">mirrors://sourceforge/zziplib/zziplib-0.13.59.tar.bz2</Archive>
+        <Archive sha1sum="cf8b642abd9db618324a1b98cc71492a007cd687" type="tarbz2">http://sourceforge.net/projects/zziplib/files/zziplib13/0.13.62/zziplib-0.13.62.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
         </BuildDependencies>
@@ -64,6 +64,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-03</Date>
+            <Version>0.13.62</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-02-01</Date>
             <Version>0.13.59</Version>
