@@ -34,6 +34,7 @@
         <Patches>
             <!--<Patch level="1">fix-glade-desktop.patch</Patch>-->
             <Patch>01_gladeui-types.patch</Patch>
+            <Patch level="1">linking-doc.patch</Patch>
             <!--<Patch level="1">02_spinbutton-adjustment.patch</Patch>-->
             <!--<Patch>99_ltmain_as-needed.patch</Patch>-->
         </Patches>
@@ -92,6 +93,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-11-03</Date>
+            <Version>3.8.2</Version>
+            <Comment>Fix doc linking</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+        </Update>
         <Update release="17">
             <Date>2012-08-25</Date>
             <Version>3.8.2</Version>
