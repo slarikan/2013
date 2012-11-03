@@ -33,7 +33,6 @@
             <Dependency>libICE-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>libmng-devel</Dependency>
-            <Dependency>libpng-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
 
             <!-- Phonon build deps
@@ -128,7 +127,6 @@
             <Dependency>libXrandr</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libmng</Dependency>
-            <Dependency>libpng</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>
