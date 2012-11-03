@@ -9,7 +9,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fiv")
+	#Not sure but it is not needed (obsoleteman)
+    #autotools.autoreconf("-fiv")
 
     autotools.configure()
 
