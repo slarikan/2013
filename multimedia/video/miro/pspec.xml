@@ -19,7 +19,7 @@
             <Dependency>python-pygobject-devel</Dependency>
             <Dependency>pyrex</Dependency>
             <Dependency>python-webkit-gtk-devel</Dependency>
-            <Dependency>webkit-gtk-devel</Dependency>
+            <Dependency>webkit-gtk2-devel</Dependency>
             <Dependency>imagemagick-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>gst-python-devel</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>python-pygobject</Dependency>
             <Dependency>pyrex</Dependency>
             <Dependency>python-webkit-gtk</Dependency>
-            <Dependency>webkit-gtk</Dependency>
+            <Dependency>webkit-gtk2</Dependency>
             <Dependency>imagemagick</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>gst-python</Dependency>
