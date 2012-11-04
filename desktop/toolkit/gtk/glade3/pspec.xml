@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ Form Designer</Summary>
         <Description>Glade is a RAD tool to enable quick and easy development of user interfaces for the GTK+ toolkit and the GNOME desktop environment.</Description>
-        <Archive sha1sum="a43d89b147296244ba4b2efc67e8772d5155afff" type="tarbz2">http://ftp.acc.umu.se/pub/GNOME/sources/glade/2.12/glade-2.12.2.tar.bz2</Archive>
+        <Archive sha1sum="bdc2320bf226b52a55496e2823880be5762081b8" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -32,13 +32,11 @@
             <Dependency>docbook-xml</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">fix-glade-desktop.patch</Patch>
+            <!--<Patch level="1">fix-glade-desktop.patch</Patch>-->
             <Patch>01_gladeui-types.patch</Patch>
-            <Patch level="1">linking-doc.patch</Patch>-->
+            <Patch level="1">linking-doc.patch</Patch>
             <!--<Patch level="1">02_spinbutton-adjustment.patch</Patch>-->
             <!--<Patch>99_ltmain_as-needed.patch</Patch>-->
-	    <Patch level="0">gnome-i18n.patch</Patch>
-	    <Patch level="1">gtk-includes.patch</Patch>
         </Patches>
     </Source>
 
@@ -60,8 +58,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/glade-2</Path>
-	    <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="data">/usr/share/glade3</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/gnome</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -96,13 +93,6 @@
     </Package>
 
     <History>
-        <Update release="19">
-            <Date>2012-11-04</Date>
-            <Version>2.12.2</Version>
-            <Comment>Eskiye dönüş</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
         <Update release="18">
             <Date>2012-11-03</Date>
             <Version>3.8.2</Version>
