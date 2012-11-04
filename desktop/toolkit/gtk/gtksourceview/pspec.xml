@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A text widget implementing syntax highlighting and other features</Summary>
         <Description>Gtksourceview improves the gtk+ text widget by implementing syntax highlighting and other features typical of a source editor.</Description>
-        <Archive sha1sum="122b24785b87fe716512688d99933ef87666f6d8" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtksourceview/3.5/gtksourceview-3.5.3.tar.xz</Archive>
+        <Archive sha1sum="5081dc7a081954d0af73852c22e874a746bda30e" type="tarbz2">http://svn.mandriva.com/svn/packages/cooker/gtksourceview/current/SOURCES/gtksourceview-2.10.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
@@ -27,8 +27,8 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
+	    <Path fileType="data">/usr/share/gtksourceview-2.0</Path>
             <Path fileType="data">/usr/share/gir-1.0/</Path>
-            <Path fileType="data">/usr/share/gtksourceview-3.0</Path>        
         </Files>
     </Package>
 
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-11-04</Date>
+            <Version>2.10.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2010-10-12</Date>
             <Version>2.10.4</Version>
