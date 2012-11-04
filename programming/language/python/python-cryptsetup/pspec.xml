@@ -11,16 +11,16 @@
         <License>GPLv2+</License>
         <Summary>Python bindings for cryptsetup</Summary>
         <Description>A python module to ease the manipulation with LUKS devices.</Description>
-        <Archive sha1sum="243946a6a32f7fd5dad150147097cd0d61762ba3" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/python-cryptsetup-0.0.11.tar.gz</Archive>
+        <Archive sha1sum="911e7393dae520cca2110f36a8a0b5072972c55f" type="tarbz2">http://git.fedorahosted.org/cgit/python-cryptsetup.git/snapshot/python-cryptsetup-0.1.4-1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>cryptsetup-luks-devel</Dependency>
+            <Dependency>libcryptsetup-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>python-cryptsetup</Name>
         <RuntimeDependencies>
-            <Dependency>cryptsetup-luks</Dependency>
+            <Dependency>libcryptsetup</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -29,6 +29,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-04</Date>
+            <Version>0.1.4</Version>
+            <Comment>Güncellendi..</Comment>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
+        </Update>
         <Update release="1">
             <Date>2010-12-29</Date>
             <Version>0.0.11</Version>
@@ -38,4 +45,3 @@
         </Update>
     </History>
 </PISI>
-
