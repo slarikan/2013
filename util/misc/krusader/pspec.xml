@@ -13,25 +13,25 @@
         <IsA>app:gui</IsA>
         <Summary>Advanced KDE4 twin-panel(commander-style) file-manager</Summary>
         <Description>Krusader is an advanced twin panel file manager, similar to Midnight or Total Commander. It is supporting extensive archive handling, mounted filesystem support, FTP, advanced search module, an internal viewer/editor, directory synchronisation, file content comparisons, powerful batch renaming and much much more.</Description>
-        <Archive sha1sum="fd2975b9f8ec5b1a903090b2d60733cbefd2f942" type="tarbz2">mirrors://sourceforge/krusader/krusader-2.4.0-beta1.tar.bz2</Archive>
+        <Archive sha1sum="935b99b42dbf0a7e3b7721a5bf8cbdc2b86900ce" type="tarbz2">http://sourceforge.net/projects/krusader/files/krusader/2.4.0-beta3/krusader-2.4.0-beta3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.5.0">kdebase-devel</Dependency>
-            <Dependency versionFrom="4.5.0">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.4.2">phonon-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase-devel</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency>automoc4</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">use-findExe.patch</Patch>
-            <!--Patch level="0">release_name.patch</Patch-->
+            <!--<Patch level="1">use-findExe.patch</Patch>
+            <Patch level="0">release_name.patch</Patch-->
         </Patches>
     </Source>
 
     <Package>
         <Name>krusader</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.0">kdebase</Dependency>
-            <Dependency versionFrom="4.5.0">kdelibs</Dependency>
-            <Dependency versionFrom="4.4.2">phonon</Dependency>
+            <Dependency versionFrom="4.8.4">kdebase</Dependency>
+            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.6.0">phonon</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-11-04</Date>
+            <Version>2.4.0_beta3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="15">
             <Date>2011-07-06</Date>
             <Version>2.4.0_beta1</Version>
