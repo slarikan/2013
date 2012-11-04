@@ -2,54 +2,63 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>libzeitgeist</Name>
-        <Homepage>https://launchpad.net/libzeitgeist</Homepage>
+        <Name>libqzeitgeist</Name>
+        <Homepage>https://projects.kde.org/projects/kdesupport/libqzeitgeist</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <License>GPLv3</License>
         <License>LGPLv2.1</License>
         <IsA>library</IsA>
-        <Summary>Client library for Zeitgeist</Summary>
-        <Description>libzeitgeist provides a client library for applications that want to interact with the Zeitgeist daemon. The library is written in C using glib and provides an asynchronous GObject oriented API.</Description>
-        <Archive sha1sum="3d4ca1d294828f5f90bf5a5b6eacf883ffd9f8ae" type="targz">https://launchpad.net/libzeitgeist/0.3/0.3.18/+download/libzeitgeist-0.3.18.tar.gz</Archive>
+        <Summary>Qt wrapper for libzeitgeist</Summary>
+        <Description>libqzeitgeist is the Qt wrapper for libzeitgeist. zeitgeist is a service which logs the users’ activities and events, anywhere from files opened to websites visited and conversations had. It makes this information readily available for other applications to use. libzeitgeist is the client library for applications to interact with the Zeitgeist deamon.</Description>
+        <Archive sha1sum="5113beed182607697a7ac193a9a6311e7343eaa3" type="tarbz2">mirrors://kde/stable/libqzeitgeist/0.8.0/src/libqzeitgeist-0.8.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>gtk-doc</Dependency>
+            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency>libzeitgeist-devel</Dependency>
+            <Dependency>zeitgeist</Dependency>
+            <Dependency>automoc4</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">libqzeitgeist-0.8.0-declarative.patch</Patch>
+            <Patch level="1">libqzeitgeist-0.8.0-reduced_linking.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
-        <Name>libzeitgeist</Name>
+        <Name>libqzeitgeist</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency>libzeitgeist</Dependency>
+            <Dependency>zeitgeist</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>libzeitgeist-devel</Name>
-        <Summary>Development files for libzeitgeist</Summary>
+        <Name>libqzeitgeist-devel</Name>
+        <Summary>Development files for libqzeitgeist</Summary>
+        <Description>Development files for libqzeitgeist.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">libzeitgeist</Dependency>
+            <Dependency release="current">libqzeitgeist</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/qzeitgeist/cmake</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2012-11-04</Date>
-            <Version>0.3.18</Version>
-            <Comment>Version bump</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
+        <Update release="1">
+            <Date>2012-03-08</Date>
+            <Version>0.8.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Bertan Gündoğdu</Name>
+            <Email>bertan@pardus.org.tr</Email>
         </Update>
         <Update release="1">
             <Date>2011-04-18</Date>
