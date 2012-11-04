@@ -23,6 +23,7 @@
             <Patch level="1">gcc43.patch</Patch>
             <Patch level="1">update_tr.patch</Patch>
             <Patch level="1">desktop.patch</Patch>
+	    <Patch level="1">keepassx-0.4.3-gcc47.patch</Patch>
         </Patches>
     </Source>
 
