@@ -28,7 +28,8 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.removeDir("/usr/bin")
+    #there is no /usr/bin directory (obsoleteman)
+    #pisitools.removeDir("/usr/bin")
 
     # Install additional readme files
     for d in ["hdsploader", "mixartloader", "pcxhrloader", "usx2yloader", "vxloader"]:
