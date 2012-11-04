@@ -9,7 +9,7 @@
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
 
-WorkDir = "pyalsa-%s" % get.srcVERSION()
+#WorkDir = "pyalsa-%s" % get.srcVERSION()
 
 def build():
     pythonmodules.compile()
