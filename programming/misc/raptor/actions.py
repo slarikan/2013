@@ -27,6 +27,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
+    pisitools.rename("/usr/bin/rapper","rapper1")
     pisitools.insinto("%s/html" % docdir, "%s/%s/html/raptor/*" % (get.installDIR(), docdir))
     pisitools.removeDir("%s/html/raptor" % docdir)
     pisitools.dohtml("*.html")
