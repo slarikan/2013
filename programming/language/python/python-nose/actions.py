@@ -15,6 +15,8 @@ WorkDir = "nose-%s" % get.srcVERSION()
 
 examples = "%s/%s/" % (get.docDIR(), get.srcNAME())
 
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
+
 def install():
     pisitools.dosed("setup.py", "man/man1", "share/man/man1")
 
