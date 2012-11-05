@@ -59,4 +59,6 @@ def install():
     pisitools.dodir("/var/lib/net-snmp")
     pisitools.dodir("/etc/snmp")
 
+    pisitools.remove("/usr/lib/perl5/5.16.1/x86_64-linux-thread-multi/perllocal.pod")
+
     pisitools.dodoc("AGENT.txt", "ChangeLog", "FAQ", "NEWS", "PORTING", "README", "TODO")
