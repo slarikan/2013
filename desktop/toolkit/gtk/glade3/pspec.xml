@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>glade</Name>
+        <Name>glade3</Name>
         <Homepage>http://glade.gnome.org</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -16,7 +16,7 @@
         <Description>Glade is a RAD tool to enable quick and easy development of user interfaces for the GTK+ toolkit and the GNOME desktop environment.</Description>
         <Archive sha1sum="bdc2320bf226b52a55496e2823880be5762081b8" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libbonoboui-devel</Dependency>
             <Dependency>libgnome-devel</Dependency>
@@ -41,9 +41,9 @@
     </Source>
 
     <Package>
-        <Name>glade</Name>
+        <Name>glade3</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libbonoboui</Dependency>
             <Dependency>libgnome</Dependency>
@@ -66,12 +66,12 @@
     </Package>
 
     <Package>
-        <Name>glade-devel</Name>
+        <Name>glade3-devel</Name>
         <IsA>library</IsA>
         <Summary>Glade development files</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="current">glade</Dependency>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency releaseFrom="current">glade3</Dependency>
+            <Dependency>gtk3-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -80,11 +80,11 @@
     </Package>
 
     <Package>
-        <Name>glade-docs</Name>
+        <Name>glade3-docs</Name>
         <IsA>data:doc</IsA>
         <Summary>Glade reference documents</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="current">glade</Dependency>
+            <Dependency releaseFrom="current">glade3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
