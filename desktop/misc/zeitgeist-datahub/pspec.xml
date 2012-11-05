@@ -18,6 +18,7 @@
             <Dependency versionFrom="0.3.18">libzeitgeist-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>telepathy-glib-devel</Dependency>
+	    <Dependency>json-glib-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">add-tr-to-desktop.diff</Patch>
@@ -29,6 +30,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="0.3.18">libzeitgeist</Dependency>
             <Dependency>gtk2</Dependency>
+	    <Dependency>json-glib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
