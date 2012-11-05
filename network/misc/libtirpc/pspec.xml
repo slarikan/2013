@@ -19,6 +19,7 @@
         <Patches>
             <Patch>libtirpc-0.2.1-fortify.patch</Patch>
             <Patch>Makefile_am.patch</Patch>
+	    <Patch level="1">libtirpc-0.2.3-rc3.patch</Patch>
         </Patches>
     </Source>
 
@@ -50,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-10-05</Date>
+            <Version>0.2.2</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-08-12</Date>
             <Version>0.2.2</Version>
