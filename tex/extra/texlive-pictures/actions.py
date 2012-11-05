@@ -51,3 +51,9 @@ def install():
     pisitools.dosym("/usr/share/texmf-dist/scripts/epspdf/epspdf", "/usr/bin/epspdf")
     pisitools.dosym("/usr/share/texmf-dist/scripts/fig4latex/fig4latex", "/usr/bin/fig4latex")
     pisitools.dosym("/usr/share/texmf-dist/scripts/mathspic/mathspic.pl", "/usr/bin/mathspic")
+
+    pisitools.remove("/usr/bin/epspdftk")
+    pisitools.remove("/usr/bin/mathspic")
+    pisitools.remove("/usr/bin/cachepic")
+    pisitools.remove("/usr/bin/epspdf")
+    pisitools.remove("/usr/bin/fig4latex")
