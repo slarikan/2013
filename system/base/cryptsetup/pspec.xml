@@ -23,9 +23,6 @@
 
     <Package>
         <Name>cryptsetup</Name>
-        <Replaces>
-            <Package>cryptsetup-luks</Package>
-        </Replaces>
         <RuntimeDependencies>
             <Dependency version="current">libcryptsetup</Dependency>
         </RuntimeDependencies>
@@ -38,9 +35,6 @@
     </Package>
     <Package>
         <Name>libcryptsetup</Name>
-        <Conflicts>
-            <Package releaseTo="6">cryptsetup-luks</Package>
-        </Conflicts>
         <Summary>cryptsetup libraries</Summary>
         <RuntimeDependencies>
             <Dependency>device-mapper</Dependency>
@@ -53,9 +47,6 @@
     </Package>
     <Package>
         <Name>libcryptsetup-devel</Name>
-        <Replaces>
-            <Package>cryptsetup-luks-devel</Package>
-        </Replaces>
         <Summary>libcryptsetup devel files</Summary>
         <RuntimeDependencies>
             <Dependency version="current">libcryptsetup</Dependency>
