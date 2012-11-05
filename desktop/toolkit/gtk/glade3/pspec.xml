@@ -70,7 +70,7 @@
         <IsA>library</IsA>
         <Summary>Glade development files</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="current">glade3</Dependency>
+            <Dependency version="current">glade3</Dependency>
             <Dependency>gtk3-devel</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -84,7 +84,7 @@
         <IsA>data:doc</IsA>
         <Summary>Glade reference documents</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="current">glade3</Dependency>
+            <Dependency version="current">glade3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
