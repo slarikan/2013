@@ -67,10 +67,55 @@
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>librsvg-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for librsvg</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>atk-32bit</Dependency>
+            <Dependency>gtk2-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
+            <Dependency>cairo-32bit</Dependency>
+            <Dependency>pango-32bit</Dependency>
+            <Dependency>libpng-32bit</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>libcroco-32bit</Dependency>
+            <Dependency>gdk-pixbuf-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">librsvg</Dependency>
+            <Dependency>atk-32bit</Dependency>
+            <Dependency>gtk2-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
+            <Dependency>cairo-32bit</Dependency>
+            <Dependency>pango-32bit</Dependency>
+            <Dependency>libpng-32bit</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+            <Dependency>freetype-32bit</Dependency>
+            <Dependency>libcroco-32bit</Dependency>
+            <Dependency>gdk-pixbuf-32bit</Dependency>
+            <Dependency>fontconfig-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-11-06</Date>
+            <Version>2.36.3</Version>
+            <Comment>Add emul32 component</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="19" type="security">
             <Date>2012-10-04</Date>
             <Version>2.36.3</Version>
