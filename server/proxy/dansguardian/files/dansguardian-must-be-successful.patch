@@ -1,15 +1,3 @@
-diff -ruN dansguardian-2.10.1.1.orig/configs/dansguardian.conf.in dansguardian-2.10.1.1/configs/dansguardian.conf.in
---- dansguardian-2.10.1.1.orig/configs/dansguardian.conf.in	2009-08-04 11:46:41.484910072 +0200
-+++ dansguardian-2.10.1.1/configs/dansguardian.conf.in	2009-08-04 11:49:08.980902851 +0200
-@@ -354,7 +354,7 @@
- 
- # Delete file cache after user completes download
- # When a file gets save to temp it stays there until it is deleted.
--# You can choose to have the file deleted when the user makes a sucessful
-+# You can choose to have the file deleted when the user makes a successful
- # download.  This will mean if they click on the link to download from
- # the temp store a second time it will give a 404 error.
- # You should configure something to delete old files in temp to stop it filling up.
 diff -ruN dansguardian-2.10.1.1.orig/src/FatController.cpp dansguardian-2.10.1.1/src/FatController.cpp
 --- dansguardian-2.10.1.1.orig/src/FatController.cpp	2009-08-04 11:46:41.465902112 +0200
 +++ dansguardian-2.10.1.1/src/FatController.cpp	2009-08-04 11:48:43.541651965 +0200
