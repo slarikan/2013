@@ -7,6 +7,7 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
+from pisi.actionsapi import perlmodules
 from pisi.actionsapi import get
 
 
@@ -36,3 +37,7 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+
+    # remove unnecessary files
+    perlmodules.removePacklist()
+    perlmodules.removePodfiles()
