@@ -21,7 +21,6 @@ def setup():
                          --enable-arp-acl \
                          --enable-follow-x-forwarded-for \
                          --enable-xmalloc-statistics \
-                         --enable-auth="basic,digest,negotiate,ntlm" \
                          --enable-basic-auth-helpers="LDAP,MSNT,NCSA,PAM,SMB,YP,getpwnam,multi-domain-NTLM,SASL,DB,POP3,squid_radius_auth" \
                          --enable-ntlm-auth-helpers="smb_lm,no_check,fakeauth" \
                          --enable-digest-auth-helpers="password,ldap,eDirectory" \
@@ -71,5 +70,5 @@ def install():
 
     pisitools.doman("helpers/basic_auth/LDAP/*.8")
     pisitools.dohtml("helpers/basic_auth/MSNT/README.html", "RELEASENOTES.html")
-    pisitools.dodoc("helpers/basic_auth/SASL/squid_sasl_auth*")
-    pisitools.dodoc("CONTRIBUTORS", "CREDITS", "ChangeLog", "QUICKSTART", "doc/*.txt", "helpers/ntlm_auth/no_check/README.no_check_ntlm_auth")
+    #pisitools.dodoc("helpers/basic_auth/SASL/squid_sasl_auth*")
+    pisitools.dodoc("CONTRIBUTORS", "CREDITS", "ChangeLog", "QUICKSTART", "doc/*.txt")
