@@ -37,10 +37,35 @@
             <Path fileType="executable">/usr/bin/croco-*-config</Path>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libcroco-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libcroco</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>libxml2-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">libcroco</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-11-06</Date>
+            <Version>0.6.6</Version>
+            <Comment>Add emul32 component</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2012-10-02</Date>
             <Version>0.6.6</Version>
