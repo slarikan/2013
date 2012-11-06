@@ -82,3 +82,7 @@ def install():
     pisitools.dodir("/var/svn")
 
     pisitools.dodoc("README")
+
+    # remove unnecessary files i.e. perllocal.pod, .packlist
+    perlmodules.removePacklist()
+    perlmodules.removePodfiles()
