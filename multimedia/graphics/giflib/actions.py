@@ -15,25 +15,15 @@ def setup():
     libtools.libtoolize("--force --install")
     autotools.autoreconf("-fi")
     
-    options = "--with-x \
-               --disable-gl \
-               --disable-static"
-
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
- 
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-    
-    autotools.configure(options)
+    autotools.configure("--with-x \
+                         --disable-gl \
+                         --disable-static")
 
 def build():
     autotools.make("-j1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
 
     pisitools.dohtml("doc/")
     pisitools.dodoc("AUTHORS","BUGS","ChangeLog","NEWS","doc/*.txt")

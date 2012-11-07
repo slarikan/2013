@@ -13,29 +13,19 @@ from pisi.actionsapi import libtools
 from pisi.actionsapi import get
 
 def setup():
-    options = "--enable-libjpeg \
-               --enable-opengl \
-               --enable-shared \
-               --disable-static"
-
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
     autotools.autoreconf("-fi")
 
     libtools.libtoolize("--force --install")
 
-    autotools.configure(options)
+    autotools.configure("--enable-libjpeg \
+                         --enable-opengl \
+                         --enable-shared \
+                         --disable-static")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
 
     pisitools.dodoc("NEWS", "README", "doc/*")

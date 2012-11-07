@@ -22,10 +22,7 @@ def setup():
                --with-python"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --without-python \
-                     --libdir=/usr/lib32"
-        shelltools.export("CC", "%s -m32" % get.CC())
+        options += " --without-python"
 
     autotools.configure(options)
 
@@ -41,9 +38,6 @@ def install():
     autotools.rawInstall('DESTDIR=%s \
                           BINDIR=%s/usr/bin \
                           includedir=/usr/include' % (get.installDIR(), get.installDIR()))
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
 
     pisitools.insinto("/usr/share/lcms/profiles", "testbed/*.icm")
 

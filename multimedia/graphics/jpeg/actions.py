@@ -14,17 +14,11 @@ from pisi.actionsapi import shelltools
 
 def setup():
     #autotools.autoreconf("-vfi")
-    options = "--enable-shared \
-               --disable-static \
-               --disable-ld-version-script \
-               --enable-maxmem=64 \
-               --disable-dependency-tracking"
-
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
-    autotools.configure(options)
+    autotools.configure("--enable-shared \
+                         --disable-static \
+                         --disable-ld-version-script \
+                         --enable-maxmem=64 \
+                         --disable-dependency-tracking")
 
 def build():
     autotools.make()
@@ -32,9 +26,7 @@ def build():
 def install():
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        return
+    if get.buildTYPE() == "emul32": return
 
     # they say some programs use this
     pisitools.insinto("/usr/include", "jpegint.h")
