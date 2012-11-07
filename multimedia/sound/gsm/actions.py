@@ -22,7 +22,6 @@ def build():
 def install():
     if get.buildTYPE() == "emul32":
         autotools.rawInstall("DESTDIR=%s bindir=/emul32 libdir=/usr/lib32" % get.installDIR())
-        pisitools.removeDir("/emul32")
         pisitools.remove("/usr/lib32/libgsm.a")
         return
     else:

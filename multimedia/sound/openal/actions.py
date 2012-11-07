@@ -37,6 +37,7 @@ def install():
         from distutils.dir_util import copy_tree
         copy_tree("%s/emul32/lib32/" % get.installDIR(), "%s/usr/lib32" % get.installDIR())
         pisitools.removeDir("/emul32")
+        pisitools.dosed("%s/usr/lib32/pkgconfig/openal.pc" % get.installDIR(), "emul32", "usr")
         return
 
     pisitools.dodoc("COPYING", "alsoftrc.sample")

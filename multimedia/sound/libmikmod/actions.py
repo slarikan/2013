@@ -27,12 +27,8 @@ def setup():
                --disable-static"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32 \
-                     --bindir=/emul32/bin"
+        options += " --bindir=/emul32/bin"
 
-        shelltools.export("CC", "%s -m32" % get.CC())
-        shelltools.export("CXX", "%s -m32" % get.CXX())
         shelltools.export("CFLAGS", "%s -DDRV_RAW -m32" % get.CFLAGS())
         shelltools.export("CXXFLAGS", "%s -m32" % get.CFLAGS())
         shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
@@ -47,6 +43,3 @@ def install():
 
     pisitools.dodoc("AUTHORS", "NEWS", "README", "TODO")
     pisitools.dohtml("docs/*.html")
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
