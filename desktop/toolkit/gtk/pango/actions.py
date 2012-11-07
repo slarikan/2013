@@ -36,7 +36,3 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog*", "COPYING", "README", "NEWS")
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        return
