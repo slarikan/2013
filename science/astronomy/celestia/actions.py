@@ -12,13 +12,16 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
+    autotools.autoreconf("-vif")
     autotools.configure("--with-gtk \
-                   --with-pic \
-                   --enable-pch \
-                   --disable-rpath \
-                   --enable-theora \
-                   --without-arts \
-                   --with-lua")
+			 --with-pic \
+			 --with-qt \
+			 --enable-pch \
+			 --disable-rpath \
+			 --enable-theora \
+			 --enable-cairo \
+			 --without-arts \
+			 --with-lua")
 
 def build():
     autotools.make()

@@ -27,10 +27,14 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
+	    <Patch level="1">celestia-1.6.1-linking.patch</Patch>
             <Patch>sandbox.patch</Patch>
             <Patch level="1">desktop.patch</Patch>
             <Patch>celestia-cfg.patch</Patch>
-            <Patch level="1">fix-as-needed-1.6.1.diff</Patch>
+            <!--<Patch level="1">fix-as-needed-1.6.1.diff</Patch>-->
+	    <Patch level="1">celestia-1.6.1-gcc47.patch</Patch>
+	    <Patch level="1">celestia-1.6.1-zlib.patch</Patch>
+	    <Patch level="0">celestia-1.6.1-gcc46.patch</Patch>
         </Patches>
     </Source>
 
@@ -58,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-07</Date>
+            <Version>1.6.1</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2011-06-19</Date>
             <Version>1.6.1</Version>
