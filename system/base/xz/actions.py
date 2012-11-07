@@ -15,19 +15,17 @@ WorkDir = "xz-%s" % get.srcVERSION()
 
 def setup():
     options = " --disable-static \
-                --disable-rpath \
-                --prefix=/usr"
+                --disable-rpath"
+
     if get.buildTYPE() == "emul32":
         # Suggested C(XX)FLAGS by the upstream author
         shelltools.export("CFLAGS", "%s -D_FILE_OFFSET_BITS=32 -m32" % get.CFLAGS())
         shelltools.export("CXXFLAGS", "%s -D_FILE_OFFSET_BITS=32" % get.CXXFLAGS())
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
     else:
         shelltools.export("CFLAGS", "%s -D_FILE_OFFSET_BITS=64" % get.CFLAGS())
         shelltools.export("CXXFLAGS", "%s -D_FILE_OFFSET_BITS=64" % get.CXXFLAGS())
 
-    autotools.rawConfigure(options)
+    autotools.configure(options)
 
     # Fix overlinking
     pisitools.dosed("libtool", "-pthread", "-lpthread")
@@ -47,10 +45,6 @@ def check():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        pisitools.dosed("%s/usr/lib32/pkgconfig/liblzma.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
-    else:
+    if not get.buildTYPE() == "emul32":
         pisitools.remove("/usr/share/man/man1/lzmadec.1")
-
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "NEWS", "README")
+        pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "NEWS", "README")

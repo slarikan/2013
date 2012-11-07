@@ -17,8 +17,6 @@ def setup():
     options = "--disable-static"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
         cflags += " -m32"
 
     shelltools.export("CFLAGS", cflags)
@@ -32,10 +30,6 @@ def check():
 
 def install():
     autotools.rawInstall('DESTDIR=%s man1dir=/usr/share/man/man1' % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        pisitools.dosed("%s/usr/lib32/pkgconfig/expat.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
 
     pisitools.dohtml("doc/*")
     pisitools.dodoc("Changes", "README")

@@ -20,12 +20,6 @@ def setup():
                 --disable-xmms-plugin \
                 --disable-static"
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
-
     autotools.autoconf()
     autotools.configure(options)
 
@@ -37,9 +31,6 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
 
     pisitools.removeDir("/usr/share/doc/")
 

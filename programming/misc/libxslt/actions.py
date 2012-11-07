@@ -20,9 +20,7 @@ def setup():
                --disable-static"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --without-python \
-                     --libdir=/usr/lib32"
+        options += " --without-python"
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
 
     autotools.configure(options)
@@ -35,9 +33,5 @@ def check():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        return
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "Copyright", "FEATURES", "NEWS", "README", "TODO")

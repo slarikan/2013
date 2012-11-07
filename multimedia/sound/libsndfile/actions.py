@@ -32,12 +32,6 @@ def setup():
     for i in shelltools.ls("M4/lt*.m4"):
         shelltools.unlink(i)
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
-
     autotools.autoreconf("-fi -I M4")
     autotools.configure(options)
 
@@ -48,8 +42,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "NEWS", "README")

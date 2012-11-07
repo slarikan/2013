@@ -68,16 +68,15 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.domove("/emul32/lib32/libuuid.so", "/usr/lib32")
-        pisitools.domove("/emul32/lib32/pkgconfig/uuid.pc", "/usr/lib32/pkgconfig")
-        pisitools.domove("/emul32/lib32/libblkid.so", "/usr/lib32")
-        pisitools.domove("/emul32/lib32/pkgconfig/blkid.pc", "/usr/lib32/pkgconfig")
-        pisitools.removeDir("/emul32")
-        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
-        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "emul32", "usr")
-
     #pisitools.doman("sys-utils/klogconsole.man")
     pisitools.remove("/usr/share/man/man1/kill.1")
+
+    if get.buildTYPE() == "emul32":
+#        pisitools.domove("/emul32/lib32/libuuid.so", "/usr/lib32")
+#        pisitools.domove("/emul32/lib32/pkgconfig/uuid.pc", "/usr/lib32/pkgconfig")
+#        pisitools.domove("/emul32/lib32/libblkid.so", "/usr/lib32")
+#        pisitools.domove("/emul32/lib32/pkgconfig/blkid.pc", "/usr/lib32/pkgconfig")
+        return
+
     pisitools.dodoc("ABOUT-NLS", "AUTHORS", "ChangeLog", "COPYING", "README*")
     pisitools.insinto("/%s/%s" % (get.docDIR(), get.srcNAME()), "Documentation")

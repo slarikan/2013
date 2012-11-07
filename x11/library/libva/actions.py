@@ -13,13 +13,6 @@ def setup():
     options = "--enable-glx \
                --disable-static"
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
-
     autotools.configure(options)
 
 def build():
@@ -28,8 +21,5 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("emul32")
-        return
-
-    pisitools.dodoc("COPYING")
+    if not get.buildTYPE() == "emul32":
+        pisitools.dodoc("COPYING")
