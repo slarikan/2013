@@ -55,7 +55,7 @@
  
 +    if get.buildTYPE() == "emul32":
 +        fixpc()
-+        removeDir("/emul32")
++        if isDirectory("%s/emul32" % get.installDIR()): removeDir("/emul32")
  
  def rawInstall(parameters = '', argument = 'install'):
      '''install source into install directory with given parameters = PREFIX=%s % get.installDIR()'''
@@ -65,7 +65,7 @@
  
 +    if get.buildTYPE() == "emul32":
 +        fixpc()
-+        removeDir("/emul32")
++        if isDirectory("%s/emul32" % get.installDIR()): removeDir("/emul32")
 +
  def aclocal(parameters = ''):
      '''generates an aclocal.m4 based on the contents of configure.in.'''
