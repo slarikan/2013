@@ -36,7 +36,9 @@ def check():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32": return
+    if get.buildTYPE() == "emul32": 
+        pisitools.removeDir("/usr/share/gtk-doc")
+        return
 
     #for i in ["", "-python"]:
         #pisitools.rename("/%s/libxml2%s-%s" % (get.docDIR(), i, get.srcVERSION()), "libxml2%s" % i)
