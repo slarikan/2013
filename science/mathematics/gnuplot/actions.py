@@ -46,4 +46,4 @@ def install():
     #pisitools.insinto("/usr/share/doc/%s/manual" % get.srcNAME(), "docs/gnuplot.pdf")
     #pisitools.insinto("/usr/share/doc/%s/tutorial" % get.srcNAME(), "tutorial/*.pdf")
 
-    pisitools.dodoc("BUGS", "ChangeLog", "FAQ.pdf", "NEWS", "README*", "TODO")
+    pisitools.dodoc("BUGS", "ChangeLog", "FAQ.pdf", "NEWS", "README*")
