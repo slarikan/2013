@@ -131,7 +131,7 @@
         <Name>gtk2-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for gtk2</Summary>
-        <BuildType>emul32</BuildType>
+        <BuildType>_emul32</BuildType>
         <BuildDependencies>
             <Dependency>cairo-32bit</Dependency>
             <Dependency>cups-32bit</Dependency>

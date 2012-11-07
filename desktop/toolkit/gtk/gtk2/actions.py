@@ -27,10 +27,10 @@ def setup():
 
     shelltools.export("CFLAGS", get.CFLAGS().replace("-fomit-frame-pointer",""))
 
-    if get.buildTYPE() == "emul32":
+    if get.buildTYPE() == "_emul32":
         options += " --libdir=/usr/lib32 \
-                     --bindir=/emul32/bin \
-                     --sbindir=/emul32/sbin \
+                     --bindir=/_emul32/bin \
+                     --sbindir=/_emul32/sbin \
                      --disable-cups"
 
         shelltools.export("CC", "%s -m32" % get.CC())
@@ -54,8 +54,7 @@ def install():
     #pisitools.removeDir("/usr/share/man")
     pisitools.dodoc("AUTHORS", "README*", "HACKING", "ChangeLog*", "NEWS*")
 
-    if get.buildTYPE() == "emul32":
+    if get.buildTYPE() == "_emul32":
         for binaries in ["gtk-query-immodules-2.0", "gtk-demo"]:
-            pisitools.domove("/emul32/bin/%s" % binaries, "/usr/bin/", "%s-32bit" % binaries)
-        pisitools.removeDir("/emul32")
-
+            pisitools.domove("/_emul32/bin/%s" % binaries, "/usr/bin/", "%s-32bit" % binaries)
+        pisitools.removeDir("/_emul32")

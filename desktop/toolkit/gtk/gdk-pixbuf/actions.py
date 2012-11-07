@@ -22,8 +22,7 @@ def setup():
                --with-included-loaders=png"
 
     if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32 \
-                     --bindir=/emul32/bin"
+        options += " --bindir=/emul32/bin"
 
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
 
@@ -34,8 +33,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("emul32")
 
     pisitools.dodoc("AUTHORS", "COPYING", "NEWS", "README")
