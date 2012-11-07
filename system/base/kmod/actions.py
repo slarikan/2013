@@ -16,8 +16,6 @@ def setup():
     
     if get.buildTYPE() == "emul32":
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
 
     autotools.configure(options)
 
@@ -27,10 +25,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        pisitools.dosed("%s/usr/lib32/pkgconfig/libkmod.pc" % get.installDIR(), "emul32", "usr")
-        return
+    if get.buildTYPE() == "emul32": return
 
     pisitools.dosym("modprobe.d.5.gz","/usr/share/man/man5/modprobe.conf.5.gz")
     for sym in ["modinfo","insmod","rmmod","depmod","modprobe"]:

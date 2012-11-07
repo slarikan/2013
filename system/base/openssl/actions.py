@@ -20,8 +20,8 @@ def setup():
                 enable-cms enable-md2 no-mdc2 no-rc5 no-ec no-ec2m \
                 no-ecdh no-ecdsa no-srp threads shared -Wa,--noexecstack"
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 --libdir=lib32"
+    if get.buildTYPE() == "_emul32":
+        options += " --prefix=/_emul32 --libdir=lib32"
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
         shelltools.system("./Configure linux-elf %s" % options)
@@ -59,13 +59,13 @@ def install():
     pisitools.rename("/usr/share/man/man3/rand.3", "ssl-rand.3")
     pisitools.rename("/usr/share/man/man3/err.3", "ssl-err.3")
 
-    if get.buildTYPE() == "emul32":
+    if get.buildTYPE() == "_emul32":
         from distutils.dir_util import copy_tree
-        copy_tree("%s/emul32/lib32/" % get.installDIR(), "%s/usr/lib32" % get.installDIR())
-        pisitools.removeDir("/emul32")
+        copy_tree("%s/_emul32/lib32/" % get.installDIR(), "%s/usr/lib32" % get.installDIR())
+        pisitools.removeDir("/_emul32")
         pisitools.remove("/usr/lib32/*.a")
         path = "%s/usr/lib32/pkgconfig" % get.installDIR()
-        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
+        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)_emul32", r"\1usr")
         return
 
     # Move engines to /usr/lib/openssl/engines

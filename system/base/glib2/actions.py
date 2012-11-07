@@ -22,10 +22,10 @@ def setup():
                --enable-systemtap"
 
 
-    if get.buildTYPE() == "emul32":
+    if get.buildTYPE() == "_emul32":
         options += " --libdir=/usr/lib32 \
-                     --bindir=/emul32/bin \
-                     --sbindir=/emul32/sbin \
+                     --bindir=/_emul32/bin \
+                     --sbindir=/_emul32/sbin \
                      --disable-dtrace"
         shelltools.export("CC", "%s -m32" % get.CC())
         shelltools.export("CXX", "%s -m32" % get.CXX())
@@ -42,9 +42,9 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.domove("/emul32/bin/gio-querymodules", "/usr/bin/32/")
-        pisitools.removeDir("/emul32")
+    if get.buildTYPE() == "_emul32":
+        pisitools.domove("/_emul32/bin/gio-querymodules", "/usr/bin/32/")
+        pisitools.removeDir("/_emul32")
 
     pisitools.removeDir("/usr/share/gtk-doc")
     pisitools.removeDir("/usr/share/gdb")

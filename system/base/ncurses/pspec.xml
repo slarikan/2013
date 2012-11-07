@@ -60,7 +60,7 @@
 
     <Package>
         <Name>ncurses-32bit</Name>
-        <PartOf>emul32</PartOf>
+        <PartOf>_emul32</PartOf>
         <Summary>32-bit shared libraries for ncurses</Summary>
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>

@@ -16,8 +16,6 @@ def setup():
                --enable-noexecstack"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
 
         # Use 32-bit assembler, another option is to use --disable-asm option
@@ -34,9 +32,7 @@ def check():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        return
+    if get.buildTYPE() == "emul32": return
 
     pisitools.dodir("/etc/gcrypt")
 

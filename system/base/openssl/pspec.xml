@@ -82,7 +82,7 @@
         <Name>openssl-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for openssl</Summary>
-        <BuildType>emul32</BuildType>
+        <BuildType>_emul32</BuildType>
         <BuildDependencies>
             <Dependency>zlib-32bit</Dependency>
         </BuildDependencies>

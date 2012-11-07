@@ -42,16 +42,16 @@ def setup():
                    --without-ada \
                    --enable-symlinks"
 
-    if get.buildTYPE() == "emul32":
+    if get.buildTYPE() == "_emul32":
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
         shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
         shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
-        configparams += " --prefix=/emul32 \
+        configparams += " --prefix=/_emul32 \
                           --libdir=/usr/lib32 \
-                          --libexecdir=/emul32/lib \
-                          --bindir=/emul32/bin \
-                          --sbindir=/emul32/sbin \
-                          --mandir=/emul32/usr/share/man \
+                          --libexecdir=/_emul32/lib \
+                          --bindir=/_emul32/bin \
+                          --sbindir=/_emul32/sbin \
+                          --mandir=/_emul32/usr/share/man \
                           --without-gpm"
 
     autotools.configure(configparams)
@@ -62,7 +62,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
+    if get.buildTYPE() == "_emul32":
         libbasedir = "lib32"
     else:
         libbasedir = "lib"
@@ -75,8 +75,8 @@ def install():
     linknonwide("/usr/%s/static" % libbasedir)
     linknonwide("/usr/%s" % libbasedir)
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
+    if get.buildTYPE() == "_emul32":
+        pisitools.removeDir("/_emul32")
         return
 
     # We need the basic terminfo files in /etc

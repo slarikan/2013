@@ -24,8 +24,6 @@ def setup():
                --disable-static" % (get.docDIR(), get.srcNAME())
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
         shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
         shelltools.export("PKG_CONFIG_LIBDIR", "/usr/lib32/pkgconfig")
@@ -42,8 +40,3 @@ def check():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
-        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")

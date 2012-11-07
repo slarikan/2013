@@ -29,7 +29,6 @@ def install():
                               SBINDIR=%s/emul32/sbin \
                               emul32=1" % ((get.installDIR(),)*3))
         pisitools.remove("/usr/lib32/*.a")
-        pisitools.removeDir("/emul32")
         return
 
     autotools.rawInstall("FAKEROOT=%s" % get.installDIR())
