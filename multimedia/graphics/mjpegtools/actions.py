@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "mjpegtools-%s" % get.srcVERSION().replace("_", "")
+WorkDir = "mjpegtools-2.0.1RC1"
 
 def setup():
     shelltools.export("CFLAGS", "%s -fno-strict-aliasing" % get.CFLAGS())
@@ -20,7 +20,7 @@ def setup():
     pisitools.dosed("configure", "ARCHFLAGS=.*", "ARCHFLAGS=")
     autotools.configure("--with-x \
                          --enable-largefile \
-                         --enable-simd-accel \
+                         --disable-simd-accel \
                          --with-dv-yv12 \
                          --disable-static \
                          --with-libpng \
