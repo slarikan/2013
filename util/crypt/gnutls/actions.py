@@ -24,11 +24,7 @@ def setup():
                --with-included-libcfg"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32 \
-                     --disable-hardware-acceleration"
-        shelltools.export("CC", "%s -m32" % get.CC())
-        shelltools.export("CXX", "%s -m32" % get.CXX())
+        options += " --disable-hardware-acceleration"
 
     autotools.configure(options)
 
@@ -37,8 +33,3 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        # to have correct .pc file
-        pisitools.dosed("%s/usr/lib32/pkgconfig/gnutls.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
