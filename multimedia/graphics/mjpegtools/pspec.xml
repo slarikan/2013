@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Tools for MJPEG video</Summary>
         <Description>mjpegtools is a complete suite of tools for you to capture, edit, process, filter and play your media as you wish. You can digitize your VHS collection, create DVDs, and do advanced video filtering on already-digitized videos.</Description>
-        <Archive sha1sum="f411e8573d446711dbe8455a6ae9257e1afe1e70" type="targz">http://sourceforge.net/projects/mjpeg/files/mjpegtools/2.0.0/mjpegtools-2.0.0.tar.gz</Archive>
+        <Archive sha1sum="5a72fa73d3c0d5b1966b81ca65c7e8755cabbd77" type="targz">http://sourceforge.net/projects/mjpeg/files/mjpegtools/2.0.1rc1/mjpegtools-2.0.1RC1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libdv-devel</Dependency>
@@ -23,10 +23,12 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libpng-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch level="1">mjpegtools-1.9.0-glibc-2.10.patch</Patch>
-            <Patch>mjpegtools-1.9.0-jpeg-7.patch</Patch>
-        </Patches>-->
+        <Patches>
+            <Patch level="0">mjpegtools-1.9.0-link.patch</Patch>
+	    <Patch level="1">mjpegtools-1.9.0rc1-x86_64.patch</Patch>
+	    <!--<Patch level="1">mjpegtools-2.0.0-format-strings.patch</Patch>
+	    <Patch level="0">mjpegtools-2.0.0-mplex-build.patch</Patch>-->
+        </Patches>
     </Source>
 
     <Package>
@@ -65,6 +67,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-10-07</Date>
+            <Version>2.0.1_rc1</Version>
+            <Comment>Bump to RC.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="12">
             <Date>2012-08-29</Date>
             <Version>2.0.0</Version>
