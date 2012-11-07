@@ -25,11 +25,6 @@ def setup():
                --enable-png \
                --with-x"
 
-# we don't need it with new autotools.py
-#    if get.buildTYPE() == "emul32":
-#        options += " --libdir=/usr/lib32"
-#        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
     autotools.autoreconf("-vfi")
     autotools.configure(options)
 
@@ -38,10 +33,6 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        return
 
     pisitools.removeDir("/usr/share/gtk-doc")
     pisitools.dodoc("AUTHORS", "README", "ChangeLog", "NEWS", "COPYING", "COPYING-LGPL-2.1", "COPYING-MPL-1.1")

@@ -9,23 +9,15 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    options = "--disable-static \
-               --disable-docs \
-               --with-cache-dir=/var/cache/fontconfig \
-               --with-default-fonts=/usr/share/fonts \
-               --with-add-fonts=/usr/local/share/fonts"
-
     # Do not rebuild docs
     shelltools.export("HASDOCBOOK", "no")
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CXXFLAGS", "%s -m32" % get.CXXFLAGS())
-
     autotools.autoreconf("-vif")
-    autotools.configure(options)
+    autotools.configure("--disable-static \
+                         --disable-docs \
+                         --with-cache-dir=/var/cache/fontconfig \
+                         --with-default-fonts=/usr/share/fonts \
+                         --with-add-fonts=/usr/local/share/fonts")
 
 def build():
     autotools.make()
@@ -33,11 +25,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
-        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
-        return
+    if get.buildTYPE() == "emul32": return
 
     pisitools.insinto("/etc/fonts", "fonts.conf", "fonts.conf.new")
 
