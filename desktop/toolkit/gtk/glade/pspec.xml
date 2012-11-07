@@ -16,7 +16,7 @@
         <Description>Glade is a RAD tool to enable quick and easy development of user interfaces for the GTK+ toolkit and the GNOME desktop environment.</Description>
         <Archive sha1sum="bdc2320bf226b52a55496e2823880be5762081b8" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk3-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libbonoboui-devel</Dependency>
             <Dependency>libgnome-devel</Dependency>
@@ -43,7 +43,7 @@
     <Package>
         <Name>glade</Name>
         <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libbonoboui</Dependency>
             <Dependency>libgnome</Dependency>
