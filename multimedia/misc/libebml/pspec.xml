@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Extensible binary format library (kinda like XML)</Summary>
         <Description>Extensible Binary Meta Language access library A library for reading and writing files with the Extensible Binary Meta Language, a binary pendant to XML.</Description>
-        <Archive sha1sum="8b79752ddb6cadab0346b43785432c554dbf220d" type="tarbz2">http://dl.matroska.org/downloads/libebml/libebml-1.0.0.tar.bz2</Archive>
+        <Archive sha1sum="f8ef2e044b79b6e4f777b20c0e0e2382c16fbafc" type="tarbz2">http://dl.matroska.org/downloads/libebml/libebml-1.2.2.tar.bz2</Archive>
         <Patches>
-            <Patch>libebml-1.0.0-makefile-fixup.patch</Patch>
+            <!--<Patch>libebml-1.0.0-makefile-fixup.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-11-07</Date>
+            <Version>1.2.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-12</Date>
             <Version>1.0.0</Version>
