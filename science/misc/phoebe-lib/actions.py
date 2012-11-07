@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 WorkDir="phoebe-lib-%s" % get.srcVERSION()
 
 def setup():
-    autotools.autoreconf("-vif")
+    #autotools.autoreconf("-vif")
     autotools.configure("--disable-static")
 
 def build():

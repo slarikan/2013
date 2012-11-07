@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-07</Date>
+            <Version>0.31a/Version>
+            <Comment>Düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-07-06</Date>
             <Version>0.31a</Version>
