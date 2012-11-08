@@ -13,6 +13,7 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.export("WXRC", "/usr/bin/wxrc-2.8")
+    shelltools.export("LDFLAGS", "%s -lpthread" % get.LDFLAGS())
     autotools.configure("--disable-static \
                          --with-wx-config=/usr/bin/wx-config \
                          --disable-manualupdatecheck \
