@@ -34,9 +34,6 @@ def setup():
     #shelltools.export("CPPFLAGS",get.CXXFLAGS())
     shelltools.export("CPPFLAGS","%s %s" % (get.CXXFLAGS(),pkgconfig.getLibraryCFLAGS("libffi")))
     
-    shelltools.export("CC",get.CC())
-    shelltools.export("CXX",get.CXX())
-    
     pic_option = "enable" if get.ARCH() == "x86_64" else "disable"
     
     options = "--libdir=%s \
@@ -47,15 +44,6 @@ def setup():
                --%s-pic \
                " % (libdir, pic_option)
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-
-        #shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-        shelltools.export("CC", "%s -m32" % get.CC())
-        shelltools.export("CXX", "%s -m32" % get.CXX())
-
-    
     autotools.configure(options)
 
 
@@ -74,9 +62,6 @@ def install():
                               PROJ_libdir=/usr/lib32/llvm \
                               PROJ_docsdir=/%s/llvm"
                               % (get.installDIR(),  get.docDIR()))
-        pisitools.removeDir("/emul32")
-        # Remove executable bit from static libs
-        shelltools.chmod("%s/usr/lib32/*/*.a" % get.installDIR(), 0644)
         return
     else:
         autotools.rawInstall("DESTDIR=%s \
@@ -93,9 +78,6 @@ def install():
 
     pisitools.dodir("/etc/ld.so.conf.d")
     shelltools.echo("%s/etc/ld.so.conf.d/51-llvm.conf" % get.installDIR(), "/usr/lib/llvm")
-
-    # Remove executable bit from static libs
-    shelltools.chmod("%s/usr/lib/*/*.a" % get.installDIR(), 0644)
 
     # Symlink the gold plugin where clang expects it
     pisitools.dosym("llvm/LLVMgold.so", "/usr/lib/LLVMgold.so")
@@ -115,5 +97,3 @@ def install():
     pisitools.insinto("%s/katepart/syntax" % kde4.appsdir, "utils/kate/*.xml")
 
     pisitools.dodoc("CREDITS.TXT", "LICENSE.TXT", "README.txt")
-
- 
