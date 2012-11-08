@@ -15,9 +15,7 @@ def setup():
     options = "--disable-aload"
 
     if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32 \
-                     --disable-python"
+        options += " --disable-python"
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
 
     autotools.autoreconf("-fi")
@@ -34,8 +32,6 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        pisitools.dosed("%s/usr/lib32/pkgconfig/alsa.pc" % get.installDIR(), "emul32", "usr")
+    if get.buildTYPE() == "emul32": return
 
     pisitools.dodoc("ChangeLog", "TODO", "COPYING", "doc/*.txt")
