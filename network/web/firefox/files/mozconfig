@@ -75,7 +75,7 @@ ac_add_options --with-system-java
 
 
 
-ac_add_options --with-l10n-base=../l10n
+#ac_add_options --with-l10n-base=../l10n
 
 # Profile Guided Optimization
 #ac_add_options --enable-profile-guided-optimization

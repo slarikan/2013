@@ -18,7 +18,7 @@ WorkDir = "mozilla-release"
 # config.guess returns 'x86_64-unknown-linux-gnu' on x86_64 machines, and 'i686-pc-linux-gnu' on x86 machines
 ObjDir = "obj-%s-unknown-linux-gnu" % get.ARCH() if get.ARCH() == "x86_64" else "obj-%s-pc-linux-gnu" % get.ARCH()
 
-locales = ["de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "ru", "sv-SE", "tr"]
+#locales = ["de", "es-AR", "es-ES", "fr", "hu", "it", "nl", "pl", "ru", "sv-SE", "tr"]
 
 def setup():
     # Mozilla sticks on with autoconf-213
@@ -53,8 +53,8 @@ def build():
 
     autotools.make("-f ../client.mk configure")
 
-    for locale in locales:
-       autotools.make("-C browser/locales langpack-%s" % locale)
+    #for locale in locales:
+       #autotools.make("-C browser/locales langpack-%s" % locale)
 
 def install():
     autotools.rawInstall("-f client.mk DESTDIR=%s" % get.installDIR())
@@ -65,18 +65,18 @@ def install():
     pisitools.remove("/usr/bin/firefox") # new Additional File  will replace that
 
     #install locales
-    for locale in locales:
-        pisitools.insinto("/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org" % locale, "%s/dist/xpi-stage/locale-%s/*" % (ObjDir, locale), sym=False)
-        pisitools.removeDir("/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org/defaults" % locale)
-        pisitools.remove("/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org/chrome/%s/locale/branding/browserconfig.properties" % (locale, locale))
-        pisitools.dosym("../../../../../../browserconfig.properties", "/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org/chrome/%s/locale/branding/browserconfig.properties" % (locale, locale))
+    #for locale in locales:
+        #pisitools.insinto("/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org" % locale, "%s/dist/xpi-stage/locale-%s/*" % (ObjDir, locale), sym=False)
+        #pisitools.removeDir("/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org/defaults" % locale)
+        #pisitools.remove("/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org/chrome/%s/locale/branding/browserconfig.properties" % (locale, locale))
+        #pisitools.dosym("../../../../../../browserconfig.properties", "/usr/lib/MozillaFirefox/extensions/langpack-%s@firefox.mozilla.org/chrome/%s/locale/branding/browserconfig.properties" % (locale, locale))
 
     pisitools.dodir("/usr/lib/MozillaFirefox/dictionaries")
     shelltools.touch("%s%s/dictionaries/tr-TR.aff" % (get.installDIR(), "/usr/lib/MozillaFirefox"))
     shelltools.touch("%s%s/dictionaries/tr-TR.dic" % (get.installDIR(), "/usr/lib/MozillaFirefox"))
     
     # Install fix language packs
-    pisitools.insinto("/usr/lib/MozillaFirefox/extensions", "./fixlang-ff/*")
+    pisitools.insinto("/usr/lib/MozillaFirefox/extensions", "./langpack/*")
 
     # Create profile dir, we'll copy bookmarks.html in post-install script
     pisitools.dodir("/usr/lib/MozillaFirefox/defaults/profile")
