@@ -24,8 +24,6 @@ def install():
                               BINDIR=%s/emul32 \
                               LIBDIR=%s//usr/lib32" % (get.installDIR() , get.installDIR(), get.installDIR(), get.installDIR()))
 
-        # headers are included in glew package, these are duplicates
-        pisitools.removeDir("/emul32")
         pisitools.remove("/usr/lib32/libGLEW.a")
         return
 
