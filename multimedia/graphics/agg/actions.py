@@ -12,6 +12,9 @@ def setup():
     for f in ["NEWS", "README", "AUTHORS"]:
         shelltools.touch(f)
 
+    # fix building against automake-1.12
+    pisitools.dosed("configure.in", "^AM_C_PROTOTYPES")
+
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-examples \
                          --enable-ctrl \
