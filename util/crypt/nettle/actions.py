@@ -13,13 +13,7 @@ def setup():
     options = "--disable-static \
                --enable-shared"
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32 \
-                     --includedir=/usr/include"  #to have correct .pc
-        shelltools.export("CC", "%s -m32" % get.CC())
-        shelltools.export("CXX", "%s -m32" % get.CXX())
-    else:
+    if not get.buildTYPE() == "emul32":
         options += " --libdir=/usr/lib"
 
     autotools.configure(options)
@@ -31,10 +25,8 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
     if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
         pisitools.remove("/usr/lib32/*.a")
-        path = "%s/usr/lib32/pkgconfig" % get.installDIR()
-        for f in shelltools.ls(path): pisitools.dosed("%s/%s" % (path, f), "^(prefix=\/)emul32", r"\1usr")
         return
+
     pisitools.remove("/usr/lib/*.a")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "README", "nettle.pdf")

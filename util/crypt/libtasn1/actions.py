@@ -12,12 +12,7 @@ from pisi.actionsapi import get
 def setup():
     options = "--disable-static"
 
-    if get.buildTYPE() == "emul32":
-        options += " --prefix=/emul32 \
-                     --libdir=/usr/lib32"
-        shelltools.export("CC", "%s -m32" % get.CC())
-        shelltools.export("CXX", "%s -m32" % get.CXX())
-    else:
+    if not get.buildTYPE() == "emul32":
         options += " --libdir=/usr/lib"
 
     autotools.configure(options)
@@ -33,10 +28,6 @@ def check():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
-        # to have correct .pc file
-        pisitools.dosed("%s/usr/lib32/pkgconfig/libtasn1.pc" % get.installDIR(), "^(prefix=\/)emul32", r"\1usr")
-        return
+    if get.buildTYPE() == "emul32": return
 
     pisitools.dodoc("ChangeLog", "README", "NEWS", "AUTHORS", "COPYING")

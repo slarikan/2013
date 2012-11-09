@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Computer vision library</Summary>
         <Description>opencv is a programming library mainly aimed at the real time computer vision. Example applications are human-computer interaction, object identification, face recognition, motion tracking, mobile robotics.</Description>
-        <Archive sha1sum="96ff27b87e0f028d1d16201afebabec4e0c72367" type="tarbz2">mirrors://sourceforge/opencvlibrary/OpenCV-2.4.2.tar.bz2</Archive>
+        <Archive sha1sum="982be2c3e52dfc3e9d14692c60bc856b2b766be2" type="tarbz2">mirrors://sourceforge/opencvlibrary/OpenCV-2.4.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
             <Dependency>jasper-devel</Dependency>
@@ -32,7 +32,7 @@
         <Patches>
             <!--<Patch level="1">OpenCV-2.3.1-numpy.patch</Patch>-->
             <!--<Patch level="1">OpenCV-2.3.1-opencvconfig.patch</Patch>-->
-	    <Patch level="1">opencv-2.4.2-cflags.patch</Patch>
+            <!--<Patch level="1">opencv-2.4.2-cflags.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -84,11 +84,18 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-11-08</Date>
+            <Version>2.4.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2012-10-21</Date>
             <Version>2.4.2</Version>
             <Comment>Version bump.</Comment>
-	    <Name>Osman Erkan</Name>
+            <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="9">
