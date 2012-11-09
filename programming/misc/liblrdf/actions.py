@@ -6,6 +6,7 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+WorkDir="LRDF-master"
 
 def setup():
     autotools.autoreconf("-vif")

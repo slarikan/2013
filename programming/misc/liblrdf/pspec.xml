@@ -12,13 +12,13 @@
         <IsA>library</IsA>
         <Summary>A lightweight RDF library with special support for LADSPA plugins</Summary>
         <Description>A lightweight RDF library with special support for LADSPA plugins.</Description>
-        <Archive sha1sum="17ce55f692bc52ed12605091b99106255f964b5f" type="targz">mirrors://sourceforge/lrdf/liblrdf-0.4.0.tar.gz</Archive>
+        <Archive sha1sum="4c48b8a2413220f79d94f65f073faf28fa7fd3a5" type="targz">https://github.com/swh/LRDF/archive/master.tar.gz</Archive>
         <BuildDependencies>
             <Dependency releaseFrom="2">ladspa-sdk</Dependency>
             <Dependency>raptor2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">liblrdf-0.4.0-dontbuild-tests.patch</Patch>
+            <!--Patch level="1">liblrdf-0.4.0-dontbuild-tests.patch</Patch-->
         </Patches>
    </Source>
 
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+	   <Update release="5">
+            <Date>2012-10-09</Date>
+            <Version>0.5.0</Version>
+            <Comment>Bump, build with raptor2.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>0.4.0</Version>
