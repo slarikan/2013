@@ -10,6 +10,8 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
+
 MIBS = "host agentx smux \
        ucd-snmp/diskio tcp-mib udp-mib mibII/mta_sendmail \
        ip-mib/ipv4InterfaceTable ip-mib/ipv6InterfaceTable \
