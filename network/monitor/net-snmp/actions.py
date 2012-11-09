@@ -7,6 +7,7 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import pythonmodules
+from pisi.actionsapi import perlmodules
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
@@ -61,6 +62,7 @@ def install():
     pisitools.dodir("/var/lib/net-snmp")
     pisitools.dodir("/etc/snmp")
 
-    pisitools.remove("/usr/lib/perl5/5.16.1/x86_64-linux-thread-multi/perllocal.pod")
-
     pisitools.dodoc("AGENT.txt", "ChangeLog", "FAQ", "NEWS", "PORTING", "README", "TODO")
+
+    perlmodules.removePacklist()
+    perlmodules.removePodfiles()
