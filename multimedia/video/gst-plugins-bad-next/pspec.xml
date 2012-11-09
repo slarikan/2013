@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>gst-plugins-bad</Name>
+        <Name>gst-plugins-bad-next</Name>
         <Homepage>http://gstreamer.freedesktop.org/modules/gst-plugins-bad.html</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -14,8 +14,8 @@
         <Description>GStreamer Bad Plug-ins is a set of plug-ins that aren't up to par compared to the rest. They might be close to being good quality, but they're missing something - be it a good code review, some documentation, a set of tests, a real live maintainer, or some actual wide use.</Description>
         <Archive sha1sum="c144fd00833b9945287204d614cfccb06ca9625e" type="tarxz">http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.0.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.0.2">gst-plugins-base-devel</Dependency>
-            <Dependency versionFrom="1.0.2">gstreamer-devel</Dependency>
+            <Dependency versionFrom="1.0.2">gst-plugins-base-next-devel</Dependency>
+            <Dependency versionFrom="1.0.2">gstreamer-next-devel</Dependency>
             <Dependency>DirectFB-devel</Dependency> <!-- dfbvideosink -->
             <Dependency>libcdaudio-devel</Dependency>
             <Dependency>libdc1394-devel</Dependency>
@@ -64,10 +64,10 @@
     </Source>
 
     <Package>
-        <Name>gst-plugins-bad</Name>
+        <Name>gst-plugins-bad-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.2">gst-plugins-base</Dependency>
-            <Dependency versionFrom="1.0.2">gstreamer</Dependency>
+            <Dependency versionFrom="1.0.2">gst-plugins-base-next</Dependency>
+            <Dependency versionFrom="1.0.2">gstreamer-next</Dependency>
             <Dependency>DirectFB</Dependency> <!-- dfbvideosink -->
             <Dependency>libcdaudio</Dependency>
             <Dependency>libdc1394</Dependency>
@@ -120,7 +120,7 @@
     </Package>
 
     <Package>
-        <Name>gst-plugins-bad-devel</Name>
+        <Name>gst-plugins-bad-next-devel</Name>
         <Summary>Development files for gst-plugins-bad</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gst-plugins-bad</Dependency>

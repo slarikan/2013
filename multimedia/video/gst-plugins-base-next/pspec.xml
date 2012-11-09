@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>gst-plugins-base</Name>
+        <Name>gst-plugins-base-next</Name>
         <Homepage>http://gstreamer.net/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -14,7 +14,7 @@
         <Description>GStreamer base plugins are a well-groomed and well-maintained collection of GStreamer plugins and elements, spanning the range of possible types of elements one would want to write for GStreamer. It also contains helper libraries and base classes useful for writing elements. A wide range of video and audio decoders, encoders, and filters are included.</Description>
         <Archive sha1sum="a4539c78820ad764b666385ae312f7a2e5eb60d6" type="tarxz">http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.0.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.0.2">gstreamer-devel</Dependency>
+            <Dependency versionFrom="1.0.2">gstreamer-next-devel</Dependency>
             <Dependency versionFrom="3.10.2">cdparanoia</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -35,9 +35,9 @@
     </Source>
 
     <Package>
-        <Name>gst-plugins-base</Name>
+        <Name>gst-plugins-base-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.2">gstreamer</Dependency>
+            <Dependency versionFrom="1.0.2">gstreamer-next</Dependency>
             <Dependency versionFrom="3.10.2">cdparanoia</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
@@ -62,7 +62,7 @@
     </Package>
 
     <Package>
-        <Name>gst-plugins-base-devel</Name>
+        <Name>gst-plugins-base-next-devel</Name>
         <Summary>Development files for gst-plugins-base</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gst-plugins-base</Dependency>

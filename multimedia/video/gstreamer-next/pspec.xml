@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>gstreamer</Name>
+        <Name>gstreamer-next</Name>
         <Homepage>http://gstreamer.freedesktop.org/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -32,7 +32,7 @@
     </Source>
 
     <Package>
-        <Name>gstreamer</Name>
+        <Name>gstreamer-next</Name>
         <RuntimeDependencies>
             <Dependency>check</Dependency>
             <Dependency>valgrind</Dependency>
@@ -53,7 +53,7 @@
     </Package>
 
     <Package>
-        <Name>gstreamer-devel</Name>
+        <Name>gstreamer-next-devel</Name>
         <Summary>Development files for gstreamer</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gstreamer</Dependency>
@@ -67,7 +67,7 @@
     </Package>
 
     <Package>
-        <Name>gstreamer-32bit</Name>
+        <Name>gstreamer-next-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for gstreamer</Summary>
         <BuildType>emul32</BuildType>
