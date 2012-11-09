@@ -25,7 +25,7 @@
             <Dependency>fftw3-devel</Dependency>
             <Dependency>liblrdf-devel</Dependency>
             <Dependency versionFrom="1.1.0">dssi-devel</Dependency>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
             <Dependency>xorg-util</Dependency>
         </BuildDependencies>
     </Source>
@@ -44,7 +44,7 @@
             <Dependency>liblrdf</Dependency>
             <Dependency>shared-mime-info</Dependency>
             <Dependency versionFrom="1.1.0">dssi</Dependency>
-            <Dependency>raptor</Dependency>
+            <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
