@@ -12,8 +12,8 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
-# to avoid sandbox violations
-shelltools.system("gst-inspect")
+# to avoid sandbox violations - disabled temporary due to pisi ix error
+#shelltools.system("gst-inspect")
 
 def setup():
     autotools.autoreconf("-vfi")
