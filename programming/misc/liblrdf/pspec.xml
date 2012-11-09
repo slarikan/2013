@@ -15,7 +15,7 @@
         <Archive sha1sum="17ce55f692bc52ed12605091b99106255f964b5f" type="targz">mirrors://sourceforge/lrdf/liblrdf-0.4.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency releaseFrom="2">ladspa-sdk</Dependency>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">liblrdf-0.4.0-dontbuild-tests.patch</Patch>
@@ -26,7 +26,7 @@
         <Name>liblrdf</Name>
         <RuntimeDependencies>
             <Dependency releaseFrom="2">ladspa-sdk</Dependency>
-            <Dependency versionFrom="1.4.12">raptor</Dependency>
+            <Dependency versionFrom="1.4.12">raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
