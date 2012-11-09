@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>libproxy</Name>
+        <Name>libproxy-next</Name>
         <Homepage>http://code.google.com/p/libproxy/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -18,7 +18,7 @@
             <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency releaseFrom="18">gconf-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
-            <Dependency versionFrom="1.11.1">webkit-gtk2-devel</Dependency>
+            <Dependency versionFrom="1.11.1">webkit-gtk2-next-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">libproxy-libexecpath.patch</Patch>
@@ -31,9 +31,9 @@
     </Source>
 
     <Package>
-        <Name>libproxy</Name>
+        <Name>libproxy-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.11.1">webkit-gtk2</Dependency>
+            <Dependency versionFrom="1.11.1">webkit-gtk2-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -44,7 +44,7 @@
     </Package>
 
     <Package>
-        <Name>libproxy-gnome</Name>
+        <Name>libproxy-gnome-next</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="0.4.10">libproxy</Dependency>
             <Dependency>gconf</Dependency>
@@ -58,7 +58,7 @@
     </Package>
 
     <Package>
-        <Name>libproxy-kde</Name>
+        <Name>libproxy-kde-next</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="0.4.10">libproxy</Dependency>
             <Dependency versionFrom="4.8.2">kdelibs</Dependency>
@@ -92,7 +92,7 @@
     </Package>
 -->
     <Package>
-        <Name>libproxy-devel</Name>
+        <Name>libproxy-next-devel</Name>
         <Summary>Development files for libproxy</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libproxy</Dependency>
