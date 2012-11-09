@@ -56,7 +56,7 @@
         <Name>gstreamer-next-devel</Name>
         <Summary>Development files for gstreamer</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">gstreamer</Dependency>
+            <Dependency release="current">gstreamer-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -76,7 +76,7 @@
             <Dependency>libxml2-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
-            <Dependency release="current">gstreamer</Dependency>
+            <Dependency release="current">gstreamer-next</Dependency>
             <Dependency>glib2-32bit</Dependency>
             <Dependency>libxml2-32bit</Dependency>
         </RuntimeDependencies>

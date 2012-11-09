@@ -65,8 +65,8 @@
         <Name>gst-plugins-base-next-devel</Name>
         <Summary>Development files for gst-plugins-base</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">gst-plugins-base</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
+            <Dependency release="current">gst-plugins-base-next</Dependency>
+            <Dependency>gstreamer-next-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

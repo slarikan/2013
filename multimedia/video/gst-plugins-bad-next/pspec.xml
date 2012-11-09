@@ -123,8 +123,8 @@
         <Name>gst-plugins-bad-next-devel</Name>
         <Summary>Development files for gst-plugins-bad</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">gst-plugins-bad</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
+            <Dependency release="current">gst-plugins-bad-next</Dependency>
+            <Dependency>gstreamer-next-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
