@@ -17,9 +17,8 @@
         <Description>It is more secure and faster to browse the web with Firefox web browser. You can personalize your web browser with many specifications that is not enough to explain in two sentences.</Description>
 
         <!-- Use tools/{create-source.sh, create-locale.sh} scripts to create tarballs for both firefox source and l10n -->
-        <Archive sha1sum="ad5723fcf4ec6c6734e2022cecad174290fa425e" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/16.0.1/source/firefox-16.0.1.source.tar.bz2</Archive>
-        <!-- with-fix-langpack: be,ca-->	
-        <Archive sha1sum="00d43df690558f4702452d6f2672008c76ce60e0" type="tarbz2" target="mozilla-release">http://content.wuala.com/contents/erdinc/kern/ff-l10/firefox-l10n-16.0.1.tar.bz2</Archive>
+        <Archive sha1sum="0ffe96896583e92561b341330ab09ddc50140dd1" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/16.0.2/source/firefox-16.0.2.source.tar.bz2</Archive>	
+        <Archive sha1sum="48d5e70fc4e681529bc6c34cc9bcf95b6ce986ec" type="tarbz2" target="mozilla-release">https://github.com/downloads/circass/pisi-work/firefox-l10n-16.0.2.tar.bz2</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
@@ -85,7 +84,7 @@
             <!--Patch level="0">pardus/zemberek-firefox5.patch</Patch-->
             <!--<Patch level="0">pardus/fix-double-turkish-option.diff</Patch>-->
             <!--<Patch level="1">pardus/fix-langpack-prefs-path.patch</Patch>-->
-	    <Patch level="1">pardus/add-twitter-search.diff</Patch>
+	     <!--<Patch level="1">pardus/add-twitter-search.diff</Patch>-->
 	    <!--<Patch level="0">pardus/hg-changeset.diff</Patch>-->
     </Patches>
     </Source>
@@ -184,6 +183,13 @@
     </Package>
 
     <History>
+        <Update release="177">
+            <Date>2012-11-08</Date>
+            <Version>16.0.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="176">
             <Date>2012-10-11</Date>
             <Version>16.0.1</Version>
