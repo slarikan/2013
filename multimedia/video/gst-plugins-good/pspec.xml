@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>A set of good-quality plugins for GStreamer</Summary>
         <Description>gst-plugins-good contains a set of mature plugins and elements for GStreamer.</Description>
-        <Archive sha1sum="169b7719f343c9d4d76568814f51186647d90b98" type="tarbz2">http://gstreamer.freedesktop.org/src/gst-plugins-good/pre/gst-plugins-good-0.10.28.4.tar.bz2</Archive>
+        <Archive sha1sum="b45fc01b133fc23617fa501dd9307a90f467b396" type="tarbz2">http://gstreamer.freedesktop.org/src/gst-plugins-good/gst-plugins-good-0.10.31.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base-devel</Dependency>
-            <Dependency versionFrom="0.10.32.4">gstreamer-devel</Dependency>
+            <Dependency versionFrom="0.10.36">gst-plugins-base-devel</Dependency>
+            <Dependency versionFrom="0.10.36">gstreamer-devel</Dependency>
             <Dependency>libiec61883-devel</Dependency>
             <Dependency>libavc1394-devel</Dependency>
             <Dependency>libraw1394-devel</Dependency>
@@ -44,16 +44,17 @@
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>pulse-rank.patch</Patch>
-            <Patch>ltmain_as-needed.patch</Patch>
+            <!--Patch>pulse-rank.patch</Patch>
+            <Patch>ltmain_as-needed.patch</Patch-->
+            <Patch level="1">0001-v4l2-fix-build-with-recent-kernels-the-v4l2_buffer-i.patch.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>gst-plugins-good</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base</Dependency>
-            <Dependency versionFrom="0.10.32.4">gstreamer</Dependency>
+            <Dependency versionFrom="0.10.36">gst-plugins-base</Dependency>
+            <Dependency versionFrom="0.10.36">gstreamer</Dependency>
             <Dependency>libiec61883</Dependency>
             <Dependency>libavc1394</Dependency>
             <Dependency>libraw1394</Dependency>
@@ -93,6 +94,13 @@
     </Package>
 
     <History>
+	    <Update release="27">
+            <Date>2012-11-09</Date>
+            <Version>0.10.31</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="26">
             <Date>2011-05-03</Date>
             <Version>0.10.28.4</Version>

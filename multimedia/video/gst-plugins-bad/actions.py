@@ -24,6 +24,7 @@ def setup():
     """
 
     autotools.configure("--disable-static \
+                         --disable-examples \
                          --disable-gtk-doc \
                          --disable-rpath \
                          --with-package-name='Pardus gstreamer-plugins-bad package' \

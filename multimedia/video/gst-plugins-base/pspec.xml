@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Basepack of plugins for gstreamer</Summary>
         <Description>GStreamer base plugins are a well-groomed and well-maintained collection of GStreamer plugins and elements, spanning the range of possible types of elements one would want to write for GStreamer. It also contains helper libraries and base classes useful for writing elements. A wide range of video and audio decoders, encoders, and filters are included.</Description>
-        <Archive sha1sum="d3b264aeaf20d649c81439a52f27c98daca94e96" type="tarbz2">http://gstreamer.freedesktop.org/src/gst-plugins-base/pre/gst-plugins-base-0.10.32.4.tar.bz2</Archive>
+        <Archive sha1sum="e675401b62a6bf2e5ea966e833afd005a585e978" type="tarbz2">http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.10.36.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.10.32.4">gstreamer-devel</Dependency>
+            <Dependency versionFrom="0.10.36">gstreamer-devel</Dependency>
             <Dependency versionFrom="3.10.2">cdparanoia</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -38,7 +38,7 @@
     <Package>
         <Name>gst-plugins-base</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.10.32.4">gstreamer</Dependency>
+            <Dependency versionFrom="0.10.36">gstreamer</Dependency>
             <Dependency versionFrom="3.10.2">cdparanoia</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="31">
+            <Date>2012-11-09</Date>
+            <Version>0.10.36</Version>
+            <Comment>Bump for latest gstreamer</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="30">
             <Date>2011-05-03</Date>
             <Version>0.10.32.4</Version>
