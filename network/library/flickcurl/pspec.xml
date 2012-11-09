@@ -14,14 +14,14 @@
         <Description>Flickcurl is a C library for the Flickr API, handling creating the requests, signing, token management, calling the API, marshalling request parameters and decoding responses.</Description>
         <Archive sha1sum="56dd6ae8fad8dfa98b43ab9b3d3f623dada9b67b" type="targz">http://download.dajobe.org/flickcurl/flickcurl-1.23.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>raptor-devel</Dependency>
+            <Dependency>raptor2-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>flickcurl</Name>
         <RuntimeDependencies>
-            <Dependency>raptor</Dependency>
+            <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
