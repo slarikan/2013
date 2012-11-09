@@ -22,6 +22,7 @@ def setup():
                          --disable-gtk-doc \
                          --with-raptor=system \
                          --with-rasqal=system \
+                         --with-sqlite=3 \
                          --with-virtuoso \
                          --with-iodbc=/%s \
                          --without-unixodbc \
