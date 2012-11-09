@@ -46,7 +46,7 @@
     <Package>
         <Name>libproxy-gnome-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.10">libproxy</Dependency>
+            <Dependency versionFrom="0.4.10">libproxy-next</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>libXmu</Dependency>
         </RuntimeDependencies>
@@ -60,7 +60,7 @@
     <Package>
         <Name>libproxy-kde-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.10">libproxy</Dependency>
+            <Dependency versionFrom="0.4.10">libproxy-next</Dependency>
             <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency versionFrom="4.8.2">qt</Dependency>
         </RuntimeDependencies>
@@ -93,9 +93,9 @@
 -->
     <Package>
         <Name>libproxy-next-devel</Name>
-        <Summary>Development files for libproxy</Summary>
+        <Summary>Development files for libproxy-next</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">libproxy</Dependency>
+            <Dependency release="current">libproxy-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

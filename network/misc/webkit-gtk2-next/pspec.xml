@@ -63,8 +63,8 @@
             <Dependency>libXrender</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="1.0.2">gst-plugins-base-devel</Dependency>
-            <Dependency versionFrom="1.0.2">gstreamer-devel</Dependency>
+            <Dependency versionFrom="1.0.2">gst-plugins-base-next</Dependency>
+            <Dependency versionFrom="1.0.2">gstreamer-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -80,7 +80,7 @@
         <IsA>data:doc</IsA>
         <Summary>Development files for GTK+ port of WebKit</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">webkit-gtk2</Dependency>
+            <Dependency release="current">webkit-gtk2-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
