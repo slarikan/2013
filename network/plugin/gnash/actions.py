@@ -13,7 +13,7 @@ from pisi.actionsapi import get
 
 shelltools.export("HOME", get.workDIR())
 # to avoid sandbox violations
-shelltools.system("gst-inspect-0.10")
+shelltools.system("gst-inspect")
 
 def setup():
     autotools.autoreconf("-vfi")
