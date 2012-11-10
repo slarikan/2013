@@ -12,11 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Additional KDE4 Artwork</Summary>
         <Description>kdeartwork contains additional KDE4 Artwork (window decorations, widget styles, wallpapers and the like).</Description>
-        <Archive sha1sum="c7e15538d3141af8673d16f498c6af7bff62a87f" type="tarxz">mirrors://kde/stable/4.8.4/src/kdeartwork-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="777e3b50546e3a75bc2253ee13962bd1955db921" type="tarxz">mirrors://kde/stable/4.9.3/src/kdeartwork-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-workspace-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
             <Dependency versionFrom="2.0.15">eigen</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>libXt-devel</Dependency>
@@ -64,9 +63,8 @@
         <Summary>Additional KDE4 widget styles and window decorations (including Aurorae theme engine)</Summary>
         <Description>Contains additional widget styles and window decorations for KDE4.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
-            <Dependency versionFrom="4.8.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.3">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -82,9 +80,8 @@
         <Summary>Additional KDE4 screensavers</Summary>
         <Description>Contains additional screensavers for KDE4.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
             <Dependency>xscreensaver</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>libXt</Dependency>
@@ -117,13 +114,20 @@
     </Package>
 
     <History>
+        <Update release="58">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="57">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="56">
             <Date>2012-05-06</Date>
             <Version>4.8.3</Version>
