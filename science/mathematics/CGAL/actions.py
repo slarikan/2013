@@ -22,13 +22,8 @@ def setup():
     shelltools.cd("build")
 
     cmaketools.configure("-DCMAKE_BUILD_TYPE=Release \
-                          -DWITH_examples=true \
-                          -DWITH_demos=true \
-                          -DWITH_GMPXX=ON \
                           -DWITH_CGAL_Qt3=OFF \
-                          -Wno-dev \
-                          -DWITH_LEDA=OFF \
-                          -DWITH_TAUCS=OFF", installPrefix="/usr",sourceDir="..")
+                          -DWITH_LEDA=OFF ", installPrefix="/usr",sourceDir="..")
 
 def build():
     shelltools.cd("build")

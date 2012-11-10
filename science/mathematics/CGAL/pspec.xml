@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>C++ library for geometric algorithms and data structures</Summary>
         <Description>The goal of the CGAL Open Source Project is to provide easy access to efficient and reliable geometric algorithms in the form of a C++ library.</Description>
-        <Archive sha1sum="23748df1e60d62da166d2e395732ae2fe274317d" type="targz">https://gforge.inria.fr/frs/download.php/28500/CGAL-3.8.tar.gz</Archive>
+        <Archive sha1sum="fe5d3772342a0997c743597f1b112ac946b57e2b" type="tarxz">https://gforge.inria.fr/frs/download.php/31639/CGAL-4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>boost-devel</Dependency>
             <Dependency>mpfr-devel</Dependency>
@@ -77,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-10</Date>
+            <Version>4.1</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-05-11</Date>
             <Version>3.8</Version>
