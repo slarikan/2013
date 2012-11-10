@@ -18,7 +18,7 @@
 
         <!-- Use tools/{create-source.sh, create-locale.sh} scripts to create tarballs for both firefox source and l10n -->
         <Archive sha1sum="0ffe96896583e92561b341330ab09ddc50140dd1" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/16.0.2/source/firefox-16.0.2.source.tar.bz2</Archive>	
-        <Archive sha1sum="48d5e70fc4e681529bc6c34cc9bcf95b6ce986ec" type="tarbz2" target="mozilla-release">https://github.com/downloads/circass/pisi-work/firefox-l10n-16.0.2.tar.bz2</Archive>
+        <Archive sha1sum="35a6e2a93730d9e3cd28be528ecdfefbec88c985" type="tarbz2" target="mozilla-release">https://github.com/downloads/circass/pisi-work/firefox-l10n-16.0.2.tar.bz2</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
@@ -183,6 +183,13 @@
     </Package>
 
     <History>
+        <Update release="178">
+            <Date>2012-11-08</Date>
+            <Version>16.0.2</Version>
+            <Comment>correcting hu lang files</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="177">
             <Date>2012-11-08</Date>
             <Version>16.0.2</Version>
