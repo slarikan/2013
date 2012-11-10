@@ -12,20 +12,17 @@
         <IsA>data</IsA>
         <Summary>A set of wallpapers for KDE</Summary>
         <Description>kde-wallpapers provides a set of wallpapers for KDE.</Description>
-        <Archive sha1sum="da11aa057c5b836ee026634bb61565244d614682" type="tarxz">mirrors://kde/stable/4.8.4/src/kde-wallpapers-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="a243cdfb0bb01c03cfcb5af7f2641304ad094d6a" type="tarxz">mirrors://kde/stable/4.9.3/src/kde-wallpapers-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kde-wallpapers</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="4.6.5">kdebase-wallpapers</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/wallpapers</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -33,6 +30,13 @@
     </Package>
 
     <History>
+         <Update release="6">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
          <Update release="5">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
