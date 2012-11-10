@@ -12,16 +12,16 @@
         <IsA>app:gui</IsA>
         <Summary>A memory enhancement game</Summary>
         <Description>Blinken is the KDE version of the well-known game Simon Says. Follow the pattern of sounds and lights as long as you can! Press the start game button to begin. Watch the computer and copy the pattern it makes. Complete the sequence in the right order to win.</Description>
-        <Archive sha1sum="571e1f06270d38e56149a8770517bf892859e2eb" type="tarxz">mirrors://kde/stable/4.8.4/src/blinken-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="b979cbcd000266f49b620f556811a6846d434e2d" type="tarxz">mirrors://kde/stable/4.9.3/src/blinken-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>blinken</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>kdeedu</Package>
@@ -39,13 +39,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>>
+        </Update>
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>>
-        </Update>      
+        </Update>
         <Update release="7">
             <Date>2012-05-07</Date>
             <Version>4.8.3</Version>
