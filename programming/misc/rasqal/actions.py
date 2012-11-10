@@ -24,6 +24,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
+    pisitools.dosym("rasqal/rasqal.h", "/usr/include/rasqal.h")
     pisitools.insinto("%s/html" % docdir, "%s/%s/rasqal/*" % (get.installDIR(), docdir))
     pisitools.removeDir("%s/rasqal" % docdir)
     pisitools.dohtml("*.html")

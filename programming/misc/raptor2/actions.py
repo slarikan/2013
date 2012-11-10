@@ -25,6 +25,8 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
+    pisitools.dosym("raptor2/raptor.h", "/usr/include/raptor.h")
+    pisitools.dosym("raptor2/raptor2.h", "/usr/include/raptor2.h")
     pisitools.insinto("%s/html" % docdir, "%s/%s/html/raptor2/*" % (get.installDIR(), docdir))
     pisitools.removeDir("%s/html/raptor2" % docdir)
     pisitools.dohtml("*.html")
