@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A translator library for raster geospatial data formats (includes OGR support)</Summary>
         <Description>GDAL is a translator library for raster geospatial data formats which presents a single abstract data model to the calling application for all supported formats.</Description>
-        <Archive sha1sum="e5a2802933054050c6fb0b0a0e1f46b5dd195b0a" type="targz">http://download.osgeo.org/gdal/gdal-1.8.0.tar.gz</Archive>
+        <Archive sha1sum="7eda6a4d735b8d6903740e0acdd702b43515e351" type="targz">http://download.osgeo.org/gdal/gdal-1.9.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libgeotiff-devel</Dependency>
             <Dependency>giflib-devel</Dependency>
@@ -36,7 +36,7 @@
         </BuildDependencies>
         <Patches>
             <Patch>gdal-mysql.patch</Patch>
-            <Patch>1.7.2-ruby_cflags.patch</Patch>
+            <!--<Patch>1.7.2-ruby_cflags.patch</Patch>-->
             <Patch>gdal-1.5.1-python-install.patch</Patch>
             <Patch>gdal-1.6.0-swig-fix.patch</Patch>
             <Patch>gdal-1.5.0-install_name.patch</Patch>
@@ -84,6 +84,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-10</Date>
+            <Version>1.9.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2011-01-24</Date>
             <Version>1.8.0</Version>
