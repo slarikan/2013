@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>KDE4 PIM libraries</Summary>
         <Description>Contains KDE4 PIM (Personal Information Management) base libraries.</Description>
-        <Archive sha1sum="34f693ac71896d0d8653fc2a81323d1e91531bb2" type="tarxz">mirrors://kde/stable/4.8.4/src/kdepimlibs-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="a1aa00a83cfd7c1998927dcedc3843a0a0006740" type="tarxz">mirrors://kde/stable/4.9.3/src/kdepimlibs-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="1.7.1">akonadi-devel</Dependency>
+            <Dependency versionFrom="1.8.1">akonadi-devel</Dependency>
             <Dependency>boost-devel</Dependency>
             <Dependency>prison-devel</Dependency>
             <Dependency>gpgme-devel</Dependency>
@@ -26,14 +26,16 @@
             <Dependency>libical-devel</Dependency>
             <Dependency>libgpg-error-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="0">disable-pth-build.diff</Patch>
+          </Patches>
     </Source>
 
     <Package>
         <Name>kdepimlibs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="1.7.1">akonadi</Dependency>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="1.8.1">akonadi</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency>prison</Dependency>
             <Dependency>boost</Dependency>
@@ -52,7 +54,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile target="/usr/share/kde4/apps/libkholidays/plan2/holiday_tr_tr" permission="0644" owner="root">holiday_tr_tr</AdditionalFile>
+             <AdditionalFile target="/usr/share/kde4/apps/libkholidays/plan2/holiday_tr_tr" permission="0644" owner="root">holiday_tr_tr</AdditionalFile> 
         </AdditionalFiles>
     </Package>
 
@@ -75,6 +77,13 @@
     </Package>
 
     <History>
+        <Update release="60">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="59">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
