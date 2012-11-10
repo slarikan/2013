@@ -12,7 +12,6 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vif")
     autotools.configure("--disable-static \
                          --with-jpeg \
                          --with-libtiff=/usr/include \
@@ -24,9 +23,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    pisitools.dobin("bin/makegeo")
-
-    # pisitools.remove("/usr/lib/libgeotiff.a")
 
     pisitools.dodoc("README", "LICENSE")
