@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kscd</Name>
+        <Homepage>http://kde.org/applications/multimedia/kscd/</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>KSCD: KDE Audio Player</Summary>
+        <Description>KSCD: KDE Audio Player</Description>
+        <Archive sha1sum="42aa1db2d61fbb3e17b605aeb3f16517f3237a7a" type="tarxz">mirrors://kde/stable/4.9.3/src/kscd-4.9.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-runtime-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkcddb</Dependency>
+            <Dependency versionFrom="4.9.3">libkcompactdisc</Dependency>
+            <Dependency>musicbrainz-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kscd</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.3">libkcddb</Dependency>
+            <Dependency versionFrom="4.9.3">libkcompactdisc</Dependency>
+            <Dependency>musicbrainz-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+    </History>
+</PISI>

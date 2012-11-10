@@ -14,7 +14,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--disable-static \
                          --enable-python \
-                         --enable-ruby")
+                         --enable-php ")
 
 def build():
     autotools.make()

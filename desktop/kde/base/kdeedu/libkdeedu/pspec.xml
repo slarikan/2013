@@ -11,10 +11,9 @@
         <License>GPLv2+</License>
         <Summary>Libraries used by KDE Education applications</Summary>
         <Description>libkdeedu provides libraries used by KDE Education applications.</Description>
-        <Archive sha1sum="055fa35db3c482c61f8eab7d1912532823a88726" type="tarxz">mirrors://kde/stable/4.8.4/src/libkdeedu-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="5469a7c5cea78b922ddfd3427a3f8cefdd04d383" type="tarxz">mirrors://kde/stable/4.9.3/src/libkdeedu-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -22,7 +21,7 @@
         <Name>libkdeedu</Name>
         <IsA>library</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>kdeedu</Package>
@@ -39,8 +38,8 @@
         <IsA>library</IsA>
         <Summary>Development files for libkdeedu</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">libkdeedu</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -50,13 +49,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="7">
             <Date>2012-05-07</Date>
             <Version>4.8.3</Version>

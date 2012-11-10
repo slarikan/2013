@@ -57,9 +57,9 @@
             <Dependency>schroedinger-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>02_no-Werror.patch</Patch>
-            <!--Patch>99_ltmain_as-needed.patch</Patch-->
-            <Patch>remove_external_symbols.patch</Patch>
+            <!--Patch>02_no-Werror.patch</Patch>
+            <Patch>99_ltmain_as-needed.patch</Patch>
+            <Patch>remove_external_symbols.patch</Patch-->
             <Patch>directfb.patch</Patch>
         </Patches>
     </Source>

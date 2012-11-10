@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Client development library for MPD</Summary>
         <Description>Libmpdclient is a stable, documented, asynchronous API library for interfacing MPD in the C, C++ and Objective C languages.</Description>
-        <Archive sha1sum="00d88152c0e8599f56d01625da41b55d3a43c264" type="tarbz2">http://sourceforge.net/projects/musicpd/files/libmpdclient/2.6/libmpdclient-2.6.tar.bz2</Archive>
+        <Archive sha1sum="a8ec78f6a7ae051fbf1cc0f47564301423c281b0" type="tarbz2">mirrors://sourceforge/musicpd/libmpdclient-2.7.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-10</Date>
+            <Version>2.7</Version>
+            <Comment>version bump</Comment>
+            <Name>marcin bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2012-08-31</Date>
             <Version>2.6</Version>

@@ -12,13 +12,14 @@
         <IsA>library</IsA>
         <Summary>Geometry engine library for Geographic Information Systems</Summary>
         <Description>GEOS (Geometry Engine - Open Source) is a C++ port of the Java Topology Suite (JTS).</Description>
-        <Archive sha1sum="6917d6d1d4e79f58d9f931bf351024709fabbc5a" type="tarbz2">http://download.osgeo.org/geos/geos-3.2.2.tar.bz2</Archive>
+        <Archive sha1sum="791e2b36a9a6114c7f213fae3fc995960c35a428" type="tarbz2">http://download.osgeo.org/geos/geos-3.3.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
             <Dependency>ruby</Dependency>
             <Dependency>swig</Dependency>
         </BuildDependencies>
         <Patches>
+	    <Patch level="1">geos-ruby1.9.1-attempt.patch</Patch>
             <Patch>dontcompilepy.patch</Patch>
             <Patch>geos-gcc43.patch</Patch>
         </Patches>
@@ -58,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="14">
+            <Date>2012-11-09</Date>
+            <Version>3.3.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="13">
             <Date>2010-11-26</Date>
             <Version>3.2.2</Version>

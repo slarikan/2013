@@ -29,9 +29,9 @@
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>ltmain_as-needed.patch</Patch>
+            <!--Patch>ltmain_as-needed.patch</Patch>
             <Patch level="1">gstpb-0.10.15-cd-speed.patch</Patch>
-            <Patch level="1">align.patch</Patch>
+            <Patch level="1">align.patch</Patch-->
         </Patches>
     </Source>
 
@@ -56,6 +56,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/gst-plugins-base</Path>  
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>

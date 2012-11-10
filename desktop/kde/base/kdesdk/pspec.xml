@@ -12,12 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 Software Development Kit</Summary>
         <Description>kdesdk is a collection of applications and tools used by developers. In package, cervisia (CVS frontend), kompare (diff tool), lokalize (computer-aided translation system), umbrello (UML modeller and diagram tool), okteta (binary/hex editor) and kcachegrind (a browser for data produced by profiling tools e.g. cachegrind) applications are included.</Description>
-        <Archive sha1sum="62c176ee3dda5bbc013db7d1033ff89c105e3fd1" type="tarxz">mirrors://kde/stable/4.8.4/src/kdesdk-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="ad45975bcda3a23fc7b77d93c7e7c0bd5f2f351c" type="tarxz">mirrors://kde/stable/4.9.3/src/kdesdk-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-baseapps-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>subversion</Dependency>
@@ -34,19 +33,18 @@
     <Package>
         <Name>kdesdk</Name>
         <Icon>kdesdk</Icon>
-        <RuntimeDependencies>  
-            <Dependency versionFrom="4.8.2">qt-sql-sqlite</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.8.3">qt-sql-sqlite</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kde-baseapps</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/krazy-licensecheck</Path>
-            <Path fileType="library">/usr/lib/kde4/kabcformat_kdeaccounts.so</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kabc/formats/kdeaccountsplugin.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kdesdk</Path>
-        </Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+          </Files>
     </Package>
 
     <Package>
@@ -54,481 +52,28 @@
         <Summary>Development files for kdesdk</Summary>
         <RuntimeDependencies>
             <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/kde4/kprofilemethod.h</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cervisia</Name>
-        <Summary>A SCM frontend</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/cervisia</Path>
-            <Path fileType="executable">/usr/bin/cvsaskpass</Path>
-            <Path fileType="executable">/usr/bin/cvsservice</Path>
-            <Path fileType="library">/usr/lib/libkdeinit4_cervisia.so</Path>
-            <Path fileType="library">/usr/lib/libkdeinit4_cvsaskpass.so</Path>
-            <Path fileType="library">/usr/lib/libkdeinit4_cvsservice.so</Path>
-            <Path fileType="library">/usr/lib/kde4/cervisiapart.so</Path>
-            <Path fileType="config">/usr/share/config.kcfg/cervisiapart.kcfg</Path>
-            <Path fileType="config">/usr/share/kde4/apps/cervisia</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kconf_update/change_colors.pl</Path>
-            <Path fileType="data">/usr/share/kde4/apps/cervisiapart/cervisiaui.rc</Path>
-            <Path fileType="data">/usr/share/kde4/services/cvsservice.desktop</Path>
-            <Path fileType="data">/usr/share/applications/kde4/cervisia.desktop</Path>
-            <Path fileType="data">/usr/share/dbus-1/interfaces/*cervisia*</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/actions/*cervisia*</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/apps/*cervisia*</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kconf_update/cervisia*</Path>
-            <Path fileType="data">/usr/share/kde4/services/cervisiapart.desktop</Path>
-            <Path fileType="man">/usr/share/man/man1/cervisia.1</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/cervisia</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kdesdk-dolphin-plugins</Name>
-        <Summary>Dolphin plugins</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.3">kdebase</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/kde4/fileview*</Path>
-            <Path fileType="config">/usr/share/config.kcfg/fileview*</Path>
-            <Path fileType="data">/usr/share/kde4/services/fileview*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kapptemplate</Name>
-        <Icon>kapptemplate</Icon>
-        <Summary>KDE Template generator</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kapptemplate</Path>
-            <Path fileType="config">/usr/share/config.kcfg/kapptemplate.kcfg</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kapptemplate.desktop</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/apps/kapptemplate.png</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kdevappwizard</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kapptemplate</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kcachegrind</Name>
-        <Summary>A browser for data provided by profiling tools (like cachegrind)</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kcachegrind</Path>
-            <Path fileType="executable">/usr/bin/*2calltree</Path>
-            <Path fileType="config">/usr/share/kde4/apps/kcachegrind/kcachegrindui.rc</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/apps/kcachegrind.png</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kcachegrind/icons/hicolor/*/actions</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kcachegrind/tips</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kcachegrind.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kcachegrind</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kdesdk-kioslave</Name>
-        <Summary>KIO slaves from kdesdk</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.3">kdelibs</Dependency>
-            <Dependency versionFrom="1.4.5">apr</Dependency>
-            <Dependency versionFrom="1.6.17">subversion</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/kde4/kio_perldoc.so</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kio_perldoc/pod2html.pl</Path>
-            <Path fileType="data">/usr/share/kde4/services/perldoc.protocol</Path>
-            <Path fileType="executable">/usr/bin/kio_svn_helper</Path>
-            <Path fileType="library">/usr/lib/kde4/kio_svn.so</Path>
-            <Path fileType="data">/usr/share/kde4/services/svn*.protocol</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/actions/*kiosvn.*</Path>
-            <Path fileType="data">/usr/share/kde4/services/ServiceMenus/subversion.desktop</Path>
-            <Path fileType="data">/usr/share/kde4/services/ServiceMenus/subversion_toplevel.desktop</Path>
-            <Path fileType="library">/usr/lib/kde4/kded_ksvnd.so</Path>
-            <Path fileType="data">/usr/share/dbus-1/interfaces/org.kde.ksvnd.xml</Path>
-            <Path fileType="data">/usr/share/kde4/services/kded/ksvnd.desktop</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kmtrace</Name>
-        <Summary>Assist with malloc debugging using glibc's mtrace functionality</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency release="current">kmtrace-libs</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kmtrace</Path>
-            <Path fileType="executable">/usr/bin/demangle</Path>
-            <Path fileType="executable">/usr/bin/kmmatch</Path>
-            <Path fileType="executable">/usr/bin/kminspector</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kmtrace</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kmtrace-libs</Name>
-        <Summary>Runtime libraries for kmtrace</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/libktrace.so.4*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kmtrace-devel</Name>
-        <Summary>Developer files for kmtrace</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include/kde4/ktrace.h</Path>
-            <Path fileType="library">/usr/lib/libktrace.so</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kompare</Name>
-        <Summary>Diff tool</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency release="current">kompare-libs</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kompare</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kompare</Path>
-            <Path fileType="library">/usr/lib/libkomparedialogpages.so</Path>
-            <Path fileType="library">/usr/lib/libkomparediff2.so</Path>
-            <Path fileType="data">/usr/share/kde4/servicetypes/kompare*.desktop</Path>
-            <Path fileType="library">/usr/lib/kde4/komparenavtreepart.so</Path>
-            <Path fileType="library">/usr/lib/kde4/komparepart.so</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kompare.desktop</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/apps/kompare.*</Path>
-            <Path fileType="data">/usr/share/kde4/services/komparenavtreepart.desktop</Path>
-            <Path fileType="data">/usr/share/kde4/services/komparepart.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/kompare</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kompare-libs</Name>
-        <Summary>Runtime libraries for kompare</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/libkompare*.so.*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kompare-devel</Name>
-        <Summary>Developer files for kompare</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include/kde4/kompare/kompareinterface.h</Path>
-            <Path fileType="library">/usr/lib/libkompareinterface.so</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kpartloader</Name>
-        <Summary>KPart loader</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kpartloader</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kpartloader/kpartloaderui.rc</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kstartperf</Name>
-        <Summary>Startup time measurement tool for KDE applications</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kstartperf</Path>
-            <Path fileType="library">/usr/lib/kde4/kstartperf.so</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kuiviewer</Name>
-        <Summary>Displays designer UI files</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/kuiviewer</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kuiviewer</Path>
-            <Path fileType="data">/usr/share/kde4/apps/kuiviewerpart</Path>
-            <Path fileType="library">/usr/lib/kde4/kuiviewerpart.so</Path>
-            <Path fileType="data">/usr/share/applications/kde4/kuiviewer.desktop</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/apps/kuiviewer.*</Path>
-            <Path fileType="data">/usr/share/kde4/services/kuiviewer_part.desktop</Path>
-            <Path fileType="library">/usr/lib/kde4/quithumbnail.so</Path>
-            <Path fileType="data">/usr/share/kde4/services/designerthumbnail.desktop</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>lokalize</Name>
-        <Summary>Computer-aided translation system</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="1.2.14">hunspell</Dependency>
-            <Dependency>translate-toolkit</Dependency>
-            <Dependency versionFrom="4.8.4">python-kross</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/lokalize</Path>
-            <Path fileType="data">/usr/share/kde4/apps/lokalize</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/apps/lokalize.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/approved.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/*msgid*.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/catalogmanager.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/diff.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/insert_*.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/next*.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/prev*.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/search*.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/actions/transsearch.*</Path>
-            <Path fileType="data">/usr/share/config.kcfg/lokalize.kcfg</Path>
-            <Path fileType="data">/usr/share/applications/kde4/lokalize.desktop</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/lokalize</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>okteta</Name>
-        <Summary>Binary/Hex editor</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency release="current">okteta-libs</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/okteta</Path>
-            <Path fileType="data">/usr/share/kde4/apps/okteta</Path>
-            <Path fileType="data">/usr/share/kde4/apps/oktetapart</Path>
-            <Path fileType="data">/usr/share/mime/packages/okteta.xml</Path>
-            <Path fileType="library">/usr/lib/kde4/oktetapart.so</Path>
-            <Path fileType="data">/usr/share/applications/kde4/okteta.desktop</Path>
-            <Path fileType="data">/usr/share/kde4/config/okteta-structures.knsrc</Path>
-            <Path fileType="data">/usr/share/icons/hicolor/*/apps/okteta.*</Path>
-            <Path fileType="data">/usr/share/kde4/services/oktetapart.desktop</Path>
-            <Path fileType="library">/usr/lib/kde4/libkbytearrayedit.so</Path>
-            <Path fileType="data">/usr/share/kde4/services/kbytearrayedit.desktop</Path>
-            <Path fileType="data">/usr/share/config.kcfg/structviewpreferences.kcfg</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/okteta</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>okteta-libs</Name>
-        <Summary>Runtime libraries for okteta</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="2.0.2">qca2</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/libkasten*.so.*</Path>
-            <Path fileType="library">/usr/lib/libokteta*.so.*</Path>
-            <Path fileType="library">/usr/lib/kde4/plugins/designer/oktetadesignerplugin.so</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>okteta-devel</Name>
-        <Summary>Developer files for okteta</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="header">/usr/include/kde4/KDE/Okteta*</Path>
-            <Path fileType="header">/usr/include/kde4/okteta*</Path>
-            <Path fileType="library">/usr/lib/libokteta*.so</Path>
-            <Path fileType="header">/usr/include/kde4/KDE/Kasten*</Path>
-            <Path fileType="header">/usr/include/kde4/kasten*</Path>
-            <Path fileType="library">/usr/lib/libkasten*.so</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kdesdk-scripts</Name>
-        <Summary>KDE SDK scripts</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/svnrevertlast</Path>
-            <Path fileType="executable">/usr/bin/fixuifiles</Path>
-            <Path fileType="executable">/usr/bin/cvscheck</Path>
-            <Path fileType="executable">/usr/bin/extend_dmalloc</Path>
-            <Path fileType="executable">/usr/bin/extractattr</Path>
-            <Path fileType="executable">/usr/bin/noncvslist</Path>
-            <Path fileType="executable">/usr/bin/pruneemptydirs</Path>
-            <Path fileType="executable">/usr/bin/cvsrevertlast</Path>
-            <Path fileType="executable">/usr/bin/create_makefile</Path>
-            <Path fileType="executable">/usr/bin/colorsvn</Path>
-            <Path fileType="executable">/usr/bin/cvslastchange</Path>
-            <Path fileType="executable">/usr/bin/svngettags</Path>
-            <Path fileType="executable">/usr/bin/create_svnignore</Path>
-            <Path fileType="executable">/usr/bin/svnchangesince</Path>
-            <Path fileType="executable">/usr/bin/build-progress.sh</Path>
-            <Path fileType="executable">/usr/bin/package_crystalsvg</Path>
-            <Path fileType="executable">/usr/bin/svnbackport</Path>
-            <Path fileType="executable">/usr/bin/svnlastlog</Path>
-            <Path fileType="executable">/usr/bin/cxxmetric</Path>
-            <Path fileType="executable">/usr/bin/kdemangen.pl</Path>
-            <Path fileType="executable">/usr/bin/cvsforwardport</Path>
-            <Path fileType="executable">/usr/bin/includemocs</Path>
-            <Path fileType="executable">/usr/bin/svnlastchange</Path>
-            <Path fileType="executable">/usr/bin/wcgrep</Path>
-            <Path fileType="executable">/usr/bin/qtdoc</Path>
-            <Path fileType="executable">/usr/bin/nonsvnlist</Path>
-            <Path fileType="executable">/usr/bin/svnforwardport</Path>
-            <Path fileType="executable">/usr/bin/create_cvsignore</Path>
-            <Path fileType="executable">/usr/bin/svnintegrate</Path>
-            <Path fileType="executable">/usr/bin/kdekillall</Path>
-            <Path fileType="executable">/usr/bin/create_makefiles</Path>
-            <Path fileType="executable">/usr/bin/cvsbackport</Path>
-            <Path fileType="executable">/usr/bin/fixkdeincludes</Path>
-            <Path fileType="executable">/usr/bin/kde-systemsettings-tree.py</Path>
-            <Path fileType="executable">/usr/bin/zonetab2pot.py</Path>
-            <Path fileType="executable">/usr/bin/kde_generate_export_header</Path>
-            <Path fileType="executable">/usr/bin/cvs-clean</Path>
-            <Path fileType="executable">/usr/bin/kdelnk2desktop.py</Path>
-            <Path fileType="executable">/usr/bin/findmissingcrystal</Path>
-            <Path fileType="executable">/usr/bin/adddebug</Path>
-            <Path fileType="executable">/usr/bin/cvsversion</Path>
-            <Path fileType="executable">/usr/bin/cheatmake</Path>
-            <Path fileType="executable">/usr/bin/cvsblame</Path>
-            <Path fileType="executable">/usr/bin/optimizegraphics</Path>
-            <Path fileType="executable">/usr/bin/cvsaddcurrentdir</Path>
-            <Path fileType="executable">/usr/bin/fix-include.sh</Path>
-            <Path fileType="executable">/usr/bin/kdedoc</Path>
-            <Path fileType="executable">/usr/bin/svn-clean</Path>
-            <Path fileType="executable">/usr/bin/png2mng.pl</Path>
-            <Path fileType="executable">/usr/bin/extractrc</Path>
-            <Path fileType="executable">/usr/bin/makeobj</Path>
-            <Path fileType="executable">/usr/bin/cvslastlog</Path>
-            <Path fileType="executable">/usr/bin/svnversions</Path>
-            <Path fileType="man">/usr/share/man/man1/adddebug*</Path>
-            <Path fileType="man">/usr/share/man/man1/cheatmake*</Path>
-            <Path fileType="man">/usr/share/man/man1/create_cvsignore*</Path>
-            <Path fileType="man">/usr/share/man/man1/create_makefile*</Path>
-            <Path fileType="man">/usr/share/man/man1/create_makefiles*</Path>
-            <Path fileType="man">/usr/share/man/man1/cvscheck*</Path>
-            <Path fileType="man">/usr/share/man/man1/cvslastchange*</Path>
-            <Path fileType="man">/usr/share/man/man1/cvslastlog*</Path>
-            <Path fileType="man">/usr/share/man/man1/cvsrevertlast*</Path>
-            <Path fileType="man">/usr/share/man/man1/cxxmetric*</Path>
-            <Path fileType="man">/usr/share/man/man1/demangle*</Path>
-            <Path fileType="man">/usr/share/man/man1/extend_dmalloc*</Path>
-            <Path fileType="man">/usr/share/man/man1/extractrc*</Path>
-            <Path fileType="man">/usr/share/man/man1/fixincludes*</Path>
-            <Path fileType="man">/usr/share/man/man1/pruneemptydirs*</Path>
-            <Path fileType="man">/usr/share/man/man1/qtdoc*</Path>
-            <Path fileType="man">/usr/share/man/man1/reportview*</Path>
-            <Path fileType="man">/usr/share/man/man1/transxx*</Path>
-            <Path fileType="man">/usr/share/man/man1/zonetab2pot.py*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>kdesdk-strigi-analyzer</Name>
-        <Summary>Strigi anayzers from kdesdk</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="0.7.7">libstreamanalyzer</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="library">/usr/lib/strigi</Path>
-            <Path fileType="data">/usr/share/strigi</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>poxml</Name>
-        <Summary>Text utilities from kdesdk</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/po2xml</Path>
-            <Path fileType="executable">/usr/bin/split2po</Path>
-            <Path fileType="executable">/usr/bin/swappo</Path>
-            <Path fileType="executable">/usr/bin/xml2pot</Path>
-            <Path fileType="man">/usr/share/man/man1/po2xml*</Path>
-            <Path fileType="man">/usr/share/man/man1/split2po*</Path>
-            <Path fileType="man">/usr/share/man/man1/swappo*</Path>
-            <Path fileType="man">/usr/share/man/man1/xml2pot*</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>umbrello</Name>
-        <Summary>UML modeller and UML diagram tool</Summary>
-        <RuntimeDependencies>
-            <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="1.1.26">libxslt</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="executable">/usr/bin/umbrello</Path>
-            <Path fileType="data">/usr/share/applications/kde4/umbrello.desktop</Path>
-            <Path fileType="data">/usr/share/kde4/apps/umbrello</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/apps/umbrello.*</Path>
-            <Path fileType="data">/usr/share/icons/*color/*/mimetypes/application-x-uml.png</Path>
-            <Path fileType="data">/usr/share/kde4/apps/umbrello/icons/hicolor/*/actions</Path>
-            <Path fileType="doc">/usr/share/doc/kde4/html/en/umbrello</Path>
+            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="61">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="60">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="59">
             <Date>2012-05-06</Date>
             <Version>4.8.3</Version>

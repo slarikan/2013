@@ -16,7 +16,7 @@
         <IsA>library</IsA>
         <Summary>KDE4 core libraries</Summary>
         <Description>Contains base KDE4 libraries needed by almost all KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="35cd199a30d84eb37b2b213fed5ee3adf810ea49">mirrors://kde/stable/4.8.4/src/kdelibs-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="d5d60c431159b17a753ee7427d9ca129d550e3f8">mirrors://kde/stable/4.9.3/src/kdelibs-4.9.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-webkit-devel</Dependency>
@@ -64,27 +64,8 @@
             <Dependency>openexr-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Gentoo Patches --> 
-            <Patch level="1">suse/76e0376d-kdelibs-soprano-276-1.diff</Patch>
-            <Patch level="1">suse/bde5aad1-kdelibs-soprano-276-2.diff</Patch> 
-    
-            <!-- Gentoo Patches --> 
-            <Patch level="1">gentoo/kdelibs-4.8.4-power.patch</Patch>
-    
-            <!-- Fedora Patches -->
-            <Patch level="1">fedora/kdelibs-4.5.80-no_rpath.patch</Patch>
-            <Patch level="1">fedora/kdelibs-4.8.3-kdeclarative-install-location.patch</Patch>
-
-            <!-- Mandriva patches -->
-            <Patch>mandriva/kdelibs-4.4.0-add-default-places.patch</Patch>
-            <Patch>mandriva/kdelibs-4.5.85-add-extra-catalogs.patch</Patch>
-
-            <!-- Ubuntu patches -->
-            <Patch level="1">ubuntu/14_hardcode_ptm_device.diff</Patch>
-            <Patch level="1">ubuntu/kubuntu_06_user_disk_mounting.diff</Patch>
-            <Patch level="1">ubuntu/kubuntu_77_no_kbookmark_write_error.diff</Patch>
-            <!--<Patch level="1">ubuntu/kubuntu_77_ksambashare.diff</Patch>-->
-
+            <Patch level="1">fedora/kdelibs-4.9.1-FindKipi-libkipi2.patch</Patch>
+            <Patch level="1">fedora/kdelibs-4.9.2-FindSamba_samba4.patch</Patch>           
             <!-- Pardus patches-->
             <Patch level="1">pardus/default-useragent.diff</Patch>
     
@@ -107,7 +88,6 @@
             <Patch level="1">pardus/extend-default-preview-options.diff</Patch>
             <Patch level="1">pardus/remove-trashid-prefix-from-filename-while-restoring.patch</Patch>
             <Patch level="1">pardus/kdelibs-4.3.1-CVE-2009-2702.patch</Patch>
-            <Patch level="1">pardus/default-browser-configuration-to-open-XML files.diff</Patch>
     
             <!-- FIXME -->
             <!--<Patch level="1">pardus/change-default-wallpaper.diff</Patch>-->
@@ -203,6 +183,13 @@
     </Package>
 
     <History>
+        <Update release="120">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="119">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
