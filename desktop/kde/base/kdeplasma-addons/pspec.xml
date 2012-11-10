@@ -13,15 +13,14 @@
         <Summary>Various addons for KDE4 Plasma desktop</Summary>
         <Description>kdeplasma-addons package is a compilation of Plasma items (like Lancelot KDE menu, various plasmoids and Plasma themes) for KDE4.</Description>
         <!-- FIXME: Split this package, at least weather wallpaper plugin. It should depend on kdeartwork-wallpapers to work. TODO: Fix in 2011 -->
-        <Archive sha1sum="725d26e3aa59d02bc73a77b43e6aae92bc961254" type="tarxz">mirrors://kde/stable/4.8.4/src/kdeplasma-addons-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="e8b642b325acf2f7c8819e57176bbc2357cf78bd" type="tarxz">mirrors://kde/stable/4.9.3/src/kdeplasma-addons-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-workspace-devel</Dependency>
-            <Dependency versionFrom="4.8.4">marble</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-baseapps-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
+            <Dependency versionFrom="4.9.3">marble</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="2.0.10">eigen</Dependency>
             <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
@@ -46,14 +45,13 @@
     <Package>
         <Name>kdeplasma-addons</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency>qt-webkit</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.9.3">kde-baseapps</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
             <!-- kexiv2 is needed -->
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.8.4">marble</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.3">marble</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
             <Dependency versionFrom="2.7.1">soprano</Dependency>
@@ -89,6 +87,13 @@
     </Package>
 
     <History>
+        <Update release="50">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="49">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
