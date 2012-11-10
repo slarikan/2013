@@ -14,19 +14,18 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 PIM Runtime Environment</Summary>
         <Description>kdepim-runtime contains KDE4 PIM (Personal Information Management) runtime environment like akonadi agents.</Description>
-        <Archive sha1sum="3a375afb62b4ee01d491c4787b559132317aa983" type="tarxz">mirrors://kde/stable/4.8.4/src/kdepim-runtime-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="85e293b3894e5a6c529c33e5ed72964a0172e920" type="tarxz">mirrors://kde/stable/4.9.3/src/kdepim-runtime-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="1.7.1">akonadi-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="1.8.1">akonadi-devel</Dependency>
             <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
             <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-add-sqlite-support-to-akonadi-kcm.patch</Patch>
+<!--             <Patch level="1">0001-add-sqlite-support-to-akonadi-kcm.patch</Patch> -->
             <Patch level="1">kdepim-runtime-4.4.93-show_akonadi_kcm.patch</Patch>
         </Patches>
     </Source>
@@ -34,10 +33,9 @@
     <Package>
         <Name>kdepim-runtime</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
-            <Dependency versionFrom="1.7.1">akonadi</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
+            <Dependency versionFrom="1.8.1">akonadi</Dependency>
             <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
             <Dependency versionFrom="2.7.5">soprano</Dependency>
             <Dependency>libstreamanalyzer</Dependency>
@@ -58,13 +56,20 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="19">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>     
+        </Update>
         <Update release="19">
             <Date>2012-05-05</Date>
             <Version>4.8.3</Version>
