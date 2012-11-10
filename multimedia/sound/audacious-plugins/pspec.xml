@@ -13,7 +13,7 @@
 	<PartOf>applications.multimedia</PartOf>
         <Summary>plugins for audacious</Summary>
         <Description>plugins for audacious</Description>
-        <Archive sha1sum="2ce65a9d9a2d5d5cbe41befa70c89f36fff43286" type="tarbz2">http://distfiles.audacious-media-player.org/audacious-plugins-3.3.tar.bz2</Archive>
+        <Archive sha1sum="869d3820263ff35609bfc6f2e69885a00d660513" type="tarbz2">http://distfiles.audacious-media-player.org/audacious-plugins-3.3.2.tar.bz2</Archive>
 	<BuildDependencies>
 	  <Dependency version="3.3">audacious-devel</Dependency>
 	  <Dependency>unzip</Dependency>  
@@ -92,6 +92,13 @@
         </Files>
     </Package>
     <History>
+	    <Update release="9">
+            <Date>2012-10-11</Date>
+            <Version>3.3.2</Version>
+            <Comment>Version Bump to new release</Comment>
+            <Name>Serdar Soytetir</Name>
+	        <Email>tulliana@gmail.com</Email>
+       </Update>
         <Update release="8">
             <Date>2012-08-27</Date>
             <Version>3.3</Version>

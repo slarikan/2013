@@ -19,7 +19,7 @@
 	 Tweak the sound with the graphical equalizer or experiment with LADSPA effects. Enjoy the modern GTK-themed interface or change things up with Winamp classic skins. 
 	 Use the plugins included with Audacious to fetch lyrics for your music, to set an alarm in the morning, and more.
        </Description>
-       <Archive sha1sum="3c006676f1dbc2376c098855b93606da0f58f7ea" type="tarbz2">http://distfiles.audacious-media-player.org/audacious-3.3.tar.bz2</Archive>
+       <Archive sha1sum="bab3bcb267b8b333570c85cae9590470fe509eb9" type="tarbz2">http://distfiles.audacious-media-player.org/audacious-3.3.2.tar.bz2</Archive>
        <BuildDependencies>
 	  <Dependency>dbus-glib-devel</Dependency>
           <Dependency>libmcs-devel</Dependency>
@@ -71,26 +71,33 @@
         </Files>
     </Package>
     <History>
-      <Update release="8">
+	    <Update release="9">
+            <Date>2012-10-11</Date>
+            <Version>3.3.2</Version>
+            <Comment>Version Bump to new release</Comment>
+            <Name>Serdar Soytetir</Name>
+	        <Email>tulliana@gmail.com</Email>
+       </Update>
+        <Update release="8">
             <Date>2012-08-28</Date>
             <Version>3.3</Version>
             <Comment>Version Bump to new release</Comment>
             <Name>Osman Erkan</Name>
-	    <Email>namso-01@hotmail.it</Email>
-        </Update>
-      <Update release="7">
-            <Date>2012-01-10</Date>
-            <Version>3.2</Version>
-            <Comment>Version Bump to new release</Comment>
-            <Name>Erdinç Gültekin</Name>
-	    <Email>erdincgultekin@gmail.com</Email>
-        </Update>
+	        <Email>namso-01@hotmail.it</Email>
+       </Update>
+       <Update release="7">
+           <Date>2012-01-10</Date>
+           <Version>3.2</Version>
+           <Comment>Version Bump to new release</Comment>
+           <Name>Erdinç Gültekin</Name>
+	       <Email>erdincgultekin@gmail.com</Email>
+       </Update>
        <Update release="6">
-            <Date>2012-01-10</Date>
-            <Version>3.2.02</Version>
-            <Comment>Version Bump to beta release</Comment>
-            <Name>Erdinç Gültekin</Name>
-	    <Email>erdincgultekin@gmail.com</Email>
+           <Date>2012-01-10</Date>
+           <Version>3.2.02</Version>
+           <Comment>Version Bump to beta release</Comment>
+           <Name>Erdinç Gültekin</Name>
+	       <Email>erdincgultekin@gmail.com</Email>
         </Update>
         <Update release="5">
             <Date>2010-11-22</Date>
