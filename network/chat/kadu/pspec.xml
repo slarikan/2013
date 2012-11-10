@@ -11,7 +11,7 @@
         <IsA>app:gui</IsA>
         <Summary>Polish instant messenger.</Summary>
         <Description>Dynamically evolving instant messenger compatible with the Gadu-Gadu and Jabber/XMPP protocol. It can be run on all platforms supported by the Qt toolkit.</Description>
-        <Archive sha1sum="86652d954a7e35f44d48bcdb0bcb8454d6f48c32" type="tarbz2">http://download.kadu.im/stable/kadu-0.12.2.tar.bz2</Archive>
+        <Archive sha1sum="9377f74e10a57d920c3b5e41ce2e3e7fe4816013" type="tarbz2">http://download.kadu.im/stable/kadu-0.12.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -22,9 +22,11 @@
             <Dependency>qt-webkit-devel</Dependency>
             <Dependency>libmpdclient-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
+            <Dependency>aspell-devel</Dependency>
         </BuildDependencies>
         <Patches/>
     </Source>
+
     <Package>
         <Name>kadu</Name>
         <RuntimeDependencies>
@@ -48,7 +50,7 @@
             <Path fileType="data">/usr/share/kadu</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>kadu-devel</Name>
         <Summary>Development files for kadu</Summary>
@@ -61,11 +63,11 @@
             <Path fileType="data">/usr/share/kadu/sdk</Path>
         </Files>
     </Package>
-    
+
     <History>
         <Update release="1">
-            <Date>2012-10-22</Date>
-            <Version>0.12.2</Version>
+            <Date>2012-11-11</Date>
+            <Version>0.12.3</Version>
             <Comment>First release for Anka.</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
