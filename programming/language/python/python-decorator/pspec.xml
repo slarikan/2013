@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python module to simplify the usage of decorators</Summary>
         <Description>python-decorator simplifies the usage of decorators for the average programmer.</Description>
-        <Archive sha1sum="cb25e377fe0a2e0152ffb77789c6bb53c5f02384" type="targz">http://pypi.python.org/packages/source/d/decorator/decorator-3.2.1.tar.gz</Archive>
+        <Archive sha1sum="66474034467c56cc866ef0a87793480a4087aa7e" type="targz">http://pypi.python.org/packages/source/d/decorator/decorator-3.4.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-nose</Dependency>
         </BuildDependencies>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-11</Date>
+            <Version>3.4.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-12-27</Date>
             <Version>3.2.1</Version>
