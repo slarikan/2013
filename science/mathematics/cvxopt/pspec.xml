@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Convex optimization based on the Python programming language</Summary>
         <Description>CVXOPT is a free software package for convex optimization based on the Python programming language. Its main purpose is to make the development of software for convex optimization applications straightforward by building on Python’s extensive standard library and on the strengths of Python as a high-level programming language.</Description>
-        <Archive sha1sum="fe048bd21bb33eb99adb2759eda6f06d7520aa31" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/cvxopt-1.1.3.tar.gz</Archive>
+        <Archive sha1sum="6b02c9c022f391de4afb0bc1f6fb297aa0dc9efa" type="targz"> http://abel.ee.ucla.edu/src/cvxopt-1.1.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gsl-devel</Dependency>
             <Dependency>glpk-devel</Dependency>
@@ -23,7 +23,9 @@
             <Dependency>SuiteSparse-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>pardus.patch</Patch>
+            <!--<Patch>pardus.patch</Patch>-->
+	    <!--<Patch level="0">python-cvxopt-setup.patch</Patch>-->
+	    <Patch level="0">python-cvxopt-fixglpkinclude.patch</Patch>
         </Patches>
     </Source>
 
@@ -45,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-11</Date>
+            <Version>1.1.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-01-28</Date>
             <Version>1.1.3</Version>
