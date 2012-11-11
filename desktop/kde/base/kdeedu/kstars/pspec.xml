@@ -12,13 +12,13 @@
         <IsA>app:gui</IsA>
         <Summary>A desktop planetarium for KDE</Summary>
         <Description>KStars is a Desktop Planetarium for KDE. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects, all 8 planets, the Sun and Moon, and thousands of comets and asteroids.</Description>
-        <Archive sha1sum="579cec66cfb172258d2967872a2b9c32d4514c75" type="tarxz">mirrors://kde/stable/4.8.4/src/kstars-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="35f88135c42483144d17013c520243e7a77bde95" type="tarxz">mirrors://kde/stable/4.9.3/src/kstars-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu-devel</Dependency>    
+            <Dependency versionFrom="0.9">indilib-devel</Dependency>
             <Dependency versionFrom="2.0.15">eigen</Dependency>
             <Dependency>xplanet</Dependency>
-            <Dependency versionFrom="0.9">indilib-devel</Dependency>
             <Dependency>cfitsio-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,14 +26,12 @@
     <Package>
         <Name>kstars</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu</Dependency>    
+            <Dependency versionFrom="0.9">indilib</Dependency>    
             <Dependency>xplanet</Dependency>
-            <Dependency versionFrom="0.9">indilib</Dependency>
             <Dependency>cfitsio</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -46,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
