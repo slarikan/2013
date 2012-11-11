@@ -35,7 +35,6 @@
         <Name>flickcurl-devel</Name>
         <RuntimeDependencies>
             <Dependency release="current">flickcurl</Dependency>
-            <Dependency>raptor-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
