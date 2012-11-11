@@ -15,5 +15,5 @@ WorkDir = "simplejson-%s" % get.srcVERSION()
 def install():
     pythonmodules.install()
 
-    pisitools.insinto("%s/%s/html" % (get.docDIR(), get.srcNAME()),"docs/*")
+    #pisitools.insinto("%s/%s/html" % (get.docDIR(), get.srcNAME()))
     pisitools.dodoc("LICENSE.txt")
