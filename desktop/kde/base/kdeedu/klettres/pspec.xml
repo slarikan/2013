@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>An alphabet learning application</Summary>
         <Description>KLettres is an application specially designed to help the user to learn alphabet in a new language and then to learn to read simple syllables. The user can be a young child aged from two and a half or an adult that wants to learn the basics of a foreign language.</Description>
-        <Archive sha1sum="b5dc64cdd09f265cd7a84d0ee14a93ea4ae067be" type="tarxz">mirrors://kde/stable/4.8.4/src/klettres-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="a651c0ee96ba4cdfe0cbbd3dc555f52218eb0830" type="tarxz">mirrors://kde/stable/4.9.3/src/klettres-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu-devel</Dependency>    
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,12 +23,10 @@
     <Package>
         <Name>klettres</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu</Dependency>    
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -40,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="8">
             <Date>2012-06-05</Date>
             <Version>4.8.4</Version>
