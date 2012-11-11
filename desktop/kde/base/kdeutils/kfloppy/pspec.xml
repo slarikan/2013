@@ -13,24 +13,17 @@
         <IsA>app:gui</IsA>
         <Summary>A floppy formatter</Summary>
         <Description>KFloppy is a utility that provides a straightforward graphical means to format 3.5" and 5.25" floppy disks.</Description>
-        <Archive sha1sum="597e7d1fa546a898b4e46a9750632be8dc8a01a7" type="tarxz">mirrors://kde/stable/4.8.4/src/kfloppy-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="5ea028f8e2628cef27b331b2a5c087efb45c4864" type="tarxz">mirrors://kde/stable/4.9.3/src/kfloppy-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kfloppy</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
         </RuntimeDependencies>
-        <Conflict>
-            <Package>kdeutils</Package>
-            <Package>kdeutils4</Package>
-            <Package>kdeutils-plugin-rar</Package>    
-        </Conflict>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -40,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="5">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
