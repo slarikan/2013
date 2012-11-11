@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>python-cssutils</Name>
-        <Homepage>http://code.google.com/p/cssutils/</Homepage>
+        <Homepage>https://bitbucket.org/cthedot/cssutils/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>CSS Cascading Style Sheets library for Python</Summary>
         <Description>python-cssutils is a Python package to parse and build CSS Cascading Style Sheets. DOM only, not any rendering facilities!</Description>
-        <Archive sha1sum="95a25352ab067c7b13aa82c5f6a5408cf82a2678" type="zip">http://cssutils.googlecode.com/files/cssutils-0.9.7.zip</Archive>
+        <Archive sha1sum="ac8d4ff2e56d7e4d4a37c6c1944cbdd5fdffabaa" type="zip">https://bitbucket.org/cthedot/cssutils/downloads/cssutils-0.9.9.zip</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,15 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-11</Date>
+            <Version>0.9.9</Version>
+            <Comment>Version bump
+	       * new homepage
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-12-10</Date>
             <Version>0.9.7</Version>

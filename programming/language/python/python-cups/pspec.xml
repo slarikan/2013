@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python interface to the CUPS API</Summary>
         <Description>python-cups contains python bindings to wrap the CUPS API.</Description>
-        <Archive sha1sum="994432b3dab7d44985c4cf87f18ec4c42e648915" type="tarbz2">http://cyberelk.net/tim/data/pycups/pycups-1.9.55.tar.bz2</Archive>
+        <Archive sha1sum="d9742c94f9baaaf002a2d37e0e80bc5f779e312c" type="tarbz2">http://cyberelk.net/tim/data/pycups/pycups-1.9.62.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
         </BuildDependencies>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-11-11</Date>
+            <Version>1.9.62</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="21">
             <Date>2011-05-06</Date>
             <Version>1.9.55</Version>

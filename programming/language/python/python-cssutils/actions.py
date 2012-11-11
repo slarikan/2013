@@ -9,7 +9,7 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import pythonmodules
 
-WorkDir="%s-0.9.7" % get.srcNAME()[7:]
+WorkDir="%s-0.9.9" % get.srcNAME()[7:]
 examples = "%s/%s/examples" % (get.docDIR(), get.srcNAME())
 
 def build():
@@ -23,5 +23,5 @@ def install():
     pythonmodules.install()
     pisitools.insinto(examples, "examples/*")
 
-    pisitools.dodoc("COPYING*", "CHANGELOG.txt", "README.txt")
-    pisitools.dohtml("docs/html/*")
+    pisitools.dodoc("COPYING*", "PKG-INFO", "README.txt")
+    #pisitools.dohtml("docs/html/*")
