@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>FormEncode is a validation and form generation package for Python</Summary>
         <Description>python-FormEncode validates and converts nested structures. It allows for a declarative form of defining the validation, and decoupled processes for filling and generating forms.</Description>
-        <Archive sha1sum="573359ec15934be9b1e74c11e1796b8df872c677" type="targz">http://pypi.python.org/packages/source/F/FormEncode/FormEncode-1.2.2.tar.gz</Archive>
+        <Archive sha1sum="0fa5f695fd7a94da396fa4812c27587bc020ee33" type="targz">http://pypi.python.org/packages/source/F/FormEncode/FormEncode-1.2.4.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-12</Date>
+            <Version>1.2.4</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-13</Date>
             <Version>1.2.2</Version>
