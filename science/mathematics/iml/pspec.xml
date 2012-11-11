@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Integer Matrix Library</Summary>
         <Description>IML is a free library of C source code which implements algorithms for computing exact solutions to dense systems of linear equations over the integers.</Description>
-        <Archive sha1sum="27ab1646945f7a195386e782b65e90d6aaab3646" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/iml-1.0.2.tar.gz</Archive>
+	<Archive sha1sum="3783e6e0c5aacd0113f30eb731d12de981de6a5e" type="targz">http://www.cs.uwaterloo.ca/~astorjoh/iml-1.0.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gmp-devel</Dependency>
         </BuildDependencies>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-11</Date>
+            <Version>1.0.3</Version>
+            <Comment>ver bump</Comment>
+            <Name>canatan</Name>
+            <Email>qazsew@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-01-28</Date>
             <Version>1.0.2</Version>
@@ -65,4 +72,4 @@
             <Email>tuxposta@gmail.com</Email>
         </Update>
     </History>
-</PISI>
+</PISI> 

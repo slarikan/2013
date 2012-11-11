@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 
 def setup():
     autotools.configure("--enable-shared \
-                         --disable-static")
+--disable-static")
 
 def build():
     autotools.make()
@@ -19,4 +19,4 @@ def install():
 
     pisitools.removeDir("/usr/share/iml")
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "doc/liblink", "doc/libroutines")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "doc/liblink", "doc/libroutines") 

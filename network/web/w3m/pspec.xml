@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>w3m</Name>
-        <Homepage></Homepage>
+        <Homepage>http://w3m.sourceforge.net/</Homepage>
         <Packager>
             <Name>Pardus</Name>
             <Email>admins@pardus.org.tr</Email>
@@ -14,7 +14,10 @@
         <Description>text based web browser</Description>
 	<Archive sha1sum="444b6c8cf7094ee95f8e9de96b37f814b9d83237" type="targz">file:///home/q/Downloads/w3m-0.5.3.tar.gz</Archive>
         <BuildDependencies>
-	    
+	    <Dependency>ncurses</Dependency>
+            <Dependency>firebird-devel</Dependency>
+            <Dependency>postgresql-server</Dependency>
+            <Dependency>fontconfig-devel</Dependency>	    
         </BuildDependencies>
 	<Patches>
             <Patch>w3m-0.5.3-bdwgc72-1.patch</Patch>
@@ -24,7 +27,10 @@
     <Package>
         <Name>w3m</Name>
         <RuntimeDependencies>
-            
+	    <Dependency>firebird-superserver</Dependency>
+            <Dependency>firebird-devel</Dependency>
+            <Dependency>postgresql-server</Dependency>
+            <Dependency>fontconfig-devel</Dependency>           
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr</Path>
