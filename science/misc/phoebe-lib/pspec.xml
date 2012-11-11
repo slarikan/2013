@@ -37,7 +37,7 @@
         <Name>phoebe-lib-devel</Name>
         <Summary>Development headers for phoebe-lib</Summary>
         <RuntimeDependencies>
-            <Dependency release="1">phoebe-lib</Dependency>
+            <Dependency release="2">phoebe-lib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -61,4 +61,3 @@
         </Update>
     </History>
 </PISI>
-
