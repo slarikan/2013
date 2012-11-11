@@ -30,7 +30,7 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # Remove precompiled lisp files
-    pisitools.remove("/usr/share/emacs/site-lisp/pari/*.elc")
+    #pisitools.remove("/usr/share/emacs/site-lisp/pari/*.elc")
 
     for d in ["doc","examples"]:
         pisitools.removeDir("/usr/share/pari/%s" % d)
