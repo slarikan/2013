@@ -20,10 +20,9 @@ def setup():
 
 def build():
     autotools.make()
-    autotools.make("doxygen-pdf")
+    #autotools.make("doxygen-pdf")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("COPYING", "doc/doxygen/libbluray.pdf")
-    pisitools.dohtml("doc/doxygen/html/*")
+    pisitools.dodoc("COPYING", "ChangeLog", "README.*")

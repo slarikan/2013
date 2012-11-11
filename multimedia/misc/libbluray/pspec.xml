@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-11</Date>
+            <Version>0.2.3</Version>
+            <Comment>fix build error</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2012-10-22</Date>
             <Version>0.2.3</Version>
