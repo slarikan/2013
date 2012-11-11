@@ -1,10 +1,11 @@
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
-Name=Eric
+Name=Eric4
 Comment=Python development environment
 Comment[tr]=Python geliştirme ortamı
-Icon=eric
+Comment[pl]=Zintegrowane środowisko programistyczne (IDE) dla języka Python
+Icon=eric4
 Exec=eric4 --nosplash
 Terminal=False
 Categories=Development;IDE;Qt;

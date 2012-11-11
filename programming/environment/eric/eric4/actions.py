@@ -11,7 +11,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
 
-WorkDir = "eric4-%s" % get.srcVERSION()
 NoStrip = ["/usr/bin", "/usr/lib", "/usr/qt/4/qsci/api"]
 conf = {"bindir": "/usr/bin",
         "installdir": get.installDIR(),
@@ -24,4 +23,6 @@ def install():
                                   -d %(site-packages)s \
                                   -c" % conf)
     pythonmodules.fixCompiledPy()
+    for lang in ["cs", "de", "es", "fr", "it", "ru", "tr"]:
+        pisitools.insinto("%(site-packages)s/eric4/i18n" % conf, "eric/i18n/eric4_%s.qm" % lang)
     pisitools.dodoc("changelog", "LICENSE.GPL3", "THANKS", "README*")
