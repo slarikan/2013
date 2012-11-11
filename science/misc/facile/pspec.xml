@@ -17,8 +17,8 @@
             <Dependency versionFrom="3.12.0">ocaml</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch>destdir.patch</Patch>-->
-	    <Patch level="1">facile-1.1-makefile-fixes.patch</Patch>
+            <Patch level="0">destdir.patch</Patch>
+	    <!--<Patch level="1">facile-1.1-makefile-fixes.patch</Patch>-->
 	    <Patch level="1">ocaml-facile-ocaml-4.patch</Patch>
         </Patches>
     </Source>
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-11</Date>
+            <Version>1.1</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2012-10-29</Date>
             <Version>1.1</Version>
