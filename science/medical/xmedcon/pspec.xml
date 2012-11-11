@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Medical Image Conversion Utility</Summary>
         <Description>This project stands for Medical Image Conversion. Released under the (L)GPL, it comes with the full C-source code of the library, a flexible command line utility and a neat graphical front-end using the GTK+ toolkit. The currently supported formats are: Acr/Nema 2.0, Analyze (SPM), DICOM 3.0, InterFile 3.3 and PNG..</Description>
-        <Archive sha1sum="5be4ec2ac8646b842114bbc09f562df27ea58c45" type="tarbz2">mirrors://sourceforge/xmedcon/xmedcon-0.10.7.tar.bz2</Archive>
+        <Archive sha1sum="6fdef183f475e1fc4b6671a4c973262f4abaa30c" type="tarbz2">mirrors://sourceforge/xmedcon/xmedcon-0.11.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>nifticlib-devel</Dependency>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-11</Date>
+            <Version>0.11.1</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-02-02</Date>
             <Version>0.10.7</Version>
