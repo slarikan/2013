@@ -13,10 +13,9 @@
         <IsA>library</IsA>
         <Summary>A document viewer</Summary>
         <Description>Okular is a document viewer.</Description>
-        <Archive sha1sum="34ff243a4fa77400631aa44b31cbe54910f8091e" type="tarxz">mirrors://kde/stable/4.8.4/src/okular-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="33e6f1c3f282bf384d09f3fd1d535a35af572df6" type="tarxz">mirrors://kde/stable/4.9.3/src/okular-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
@@ -38,8 +37,7 @@
         <Name>okular</Name>
         <IsA>app:gui</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency>qca2</Dependency>
             <Dependency>tiff</Dependency>
@@ -51,9 +49,6 @@
             <Dependency>djvu</Dependency>
             <Dependency>libspectre</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdegraphics</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -78,13 +73,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="7">
             <Date>2012-05-07</Date>
             <Version>4.8.3</Version>
