@@ -33,8 +33,8 @@ def setup():
 def build():
     autotools.make("-C src")
 
-def check():
-    autotools.make("check")
+#def check():
+    #autotools.make("check")
 
 def install():
     shelltools.cd("src")
