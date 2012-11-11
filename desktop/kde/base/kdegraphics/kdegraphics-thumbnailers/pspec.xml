@@ -27,9 +27,6 @@
             <Dependency>libkdcraw</Dependency>
             <Dependency>libkexiv2</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdegraphics</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/kde4</Path>
