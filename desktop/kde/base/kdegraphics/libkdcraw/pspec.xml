@@ -12,10 +12,9 @@
         <IsA>library</IsA>
         <Summary>A C++ interface around LibRaw library</Summary>
         <Description>libkdcraw is a C++ interface around LibRaw library used to decode RAW picture files.</Description>
-        <Archive sha1sum="ba67432cb3353a55d57ae749b42919399dfda3e2" type="tarxz">mirrors://kde/stable/4.8.4/src/libkdcraw-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="be92e3e5c6b9cde30ebed4ef328ed454ed968b55" type="tarxz">mirrors://kde/stable/4.9.3/src/libkdcraw-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency>lcms-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,8 +22,7 @@
     <Package>
         <Name>libkdcraw</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency>lcms</Dependency>
             <Dependency>libgomp</Dependency>
         </RuntimeDependencies>
@@ -51,13 +49,20 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
             <Comment>Version bump to 4.8.4</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="7">
             <Date>2012-05-07</Date>
             <Version>4.8.3</Version>
