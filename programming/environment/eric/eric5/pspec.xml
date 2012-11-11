@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>eric5</Name>
+        <Homepage>http://eric-ide.python-projects.org/index.html</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>eric5</Icon>
+        <IsA>app:gui</IsA>
+        <PartOf>programming.environment.eric</PartOf>
+        <Summary>Full featured Python IDE</Summary>
+        <Description>Eric is a full featured Python and Ruby editor and IDE, written in python.
+        It is based on the cross platform Qt4 gui toolkit, integrating the highly flexible
+        Scintilla editor control. It is designed to be usable as everdays' quick and dirty
+        editor as well as being usable as a professional project management tool integrating
+        many advanced features Python offers the professional coder.</Description>
+        <Archive sha1sum="ef4ae755c2f87c7e7ff4df416328e46d904eccf6" type="targz">mirrors://sourceforge/eric-ide/eric5-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="82ee12eaec51c703280dd49dc8bb442a45d86f7e" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-cs-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="fc622c8ffcc5da7e1e96f7d27b2b9dbad9ed19eb" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-de-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="f94c5b62f41785eb3948b3a72a7dc9c25c7537d0" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-es-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="002d9c046c9a74429c52750da1c600c9581e29ba" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-fr-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="5c5b33534505a208a2d13c8cb0688fd799cc7e0b" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-it-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="6a4ead5900086fb0cfd0214756ee7ab0462623c1" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-ru-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="ebc62631f6dd79e27a85ccee87659851c72ba463" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-tr-5.2.6.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-qt</Dependency>
+            <Dependency>qscintilla2-python</Dependency>
+        </BuildDependencies>
+        <Patches>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>eric5</Name>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency>python3-qt</Dependency>
+            <Dependency>qscintilla2-python</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/qt4/qsci/api</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/eric5.desktop">eric.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/eric5.png">eric.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-cs</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_cs.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-de</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_de.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-es</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_es.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-fr</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_fr.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-it</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_it.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-ru</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_ru.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric5-i18n-tr</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric5</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python3*/site-packages/eric5/i18n/eric5_tr.qm</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-11-11</Date>
+            <Version>5.2.6</Version>
+            <Comment>First release.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
