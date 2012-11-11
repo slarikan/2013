@@ -2,34 +2,42 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>eric</Name>
+        <Name>eric4</Name>
         <Homepage>http://eric-ide.python-projects.org/index.html</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv3</License>
-        <Icon>eric</Icon>
+        <Icon>eric4</Icon>
         <IsA>app:gui</IsA>
+        <PartOf>programming.environment.eric</PartOf>
         <Summary>Full featured Python IDE</Summary>
         <Description>Eric is a full featured Python and Ruby editor and IDE, written in python.
         It is based on the cross platform Qt4 gui toolkit, integrating the highly flexible
         Scintilla editor control. It is designed to be usable as everdays' quick and dirty
         editor as well as being usable as a professional project management tool integrating
         many advanced features Python offers the professional coder.</Description>
-        <Archive sha1sum="61a3ca02ec5e8b408a8c1891c6cfd72e38815f9b" type="targz">http://sourceforge.net/projects/eric-ide/files/eric4/stable/4.5.5/eric4-4.5.5.tar.gz</Archive>
+        <Archive sha1sum="a19e85e56128129a955c13667f77335f33d29fcb" type="targz">mirrors://sourceforge/eric-ide/eric4-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="aa30180bb101b9185ad9388ec6e5c1b8ae49f5b0" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-cs-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="ff07ba139387ac21f517e0a22292477660d33599" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-de-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="7875da9a280ec5612c48063484954af11ad3d72e" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-es-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="4976cc6bde32e556d3094d0cfea315a0a9d3d864" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-fr-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="ab6fd4dbdea1a6fbfe1f4bca4c3116c2a2d18a8c" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-it-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="4fb390a0fd2c53fbe1d0a11076219199d7e5bdea" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-ru-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="93d785662d65ad46b7e83cfe4e1218ebc0677f7e" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-tr-4.5.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qscintilla2-python</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">paths.patch</Patch>-->
+            <!--Patch level="1">paths.patch</Patch-->
             <Patch level="1">shebang.patch</Patch>
-            <!--<Patch level="1">hideUpgradeMenus.patch</Patch>-->
+            <!--Patch level="1">hideUpgradeMenus.patch</Patch-->
         </Patches>
     </Source>
 
     <Package>
-        <Name>eric</Name>
+        <Name>eric4</Name>
         <RuntimeDependencies>
             <Dependency>qscintilla2-python</Dependency>
         </RuntimeDependencies>
@@ -42,12 +50,91 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/eric.desktop">eric.desktop</AdditionalFile>
-            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/eric.png">eric.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/eric4.desktop">eric.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/eric4.png">eric.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
+    <Package>
+        <Name>eric4-i18n-cs</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_cs.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric4-i18n-de</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_de.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric4-i18n-es</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_es.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric4-i18n-fr</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_fr.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric4-i18n-it</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_it.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric4-i18n-ru</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_ru.qm</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>eric4-i18n-tr</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">eric4</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="localedata">/usr/lib/python2.7/site-packages/eric4/i18n/eric4_tr.qm</Path>
+        </Files>
+    </Package>
+
     <History>
+        <Update release="23">
+            <Date>2012-11-10</Date>
+            <Version>4.5.7</Version>
+            <Comment>Version bump.
+                     Merged build files for i18n packages.
+                     Renamed to eric4</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="22">
             <Date>2012-09-24</Date>
             <Version>4.5.5</Version>
@@ -107,7 +194,8 @@
         <Update release="14">
             <Date>2009-01-21</Date>
             <Version>4.2.5</Version>
-            <Comment>Stable bump, Internationalization in separate packages</Comment>
+            <Comment>Stable bump, Internationalization in separate 
+packages</Comment>
             <Name>David Stegbauer</Name>
             <Email>daaste@gmail.com</Email>
         </Update>
@@ -128,14 +216,16 @@
         <Update release="11">
             <Date>2008-07-05</Date>
             <Version>4.1.6</Version>
-            <Comment>Remove workaround and correctly fix #7468 and #7714 and add a few more fixes</Comment>
+            <Comment>Remove workaround and correctly fix #7468 and #7714 and 
+add a few more fixes</Comment>
             <Name>Onur Küçük</Name>
             <Email>onur@pardus.org.tr</Email>
         </Update>
         <Update release="10">
             <Date>2008-07-05</Date>
             <Version>4.1.6</Version>
-            <Comment>Version bump and put a better workaround, fix for #7468 and #7714</Comment>
+            <Comment>Version bump and put a better workaround, fix for #7468 
+and #7714</Comment>
             <Name>Onur Küçük</Name>
             <Email>onur@pardus.org.tr</Email>
         </Update>
