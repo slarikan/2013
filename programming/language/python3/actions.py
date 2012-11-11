@@ -33,8 +33,8 @@ def setup():
                             --enable-ipv6 \
                             --with-valgrind \
                             --with-wide-unicode \
-                            --with-wide-unicode \
                             --with-dbmliborder=gdbm:ndbm \
+                            --with-system-expat \
                             --with-system-ffi")
 
 def build():
@@ -43,8 +43,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-# Take a look at the source folder for these file as documentation.
-#    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
-# If there is no install rule for a runnable binary, you can 
-# install it to binary directory.
-#    pisitools.dobin("python3")
+    pisitools.dodoc("LICENSE", "README")
