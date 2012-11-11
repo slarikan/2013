@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Implements a XML/HTML/XHTML Markup safe string for Python</Summary>
         <Description>python-MarkupSafe, implements a unicode subclass that supports HTML strings.</Description>
-        <Archive sha1sum="e2a82595dbeffc57709dfc971fd75ce6a7cf7fca" type="targz">http://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.9.3.tar.gz</Archive>
+        <Archive sha1sum="81e0c898c289721d5b1aa70ffc0dfc35886ea92a" type="targz">http://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-0.15.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2011-11-11</Date>
+            <Version>0.15</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.9.3</Version>
