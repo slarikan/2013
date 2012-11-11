@@ -15,6 +15,7 @@
         <Archive sha1sum="96fc22e59b86fdd22d9f716b342c2635013c4807" type="tarxz">mirrors://kde/stable/4.9.3/src/analitza-4.9.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu-devel</Dependency>    
             <Dependency>readline-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,11 +24,9 @@
         <Name>analitza</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu</Dependency>    
             <Dependency>readline</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
