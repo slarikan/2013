@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>python-chardet</Name>
-        <Homepage>http://chardet.feedparser.org/</Homepage>
+        <Homepage>http://pypi.python.org/pypi/chardet</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -12,18 +12,26 @@
         <IsA>library</IsA>
         <Summary>Character encoding auto-detection in Python</Summary>
         <Description>python-chardet is character encoding auto-detection in Python 2 and 3.</Description>
-        <Archive sha1sum="d3240c8b7d04bd15d21feda76158223fa7f5f2bc" type="targz">http://chardet.feedparser.org/download/python2-chardet-2.0.1.tgz</Archive>
+        <Archive sha1sum="eab8fb77c852da706e07c87c6b365ccc02c1751a" type="targz">http://pypi.python.org/packages/source/c/chardet/chardet-2.1.1.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>python-chardet</Name>
         <Files>
             <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="executable">/usr/bin/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-11</Date>
+            <Version>2.1.1</Version>
+            <Comment>Stable bump, new line</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-03-24</Date>
             <Version>2.0.1</Version>

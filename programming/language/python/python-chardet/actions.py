@@ -9,9 +9,9 @@
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+from pisi.actionsapi import shelltools
 
-
-WorkDir = "%s-%s-%s" % (get.curPYTHON().split('.')[0], get.srcNAME()[7:], get.srcVERSION())
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
 
 def setup():
     pythonmodules.compile()
