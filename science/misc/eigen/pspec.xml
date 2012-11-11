@@ -62,7 +62,7 @@
                 * backport the devel branch's StdVector header as NewStdVector. You may also #define EIGEN_USE_NEW_STDVECTOR to make StdVector use it automatically. However, by default it isn't used by StdVector, to preserve compatibility.
                 * Vectorized quaternion product (for float) by Rohit Garg (backport from devel branch).
                 * allow to override EIGEN_RESTRICT and add EIGEN_DONT_USE_RESTRICT_KEYWORD
-                * fix a warning in ei_aligned_malloc; fixed by backporting the body from the devel branch; may result in a different choice of system aligned malloc function. 
+                * fix a warning in ei_aligned_malloc; fixed by backporting the body from the devel branch; may result in a different choice of system aligned malloc function.
                 * fix bug: in rare situations involving mixed storage orders, a matrix product could be evaluated as its own transpose
                 * fix bug: LU::solve() crashed when called on the LU decomposition of a zero matrix
                 * fix bug: EIGEN_STACK_ALLOCATION_LIMIT was too high, resulting in stack overflow for a user. Now it is set as in the devel branch.
@@ -76,7 +76,7 @@
                 * in our cmake code, remove the part about retrieving the mercurial info and appending it to the version number in the dox
                 * dox: remove the old example list
                 * fix the option to build a binary library, although it's not very useful and will be removed
-                * add basic .hgignore file and script to build the docs (thanks to Thomas Capricelli) 
+                * add basic .hgignore file and script to build the docs (thanks to Thomas Capricelli)
             </Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
