@@ -32,12 +32,19 @@
             <Path fileType="data">/usr/share/kde4</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/config.kcfg</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="library">/usr/lib</Path>    
+            <Path fileType="data">/usr/share/applications</Path>   
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
+    
+    <Package>
+        <Name>kanagram-devel</Name>
+        <Summary>Development files for kanagram</Summary>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/cmake</Path>
+        </Files>
+    </Package>     
 
     <History>
         <Update release="9">
