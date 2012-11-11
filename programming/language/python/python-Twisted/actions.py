@@ -8,7 +8,10 @@
 
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
+
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
 
 WorkDir = "Twisted-%s" % (get.srcVERSION())
 

@@ -12,14 +12,13 @@
         <IsA>library</IsA>
         <Summary>Event driven network framework</Summary>
         <Description>Twisted is an event-driven networking framework written in Python and licensed under the MIT license. Twisted projects variously support TCP, UDP, SSL/TLS, multicast, Unix sockets, a large number of protocols (including HTTP, NNTP, IMAP, SSH, IRC, FTP, and others), and much more.</Description>
-        <Archive sha1sum="502368066e5644a64be67a236d39da4bd1d07d43" type="tarbz2">http://twistedmatrix.com/Releases/Twisted/11.0/Twisted-11.0.0.tar.bz2</Archive>
+        <Archive sha1sum="c51834c1270e7a4bb0de9190056e4317413920f9" type="tarbz2">http://twistedmatrix.com/Releases/Twisted/12.2/Twisted-12.2.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>python-zope-interface</Dependency>
             <Dependency>kernel-headers</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>echo-less.patch</Patch>
-            <Patch>zsh-head.patch</Patch>
         </Patches>
     </Source>
 
@@ -37,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-11-11</Date>
+            <Version>12.2.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="14">
             <Date>2011-09-13</Date>
             <Version>11.0.0</Version>
