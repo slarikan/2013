@@ -13,11 +13,10 @@
         <IsA>app:gui</IsA>
         <Summary>A screen capture utility</Summary>
         <Description>ksnapshot is a screen capture utility.</Description>
-        <Archive sha1sum="1cbd1ea468e7722feb8c96dd5f1f3a18bb91d4ef" type="tarxz">mirrors://kde/stable/4.8.4/src/ksnapshot-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="61bc95baed704821d597686ccb16e9bba40965fe" type="tarxz">mirrors://kde/stable/4.9.3/src/ksnapshot-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">libkipi-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkipi-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
         </BuildDependencies>
@@ -26,9 +25,8 @@
     <Package>
         <Name>ksnapshot</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">libkipi</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">libkipi</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
         </RuntimeDependencies>
@@ -45,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
