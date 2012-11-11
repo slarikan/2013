@@ -18,8 +18,9 @@ EMPTY_DIRS = ["BeeBase/Doc", "DateTime/Doc", "Doc", "Queue/Doc", "Stack/Doc", "T
 def install():
     pythonmodules.install()
 
-    pisitools.dodoc("mx/LICENSE", "mx/COPYRIGHT", "mx/Doc/*.pdf")
-    pisitools.dohtml("mx/Doc/*")
+    pisitools.dodoc("mx/LICENSE", "mx/COPYRIGHT")
+    pisitools.dodoc("LICENSE", "COPYRIGHT", "MANIFEST", "README")
+
 
     # Make dir under docs for examples
     pisitools.dodir("%s/%s/Examples/DateTime" % (get.docDIR(), get.srcNAME()))
@@ -28,7 +29,3 @@ def install():
     # Move examples from /usr/lib
     pisitools.domove("%s/DateTime/Examples/*.py" % MX_DIR, "%s/%s/Examples/DateTime/" % (get.docDIR(), get.srcNAME()))
     pisitools.domove("%s/TextTools/Examples/*.py" % MX_DIR, "%s/%s/Examples/TextTools/" % (get.docDIR(), get.srcNAME()))
-
-    # Remove empty doc and example dirs
-    for dirs in EMPTY_DIRS:
-        pisitools.removeDir("%s/%s" % (MX_DIR, dirs))
