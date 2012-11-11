@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Enhancements to Python's distutils</Summary>
         <Description>python-distutils-extra enables you to easily integrate gettext support, themed icons and scrollkeeper based documentation into Python's distutils.</Description>
-        <Archive sha1sum="6af0a6f7edb929cfb9515b0c521d5091fa6acd44" type="targz">http://launchpad.net/python-distutils-extra/trunk/2.26/+download/python-distutils-extra-2.26.tar.gz</Archive>
+        <Archive sha1sum="fe513962c8f41a7afd7ecd17a3f69d867506f3e8" type="targz">https://launchpad.net/python-distutils-extra/trunk/2.37/+download/python-distutils-extra-2.37.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-11</Date>
+            <Version>2.37</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-04-30</Date>
             <Version>2.26</Version>
