@@ -50,7 +50,7 @@ def setup():
 
 def build():
     autotools.make("-C build -j1")
-    autotools.make("-C build/lib shared -j1")
+    #autotools.make("-C build/lib shared -j1")
 
 def install():
     pisitools.dodoc("README", "doc/*")
@@ -62,6 +62,6 @@ def install():
         pisitools.insinto("/usr/lib/", i)
 
     pisitools.remove("/usr/lib/*.a")
-    pisitools.remove("/usr/lib/liblapack.so.3")
-    pisitools.remove("/usr/lib/liblapack.so")
+    #pisitools.remove("/usr/lib/liblapack.so.3")
+    #pisitools.remove("/usr/lib/liblapack.so")
 
