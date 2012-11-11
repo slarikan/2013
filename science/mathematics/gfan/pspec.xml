@@ -12,13 +12,17 @@
         <IsA>app:console</IsA>
         <Summary>A software package for computing Gröbner fans and tropical varieties</Summary>
         <Description>Gfan is a software package for computing Gröbner fans and tropical varieties. Gfan contains algorithms for computing the complex for general ideals and specialized algorithms for tropical curves, tropical hypersurfaces and tropical varieties of prime ideals. In addition to the above core functions the package contains many tools which are useful in the study of Gröbner bases, initial ideals and tropical geometry. Among these are an interactive traversal program for Gröbner fans and programs for graphical renderings.</Description>
-        <Archive sha1sum="e8e3f2c2f730c88d0c556f5b0fdf3a99b66b9bac" type="targz">http://www.math.tu-berlin.de/~jensen/software/gfan/gfan0.4plus.tar.gz</Archive>
+        <Archive sha1sum="ba4f3e4fac6bcafdfdd2244329d925e958d9ee63" type="targz">http://home.imf.au.dk/jensen/software/gfan/gfan0.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cddlib</Dependency>
             <Dependency>gmp-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">FieldMatrix.patch</Patch>
+            <!--<Patch level="1">FieldMatrix.patch</Patch>-->
+	    <Patch level="1">gfan-format.patch</Patch>
+	    <Patch level="1">gfan-warning.patch</Patch>
+	    <Patch level="0">gfan-permissive.patch</Patch>
+	    <Patch level="0">gfan-respect-destdir.patch</Patch>
         </Patches>
     </Source>
 
@@ -35,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-11</Date>
+            <Version>0.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-12-17</Date>
             <Version>0.4_20091020</Version>

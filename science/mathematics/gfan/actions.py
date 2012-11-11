@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "gfan0.4plus"
+#WorkDir = "gfan0.4plus"
 
 def build():
     autotools.make()
