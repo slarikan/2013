@@ -20,4 +20,4 @@ def install():
 
     pisitools.insinto(examples, "examples/*")
 
-    pisitools.dodoc("CHANGELOG", "LICENSE", "README")
+    pisitools.dodoc("CHANGELOG", "LICENSE", "README.*")
