@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Next-generation RPC protocol, intended to replace Perspective Broker</Summary>
         <Description>Foolscap (aka newpb) is a new version of Twisted's native RPC protocol, known as 'Perspective Broker'.</Description>
-        <Archive sha1sum="8e715426e5b65952867d14aabf75ffb982cf71ce" type="targz">http://foolscap.lothar.com/releases/foolscap-0.5.1.tar.gz</Archive>
+        <Archive sha1sum="fc705bf300dd54c6d8ec857db39d7aec08760ccb" type="targz">http://foolscap.lothar.com/releases/foolscap-0.6.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>pyopenssl</Dependency>
             <Dependency>python-Twisted</Dependency>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-11</Date>
+            <Version>0.6.4</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.5.1</Version>
