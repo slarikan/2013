@@ -12,10 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>Interactive physical simulator</Summary>
         <Description>Step is an interactive physical simulator. It allows you to explore the physical world through simulations.</Description>
-        <Archive sha1sum="498d8243309388fa8b59cd968c0c92fc588eda11" type="tarxz">mirrors://kde/stable/4.8.4/src/step-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="822b8f7266f7bd8170db1c02510480bb98d03e6f" type="tarxz">mirrors://kde/stable/4.9.3/src/step-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency versionFrom="2.0.15">eigen</Dependency>
             <Dependency>cln-devel</Dependency>
             <Dependency>gsl-devel</Dependency>
@@ -26,7 +25,7 @@
     <Package>
         <Name>step</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency versionFrom="2.0.15">eigen</Dependency>
             <Dependency>cln</Dependency>
             <Dependency>gsl</Dependency>
@@ -46,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
