@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>exim</Name>
+        <Summary xml:lang="tr">exim bir mail transfer aracıdır</Summary>
+        <Description xml:lang="tr">exim bir mail transfer aracıdır</Description>
+    </Source>
+
+    <Package>
+        <Name>exim</Name>
+        <Summary xml:lang="tr">bir mail transfer aracı</Summary>
+    </Package>
+    <Package>
+        <Name>proftpd-devel</Name>
+        <Summary xml:lang="tr">proftpd için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>
