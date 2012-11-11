@@ -13,11 +13,10 @@
         <IsA>app:gui</IsA>
         <Summary>A KDE frontend for the Linux Infrared Remote Control system</Summary>
         <Description>KRemoteControl is a KDE frontend for the Linux Infrared Remote Control system (LIRC). It consist of two parts: a systemtray applet and a configuration module.</Description>
-        <Archive sha1sum="2c967b6d5738d3947401d9055f0956dfd16b2ec2" type="tarxz">mirrors://kde/stable/4.8.4/src/kremotecontrol-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="59cac67bb4f19688c0ce17b7cc5c69db5b01f745" type="tarxz">mirrors://kde/stable/4.9.3/src/kremotecontrol-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-workspace-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -28,16 +27,10 @@
     <Package>
         <Name>kremotecontrol</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdebase-workspace</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeutils</Package>
-            <Package>kdeutils4</Package>
-            <Package>kdeutils-plugin-rar</Package>    
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -49,6 +42,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update> 
         <Update release="5">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
