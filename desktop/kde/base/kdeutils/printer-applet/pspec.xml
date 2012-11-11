@@ -13,11 +13,10 @@
         <IsA>app:gui</IsA>
         <Summary>A system tray icon for managing print jobs</Summary>
         <Description>Printer Applet is a system tray utility that shows current print jobs, printer warnings and errors and displays when newly plugged in printers has been auto-configured.</Description>
-        <Archive sha1sum="451bb3d658a447c454918ea5b0299f1e85b8cfd2" type="tarxz">mirrors://kde/stable/4.8.4/src/printer-applet-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="841bb5136604d26a6c70c25b29aa245e7c9d09b9" type="tarxz">mirrors://kde/stable/4.9.3/src/printer-applet-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">python-kde-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">python-kde-devel</Dependency>
             <Dependency>system-config-printer</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,16 +24,10 @@
     <Package>
         <Name>printer-applet</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">python-kde</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">python-kde</Dependency>
             <Dependency>system-config-printer</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeutils</Package>
-            <Package>kdeutils4</Package>
-            <Package>kdeutils-plugin-rar</Package>    
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/autostart</Path>
@@ -44,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="5">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
