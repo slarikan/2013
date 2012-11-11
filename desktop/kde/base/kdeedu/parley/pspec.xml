@@ -12,11 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Parley is a program to help you memorize things.</Summary>
         <Description>Parley is a program to help you memorize things. Parley supports many language specific features but can be used for other learning tasks just as well. It uses the spaced repetition learning method, also known as flash cards. Creating new vocabulary collections with Parley is easy, but of course it is even better if you can use some of our premade files. Have a look at the KDE-Files.org page or use the "Download New Collections" feature directly in Parley.</Description>
-        <Archive sha1sum="bfc361363fa0cb866fd1d704b86d71401c1c4ea6" type="tarxz">mirrors://kde/stable/4.8.4/src/parley-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="98f10445a5d983ea81a812e288bc00991b9b247c" type="tarxz">mirrors://kde/stable/4.9.3/src/parley-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">libkdeedu-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
@@ -26,15 +25,12 @@
     <Package>
         <Name>parley</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">libkdeedu</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">libkdeedu</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libXrender</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -47,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
