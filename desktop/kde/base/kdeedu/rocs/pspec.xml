@@ -12,10 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>A graph theory IDE</Summary>
         <Description>Rocs aims to be a graph theory IDE for helping professors to show the results of a graph algorithm and also helping students to do the algorithms.</Description>
-        <Archive sha1sum="991e5aa15e59cc432a9c9f140fe90bd47f8f8e15" type="tarxz">mirrors://kde/stable/4.8.4/src/rocs-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="bbd95c3e058c106e8b88a132a642c6af39c1c10d" type="tarxz">mirrors://kde/stable/4.9.3/src/rocs-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,12 +22,9 @@
     <Package>
         <Name>rocs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -52,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="8">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
