@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A Session and Caching library with WSGI Middleware</Summary>
         <Description>python-beaker is a web session and general caching library that includes WSGI middleware for use in web applications.</Description>
-        <Archive sha1sum="72a696854e36e2ea92f4535209e4538baf06caa0" type="targz">http://pypi.python.org/packages/source/B/Beaker/Beaker-1.5.4.tar.gz</Archive>
+        <Archive sha1sum="e354c7dc7946595f58f027e880e47b01c288abfb" type="targz">http://pypi.python.org/packages/source/B/Beaker/Beaker-1.6.4.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-11</Date>
+            <Version>1.6.4</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.5.4</Version>
