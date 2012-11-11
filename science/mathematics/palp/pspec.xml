@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A Package for Analyzing Lattice Polytopes</Summary>
         <Description>PALP contains routines for vertex and facet enumeration, computation of incidences and symmetries, as well as completion of the set of lattice points in the convex hull of a given set of points.</Description>
-        <Archive sha1sum="3cd6bd1f78b921f2f23bb12ac108f5422d359bfc" type="targz">http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/palp-1.1.tar.gz</Archive>
+        <Archive sha1sum="11dada019d9a67553702774c477291cddaa528ae" type="targz">http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/palp-2.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-11</Date>
+            <Version>2.1</Version>
+            <Comment>Düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.1</Version>
