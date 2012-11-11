@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Lightweight in-process concurrent programming</Summary>
         <Description>The "greenlet" package is a spin-off of Stackless, a version of CPython that supports micro-threads called "tasklets".</Description>
-        <Archive sha1sum="7e42d736dfbbd2f0b5ab7f78dc6fb65d966ca21e" type="targz">http://pypi.python.org/packages/source/g/greenlet/greenlet-0.3.1.tar.gz</Archive>
+        <Archive sha1sum="43b22daa449ae6222e54dde1f9121c81e8d7d913" type="zip">http://pypi.python.org/packages/source/g/greenlet/greenlet-0.4.0.zip</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-12</Date>
+            <Version>0.4.0</Version>
+            <Comment>Update package.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-06-23</Date>
             <Version>0.3.1</Version>
