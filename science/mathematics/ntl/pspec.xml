@@ -16,6 +16,7 @@
         <Patches>
             <Patch level="1">destdir.patch</Patch>
             <Patch level="1">ntl-5.4-endless_testrun.patch</Patch>
+	    <Patch level="0">ntl-5.5.2-singular.patch</Patch>
         </Patches>
     </Source>
 
@@ -42,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-11</Date>
+            <Version>5.5.2</Version>
+            <Comment>Düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-01-28</Date>
             <Version>5.5.2</Version>
