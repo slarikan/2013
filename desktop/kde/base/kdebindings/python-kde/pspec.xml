@@ -11,21 +11,20 @@
         <License>GPLv2</License>
         <Summary>Python bindings for KDE4</Summary>
         <Description>python-kde is the Python bindings for KDE4.</Description>
-        <Archive sha1sum="e629d7a1d7d1aa1d1dd24769dc5412a60b6ac256" type="tarxz">mirrors://kde/stable/4.8.4/src/pykde4-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="4a72a307d5780f013e12607b9cddb425f81ffeef" type="tarxz">mirrors://kde/stable/4.9.3/src/pykde4-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
             <Dependency versionFrom="1.6.1">akonadi-devel</Dependency>
-            <Dependency versionFrom="4.8.4">python-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.5">python-qt-devel</Dependency>
             <Dependency>sip-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>find-phonon-include-dir.patch</Patch>
-            <Patch level="1">pykde4-pyqt495.patch</Patch>            
+<!--             <Patch level="1">pykde4-pyqt495.patch</Patch>             -->
         </Patches>
     </Source>
 
@@ -34,12 +33,11 @@
         <IsA>app:console</IsA>
         <IsA>library</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency versionFrom="2.7.5">soprano</Dependency>
-            <Dependency versionFrom="4.8.4">python-qt</Dependency>
+            <Dependency versionFrom="4.9.5">python-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -74,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="68">
+            <Date>2012-11-10</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="67">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
