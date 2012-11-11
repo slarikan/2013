@@ -13,6 +13,9 @@
         <Summary>SIP is a tool for generating bindings for C++ classes so that they can be used by Python</Summary>
         <Description>SIP is a tool for generating bindings for C and C++ libraries so that they can be used by Python. It takes any C or C++ libraries and converts them into Python extension modules.</Description>
         <Archive sha1sum="6b4e4bec0a80fcb872c3a8b1eed152a1d4528d0b" type="targz">http://downloads.sourceforge.net/project/pyqt/sip/sip-4.14/sip-4.14.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>python3</Dependency>
+        </BuildDependencies>
         <Patches>
             <Patch level="1">no-strip.patch</Patch>
             <Patch>disable-rpaths.diff</Patch>
@@ -23,8 +26,34 @@
     <Package>
         <Name>sip</Name>
         <Files>
-            <Path fileType="library">/usr/lib/python*</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+     <Conflicts>
+        <Package releaseTo="48">sip-devel</Package>
+    </Conflicts>
+    </Package>
+
+    <Package>
+        <Name>python-sip</Name>
+        <Summary>Python 2.x SIP bindings for C and C++ libraries</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">sip</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python2*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>python3-sip</Name>
+        <Summary>Python 3.x SIP bindings for C and C++ libraries</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">sip</Dependency>
+            <Dependency>python3</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3*</Path>
         </Files>
     </Package>
 
@@ -35,19 +64,25 @@
             <Dependency release="current">sip</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="49">
+            <Date>2012-11-10</Date>
+            <Version>4.14</Version>
+            <Comment>add python3 support</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="48">
             <Date>2012-10-02</Date>
             <Version>4.14</Version>
             <Comment>Version bump to 4.14</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
       <Update release="47">
             <Date>2012-02-18</Date>
             <Version>4.13.2</Version>

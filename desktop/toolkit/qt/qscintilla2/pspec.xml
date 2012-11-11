@@ -15,6 +15,7 @@
         <Description>QScintilla2 is a port to Qt4 of Neil Hodgson's Scintilla C++ editor class.</Description>
         <Archive sha1sum="6106c9e13983c086daf1fb0dba1180abed17588c" type="targz">http://sourceforge.net/projects/pyqt/files/QScintilla2/QScintilla-2.6.2/QScintilla-gpl-2.6.2.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>python3</Dependency>
             <Dependency versionFrom="4.12.1">sip-devel</Dependency>
             <Dependency versionFrom="4.7.1">qt-devel</Dependency>
             <Dependency versionFrom="4.8.3">python-qt-devel</Dependency>
@@ -39,16 +40,40 @@
     </Package>
 
     <Package>
-        <Name>qscintilla2-python</Name>
-        <Summary>Python bindings for qscintilla2</Summary>
+        <Name>qscintilla2-python-common</Name>
+        <Summary>Common python qscintilla bindings files shared between qscintilla2-python and qscintilla2-python3</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.3">python-qt</Dependency>
             <Dependency version="current">qscintilla2</Dependency>
         </RuntimeDependencies>
+        <Conflicts>
+            <Package releaseTo="16">qscintilla2-python</Package>
+        </Conflicts>
         <Files>
-            <Path fileType="library">/usr/lib/python*</Path>
             <Path fileType="data">/usr/share/sip</Path>
             <Path fileType="data">/usr/share/qt4/qsci</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>qscintilla2-python</Name>
+        <Summary>Python 2.x bindings for qscintilla2</Summary>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.8.3">python-qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python2*</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>qscintilla2-python3</Name>
+        <Summary>Python 3.x bindings for qscintilla2</Summary>
+        <RuntimeDependencies>
+            <Dependency>python3</Dependency>
+            <Dependency versionFrom="4.8.3">python3-qt</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/python3*</Path>
         </Files>
     </Package>
 
@@ -60,7 +85,6 @@
             <Path fileType="doc">/usr/share/doc/qscintilla2/Scintilla</Path>
         </Files>
     </Package>
-
 
     <Package>
         <Name>qscintilla2-devel</Name>
@@ -74,6 +98,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-11-11</Date>
+            <Version>2.6.2</Version>
+            <Comment>add python3 support</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="16">
             <Date>2012-10-28</Date>
             <Version>2.6.2</Version>

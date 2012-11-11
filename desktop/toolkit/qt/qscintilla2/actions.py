@@ -33,6 +33,7 @@ def setup():
     pisitools.dosed("Makefile", "^CXXFLAGS.*\\$\\(DEFINES\\)", "CXXFLAGS   = %s -fPIC $(DEFINES)" % get.CXXFLAGS())
 
 def build():
+    shelltools.system("cp -rf Python Python3")
     shelltools.cd("Qt4Qt5")
     autotools.make("all staticlib CC=\"%s\" CXX=\"%s\" LINK=\"%s\"" % (get.CC(), get.CXX(), get.CXX()))
 
@@ -43,6 +44,10 @@ def build():
     shelltools.cd("../Python")
     pythonmodules.run("configure.py -p 4 -n ../Qt4Qt5 -o ../Qt4Qt5")
     autotools.make()
+    shelltools.cd("../Python3")
+    pythonmodules.run("configure.py -p 4 -n ../Qt4Qt5 -o ../Qt4Qt5", pyVer = "3")
+    pisitools.dosed("Makefile", "-lpython3.3", "-lpython3.3m")
+    autotools.make()
 
 def install():
     shelltools.cd("Qt4Qt5")
@@ -52,6 +57,8 @@ def install():
     qt4.install()
 
     #build and install qscintilla-python
+    shelltools.cd("../Python3")
+    autotools.install("DESTDIR=%s" % get.installDIR())
     shelltools.cd("../Python")
     autotools.install("DESTDIR=%s" % get.installDIR())
 
