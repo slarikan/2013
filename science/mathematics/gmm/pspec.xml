@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>C++ template library</Summary>
         <Description>GMM++ is a generic C++ template library for sparse, dense and skyline matrices.</Description>
-        <Archive sha1sum="eea7f8e77f7e468cf93d044a992fcad3ce3f180f" type="targz">http://download.gna.org/getfem/stable/gmm-4.1.tar.gz</Archive>
+        <Archive sha1sum="3555d5a5abdd525fe6b86db33428604d74f6747c" type="targz">http://download.gna.org/getfem/stable/gmm-4.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-11</Date>
+            <Version>4.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-13</Date>
             <Version>4.1</Version>
