@@ -40,7 +40,7 @@ def build():
 
     # build math library
     shelltools.cd("src/nmath/standalone")
-    autotools.make()
+    autotools.make("-j1")
 
 #def check():
     #shelltools.export("R_HOME","")
