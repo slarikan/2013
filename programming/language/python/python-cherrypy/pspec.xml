@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Pythonic, object-oriented web development framework</Summary>
         <Description>CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This usually results in smaller source code developed in less time.</Description>
-        <Archive sha1sum="a94aedfd0e675858dbcc32dd250c23d285ee9b88" type="targz">http://download.cherrypy.org/cherrypy/3.1.2/CherryPy-3.1.2.tar.gz</Archive>
+        <Archive sha1sum="ad47d2d9c2c68231f0ea1b09ffb2927f42a493b6" type="targz">http://download.cherrypy.org/cherrypy/3.2.2/CherryPy-3.2.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-11-11</Date>
+            <Version>3.2.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2010-12-10</Date>
             <Version>3.1.2</Version>
