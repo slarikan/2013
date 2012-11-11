@@ -32,13 +32,6 @@
             <Dependency>phonon-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-            <Package>kdeedu-marble</Package>    
-        </Replaces>
-        <Conflicts>
-            <Package>kdeedu-marble</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
