@@ -12,12 +12,12 @@
         <IsA>library</IsA>
         <Summary>Scientific library and interface for array oriented data access</Summary>
         <Description>netcdf (network common data form) is a set of software libraries and machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.</Description>
-        <Archive sha1sum="6fece208825b978fc2240732f6f57927d71a0552" type="targz">ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-4.1.1.tar.gz</Archive>
+        <Archive sha1sum="dfb6b10ef8dd20e785efa5e29b448383090f144d" type="targz">ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-4.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>hdf5-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">link-with-hdf5.patch</Patch>
+            <!--<Patch level="1">link-with-hdf5.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -50,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-11</Date>
+            <Version>4.2.1</Version>
+            <Comment>Düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-29</Date>
             <Version>4.1.1</Version>
