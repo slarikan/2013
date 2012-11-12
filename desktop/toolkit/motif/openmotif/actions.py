@@ -68,6 +68,6 @@ def install():
 
     pisitools.dodoc("ChangeLog", "README*", "BUGREPORT", "RELEASE", "RELNOTES", "TODO")
 
-    if get.buildTYPE() == "emul32":
-        pisitools.removeDir("/emul32")
+    #if get.buildTYPE() == "emul32":
+        #pisitools.removeDir("/emul32")
 
