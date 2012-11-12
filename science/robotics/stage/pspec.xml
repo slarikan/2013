@@ -12,14 +12,19 @@
         <IsA>library</IsA>
         <Summary>2D multiple-robot simulator</Summary>
         <Description>Stage simulates a population of mobile robots, sensors and objects in a two-dimensional bitmapped environment.</Description>
-        <Archive sha1sum="783e16c179c76a65b64ad352c500f8ef6f3f1f2c" type="targz">mirrors://sourceforge/playerstage/Stage/3.2.2/Stage-3.2.2-Source.tar.gz</Archive>
+        <Archive sha1sum="b7a98baf101e46d89b647801d8b7dc782e56945c" type="targz">https://github.com/downloads/pardus-anka/2013/rtv-Stage-v4.1.1-0-g13e03ee.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>player-devel</Dependency>
             <Dependency>fltk-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fix-fltk-lib-issue.diff</Patch>
+            <!--<Patch level="1">fix-fltk-lib-issue.diff</Patch>-->
+	    <Patch level="1">player3.0.2.patch</Patch>
+	    <Patch level="1">Stage-4.0.0.plugininstall.patch</Patch>
+	    <Patch level="1">Stage-4.0.0.s390x-typos.patch</Patch>
+	    <Patch level="1">Stage-4.1.1.fixfltk.patch</Patch>
+	    <Patch level="0">stage-4.1.1-libfix64.patch</Patch>
         </Patches>
     </Source>
 
@@ -50,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-12</Date>
+            <Version>4.1.1</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-14</Date>
             <Version>3.2.2</Version>
