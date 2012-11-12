@@ -18,7 +18,10 @@
             <Dependency>doxygen</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>zvbi-0.2.33-glibc212.patch</Patch>
+            <Patch level="1">zvbi-0.2.31-linkage_fix.diff</Patch>
+	    <Patch level="1">zvbi-0.2.33-include_stat_h.patch</Patch>
+	    <Patch level="0">zvbi-0.2.33-libpng15.patch</Patch>
+	    <Patch level="0">zvbi-0.2.7-fix-build.patch</Patch>
         </Patches>
     </Source>
 
@@ -48,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-12</Date>
+            <Version>0.2.33</Version>
+            <Comment>rebuild-fixing for ANKA</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2010-10-12</Date>
             <Version>0.2.33</Version>
