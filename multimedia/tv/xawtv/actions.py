@@ -10,6 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+WorkDir = "xawtv3-f4af315"
+
 def setup():
     shelltools.export("CFLAGS", "%s -Wno-pointer-sign %s" % (get.CFLAGS(), get.LDFLAGS()))
 
@@ -24,6 +26,7 @@ def setup():
                          --enable-lirc \
                          --enable-gl \
                          --enable-zvbi \
+                         --enable-xft \
                          --prefix=/usr \
                          --enable-aa")
                          # --enable-mmx \ # let the build decide it

@@ -14,7 +14,7 @@
 	<PartOf>multimedia.tv</PartOf>
         <Summary>TV application</Summary>
         <Description>xawtv is a TV application that supports many interfaces (analog video streams), such as Xvideo, v4l2 and bktr etc. It can display TV streams and record them.</Description>
-        <Archive sha1sum="aa875043441aaa3293f91d2517a05fb9a127b943" type="tarbz2">http://linuxtv.org/downloads/xawtv/xawtv-3.102.tar.bz2</Archive>
+        <Archive sha1sum="65e5372e635ea51f2617c5ded3643d66f065442d" type="tarbz2">http://git.linuxtv.org/xawtv3.git/snapshot/f4af315c4ffb56cb6924ad82259942b03cda6db3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>aalib-devel</Dependency>
@@ -40,17 +40,21 @@
             <Dependency>libXft-devel</Dependency>
             <Dependency>libXaw-devel</Dependency>
             <Dependency>zvbi-devel</Dependency>
-	    <Dependency>libXinerama-devel</Dependency>
-            <Dependency>libexplain</Dependency>
-	    <Dependency>jpeg-devel</Dependency>
+            <Dependency>libXinerama-devel</Dependency>
+            <!--<Dependency>libexplain</Dependency>-->
+            <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="0">v4l-conf_non-position-independent-executable_fix.patch</Patch>
+            <Patch level="1">xawtv-3.95.patch</Patch>
+        </Patches>
       </Source>
 
     <Package>
         <Name>xawtv</Name>
         <RuntimeDependencies>
             <Dependency>alsa-lib</Dependency>
-            <Dependency>libexplain</Dependency>
+            <!--<Dependency>libexplain</Dependency>-->
 	    <Dependency>aalib</Dependency>
             <Dependency>libquicktime</Dependency>
 	    <Dependency>zvbi</Dependency>
@@ -93,6 +97,13 @@
         </AdditionalFiles>
     </Package>
    <History>
+        <Update release="13">
+            <Date>2012-11-12</Date>
+            <Version>3.102_201207</Version>
+            <Comment>version update frome git snapshot</Comment>
+            <Name>Erdinc Gultekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="12">
             <Date>2011-10-5</Date>
             <Version>3.102</Version>
