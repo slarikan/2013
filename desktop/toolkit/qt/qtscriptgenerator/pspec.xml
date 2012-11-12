@@ -8,7 +8,8 @@
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <License>GPLv2</License>
+        <License>LGPLv2.1</License>
+        <License>custom</License>
         <IsA>library</IsA>
         <Summary>Qt Script Generator Tool</Summary>
         <Description>Qt Script Generator is a tool that generates Qt bindings for Qt Script.</Description>
@@ -19,6 +20,7 @@
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="0">qtscriptgenerator-src-0.1.0-fix-build.patch</Patch>
             <Patch>gcc44.patch</Patch>
             <!-- upstreamable patches from fedora -->
             <Patch>qtscriptgenerator-src-0.1.0-qmake_target.path.patch</Patch>

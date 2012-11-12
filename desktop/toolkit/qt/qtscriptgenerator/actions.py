@@ -31,4 +31,4 @@ def install():
     pisitools.insinto("/usr/lib/qt4/plugins/script", "plugins/script/*")
     pisitools.insinto("%s/qtscriptgenerator" % get.docDIR(), "doc/*")
 
-    pisitools.dodoc("LICENSE.GPL")
+    pisitools.dodoc("LICENSE*", "LGPL*")
