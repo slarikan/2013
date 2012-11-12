@@ -6,11 +6,15 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 WorkDir="%s" % get.srcNAME()
 
 def build():
+    #shelltools.export("CXXFLAGS", "%s -lpthread --pthread -lm" % get.CXXFLAGS())
+    #pisitools.dosed("Makefile", "-lthread", "-lpthread")
+    #pisitools.dosed("Makefile", "-pthread", "-lpthread")
     autotools.make("-j1")
 
 def install():
