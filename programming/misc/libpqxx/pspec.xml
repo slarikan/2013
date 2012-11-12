@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>C++ client API for PostgreSQL</Summary>
         <Description>libpqxx is the official C++ client API for PostgreSQL.</Description>
-        <Archive sha1sum="700e0c96a2728eed70c48badb16ba1173cc24d2c" type="targz">ftp://pqxx.org/software/libpqxx/libpqxx-3.1.tar.gz</Archive>
+        <Archive sha1sum="09e6301e610e7acddbec85f4803886fd6822b2e6" type="targz">ftp://pqxx.org/software/libpqxx/libpqxx-4.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>postgresql-lib</Dependency>
         </BuildDependencies>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-11-12</Date>
+            <Version>4.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-12</Date>
             <Version>3.1</Version>
