@@ -12,13 +12,13 @@
         <IsA>library</IsA>
         <Summary>Qt4 Ruby bindings (qtruby)</Summary>
         <Description>ruby-qt contains KDE4 language bindings for Ruby.</Description>
-        <Archive sha1sum="ce9f9b45d7e9edc839257a1f1c53b1e699503b47" type="tarxz">mirrors://kde/stable/4.8.4/src/qtruby-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="f4cc60e378c4bf0d235affba5d042d0031560009" type="tarxz">mirrors://kde/stable/4.9.3/src/qtruby-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-kde-devel</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-qt-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-gen-devel</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-kde-devel</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-webkit-devel</Dependency>
             <Dependency versionFrom="4.12.2">sip-devel</Dependency>
@@ -42,10 +42,10 @@
         <Name>ruby-qt</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="1.8.7">ruby</Dependency>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.3">qt</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-qt</Dependency>
-            <Dependency versionFrom="4.8.2">qt-webkit</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-qt</Dependency>
+            <Dependency versionFrom="4.8.3">qt-webkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -67,6 +67,13 @@
     </Package>
 
     <History>
+        <Update release="65">
+            <Date>2012-11-12</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="64">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
