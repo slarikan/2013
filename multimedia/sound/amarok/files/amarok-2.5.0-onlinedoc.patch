@@ -1,0 +1,91 @@
+diff -ur amarok-2.5.0/src/ActionClasses.cpp amarok-2.5.0-onlinedoc/src/ActionClasses.cpp
+--- amarok-2.5.0/src/ActionClasses.cpp	2011-12-15 08:36:48.000000000 +0100
++++ amarok-2.5.0-onlinedoc/src/ActionClasses.cpp	2012-01-29 08:23:50.000000000 +0100
+@@ -31,10 +31,12 @@
+ #include "playlist/PlaylistActions.h"
+ #include "playlist/PlaylistModelStack.h"
+ 
++#include <QFile>
+ #include <KAuthorized>
+ #include <KHelpMenu>
+ #include <KLocale>
+ #include <KToolBar>
++#include <KToolInvocation>
+ #include <Osd.h>
+ #include <EqualizerDialog.h>
+ 
+@@ -63,6 +65,7 @@
+ using namespace Amarok;
+ 
+ KHelpMenu *Menu::s_helpMenu = 0;
++OnlineHelpHandler *Menu::s_onlineHelpHandler = 0;
+ 
+ static void
+ safePlug( KActionCollection *ac, const char *name, QWidget *w )
+@@ -152,6 +155,20 @@
+ 
+     KMenu* menu = s_helpMenu->menu();
+ 
++    // If amarok-doc is not installed, bring up the online version instead.
++    if ( !QFile::exists( "/usr/share/doc/HTML/en/amarok/index.docbook" ) ) {
++        QAction *contentsAction = s_helpMenu->action( KHelpMenu::menuHelpContents );
++        // disconnect the default slot which fires up KHelpCenter
++        disconnect( contentsAction, SIGNAL(triggered(bool)), s_helpMenu, SLOT(appHelpActivated()) );
++        if ( s_onlineHelpHandler == 0 )
++            s_onlineHelpHandler = new OnlineHelpHandler( parent );
++        else
++            // ensure no duplicate connection
++            disconnect( contentsAction, SIGNAL(triggered(bool)), s_onlineHelpHandler, SLOT(onlineHelpActivated()) );
++        // connect our custom slot which fires up a browser on UserBase instead
++        connect( contentsAction, SIGNAL(triggered(bool)), s_onlineHelpHandler, SLOT(onlineHelpActivated()) );
++    }
++
+     // NOTE: We hide "Report Bug..." because we need to add it on our own to name the dialog
+     // so it can be blacklisted from LikeBack.
+     s_helpMenu->action( KHelpMenu::menuReportBug )->setVisible( false );
+@@ -164,6 +181,17 @@
+     return menu;
+ }
+ 
++OnlineHelpHandler::OnlineHelpHandler( QObject* parent )
++        : QObject( parent )
++{
++}
++
++void
++OnlineHelpHandler::onlineHelpActivated()
++{
++    KToolInvocation::invokeBrowser( "http://userbase.kde.org/Amarok/Manual" );
++}
++
+ //////////////////////////////////////////////////////////////////////////////////////////
+ // PlayPauseAction
+ //////////////////////////////////////////////////////////////////////////////////////////
+diff -ur amarok-2.5.0/src/ActionClasses.h amarok-2.5.0-onlinedoc/src/ActionClasses.h
+--- amarok-2.5.0/src/ActionClasses.h	2011-12-15 08:36:48.000000000 +0100
++++ amarok-2.5.0-onlinedoc/src/ActionClasses.h	2012-01-29 08:08:13.000000000 +0100
+@@ -34,6 +34,16 @@
+ 
+ namespace Amarok
+ {
++    class OnlineHelpHandler : public QObject
++    {
++        Q_OBJECT
++        public:
++            OnlineHelpHandler( QObject* parent );
++
++        public slots:
++            void onlineHelpActivated();
++    };
++
+     class Menu : public KMenu
+     {
+         Q_OBJECT
+@@ -45,6 +55,7 @@
+         private:
+             static Menu       *s_instance;
+             static KHelpMenu  *s_helpMenu;
++            static OnlineHelpHandler *s_onlineHelpHandler;
+     };
+ 
+     class MenuAction : public KAction
