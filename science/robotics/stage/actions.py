@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 #
 # Copyleft 2012 Pardus ANKA Community
 # Copyright 2005-2011 TUBITAK/UEAKE
@@ -8,6 +8,8 @@
 
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
+
+WorkDir = "rtv-Stage-c318423"
 
 def setup():
     cmaketools.configure()

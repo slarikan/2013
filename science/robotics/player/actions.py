@@ -12,7 +12,16 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
 
 def setup():
-    cmaketools.configure("-DBoost_USE_MULTITHREAD=ON")
+    cmaketools.configure("-DBUILD_RUBYCPP_BINDINGS=ON \
+			  -DBoost_USE_MULTITHREAD=ON \
+			  -DUNICAP_DIR=/usr \
+			  -DBUILD_PLAYERCC_BOOST=ON \
+			  -DBUILD_PYTHONC_BINDINGS=ON \
+			  -DBUILD_PYTHONCPP_BINDINGS=ON \
+			  -DBUILD_EXAMPLES=ON \
+			  -DBUILD_DOCUMENTATION=ON \
+			  -DBUILD_PLAYERCC=ON \
+			  -DSWIG_EXECUTABLE=/usr/bin/swig")
 
 def build():
     cmaketools.make()
