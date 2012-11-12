@@ -4,20 +4,20 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-from pisi.actionsapi import autotools
+from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "mxcl-liblastfm-1c739eb"
+WorkDir = "eartle-liblastfm-9b4efb5"
 
 def setup():
-    autotools.rawConfigure("--prefix /usr \
-                            --release")
+    cmaketools.configure("-DBUILD_FINGERPRINT:BOOL=ON} \
+                          -DCMAKE_INSTALL_LIBDIR=lib")
 
 def build():
-    autotools.make()
+    cmaketools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("README", "COPYING")
+    pisitools.dodoc("README*", "COPYING")
