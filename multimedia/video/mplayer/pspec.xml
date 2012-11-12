@@ -14,8 +14,8 @@
         <IsA>app:console</IsA>
         <Summary>Media Player for Linux</Summary>
         <Description>MPlayer is a movie player that can run on many platforms. It plays most MPEG/VOB, AVI, Ogg/OGM, VIVO, ASF/WMA/WMV, QT/MOV/MP4, RealMedia, Matroska, NUT, NuppelVideo, FLI, YUV4MPEG, FILM, RoQ, PVA files, supported by many native codecs.</Description>
-        <Archive sha1sum="2d6e1c9871c353209fc488044fc994b189e658d9" type="targz">http://cekirdek.pardus.org.tr/~serdar/dist/files/mplayer-32752.tar.gz</Archive>
-        <Archive sha1sum="6f7522a14c7ff0083990d32f213ff6d8e577821e" type="targz" target="mplayer">http://cekirdek.pardus.org.tr/~serdar/dist/files/MPlayer_default_skin-0.1.tar.gz</Archive>
+        <Archive sha1sum="913a4bbeab7cbb515c2f43ad39bc83071b2efd75" type="tarxz">ftp://ftp.mplayerhq.hu/MPlayer/releases/MPlayer-1.1.tar.xz</Archive>
+        <Archive sha1sum="6f7522a14c7ff0083990d32f213ff6d8e577821e" type="targz" target="MPlayer-1.1">http://cekirdek.pardus.org.tr/~serdar/dist/files/MPlayer_default_skin-0.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>DirectFB-devel</Dependency>
             <Dependency>aalib-devel</Dependency>
@@ -79,55 +79,52 @@
             <Dependency>rtmpdump-devel</Dependency>
         </BuildDependencies>
         <Patches>
+			<!-- Maegia Patches -->
+            <!--Patch>maegia/mplayer-1.1-fix-live-test.patch</Patch-->
+            <Patch>maegia/mplayer-fix-dvd-crash.patch</Patch>
+            <Patch level="1">maegia/mplayer-format-string-literal.patch</Patch>
+            <Patch>maegia/mplayer-have-dlfcn_h.patch</Patch>
+            <Patch level="1">maegia/mplayer-r34911-dont-use-ffmpeg-functionality-outside-stable-release.patch</Patch>
+            <Patch level="1">maegia/mplayer-rtsp-extra-fixes.patch</Patch>
+            
+            <!-- Gentoo Patches -->
+            <Patch level="0">gentoo/mplayer-1.0_rc4-pkg-config.patch</Patch> 
+            <Patch level="0">gentoo/mplayer-1.1-codecid.patch</Patch> 
+			
             <!-- Bugfix -->
             <Patch level="1">tr-locale-fix.patch</Patch>
-            <!-- check if still needed
-            <Patch level="1">noalignmessage.patch</Patch>
-            -->
-            <Patch level="1">noframeskiplog.patch</Patch>
+
             <Patch level="1">osdmenu_post_cmd.patch</Patch>
             <Patch level="1">dvbmenu_post_cmd.patch</Patch>
             <Patch level="1">asf_streams.patch</Patch>
-            <!-- FIXME: is this still needed -->
             <Patch level="1">http-parse.patch</Patch>
             <Patch level="1">vo_keep_window_state.patch</Patch>
 
             <Patch>asf_redirect_playlist.patch</Patch>
             <Patch>asf_header_buffer_size.patch</Patch>
             <Patch>center-sdl.patch</Patch>
-            <!-- FIXME: use this on segfault and normal exit only after \n since some
-            frontends suck to parse it or teach smplayer how to parse
-            <Patch>reset-msgcolor-attributes.patch</Patch>
-            -->
+                    
             <Patch>fix-dvd-sub.patch</Patch>
             <Patch level="1">demux_mkv_seek.diff</Patch>
             <Patch level="1">awk_path.patch</Patch>
             <Patch level="1">remove_vfw_bframe_warning.patch</Patch>
-
-            <!-- don't let console config mess with gui config -->
-            <Patch level="1">dont_override_gui_conf.patch</Patch>
-            <Patch level="1">default_gui_config.patch</Patch>
 
             <!-- this is for \n\r in mp_msg when playing in gui -->
             <Patch level="1">erase_to_eof.patch</Patch>
 
             <!-- Menu stuff -->
             <Patch level="1">menu-colors.patch</Patch>
-            <!-- Menu is back to En now
-            <Patch level="1">menu-locale.patch</Patch>
-            -->
-
+            <!-- Menu is back to En now -->
+            <!--Patch level="1">menu-locale.patch</Patch -->
+            
             <!-- Enhancement -->
             <Patch level="1">alsa_surround.patch</Patch>
             <Patch level="1">mmsplaylist.patch</Patch>
-            <Patch level="1">config_per_protocol_and_extension-case.patch</Patch>
-            <Patch level="1">keep_volume_level.patch</Patch>
 
             <!-- Demuxer patches for eac3 support, can be epanded for provided samples -->
-            <Patch level="1">eac3_mkv.patch</Patch>
             <Patch level="1">eac3_codec_id.patch</Patch>
 
-            <!-- for libvaapi support -->
+            <!-- for libvaapi support 
             <Patch level="1">mplayer-vaapi.patch</Patch>
             <Patch level="1">mplayer-vaapi-menuload.patch</Patch>
             <Patch level="1">mplayer-vaapi-0.29.patch</Patch>
@@ -135,24 +132,10 @@
             <Patch level="1">mplayer-vdpau.patch</Patch>
             <Patch level="1">vaapi_eosd_backports.patch</Patch>
             <Patch level="1">mplayer-vaapi-disable_gtop.patch</Patch>
-            <!-- too hacky, keep it in case we really need it
+            too hacky, keep it in case we really need it
             <Patch level="1">mplayer-vaapi-gma500-workaround.patch</Patch>
             -->
-
-            <Patch level="1">v4lw.patch</Patch>
-
-            <!-- Not needed, for now
-            <Patch>x264_revert.patch</Patch>
-            -->
-
-            <!-- CVE-2011-1931 -->
-            <Patch level="1">ffmpeg.git-89f903b3d5ec38c9c5d90fba7e626fa0eda61a32.patch</Patch>
-
-            <!-- Internal libass fix for freetype 2.4.6 related crashes: https://code.google.com/p/libass/source/detail?spec=svn0b709a5df697b36a24e4456b24585ec8f0c54b63&r=0b709a5df697b36a24e4456b24585ec8f0c54b63 -->
-            <Patch level="1">libass-0b709a5df697.diff</Patch>
-
-            <!-- Fix SAMI subtitle parsing buffer overflow, pb #19331 -->
-            <Patch level="1">SAMI-subtitle-secfix.patch</Patch>
+           
         </Patches>
     </Source>
 
@@ -257,6 +240,7 @@
             <Path fileType="executable">/usr/bin/gmplayer</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/mplayer/skins</Path>
+            <Path fileType="data">/usr/share/icons</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/mplayer.desktop">mplayer.desktop</AdditionalFile>
@@ -264,6 +248,13 @@
     </Package>
 
     <History>
+		<Update release="150">
+            <Date>2012-10-11</Date>
+            <Version>1.1</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="149" type="security">
             <Date>2011-10-17</Date>
             <Version>0.0_20110105</Version>

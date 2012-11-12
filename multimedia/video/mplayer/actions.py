@@ -14,10 +14,10 @@ from pisi.actionsapi import get
 
 import os
 
-WorkDir = "mplayer"
-gcc_version = "4.3.5"
-mp_version = "32752"
-ff_version = "26223"
+#WorkDir = "mplayer"
+gcc_version = "4.7.2"
+mp_version = "1.1"
+ff_version = "1.0"
 
 def fixPermissions(dest):
     for root, dirs, files in os.walk(dest):
@@ -33,15 +33,17 @@ def setup():
     # to keep the source tarball small and avoid sandbox violation from subversion we remove .svn folders
     shelltools.unlink("version.sh")
     shelltools.echo("version.sh", '#!/bin/bash\necho "#define VERSION \\\"SVN-r%s-%s\\\"" > version.h' % (mp_version, gcc_version))
-    shelltools.echo("version.sh", 'echo "#define MP_TITLE \\\"%s \\\"VERSION\\\" (C) 2000-2010 MPlayer Team\\n\\\"" >> version.h')
+    shelltools.echo("version.sh", 'echo "#define MP_TITLE \\\"%s \\\"VERSION\\\" (C) 2000-2012 MPlayer Team\\n\\\"" >> version.h')
     shelltools.chmod("version.sh", 0755)
 
     shelltools.export("CFLAGS", "%s -O3" % get.CFLAGS())
     shelltools.export("CXXFLAGS", "%s -O3" % get.CXXFLAGS())
+    shelltools.export("LDFLAGS", "%s " % get.LDFLAGS())
 
     autotools.rawConfigure('--prefix=/usr \
                             --confdir=/usr/share/mplayer \
                             --datadir=/usr/share/mplayer \
+                            --enable-gui \
                             --disable-3dfx \
                             --disable-altivec \
                             --disable-arts \
@@ -64,7 +66,6 @@ def setup():
                             --enable-ass \
                             --enable-bl \
                             --enable-caca \
-                            --enable-cdparanoia \
                             --enable-cmov \
                             --enable-dvb \
                             --enable-dvdnav \
@@ -73,15 +74,13 @@ def setup():
                             --enable-freetype \
                             --enable-ftp \
                             --enable-gif \
+                            --enable-png \
                             --enable-gl \
-                            --enable-gui \
                             --enable-inet6 \
                             --enable-jack \
                             --enable-joystick \
                             --enable-jpeg \
                             --enable-langinfo \
-                            --enable-largefiles \
-                            --enable-libcdio \
                             --enable-liblzo \
                             --enable-libopencore_amrnb \
                             --enable-libopencore_amrwb \
@@ -97,7 +96,7 @@ def setup():
                             --enable-ossaudio \
                             --enable-png \
                             --enable-pulse \
-                            --enable-radio \
+                            --enable-radio-v4l2 \
                             --enable-radio-capture \
                             --enable-radio-v4l2 \
                             --enable-real \
@@ -110,32 +109,39 @@ def setup():
                             --enable-sse2 \
                             --enable-tga \
                             --enable-tv \
-                            --enable-tv-v4l1 \
+                            --disable-tv-v4l1 \
                             --enable-tv-v4l2 \
                             --enable-unrarexec \
                             --enable-v4l2 \
-                            --enable-v4lw \
-                            --enable-vaapi \
                             --disable-vdpau \
                             --enable-x11 \
                             --enable-xf86keysym \
                             --enable-xinerama \
                             --enable-xshape \
                             --enable-xv \
+                            --enable-fontconfig \
+                            --enable-xvid \
+                            --enable-theora \
+                            --enable-bluray \
+                            --enable-ffmpeg_a \
+                            --language=tr \
+                            --disable-ass-internal \
                             --enable-xvmc \
                             --with-xvmclib=XvMCW \
                             --charset=UTF-8 \
-                            --extra-libs="-lopenal -ljack -lass" \
+                            --extra-libs="-lopenal -ljack -lxvidcore -lfontconfig -lass -laa -lX11 -lXext" \
                             --disable-rpath' \
                             )
 
                             # stuff that fail hede=yes check, but working with hede=auto
-                            # --disable-faad-external \
-                            # --enable-directfb \
-                            # --enable-fontconfig \
-                            # --enable-xvid \
-                            # --enable-theora \
-                            # --language=tr \
+                            # do not use: autodetect is fine  --enable-cdparanoia and --enable-libcdio 
+                            #  --enable-directfb \
+                            #
+                            #  not ready 
+                            # --enable-live \
+                            #
+                            #   Maybe used
+                            # --disable-ffmpeg_so \
 
 def build():
     autotools.make()
@@ -166,8 +172,3 @@ def install():
     pisitools.insinto("/%s/%s/" % (get.docDIR(), get.srcNAME()), "TOOLS")
     pisitools.insinto("/%s/%s/" % (get.docDIR(), get.srcNAME()), "DOCS/tech")
     pythonmodules.fixCompiledPy("/usr/share/doc")
-
-    # we will use our own desktop file and icon
-    pisitools.remove("/usr/share/applications/mplayer.desktop")
-    pisitools.remove("/usr/share/pixmaps/mplayer.xpm")
-
