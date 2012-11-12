@@ -12,13 +12,13 @@
         <IsA>library</IsA>
         <Summary>.NET/Mono bindings for the KDE libraries</Summary>
         <Description>.NET/Mono bindings for the KDE libraries</Description>
-        <Archive sha1sum="9c8e41ebcec01cede7987958bb4d7ce775587e45" type="tarxz">mirrors://kde/stable/4.8.4/src/kimono-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="8f9571ede6e2801eba40ab59c44d47a3854e04dc" type="tarxz">mirrors://kde/stable/4.9.3/src/kimono-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qyoto-devel</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-kde-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">qyoto-devel</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-gen-devel</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-kde-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
             <Dependency>mono-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,8 +26,8 @@
     <Package>
         <Name>kimono</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">qyoto</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-kde</Dependency>
+            <Dependency versionFrom="4.9.3">qyoto</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-kde</Dependency>
             <Dependency>mono-devel</Dependency>
         </RuntimeDependencies>
         <Replaces>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-12</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="4">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
