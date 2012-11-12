@@ -16,9 +16,11 @@
         <Archive sha1sum="6106c9e13983c086daf1fb0dba1180abed17588c" type="targz">http://sourceforge.net/projects/pyqt/files/QScintilla2/QScintilla-2.6.2/QScintilla-gpl-2.6.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
-            <Dependency versionFrom="4.12.1">sip-devel</Dependency>
+            <Dependency versionFrom="4.14">sip-devel</Dependency>
+	    <Dependency versionFrom="4.14">python3-sip</Dependency>
             <Dependency versionFrom="4.7.1">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.3">python-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.5">python-qt-devel</Dependency>
+	    <Dependency versionFrom="4.9.5">python3-qt</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">qscintilla-2.6.2-qt4.patch</Patch>
@@ -30,6 +32,11 @@
         <Name>qscintilla2</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="4.7.1">qt</Dependency>
+            <Dependency versionFrom="4.14">sip</Dependency>
+            <Dependency versionFrom="4.14">python3-sip</Dependency>
+            <Dependency versionFrom="4.7.1">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.5">python-qt</Dependency>
+            <Dependency versionFrom="4.9.5">python3-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
