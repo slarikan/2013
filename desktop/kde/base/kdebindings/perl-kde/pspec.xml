@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>KDE4 Perl bindings</Summary>
         <Description>Contains KDE4 language bindings for Perl.</Description>
-        <Archive sha1sum="5d94e2f4d6a32cf4cc7ff1d577d925de53ec8dee" type="tarxz">mirrors://kde/stable/4.8.4/src/perlkde-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="9504e5f31787df5f31686aabab96d30af96f33b7" type="tarxz">mirrors://kde/stable/4.9.3/src/perlkde-4.9.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>okular-devel</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-kde</Dependency>
-            <Dependency versionFrom="4.8.4">perl-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-kde</Dependency>
+            <Dependency versionFrom="4.9.3">perl-qt-devel</Dependency>
             <Dependency>attica-devel</Dependency>    
             <Dependency>kdepimlibs</Dependency>
             <Dependency>kate-devel</Dependency>
@@ -27,10 +27,10 @@
         <Name>perl-kde</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.8.4">perl-qt</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-kde</Dependency>
-            <Dependency versionFrom="4.8.4">smoke-qt</Dependency>
-            <Dependency versionFrom="4.8.4">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">perl-qt</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-kde</Dependency>
+            <Dependency versionFrom="4.9.3">smoke-qt</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="65">
+            <Date>2012-11-12</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir.com</Email>
+        </Update>       
         <Update release="64">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
