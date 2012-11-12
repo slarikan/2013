@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>An introspective wrapper around the Qt and KDE frameworks</Summary>
         <Description>smoke-gen is Scripting Meta Object Kompiler Engine.</Description>
-        <Archive sha1sum="5ff7d15ed1cdea07f455fbf1189885518cf43cb6" type="tarxz">mirrors://kde/stable/4.8.4/src/smokegen-4.8.4.tar.xz</Archive>
+        <Archive sha1sum="0f5fc7634140434fad6c96f59055d91754b8f784" type="tarxz">mirrors://kde/stable/4.9.3/src/smokegen-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -22,7 +22,7 @@
         <Name>smoke-gen</Name>
         <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.8.3">qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/smoke*</Path>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-11-12</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="7">
             <Date>2012-06-08</Date>
             <Version>4.8.4</Version>
