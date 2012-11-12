@@ -77,6 +77,7 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libmng-devel</Dependency>
             <Dependency>rtmpdump-devel</Dependency>
+            <Dependency>libbluray-devel</Dependency>
         </BuildDependencies>
         <Patches>
 			<!-- Maegia Patches -->
@@ -204,6 +205,7 @@
             <Dependency>jpeg</Dependency>
             <Dependency>libmng</Dependency>
             <Dependency>rtmpdump</Dependency>
+            <Dependency>libbluray</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
