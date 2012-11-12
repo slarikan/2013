@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A small command-line program to download videos from YouTube.com</Summary>
         <Description>Youtube-dl is a small Python script to download videos from YouTube.com. Just give the URL or the identifier of the video, and it will download and save it as a .flv file.</Description>
-        <Archive sha1sum="5f9eb89d95670c8f7527cc9e84c8cb0a27075263" type="binary">https://github.com/rg3/youtube-dl/raw/2012.02.27/youtube-dl</Archive>
+        <Archive sha1sum="8ae1c8d78ae979c8a84a7802e57f8c298dcabac7" type="binary">https://github.com/rg3/youtube-dl/raw/2012.10.09/youtube-dl</Archive>
     </Source>
 
     <Package>
@@ -23,6 +23,13 @@
     </Package>
 
     <History>
+        <Update release="26">
+            <Date>2012-10-09</Date>
+            <Version>0.0_20121009</Version>
+            <Comment>v.bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="25">
             <Date>2012-09-01</Date>
             <Version>0.0_20120227</Version>
