@@ -26,6 +26,7 @@
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/eina</Path>
         </Files>
     </Package>
 
