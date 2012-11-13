@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>VLC Backend for Phonon</Summary>
         <Description>phonon-backend-vlc allows Phonon (the KDE media library) to use VLC for audio and video playback.</Description>
-        <Archive sha1sum="c0b5eb78f3d4b3e041b234d84afae32b42b55f61" type="tarxz">mirrors://kde/stable/phonon/phonon-backend-vlc/0.5.0/src/phonon-backend-vlc-0.5.0.tar.xz</Archive>
+        <Archive sha1sum="2c17bd124a2f6543efc6af0e6a79bf37f8f5cd37" type="tarxz">mirrors://kde/stable/phonon/phonon-backend-vlc/0.6.1/src/phonon-backend-vlc-0.6.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-11-13</Date>
+            <Version>0.6.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="6">
             <Date>2012-04-09</Date>
             <Version>0.5.0</Version>
@@ -43,7 +50,7 @@
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
         </Update>
-	<Update release="5">
+        <Update release="5">
             <Date>2011-05-01</Date>
             <Version>0.4.0</Version>
             <Comment>Version bump to 0.4.0</Comment>
