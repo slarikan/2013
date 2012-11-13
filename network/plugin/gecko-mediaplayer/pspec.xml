@@ -13,21 +13,18 @@
         <IsA>library</IsA>
         <Summary>Mediaplayer plugin for firefox</Summary>
         <Description>Browser plugin that uses GNOME MPlayer to play media in a browser. It should work with all browsers on Unix-ish systems (Mozilla, Firefox, Opera etc.).</Description>
-        <!--
-        <Archive sha1sum="1ad7de0a3ac5a9fa4680228f1b5f58831a8079f9" type="targz">http://gecko-mediaplayer.googlecode.com/files/gecko-mediaplayer-1.0.4.tar.gz</Archive>
-        -->
-        <Archive sha1sum="27896584a552721585a276f7a4825ecb79d2980c" type="targz">https://gecko-mediaplayer.googlecode.com/files/gecko-mediaplayer-1.0.6.tar.gz</Archive>
+        <Archive sha1sum="e5a3d9722bbaa5578cb8b0365c5ded41d94634af" type="targz">https://gecko-mediaplayer.googlecode.com/files/gecko-mediaplayer-1.0.7.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.0.3">gnome-mplayer</Dependency>
+            <Dependency versionFrom="1.0.7">gnome-mplayer</Dependency>
             <Dependency versionFrom="16.0">xulrunner-devel</Dependency>
-            <Dependency versionFrom="1.0.5">gmtk-devel</Dependency>
+            <Dependency versionFrom="1.0.7">gmtk-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>gecko-mediaplayer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.3">gnome-mplayer</Dependency>
+            <Dependency versionFrom="1.0.7">gnome-mplayer</Dependency>
             <Dependency versionFrom="16.0">xulrunner</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -39,6 +36,13 @@
     </Package>
 
     <History>
+	    <Update release="43">
+            <Date>2012-11-12</Date>
+            <Version>1.0.7</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="42">
             <Date>2012-09-05</Date>
             <Version>1.0.6</Version>
