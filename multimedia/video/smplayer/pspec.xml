@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An advanced mplayer frontend</Summary>
         <Description>smplayer is Qt application which intends to be a complete front-end for MPlayer, from basic features like playing videos, DVDs, and VCDs to more advanced features like support for MPlayer filters and more.</Description>
-        <Archive sha1sum="2cb2a50b5e6cc518fb9984a5e4b2c87c8cb98a99" type="tarbz2">http://downloads.sourceforge.net/project/smplayer/SMPlayer/0.8.0/smplayer-0.8.0.tar.bz2</Archive>
+        <Archive sha1sum="ac2ddd1ad1c433b047310b4c09421a9e45034184" type="tarbz2">http://downloads.sourceforge.net/project/smplayer/SMPlayer/0.8.1/smplayer-0.8.1.tar.bz2</Archive>
         <Archive sha1sum="27232216522766d3d4ceaa2b25ac9da66785fe59" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/smplayer-oxygen-air-theme.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+	    <Update release="34">
+            <Date>2012-11-12</Date>
+            <Version>0.8.1</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
          <Update release="33">
             <Date>2012-04-10</Date>
             <Version>0.8.0</Version>
