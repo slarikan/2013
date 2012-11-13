@@ -13,10 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>MPlayer frontend</Summary>
         <Description>Simple GUI for MPlayer. It is intended to be a nice tight player and provide a simple and clean interface to MPlayer. GNOME MPlayer has a rich API that is exposed via DBus. Using DBus you can control a single or multiple instances of GNOME MPlayer from a single command.</Description>
-        <!--
-        <Archive sha1sum="15c329573692e97bb550063854ddc6404309b265" type="targz">http://gnome-mplayer.googlecode.com/files/gnome-mplayer-1.0.4.tar.gz</Archive>
-        -->
-        <Archive sha1sum="36eb536a3656afab4564f835aa86bab667724129" type="targz">http://gnome-mplayer.googlecode.com/files/gnome-mplayer-1.0.6.tar.gz</Archive>
+        <Archive sha1sum="cedb3b3b2e67f2acef328c077f70e388e02839ce" type="targz">http://gnome-mplayer.googlecode.com/files/gnome-mplayer-1.0.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -26,7 +23,7 @@
             <Dependency>libnotify-devel</Dependency>
             <Dependency>musicbrainz3-devel</Dependency>
             <Dependency>libgpod-devel</Dependency>
-	    <Dependency>gmtk-devel</Dependency>
+	        <Dependency>gmtk-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libXScrnSaver-devel</Dependency>
@@ -65,6 +62,13 @@
     </Package>
 
     <History>
+	    <Update release="52">
+            <Date>2012-11-12</Date>
+            <Version>1.0.7</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="51">
             <Date>2012-08-29</Date>
             <Version>1.0.6</Version>

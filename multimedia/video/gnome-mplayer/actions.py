@@ -17,12 +17,11 @@ def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-dependency-tracking \
                          --with-gio \
+                         --enable-gtk3=no \
                          --enable-nautilus=no \
                          --with-libgpod \
                          --with-libnotify \
                          --with-libmusicbrainz3 \
-                         --without-gpm-new-method \
-                         --without-gpm-old-method \
                          --disable-schemas-install")
 
 
