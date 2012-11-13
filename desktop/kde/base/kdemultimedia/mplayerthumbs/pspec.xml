@@ -15,7 +15,7 @@
         <Archive sha1sum="9eeb903eeaa464b4f15205b4a7c4c204e13a56d7" type="tarxz">mirrors://kde/stable/4.9.3/src/kmix-4.9.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.9.3">kde-runtime-devel</Dependency>
-            <Dependency>mplayer-devel</Dependency>
+            <Dependency>mplayer</Dependency>
         </BuildDependencies>
     </Source>
 
