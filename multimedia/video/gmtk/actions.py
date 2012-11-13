@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 
 
 def setup():
-    autotools.configure()
+    autotools.configure("--enable-gtk3=no")
 
 def build():
     autotools.make()
