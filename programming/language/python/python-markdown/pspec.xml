@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python implementation of John Gruber's Markdown</Summary>
         <Description>Python-markdown is a pythonic implementation of Markdown, which is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</Description>
-        <Archive sha1sum="ce2848c60434a7c727c162ca5683998eb6d222c3" type="targz">http://pypi.python.org/packages/source/M/Markdown/Markdown-2.0.3.tar.gz</Archive>
+        <Archive sha1sum="f7365293d091a1a42e43ff2a976ebbd8d093f3e6" type="targz">http://pypi.python.org/packages/source/M/Markdown/Markdown-2.2.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -26,6 +26,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-13</Date>
+            <Version>2.2.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2010-10-13</Date>
             <Version>2.0.3</Version>

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A bunch of modules to provide low level functionalities to Python</Summary>
         <Description>python-logilab-common contains a bunch of Python modules providing low level functionalities shared among some python projects.</Description>
-        <Archive sha1sum="5994b48c36a1c55abfd484a98cc340634fce9e4c" type="targz">http://ftp.logilab.org/pub/common/logilab-common-0.53.0.tar.gz</Archive>
+        <Archive sha1sum="a1df7965bb9382f56047e616e420f49d6181a0b2" type="targz">http://download.logilab.org/pub/common/logilab-common-0.58.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-13</Date>
+            <Version>0.58.2</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2010-12-17</Date>
             <Version>0.53</Version>

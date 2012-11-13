@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python LZMA compression module</Summary>
         <Description>Platform independent python bindings for the LZMA compression library.</Description>
-        <Archive sha1sum="1cdb3bd534219f17fc6d3230ea7dd0d99f7be9ad" type="targz">http://cekirdek.pardus.org.tr/~ozan/dist/sources/fancycode-pylzma-v0.4.3-0-g3864d48.tar.gz</Archive>
+        <Archive sha1sum="703818c6bbba96dd843b583c3725b07f64ed6e73" type="targz">http://pypi.python.org/packages/source/p/pylzma/pylzma-0.4.4.tar.gz</Archive>
         <Patches>
             <Patch level="1">fix-i386-build.patch</Patch>
         </Patches>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-13</Date>
+            <Version>0.4.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-02-02</Date>
             <Version>0.4.3</Version>
