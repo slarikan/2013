@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A Python module for watching filesystems changes</Summary>
         <Description>python-inotify is a Python module for watching filesystems changes. It can be used for various kind of fs monitoring. It relies on a Linux Kernel feature (merged in kernel 2.6.13) called inotify. inotify is an event-driven notifier, its notifications are exported from kernel space to user space.</Description>
-        <Archive sha1sum="c135d899f88378e0bd2949439d2177dfdf2c9722" type="targz">http://seb.dbzteam.org/pub/pyinotify/releases/pyinotify-0.9.1.tar.gz</Archive>
+        <Archive sha1sum="c216ea1ad930ebbe71a26b9e7e5f8a120909bd99" type="targz">http://seb.dbzteam.org/pub/pyinotify/releases/pyinotify-0.9.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+       <Update release="6">
+            <Date>2012-11-13</Date>
+            <Version>0.9.3</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-02-10</Date>
             <Version>0.9.1</Version>

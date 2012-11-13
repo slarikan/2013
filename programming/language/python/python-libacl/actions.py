@@ -14,4 +14,4 @@ WorkDir = "pylibacl-%s" % get.srcVERSION()
 def install():
     pythonmodules.install()
 
-    pisitools.dodoc("IMPLEMENTATION")
+    pisitools.dodoc("COPYING", "README")

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Pure Python framework and set of enhanced PyGTK widgets</Summary>
         <Description>Pure Python framework and set of enhanced PyGTK widgets</Description>
-        <Archive sha1sum="83f5b46762d446587bc4cd71e0e644c2fd3be6fd" type="targz">mirrors://gnome/kiwi/1.9/kiwi-1.9.26.tar.gz</Archive>
+        <Archive sha1sum="d47d5a31b9d34c8fba6ae93798befac230d3ad92" type="tarxz">mirrors://gnome/kiwi/1.9/kiwi-1.9.29.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>python-gtk</Dependency>
             <Dependency>python-zope-interface</Dependency>
@@ -37,11 +37,19 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/gazpacho</Path>
             <Path fileType="data">/usr/share/kiwi</Path>
+	    <Path fileType="data">/usr/share/glade3</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-13</Date>
+            <Version>1.9.29</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2011-02-10</Date>
             <Version>1.9.26</Version>

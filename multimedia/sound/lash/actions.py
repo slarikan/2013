@@ -11,9 +11,10 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+WorkDir = "lash-0.6.0.594"
 
 def setup():
-    shelltools.export("CFLAGS", "%s -D_GNU_SOURCE" % get.CFLAGS())
+    shelltools.export("CFLAGS", "%s -D_GNU_SOURCE -ldl -ldm -lm -lreadline" % get.CFLAGS())
 
     #fix unused direct deps.
     autotools.autoreconf("-fi")
@@ -27,7 +28,7 @@ def build():
     autotools.make()
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     shelltools.chmod("%s/usr/lib/%s/site-packages/lash.py" % (get.installDIR(), get.curPYTHON()), 0644)
 

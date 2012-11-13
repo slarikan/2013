@@ -8,7 +8,7 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "pyinotify"
+WorkDir = "pyinotify-%s" % (get.srcVERSION())
 
 def build():
     pythonmodules.compile()

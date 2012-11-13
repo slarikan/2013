@@ -1,14 +1,14 @@
-Index: kiwi-1.9.29/setup.py
+Index: kiwi-1.9.26/setup.py
 ===================================================================
---- kiwi-1.9.29.orig/setup.py     2012-11-13 21:35:41.454383631 +0200
-+++ kiwi-1.9.29/setup.py          2012-11-13 21:35:41.473383589 +0200
-@@ -56,12 +56,8 @@
-                   ('$libdir/glade3/modules', ['kiwiwidgets.py']),
-                   ('share/glade3/pixmaps', pixmaps),
-                   # Documentation
+--- kiwi-1.9.26.orig/setup.py
++++ kiwi-1.9.26/setup.py
+@@ -57,12 +57,8 @@ setup(name="kiwi",
+                              'kiwiwidgets', '*.png')),
+                   (get_site_packages_dir('gazpacho', 'widgets'),
+                    listfiles('gazpacho-plugin', 'kiwiwidgets.py')),
 -                  ('share/doc/kiwi',
 +                  ('share/doc/python-kiwi',
-                    ('AUTHORS', 'NEWS', 'README')),
+                    ('AUTHORS', 'ChangeLog', 'NEWS', 'README')),
 -                  ('share/doc/kiwi/howto',
 -                   listfiles('doc/howto/', '*')),
 -                  ('share/doc/kiwi/api',

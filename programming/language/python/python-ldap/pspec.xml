@@ -12,13 +12,13 @@
         <IsA>library</IsA>
         <Summary>Various LDAP-related Python modules</Summary>
         <Description>Python-ldap provides an object-oriented API to access LDAP directory servers from Python programs.</Description>
-        <Archive sha1sum="8a12233d8be09788b846ed180dcdd555ca83bf39" type="targz">mirrors://sourceforge/python-ldap/python-ldap-2.3.5.tar.gz</Archive>
+        <Archive sha1sum="68b5903d6467e9b5d43d649d3b51cb52d486f2d9" type="targz">http://pypi.python.org/packages/source/p/python-ldap/python-ldap-2.4.10.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>openldap-client</Dependency>
             <Dependency>cyrus-sasl-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">gcc-else-syntax.patch</Patch>
+	  <!--<Patch level="1">gcc-else-syntax.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-13-16</Date>
+            <Version>2.4.10</Version>
+            <Comment>New release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2009-01-16</Date>
             <Version>2.3.5</Version>
