@@ -19,10 +19,12 @@ def setup():
     autotools.configure("--disable-static \
                          --disable-dependency-tracking \
                          --disable-ruby \
-                         --disable-rpath")
+                         --enable-rpath \
+                         --enable-rcl \
+                         --enable-perl")
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
