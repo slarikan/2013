@@ -22,6 +22,7 @@
          <bookmark name="WBEZ" url="http://wbez.ic.llnwd.net/stream/wbez_91_5_fm.pls"/>
      </group>
 +    <group name="Alfabetik Turkish Fm">
++	 <bookmark name="Radyo Seymen-obsoleteman" url="http://94.23.206.121:6363"/>
 +        <bookmark name="Abuzer Fm" url="http://live.radyotvonline.com:9030"/>
 +        <bookmark name="Afşin Fm" url="http://sunucu2.radyolarburada.com:7546"/>
 +        <bookmark name="Aktif Radyo" url="http://sunucu2.radyolarburada.com:5484"/>
@@ -1523,7 +1524,6 @@
 +	<bookmark name="Radyo Serender" url="http://94.75.222.230:7522"/>
 +	<bookmark name="Radyo Sevda" url="http://sevdaruzgari.net:6386"/>
 +	<bookmark name="Radyo Sevgim" url="http://95.168.189.11:9900"/>
-+	<bookmark name="Radyo Seymen" url="http://89.149.196.240:6363"/>
 +	<bookmark name="Radyo Simal" url="http://95.211.87.142:7274"/>
 +	<bookmark name="Radyo Simge" url="http://radyosimge.net:8022"/>
 +	<bookmark name="Radyo Slow Time" url="http://live5.radyotvonline.com:8180"/>
