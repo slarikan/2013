@@ -17,6 +17,13 @@
         <Patches>
             <Patch level="1">desktop.patch</Patch>
             <Patch level="1">policykit.patch</Patch>
+            <Patch level="0">wicd-1.7.2.4-fix-dbus-error.patch</Patch>
+            <Patch level="1">wicd-1.7.1_pre20111210-wpa-psk-hex-template.patch</Patch>
+            <Patch level="1">wicd-1.7.1-provide-net.patch</Patch>
+            <Patch level="1">wicd-1.7.1-DaemonClosing.patch</Patch>
+            <Patch level="1">wicd-1.7.1-dbus-failure.patch</Patch>
+            <Patch level="1">wicd-1.7.0-dbus-policy.patch</Patch>
+            <Patch level="1">wicd-1.7.0-remove-WHEREAREMYFILES.patch</Patch>
         </Patches>
     </Source>
 
@@ -96,6 +103,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-11-13</Date>
+            <Version>1.7.2.4</Version>
+            <Comment>add patches</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="15">
             <Date>2012-08-28</Date>
             <Version>1.7.2.4</Version>
