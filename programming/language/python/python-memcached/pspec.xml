@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python bindings for memcached</Summary>
         <Description>python-memcached is a Python based API (implemented in 100% python) for communicating with the memcached distributed memory object cache daemon.</Description>
-        <Archive sha1sum="682f491a940dc73f97a5c6d6f027d6dd1a4a8c19" type="targz">ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.47.tar.gz</Archive>
+        <Archive sha1sum="cdb72f0f27135298ff06c8e41e50a0c10b027002" type="targz">ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.48.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-setuptools</Dependency>
         </BuildDependencies>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-13</Date>
+            <Version>1.48</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-02-10</Date>
             <Version>1.47</Version>
