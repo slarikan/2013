@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python Imaging Library (PIL)</Summary>
         <Description>The Python Imaging Library (PIL) adds image processing capabilities to your Python interpreter. This library supports many file formats, and provides powerful image processing and graphics capabilities.</Description>
-        <Archive sha1sum="952d241e4af8ba09f74e6926108b7c0c748d0f89" type="targz">http://effbot.org/downloads/Imaging-1.1.6.tar.gz</Archive>
+        <Archive sha1sum="76c37504251171fda8da8e63ecb8bc42a69a5c81" type="targz">http://effbot.org/media/downloads/Imaging-1.1.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-tk</Dependency>
             <Dependency>tcltk-devel</Dependency>
@@ -23,8 +23,7 @@
         <Patches>
             <Patch level="1">local_only_initial_value.patch</Patch>
             <Patch level="1">gentoo-imaging-sane.patch</Patch>
-            <Patch>gentoo-imaging-tiffendian.patch</Patch>
-            <Patch level="1">gentoo-imaging-no-xv.patch</Patch>
+            <Patch level="1">anka-imaging-tiffendian.patch</Patch>
             <Patch level="1">gentoo-imaging-giftrans.patch</Patch>
         </Patches>
     </Source>
@@ -47,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-11-13</Date>
+            <Version>1.1.7</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-13</Date>
             <Version>1.1.6</Version>
