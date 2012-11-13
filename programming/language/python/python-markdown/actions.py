@@ -25,7 +25,7 @@ def install():
     pisitools.dodir("%s" % eggDir)
     pisitools.insinto("%s/" % eggDir, "PKG-INFO" )
 
-    for i in ['docs/*.txt']:
+    for i in ['docs/AUTHORS', 'docs/CHANGE_LOG', 'docs/README*', 'docs/*.txt']:
         pisitools.dodoc(i)
 
     shelltools.chmod("docs/extensions/*", 0644)

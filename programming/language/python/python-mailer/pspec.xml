@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A Python module that simplifies sending mail</Summary>
         <Description>python-mailer is a simple python module that auto-detects attachment types, supports for internationalized headers and is used to send plain text, HTML, email and attachments.</Description>
-        <Archive sha1sum="5e11d6bddd2b74599dcb604e2ecc1d2dc620d82b" type="zip">http://pypi.python.org/packages/source/m/mailer/mailer-0.7.zip</Archive>
+        <Archive sha1sum="06094b6b156313280af0304622f92863b0959ba4" type="zip">http://pypi.python.org/packages/source/m/mailer/mailer-0.5.zip</Archive>
     </Source>
 
     <Package>
@@ -24,13 +24,6 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2012-11-13</Date>
-            <Version>0.7</Version>
-            <Comment>First release.</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
         <Update release="1">
             <Date>2010-07-07</Date>
             <Version>0.5</Version>

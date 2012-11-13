@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A logging sytem for Python</Summary>
         <Description>Logbook is a logging sytem for Python that replaces the standard library’s logging module. It was designed with complex and simple applications in mind.</Description>
-        <Archive sha1sum="93307c3fde2301ea3dd4f33d852af37058bc1ee1" type="targz">http://pypi.python.org/packages/source/L/Logbook/Logbook-0.4.tar.gz</Archive>
+        <Archive sha1sum="465aa343d30f321a780c77956144bd816213c3b9" type="targz">http://pypi.python.org/packages/source/L/Logbook/Logbook-0.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,13 +24,6 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2012-11-13</Date>
-            <Version>0.4</Version>
-            <Comment>version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
         <Update release="1">
             <Date>2010-10-22</Date>
             <Version>0.3</Version>

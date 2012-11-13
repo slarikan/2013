@@ -9,7 +9,7 @@
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 
-WorkDir = "pylzma-0.4.4"
+WorkDir = "fancycode-pylzma-3864d48"
 
 def install():
     pythonmodules.install()
