@@ -9,9 +9,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fi")
+    autotools.autoreconf("-vif")
     autotools.configure("--disable-mount-locking \
                          --enable-ignore-busy \
+                         --disable-mount-move \
+                         --with-sasl=yes \
+                         --with-systemd \
                          --without-hesiod \
                          --with-fifodir=/var/run/autofs \
                          --with-flagdir=/var/run/autofs \
@@ -23,6 +26,6 @@ def build():
 def install():
     autotools.rawInstall("INSTALLROOT=%s" % get.installDIR())
 
-    pisitools.removeDir("/etc/init.d")
+    #pisitools.removeDir("/etc/init.d")
 
     pisitools.dodoc("CREDITS", "COPY*", "samples/ldap*", "samples/autofs.schema")
