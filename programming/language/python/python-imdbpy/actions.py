@@ -16,7 +16,5 @@ def setup():
 def install():
     pythonmodules.install()
 
-    pisitools.domove("/usr/imdb/locale", "/usr/share/locale")
-    pisitools.removeDir("/usr/imdb")
     pisitools.remove("%s/%s/INSTALL.txt" % (get.docDIR(), get.srcNAME()) )
 

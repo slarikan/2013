@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A Python package to access the IMDb's database</Summary>
         <Description>IMDbPY is a python package useful to retrieve and manage the data of the IMDb movie database about movies, people, characters and companies.</Description>
-        <Archive sha1sum="06628ae2ccf5de8d79ac9415c88afc1179daa40f" type="targz">mirrors://sourceforge/imdbpy/IMDbPY-4.7.tar.gz</Archive>
+        <Archive sha1sum="dc1313c204933b53b8fef0edfddd5b2ccbbf9b9b" type="targz">mirrors://sourceforge/imdbpy/IMDbPY-4.9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-SQLObject</Dependency>
             <Dependency>python-lxml</Dependency>
@@ -30,11 +30,27 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="config">/usr/etc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="doc">/usr/share/doc/python-imdbpy</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>python-imdbpy-doc</Name>
+        <RuntimeDependencies>
+            <Dependency version="current">>python-imdbpy</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="doc">/usr/share/doc/python-imdbpy</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-11-13</Date>
+            <Version>4.9</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2011-01-24</Date>
             <Version>4.7</Version>
