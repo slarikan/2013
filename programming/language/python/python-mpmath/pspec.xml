@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A python library for arbitrary-precision floating-point arithmetic</Summary>
         <Description>Mpmath implements a large set of mathematical functions and provides utilities for arbitrary-precision numerical differentiation, integration, root-finding, interval arithmetic, and other tasks. It supports unlimited exponent sizes, has full support for complex numbers, and is faster than Python's standard decimal library.</Description>
-        <Archive sha1sum="95de722d97903911ec1f9cf9592e9e007b3348e4" type="targz">http://mpmath.googlecode.com/files/mpmath-0.16.tar.gz</Archive>
+        <Archive sha1sum="c5bd806308c96d1d93a6b437995a09e5ab0e9331" type="targz">http://mpmath.googlecode.com/files/mpmath-0.17.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+       <Update release="10">
+            <Date>2012-11-13</Date>
+            <Version>0.17</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2010-11-25</Date>
             <Version>0.16</Version>
