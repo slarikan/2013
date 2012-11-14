@@ -20,14 +20,13 @@
             <Dependency>phonon</Dependency>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kdepimlibs-devel</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>qca2</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">custom_settings.patch</Patch>
             <Patch level="1">pardus_custom_settings.patch</Patch>
-            <Patch level="1">media.patch</Patch>
+            <!--Patch level="1">media.patch</Patch-->
         </Patches>
     </Source>
 
@@ -35,9 +34,7 @@
         <Name>konversation</Name>
         <RuntimeDependencies>
             <Dependency>phonon</Dependency>
-            <Dependency>kdebase</Dependency>
             <Dependency>kdepimlibs</Dependency>
-            <Dependency>libXScrnSaver</Dependency>
             <Dependency>kdelibs</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>qca2</Dependency>
