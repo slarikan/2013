@@ -16,8 +16,7 @@ def setup():
                          --enable-poppler-cairo \
                          --disable-dependency-tracking \
                          --with-python \
-                         --with-perl \
-                         --with-xft")
+                         --with-perl")
 
 def build():
     autotools.make()
