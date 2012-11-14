@@ -24,7 +24,7 @@
             <Dependency>polkit-qt_1-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">razor-panel-quicklaunch.patch</Patch>
+	  <!--<Patch level="1">razor-panel-quicklaunch.patch</Patch>-->
         </Patches>
     </Source>
 
