@@ -12,9 +12,9 @@
         <IsA>locale:ca</IsA>
         <Summary>Catalan KDE4 internationalization package</Summary>
         <Description>kde-l10n-ca is the KDE4 internationalization package that provides Catalan translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="43227a18c3ae97fdb8b72227ae93f10f1d8b8b9b">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ca-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="3cf63a9d52cce2d34a56af101badd856c1093b5e">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-ca-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="40">
+            <Date>2012-11-13</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="39">
             <Date>2012-06-05</Date>
             <Version>4.8.4</Version>
