@@ -12,9 +12,9 @@
         <IsA>locale:cs</IsA>
         <Summary>Czech KDE4 internationalization package</Summary>
         <Description>kde-l10n-cs is the KDE4 internationalization package that provides Czech translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="3916b03d0bd8589d29c7f47e2e57f8011e603aff">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-cs-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="5fb0ef93bf8984a3b81680a202a945da010d23e6">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-cs-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="36">
+            <Date>2012-11-13</Date>
+            <Version>4.9.3</Version>
+            <Comment>Version bump to 4.9.3</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="35">
             <Date>2012-06-05</Date>
             <Version>4.8.4</Version>
