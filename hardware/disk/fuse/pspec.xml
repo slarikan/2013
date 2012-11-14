@@ -16,6 +16,7 @@
         <Patches>
 <!--             <Patch>fuse-2.8.0-fix-str-fmt.patch</Patch> -->
 <!--             <Patch level="1">use-lpthread.patch</Patch> -->
+             <Patch level="0">skip_umount_test.patch</Patch>
         </Patches>
     </Source>
 
