@@ -19,7 +19,7 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency>libwnck-devel</Dependency>
+            <Dependency>libwnck2-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
@@ -48,7 +48,7 @@
             <Dependency>gtk2</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>libwnck</Dependency>
+            <Dependency>libwnck2</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
