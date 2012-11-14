@@ -20,7 +20,7 @@
 	    <Dependency>python-gudev</Dependency>
 	    <Dependency>python-gtk-devel</Dependency>
             <Dependency>mate-conf-devel</Dependency>
-	    <Dependency>libsoup-devel</Dependency>
+	    <Dependency>libsoup-gnome</Dependency>
             <Dependency>gtk2-devel</Dependency>
 	 </BuildDependencies>
     </Source>
@@ -33,7 +33,7 @@
 	    <Dependency>python-gudev</Dependency>
 	    <Dependency>python-gtk</Dependency>
             <Dependency>mate-conf</Dependency>
-	    <Dependency>libsoup</Dependency>
+	    <Dependency>libsoup-gnome</Dependency>
             <Dependency>gtk2</Dependency>
 	 </RuntimeDependencies>
         <Files>
