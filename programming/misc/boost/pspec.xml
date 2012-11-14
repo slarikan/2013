@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Peer-reviewed portable C++ source libraries</Summary>
         <Description>Boost provides free portable peer-reviewed C++ libraries. The emphasis is on portable libraries which work well with the C++ Standard Library.</Description>
-        <Archive sha1sum="52ef06895b97cc9981b8abf1997c375ca79f30c5" type="tarbz2">mirrors://sourceforge/boost/boost_1_51_0.tar.bz2</Archive>
+        <Archive sha1sum="cddd6b4526a09152ddc5db856463eaa1dc29c5d9" type="tarbz2">mirrors://sourceforge/boost/boost_1_52_0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>icu4c-devel</Dependency>
 
@@ -50,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-11-14</Date>
+            <Version>1.52.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="16">
             <Date>2012-08-21</Date>
             <Version>1.51.0</Version>
