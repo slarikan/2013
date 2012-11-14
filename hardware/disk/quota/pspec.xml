@@ -13,23 +13,25 @@
         <IsA>app:console</IsA>
         <Summary>System administration tools for monitoring users' disk usage</Summary>
         <Description>The quota package contains system administration tools for monitoring and limiting user and or group disk usage per file system.</Description>
-        <Archive sha1sum="8dc04ea803a43496dfe275a8260757f558a2d762" type="targz">mirrors://sourceforge/linuxquota/quota-3.17.tar.gz</Archive>
+        <Archive sha1sum="64d2ab8b039cfea1aa4bd9e77e8c373488a7f0bf" type="targz">http://sourceforge.net/projects/linuxquota/files/quota-tools/4.01/quota-4.01.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libnl-devel</Dependency>
             <Dependency>openldap-client</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">quota-3.06-warnquota.patch</Patch>
-            <Patch level="1">quota-3.06-no-stripping.patch</Patch>
+            <!--<Patch level="1">quota-3.06-warnquota.patch</Patch>
+            <Patch level="1">quota-3.06-no-stripping.patch</Patch>-->
             <Patch level="1">quota-3.06-man-page.patch</Patch>
             <Patch level="1">quota-3.06-pie.patch</Patch>
             <Patch level="1">quota-3.13-wrong-ports.patch</Patch>
-            <Patch level="1">quota-3.16-helpoption.patch</Patch>
+            <!--<Patch level="1">quota-3.16-helpoption.patch</Patch>
             <Patch level="1">quota-3.16-quotaoffhelp.patch</Patch>
-            <Patch level="1">quota-3.17-quotactlmanpage.patch</Patch>
+            <Patch level="1">quota-3.17-quotactlmanpage.patch</Patch>-->
             <Patch level="1">quota-3.17-ftbfs.patch</Patch>
-            <Patch level="1">quota-3.17-quotactl_null_corruption.patch</Patch>
-            <Patch level="1">quota-3.17-add-gfs2-support.patch</Patch>
+	    <Patch level="1">quota-4.01-warnquota.patch</Patch>
+	    <Patch level="1">quota-4.01-Make-group-warning-message-more-official.patch</Patch>
+            <!--<Patch level="1">quota-3.17-quotactl_null_corruption.patch</Patch>
+            <Patch level="1">quota-3.17-add-gfs2-support.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -51,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-14</Date>
+            <Version>4.0.1</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="2">
             <Date>2010-11-24</Date>
             <Version>3.17</Version>

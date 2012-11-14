@@ -13,8 +13,7 @@ WorkDir = "quota-tools"
 def setup():
     autotools.configure("--enable-ldapmail=try \
                          --enable-rpcsetquota=yes \
-                         --enable-rootsbin \
-                         --enable-netlink=yes")
+                         --enable-rootsbin ")
 
 def build():
     autotools.make()
