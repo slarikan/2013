@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A notifier/event scheduler abstraction written in python</Summary>
         <Description>pyNotifier implements notification mechanisms for socket events (read or write) and timers. Additionally external event dispatchers may be called during an idle period.</Description>
-        <Archive sha1sum="62b6288f595241b8cb62eb67feea6f4e22c29201" type="targz">http://www.bitkipper.net/bytes/debian/dists/unstable/source/pynotifier_0.7.0.orig.tar.gz</Archive>
+        <Archive sha1sum="62b6288f595241b8cb62eb67feea6f4e22c29201" type="targz">http://www.bitkipper.net/bytes/software/debian/dists/unstable/source/pynotifier_0.7.0.orig.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2011-11-13</Date>
+            <Version>0.7.0</Version>
+            <Comment>rebuild for Anka</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-24</Date>
             <Version>0.7.0</Version>
