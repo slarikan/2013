@@ -40,7 +40,7 @@
     <Package>
         <Name>man-pages</Name>
         <RuntimeDependencies>
-            <Dependency>man</Dependency>
+            <Dependency>man-db</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
