@@ -15,8 +15,8 @@
         <Description>KDE Partition Manager allows you to manage your disks, partitions, and file systems. It can create, resize, delete, copy, backup, and restore partitions with a large number of supported file systems (ext2/3/4, reiserfs, NTFS, FAT32, and more).</Description>
         <Archive sha1sum="cf0a55a92134a74b717237ebafb3629ec8dfa7ee" type="tarbz2">mirrors://sourceforge/partitionman/partitionmanager-1.0.3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.5.0">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
             <Dependency>automoc4</Dependency>
             <Dependency versionFrom="2.3">parted-devel</Dependency>
         </BuildDependencies>
@@ -29,8 +29,8 @@
     <Package>
         <Name>partitionmanager</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.0">kdelibs</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.3">qt</Dependency>
             <Dependency versionFrom="2.3">parted</Dependency>
         </RuntimeDependencies>
         <Files>
