@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Userland logical volume management tools</Summary>
         <Description>LVM2 includes all of the support for handling read/write operations physical and logical volumes.</Description>
-        <Archive sha1sum="ca92d976628246745f0981d1514a79a4a8e32314" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.97.tgz</Archive>
+        <Archive sha1sum="077425115b164c335a9930df745943e9ea666a8a" type="targz">ftp://sources.redhat.com/pub/lvm2/LVM2.2.02.98.tgz</Archive>
         <Patches>
 <!--             <Patch level="1">lvm2-no-floor.patch</Patch> -->
 <!--             <Patch level="1">lvm2-diet.patch</Patch> -->
@@ -20,6 +20,8 @@
 <!--             <Patch level="1">fix-build-error.patch</Patch> -->
 <!--             <Patch level="1">fix-underlinking.patch</Patch>  -->
 <!--             <Patch level="1">udev-rules.patch</Patch>  -->
+	    <Patch level="1">lvm2-enable-lvmetad-by-default.patch</Patch>
+	    <Patch level="1">lvm2-2_02_99-various-updates-and-fixes-for-systemd-units.patch</Patch>
         </Patches>
     </Source>
 
@@ -91,6 +93,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/sbin/lvmconf</Path>
+	    <Path fileType="executable">/usr/sbin/blkdeactivate</Path>
             <Path fileType="executable">/usr/sbin/fsadm</Path>
             <Path fileType="executable">/usr/sbin/lv*</Path>
             <Path fileType="executable">/usr/sbin/vg*</Path>
@@ -111,6 +114,7 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man/man5/lvm.conf.5</Path>
             <Path fileType="man">/usr/share/man/man8/fsadm.8</Path>
+	    <Path fileType="man">/usr/share/man/man8/blkdeactivate.8</Path>
             <Path fileType="man">/usr/share/man/man8/*pv*</Path>
             <Path fileType="man">/usr/share/man/man8/*lv*</Path>
             <Path fileType="man">/usr/share/man/man8/*vg*</Path>
@@ -162,13 +166,20 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-14</Date>
+            <Version>2.02.98</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="22">
             <Date>2012-10-21</Date>
             <Version>2.02.97</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="21">
             <Date>2010-10-13</Date>
             <Version>2.02.73</Version>
