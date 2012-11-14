@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Utility to control Linux MD devices (software RAID arrays)</Summary>
         <Description>mdadm is used to create, manage, and monitor Linux MD (software RAID) devices.</Description>
-        <Archive sha1sum="aa76b7ed193a913dfcb1d3742ad0e06d8467a943" type="tarxz">http://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-3.2.5.tar.xz</Archive>
+        <Archive sha1sum="b2ee8e482c71685d77f1b19c5b9730962aaec448" type="tarxz">http://www.kernel.org/pub/linux/utils/raid/mdadm/mdadm-3.2.6.tar.xz</Archive>
         <Patches>
             <Patch>mdadm-3.2.x-udevdir.patch</Patch>
             <Patch level="1">mdadm-3.2.1-mdassemble.patch</Patch>
@@ -55,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-11-14</Date>
+            <Version>3.2.6</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2012-10-01</Date>
             <Version>3.2.5</Version>
