@@ -17,8 +17,7 @@
         <BuildDependencies>
             <Dependency>openjade</Dependency>
             <Dependency>rarian</Dependency>
-            <Dependency>sgml-common</Dependency>
-            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>sgml-common</Dependency>            
             <Dependency releaseFrom="3">docbook-xml</Dependency>
             <Dependency releaseFrom="9">docbook-xsl</Dependency>
         </BuildDependencies>
@@ -27,8 +26,7 @@
     <Package>
         <Name>gtk-doc</Name>
         <RuntimeDependencies>
-            <Dependency>rarian</Dependency>
-            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>rarian</Dependency>            
             <Dependency releaseFrom="3">docbook-xml</Dependency>
             <Dependency>sgml-common</Dependency>
         </RuntimeDependencies>
