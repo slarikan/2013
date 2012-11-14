@@ -12,14 +12,17 @@
         <IsA>app:console</IsA>
         <Summary>Userspace utilities for btrfs</Summary>
         <Description>btrfs-progs package provides all the userspace programs needed to create, check, modify and correct any inconsistencies in the btrfs filesystem.</Description>
-        <Archive sha1sum="483b44e844c3a97ccb830add21ca9327545dbc69" type="tarbz2">http://www.kernel.org/pub/linux/kernel/people/mason/btrfs/btrfs-progs-0.19.tar.bz2</Archive>
+        <Archive sha1sum="b1d82ef40301d563943132877d821e3c6e0f92b0" type="tarxz">ftp://ftp.archlinux.org/other/btrfs-progs/btrfs-progs-0.19.20121005.tar.xz</Archive>
         <Patches>
             <Patch level="1">btrfs-progs-fix-labels.patch</Patch>
-            <Patch level="1">btrfs-progs-valgrind.patch</Patch>
-            <Patch level="1">btrfs-progs-fix-return-value.patch</Patch>
+	    <Patch level="1">Btrfs-progs-add-btrfs-device-ready-command.patch</Patch>
+	    <Patch level="1">Btrfs-progs-detect-if-the-disk-we-are-formatting-is-.patch</Patch>
+	    <Patch level="1">btrfs-init-dev-list.patch</Patch>
+            <!--<Patch level="1">btrfs-progs-valgrind.patch</Patch>-->
+            <!--<Patch level="1">btrfs-progs-fix-return-value.patch</Patch>-->
             <Patch level="1">btrfs-progs-build-fixes.patch</Patch>
-            <Patch level="1">btrfs-progs-upstream.patch</Patch>
-            <Patch level="1">btrfs-progs-build-everything.patch</Patch>
+            <!--<Patch level="1">btrfs-progs-upstream.patch</Patch>
+            <Patch level="1">btrfs-progs-build-everything.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -34,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-13</Date>
+            <Version>0.19.20121005</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-01-06</Date>
             <Version>0.19</Version>

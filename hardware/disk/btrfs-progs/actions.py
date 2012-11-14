@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 
 def build():
     autotools.make("CC=%s CFLAGS=\"%s\"" % (get.CC(), get.CFLAGS()))
-    autotools.make("CC=%s CFLAGS=\"%s\" convert" % (get.CC(), get.CFLAGS()))
+    #autotools.make("CC=%s CFLAGS=\"%s\" convert" % (get.CC(), get.CFLAGS()))
 
 def install():
     pisitools.dosed("man/Makefile", "^prefix \?= .*$", "prefix = /usr/share")
