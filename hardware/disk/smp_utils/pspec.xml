@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Utilities for SAS management protocol SMP</Summary>
         <Description>smp_utils contains utilities which sends a Serial Attached SCSI (SAS) Management Protocol (SMP) request to a SMP target.</Description>
-        <Archive sha1sum="09aa40c5e658f169f6f22fd9038b31f10a5f23bc" type="targz">http://sg.danny.cz/sg/p/smp_utils-0.95.tgz</Archive>
+        <Archive sha1sum="3da97262e4b3adcf93469f0421d714bef851875c" type="targz">http://sg.danny.cz/sg/p/smp_utils-0.98b2.tgz</Archive>
     </Source>
 
     <Package>
@@ -20,12 +20,20 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="header">/usr/include/scsi/smp_lib.h</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-14</Date>
+            <Version>0.98</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-11-26</Date>
             <Version>0.95</Version>
