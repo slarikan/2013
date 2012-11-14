@@ -1837,7 +1837,7 @@
 +    <group name="Polskie stacje radiowe">
 +        <group name="Antyradio">
 +            <bookmark name="Warszawa" url="http://94.23.89.48:7000"/>
-+            <bookmark name="Karowice" url="http://94.23.89.48:7200"/>
++            <bookmark name="Katowice" url="http://94.23.89.48:7200"/>
 +            <bookmark name="Kraków" url="http://94.23.89.48:7300"/>
 +            <bookmark name="Made in Poland" url="http://antypl-01.eurozet.pl:8100"/>
 +            <bookmark name="Ballads" url="http://antyballads-02.eurozet.pl:8100 "/>
