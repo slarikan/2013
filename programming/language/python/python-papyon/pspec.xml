@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python libraries for MSN Messenger network</Summary>
         <Description>papyon is the library behind the MSN connection manager for Telepathy.</Description>
-        <Archive sha1sum="d164f1c5c3522c5072bd55b43bc09a9f9387839d" type="targz">http://www.freedesktop.org/software/papyon/releases/papyon-0.5.5.tar.gz</Archive>
+        <Archive sha1sum="5eb28e353513ce632072f6df1edbab54130b2280" type="targz">http://www.freedesktop.org/software/papyon/releases/papyon-0.5.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>pyopenssl</Dependency>
             <Dependency>python-pygobject</Dependency>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2011-08-26</Date>
+            <Version>0.5.6</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="6">
             <Date>2011-08-26</Date>
             <Version>0.5.5</Version>
