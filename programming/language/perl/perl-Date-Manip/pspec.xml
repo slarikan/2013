@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Date manipulation routines</Summary>
         <Description>Date::Manip is a set of routines designed to make any common date/time manipulation easy to do.</Description>
-        <Archive sha1sum="c6c96bd06a4610db3358430a3e27e9f8228e1481" type="targz">http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/Date-Manip-6.34.tar.gz</Archive>
+        <Archive sha1sum="3656592389dbfba0e8d928d1d8885cb086e35973" type="targz">http://search.cpan.org/CPAN/authors/id/S/SB/SBECK/Date-Manip-6.36.tar.gz</Archive>
         <BuildDependencies>
             <Dependency version="5.16.1">perl</Dependency>
             <Dependency>perl-YAML-Syck</Dependency>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+	    <Update release="11">
+            <Date>2012-11-14</Date>
+            <Version>6.36</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2012-09-06</Date>
             <Version>6.34</Version>
