@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>dmg to img format conversion tool</Summary>
         <Description>DMG2IMG is a tool which allows converting Apple compressed dmg archives to standard (hfsplus) image disk files.</Description>
-        <Archive sha1sum="9ea63282dacc5d1533954f535f2fb62f5a316bed" type="targz">http://vu1tur.eu.org/tools/dmg2img-1.6.2.tar.gz</Archive>
+        <Archive sha1sum="81def13b6761ae2105763313a7bb9cb39a0f9679" type="targz">http://vu1tur.eu.org/tools/dmg2img-1.6.4.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-13</Date>
+            <Version>1.6.4</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2010-10-05</Date>
             <Version>1.6.2</Version>
