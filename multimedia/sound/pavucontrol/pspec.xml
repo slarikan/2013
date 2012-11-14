@@ -60,7 +60,6 @@
             <Dependency>libglademm</Dependency>
             <Dependency>libsigc++</Dependency>
             <Dependency>glibmm</Dependency>
-            <Dependency>gtkmm3</Dependency>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
