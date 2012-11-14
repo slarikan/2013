@@ -12,12 +12,12 @@
         <IsA>app:console</IsA>
         <Summary>Userspace tools to create squashfs compressed filesystem</Summary>
         <Description>Squashfs is a highly compressed read-only filesystem for Linux. This package contains the utilities for manipulating squashfs filesystems.</Description>
-        <Archive sha1sum="d420ef4dc8b08d3394506f4bc9c4923ca1e5b859" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/squashfs-tools-4.0_20100915.tar.bz2</Archive>
+        <Archive sha1sum="e0944471ff68e215d3fecd464f30ea6ceb635fd7" type="targz">http://sourceforge.net/projects/squashfs/files/squashfs/squashfs4.2/squashfs4.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lzo-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">makefile.patch</Patch>
+            <!--<Patch level="1">makefile.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -33,6 +33,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-11-14</Date>
+            <Version>4.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2010-10-13</Date>
             <Version>4.0_20100915</Version>
