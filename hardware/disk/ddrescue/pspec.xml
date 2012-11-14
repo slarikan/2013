@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A data recovery tool</Summary>
         <Description>ddrescue copies data from one file or block device (hard disk, cdrom, etc) to another, trying hard to rescue data in case of read errors.</Description>
-        <Archive sha1sum="7079b5ae73133c8d6c1e982fbac1eea58531da97" type="targz">mirrors://gnu/ddrescue/ddrescue-1.14.tar.gz</Archive>
+        <Archive sha1sum="293e12624383e2890800a11fcc267559c85b3259" type="targz">mirrors://gnu/ddrescue/ddrescue-1.16.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -26,6 +26,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-13</Date>
+            <Version>1.16</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2011-01-13</Date>
             <Version>1.14</Version>
