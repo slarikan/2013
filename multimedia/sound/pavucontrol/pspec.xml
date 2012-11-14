@@ -17,11 +17,10 @@
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>libglademm-devel</Dependency>
-            <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>libsigc++-devel</Dependency>
             <Dependency>glibmm-devel</Dependency>
-            <Dependency>gtkmm3-devel</Dependency>
-            <Dependency>gtk3-devel</Dependency>
+            <Dependency>gtkmm-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Mandriva patches -->
@@ -73,6 +72,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-13</Date>
+            <Version>1.0</Version>
+            <Comment>rebuild with gtk2</Comment>
+            <Name>Erdinç gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2012-08-31</Date>
             <Version>1.0</Version>

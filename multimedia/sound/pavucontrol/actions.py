@@ -11,7 +11,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-lynx")
+    autotools.configure("--disable-lynx \
+                         --disable-gtk3")
 
 def build():
     autotools.make()
