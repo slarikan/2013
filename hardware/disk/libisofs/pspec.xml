@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A library for creating ISO disc images</Summary>
         <Description>libisofs is a library that handles creating ISO disc image files. It is intended to work together with libburn to write these images to discs</Description>
-        <Archive sha1sum="0cf70862ed209adb251462d5d5077f8517fbeb75" type="targz">http://files.libburnia-project.org/releases/libisofs-1.2.2.tar.gz</Archive>
+        <Archive sha1sum="28580600491656a834a32eb7dd74b7870c10c9e5" type="targz">http://files.libburnia-project.org/releases/libisofs-1.2.4.tar.gz</Archive>
     </Source>
     <Package>
         <Name>libisofs</Name>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-14</Date>
+            <Version>1.2.4</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
          <Update release="9">
             <Date>2012-06-10</Date>
             <Version>1.2.2</Version>
