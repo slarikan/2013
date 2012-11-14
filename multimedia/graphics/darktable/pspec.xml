@@ -24,10 +24,13 @@
             <Dependency>librsvg-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
             <Dependency>openexr-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
-        <Patches/>
+        <Patches>
+            <Patch level="0">fix_build.patch</Patch>
+        </Patches>
     </Source>
     <Package>
         <Name>darktable</Name>
@@ -48,6 +51,7 @@
             <Dependency>libgphoto2</Dependency>
             <Dependency>librsvg</Dependency>
             <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>
             <Dependency>openexr-libs</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>tiff</Dependency>
@@ -65,6 +69,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="2">
+            <Date>2012-11-14</Date>
+            <Version>1.0.5</Version>
+            <Comment>Fix build, add missed dependency</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-03</Date>
             <Version>1.0.5</Version>

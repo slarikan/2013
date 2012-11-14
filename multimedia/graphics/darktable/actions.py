@@ -14,11 +14,11 @@ def setup():
                           -DCMAKE_BUILD_TYPE=Release \
                           -DBINARY_PACKAGE_BUILD=1 \
                           -DBUILD_USERMANUAL=0", sourceDir="..")
-    
+
 def build():
     shelltools.cd("build")
     cmaketools.make()
-    
+
 def install():
     shelltools.cd("build")
     cmaketools.install()
