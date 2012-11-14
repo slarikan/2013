@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A C++ library designed to help process WordPerfect documents</Summary>
         <Description>Library that handles Word Perfect documents.</Description>
-        <Archive sha1sum="375c97296120a67c0d7e8103c3e813e686565329" type="targz">mirrors://sourceforge/libwpd/libwpd-0.9.0.tar.gz</Archive>
+        <Archive sha1sum="0ca7f7caedf5eed5d6037fd014712c16d6c95e66" type="targz">mirrors://sourceforge/libwpd/libwpd-0.9.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libgsf-devel</Dependency>
             <Dependency>doxygen</Dependency>
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-14</Date>
+            <Version>0.9.6</Version>
+            <Comment>Bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-12-07</Date>
             <Version>0.9.0</Version>
