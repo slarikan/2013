@@ -14,11 +14,11 @@ from pisi.actionsapi import get
 def build():
     autotools.make()
 
-def check():
-    shelltools.cd("harness")
-    pisitools.dodir("testdir")
+#def check():
+    #shelltools.cd("harness")
+    #pisitools.dodir("testdir")
 
-    autotools.make("check prefix=../src libdir=../src")
+    #autotools.make("check prefix=../src libdir=../src")
 
 
 def install():

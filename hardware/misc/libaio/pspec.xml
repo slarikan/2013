@@ -22,6 +22,9 @@
             <Patch level="1">libaio-0.3.107-ar-ranlib.patch</Patch>
 	    <Patch level="1">92_unused_warnings.patch</Patch>
 	    <Patch level="0">libaio-0.3.109-testcase-8.patch</Patch>
+	    <Patch level="1">libaio-0.3.109-generic-arch.patch</Patch>
+	    <Patch level="1">libaio-0.3.109-unify-bits-endian.patch</Patch>
+	    <Patch level="1">libaio-0.3.109-x32.patch</Patch>
         </Patches>
     </Source>
 
@@ -48,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-14</Date>
+            <Version>0.3.109</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>0.3.109</Version>
