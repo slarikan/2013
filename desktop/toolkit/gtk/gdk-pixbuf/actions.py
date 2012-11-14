@@ -18,8 +18,9 @@ def setup():
                --enable-silent-rules \
                --enable-introspection \
                --with-libjasper \
-               --with-x11 \
-               --with-included-loaders=png"
+               --with-x11"
+
+# drop option --with-included-loaders=png for building mate desktop
 
     if get.buildTYPE() == "emul32":
         options += " --bindir=/emul32/bin"
