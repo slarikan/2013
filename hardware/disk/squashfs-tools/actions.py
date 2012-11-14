@@ -14,7 +14,9 @@ from pisi.actionsapi import get
 #WorkDir = "%s_%s" % (get.srcNAME(), get.srcVERSION())
 
 def build():
+    shelltools.cd("squashfs-tools")
     autotools.make('RPM_OPT_FLAGS="%s"' % get.CFLAGS())
 
 def install():
+    shelltools.cd("squashfs-tools")
     autotools.install("INSTALL_DIR='%s/usr/sbin'" % get.installDIR())
