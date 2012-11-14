@@ -12,14 +12,14 @@
         <IsA>app:console</IsA>
         <Summary>Powerful free data recovery software</Summary>
         <Description>TestDisk is a multi-platform tool to check and undelete partitions; supports reiserfs, ntfs, fat32, ext2/3 and many others. Also includes PhotoRec to recover pictures from digital camera memory.</Description>
-        <Archive sha1sum="6d25ceaed5a7f5e35466b0ad75a4bca104f66532" type="tarbz2">http://www.cgsecurity.org/testdisk-6.11.tar.bz2</Archive>
+        <Archive sha1sum="b08ace0257e3e437b6fc140360d75807ca4d46ae" type="tarbz2">http://www.cgsecurity.org/testdisk-6.13.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>ntfsprogs-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">photorec_611_exif_bound_checking_v2.patch</Patch>
-            <Patch level="1">docdir.patch</Patch>
+            <!--<Patch level="1">photorec_611_exif_bound_checking_v2.patch</Patch>
+            <Patch level="1">docdir.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -30,13 +30,20 @@
             <Dependency>ntfsprogs</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-11-14</Date>
+            <Version>6.13</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2010-10-13</Date>
             <Version>6.11</Version>
