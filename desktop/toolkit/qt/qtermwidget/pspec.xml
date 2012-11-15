@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>qtermwidget</Name>
-        <Homepage>http://gitorious.org/qtermwidget</Homepage>
+        <Homepage>https://github.com/qterminal/qtermwidget</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Terminal widget for Qt</Summary>
         <Description>A simple terminal widget for using with Qt based applications</Description>
-        <Archive sha1sum="f3140d7d3b398474a480288af6882addd4cf15ba" type="tarbz2">http://cekirdek.pardus.org.tr/~gokmen/files/qtermwidget-0.2.0.tar.bz2</Archive>
+        <Archive sha1sum="5916e885589daf532d205c1ba2a866649b7b7224" type="targz">https://github.com/downloads/pardus-anka/2013/qtermwidget.20121116.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.6.2">qt-devel</Dependency>
         </BuildDependencies>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-16</Date>
+            <Version>20121116</Version>
+            <Comment>Switch to github fork</Comment>
+            <Name>Gökmen Göksel</Name>
+            <Email>gokmen@pardus.org.tr</Email>
+        </Update>
         <Update release="4">
             <Date>2011-01-16</Date>
             <Version>0.2.0</Version>
