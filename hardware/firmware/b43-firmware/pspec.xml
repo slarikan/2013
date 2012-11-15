@@ -13,7 +13,7 @@
         <Summary>Firmware for Broadcom B43 wireless network chips</Summary>
         <Description>Firmware for Broadcom wireless network chips</Description>
         <Archive sha1sum="b1f61d283bd7d05ade313da522cb0d0ad4033652" type="binary">http://mirror2.openwrt.org/sources/wl_apsta-3.130.20.0.o</Archive>
-        <Archive sha1sum="ad5b3170cb9c72636e84392aefcdacf306270938" type="tarbz2">http://mirror2.openwrt.org/sources/broadcom-wl-4.178.10.4.tar.bz2</Archive>
+        <Archive sha1sum="21691a8c99c66f58d18f863ee43593d1633b454c" type="tarbz2">http://www.lwfinger.com/b43-firmware/broadcom-wl-5.100.138.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="013">b43-fwcutter</Dependency>
         </BuildDependencies>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+      <Update release="5">
+            <Date>2012-11-15</Date>
+            <Version>5.100.138</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2011-01-11</Date>
             <Version>4.178.10.4</Version>
