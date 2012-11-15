@@ -14,6 +14,7 @@ from pisi.actionsapi import shelltools
 shelltools.export("HOME", get.workDIR())
 
 def setup():
+    pisitools.dosed("configure.ac", "3.0", "2.0")
     autotools.configure("--disable-static")
     pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
 
@@ -21,6 +22,6 @@ def build():
     autotools.make()
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "HACKING", "MAINTAINERS", "NEWS", "README")

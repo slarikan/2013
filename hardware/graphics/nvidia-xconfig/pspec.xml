@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>The NVIDIA X Configuration Tool</Summary>
         <Description>The NVIDIA X Configuration Tool</Description>
-        <Archive sha1sum="4f6f32174d538c9d7935f78441340ca4adb018e8" type="tarbz2">ftp://download.nvidia.com/XFree86/nvidia-xconfig/nvidia-xconfig-290.10.tar.bz2</Archive>
+        <Archive sha1sum="e947ef017760878b1be1d4bd7cacf3fb7936dfc1" type="tarbz2">ftp://download.nvidia.com/XFree86/nvidia-xconfig/nvidia-xconfig-310.19.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+      <Update release="10">
+            <Date>2012-11-15</Date>
+            <Version>310.19</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="9">
             <Date>2012-01-03</Date>
             <Version>290.10</Version>

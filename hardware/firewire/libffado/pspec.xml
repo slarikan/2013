@@ -12,7 +12,7 @@
         <License>GPLv3</License>
         <Summary>Free firewire audio drivers</Summary>
         <Description>libffado tries to provide open-source drivers for all FireWire based pro-audio devices.</Description>
-        <Archive sha1sum="a44f000aa045ed5cfb4784f73f68171968becd09" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/libffado-2.1.0-svn1964.tar.bz2</Archive>
+        <Archive sha1sum="83255476b440f4ebafc484bc370e3501aa423375" type="targz">http://www.ffado.org/files/libffado-2.1.0.tgz</Archive>
         <BuildDependencies>
             <Dependency>xdg-utils</Dependency>
             <Dependency>glibmm-devel</Dependency>
@@ -29,8 +29,8 @@
             <Patch level="1">libffado-api-doc-only.patch</Patch>
             <Patch level="1">libffado-libconfig145.patch</Patch>
             <Patch level="1">flags.patch</Patch>
-            <Patch level="1">libffado-gcc47.patch</Patch>
-            <Patch level="3">fix-segfault-on-close.patch</Patch>
+            <!--<Patch level="1">libffado-gcc47.patch</Patch>
+            <Patch level="3">fix-segfault-on-close.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -97,6 +97,13 @@
     </Package>
 
     <History>
+      <Update release="6">
+            <Date>2012-11-15</Date>
+            <Version>2.1.0</Version>
+            <Comment>bağlantı düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-03-07</Date>
             <Version>2.1.0_1964</Version>
