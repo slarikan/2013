@@ -18,7 +18,7 @@
     <Package>
         <Name>python-paramiko</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.1">python-pycrypto</Dependency>
+            <Dependency versionFrom="2.6">python-pycrypto</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-11-15</Date>
+            <Version>1.7.7.1</Version>
+            <Comment>rebuild for anka</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="11">
             <Date>2011-08-03</Date>
             <Version>1.7.7.1</Version>

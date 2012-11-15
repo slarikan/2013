@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python Cryptography Toolkit</Summary>
         <Description>Python Cryptography Toolkit is a collection of cryptographic algorithms and protocols, implemented for use from Python.</Description>
-        <Archive sha1sum="96b33b77e729893bd0837a09a6aa7a12b5070037" type="targz">http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.3.tar.gz</Archive>
+        <Archive sha1sum="c17e41a80b3fbf2ee4e8f2d8bb9e28c5d08bbb84" type="targz">http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/pycrypto-2.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gmp-devel</Dependency>
         </BuildDependencies>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-13</Date>
+            <Version>2.6</Version>
+            <Comment>Bump to version 2.6</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin</Email>
+        </Update>
         <Update release="4">
             <Date>2011-08-03</Date>
             <Version>2.3</Version>

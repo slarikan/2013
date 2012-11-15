@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Tools for using a Web Server Gateway Interface stack</Summary>
         <Description>python-paste brings consistency to Python web development and web application installation, providing tools for both developers and system administrators.</Description>
-        <Archive sha1sum="df6114f419ce5b162a6e6e29d5a824d699448346" type="targz">http://pypi.python.org/packages/source/P/Paste/Paste-1.7.4.tar.gz</Archive>
+        <Archive sha1sum="11d3c5a2dc52c5e725139a9334574291a0f9d04f" type="targz">http://pypi.python.org/packages/source/P/Paste/Paste-1.7.5.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -23,6 +23,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="5">
+            <Date>2012-11-15</Date>
+            <Version>1.7.5.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.7.4</Version>
