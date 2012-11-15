@@ -10,7 +10,18 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-fiv")
-    autotools.configure("--disable-static")
+    autotools.configure("--disable-static \
+                         --enable-keyring \
+                         --enable-bash-completion \
+                         --enable-archive \
+                         --enable-bluray \
+                         --enable-udev \
+                         --disable-hal \
+                         --enable-gphoto2 \
+                         --enable-samba \
+                         --enable-gtk \
+                         --enable-udisks2 \
+                         --with-dbus-service-dir=/usr/share/dbus-1/services")
 
 def build():
     autotools.make()

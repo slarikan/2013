@@ -27,6 +27,9 @@
             <Dependency>samba-devel</Dependency>
             <Dependency>libproxy-devel</Dependency>
             <Dependency>libplist-devel</Dependency>
+            <Dependency>udisks2-devel</Dependency>
+            <Dependency>libbluray-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>  
             <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -48,10 +51,11 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/libexec/gvfsd</Path>
             <Path fileType="data">/usr/share/glib-2.0</Path>
-	    <Path fileType="data">//usr/share/bash-completion</Path>
-	    <Path fileType="data">/usr/share/dbus-1/services/gvfs-daemon.service</Path>
-	    <Path fileType="man">/usr/share/man/</Path>
-        </Files>
+	        <Path fileType="data">//usr/share/bash-completion</Path>
+	        <Path fileType="data">/usr/share/dbus-1/services/gvfs-daemon.service</Path>
+	        <Path fileType="man">/usr/share/man</Path>
+	        <Path fileType="data">/usr/share</Path>
+        </Files> 
     </Package>
 
     <Package>
@@ -62,7 +66,7 @@
             <Dependency>fuse</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/libexec/gvfs-fuse-daemon</Path>
+            <Path fileType="executable">/usr/libexec/gvfsd-fuse</Path>
         </Files>
     </Package>
 
@@ -153,6 +157,7 @@
             <Dependency>gvfs-gphoto2</Dependency>
             <Dependency>gvfs-afc</Dependency>
             <Dependency>libproxy</Dependency>
+            <Dependency>udisks2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/profile.d</Path>
