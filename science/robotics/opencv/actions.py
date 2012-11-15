@@ -27,7 +27,7 @@ def setup():
                           -DINSTALL_C_EXAMPLES=1 \
                           -DINSTALL_PYTHON_EXAMPLES=1 \
                           -DINSTALL_OCTAVE_EXAMPLES=1 \
-                          -DWITH_FFMPEG=1 \
+                          -DWITH_FFMPEG=0 \
                           -DWITH_UNICAP=0 \
                           -DENABLE_OPENMP=0 \
                           -DNEW_PYTHIN_SUPPORT=1 \
