@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>New generation gnome-virtual-file-system</Summary>
         <Description>GVFS is a userspace virtual filesystem designed to work with the I/O abstractions, especially HAL. It supports fuse for directly access for GVFS mounts. It installs several modules and backends that are automatically used by applications.</Description>
-        <Archive sha1sum="285a810772dce8b37289cbe0aaab8354f2b6717a" type="tarbz2">mirrors://gnome/gvfs/1.6/gvfs-1.6.7.tar.bz2</Archive>
+        <Archive sha1sum="f25b8fe73d8271129a1e623d8e105e7e84b476b4" type="tarxz">mirrors://gnome/gvfs/1.15/gvfs-1.15.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>avahi-devel</Dependency>
             <Dependency>avahi-glib-devel</Dependency>
@@ -30,7 +30,7 @@
             <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">gvfs-1.5.1-gphoto2-no-storageinfo-support.patch</Patch>
+	  <!--<Patch level="1">gvfs-1.5.1-gphoto2-no-storageinfo-support.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -47,7 +47,10 @@
             <Path fileType="library">/usr/lib/gio/modules/libgiovfsdbus.so</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/libexec/gvfsd</Path>
-            <Path fileType="data">/usr/share/dbus-1/services/gvfs-daemon.service</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+	    <Path fileType="data">//usr/share/bash-completion</Path>
+	    <Path fileType="data">/usr/share/dbus-1/services/gvfs-daemon.service</Path>
+	    <Path fileType="man">/usr/share/man/</Path>
         </Files>
     </Package>
 
@@ -164,6 +167,19 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-15</Date>
+            <Version>1.15.0</Version>
+            <Comment>version bump
+               * New testing framework, written by Martin Pitt
+               * daemon: Check for a NULL GMountOperation when unmounting
+               * daemon: Allow specifying directory and extensions for mount files
+               * proxy volume monitor: Don't emit connected/added signals at object creation
+               * proxy volume monitor: Allow specifying the dir for .monitor files
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <!--
         <Update release="6">
             <Date>2011-03-27</Date>
