@@ -18,7 +18,7 @@
             <Dependency>libgnomeprint-devel</Dependency>
             <Dependency>libgnomeprintui-devel</Dependency>
             <Dependency>librsvg-devel</Dependency>
-            <Dependency>libwnck-devel</Dependency>
+            <Dependency>libwnck2-devel</Dependency>
             <Dependency>gnome-desktop-devel</Dependency>
             <Dependency>gnome-sharp</Dependency>
             <Dependency>gtksourceview-devel</Dependency>
@@ -103,7 +103,7 @@
         <RuntimeDependencies>
             <Dependency>mono-runtime</Dependency>
             <Dependency>gnome-sharp</Dependency>
-            <Dependency>libwnck</Dependency>
+            <Dependency>libwnck2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libwncksharpglue-2.so</Path>
