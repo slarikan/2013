@@ -35,10 +35,17 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-15</Date>
+            <Version>0.2.0</Version>
+            <Comment>rebuild</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2012-06-110</Date>
             <Version>0.2.0</Version>
-            <Comment></Comment>
+            <Comment>version bump</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>

@@ -15,8 +15,8 @@
         <Description>thunar-vfs is a virtual filesystem shipped with the Thunar 1.0 and earlier releases.</Description>
         <Archive sha1sum="fe63138c9324946bdd7013c29284c22d4c8f94c5" type="tarbz2">http://archive.xfce.org/src/xfce/thunar-vfs/1.2/thunar-vfs-1.2.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.4.0">Thunar-devel</Dependency>
-            <Dependency versionFrom="0.8.0">exo-devel</Dependency>
+            <Dependency versionFrom="1.5.0">Thunar-devel</Dependency>
+            <Dependency versionFrom="0.9.1">exo-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gamin-devel</Dependency>
@@ -34,8 +34,8 @@
     <Package>
         <Name>thunar-vfs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.4.0">Thunar</Dependency>
-            <Dependency versionFrom="0.8.0">exo</Dependency>
+            <Dependency versionFrom="1.5.0">Thunar</Dependency>
+            <Dependency versionFrom="0.9.1">exo</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gamin</Dependency>
@@ -68,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-15</Date>
+            <Version>1.2.0</Version>
+            <Comment>Rebuild for exo</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2012-05-03</Date>
             <Version>1.2.0</Version>

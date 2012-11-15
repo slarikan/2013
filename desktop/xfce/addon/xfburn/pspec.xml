@@ -19,6 +19,7 @@
             <Dependency versionFrom="1.2.2">libisofs-devel</Dependency>
             <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
             <Dependency versionFrom="1.2.0">thunar-vfs-devel</Dependency>
+            <Dependency versionFrom="0.9.1">exo</Dependency>
             <Dependency>librsvg-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
         </BuildDependencies>
@@ -37,7 +38,7 @@
             <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
             <Dependency versionFrom="1.2.2">libisofs</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency versionFrom="0.8.0">exo</Dependency>
+            <Dependency versionFrom="0.9.1">exo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
             <Dependency>gst-plugins-base</Dependency>
@@ -51,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-15</Date>
+            <Version>0.4.3</Version>
+            <Comment>rebuild</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2012-06-10</Date>
             <Version>0.4.3</Version>

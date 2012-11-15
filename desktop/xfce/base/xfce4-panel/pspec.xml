@@ -24,7 +24,7 @@
             <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>libwnck2-devel</Dependency>
-            <Dependency version="0.8.0">exo-devel</Dependency>
+            <Dependency version="0.9.1">exo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
             <Dependency version="0.2.0">garcon-devel</Dependency>
@@ -46,7 +46,7 @@
             <Dependency version="4.10.0">libxfce4ui</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libwnck2</Dependency>
-            <Dependency version="0.8.0">exo</Dependency>
+            <Dependency version="0.9.1">exo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency version="0.2.0">garcon</Dependency>
@@ -89,6 +89,15 @@
     </Package>
 
     <History>
+        <Update release="26">
+            <Date>2012-11-13</Date>
+            <Version>4.10.0</Version>
+            <Comment>
+                * Rebuild with new realse exo
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="25">
             <Date>2012-08-31</Date>
             <Version>4.10.0</Version>

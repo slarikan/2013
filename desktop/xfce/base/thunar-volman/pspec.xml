@@ -19,8 +19,8 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <Dependency version="4.10.0">xfconf-devel</Dependency>
             <Dependency version="4.10.0">libxfce4util-devel</Dependency>
             <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
-            <Dependency version="1.4.0">Thunar-devel</Dependency>
-            <Dependency version="0.8.0">exo-devel</Dependency>
+            <Dependency version="1.5.0">Thunar-devel</Dependency>
+            <Dependency version="0.9.1">exo-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
@@ -32,8 +32,8 @@ thunar-volman is installed and configured properly, and you plug in your digical
             <Dependency version="4.10.0">xfconf-devel</Dependency>
             <Dependency version="4.10.0">libxfce4util-devel</Dependency>
             <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
-            <Dependency version="1.4.0">Thunar-devel</Dependency>
-            <Dependency version="0.8.0">exo-devel</Dependency>
+            <Dependency version="1.5.0">Thunar-devel</Dependency>
+            <Dependency version="0.9.1">exo-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </RuntimeDependencies>
@@ -46,6 +46,13 @@ thunar-volman is installed and configured properly, and you plug in your digical
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-13</Date>
+            <Version>0.8.0</Version>
+            <Comment>rebuild with new relase thunar</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-05-05</Date>
             <Version>0.8.0</Version>

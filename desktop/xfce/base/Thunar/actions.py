@@ -11,7 +11,8 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.system('xdt-autogen')
-    autotools.configure("--enable-dbus \
+    autotools.configure("--disable-static \
+                         --enable-dbus \
                          --enable-notifications \
                          --enable-gio-unix \
                          --enable-gnome-thumbnailers \

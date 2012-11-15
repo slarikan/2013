@@ -26,7 +26,7 @@
             <Dependency>libglade-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency version="0.8.0">exo-devel</Dependency>
+            <Dependency version="0.9.1">exo-devel</Dependency>
             <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
             <Dependency>libwnck-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -54,7 +54,7 @@
             <Dependency>libglade</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency version="0.8.0">exo</Dependency>
+            <Dependency version="0.9.1">exo</Dependency>
             <Dependency version="4.10.0">libxfce4ui</Dependency>
             <Dependency>libwnck</Dependency>
             <Dependency>cairo</Dependency>
@@ -76,6 +76,15 @@
     </Package>
 
     <History>
+        <Update release="17">
+            <Date>2012-05-04</Date>
+            <Version>4.10.0</Version>
+            <Comment>
+                * Rebuild with new realse exo
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="16">
             <Date>2012-08-31</Date>
             <Version>4.10.0</Version>
