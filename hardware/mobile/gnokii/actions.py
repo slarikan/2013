@@ -40,4 +40,4 @@ def install():
     pisitools.dodoc("Docs/README*", "Docs/CREDITS", "Docs/FAQ")
 
     # we will use our own desktop file and icon
-    pisitools.remove("/usr/share/applications/xgnokii.desktop")
+    #pisitools.remove("/usr/share/applications/xgnokii.desktop")
