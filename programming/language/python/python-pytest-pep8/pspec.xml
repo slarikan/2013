@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>pytest plugin to check source code against PEP8 requirements</Summary>
         <Description>py.test plugin for checking PEP8 source code compliance using the python-pep8 package.</Description>
-        <Archive sha1sum="92c150bbdd0d5728c634f397dfdcb1c815df9dd9" type="zip">http://pypi.python.org/packages/source/p/pytest-pep8/pytest-pep8-0.7.zip</Archive>
+        <Archive sha1sum="a1ac7d0cd1ec3369d3bb9231c35498d869f886f0" type="zip">http://pypi.python.org/packages/source/p/pytest-pep8/pytest-pep8-1.0.3.zip</Archive>
     </Source>
 
     <Package>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-16</Date>
+            <Version>1.0.3</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekinqgmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-07</Date>
             <Version>0.7</Version>

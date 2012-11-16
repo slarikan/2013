@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>python-pyosd</Name>
-        <Homepage>http://repose.cx/pyosd/</Homepage>
+        <Homepage>http://ichi2.net/pyosd/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -15,7 +15,7 @@
         <!--
         <Archive sha1sum="e3d1c83563bfbeb88e91b8f1c73ebc468b014773" type="targz">http://repose.cx/pyosd/pyosd-0.2.14.tar.gz</Archive>
         -->
-        <Archive sha1sum="e3d1c83563bfbeb88e91b8f1c73ebc468b014773" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/pyosd-0.2.14.tar.gz</Archive>
+        <Archive sha1sum="e3d1c83563bfbeb88e91b8f1c73ebc468b014773" type="targz">http://ichi2.net/pyosd/pyosd-0.2.14.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>xosd-devel</Dependency>
         </BuildDependencies>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-16</Date>
+            <Version>0.2.14</Version>
+            <Comment>rebuild for Anka, change home page</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekinqgmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.2.14</Version>

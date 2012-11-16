@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A simple text to HTML converter</Summary>
         <Description>A python implementation of Textile, Dean Allen's Human Text Generator. Textile simplifies the work of creating (X)HTML.</Description>
-        <Archive sha1sum="dea3d1f465de3de3d69017a07c57d2b55ce500da" type="targz">http://cheeseshop.python.org/packages/source/t/textile/textile-2.1.4.tar.gz</Archive>
+        <Archive sha1sum="16a4930fc3ef1afa3360e63af382258cc881a341" type="targz">http://cheeseshop.python.org/packages/source/t/textile/textile-2.1.5.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-16</Date>
+            <Version>2.1.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-04-05</Date>
             <Version>2.1.4</Version>

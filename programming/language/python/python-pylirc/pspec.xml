@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>lirc module for Python</Summary>
         <Description>lirc module for Python</Description>
-        <Archive sha1sum="90b016dc0ab1ad237603cbafa74c6625c6227a80" type="targz">http://puzzle.dl.sourceforge.net/sourceforge/pylirc/pylirc-0.0.5.tar.gz</Archive>
+        <Archive sha1sum="90b016dc0ab1ad237603cbafa74c6625c6227a80" type="targz">mirrors://sourceforge/pylirc/pylirc-0.0.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lirc-devel</Dependency>
         </BuildDependencies>

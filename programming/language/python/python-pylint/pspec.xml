@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Analyzes Python code looking for bugs and signs of poor quality</Summary>
         <Description>pylint is a Python tool that checks if a module satisfy a coding standard.</Description>
-        <Archive sha1sum="e44748f20455709e7e4c0365214f88a469799a9a" type="targz">http://ftp.logilab.org/pub/pylint/pylint-0.22.0.tar.gz</Archive>
+        <Archive sha1sum="5dcc07d622b4ff7d5751523fe0161989e463ffe6" type="targz">http://download.logilab.org/pub/pylint/pylint-0.26.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-logilab-astng</Dependency>
             <Dependency>python-logilab-common</Dependency>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-16</Date>
+            <Version>0.26.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2010-12-17</Date>
             <Version>0.22.0</Version>
