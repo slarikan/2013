@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Provide access to (SM)BIOS information</Summary>
         <Description>libsmbios project aims towards providing access to as much BIOS information as possible. It does this by providing a library of functions that can be used as well as sample binaries.</Description>
-        <Archive sha1sum="cab94459c6f846bad9330d3b8843d8db53fb714a" type="tarbz2">http://linux.dell.com/libsmbios/download/libsmbios/libsmbios-2.2.26/libsmbios-2.2.26.tar.bz2</Archive>
+        <Archive sha1sum="54c267411d2225cd54a3c8a696ca5c2a74e9d66e" type="tarbz2">http://linux.dell.com/libsmbios/download/libsmbios/libsmbios-2.2.28/libsmbios-2.2.28.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-16</Date>
+            <Version>2.2.28</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="8">
             <Date>2011-01-25</Date>
             <Version>2.2.26</Version>
