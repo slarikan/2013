@@ -8,11 +8,13 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import libtools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fi")
+    shelltools.system("./autogen.sh")
+    #autotools.autoreconf("-fi")
     autotools.configure("--libdir=/usr/lib \
                          --sysconfdir=/etc/gpm")
 
@@ -30,4 +32,4 @@ def install():
 
     pisitools.insinto("/etc/gpm", "conf/gpm-*.conf")
 
-    pisitools.dodoc("BUGS", "Changes", "README", "TODO", "doc/Announce", "doc/FAQ", "doc/README*")
+    pisitools.dodoc("COPYING", "README", "TODO", "doc/Announce", "doc/FAQ", "doc/README*")

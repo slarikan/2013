@@ -12,16 +12,16 @@
         <IsA>service</IsA>
         <Summary>Console mouse driver</Summary>
         <Description>GPM (short for General Purpose Mouse) brings mouse support to TTYs.</Description>
-        <Archive sha1sum="f3bb9272878b7934968381c8b25edab359114150" type="tarbz2">http://www.nico.schottelius.org/software/gpm/archives/gpm-1.20.6.tar.bz2</Archive>
+        <Archive sha1sum="08aaceddf7976b98ad3c43143012d3b89a296a40" type="tarbz2">http://www.nico.schottelius.org/software/gpm/archives/gpm-1.20.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>ncurses</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">abi.patch</Patch>
-            <Patch level="1">0001-daemon-use-sys-ioctl.h-for-ioctl.patch</Patch>
+            <!--<Patch level="1">abi.patch</Patch>
+            <Patch level="1">0001-daemon-use-sys-ioctl.h-for-ioctl.patch</Patch>-->
             <Patch level="1">fedora/gpm-1.20.5-close-fds.patch</Patch>
-            <Patch level="1">fedora/gpm-1.20.1-weak-wgetch.patch</Patch>
-            <Patch level="1">fedora/gpm-1.20.6-libtool.patch</Patch>
+            <!--<Patch level="1">fedora/gpm-1.20.1-weak-wgetch.patch</Patch>
+            <Patch level="1">fedora/gpm-1.20.6-libtool.patch</Patch>-->
             <Patch level="1">fedora/gpm-1.20.1-lib-silent.patch</Patch>
         </Patches>
     </Source>
@@ -50,6 +50,13 @@
    </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-11-16</Date>
+            <Version>1.20.7</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01qhotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2010-11-23</Date>
             <Version>1.20.6</Version>
