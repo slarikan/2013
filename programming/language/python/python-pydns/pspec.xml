@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>DNS module for python</Summary>
         <Description>A python library for performing DNS queries.</Description>
-        <Archive sha1sum="5934e0f5c4d2fbb76011e5b6dcec9eee96b08652" type="targz">mirrors://sourceforge/pydns/pydns-2.3.4.tar.gz</Archive>
+        <Archive sha1sum="1e0c11248071d3fac0a2d7516b1d2894388edbac" type="targz">mirrors://sourceforge/pydns/pydns-2.3.6.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-16</Date>
+            <Version>2.3.6</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-04-05</Date>
             <Version>2.3.4</Version>

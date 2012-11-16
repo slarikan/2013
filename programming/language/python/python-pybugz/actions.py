@@ -9,7 +9,7 @@
 from pisi.actionsapi import get
 from pisi.actionsapi import pythonmodules
 
-WorkDir = "williamh-pybugz-b8390ee"
+WorkDir = "pybugz-0.9.2_20121116"
 
 def build():
     pythonmodules.compile()

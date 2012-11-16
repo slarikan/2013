@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A Python library providing access to FITS ﬁles</Summary>
         <Description>PyFITS provides an interface to FITS(Flexible Image Transport System) formatted files under the Python scripting language and PyRAF, the Python-based interface to IRAF.</Description>
-        <Archive sha1sum="5a0c9c7fd058fc44a22f1c00682461ecf4ebc3c1" type="targz">http://www.stsci.edu/resources/software_hardware/pyfits/pyfits-2.4.0.tar.gz</Archive>
+        <Archive sha1sum="0387893b07d454b83180c591c883a984566bfcbc" type="targz">http://pypi.python.org/packages/source/p/pyfits/pyfits-3.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-numpy</Dependency>
         </BuildDependencies>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-11-16</Date>
+            <Version>3.1</Version>
+            <Comment>Version bump to the latest stable version.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="7">
             <Date>2011-02-01</Date>
             <Version>2.4.0</Version>

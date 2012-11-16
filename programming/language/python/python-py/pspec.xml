@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Library with cross-python path, ini-parsing, io, code, log facilities</Summary>
         <Description>The py lib is a Python development support library featuring; uniform local and svn path objects, explicit API control and lazy-importing, easy parsing of .ini files, dynamic code generation and introspection, uniform local and svn path objects.</Description>
-        <Archive sha1sum="774fbfce6e840bf823d30e0431a8ed3636285f50" type="zip">http://pypi.python.org/packages/source/p/py/py-1.4.4.zip</Archive>
+        <Archive sha1sum="240f2e4eead7bd73f5c898f12a16711d7a42cd05" type="zip">http://pypi.python.org/packages/source/p/py/py-1.4.9.zip</Archive>
         <BuildDependencies>
             <Dependency>python-sphinx</Dependency>
         </BuildDependencies>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-16</Date>
+            <Version>1.4.9</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-07-12</Date>
             <Version>1.4.4</Version>

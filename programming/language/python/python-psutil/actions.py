@@ -13,4 +13,4 @@ def build():
 def install():
     pythonmodules.install()
 
-    pisitools.dohtml("docs/*")
+    pisitools.dodoc("LICENSE", "README")

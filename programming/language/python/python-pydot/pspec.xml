@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python interface to Graphviz's Dot language</Summary>
         <Description>python-pydot allows to easily create both directed and non directed graphs from Python. Currently all attributes implemented in the Dot language are supported.</Description>
-        <Archive sha1sum="9696cb857138c388e4fa4998d97a31638def8885" type="targz">http://pydot.googlecode.com/files/pydot-1.0.25.tar.gz</Archive>
+        <Archive sha1sum="3945af1765943807d72e773c7ac853f008ebb0b2" type="targz">http://pydot.googlecode.com/files/pydot-1.0.28.tar.gz</Archive>
         <Patches>
             <Patch>remove_doc_files.patch</Patch>
         </Patches>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-16</Date>
+            <Version>1.0.28</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2011-09-26</Date>
             <Version>1.0.25</Version>

@@ -8,6 +8,8 @@
 
 from pisi.actionsapi import pythonmodules
 
+WorkDir="pyactiveresource"
+
 def build():
     pythonmodules.compile()
 
