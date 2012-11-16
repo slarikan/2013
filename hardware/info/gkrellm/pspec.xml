@@ -14,7 +14,7 @@
         <IsA>service</IsA>
         <Summary>A compact and clean system monitoring tool</Summary>
         <Description>A program to monitor system status, and to collect system information such as memory usage, cpu temperature etc.</Description>
-        <Archive sha1sum="bcfc2efb5fd3f27e9bb703bda73f6a1d96b080df" type="tarbz2">http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.5.tar.bz2</Archive>
+        <Archive sha1sum="bcfc2efb5fd3f27e9bb703bda73f6a1d96b080df" type="targz">http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.12.3">gnutls-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -75,6 +75,13 @@
     </Package>
 
     <History>
+      <Update release="12">
+            <Date>2012-11-15</Date>
+            <Version>2.3.5</Version>
+            <Comment>Düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="11">
             <Date>2012-10-01</Date>
             <Version>2.3.5</Version>
