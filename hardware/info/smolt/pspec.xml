@@ -14,11 +14,11 @@
         <IsA>app:gui</IsA>
         <Summary>Pardus hardware profiler</Summary>
         <Description>The Pardus hardware profiler is a server-client system that does a hardware scan against a machine and sends the results to a public Pardus turbogears server. The sends are anonymous and should not contain any private information other than the physical hardware information and basic OS info.</Description>
-        <Archive sha1sum="11dffbec08997f3b859ffa8c59c1cabf26513c6a" type="targz">https://fedorahosted.org/releases/s/m/smolt/smolt-1.4.2.2.tar.gz</Archive>
+        <Archive sha1sum="f3d683662437013d7778df1092da16d1eda607be" type="targz">https://fedorahosted.org/releases/s/m/smolt/smolt-1.4.3.tar.gz</Archive>
         <Patches>
             <Patch>Makefile.patch</Patch>
             <Patch>config.patch</Patch>
-            <Patch>release.patch</Patch>
+            <!--<Patch>release.patch</Patch>-->
             <Patch>privacypolicy.patch</Patch>
             <Patch>smolt_desktop.patch</Patch>
         </Patches>
@@ -37,7 +37,7 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/smolt/doc</Path>
             <Path fileType="config">/etc</Path>
-            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share</Path>
             <Path fileType="data">/usr/share/applications</Path>
         </Files>
         <Provides>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+      <Update release="11">
+            <Date>2012-11-15</Date>
+            <Version>1.4.3</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="10">
             <Date>2011-04-13</Date>
             <Version>1.4.2.2</Version>
