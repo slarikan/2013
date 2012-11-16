@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Routing Recognition and Generation Tools</Summary>
         <Description>python-routes is a package for Python that matches URL's to dicts and vice versa.</Description>
-        <Archive sha1sum="70b741ee898fe597e570b76cc20c06eeb5db1ec8" type="targz">http://pypi.python.org/packages/source/R/Routes/Routes-1.12.3.tar.gz</Archive>
+        <Archive sha1sum="c0c8848392c9f568776eccb0ae0e6e25e0d0c5cd" type="targz">http://pypi.python.org/packages/source/R/Routes/Routes-1.13.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-sphinx</Dependency>
         </BuildDependencies>
@@ -41,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-16</Date>
+            <Version>1.13</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.12.3</Version>

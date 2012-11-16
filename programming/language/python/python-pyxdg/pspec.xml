@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A freedesktop.org standards library for Python</Summary>
         <Description>PyXDG is a Python library to access freedesktop.org standarts.</Description>
-        <Archive sha1sum="71162cf78c2fd0152d795ebe57984fc48226249b" type="targz">http://www.freedesktop.org/~lanius/pyxdg-0.19.tar.gz</Archive>
+        <Archive sha1sum="f13bdda67d7688ef424fd87395a13dda2f20c200" type="targz">http://people.freedesktop.org/~takluyver/pyxdg-0.24.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-16</Date>
+            <Version>0.24</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.19</Version>

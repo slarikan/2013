@@ -14,7 +14,7 @@
         <Summary>RDF library for Python</Summary>
         <Description>python-rdflib is a Python library for working with RDF, a simple yet powerful language for representing information. The library contains parsers and serializers for RDF/XML, N3, NTriples, Turtle, TriX and RDFa.</Description>
         <!-- Other distros keep package in 2.4 series even if 3.0 is released. Be careful about bumping package! -->
-        <Archive sha1sum="95d72c3db0b2c6b71048aa7ab36f6a7da35a2aee" type="targz">http://www.rdflib.net/rdflib-2.4.2.tar.gz</Archive>
+        <Archive sha1sum="ea997378c2dcf71b436f0c869524175ca6385e8d" type="targz">http://rdflib.googlecode.com/files/rdflib-3.2.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-16</Date>
+            <Version>3.2.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-04-18</Date>
             <Version>2.4.2</Version>

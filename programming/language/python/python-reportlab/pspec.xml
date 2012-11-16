@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>PDF generator library</Summary>
         <Description>ReportLab is an PDF generation library with extensive features.</Description>
-        <Archive sha1sum="49bd7c2c0b42569323fe4726cac696d4249cd1a5" type="targz">http://www.reportlab.com/ftp/reportlab-2.5.tar.gz</Archive>
+        <Archive sha1sum="0eb2bc33ecfc929786863f1613bbd6d884d44fa6" type="targz">http://www.reportlab.com/ftp/reportlab-2.6.tar.gz</Archive>
         <BuildDependencies>
            <Dependency>python-imaging</Dependency>
         </BuildDependencies>
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="11">
+            <Date>2012-11-17</Date>
+            <Version>2.6</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2010-11-09</Date>
             <Version>2.5</Version>
