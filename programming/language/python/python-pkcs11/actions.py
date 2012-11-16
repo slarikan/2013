@@ -15,6 +15,5 @@ def install():
     pythonmodules.install()
 
     pisitools.insinto("/%s/%s" % (get.docDIR(), get.srcNAME()), "samples")
-    pisitools.dohtml("documentation.htm")
 
     pisitools.dodoc("readme.txt")

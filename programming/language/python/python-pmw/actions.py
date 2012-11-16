@@ -10,7 +10,7 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "Pmw.%s/src" % get.srcVERSION()
+WorkDir = "src"
 
 def build():
     pythonmodules.compile()

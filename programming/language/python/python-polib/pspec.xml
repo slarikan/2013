@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library to parse and manage gettext catalogs</Summary>
         <Description>python-polib allows you to manipulate, create, modify gettext files (pot, po and mo files). You can load existing files, iterate through it's entries, add, modify entries, comments or metadata, etc... or create new po files from scratch.</Description>
-        <Archive sha1sum="77f855df65ceed3e2d1be8b8f50068ed8d0beb0e" type="targz">http://bitbucket.org/izi/polib/downloads/polib-0.5.1.tar.gz</Archive>
+        <Archive sha1sum="1fbc47667fa575fdb698545cdd68b8da86c784a4" type="targz">https://bitbucket.org/izi/polib/downloads/polib-1.0.2.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-16</Date>
+            <Version>1.0.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.5.1</Version>
