@@ -30,7 +30,7 @@ def install():
     pisitools.remove("/usr/bin/find*")
     pisitools.remove("/usr/bin/simple")
     pisitools.remove("/usr/bin/baud_test")
-    pisitools.remove("/usr/bin/serial_read")
+    #pisitools.remove("/usr/bin/serial_read")
 
     # Their source can be useful though
     pisitools.dodoc("examples/*.c", destDir="%s/examples" % get.srcNAME())
