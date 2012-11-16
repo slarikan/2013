@@ -13,8 +13,8 @@ from pisi.actionsapi import shelltools
 
 def setup():
     options = "--with-xml=expat \
-               --with-system-pid-file=/var/run/dbus/pid \
-               --with-system-socket=/var/run/dbus/system_bus_socket \
+               --with-system-pid-file=/run/dbus/pid \
+               --with-system-socket=/run/dbus/system_bus_socket \
                --with-session-socket-dir=/tmp \
                --with-dbus-user=dbus \
                --disable-selinux \
@@ -43,9 +43,11 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # needs to exist for the system socket
-    pisitools.dodir("/var/run/dbus")
+    pisitools.dodir("/run/dbus")
     pisitools.dodir("/var/lib/dbus")
     pisitools.dodir("/usr/share/dbus-1/services")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "HACKING", "NEWS", "README", "doc/TODO", "doc/*.txt")
     pisitools.dohtml("doc/")
+
+    if shelltools.isDirectory("%s/var/run" % get.installDIR()): pisitools.removeDir("/var/run")
