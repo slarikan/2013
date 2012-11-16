@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A hardware lister</Summary>
         <Description>lshw (Hardware Lister) is a small tool to provide detailed information on the hardware configuration of the machine. It can report exact memory configuration, firmware version, mainboard configuration, CPU version and speed, cache configuration, bus speed, etc. It has both console and graphical user interface.</Description>
-        <Archive sha1sum="488b5b014ac06c1d4448f0517f874bcb568c57c0" type="targz">http://ezix.org/software/files/lshw-B.02.15.tar.gz</Archive>
+        <Archive sha1sum="d2359c79c28568d8b717060314422542b7fd813c" type="targz">http://ezix.org/software/files/lshw-B.02.16.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+      <Update release="9">
+            <Date>2012-11-15</Date>
+            <Version>02.16</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-11-24</Date>
             <Version>02.15</Version>
