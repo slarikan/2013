@@ -24,4 +24,4 @@ def install():
 
     pisitools.dodoc("ChangeLog", "COPYING", "README")
 
-    pisitools.remove("/usr/lib/*.a")
+    #pisitools.remove("/usr/lib/*.a")
