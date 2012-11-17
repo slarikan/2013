@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Scientific Tools for Python</Summary>
         <Description>SciPy library provides many user-friendly and efficient numerical routines.</Description>
-        <Archive sha1sum="d7a84e5dc440d05e4d198411a2e0c6b8ec9adfc5" type="targz">mirrors://sourceforge/scipy/scipy-0.8.0.tar.gz</Archive>
+        <Archive sha1sum="e8dc162cf3acf8aa4fe7aeafc0ce53cc9d0f51ed" type="targz">mirrors://sourceforge/scipy/scipy-0.11.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-numpy</Dependency>
             <Dependency>atlas-devel</Dependency>
@@ -22,10 +22,8 @@
             <Dependency versionFrom="3.5.0">SuiteSparse-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>handle-docs.patch</Patch>
-            <Patch>umfpack-setup.py.patch</Patch>
-            <!-- Needed to compile with Python 2.7-->
-            <Patch level="1">0001-FIX-define-macro-to-access-C99-extensions-from-C.patch</Patch>
+            <Patch level="0">handle-docs.patch</Patch>
+            <Patch level="0">umfpack-setup.py.patch</Patch>
         </Patches>
     </Source>
 
@@ -46,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-11-16</Date>
+            <Version>0.11.0</Version>
+            <Comment>New stable release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="6">
             <Date>2011-02-04</Date>
             <Version>0.8.0</Version>
