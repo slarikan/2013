@@ -1,0 +1,63 @@
+--- src/gnokii_contact.c.orig
++++ src/gnokii_contact.c
+@@ -131,6 +131,8 @@ char *gnokii_contact_hash(gn_phonebook_entry *contact) {
+  *
+  * Returns: filled contact note with memory_type and location
+  */
++static int last_free_contact[GN_MT_SM + 1];
++
+ gn_phonebook_entry *gnokii_contact_freelocation(struct gn_statemachine *state) {
+ 	osync_trace(TRACE_ENTRY, "%s(%p)", __func__, state);
+
+@@ -145,6 +147,8 @@ gn_phonebook_entry *gnokii_contact_freelocation(struct gn_statemachine
+*state) {
+ 		contact->memory_type = memtype;
+
+ 		for (i=1;;i++) {
++			if (last_free_contact[memtype] && i < last_free_contact[memtype])
++				i = last_free_contact[memtype];
+ 			contact->location = i;
+ 			data->phonebook_entry = contact;
+
+@@ -157,9 +161,15 @@ gn_phonebook_entry *gnokii_contact_freelocation(struct gn_statemachine
+*state) {
+
+ 			if (error == GN_ERR_EMPTYLOCATION) {
+ 				osync_trace(TRACE_EXIT, "%s(): memorty_type: %i location: %i counter: %i", __func__,
+contact->memory_type, contact->location, i);
++				last_free_contact[memtype] = i;
+ 				return contact;
+ 			}
+
++			if (error == GN_ERR_INVALIDLOCATION) {
++				osync_trace(TRACE_INTERNAL, "gnokii contact error: %s, exiting loop.", gn_error_print(error));
++				break;
++			}
++
+ 			if (error != GN_ERR_NONE)
+ 				osync_trace(TRACE_INTERNAL, "gnokii error: %s\n", gn_error_print(error));
+ 		}
+@@ -236,6 +246,13 @@ osync_bool gnokii_contact_write(gn_phonebook_entry *contact, struct gn_statemach
+
+ 	if (!contact->location) {
+ 		gn_phonebook_entry *free_entry = gnokii_contact_freelocation(state);
++		if (!free_entry)
++		{
++			g_free (data);
++			osync_trace(TRACE_EXIT_ERROR, "%s(): no free contact location", __func__);
++			return FALSE;
++		}
++
+ 		osync_trace(TRACE_INTERNAL, "Free location is %i at memtype: %i",
+ 				free_entry->location, free_entry->memory_type);
+ 		contact->location = free_entry->location;
+@@ -433,7 +450,8 @@ osync_bool gnokii_contact_get_changeinfo(OSyncContext *ctx)
+ 			osync_change_set_objtype_string(change, "contact");
+
+ 			osync_change_set_data(change, (void *)contact, sizeof(gn_phonebook_entry), TRUE);
+-
++			osync_change_set_member(change, env->member);
++
+ 			if (osync_hashtable_detect_change(env->hashtable, change)) {
+ 				osync_trace(TRACE_INTERNAL, "Position: %i Needs to be reported (!= hash)", contact->location);
+ 				osync_context_report_change(ctx, change);

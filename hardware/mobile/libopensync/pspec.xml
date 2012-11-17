@@ -2,77 +2,47 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>libopensync</Name>
+        <Name>libopensync-plugin-gnokii</Name>
         <Homepage>http://www.opensync.org/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <License>LGPLv2.1</License>
+        <License>GPLv2</License>
         <IsA>library</IsA>
-        <Summary>A powerful synchronization framework</Summary>
-        <Description>OpenSync is a synchronization framework that is platform and distribution independent. OpenSync is very flexible and capable of synchronizing any type of data, including contacts, calendar, tasks, notes and files.</Description>
-        <Archive sha1sum="3d97732675aa874da49cca0f8d6de6f004f2a416" type="tarbz2">http://www.opensync.org/download/releases/0.39/libopensync-0.39.tar.bz2</Archive>
+        <Summary>Gnokii synchronization plugin for OpenSync</Summary>
+        <Description>OpenSync Gnokii plugin allows connections to mobile phones through the Gnokii application.</Description>
+        <Archive sha1sum="7030ec7370ea1fa3548c86a7b0840630a0a7b2b4" type="tarbz2">http://www.opensync.org/download/releases/0.22/libopensync-plugin-gnokii-0.22.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>libopensync-devel</Dependency>
+            <Dependency>gnokii-devel</Dependency>
+        </BuildDependencies>
         <Patches>
-            <!--<Patch>libopensync-linkage_fix.diff</Patch>-->
-            <!--<Patch>libopensync-wrapper-err.patch</Patch>-->
-            <!--<Patch level="1">libopensync-swig-fix.patch</Patch>-->
-	    <!--<Patch level="1">libopensync-0.22-pythonpath.patch</Patch>-->
-	    <Patch level="0">libopensync-0.36-alt-glib2-01.patch</Patch>
+            <Patch level="1">libopensync-plugin-gnokii_enum.patch</Patch>
+	    <Patch level="0">gnokii_contact.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
-        <Name>libopensync</Name>
-        <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="executable">/usr/libexec</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="data">/usr/share/libopensync1</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>libopensync-devel</Name>
-        <Summary>Development files for libopensync</Summary>
+        <Name>libopensync-plugin-gnokii</Name>
         <RuntimeDependencies>
-            <Dependency release="current">libopensync</Dependency>
+            <Dependency>gnokii</Dependency>
+            <Dependency>libopensync</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2012-10-21</Date>
-            <Version>0.39</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-	<Update release="4">
-            <Date>2012-10-21</Date>
-            <Version>0.22</Version>
-            <Comment>Rebuild for ANKA</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-13</Date>
-            <Version>0.22</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
         <Update release="2">
-            <Date>2010-08-22</Date>
+            <Date>2009-07-21</Date>
             <Version>0.22</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
+            <Comment>Ready for 2009</Comment>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Update>
        <Update release="1">
             <Date>2007-09-19</Date>
