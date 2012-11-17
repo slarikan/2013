@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Platform independent instant messaging client for the Windows Live Messenger (tm) network</Summary>
         <Description>Emesene is an OS independent MSN Messenger client written in Python and GTK+. The main idea is to make a client similar to the official MSN Messenger client but keeping it simple and with a nice GUI.</Description>
-        <Archive sha1sum="4ec1b6c3045426acc8e73b706833ced05ddc9d08" type="targz">http://svn.pardus-linux.org/pardus/playground/e.gultekin/cekirdek/emesene-2.12.5.tar.gz</Archive>
+        <Archive sha1sum="b40d12e9405d335e2dde40c139ae9f04f36ea5dd" type="tarbz2">https://github.com/downloads/circass/pisi-work/emesene-2.12.9.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -43,6 +43,22 @@
     </Package>
 
     <History>
+      <Update release="16">
+            <Date>2012-11-17</Date>
+            <Version>2.12.9</Version>
+            <Comment>
+                * New in-development QQ backend and session through libwebqq
+                * Updated SleekXMPP for XMPP backend 
+                * Fixed msn transfers
+                * Improved msn endpoints handling
+                * ixed messages not being received or rendered with weird fonts
+                * Added infrastructure for allowing plugins to hook into events (at the moment only  send and receive message events are handled, we will add hooks on request) with priority lists
+                * added new options for exporting conversation history (now HTML, CSV, JSON, XML and TXT are supported)
+                * ixed many, many, many bugs in the gtk gui and added a few new features
+            </Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
       <Update release="15">
             <Date>2012-06-10</Date>
             <Version>2.12.5</Version>

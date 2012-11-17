@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 # The tarball is created automatically from github servers.  Download it,
 # upload to cekirdek.pardus.org.tr and get the folder name by extracting the
 # tarball (It's actually the first seven characters of a git hash)
-WorkDir = "emesene-2.12.3"
+WorkDir = "emesene-%s" % (get.srcVERSION())
 
 def build():
     pythonmodules.compile()
