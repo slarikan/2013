@@ -16,4 +16,4 @@ def install():
     pisitools.insinto("/usr/share/doc/%s/" % get.srcNAME(),"examples")
 
     pisitools.doman("doc/man/*")
-    pisitools.dodoc("TODO", "README", "LICENSE")
+    pisitools.dodoc("TODO", "LICENSE", "AUTHORS")

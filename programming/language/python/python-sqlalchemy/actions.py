@@ -17,4 +17,4 @@ def install():
 
     pisitools.insinto("/usr/share/doc/%s" % get.srcNAME() ,"examples")
     pisitools.dohtml("doc/*")
-    pisitools.dodoc("CHANGES", "LICENSE", "README")
+    pisitools.dodoc("CHANGES", "LICENSE", "README.*")

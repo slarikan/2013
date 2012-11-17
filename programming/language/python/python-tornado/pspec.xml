@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Friendfeed python web framework</Summary>
         <Description>Tornado is an open source version of the scalable, non-blocking web server and and tools that power FriendFeed.</Description>
-        <Archive sha1sum="2eb5222440ce85f0947c0f4e9ccfc4b55fd6f99b" type="targz">http://github.com/downloads/facebook/tornado/tornado-1.2.1.tar.gz</Archive>
+        <Archive sha1sum="36ca4cd4b15e422a92586389f88762b39b8ac12b" type="targz">https://github.com/downloads/facebook/tornado/tornado-2.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-simplejson</Dependency>
             <Dependency>pycurl</Dependency>
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-17</Date>
+            <Version>2.4</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-02-10</Date>
             <Version>1.2.1</Version>

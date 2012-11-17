@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>pysvn, Python module to access subversion</Summary>
         <Description>The pysvn project's goal is to enable Tools to be written in Python that use Subversion.</Description>
-        <Archive sha1sum="912d7081a8294a578f822e03d60747154cf8532d" type="targz">http://pysvn.barrys-emacs.org/source_kits/pysvn-1.7.5.tar.gz</Archive>
+        <Archive sha1sum="720399815278a0b29a2ea87a09a0d2807d4614e4" type="targz">http://pysvn.barrys-emacs.org/source_kits/pysvn-1.7.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>subversion</Dependency>
             <Dependency>apr-util</Dependency>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-11-17</Date>
+            <Version>1.7.6</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="12">
             <Date>2011-06-30</Date>
             <Version>1.7.5</Version>
