@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python template plugin that supports Kid templates</Summary>
         <Description>python-turbokid is a TurboGears support package which provides a template engine plug-in for the Kid templating engine, allowing you to use Kid with TurboGears, Buffet or other systems that support the python.templating.engines entry point.</Description>
-        <Archive sha1sum="7502dc35ad8685ae73bd4772320cb7e38105b29e" type="targz">http://files.turbogears.org/eggs/TurboKid-1.0.5.tar.gz</Archive>
+        <Archive sha1sum="7502dc35ad8685ae73bd4772320cb7e38105b29e" type="targz">http://www.turbogears.org/2.2/downloads/2.2.0/TurboKid-1.0.5.tar.gz</Archive>
     </Source>
 
     <Package>

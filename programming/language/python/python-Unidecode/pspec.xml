@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>US-ASCII transliterations of Unicode text</Summary>
         <Description>python-Unidecode provides ASCII transliterations of Unicode text. This is a Python port of Text::Unidecode Perl module.</Description>
-        <Archive sha1sum="eff3e186cd8e1aebdd1a5df9b3282d7ebac850b7" type="targz">http://pypi.python.org/packages/source/U/Unidecode/Unidecode-0.04.1.tar.gz</Archive>
+        <Archive sha1sum="c705b71ea08978012b5800f038b1de1a3ba81426" type="targz">http://pypi.python.org/packages/source/U/Unidecode/Unidecode-0.04.9.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-18</Date>
+            <Version>0.04.9</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.04.1</Version>

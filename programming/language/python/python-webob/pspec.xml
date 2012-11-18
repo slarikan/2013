@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python module that provides WSGI request and response objects</Summary>
         <Description>python-webob provides wrappers around the WSGI request environment, and an object to help create WSGI responses.</Description>
-        <Archive sha1sum="32793f14b1d63af3ce3ed965b214e4ce69404863" type="targz">http://pypi.python.org/packages/source/W/WebOb/WebOb-0.9.8.tar.gz</Archive>
+        <Archive sha1sum="1c85d450dbad7fa0edc89539f456a1e6445d96c5" type="targz">http://pypi.python.org/packages/source/W/WebOb/WebOb-1.2.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-18</Date>
+            <Version>1.2.3</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.9.8</Version>

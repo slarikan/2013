@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Simple and powerful web framework</Summary>
         <Description>web.py is a web framework for python that is as simple as it is powerful.</Description>
-        <Archive sha1sum="bd8ef2acd643702279348e57f6ac8dd1750f72f5" type="targz">http://webpy.org/static/web.py-0.34.tar.gz</Archive>
+        <Archive sha1sum="8744f710ddfb89ca2b66a509042b860d7216ff37" type="targz">http://webpy.org/static/web.py-0.37.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="1">
+            <Date>2012-11-18</Date>
+            <Version>0.37</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-01-03</Date>
             <Version>0.34</Version>

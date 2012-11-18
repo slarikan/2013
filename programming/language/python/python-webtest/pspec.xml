@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Helper to test WSGI applications</Summary>
         <Description>python-webtest wraps any WSGI application and makes it easy to send test requests to that application, without starting up an HTTP server.</Description>
-        <Archive sha1sum="7e818ef370ebb3464513d57bee72b95c1c024a00" type="targz">http://pypi.python.org/packages/source/W/WebTest/WebTest-1.2.1.tar.gz</Archive>
+        <Archive sha1sum="ee3fbb03ccb988faa542cda5448f29641a9d65e4" type="zip">http://pypi.python.org/packages/source/W/WebTest/WebTest-1.4.2.zip</Archive>
     </Source>
 
     <Package>
@@ -27,6 +27,13 @@
     </Package>
 
     <History>
+       <Update release="4">
+            <Date>2012-11-18</Date>
+            <Version>1.4.2</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>1.2.1</Version>

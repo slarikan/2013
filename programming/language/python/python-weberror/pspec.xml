@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Web Error handling and exception catching</Summary>
         <Description>python-weberror is a library for web error handling and exception catching.</Description>
-        <Archive sha1sum="64dd76676eb6371f22544eb4b3d21c7690ff75f7" type="targz">http://pypi.python.org/packages/source/W/WebError/WebError-0.10.2.tar.gz</Archive>
+        <Archive sha1sum="6c8b4e77d93e1234cf1ef6d6b0dcad0a91a1af55" type="targz">http://pypi.python.org/packages/source/W/WebError/WebError-0.10.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-18</Date>
+            <Version>0.10.3</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-10-13</Date>
             <Version>0.10.2</Version>
