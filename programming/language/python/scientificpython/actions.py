@@ -10,7 +10,7 @@ from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "ScientificPython-%s" % get.srcVERSION()
+WorkDir = "ScientificPython-%s" % (get.srcVERSION())
 
 def build():
     pythonmodules.compile()

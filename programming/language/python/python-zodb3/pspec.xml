@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Zope Object Database: object database and persistence</Summary>
         <Description>The Zope Object Database provides an object-oriented database for Python that provides a high-degree of transparency.</Description>
-        <Archive sha1sum="4157ca398bd55ee4a41c9d1d02c80e1998940dc8" type="targz">http://pypi.python.org/packages/source/Z/ZODB3/ZODB3-3.10.1.tar.gz</Archive>
+        <Archive sha1sum="8ea2766b001882a21b82735124c35e379660a80d" type="targz">http://pypi.python.org/packages/source/Z/ZODB3/ZODB3-3.10.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-zope-interface</Dependency>
             <Dependency>python-setuptools</Dependency>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-18</Date>
+            <Version>3.10.5</Version>
+            <Comment>New stable release.</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2011-02-04</Date>
             <Version>3.10.1</Version>

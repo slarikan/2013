@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Python bindings for extracting data from Microsoft Excel files</Summary>
         <Description>Python-xlrd package is designed to provide a library for developers to use to extract Microsoft Excel(tm) spreadsheet files. It is not an end-user tool.</Description>
-        <Archive sha1sum="67ee25c2b306ac6a3f37c54a27b5166cc0897807" type="zip">http://pypi.python.org/packages/source/x/xlrd/xlrd-0.7.1.zip</Archive>
+        <Archive sha1sum="5045e8ec5916029a5483bd0e1376f5b6288c24d7" type="targz">http://pypi.python.org/packages/source/x/xlrd/xlrd-0.8.0.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -26,6 +26,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-11-18</Date>
+            <Version>0.8.0</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-02-01</Date>
             <Version>0.7.1</Version>
