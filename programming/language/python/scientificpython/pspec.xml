@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>A Python library for common tasks in scientific computing</Summary>
         <Description>scientificpython is a python library for common tasks in scientific computing.</Description>
-        <Archive sha1sum="595f62133d6a013e4298e7c4e80e755ad971fe89" type="targz">https://sourcesup.cru.fr/frs/download.php/3420/ScientificPython-2.9.1.tar.gz</Archive>
+        <Archive sha1sum="387b0ed5600b0f08301412745aab2da72e1459d7" type="targz">https://sourcesup.renater.fr/frs/download.php/4153/ScientificPython-2.9.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-numeric</Dependency>
             <Dependency>netcdf</Dependency>
@@ -61,6 +61,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-18</Date>
+            <Version>2.9.2</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2011-08-08</Date>
             <Version>2.9.1</Version>
