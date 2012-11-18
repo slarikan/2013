@@ -5,13 +5,14 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 WorkDir = "xpyb-%s" % get.srcVERSION()
 
-def setup():
-    pisitools.dosed("src/Makefile.in", "^(py_compile = ).*", r"\1/bin/true")
+shelltools.export("PYTHONDONTWRITEBYTECODE", "1")
 
+def setup():
     autotools.configure("--enable-xinput")
 
 def build():
