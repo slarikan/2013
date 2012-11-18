@@ -27,6 +27,8 @@
             <Dependency>gst-python</Dependency>
             <Dependency>python-papyon</Dependency>
             <Dependency>python-pycrypto</Dependency>
+            <Dependency>python-pyasn1</Dependency>
+            <Dependency>python-pyasn1-modules</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
