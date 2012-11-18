@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A very small text templating language</Summary>
         <Description>python-tempita is a small templating language for text substitution.</Description>
-        <Archive sha1sum="9528be505141f6b8454a4c5fefceeccf4dc7e28b" type="targz">http://pypi.python.org/packages/source/T/Tempita/Tempita-0.4.tar.gz</Archive>
+        <Archive sha1sum="d14fbf2ceaf209c15a1b628ce61887e1baa1b5e7" type="targz">http://pypi.python.org/packages/source/T/Tempita/Tempita-0.5.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -24,6 +24,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-18</Date>
+            <Version>0.5.1</Version>
+            <Comment>version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.4</Version>
