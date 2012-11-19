@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Various useful Linux utilities</Summary>
         <Description>The util-linux package contains a large variety of low-level system utilities that are necessary for a Linux system to function.</Description>
-        <Archive sha1sum="a1b3cbbbf4384b8e136abd446cd424c7c25d238c" type="tarlzma">https://www.kernel.org/pub/linux/utils/util-linux/v2.22/util-linux-2.22.tar.xz</Archive>
+        <Archive sha1sum="095cee023046ad3e9a8c0c15674d1522290aa1e0" type="tarlzma">http://www.kernel.org/pub/linux/utils/util-linux/v2.22/util-linux-2.22.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>ncurses</Dependency>
             <Dependency>shadow</Dependency>
@@ -180,6 +180,13 @@
     </Package>
 
     <History>
+        <Update release="48">
+            <Date>2012-11-17</Date>
+            <Version>2.22.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="47">
             <Date>2012-09-15</Date>
             <Version>2.22</Version>
