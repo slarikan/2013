@@ -12,8 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Power consumption monitor</Summary>
         <Description>PowerTOP is a Linux tool that finds the software component(s) that make your computer use more power than necessary while it is idle.</Description>
-        <Archive sha1sum="33bc486d5cc6f87f522378f876aadfdb9bdafc27" type="targz">http://cekirdek.pardus.org.tr/~gokcen/files/powertop-1.98.tar.gz</Archive>
-        <!--<Archive sha1sum="f3761add17b17470529044792fb56a40e6a4f9f9" type="targz">http://www.kernel.org/pub/linux/status/powertop/powertop-1.97.tar.gz</Archive>-->
+        <Archive sha1sum="a60354eb9d33199ab6b71a19bc3ddc2bae3670d7" type="targz">https://01.org/powertop/sites/default/files/downloads/powertop-2.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libnl-devel</Dependency>
         </BuildDependencies>
@@ -25,7 +24,8 @@
             <Dependency>libnl</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+	    <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/var/cache/powertop</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -34,6 +34,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-19</Date>
+            <Version>2.2</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="8">
             <Date>2011-10-17</Date>
             <Version>1.98</Version>
