@@ -109,7 +109,7 @@
  #: t/58_Gscan2pdf_Dialog.t:23
  msgid "transient-for"
 -msgstr ""
-+msgstr "geçeici-için"
++msgstr "geçici-için"
  
  #: t/58_Gscan2pdf_Dialog.t:25 t/58_Gscan2pdf_Dialog.t:30
  #: t/58_Gscan2pdf_Dialog.t:31 t/58_Gscan2pdf_Dialog.t:37
