@@ -14,7 +14,7 @@
 	<PartOf>hardware.optical</PartOf>
         <Summary>A library for reading, mastering and writing optical discs</Summary>
         <Description>Libburn is an open-source library for reading, mastering and writing optical discs.</Description>
-        <Archive sha1sum="a8f41be52a9086c4ca38e2a1d9aecc0d3a6ff04a" type="targz">http://files.libburnia-project.org/releases/libburn-1.2.2.tar.gz</Archive>
+        <Archive sha1sum="b996b099640ec98f78e10c79bca04d8f5d871016" type="targz">http://files.libburnia-project.org/releases/libburn-0.2.6.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-11-19</Date>
+            <Version>0.2.6.3</Version>
+            <Comment>Düzenlendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="11">
             <Date>2012-06-10</Date>
             <Version>1.2.2</Version>

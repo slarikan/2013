@@ -8,7 +8,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.autoreconf("-vfi")
+    #autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --disable-ldconfig-at-install \
                          --with-gnu-ld \
@@ -19,4 +19,4 @@ def build():
 
 def install():
     autotools.install()
-    pisitools.dodoc("AUTHORS", "COPYING", "NEWS", "README", "ChangeLog")
+    pisitools.dodoc("AUTHORS", "COPYING", "README")
