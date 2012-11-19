@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Linux kernel module management utilities</Summary>
         <Description>Linux kernel module management utilities</Description>
-        <Archive sha1sum="6da4fa76fc5a4feed7926663587d9d41b0412d97" type="tarxz">ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/kmod-10.tar.xz</Archive>
+        <Archive sha1sum="61d2e3c5757df014e663a0715bfc85aee54a65f5" type="tarxz">ftp://ftp.kernel.org/pub/linux/utils/kernel/kmod/kmod-11.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>chrpath</Dependency>
         </BuildDependencies>
@@ -62,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-15</Date>
+            <Version>11</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2012-09-19</Date>
             <Version>10</Version>
