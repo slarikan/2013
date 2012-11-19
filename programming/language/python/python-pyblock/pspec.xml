@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Python modules for dealing with block devices</Summary>
         <Description>The pyblock contains Python modules for dealing with block devices.</Description>
-        <Archive sha1sum="a5ae95e5150bcfba53f44a4fe2d9d72444fc58db" type="tarbz2">http://cekirdek.pardus.org.tr/~mete/dist/sources/pyblock-0.47-1_20100712gitb153927.tar.bz2</Archive>
+        <Archive sha1sum="a4037a99e9793bbe3ffbc47754ddac356ba18ccf" type="tarbz2">https://github.com/downloads/obsoleteman/notobs/pyblock-master.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>device-mapper</Dependency>
             <Dependency>dmraid</Dependency>
@@ -36,6 +36,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-11-19</Date>
+            <Version>0.53_20111208</Version>
+            <Comment>Bump to git head.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2010-10-13</Date>
             <Version>0.47</Version>

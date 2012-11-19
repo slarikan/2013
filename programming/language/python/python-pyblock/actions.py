@@ -10,7 +10,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "pyblock-0.47-1_20100712"
+#WorkDir = "pyblock-0.47-1_20100712"
 
 def build():
     shelltools.export("CFLAGS", "%s -g -I/usr/include/%s -Wall -Werror -fPIC" % (get.CFLAGS(), get.curPYTHON()))
