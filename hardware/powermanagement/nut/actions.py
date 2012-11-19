@@ -51,7 +51,7 @@ def setup():
                          --datarootdir=%(DATAROOTDIR)s \
                          --with-lib \
                          --with-dev \
-                         --with-hal \
+                         --without-hal \
                          --with-ssl \
                          --with-usb \
                          --with-snmp \
@@ -59,7 +59,6 @@ def setup():
                          --with-neonxml \
                          --with-ipv6 \
                          --with-cgi \
-                         --with-gd-libs \
                          --with-htmlpath=%(HTML_PATH)s \
                          --with-cgipath=%(CGI_PATH)s" % nutconfig)
 
@@ -69,7 +68,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.insinto("/usr/share/hal/fdi/information/20thirdparty/", "scripts/hal/20-ups-nut-device.fdi")
+    #pisitools.insinto("/usr/share/hal/fdi/information/20thirdparty/", "scripts/hal/20-ups-nut-device.fdi")
 
     #FIXME: these may be needed later on
     #pisitools.dodir("/usr/libexec")
@@ -92,5 +91,5 @@ def install():
     # docs examples and cable diagrams
     pisitools.newdoc("lib/README", "README.lib")
     pisitools.insinto("%s/%s" % (get.docDIR(), get.srcNAME()), "docs/cables")
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "MAINTAINERS", "NEWS", "README*", "UPGRADING", "docs/FAQ", "docs/*.txt")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "MAINTAINERS", "NEWS", "README*", "UPGRADING")
 

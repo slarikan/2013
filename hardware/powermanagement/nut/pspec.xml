@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>Network UPS Tools</Summary>
         <Description>Network UPS Tools (NUT) project aims to provide reliable monitoring of UPS hardware and ensure safe shutdowns of the connected systems.</Description>
-        <Archive sha1sum="3a09b09c03df7e8b12f70576fd703e65d1cf7b06" type="targz">http://www.networkupstools.org/source/2.4/nut-2.4.3.tar.gz</Archive>
+        <Archive sha1sum="320debe11df91f04e32824694d0c89a020677f71" type="targz">http://www.networkupstools.org/source/2.6/nut-2.6.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gd-devel</Dependency>
             <Dependency>net-snmp-devel</Dependency>
@@ -20,25 +20,26 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">nut-2.2.1-conf.patch</Patch>
-            <Patch level="1">nut-2.2.2-halpath.patch</Patch>
+	    <Patch level="1">nut-2.6.5-quickfix.patch</Patch>
+	    <Patch level="1">nut-2.6.5-pthreadfix.patch</Patch>
+	    <Patch level="1">nut-2.6.5-ipmifix.patch</Patch>
+	    <!--<Patch level="1">nut-2.6.5-dlfix.patch</Patch>-->
+	    <Patch level="1">nut-2.6.3-tmpfiles.patch</Patch>
+            <!--<Patch level="1">nut-2.2.2-halpath.patch</Patch>
             <Patch level="1">nut-2.4.3-bz575334.patch</Patch>
             <Patch level="1">nut-2.4.3-portcrash.patch</Patch>
             <Patch level="1">nut-2.4.3-udev.patch</Patch>
-
-            <Patch>nut-2.4.3-asneeded.patch</Patch>
-
+            <Patch>nut-2.4.3-asneeded.patch</Patch>-->
             <Patch level="1">upsstats-upsset-link-2.0.5.patch</Patch>
-            <!--
+	    <!--
             <Patch level="1">libwrap-definitions.patch</Patch>
             -->
             <Patch level="1">nut-2.4.1-no-libdummy.patch</Patch>
             <Patch level="1">powercom_rules.patch</Patch>
-
             <!-- Core system has changed, try to find nibu again
             <Patch level="1">nibu-include.patch</Patch>
             <Patch level="1">nibu-mib.patch</Patch>
             -->
-
         </Patches>
     </Source>
 
@@ -74,6 +75,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-19</Date>
+            <Version>2.6.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="9">
             <Date>2010-12-22</Date>
             <Version>2.4.3</Version>
