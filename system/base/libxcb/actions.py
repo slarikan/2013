@@ -28,7 +28,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.remove("/usr/include/xcb/xevie.h")
-    pisitools.remove("/usr/include/xcb/xprint.h")
+    #pisitools.remove("/usr/include/xcb/xevie.h")
+    #pisitools.remove("/usr/include/xcb/xprint.h")
 
     pisitools.dodoc("COPYING", "NEWS", "README")
