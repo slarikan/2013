@@ -13,10 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Battery and thermal reporter</Summary>
         <Description>acpi is a small command-line tools that reports battery and thermal information.</Description>
-        <!-- upstream is old
-        <Archive sha1sum="d59adccbcc4acf3996fe8bb269dfbc8ee8a06869" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/acpi-1.5.tar.gz</Archive>
-        -->
-        <Archive sha1sum="f60b7f8674dbfa5277754e71b9a444bcf306b7f7" type="targz">mirrors://sourceforge/acpiclient/acpiclient/1.5/acpi-1.5.tar.gz</Archive>
+        <Archive sha1sum="3c1fdbcda9b12cb5a80bd2aaaeee3c9be5714fff" type="targz">mirrors://sourceforge/acpiclient/acpiclient/1.6/acpi-1.6.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -29,6 +26,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-19</Date>
+            <Version>1.6</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-13</Date>
             <Version>1.5</Version>
