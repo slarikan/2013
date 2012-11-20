@@ -14,8 +14,8 @@
         <IsA>library</IsA>
         <Summary>Sane scanner drivers for EPSON Perfection and Stylus scanners</Summary>
         <Description>iscan contains the Avasys provided epkowa sane backend which supports a lot of EPSON scanners.</Description>
-        <Archive sha1sum="b4bbf6d80e8d62fb7b0f3187ca8198552734d44e" type="targz">http://linux.avasys.jp/drivers/iscan/2.26.3/iscan_2.26.3-1.tar.gz</Archive>
-        <Archive sha1sum="c80092aad629f0aab14f0e82f0ce0f0940f6f488" target="iscan-2.26.3" type="targz">http://linux.avasys.jp/drivers/iscan-data/1.8.1/iscan-data_1.8.1-1.tar.gz</Archive>
+        <Archive sha1sum="80e92d6820d4c06ca1242feb1ebecdd2d64bcee0" type="targz">http://linux.avasys.jp/drivers/iscan/2.28.1/iscan_2.28.1-3.tar.gz</Archive>
+        <Archive sha1sum="a81a7ac8e16bc20c125f351ba3c38ea6b84de236" target="iscan-2.28.1" type="targz">http://linux.avasys.jp/drivers/iscan-data/1.13.0/iscan-data_1.13.0-1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
@@ -24,10 +24,11 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">iscan-2.11.0-gcc43.patch</Patch>
+	    <Patch>iscan-2.28.1-libpng15.patch</Patch>
             <Patch level="1">iscan-fix-link.patch</Patch>
             <Patch level="1">iscan-2.21.0-fix-g++-test.patch</Patch>
             <Patch level="1">iscan-2.25.0-drop-ltdl.patch</Patch>
-            <Patch level="1">iscan-data.patch</Patch>
+            <!--<Patch level="1">iscan-data.patch</Patch>-->
             <Patch level="1">tr.patch</Patch>
         </Patches>
     </Source>
@@ -58,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-10-03</Date>
+            <Version>2.28.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="5">
             <Date>2011-05-23</Date>
             <Version>2.26.3</Version>
