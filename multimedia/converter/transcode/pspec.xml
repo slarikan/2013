@@ -13,9 +13,9 @@
         <Summary>Converter tool for several video and audio formats</Summary>
         <Description>Transcode is a suite of command line utilities for transcoding video and audio codecs, and for converting beween different container formats. Transcode can decode, encode and convert many audio and video formats into one another.</Description>
         <!--
-        <Archive sha1sum="91060d3495dbecb67eb81dddf6cb633829adb1d6" type="tarbz2">http://cekirdek.pardus.org.tr/~onur/distfiles/transcode-1.1.2.tar.bz2</Archive>
+        <Archive sha1sum="e35df68b960eb56ef0a59a4cdbed1491be56aee6" type="tarbz2">https://bitbucket.org/france/transcode-tcforge/downloads/transcode-1.1.7.tar.bz2</Archive>
         -->
-        <Archive sha1sum="48c36e06ca0cd1cdc1a9c6a241e231f896eefd26" type="tarbz2">mirrors://berlios/tcforge/transcode-1.1.5.tar.bz2</Archive>
+        <Archive sha1sum="e35df68b960eb56ef0a59a4cdbed1491be56aee6" type="tarbz2">https://bitbucket.org/france/transcode-tcforge/downloads/transcode-1.1.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libogg-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
@@ -40,15 +40,14 @@
             <Dependency>freetype-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
-            <Dependency releaseFrom="34">x264-devel</Dependency>
+            <Dependency releaseFrom="36">x264-devel</Dependency>
+            <Dependency>fftw3-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>transcode-1.1.5-jpeg-7.patch</Patch>
-            <Patch level="1">transcode-1.1.5-mpa.patch</Patch>
-
-            <!-- http://public.hronopik.de/vid.stab/files/transcode-1.1.5-stabilize-0.76.patch.gz -->
-            <Patch level="1" compressionType="gz">transcode-1.1.5-stabilize-0.76.patch.gz</Patch>
-            <Patch level="1">stabilize_avcodec.patch</Patch>
+            <Patch level="1">transcode-1.1.7-ffmpeg-0.11.patch</Patch>
+            <Patch level="0">transcode-1.1.7-ffmpeg.patch</Patch>
+            <Patch level="1">transcode-1.1.7-preset-free.patch</Patch>
         </Patches>
     </Source>
 
@@ -78,7 +77,9 @@
             <Dependency>freetype</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>libv4l</Dependency>
-            <Dependency releaseFrom="34">x264</Dependency>
+            <Dependency releaseFrom="36">x264</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>lcms2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -90,6 +91,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2012-11-20</Date>
+            <Version>1.1.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="17">
             <Date>2011-06-16</Date>
             <Version>1.1.5</Version>
