@@ -13,15 +13,15 @@
         <IsA>library</IsA>
         <Summary>Foomatic wrapper scripts</Summary>
         <Description>foomatic-filters is the layer that provides the conversion of print jobs to printable data transparently.</Description>
-        <Archive sha1sum="1345880f3b89242b0ac7fae1e3750bf2154130f4" type="targz">http://www.openprinting.org/download/foomatic/foomatic-filters-4.0.5.tar.gz</Archive>
+        <Archive sha1sum="bde0cf8bcc61cb1e7c894b7125348fb95efa8c60" type="targz">http://www.openprinting.org/download/foomatic/foomatic-filters-4.0.17.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">foomatic-filters-libdir.patch</Patch>
-
-            <!-- Use mkstemp() instead of mktemp() -->
-            <Patch level="1">foomatic-mkstemp.patch</Patch>
+            <!--<Patch level="1">foomatic-filters-libdir.patch</Patch>-->
+	    <Patch level="1">foomatic-filters-4.0.9-multilib.patch</Patch>
+            <!-- Use mkstemp() instead of mktemp()
+            <Patch level="1">foomatic-mkstemp.patch</Patch>-->
         </Patches>
     </Source>
     <Package>
@@ -40,6 +40,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-19</Date>
+            <Version>4.0.17</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="23">
             <Date>2010-10-13</Date>
             <Version>4.0.5</Version>
