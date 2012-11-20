@@ -18,7 +18,7 @@
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency>kdebase-workspace-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
             <Dependency>drumstick-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
@@ -29,7 +29,7 @@
     <Package>
         <Name>kmid</Name>
         <RuntimeDependencies>
-            <Dependency>kdebase-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
             <Dependency>drumstick-libs</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>kdelibs</Dependency>
