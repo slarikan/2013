@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sendmail</Name>
+        <Homepage>http://www.sendmail.com/sm/open_source/</Homepage>
+        <Packager>
+            <Name>Pardus</Name>
+            <Email>admins@pardus.org.tr</Email>
+        </Packager>
+        <License>sendmail</License>
+        <IsA>application</IsA>
+        <Summary>Sendmail is a general purpose internetwork email routing facility</Summary>
+        <Description>Sendmail is a general purpose internetwork email routing facility that supports many kinds of mail-transfer and -delivery methods, including the Simple Mail Transfer Protocol (SMTP) used for email transport over the Internet.</Description>
+	<Archive sha1sum="38f0b16853cf3ed532c1c18ca64483150702cc61" type="targz">https://dl.dropbox.com/s/affe9p1c24y69ir/sendmail-8.14.5.tar.gz?dl=1</Archive>
+        <BuildDependencies>
+	  <Dependency>db4</Dependency>
+	  <Dependency>bind-libs</Dependency> 
+        </BuildDependencies>
+	<Patches>
+            <!--Patch></Patch-->
+	</Patches>    
+    </Source>
+
+    <Package>
+        <Name>sendmail</Name>
+        <RuntimeDependencies>
+            <Dependency>db4</Dependency>
+	    <Dependency>bind-libs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="executable">/usr/sbin</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="data">/etc/mail</Path>
+	    <Path fileType="data">/var/spool/clientmqueue</Path>    
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-11-20</Date>
+            <Version>8.14.5</Version>
+            <Comment>firt release</Comment>
+            <Name>can</Name>
+            <Email>qazsew@mynet.com</Email>
+        </Update>
+    </History>
+</PISI>
+ 
