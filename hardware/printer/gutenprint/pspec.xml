@@ -18,6 +18,7 @@
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
+	    <Dependency>ijs-devel</Dependency>
             <Dependency>foomatic-db</Dependency>
             <Dependency>ghostscript-devel</Dependency>
         </BuildDependencies>
@@ -39,6 +40,7 @@
             <Dependency>python-cups</Dependency>
             <Dependency>ghostscript</Dependency>
             <Dependency>foomatic-db</Dependency>
+	    <Dependency>ijs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/lib/cups</Path>
@@ -381,7 +383,7 @@
             <Version>5.2.4</Version>
             <Comment>
                 - Drop upstreamed patches,
-                - Added support for Canon PIXMA iX4000, Canon SELPHY CP-520, EPSON 
+                - Added support for Canon PIXMA iX4000, Canon SELPHY CP-520, EPSON
                 Stylus Photo R2880, EPSON Stylus DX4000
                 - Corrections for Epson PM-D600, Epson Stylus Photo R2400, EPSON Artisan
                 700/800, Stylus Photo P/TX700/800 series

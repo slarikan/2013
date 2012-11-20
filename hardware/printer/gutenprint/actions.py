@@ -44,7 +44,7 @@ def install():
     pisitools.dohtml("%s/usr/share/gutenprint/doc/reference-html/*" % get.installDIR())
 
     pisitools.removeDir("/usr/share/gutenprint/doc/")
-    pisitools.removeDir("/usr/include/gutenprintui2")
+    #pisitools.removeDir("/usr/include/gutenprintui2")
 
     # FIXME: Remove command.types, check if any other file exists
     pisitools.removeDir("/etc/")
