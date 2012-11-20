@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency>kdebase-runtime</Dependency>
+            <Dependency>kde-runtime</Dependency>
         </BuildDependencies>
         <!--<Patches>
             <Patch level="1">desktop.patch</Patch>
@@ -29,7 +29,7 @@
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>kdelibs</Dependency>
-            <Dependency>kdebase-runtime</Dependency>
+            <Dependency>kde-runtime</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
