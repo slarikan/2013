@@ -18,7 +18,7 @@
     <Package>
         <Name>ksplash-theme-pardus</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.2">kdebase-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/kde4/apps/ksplash/Themes/Pardus</Path>
@@ -28,7 +28,7 @@
     <Package>
         <Name>ksplash-theme-pardus-milky</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.2">kdebase-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/kde4/apps/ksplash/Themes/Pardus-Milky</Path>
