@@ -45,7 +45,7 @@
         <Name>qstardict-plasmoid</Name>
         <Summary>QStarDict plasmoid for KDE4</Summary>
         <RuntimeDependencies>
-            <Dependency>kdebase-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
             <Dependency>kdelibs</Dependency>
             <Dependency>qstardict</Dependency>
         </RuntimeDependencies>
