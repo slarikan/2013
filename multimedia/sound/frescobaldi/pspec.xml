@@ -27,7 +27,7 @@
         <RuntimeDependencies>
             <Dependency>kdelibs</Dependency>
             <Dependency>python-kde</Dependency>
-            <Dependency>kdebase</Dependency>
+            <Dependency>kde-baseapps</Dependency>
             <Dependency>rumor</Dependency>
             <Dependency>lilypond</Dependency>
             <Dependency>imagemagick</Dependency>
