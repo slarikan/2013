@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>A set of widget styles for KDE4 based applications</Summary>
         <Description>QtCurve-KDE4 is a nice and flexible set of widget styles for KDE4 applications.</Description>
-        <Archive sha1sum="5d19595a4b6894726508d52ecbf07b440d05e2c5" type="tarbz2">http://craigd.wikispaces.com/file/view/QtCurve-KDE4-1.8.7.tar.bz2</Archive>
+        <Archive sha1sum="35f9fc0bb0ac3baf9b1b935a0ebcea6c8278c551" type="tarbz2">http://craigd.wikispaces.com/file/view/QtCurve-KDE4-1.8.14.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdebase</Dependency>
+            <Dependency>kde-baseapps</Dependency>
             <Dependency>automoc4</Dependency>
         </BuildDependencies>
         <Patches>
@@ -25,7 +25,7 @@
     <Package>
         <Name>QtCurve-KDE4</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdebase</Dependency>
+            <Dependency>kde-baseapps</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -35,6 +35,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="30">
+            <Date>2012-11-20</Date>
+            <Version>1.8.14</Version>
+            <Comment>Version bump to 1.8.14</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="29">
             <Date>2011-05-01</Date>
             <Version>1.8.7</Version>
