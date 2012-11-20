@@ -16,7 +16,6 @@
         <Summary>A command-line tool to record, convert and stream audio and video</Summary>
         <Description>FFmpeg is a complete solution to record, convert and stream audio and video.</Description>
         <Archive sha1sum="bf1f917c4fa26cf225616f2063e60c33cac546be" type="tarbz2">http://ffmpeg.org/releases/ffmpeg-1.0.tar.bz2</Archive>
-        <Archive sha1sum="6af9fc0094de6190f5328cfc8405dd92f73cfc50" type="tarxz" target="ffmpeg-0.11.1">http://libav.org/releases/libav-0.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>faac-devel</Dependency>
             <Dependency>imlib2-devel</Dependency>
