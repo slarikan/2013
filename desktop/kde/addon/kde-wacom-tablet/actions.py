@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 from pisi.actionsapi import kde4
 
-WorkDir = "wacomtablet-v%s" % get.srcVERSION()
+WorkDir = "wacomtablet-%s" % get.srcVERSION()
 shelltools.export("HOME",get.workDIR())
 
 def setup():
