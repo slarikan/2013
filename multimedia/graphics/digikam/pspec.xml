@@ -16,7 +16,7 @@
         <Archive sha1sum="a7a9e4e342f118b603a11539c98a01c9970254df" type="tarbz2">mirrors://sourceforge/digikam/digikam/2.6.0/digikam-2.6.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.2">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">kdebase-runtime</Dependency> <!-- Trash protocol -->
+            <Dependency versionFrom="4.8.2">kde-runtime</Dependency> <!-- Trash protocol -->
             <Dependency versionFrom="4.8.2">marble</Dependency> <!-- marble devel files are needed -->
             <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
@@ -57,7 +57,7 @@
         <Name>digikam</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="4.8.2">libkipi</Dependency>
-            <Dependency versionFrom="4.8.2">kdebase-runtime</Dependency>
+            <Dependency versionFrom="4.8.2">kde-runtime</Dependency>
             <Dependency versionFrom="4.8.2">marble</Dependency>
             <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency versionFrom="4.8.2">kdepimlibs</Dependency>
