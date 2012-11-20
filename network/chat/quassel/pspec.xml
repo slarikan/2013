@@ -19,7 +19,7 @@
             <AdditionalFile target="po/tr.po">quassel.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-             <Dependency>kdebase-runtime</Dependency>
+             <Dependency>kde-runtime</Dependency>
              <Dependency>kdelibs-devel</Dependency>
              <Dependency>phonon-devel</Dependency>
              <Dependency>qca2-devel</Dependency>
