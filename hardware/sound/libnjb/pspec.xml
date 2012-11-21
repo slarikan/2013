@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>libnjb is a C library and API for communicating with the Creative Nomad JukeBox and Dell DJ digital audio players</Summary>
         <Description>libnjb is a C library and API for communicating with the Creative Nomad JukeBox and Dell DJ digital audio players. The protocol these devices use is presumably called PDE (Portable Digital Entertainment protocol) at Creative.</Description>
-        <Archive sha1sum="339c24b1c007d914d2d4969315a3e128603a046a" type="targz">mirrors://sourceforge/libnjb/libnjb-2.2.6.tar.gz</Archive>
+        <Archive sha1sum="7acd42b4e3e6edf8d48fcd758eb21ad0eb4aee38" type="targz">mirrors://sourceforge/libnjb/libnjb-2.2.7.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-11-21</Date>
+            <Version>2.2.7</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2011-01-30</Date>
             <Version>2.2.6</Version>
