@@ -5,8 +5,8 @@
         <Name>libgnome-keyring3</Name>
         <Homepage>http://live.gnome.org/GnomeKeyring</Homepage>
         <Packager>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
