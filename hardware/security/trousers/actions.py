@@ -10,7 +10,7 @@ from pisi.actionsapi import get
 
 
 def setup():
-    autotools.autoreconf("-fi")
+    #autotools.autoreconf("-vif")
     autotools.configure("--with-gui=openssl")
 
 def build():

@@ -13,10 +13,11 @@
         <IsA>library</IsA>
         <Summary>TCG's Software Stack (TSS) v1.2 implementation</Summary>
         <Description>trousers is an implementation of the Trusted Computing Group's Software Stack specification. You can use trousers to write applications that make use of your TPM hardware.</Description>
-        <Archive sha1sum="1bb65fe1a031f9606d871562ead35fa5909ae584" type="targz">mirrors://sourceforge/trousers/trousers-0.3.6.tar.gz</Archive>
+        <Archive sha1sum="cbffcf16481fae3060ca0df8c2c28ff5922fe84f" type="targz">mirrors://sourceforge/trousers/trousers-0.3.9.tar.gz</Archive>
         <Patches>
             <Patch level="1">nouseradd.patch</Patch>
             <Patch level="1">trousers-no-werror.patch</Patch>
+	    <!--<Patch>trousers-gcc.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -54,6 +55,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2012-10-03</Date>
+            <Version>0.3.9</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="12">
             <Date>2011-06-15</Date>
             <Version>0.3.6</Version>
