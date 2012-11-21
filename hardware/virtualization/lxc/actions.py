@@ -12,7 +12,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vif")
+    #autotools.autoreconf("-vif")
 
     autotools.configure("--localstatedir=/var \
                          --disable-doc")
