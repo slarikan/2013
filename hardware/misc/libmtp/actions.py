@@ -13,7 +13,8 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--disable-static \
-                         --disable-rpath")
+                         --disable-rpath \
+                         --with-udev-rules=69-libmtp.rules")
 
 def build():
     autotools.make()
@@ -25,8 +26,8 @@ def install():
     pisitools.insinto("/usr/share/hal/fdi/information/10freedesktop", "libmtp.fdi", "10-usb-music-players-libmtp.fdi")
 
     #rename UDEV rules
-    pisitools.rename("/lib/udev/rules.d/libmtp.rules", "60-libmtp.rules")
+    #pisitools.rename("/lib/udev/rules.d/libmtp.rules", "69-libmtp.rules")
 
-    pisitools.removeDir("/usr/share/doc/libmtp-*")
+    #pisitools.removeDir("/usr/share/doc/libmtp-*")
 
     pisitools.dodoc("ChangeLog", "COPYING", "README", "AUTHORS", "TODO")

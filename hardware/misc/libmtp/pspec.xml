@@ -12,13 +12,13 @@
         <IsA>library</IsA>
         <Summary>An implementation of Microsoft's Media Transfer Protocol (MTP)</Summary>
         <Description>libmtp is an implementation of Microsoft's Media Transfer Protocol (MTP) in the form of a library suitable primarily for POSIX compliant operating systems.</Description>
-        <Archive sha1sum="b014628b7355f9aa4d15cd3fc00ba86353562da8" type="targz">mirrors://sourceforge/libmtp/libmtp-1.0.4.tar.gz</Archive>
+        <Archive sha1sum="0a553621ffbbfb265fa934859ec1a447bd6b0cf4" type="targz">mirrors://sourceforge/libmtp/libmtp-1.1.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-Fixup-device-OS-descriptor-probe-code.patch</Patch>
-            <Patch level="1">0001-Fix-inverted-boolean-logic.patch</Patch>
+            <!--<Patch level="1">0001-Fixup-device-OS-descriptor-probe-code.patch</Patch>
+            <Patch level="1">0001-Fix-inverted-boolean-logic.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="19">
+            <Date>2012-11-16</Date>
+            <Version>1.1.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="18">
             <Date>2011-01-21</Date>
             <Version>1.0.4</Version>
