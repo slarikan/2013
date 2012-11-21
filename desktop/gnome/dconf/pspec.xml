@@ -12,9 +12,10 @@
         <IsA>app:console</IsA>
         <Summary>Simple low-level configuration system</Summary>
         <Description>dconf is a low-level configuration system. Its main purpose is to provide a backend to GSettings on platforms that don't already have configuration storage systems.</Description>
-        <Archive sha1sum="d42e4aac3e25415a55ff34db62dc0dfbd5b7a95f" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/dconf/0.11/dconf-0.11.0.tar.xz</Archive>
+        <Archive sha1sum="f7888d31b36a65598f2b990b1491051dd0c4aed2" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/dconf/0.15/dconf-0.15.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
+	    <Dependency versionFrom="2.35.1">glib2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency versionFrom="0.12.0">vala-devel</Dependency>
         </BuildDependencies>
@@ -62,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-21</Date>
+            <Version>0.15.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2012-10-23</Date>
             <Version>0.11.0</Version>
