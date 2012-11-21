@@ -13,10 +13,10 @@
         <IsA>data</IsA>
         <Summary>Yet Another Weather Plasmoid</Summary>
         <Description>yawp is a weather plasmoid for KDE with theme support and lots of preferences.</Description>
-        <Archive sha1sum="00ad7045c61619a67f4ad54329c353bc8254aba1" type="tarbz2">mirrors://sourceforge/yawp/yawp-0.3.6.tar.bz2</Archive>
+        <Archive sha1sum="69774677860c13256214b5f81a562fec012b9a22" type="tarbz2">mirrors://sourceforge/yawp/yawp-0.4.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.1">kdebase-workspace-devel</Dependency>
-            <Dependency versionFrom="4.6.1">kdelibs-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
@@ -25,8 +25,8 @@
     <Package>
         <Name>plasma-applet-yawp</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.1">kdebase-runtime</Dependency>
-            <Dependency versionFrom="4.6.1">kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-21</Date>
+            <Version>0.4.2</Version>
+            <Comment>Add strict dep for new KDE 4.6</Comment>
+            <Name>Gökçen Eraslan</Name>
+            <Email>gokcen@pardus.org.tr</Email>
+        </Update>      
         <Update release="4">
             <Date>2011-03-25</Date>
             <Version>0.3.6</Version>
