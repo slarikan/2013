@@ -16,7 +16,7 @@
         <Archive sha1sum="9e1fead1d24cedfa980db23bd31cc52b45ce1823" type="targz">mirrors://sourceforge/lxde/lxlauncher-0.2.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>startup-notification-devel</Dependency>
-            <Dependency>lxde-menu-cache-devel</Dependency>
+            <Dependency releaseFrom="4">lxde-menu-cache-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
@@ -31,7 +31,7 @@
         <Name>lxlauncher</Name>
         <RuntimeDependencies>
             <Dependency>startup-notification</Dependency>
-            <Dependency>lxde-menu-cache</Dependency>
+            <Dependency releaseFrom="4">lxde-menu-cache-devel</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -46,6 +46,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-21</Date>
+            <Version>0.2.2</Version>
+            <Comment>rebuild for lxde-menu-cahe</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2012-06-17</Date>
             <Version>0.2.2</Version>
