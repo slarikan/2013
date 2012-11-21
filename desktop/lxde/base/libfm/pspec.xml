@@ -33,7 +33,7 @@
     <Package>
         <Name>libfm</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="3">lxde-menu-cache</Dependency>
+            <Dependency releaseFrom="4">lxde-menu-cache</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>fontconfig</Dependency>
