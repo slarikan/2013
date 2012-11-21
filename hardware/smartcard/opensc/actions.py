@@ -25,7 +25,6 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.removeDir("/usr/sbin")
 
     pisitools.insinto("/etc", "etc/opensc.conf")
 
