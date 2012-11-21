@@ -12,9 +12,9 @@
         <IsA>app:console</IsA>
         <Summary>LaTeX to HTML converter</Summary>
         <Description>Hevea is a quite complete and fast LATEX to HTML translator.</Description>
-        <Archive sha1sum="d3b07ad59b815899d953d18b480faa856b77077b" type="targz">http://pauillac.inria.fr/~maranget/hevea/distri/hevea-1.10.tar.gz</Archive>
+        <Archive sha1sum="3de1c2e32f125c305d902fb1c066facc939405a2" type="targz">http://pauillac.inria.fr/~maranget/hevea/distri/hevea-2.00.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="3.07">ocaml</Dependency>
+            <Dependency>ocaml</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -32,6 +32,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-21</Date>
+            <Version>2.00</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>1.10</Version>

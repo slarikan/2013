@@ -16,8 +16,6 @@ libdir = "/usr/lib/hevea"
 bindir = "/usr/bin"
 
 def build():
-    shelltools.unlink("config.sh")
-
     pisitools.dosed("Makefile", "^PREFIX=/usr/local$", "PREFIX=%s" % get.defaultprefixDIR())
     pisitools.dosed("mylib.ml", "LIBDIR", libdir)
     autotools.make("BINDIR=%s LIBDIR=%s" % \
