@@ -28,7 +28,7 @@
         <Name>plasma-applet-translatoid</Name>
         <RuntimeDependencies>
             <Dependency>kdelibs</Dependency>
-            <Dependency>kdebase-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>libqjson</Dependency>
         </RuntimeDependencies>
