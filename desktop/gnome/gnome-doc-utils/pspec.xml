@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>A collection of documentation utilities for the Gnome project</Summary>
         <Description>gnome-doc-utils is a collection of documentation utilities for the Gnome project.</Description>
-        <Archive sha1sum="7fa71459c20c7c98b052f4f8983bb53073230d31" type="tarbz2">mirrors://gnome/gnome-doc-utils/0.20/gnome-doc-utils-0.20.1.tar.bz2</Archive>
+        <Archive sha1sum="8320a30e1b7239aa33ba276da046090407a93bbf" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gnome-doc-utils/0.20/gnome-doc-utils-0.20.10.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome-common</Dependency>
             <Dependency>rarian-devel</Dependency>
@@ -50,6 +50,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-11-21</Date>
+            <Version>0.20.10</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="15">
             <Date>2011-05-30</Date>
             <Version>0.20.1</Version>
