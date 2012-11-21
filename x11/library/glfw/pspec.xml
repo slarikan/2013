@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>The Portable OpenGL FrameWork</Summary>
         <Description>GLFW is a free, Open Source, portable framework for OpenGL application development. In short, it is a single library providing a powerful, portable API for otherwise operating system specific tasks such as opening an OpenGL window, and reading keyboard, mouse and joystick input.</Description>
-        <Archive sha1sum="5a2415436dbba4c2b1f5ee29bcfed449b4ec98a0" type="tarbz2">mirrors://sourceforge/glfw/glfw-2.7.5.tar.bz2</Archive>
+        <Archive sha1sum="fce3baff5ae8ca8583fe91e63a23c3aad593b016" type="tarbz2">mirrors://sourceforge/glfw/glfw-2.7.7.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-11-21</Date>
+            <Version>2.7.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="6">
             <Date>2012-10-13</Date>
             <Version>2.7.5</Version>
@@ -92,4 +99,3 @@
         </Update>
     </History>
 </PISI>
-
