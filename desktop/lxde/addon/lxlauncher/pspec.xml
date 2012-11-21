@@ -31,7 +31,7 @@
         <Name>lxlauncher</Name>
         <RuntimeDependencies>
             <Dependency>startup-notification</Dependency>
-            <Dependency releaseFrom="4">lxde-menu-cache-devel</Dependency>
+            <Dependency releaseFrom="4">lxde-menu-cache</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
