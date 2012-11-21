@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>C++ bindings for GConf</Summary>
         <Description>Package of gconfmm contains C++ bindings for GConf.</Description>
-        <Archive sha1sum="5d3ab360bb182197226355bf4120553161df04b7" type="tarbz2">mirrors://gnome/gconfmm/2.28/gconfmm-2.28.2.tar.bz2</Archive>
+        <Archive sha1sum="333999fe8e07f3d3d74c6b382559b1ca5278ecc7" type="tarbz2">mirrors://gnome/gconfmm/2.28/gconfmm-2.28.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gconf-devel</Dependency>
             <Dependency>gtkmm-devel</Dependency>
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2012-11-21</Date>
+            <Version>2.28.3</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-12</Date>
             <Version>2.28.2</Version>
