@@ -1,7 +1,7 @@
 Index: polkit-gnome-0.97/po/LINGUAS
 ===================================================================
---- polkit-gnome-0.97.orig/po/LINGUAS
-+++ polkit-gnome-0.97/po/LINGUAS
+--- polkit-gnome-0.102.orig/po/LINGUAS
++++ polkit-gnome-0.102/po/LINGUAS
 @@ -37,6 +37,7 @@ sv
  ta
  te
@@ -10,10 +10,10 @@ Index: polkit-gnome-0.97/po/LINGUAS
  uk
  zh_CN
  zh_HK
-Index: polkit-gnome-0.97/po/tr.po
+Index: polkit-gnome-0.102/po/tr.po
 ===================================================================
 --- /dev/null
-+++ polkit-gnome-0.97/po/tr.po
++++ polkit-gnome-0.102/po/tr.po
 @@ -0,0 +1,681 @@
 +# translation of policykit-gnome.HEAD.po to Turkish
 +# Copyright (C) 2010
