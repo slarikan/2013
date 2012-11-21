@@ -16,7 +16,7 @@
         <Archive sha1sum="22524fa488a74bdba3f3b55dff57ff4a0c15e346" type="targz">http://cdlszm.org/downloads/plasma-applet-daisy-0.0.4.25.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency>kdebase-workspace-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,7 +25,7 @@
         <Name>plasma-applet-daisy</Name>
         <RuntimeDependencies>
             <Dependency>kdelibs</Dependency>
-            <Dependency>kdebase-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
