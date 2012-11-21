@@ -13,22 +13,22 @@
         <IsA>app:gui</IsA>
         <Summary>A shutdown manager for KDE</Summary>
         <Description>KShutDown, is an advanced shutdown utility which can be scheduled for various actions like turn off/restart/hibernate your computer, lock screen, end session etc.</Description>
-        <Archive sha1sum="cbafba902a646ec9f501c488f46a3246c5309ca7" type="zip">mirrors://sourceforge/project/kshutdown/KShutdown/2.1%20Beta/kshutdown-source-2.1beta.zip</Archive>
+        <Archive sha1sum="1dcdaa84b7e87560d9861209d6be6ea1d793ca78" type="zip">mirrors://sourceforge/project/kshutdown/KShutdown/3.0%20Beta%204/kshutdown-source-3.0beta4.zip</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.4.3">kdebase-workspace-devel</Dependency>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">desktop.patch</Patch>
+<!--             <Patch level="1">desktop.patch</Patch> -->
         </Patches>
     </Source>
     <Package>
         <Name>kshutdown</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
-            <Dependency versionFrom="4.4.3">kdebase-workspace</Dependency>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -41,6 +41,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="18">
+            <Date>2012-11-21</Date>
+            <Version>3.0_beta4</Version>
+            <Comment>Version bump to latest release with many enhancements.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="17">
             <Date>2011-08-08</Date>
             <Version>2.1_beta1</Version>
