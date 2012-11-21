@@ -830,7 +830,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>lxde.desktop</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -841,7 +841,7 @@
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
-            <Group>desktop</Group>
+            <Group>lxde.desktop</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
@@ -1176,6 +1176,15 @@
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
+            <Name>desktop.kde.base.kdemultimedia</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>            
         </Component>
         <Component>
             <Name>desktop.kde.admin</Name>
@@ -1210,6 +1219,17 @@
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
+        <Component>
+            <Name>desktop.razor-qt</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>razor-qt.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>        
         <Component>
             <Name>editor.emacs</Name>
             <LocalName xml:lang="en">FIXME</LocalName>

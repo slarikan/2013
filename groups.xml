@@ -159,13 +159,39 @@
     <Group>
       <Name>e17.desktop</Name>
       <LocalName xml:lang="en">Enlightenment Desktop</LocalName>
+      <LocalName xml:lang="nl">Enlightenment Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, Enlightenment</LocalName>
+      <LocalName xml:lang="tr">Enlightenment Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Enlightenment</LocalName>      
       <Icon>e17</Icon>
     </Group>
     <Group>
       <Name>xfce.desktop</Name>
       <LocalName xml:lang="en">Xfce Desktop</LocalName>
+      <LocalName xml:lang="nl">Xfce Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, Xfce</LocalName>
+      <LocalName xml:lang="tr">Xfce Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Xfce</LocalName>      
       <Icon>xfce</Icon>
     </Group>
+    <Group>
+      <Name>razor-qt.desktop</Name>
+      <LocalName xml:lang="en">Razor-qt Desktop</LocalName>
+      <LocalName xml:lang="nl">Razor-qt Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, Razor-qt</LocalName>
+      <LocalName xml:lang="tr">Razor-qt Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Razor-qt</LocalName>      
+      <Icon>razor-qt</Icon>
+    </Group>
+    <Group>
+      <Name>lxde.desktop</Name>
+      <LocalName xml:lang="en">lxde Desktop</LocalName>
+      <LocalName xml:lang="nl">lxde Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, lxde</LocalName>
+      <LocalName xml:lang="tr">lxde Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau lxde</LocalName>       
+      <Icon>lxde</Icon>
+    </Group>    
     <Group>
       <Name>other.desktop</Name>
       <LocalName xml:lang="en">Other Desktops</LocalName>
