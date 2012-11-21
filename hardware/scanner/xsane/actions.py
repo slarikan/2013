@@ -10,6 +10,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.system("sed -i -e 's/png_ptr->jmpbuf/png_jmpbuf(png_ptr)/' src/xsane-save.c")
+    shelltools.system("sed -i -e 's/netscape/xdg-open/' src/xsane.h")
     shelltools.unlink("include/config.h")
 
     shelltools.makedirs("withgimp")
