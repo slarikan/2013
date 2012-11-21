@@ -10,7 +10,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "%s-%s-src" % (get.srcNAME(), get.srcVERSION())
+WorkDir = "%s-%s" % (get.srcNAME(), get.srcVERSION())
 NoStrip=["/usr/share/doc"]
 
 def setup():

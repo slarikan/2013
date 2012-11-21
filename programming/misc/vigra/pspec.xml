@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Generic programming library for computer vision</Summary>
         <Description>vigra stands for "Vision with Generic Algorithms". It's a novel computer vision library that puts its main emphasis on customizable algorithms and data structures.</Description>
-        <Archive sha1sum="31875646cbb1928d93c96fc4da4fda31772cf8f6" type="targz">http://hci.iwr.uni-heidelberg.de/vigra/vigra-1.7.0-src.tar.gz</Archive>
+        <Archive sha1sum="6e4981f4ce75932ec62df6523f577c327f885ba0" type="targz">http://hci.iwr.uni-heidelberg.de/vigra/vigra-1.9.0-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>fftw3-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
@@ -22,7 +22,7 @@
             <Dependency>python-numpy</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">vigra-libpng.patch</Patch>
+            <!--<Patch level="1">vigra-libpng.patch</Patch>-->
             <Patch level="1">disable-doc.diff</Patch>
         </Patches>
     </Source>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-21</Date>
+            <Version>1.9.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>1.7.0</Version>
