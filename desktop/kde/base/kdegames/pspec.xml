@@ -79,6 +79,11 @@
         </Replaces>
         <Files>
             <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/kde4/apps/kconf_update/kgthemeprovider-migration.upd</Path>                                                                                                                                                                        
+            <Path fileType="data">/usr/lib/cmake/KDEGames/KDEGamesLibraryDepends.cmake</Path>
+            <Path fileType="data">/usr/lib/cmake/KDEGames/KDEGamesLibraryDepends-relwithdebinfo.cmake</Path>
+            <Path fileType="data">/usr/lib/cmake/KDEGames/KDEGamesConfig.cmake</Path>
+            <Path fileType="data">/usr/lib/cmake/KDEGames/KDEGamesConfigVersion.cmake</Path>            
         </Files>
     </Package>
 
