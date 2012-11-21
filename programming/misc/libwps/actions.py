@@ -15,7 +15,7 @@ def setup():
     for f in ("AUTHORS", "NEWS", "ChangeLog"):
         shelltools.touch(f)
 
-    autotools.autoreconf("-fi")
+    #autotools.autoreconf("-fi")
     autotools.configure("--without-docs --disable-static")
     pisitools.dosed("libtool", "^hardcode_libdir_flag_spec=.*", "hardcode_libdir_flag_spec=\"\"")
     pisitools.dosed("libtool", "^runpath_var=LD_RUN_PATH", "runpath_var=DIE_RPATH_DIE")
@@ -27,4 +27,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("COPYING", "CREDITS", "README", "CHANGES")
+    pisitools.dodoc("COPYING", "CREDITS", "README")
