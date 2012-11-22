@@ -12,9 +12,9 @@
         <IsA>service</IsA>
         <Summary>Protocol definitions and daemons for D-Bus at-spi</Summary>
         <Description>at-spi allows assistive technologies to access GTK-based applications. Essentially it exposes the internals of applications over D-Bus for automation.</Description>
-        <Archive sha1sum="c582265c2eee0b33aa4c1956773b72843c204c06" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/at-spi2-atk/2.6/at-spi2-atk-2.6.0.tar.xz</Archive>
+        <Archive sha1sum="5c066408e07437470310149ecfd5700a8aeb5746" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/at-spi2-atk/2.7/at-spi2-atk-2.7.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>at-spi2-core</Dependency>    
+            <Dependency>at-spi2-core</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,17 +27,24 @@
 
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="data">/usr</Path>
-            <Path fileType="doc">/usr/share/doc</Path>   
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-10-22</Date>
+            <Version>2.7.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-04</Date>
             <Version>2.6.0</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update> 
+        </Update>
     </History>
 </PISI>
