@@ -21,7 +21,8 @@ def linknonwide(targetDir):
     for f in shelltools.ls("%s/%s/*w.*" % (get.installDIR(), targetDir)):
         source = shelltools.baseName(f)
         destination = source.replace("w.", ".")
-        pisitools.dosym(source, "%s/%s" % (targetDir, destination))
+        if not shelltools.isLink("%s/%s" % (targetDir, destination)):
+            pisitools.dosym(source, "%s/%s" % (targetDir, destination))
 
 def setup():
     configparams = "--without-debug \
@@ -87,7 +88,8 @@ def install():
     for d in ("ncurses", "ncursesw"):
         pisitools.dodir("/usr/include/%s" % d)
         for h in shelltools.ls("%s/usr/include/*.h" % get.installDIR()):
-            pisitools.dosym("../%s" % os.path.basename(h), "/usr/include/%s/%s" % (d, os.path.basename(h)))
+            if not shelltools.isLink("/usr/include/%s/%s" % (d, os.path.basename(h))):
+                pisitools.dosym("../%s" % os.path.basename(h), "/usr/include/%s/%s" % (d, os.path.basename(h)))
 
     for f in terminfo:
         termfile = f[0] + "/" + f

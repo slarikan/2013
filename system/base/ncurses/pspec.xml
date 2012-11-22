@@ -61,9 +61,9 @@
 
     <Package>
         <Name>ncurses-32bit</Name>
-        <PartOf>_emul32</PartOf>
+        <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for ncurses</Summary>
-        <BuildType>emul32</BuildType>
+        <BuildType>_emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">ncurses</Dependency>
         </RuntimeDependencies>
@@ -74,7 +74,7 @@
     </Package>
 
     <History>
-        <Update release="13">
+        <Update release="14">
             <Date>2012-11-14</Date>
             <Version>5.9_20121110</Version>
             <Comment>Version bump</Comment>
