@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>GTK+ and GNOME Accessibility Toolkit</Summary>
         <Description>These libraries provide tools for making software for people with disabilities.</Description>
-        <Archive sha1sum="7e45a5c06c69ad51cb425566ea71e94200e7e2a2" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/atk/2.5/atk-2.5.4.tar.xz</Archive>
+        <Archive sha1sum="c4f359106ef30d1073bfa4062eb70ec58235f414" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/atk/2.7/atk-2.7.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.9.12">gobject-introspection-devel</Dependency>
         </BuildDependencies>
@@ -60,20 +60,27 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-10-22</Date>
+            <Version>2.7.2</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="19">
             <Date>2012-08-26</Date>
             <Version>2.5.4</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
+        </Update>
         <Update release="19">
             <Date>2012-05-29</Date>
             <Version>2.4.0</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="18">
             <Date>2011-07-07</Date>
             <Version>1.30.0</Version>
