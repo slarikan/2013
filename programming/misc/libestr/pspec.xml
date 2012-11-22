@@ -7,7 +7,7 @@
             <Email>marcin.bojara@gmail.com</Email>
         </Packager>
         <License>LGPLv2.1</License>
-        <IsA>app:console</IsA>
+        <IsA>library</IsA>
         <Summary>Library for some string essentials</Summary>
         <Description>libestr - some essentials for string handling (and a bit more)</Description>
         <Archive sha1sum="24d2daf729de50ba19a655adedee89d9eeebd4b1" type="targz">http://libestr.adiscon.com/files/download/libestr-0.1.4.tar.gz</Archive>

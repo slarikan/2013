@@ -33,5 +33,8 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
+    # remove empty dir
+    pisitools.removeDir("/usr/bin")
 
     pisitools.dodoc("COPYING*", "README", "AUTHORS", "ChangeLog")
