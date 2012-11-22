@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>High level XKB library</Summary>
         <Description>libxklavier is a library can be used to develop XKB-based applications.</Description>
-        <Archive sha1sum="e914adc00a7b1d39c5057aa415a5181856a697ae" type="tarbz2">mirrors://gnome/libxklavier/5.0/libxklavier-5.0.tar.bz2</Archive>
+        <Archive sha1sum="dc5e824c738520229174ba9481f0cab35be4870f" type="tarxz">mirrors://gnome/libxklavier/5.3/libxklavier-5.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libxkbfile-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
@@ -29,7 +29,8 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="data">/usr/share/gir-1.0/</Path>
             <Path fileType="data">/usr/share/libxklavier</Path>
         </Files>
         <AdditionalFiles>
@@ -58,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-11-21</Date>
+            <Version>5.3</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>5.0</Version>
