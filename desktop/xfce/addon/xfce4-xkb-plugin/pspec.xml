@@ -20,7 +20,7 @@
             <Dependency version="4.10.0">libxfcegui4-devel</Dependency>
             <Dependency version="4.10.0">libxfce4util-devel</Dependency>
             <Dependency>libxklavier-devel</Dependency>
-            <Dependency>libwnck-devel</Dependency>
+            <Dependency>libwnck2-devel</Dependency>
             <Dependency>librsvg-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -37,7 +37,7 @@
             <Dependency version="4.10.0">libxfcegui4</Dependency>
             <Dependency version="4.10.0">libxfce4util</Dependency>
             <Dependency>libxklavier</Dependency>
-            <Dependency>libwnck</Dependency>
+            <Dependency>libwnck2</Dependency>
             <Dependency>librsvg</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
@@ -52,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2012-08-26</Date>
+            <Version>0.5.4.3</Version>
+            <Comment>dep +</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="3">
             <Date>2012-06-10</Date>
             <Version>0.5.4.3</Version>
