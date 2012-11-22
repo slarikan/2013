@@ -8,14 +8,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    options = "--enable-udev"
-
-    if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
     autotools.autoreconf("-vif")
-    autotools.configure(options)
+    autotools.configure("--enable-udev")
 
 def build():
     autotools.make()

@@ -12,12 +12,10 @@
         <IsA>library</IsA>
         <Summary>Userspace interface to kernel DRM services</Summary>
         <Description>libdrm is a library providing the userspace interface to kernel DRM services.</Description>
-        <Archive sha1sum="c0e841850d7164c63d36f486ca3a64040357660e" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.39.tar.bz2</Archive>
+        <Archive sha1sum="0f77aa49922e17102caa75de86c8e79bbf23b4a1" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.40.tar.bz2</Archive>
         <Patches>
-            <Patch level="1">disable-cairo.patch</Patch>
             <Patch level="1">libdrm-2.4.0-no-bc.patch</Patch>
             <Patch level="1">libdrm-make-dri-perms-okay.patch</Patch>
-            <Patch level="1">fix-underlinking.patch</Patch>
         </Patches>
         <BuildDependencies>
             <Package versionFrom="0.10.0">libpciaccess-devel</Package>
@@ -30,6 +28,7 @@
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib/libdrm.*</Path>
             <Path fileType="data">/lib/udev/rules.d</Path>
+            <Path fileType="man">/usr/share/man</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/lib/udev/rules.d/91-drm-modeset.rules">91-drm-modeset.rules</AdditionalFile>
@@ -163,6 +162,13 @@
     </Package>
 
     <History>
+        <Update release="45">
+            <Date>2012-11-22</Date>
+            <Version>2.4.40</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="44">
             <Date>2012-09-25</Date>
             <Version>2.4.39</Version>
