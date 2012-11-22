@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A library of handy utility functions</Summary>
         <Description>glib2 is the low-level core library that forms the basis for projects such as GTK+ and GNOME. It provides data structure handling for C, portability wrappers, and interfaces for such runtime functionality as an event loop, threads, dynamic loading, and an object system.</Description>
-        <Archive sha1sum="3d61e3bc941bb2b77569b5c01c509b70277cc09c" type="tarlzma">mirrors://gnome/glib/2.34/glib-2.34.1.tar.xz</Archive>
+        <Archive sha1sum="7489db6fbdc534b09763e76b3cf2ab3a7db2b7cc" type="tarlzma">mirrors://gnome/glib/2.35/glib-2.35.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libpcre-devel</Dependency>
             <Dependency>zlib-devel</Dependency>
@@ -21,7 +21,7 @@
             <!-- Don't fail check when run as root -->
             <Patch level="0">glib-2.18.1-workaround-gio-test-failure-without-userpriv.patch</Patch>
 	    <Patch level="1">suse/glib2-suppress-schema-deprecated-path-warning.patch</Patch>
-	    <Patch level="1">suse/glib2-force-fam-for-remote-fs.patch</Patch>
+	    <!--<Patch level="1">suse/glib2-force-fam-for-remote-fs.patch</Patch>-->
 	    <Patch level="1">suse/glib2-bgo569829-gettext-gkeyfile.patch</Patch>
         </Patches>
     </Source>
@@ -110,20 +110,27 @@
     </Package>
 
     <History>
+        <Update release="58">
+            <Date>2012-11-21</Date>
+            <Version>2.35.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="57">
             <Date>2012-10-24</Date>
             <Version>2.34.1</Version>
             <Comment>Version bump</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update> 
+        </Update>
         <Update release="56">
             <Date>2012-09-29</Date>
             <Version>2.34.0</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="55">
             <Date>2012-08-25</Date>
             <Version>2.32.4</Version>
