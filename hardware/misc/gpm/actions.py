@@ -25,7 +25,7 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # Remove this when we can break abi
-    pisitools.dosym("libgpm.so.1", "/usr/lib/libgpm.so")
+    pisitools.dosym("libgpm.so.2", "/usr/lib/libgpm.so")
 
     #remove static link
     pisitools.remove("/usr/lib/libgpm.a")
