@@ -50,7 +50,31 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>libtirpc-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libtirpc</Summary>
+        <BuildType>emul32</BuildType>
+	<BuildDependencies>
+	    <Dependency>libgssglue-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+	    <Dependency>libtirpc</Dependency>
+	    <Dependency>libgssglue-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
     <History>
+        <Update release="7">
+            <Date>2012-10-05</Date>
+            <Version>0.2.2</Version>
+            <Comment>libtirpc-32bit eklendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2012-10-05</Date>
             <Version>0.2.2</Version>

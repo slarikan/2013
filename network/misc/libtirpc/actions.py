@@ -8,9 +8,13 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
+from pisi.actionsapi import get
+
+shelltools.export("HOME", get.workDIR())
 
 def setup():
-    autotools.autoreconf("-vfi")
+    autotools.autoreconf("-fisv")
     autotools.configure("--disable-static \
                          --enable-gss \
                          --with-pic")
@@ -22,7 +26,7 @@ def check():
     autotools.make("check")
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.insinto("/etc", "doc/etc_netconfig", "netconfig")
     pisitools.dodoc("AUTHORS", "NEWS", "ChangeLog", "README", "THANKS", "TODO")
