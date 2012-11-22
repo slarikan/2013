@@ -17,12 +17,12 @@
             <Dependency>ncurses</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch level="1">abi.patch</Patch>
-            <Patch level="1">0001-daemon-use-sys-ioctl.h-for-ioctl.patch</Patch>-->
             <Patch level="1">fedora/gpm-1.20.5-close-fds.patch</Patch>
-            <!--<Patch level="1">fedora/gpm-1.20.1-weak-wgetch.patch</Patch>
-            <Patch level="1">fedora/gpm-1.20.6-libtool.patch</Patch>-->
             <Patch level="1">fedora/gpm-1.20.1-lib-silent.patch</Patch>
+            <Patch level="1">mandriva/gpm-1.20.7-weak-wgetch.patch</Patch>
+            <Patch level="1">mandriva/gpm-1.20.7-fix-out-of-source-build.patch</Patch>
+            <Patch level="1">mandriva/gpm-1.20.0-docfix.patch</Patch>
+            <Patch level="1">mandriva/gpm-1.20.1-multilib.patch</Patch>
         </Patches>
     </Source>
 
