@@ -30,6 +30,22 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>at-spi2-core-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for at-spi2-core</Summary>
+        <BuildType>emul32</BuildType>
+	<BuildDependencies>
+            <Dependency>libXtst-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency>libXtst-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
     <History>
         <Update release="5">
             <Date>2012-10-22</Date>
