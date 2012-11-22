@@ -12,13 +12,7 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-vif")
-    options = "--disable-static"
-
-    if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
-    autotools.configure(options)
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()
