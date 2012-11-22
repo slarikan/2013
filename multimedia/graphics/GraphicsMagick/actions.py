@@ -6,26 +6,23 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import perlmodules
 from pisi.actionsapi import get
 
 # .la files needed to load modules
 KeepSpecial = ["libtool"]
 
 def setup():
-    pisitools.dosed("configure.ac", "AC_PREREQ\(2.64\)", "AC_PREREQ(2.63)")
-    autotools.autoreconf("-vif")
-
     # ghostscript is better than dps
     # unstable fpx support disabled
     # trio is for old systems not providing vsnprintf
-    # FIXME: build perl modules
     autotools.configure("--enable-openmp \
                          --enable-shared \
                          --disable-static \
                          --with-threads \
                          --with-modules \
                          --with-magick-plus-plus \
-                         --without-perl \
+                         --with-perl \
                          --with-bzlib \
                          --without-dps \
                          --without-fpx \
@@ -43,12 +40,19 @@ def setup():
                          --with-gs-font-dir=/usr/share/fonts/default/ghostscript \
                          --with-xml \
                          --with-zlib \
-                         --with-x")
+                         --with-x \
+                         --with-quantum-depth=16")
 
 def build():
     autotools.make()
+    autotools.make("perl-build")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s -C PerlMagick" % get.installDIR())
+    for d in ("demo/", "Changelog", "README.txt"):
+        pisitools.insinto("/usr/share/doc/PerlMagick", "PerlMagick/%s" % d)
 
     pisitools.remove("/usr/lib/*.la")
+    perlmodules.removePacklist()
+    perlmodules.removePodfiles()
