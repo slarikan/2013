@@ -12,14 +12,13 @@
         <IsA>library</IsA>
         <Summary>X.Org Xft library</Summary>
         <Description>libXft is the X FreeType interface library.</Description>
-        <Archive sha1sum="687f38a810b9ae58e1169c295d9d438370235e23" type="tarbz2">mirrors://xorg/individual/lib/libXft-2.3.0.tar.bz2</Archive>
+        <Archive sha1sum="c7ec1361e3d4f095910f8c58988ab42e32f314d9" type="tarbz2">mirrors://xorg/individual/lib/libXft-2.3.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>freetype-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">libXft-2.3.0-bold-fix.patch</Patch>
         </Patches>
     </Source>
 
@@ -80,6 +79,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-11-22</Date>
+            <Version>2.3.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="11">
             <Date>2012-06-01</Date>
             <Version>2.3.0</Version>
