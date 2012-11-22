@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Qt-based library that maps JSON data to QVariant objects</Summary>
         <Description>libqjson, (JavaScript Object Notation) is a lightweight data-interchange format. It can represents integer, real number, string, an ordered sequence of value, and a collection of name/value pairs.</Description>
-        <Archive sha1sum="19bbef24132b238e99744bb35194c6dadece98f9" type="tarbz2">mirrors://sourceforge/project/qjson/qjson/0.7.1/qjson-0.7.1.tar.bz2</Archive>
+        <Archive sha1sum="6a571194d24aed23f36642f5d24d97f6b1080d4a" type="tarbz2">mirrors://sourceforge/qjson/qjson/0.8.0/qjson-0.8.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>cmake</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>libqjson</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -39,11 +39,18 @@
         <Files>
             <Path fileType="header">/usr/include/qjson</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
-            <Path fileType="data">/usr/share/cmake</Path>
+            <Path fileType="data">/usr/lib/cmake/qjson</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-11-22</Date>
+            <Version>0.8.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-10-12</Date>
             <Version>0.7.1</Version>
@@ -74,4 +81,3 @@
         </Update>
     </History>
 </PISI>
-

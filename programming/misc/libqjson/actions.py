@@ -11,12 +11,8 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "qjson"
-
-shelltools.export("HOME", get.workDIR())
-
 def setup():
-    cmaketools.configure("-DCMAKE_MODULES_INSTALL_DIR=/usr/share/cmake/Modules/")
+    cmaketools.configure()
 
 def build():
     cmaketools.make()
@@ -24,4 +20,4 @@ def build():
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("COPYING", "README")
+    pisitools.dodoc("ChangeLog", "COPYING*", "README*")
