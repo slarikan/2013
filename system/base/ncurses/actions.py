@@ -41,7 +41,8 @@ def setup():
                    --with-chtype='long' \
                    --with-mmask-t='long' \
                    --without-ada \
-                   --enable-symlinks"
+                   --enable-symlinks \
+                   --without-gpm"
 
     if get.buildTYPE() == "_emul32":
         shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
@@ -52,8 +53,7 @@ def setup():
                           --libexecdir=/_emul32/lib \
                           --bindir=/_emul32/bin \
                           --sbindir=/_emul32/sbin \
-                          --mandir=/_emul32/usr/share/man \
-                          --without-gpm"
+                          --mandir=/_emul32/usr/share/man"
 
     autotools.configure(configparams)
 
