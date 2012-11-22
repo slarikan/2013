@@ -10,13 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    options = "--disable-static"
-
-    if get.buildTYPE() == "emul32":
-        options += " --libdir=/usr/lib32"
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
-    autotools.configure(options)
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()
@@ -24,4 +18,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("README", "TODO")
+    pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "README")
