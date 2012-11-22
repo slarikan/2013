@@ -38,7 +38,28 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>libgssglue-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libgssglue</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">libgssglue</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="data">/usr/lib32/pkgconfig</Path>
+        </Files>
+    </Package>
+
     <History>
+        <Update release="4">
+            <Date>2012-11-22</Date>
+            <Version>0.4</Version>
+            <Comment>add emul32 component</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2012-09-01</Date>
             <Version>0.4</Version>
