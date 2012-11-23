@@ -10,7 +10,14 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vfi")
-    autotools.configure("--disable-static")
+    autotools.configure("--disable-static \
+			 --enable-tracker-backend \
+			 --enable-libsocialweb-backend=auto \
+			 --disable-schemas-compile \
+			 --enable-eds-backend \
+			 --enable-vala \
+			 --enable-inspect-tool \
+			 --enable-import-tool")
 
 def build():
     autotools.make()
