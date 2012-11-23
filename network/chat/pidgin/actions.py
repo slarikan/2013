@@ -9,6 +9,7 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
+from pisi.actionsapi import perlmodules
 from pisi.actionsapi import get
 
 def setup():
@@ -37,3 +38,5 @@ def install():
     pisitools.dosym("../icons/hicolor/48x48/apps/pidgin.png", "/usr/share/pixmaps/pidgin.png")
 
     pisitools.dodoc("AUTHORS", "COPYING", "HACKING", "NEWS", "README", "ChangeLog")
+
+    perlmodules.removePodfiles()
