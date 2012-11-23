@@ -155,6 +155,7 @@
             <Dependency>libXinerama-32bit</Dependency>
             <Dependency>libXrandr-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
+            <Dependency>at-spi2-atk-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">gtk3</Dependency>
@@ -175,6 +176,7 @@
             <Dependency>libXinerama-32bit</Dependency>
             <Dependency>libXrandr-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
+            <Dependency>at-spi2-atk-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/*-32bit</Path>
