@@ -30,9 +30,10 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s install" % get.installDIR())
+    
+    if get.buildTYPE() == "emul32": return
+
     pisitools.removeDir("/usr/bin")
-    if get.buildTYPE() == "emul32":
-        return
 
     pisitools.dohtml("doc/")
     pisitools.dodoc("CHANGELOG", "CHANGES", "README", "USAGE", "NEWS")
