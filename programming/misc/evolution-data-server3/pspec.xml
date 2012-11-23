@@ -74,7 +74,7 @@
         <IsA>data:doc</IsA>
         <Summary>Help files and API documents for evolution-data-server</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">evolution-data-server</Dependency>
+            <Dependency release="current">evolution-data-server3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
@@ -85,7 +85,7 @@
         <Name>evolution-data-server3-devel</Name>
         <Summary>Development files for evolution-data-server</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">evolution-data-server</Dependency>
+            <Dependency release="current">evolution-data-server3</Dependency>
             <Dependency>dbus-glib-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
