@@ -26,5 +26,5 @@ def install():
 
     pisitools.dodoc("AUTHORS", "COPYING*", "NEWS", "README")
 
-    pisitools.removeDir("/usr/share/gtk-doc")
+    #pisitools.removeDir("/usr/share/gtk-doc")
 
