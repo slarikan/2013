@@ -11,7 +11,7 @@
         <License>LGPLv2.1</License>
         <Summary>The GIMP Toolkit version 3</Summary>
         <Description>GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
-        <Archive sha1sum="f260cc9b1750afb99da144c8abdf1198c0386d5f" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtk+/3.4/gtk+-3.4.4.tar.xz</Archive>
+        <Archive sha1sum="27c1c7d53db58ad305a0d5062d6012eaac953fd3" type="tarxz">mirrors://gnome/gtk+/3.7/gtk+-3.7.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
@@ -27,11 +27,12 @@
             <Dependency>libXinerama-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency versionFrom="2.2.0">atk-devel</Dependency>
-        <Dependency versionFrom="2.32.0">glib2-devel</Dependency>
-        <Dependency versionFrom="1.10.0">cairo-devel</Dependency>
+            <Dependency versionFrom="2.32.0">glib2-devel</Dependency>
+            <Dependency versionFrom="1.10.0">cairo-devel</Dependency>
             <Dependency versionFrom="1.30">pango-devel</Dependency>
             <Dependency versionFrom="2.26.0">gdk-pixbuf-devel</Dependency>
             <Dependency versionFrom="1.32.0">gobject-introspection-devel</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Upstream added a warning message for XID collisions for being able
@@ -66,6 +67,7 @@
             <Dependency versionFrom="2.2.0">atk</Dependency>
             <Dependency versionFrom="1.30">pango</Dependency>
             <Dependency versionFrom="2.26.0">gdk-pixbuf</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -181,6 +183,13 @@
     </Package>
 
     <History>
+        <Update release="81">
+            <Date>2012-11-23</Date>
+            <Version>3.7.2</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="80">
             <Date>2012-08-26</Date>
             <Version>3.4.4</Version>
