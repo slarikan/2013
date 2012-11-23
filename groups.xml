@@ -145,6 +145,18 @@
       <Icon>preferences-desktop</Icon> <!-- FIXME: Gnome Desktop Icon -->
     </Group>
     <Group>
+      <Name>gnome3.desktop</Name>
+      <LocalName xml:lang="en">Gnome Desktop</LocalName>
+      <LocalName xml:lang="nl">Gnome Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, GNOME</LocalName>
+      <LocalName xml:lang="tr">Gnome Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Gnome</LocalName>
+      <LocalName xml:lang="es">Gnome</LocalName>
+      <LocalName xml:lang="de">Gnome</LocalName>
+      <LocalName xml:lang="it">Gnome</LocalName>
+      <Icon>preferences-desktop</Icon> <!-- FIXME: Gnome Desktop Icon -->
+    </Group>
+    <Group>
       <Name>kde.desktop</Name>
       <LocalName xml:lang="en">KDE Desktop</LocalName>
       <LocalName xml:lang="nl">KDE Desktop</LocalName>
