@@ -1,5 +1,5 @@
---- pisi/actionsapi/perlmodules.py.orig	2012-10-09 00:17:32.456109955 +0200
-+++ pisi/actionsapi/perlmodules.py	2012-10-09 19:38:56.000000000 +0200
+--- pisi/actionsapi/perlmodules.py.orig	2011-05-26 19:17:29.000000000 +0200
++++ pisi/actionsapi/perlmodules.py	2012-11-24 18:51:17.008391547 +0100
 @@ -27,6 +27,7 @@
  from pisi.actionsapi.shelltools import can_access_file
  from pisi.actionsapi.shelltools import export
@@ -14,21 +14,23 @@
      removePacklist()
 +    removePodfiles()
  
- def removePacklist():
+-def removePacklist():
++def removePacklist(path = 'usr/lib/perl5/'):
      ''' cleans .packlist file from perl packages '''
 -    path = '%s/%s' % (get.installDIR(), "/usr/lib/perl5/vendor_perl/%s/%s-linux-thread-multi/auto/" % (get.curPERL(), get.HOST().split("-")[0]))
-+    path = '%s/%s' % (get.installDIR(), "usr/lib/perl5/")
-     for root, dirs, files in os.walk(path):
+-    for root, dirs, files in os.walk(path):
++    full_path = '%s/%s' % (get.installDIR(), path)
++    for root, dirs, files in os.walk(full_path):
          for packFile in files:
              if packFile == ".packlist":
                  if can_access_file('%s/%s' % (root, packFile)):
                      unlink('%s/%s' % (root, packFile))
 +                    removeEmptydirs(root)
 +
-+def removePodfiles():
++def removePodfiles(path = 'usr/lib/perl5/'):
 +    ''' cleans *.pod files from perl packages '''
-+    path = '%s/%s' % (get.installDIR(), "usr/lib/perl5/")
-+    for root, dirs, files in os.walk(path):
++    full_path = '%s/%s' % (get.installDIR(), path)
++    for root, dirs, files in os.walk(full_path):
 +        for packFile in files:
 +            if packFile.endswith(".pod"):
 +                if can_access_file('%s/%s' % (root, packFile)):
