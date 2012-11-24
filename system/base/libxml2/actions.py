@@ -12,6 +12,9 @@ from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
+    # fix sandbox violations when attempt to read "/missing.xml"
+    pisitools.dosed("testapi.c", "\/missing.xml", "missing.xml")
+    
     options = "--with-zlib \
                --with-python \
                --with-readline \
