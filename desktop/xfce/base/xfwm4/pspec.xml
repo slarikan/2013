@@ -16,7 +16,7 @@
         <Description>The Xfce4 window manager manages the placement of application windows on the screen, provides beautiful window decorations, manages workspaces or virtual desktops, and natively supports multiscreen mode.</Description>
         <Archive sha1sum="1549954949b5e1f38a2279a39a477b52bb5339f2" type="tarbz2">http://archive.xfce.org/src/xfce/xfwm4/4.10/xfwm4-4.10.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency version="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
@@ -25,9 +25,9 @@
             <Dependency>startup-notification-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency version="4.10.0">xfconf-devel</Dependency>
-            <Dependency version="4.10.0">libxfce4util-devel</Dependency>
-            <Dependency version="4.10.0">libxfce4ui-devel</Dependency>
+            <Dependency versionFrom="4.10.0">xfconf-devel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4ui-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>libwnck2-devel</Dependency>
@@ -41,7 +41,7 @@
     <Package>
         <Name>xfwm4</Name>
         <RuntimeDependencies>
-            <Dependency version="4.10.0">libxfce4util</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libXrandr</Dependency>
@@ -50,9 +50,9 @@
             <Dependency>startup-notification</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency version="4.10.0">xfconf</Dependency>
-            <Dependency version="4.10.0">libxfce4util</Dependency>
-            <Dependency version="4.10.0">libxfce4ui</Dependency>
+            <Dependency versionFrom="4.10.0">xfconf</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4ui</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>libwnck2</Dependency>
