@@ -17,6 +17,7 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
+	    <Dependency>imlib2-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
@@ -39,6 +40,7 @@
         <Name>openbox</Name>
         <RuntimeDependencies>
             <Dependency>pango</Dependency>
+	    <Dependency>imlib2</Dependency>
             <Dependency>libXft</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libSM</Dependency>
@@ -91,7 +93,7 @@
             </Comment>
             <Name>Mesutcan Kurt</Name>
             <Email>mesutcank@gmail.com</Email>
-        </Update>       
+        </Update>
         <Update release="7">
             <Date>2011-08-24</Date>
             <Version>3.4.11.2</Version>
