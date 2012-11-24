@@ -15,11 +15,13 @@
         <Description>ObConf is a graphical configuration tool for the Openbox window manager.</Description>
         <Archive sha1sum="31a98ea9beb37e6bd7e9d9b27a99d898b14959b6" type="tarbz2">http://content.wuala.com/contents/erdinc/kern/obconf-2.0.4.git500163e.tar.bz2</Archive>
         <BuildDependencies>
-	    <Dependency>git</Dependency>
+	    <Dependency>gettext-devel</Dependency>
             <Dependency>openbox-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>libSM-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -30,11 +32,16 @@
     <Package>
         <Name>obconf</Name>
         <RuntimeDependencies>
+        <BuildDependencies>
+	    <Dependency>gettext</Dependency>
             <Dependency>openbox</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>libglade</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libglade</Dependency>
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>libSM</Dependency>
             <Dependency>startup-notification</Dependency>
+        </BuildDependencies>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
