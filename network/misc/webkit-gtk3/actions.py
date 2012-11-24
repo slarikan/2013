@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "webkit-%s" % get.srcVERSION()
+WorkDir = "webkitgtk-%s" % get.srcVERSION()
 
 shelltools.export("HOME", get.workDIR())
 shelltools.export("XDG_DATA_HOME", get.workDIR())
@@ -30,7 +30,8 @@ def setup():
                          --with-font-backend=pango \
                          --with-unicode-backend=icu \
                          --with-gtk=3.0 \
-                         --enable-gtk-doc")
+                         --disable-gtk-doc")
+
     pisitools.dosed("GNUmakefile", "(Programs_DumpRenderTree_LDFLAGS\s=\s)", r"\1-lfontconfig ")
 
 def build():
