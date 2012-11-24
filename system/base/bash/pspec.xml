@@ -55,6 +55,8 @@
             <Patch>official-patches/bash42-035</Patch>
             <Patch>official-patches/bash42-036</Patch>
             <Patch>official-patches/bash42-037</Patch>
+            <Patch>official-patches/bash42-038</Patch>
+            <Patch>official-patches/bash42-039</Patch>
 
             <!-- Fedora patches -->
             <Patch level="1">fedora/bash-2.02-security.patch</Patch>
@@ -112,6 +114,13 @@
     </Package>
 
     <History>
+        <Update release="26">
+            <Date>2012-11-24</Date>
+            <Version>4.2_p39</Version>
+            <Comment>Add latest official patches</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="25">
             <Date>2012-06-10</Date>
             <Version>4.2</Version>
