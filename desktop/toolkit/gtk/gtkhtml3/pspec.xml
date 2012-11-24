@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Lightweight HTML Rendering/Printing/Editing Engine</Summary>
         <Description>gtkhtml3 is a ightweight HTML Rendering/Printing/Editing Engine.</Description>
-        <Archive sha1sum="e66dcbf3201ea7a52e3e10b798775e3729db102e" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtkhtml/4.4/gtkhtml-4.4.3.tar.xz</Archive>
+        <Archive sha1sum="76beb34a3c109e90a89432c28c006ae11c681827" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gtkhtml/4.6/gtkhtml-4.6.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
@@ -26,11 +26,8 @@
             <Dependency>iso-codes</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>icon-theme-gnome</Dependency>
-        <Dependency>gsettings-desktop-schemas-devel</Dependency>
+        <Dependency>gsettings-desktop-schemas3-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch level="1">components.editor.patch</Patch>
-        </Patches>-->
     </Source>
 
     <Package>
@@ -44,7 +41,7 @@
             <Dependency>enchant</Dependency>
             <Dependency>iso-codes</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-        <Dependency>gsettings-desktop-schemas</Dependency>
+        <Dependency>gsettings-desktop-schemas3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -59,6 +56,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-11-23</Date>
+            <Version>4.6.1</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2012-08-26</Date>
             <Version>4.4.3</Version>
