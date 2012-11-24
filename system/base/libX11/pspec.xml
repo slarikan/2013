@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>X.Org X11 library</Summary>
         <Description>Core X11 protocol client library.</Description>
-        <Archive sha1sum="848c0527e66d209326cdb027cf83b290851f0d33" type="targz">http://cgit.freedesktop.org/xorg/lib/libX11/snapshot/libX11-1.5.0.tar.gz</Archive>
+        <Archive sha1sum="bf652ee4ad0fd8a83645a93ab3de28b297b12cbd" type="targz">https://github.com/downloads/obsoleteman/notobs/libX11-d14b6a250f004fa405179db7020f6953001d17b9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxcb-devel</Dependency>
             <Dependency releaseFrom="35">xorg-proto</Dependency>
@@ -71,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="33">
+            <Date>2012-11-24</Date>
+            <Version>1.5.0</Version>
+            <Comment>Fix package source.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="32">
             <Date>2012-08-23</Date>
             <Version>1.5.0</Version>
