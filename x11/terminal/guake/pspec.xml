@@ -23,6 +23,18 @@
         <Patches>
             <Patch level="0">desktop.patch</Patch>
             <Patch level="1">aclocal-flag.patch</Patch>
+	    <Patch level="1">0001-Add-monitor-choice-to-UI.patch</Patch>
+	    <Patch level="1">0001-Added-a-checkbox-in-the-preferences-dialog-that-lets.patch</Patch>
+	    <Patch level="1">0001-Quick-Google-search-from-context-menu.patch</Patch>
+	    <Patch level="1">0002-Added-start-in-fullscreen-to-the-gconf-schema.patch</Patch>
+	    <Patch level="1">arrow-scroll.patch</Patch>
+	    <Patch level="1">fix-font-size-guake.py.patch</Patch>
+	    <Patch level="1">fix-font-size-guake.schemas.patch</Patch>
+	    <Patch level="1">fix_ctrl_global.patch</Patch>
+	    <Patch level="1">guake-0.4.3-fix-window-height-settings.patch</Patch>
+	    <Patch level="1">guake-0.4.3-slide-from-bottom-or-top.patch</Patch>
+	    <Patch level="1">guake-230-top-panel.patch</Patch>
+	    <Patch level="1">guake.glade.patch</Patch>
             <!--<Patch>guake-0.4.2-int-ssl-port.patch</Patch>-->
             <Patch>guake-0.4.2-prefs-spinbox.patch</Patch>
         </Patches>
@@ -51,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-24</Date>
+            <Version>0.4.4</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-0"@hotmail.it</Email>
+        </Update>
         <Update release="6">
             <Date>2012-11-02</Date>
             <Version>0.4.4</Version>
