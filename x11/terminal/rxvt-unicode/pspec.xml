@@ -21,6 +21,13 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
+	    <Patch level="1">rxvt-unicode-9.05_no-MOTIF-WM-INFO.patch</Patch>
+	    <Patch level="1">rxvt-unicode-9.06-font-width.patch</Patch>
+	    <Patch level="1">rxvt-unicode-9.06-no-urgency-if-focused.diff</Patch>
+	    <Patch level="1">rxvt-unicode-9.06-popups-hangs.patch</Patch>
+	    <Patch level="1">rxvt-unicode-9.09-sattvik-colours.patch</Patch>
+	    <Patch level="1">rxvt-unicode-9.14-clear.patch</Patch>
+	    <Patch level="1">rxvt-unicode-9.14-secondary-wheel.patch</Patch>
             <!--<Patch level="1">CVE-2008-1142.patch</Patch>
             <Patch level="1">fix_destdir.patch</Patch>
             <Patch level="1">rxvt-unicode-scroll-modupdown.patch</Patch>
@@ -55,6 +62,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-10-04</Date>
+            <Version>0.9.15</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-0"@hotmail.it</Email>
+        </Update>
         <Update release="15">
             <Date>2012-10-04</Date>
             <Version>0.9.15</Version>
