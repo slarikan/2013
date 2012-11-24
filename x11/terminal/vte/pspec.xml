@@ -13,13 +13,19 @@
         <Description>The VTE package contains a termcap file implementation for terminal emulators.</Description>
         <Archive sha1sum="b0af0701ef9d6c7ede9c578366b12a70ac47ab66" type="tarxz">mirrors://gnome/vte/0.28/vte-0.28.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gnome-common</Dependency>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
+	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>pango-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
         <Patches>
+	    <Patch level="1">vte-0.28.2-limit-arguments.patch</Patch>
+	    <Patch level="1">vte-alt-meta-confusion.patch</Patch>
+	    <Patch level="1">vte-python-bugfixes.patch</Patch>
+	    <Patch level="1">vte-0.28.0-link.patch</Patch>
+	    <Patch level="1">vte-0.28.2-scale.patch</Patch>
         </Patches>
     </Source>
 
@@ -29,6 +35,8 @@
         <RuntimeDependencies>
             <Dependency>python-gtk</Dependency>
             <Dependency>fontconfig</Dependency>
+	    <Dependency>gtk2</Dependency>
+	    <Dependency>pango</Dependency>
             <Dependency>libXft</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -66,6 +74,13 @@
     </Package>
 
     <History>
+        <Update release="15">
+            <Date>2012-11-24</Date>
+            <Version>0.28.2</Version>
+            <Comment>Yamalandı.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-0"@hotmail.it</Email>
+        </Update>
         <Update release="14">
             <Date>2012-11-12</Date>
             <Version>0.28.2</Version>

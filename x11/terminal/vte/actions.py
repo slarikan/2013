@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 #
 # Copyleft 2012 Pardus ANKA Community
 # Copyright 2005-2011 TUBITAK/UEAKE
@@ -15,8 +15,12 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.configure("--disable-static \
-                         --enable-python \
+                         --disable-python \
                          --enable-introspection \
+                         --libexecdir=/usr/lib/vte \
+                         --localstatedir=/var \
+                         --without-glX \
+                         --disable-gtk-doc \
                          --with-gtk=2.0")
 
 def build():
