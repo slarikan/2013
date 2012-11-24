@@ -19,16 +19,17 @@
             <Patch level="1">pardus/disable-old-internals.patch</Patch>
 
             <!-- Anonymous patch, let's disable it for now to see the effects -->
-            <!--<Patch level="1">pardus/lcdtype-fix-boldness.patch</Patch>-->
+            <Patch level="1">pardus/lcdtype-fix-boldness.patch</Patch>
 
             <!-- Fedora patches -->
             <Patch level="1">fedora/freetype-2.2.1-enable-valid.patch</Patch>
 
             <!-- Enable Subpixel Rendering -->
             <Patch level="1">fedora/freetype-2.3.0-enable-spr.patch</Patch>
-
-            <!--2.4.7 includes this patch-->
-            <!--<Patch level="1">freetype-2.4.6-CVE-2011-3256.patch</Patch>-->
+            <!-- Suse Patches -->
+            <Patch level="1">suse/use_unix.diff</Patch>
+            <!--Patch level="1">suse/ft2-stream-compat.diff</Patch-->
+            <Patch level="1">suse/fix-build.patch</Patch>
         </Patches>
     </Source>
 
@@ -73,6 +74,13 @@
     </Package>
     
     <History>
+	    <Update release="84">
+            <Date>2012-11-24</Date>
+            <Version>2.4.10</Version>
+            <Comment>Some enhancements.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="83">
             <Date>2012-10-03</Date>
             <Version>2.4.10</Version>
