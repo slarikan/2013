@@ -17,6 +17,7 @@
         <Description>Thunar has been designed from the ground up to be fast and easy-to-use. Its user interface is clean and intuitive, and does not include any confusing or useless options. Thunar is fast and responsive with a good start up time and directory load time. Thunar is accessible using Assistive Technologies and is fully standarts compliant.</Description>
         <Archive sha1sum="41b06652f9a6bdca601c8b96965b1be712d075f6" type="tarbz2">http://archive.xfce.org/src/xfce/thunar/1.5/Thunar-1.5.0.tar.bz2</Archive>
         <BuildDependencies>
+            <Dependency>desktop-file-utils</Dependency>          
             <Dependency>gtk2-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -36,17 +37,18 @@
             <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
             <Dependency>libexif-devel</Dependency>
             <Dependency>gamin-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>           
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
-	<Patches>
-	  <!--<Patch level="1">thunar-use-xdg-icon-spec-icons.patch</Patch>-->
-	</Patches>
+        <Patches>
+            <!--<Patch level="1">thunar-use-xdg-icon-spec-icons.patch</Patch>-->
+        </Patches>
     </Source>
 
     <Package>
         <Name>Thunar</Name>
         <RuntimeDependencies>
+            <Dependency>desktop-file-utils</Dependency>          
             <Dependency>gtk2</Dependency>
             <Dependency>gtk2-engines-murrine</Dependency>
             <Dependency>jpeg</Dependency>
