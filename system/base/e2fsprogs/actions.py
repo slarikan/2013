@@ -11,21 +11,26 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("HOME", get.workDIR())
+
 def setup():
     autotools.rawConfigure("--enable-elf-shlibs \
                             --disable-e2initrd-helper \
                             --disable-libblkid \
                             --disable-libuuid \
                             --disable-fsck \
-                            --disable-uuidd")
+                            --disable-uuidd \
+                            --enable-symlink-install \
+                            --without-included-gettext")
 
 def build():
     autotools.make()
 
 def check():
     # remove sandbox violating test
-    shelltools.unlinkDir("%s/e2fsprogs-%s/tests/f_ext_journal/" % (get.workDIR(), get.srcVERSION()))
-    #autotools.make("check")
+    for d in ("f_ext_journal", "t_ext_jnl_rm"):
+        shelltools.unlinkDir("%s/e2fsprogs-%s/tests/%s/" % (get.workDIR(), get.srcVERSION(), d))
+    autotools.make("check")
 
 def install():
     autotools.rawInstall("install install-libs LDCONFIG=/bin/true \
@@ -34,4 +39,4 @@ def install():
     # Unneeded stuff
     pisitools.remove("/usr/lib/*.a")
 
-    pisitools.dodoc("README", "RELEASE-NOTES")
+    pisitools.dodoc("COPYING", "README", "RELEASE-NOTES")
