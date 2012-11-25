@@ -21,4 +21,4 @@ def build():
 def install():
     kde4.install()
 
-    pisitools.dodoc("AUTHORS", "CHANGELOG", "Changelog", "COPYING*", "HACKING.txt", "NEWS", "README", "TODO")
+    pisitools.dodoc("AUTHORS", "CHANGELOG", "COPYING*", "HACKING.txt", "NEWS", "README", "TODO")
