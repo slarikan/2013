@@ -13,8 +13,8 @@ from pisi.actionsapi import shelltools
 
 def setup():
     options = "--with-xml=expat \
-               --with-system-pid-file=/run/dbus/pid \
-               --with-system-socket=/run/dbus/system_bus_socket \
+               --with-system-pid-file=/var/run/dbus/pid \
+               --with-system-socket=/var/run/dbus/system_bus_socket \
                --with-session-socket-dir=/tmp \
                --with-dbus-user=dbus \
                --disable-selinux \
