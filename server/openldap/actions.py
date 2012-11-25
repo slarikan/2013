@@ -74,9 +74,6 @@ def setup():
                      --disable-perl \
                      --without-cyrus-sasl"
 
-        shelltools.export("CC", "%s -m32" % get.CC())
-        shelltools.export("CXX", "%s -m32" % get.CXX())
-
     autotools.configure(options)
 
 def build():
@@ -86,7 +83,6 @@ def install():
     if get.buildTYPE() == "emul32":
         autotools.rawInstall("DESTDIR=%s" % get.installDIR())
         pisitools.remove("/usr/lib32/*.a")
-        pisitools.removeDir("/emul32")
         return
     else:
         autotools.rawInstall("DESTDIR=%s" % get.installDIR())
