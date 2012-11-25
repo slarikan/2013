@@ -15,7 +15,12 @@ from pisi.actionsapi import get
 def setup():
     shelltools.export("CFLAGS", "%s -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_GNU_SOURCE -fPIC" % get.CFLAGS())
     autotools.configure("--datadir=/usr/share/misc \
-                         --disable-static")
+                         --disable-static \
+                         --disable-rpath \
+                         --enable-fsect-man5")
+
+    pisitools.dosed("libtool", "^hardcode_libdir_flag_spec=.*", 'hardcode_libdir_flag_spec=""')
+    pisitools.dosed("libtool", "^runpath_var=LD_RUN_PATH", "runpath_var=DIE_RPATH_DIE")
 
 def build():
     autotools.make()

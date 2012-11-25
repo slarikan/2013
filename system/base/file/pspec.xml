@@ -20,19 +20,19 @@
             <Dependency>python-devel</Dependency>
             
         </BuildDependencies>
-        <Patches>			
-			<!-- maegia -->
-			<Patch level="0">file-4.20-apple.patch</Patch>
+        <Patches>           
+            <!-- maegia -->
+            <Patch level="0">file-4.20-apple.patch</Patch>
             <Patch level="1">file-4.20-xen.patch</Patch>
             <Patch level="1">file-5.05-dump.patch</Patch>
             <Patch level="1">file-5.05-images.patch</Patch>
-			<Patch level="1">file-5.10-berkeleydb.patch</Patch>
-			<Patch level="1">file-5.10-tnef.patch</Patch>
-		    <Patch level="1">file-5.10-sticky-bit.patch</Patch>
+            <Patch level="1">file-5.10-berkeleydb.patch</Patch>
+            <Patch level="1">file-5.10-tnef.patch</Patch>
+            <Patch level="1">file-5.10-sticky-bit.patch</Patch>
             <Patch level="1">file-5.10-strength.patch</Patch>
-			<Patch level="1">file-5.11-increase-strength-of-php-matching-to-take-precedence-over-c-lang.patch</Patch>
-			<Patch level="1">file-5.11-qed-vdi-image.patch</Patch>
-			<Patch level="1">file-5.11-python-func.patch</Patch>
+            <Patch level="1">file-5.11-increase-strength-of-php-matching-to-take-precedence-over-c-lang.patch</Patch>
+            <Patch level="1">file-5.11-qed-vdi-image.patch</Patch>
+            <Patch level="1">file-5.11-python-func.patch</Patch>
             <!-- others -->
             <Patch level="1">file-5.11-compress.patch</Patch>
             <Patch level="1">file-5.11-magicmgc-home.patch</Patch>
@@ -57,7 +57,7 @@
     </Package>
 
     <History>
-	    <Update release="26">
+        <Update release="26">
             <Date>2012-11-22</Date>
             <Version>5.11</Version>
             <Comment>Add some patches.</Comment>
