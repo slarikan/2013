@@ -13,26 +13,21 @@
         <IsA>app:gui</IsA>
         <Summary>Very powerful Quake style Konsole for KDE4</Summary>
         <Description>The name comes from Yet Another Kuake (thus YaKuake). Its behaviour is similar to the console of the Quake game.</Description>
-        <Archive sha1sum="b9c9e23f276d62b4d2c31fe6c79fad2a5c551186" type="tarbz2">mirrors://kde/stable/yakuake/2.9.8/src/yakuake-2.9.8.tar.bz2</Archive>
+        <Archive sha1sum="5bb9e9b6799642dee5684267e5baddc59eaa7214" type="tarxz">mirrors://kde/stable/yakuake/2.9.9/src/yakuake-2.9.9.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.1">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.1">kdebase-runtime</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>automoc4</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">plasma-oxygen-panel.patch</Patch>
+            <!--<Patch level="1">plasma-oxygen-panel.patch</Patch>-->
             <Patch level="1">default-height-90.diff</Patch>
-            <!-- Revert fix of kde#183943 -->
-            <Patch>revert-ugly-lock-button-svn-r941019.diff</Patch>
-
+            <!-- Revert fix of kde#183943
+            <Patch>revert-ugly-lock-button-svn-r941019.diff</Patch>-->
             <!-- https://bugs.kde.org/show_bug.cgi?id=218947 -->
             <!--<Patch level="1">remove-broken-translucency-support.diff</Patch>
-            -->
-
-            <Patch level="1">use-startup-event-for-knotify.patch</Patch>
-
+            <Patch level="1">use-startup-event-for-knotify.patch</Patch>-->
             <!-- The animation of yakuake is very slow on some video
                  cards, so disable it -->
             <Patch level="1">disable-animation.patch</Patch>
@@ -42,10 +37,9 @@
     <Package>
         <Name>yakuake</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.1">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.1">kdebase-runtime</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
+            <Dependency versionFrom="4.8.3">qt</Dependency>
             <Dependency>konsole</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -60,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-11-25</Date>
+            <Version>2.9.9</Version>
+            <Comment>Güncelendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="19">
             <Date>2011-03-28</Date>
             <Version>2.9.8</Version>
