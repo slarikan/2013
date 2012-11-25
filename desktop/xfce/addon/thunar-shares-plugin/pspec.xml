@@ -15,16 +15,16 @@
         <Description>thunar-shares-plugin allows you to quickly share a folder using Samba from Thunar (the XFCE file manager) without requiring root access.</Description>
         <Archive sha1sum="c890d970c57ee5da422022f354873f167be30a20" type="targz">http://archive.xfce.org/src/thunar-plugins/thunar-shares-plugin/0.2/thunar-shares-plugin-0.2.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="1.5.0">Thunar-devel</Dependency>
-            <Dependency version="1.2.0">thunar-vfs-devel</Dependency>
+            <Dependency versionFrom="1.5.0">Thunar-devel</Dependency>
+            <Dependency versionFrom="1.2.0">thunar-vfs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>thunar-shares-plugin</Name>
         <RuntimeDependencies>
-            <Dependency version="1.5.0">Thunar</Dependency>
-            <Dependency version="1.2.0">thunar-vfs</Dependency>
+            <Dependency versionFrom="1.5.0">Thunar</Dependency>
+            <Dependency versionFrom="1.2.0">thunar-vfs</Dependency>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>

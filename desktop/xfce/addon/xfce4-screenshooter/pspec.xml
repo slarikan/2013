@@ -10,7 +10,7 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>A plugin allows you to capture the entire screen</Summary>
         <Description>This application allows you to capture the entire screen, the active window or a selected region.</Description>
         <Archive sha1sum="4343f32e5d23d12065c2990de27cef0cf88f1326" type="tarbz2">http://archive.xfce.org/src/apps/xfce4-screenshooter/1.8/xfce4-screenshooter-1.8.1.tar.bz2</Archive>
@@ -18,8 +18,8 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
-            <Dependency version="4.10.0">libxfce4util-devel</Dependency>
-            <Dependency version="4.10.0">libxfcegui4-devel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -29,9 +29,9 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>libsoup</Dependency>
-            <Dependency version="4.10.0">libxfce4util</Dependency>
-            <Dependency version="4.10.0">libxfcegui4</Dependency>
-            <Dependency version="4.10.0">xfce4-panel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
+            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libXext</Dependency>

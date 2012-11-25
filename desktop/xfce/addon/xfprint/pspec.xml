@@ -10,7 +10,7 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-    <PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>Print dialog and printer manager for Xfce</Summary>
         <Description>Print dialog and printer manager for Xfce.</Description>
         <Archive sha1sum="4ce98c49d49b2d4c1a8fb5d76597b8e9ab9a51e8" type="tarbz2">http://archive.xfce.org/src/archive/xfprint/4.6/xfprint-4.6.1.tar.bz2</Archive>

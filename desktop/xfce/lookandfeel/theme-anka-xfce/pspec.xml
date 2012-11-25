@@ -11,7 +11,7 @@
         <IsA>data</IsA>
         <Summary>A special window theme for Xfce on Pardus</Summary>
         <Description>FİX ME!</Description>
-        <Archive sha1sum="46ef345a71176bb432400fe932d7a5e17bede9da" type="targz">/home/utku/Masaüstü/Anka-Xfce.tar.gz</Archive>
+        <Archive sha1sum="c5babaa847381fe12a0ff12aca108abf0714e1f1" type="targz">http://anka-rattus.googlecode.com/files/theme-anka-xfce.tar.gz</Archive>
         <Patches/>
     </Source>
     <Package>

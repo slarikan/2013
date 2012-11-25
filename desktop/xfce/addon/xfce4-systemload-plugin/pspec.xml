@@ -11,12 +11,12 @@
         <License>BSD-2</License>
         <Icon>xfce4-panel</Icon>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>Xfce4 system load plugin</Summary>
         <Description>Xfce4-systemload-plugin is a plugin which displays the current CPU load, the memory in use, the swap space and the system uptime in the Xfce panel.</Description>
         <Archive sha1sum="78eef9f2abc9e425c102f1f71324fe5a507daebf" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-systemload-plugin/1.1/xfce4-systemload-plugin-1.1.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,9 +26,9 @@
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency version="4.10.0">xfce4-panel</Dependency>
-            <Dependency version="4.10.0">libxfcegui4</Dependency>
-            <Dependency version="4.10.0">libxfce4util</Dependency>
+            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>

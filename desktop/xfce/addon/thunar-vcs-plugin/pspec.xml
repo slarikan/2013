@@ -10,15 +10,15 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>An SVN integration and GIT integration to Thunar</Summary>
         <Description>The Thunar VCS Plugin adds Subversion and GIT actions to the context menu of thunar. This gives a SVN integration and GIT integration to Thunar.</Description>
         <Archive sha1sum="221c633ec2bdf7c0d9d008ad9cd5094ddbc90ce1" type="tarbz2">http://archive.xfce.org/src/thunar-plugins/thunar-vcs-plugin/0.1/thunar-vcs-plugin-0.1.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency version="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
         </BuildDependencies>
         <!--
         <Patches>
@@ -30,8 +30,8 @@
     <Package>
         <Name>thunar-vcs-plugin</Name>
         <RuntimeDependencies>
-            <Dependency version="4.10.0">xfce4-panel</Dependency>
-            <Dependency version="1.4.0">Thunar</Dependency>
+            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency versionFrom="1.4.0">Thunar</Dependency>
             <Dependency>git</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>apr</Dependency>

@@ -10,7 +10,7 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>Panel plugin lets the user control XMMS, Beep or Audacious players</Summary>
         <Description>This plugin is quite easy to use.Lets to user control XMMS, Beep or Audacious players </Description>
         <Archive sha1sum="30bebf95c09aa57d77453209b0bf2d429307d7f2" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-xmms-plugin/0.5/xfce4-xmms-plugin-0.5.3.tar.bz2</Archive>

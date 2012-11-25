@@ -10,7 +10,7 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>A simple CD/DVD burning tool</Summary>
         <Description>Xfburn is a simple CD/DVD burning tool based on libburnia libraries.</Description>
         <Archive sha1sum="52d33e56b7ce9774fba680f50723eaf1a7215091" type="tarbz2">http://archive.xfce.org/src/apps/xfburn/0.4/xfburn-0.4.3.tar.bz2</Archive>
@@ -23,9 +23,9 @@
             <Dependency>librsvg-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-	    <Patch level="1">xfburn-fix-missing-include.patch</Patch>
-	</Patches>
+        <Patches>
+            <Patch level="1">xfburn-fix-missing-include.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

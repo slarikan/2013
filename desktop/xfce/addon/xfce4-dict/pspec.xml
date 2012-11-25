@@ -10,7 +10,7 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+        <PartOf>desktop.xfce.addon</PartOf>
         <Summary>A client program to query different dictionaries</Summary>
         <Description>xfce4-dict allows you to search different kinds of dictionary services for words or phrases and shows you the result.</Description>
         <Archive sha1sum="af004096d6bd935d69b7ef3a989470e89c7be99b" type="tarbz2">http://archive.xfce.org/src/apps/xfce4-dict/0.6/xfce4-dict-0.6.0.tar.bz2</Archive>
