@@ -16,8 +16,8 @@
         <Patches>
             <Patch level="1">no-hardcoded-cc.patch</Patch>
             <Patch level="1">linkonce.patch</Patch>
-            <Patch level="1">serial-enable.patch</Patch>
-            <Patch level="1">asciimap.patch</Patch>
+<!--             <Patch level="1">serial-enable.patch</Patch> -->
+<!--             <Patch level="1">asciimap.patch</Patch> -->
         </Patches>
     </Source>
 
