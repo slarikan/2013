@@ -13,7 +13,6 @@ from pisi.actionsapi import get
 
 def setup():
     shelltools.export("CXXFLAGS","%s  -fno-rtti -fno-exceptions" % get.CXXFLAGS())
-
     autotools.configure("--enable-multibyte \
                          --with-appresdir=/usr/share/X11/app-defaults \
                          --without-x")

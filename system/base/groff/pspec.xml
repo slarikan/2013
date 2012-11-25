@@ -21,6 +21,14 @@
         <Patches>
             <Patch>man-unicode-dashes.patch</Patch>
             <Patch level="1">pardus.patch</Patch>
+            <Patch level="1">groff-manpages-typos.patch</Patch>
+            <Patch level="1">groff-grotty-wc-no-sgr.patch</Patch>
+            <Patch level="1">groff-info-missing-x11.patch</Patch>
+            <Patch level="1">groff-makefile-typo.patch</Patch>
+            <Patch level="1">groff-config-etc.patch</Patch>
+            <Patch level="1">groff-cve-2009-5044_5080_5081.patch</Patch>
+            <Patch level="1">groff-grofferdir-auto.patch</Patch>
+            <Patch level="1">groff-1.21-gnulib.patch</Patch>
         </Patches>
     </Source>
 
@@ -30,7 +38,7 @@
             <Dependency>texinfo</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc/X11</Path>
+            <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/groff</Path>
@@ -51,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-25</Date>
+            <Version>1.21</Version>
+            <Comment>add upstream patches</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2012-08-23</Date>
             <Version>1.21</Version>
