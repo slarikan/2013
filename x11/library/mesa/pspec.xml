@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>Mesa graphics libraries and utilities</Summary>
         <Description>Mesa is an open-source implementation of the OpenGL specification - a system for rendering interactive 3D graphics.</Description>
-        <Archive sha1sum="e98e26d8007008b4d2d410778ed5254b32c71b99" type="tarbz2">ftp://ftp.freedesktop.org/pub/mesa/9.0.1/MesaLib-9.0.1.tar.bz2</Archive>
+        <Archive sha1sum="dcddfd6b6b4a4ed4f7123ca75fd0108007bbad74" type="tarbz2">ftp://ftp.freedesktop.org/pub/mesa/9.0/MesaLib-9.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -25,6 +25,7 @@
             <Dependency releaseFrom="27">xorg-proto</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">git_fixes.diff</Patch>
             <Patch level="1">mesa-8.0-llvmpipe-shmget.patch</Patch>
             <Patch level="1">mesa-8.0-nouveau-tfp-blacklist.patch</Patch>
             <Patch level="1">mesa-8.0.1-fix-16bpp.patch</Patch>
@@ -60,9 +61,10 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/drirc">drirc</AdditionalFile>
         </AdditionalFiles>
-        <Provides>
+        <!-- seems we don't need comar script longer -->
+        <!--Provides>
             <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
+        </Provides-->
     </Package>
 
     <Package>
@@ -115,22 +117,15 @@
         <Files>
             <Path fileType="library">/usr/lib32</Path>
         </Files>
-        <Provides>
+        <!--Provides>
             <COMAR script="package-emul32.py">System.Package</COMAR>
-        </Provides>
+        </Provides-->
     </Package>
     <History>
-        <Update release="50">
-            <Date>2012-11-18</Date>
-            <Version>9.0.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
         <Update release="49">
             <Date>2012-11-04</Date>
             <Version>9.0</Version>
-            <Comment>add git fixes patch, add missing symlink</Comment>
+            <Comment>add git fixes patch, add missing symlink, remove comar scripts</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>
