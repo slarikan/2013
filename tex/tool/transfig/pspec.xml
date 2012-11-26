@@ -12,20 +12,28 @@
         <IsA>app:console</IsA>
         <Summary>A set of tools for creating TeX documents with graphics</Summary>
         <Description>TransFig is a set of tools for creating TeX documents with portable graphics.</Description>
-        <Archive sha1sum="2657c104d0099dcb4565a8762a9543310e55e767" type="targz">http://www.xfig.org/software/xfig/3.2.5/transfig.3.2.5.tar.gz</Archive>
+        <Archive sha1sum="90ff277cc9b3fa0d0313052fcf5e3ffad8652abc" type="targz">http://downloads.sourceforge.net/mcj/transfig.3.2.5d.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>xorg-util</Dependency>
             <Dependency>libXpm-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">pardus.patch</Patch>
-            <Patch level="1">transfig-3.2.5-arrows-and-QA.patch</Patch>
-            <Patch level="1">transfig-3.2.5-imagemap.patch</Patch>
-            <Patch level="1">transfig-3.2.5-SetFigFont-params.patch</Patch>
-            <Patch level="1">transfig-3.2.5-displaywho.patch</Patch>
+<!--             <Patch level="1">transfig-3.2.5-arrows-and-QA.patch</Patch> -->
+<!--             <Patch level="1">transfig-3.2.5-imagemap.patch</Patch> -->
+<!--             <Patch level="1">transfig-3.2.5-SetFigFont-params.patch</Patch> -->
+<!--             <Patch level="1">transfig-3.2.5-displaywho.patch</Patch> -->
             <Patch level="1">transfig-3.2.5-locale.patch </Patch>
             <Patch level="1">transfig-3.2.5-fig2ps2tex_bashisms.patch</Patch>
-            <Patch level="1">transfig-3.2.5-fig2mpdf.patch</Patch>
+<!--             <Patch level="1">transfig-3.2.5-fig2mpdf.patch</Patch> -->
+            <Patch level="1">transfig-3.2.5d-precision.patch</Patch>
+            <Patch level="1">transfig-3.2.5d-libpng-1.5.patch</Patch>
+            <Patch level="1">transfig-3.2.5d-leadspace.patch</Patch>
+            <Patch level="0">transfig-3.2.5d-fig2mpdf.patch</Patch>
+<!--             <Patch level="1">transfig-3.2.5d-fig2mpdf-r1.patch</Patch> -->
+            <Patch level="1">transfig-3.2.5d-MAXWIDTH.patch</Patch>
+            <Patch level="1">transfig-3.2.5c-maxfontsize.patch</Patch>
+            <Patch level="0">transfig-3.2.5-solaris.patch</Patch>                        
         </Patches>
     </Source>
 
@@ -45,6 +53,13 @@
    </Package>
 
    <History>
+        <Update release="7">
+            <Date>2012-11-26</Date>
+            <Version>3.2.5d</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
         <Update release="6">
             <Date>2010-10-12</Date>
             <Version>3.2.5</Version>
