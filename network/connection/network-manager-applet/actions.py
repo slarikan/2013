@@ -14,6 +14,7 @@ def setup():
     autotools.configure("--disable-dependency-tracking \
                          --disable-static \
                          --with-bluetooth \
+                         --with-gtkver=2 \
                          --enable-more-warnings=yes")
 
 def build():
