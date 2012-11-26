@@ -16,6 +16,9 @@
         <BuildDependencies>
             <Dependency>gmp-devel</Dependency>
         </BuildDependencies>
+	<Patches>
+            <Patch>bits_detect.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
