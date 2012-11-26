@@ -15,7 +15,7 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.configure("--disable-static \
-                         --disable-python \
+                         --enable-python \
                          --enable-introspection \
                          --libexecdir=/usr/lib/vte \
                          --localstatedir=/var \
