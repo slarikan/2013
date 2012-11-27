@@ -11,6 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    shelltools.export("LDFLAGS", "%s -lX11" % get.LDFLAGS())
     autotools.configure("--disable-letter \
                          --enable-cups \
                          --disable-static")
