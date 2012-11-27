@@ -21,7 +21,7 @@
             <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
             <Dependency versionFrom="0.4.1">libnotify-devel</Dependency>
             <Dependency versionFrom="0.70">dbus-glib-devel</Dependency>
-            <Dependency version="0.10.32.4">gst-plugins-base-devel</Dependency>
+            <Dependency versionFrom="0.10.32.4">gst-plugins-base-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">parole-0.2.0.6-underlinking.patch</Patch>
