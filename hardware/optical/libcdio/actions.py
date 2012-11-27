@@ -23,8 +23,8 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % (get.installDIR()))
 
-    pkgconfig = ["libcdio.pc","libcdio++.pc",\
-                 "libiso9660++.pc","libiso9660.pc","libudf.pc"]
+    pkgconfig = ["libcdio_paranoia.pc","libcdio_cdda.pc",\
+                 "libiso9660++.pc","libcdio++.pc"]
     for file in pkgconfig:
         pisitools.insinto("/usr/lib/pkgconfig",file)
 
