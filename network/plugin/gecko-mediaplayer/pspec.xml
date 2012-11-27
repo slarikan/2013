@@ -16,7 +16,7 @@
         <Archive sha1sum="e5a3d9722bbaa5578cb8b0365c5ded41d94634af" type="targz">https://gecko-mediaplayer.googlecode.com/files/gecko-mediaplayer-1.0.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.0.7">gnome-mplayer</Dependency>
-            <Dependency versionFrom="16.0">xulrunner-devel</Dependency>
+            <Dependency versionFrom="17.0">xulrunner-devel</Dependency>
             <Dependency versionFrom="1.0.7">gmtk-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,7 +25,7 @@
         <Name>gecko-mediaplayer</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="1.0.7">gnome-mplayer</Dependency>
-            <Dependency versionFrom="16.0">xulrunner</Dependency>
+            <Dependency versionFrom="17.0">xulrunner</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -36,7 +36,14 @@
     </Package>
 
     <History>
-	    <Update release="43">
+         <Update release="44">
+            <Date>2012-11-27</Date>
+            <Version>1.0.7</Version>
+            <Comment>rebuild with new release xulrunner</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+        <Update release="43">
             <Date>2012-11-12</Date>
             <Version>1.0.7</Version>
             <Comment>Bump.</Comment>
