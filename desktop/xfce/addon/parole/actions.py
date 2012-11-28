@@ -10,7 +10,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.export("LDFLAGS", "%s -lgtk-x11-2.0" % get.LDFLAGS())
+    shelltools.export("LDFLAGS", "%s -lX11" % get.LDFLAGS())
     autotools.configure("--disable-dependency-tracking \
                         --enable-libnotify \
                         --enable-taglib")
