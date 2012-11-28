@@ -32,6 +32,7 @@
             <Package>grub</Package>
         </Replaces>
         <Patches>
+            <Patch level="1">anka_name_and_initramfs.patch</Patch>
             <Patch level="0">stdio.patch</Patch>
         </Patches>
     </Source>
@@ -67,6 +68,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-11-28</Date>
+            <Version>2.00</Version>
+            <Comment>Fix finding anka name and initramfs file.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-20</Date>
             <Version>2.00</Version>
