@@ -13,8 +13,11 @@
         <Summary>POP3 mailing server</Summary>
         <Description>POP3 mailing server</Description>
 	<Archive sha1sum="7806c230cb2b87d131c356de6ce85160650b5aea" type="targz">ftp://ftp.qualcomm.com/eudora/servers/unix/popper/qpopper4.1.0.tar.gz</Archive>
+	<AdditionalFiles>
+	    <AdditionalFile target="/usr/share/qpopper/manual.pdf">manual.pdf</AdditionalFile>
+        </AdditionalFiles>
         <BuildDependencies>
-            <Dependency>sendmail</Dependency>
+            <!--Dependency></Dependency-->
         </BuildDependencies>
 	<Patches>
             <Patch>fix1_mkdir.patch</Patch>
@@ -25,12 +28,18 @@
     <Package>
         <Name>qpopper</Name>
         <RuntimeDependencies>
-            <Dependency>sendmail</Dependency>
+            <Dependency>xinetd</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/sbin</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="config">/etc/pop.auth</Path>
 	    <Path fileType="man">/usr/share/man</Path>
+	    <Path fileType="doc">/usr/share/qpopper</Path>
         </Files>
+	<AdditionalFiles>
+            <AdditionalFile owner="root" target="/usr/share/qpopper/manual.pdf">manual.pdf</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
