@@ -21,6 +21,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">tr.patch</Patch>
+            <Patch level="1">kaffeine-1.2.2-gcc4.7.patch</Patch>
         </Patches>
     </Source>
 
@@ -43,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-11-29</Date>
+            <Version>1.2.2</Version>
+            <Comment>Fix build with gcc-4.7</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="15">
             <Date>2011-04-27</Date>
             <Version>1.2.2</Version>
