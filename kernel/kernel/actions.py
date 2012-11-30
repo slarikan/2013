@@ -52,4 +52,4 @@ def install():
     # Build and install the new 'perf' tool
     pisitools.insinto("/usr/bin", "tools/perf/perf", "perf.%s-%s" % (get.srcNAME(), get.srcVERSION()))
 
-    pisitools.dosym("videodev2.h", "/usr/include/linux/videodev.h")
+    #pisitools.dosym("videodev2.h", "/usr/include/linux/videodev.h")
