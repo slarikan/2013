@@ -18,7 +18,7 @@
 
         <!-- Use tools/{create-source.sh, create-locale.sh} scripts to create tarballs for both firefox source and l10n -->
         <Archive sha1sum="15c09796a388f0a78996427b7bc2c80f4e0496f3" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/17.0.1/source/firefox-17.0.1.source.tar.bz2</Archive>	
-        <Archive sha1sum="80be188fe0d85fc38ec5e14e64bd02e1122e1719" type="tarbz2" target="mozilla-release">http://bilgegunluk.com/pardus/firefox-lang/firefox-l10n-17.0.1.tar.bz2</Archive>
+        <Archive sha1sum="80be188fe0d85fc38ec5e14e64bd02e1122e1719" type="tarbz2" target="mozilla-release">https://github.com/downloads/pardus-anka/2013/firefox-l10n-17.0.1.tar.bz2</Archive>
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
