@@ -15,7 +15,7 @@
         <Archive sha1sum="cfa0906e6f72c1c902c29b52d140c22ecdcd617e" type="tarxz">http://ftp.gnu.org/gnu/wget/wget-1.14.tar.xz</Archive>
         <Patches>
             <Patch>wget-uluzilla-39.patch</Patch>
-            <Patch>wget-libproxy.patch</Patch>
+            <!--Patch>wget-libproxy.patch</Patch-->
             <Patch>wgetrc.patch</Patch>
         </Patches>
     </Source>
