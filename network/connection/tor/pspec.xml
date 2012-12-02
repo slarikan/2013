@@ -24,6 +24,7 @@
         <Name>tor</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="2.0.12">libevent</Dependency>
+            <Dependency>squid</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
