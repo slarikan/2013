@@ -2,43 +2,36 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>plasma-applet-networkmanagement</Name>
+        <Name>networkmanagement</Name>
         <Homepage>http://www.kde.org/</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Bertan Gündoğdu</Name>
+            <Email>bertan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>KDE Network Management Plasmoid</Summary>
         <Description>plasma-applet-networkmanagement is a Plasma applet for controlling network connections on systems that use the NetworkManager daemon</Description>
-        <Archive sha1sum="a9c5fe6aa25d98c55e5957541fbc9ebcf2d09994" type="targz">http://cekirdek.pardus.org.tr/~gokcen/files/networkmanagement-68ebd8231.tar.gz</Archive>
-        <Archive sha1sum="f644470b79d81e023cc75da7c7438edc3214930b" type="tarlzma" target="networkmanagement">http://cekirdek.pardus.org.tr/~gokcen/files/networkmanagement-locales-20110804.tar.lzma</Archive>
+        <Archive sha1sum="41d2f0464825a2855ae7c7afc670eaaf55bd0eb0" type="tarbz2">mirrors://kde/unstable/networkmanagement/0.9.0.5/src/networkmanagement-0.9.0.5.tar.bz2</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="po/tr/knetworkmanager.po">knetworkmanager.po</AdditionalFile>
+            <AdditionalFile target="po/tr/libknetworkmanager.po">libknetworkmanager.po</AdditionalFile>
+            <AdditionalFile target="po/tr/plasma_applet_networkmanagement.po">plasma_applet_networkmanagement.po</AdditionalFile>
+            <AdditionalFile target="po/tr/solidcontrolnm09.po">solidcontrolnm09.po</AdditionalFile>
+        </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.6.2">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.2">kdebase-workspace-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!-- Revert ugly shared connection patch -->
-            <Patch level="1" reverse="true">634d4e35b4bfd7e3df18c12e863463970884682b.diff</Patch>
-            <Patch level="1" reverse="true">906b6c064d9df71636311aca8208ae29816a5e8c.diff</Patch>
-
-            <Patch level="1">add-po-directory.diff</Patch>
-            <Patch level="1">fix-disconnected-interface-translation.diff</Patch>
-
-            <!-- Add system connections by default -->
-            <Patch level="1">prefer-system-connections.diff</Patch>
-            <Patch level="1">do-not-set-band-by-default-4ea0b438694fd444e4b149faa273bedb58a36b0c.diff</Patch>
-        </Patches>
     </Source>
 
     <Package>
-        <Name>plasma-applet-networkmanagement</Name>
+        <Name>networkmanagement</Name>
         <RuntimeDependencies>
-            <Dependency>kdebase-workspace</Dependency>
-            <Dependency>kdelibs</Dependency>
+            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
+            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>NetworkManager</Dependency>
         </RuntimeDependencies>
@@ -49,10 +42,39 @@
             <Path fileType="data">/usr/share</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="header">/usr/include/kde4/solid/controlnm09</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="34">
+            <Date>2012-12-01</Date>
+            <Version>0.9.0.5</Version>
+            <Comment>Version bump to 0.9.0.5</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="33">
+            <Date>2012-02-17</Date>
+            <Version>0.9.0.1</Version>
+            <Comment>Version bump to 0.9.0.1</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="32">
+            <Date>2012-02-17</Date>
+            <Version>0.9.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+        <Update release="32">
+            <Date>2012-02-17</Date>
+            <Version>0.8.99</Version>
+            <Comment>new version.</Comment>
+            <Name>Ramazan Utku</Name>
+            <Email>ramazanutku@gmail.com</Email>
+        </Update>
         <Update release="31">
             <Date>2011-09-21</Date>
             <Version>0.0_20110804</Version>
