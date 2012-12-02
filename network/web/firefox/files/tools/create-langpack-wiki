@@ -4,11 +4,9 @@ wget -r ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/17.0.1/linux-i686
 
 2: open xpi files with ark
 
-3: give the commands
+3: give the command
 
-for j in * ; do mv "$j" "langpack-$j"; done
-
-for j in * ; do mv "$j" "$j@firefox.mozilla.org"; done
+for j in * ; do mv "$j" "langpack-$j@firefox.mozilla.org"; done
 
 4: drop the files to langpack-ff
 
