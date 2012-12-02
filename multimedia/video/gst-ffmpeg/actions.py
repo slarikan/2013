@@ -14,7 +14,7 @@ def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --disable-valgrind \
-                         --with-system-ffmpeg")
+                         --without-system-ffmpeg")
 
 def build():
     autotools.make()
