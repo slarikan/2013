@@ -17,7 +17,6 @@
         <BuildDependencies>
             <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
-            <Dependency versionFrom="4.8.2">kdemultimedia-devel</Dependency>
             <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.2">kdepimlibs-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
@@ -37,7 +36,6 @@
         <RuntimeDependencies>
             <Dependency versionFrom="4.8.1">qt</Dependency>
             <Dependency>taglib</Dependency>
-            <Dependency versionFrom="4.8.2">kdemultimedia</Dependency>
             <Dependency versionFrom="4.8.2">kdelibs</Dependency>
             <Dependency versionFrom="4.8.2">kdepimlibs</Dependency>
             <Dependency>qimageblitz</Dependency>

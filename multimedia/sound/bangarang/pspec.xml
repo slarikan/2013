@@ -20,7 +20,6 @@
             <Dependency>phonon-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency>kdemultimedia-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">tr-translations.patch</Patch>-->
@@ -52,7 +51,7 @@
             <Version>2.1</Version>
             <Comment>Version Bump</Comment>
             <Name>Osman Erkan</Name>
-	    <Email>namso-01@hotmail.it</Email>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="4">
             <Date>2011-08-23</Date>
