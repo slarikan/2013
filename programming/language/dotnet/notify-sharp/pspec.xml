@@ -15,9 +15,10 @@
         <Archive sha1sum="8cfc23eef30de3829e3f8b9feae9e4bfcfe68487" type="targz">https://launchpad.net/debian/sid/+source/notify-sharp/0.4.0~r3032-5/+files/notify-sharp_0.4.0~r3032.orig.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mono-devel</Dependency>
-            <Dependency>gtk-sharp-devel</Dependency>
-            <Dependency>gtk-sharp-devel</Dependency>	    
+            <Dependency>gtk-sharp-devel</Dependency>    
             <Dependency>dbus-sharp-glib</Dependency>
+	    <Dependency>ndesk-dbus-glib</Dependency>
+	    <Dependency>ndesk-dbus</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">01_pkg-config-path.patch</Patch>
@@ -29,9 +30,11 @@
     <Package>
         <Name>notify-sharp</Name>
         <RuntimeDependencies>
+            <Dependency>mono-runtime</Dependency>
             <Dependency>gtk-sharp</Dependency>
+            <Dependency>ndesk-dbus</Dependency>
             <Dependency>ndesk-dbus-glib</Dependency>
-	    <Dependency>dbus-sharp-glib</Dependency>
+            <Dependency>dbus-sharp-glib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
