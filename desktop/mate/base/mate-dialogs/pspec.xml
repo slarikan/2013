@@ -17,6 +17,7 @@
         <BuildDependencies>
 	   <Dependency>libmatenotify-devel</Dependency>
 	   <Dependency>mate-doc-utils</Dependency>
+	   <Dependency>gnome-doc-utils</Dependency>
 	   <Dependency>mate-common</Dependency>
 	   <Dependency>rarian-devel</Dependency>
 	   <Dependency>gtk2-devel</Dependency>
