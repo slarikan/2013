@@ -22,7 +22,6 @@
 	    <Dependency>mate-corba-devel</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
 	    <Dependency>mate-control-center-devel</Dependency>
-	    <Dependency>mate-settings-daemon-devel</Dependency>
 	    <Dependency>startup-notification-devel</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>desktop-file-utils</Dependency>
@@ -41,7 +40,6 @@
 	    <Dependency>mate-corba</Dependency>
 	    <Dependency>mate-conf</Dependency>
 	    <Dependency>mate-control-center</Dependency>
-	    <Dependency>mate-settings-daemon</Dependency>
 	    <Dependency>startup-notification</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>desktop-file-utils</Dependency>
