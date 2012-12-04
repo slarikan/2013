@@ -18,7 +18,6 @@
 	<BuildDependencies>
 	    <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>rarian-devel</Dependency>
-	    <Dependency>mate-conf</Dependency>
             <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>desktop-file-utils</Dependency>
