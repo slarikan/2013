@@ -1,5 +1,5 @@
 *** build.py~	2012-11-24 21:43:48.000000000 +0100
---- build.py	2012-12-06 00:00:34.771732276 +0100
+--- build.py	2012-12-06 00:44:07.271215927 +0100
 ***************
 *** 675,680 ****
 --- 675,686 ----
@@ -10,7 +10,7 @@
 +             # still not exists? so  try first from dirnames returned by os.walk
 +             # usualy archives contains one root dir
 +             src_dir = util.join_path(self.pkg_work_dir(), os.walk(self.pkg_work_dir()).next()[1][0])
-+             ctx.ui.debug("Setting WorkDir to %s" % src_dir)
++             if self.get_state() == "unpack": ctx.ui.debug("Setting WorkDir to %s" % src_dir)
 + 
           return src_dir
   
