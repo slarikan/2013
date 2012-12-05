@@ -10,11 +10,12 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-yusuf = get.ARCH().replace("i686", "i386")
+arch = "i386" if get.ARCH() == "i686" else "x86_64"
 
-WorkDir = "%s/%s-%s-1661.%s.linux" % (get.ARCH(), get.srcNAME(), get.srcVERSION(), yusuf)
+WorkDir =  get.ARCH()
 
 def install():
+    shelltools.cd(shelltools.ls("%s/%s" % (get.workDIR(), WorkDir))[0])
     shelltools.system("./install --prefix /usr --force --repackage %s/usr" % get.installDIR())
 
     pisitools.dosym("/usr/lib/browser-plugins/libflashplayer.so", "/usr/lib/opera/plugins/libflashplayer.so")
