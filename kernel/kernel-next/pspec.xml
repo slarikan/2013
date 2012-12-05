@@ -277,7 +277,7 @@
     </Package>
 
     <History>
-        <Update release="167">
+        <Update release="172">
             <Date>2012-12-01</Date>
             <Version>3.7.0</Version>
             <Comment>bump to kernel-next</Comment>
@@ -288,7 +288,19 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="166">
+    <History>
+        <Update release="171">
+            <Date>2012-12-04</Date>
+            <Version>3.6.9</Version>
+            <Comment>http://www.kernel.org/pub/linux/kernel/v3.0/ChangeLog-3.6.9</Comment>
+            <Type package="kernel">security</Type>
+            <Requires>
+                <Action package="kernel">systemRestart</Action>
+            </Requires>
+            <Name>Demiray Muhterem</Name>
+            <Email>bilgi@bilgegunluk.com</Email>
+        </Update>
+        <Update release="170">
             <Date>2012-12-01</Date>
             <Version>3.6.8</Version>
             <Comment>http://www.kernel.org/pub/linux/kernel/v3.0/ChangeLog-3.6.8</Comment>
@@ -299,7 +311,7 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="167">
+        <Update release="169">
             <Date>2012-11-11</Date>
             <Version>3.6.6</Version>
             <Comment>Bump to latest stable.</Comment>
@@ -310,7 +322,7 @@
             <Name>Serdar Soytetir</Name>
             <Email>tulliana@gmail.com</Email>
         </Update>
-        <Update release="166">
+        <Update release="168">
             <Date>2012-10-16</Date>
             <Version>3.6.2</Version>
             <Comment>http://www.kernel.org/pub/linux/kernel/v3.0/ChangeLog-3.6.2</Comment>
@@ -321,7 +333,7 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="166">
+        <Update release="167">
             <Date>2012-10-08</Date>
             <Version>3.5.7</Version>
             <Comment>Bump to 3.5.7
@@ -347,7 +359,7 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="165">
+        <Update release="166">
             <Date>2012-10-08</Date>
             <Version>3.5.6</Version>
             <Comment>Bump to 3.5.6</Comment>
@@ -358,7 +370,7 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-         <Update release="164">
+         <Update release="165">
             <Date>2012-10-02</Date>
             <Version>3.5.5</Version>
             <Comment>Bump to 3.5.5</Comment>
