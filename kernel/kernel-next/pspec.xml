@@ -39,8 +39,8 @@
 
             <!-- Moblin patches -->
 
-            <!-- fastboot: retry mounting / if it fails first time 
-            <Patch level="1">patches/meego/linux-2.6.29-retry-root-mount.patch</Patch>-->
+            <!-- fastboot: retry mounting / if it fails first time -->
+            <!-- <Patch level="1">patches/meego/linux-2.6.29-retry-root-mount.patch</Patch> -->
 
 
            <!-- Mageia Kernel Patches -->
@@ -275,7 +275,6 @@
 	    <Path fileType="doc">/usr/share/perf-doc*</Path>
         </Files>
     </Package>
-
     <History>
         <Update release="172">
             <Date>2012-12-01</Date>
@@ -288,7 +287,6 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-    <History>
         <Update release="171">
             <Date>2012-12-04</Date>
             <Version>3.6.9</Version>
