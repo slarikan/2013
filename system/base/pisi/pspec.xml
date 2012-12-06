@@ -28,7 +28,7 @@
             <Patch level="0">better_cleaning_perl_packages.patch</Patch>
             <Patch level="1">improve_emul32.diff</Patch>
             <Patch level="1">add_python3_support.diff</Patch>
-            <Patch level="1">WorkDir.patch</Patch>
+            <Patch level="0">WorkDir.patch</Patch>
         </Patches>
     </Source>
 
