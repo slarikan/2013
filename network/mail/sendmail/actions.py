@@ -13,16 +13,23 @@ from pisi.actionsapi import shelltools
 WorkDir="sendmail-8.14.5"
 
 def setup():
-    pass
+    shelltools.unlink("/%s/%s/devtools/bin/Build" % (get.workDIR(),get.srcDIR()))
+    shelltools.move("/%s/%s/cf/Build" % (get.workDIR(),get.srcDIR()),"/%s/%s/devtools/bin/Build" % (get.workDIR(),get.srcDIR()))
   
 def build():
     shelltools.system('./Build')
 
 def install():
     pisitools.dodir("/usr/sbin")
+    pisitools.dodir("/var/spool/mqueue")
     pisitools.dodir("/usr/share/man/man8")
-    pisitools.dodir("/usr/share/man/man5")
-    pisitools.dodir("/usr/share/man/man1")
+    pisitools.dodir("/usr/share/sendmail/cf")
+    pisitools.dodir("/usr/share/sendmail/devtools")
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    #shelltools.system()
+    shelltools.move("/%s/%s/sendmail/sendmail.8" % (get.workDIR(),get.srcDIR()),"/%s/usr/share/man/man8" % get.installDIR())
+    shelltools.move("/%s/%s/makemap/makemap.8" % (get.workDIR(),get.srcDIR()),"/%s/usr/share/man/man8" % get.installDIR())
+    shelltools.move("/%s/%s/editmap/editmap.8" % (get.workDIR(),get.srcDIR()),"/%s/usr/share/man/man8" % get.installDIR())
+    shelltools.move("/%s/%s/doc/op/op.ps" % (get.workDIR(),get.srcDIR()),"/%s/usr/share/sendmail/guide" % get.installDIR())
+    shelltools.move("/%s/%s/cf/*" % (get.workDIR(),get.srcDIR()),"/%s/usr/share/sendmail/cf" % get.installDIR())
+    shelltools.move("/%s/%s/devtools/*" % (get.workDIR(),get.srcDIR()),"/%s/usr/share/sendmail/devtools" % get.installDIR())
  
