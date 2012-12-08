@@ -62,7 +62,7 @@ def build():
     autotools.make()
     shelltools.cd("../../Lib")
     shelltools.system("gcc -shared -Wl,-soname,libamd.so.%s -o \
-                       libamd.so.%s ../AMD/Lib/*.o -lm" % (amd_version_major, amd_version))
+                       libamd.so.%s ../AMD/Lib/*.o -lm -lrt" % (amd_version_major, amd_version))
     shelltools.sym("libamd.so.%s" % amd_version, "libamd.so.%s" % amd_version_major)
     shelltools.sym("libamd.so.%s" % amd_version, "libamd.so")
     shelltools.copy("../AMD/Lib/*.a", ".")
@@ -255,9 +255,11 @@ def build():
         shelltools.copy(d, "../Doc/RBio")
 
 def install():
-    pisitools.insinto("/usr/include/%s" % get.srcNAME(), "Include/*.h")
+    pisitools.insinto("/usr/include/%s" % get.srcNAME().lower(), "Include/*.h")
     pisitools.dodoc("README.txt")
     shelltools.copy("Doc/*", "%s/usr/share/doc/%s" % (get.installDIR(), get.srcNAME()))
     shelltools.cd("Lib")
     for l in shelltools.ls("*.so*"):
+        pisitools.insinto("/usr/lib", l)
+    for l in shelltools.ls("*.a"):
         pisitools.insinto("/usr/lib", l)
