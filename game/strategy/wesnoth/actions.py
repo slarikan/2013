@@ -5,23 +5,18 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-from pisi.actionsapi import autotools
+from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vif")
-    autotools.configure('--with-fifodir="/var/run/wesnothd" \
-                         --enable-editor \
-                         --enable-server \
-                         --enable-tools \
-                         --disable-rpath \
-                         --disable-dependency-tracking')
+    cmaketools.configure("-DENABLE_OMP=ON \
+                          -DENABLE_TOOLS=ON")
 
 def build():
-    autotools.make()
+    cmaketools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("COPYING", "README", "players_changelog", "copyright")
