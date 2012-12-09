@@ -20,6 +20,8 @@
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>googlemock-devel</Dependency>
             <Dependency>fftw3-devel</Dependency>
             <Dependency>libmtp-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
@@ -47,6 +49,8 @@
         <Name>clementine</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
+            <Dependency>boost-devel</Dependency>
+            <Dependency>googlemock</Dependency>
             <Dependency>fftw3</Dependency>
             <Dependency>libmtp</Dependency>
             <Dependency>ffmpeg</Dependency>
