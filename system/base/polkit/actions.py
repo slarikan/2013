@@ -22,7 +22,7 @@ def setup():
                          --with-os-type=Pardus \
                          --enable-examples \
                          --enable-introspection \
-                         --libexecdir=/usr/libexec/polkit-1 \
+                         --libexecdir=/usr/lib/polkit-1 \
                          --disable-man-pages \
                          --disable-gtk-doc \
                          --disable-static")
