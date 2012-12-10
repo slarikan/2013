@@ -21,7 +21,7 @@
             <Dependency>glib2-devel</Dependency>
             <Dependency>expat-devel</Dependency>
             <Dependency>dbus-glib-devel</Dependency>
-            <Dependency>nspr-devel</Dependency>
+            <Dependency>spidermonkey-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">disable-docs.patch</Patch>
@@ -57,7 +57,7 @@
             <Dependency>glib2</Dependency>
             <Dependency>expat</Dependency>
             <Dependency>dbus-glib</Dependency>
-            <Dependency>nspr</Dependency>
+            <Dependency>spidermonkey</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
