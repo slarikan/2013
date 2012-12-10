@@ -37,9 +37,9 @@ def install():
     pisitools.dodir("/var/lib/polkit-1")
     shelltools.chmod("%s/var/lib/polkit-1" % get.installDIR(), mode=00700)
     shelltools.chmod("%s/etc/polkit-1/rules.d" % get.installDIR(), mode=00700)
-    shelltools.chown("%s/etc/polkit-1/rules.d" % get.installDIR(),"polkid","polkitd") #yada? "polkitd","root"
+    shelltools.chown("%s/etc/polkit-1/rules.d" % get.installDIR(),"polkid","root") #yada? "polkitd","root"
     shelltools.chown("%s/var/lib/polkit-1" % get.installDIR(),"polkitd","polkitd")  
-    shelltools.chown("%s/usr/share/polkit-1" % get.installDIR(),"polkitd","polkitd") #yada? "polkitd","root"
+    shelltools.chown("%s/usr/share/polkit-1" % get.installDIR(),"polkitd","root") #yada? "polkitd","root"
     pisitools.dodoc("AUTHORS", "NEWS", "README", "HACKING", "COPYING")
     
     
