@@ -19,6 +19,7 @@
             <Dependency>mesa-devel</Dependency>
 	    <Dependency>freeglut-devel</Dependency>
 	    <Dependency>libvisual-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,6 +31,7 @@
             <Dependency>mesa</Dependency>
 	    <Dependency>freeglut</Dependency>
 	    <Dependency>libvisual</Dependency>
+            <Dependency>libsdl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
