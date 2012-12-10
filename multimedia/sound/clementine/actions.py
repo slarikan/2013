@@ -12,10 +12,13 @@ from pisi.actionsapi import get
 def setup():
     for i in ["libprojectm", "qxt", "qtiocompressor", "libechonest"]:
         shelltools.unlinkDir("3rdparty/%s" % (i))
+        #shelltools.export("CXXFLAGS", get.CXXFLAGS().replace("-Werror", ""))
 
     # QTSINGLEAPPLICATION is builtin since we need to patch Qt just for this package and Gökçen has given OK
     # for using built-in qtsingleapplication.
     cmaketools.configure("-DUSE_SYSTEM_QXT=ON \
+                          -Werror=OFF \
+                          -DENABLE_LIBLASTFM=OFF \
                           -DUSE_SYSTEM_QTSINGLEAPPLICATION=OFF \
                           -DENABLE_SPOTIFY=OFF\
                           -DENABLE_SPOTIFY_BLOB=OFF\
