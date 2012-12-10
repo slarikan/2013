@@ -90,6 +90,13 @@
     </Package>
 
     <History>
+    	<Update release="10">
+            <Date>2012-09-15</Date>
+            <Version>0.107</Version>
+            <Comment>somethings fixed</Comment>
+            <Name>canatan</Name>
+            <Email>q66680@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2012-09-15</Date>
             <Version>0.107</Version>
