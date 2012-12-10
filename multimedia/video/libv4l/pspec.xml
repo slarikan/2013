@@ -34,6 +34,7 @@
 
     <Package>
         <Name>v4l-utils</Name>
+        <Summary>Utilities for libv4l</Summary>
         <RuntimeDependencies>
             <Dependency>libv4l</Dependency>
             <Dependency>qt</Dependency>
