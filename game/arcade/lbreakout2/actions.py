@@ -12,7 +12,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure('--enable-sdl-net \
                          --localstatedir=/usr/share/lbreakout2 \
-                         --with-docdir="/%s/%s"' % (get.docDIR(), get.srcNAME()))
+                         --with-docdir="/%s/%s/html"' % (get.docDIR(), get.srcNAME()))
 def build():
     autotools.make()
 
@@ -20,8 +20,8 @@ def install():
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
 
     pisitools.insinto("/usr/share/pixmaps", "client/gfx/win_icon.png", "lbreakout2.png")
-    pisitools.domove("/%s/%s/lbreakout2/" % (get.docDIR(), get.srcNAME()), "/%s/%s/html" % (get.docDIR(), get.srcNAME()))
     pisitools.remove("/usr/share/icons/lbreakout48.gif")
+    pisitools.removeDir("/usr/share/icons")
 
     pisitools.domo("po/tr.po", "tr", "lbreakout2.mo")
 
