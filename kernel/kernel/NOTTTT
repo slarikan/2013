@@ -1,4 +1,0 @@
-kernel derlenirken perf içindeki builtin_sched.c içine 
-#include <sys/resource.h> eklenmeli
-
-genel bir glibc sorunu 'ru' bilinmiyor hatasının nedeni bu.
