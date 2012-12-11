@@ -17,7 +17,7 @@ def setup():
     autotools.configure('--with-icondir=/usr/share/pixmaps \
                          --disable-rpath \
                          --disable-motif \
-                         --with-distributor="Pardus" \
+                         --with-distributor="Pardus Anka" \
                          --disable-debug')
 
 def build():
