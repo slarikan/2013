@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Simple GUI for Clam Antivirus</Summary>
         <Description>ClamTk is a graphical frontend for Clam Antivirus. It is designed to be a lightweight, easy-to-use, point-and-click virus scanner.</Description>
-        <Archive sha1sum="e84910c221e0518de799ce5c5881361128f41a92" type="targz">mirrors://sourceforge/clamtk/clamtk-4.43.tar.gz</Archive>
+        <Archive sha1sum="030d7bd9f44d03b00e687a0dbc6b8a2709dee9c0" type="targz">mirrors://sourceforge/clamtk/clamtk-4.43.tar.gz</Archive>
     </Source>
 
     <Package>

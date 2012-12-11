@@ -20,7 +20,7 @@ def install():
     pisitools.insinto("/usr/lib", "lib", "ClamTk")
     pisitools.doman("clamtk.1.gz")
     pisitools.insinto("/usr/share/applications", "clamtk.desktop")
-    #pisitools.insinto("/usr/share/pixmaps", "clamtk.png")
+    pisitools.insinto("/usr/share/pixmaps", "clamtk.png")
     pisitools.dodoc("CHANGES", "DISCLAIMER", "LICENSE", "README")
 
     #Locales

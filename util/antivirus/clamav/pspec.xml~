@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>Clam Antivirus software</Summary>
         <Description>Clam AntiVirus is a GPL anti-virus toolkit for UNIX.</Description>
-        <Archive sha1sum="528f774b14b95fdfb8b377f8b41859c48b165e34" type="targz">mirrors://sourceforge/clamav/clamav-0.97.6.tar.gz</Archive>
+        <Archive sha1sum="27d47c6ad22edc87c030f6d483fab1e13320cbf7" type="targz">mirrors://sourceforge/clamav/clamav-0.97.6.tar.gz</Archive>
         <Patches>
             <Patch level="1">clamav-0.95.1-nls.patch</Patch>
 	    <Patch level="1">clamav-0.92-open.patch</Patch>
