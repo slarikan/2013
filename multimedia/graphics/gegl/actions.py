@@ -13,7 +13,6 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-fi")
-    pisitools.dosed("docs/Makefile.in", "share/gtk-doc/html/gegl", "share/doc/%s/html" % get.srcNAME())
     autotools.configure("--enable-mmx \
                          --enable-sse \
                          --with-cairo \
@@ -40,21 +39,17 @@ def setup():
                          --with-sdl \
                          --disable-static \
                          --disable-gtk-doc \
-                         --enable-workshop")
-
-    # libtool fixes for underlinking problems
-    for op in ["core", "common", "external", "generated", "workshop/generated", "workshop/external", "workshop"]:
-        pisitools.dosed("operations/%s/Makefile" % op, "^#(libgegl.*)$", "\\1")
-        pisitools.dosed("operations/%s/Makefile" % op, "^AVFORMAT_LIBS = (.*)$", "AVFORMAT_LIBS = \\1 -lavutil")
+                         --disable-workshop") # causes sandbox violations when enabled
 
 def build():
     autotools.make()
 
-def check():
-    autotools.make("check")
+# disabled due sandbox violations
+#def check():
+#    autotools.make("check")
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "COPYING.LESSER", "NEWS", "README")
 

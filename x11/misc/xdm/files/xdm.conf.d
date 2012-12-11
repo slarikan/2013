@@ -1,5 +1,5 @@
 # Preferred display manager
-#DISPLAY_MANAGER="xdm"
+DISPLAY_MANAGER="kdm"
 
 # Cursor theme
 #XCURSOR_THEME=""

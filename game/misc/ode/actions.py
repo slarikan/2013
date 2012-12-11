@@ -14,10 +14,6 @@ def setup():
     shelltools.export("CFLAGS","%s -fomit-frame-pointer -ffast-math" % get.CFLAGS())
     shelltools.export("CXXFLAGS","%s -fomit-frame-pointer -ffast-math" % get.CFLAGS())
 
-    for f in ["NEWS", "README", "AUTHORS", "ChangeLog"]:
-        shelltools.touch(f)
-
-    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --enable-shared \
                          --enable-demos \

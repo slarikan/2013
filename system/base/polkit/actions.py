@@ -22,7 +22,7 @@ def setup():
                          --with-os-type=Pardus \
                          --enable-examples \
                          --enable-introspection \
-                         --libexecdir=/usr/libexec/polkit-1 \
+                         --libexecdir=/usr/lib/polkit-1 \
                          --disable-man-pages \
                          --disable-gtk-doc \
                          --disable-static")
@@ -37,7 +37,9 @@ def install():
     pisitools.dodir("/var/lib/polkit-1")
     shelltools.chmod("%s/var/lib/polkit-1" % get.installDIR(), mode=00700)
     shelltools.chmod("%s/etc/polkit-1/rules.d" % get.installDIR(), mode=00700)
-
+    shelltools.chown("%s/etc/polkit-1/rules.d" % get.installDIR(),"polkitd","root") #yada? "polkitd","root"
+    shelltools.chown("%s/var/lib/polkit-1" % get.installDIR(),"polkitd","polkitd")  
+    shelltools.chown("%s/usr/share/polkit-1" % get.installDIR(),"polkitd","root") #yada? "polkitd","root"
     pisitools.dodoc("AUTHORS", "NEWS", "README", "HACKING", "COPYING")
     
     

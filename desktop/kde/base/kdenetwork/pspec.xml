@@ -95,6 +95,7 @@
             <Path fileType="data">/usr/share/services</Path>
             <Path fileType="data">/usr/share/kde4</Path>
             <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/telepathy</Path>    
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>

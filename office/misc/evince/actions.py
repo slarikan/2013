@@ -14,19 +14,19 @@ from pisi.actionsapi import get
 shelltools.export('HOME', get.workDIR())
 
 def setup():
-    autotools.autoreconf("-vif")
     autotools.configure("--disable-static\
                          --disable-scrollkeeper\
-                         --disable-schemas-install\
+                         --disable-schemas-compile\
                          --disable-nautilus \
                          --enable-pixbuf\
                          --enable-t1lib \
                          --enable-comics \
-                         --enable-impress")
-                        # enable-introspection needs libevdocument installed
-                        # so once the package enters the repositories,
-                        # we can try enabling introspection
-                        # --enable-introspection \
+                         --enable-impress \
+                         --enable-pdf \
+                         --enable-tiff \
+                         --enable-djvu \
+                         --enable-dvi \
+                         --enable-introspection")
 
 def build():
     autotools.make()

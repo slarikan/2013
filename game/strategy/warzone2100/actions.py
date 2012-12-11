@@ -16,8 +16,8 @@ mandir = "/usr/share/man"
 def setup():
     autotools.configure('--with-icondir=/usr/share/pixmaps \
                          --disable-rpath \
-                         --disable-motif \
-                         --with-distributor="Pardus" \
+                         --with-backend=qt \
+                         --with-distributor="Pardus Anka" \
                          --disable-debug')
 
 def build():

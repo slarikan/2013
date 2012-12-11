@@ -6,6 +6,7 @@
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 from pisi.actionsapi import autotools
+from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
@@ -19,4 +20,5 @@ def build():
 
 def install():
     autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
-
+    pisitools.insinto("/usr/share/applications", "extra/xmoto.desktop")
+    pisitools.insinto("/usr/share/pixmaps", "extra/xmoto.xpm")
