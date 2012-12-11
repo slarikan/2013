@@ -17,16 +17,23 @@
         <BuildDependencies>
             <Dependency>openal-devel</Dependency>
             <Dependency>physfs-devel</Dependency>
-            <Dependency>freeglut</Dependency>
             <Dependency>quesoglc-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
-            <Dependency>openmotif-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
-            <Dependency>libXt-devel</Dependency>
-            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
             <Dependency>libtheora-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>fribidi-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <!-- http://developer.wz2100.net/ticket/3818 -->
+            <Patch level="1">wz-gl.diff</Patch>
+        </Patches>
         <!-- maybe we better not touch it
         <Patches>
             <Patch level="1">default_resolution.patch</Patch>
@@ -39,15 +46,18 @@
         <RuntimeDependencies>
             <Dependency>openal</Dependency>
             <Dependency>physfs</Dependency>
-            <Dependency>freeglut</Dependency>
             <Dependency>quesoglc</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency>openmotif</Dependency>
+            <Dependency>mesa-glu</Dependency>
             <Dependency>libogg</Dependency>
-            <Dependency>libXt</Dependency>
-            <Dependency>libsdl</Dependency>
+            <Dependency>libXrandr</Dependency>
             <Dependency>libtheora</Dependency>
             <Dependency>libvorbis</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>fribidi</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
