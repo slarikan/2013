@@ -68,7 +68,7 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
-	    <Path fileType="data">/usr/share/gir-1.0</Path>
+        <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/var/lib/polkit-1</Path>
             <Path fileType="data">/lib/systemd</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -87,10 +87,13 @@
             <AdditionalFile owner="root" permission="0644" target="/var/lib/polkit-1/localauthority/10-vendor.d/10-desktop-policy.pkla">10-desktop-policy.pkla</AdditionalFile>
             -->
         </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
     </Package>
 
     <History>
-    	<Update release="10">
+        <Update release="10">
             <Date>2012-09-15</Date>
             <Version>0.107</Version>
             <Comment>somethings fixed</Comment>
