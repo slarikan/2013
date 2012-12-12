@@ -20,7 +20,7 @@ def setup():
     autotools.configure()
 
 def build():
-    autotools.make("-j1")
+    autotools.make()
 
 """
 #Requires dbus-test-runner (https://launchpad.net/dbus-test-runner)
