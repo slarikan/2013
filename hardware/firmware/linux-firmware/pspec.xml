@@ -42,9 +42,6 @@
             <Path fileType="data">/lib/firmware</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <AdditionalFiles>
-            <AdditionalFile target="/lib/firmware/aic94xx-seq.fw" permission="0644" owner="root">aic94xx-seq.fw</AdditionalFile>
-        </AdditionalFiles>
     </Package>
 
     <History>
