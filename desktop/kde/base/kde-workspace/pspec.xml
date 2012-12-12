@@ -328,6 +328,7 @@
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/etc/pam.d/kde4" permission="0644" owner="root">kde.pam</AdditionalFile>
+	    <AdditionalFile target="/etc/pam.d/kdm" permission="0644" owner="root">kdm</AdditionalFile>
             <AdditionalFile target="/etc/pam.d/kde4-np" permission="0644" owner="root">kde-np.pam</AdditionalFile>
             <AdditionalFile target="/usr/share/display-managers/kdm.desktop" permission="0644" owner="root">kdm.desktop</AdditionalFile>
         </AdditionalFiles>
