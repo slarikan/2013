@@ -12,12 +12,12 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 core applications</Summary>
         <Description>KDE Base Applications consists of what runs on the desktop. This module isn't a complete collection of essential applications that a user would expect on a desktop (such as e-mail and calculator). This packages is the basic set of applications beyond the workspace that KDE applications can assume are installed. These applications should have no problem running on Windows, OS X, Gnome, etc as stand alone applications if the user wanted to use them there.</Description>
-        <Archive sha1sum="282b8704d54f081a16894bb94aa901e72eb5e694" type="tarxz">mirrors://kde/stable/4.9.3/src/kde-baseapps-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="e87ebf6c66602ccb34c184ad696fd37bdda0dee0" type="tarxz">mirrors://kde/unstable/4.9.90/src/kde-baseapps-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.90">kde-workspace-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
             <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
@@ -50,10 +50,10 @@
     <Package>
         <Name>kde-baseapps</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.90">kde-workspace</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
             <Dependency versionFrom="2.7.5">soprano</Dependency>
@@ -85,6 +85,13 @@
     </Package>
 
     <History>
+        <Update release="68">
+            <Date>2012-12-07</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="67">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
