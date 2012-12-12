@@ -6,9 +6,13 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+
+shelltools.export("HOME", get.workDIR())
+shelltools.export("CFLAGS", "%s -Wno-error" % get.CFLAGS())
 
 def setup():
     autotools.autoreconf("-fvi")
@@ -16,7 +20,7 @@ def setup():
     autotools.configure()
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
 
 """
 #Requires dbus-test-runner (https://launchpad.net/dbus-test-runner)
