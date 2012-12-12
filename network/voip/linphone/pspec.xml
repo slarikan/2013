@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Voice over IP Application</Summary>
         <Description>Linphone is web-phone with a Gtk2 interface. It uses open protocols such as SIP and RTP to make the communications.</Description>
-        <Archive sha1sum="607ac1eb2c02ff73d1f4db5a5b3257434014b3e1" type="targz">http://cekirdek.pardus.org.tr/~ibrahim/dist/linphone-3.3.2.tar.gz</Archive>
+        <Archive sha1sum="d0dde9d421b7cf6893c8e5acb969d5bd4a04a231" type="targz">http://download-mirror.savannah.gnu.org/releases/linphone/3.5.x/sources/linphone-3.5.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>speex-devel</Dependency>
             <Dependency>libtheora-devel</Dependency>
@@ -23,20 +23,17 @@
             <Dependency>gsm-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
-            <Dependency versionFrom="0.16.3">ortp-devel</Dependency>
+            <Dependency versionFrom="0.20.0">ortp-devel</Dependency>
             <Dependency>libosip2-devel</Dependency>
             <Dependency>libeXosip2-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fix-thread-linkage.patch</Patch>
-            <Patch level="1">fix-desktopfile.patch</Patch>
-            <Patch level="1">fix-docdir.patch</Patch>
             <Patch level="0">linphone-3.2.0-imagedir.patch</Patch>
-            <Patch level="0">linphone-3.2.0-intltoolize_fix.diff</Patch>
-            <Patch level="0">linphone-3.2.0-ortp-linking-fix.patch</Patch>
-        </Patches>
+            <Patch level="0">linphone-3.5.0-link.patch</Patch>
+            <Patch level="0">linphone-3.5.2-ffmpeg0.11.patch</Patch>
+	  </Patches>
     </Source>
 
     <Package>
@@ -50,7 +47,7 @@
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libglade</Dependency>
-            <Dependency versionFrom="0.16.3">ortp</Dependency>
+            <Dependency versionFrom="0.20.0">ortp</Dependency>
             <Dependency>libosip2</Dependency>
             <Dependency>libeXosip2</Dependency>
         </RuntimeDependencies>
@@ -131,6 +128,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2012-11-12</Date>
+            <Version>3.5.2</Version>
+            <Comment>Version bump to latest stable.</Comment>
+            <Name>H. İbrahim Güngör</Name>
+            <Email>ibrahim@pardus.org.tr</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-26</Date>
             <Version>3.3.2</Version>
