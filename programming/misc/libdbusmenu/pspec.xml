@@ -30,6 +30,7 @@
         <Summary>GLIB bindings for libdbusmenu</Summary>
         <RuntimeDependencies>
             <Dependency>libdbusmenu-common</Dependency>
+            <Dependency>json-glib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libdbusmenu-glib*</Path>
@@ -68,6 +69,7 @@
         <RuntimeDependencies>
             <Dependency>libdbusmenu-glib</Dependency>
             <Dependency>libdbusmenu-common</Dependency>
+            <Dependency>json-glib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
