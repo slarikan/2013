@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 WorkDir="musique"
 
 def setup():
-    pisitools.dosed("musique.desktop", "=minitunes",  "=musique")
+    #pisitools.dosed("musique.desktop", "=minitunes",  "=musique")
     qt4.configure()
 
 def build():

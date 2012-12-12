@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>API for using and interacting with Activities</Summary>
         <Description>kactivities is an API for using and interacting with Activities as a consumer, application adding information to them or as an activity manager.</Description>
-        <Archive sha1sum="79a9c14e10147c7deb20bfe924de9d63a8edb1ab" type="tarxz">mirrors://kde/stable/4.9.3/src/kactivities-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="f84fd3e96dff5410d25f7c3ec551f930ed1f7d83" type="tarxz">mirrors://kde/unstable/4.9.90/src/kactivities-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kactivities</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
             <Dependency>soprano</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -52,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-12-07</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="6">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>

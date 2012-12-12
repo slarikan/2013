@@ -14,6 +14,7 @@ from pisi.actionsapi import get
 WorkDir = "linux-firmware-20121212"
 
 def setup():
+    shelltools.system("rpm2targz -v aic94xx_seq-30-1.noarch.rpm")
     # Remove source files
     shelltools.unlink("usbdux/*dux")
     shelltools.unlink("*/*.asm")
