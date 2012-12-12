@@ -14,11 +14,11 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>Enlightenment event/X abstraction layer</Summary>
         <Description>Ecore is the core event abstraction layer and X abstraction layer that makes doing selections, Xdnd, general X stuff, and event loops, timeouts and idle handlers fast, optimized, and convenient.</Description>
-        <Archive sha1sum="9cc528359ff99e67d0af948854acdc15e3f51d79" type="targz">http://download.enlightenment.org/releases/ecore-1.7.0.tar.gz</Archive>
+        <Archive sha1sum="c6ee8092af99842631e49566f6be32b6149eaaca" type="targz">http://download.enlightenment.org/releases/ecore-1.7.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
-	    <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+	    <Dependency versionFrom="1.7.3">eet-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
@@ -37,9 +37,9 @@
     <Package>
         <Name>ecore</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.99">evas</Dependency>
-	    <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.3">eina</Dependency>
+            <Dependency versionFrom="1.7.3">evas</Dependency>
+	    <Dependency versionFrom="1.7.3">eet</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXcomposite</Dependency>
@@ -66,9 +66,9 @@
         <Summary>Development files for ecore</Summary>
         <RuntimeDependencies>
             <Dependency release="current">ecore</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
             <Dependency>DirectFB-devel</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -78,6 +78,13 @@
     </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-12-12</Date>
+            <Version>1.7.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="21">
             <Date>2012-09-15</Date>
             <Version>1.7.0</Version>

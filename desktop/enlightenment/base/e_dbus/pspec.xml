@@ -14,20 +14,20 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>A D-Bus wrapper for EFL based applications</Summary>
         <Description>e_dbus is a basic convenience wrapper around D-Bus.</Description>
-        <Archive sha1sum="cc051e99fa87feebc65ef734a1f5b621ed473461" type="targz">http://download.enlightenment.org/releases/e_dbus-1.7.0.tar.gz</Archive>
+        <Archive sha1sum="1bd664721ea4910fb61cff3f4b16863ecdbd0772" type="targz">http://download.enlightenment.org/releases/e_dbus-1.7.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.3">ecore-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>e_dbus</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.99">evas</Dependency>
-            <Dependency versionFrom="1.7.0">ecore</Dependency>
+            <Dependency versionFrom="1.7.3">eina</Dependency>
+            <Dependency versionFrom="1.7.3">evas</Dependency>
+            <Dependency versionFrom="1.7.3">ecore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -41,9 +41,9 @@
         <Summary>Development files for e_dbus</Summary>
         <RuntimeDependencies>
             <Dependency release="current">e_dbus</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.3">ecore-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -52,6 +52,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2012-12-12</Date>
+            <Version>1.7.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
          <Update release="15">
             <Date>2012-09-15</Date>
             <Version>1.7.0</Version>
