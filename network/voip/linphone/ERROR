@@ -1,10 +1,18 @@
-rşiv(ler) açılıyor...
+anka@Pardus-Anka linphone $ sudo pisi bi pspec.xml
+Kaynak paket inşa ediliyor: linphone
+DEBUG: ComponentDB initialized in 0.00353598594666.
+DEBUG: RepoDB initialized in 0.000169038772583.
+DEBUG: InstallDB initialized in 0.00239682197571.
+linphone-3.5.2.tar.gz [önbellekte]
+Arşiv(ler) açılıyor...
 Yama uygulanıyor: linphone-3.2.0-imagedir.patch
 DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-3.2.0-imagedir.patch"" dönüş değeri 0
 Yama uygulanıyor: linphone-3.5.0-link.patch
 DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-3.5.0-link.patch"" dönüş değeri 0
 Yama uygulanıyor: linphone-3.5.2-ffmpeg0.11.patch
 DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-3.5.2-ffmpeg0.11.patch"" dönüş değeri 0
+Yama uygulanıyor: linphone-v4l.patch
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p1 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-v4l.patch"" dönüş değeri 0
  açıldı (/var/pisi/linphone-3.5.2-6/work)
 Kaynak yapılandırılıyor...
 Sandbox açık inşa...
@@ -567,9 +575,9 @@ checking for dlopen... yes
 checking for size_t... yes
 checking for working alloca.h... yes
 checking for alloca... yes
-checking linux/videodev.h usability... no
-checking linux/videodev.h presence... no
-checking for linux/videodev.h... no
+checking libv4l1-videodev.h usability... yes
+checking libv4l1-videodev.h presence... yes
+checking for libv4l1-videodev.h... yes
 checking linux/videodev2.h usability... yes
 checking linux/videodev2.h presence... yes
 checking for linux/videodev2.h... yes
@@ -638,18 +646,18 @@ make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/po' dizinine giriliyor
   MSGFMT it.gmo
   MSGFMT fr.gmo
   MSGFMT ja.gmo
-  MSGFMT es.gmo
   MSGFMT de.gmo
-  MSGFMT cs.gmo
+  MSGFMT es.gmo
   MSGFMT pl.gmo
-  MSGFMT pt_BR.gmo
-  MSGFMT sv.gmo
   MSGFMT nl.gmo
+  MSGFMT cs.gmo
+  MSGFMT sv.gmo
+  MSGFMT pt_BR.gmo
   MSGFMT hu.gmo
   MSGFMT ru.gmo
+  MSGFMT nb_NO.gmo
   MSGFMT zh_CN.gmo
   MSGFMT zh_TW.gmo
-  MSGFMT nb_NO.gmo
 make[2]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/po' dizininden çıkılıyor
 Making all in mediastreamer2
 make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2' dizinine giriliyor
@@ -657,19 +665,19 @@ make  all-recursive
 make[3]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2' dizinine giriliyor
 Making all in po
 make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/po' dizinine giriliyor
-  MSGFMT it.gmo
   MSGFMT de.gmo
-  MSGFMT es.gmo
+  MSGFMT it.gmo
   MSGFMT ja.gmo
+  MSGFMT es.gmo
   MSGFMT fr.gmo
   MSGFMT pl.gmo
-  MSGFMT nl.gmo
   MSGFMT cs.gmo
+  MSGFMT nl.gmo
   MSGFMT sv.gmo
   MSGFMT pt_BR.gmo
   MSGFMT hu.gmo
-  MSGFMT zh_CN.gmo
   MSGFMT ru.gmo
+  MSGFMT zh_CN.gmo
 make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/po' dizininden çıkılıyor
 Making all in src
 make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizinine giriliyor
@@ -685,16 +693,16 @@ if ! test -f ./gitversion.h ; then \
 	/bin/echo -n "#define GIT_VERSION \"unknown\" " > ./gitversion.h ;\
 fi
 builddir=`pwd` && cd . && \
-awk 'BEGIN { FS="[()]" ; }; /^\t*MS_FILTER_DESC_EXPORT/{ printf("%s\n", $2) } '  > $builddir/filterdescs.txt mscommon.c gitversion.h msfilter.c msqueue.c msticker.c eventqueue.c alaw.c ulaw.c mssndcard.c msrtp.c dtmfgen.c ice.c tee.c msconf.c msjoin.c g711common.h msvolume.c mswebcam.c mtu.c void.c dsptools.c kiss_fft.c _kiss_fft_guts.h kiss_fft.h kiss_fftr.c kiss_fftr.h equalizer.c chanadapt.c audiomixer.c itc.c tonedetector.c qualityindicator.c g722_decode.c g722.h g722_encode.c msg722.c l16.c audioconference.c bitratedriver.c qosanalyzer.c bitratecontrol.c audiostream.c msspeex.c speexec.c gsm.c   msfileplayer.c msfilerec.c     msresample.c alsa.c oss.c      pulseaudio.c    msv4l2.c  theora.c vp8.c videoenc.c videodec.c swscale.h ffmpeg-priv.h h264dec.c jpegwriter.c  x11video.c rfc2429.h pixconv.c sizeconv.c msvideo.c msvideo_neon.c rfc3984.c mire.c extdisplay.c layouts.c layouts.h nowebcam.c nowebcam.h videostream.c && \
+awk 'BEGIN { FS="[()]" ; }; /^\t*MS_FILTER_DESC_EXPORT/{ printf("%s\n", $2) } '  > $builddir/filterdescs.txt mscommon.c gitversion.h msfilter.c msqueue.c msticker.c eventqueue.c alaw.c ulaw.c mssndcard.c msrtp.c dtmfgen.c ice.c tee.c msconf.c msjoin.c g711common.h msvolume.c mswebcam.c mtu.c void.c dsptools.c kiss_fft.c _kiss_fft_guts.h kiss_fft.h kiss_fftr.c kiss_fftr.h equalizer.c chanadapt.c audiomixer.c itc.c tonedetector.c qualityindicator.c g722_decode.c g722.h g722_encode.c msg722.c l16.c audioconference.c bitratedriver.c qosanalyzer.c bitratecontrol.c audiostream.c msspeex.c speexec.c gsm.c   msfileplayer.c msfilerec.c     msresample.c alsa.c oss.c      pulseaudio.c   msv4l.c msv4l2.c  theora.c vp8.c videoenc.c videodec.c swscale.h ffmpeg-priv.h h264dec.c jpegwriter.c  x11video.c rfc2429.h pixconv.c sizeconv.c msvideo.c msvideo_neon.c rfc3984.c mire.c extdisplay.c layouts.c layouts.h nowebcam.c nowebcam.h videostream.c && \
 awk 'BEGIN { print("#include \"mediastreamer2/msfilter.h\"\n") } { printf("extern MSFilterDesc %s;\n",$1) } ' $builddir/filterdescs.txt > $builddir/alldescs.h && \
 awk 'BEGIN { print("MSFilterDesc * ms_filter_descs[]={") } { printf("&%s,\n",$1) } END{ print("NULL\n};\n") } ' $builddir/filterdescs.txt >> $builddir/alldescs.h
 make  all-am
 make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizinine giriliyor
-  CC       msfilter.lo
+  CC       mscommon.lo
   CC       msticker.lo
   CC       msqueue.lo
   CC       eventqueue.lo
-  CC       mscommon.lo
+  CC       msfilter.lo
   CC       alaw.lo
   CC       ulaw.lo
   CC       mssndcard.lo
@@ -727,27 +735,28 @@ make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizi
   CC       bitratecontrol.lo
   CC       audiostream.lo
   CC       msspeex.lo
-  CC       speexec.lo
   CC       gsm.lo
+  CC       speexec.lo
   CC       msfileplayer.lo
   CC       msfilerec.lo
   CC       msresample.lo
   CC       alsa.lo
   CC       oss.lo
   CC       pulseaudio.lo
+  CC       msv4l.lo
   CC       msv4l2.lo
   CC       theora.lo
   CC       vp8.lo
   CC       videoenc.lo
-  CC       videodec.lo
-  CC       h264dec.lo
-  CC       jpegwriter.lo
 videoenc.c: In function 'prepare':
 videoenc.c:238:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
 videoenc.c: In function 'enc_preprocess':
 videoenc.c:342:2: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
 videoenc.c: In function 'process_frame':
 videoenc.c:791:2: warning: 'avcodec_encode_video' is deprecated (declared at /usr/include/libavcodec/avcodec.h:4272) [-Wdeprecated-declarations]
+  CC       videodec.lo
+  CC       h264dec.lo
+  CC       jpegwriter.lo
   CC       x11video.lo
 videodec.c: In function 'dec_init':
 videodec.c:55:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
@@ -755,14 +764,14 @@ videodec.c: In function 'dec_preprocess':
 videodec.c:136:4: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
 videodec.c: In function 'parse_snow_header':
 videodec.c:226:4: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+  CC       pixconv.lo
+h264dec.c: In function 'dec_open':
+h264dec.c:57:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
+h264dec.c:58:2: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
 jpegwriter.c: In function 'jpg_process':
 jpegwriter.c:93:4: warning: 'avcodec_alloc_context' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3423) [-Wdeprecated-declarations]
 jpegwriter.c:101:4: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
 jpegwriter.c:127:4: warning: 'avcodec_encode_video' is deprecated (declared at /usr/include/libavcodec/avcodec.h:4272) [-Wdeprecated-declarations]
-h264dec.c: In function 'dec_open':
-h264dec.c:57:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
-h264dec.c:58:2: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
-  CC       pixconv.lo
   CC       sizeconv.lo
   CC       msvideo.lo
   CC       msvideo_neon.lo
@@ -818,21 +827,21 @@ make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include'
 make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include' dizininden çıkılıyor
 Making all in tests
 make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/tests' dizinine giriliyor
-  CC       mediastream.o
   CC       ring.o
-  CC       mtudiscover.o
   CC       bench.o
   CC       echo.o
+  CC       mtudiscover.o
+  CC       mediastream.o
   CC       tones.o
   CC       videodisplay.o
   CC       test_x11window.o
-  CCLD     ring
   CCLD     echo
+  CCLD     ring
   CCLD     mtudiscover
   CCLD     bench
   CCLD     tones
-  CCLD     videodisplay
   CCLD     test_x11window
+  CCLD     videodisplay
   OBJCLD   mediastream
 libtool: link: unable to infer tagged configuration
 libtool: link: specify a tag with `--tag'
@@ -857,8 +866,3 @@ Traceback (most recent call last):
   File "/usr/lib/pardus/pisi/actionsapi/__init__.py", line 27, in error
     raise Error(msg)
 pisi.actionsapi.Error: "make -j5" komutu başarısız oldu, dönüş değeri: 2 .
-Eylem betiği hatası oluştu.
-*** 1 hata, 0 uyarı
-Program sonlandırıldı.
-Genel yardım için lütfen 'pisi help' komutunu kullanınız.
-anka@Pardus-Anka linphone $ 
