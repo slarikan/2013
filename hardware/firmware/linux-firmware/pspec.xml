@@ -34,7 +34,10 @@
         <Archive sha1sum="de5eefac7856cd0c701527f613a2ccc7ca34b513" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-firmware-2.tar.bz2/ee8574e13b60be59b6b18b21e20d9e3a/radeon-firmware-2.tar.bz2</Archive>
         <Archive sha1sum="0e53846a25b9ec5f6f56559f6cc0778227e5564c" type="targz" target="linux-firmware-20121212">http://intellinuxwireless.org/iwlwifi/downloads/iwlwifi-3945-ucode-15.32.2.9.tgz</Archive>
         <Archive sha1sum="b93d14d2a690597b159cc2e27b06d417fe3c6313" type="targz" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/aic94xx-firmware/aic94xx-seq-30-1.tar.gz/1fed6c024581ee84f57db8aad51b7fb3/aic94xx-seq-30-1.tar.gz</Archive>
-</Source>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+        </BuildDependencies>
+    </Source>
 
     <Package>
         <Name>linux-firmware</Name>
