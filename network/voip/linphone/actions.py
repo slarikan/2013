@@ -24,8 +24,8 @@ def setup():
                             --disable-strict \
                             --enable-external-ortp \
                             --enable-nonstandard-gsm \
-	                    --enable-rsvp \
-	                    --enable-ssl \
+                            --enable-rsvp \
+                            --enable-ssl \
                             --enable-portaudio \
                             --enable-video \
                             --enable-ipv6 \

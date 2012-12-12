@@ -32,13 +32,15 @@
             <Dependency>libsoup-devel</Dependency>
             <Dependency>libvpx-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">linphone-3.2.0-imagedir.patch</Patch>
             <Patch level="0">linphone-3.5.0-link.patch</Patch>
             <Patch level="0">linphone-3.5.2-ffmpeg0.11.patch</Patch>
             <Patch level="1">linphone-v4l.patch</Patch>
-	</Patches>
+    </Patches>
     </Source>
 
     <Package>
@@ -51,13 +53,22 @@
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libglade</Dependency>
             <Dependency versionFrom="0.20.0">ortp</Dependency>
             <Dependency>libosip2</Dependency>
             <Dependency>libeXosip2</Dependency>
             <Dependency>libXv</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>libsoup</Dependency>
+            <Dependency>gsm</Dependency>
+            <Dependency>speex</Dependency>
+            <Dependency>ffmpeg</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>libnotify</Dependency>
+            <Dependency>libtheora</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -98,11 +109,14 @@
             <Dependency>libtheora</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>gsm</Dependency>
-            <Dependency>libsdl</Dependency>
             <Dependency>ffmpeg</Dependency>
             <Dependency versionFrom="0.16.3">ortp</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libvpx</Dependency>
+            <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec/mediastream</Path>
