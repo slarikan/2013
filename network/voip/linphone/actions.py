@@ -21,10 +21,19 @@ def setup():
     shelltools.cd("..")
     autotools.rawConfigure("--enable-shared \
                             --disable-static \
+                            --disable-strict \
                             --enable-external-ortp \
+                            --enable-nonstandard-gsm \
+	                    --enable-rsvp \
+	                    --enable-ssl \
+                            --enable-portaudio \
+                            --enable-video \
                             --enable-ipv6 \
                             --enable-alsa \
-                            --disable-rpath")
+                            --disable-tests \
+                            --disable-rpath \
+                            --libdir=/usr/lib \
+                            --prefix=/usr")
 
 def build():
     autotools.make()
