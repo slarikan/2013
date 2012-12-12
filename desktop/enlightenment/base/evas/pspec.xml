@@ -14,10 +14,10 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>Hardware-accelerated canvas API</Summary>
         <Description>Evas is a clean display canvas API for several target display systems that can draw anti-aliased text, smooth super and sub-sampled scaled images, alpha-blend objects much and more.</Description>
-        <Archive sha1sum="c7003f494386a82d6301868dd901d607bce8339f" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/base/evas-1.7.99.tar.gz</Archive>
+        <Archive sha1sum="ffa9b12d34e801112cf081a3c024eca5ef86ed8a" type="targz">http://download.enlightenment.org/releases/evas-1.7.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eet-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>fribidi-devel</Dependency>
 
@@ -40,8 +40,8 @@
     <Package>
         <Name>evas</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.0">eet</Dependency>
+            <Dependency versionFrom="1.7.3">eina</Dependency>
+            <Dependency versionFrom="1.7.3">eet</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>fribidi</Dependency>
 
@@ -87,6 +87,13 @@
     </Package>
 
     <History>
+        <Update release="25">
+            <Date>2012-12-12</Date>
+            <Version>1.7.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="24">
             <Date>2012-09-15</Date>
             <Version>1.7.99</Version>
