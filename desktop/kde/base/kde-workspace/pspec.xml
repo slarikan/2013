@@ -339,7 +339,10 @@
         <AdditionalFiles>
             <AdditionalFile target="/etc/pam.d/kscreensaver" permission="0644" owner="root">kscreensaver.pam</AdditionalFile>  
             <AdditionalFile target="/etc/pam.d/kde4" permission="0644" owner="root">kde.pam</AdditionalFile>
+<<<<<<< HEAD
+=======
             <AdditionalFile target="/etc/pam.d/kdm" permission="0644" owner="root">kdm.pam</AdditionalFile>
+>>>>>>> c288a334dc2f2c426b7c1a204de908b3a7dd9f8c
             <AdditionalFile target="/etc/pam.d/kde4-np" permission="0644" owner="root">kde-np.pam</AdditionalFile>
             <AdditionalFile target="/usr/share/display-managers/kdm.desktop" permission="0644" owner="root">kdm.desktop</AdditionalFile>
         </AdditionalFiles>

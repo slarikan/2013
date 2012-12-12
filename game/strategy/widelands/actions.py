@@ -9,24 +9,24 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "widelands-build15-src"
-
 def setup():
     shelltools.makedirs("build-cmake")
     shelltools.cd("build-cmake")
-    cmaketools.configure(sourceDir="..")
+    cmaketools.configure("-DWL_PORTABLE=true \
+                          -DWL_INSTALL_PREFIX=/usr \
+                          -DWL_INSTALL_BINDIR=bin \
+                          -DWL_INSTALL_DATADIR=share/widelands \
+                          -DWL_INSTALL_LOCALEDIR=/usr/share/widelands/locale \
+                          -DCMAKE_INSTALL_PREFIX=/usr \
+                          -DCMAKE_BUILD_TYPE=Release", sourceDir="..")
 
 def build():
     shelltools.cd("build-cmake")
     cmaketools.make()
 
 def install():
-    shelltools.cd("build-cmake")
-    cmaketools.install()
-
-    shelltools.cd("..")
-    datadirs = ["campaigns", "fonts", "global", "maps", "music", "pics", "scenario_examples", "sound", "tribes", "txts", "worlds"]
-    for dir in datadirs:
-        shelltools.copytree(dir, "%s/usr/share/widelands" % get.installDIR())
-
     pisitools.dodoc("COPYING", "CREDITS", "ChangeLog")
+
+    shelltools.cd("build-cmake")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+
