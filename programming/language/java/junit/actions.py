@@ -10,7 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="%s%s" % (get.srcNAME(), get.srcVERSION())
+WorkDir="junit4.11"
 
 def setup():
     shelltools.makedirs("src/main/java")
