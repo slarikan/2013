@@ -12,9 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 text editor</Summary>
         <Description>Kate is a multi-document, multi-view text editor for KDE. It features stuff like codefolding, syntaxhighlighting, dynamic word wrap, an embedded console, an extensive plugin interface and some prelimentary scripting support.</Description>
-        <Archive type="tarxz" sha1sum="d48c4671dfc13cefecf95e595403a5f75bc56d5b">mirrors://kde/stable/4.9.3/src/kate-4.9.3.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="02c97603bf50dafbdd1fd77d586d1f5c11c651aa">mirrors://kde/unstable/4.9.90/src/kate-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -22,7 +22,7 @@
         <Name>kate</Name>
         <Icon>kate</Icon>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/kate</Path>
@@ -49,8 +49,8 @@
         <Summary>A text editor for KDE</Summary>
         <Description>KWrite is a text editor for KDE, based on the Kate's editor component.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kate</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kate</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/kwrite</Path>
@@ -65,8 +65,8 @@
         <Name>kate-devel</Name>
         <Summary>Development files for kate</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kate</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kate</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -74,6 +74,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-11-10</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
