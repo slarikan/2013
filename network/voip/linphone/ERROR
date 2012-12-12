@@ -1,0 +1,864 @@
+rşiv(ler) açılıyor...
+Yama uygulanıyor: linphone-3.2.0-imagedir.patch
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-3.2.0-imagedir.patch"" dönüş değeri 0
+Yama uygulanıyor: linphone-3.5.0-link.patch
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-3.5.0-link.patch"" dönüş değeri 0
+Yama uygulanıyor: linphone-3.5.2-ffmpeg0.11.patch
+DEBUG: "patch --remove-empty-files --no-backup-if-mismatch  -p0 -i "/home/anka/Desktop/2013/network/voip/linphone/files/linphone-3.5.2-ffmpeg0.11.patch"" dönüş değeri 0
+ açıldı (/var/pisi/linphone-3.5.2-6/work)
+Kaynak yapılandırılıyor...
+Sandbox açık inşa...
+Generating build scripts in linphone...
++ libtoolize --copy --force
+libtoolize: putting auxiliary files in `.'.
+libtoolize: copying file `./ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
++ /usr/bin/intltoolize -c --force --automake
++ aclocal -I m4
++ autoheader
++ automake --force-missing --add-missing --copy
+Makefile.am:21: warning: shell cd $(top_builddir: non-POSIX variable name
+Makefile.am:21: (probably a GNU make extension)
+Makefile.am:23: warning: shell cd $(top_builddir: non-POSIX variable name
+Makefile.am:23: (probably a GNU make extension)
+Makefile.am:27: warning: shell cd $(top_builddir: non-POSIX variable name
+Makefile.am:27: (probably a GNU make extension)
+Makefile.am:41: warning: shell cd $(top_srcdir: non-POSIX variable name
+Makefile.am:41: (probably a GNU make extension)
+Makefile.am:43: warning: shell cat $(top_srcdir: non-POSIX variable name
+Makefile.am:43: (probably a GNU make extension)
+Makefile.am:45: warning: shell cd $(top_srcdir: non-POSIX variable name
+Makefile.am:45: (probably a GNU make extension)
+Makefile.am:185: warning: shell $(MD5SUM: non-POSIX variable name
+Makefile.am:185: (probably a GNU make extension)
+Makefile.am:187: warning: shell $(MD5SUM: non-POSIX variable name
+Makefile.am:187: (probably a GNU make extension)
+coreapi/help/Makefile.am:11: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:3: ... 'docdir' previously defined here
+coreapi/help/Makefile.am:18: warning: <D: non-POSIX variable name
+m4/Makefile.am:1: warning: shell cd $(srcdir: non-POSIX variable name
+m4/Makefile.am:1: (probably a GNU make extension)
++ autoconf
++ '[' -x oRTP/autogen.sh ']'
++ echo 'Generating build scripts in oRTP...'
+Generating build scripts in oRTP...
++ cd oRTP
++ ./autogen.sh
++ rm -rf config.cache autom4te.cache
++ libtoolize --copy --force
+libtoolize: You should add the contents of the following files to `aclocal.m4':
+libtoolize:   `/usr/share/aclocal/libtool.m4'
+libtoolize:   `/usr/share/aclocal/ltoptions.m4'
+libtoolize:   `/usr/share/aclocal/ltversion.m4'
+libtoolize:   `/usr/share/aclocal/lt~obsolete.m4'
+libtoolize: Consider adding `AC_CONFIG_MACRO_DIR([m4])' to configure.ac and
+libtoolize: rerunning libtoolize, to keep the correct libtool macros in-tree.
+libtoolize: Consider adding `-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
++ aclocal
++ autoheader
++ automake --force-missing --add-missing --copy
+Makefile.am:18: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:2: ... 'docdir' previously defined here
+Makefile.am:25: warning: <D: non-POSIX variable name
+Makefile.am:58: warning: shell pwd: non-POSIX variable name
+Makefile.am:58: (probably a GNU make extension)
++ autoconf
++ '[' -x mediastreamer2/autogen.sh ']'
++ echo 'Generating build scripts in mediastreamer2...'
+Generating build scripts in mediastreamer2...
++ cd mediastreamer2
++ ./autogen.sh
+Generating build scripts in mediastreamer...
++ libtoolize --copy --force
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
++ /usr/bin/intltoolize --copy --force --automake
++ aclocal
++ autoheader
++ automake --force-missing --add-missing --copy
+help/Makefile.am:12: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:2: ... 'docdir' previously defined here
+help/Makefile.am:19: warning: <D: non-POSIX variable name
++ autoconf
+DEBUG: "./autogen.sh" dönüş değeri 0
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4 $(ACLOCAL_MACOS_FLAGS)
+sh: ACLOCAL_MACOS_FLAGS: komut yok
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: adding subdirectory mediastreamer2 to autoreconf
+autoreconf: Entering directory `mediastreamer2'
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: AM_GNU_GETTEXT is used, but not AM_GNU_GETTEXT_VERSION
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+help/Makefile.am:12: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:2: ... 'docdir' previously defined here
+help/Makefile.am:19: warning: <D: non-POSIX variable name
+autoreconf: Leaving directory `mediastreamer2'
+autoreconf: configure.ac: adding subdirectory oRTP to autoreconf
+autoreconf: Entering directory `oRTP'
+autoreconf: running: aclocal --force 
+libtoolize: Consider adding `AC_CONFIG_MACRO_DIR([m4])' to configure.ac and
+libtoolize: rerunning libtoolize, to keep the correct libtool macros in-tree.
+libtoolize: Consider adding `-I m4' to ACLOCAL_AMFLAGS in Makefile.am.
+Makefile.am:18: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:2: ... 'docdir' previously defined here
+Makefile.am:25: warning: <D: non-POSIX variable name
+Makefile.am:58: warning: shell pwd: non-POSIX variable name
+Makefile.am:58: (probably a GNU make extension)
+autoreconf: Leaving directory `oRTP'
+libtoolize: putting auxiliary files in `.'.
+libtoolize: copying file `./ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+sh: ACLOCAL_MACOS_FLAGS: komut yok
+Makefile.am:21: warning: shell cd $(top_builddir: non-POSIX variable name
+Makefile.am:21: (probably a GNU make extension)
+Makefile.am:23: warning: shell cd $(top_builddir: non-POSIX variable name
+Makefile.am:23: (probably a GNU make extension)
+Makefile.am:27: warning: shell cd $(top_builddir: non-POSIX variable name
+Makefile.am:27: (probably a GNU make extension)
+Makefile.am:41: warning: shell cd $(top_srcdir: non-POSIX variable name
+Makefile.am:41: (probably a GNU make extension)
+Makefile.am:43: warning: shell cat $(top_srcdir: non-POSIX variable name
+Makefile.am:43: (probably a GNU make extension)
+Makefile.am:45: warning: shell cd $(top_srcdir: non-POSIX variable name
+Makefile.am:45: (probably a GNU make extension)
+Makefile.am:185: warning: shell $(MD5SUM: non-POSIX variable name
+Makefile.am:185: (probably a GNU make extension)
+Makefile.am:187: warning: shell $(MD5SUM: non-POSIX variable name
+Makefile.am:187: (probably a GNU make extension)
+coreapi/help/Makefile.am:11: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:3: ... 'docdir' previously defined here
+coreapi/help/Makefile.am:18: warning: <D: non-POSIX variable name
+m4/Makefile.am:1: warning: shell cd $(srcdir: non-POSIX variable name
+m4/Makefile.am:1: (probably a GNU make extension)
+autoreconf: Leaving directory `.'
+DEBUG: "autoreconf -vfi" dönüş değeri 0
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal --force -I m4
+autoreconf: configure.ac: tracing
+autoreconf: configure.ac: AM_GNU_GETTEXT is used, but not AM_GNU_GETTEXT_VERSION
+autoreconf: running: libtoolize --copy --force
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+autoreconf: running: /usr/bin/autoconf --force
+autoreconf: running: /usr/bin/autoheader --force
+autoreconf: running: automake --add-missing --copy --force-missing
+help/Makefile.am:12: warning: docdir was already defined in condition TRUE, which includes condition HAVE_DOXYGEN ...
+configure.ac:2: ... 'docdir' previously defined here
+help/Makefile.am:19: warning: <D: non-POSIX variable name
+autoreconf: Leaving directory `.'
+DEBUG: "autoreconf -vfi" dönüş değeri 0
+GNU Yapılandırma Güncellemesi Bitti.
+GNU Yapılandırma Güncellemesi Bitti.
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+configure: linphone-3.5.2		A full featured audio/video sip phone.
+configure: licensed under the terms of the General Public License (GPL)
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for style of include used by make... GNU
+checking for gcc... x86_64-pc-linux-gnu-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... none needed
+checking dependency style of x86_64-pc-linux-gnu-gcc... gcc3
+checking for strerror in -lcposix... no
+checking for gcc... (cached) x86_64-pc-linux-gnu-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... (cached) none needed
+checking dependency style of x86_64-pc-linux-gnu-gcc... (cached) gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-pc-linux-gnu-g++ accepts -g... yes
+checking dependency style of x86_64-pc-linux-gnu-g++... gcc3
+checking for inline... inline
+checking for gcc... (cached) x86_64-pc-linux-gnu-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... (cached) yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... (cached) none needed
+checking dependency style of x86_64-pc-linux-gnu-gcc... (cached) gcc3
+checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking whether x86_64-pc-linux-gnu-gcc and cc understand -c and -o together... yes
+checking for md5sum... md5sum
+checking whether NLS is requested... yes
+checking for intltool >= 0.40... 0.50.2 found
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.16.1
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for fgrep... /bin/grep -F
+checking for ld used by x86_64-pc-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from x86_64-pc-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-pc-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-pc-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-pc-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-pc-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-pc-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... x86_64-pc-linux-gnu-g++ -E
+checking for ld used by x86_64-pc-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-pc-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for x86_64-pc-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-pc-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-pc-linux-gnu-g++ static flag -static works... yes
+checking if x86_64-pc-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-pc-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-pc-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for get_current_dir_name... yes
+checking for strndup... yes
+checking for stpcpy... yes
+checking for LIBGTK... yes
+checking for NOTIFY4... yes
+checking for NOTIFY1... no
+checking for getifaddrs... yes
+checking for OSIP... yes
+checking eXosip2/eXosip.h usability... yes
+checking eXosip2/eXosip.h presence... yes
+checking for eXosip2/eXosip.h... yes
+checking for eXosip_set_tls_ctx in -leXosip2... yes
+checking for eXosip_get_version in -leXosip2... yes
+checking for eXosip_tls_verify_certificate in -leXosip2... yes
+checking for eXosip_get_socket in -leXosip2... no
+configure: WARNING: Could not find eXosip_get_socket in eXosip2 !
+checking readline.h usability... no
+checking readline.h presence... no
+checking for readline.h... no
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking history.h usability... no
+checking history.h presence... no
+checking for history.h... no
+checking readline/history.h usability... yes
+checking readline/history.h presence... yes
+checking for readline/history.h... yes
+checking for readline in -lreadline... yes
+checking whether byte ordering is bigendian... no
+checking for SPEEX... yes
+checking X11/Xlib.h usability... yes
+checking X11/Xlib.h presence... yes
+checking for X11/Xlib.h... yes
+checking for XUnmapWindow in -lX11... yes
+checking for getenv... yes
+checking for sighandler_t... no
+checking for LIBSOUP... yes
+checking for sgmltools... no
+checking for ORTP... yes
+checking for doxygen... /usr/bin/doxygen
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating build/Makefile
+config.status: creating build/macos/Makefile
+config.status: creating build/macos/Info-linphone.plist
+config.status: creating m4/Makefile
+config.status: creating po/Makefile.in
+config.status: creating pixmaps/Makefile
+config.status: creating coreapi/Makefile
+config.status: creating coreapi/help/Makefile
+config.status: creating coreapi/help/Doxyfile
+config.status: creating gtk/Makefile
+config.status: creating console/Makefile
+config.status: creating share/Makefile
+config.status: creating share/C/Makefile
+config.status: creating share/fr/Makefile
+config.status: creating share/it/Makefile
+config.status: creating share/ja/Makefile
+config.status: creating share/cs/Makefile
+config.status: creating share/linphone.pc
+config.status: creating share/linphone.desktop
+config.status: creating scripts/Makefile
+config.status: creating linphone.spec
+config.status: creating linphone.iss
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing libtool-hacking commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing po/stamp-it commands
+=== configuring in mediastreamer2 (/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/usr/local'  '--enable-shared' '--disable-static' '--enable-external-ortp' '--enable-ipv6' '--enable-alsa' '--disable-rpath' 'CC=x86_64-pc-linux-gnu-gcc' 'CFLAGS=-mtune=generic -march=x86-64 -O2 -pipe -fomit-frame-pointer -fstack-protector  -ggdb3 -funwind-tables -fasynchronous-unwind-tables' 'LDFLAGS=-Wl,-O1 -Wl,-z,relro -Wl,--hash-style=gnu -Wl,--as-needed -Wl,--sort-common' 'CXX=x86_64-pc-linux-gnu-g++' 'CXXFLAGS=-mtune=generic -march=x86-64 -O2 -pipe -fomit-frame-pointer -fstack-protector -D_FORTIFY_SOURCE=2 -ggdb3 -funwind-tables -fasynchronous-unwind-tables' --cache-file=/dev/null --srcdir=.
+configure: mediastreamer-2.8.2		A mediastreaming library for telephony application.
+configure: licensed under the terms of the General Public License (GPL)
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking target system type... x86_64-unknown-linux-gnu
+Building Package on linux
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking how to create a ustar tar archive... gnutar
+checking whether make supports nested variables... yes
+checking warning make an error on compilation... checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether x86_64-pc-linux-gnu-g++ accepts -g... yes
+checking for style of include used by make... GNU
+checking dependency style of x86_64-pc-linux-gnu-g++... gcc3
+checking for gcc... x86_64-pc-linux-gnu-gcc
+checking whether we are using the GNU C compiler... yes
+checking whether x86_64-pc-linux-gnu-gcc accepts -g... yes
+checking for x86_64-pc-linux-gnu-gcc option to accept ISO C89... none needed
+checking dependency style of x86_64-pc-linux-gnu-gcc... gcc3
+checking for gcc... gcc
+checking whether we are using the GNU Objective C compiler... yes
+checking whether gcc accepts -g... yes
+checking dependency style of gcc... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by x86_64-pc-linux-gnu-gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from x86_64-pc-linux-gnu-gcc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... x86_64-pc-linux-gnu-gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if x86_64-pc-linux-gnu-gcc supports -fno-rtti -fno-exceptions... no
+checking for x86_64-pc-linux-gnu-gcc option to produce PIC... -fPIC -DPIC
+checking if x86_64-pc-linux-gnu-gcc PIC flag -fPIC -DPIC works... yes
+checking if x86_64-pc-linux-gnu-gcc static flag -static works... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... yes
+checking if x86_64-pc-linux-gnu-gcc supports -c -o file.o... (cached) yes
+checking whether the x86_64-pc-linux-gnu-gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... x86_64-pc-linux-gnu-g++ -E
+checking for ld used by x86_64-pc-linux-gnu-g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the x86_64-pc-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for x86_64-pc-linux-gnu-g++ option to produce PIC... -fPIC -DPIC
+checking if x86_64-pc-linux-gnu-g++ PIC flag -fPIC -DPIC works... yes
+checking if x86_64-pc-linux-gnu-g++ static flag -static works... yes
+checking if x86_64-pc-linux-gnu-g++ supports -c -o file.o... yes
+checking if x86_64-pc-linux-gnu-g++ supports -c -o file.o... (cached) yes
+checking whether the x86_64-pc-linux-gnu-g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for ANSI C header files... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking whether time.h and sys/time.h may both be included... yes
+checking whether byte ordering is bigendian... no
+checking whether NLS is requested... yes
+checking for intltool >= 0.40... 0.50.2 found
+checking for intltool-update... /usr/bin/intltool-update
+checking for intltool-merge... /usr/bin/intltool-merge
+checking for intltool-extract... /usr/bin/intltool-extract
+checking for xgettext... /usr/bin/xgettext
+checking for msgmerge... /usr/bin/msgmerge
+checking for msgfmt... /usr/bin/msgfmt
+checking for gmsgfmt... /usr/bin/msgfmt
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.16.1
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking for ld used by GCC... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking for shared library run path origin... done
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for GNU gettext in libc... yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking whether fixed point arithmetic is preferred... false
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for clock_gettime in -lrt... yes
+checking soundcard.h usability... no
+checking soundcard.h presence... no
+checking for soundcard.h... no
+checking sys/soundcard.h usability... yes
+checking sys/soundcard.h presence... yes
+checking for sys/soundcard.h... yes
+checking machine/soundcard.h usability... no
+checking machine/soundcard.h presence... no
+checking for machine/soundcard.h... no
+checking sys/audio.h usability... no
+checking sys/audio.h presence... no
+checking for sys/audio.h... no
+checking alsa/asoundlib.h usability... yes
+checking alsa/asoundlib.h presence... yes
+checking for alsa/asoundlib.h... yes
+checking for snd_pcm_open in -lasound... yes
+checking for LIBPULSE... yes
+checking for SPEEX... yes
+checking for SPEEX... yes
+checking for SPEEXDSP... yes
+checking gsm/gsm.h usability... yes
+checking gsm/gsm.h presence... yes
+checking for gsm/gsm.h... yes
+checking for gsm_create in -lgsm... yes
+checking for SPANDSP... no
+checking for FFMPEG... yes
+checking for SWSCALE... yes
+checking libavcodec/avcodec.h usability... yes
+checking libavcodec/avcodec.h presence... yes
+checking for libavcodec/avcodec.h... yes
+checking for avcodec_register_all in -lavcodec... yes
+checking libswscale/swscale.h usability... yes
+checking libswscale/swscale.h presence... yes
+checking for libswscale/swscale.h... yes
+checking X11/Xlib.h usability... yes
+checking X11/Xlib.h presence... yes
+checking for X11/Xlib.h... yes
+checking X11/extensions/Xv.h usability... yes
+checking X11/extensions/Xv.h presence... yes
+checking for X11/extensions/Xv.h... yes
+checking for X11/extensions/Xvlib.h... yes
+checking for XvCreateImage in -lXv... yes
+checking for THEORA... yes
+checking for VP8... yes
+checking for ORTP... yes
+checking for dlfcn.h... (cached) yes
+checking for dlopen in -ldl... yes
+checking for dlopen... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking linux/videodev.h usability... no
+checking linux/videodev.h presence... no
+checking for linux/videodev.h... no
+checking linux/videodev2.h usability... yes
+checking linux/videodev2.h presence... yes
+checking for linux/videodev2.h... yes
+checking for LIBV4L2... yes
+checking for LIBV4L1... yes
+checking for doxygen... /usr/bin/doxygen
+checking for epm... false
+checking for mkepmlist... false
+checking for epminstall... false
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating include/Makefile
+config.status: creating include/mediastreamer2/Makefile
+config.status: creating src/Makefile
+config.status: creating tests/Makefile
+config.status: creating build/Makefile
+config.status: creating build/win32native/Makefile
+config.status: creating build/win32native/mediastream/Makefile
+config.status: creating build/win32-novideo/Makefile
+config.status: creating build/wince/Makefile
+config.status: creating build/winmob/Makefile
+config.status: creating mediastreamer.pc
+config.status: creating mediastreamer2.spec
+config.status: creating help/Makefile
+config.status: creating help/Doxyfile
+config.status: creating mediastreamer-config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing libtool-hacking commands
+No need to hack libtool.
+config.status: executing po/stamp-it commands
+Linphone build configuration ended.
+* GTK interface will be compiled.
+* Console interface will be compiled.
+Now type 'make' to compile, and then 'make install' as root to install it.
+DEBUG: "./configure --enable-shared --disable-static --enable-external-ortp --enable-ipv6 --enable-alsa --disable-rpath" dönüş değeri 0
+Kaynak inşa ediliyor...
+Sandbox açık inşa...
+make  all-recursive
+make[1]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2' dizinine giriliyor
+Making all in build
+make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/build' dizinine giriliyor
+Making all in macos
+make[3]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/build/macos' dizinine giriliyor
+make[3]: `all' için hiçbir şey yapılmadı.
+make[3]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/build/macos' dizininden çıkılıyor
+make[3]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/build' dizinine giriliyor
+make[3]: `all-am' için hiçbir şey yapılmadı.
+make[3]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/build' dizininden çıkılıyor
+make[2]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/build' dizininden çıkılıyor
+Making all in m4
+make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/m4' dizinine giriliyor
+make[2]: `all' için hiçbir şey yapılmadı.
+make[2]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/m4' dizininden çıkılıyor
+Making all in pixmaps
+make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/pixmaps' dizinine giriliyor
+make[2]: `all' için hiçbir şey yapılmadı.
+make[2]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/pixmaps' dizininden çıkılıyor
+Making all in po
+make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/po' dizinine giriliyor
+  MSGFMT it.gmo
+  MSGFMT fr.gmo
+  MSGFMT ja.gmo
+  MSGFMT es.gmo
+  MSGFMT de.gmo
+  MSGFMT cs.gmo
+  MSGFMT pl.gmo
+  MSGFMT pt_BR.gmo
+  MSGFMT sv.gmo
+  MSGFMT nl.gmo
+  MSGFMT hu.gmo
+  MSGFMT ru.gmo
+  MSGFMT zh_CN.gmo
+  MSGFMT zh_TW.gmo
+  MSGFMT nb_NO.gmo
+make[2]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/po' dizininden çıkılıyor
+Making all in mediastreamer2
+make[2]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2' dizinine giriliyor
+make  all-recursive
+make[3]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2' dizinine giriliyor
+Making all in po
+make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/po' dizinine giriliyor
+  MSGFMT it.gmo
+  MSGFMT de.gmo
+  MSGFMT es.gmo
+  MSGFMT ja.gmo
+  MSGFMT fr.gmo
+  MSGFMT pl.gmo
+  MSGFMT nl.gmo
+  MSGFMT cs.gmo
+  MSGFMT sv.gmo
+  MSGFMT pt_BR.gmo
+  MSGFMT hu.gmo
+  MSGFMT zh_CN.gmo
+  MSGFMT ru.gmo
+make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/po' dizininden çıkılıyor
+Making all in src
+make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizinine giriliyor
+if test -d ../.git ; then \
+	/bin/echo -n "#define GIT_VERSION " > gitversion.h.tmp &&\
+	/bin/echo \"`cd .. && git describe`\" >> gitversion.h.tmp &&\
+	if test "`cat gitversion.h.tmp`" != "`cat ./gitversion.h`" ; then \
+		cp -f gitversion.h.tmp ./gitversion.h ; \
+	fi \
+	&& rm -f gitversion.h.tmp ;\
+fi
+if ! test -f ./gitversion.h ; then \
+	/bin/echo -n "#define GIT_VERSION \"unknown\" " > ./gitversion.h ;\
+fi
+builddir=`pwd` && cd . && \
+awk 'BEGIN { FS="[()]" ; }; /^\t*MS_FILTER_DESC_EXPORT/{ printf("%s\n", $2) } '  > $builddir/filterdescs.txt mscommon.c gitversion.h msfilter.c msqueue.c msticker.c eventqueue.c alaw.c ulaw.c mssndcard.c msrtp.c dtmfgen.c ice.c tee.c msconf.c msjoin.c g711common.h msvolume.c mswebcam.c mtu.c void.c dsptools.c kiss_fft.c _kiss_fft_guts.h kiss_fft.h kiss_fftr.c kiss_fftr.h equalizer.c chanadapt.c audiomixer.c itc.c tonedetector.c qualityindicator.c g722_decode.c g722.h g722_encode.c msg722.c l16.c audioconference.c bitratedriver.c qosanalyzer.c bitratecontrol.c audiostream.c msspeex.c speexec.c gsm.c   msfileplayer.c msfilerec.c     msresample.c alsa.c oss.c      pulseaudio.c    msv4l2.c  theora.c vp8.c videoenc.c videodec.c swscale.h ffmpeg-priv.h h264dec.c jpegwriter.c  x11video.c rfc2429.h pixconv.c sizeconv.c msvideo.c msvideo_neon.c rfc3984.c mire.c extdisplay.c layouts.c layouts.h nowebcam.c nowebcam.h videostream.c && \
+awk 'BEGIN { print("#include \"mediastreamer2/msfilter.h\"\n") } { printf("extern MSFilterDesc %s;\n",$1) } ' $builddir/filterdescs.txt > $builddir/alldescs.h && \
+awk 'BEGIN { print("MSFilterDesc * ms_filter_descs[]={") } { printf("&%s,\n",$1) } END{ print("NULL\n};\n") } ' $builddir/filterdescs.txt >> $builddir/alldescs.h
+make  all-am
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizinine giriliyor
+  CC       msfilter.lo
+  CC       msticker.lo
+  CC       msqueue.lo
+  CC       eventqueue.lo
+  CC       mscommon.lo
+  CC       alaw.lo
+  CC       ulaw.lo
+  CC       mssndcard.lo
+  CC       msrtp.lo
+  CC       dtmfgen.lo
+  CC       ice.lo
+  CC       tee.lo
+  CC       msconf.lo
+  CC       msjoin.lo
+  CC       msvolume.lo
+  CC       mswebcam.lo
+  CC       mtu.lo
+  CC       void.lo
+  CC       dsptools.lo
+  CC       kiss_fft.lo
+  CC       kiss_fftr.lo
+  CC       equalizer.lo
+  CC       chanadapt.lo
+  CC       audiomixer.lo
+  CC       itc.lo
+  CC       tonedetector.lo
+  CC       qualityindicator.lo
+  CC       g722_decode.lo
+  CC       g722_encode.lo
+  CC       msg722.lo
+  CC       l16.lo
+  CC       audioconference.lo
+  CC       bitratedriver.lo
+  CC       qosanalyzer.lo
+  CC       bitratecontrol.lo
+  CC       audiostream.lo
+  CC       msspeex.lo
+  CC       speexec.lo
+  CC       gsm.lo
+  CC       msfileplayer.lo
+  CC       msfilerec.lo
+  CC       msresample.lo
+  CC       alsa.lo
+  CC       oss.lo
+  CC       pulseaudio.lo
+  CC       msv4l2.lo
+  CC       theora.lo
+  CC       vp8.lo
+  CC       videoenc.lo
+  CC       videodec.lo
+  CC       h264dec.lo
+  CC       jpegwriter.lo
+videoenc.c: In function 'prepare':
+videoenc.c:238:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
+videoenc.c: In function 'enc_preprocess':
+videoenc.c:342:2: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+videoenc.c: In function 'process_frame':
+videoenc.c:791:2: warning: 'avcodec_encode_video' is deprecated (declared at /usr/include/libavcodec/avcodec.h:4272) [-Wdeprecated-declarations]
+  CC       x11video.lo
+videodec.c: In function 'dec_init':
+videodec.c:55:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
+videodec.c: In function 'dec_preprocess':
+videodec.c:136:4: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+videodec.c: In function 'parse_snow_header':
+videodec.c:226:4: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+jpegwriter.c: In function 'jpg_process':
+jpegwriter.c:93:4: warning: 'avcodec_alloc_context' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3423) [-Wdeprecated-declarations]
+jpegwriter.c:101:4: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+jpegwriter.c:127:4: warning: 'avcodec_encode_video' is deprecated (declared at /usr/include/libavcodec/avcodec.h:4272) [-Wdeprecated-declarations]
+h264dec.c: In function 'dec_open':
+h264dec.c:57:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
+h264dec.c:58:2: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+  CC       pixconv.lo
+  CC       sizeconv.lo
+  CC       msvideo.lo
+  CC       msvideo_neon.lo
+  CC       rfc3984.lo
+  CC       mire.lo
+  CC       extdisplay.lo
+  CC       layouts.lo
+  CC       nowebcam.lo
+  CC       videostream.lo
+nowebcam.c: In function 'jpeg2yuv':
+nowebcam.c:71:2: warning: 'avcodec_get_context_defaults' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3437) [-Wdeprecated-declarations]
+nowebcam.c:72:2: warning: 'avcodec_open' is deprecated (declared at /usr/include/libavcodec/avcodec.h:3569) [-Wdeprecated-declarations]
+  CXXLD    libmediastreamer.la
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizininden çıkılıyor
+make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/src' dizininden çıkılıyor
+Making all in build
+make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build' dizinine giriliyor
+Making all in win32native
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32native' dizinine giriliyor
+Making all in mediastream
+make[6]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32native/mediastream' dizinine giriliyor
+make[6]: `all' için hiçbir şey yapılmadı.
+make[6]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32native/mediastream' dizininden çıkılıyor
+make[6]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32native' dizinine giriliyor
+make[6]: `all-am' için hiçbir şey yapılmadı.
+make[6]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32native' dizininden çıkılıyor
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32native' dizininden çıkılıyor
+Making all in win32-novideo
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32-novideo' dizinine giriliyor
+make[5]: `all' için hiçbir şey yapılmadı.
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/win32-novideo' dizininden çıkılıyor
+Making all in wince
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/wince' dizinine giriliyor
+make[5]: `all' için hiçbir şey yapılmadı.
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/wince' dizininden çıkılıyor
+Making all in winmob
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/winmob' dizinine giriliyor
+make[5]: `all' için hiçbir şey yapılmadı.
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build/winmob' dizininden çıkılıyor
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build' dizinine giriliyor
+make[5]: `all-am' için hiçbir şey yapılmadı.
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build' dizininden çıkılıyor
+make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/build' dizininden çıkılıyor
+Making all in include
+make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include' dizinine giriliyor
+Making all in mediastreamer2
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include/mediastreamer2' dizinine giriliyor
+make[5]: `all' için hiçbir şey yapılmadı.
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include/mediastreamer2' dizininden çıkılıyor
+make[5]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include' dizinine giriliyor
+make[5]: `all-am' için hiçbir şey yapılmadı.
+make[5]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include' dizininden çıkılıyor
+make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/include' dizininden çıkılıyor
+Making all in tests
+make[4]:`/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/tests' dizinine giriliyor
+  CC       mediastream.o
+  CC       ring.o
+  CC       mtudiscover.o
+  CC       bench.o
+  CC       echo.o
+  CC       tones.o
+  CC       videodisplay.o
+  CC       test_x11window.o
+  CCLD     ring
+  CCLD     echo
+  CCLD     mtudiscover
+  CCLD     bench
+  CCLD     tones
+  CCLD     videodisplay
+  CCLD     test_x11window
+  OBJCLD   mediastream
+libtool: link: unable to infer tagged configuration
+libtool: link: specify a tag with `--tag'
+make[4]: *** [mediastream] Hata 1
+make[4]: *** Bitmemiş işler için bekliyor....
+make[4]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2/tests' dizininden çıkılıyor
+make[3]: *** [all-recursive] Hata 1
+make[3]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2' dizininden çıkılıyor
+make[2]: *** [all] Hata 2
+make[2]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2/mediastreamer2' dizininden çıkılıyor
+make[1]: *** [all-recursive] Hata 1
+make[1]: `/var/pisi/linphone-3.5.2-6/work/linphone-3.5.2' dizininden çıkılıyor
+make: *** [all] Hata 2
+DEBUG: "make -j5" dönüş değeri 2
+Traceback (most recent call last):
+  File "/home/anka/Desktop/2013/network/voip/linphone/actions.py", line 30, in build
+    autotools.make()
+  File "/usr/lib/pardus/pisi/actionsapi/autotools.py", line 104, in make
+    if system('make %s %s' % (get.makeJOBS(), parameters)):
+  File "/usr/lib/pardus/pisi/actionsapi/shelltools.py", line 255, in system
+    error(_("Command \"%s\" failed, return value was %d.") % (command, retValue))
+  File "/usr/lib/pardus/pisi/actionsapi/__init__.py", line 27, in error
+    raise Error(msg)
+pisi.actionsapi.Error: "make -j5" komutu başarısız oldu, dönüş değeri: 2 .
+Eylem betiği hatası oluştu.
+*** 1 hata, 0 uyarı
+Program sonlandırıldı.
+Genel yardım için lütfen 'pisi help' komutunu kullanınız.
+anka@Pardus-Anka linphone $ 

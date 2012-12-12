@@ -28,12 +28,16 @@
             <Dependency>libeXosip2-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
+            <Dependency>libXv-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libvpx-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">linphone-3.2.0-imagedir.patch</Patch>
             <Patch level="0">linphone-3.5.0-link.patch</Patch>
             <Patch level="0">linphone-3.5.2-ffmpeg0.11.patch</Patch>
-	  </Patches>
+	</Patches>
     </Source>
 
     <Package>
@@ -50,6 +54,9 @@
             <Dependency versionFrom="0.20.0">ortp</Dependency>
             <Dependency>libosip2</Dependency>
             <Dependency>libeXosip2</Dependency>
+            <Dependency>libXv</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>libsoup</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
