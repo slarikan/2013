@@ -14,11 +14,12 @@
         <IsA>library</IsA>
         <Summary>KDE4 PIM (Personal Information Managemant) applications</Summary>
         <Description>Contains KDE4 Personal Information Management applications. In package KMail (e-mail client), KNode (newsreader), and KOrganizer (organize journals, events, appointments), akregator (RSS feed aggregator), knotes (sticky notes for desktop) applications are included.</Description>
-        <Archive sha1sum="5f0786a85db599a7b566a5d02d19c55222a64bcc" type="tarxz">mirrors://kde/stable/4.9.3/src/kdepim-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="27e2bb229eb4e0c377d767979df73e8cdc0412b8" type="tarxz">mirrors://kde/unstable/4.9.90/src/kdepim-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="1.8.1">akonadi-devel</Dependency>
+            <Dependency versionFrom="4.9.90">nepomuk-widgets-devel</Dependency>  
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="1.8.80">akonadi-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="2.0.0">libassuan-devel</Dependency>
             <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
@@ -44,7 +45,7 @@
             <Patch level="1">akregator_feeds.patch</Patch>
             <Patch level="1">kmail_remove_charsets.diff</Patch>
             <Patch level="1">korgac_no_autostart.patch</Patch>
-            <Patch level="1">set-wordwrap-in-kmail-mailinglistproperties.patch</Patch>
+<!--             <Patch level="1">set-wordwrap-in-kmail-mailinglistproperties.patch</Patch> -->
             <!-- <Patch level="1">kmail-service-menu.patch</Patch> -->
         </Patches>
     </Source>
@@ -52,10 +53,11 @@
     <Package>
         <Name>kdepim</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.3">kdepim-runtime</Dependency>
-            <Dependency versionFrom="1.8.1">akonadi</Dependency>
+            <Dependency versionFrom="4.9.90">nepomuk-widgets</Dependency>  
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdepim-runtime</Dependency>
+            <Dependency versionFrom="1.8.80">akonadi</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency versionFrom="2.0.0">libassuan</Dependency>
             <Dependency versionFrom="2.7.5">soprano</Dependency>
@@ -90,6 +92,13 @@
     </Package>
 
     <History>
+        <Update release="52">
+            <Date>2012-12-07</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="51">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>

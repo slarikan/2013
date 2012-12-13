@@ -9,12 +9,11 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import kde4
 from pisi.actionsapi import get
 
-WorkDir = "%s-%s" % (get.srcNAME(), get.srcVERSION().replace("_", "-"))
 shelltools.export("HOME", get.workDIR())
 NoStrip=["/usr/share/icons"]
 
 def setup():
-    kde4.configure()
+    kde4.configure("-DCMAKE_SKIP_RPATH=ON")
 
 def build():
     kde4.make()
