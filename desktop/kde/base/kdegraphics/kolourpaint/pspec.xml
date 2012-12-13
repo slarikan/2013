@@ -13,9 +13,9 @@
         <IsA>app:gui</IsA>
         <Summary>An easy to use paint program</Summary>
         <Description>KolourPaint is a simple painting program to quickly create raster images. It is useful as a touch-up tool and simple image editing tasks.</Description>
-        <Archive sha1sum="245706ffc337a44b55f88010088a7531ac37c4fe" type="tarxz">mirrors://kde/stable/4.9.3/src/kolourpaint-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="0b0862b83a87805157413b07de79f6866f5c24e1" type="tarxz">mirrors://kde/unstable/4.9.90/src/kolourpaint-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kolourpaint</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
             <Dependency>qimageblitz</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-12-13</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
