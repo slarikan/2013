@@ -14,7 +14,7 @@
         <Description>This package contains all the core libraries for nepomuk.</Description>
         <Archive sha1sum="ca0ac3d97ba0356aeb3bb88190ce5861e4663fa1" type="tarxz">mirrors://kde/unstable/4.9.90/src/nepomuk-core-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
         </BuildDependencies>
     </Source>
