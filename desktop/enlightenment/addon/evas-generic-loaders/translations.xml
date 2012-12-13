@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>evas-generic-loaders</Name>
+        <Summary xml:lang="tr">GPL yükleyiciler için ekstra yükleyiciler ve  kararsız kütüphaneler</Summary>
+        <Description xml:lang="tr">evas-generic-loaders, E17 de kullanmak üzere, GPL yükleyiciler için ekstra yükleyiciler ve  kararsız kütüphaneler içerir.</Description>
+    </Source>
+</PISI>

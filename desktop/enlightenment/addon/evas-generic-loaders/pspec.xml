@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>evas-generic-loaders</Name>
+        <Homepage>http://trac.enlightenment.org/e/wiki/</Homepage>
+        <Packager>
+            <Name>Erdinç gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+	<PartOf>desktop.enlightenment.addon</PartOf>
+        <Summary>Extra loaders for GPL loaders and unstable libraries</Summary>
+        <Description>Extra loaders for GPL loaders and unstable libraries for Enlightenment.</Description>
+        <Archive sha1sum="2aeee66f9f6ce8a2a7daf0eebf75681f0e89730d" type="targz">http://download.enlightenment.org/releases/evas_generic_loaders-1.7.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+	    <Dependency versionFrom="0.17.0">enlightenment-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>evas-generic-loaders</Name>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.3">eina</Dependency>
+            <Dependency versionFrom="1.7.3">evas</Dependency>
+            <Dependency>gstreamer</Dependency>
+	    <Dependency versionFrom="0.17.0">enlightenment</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <!--<Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/enjoy</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>-->
+            <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="localedata">/usr/local/lib/evas</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-12-12</Date>
+            <Version>1.7.3</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
