@@ -12,11 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 Software Development Kit</Summary>
         <Description>kdesdk is a collection of applications and tools used by developers. In package, cervisia (CVS frontend), kompare (diff tool), lokalize (computer-aided translation system), umbrello (UML modeller and diagram tool), okteta (binary/hex editor) and kcachegrind (a browser for data produced by profiling tools e.g. cachegrind) applications are included.</Description>
-        <Archive sha1sum="ad45975bcda3a23fc7b77d93c7e7c0bd5f2f351c" type="tarxz">mirrors://kde/stable/4.9.3/src/kdesdk-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="8a1c676382df584513d8c6cbea1663b19db10455" type="tarxz">mirrors://kde/unstable/4.9.90/src/kdesdk-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kde-baseapps-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kde-baseapps-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>subversion</Dependency>
@@ -35,9 +35,9 @@
         <Icon>kdesdk</Icon>
         <RuntimeDependencies>
             <Dependency versionFrom="4.8.3">qt-sql-sqlite</Dependency>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kde-baseapps</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kde-baseapps</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs</Dependency>
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -52,7 +52,7 @@
         <Summary>Development files for kdesdk</Summary>
         <RuntimeDependencies>
             <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -60,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="62">
+            <Date>2012-12-07</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="61">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
