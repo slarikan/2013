@@ -4,13 +4,14 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
+from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import cmaketools
 
-WorkDir="slembcke-Chipmunk-Physics-fb7cf83"
-
 def setup():
-    cmaketools.configure()
+    cmaketools.configure('-DBUILD_DEMOS=OFF \
+                          -DINSTALL_STATIC=OFF \
+                          -DCMAKE_C_FLAGS="%s -ffast-math -fPIC -DCHIPMUNK_FFI"' % get.CFLAGS())
 
 def build():
     cmaketools.make()
