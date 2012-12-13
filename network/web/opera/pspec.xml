@@ -21,7 +21,6 @@
         <Name>opera</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency>kdelibs</Dependency>
             <Dependency>sun-jre</Dependency>
             <Dependency>flashplugin</Dependency>
             <Dependency>atk</Dependency>
