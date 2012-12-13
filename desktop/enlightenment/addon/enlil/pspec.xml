@@ -14,7 +14,7 @@
         <Summary>A library using the EFL which allows to manage a list of albums and photos for Enlightenment</Summary>
         <Description>Enlil is a library using the EFL which allows to manage a list of albums and photos.EET is used to create the database and ecore to manage events and file.
         flicrkcurl which is optionnal allows to synchronise a library with a flickr account</Description>
-        <Archive sha1sum="91de02e3d0b9bad8e1b7c43edcc3209a2fae42d9" type="targz">http://content.wuala.com/contents/erdinc/kern/e17/enlil-1.0.tar.gz</Archive>
+        <Archive sha1sum="91de02e3d0b9bad8e1b7c43edcc3209a2fae42d9" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/enlil-1.0.tar.gz</Archive>
         <BuildDependencies>
 	    <Dependency>git</Dependency>
             <Dependency versionFrom="1.7.0">eina-devel</Dependency>
