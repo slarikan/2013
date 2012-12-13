@@ -12,22 +12,22 @@
         <IsA>library</IsA>
         <Summary>Common plugin infrastructure for KDE image applications</Summary>
         <Description>Kipi (KDE Image Plugin Interface) is an effort to develop a common plugin structure (for Digikam, Gwenview, etc.). Its aim is to share image plugins among graphic applications.</Description>
-        <Archive sha1sum="0752fadb0757abb6f1954bb0cda407c074628cd8" type="tarxz">mirrors://kde/stable/4.9.3/src/libkipi-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="e512fb74bf63f3e09d632163fe246adf3720e6eb" type="tarxz">mirrors://kde/unstable/4.9.90/src/libkipi-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libkipi</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="executable">/usr/bin</Path>  
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/kde4/apps</Path>
-            <Path fileType="data">/usr/share/kde4/servicetypes</Path>
+            <Path fileType="data">/usr/share/kde4</Path>
         </Files>
     </Package>
 
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-12-13</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="9">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
