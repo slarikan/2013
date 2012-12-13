@@ -13,10 +13,10 @@
         <IsA>app:gui</IsA>
         <Summary>View disk usage information</Summary>
         <Description>Filelight allows you to quickly understand exactly where your diskspace is being used by graphically representing your file system as a set of concentric segmented-rings.</Description>
-        <Archive sha1sum="c339bf9918e4f8e3bd12f31a89262a9580e500d6" type="tarxz">mirrors://kde/stable/4.9.3/src/filelight-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="f2526023c2976d788bc0ae197f02ef7cad0a5e24" type="tarxz">mirrors://kde/unstable/4.9.90/src/filelight-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kde-runtime-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kde-runtime-devel</Dependency>
             <Dependency>desktop-file-utils</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>kdeutils-filelight</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kde-runtime</Dependency>
             <Dependency>desktop-file-utils</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="63">
+            <Date>2012-12-13</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="62">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
