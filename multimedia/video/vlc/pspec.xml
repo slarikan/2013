@@ -95,12 +95,14 @@
             <Dependency releaseFrom="6">libprojectM-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libbluray-devel</Dependency><!--bluray suppport-->
+            <Dependency>libopus-devel</Dependency>
+            <Dependency>enca-devel</Dependency>
+            <Dependency>mpc</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">link-vlc-cache-gen-with-c++.patch</Patch>
-            <Patch level="1">link-vlc-with-c++.patch</Patch>
-            <Patch level="1">020_all_check_headers_regexps.patch</Patch>
-        <Patch level="1">v4l-kfreebsd.patch</Patch>
+            <Patch level="1">vlc-1.1.6-lirc-fix-includes.patch</Patch>
+            <Patch level="0">vlc-2.0.4-fix-definition.patch</Patch>
+            <Patch level="1">vlc-dtv-fix-compilation-with-linux-3.7.patch</Patch>
          </Patches>
      </Source>
 
@@ -114,7 +116,7 @@
             <Dependency>minizip</Dependency>
             <Dependency>libXpm</Dependency>
             <Dependency versionFrom="4.6.2">qt</Dependency>
-            <Dependency versionFrom="2.0.2">vlc-libs</Dependency>
+            <Dependency versionFrom="2.0.4">vlc-libs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -157,7 +159,7 @@
         <Summary>Lua scripting for VLC</Summary>
         <RuntimeDependencies>
             <Dependency>lua</Dependency>
-            <Dependency versionFrom="2.0.2">vlc-libs</Dependency>
+            <Dependency versionFrom="2.0.4">vlc-libs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/vlc/lua</Path>
@@ -233,6 +235,9 @@
             <Dependency>zvbi</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libbluray</Dependency><!--bluray suppport-->
+            <Dependency>libopus</Dependency>
+            <Dependency>enca</Dependency>
+            <Dependency>mpc</Dependency>
         </RuntimeDependencies>
         <Conflicts>
             <Package releaseTo="58">vlc</Package>
@@ -249,7 +254,7 @@
         <Name>vlc-devel</Name>
         <Summary>Development files for vlc</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.0.3">vlc-libs</Dependency>
+            <Dependency versionFrom="2.0.4">vlc-libs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -258,6 +263,13 @@
     </Package>
 
     <History>
+        <Update release="64">
+            <Date>2012-12-13</Date>
+            <Version>2.0.4</Version>
+            <Comment>fix build for kernel 3.7</Comment>
+            <Name>anka-team</Name>
+            <Email>anka-team</Email>
+        </Update>
         <Update release="63">
             <Date>2012-11-13</Date>
             <Version>2.0.4</Version>
