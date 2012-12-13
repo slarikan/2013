@@ -9,8 +9,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "exalt"
-
 def setup():
     shelltools.system("./autogen.sh \
                         --disable-static \
