@@ -13,12 +13,12 @@
 	<PartOf>desktop.enlightenment.addon</PartOf>
         <Summary>Enlightenment video and media library</Summary>
         <Description>Emotion is a video and media object library designed to interface with Evas and Ecore to provide autonomous "video" and "audio" objects that can be moved, resized and positioned like any normal object, but instead they can play video and audio and can be controlled from a high-level control API allowing the programmer to quickly piece together a multi-media system with minimal work.</Description>
-        <Archive sha1sum="b9ca193bb6cab20cf16ef2bbbef9d5a30877c7dc" type="targz">http://download.enlightenment.org/releases/emotion-1.7.0.tar.gz</Archive>
+        <Archive sha1sum="9aebc9ee614e68b3ccb69e10f42ae2989d0d29a0" type="targz">http://download.enlightenment.org/releases/emotion-1.7.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.3">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.3">edje-devel</Dependency>
             <Dependency>xine-lib-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
         </BuildDependencies>
@@ -27,10 +27,10 @@
     <Package>
         <Name>emotion</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.0">evas</Dependency>
-            <Dependency versionFrom="1.7.0">ecore</Dependency>
-            <Dependency versionFrom="1.7.0">edje</Dependency>
+            <Dependency versionFrom="1.7.3">eina</Dependency>
+            <Dependency versionFrom="1.7.3">evas</Dependency>
+            <Dependency versionFrom="1.7.3">ecore</Dependency>
+            <Dependency versionFrom="1.7.3">edje</Dependency>
             <Dependency>xine-lib</Dependency>
             <Dependency>gstreamer</Dependency>
         </RuntimeDependencies>
@@ -47,9 +47,9 @@
         <Summary>Development files for emotion</Summary>
         <RuntimeDependencies>
             <Dependency release="current">emotion</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.3">ecore-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -59,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2012-12-12</Date>
+            <Version>1.7.3</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-10-10</Date>
             <Version>1.7.0</Version>
