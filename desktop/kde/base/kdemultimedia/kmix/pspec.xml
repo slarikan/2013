@@ -12,18 +12,18 @@
         <IsA>app:gui</IsA>
         <Summary>KMix: KDE Digital Mixer</Summary>
         <Description>KMix: KDE Digital Mixer</Description>
-        <Archive sha1sum="9eeb903eeaa464b4f15205b4a7c4c204e13a56d7" type="tarxz">mirrors://kde/stable/4.9.3/src/kmix-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="4c3dc6c3a36768ea987f953876a91c26e92fba06" type="tarxz">mirrors://kde/unstable/4.9.90/src/kmix-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kde-runtime-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kde-runtime-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kmix</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kde-runtime</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,6 +35,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-12-13</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="1">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
