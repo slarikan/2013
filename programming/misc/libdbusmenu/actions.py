@@ -13,6 +13,7 @@ from pisi.actionsapi import get
 import os
 
 shelltools.export("HOME", get.workDIR())
+shelltools.export("HAVE_VALGRIND_FALSE", "yes")
 
 def setup():
     for (path, dirs, files) in os.walk(get.workDIR()):
@@ -27,11 +28,26 @@ def setup():
                     else: 
                         new_file = new_file + line
                 open("%s/%s" % (path, file), "w").write(new_file)
-    autotools.autoreconf("-fvi")
-    #autotools.autoconf("-f")
-    autotools.configure()
+    
+    options = "--disable-static \
+               --disable-silent-rules \
+               --disable-scrollkeeper \
+               --disable-dumper \
+               --disable-tests \
+               --enable-introspection=yes"
+    
+    shelltools.makedirs("../gtk2-rebuild")
+    shelltools.system("cp -R * ../gtk2-rebuild &>/dev/null")
+
+    #autotools.autoreconf("-fvi")
+    autotools.configure("%s --with-gtk=3" % options)
+    shelltools.cd("../gtk2-rebuild")
+    #autotools.autoreconf("-fvi")
+    autotools.configure("%s --with-gtk=2" % options)
 
 def build():
+    autotools.make()
+    shelltools.cd("../gtk2-rebuild")
     autotools.make()
 
 """
@@ -45,5 +61,8 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "COPYING*", "README", "NEWS")
+
+    shelltools.cd("../gtk2-rebuild")
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.removeDir("/usr/share/gtk-doc")
