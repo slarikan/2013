@@ -13,12 +13,12 @@
         <IsA>app:gui</IsA>
         <Summary>Sound conversion application for linux</Summary>
         <Description>Soundconverter reads anything the GStreamer library can read and writes WAV, FLAC, MP3, AAC, and Ogg Vorbis files.</Description>
-        <Archive sha1sum="ca9b0f001af2ad045a78cb2c453d621033d0a8c7" type="tarxz">https://launchpad.net/soundconverter/trunk/2.0.3/+download/soundconverter-2.0.3.tar.xz</Archive>
+        <Archive sha1sum="c8af361bb6b5652e5e656edcda122537da25753b" type="tarxz">https://launchpadlibrarian.net/118801876/soundconverter-2.0.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome-python-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="0">soundconverter-tr.patch</Patch>
+<!--             <Patch level="0">soundconverter-tr.patch</Patch> -->
             <Patch level="0">soundconverter.desktop.patch</Patch>
         </Patches>
     </Source>
@@ -51,7 +51,14 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="11">
+            <Date>2012-13-12</Date>
+            <Version>2.0.4</Version>
+            <Comment>version bump</Comment>
+            <Name>M. Tayyip Yel</Name>
+            <Email>sananexx123@gmail.com</Email>
+        </Update>
+	<Update release="10">
             <Date>2012-08-27</Date>
             <Version>2.0.3</Version>
             <Comment>Version bump</Comment>
