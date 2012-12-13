@@ -27,8 +27,6 @@
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="config">/etc/</Path>
         </Files>
     </Package>
 
