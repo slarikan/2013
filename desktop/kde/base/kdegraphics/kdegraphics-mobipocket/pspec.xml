@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>A collection of plugins to handle mobipocket files</Summary>
         <Description>kdegraphics-mobipocket contains a collection of plugins to handle mobipocket files.</Description>
-        <Archive sha1sum="a7a5e63c8a4df1f079fb9381106df2f10b6f47ba" type="tarxz">mirrors://kde/stable/4.9.3/src/kdegraphics-mobipocket-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="e833fedf903a9bdc3e5a29e828bc7a5e51c725e0" type="tarxz">mirrors://kde/unstable/4.9.90/src/kdegraphics-mobipocket-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">okular-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">okular-devel</Dependency>
             <Dependency versionFrom="0.7.7">libstreamanalyzer-devel</Dependency>
             <Dependency>libkdcraw-devel</Dependency>
             <Dependency>libkexiv2-devel</Dependency>
@@ -25,8 +25,8 @@
     <Package>
         <Name>kdegraphics-mobipocket</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">okular</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">okular</Dependency>
             <Dependency versionFrom="0.7.7">libstreamanalyzer</Dependency>
             <Dependency>libkdcraw</Dependency>
             <Dependency>libkexiv2</Dependency>
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="7">
+            <Date>2012-12-13</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="6">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>

@@ -19,6 +19,7 @@
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>mate-common</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>mate-desktop-devel</Dependency>
 	    <Dependency>mate-corba-devel</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>mate-menus-devel</Dependency>
@@ -52,6 +53,7 @@
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>mate-common</Dependency>
 	    <Dependency>mate-conf</Dependency>
+	    <Dependency>mate-desktop</Dependency>
 	    <Dependency>mate-corba</Dependency>
 	    <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>mate-menus</Dependency>
