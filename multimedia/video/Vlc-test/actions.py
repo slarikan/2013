@@ -23,7 +23,20 @@ def setup():
     shelltools.export("AUTOPOINT", "true")
     shelltools.system("./bootstrap")
     autotools.autoreconf("-vfi")
-    autotools.rawConfigure("--enable-aa \
+    autotools.rawConfigure("--prefix=/usr \
+                            --sysconfdir=/etc \
+                            --libdir=/usr/lib \
+                            --disable-rpath \
+                            --enable-oss \
+                            --enable-nls \
+                            --enable-pvr \
+                            --enable-xosd \
+                            --enable-vcdx \
+                            --enable-upnp \
+                            --enable-opus \
+                            --enable-sftp \
+                            LUAC=luac5.1 \
+                            --enable-aa \
                             --enable-bluray \
                             --enable-a52 \
                             --enable-alsa \
