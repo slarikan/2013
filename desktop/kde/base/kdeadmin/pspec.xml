@@ -12,29 +12,29 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 Administration Applications</Summary>
         <Description>kdeadmin contains administration related applications of KDE4. In this package, kcron (Task Scheduler module in System Settings), ksystemlog (system log viewer) and system-config-printer-kde (printer configuration application) applications are included.</Description>
-        <Archive sha1sum="3fa7f1c3018f156b6185a806b66364c8daf7547c" type="tarxz">mirrors://kde/stable/4.9.3/src/kdeadmin-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="cc311e2559a7b5b742131f640fd33f9f787d55f9" type="tarxz">mirrors://kde/unstable/4.9.90/src/kdeadmin-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs-devel</Dependency>
             <Dependency releaseFrom="30">system-config-printer</Dependency>
             <Dependency>python-cups</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">kdeadmin-4.7.1-printing.patch</Patch>
+<!--             <Patch level="1">kdeadmin-4.7.1-printing.patch</Patch> -->
 
             <!-- FIXME: is this patch really needed? -->
             <!--<Patch level="1">kdeadmin-4.6.2-kcmprinter_root_privs.patch</Patch>-->
 
             <!-- FIXME: Dont translate localhost in the ui code -->
-            <Patch level="1">add-cups-webui-button.patch</Patch>
+<!--             <Patch level="1">add-cups-webui-button.patch</Patch> -->
         </Patches>
     </Source>
 
     <Package>
         <Name>kdeadmin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">kdepimlibs</Dependency>
             <!-- needed by printer configuration GUI system-config-printer-kde -->
             <Dependency releaseFrom="30">system-config-printer</Dependency>
             <Dependency>python-cups</Dependency>
@@ -51,6 +51,13 @@
     </Package>
 
     <History>
+        <Update release="66">
+            <Date>2012-12-07</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="65">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
