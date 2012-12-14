@@ -1,8 +1,0 @@
-<?xml version="1.0" ?>
-<PISI>
-    <Source>
-        <Name>printer-applet</Name>
-        <Summary xml:lang="tr">A system tray icon for managing print jobs</Summary>
-        <Description xml:lang="tr">Printer Applet is a system tray utility that shows current print jobs, printer warnings and errors and displays when newly plugged in printers has been auto-configured.</Description>
-    </Source>
-</PISI>
