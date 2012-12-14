@@ -24,7 +24,7 @@ def setup():
                          --enable-ecore-imf \
                          --enable-ecore-x \
                          --enable-ecore-fb \
-                         --enable-ecore-directfb \
+                         --disable-ecore-directfb \
                          --enable-ecore-evas-fb \
                          --enable-ecore-evas-directfb \
                          --enable-ecore-evas-software-buffer \
