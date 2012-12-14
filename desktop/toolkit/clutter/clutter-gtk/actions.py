@@ -31,4 +31,4 @@ def install():
         if i.endswith(".png") or i.endswith(".c"):
             pisitools.insinto("/%s/%s/examples/" % (get.docDIR(), get.srcNAME()), "examples/%s" % i)
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "README*", "NEWS", "COPYING")
+    #pisitools.dodoc("AUTHORS", "ChangeLog", "README*", "NEWS", "COPYING")
