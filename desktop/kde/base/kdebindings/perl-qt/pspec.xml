@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>Perl bindings for Qt4</Summary>
         <Description>perl-qt is the Perl bindings for Qt4.</Description>
-        <Archive sha1sum="b41f57df71d7001b9fb079b9eb64fe7b5e08690c" type="tarxz">mirrors://kde/stable/4.9.3/src/perlqt-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="6bace08bcb090a225966d8fdeaec418e7f5ec022" type="tarxz">mirrors://kde/unstable/4.9.90/src/perlqt-4.9.90.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.9.3">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.9.3">smoke-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.90">smoke-gen-devel</Dependency>
+            <Dependency versionFrom="4.9.90">smoke-qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,8 +25,8 @@
         <IsA>app:console</IsA>
         <RuntimeDependencies>
             <Dependency versionFrom="4.8.2">qt</Dependency>
-            <Dependency versionFrom="4.9.3">smoke-gen</Dependency>
-            <Dependency versionFrom="4.9.3">smoke-qt</Dependency>
+            <Dependency versionFrom="4.9.90">smoke-gen</Dependency>
+            <Dependency versionFrom="4.9.90">smoke-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/puic4</Path>
@@ -49,6 +49,13 @@
     </Package>
 
     <History>
+        <Update release="69">
+            <Date>2012-12-14</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="68">
             <Date>2012-11-12</Date>
             <Version>4.9.3</Version>
