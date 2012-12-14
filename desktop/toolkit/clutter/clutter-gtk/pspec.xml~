@@ -48,6 +48,7 @@
         <Name>clutter-gtk-devel</Name>
         <RuntimeDependencies>
             <Dependency>clutter-gtk</Dependency>
+            <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
