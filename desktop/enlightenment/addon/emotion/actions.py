@@ -9,10 +9,16 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
+shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
+
 def setup():
     shelltools.touch("README")
     autotools.autoreconf("-fi")
     autotools.configure("--disable-static\
+                         --enable-generic \
+                         --disable-generic-vlc \
+                         --enable-xine \
                          --enable-gstreamer")
 
 def build():

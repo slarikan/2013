@@ -9,6 +9,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
+shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
+
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
 
@@ -24,7 +27,7 @@ def setup():
                          --enable-ecore-imf \
                          --enable-ecore-x \
                          --enable-ecore-fb \
-                         --enable-ecore-directfb \
+                         --disable-ecore-directfb \
                          --enable-ecore-evas-fb \
                          --enable-ecore-evas-directfb \
                          --enable-ecore-evas-software-buffer \
@@ -37,6 +40,7 @@ def setup():
                          --enable-curl \
                          --disable-gnutls \
                          --with-x")
+                         #--enable-ecore-directfb causes error for edje build
 
 def build():
     autotools.make()
