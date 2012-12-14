@@ -17,9 +17,11 @@ def setup():
                          --enable-shared \
                          --enable-pam \
                          --disable-rpath \
-                         --disable-illume \
-                         --disable-illume2 \
-                         --with-x")
+                         --disable-device-hal \
+                         --disable-mount-hal \
+                         --enable-mount-udisks \
+                         --enable-mount-eeze \
+                         --disable-illume2")
 
 def build():
     autotools.make()

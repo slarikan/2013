@@ -11,7 +11,9 @@ from pisi.actionsapi import get
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
-                         --enable-ebluez")
+                         --enable-ebluez \
+                         --enable-eukit \
+                         --disable-ehal")
 
 def build():
     autotools.make()
