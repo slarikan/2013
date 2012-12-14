@@ -48,6 +48,7 @@
 	  <Dependency>mate-icon-theme</Dependency>
 	  <Dependency>icon-naming-utils</Dependency>
 	  <Dependency>polkit</Dependency>
+	  <Dependency>libcanberra</Dependency>
       </RuntimeDependencies>
       <Files>
 	 <Path fileType="executable">/usr/bin</Path>
