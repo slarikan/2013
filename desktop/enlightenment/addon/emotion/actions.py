@@ -16,6 +16,9 @@ def setup():
     shelltools.touch("README")
     autotools.autoreconf("-fi")
     autotools.configure("--disable-static\
+                         --enable-generic \
+                         --disable-generic-vlc \
+                         --enable-xine \
                          --enable-gstreamer")
 
 def build():
