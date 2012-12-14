@@ -27,7 +27,7 @@
         <Name>xcb-util-image-devel</Name>
         <Summary>Development files for xcb-util</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">xcb-util</Dependency>
+            <Dependency release="current">xcb-util-image</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -45,7 +45,7 @@
             <Dependency>libxcb-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
-            <Dependency release="current">xcb-util</Dependency>
+            <Dependency>xcb-util</Dependency>
             <Dependency>libxcb-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
