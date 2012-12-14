@@ -25,8 +25,8 @@ def install():
     autotools.install()
 
     # Create symlinks
-    for cc in ("gcc", "g++", "cc", "c++", "clang", "clang++"):
+    for cc in ("gcc", "g++", "cc", "c++"): # , "clang" , "clang++"
         pisitools.dosym("../../../bin/ccache", "/usr/lib/ccache/bin/%s" % cc)
-        pisitools.dosym("../../../bin/ccache", "/usr/lib/ccache/bin/%s-%s" % (get.HOST(), cc))
+        #pisitools.dosym("../../../bin/ccache", "/usr/lib/ccache/bin/%s-%s" % (get.HOST(), cc))
 
-    pisitools.dodoc("LICENSE.txt", "README.txt")
+    #pisitools.dodoc("LICENSE.txt", "README.txt")
