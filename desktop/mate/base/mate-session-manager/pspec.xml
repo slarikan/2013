@@ -29,6 +29,7 @@
 	    <Dependency>mate-icon-theme</Dependency>
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>polkit-devel</Dependency>
+	    <Dependency>libcanberra-devel</Dependency>
 	    <Dependency>libcanberra</Dependency>
 	</BuildDependencies>
     </Source>
