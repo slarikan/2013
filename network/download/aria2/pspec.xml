@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>A download utility with resuming and segmented downloading</Summary>
         <Description>aria2 is a download utility with resuming and segmented downloading. Supported protocols are HTTP, HTTPS, FTP and BitTorrent. It also supports Metalink version 3.0.</Description>
-        <Archive sha1sum="67b70d3492b0edb3af314a253540b921e1bc0c4e" type="tarbz2">mirrors://sourceforge/aria2/stable/latest/aria2-1.15.1.tar.bz2</Archive>
+        <Archive sha1sum="ef7bc1a0fc90f58cc767f240eb49d099c02b93d9" type="tarbz2">mirrors://sourceforge/project/aria2/stable/aria2-1.16.0/aria2-1.16.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gnutls-devel</Dependency>
             <Dependency>c-ares-devel</Dependency>
@@ -39,7 +39,14 @@
     </Package>
 
     <History>
-        <Update release="40">
+        <Update release="41">
+            <Date>2012-12-14</Date>
+            <Version>1.16.0</Version>
+            <Comment>version bump</Comment>
+            <Name>M. Tayyip Yel</Name>
+            <Email>sananexx123@gmail.com</Email>
+        </Update>
+	<Update release="40">
             <Date>2012-09-01</Date>
             <Version>1.15.1</Version>
             <Comment>v.bump</Comment>
