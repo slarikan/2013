@@ -12,7 +12,8 @@ from pisi.actionsapi import get
 WorkDir="enjoy"
 
 def setup():
-    shelltools.system("./autogen.sh --disable-static")
+    autotools.autoreconf("-fiv")
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()
