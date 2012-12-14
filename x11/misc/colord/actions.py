@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+#
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/copyleft/gpl.txt
 
@@ -11,15 +12,14 @@ from pisi.actionsapi import pisitools
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    autotools.configure("--prefix=/usr \
-			 --disable-examples \
-			 --disable-static \
-			 --enable-polkit \
-			 --disable-volume-search \
-			 --with-daemon-user=colord \
-			 --enable-introspection \
-			 --enable-vala \
-			 --libexecdir=/usr/libexec ")
+    autotools.configure("--disable-examples \
+                         --disable-static \
+                         --enable-polkit \
+                         --disable-volume-search \
+                         --with-daemon-user=colord \
+                         --enable-introspection \
+                         --enable-vala \
+                         --enable-sane")
 
 def build():
     autotools.make()
