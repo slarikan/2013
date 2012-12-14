@@ -17,7 +17,7 @@ def setup():
     # http://trac.enlightenment.org/e/changeset/51691/trunk/evas/README.in
     autotools.configure("--enable-image-loader-generic \
                          --enable-software-xlib \
-                         --disable-gl-xlib \
+                         --enable-gl-xlib \
                          --disable-gl-xcb \
                          --disable-static")
 
