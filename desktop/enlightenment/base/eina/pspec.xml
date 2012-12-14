@@ -15,9 +15,9 @@
         <Description>Eina is a multi-platform library that provides optimized data types and a few tools that could be used for projects.</Description>
         <Archive sha1sum="b668b23cd0f88b0857a7b140eca645783b770108" type="targz">http://download.enlightenment.org/releases/eina-1.7.3.tar.gz</Archive>
         <BuildDependencies>
-	    <Dependency>glibc</Dependency>
+        <Dependency>glibc</Dependency>
             <Dependency>doxygen</Dependency>
-	    <Dependency>valgrind</Dependency>
+            <Dependency>valgrind</Dependency>
         </BuildDependencies>
     </Source>
 

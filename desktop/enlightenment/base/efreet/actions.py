@@ -7,11 +7,15 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
+from pisi.actionsapi import shelltools
+
+shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
+shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
     autotools.autoreconf("-vfi")
-    autotools.configure("--disable-static\
-			--enable-icon-cache")
+    autotools.configure("--disable-static \
+                         --enable-icon-cache")
 
 def build():
     autotools.make()
