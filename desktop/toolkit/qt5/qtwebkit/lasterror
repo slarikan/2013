@@ -1,0 +1,5 @@
+Unable to determine current SVN revision in /var/pisi/qt-webkit-5.0.0-1/work/q at /var/pisi/qt-webkit-5.0.0-1/work/q/Tools/Scripts/VCSUtils.pm line 394.
+/var/pisi/qt-webkit-5.0.0-1/work/q/WebKitBuild/Release/lib/libQtWebKit.so: undefined reference to `XRenderQueryExtension'
+/var/pisi/qt-webkit-5.0.0-1/work/q/WebKitBuild/Release/lib/libQtWebKit.so: undefined reference to `XRenderFindVisualFormat'
+Sandbox violation result:
+mkdir (/usr/lib/qt4/plugins/webkit -> /usr/lib/qt4/plugins/webkit)
