@@ -16,9 +16,7 @@ from pisi.actionsapi import get
 def setup():
     # autotools.configure("--enable-introspection")
     autotools.autoreconf("-fi")
-    autotools.configure("--disable-introspection \
-                        --with-json=system \
-                        --enable-shared ")
+    autotools.configure("--with-json=system --enable-introspection --enable-shared ")
 
 def build():
     shelltools.export("HOME", "%s" % get.workDIR())

@@ -16,8 +16,8 @@ def setup():
     # guess we should update to new autoconf
     shelltools.export("HOME", "%s" %get.workDIR())
     shelltools.system("gtkdocize")
-    autotools.autoreconf("-fi")
-    autotools.configure()
+    #autotools.autoreconf("-fi")
+    #autotools.configure("--disable-introspection")
 
 def build():
     shelltools.export("HOME", "%s" %get.workDIR())

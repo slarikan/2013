@@ -18,7 +18,7 @@
         <Archive sha1sum="3099160cc1d69631302188be93b4e6a4656ec2fa" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/clutter-gtk/1.4/clutter-gtk-1.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>clutter</Dependency>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
             <!-- gir is slowly merging in, lets see what will happen and if it is necessary
             <Dependency>gobject-introspection</Dependency>
@@ -38,7 +38,6 @@
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc/clutter-gtk</Path>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
