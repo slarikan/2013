@@ -3,6 +3,8 @@
     <Source>
         <Name>opera</Name>
         <Summary xml:lang="tr">Opera internet tarayıcısı</Summary>
+        <Summary xml:lang="pl">Przeglądarka internetowa Opera</Summary>
         <Description xml:lang="tr">Opera, standartlarla uyumlu, grafik arayüzlü bir internet tarayıcısıdır.</Description>
+        <Description xml:lang="pl">Opera - wieloplatformowa przeglądarka internetowa cechująca się szybkim przeglądaniem i wyświetlaniem stron.</Description>
     </Source>
 </PISI>

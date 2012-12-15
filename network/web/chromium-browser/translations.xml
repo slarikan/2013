@@ -3,6 +3,8 @@
     <Source>
         <Name>chromium-browser</Name>
         <Summary xml:lang="tr">Webkit tabanlı ağ tarayıcı</Summary>
+        <Summary xml:lang="pl">Otwartoźródłowa przeglądarka internetowa Chromium firmy Google</Summary>
         <Description xml:lang="tr">Chromium, açık kaynak kodlu Webkit tabanlı bir ağ tarayıcıdır.</Description>
+        <Description xml:lang="pl">Chromium jest otwartoźródłowym projektem, stawiającym sobie za cel zbudowanie bezpieczniejszej, szybszej i stabilniejszej przeglądarki dla wszystkich użytkowników Internetu.</Description>
     </Source>
 </PISI>
