@@ -16,6 +16,7 @@
             <Dependency versionFrom="4.8.3">qt-webkit-devel</Dependency>
             <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.9.90">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdepim-runtime</Dependency>    
             <Dependency versionFrom="4.9.90">kactivities-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <!-- Needed by calendar and akonadi dataengines -->
@@ -51,7 +52,9 @@
             <Dependency>libXres-devel</Dependency>
             <Dependency>libdbusmenu-qt-devel</Dependency>
             <Dependency>libxkbfile-devel</Dependency>
+            <Dependency>libxklavier-devel</Dependency>    
             <Dependency versionFrom="7.10.2">mesa-devel</Dependency>
+            <Dependency versionFrom="7.10.2">mesa-glu-devel</Dependency>    
             <Dependency>cln-devel</Dependency>
             <Dependency>libqalculate-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -225,7 +228,9 @@
             <Dependency>libXtst</Dependency>
             <Dependency>libdbusmenu-qt</Dependency>
             <Dependency>libxkbfile</Dependency>
+            <Dependency>libxklavier</Dependency>    
             <Dependency versionFrom="7.10.2">mesa</Dependency>
+            <Dependency versionFrom="7.10.2">mesa-glu</Dependency>    
             <Dependency>cln</Dependency>
             <Dependency>libqalculate</Dependency>
             <Dependency>freetype</Dependency>
