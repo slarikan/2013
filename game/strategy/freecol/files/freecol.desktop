@@ -5,6 +5,7 @@ Encoding=UTF-8
 Name=Freecol
 Name[tr]=Freecol
 GenericName=Strategy Game
+GenericName[pl]=Gra strategiczna
 GenericName[tr]=Strateji Oyunu
 Icon=freecol
 Exec=freecol
