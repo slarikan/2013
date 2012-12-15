@@ -27,6 +27,7 @@ def setup():
 			 --enable-mini-commander \
 			 --enable-frequency-selector \
 			 --enable-ipv6 \
+			 --without-hal \
 			 --disable-schemas-install")
 
 def build():
