@@ -62,6 +62,8 @@
         <Summary>Development files for sip</Summary>
         <RuntimeDependencies>
             <Dependency release="current">sip</Dependency>
+            <Dependency release="current">python-sip</Dependency>
+            <Dependency release="current">python3-sip</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
