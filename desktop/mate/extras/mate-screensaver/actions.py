@@ -14,9 +14,11 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     shelltools.system("./autogen.sh")
-    autotools.configure("--prefix=/usr \
-                        --disable-scrollkeeper \
-                        --disable-schemas-install")
+    autotools.configure("--enable-locking \
+			 --with-xf86gamma-ext \
+			 --with-kbd-layout-indicator \
+			 --with-xscreensaverdir=/usr/share/xscreensaver/config \
+			 --with-xscreensaverhackdir=/usr/lib/misc/xscreensaver")
 
 def build():
     autotools.make()
