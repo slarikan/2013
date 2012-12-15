@@ -12,8 +12,8 @@
         <IsA>library</IsA>
         <Summary>Adobe Flash Player</Summary>
         <Description>Adobe (Macromedia) Flash Player is an application to present interactive (and possibly multimedia-containing) content created using Adobe Flash.</Description>
-        <Archive sha1sum="2e9c46d507e28d7eb6bac187e9a116bb9851ad74" type="targz" target="i686">https://github.com/downloads/circass/pisi-work/flashplugin-11.2.202.251-i386.tar.gz</Archive>
-        <Archive sha1sum="bb301219b936320d7abeb1958f42baf75a8c7c0a" type="targz" target="x86_64">https://github.com/downloads/circass/pisi-work/flashplugin-11.2.202.251-x86_64.tar.gz</Archive>
+        <Archive sha1sum="e97adff1c49d6eaa7c4a550415b539c408a7d251" type="tarbz2" target="i686">http://content.wuala.com/contents/erdinc/kern/flashplayer/flashplugin-11.2.202.258-i386.tar.bz2</Archive>
+        <Archive sha1sum="51dc5306b8066a1816d66f321982376f95d41d1c" type="tarbz2" target="x86_64">/home/anka/Desktop/2013/network/plugin/flashplugin/flashplugin-11.2.202.258-x86_64.tar.bz2</Archive>
     </Source>
 
     <Package>
@@ -39,6 +39,13 @@
     </Package>
 
     <History>
+        <Update release="54" type="security">
+            <Date>2012-12-17</Date>
+            <Version>11.2.202.258</Version>
+            <Comment>Security fix 11.2.202.251</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="53" type="security">
             <Date>2012-11-17</Date>
             <Version>11.2.202.251</Version>
