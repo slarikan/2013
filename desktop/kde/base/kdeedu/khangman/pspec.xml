@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>KHangMan is a game for kids based on the well-known hangman game</Summary>
         <Description>KHangMan is a game based on the well-known hangman game. It is aimed at children aged six and over. The game has several categories of words to play with, for example: Animals (animals words) and three difficulty categories: Easy, Medium and Hard. A word is picked at random, the letters are hidden, and you must guess the word by trying one letter after another. Each time you guess a wrong letter, part of a picture of a hangman is drawn. You must guess the word before being hanged! You have 10 tries.</Description>
-        <Archive sha1sum="75f08151c66a14adee3f5a2494439aba12e1dd66" type="tarxz">mirrors://kde/stable/4.9.3/src/khangman-4.9.3.tar.xz</Archive>
+        <Archive sha1sum="03b1eb8988745cc822fc53b5066b3bf74d866567" type="tarxz">mirrors://kde/unstable/4.9.90/src/khangman-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">libkdeedu-devel</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.90">libkdeedu-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,8 +23,8 @@
     <Package>
         <Name>khangman</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.3">libkdeedu</Dependency>
+            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.90">libkdeedu</Dependency>
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -49,6 +49,13 @@
     </Package>    
 
     <History>
+        <Update release="10">
+            <Date>2012-12-15</Date>
+            <Version>4.9.90</Version>
+            <Comment>Version bump to 4.9.90</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="9">
             <Date>2012-11-10</Date>
             <Version>4.9.3</Version>
