@@ -11,6 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+
 def setup():
     shelltools.sym("makefiles/configure.in", "configure.in")
     shelltools.sym("makefiles/Makefile.am", "Makefile.am")
@@ -24,6 +25,14 @@ def setup():
                          --with-lcms \
                          --disable-static \
                          --disable-dependency-tracking")
+
+    if get.buildTYPE() == "emul32":
+        options = " --libdir=/usr/lib32 \
+                    --with-jpeg \
+                    --disable-static \
+                    --disable-dependency-tracking"
+        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
+        autotools.configure(options)
 
 def build():
     autotools.make()
