@@ -13,10 +13,10 @@
         <IsA>library</IsA>
         <Summary>A set of Python 2.x bindings for the Qt 4.x Toolkit</Summary>
         <Description>Qt is a set of C++ libraries and development tools that includes platform independent abstractions for graphical user interfaces, networking, threads, Unicode, regular expressions, SQL databases, SVG, OpenGL, XML, and user and application settings. PyQt implements 440 of these classes as a set of Python modules.</Description>
-        <Archive sha1sum="1f0d10fff6bcd6008a980589fd889ccdbc8eb1c8" type="targz">http://downloads.sourceforge.net/project/pyqt/PyQt4/PyQt-4.9.5/PyQt-x11-gpl-4.9.5.tar.gz</Archive>
+        <Archive sha1sum="83e649a39643ffc96741bca70177e9c73789e54d" type="targz">mirrors://sourceforge/pyqt/PyQt-x11-gpl-4.9.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
-            <Dependency versionFrom="4.13.2">sip-devel</Dependency>
+            <Dependency versionFrom="4.14">sip-devel</Dependency>
             <Dependency versionFrom="4.8.1">qt-webkit</Dependency>
             <Dependency>python3</Dependency>
         </BuildDependencies>
@@ -36,7 +36,7 @@
             <Dependency release="current">python3-qt</Dependency>
             <Dependency release="current">python3-qt-webkit</Dependency>
             <Dependency release="current">python3-qt-phonon</Dependency>
-            <Dependency versionFrom="4.13.2">sip-devel</Dependency>
+            <Dependency versionFrom="4.14">sip-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/sip</Path>
@@ -48,7 +48,7 @@
         <Summary>Common files shared between python-qt and python3-qt</Summary>
         <RuntimeDependencies>
             <Dependency versionFrom="4.8.1">qt</Dependency>
-            <Dependency versionFrom="4.13.2">sip</Dependency>
+            <Dependency versionFrom="4.14">sip</Dependency>
         </RuntimeDependencies>
          <Conflicts>
             <Package releaseTo="60">python-qt-devel</Package>
@@ -69,7 +69,7 @@
         <RuntimeDependencies>
             <Dependency release="current">python-qt-common</Dependency>
             <Dependency versionFrom="4.8.1">qt</Dependency>
-            <Dependency versionFrom="4.13.2">sip</Dependency>
+            <Dependency versionFrom="4.14">sip</Dependency>
         </RuntimeDependencies>
         <Conflicts>
             <Package releaseTo="60">python-qt-devel</Package>
@@ -86,7 +86,7 @@
         <RuntimeDependencies>
             <Dependency release="current">python-qt-common</Dependency>
             <Dependency versionFrom="4.8.1">qt</Dependency>
-            <Dependency versionFrom="4.13.2">python3-sip</Dependency>
+            <Dependency versionFrom="4.14">python3-sip</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/pyuic4-python3</Path>
@@ -156,6 +156,13 @@
     </Package>
 
     <History>
+        <Update release="62">
+            <Date>2012-12-15</Date>
+            <Version>4.9.6</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
       <Update release="61">
             <Date>2012-11-10</Date>
             <Version>4.9.5</Version>
