@@ -39,9 +39,8 @@ def setup():
     shelltools.export("CXXFLAGS", filteredCXXFLAGS)"""
 
     #-no-pch makes build ccache-friendly
-    autotools.rawConfigure("-no-pch \
+    autotools.rawConfigure("-pch \
                             -v \
-                            -qt-pcre \
                             -fast \
                             -glib \
                             -no-sql-sqlite2 \
@@ -58,6 +57,7 @@ def setup():
                             -I/usr/include/firebird/ \
                             -I/usr/include/postgresql/server/ \
                             -release \
+                            -icu \
                             -no-separate-debug-info \
                             -no-rpath \
                             -openssl-linked \
@@ -99,9 +99,9 @@ def install():
     # Fix all occurances of WorkDir in pc files
     #pisitools.dosed("%s%s/pkgconfig/*.pc" % (get.installDIR(), qt4.libdir), "%s/qt-x11-opensource-src-%s" % (get.workDIR(), get.srcVERSION()), qt4.prefix)
 
-    mkspecPath = "%s/mkspecs" % qtbase
+    mkspecPath = "/usr/share/qt/mkspecs"
 
-    for root, dirs, files in os.walk("%s%s" % (get.installDIR(), qtbase)):
+    for root, dirs, files in os.walk("%s/usr" % get.installDIR()):
         # Remove unnecessary spec files..
         if root.endswith(mkspecPath):
             for dir in dirs:
