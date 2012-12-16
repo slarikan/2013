@@ -14,9 +14,9 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     shelltools.system("./autogen.sh")
-    autotools.configure("--prefix=/usr \
-                        --disable-scrollkeeper \
-                        --disable-schemas-install")
+    autotools.configure("--enable-introspection=yes \
+			 --disable-schemas-compile \
+			 --disable-scrollkeeper")
 
 def build():
     autotools.make()

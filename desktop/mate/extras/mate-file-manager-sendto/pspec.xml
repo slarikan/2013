@@ -2,56 +2,63 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-file-manager-sendto</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
-        <Icon>mate-conf-editor</Icon>
-        <PartOf>desktop.mate</PartOf>
-        <IsA>library</IsA>
-        <Summary>Mate Configuration System</Summary>
-        <Description>mate-conf-editor allows you to browse and modify MateConf configuration.</Description>
-        <Archive sha1sum="23b45bbb172f481ae503984e12604bd3eb845844" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-conf-editor-1.4.0.tar.xz</Archive>
+        <License>GPLv3.0</License>
+        <Icon>mate-file-manager-sendto</Icon>
+        <PartOf>desktop.mate.extras</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>caja-sendto is a fork of nautilus-sendto</Summary>
+        <Description>mate-file-manager-sendto, Caja extension for sending files to locations.</Description>
+        <Archive sha1sum="e23aa52a2731a0133017c1a2e52ebd5c5836dbdf" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-sendto-1.5.0.tar.xz</Archive>
 	<BuildDependencies>
-	    <Dependency>dbus-glib-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>gettext-devel</Dependency>
-	    <Dependency>rarian-devel</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>mate-conf-devel</Dependency>
+	    <Dependency>mate-file-manager-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
     <Package>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-file-manager-sendto</Name>
 	<RuntimeDependencies>
-	    <Dependency>dbus-glib</Dependency>
-            <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>gettext</Dependency>
-	    <Dependency>rarian</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>mate-conf</Dependency>
+	    <Dependency>mate-file-manager</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
 	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="config">/etc/</Path>
+	    <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>mate-file-manager-sendto-devel</Name>
+	<Summary>mate-file-manager-sendto için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency>mate-file-manager</Dependency>
+	    <Dependency>mate-file-manager-sendto</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
-      <Update release="4">
-            <Date>2012-08-22</Date>
-            <Version>1.4.0</Version>
-            <Comment>v.bump</Comment>
+      <Update release="2">
+            <Date>2012-12-16</Date>
+            <Version>1.5.0</Version>
+            <Comment>Güncellendi.</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+      <Update release="1">
+            <Date>2012-12-15</Date>
+            <Version>1.4.0</Version>
+            <Comment>İlk Sürüm</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
-

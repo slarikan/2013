@@ -15,13 +15,29 @@ shelltools.export("HOME", get.workDIR())
 def setup():
     shelltools.system("./autogen.sh")
     autotools.configure("--prefix=/usr \
-                        --disable-scrollkeeper \
-                        --disable-schemas-install")
+			 --sysconfdir=/etc \
+			 --localstatedir=/var \
+			 --libexecdir=/usr/lib/mate-document-viewer \
+			 --disable-static \
+			 --enable-caja \
+			 --enable-pdf \
+			 --enable-tiff \
+			 --enable-djvu \
+			 --enable-dvi \
+			 --enable-xps \
+			 --enable-t1lib \
+			 --enable-comics \
+			 --enable-pixbuf \
+			 --enable-impress \
+			 --disable-scrollkeeper \
+			 --enable-introspection \
+			 --disable-schemas-compile \
+			 --disable-schemas-install")
 
 def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    autotools.rawInstall("MATECONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1" "DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("README", "NEWS", "ChangeLog", "AUTHORS", "COPYING")

@@ -2,56 +2,77 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-image-viewer</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+	    <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
-        <Icon>mate-conf-editor</Icon>
-        <PartOf>desktop.mate</PartOf>
-        <IsA>library</IsA>
-        <Summary>Mate Configuration System</Summary>
-        <Description>mate-conf-editor allows you to browse and modify MateConf configuration.</Description>
-        <Archive sha1sum="23b45bbb172f481ae503984e12604bd3eb845844" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-conf-editor-1.4.0.tar.xz</Archive>
+        <License>GPLv3.0</License>
+        <Icon>mate-image-viewer</Icon>
+        <PartOf>desktop.mate.extras</PartOf>
+        <IsA>app:gui</IsA>
+        <Summary>Mate için resim görüntüleyicisi</Summary>
+        <Description>mate-image-viewer, resim görüntüleyicisidir.</Description>
+        <Archive sha1sum="023f31676eebfab228f9d09ec70a1b9dfe8170d6" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-image-viewer-1.5.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>dbus-glib-devel</Dependency>
-            <Dependency>mate-common</Dependency>
+            <Dependency>glib2-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>gettext-devel</Dependency>
-	    <Dependency>rarian-devel</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>libglade-devel</Dependency>
+	    <Dependency>libexif-devel</Dependency>
+            <Dependency>libart_lgpl-devel</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
+	    <Dependency>librsvg-devel</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>lcms2-devel</Dependency>
+	    <Dependency>gsettings-desktop-schemas</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
     <Package>
-        <Name>mate-conf-editor</Name>
+        <Name>mate-image-viewer</Name>
 	<RuntimeDependencies>
 	    <Dependency>dbus-glib</Dependency>
-            <Dependency>mate-common</Dependency>
+            <Dependency>glib2</Dependency>
 	    <Dependency>gtk2</Dependency>
-	    <Dependency>gettext</Dependency>
-	    <Dependency>rarian</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>libglade</Dependency>
+	    <Dependency>libexif</Dependency>
+            <Dependency>libart_lgpl</Dependency>
+	    <Dependency>libxml2</Dependency>
+	    <Dependency>librsvg</Dependency>
+	    <Dependency>mate-doc-utils</Dependency>
+	    <Dependency>lcms2</Dependency>
+	    <Dependency>gsettings-desktop-schemas</Dependency>
 	    <Dependency>mate-conf</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
 	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="config">/etc/</Path>
+	    <Path fileType="library">/usr/lib/eom/</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>mate-image-viewer-devel</Name>
+	<Summary>mate-image-viewer için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency>mate-image-viewer</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include/</Path>
+	    <Path fileType="library">/usr/lib/pkgconfig/</Path>
         </Files>
     </Package>
 
     <History>
-      <Update release="4">
-            <Date>2012-08-22</Date>
-            <Version>1.4.0</Version>
-            <Comment>v.bump</Comment>
+      <Update release="1">
+            <Date>2012-12-16</Date>
+            <Version>1.5.0</Version>
+            <Comment>İlk Sürüm</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+	    <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
-

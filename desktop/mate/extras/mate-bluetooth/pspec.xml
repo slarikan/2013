@@ -5,15 +5,15 @@
         <Name>mate-bluetooth</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Packager>
         <License>GPLv2</License>
         <PartOf>desktop.mate.extras</PartOf>
         <IsA>library</IsA>
         <Summary>Mate için bluetooth servisi</Summary>
         <Description>Mate masaüstüsü için bluetooth sağlayıcısı.</Description>
-        <Archive sha1sum="b209560c77342a72d834bbf918608d6f0bba5e81" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-bluetooth-1.4.0.tar.xz</Archive>
+        <Archive sha1sum="64d01bc9f94a41b234387dbe20162817173f0d3e" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-bluetooth-1.5.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>glib2-devel</Dependency>
             <Dependency>mate-common</Dependency>
@@ -60,13 +60,19 @@
     </Package>
 
     <History>
+      <Update release="2">
+            <Date>2012-12-165</Date>
+            <Version>1.5.0</Version>
+            <Comment>v.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
       <Update release="1">
             <Date>2012-08-25</Date>
             <Version>1.4.0</Version>
-            <Comment>v.bump</Comment>
+            <Comment>İlk Sürüm</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>
-
