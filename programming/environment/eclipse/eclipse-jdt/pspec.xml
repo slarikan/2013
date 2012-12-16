@@ -19,7 +19,7 @@
     <Package>
         <Name>eclipse-jdt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.8">eclipse</Dependency>
+            <Dependency versionFrom="4.2.1">eclipse</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/opt</Path>
