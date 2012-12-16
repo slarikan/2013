@@ -13,31 +13,27 @@
         <IsA>app:gui</IsA>
         <Summary>Quake 3 Arena replacement</Summary>
         <Description>OpenArena is an opensource replacement for Quake 3 Arena, effectively creating a free stand-alone game.</Description>
-        <Archive sha1sum="6de345c0bebd87e1406cb07189537db99a422808" type="tarbz2">http://openarena.ws/svn/source/081/openarena-engine-0.8.1-1.tar.bz2</Archive>
+        <Archive sha1sum="64f333c290b15b6b0e3819dc120b3eca2653340e" type="tarbz2">http://files.poulsander.com/~poul19/public_files/oa/dev088/openarena-engine-source-0.8.8.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.13">libsdl-devel</Dependency>
-            <Dependency versionFrom="1.7.411">openal-devel</Dependency>
-            <Dependency versionFrom="1.1.0">freealut-devel</Dependency>
-            <Dependency versionFrom="1.2.3">libvorbis-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>freealut-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>fix-linking-order.patch</Patch>
-            <!-- botlib abuses strcpy (source and dest overlap),
-            and the strcpy function for 64 bit intel CPU's in the
-            latest glibc, does not like this causing the bots to not load. -->
-            <Patch level="1">fix-bots-loading-in-64bit.patch</Patch>
+            <!--Patch>fix-linking-order.patch</Patch-->
         </Patches>
     </Source>
 
     <Package>
         <Name>openarena</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.2.13">libsdl</Dependency>
-            <Dependency versionFrom="1.7.411">openal</Dependency>
-            <Dependency versionFrom="1.1.0">freealut</Dependency>
-            <Dependency versionFrom="1.2.3">libvorbis</Dependency>
-            <Dependency versionFrom="0.8.5">openarena-data</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>freealut</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>openarena-data</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -54,6 +50,13 @@
     </Package>
 
     <History>
+	<Update release="18">
+            <Date>2012-12-19</Date>
+            <Version>0.8.8</Version>
+            <Comment>bump.</Comment>
+            <Name>canatan</Name>
+            <Email>q66680@gmail.com</Email>
+        </Update>
         <Update release="17">
             <Date>2011-01-19</Date>
             <Version>0.8.5</Version>
@@ -110,7 +113,7 @@
         <Update release="12">
             <Date>2009-01-02</Date>
             <Version>0.8.1</Version>
-            <Comment>* Single player campaign re-organized 
+            <Comment>* Single player campaign re-organized
                      * New hitsound
                      * New map: ps37ctf, ctf_gate1, am_galevish
                      * Space Marine should no longer crash on old client
@@ -199,4 +202,4 @@
             <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
-</PISI>
+</PISI> 
