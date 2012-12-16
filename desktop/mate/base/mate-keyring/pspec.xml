@@ -11,8 +11,7 @@
         <IsA>library</IsA>
         <Summary>Password and keyring managing daemon</Summary>
         <Description>The mate-keyring session daemon manages passwords and other types of secrets for the user, storing them encrypted with a main password. Applications can use the mate-keyring library to integrate with the keyring.</Description>
-	<Archive sha1sum="9b83d72a477116a1a5c7418d0bad485629e62dfc" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-keyring-1.4.0.tar.xz</Archive>
-        <!--<Archive sha1sum="31d041809648b804a7410b78fef0deea21e2606a" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-keyring-1.5.0.tar.xz</Archive>-->
+	<Archive sha1sum="31d041809648b804a7410b78fef0deea21e2606a" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-keyring-1.5.0.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>libmatekeyring-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -55,13 +54,13 @@
     </Package>
 
     <History>
-        <!--<Update release="3">
-            <Date>2012-10-21</Date>
+        <Update release="3">
+            <Date>2012-2-16</Date>
             <Version>1.5.0</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>-->
+        </Update>
         <Update release="2">
             <Date>2012-10-23</Date>
             <Version>1.4.0</Version>

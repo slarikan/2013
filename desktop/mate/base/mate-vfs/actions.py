@@ -21,9 +21,7 @@ def setup():
 			 --enable-ipv6 \
                          --enable-hal \
                          --enable-samba \
-                         --enable-krb5 \
                          --enable-avahi \
-                         --enable-acl \
                          --disable-selinux \
                          --disable-static \
                          --disable-schemas-install \
