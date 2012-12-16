@@ -14,9 +14,9 @@
         <IsA>app:gui</IsA>
         <Summary>Eclipse Tools Platform</Summary>
         <Description>Eclipse is an open source community whose projects are focused on providing an extensible development platform and application frameworks for building software.</Description>
-	<Archive sha1sum="7a3a0549bcbfaba39ac3f0b3667da352c6bb2cf8" type="targz" target="i686">http://ftp.osuosl.org/pub/eclipse/eclipse/downloads/drops/R-3.8-201206081200/eclipse-SDK-3.8-linux-gtk.tar.gz</Archive>
-        <Archive sha1sum="af5353bd4bf4b0714571d33b94ba56a1a7386455" type="targz" target="x86_64">http://ftp.osuosl.org/pub/eclipse/eclipse/downloads/drops/R-3.8-201206081200/eclipse-SDK-3.8-linux-gtk-x86_64.tar.gz</Archive>
-       <!--<Patches>
+		<Archive sha1sum="b608f0ce2b0fecae3148a2b604bdbccadd20379a" type="targz" target="i686">ftp://ftp.osuosl.org/pub/eclipse/eclipse/downloads/drops4/R-4.2.1-201209141800/eclipse-platform-4.2.1-linux-gtk.tar.gz</Archive>
+        <Archive sha1sum="4b941e7b1e7fd0d998939fd92cec75019beb189f" type="targz" target="x86_64">ftp://ftp.osuosl.org/pub/eclipse/eclipse/downloads/drops4/R-4.2.1-201209141800/eclipse-platform-4.2.1-linux-gtk-x86_64.tar.gz</Archive>
+        <!--<Patches>
             <Patch level="0">eclipse-ini.patch</Patch>
         </Patches>-->
     </Source>
@@ -43,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="30">
+            <Date>2012-12-16</Date>
+            <Version>4.2.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="29">
             <Date>2012-09-23</Date>
             <Version>3.8</Version>

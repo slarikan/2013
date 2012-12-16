@@ -13,13 +13,13 @@
         <IsA>app:gui</IsA>
         <Summary>Python Development Tools for Eclipse</Summary>
         <Description>eclipse-pydev is a plugin that enables users to use Eclipse for Python and Jython development making Eclipse a first class Python IDE.</Description>
-        <Archive sha1sum="f33a1feb4402554ab009621599a4206dc30689e2" type="zip">http://sourceforge.net/projects/pydev/files/pydev/PyDev%202.6.0/PyDev%202.6.0.zip</Archive>
+        <Archive sha1sum="559a2bebfaa15caa293bcdd116da2ae9770687aa" type="zip">mirrors://sourceforge/pydev/PyDev%202.7.1.zip</Archive>
     </Source>
 
     <Package>
         <Name>eclipse-pydev</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.7">python</Dependency>
+            <Dependency versionFrom="4.2.1">python</Dependency>
             <Dependency>eclipse</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -28,6 +28,13 @@
     </Package>
 
     <History>
+        <Update release="32">
+            <Date>2012-12-16</Date>
+            <Version>2.7.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="31">
             <Date>2012-09-24</Date>
             <Version>2.6.0</Version>
