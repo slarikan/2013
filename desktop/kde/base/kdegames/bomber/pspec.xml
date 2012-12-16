@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>bomber</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Name>bomber</Name>
+        <Icon>bomber</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Arcade bombing game</Summary>
+        <Description>Bomber is a single player arcade game. The player is invading various cities in a plane that is decreasing in height.</Description>
+        <Archive sha1sum="0f9c5560b0325c9a277cb64d7feac1b5e377b76f" type="tarxz">mirrors://kde/unstable/4.9.90/src/bomber-4.9.90.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.90">libkdegames-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>bomber</Name>
+        <Icon>bomber</Icon>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.90">libkdegames</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>    
+        <Update release="1">
+            <Date>2012-12-07</Date>
+            <Version>4.9.3</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>
+    </History>
+</PISI>
