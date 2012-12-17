@@ -28,6 +28,7 @@
     <Package>
         <Name>radiotray</Name>
         <RuntimeDependencies>
+            <Dependency>gst-plugins-good</Dependency>
             <Dependency>gst-python</Dependency>
             <Dependency>python-gtk</Dependency>
             <Dependency>notify-python</Dependency>
