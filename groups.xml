@@ -169,6 +169,13 @@
       <Icon>kde</Icon>
     </Group>
     <Group>
+      <Name>kde.games</Name>
+      <LocalName xml:lang="en">KDE Games</LocalName>
+      <LocalName xml:lang="nl">KDE Games</LocalName>
+      <LocalName xml:lang="tr">KDE Oyunları</LocalName>
+      <Icon>kde</Icon>
+    </Group>    
+    <Group>
       <Name>e17.desktop</Name>
       <LocalName xml:lang="en">Enlightenment Desktop</LocalName>
       <LocalName xml:lang="nl">Enlightenment Desktop</LocalName>
@@ -186,6 +193,15 @@
       <LocalName xml:lang="fr">Bureau Xfce</LocalName>      
       <Icon>xfce</Icon>
     </Group>
+    <Group>
+      <Name>mate.desktop</Name>
+      <LocalName xml:lang="en">Mate Desktop</LocalName>
+      <LocalName xml:lang="nl">Mate Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, Mate</LocalName>
+      <LocalName xml:lang="tr">Mate Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Mate</LocalName>      
+      <Icon>mate</Icon>
+    </Group>    
     <Group>
       <Name>razor-qt.desktop</Name>
       <LocalName xml:lang="en">Razor-qt Desktop</LocalName>

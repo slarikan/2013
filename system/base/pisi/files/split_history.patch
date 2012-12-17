@@ -79,17 +79,17 @@ diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
  
      def read_translations(self, path):
          if not os.path.exists(path):
---- a/pisi/operations/build.py	2012-12-02 06:47:16.000000000 +0100
-+++ b/pisi/operations/build.py.my	2012-12-16 19:30:16.476018536 +0100
+--- a/pisi/operations/build.py~	2012-12-16 20:42:02.868861190 +0100
++++ b/pisi/operations/build.py	2012-12-16 20:48:55.727846105 +0100
 @@ -211,6 +211,12 @@
          else:
              self.specdir = os.path.dirname(self.specuri.get_uri())
  
 +        if len(self.spec.history) == 0:
-+		     # No history was found in the pspec. Attempt to source it
-+            if specuri.is_remote_file():
-+                self.fetch_historyfile()
-+		self.read_history (self.specdir)
++           # No history was found in the pspec. Attempt to source it
++           if specuri.is_remote_file ():
++               self.fetch_historyfile()
++           self.read_history (self.specdir)
 +
          # Don't wait until creating .pisi file for complaining about versioning
          # scheme errors
@@ -99,8 +99,8 @@ diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
          self.spec = spec
  
 +    def read_history (self, specdir):
-+	self.spec.read_history (util.join_path (specdir,
-+				ctx.const.history_file))
++        self.spec.read_history (util.join_path (specdir,
++                                ctx.const.history_file))
 +
      def read_translations(self, specdir):
          self.spec.read_translations(util.join_path(specdir,
@@ -116,16 +116,3 @@ diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
      def fetch_translationsfile(self):
          translationsuri = util.join_path(self.specdiruri,
                                           ctx.const.translations_file)
-@@ -675,6 +689,12 @@
-                 if not ext:
-                     break
- 
-+        if not os.path.exists(src_dir):
-+            # still not exists? so  try first from dirnames returned by os.walk
-+            # usualy archives contains one root dir
-+            src_dir = util.join_path(self.pkg_work_dir(), os.walk(self.pkg_work_dir()).next()[1][0])
-+            if self.get_state() == "unpack": ctx.ui.debug("Setting WorkDir to %s" % src_dir)
-+
-         return src_dir
- 
-     def log_sandbox_violation(self, operation, path, canonical_path):

@@ -15,7 +15,7 @@ def setup():
                          --enable-gtk-doc \
                          --disable-valgrind \
                          --with-package-name='Pardus %s package' \
-                         --with-package-origin='http://www.pardus.org.tr/' \
+                         --with-package-origin='http://www.pardus-anka.org/' \
                          " % get.srcNAME())
 
 

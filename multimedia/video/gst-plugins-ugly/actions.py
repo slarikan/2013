@@ -18,7 +18,7 @@ def setup():
                          --disable-rpath \
                          --disable-sidplay \
                          --with-package-name=\"Pardus gstreamer-plugins-ugly package\" \
-                         --with-package-origin=\"http://www.pardus.org.tr/eng\"")
+                         --with-package-origin=\"http://www.pardus-anka.org/eng\"")
 
 def build():
     autotools.make()

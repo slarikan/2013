@@ -14,9 +14,13 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     shelltools.system("./autogen.sh")
-    autotools.configure("--prefix=/usr \
-                        --disable-scrollkeeper \
-                        --disable-schemas-install")
+    autotools.configure("--disable-static \
+			 --enable-gstmix \
+			 --disable-schemas-compile \
+			 --disable-scrollkeeper \
+			 --enable-gst-mixer-applet \
+			 --enable-pulseaudio \
+			 --with-gnu-ld")
 
 def build():
     autotools.make()

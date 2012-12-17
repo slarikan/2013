@@ -20,7 +20,7 @@ def setup():
                          --enable-libvisual \
                          --enable-experimental \
                          --with-package-name='Pardus gstreamer-plugins-base package' \
-                         --with-package-origin='http://www.pardus.org.tr/eng'")
+                         --with-package-origin='http://www.pardus-anka.org'")
 
 def build():
     autotools.make()
