@@ -792,6 +792,17 @@
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
+	<Component>
+            <Name>desktop.cinnamon</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>cinnamon.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>
         <Component>
             <Name>desktop.mate</Name>
             <LocalName xml:lang="en">FIXME</LocalName>

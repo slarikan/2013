@@ -194,6 +194,14 @@
       <Icon>xfce</Icon>
     </Group>
     <Group>
+      <Name>cinnamon.desktop</Name>
+      <LocalName xml:lang="en">Cinnamon Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, Cinnamon</LocalName>
+      <LocalName xml:lang="tr">Cinnamon Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Cinnamon</LocalName>      
+      <Icon>mate</Icon>
+    </Group>
+    <Group>
       <Name>mate.desktop</Name>
       <LocalName xml:lang="en">Mate Desktop</LocalName>
       <LocalName xml:lang="nl">Mate Desktop</LocalName>
