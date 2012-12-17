@@ -194,6 +194,15 @@
       <Icon>xfce</Icon>
     </Group>
     <Group>
+      <Name>mate.desktop</Name>
+      <LocalName xml:lang="en">Mate Desktop</LocalName>
+      <LocalName xml:lang="nl">Mate Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, Mate</LocalName>
+      <LocalName xml:lang="tr">Mate Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Mate</LocalName>      
+      <Icon>mate</Icon>
+    </Group>    
+    <Group>
       <Name>razor-qt.desktop</Name>
       <LocalName xml:lang="en">Razor-qt Desktop</LocalName>
       <LocalName xml:lang="nl">Razor-qt Desktop</LocalName>
