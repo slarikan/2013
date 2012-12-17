@@ -14,7 +14,7 @@ from pisi.actionsapi import kde4
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    kde4.configure("-DWITH_MP4V2=OFF -DWITH_CHROMAPRINT:BOOL=OFF")
+    kde4.configure("-DWITH_MP4V2=ON -DWITH_CHROMAPRINT:BOOL=ON")
 
 def build():
     kde4.make()

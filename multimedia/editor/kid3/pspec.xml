@@ -12,19 +12,20 @@
         <IsA>app:gui</IsA>
         <Summary>A simple ID3 tag editor</Summary>
         <Description>kid3 is a simple KDE tool to manage ID3 tags of your audio files.</Description>
-        <Archive sha1sum="bdfad021123d41cdbe38dc02f92869786d9cdff6" type="targz">http://prdownloads.sourceforge.net/kid3/kid3-2.1.tar.gz</Archive>
+        <Archive sha1sum="6e425e8c30c189ad70b081026252eb0d14498568" type="targz">mirrors://sourceforge/kid3/kid3-2.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>flac-devel</Dependency>
             <Dependency>musicbrainz-devel</Dependency>
-            <Dependency>tunepimp-devel</Dependency>
+	    	<Dependency>id3lib</Dependency>
+	    	<Dependency>ffmpeg-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
             <Dependency versionFrom="1.9.1">libmp4v2-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
-	    <Dependency>libchromaprint-devel</Dependency>
+         	<Dependency>libchromaprint-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,12 +37,13 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>flac</Dependency>
             <Dependency>musicbrainz</Dependency>
-            <Dependency>tunepimp</Dependency>
+	    	<Dependency>id3lib</Dependency>
+	    	<Dependency>ffmpeg</Dependency>
             <Dependency>libogg</Dependency>
             <Dependency versionFrom="1.9.1">libmp4v2</Dependency>
             <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency>phonon</Dependency>
-	    <Dependency>libchromaprint</Dependency>
+         	<Dependency>libchromaprint</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -58,6 +60,13 @@
     </Package>
 
     <History>
+        <Update release="20">
+            <Date>2012-12-17</Date>
+            <Version>2.2.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="19">
             <Date>2012-08-27</Date>
             <Version>2.1</Version>
