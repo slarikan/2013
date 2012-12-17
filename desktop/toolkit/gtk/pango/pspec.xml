@@ -86,6 +86,7 @@
             <Dependency>freetype-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>libffi-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">pango</Dependency>
@@ -96,6 +97,7 @@
             <Dependency>freetype-32bit</Dependency>
             <Dependency>libXrender-32bit</Dependency>
             <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>libffi-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libpango*</Path>
