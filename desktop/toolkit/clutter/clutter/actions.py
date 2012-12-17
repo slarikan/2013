@@ -16,9 +16,11 @@ shelltools.export("HOME", "%s" % get.workDIR())
 # NoStrip = "/"
 
 def setup():
-    # autotools.configure("--enable-introspection")
-    #autotools.autoreconf("-fiv")
-    autotools.configure("--prefix=/usr")
+    autotools.autoreconf("-fiv")
+    autotools.configure("--prefix=/usr \
+                         --with-json=system \
+                         --enable-introspection \
+                         --enable-shared ")
 
 def build():
     autotools.make()

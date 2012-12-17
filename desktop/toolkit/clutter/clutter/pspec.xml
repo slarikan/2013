@@ -27,6 +27,8 @@
             <Dependency versionFrom="0.4.0">libXcomposite</Dependency>
             <Dependency>glitz</Dependency>
             <Dependency>xcb-util</Dependency>
+            <Dependency>json-glib-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
             <!-- gir is slowly merging in, lets see what will happen and if it is necessary
             <Dependency>gobject-introspection</Dependency>
             -->
@@ -47,6 +49,8 @@
             <Dependency versionFrom="0.4.0">libXcomposite</Dependency>
             <Dependency>glitz</Dependency>
             <Dependency>xcb-util</Dependency>
+            <Dependency>json-glib-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
