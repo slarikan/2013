@@ -12,16 +12,13 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    for i in ["AUTHORS", "NEWS"]:
+    for i in ["AUTHORS", "NEWS", "ChangeLog"]:
         shelltools.touch(i)
 
     autotools.autoreconf("-fi")
-    autotools.configure("--with-kernel-support \
-                         --with-separate-debug-dir=/usr/lib/debug \
-                         --with-qt-dir=/void \
-                         --enable-abi \
-                         --enable-static=no \
-                         --with-x")
+    autotools.configure("--enable-static=no \
+                         --with-x \
+                         --enable-gui=qt4")
 
 def build():
     autotools.make()
