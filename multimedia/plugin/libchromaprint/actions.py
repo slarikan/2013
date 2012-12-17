@@ -5,16 +5,7 @@
 
 from pisi.actionsapi import cmaketools
 from pisi.actionsapi import get
-#from pisi.actionsapi import pisitools
-
-# You can use these as variables, they will replace GUI values before build.
-# Package Name : libchromaprint
-# Version : 0.6
-# Summary : Chromaprint is the core component of the Acoustid project.
-
-# If the project that you are tying to compile is in a sub directory in the 
-# source archive, than you can define working directory. For example; 
-# WorkDir="libchromaprint-"+ get.srcVERSION() +"/sub_project_dir/"
+from pisi.actionsapi import pisitools
 
 def setup():
     cmaketools.configure("-DCMAKE_BUILD_TYPE=release", installPrefix="/usr")
@@ -25,9 +16,5 @@ def build():
 def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-# Take a look at the source folder for these file as documentation.
-#    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
-# If there is no install rule for a runnable binary, you can 
-# install it to binary directory.
-#    pisitools.dobin("libchromaprint")
+    pisitools.dodoc("CHANGES.txt", "COPYING.txt", "NEWS.txt", "README.txt")
  
