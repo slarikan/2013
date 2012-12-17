@@ -1209,11 +1209,24 @@
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
+        </Component>  
+        <Component>
             <Name>desktop.kde.base.kdemultimedia</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
             <Description xml:lang="en">FIXME</Description>
             <Group>kde.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>            
+        </Component>
+        <Component>
+            <Name>desktop.kde.base.kdegames</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>kde.games</Group>
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>

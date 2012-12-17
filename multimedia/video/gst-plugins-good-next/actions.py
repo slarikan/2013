@@ -12,7 +12,7 @@ def setup():
                          --disable-esd \
                          --disable-rpath \
                          --with-package-name='Pardus gstreamer-plugins-good package' \
-                         --with-package-origin='http://www.pardus.org.tr/eng' \
+                         --with-package-origin='http://www.pardus-anka.org' \
                          --disable-schemas-install")
 
 def build():

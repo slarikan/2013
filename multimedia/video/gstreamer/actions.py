@@ -17,7 +17,7 @@ def setup():
     #shelltools.system("./autogen.sh --disable-gtk-doc --disable-docbook")
 
     options = '--with-package-name="GStreamer package for Pardus" \
-               --with-package-origin="http://www.pardus.org.tr/eng" \
+               --with-package-origin="http://www.pardus-anka.org" \
                --enable-nls \
                --disable-dependency-tracking \
                --disable-examples \

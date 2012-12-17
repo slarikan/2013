@@ -28,7 +28,7 @@ def setup():
                          --disable-gtk-doc \
                          --disable-rpath \
                          --with-package-name='Pardus gstreamer-plugins-bad package' \
-                         --with-package-origin='http://www.pardus.org.tr/eng' \
+                         --with-package-origin='http://www.pardus-anka.org' \
                          --disable-experimental \
                          --disable-wininet \
                          --disable-wildmidi \

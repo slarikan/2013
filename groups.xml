@@ -169,6 +169,13 @@
       <Icon>kde</Icon>
     </Group>
     <Group>
+      <Name>kde.games</Name>
+      <LocalName xml:lang="en">KDE Games</LocalName>
+      <LocalName xml:lang="nl">KDE Games</LocalName>
+      <LocalName xml:lang="tr">KDE Oyunları</LocalName>
+      <Icon>kde</Icon>
+    </Group>    
+    <Group>
       <Name>e17.desktop</Name>
       <LocalName xml:lang="en">Enlightenment Desktop</LocalName>
       <LocalName xml:lang="nl">Enlightenment Desktop</LocalName>
