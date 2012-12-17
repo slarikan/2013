@@ -199,7 +199,7 @@
       <LocalName xml:lang="sv">Skrivbord, Cinnamon</LocalName>
       <LocalName xml:lang="tr">Cinnamon Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Cinnamon</LocalName>      
-      <Icon>mate</Icon>
+      <Icon>cinnamon</Icon>
     </Group>
     <Group>
       <Name>mate.desktop</Name>
