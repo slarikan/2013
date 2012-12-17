@@ -20,6 +20,7 @@
             <Dependency>freealut-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+	    <Dependency>mesa-glu-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch>fix-linking-order.patch</Patch-->
@@ -35,6 +36,7 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>openarena-data</Dependency>
             <Dependency>mesa</Dependency>
+	    <Dependency>mesa-glu</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

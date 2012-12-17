@@ -12,7 +12,7 @@ import os
 
 NoStrip = "/"
 # 0.8.5 is a patch over 0.8.1
-WorkDir = "openarena-0.8.1"
+WorkDir = "openarena-0.8.8"
 #WorkDir = "openarena-%s" % get.srcVERSION()
 
 docs = ["CHANGES", "COPYING", "CREDITS", "LINUXNOTES", "README", "WENEED"]
