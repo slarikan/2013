@@ -10,16 +10,17 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+
+shelltools.export("HOME", "%s" % get.workDIR())
 # WorkDir = ""
 # NoStrip = "/"
 
 def setup():
     # autotools.configure("--enable-introspection")
-    autotools.autoreconf("-fi")
-    autotools.configure("--with-json=system --enable-introspection --enable-shared ")
+    #autotools.autoreconf("-fiv")
+    autotools.configure("--prefix=/usr")
 
 def build():
-    shelltools.export("HOME", "%s" % get.workDIR())
     autotools.make()
 
 def install():
