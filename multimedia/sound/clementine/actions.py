@@ -10,6 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    pisitools.dosed("dist/clementine.desktop", "Icon=application-x-clementine", "Icon=clementine")
     for i in ["libprojectm", "qxt", "qtiocompressor", "libechonest"]:
         shelltools.unlinkDir("3rdparty/%s" % (i))
 
