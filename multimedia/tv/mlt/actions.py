@@ -15,9 +15,9 @@ def setup():
     shelltools.export("LDFLAGS", get.LDFLAGS())
 
     autotools.configure("--enable-gpl \
-			 --disable-gtk2 \
-			 --qimage-libdir=/usr/lib/ \
-			 --qimage-includedir=/usr/include/Qt \
+                         --disable-gtk2 \
+                         --qimage-libdir=/usr/lib/ \
+                         --qimage-includedir=/usr/include/Qt \
                          --avformat-vdpau \
                          --avformat-swscale")
 
