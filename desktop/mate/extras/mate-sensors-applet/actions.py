@@ -13,6 +13,7 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
+    shelltools.export("LDFLAGS", "%s -ldl"  % get.LDFLAGS())
     shelltools.system("./autogen.sh")
     autotools.configure("--prefix=/usr \
                         --disable-scrollkeeper \
