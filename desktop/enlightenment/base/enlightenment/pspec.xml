@@ -12,7 +12,7 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>Enlightenment Desktop Shell</Summary>
         <Description>Enlightenment is a window manager for the X Window System that is designed to be powerful, extensible, configurable and pretty darned good looking! It is one of the more graphically intense window managers.</Description>
-        <Archive sha1sum="432d76e95ff0d36a624876af829440bdd91f5b0e" type="targz">http://download.enlightenment.org/releases/enlightenment-0.17.0-lucky.tar.gz</Archive>
+        <Archive sha1sum="4c94f470d74133ebf2a5254683d0510bf3ece55f" type="targz">http://download.enlightenment.org/releases/enlightenment-0.17.0-omega.tar.gz</Archive>
         <Archive sha1sum="a8def4ecf130fa3053d2d0051d9f6fbfa1392ea5" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/A-Angelic-v2.edj</Archive>
         <Archive sha1sum="6cb9bd2eb3343b41f9dc2272e1a8e5c027bc1642" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/efenniht.edj</Archive>
         <Archive sha1sum="540dfcccd9785021adde851a640c3f86e7d346cc" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/Nitrous0.2_E17.edj</Archive>
@@ -93,9 +93,9 @@
 
     <History>
         <Update release="29">
-            <Date>2012-12-16</Date>
+            <Date>2012-12-18</Date>
             <Version>0.17.0</Version>
-            <Comment>Update to wew E17 Release: LUCKY</Comment>
+            <Comment>Update to wew E17 Release: OMEGA</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>
