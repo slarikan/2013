@@ -94,11 +94,15 @@
         <BuildDependencies>
             <Dependency>libpcre-32bit</Dependency>
             <Dependency>zlib-32bit</Dependency>
+            <Dependency>libffi-32bit</Dependency>
+            <Dependency>dbus-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">glib2</Dependency>
             <Dependency>libpcre-32bit</Dependency>
             <Dependency>zlib-32bit</Dependency>
+            <Dependency>libffi-32bit</Dependency>
+            <Dependency>dbus-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/32</Path>
