@@ -18,7 +18,7 @@ def setup():
 				    --disable-schemas-install \
 				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
 				    --enable-sm") 
-    autotools.configure()
+    autotools.configure("--disable-schemas-install")
 
 def build():
     autotools.make()
