@@ -17,6 +17,9 @@
         <Description>pulseaudio is a sound server for POSIX and Win32 systems. It allows you to do advanced operations on your sound data as it passes between your application and your hardware.</Description>
         <Archive sha1sum="87d7d1bc0e07dcf1c9c38413b59343f0126e45df" type="tarxz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-3.0.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency>orc-devel</Dependency>
+            <Dependency>sbc-devel</Dependency>
+            <Dependency>fftw3-devel</Dependency>
             <Dependency>json-c-devel</Dependency>
             <Dependency>doxygen</Dependency>
             <Dependency>xcb-proto</Dependency>
@@ -77,10 +80,12 @@
     <Package>
         <Name>pulseaudio</Name>
         <RuntimeDependencies>
-	    <Dependency>json-c</Dependency>
+            <Dependency>orc</Dependency>
+            <Dependency>sbc</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>json-c</Dependency>
             <Dependency>lirc</Dependency>
             <Dependency>speex</Dependency>
-            <Dependency>rtkit</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libtdb</Dependency>
@@ -166,12 +171,13 @@
         <Name>pulseaudio-libs</Name>
         <Summary>Libraries for PulseAudio clients</Summary>
         <RuntimeDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>json-c</Dependency>
             <Dependency>speex</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libtdb</Dependency>
             <Dependency>libXtst</Dependency>
-            <Dependency>avahi-libs</Dependency>
             <Dependency>libasyncns</Dependency>
             <Dependency>libsndfile</Dependency>
             <Dependency>libsamplerate</Dependency>
@@ -218,7 +224,7 @@
             <Dependency>glib2-32bit</Dependency>
             <Dependency>libcap-32bit</Dependency>
             <Dependency>libsndfile-32bit</Dependency>
-	    <Dependency>json-c-32bit</Dependency>
+           <Dependency>json-c-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
