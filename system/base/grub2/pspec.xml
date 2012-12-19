@@ -21,11 +21,11 @@
             <Dependency>texinfo</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>zlib-devel</Dependency>
-            <Dependency>libsdl-devel</Dependency>
             <Dependency>ncurses-devel</Dependency>
             <Dependency>xz-devel</Dependency>
             <Dependency>fuse-devel</Dependency>
             <Dependency>lvm2-devel</Dependency>
+            <Dependency>device-mapper-devel</Dependency>
             <Dependency versionFrom="0.17">gettext-devel</Dependency>
         </BuildDependencies>
         <Replaces>
@@ -40,17 +40,18 @@
     <Package>
         <Name>grub2</Name>
         <RuntimeDependencies>
+            <Dependency versionFrom="0.17">gettext</Dependency>
             <Dependency versionFrom="2.5.34">flex</Dependency>
             <Dependency>help2man</Dependency>
             <Dependency>texinfo</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>zlib</Dependency>
-            <Dependency>libsdl</Dependency>
             <Dependency>ncurses</Dependency>
             <Dependency>xz</Dependency>
             <Dependency>fuse</Dependency>
             <Dependency>lvm2</Dependency>
-            <Dependency versionFrom="0.17">gettext</Dependency>
+            <Dependency>device-mapper</Dependency>
+            <Dependency>os-prober</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
