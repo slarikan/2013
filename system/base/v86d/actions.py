@@ -12,9 +12,9 @@ def setup():
                             --with-x86emu")
 
 def build():
-    autotools.make("all testvbe")
+    autotools.make("KDIR=/usr")
 
 def install():
-    autotools.rawInstall("DESTDIR=%s install_testvbe" % get.installDIR())
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "README")
