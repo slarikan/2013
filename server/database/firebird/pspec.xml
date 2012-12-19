@@ -17,7 +17,7 @@
         <Description>Firebird is an open source relational database management system offering many ANSI SQL-99 features.</Description>
         <Archive sha1sum="f827736c812f4247e8204fbe9c696f648c0484b6" type="tarbz2">mirrors://sourceforge/firebird/Firebird-2.5.1.26351-0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.2">icu4c</Dependency>
+            <Dependency versionFrom="4.2">icu4c-devel</Dependency>
             <Dependency>btyacc</Dependency>
             <Dependency>libedit</Dependency>
         </BuildDependencies>
