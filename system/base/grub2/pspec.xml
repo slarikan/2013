@@ -65,6 +65,7 @@
             <Path fileType="man">/usr/share/man/man8</Path>
             <Path fileType="config">/etc/bash_completion.d</Path>
             <Path fileType="config">/etc/grub.d</Path>
+            <Path fileType="config">/boot/grub2</Path>
         </Files>
     </Package>
 
