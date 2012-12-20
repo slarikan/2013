@@ -11,17 +11,16 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 
-data = "/usr/share/%s/" % get.srcNAME()
 WorkDir = "starfighter-%s" % get.srcVERSION()
 
 def setup():
-    pisitools.dosed("makefile", "-O3", get.CXXFLAGS())
-    pisitools.dosed("makefile", "^DATADIR =.*", "DATADIR = %s" % data)
+    pisitools.dosed("makefile", "-O2 -Wall -g","-O3 -Wall -g")
+    pisitools.dosed("makefile", "games/parallelrealities/","starfighter/")
 
 def build():
     autotools.make()
 
 def install():
     pisitools.dobin("starfighter")
-    pisitools.insinto(data, "starfighter.pak")
+    pisitools.insinto("/usr/share/starfighter", "starfighter.pak")
     pisitools.dohtml("docs/")
