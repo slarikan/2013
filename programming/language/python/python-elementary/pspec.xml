@@ -16,7 +16,7 @@
         <Archive sha1sum="6980a4ae910a0bdabba1cec7ccdf1cda570045bf" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/py-bind/python-elementary.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
             <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
             <Dependency versionFrom="1.7.0">elementary-devel</Dependency>
             <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
@@ -27,7 +27,7 @@
         <Name>python-elementary</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.99">evas</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
             <Dependency versionFrom="1.7.0">ecore</Dependency>
             <Dependency versionFrom="1.7.0">elementary</Dependency>
             <Dependency versionFrom="1.7.0">python-evas</Dependency>
