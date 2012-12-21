@@ -16,7 +16,7 @@ def setup():
     shelltools.system("./autogen.sh")
     autotools.configure("--disable-static \
 			 --enable-gstmix \
-			 --disable-schemas-compile \
+			 --disable-schemas-install \
 			 --disable-scrollkeeper \
 			 --enable-gst-mixer-applet \
 			 --enable-pulseaudio \

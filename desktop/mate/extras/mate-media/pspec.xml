@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>MATE media programs</Summary>
         <Description>This package contains a few media utilities for the MATE desktop, including a volume control.</Description>
-        <Archive sha1sum="8461cef67cc8e423d102a8cbc7d2fdc8104aefba" type="tarxz">http://git.mate-desktop.org/mate-media/snapshot/mate-media-1.5.1.tar.xz</Archive>
+        <Archive sha1sum="345094663bda8ec330d4012940157f1b759de7bc" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-media-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>gstreamer-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
@@ -46,14 +46,26 @@
 	    <Path fileType="data">/usr/share/</Path>
 	    <Path fileType="bin">/usr/bin</Path>
 	    <Path fileType="config">/etc/</Path>
+	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="executable">/usr/libexec</Path>
         </Files>
     </Package>
 
+    <Package>
+        <Name>mate-media-devel</Name>
+	<Summary>Mate media için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency>mate-media</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/include</Path>
+        </Files>
+    </Package>
+    
     <History>
       <Update release="1">
             <Date>2012-12-16</Date>
-            <Version>1.5.1</Version>
+            <Version>1.4.0</Version>
             <Comment>İlk Sürüm.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

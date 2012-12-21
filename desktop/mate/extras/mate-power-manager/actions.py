@@ -16,6 +16,7 @@ def setup():
     shelltools.system("./autogen.sh")
     autotools.configure("--disable-static \
 			 --disable-scrollkeeper \
+			 --disable-schemas-install \
 			 --enable-applets")
 
 def build():

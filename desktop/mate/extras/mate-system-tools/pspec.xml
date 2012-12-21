@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Cross-platform configuration utilities for MATE</Summary>
         <Description>MATE System Tools package is a fork of GNOME System Τοols package.</Description>
-        <Archive sha1sum="64dc3d19533b70af14d706139f27c46f5bd62362" type="tarxz">http://git.mate-desktop.org/mate-system-tools/snapshot/mate-system-tools-1.5.0.tar.xz</Archive>
+        <Archive sha1sum="866fff6037adeaa8355df21f4fcec8395b11a8d2" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-system-tools-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>pango-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
@@ -50,7 +50,7 @@
     <History>
 	<Update release="1">
             <Date>2012-15-18</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
 	    <Comment>İlk Sürüm</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

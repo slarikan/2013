@@ -41,8 +41,21 @@
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
+	    <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="executable">/usr/libexec</Path>
+	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="config">/etc/</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>mate-utils-devel</Name>
+	<Summary>mate-utils için geliştirme dosyaları</Summary>
+	<RuntimeDependencies>
+	    <Dependency>mate-utils</Dependency>
+	</RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/include</Path>
         </Files>
     </Package>
 

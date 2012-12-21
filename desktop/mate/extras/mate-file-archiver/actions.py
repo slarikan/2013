@@ -16,6 +16,7 @@ def setup():
     shelltools.system("./autogen.sh")
     autotools.configure("--disable-run-in-place \
 			 --disable-packagekit \
+			 --disable-schemas-install \
 			 --disable-deprecations")
 
 def build():

@@ -14,11 +14,12 @@
         <IsA>library</IsA>
         <Summary>Display readings from hardware sensors in your MATE panel.</Summary>
         <Description>MATE Sensors Applet is an applet for the MATE Panel to display readings from hardware sensors, including CPU temperature, fan speeds and voltage readings under Linux.on.</Description>
-        <Archive sha1sum="00c3c86f18b6ca6a7b0f240556f219e19107971a" type="tarxz">http://git.mate-desktop.org/mate-sensors-applet/snapshot/mate-sensors-applet-1.5.0.tar.xz</Archive>
+        <Archive sha1sum="c9ad1ab74c7125cf7bde99803462cc5f1401e750" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-sensors-applet-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>glib2-devel</Dependency>
             <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
+	    <Dependency>libmateui-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
@@ -28,6 +29,7 @@
 	    <Dependency>glib2</Dependency>
             <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2</Dependency>
+	    <Dependency>libmateui</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
@@ -51,7 +53,7 @@
     <History>
       <Update release="1">
             <Date>2012-15-18</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
 	    <Comment>İlk Sürüm</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

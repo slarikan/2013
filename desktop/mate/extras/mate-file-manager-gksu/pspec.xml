@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>This is a fork of nautilus-gksu.</Summary>
         <Description>mate-file-manager-gksu (a fork of nautilus-gksu for the MATE).</Description>
-        <Archive sha1sum="1f2feb06a0dafa3c7e3baa1e714520650ffba663" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-gksu-1.5.0.tar.xz</Archive>
+        <Archive sha1sum="d91788fce1cdca0294ea9d0a8bca0d0dee91c544" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-gksu-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>libgksu-devel</Dependency>
@@ -34,13 +34,13 @@
     </Package>
 
     <History>
-      <Update release="2">
+      <!--<Update release="2">
             <Date>2012-12-15</Date>
             <Version>1.5.0</Version>
             <Comment>Güncellendi.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
+        </Update>-->
       <Update release="1">
             <Date>2012-12-15</Date>
             <Version>1.4.0</Version>

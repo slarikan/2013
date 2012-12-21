@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>Traffic monitor applet for MATE</Summary>
         <Description>This is a fork of GNOME netspeed applet.</Description>
-        <Archive sha1sum="02a0c414002a0086a752b78b572eda95ecbe818a" type="tarxz">http://git.mate-desktop.org/mate-netspeed/snapshot/mate-netspeed-1.5.0.tar.xz</Archive>
+        <Archive sha1sum="400a1d9a2fca1c9cfcc96391125ee8d90590f465" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-netspeed-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>mate-doc-utils</Dependency>
             <Dependency>mate-common</Dependency>
@@ -38,13 +38,14 @@
 	    <Path fileType="bin">/usr/bin</Path>
 	    <Path fileType="config">/etc/</Path>
 	    <Path fileType="executable">/usr/libexec/</Path>
+	    <Path fileType="library">/usr/lib/matecomponent/</Path>
         </Files>
     </Package>
 
     <History>
       <Update release="1">
             <Date>2012-12-18</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>İlk Sürüm</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
