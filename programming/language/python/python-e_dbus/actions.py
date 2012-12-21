@@ -7,9 +7,6 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
-
-WorkDir="python-e_dbus"
-
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure()
