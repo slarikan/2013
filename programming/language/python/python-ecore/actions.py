@@ -7,8 +7,6 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
-WorkDir="python-ecore"
-
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-static")
