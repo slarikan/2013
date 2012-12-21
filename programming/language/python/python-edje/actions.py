@@ -7,9 +7,6 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 
-
-WorkDir="python-edje"
-
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--disable-static")
