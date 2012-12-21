@@ -13,7 +13,7 @@
         <Summary>GNOME panel</Summary>
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
         <!--<Archive sha1sum="568d508c44cf7fff7ac8d6c0a2526e2d48625ed1" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-panel-1.5.2.tar.xz</Archive>-->
-	<Archive sha1sum="7539715f1abd62a3cf5a31d0c32df2fd7600bb54b" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-panel-1.4.0.tar.xz</Archive>
+	<Archive sha1sum="539715f1abd62a3cf5a31d0c32df2fd7600bb54b" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-panel-1.4.0.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>libmatecomponent-devel</Dependency>
