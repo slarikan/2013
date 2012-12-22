@@ -19,7 +19,7 @@ def setup():
 			 --libexecdir=/usr/lib \
 			 --enable-splash \
 			 --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-			 --with-default-wm='metacity' \
+			 --with-default-wm='marco' \
 			 --disable-static ")
 
 def build():
