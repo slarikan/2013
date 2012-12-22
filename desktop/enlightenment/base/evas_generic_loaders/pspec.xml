@@ -36,10 +36,7 @@
             <Dependency>libspectre</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/evas</Path>
-            <Path fileType="library">/usr/libexec</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
