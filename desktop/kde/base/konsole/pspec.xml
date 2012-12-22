@@ -13,10 +13,10 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 terminal application</Summary>
         <Description>Konsole KDE4 terminal emulator.</Description>
-        <Archive type="tarxz" sha1sum="e244fc0e370da767cb3e4592acf255088cf50262">mirrors://kde/unstable/4.9.90/src/konsole-4.9.90.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="82b53c44e05d01620102ae27a80f7f4885e2213a">mirrors://kde/unstable/4.9.95/src/konsole-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.90">kde-baseapps-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kde-baseapps-devel</Dependency>
         </BuildDependencies>
         <Patches>
 <!--             <Patch>konsole-4.8.0-disable-ctrl-drag.diff</Patch> -->
@@ -26,8 +26,8 @@
     <Package>
         <Name>konsole</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.90">kde-baseapps</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">kde-baseapps</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -39,75 +39,12 @@
     </Package>
 
     <History>
-        <Update release="10">
-            <Date>2012-12-07</Date>
-            <Version>4.9.90</Version>
-            <Comment>Version bump to 4.9.90</Comment>
+        <Update release="11">
+            <Date>2012-12-20</Date>
+            <Version>4.9.95</Version>
+            <Comment>Version bump to 4.9.95</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="9">
-            <Date>2012-11-10</Date>
-            <Version>4.9.3</Version>
-            <Comment>Version bump to 4.9.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2012-06-08</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2012-05-06</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2012-04-06</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-03-09</Date>
-            <Version>4.8.1</Version>
-            <Comment>Version bump to 4.8.1</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-01-28</Date>
-            <Version>4.8.0</Version>
-            <Comment>Version bump to 4.8.0</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-11-03</Date>
-            <Version>4.7.3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-10-09</Date>
-            <Version>4.7.2</Version>
-            <Comment>Version bump to 4.7.2</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-09-16</Date>
-            <Version>4.7.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
     </History>
 </PISI>
