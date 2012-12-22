@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Generic Cascading Style Sheet (CSS) parsing and manipulation toolkit</Summary>
         <Description>libcroco is an effort to build a generic Cascading Style Sheet (CSS) parsing and manipulation toolkit that can be used by GNOME applications in need of CSS support.</Description>
-        <Archive sha1sum="62a2a27bbb180d23b55c65d0349a3cb2f4222df8" type="tarxz">mirrors://gnome/libcroco/0.6/libcroco-0.6.6.tar.xz</Archive>
+        <Archive sha1sum="23a5c33a2a86d5e46173234f5fa88ac1e15de035" type="tarxz">mirrors://gnome/libcroco/0.6/libcroco-0.6.8.tar.xz</Archive>
         <Patches>
             <Patch level="1">multilib.patch</Patch>
         </Patches>
@@ -59,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2010-12-22</Date>
+            <Version>0.6.8</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="8">
             <Date>2012-11-06</Date>
             <Version>0.6.6</Version>
