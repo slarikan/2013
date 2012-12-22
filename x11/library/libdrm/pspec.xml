@@ -13,8 +13,6 @@
         <Summary>Userspace interface to kernel DRM services</Summary>
         <Description>libdrm is a library providing the userspace interface to kernel DRM services.</Description>
         <Archive sha1sum="0f77aa49922e17102caa75de86c8e79bbf23b4a1" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.40.tar.bz2</Archive>
-        <Patches>
-        </Patches>
         <BuildDependencies>
             <Package versionFrom="0.10.0">libpciaccess-devel</Package>
         </BuildDependencies>
@@ -22,6 +20,9 @@
 
     <Package>
         <Name>libdrm</Name>
+	<RuntimeDependencies>
+            <Dependency versionFrom="0.10.0">libpciaccess</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib/libdrm.*</Path>
