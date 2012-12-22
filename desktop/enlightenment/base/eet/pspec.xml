@@ -14,15 +14,14 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>E file chunk reading/writing library</Summary>
         <Description>Eet is a tiny library designed to write an arbitary set of chunks of data to a file and optionally compress each chunk (very much like a zip file) and allow fast random-access reading of the file later on.</Description>
-        <Archive sha1sum="42265eb508a17e3684a01429593da138da369718" type="targz">http://download.enlightenment.org/releases/eet-1.7.3.tar.gz</Archive>
+        <Archive sha1sum="ce4f05e180ce4a833d019fc618c7acd5aceca96d" type="targz">http://download.enlightenment.org/releases/eet-1.7.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.3">eina-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
-	    <Dependency>openssl</Dependency>
+            <Dependency>openssl</Dependency>
             <Dependency>doxygen</Dependency>
         </BuildDependencies>
         <Patches>
-	  <!-- <Patch level="1">pthread.patch</Patch> -->
         </Patches>
     </Source>
 
@@ -31,7 +30,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="1.7.3">eina</Dependency>
             <Dependency>jpeg</Dependency>
-	    <Dependency>openssl</Dependency>
+            <Dependency>openssl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -54,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="28">
+            <Date>2012-12-22</Date>
+            <Version>1.7.4</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="27">
             <Date>2012-12-12</Date>
             <Version>1.7.3</Version>
@@ -75,7 +81,7 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-	<Update release="24">
+        <Update release="24">
             <Date>2012-06-08</Date>
             <Version>1.6.0</Version>
             <Comment>Version bump.</Comment>
