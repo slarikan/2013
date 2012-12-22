@@ -63,7 +63,6 @@
 	    <Dependency>gst-plugins-base</Dependency>
 	    <Dependency>NetworkManager</Dependency>
 	    <Dependency>polkit</Dependency>
-	    <Dependency>mate-applets</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
