@@ -19,7 +19,6 @@
 	    <Dependency>pango-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>system-tools-backends-devel</Dependency>
-	    <Dependency>liboobs-devel</Dependency>
             <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
 	    <Dependency>liboobs-devel</Dependency>
@@ -36,7 +35,6 @@
 	    <Dependency>liboobs</Dependency>
             <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>mate-conf</Dependency>
-	    <Dependency>liboobs</Dependency>
 	    <Dependency>system-tools-backends</Dependency>
 	</RuntimeDependencies>
         <Files>
