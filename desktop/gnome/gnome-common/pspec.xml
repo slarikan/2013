@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Common files for development of GNOME packages</Summary>
         <Description>gnome-common package contains aclocal macros, makefile headers and documents tools in order to build GNOME sources.</Description>
-        <Archive sha1sum="84eeeb8ac783e3e7807da7eea83dd67afe8d826c" type="tarbz2">mirrors://gnome/gnome-common/2.28/gnome-common-2.28.0.tar.bz2</Archive>
+        <Archive sha1sum="e67cce758fc00c096358e1a72a930a5a7cb7dc23" type="tarbz2">mirrors://gnome/gnome-common/2.34/gnome-common-2.34.0.tar.bz2</Archive>
         <Patches>
             <Patch>always-copy.patch</Patch>
             <Patch>do-not-update-scrollkeeper.patch</Patch>
@@ -30,6 +30,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2010-12-22</Date>
+            <Version>2.34.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="7">
             <Date>2010-10-14</Date>
             <Version>2.28.0</Version>
