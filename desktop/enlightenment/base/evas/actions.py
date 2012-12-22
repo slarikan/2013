@@ -13,11 +13,6 @@ shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
 shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
-    autotools.autoreconf("-vfi")
-
-    # async/pipe rendering is disabled due to bugs shown in x86 and arm.
-    # Upstream is aware and has recommended to not to enable them.
-    # http://trac.enlightenment.org/e/changeset/51691/trunk/evas/README.in
     autotools.configure("--enable-strict \
                          --disable-static \
                          --enable-fontconfig \
@@ -40,7 +35,6 @@ def setup():
                          --enable-image-loader-tiff \
                          --disable-image-loader-svg \
                          --enable-image-loader-eet \
-                         --enable-image-loader-generic \
                          --disable-install-examples \
                          --disable-tests \
                          --disable-coverage \

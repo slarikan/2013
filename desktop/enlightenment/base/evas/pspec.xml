@@ -51,6 +51,7 @@
             <Dependency>jpeg</Dependency>
             <Dependency>tiff</Dependency>
             <Dependency>dejavu-fonts</Dependency>
+            <Dependency>evas_generic_loaders</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
