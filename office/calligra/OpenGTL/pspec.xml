@@ -1,0 +1,54 @@
+<PISI>
+    <Source>
+        <Name>OpenGTL</Name>
+        <Homepage>http://www.opengtl.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <PartOf>office.koffice</PartOf>
+        <IsA>app:console</IsA>
+        <Summary>The Graphics Transformation Languages is a set of library</Summary>
+        <Description>The Graphics Transformation Languages is a set of library for using and integrating transformation algorithms (such as filter or color conversion) in graphics applications.</Description>
+        <Archive sha1sum="b6beea4086a0907dcdb326d421d253f368689b45" type="tarbz2">http://download.opengtl.org/OpenGTL-0.9.15.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>llvm</Dependency>
+            <Dependency>libpng-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>OpenGTL</Name>
+        <RunTimeDependencies>
+            <Dependency>llvm</Dependency>
+            <Dependency>libpng</Dependency>
+        </RunTimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="data">/usr/share/OpenGTL</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>OpenGTL-devel</Name>
+        <RunTimeDependencies>
+            <Dependency version="current">OpenGTL</Dependency>
+        </RunTimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2012-08-15</Date>
+            <Version>0.9.15.2</Version>
+            <Comment>First Release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
+    </History>
+</PISI>
