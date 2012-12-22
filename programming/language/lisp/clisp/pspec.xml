@@ -21,7 +21,7 @@
             <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
             <Dependency>postgresql-lib</Dependency>
             <Dependency>pcre++-devel</Dependency>
-            <Dependency>pari</Dependency>
+            <!--Dependency>pari</Dependency-->
             <Dependency>libSM-devel</Dependency>
             <Dependency>libXaw-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
@@ -51,7 +51,7 @@
             <Dependency versionFrom="2.18.5">gtk2</Dependency>
             <Dependency>postgresql-lib</Dependency>
             <Dependency>pcre++</Dependency>
-            <Dependency>pari</Dependency>
+            <!--Dependency>pari</Dependency-->
             <Dependency>libSM</Dependency>
             <Dependency>libXaw</Dependency>
             <Dependency>libXft</Dependency>
