@@ -38,13 +38,17 @@
     <Package>
         <Name>mate-screensaver</Name>
 	<RuntimeDependencies>
-	    <Dependency>dbus-glib</Dependency>
-            <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>gettext</Dependency>
-	    <Dependency>rarian</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
 	    <Dependency>mate-conf</Dependency>
+            <Dependency>gtk2</Dependency>
+	    <Dependency>mate-desktop</Dependency>
+	    <Dependency>libmatekbd</Dependency>
+	    <Dependency>dbus-glib</Dependency>
+            <Dependency>libmatenotify</Dependency>
+	    <Dependency>libX11</Dependency>
+	    <Dependency>libXext</Dependency>
+	    <Dependency>libXrandr</Dependency>
+	    <Dependency>libXxf86misc</Dependency>
+	    <Dependency>libXxf86vm</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
