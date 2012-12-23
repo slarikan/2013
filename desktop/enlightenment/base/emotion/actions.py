@@ -13,13 +13,13 @@ shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
 shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
-    shelltools.touch("README")
-    autotools.autoreconf("-fi")
     autotools.configure("--disable-static\
                          --enable-generic \
                          --disable-generic-vlc \
                          --enable-xine \
-                         --enable-gstreamer")
+                         --enable-gstreamer \
+                         --disable-install-examples \
+                         --disable-doc")
 
 def build():
     autotools.make()
