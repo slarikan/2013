@@ -24,7 +24,6 @@
             <Dependency versionFrom="1.7.0">edje-devel</Dependency>        
             <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
-            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -39,7 +38,6 @@
             <Dependency versionFrom="1.7.0">edje</Dependency>        
             <Dependency versionFrom="1.7.0">efreet</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus</Dependency>
-            <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
             <Dependency>pidgin</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -57,7 +55,7 @@
             <Comment>version bump</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-	</Update>
+        </Update>
         <Update release="3">
             <Date>2012-07-11</Date>
             <Version>0.1</Version>
