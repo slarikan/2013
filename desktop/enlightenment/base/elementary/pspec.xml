@@ -13,34 +13,44 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>Enlightenment's basic widget set</Summary>
         <Description>Elementary is a widget toolkit and EFL wrapper and convenience library to make it easy to build applications and tools with UI's with less code, as well as being able to still dig down layers. Let's begin with a hello world example. This assumes you have managed to install Elementary by now and are wondering where to get started with using it.</Description>
-        <Archive sha1sum="b7c3f346dbeb1d3ee43f140fd2a93384c20a92bb" type="targz">http://download.enlightenment.org/releases/elementary-1.7.3.tar.gz</Archive>
+        <Archive sha1sum="af1f981a823d79a87b04eeccbded608607b5a016" type="tarbz2">http://download.enlightenment.org/releases/elementary-1.7.4.tar.bz2</Archive>
         <BuildDependencies>
-	    <Dependency versionFrom="1.7.3">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.3">efreet-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">e_dbus-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">ethumb-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">embryo-devel</Dependency>
-	    <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-	    <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
-	    <Dependency versionFrom="0.1.0">emap-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eio-devel</Dependency>
+            <Dependency versionFrom="1.7.4">edje-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency versionFrom="1.7.4">efreet-devel</Dependency>
+            <Dependency versionFrom="1.7.4">e_dbus-devel</Dependency>
+            <Dependency versionFrom="1.7.4">ethumb-devel</Dependency>
+            <Dependency versionFrom="1.7.4">embryo-devel</Dependency>
+            <Dependency versionFrom="1.7.4">emotion-devel</Dependency>
+            <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
+            <Dependency versionFrom="0.1.0">emap-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>elementary</Name>
-	<RuntimeDependencies>
-	    <Dependency versionFrom="1.7.3">edje</Dependency>
-            <Dependency versionFrom="1.7.3">efreet</Dependency>
-	    <Dependency versionFrom="1.7.3">e_dbus</Dependency>
-	    <Dependency versionFrom="1.7.3">ethumb</Dependency>
-	    <Dependency versionFrom="1.7.3">embryo</Dependency>
-	    <Dependency versionFrom="1.7.3">eet</Dependency>
-	    <Dependency versionFrom="0.2.0_09152012">libeweather</Dependency>
-	    <Dependency versionFrom="0.1.0">emap</Dependency>
+        <RuntimeDependencies>
+            <Dependency versionFrom="1.7.4">eet</Dependency>
+            <Dependency versionFrom="1.7.4">eio</Dependency>
+            <Dependency versionFrom="1.7.4">edje</Dependency>
+            <Dependency versionFrom="1.7.4">eina</Dependency>
+            <Dependency versionFrom="1.7.4">evas</Dependency>
+            <Dependency versionFrom="1.7.4">ecore</Dependency>
+            <Dependency versionFrom="1.7.4">efreet</Dependency>
+            <Dependency versionFrom="1.7.4">e_dbus</Dependency>
+            <Dependency versionFrom="1.7.4">ethumb</Dependency>
+            <Dependency versionFrom="1.7.4">embryo</Dependency>
+            <Dependency versionFrom="1.7.4">emotion</Dependency>
+            <Dependency versionFrom="0.2.0_09152012">libeweather</Dependency>
+            <Dependency versionFrom="0.1.0">emap</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="executable">/usr/bin/</Path>
-	    <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
@@ -50,14 +60,7 @@
         <Name>elementary-devel</Name>
         <Summary>Development files for elementary</Summary>
         <RuntimeDependencies>
-	    <Dependency versionFrom="1.7.3">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.3">efreet-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">e_dbus-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">ethumb-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">embryo-devel</Dependency>
-	    <Dependency versionFrom="1.7.3">eet-devel</Dependency>
-	    <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
-	    <Dependency versionFrom="0.1.0">emap-devel</Dependency>
+            <Dependency version="current">elementary</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -66,6 +69,13 @@
     </Package>
 
     <History>
+        <Update release="10">
+            <Date>2012-12-23</Date>
+            <Version>1.7.4</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="9">
             <Date>2012-12-12</Date>
             <Version>1.7.3</Version>
