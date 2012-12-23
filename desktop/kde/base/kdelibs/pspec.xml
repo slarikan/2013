@@ -183,7 +183,7 @@
     </Package>
 
     <History>
-        <Update release="122">
+        <Update release="1">
             <Date>2012-12-11</Date>
             <Version>4.9.95</Version>
             <Comment>Version bump to 4.9.95</Comment>
