@@ -15,7 +15,7 @@ shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
 
-    autotools.autoreconf("-vfi")
+    autotools.autoreconf()
     autotools.configure("--disable-static \
                          --with-internal-maximum-log-level=3 \
                          --enable-glib \
@@ -58,7 +58,7 @@ def setup():
                          --enable-ecore-x \
                          --disable-ecore-sdl \
                          --enable-ecore-fb \
-                         --enable-ecore-directfb \
+                         --disable-ecore-directfb \
                          --enable-ecore-evas \
                          --enable-ecore-evas-software-buffer \
                          --enable-ecore-evas-software-x11 \
@@ -90,6 +90,5 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.removeDir("/usr/bin")
-    #pisitools.removeDir("/usr/share")
 
     pisitools.dodoc("AUTHORS", "COPYING*", "README")

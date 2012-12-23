@@ -16,8 +16,8 @@
         <Description>Evas is a clean display canvas API for several target display systems that can draw anti-aliased text, smooth super and sub-sampled scaled images, alpha-blend objects much and more.</Description>
         <Archive sha1sum="d9d081d5ff44d3cebc5790a5edb47bd4092856ee" type="targz">http://download.enlightenment.org/releases/evas-1.7.4.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.3">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>fribidi-devel</Dependency>
 
@@ -36,8 +36,8 @@
     <Package>
         <Name>evas</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.3">eina</Dependency>
-            <Dependency versionFrom="1.7.3">eet</Dependency>
+            <Dependency versionFrom="1.7.4">eina</Dependency>
+            <Dependency versionFrom="1.7.4">eet</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>fribidi</Dependency>
 
@@ -67,8 +67,8 @@
         <Summary>Development files for evas</Summary>
         <RuntimeDependencies>
             <Dependency release="current">evas</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>fribidi-devel</Dependency>

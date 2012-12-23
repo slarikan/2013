@@ -16,9 +16,9 @@
         <Description>Ecore is the core event abstraction layer and X abstraction layer that makes doing selections, Xdnd, general X stuff, and event loops, timeouts and idle handlers fast, optimized, and convenient.</Description>
         <Archive sha1sum="673c3ef55b0482188b85f997af77bf8fb83791b5" type="targz">http://download.enlightenment.org/releases/ecore-1.7.4.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.3">eet-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
+            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
@@ -30,7 +30,6 @@
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
-            <Dependency>DirectFB-devel</Dependency>
             <Dependency>curl-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -38,9 +37,9 @@
     <Package>
         <Name>ecore</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.3">eina</Dependency>
-            <Dependency versionFrom="1.7.3">evas</Dependency>
-            <Dependency versionFrom="1.7.3">eet</Dependency>
+            <Dependency versionFrom="1.7.4">eina</Dependency>
+            <Dependency versionFrom="1.7.4">evas</Dependency>
+            <Dependency versionFrom="1.7.4">eet</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXcomposite</Dependency>
@@ -52,7 +51,6 @@
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>libXext</Dependency>
-            <Dependency>DirectFB</Dependency>
             <Dependency>curl</Dependency>
         </RuntimeDependencies>
         <Files>
