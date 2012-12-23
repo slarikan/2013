@@ -27,6 +27,7 @@
 	    <Dependency>mate-dialogs</Dependency>
 	    <Dependency>libSM-devel</Dependency>
 	    <Dependency>libICE-devel</Dependency>
+	    <Dependency>libXcomposite-devel</Dependency>
 	    <Dependency>startup-notification-devel</Dependency>
 	</BuildDependencies>
 	<Patches>
@@ -47,6 +48,7 @@
 	    <Dependency>mate-dialogs</Dependency>
 	    <Dependency>libSM</Dependency>
 	    <Dependency>libICE</Dependency>
+	    <Dependency>libXcomposite</Dependency>
 	    <Dependency>startup-notification</Dependency>
 	    <Dependency>libcanberra-gtk</Dependency>
 	</RuntimeDependencies>
