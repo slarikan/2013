@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>A KDE library for mathematical features</Summary>
         <Description>analitza is a library to add mathematical features to programs.</Description>
-        <Archive sha1sum="2b8ddabf169e45f44e8f148c9364f921708181ef" type="tarxz">mirrors://kde/unstable/4.9.90/src/analitza-4.9.90.tar.xz</Archive>
+        <Archive sha1sum="279fa3fac98bbf5fc33f59714cbd4b822d65c320" type="tarxz">mirrors://kde/unstable/4.9.95/src/analitza-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.90">libkdeedu-devel</Dependency>    
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.95">libkdeedu-devel</Dependency>    
             <Dependency>readline-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,8 +23,8 @@
     <Package>
         <Name>analitza</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.90">libkdeedu</Dependency>    
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">libkdeedu</Dependency>    
             <Dependency>readline</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -48,10 +48,10 @@
     </Package>
 
     <History>
-         <Update release="7">
-            <Date>2012-12-14</Date>
-            <Version>4.9.90</Version>
-            <Comment>Version bump to 4.9.90</Comment>
+        <Update release="1">
+            <Date>2012-12-23</Date>
+            <Version>4.9.95</Version>
+            <Comment>Version bump to 4.9.95</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
