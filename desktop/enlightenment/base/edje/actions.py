@@ -13,9 +13,17 @@ shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
 shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
-    autotools.autoreconf("-vfi")
+#    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
-                         --enable-amalgamation")
+                         --disable-sndfile \
+                         --disable-remix \
+                         --disable-vorbisenc \
+                         --disable-alsa \
+                         --disable-flac \
+                         --disable-tests \
+                         --disable-coverage \
+                         --enable-amalgamation \
+                         --disable-doc")
 
 def build():
     autotools.make()
