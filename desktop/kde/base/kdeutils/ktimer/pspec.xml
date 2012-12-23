@@ -13,16 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>A countdown launcher</Summary>
         <Description>KTimer is a little tool to execute programs after some time. It allows you to enter several tasks and to set a timer for each of them. The timers for each task can be started, stopped, changed, or looped.</Description>
-        <Archive sha1sum="5330e2da7a88855cf6934b4085d62c509fab5015" type="tarxz">mirrors://kde/unstable/4.9.90/src/ktimer-4.9.90.tar.xz</Archive>
+        <Archive sha1sum="5b77c8be0b223bce6012f5d48f937ec487059208" type="tarxz">mirrors://kde/unstable/4.9.95/src/ktimer-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ktimer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,54 +33,12 @@
     </Package>
 
     <History>
-        <Update release="7">
-            <Date>2012-12-15</Date>
-            <Version>4.9.90</Version>
-            <Comment>Version bump to 4.9.90</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="6">
-            <Date>2012-11-10</Date>
-            <Version>4.9.3</Version>
-            <Comment>Version bump to 4.9.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
-        <Update release="5">
-            <Date>2012-06-08</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="4">
-            <Date>2012-05-07</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2012-04-11</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-03-09</Date>
-            <Version>4.8.1</Version>
-            <Comment>Version bump to 4.8.1</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-01-31</Date>
-            <Version>4.8.0</Version>
-            <Comment>First release</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
+            <Date>2012-12-23</Date>
+            <Version>4.9.95</Version>
+            <Comment>Version bump to 4.9.95</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
     </History>
 </PISI>
