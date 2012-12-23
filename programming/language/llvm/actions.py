@@ -26,21 +26,19 @@ def setup():
     pisitools.dosed("tools/llvm-config/llvm-config.cpp", '(ActiveLibDir\s=\sActivePrefix\s\+\s\"\/lib)(.*)', r'\1/llvm\2')
     pisitools.dosed("autoconf/configure.ac", '\LLVM_LIBDIR="\$\{prefix\}/lib"', 'LLVM_LIBDIR="${prefix}/lib/llvm"')
 
-    #autotools.configure()
-    
     pisitools.dosed("Makefile.rules", "\$\(RPATH\)\s-Wl,\$\(ExmplDir\)\s\$\(DynamicFlag\)", "$(DynamicFlag)")
     pisitools.dosed("Makefile.rules", "\$\(RPATH\)\s-Wl,\$\(ToolDir\)\s\$\(DynamicFlag\)", "$(DynamicFlag)")
-    
-    #shelltools.export("CPPFLAGS",get.CXXFLAGS())
+
     shelltools.export("CPPFLAGS","%s %s" % (get.CXXFLAGS(),pkgconfig.getLibraryCFLAGS("libffi")))
-    
+
     pic_option = "enable" if get.ARCH() == "x86_64" else "disable"
-    
+
     options = "--libdir=%s \
                --datadir=/usr/share/llvm \
                --sysconfdir=/etc \
                --enable-jit \
                --enable-threads \
+               --disable-assertions \
                --%s-pic \
                " % (libdir, pic_option)
 
