@@ -9,18 +9,18 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vfi")
-    autotools.configure()
+    autotools.autoreconf()
+    autotools.configure("--disable-static \
+                         --enable-posix-threads \
+                         --disable-debug-threads \
+                         --enable-inotify \
+                         --disable-install-examples \
+                         --disable-doc")
 
 def build():
     autotools.make()
 
 def install():
-    #autotools.Install()
-    #autotools.rawInstall()
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-
-    #pisitools.removeDir("/usr/bin")
-    #pisitools.removeDir("/usr/share")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README")
