@@ -14,10 +14,10 @@
         <Description>Live555 is a set of C++ libraries for multimedia streaming, using open standard protocols (RTP/RTCP, RTSP, SIP)</Description>
         <!-- we can't use the upstream address as archive since older versions are removed too quickly
 	     web sitesinden adres vermeyin,başka alana çekin, hemen kaynak siliniyor-->
-        <Archive sha1sum="c386c37c20fa0edc813f3a2922a8e7d01dde6311" type="targz">http://anka.pardus-linux.org/2013/source/live.2012.12.23.tar.gz</Archive>
+        <Archive sha1sum="c386c37c20fa0edc813f3a2922a8e7d01dde6311" type="targz">http://anka.pardus-linux.org/2013/source/live.2012.10.04.tar.gz</Archive>
         <Patches>
-            <Patch level="1">shared-config.patch</Patch>
-            <Patch level="1">live-pic.patch</Patch>
+             <Patch level="1">shared-config.patch</Patch>
+	     <Patch level="1">live-pic.patch</Patch>
             <!--
             <Patch level="1">libs.patch</Patch>
             -->
@@ -44,13 +44,6 @@
     </Package>
 
     <History>
-        <Update release="15">
-            <Date>2012-08-27</Date>
-            <Version>0.0_20121223</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
         <Update release="14">
             <Date>2012-08-27</Date>
             <Version>0.0_20121004</Version>
