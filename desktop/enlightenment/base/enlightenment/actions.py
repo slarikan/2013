@@ -15,7 +15,6 @@ shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
 
-    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --enable-shared \
                          --enable-pam \
@@ -24,7 +23,14 @@ def setup():
                          --disable-mount-hal \
                          --enable-mount-udisks \
                          --enable-mount-eeze \
-                         --disable-illume2")
+                         --enable-elementary \
+                         --enable-emotion \
+                         --enable-enotify \
+                         --enable-ephysics \
+                         --disable-wayland-clients \
+                         --disable-conf-wallpaper2 \
+                         --disable-illume2 \
+                         --disable-doc")
 
 def build():
     autotools.make()
