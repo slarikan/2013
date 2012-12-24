@@ -15,7 +15,7 @@
         <Archive sha1sum="ac53c2c6e15b642d5d06eb0fc092d6a35ab7eec7" type="targz">ftp://ftp.ulak.net.tr/pub/postfix/official/postfix-2.9.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mysql-lib</Dependency>
-            <Dependency>cyrus-sasl</Dependency>
+            <Dependency>cyrus-sasl-devel</Dependency>
             <Dependency>openldap-client</Dependency>
             <Dependency>postgresql-lib</Dependency>
             <Dependency>mit-kerberos</Dependency>
