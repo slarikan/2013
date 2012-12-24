@@ -11,7 +11,7 @@ diff -ruNb a//pisi/constants.py b//pisi/constants.py
          self.__c.translations_file = "translations.xml"
 diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
 --- a/pisi/specfile.py	2011-05-26 19:17:29.000000000 +0200
-+++ b/pisi/specfile.pyw	2012-12-18 18:43:56.568504743 +0100
++++ b/pisi/specfile.py	2012-12-24 09:57:13.288825557 +0100
 @@ -387,6 +387,13 @@
          return s + '\n'
  
@@ -38,7 +38,7 @@ diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
  
      def decode_hook(self, node, errs, where):
 +        if len(self.history) == 0:
-+        	return
++            return
          current_version = self.history[0].version
          current_release = self.history[0].release
  
@@ -47,24 +47,24 @@ diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
              raise Error(_("translations.xml file is badly formed."))
  
 +    def read_history (self, path, pspec_history = False):
-+    	''' Read separate history.xml file '''
-+    	if not os.path.exists(path):
-+    		# need to raise errors
-+    		return
-+    	spec = HistorySpecFile ()
++        ''' Read separate history.xml file '''
++        if not os.path.exists(path):
++            # need to raise errors
++            return
++        spec = HistorySpecFile ()
 +        spec.read(path, ctx.config.tmp_dir())
-+    	if pspec_history:
++        if pspec_history:
 +            # if exists history in pspec.xml and history.xml merge them  
 +            self.history = pspec_history + spec.history
 +        else: self.history = spec.history
-+    
-+    	if len(self.history) == 0:
-+    	    # Still no history?? tut tut :)
-+    	    raise Error (_("File '%s' has invalid XML") % (path) )
-+    
++
++        if len(self.history) == 0:
++            # Still no history?? tut tut :)
++            raise Error (_("File '%s' has invalid XML") % (path) )
++
 +        current_version = self.history[0].version
 +        current_release = self.history[0].release
-+    
++
 +        for package in self.packages:
 +            deps = package.packageDependencies[:]
 +            deps += sum([x.dependencies for x
@@ -73,18 +73,18 @@ diff -ruNb a//pisi/specfile.py b//pisi/specfile.py
 +                for attr_name, attr_value in dep.__dict__.items():
 +                    if attr_value != "current":
 +                        continue
-+    
++
 +                    if attr_name.startswith("version"):
 +                        dep.__dict__[attr_name] = current_version
-+    
++
 +                    elif attr_name.startswith("release"):
 +                        dep.__dict__[attr_name] = current_release
  
      def read_translations(self, path):
          if not os.path.exists(path):
 diff -ruNb a/operations/build.py b/operations/build.py
---- a/pisi/operations/build.py	2012-12-18 18:44:16.000000000 +0100
-+++ b/pisi/operations/build.py	2012-12-18 18:43:45.486505148 +0100
+--- a/pisi/operations/build.py	2012-12-24 09:58:23.000000000 +0100
++++ b/pisi/operations/build.py	2012-12-24 09:56:37.244826874 +0100
 @@ -211,6 +211,18 @@
          else:
              self.specdir = os.path.dirname(self.specuri.get_uri())
@@ -98,8 +98,8 @@ diff -ruNb a/operations/build.py b/operations/build.py
 +        else:
 +            # If exists in pspec.xml try append from history.xml if available
 +            if specuri.is_remote_file ():
-+                if self.fetch_historyfile():
-+                    self.read_history (self.specdir, self.spec.history)
++                self.fetch_historyfile()
++            self.read_history (self.specdir, self.spec.history)
 +
          # Don't wait until creating .pisi file for complaining about versioning
          # scheme errors
@@ -116,7 +116,7 @@ diff -ruNb a/operations/build.py b/operations/build.py
      def read_translations(self, specdir):
          self.spec.read_translations(util.join_path(specdir,
                                      ctx.const.translations_file))
-@@ -440,6 +457,17 @@
+@@ -440,6 +457,18 @@
          actionsuri = util.join_path(self.specdiruri, ctx.const.actions_file)
          self.download(actionsuri, self.destdir)
  
@@ -128,8 +128,9 @@ diff -ruNb a/operations/build.py b/operations/build.py
 +                self.download(historyuri, self.specdir)
 +            except pisi.fetcher.FetchError:
 +                # history.xml is not mandatory for PiSi if history exists in pspec.xml
-+                return False
-+        return True
++                history_partial_file = os.path.join(self.specdir, ctx.const.history_file + ctx.const.partial_suffix)
++                if os.stat(history_partial_file).st_size == 0:
++                    os.remove(history_partial_file)
 +
      def fetch_translationsfile(self):
          translationsuri = util.join_path(self.specdiruri,
