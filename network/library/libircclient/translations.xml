@@ -6,6 +6,10 @@
         <Description xml:lang="tr">istemci-sunucu IRC protokolünü sağlayan küçük ama güçlü bir kütüphane</Description>
     </Source>
     <Package>
+        <Name>libircclient</Name>
+        <Summary xml:lang="tr">istemci-sunucu IRC protokolünü sağlayan bir kütüphane</Summary>
+    </Package>
+    <Package>
         <Name>libircclient-devel</Name>
         <Summary xml:lang="tr">libircclient'in geliştirme dosyaları</Summary>
     </Package>
