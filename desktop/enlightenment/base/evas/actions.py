@@ -17,7 +17,7 @@ def setup():
                          --disable-static \
                          --enable-fontconfig \
                          --enable-fribidi \
-                         --disable-harfbuzz \
+                         --enable-harfbuzz \
                          --disable-pixman \
                          --enable-buffer \
                          --disable-gl-sdl \
