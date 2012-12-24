@@ -5,15 +5,15 @@
         <Name>chromium-browser</Name>
         <Homepage>http://code.google.com/chromium</Homepage>
         <Packager>
-            <Name>Pardus ANKA Admins</Name>
-            <Email>pisiciftligi@pardus-linux.org</Email>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
         </Packager>
         <License>GPLv2</License>
         <Icon>chromium-browser</Icon>
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="6ef20848252959f38c7c29527d83cf53469c9ce4" type="tarbz2">http://gsdview.appspot.com/chromium-browser-official/chromium-18.0.1025.33.tar.bz2</Archive>
+        <Archive sha1sum="85e2d4ea7634b00f8f03b0febc0d72519d3dd681" type="tarbz2">http://gsdview.appspot.com/chromium-browser-official/chromium-26.0.1368.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libstdc++</Dependency>
@@ -44,27 +44,22 @@
         </BuildDependencies>
         <Patches>
             <!--Add warnings for pisi and zsh files-->
-            <Patch level="1">additional_download_extensions.patch</Patch>
-
+            <!--<Patch level="1">additional_download_extensions.patch</Patch>-->
             <!--Prevent jpeg render curruption when used libjpeg-turbo-->
             <!--https://bugs.gentoo.org/show_bug.cgi?id=393471-->
-            <Patch level="0">chromium-revert-jpeg-swizzle-r2.patch</Patch>
-
+            <!--<Patch level="0">chromium-revert-jpeg-swizzle-r2.patch</Patch>-->
             <!--Prevent compilation failures caused by missing zlib #include and dependency.-->
-            <Patch level="0">chromium-webkit-zlib-r0.patch</Patch>
-
+            <!--<Patch level="0">chromium-webkit-zlib-r0.patch</Patch>-->
             <!--Fix crashes on illegal instructions, bug #401537.-->
-            <Patch level="0">chromium-media-no-sse-r0.patch</Patch>
-
+            <!--<Patch level="0">chromium-media-no-sse-r0.patch</Patch>-->
             <!--Prevent gyp failures caused by target type 'settings' instead of 'none'.-->
-            <Patch level="0">chromium-gyp-settings-r0.patch</Patch>
-
+            <!--<Patch level="0">chromium-gyp-settings-r0.patch</Patch>-->
             <!--Fix build pulseaudio: http://crbug.com/111392-->
-            <Patch level="1">pulse-compile-fix.diff</Patch>
-
+            <!--<Patch level="1">pulse-compile-fix.diff</Patch>-->
             <!--Use this patch if nacl is enabled. Also add zlib-32bit as build dependency.-->
             <!--NaCL toolchain needs it-->
             <!--<Patch level="1">nacl-cflags-remove-fstack-protector.patch</Patch>-->
+	    <Patch level="0">chromium-26.0.1368.0-glib-2.16-use-siginfo_t.patch</Patch>
         </Patches>
     </Source>
 
@@ -111,6 +106,24 @@
     </Package>
 
     <History>
+        <Update release="61">
+            <Date>2012-08-27</Date>
+            <Version>26.0.1368.0</Version>
+            <Comment>
+                * New beta release 26.0.1368.0
+            </Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>  
+        <Update release="60">
+            <Date>2012-08-27</Date>
+            <Version>23.0.1231.0</Version>
+            <Comment>
+                * New beta release 23.0.1231.0
+            </Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>      
         <Update release="59">
             <Date>2012-02-16</Date>
             <Version>18.0.1025.33</Version>
