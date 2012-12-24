@@ -20,6 +20,7 @@
             <Dependency versionFrom="1.7.4">eet-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>fribidi-devel</Dependency>
+            <Dependency>harfbuzz-devel</Dependency>
 
             <!--GL, FB and X backend dependencies-->
             <Dependency>mesa-devel</Dependency>
@@ -40,6 +41,7 @@
             <Dependency versionFrom="1.7.4">eet</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>fribidi</Dependency>
+            <Dependency>harfbuzz</Dependency>
 
             <!--GL, FB and X backend dependencies-->
             <Dependency>DirectFB</Dependency>
