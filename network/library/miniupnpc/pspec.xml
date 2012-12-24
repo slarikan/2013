@@ -18,7 +18,7 @@
             <!--Dependency></Dependency-->
         </BuildDependencies>
         <Patches>
-            
+	    <Patch>missheader.patch</Patch>
         </Patches>
     </Source>
 
@@ -37,7 +37,7 @@
     <Package>
         <Name>miniupnpc-devel</Name>
         <RuntimeDependencies>
-            <!--Dependency></Dependency-->
+            <Dependency>miniupnpc</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="header">/usr/include/miniupnpc</Path>
