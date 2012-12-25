@@ -121,7 +121,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libdrm-intel</Dependency>
-            <Dependency>libdrm-32bit</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm_intel.*</Path>
@@ -135,7 +135,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libdrm-nouveau</Dependency>
-            <Dependency>libdrm-32bit</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm_nouveau.*</Path>
@@ -149,7 +149,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libdrm-radeon</Dependency>
-            <Dependency>libdrm-32bit</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm_radeon.*</Path>
@@ -163,7 +163,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libkms</Dependency>
-            <Dependency>libdrm-32bit</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libkms.*</Path>
