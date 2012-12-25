@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An advanced multiple language translator with built-in encyclopedia and custom-made dictionary support</Summary>
         <Description>GoldenDict is an advanced multiple language translator that can use Babylon, StarDict, Dictd, ABBYY Lingvo and Wikipedia sources.</Description>
-        <Archive sha1sum="a1ff36b1cceb5234f4730d1c6f19405a76d40fc4" type="tarbz2">mirrors://sourceforge/goldendict/goldendict-1.0.1-src.tar.bz2</Archive>
+	<Archive sha1sum="bf4c453ea83921b06ef2b682c740e365dfe1a727" type="zip">http://anka.pardus-linux.org/2013/source/goldendict-20121225.zip</Archive>
         <BuildDependencies>
             <Dependency>hunspell-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
@@ -49,6 +49,13 @@
     </Package>
 
     <History>
+       <Update release="6">
+            <Date>2012-12-25</Date>
+            <Version>1.0.1_20121225</Version>
+            <Comment>New snapshot, build using gcc-4.7.x</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-02-04</Date>
             <Version>1.0.1</Version>
