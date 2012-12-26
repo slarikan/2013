@@ -22,6 +22,7 @@ def setup():
                          --disable-mono \
                          --enable-cxx \
                          --disable-examples \
+                         --with-jar=/opt/sun-jdk/bin/jar \
                          --enable-verbose")
 
 def build():
