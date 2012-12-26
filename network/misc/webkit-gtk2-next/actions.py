@@ -9,7 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "webkitgtk-%s" % get.srcVERSION()
+WorkDir = "webkitgtk-1.11.1"
 
 shelltools.export("HOME", get.workDIR())
 shelltools.export("XDG_DATA_HOME", get.workDIR())
@@ -29,9 +29,9 @@ def setup():
                          --enable-filters \
                          --with-font-backend=pango \
                          --with-unicode-backend=icu \
-                         --with-gtk=3.0 \
+                         --with-gtk=2.0 \
+                         --disable-webkit2 \
                          --disable-gtk-doc")
-
     pisitools.dosed("GNUmakefile", "(Programs_DumpRenderTree_LDFLAGS\s=\s)", r"\1-lfontconfig ")
 
 def build():
@@ -44,7 +44,7 @@ def install():
     # remove empty dir
     pisitools.removeDir("usr/libexec")
 
-    pisitools.domove("/usr/share/gtk-doc/html/webkitgtk", "/usr/share/gtk-doc/html/webkitgtk3")
+    #pisitools.domove("/usr/share/gtk-doc/html/webkitgtk", "/usr/share/gtk-doc/html/webkitgtk2")
 
     pisitools.dodoc("NEWS")
     shelltools.cd("Source")
