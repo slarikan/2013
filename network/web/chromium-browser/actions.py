@@ -24,27 +24,24 @@ def setup():
     # use_system_ffmpeg has build problems, system libraries might be outdated
 
     # We add -fno-ipa-cp to CFLAGS. See: http://crbug.com/41887
-    shelltools.system("build/gyp_chromium --depth=. \
+    shelltools.system("build/gyp_chromium -f make build/all.gyp --depth=. \
                         -Dgcc_version=45 \
                         -Dno_strict_aliasing=1 \
                         -Dwerror= \
                         -Dlinux_strip_binary=1 \
-                        -Dlinux_use_gold_binary=0 \
-                        -Dlinux_use_gold_flags=0 \
                         -Dlinux_sandbox_path=/usr/lib/chromium-browser/chromium-sandbox \
                         -Dlinux_sandbox_chrome_path=/usr/lib/chromium-browser/chromium-browser \
                         -Drelease_extra_cflags=-fno-ipa-cp \
                         -Dproprietary_codecs=1 \
                         -Dinclude_pulse_audio=1 \
                         -Duse_system_bzip2=1 \
-                        -Duse_system_ffmpeg=0 \
                         -Duse_system_libpng=1 \
                         -Duse_system_libevent=1 \
                         -Duse_system_libjpeg=1 \
                         -Duse_system_libxslt=1 \
                         -Duse_system_libexpat=1 \
                         -Duse_system_libxml=1 \
-                        -Duse_system_libwebp=1 \
+                        -Duse_system_libwebp=0 \
                         -Duse_system_speex=1 \
                         -Duse_system_zlib=0 \
                         -Duse_system_flac=1 \
@@ -54,12 +51,11 @@ def setup():
                         -Duse_system_ssl=0 \
                         -Duse_system_icu=0 \
                         -Ddisable_sse2=1 \
-                        -Ddisable_glibc=1 \
                         -Ddisable_nacl=1 \
                         -Dtarget_arch=%s" % ARCH)
 
 def build():
-    autotools.make("chrome chrome_sandbox BUILDTYPE=Release")
+    autotools.make("chrome chrome_sandbox BUILDTYPE=Release V=1")
 
 def install():
     shelltools.cd("out/Release")
@@ -81,7 +77,7 @@ def install():
     pisitools.insinto("/usr/lib/chromium-browser", "libffmpegsumo.so")
 
     # Nacl plugin
-    pisitools.insinto("/usr/lib/chromium-browser", "libppGoogleNaClPluginChrome.so")
+    # pisitools.insinto("/usr/lib/chromium-browser", "libppGoogleNaClPluginChrome.so")
 
     pisitools.newman("chrome.1", "chromium-browser.1")
 
