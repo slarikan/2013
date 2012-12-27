@@ -41,7 +41,8 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>flac-devel</Dependency>
             <Dependency>speex-devel</Dependency>
-	    <Dependency>webp-devel</Dependency>
+            <Dependency>webp-devel</Dependency>
+            <Dependency>speech-dispatcher-devel</Dependency>
         </BuildDependencies>
         <Patches>
 	    <Patch level="0">chromium-26.0.1368.0-glib-2.16-use-siginfo_t.patch</Patch>
@@ -72,7 +73,8 @@
             <Dependency>libXrender</Dependency>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency versionFrom="2.0.12">libevent</Dependency>
-	    <Dependency>webp</Dependency>
+            <Dependency>webp</Dependency>
+            <Dependency>speech-dispatcher</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
