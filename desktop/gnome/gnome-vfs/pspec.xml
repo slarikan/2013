@@ -103,8 +103,8 @@
         <Name>gnome-vfs-devel</Name>
         <Summary>Development files for gnome-vfs</Summary>
         <BuildDependencies>
-            <Dependency>libxml2-32-bit</Dependency>
-            <Dependency>glib2-32-bit</Dependency>
+            <Dependency>libxml2-32bit</Dependency>
+            <Dependency>glib2-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency>gconf-devel</Dependency>
