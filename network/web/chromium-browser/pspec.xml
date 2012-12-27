@@ -43,6 +43,7 @@
             <Dependency>speex-devel</Dependency>
             <Dependency>webp-devel</Dependency>
             <Dependency>speech-dispatcher-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
         </BuildDependencies>
         <Patches>
 	    <Patch level="0">chromium-26.0.1368.0-glib-2.16-use-siginfo_t.patch</Patch>
@@ -75,6 +76,7 @@
             <Dependency versionFrom="2.0.12">libevent</Dependency>
             <Dependency>webp</Dependency>
             <Dependency>speech-dispatcher</Dependency>
+            <Dependency>libXrandr</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
