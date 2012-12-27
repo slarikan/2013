@@ -24,6 +24,7 @@
             <Dependency>python-rdflib</Dependency>
             <!-- rapper is needed from raptor -->
             <Dependency>raptor2</Dependency>
+            <Dependency>xapian-core-devel</Dependency>
             <Dependency>xapian-core</Dependency>    
         </BuildDependencies>
     </Source>
