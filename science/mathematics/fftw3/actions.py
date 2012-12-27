@@ -45,11 +45,11 @@ def setup():
 def check():
     autotools.make("check")
 
-    shelltools.cd("../fftw-%s-double" % get.srcVERSION())
-    autotools.make("check")
+    #shelltools.cd("../fftw-%s-double" % get.srcVERSION())
+    #autotools.make("check")
 
-    shelltools.cd("../fftw-%s-long-double" % get.srcVERSION())
-    autotools.make("check")
+    #shelltools.cd("../fftw-%s-long-double" % get.srcVERSION())
+    #autotools.make("check")
 
 def build():
     autotools.make()
