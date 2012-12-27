@@ -10,13 +10,12 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system('NOCONFIGURE=1 xdt-autogen')
+#    shelltools.system('NOCONFIGURE=1 xdt-autogen')
     autotools.configure("--sysconfdir=/etc \
                          --libexecdir=/usr/lib/xfce4 \
                          --localstatedir=/var \
                          --disable-static \
-                         --enable-notifications \
-                         --enable-python")
+                         --disable-debug")
 
 def build():
     autotools.make()
@@ -24,4 +23,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "COPYING", "ChangeLog", "NEWS", "README", "THANKS", "TODO")
+    pisitools.dodoc("AUTHORS", "COPYING*", "ChangeLog", "NEWS", "README", "THANKS", "TODO")
