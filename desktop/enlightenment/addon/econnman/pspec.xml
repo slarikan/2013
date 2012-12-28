@@ -11,11 +11,22 @@
         <Summary>EFL user interface for connman</Summary>
         <Description>EFL user interface for connman (Connection Manager).</Description>
         <Archive sha1sum="333f6f8633af4f01d1ddb07ceb5635299d243413" type="targz">http://packages.profusion.mobi/econnman/econnman-1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>connman-devel</Dependency>
+            <Dependency>python-e_dbus</Dependency>
+            <Dependency>python-ecore</Dependency>
+            <Dependency>python-edje</Dependency>
+            <Dependency>python-elementary</Dependency>
+        </BuildDependencies>
     </Source>
     <Package>
         <Name>econnman</Name>
         <RuntimeDependencies>
             <Dependency>connman</Dependency>
+            <Dependency>python-e_dbus</Dependency>
+            <Dependency>python-ecore</Dependency>
+            <Dependency>python-edje</Dependency>
+            <Dependency>python-elementary</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/econnman-bin</Path>
