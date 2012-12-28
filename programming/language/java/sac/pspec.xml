@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sac</Name>
+        <Homepage>http://www.w3.org/Style/CSS/SAC/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <IsA>library</IsA>
+        <Summary>SAC is a standard interface for CSS parser</Summary>
+        <Description>SAC 1.0 is a standard interface for CSS parser and supposed to work with CSS1, CSS2, CSS3 (currently under development) and other CSS derived languages.</Description>
+        <Archive sha1sum="e84267eccd36b886bececc304e3c5f9d880c878b" type="zip">http://www.w3.org/2002/06/sacjava-1.3.zip</Archive>
+        <BuildDependencies>
+            <Dependency>sun-jdk</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>sac</Name>
+        <RuntimeDependencies>
+            <Dependency>sun-jre</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/share/java</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2012-28</Date>
+            <Version>1.3</Version>
+            <Comment>İlk Sürüm</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+    </History>
+</PISI>
