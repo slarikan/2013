@@ -16,6 +16,7 @@
         <BuildDependencies>
             <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>
+            <Dependency>taglib-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,6 +25,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="4.9.95">kdelibs</Dependency>
             <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
+            <Dependency>taglib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
