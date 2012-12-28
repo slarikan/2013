@@ -25,7 +25,6 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/share/java</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
