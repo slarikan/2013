@@ -1,0 +1,7 @@
+--- mono-3.0.2/runtime/mono-wrapper.in	2011-11-15 19:22:44.000000000 +0200
++++ mono-3.0.2-new/runtime/mono-wrapper.in	2012-12-26 04:04:49.177101000 +0200
+@@ -4,4 +4,3 @@
+ PATH="$r/runtime/_tmpinst/bin:$PATH"
+ MONO_SHARED_DIR=$r/runtime
+ export MONO_CFG_DIR MONO_SHARED_DIR PATH
+-exec "$r/libtool" --mode=execute "$r/@mono_runtime@" --config "@mono_cfg_dir@/mono/config" "$@"

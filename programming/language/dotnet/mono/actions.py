@@ -14,6 +14,7 @@ import glob
 import os.path
 
 shelltools.export("LC_ALL", "C")
+shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-fi")
@@ -21,12 +22,17 @@ def setup():
     # Static libs should be enabled for mono compiler
     autotools.configure("--enable-parallel-mark \
                          --with-profile4=yes \
+                         --disable-system-aot \
                          --with-tls=pthread \
                          --with-jit=yes \
                          --with-sgen=no \
                          --with-libgdiplus=installed \
+                         --with-preview=yes \
+                         --disable-static \
                          --prefix=/usr \
                          --sysconfdir=/etc \
+                         --with-sigalstack=no \
+                         --with-moonlight=no \
                          --with-monotouch=no ")
 
 def build():
