@@ -582,7 +582,7 @@
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
-        </Component>        
+        </Component>
         <Component>
             <Name>programming.language.falcon</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
@@ -792,7 +792,7 @@
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
         </Component>
-	<Component>
+        <Component>
             <Name>desktop.cinnamon</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
             <Summary xml:lang="en">FIXME</Summary>
@@ -1220,7 +1220,7 @@
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
-        </Component>  
+        </Component>
         <Component>
             <Name>desktop.kde.base.kdemultimedia</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
@@ -1230,7 +1230,7 @@
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
-            </Maintainer>            
+            </Maintainer>
         </Component>
         <Component>
             <Name>desktop.kde.base.kdegames</Name>
@@ -1241,7 +1241,7 @@
             <Maintainer>
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
-            </Maintainer>            
+            </Maintainer>
         </Component>
         <Component>
             <Name>desktop.kde.admin</Name>
@@ -1286,7 +1286,7 @@
                 <Name>Pardus ANKA Admins</Name>
                 <Email>pisiciftligi@pardus-linux.org</Email>
             </Maintainer>
-        </Component>        
+        </Component>
         <Component>
             <Name>editor.emacs</Name>
             <LocalName xml:lang="en">FIXME</LocalName>
