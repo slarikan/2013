@@ -204,6 +204,7 @@
             <Dependency>polkit-qt_1</Dependency>
             <Dependency versionFrom="2.7.0">soprano</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
+            <Dependency versionFrom="4.6.2">phonon-backend-gstreamer</Dependency>    
             <Dependency>nepomuk-core</Dependency>     
             <Dependency>libqjson</Dependency>    
             <Dependency>xcb-util-image</Dependency>
