@@ -41,3 +41,5 @@ def install():
 
     pisitools.dodir("/usr/lib/browser-plugins")
     pisitools.dosym("/opt/sun-jre/lib/%s/libnpjp2.so" % Arch.replace("i586", "i386").replace("x", "amd"), "/usr/lib/browser-plugins/javaplugin.so")
+    pisitools.dosym("/opt/sun-jdk/bin/javah", "/usr/bin/javah")
+    pisitools.dosym("/opt/sun-jdk/bin/jar", "/usr/bin/jar")
