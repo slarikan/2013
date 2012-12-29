@@ -18,7 +18,7 @@
             <Dependency>libxml2-devel</Dependency>
             <Dependency>enchant-devel</Dependency>
             <Dependency>gtkspell-devel</Dependency>
-	    <Dependency>gpgme-devel</Dependency>
+            <Dependency>gpgme-devel</Dependency>
             <Dependency>lua-devel</Dependency>
             <Dependency>webkit-gtk2-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
@@ -28,7 +28,7 @@
     </Source>
 
     <Package>
-     <Name>geany-plugins</Name>
+        <Name>geany-plugins</Name>
         <RuntimeDependencies>
             <Dependency version="1.22">geany</Dependency>
             <Dependency>libxml2</Dependency>
@@ -72,4 +72,3 @@
         </Update>
     </History>
 </PISI>
-

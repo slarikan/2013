@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>GTK+ based fast and lightweight IDE</Summary>
-        <Description>GTK+ based fast and lightweight IDE</Description>        
+        <Description>GTK+ based fast and lightweight IDE</Description>
         <Archive sha1sum="0a659cff6e46d38cc659516bb9e2a655d0f124ba" type="tarbz2">http://download.geany.org/geany-1.22.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
@@ -20,7 +20,7 @@
     </Source>
 
     <Package>
-     <Name>geany</Name>
+        <Name>geany</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>vte</Dependency>
@@ -52,15 +52,14 @@
             <Version>0.21</Version>
             <Comment>Version bump</Comment>
             <Email>erdem.artan@linux.org.tr</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="1">
             <Date>2011-02-06</Date>
             <Version>0.20</Version>
             <Comment>First release</Comment>
             <Email>erdem.artan@linux.org.tr</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
     </History>
 </PISI>
-
