@@ -25,13 +25,13 @@
     </Package>
 
     <History>
-	<Update release="9">
+        <Update release="9">
             <Date>2012-12-17</Date>
             <Version>0.8.8</Version>
             <Comment>Version bump</Comment>
             <Name>canatan</Name>
             <Email>q66680@gmail.com</Email>
-	</Update>
+        </Update>
         <Update release="8">
             <Date>2010-06-01</Date>
             <Version>0.8.5</Version>
@@ -67,7 +67,7 @@
         <Update release="6">
             <Date>2009-01-02</Date>
             <Version>0.8.1</Version>
-            <Comment>* Single player campaign re-organized 
+            <Comment>* Single player campaign re-organized
                      * New hitsound
                      * New map: ps37ctf, ctf_gate1, am_galevish
                      * Space Marine should no longer crash on old client

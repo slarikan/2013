@@ -43,7 +43,7 @@
 
     <Package>
         <Name>warsow</Name>
-       <RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>libsdl</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>sdl-sound</Dependency>

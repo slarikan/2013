@@ -20,9 +20,9 @@
         <Files>
             <Path fileType="data">/usr/share/uqm/content/packages</Path>
         </Files>
-   </Package>
+    </Package>
 
-   <History>
+    <History>
         <Update release="1">
             <Date>2007-02-02</Date>
             <Version>0.6.0</Version>
@@ -32,4 +32,3 @@
         </Update>
     </History>
 </PISI>
-

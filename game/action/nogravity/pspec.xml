@@ -18,8 +18,8 @@
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
-	    <Dependency>libogg-devel</Dependency>
-	</BuildDependencies>
+            <Dependency>libogg-devel</Dependency>
+        </BuildDependencies>
         <Patches>
             <Patch level="1">configure.patch</Patch>
             <Patch level="1">missing_png_and_libz.patch</Patch>
@@ -37,7 +37,7 @@
         <RuntimeDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
-	    <Dependency>libogg-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>nogravity-data</Dependency>

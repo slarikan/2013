@@ -29,7 +29,7 @@
             <Patch level="0">xmoto-0.5.10-gcc47.patch</Patch>
             <Patch level="0">genericname_pl-tr.patch</Patch>
         </Patches>
-   </Source>
+    </Source>
 
     <Package>
         <Name>xmoto</Name>
