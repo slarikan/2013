@@ -6,7 +6,7 @@ Index: pyqt4/qtermwidget.sip
          ScrollBarLeft=1,
          ScrollBarRight=2
      };
-+    void startShellProgram();
++       void startShellProgram();
  	void setTerminalFont(QFont &font);
  	void setShellProgram(QString &progname);
  	void setArgs(QStringList &args);
