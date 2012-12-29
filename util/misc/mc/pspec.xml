@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>GNU Midnight Commander cli-based file manager</Summary>
         <Description>Contains GNU Midnight Commander cli-based file manager. You can do lots of file management and editing tasks, both in normal terminals and in terminal emulators of X. Also has file transfer capabilities over FTP, SSH, and Samba.</Description>
-        <Archive sha1sum="372111fa5199c1365f58fcc741a09d4e33d62610" type="tarxz">http://www.midnight-commander.org/downloads/mc-4.8.6.tar.xz</Archive>
+        <Archive sha1sum="5f1b1881735911da3e8ea765de48bdc8226abead" type="tarxz">http://www.midnight-commander.org/downloads/mc-4.8.7.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gpm</Dependency>
             <Dependency>samba-devel</Dependency>
@@ -55,7 +55,7 @@
             <Patch>ftpfs_symlink2.patch</Patch>
             <Patch level="1">fix-regex-pattern-lengths.patch</Patch>
             <Patch level="1">regexp-replace-fixed.patch</Patch>-->
-            <!-- http://www.midnight-commander.org/ticket/287 
+            <!-- http://www.midnight-commander.org/ticket/287
             <Patch level="1">multi-press-f-keys.patch</Patch>
             <Patch level="1">showfree.patch</Patch>
             <Patch level="1">ipv6.patch</Patch>
@@ -112,16 +112,23 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/mc</Path>
-	    <Path fileType="config">/etc/mc</Path>
+            <Path fileType="config">/etc/mc</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/profile.d/mc.sh">mc.profile</AdditionalFile>
             <AdditionalFile owner="root" permission="0755" target="/usr/share/mc/extfs/u7z">u7z</AdditionalFile>
             <AdditionalFile owner="root" permission="0755" target="/usr/share/mc/mc.ini">mc.ini</AdditionalFile>
         </AdditionalFiles>
-   </Package>
+    </Package>
 
     <History>
+        <Update release="22">
+            <Date>2012-12-29</Date>
+            <Version>4.8.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="21">
             <Date>2012-10-05</Date>
             <Version>4.8.6</Version>
