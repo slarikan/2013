@@ -71,11 +71,6 @@ def install():
     pisitools.dosym("libOpenCL.so.1.0.0", "%s/libOpenCL.so.1.0" % libdir)
     pisitools.dosym("libOpenCL.so.1.0", "%s/libOpenCL.so.1" % libdir)
 
-    # XvMC
-    pisitools.dolib("libXvMCNVIDIA.so.%s" % version, libdir)
-    pisitools.dosym("libXvMCNVIDIA.so.%s" % version, "%s/libXvMCNVIDIA.so.1" % libdir)
-    pisitools.dosym("libXvMCNVIDIA.so.1", "%s/libXvMCNVIDIA.so" % libdir)
-
     # CUDA
     pisitools.dolib("libcuda.so.%s" % version, libdir)
     pisitools.dosym("libcuda.so.%s" % version, "%s/libcuda.so.1" % libdir)
