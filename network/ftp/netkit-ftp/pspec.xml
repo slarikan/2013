@@ -18,13 +18,14 @@
             <Patch level="1">netkit-ftp-0.17-pre20000412.pasv-security.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-acct.patch</Patch>
             <Patch level="1">netkit-ftp.usagi-ipv6.patch</Patch>
+            <Patch level="1">netkit-ftp-0.17-arg_max.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-segv.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-volatile.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-runique_mget.patch</Patch>
             <Patch level="1">netkit-ftp-locale.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-printf.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-longint.patch</Patch>
-            <Patch level="1">netkit-ftp-0.17-vsftp165083.patch</Patch>
+            <!--<Patch level="1">netkit-ftp-0.17-vsftp165083.patch</Patch>--> <!--Hataya nedne oluyor.-->
             <Patch level="1">netkit-ftp-0.17-C-Frame121.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-data.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-multihome.patch</Patch>
@@ -37,7 +38,6 @@
             <Patch level="1">netkit-ftp-0.17-fdleak.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-fprintf.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-bitrate.patch</Patch>
-            <Patch level="1">netkit-ftp-0.17-arg_max.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-case.patch</Patch>
             <Patch level="1">netkit-ftp-0.17-chkmalloc.patch</Patch>
 
