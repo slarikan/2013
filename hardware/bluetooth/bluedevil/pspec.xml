@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE Bluetooth stack</Summary>
         <Description>bluedevil is a set of components which integrates bluetooth within the KDE SC.</Description>
-        <Archive sha1sum="3f832a94359a5f61275bd1d07f5b9cd68d2738fd" type="tarbz2">mirrors://kde/stable/bluedevil/1.2.4/src/bluedevil-1.2.4.tar.bz2</Archive>
+        <Archive sha1sum="3f832a94359a5f61275bd1d07f5b9cd68d2738fd" type="tarbz2"> http://download.kde.org/stable/bluedevil/1.2.4/src/bluedevil-1.2.4.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr/bluedevil.po">tr.po</AdditionalFile>
         </AdditionalFiles>
