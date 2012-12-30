@@ -20,7 +20,7 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency versionFrom="1.8.1_20110918">libbluedevil-devel</Dependency>
+            <Dependency versionFrom="1.9.2">libbluedevil-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +31,7 @@
             <Dependency>obexd</Dependency>
             <Dependency>bluez</Dependency>
             <Dependency>kdelibs</Dependency>
-            <Dependency versionFrom="1.8.1_20110918">libbluedevil</Dependency>
+            <Dependency versionFrom="1.9.2">libbluedevil</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
