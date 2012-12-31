@@ -14,7 +14,9 @@ from pisi.actionsapi import kde4
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    kde4.configure("-DWITH_IPOD=ON")
+    kde4.configure("-DWITH_IPOD=ON --with-kde -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
+                    -DCMAKE_BUILD_TYPE=Debugfull \
+                    -DKDE_DISTRIBUTION_TEXT='Pardus - Anka'")
 
 def build():
     kde4.make()
