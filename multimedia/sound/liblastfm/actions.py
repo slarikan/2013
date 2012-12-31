@@ -8,7 +8,6 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "eartle-liblastfm-9b4efb5"
 
 def setup():
     cmaketools.configure("-DBUILD_FINGERPRINT:BOOL=ON} \
