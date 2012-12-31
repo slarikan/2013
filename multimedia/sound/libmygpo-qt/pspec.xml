@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Qt Library that wraps the gpodder.net Web API</Summary>
         <Description>libmygpo-qt is a Qt Library that wraps the gpodder.net Web API.</Description>
-        <Archive sha1sum="a38d0ac08cc4601634b3cda3851226aabcff9638" type="targz">http://stefan.derkits.at/files/libmygpo-qt/libmygpo-qt.1.0.5.tar.gz</Archive>
+        <Archive sha1sum="7970c4c43cab4862e220b4239491f2bac2c36f75" type="targz">http://stefan.derkits.at/files/libmygpo-qt/libmygpo-qt.1.0.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>libqjson-devel</Dependency>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-12-31</Date>
+            <Version>1.0.6</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="4">
             <Date>2012-08-31</Date>
             <Version>1.0.5</Version>
