@@ -33,18 +33,18 @@
             <Dependency>libXcursor-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>python-gtk-devel</Dependency>
-	    <Dependency>gtk-doc</Dependency>
-	    <Dependency versionFrom="1.30.0">pango-devel</Dependency>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>webkit-gtk2-devel</Dependency>
+            <Dependency versionFrom="1.30.0">pango-devel</Dependency>
             <Dependency versionFrom="1.10.2">cairo-devel</Dependency>
-	    <Dependency versionFrom="2.25.2">gdk-pixbuf-devel</Dependency>
+            <Dependency versionFrom="2.25.2">gdk-pixbuf-devel</Dependency>
             <Dependency versionFrom="0.2.0">gegl-devel</Dependency>
             <Dependency versionFrom="0.1.10">babl-devel</Dependency>
             <Dependency versionFrom="2.24.10">gtk2-devel</Dependency>
-            <Dependency releaseFrom="14">webkit-gtk2-devel</Dependency>
             <Dependency versionFrom="0.16.3">poppler-glib-devel</Dependency>
-	    <Dependency versionFrom="2.3.3">atk-devel</Dependency>
-	    <Dependency versionFrom="2.31.20">glib2-devel</Dependency>
-	    <Dependency versionFrom="0.40.1">intltool</Dependency>
+            <Dependency versionFrom="2.3.3">atk-devel</Dependency>
+            <Dependency versionFrom="2.31.20">glib2-devel</Dependency>
+            <Dependency versionFrom="0.40.1">intltool</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -90,16 +90,16 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>webkit-gtk2</Dependency>
             <Dependency>python-gtk</Dependency>
-	    <Dependency versionFrom="2.25.2">gdk-pixbuf</Dependency>
-	    <Dependency versionFrom="1.30.0">pango</Dependency>
+            <Dependency versionFrom="2.25.2">gdk-pixbuf</Dependency>
+            <Dependency versionFrom="1.30.0">pango</Dependency>
             <Dependency versionFrom="0.2.0">gegl</Dependency>
             <Dependency versionFrom="0.1.10">babl</Dependency>
             <Dependency versionFrom="2.24.10">gtk2</Dependency>
             <Dependency versionFrom="1.10.2">cairo</Dependency>
             <Dependency versionFrom="0.16.3">poppler-glib</Dependency>
-	    <Dependency versionFrom="2.3.3">atk</Dependency>
-	    <Dependency versionFrom="2.31.20">glib2</Dependency>
-	    <Dependency versionFrom="0.40.1">intltool</Dependency>
+            <Dependency versionFrom="2.3.3">atk</Dependency>
+            <Dependency versionFrom="2.31.20">glib2</Dependency>
+            <Dependency versionFrom="0.40.1">intltool</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
