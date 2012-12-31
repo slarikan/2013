@@ -16,7 +16,7 @@
         <Archive sha1sum="c3fc7770a9ddaaa09923d67ee8023cd5a2b61100" type="tarbz2">mirrors://kde/unstable/amarok/2.6.90/src/amarok-2.6.90.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
-            <Dependency>gmock-devel</Dependency>
+            <Dependency>googlemock-devel</Dependency>
             <Dependency>clamz</Dependency>    
             <Dependency>mesa-devel</Dependency>
             <Dependency>glibc-devel</Dependency>
@@ -48,7 +48,7 @@
         <Name>amarok</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency>gmock</Dependency>
+            <Dependency>googlemock</Dependency>
             <Dependency>clamz</Dependency>     
             <Dependency>mesa</Dependency>
             <Dependency>glibc</Dependency>
