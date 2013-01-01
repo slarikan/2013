@@ -33,6 +33,7 @@
             <Dependency>gnome-keyring-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>ruby-devel</Dependency>
         </BuildDependencies>
         <Patches>
         </Patches>
@@ -41,6 +42,7 @@
     <Package>
         <Name>webkit-gtk2</Name>
         <RuntimeDependencies>
+            <Dependency>ruby</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>mesa</Dependency>
