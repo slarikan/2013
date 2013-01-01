@@ -27,6 +27,7 @@
             <Dependency>libtheora-devel</Dependency>
             <Dependency>libvisual-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>orc-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch>ltmain_as-needed.patch</Patch>
@@ -50,6 +51,7 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>libvisual</Dependency>
             <Dependency>libtheora</Dependency>
+            <Dependency>orc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
