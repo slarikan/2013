@@ -6,10 +6,7 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
-
-shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.configure("--enable-opt --enable-ldopt")
@@ -17,7 +14,9 @@ def build():
     autotools.make()
 
 def install():
-    pisitools.insinto("/usr/lib/", "*so*")
+    pisitools.insinto("/usr/lib/", "*.so*")
+    pisitools.domove("/usr/lib/libspnav.so.0.1", "/usr/lib", "libspnav.so")
+    pisitools.insinto("/usr/lib/", "*.so*")
     pisitools.insinto("/usr/include/", "*.h")
 
     pisitools.dodoc("README")

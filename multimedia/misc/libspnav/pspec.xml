@@ -28,7 +28,7 @@
             <Dependency>libX11</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="library">/usr/lib/libspnav.so.0.1</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
    </Package>
@@ -41,8 +41,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/lib/pkgconfig</Path>
-            <Path fileType="data">/usr/share/aclocal</Path>
+            <Path fileType="library">/usr/lib/libspnav.so</Path>
         </Files>
     </Package>
 
