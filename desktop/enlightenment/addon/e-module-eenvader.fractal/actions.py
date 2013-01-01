@@ -9,7 +9,7 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="eenvader.fractal" 
+WorkDir="eenvader-fractal" 
 
 def setup():
         shelltools.system("./autogen.sh")
