@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>bovo</Name>
+        <Name>kreversi</Name>
         <Homepage>http://games.kde.org</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -10,9 +10,9 @@
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
-        <Summary>Five in a row board game</Summary>
-        <Description>Bovo is a Gomoku like game for two players, where the opponents alternate in placing their respective pictogram on the game board..</Description>
-        <Archive sha1sum="ba08535adf00822d32c5ab4b623e219a3a7ac466" type="tarxz">mirrors://kde/unstable/4.9.95/src/bovo-4.9.95.tar.xz</Archive>
+        <Summary>Reversi board game</Summary>
+        <Description>KReversi is a simple one player strategy game played against the computer.</Description>
+        <Archive sha1sum="ba16f2a2dcd301d2a8873a2c7bbe187a5c8f4e98" type="tarxz">mirrors://kde/unstable/4.9.95/src/kreversi-4.9.95.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
             <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
@@ -20,11 +20,11 @@
     </Source>
 
     <Package>
-        <Name>bovo</Name>
-        <Icon>bovo</Icon>
+        <Name>kreversi</Name>
+        <Icon>kreversi</Icon>
         <RuntimeDependencies>
             <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>    
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -34,9 +34,9 @@
         </Files>
     </Package>
 
-    <History>
+    <History> 
         <Update release="1">
-            <Date>2012-12-07</Date>
+            <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
