@@ -2,167 +2,63 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>partitionmanager</Name>
-        <Homepage>http://sourceforge.net/projects/partitionman</Homepage>
+        <Name>libatasmart</Name>
+        <Homepage>http://git.0pointer.de/?p=libatasmart.git</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <License>GPLv2+</License>
-        <Icon>partitionmanager</Icon>
-        <IsA>app:gui</IsA>
-        <Summary>KDE Partition Manager</Summary>
-        <Description>KDE Partition Manager allows you to manage your disks, partitions, and file systems. It can create, resize, delete, copy, backup, and restore partitions with a large number of supported file systems (ext2/3/4, reiserfs, NTFS, FAT32, and more).</Description>
-        <Archive sha1sum="4ced4cc1ce40a34c54ee7cd0ce8aa8df22e26cdd" type="tarxz">http://svn.mandriva.com/svn/packages/cooker/partitionmanager/current/SOURCES/partitionmanager-1.0.60.tar.xz</Archive>
-        <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
-	    <Dependency>libblkid-devel</Dependency>
-            <Dependency>automoc4</Dependency>
-            <Dependency versionFrom="3.1">parted-devel</Dependency>
-        </BuildDependencies>
+        <License>LGPLv2+</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>ATA S.M.A.R.T. Disk Health Monitoring Library</Summary>
+        <Description>A small and lightweight parser library for ATA S.M.A.R.T. hard disk health monitoring.</Description>
+        <Archive sha1sum="0d0745b6bd2e5b9461d15966b5daac6c98302de8" type="tarxz">http://0pointer.de/public/libatasmart-0.19.tar.xz</Archive>
         <Patches>
-            <!--<Patch level="1">desktop-file.patch</Patch>
-            <Patch level="1">device-list-texts.patch</Patch>-->
-	    <Patch>partitionmanager-1.0.60-parted3.patch</Patch>
-	    <Patch level="0">001-desktop-file.patch</Patch>
+            <Patch level="1">libatasmart-uninitialized-var.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
-        <Name>partitionmanager</Name>
+        <Name>libatasmart</Name>
+        <Files>
+            <Path fileType="executable">/usr/sbin/skdump</Path>
+            <Path fileType="executable">/usr/sbin/sktest</Path>
+            <Path fileType="library">/usr/lib/libatasmart.so*</Path>
+            <Path fileType="data">/usr/share/doc/libatasmart/README</Path>
+            <Path fileType="data">/usr/share/doc/libatasmart/LGPL</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libatasmart-devel</Name>
+        <Summary>Development files for libatasmart</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.3">qt</Dependency>
-	    <Dependency>libblkid</Dependency>
-            <Dependency versionFrom="3.1">parted</Dependency>
+            <Dependency release="current">libatasmart</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/vala</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="12">
-            <Date>2013-01-02</Date>
-            <Version>1.0.60</Version>
-            <Comment>Güncellendi.</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="11">
-            <Date>2011-01-16</Date>
-            <Version>1.0.3</Version>
-            <Comment>Make device list more user friendly. Fixes #15027.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-10-13</Date>
-            <Version>1.0.3</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-09-02</Date>
-            <Version>1.0.3</Version>
-            <Comment>
-                - Bump to the new stable release
-                - Fix systemsettings category for KDE >= 4.5.0
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-08-25</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                - Use new kde4 module in actions.py
-                - Use new prefixes for 2011
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-05-13</Date>
-            <Version>1.0.2</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-04-24</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                New stable release.
-
-                Changes:
-                - Fixed some minor bugs and small GUI inconsistencies.
-                - Fixed a crash when adding operations to first resize
-                  extended partitions and then delete them were fixed.
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-01-10</Date>
-            <Version>1.0.1</Version>
-            <Comment>
-                New stable release.
-
-                Changes:
-                - A bug that made it impossible to activate or deactivate
-                  a swap file system was fixed.
-                - An administrator's password is requested on startup so that
-                  non-KDE users can run the application... from their launcher.
-                - The program no longer crashes when using the Oxygen style
-                  under KDE SC 4.4, or when the user clicks in the partition
-                  widget with newer g++ versions.
-                - Updates for the partition widget are no longer disabled
-                  while applying operations.
-                - Fixed a LibParted segmentation fault when the Linux Device
-                  Mapper is used.
-                - Hang when no floppy is present is now worked around.
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-08-18</Date>
-            <Version>1.0.0</Version>
-            <Comment>First stable release nearly identical to the release candidate. Includes translation updates.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-10</Date>
-            <Version>1.0.0_rc1</Version>
-            <Comment>New release fixing some minor bugs on the way to 1.0</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
         <Update release="2">
-            <Date>2009-06-04</Date>
-            <Version>1.0.0_beta3</Version>
-            <Comment>
-                - New beta release
-                - Add fix to detect ext4 partitions
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
+            <Date>2012-10-02</Date>
+            <Version>0.19</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
         <Update release="1">
-            <Date>2009-01-14</Date>
-            <Version>1.0.0_beta2</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
+            <Date>2010-06-14</Date>
+            <Version>0.17</Version>
+            <Comment>First release.</Comment>
+            <Name>Mete Alpaslan</Name>
+            <Email>mete@pardus.org.tr</Email>
         </Update>
-     </History>
+    </History>
 </PISI>
+
