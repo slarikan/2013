@@ -13,12 +13,12 @@
 /sbin/plymouthd
 /usr/lib/libdrm.so.2
 /usr/lib/libdrm_intel.so.1
-/usr/lib/libdrm_nouveau.so.1
+/usr/lib/libdrm_nouveau.so.2
 /usr/lib/libdrm_radeon.so.1
 /usr/lib/libkms.so.1
 /usr/lib/libply-boot-client.so.2
 /usr/lib/libply-splash-graphics.so.2
-/usr/lib/libpng14.so.14
+/usr/lib/libpng15.so.15
 /usr/lib/liblzo2.so.2
 /usr/lib/plymouth/details.so
 /usr/lib/plymouth/fade-throbber.so
