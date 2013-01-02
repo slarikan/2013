@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Integer Set Library</Summary>
         <Description>isl is a library for manipulating sets and relations of integer points bounded by linear constraints.</Description>
-        <Archive sha1sum="fdddef977f031656d3ddf38fb94477d7cc58756d" type="tarlzma">http://www.kotnet.org/~skimo/isl/isl-0.10.tar.lzma</Archive>
+        <Archive sha1sum="fdddef977f031656d3ddf38fb94477d7cc58756d" type="tarlzma">ftp://ftp.linux.student.kuleuven.be/pub/people/skimo/isl/isl-0.10.tar.lzma</Archive>
     </Source>
 
     <Package>
