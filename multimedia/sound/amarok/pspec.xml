@@ -34,7 +34,7 @@
             <Dependency>loudmouth-devel</Dependency>
             <Dependency>liblastfm-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libmygpo-qt-devel</Dependency>
+            <Dependency versionFrom="1.0.6">libmygpo-qt-devel</Dependency>
             <Dependency>qtscriptgenerator</Dependency>
         </BuildDependencies>
         <Patches>
@@ -66,7 +66,7 @@
             <Dependency>loudmouth</Dependency>
             <Dependency>liblastfm</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libmygpo-qt</Dependency>
+            <Dependency versionFrom="1.0.6">libmygpo-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
