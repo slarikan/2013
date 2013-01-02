@@ -44,6 +44,7 @@
             <Dependency>libbluray-devel</Dependency>
             <Dependency>gnome-vfs-devel</Dependency>
             <Dependency>libmpc-devel</Dependency>
+            <Dependency>libmng-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">external-a52.patch</Patch>
@@ -107,6 +108,7 @@
             <Dependency>libbluray</Dependency>
             <Dependency>gnome-vfs</Dependency>
             <Dependency>libmpc-devel</Dependency>
+            <Dependency>libmng</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
