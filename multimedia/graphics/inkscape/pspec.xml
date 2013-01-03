@@ -46,6 +46,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>pangomm-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Do not call gtk-update-icon-cache we already do that in PackageHandler -->
