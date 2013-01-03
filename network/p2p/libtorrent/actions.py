@@ -29,7 +29,7 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.removeDir("/usr/bin")
+    #pisitools.removeDir("/usr/bin")
 
     pisitools.dohtml("docs/*")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")

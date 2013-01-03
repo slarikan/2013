@@ -29,6 +29,8 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="header">/usr/include/kde4/libpala</Path>
+            <Path fileType="data">/usr/include/kde4/Pala</Path>
             <Path fileType="data">/usr/share</Path> 
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
