@@ -14,7 +14,7 @@
         <Description>ktorrent is a BitTorrent (P2P file distribution protocol) program for KDE.</Description>
         <Archive sha1sum="60400c6286f58934dde7ab471f56188b68d69f7b" type="tarbz2">http://ktorrent.org/downloads/4.3.0/ktorrent-4.3.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.1">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.8.1">kde-workspace</Dependency>
             <Dependency versionFrom="4.8.1">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.1">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.8.0">qt-devel</Dependency>
@@ -30,7 +30,7 @@
     <Package>
         <Name>ktorrent</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">kdebase-workspace</Dependency>
+            <Dependency versionFrom="4.8.1">kde-workspace</Dependency>
             <Dependency versionFrom="4.8.1">kdelibs</Dependency>
             <Dependency versionFrom="4.8.1">kdepimlibs</Dependency>
             <Dependency versionFrom="4.8.0">qt</Dependency>
