@@ -11,6 +11,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("HOME", get.workDIR())
+
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--includedir=/usr/include/gpgme \
