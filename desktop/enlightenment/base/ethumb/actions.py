@@ -9,10 +9,13 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vfi")
+#    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --enable-epdf \
-                         --disable-emotion")
+                         --enable-libexif \
+                         --enable-emotion \
+                         --disable-install-examples \
+                         --disable-doc")
 
 def build():
     autotools.make()

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>klickety</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A kind of solitary game</Summary>
+        <Description>Klickety is a kind of solitary game that takes place on a Tetris-like board.</Description>
+        <Archive sha1sum="690a76c0e800f1b14cd6288f495eaf95b0517b30" type="tarxz">mirrors://kde/unstable/4.9.95/src/klickety-4.9.95.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>klickety</Name>
+        <Icon>klickety</Icon>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History> 
+        <Update release="1">
+            <Date>2013-01-02</Date>
+            <Version>4.9.95</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+    </History>
+</PISI>

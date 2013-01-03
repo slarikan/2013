@@ -14,19 +14,21 @@
         <Summary>A library using the EFL which allows to manage a list of albums and photos for Enlightenment</Summary>
         <Description>Enlil is a library using the EFL which allows to manage a list of albums and photos.EET is used to create the database and ecore to manage events and file.
         flicrkcurl which is optionnal allows to synchronise a library with a flickr account</Description>
-        <Archive sha1sum="91de02e3d0b9bad8e1b7c43edcc3209a2fae42d9" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/enlil-1.0.tar.gz</Archive>
+        <Archive sha1sum="705591a78d87f595a1014281886f83ed4c1fde28" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/enlil-20121228.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>git</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
-            <Dependency versionFrom="1.2.3">flickcurl-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ethumb-devel</Dependency>
-            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+            <Dependency releaseFrom="22">eina-devel</Dependency>
+            <Dependency releaseFrom="28">eet-devel</Dependency>
+            <Dependency releaseFrom="26">evas-devel</Dependency>
+            <Dependency releaseFrom="23">ecore-devel</Dependency>
+            <Dependency releaseFrom="23">edje-devel</Dependency>
+            <Dependency releaseFrom="17">efreet-devel</Dependency>
+            <Dependency releaseFrom="17">e_dbus-devel</Dependency>
+            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
+            <Dependency releaseFrom="9">ethumb-devel</Dependency>
             <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
             <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
+            <Dependency versionFrom="1.2.3">flickcurl-devel</Dependency>
             <Dependency>libiptcdata-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
 	    <!--<Dependency>libkexiv2-devel</Dependency>-->
@@ -36,16 +38,18 @@
     <Package>
         <Name>enlil</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.0">eet</Dependency>
-            <Dependency versionFrom="1.7.0">evas</Dependency>
-            <Dependency versionFrom="1.7.0">ecore</Dependency>
-            <Dependency versionFrom="1.7.0">edje</Dependency>
-	    <Dependency versionFrom="1.2.3">flickcurl</Dependency>
-	    <Dependency versionFrom="1.7.0">ethumb</Dependency>
-	    <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
-	    <Dependency versionFrom="1.7.0">python-evas</Dependency>
-	    <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
+            <Dependency releaseFrom="22">eina-devel</Dependency>
+            <Dependency releaseFrom="28">eet-devel</Dependency>
+            <Dependency releaseFrom="26">evas-devel</Dependency>
+            <Dependency releaseFrom="23">ecore-devel</Dependency>
+            <Dependency releaseFrom="23">edje-devel</Dependency>
+            <Dependency releaseFrom="17">efreet-devel</Dependency>
+            <Dependency releaseFrom="17">e_dbus-devel</Dependency>
+            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
+            <Dependency releaseFrom="9">ethumb</Dependency>
+            <Dependency versionFrom="1.7.0">python-evas</Dependency>
+            <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
+            <Dependency versionFrom="1.2.3">flickcurl</Dependency>
             <Dependency>libxml2</Dependency>
             <!--<Dependency>libkexiv2</Dependency>-->
             <Dependency>libiptcdata</Dependency>
@@ -59,6 +63,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2012-12-31</Date>
+            <Version>0.6.0_20121228</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-07-11</Date>
             <Version>1.0</Version>

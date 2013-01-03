@@ -14,16 +14,21 @@ shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
     autotools.autoreconf("-vfi")
-    autotools.configure("--enable-openssl \
+    autotools.configure("--disable-static \
+                         --enable-openssl \
+                         --enable-cipher \
+                         --enable-signature \
                          --disable-gnutls \
-                         --enable-amalgamation")
+                         --disable-build-examples \
+                         --disable-doc \
+                         --disable-install-examples \
+                         --disable-old-eet-file-format\
+                         --disable-tests")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
-    pisitools.removeDir("/usr/share")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "NEWS", "README")

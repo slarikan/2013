@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Copyleft 2012 Pardus ANKA Community
-# Copyright 2005-2011 TUBITAK/UEAKE
+# Copyright 2011 TUBITAK/BILGEM
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -44,7 +43,7 @@ def setup():
                         -Duse_system_libxml=1 \
                         -Duse_system_libwebp=0 \
                         -Duse_system_speex=1 \
-                        -Duse_system_zlib=1 \
+                        -Duse_system_zlib=0 \
                         -Duse_system_flac=1 \
                         -Duse_system_vpx=0 \
                         -Duse_system_xdg_utils=1 \
@@ -89,7 +88,7 @@ def install():
 
 
     shelltools.cd("../..")
-    for size in ["16", "22", "24", "32", "48", "64", "128", "256"]:
+    for size in ["22", "24", "48", "64", "128", "256"]:
         pisitools.insinto("/usr/share/icons/hicolor/%sx%s/apps" %(size, size), "chrome/app/theme/chromium/product_logo_%s.png" % size, "chromium-browser.png")
 
     pisitools.dosym("/usr/share/icons/hicolor/256x256/apps/chromium-browser.png", "/usr/share/pixmaps/chromium-browser.png")

@@ -13,18 +13,18 @@
         <IsA>app:gui</IsA>
         <Summary>A digital photo management application for KDE4</Summary>
         <Description>digikam is an advanced digital photo management application for KDE4, which makes importing and organizing digital photos a "snap". The photos can be organized in albums which can be sorted chronologically, by directory layout or by custom collections.</Description>
-        <Archive sha1sum="a7a9e4e342f118b603a11539c98a01c9970254df" type="tarbz2">mirrors://sourceforge/digikam/digikam/2.6.0/digikam-2.6.0.tar.bz2</Archive>
+        <Archive sha1sum="7c8dac61dc344221ce829527be7dcfeddf4d524e" type="tarbz2">http://download.kde.org/unstable/digikam/digikam-3.0.0-rc.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">kde-runtime</Dependency> <!-- Trash protocol -->
-            <Dependency versionFrom="4.8.2">marble</Dependency> <!-- marble devel files are needed -->
-            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.2">libkipi-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kdepimlibs-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency> <!-- Trash protocol -->
+            <Dependency versionFrom="4.9.95">marble-devel</Dependency> <!-- marble devel files are needed -->
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
+            <Dependency versionFrom="4.9.95">libkipi-devel</Dependency>
             <Dependency versionFrom="0.7.1">libqjson-devel</Dependency>
 	    <Dependency versionFrom="0.22">exiv2-devel</Dependency>
-	    <Dependency versionFrom="4.8.2">libkdcraw-devel</Dependency>
-	    <Dependency versionFrom="4.8.2">libkexiv2-devel</Dependency>
+	    <Dependency versionFrom="4.9.95">libkdcraw-devel</Dependency>
+	    <Dependency versionFrom="4.9.95">libkexiv2-devel</Dependency>
             <Dependency>atlas-devel</Dependency>    
             <Dependency>libgphoto2-devel</Dependency>
 	    <Dependency>libpng-devel</Dependency>
@@ -49,22 +49,23 @@
             <Dependency>qt-webkit-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fedora/digikam-2.5.0-clapack-atlas.patch</Patch>
+            <!--<Patch level="1">fedora/digikam-2.5.0-clapack-atlas.patch</Patch>-->
+	    <!--<Patch level="1">digikam-2.9.0-mariadb55.patch</Patch>-->
         </Patches>
     </Source>
 
     <Package>
         <Name>digikam</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">libkipi</Dependency>
-            <Dependency versionFrom="4.8.2">kde-runtime</Dependency>
-            <Dependency versionFrom="4.8.2">marble</Dependency>
-            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.2">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.8.1">libkdcraw</Dependency>
-            <Dependency versionFrom="4.8.1">libkexiv2</Dependency>    
-            <Dependency versionFrom="4.8.2">qt-sql-sqlite</Dependency> <!-- digikam uses mysqld by default but also works with sqlite -->
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency versionFrom="4.9.95">libkipi</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.95">marble</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.95">libkdcraw</Dependency>
+            <Dependency versionFrom="4.9.95">libkexiv2</Dependency>    
+            <Dependency versionFrom="4.8.3">qt-sql-sqlite</Dependency> <!-- digikam uses mysqld by default but also works with sqlite -->
+            <Dependency versionFrom="4.8.3">qt</Dependency>
             <Dependency versionFrom="0.7.1">libqjson</Dependency>
             <Dependency>libgphoto2</Dependency>
             <Dependency>lensfun</Dependency>
@@ -116,6 +117,13 @@
     </Package>
 
     <History>
+        <Update release="33">
+            <Date>2012-12-30</Date>
+            <Version>3.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="32">
             <Date>2012-06-05</Date>
             <Version>2.6.0</Version>

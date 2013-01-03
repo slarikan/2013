@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Webcam support for KDE</Summary>
         <Description>Kamera is a plugin for KDE to use webcam.</Description>
-        <Archive sha1sum="a206118da359a83faa679e414b66590fac74e3a7" type="tarxz">mirrors://kde/unstable/4.9.90/src/kamera-4.9.90.tar.xz</Archive>
+        <Archive sha1sum="738977a1205cd8eb24f9fa30fca503b40911c92c" type="tarxz">mirrors://kde/unstable/4.9.95/src/kamera-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
             <Dependency>libgphoto2-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>kamera</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
             <Dependency>libgphoto2</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -33,54 +33,12 @@
     </Package>
 
     <History>
-        <Update release="7">
-            <Date>2012-12-13</Date>
-            <Version>4.9.90</Version>
-            <Comment>Version bump to 4.9.90</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="6">
-            <Date>2012-11-10</Date>
-            <Version>4.9.3</Version>
-            <Comment>Version bump to 4.9.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-06-08</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-05-07</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2012-04-07</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update> 
-        <Update release="2">
-            <Date>2012-03-09</Date>
-            <Version>4.8.1</Version>
-            <Comment>Version bump to 4.8.1</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-01-28</Date>
-            <Version>4.8.0</Version>
-            <Comment>First release</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
+            <Date>2012-12-23</Date>
+            <Version>4.9.95</Version>
+            <Comment>Version bump to 4.9.95</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
     </History>
 </PISI>

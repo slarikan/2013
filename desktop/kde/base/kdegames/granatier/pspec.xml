@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>granatier</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A Bomberman game</Summary>
+        <Description>Granatier is a clone of the classic Bomberman game, inspired by the work of the Clanbomber clone.</Description>
+        <Archive sha1sum="536e9e50b7e1b87189787667479172a060f30cd3" type="tarxz">mirrors://kde/unstable/4.9.95/src/granatier-4.9.95.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>
+            <Dependency versionFrom="1.14">openal-devel</Dependency>    
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>granatier</Name>
+        <Icon>granatier</Icon>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
+            <Dependency versionFrom="1.14">openal</Dependency>    
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History> 
+        <Update release="1">
+            <Date>2012-12-20</Date>
+            <Version>4.9.95</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+    </History>
+</PISI>

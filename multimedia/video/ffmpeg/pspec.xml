@@ -55,12 +55,14 @@
             <Dependency>openjpeg-devel</Dependency>
             <Dependency>libv4l-devel</Dependency>
             <Dependency>xvid-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ffmpeg</Name>
         <RuntimeDependencies>
+            <Dependency>pulseaudio-libs</Dependency>
             <Dependency>frei0r-plugins</Dependency>
             <Dependency>faac</Dependency>
             <Dependency>imlib2</Dependency>

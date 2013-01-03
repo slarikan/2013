@@ -8,7 +8,7 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "blobby-beta-%s" % get.srcVERSION()
+#WorkDir = "blobby-beta-%s" % get.srcVERSION()
 
 def setup():
     cmaketools.configure()

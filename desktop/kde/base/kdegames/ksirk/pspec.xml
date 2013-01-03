@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>ksirk</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>World domination strategy game</Summary>
+        <Description>The goal of the KsirK is simply to conquer the World... It is done by attacking your neighbors with your armies.</Description>
+        <Archive sha1sum="22e163387d29e77c72c67ca02cfe97c4d40ee9d3" type="tarxz">mirrors://kde/unstable/4.9.95/src/ksirk-4.9.95.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>ksirk</Name>
+        <Icon>ksirk</Icon>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History> 
+        <Update release="1">
+            <Date>2013-01-02</Date>
+            <Version>4.9.95</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+    </History>
+</PISI>

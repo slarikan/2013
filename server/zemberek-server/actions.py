@@ -13,6 +13,8 @@ from pisi.actionsapi import get
 
 WorkDir="."
 
+shelltools.export("JAVA_HOME","/opt/sun-jdk")
+
 def setup():
     shelltools.makedirs("%s/lib" % get.workDIR())
 

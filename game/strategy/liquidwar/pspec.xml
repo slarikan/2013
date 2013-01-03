@@ -28,7 +28,7 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
-            <!--
+        <!--
         <Patches>
             <Patch level="1">liquidwar-5.6.4-exec-stack.patch</Patch>
             <Patch level="1">cleanup-sysdirs.patch</Patch>

@@ -10,19 +10,20 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system('xdt-autogen')
+#    shelltools.system('xdt-autogen')
     autotools.configure("--disable-static \
-                         --enable-dbus \
-                         --enable-notifications \
                          --enable-gio-unix \
-                         --enable-gnome-thumbnailers \
+                         --enable-dbus \
+                         --enable-gudev \
+                         --enable-notifications \
+                         --enable-startup-notification \
                          --enable-exif \
                          --enable-pcre \
                          --enable-wallpaper-plugin \
                          --enable-uca-plugin \
                          --enable-tpa-plugin \
                          --enable-apr-plugin \
-                         --with-volume-manager=hal")
+                         --disable-debug")
 
 def build():
     autotools.make()
@@ -30,4 +31,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "FAQ", "HACKING", "NEWS", "README", "THANKS", "TODO")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "FAQ", "HACKING", "NEWS", "README", "THANKS", "TODO")

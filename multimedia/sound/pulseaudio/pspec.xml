@@ -15,9 +15,12 @@
         <IsA>library</IsA>
         <Summary>A networked sound server with an advanced plugin system</Summary>
         <Description>pulseaudio is a sound server for POSIX and Win32 systems. It allows you to do advanced operations on your sound data as it passes between your application and your hardware.</Description>
-        <Archive sha1sum="56b4ad9207ea3aec0ad1b8be4b55793b426a4f01" type="tarxz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-2.1.tar.xz</Archive>
+        <Archive sha1sum="87d7d1bc0e07dcf1c9c38413b59343f0126e45df" type="tarxz">http://freedesktop.org/software/pulseaudio/releases/pulseaudio-3.0.tar.xz</Archive>
         <BuildDependencies>
-	    <Dependency>json-c-devel</Dependency>
+            <Dependency>orc-devel</Dependency>
+            <Dependency>sbc-devel</Dependency>
+            <Dependency>fftw3-devel</Dependency>
+            <Dependency>json-c-devel</Dependency>
             <Dependency>doxygen</Dependency>
             <Dependency>xcb-proto</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -50,7 +53,7 @@
             high CPU load of Pulseaudio: https://qa.mandriva.com/show_bug.cgi?id=36084 -->
             <Patch level="1">mandriva/0502-Change-the-default-resample-method-to-speex-fixed-0-.patch</Patch>
 
-            <Patch level="1">mandriva/0503-start-PA-earlier-in-GNOME-Mdv-bug-47594.patch</Patch>
+<!--             <Patch level="1">mandriva/0503-start-PA-earlier-in-GNOME-Mdv-bug-47594.patch</Patch> -->
             <Patch level="1">mandriva/0505-Mute-IEC958-Optical-Raw-for-AudigyX.patch</Patch>
 
             <!-- Pardus patches -->
@@ -77,10 +80,12 @@
     <Package>
         <Name>pulseaudio</Name>
         <RuntimeDependencies>
-	    <Dependency>json-c</Dependency>
+            <Dependency>orc</Dependency>
+            <Dependency>sbc</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>json-c</Dependency>
             <Dependency>lirc</Dependency>
             <Dependency>speex</Dependency>
-            <Dependency>rtkit</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libtdb</Dependency>
@@ -166,12 +171,13 @@
         <Name>pulseaudio-libs</Name>
         <Summary>Libraries for PulseAudio clients</Summary>
         <RuntimeDependencies>
+            <Dependency>orc</Dependency>
+            <Dependency>json-c</Dependency>
             <Dependency>speex</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libtdb</Dependency>
             <Dependency>libXtst</Dependency>
-            <Dependency>avahi-libs</Dependency>
             <Dependency>libasyncns</Dependency>
             <Dependency>libsndfile</Dependency>
             <Dependency>libsamplerate</Dependency>
@@ -218,7 +224,7 @@
             <Dependency>glib2-32bit</Dependency>
             <Dependency>libcap-32bit</Dependency>
             <Dependency>libsndfile-32bit</Dependency>
-	    <Dependency>json-c-32bit</Dependency>
+           <Dependency>json-c-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -226,6 +232,13 @@
     </Package>
 
     <History>
+      <Update release="35">
+            <Date>2012-12-18</Date>
+            <Version>3.0</Version>
+            <Comment>version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+      </Update>       
       <Update release="34">
             <Date>2012-10-04</Date>
             <Version>2.1</Version>

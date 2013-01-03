@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>Python bindings for Ethumb thumbnailing library</Summary>
         <Description>python-ethumb is the Python bindings for Ethumb thumbnailing library.</Description>
-	<Archive sha1sum="e943cdbd0f392fcfacec045b8a1f48dfcec477ad" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/py-bind/python-ethumb.tar.gz</Archive>
+        <Archive sha1sum="dfd30f37810cd7f85eb24946c901ac4c885deb06" type="tarbz2">http://download.enlightenment.fr/releases/BINDINGS/python/python-ethumb-1.7.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
             <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
             <Dependency versionFrom="1.7.0">ethumb-devel</Dependency>
@@ -27,7 +27,7 @@
         <Name>python-ethumb</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.99">evas</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
             <Dependency versionFrom="1.7.0">ecore</Dependency>
             <Dependency versionFrom="1.7.0">e_dbus</Dependency>
             <Dependency versionFrom="1.7.0">ethumb</Dependency>

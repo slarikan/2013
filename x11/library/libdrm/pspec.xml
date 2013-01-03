@@ -13,8 +13,6 @@
         <Summary>Userspace interface to kernel DRM services</Summary>
         <Description>libdrm is a library providing the userspace interface to kernel DRM services.</Description>
         <Archive sha1sum="0f77aa49922e17102caa75de86c8e79bbf23b4a1" type="tarbz2">http://dri.freedesktop.org/libdrm/libdrm-2.4.40.tar.bz2</Archive>
-        <Patches>
-        </Patches>
         <BuildDependencies>
             <Package versionFrom="0.10.0">libpciaccess-devel</Package>
         </BuildDependencies>
@@ -22,6 +20,9 @@
 
     <Package>
         <Name>libdrm</Name>
+	<RuntimeDependencies>
+            <Dependency versionFrom="0.10.0">libpciaccess</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib/libdrm.*</Path>
@@ -99,8 +100,14 @@
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libdrm</Summary>
         <BuildType>emul32</BuildType>
+        <BuildDependencies>
+             <Dependency>cairo-32bit</Dependency>
+             <Dependency>libpciaccess-32bit</Dependency>
+        </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">libdrm</Dependency>
+            <Dependency>cairo-32bit</Dependency>
+            <Dependency>libpciaccess-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm.*</Path>
@@ -114,6 +121,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libdrm-intel</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm_intel.*</Path>
@@ -127,6 +135,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libdrm-nouveau</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm_nouveau.*</Path>
@@ -140,6 +149,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libdrm-radeon</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libdrm_radeon.*</Path>
@@ -153,6 +163,7 @@
         <BuildType>emul32</BuildType>
         <RuntimeDependencies>
             <Dependency release="current">libkms</Dependency>
+            <Dependency release="current">libdrm-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32/libkms.*</Path>

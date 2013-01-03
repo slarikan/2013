@@ -15,9 +15,7 @@ def setup():
     shelltools.export("AUTOPOINT", "true")
     autotools.autoreconf("-fi")
 
-    autotools.configure("--disable-rpath \
-                         --with-boost-serialization=boost_serialization-mt \
-                         --with-boost-system=boost_system-mt")
+    autotools.configure("--disable-rpath ")
 
 def build():
     autotools.make()

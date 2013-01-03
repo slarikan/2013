@@ -9,16 +9,17 @@
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
+from pisi.actionsapi import cmaketools
 from pisi.actionsapi import scons
 from pisi.actionsapi import get
 
 def setup():
     # Set python version in user-config
-    pisitools.dosed("user-config.py", "@LIB@", "/usr/lib")
-    pisitools.dosed("user-config.py", "@PYVER@", get.curPYTHON().replace("python", ""))
-    pisitools.dosed("user-config.py", "@CC@", get.CC())
-    pisitools.dosed("user-config.py", "@CXX@", get.CXX())
-    pisitools.dosed("user-config.py", "^WITH_BF_FFMPEG = 'false'.*", "WITH_BF_FFMPEG = 'true'")
+    #pisitools.dosed("user-config.py", "@LIB@", "/usr/lib")
+    #pisitools.dosed("user-config.py", "@PYVER@", get.curPYTHON().replace("python", ""))
+    #pisitools.dosed("user-config.py", "@CC@", get.CC())
+    #pisitools.dosed("user-config.py", "@CXX@", get.CXX())
+    #pisitools.dosed("user-config.py", "^WITH_BF_FFMPEG = 'false'.*", "WITH_BF_FFMPEG = 'true'")
 
     # Drop bundled libraries
     for d in ["ffmpeg", "x264", "xvidcore", "fftw", "glew", "libopenjpeg", "ode", "qhull"]:
@@ -28,7 +29,7 @@ def setup():
 def build():
     #scons.make("WITH_BF_PLAYER=1 WITH_BF_OPENAL=1 BF_FANCY=0")
     shelltools.export("RPM_OPT_FLAGS", get.CFLAGS())
-    scons.make("WITH_BF_PLAYER=1 WITH_BF_OPENAL=1 WITH_BF_INTERNATIONAL=1 BF_QUIET=0 BF_NUMJOBS=%s" % get.makeJOBS().replace("-j", ""))
+    scons.make("WITH_BF_PLAYER=1 WITH_BF_OPENAL=1 WITH_BF_INTERNATIONAL=1 BF_QUIET=0 BF_NUMJOBS=%s" % get.makeJOBS().replace("-j", "1"))
 
     shelltools.makedirs("release/plugins/include")
     shelltools.copy("source/blender/blenpluginapi/*.h", "release/plugins/include")

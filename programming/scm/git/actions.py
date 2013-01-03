@@ -52,11 +52,9 @@ def install():
     autotools.install("-C contrib/emacs")
     pisitools.insinto("/usr/share/doc/emacs-git", "contrib/emacs/README")
 
-    # Remove unused perl directory
-    pisitools.removeDir("/usr/lib/perl5/site_perl/%s/%s-linux-thread-multi" % (get.curPERL(), get.ARCH())) 
-
     # Some docs
     pisitools.dodoc("README", "COPYING", "Documentation/SubmittingPatches")
 
-    # remove .pod file
+    # remove .pod and .packlist files
     perlmodules.removePodfiles()
+    perlmodules.removePacklist()

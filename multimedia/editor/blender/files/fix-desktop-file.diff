@@ -1,5 +1,5 @@
 --- release/freedesktop/blender.desktop.orig	2009-07-25 14:54:34.268969281 +0300
-+++ release/freedesktop/blender.desktop	2009-07-25 14:58:00.331967159 +0300
++++ release/freedesktop/blender.desktop			2009-07-25 14:58:00.331967159 +0300
 @@ -2,8 +2,11 @@
  Encoding=UTF-8
  Name=Blender

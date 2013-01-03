@@ -13,14 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>Amarok audio player</Summary>
         <Description>Amarok is a feature-rich audio player for the KDE desktop.</Description>
-        <Archive sha1sum="2cfcdabb67436418ba0012075ba105bbb630b48d" type="tarbz2">mirrors://kde/stable/amarok/2.6.0/src/amarok-2.6.0.tar.bz2</Archive>
+        <Archive sha1sum="c3fc7770a9ddaaa09923d67ee8023cd5a2b61100" type="tarbz2">mirrors://kde/unstable/amarok/2.6.90/src/amarok-2.6.90.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
+            <Dependency>googlemock-devel</Dependency>
+            <Dependency>clamz</Dependency>    
             <Dependency>mesa-devel</Dependency>
             <Dependency>glibc-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
-            <Dependency>libofa-devel</Dependency>
+            <Dependency>libofa-devel</Dependency>    
             <Dependency>ffmpeg-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>openssl-devel</Dependency>
@@ -32,13 +34,13 @@
             <Dependency>loudmouth-devel</Dependency>
             <Dependency>liblastfm-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libmygpo-qt-devel</Dependency>
+            <Dependency versionFrom="1.0.6">libmygpo-qt-devel</Dependency>
             <Dependency>qtscriptgenerator</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">flac_mimetype_bnc671581.diff</Patch>
-            <Patch level="1">amarok-2.5.0-onlinedoc.patch</Patch>
-            <Patch level="1">amarok-2.5.96-liblastfm1.patch</Patch>
+            <Patch level="1">amarok-2.6.90-onlinedoc.patch</Patch>
+            <Patch level="1">amarok-2.6.90-ipod_dso.patch</Patch>    
         </Patches>
     </Source>
 
@@ -46,6 +48,8 @@
         <Name>amarok</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
+            <Dependency>googlemock</Dependency>
+            <Dependency>clamz</Dependency>     
             <Dependency>mesa</Dependency>
             <Dependency>glibc</Dependency>
             <Dependency>phonon</Dependency>
@@ -62,7 +66,7 @@
             <Dependency>loudmouth</Dependency>
             <Dependency>liblastfm</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libmygpo-qt</Dependency>
+            <Dependency versionFrom="1.0.6">libmygpo-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -82,6 +86,13 @@
     </Package>
 
     <History>
+        <Update release="57">
+            <Date>2012-12-30</Date>
+            <Version>2.6.90</Version>
+            <Comment>new version</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
         <Update release="56">
             <Date>2012-08-22</Date>
             <Version>2.6.0</Version>

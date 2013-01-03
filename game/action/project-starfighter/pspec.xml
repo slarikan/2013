@@ -12,14 +12,14 @@
         <IsA>app:gui</IsA>
         <Summary>Sidescrolling space fighter</Summary>
         <Description>Sidescrolling space battle game with lots of weapons, powerups and bossfights. There is a storyline to follow and different missions like protecting.</Description>
-        <Archive sha1sum="e9b2d463247ee216f399cdff99ccbf4cd7f821e7" type="targz">http://cekirdek.pardus.org.tr/~onur/distfiles/project-starfighter-1.1.tar.gz</Archive>
+        <Archive sha1sum="97938b5d7554a8db97f392b4d956ab704503f9e3" type="targz">http://sourceforge.net/projects/pr-starfighter/files/latest/download?source=dlp</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.14">libsdl-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>sdl-image-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">1.1-ammo.patch</Patch>
+            <!--Patch level="1">1.1-ammo.patch</Patch-->
         </Patches>
     </Source>
 
@@ -34,7 +34,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/project-starfighter</Path>
+            <Path fileType="data">/usr/share/starfighter</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
         </Files>
         <AdditionalFiles>
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="5">
+            <Date>2012-12-21</Date>
+            <Version>1.2</Version>
+            <Comment>Bump</Comment>
+            <Name>canatan</Name>
+            <Email>q66680@gmail.com</Email>
+        </Update>
         <Update release="4">
             <Date>2010-12-31</Date>
             <Version>1.1</Version>

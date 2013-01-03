@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mate için döküman görüntüleyicisi</Summary>
         <Description>mate-document-viewer, mate masaüstü için döküman görüntüleyicidir.</Description>
-        <Archive sha1sum="9cc9522c899a6b109f32874a86b9beb5183243b8" type="tarxz">http://git.mate-desktop.org/mate-document-viewer/snapshot/mate-document-viewer-1.5.0.tar.xz</Archive>
+        <Archive sha1sum="b09291bc2979437994ec133187ad59706651e1e7" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-document-viewer-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>mate-icon-theme</Dependency>
             <Dependency>mate-common</Dependency>
@@ -32,20 +32,27 @@
 	    <Dependency>libglade-devel</Dependency>
 	</BuildDependencies>
 	<Patches>
-	    <Patch level="1">4a00ce5444b2f7dea35625e1396550a90b030288.patch</Patch>
+	    <!--<Patch level="1">4a00ce5444b2f7dea35625e1396550a90b030288.patch</Patch>-->
 	</Patches>
     </Source>
 
     <Package>
         <Name>mate-document-viewer</Name>
 	<RuntimeDependencies>
-	    <!--<Dependency>dbus-glib</Dependency>
+	    <Dependency>mate-icon-theme</Dependency>
             <Dependency>mate-common</Dependency>
 	    <Dependency>gtk2</Dependency>
-	    <Dependen.cy>gettext</Dependency>
-	    <Dependency>rarian</Dependency>
+	    <Dependency>libmatekeyring</Dependency>
+	    <Dependency>texlive-bin</Dependency>
             <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>mate-conf</Dependency>-->
+	    <Dependency>desktop-file-utils</Dependency>
+	    <Dependency>gobject-introspection</Dependency>
+	    <Dependency>t1lib</Dependency>
+	    <Dependency>libspectre</Dependency>
+	    <Dependency>poppler-glib</Dependency>
+	    <Dependency>libXt</Dependency>
+	    <Dependency>gobject-introspection</Dependency>
+	    <Dependency>libglade</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
@@ -57,7 +64,7 @@
     <History>
       <Update release="1">
             <Date>2012-12-16</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>İlk Sürüm</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>

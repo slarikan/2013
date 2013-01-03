@@ -28,7 +28,7 @@
             <Patch>use_48khz_default.patch</Patch>
             <Patch>fix-linking-order.patch</Patch>
             <Patch level="1">fix-strcpy.patch</Patch>
-         </Patches>
+        </Patches>
     </Source>
 
     <Package>

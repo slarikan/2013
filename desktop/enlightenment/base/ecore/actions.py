@@ -15,32 +15,73 @@ shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
 
-    autotools.autoreconf("-vfi")
+    autotools.autoreconf()
     autotools.configure("--disable-static \
-                         --disable-rpath \
+                         --with-internal-maximum-log-level=3 \
                          --enable-glib \
-                         --enable-ecore-evas \
+                         --enable-ecore-x-composite \
+                         --enable-ecore-x-damage \
+                         --enable-ecore-x-dpms \
+                         --enable-ecore-x-randr \
+                         --enable-ecore-x-render \
+                         --enable-ecore-x-screensaver \
+                         --enable-ecore-x-shape \
+                         --enable-ecore-x-gesture \
+                         --enable-ecore-x-sync \
+                         --enable-ecore-x-xfixes \
+                         --enable-ecore-x-xinerama \
+                         --enable-ecore-x-xprint \
+                         --enable-ecore-x-xtest \
+                         --enable-ecore-x-cursor \
+                         --enable-ecore-x-input \
+                         --enable-ecore-x-dri \
+                         --enable-epoll \
+                         --enable-posix-threads \
+                         --disable-debug-threads \
+                         --enable-thread-safety \
+                         --enable-atfile-source \
                          --enable-ecore-con \
-                         --enable-ecore-ipc \
-                         --enable-ecore-file \
-                         --enable-ecore-input \
-                         --enable-ecore-imf \
-                         --enable-ecore-x \
-                         --enable-ecore-fb \
-                         --disable-ecore-directfb \
-                         --enable-ecore-evas-fb \
-                         --enable-ecore-evas-directfb \
-                         --enable-ecore-evas-software-buffer \
-                         --enable-ecore-evas-software-x11 \
-                         --enable-ecore-evas-xrender-x11 \
-                         --enable-ecore-evas-opengl-x11 \
-                         --enable-openssl \
-                         --enable-inotify \
-                         --enable-poll \
                          --enable-curl \
                          --disable-gnutls \
+                         --enable-openssl \
+                         --enable-poll \
+                         --enable-inotify \
+                         --enable-ecore-ipc \
+                         --enable-ecore-file \
+                         --enable-ecore-imf \
+                         --enable-ecore-imf-evas \
+                         --enable-ecore-input \
+                         --enable-ecore-input-evas \
+                         --enable-ecore-imf-xim \
+                         --disable-ecore-imf-scim \
+                         --disable-ecore-imf-ibus \
+                         --enable-ecore-x \
+                         --disable-ecore-sdl \
+                         --enable-ecore-fb \
+                         --disable-ecore-directfb \
+                         --enable-ecore-evas \
+                         --enable-ecore-evas-software-buffer \
+                         --enable-ecore-evas-software-x11 \
+                         --enable-ecore-evas-opengl-x11 \
+                         --enable-ecore-evas-fb \
+                         --disable-ecore-evas-ews \
+                         --disable-ecore-timer-dump \
+                         --disable-ecore-wayland \
+                         --disable-ecore-win32 \
+                         --disable-ecore-wince \
+                         --disable-ecore-evas-software-gdi \
+                         --disable-ecore-evas-software-ddraw \
+                         --disable-ecore-evas-direct3d \
+                         --disable-ecore-evas-opengl-glew \
+                         --disable-ecore-evas-software-16-ddraw \
+                         --disable-ecore-evas-software-16-wince \
+                         --enable-ecore-evas-directfb \
+                         --disable-tests \
+                         --disable-coverage \
+                         --disable-install-examples \
+                         --disable-doc \
+                         --disable-rpath \
                          --with-x")
-                         #--enable-ecore-directfb causes error for edje build
 
 def build():
     autotools.make()
@@ -49,6 +90,5 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.removeDir("/usr/bin")
-    pisitools.removeDir("/usr/share")
 
     pisitools.dodoc("AUTHORS", "COPYING*", "README")

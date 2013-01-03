@@ -17,8 +17,7 @@ def setup():
 				    --disable-static \
 				    --disable-schemas-install \
 				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-				    --enable-sm") 
-    autotools.configure()
+				    --enable-sm")
 
 def build():
     autotools.make()

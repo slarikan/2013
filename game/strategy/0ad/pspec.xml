@@ -14,9 +14,9 @@
         <License>MIT</License>
         <Icon>0ad</Icon>
         <IsA>app:gui</IsA>
-	<PartOf>game.strategy</PartOf>
+        <PartOf>game.strategy</PartOf>
         <Summary>Cross-platform, 3D and historically-based real-time strategy game</Summary>
-        <Description>Cross-platform, 3D and historically-based real-time strategy game.As the military leader of an ancient civilisation, 
+        <Description>Cross-platform, 3D and historically-based real-time strategy game.As the military leader of an ancient civilisation,
 	 you must gather the resources you need to raise a military force capable of dominating your enemies.</Description>        
         <Archive sha1sum="9c9ee04bf1327bfd9161f51b18180ec8d3c6547b" type="tarxz">http://releases.wildfiregames.com/0ad-r10803-alpha-unix-build.tar.xz</Archive>
         <Archive sha1sum="98d17a118d0a5cfe79140ddb2a24bfd3a376c28a" type="tarxz">http://releases.wildfiregames.com/0ad-r10803-alpha-unix-data.tar.xz</Archive>
@@ -36,11 +36,11 @@
             <Dependency>libpng-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
-	</BuildDependencies>
-       </Source>
+        </BuildDependencies>
+    </Source>
 
     <Package>
-     <Name>0ad</Name>
+        <Name>0ad</Name>
         <RuntimeDependencies>
             <Dependency>enet</Dependency>
             <Dependency>nasm</Dependency>
@@ -57,25 +57,25 @@
             <Dependency>libpng</Dependency>
             <Dependency>libogg</Dependency>
             <Dependency>libvorbis</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/opt/0ad</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/icons</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/bin/0ad" owner="root" permission="0755">0ad</AdditionalFile>
             <AdditionalFile target="/usr/bin/0ad-editor" owner="root" permission="0755">0ad-editor</AdditionalFile>
             <AdditionalFile target="/usr/share/applications/0ad.deskop" owner="root" permission="0644">0ad.desktop</AdditionalFile>
             <AdditionalFile target="/usr/share/applications/0ad-editor.deskop" owner="root" permission="0644">0ad-editor.desktop</AdditionalFile>
-	    <AdditionalFile target="/usr/share/pixmaps/0ad.png" owner="root" permission="0644">0ad.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/pixmaps/0ad.png" owner="root" permission="0644">0ad.png</AdditionalFile>
         </AdditionalFiles>
     </Package>
     <History>
-      <Update release="13">
+        <Update release="13">
             <Date>2012-02-14</Date>
             <Version>10803_alpha8</Version>
             <Comment>
@@ -92,7 +92,7 @@
                 * Bug fixes
             </Comment>
             <Email>erdincgultekin@gmail.com</Email>
-            <Name>Erdinç Gültekin</Name>    
+            <Name>Erdinç Gültekin</Name>
         </Update>
         <Update release="12">
             <Date>2011-09-17</Date>
@@ -102,7 +102,7 @@
                      new setup function (thanks to s.dalgic)
             </Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="11">
             <Date>2011-07-13</Date>
@@ -111,71 +111,70 @@
                      no more enet 1.2
             </Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="9">
             <Date>2011-05-10</Date>
             <Version>09530_alpha5</Version>
             <Comment>version bump</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="8">
             <Date>2011-05-10</Date>
             <Version>09049_alpha4</Version>
             <Comment>rebuild</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="7">
             <Date>2011-03-15</Date>
             <Version>09049_alpha4</Version>
             <Comment>desktop fix</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="6">
             <Date>2011-03-13</Date>
             <Version>09049_alpha4</Version>
             <Comment>Version Bump</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="5">
             <Date>2011-03-07</Date>
             <Version>08832_alpha3</Version>
             <Comment>Pardus 2011</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="4">
             <Date>2011-01-23</Date>
             <Version>08832_alpha3</Version>
             <Comment>Version Bump</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="3">
             <Date>2010-10-26</Date>
             <Version>08413_alpha2</Version>
             <Comment>First release</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
-	<Update release="2">
+        <Update release="2">
             <Date>2010-10-26</Date>
             <Version>08413_alpha2</Version>
             <Comment>First release</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
         <Update release="1">
             <Date>2010-08-30</Date>
             <Version>07970_alpha1</Version>
             <Comment>First release</Comment>
             <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
+            <Name>Erdem Artan</Name>
         </Update>
     </History>
 </PISI>
-

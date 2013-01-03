@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>Evas Python bindings</Summary>
         <Description>python-evas is the Python binding of Evas canvas library.</Description>
-        <Archive sha1sum="cd5e90c835eca6a70bfbf0314f5f7df9c1289c4c" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/py-bind/python-evas.tar.gz</Archive>
+        <Archive sha1sum="d6dad49f6e8abf490ca1c57bf10d6f7c388ad8df" type="tarbz2">http://download.enlightenment.org/releases/BINDINGS/python/python-evas-1.7.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
-	    <Dependency versionFrom="0.17">cython</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
+            <Dependency versionFrom="0.17">cython</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +24,7 @@
         <Name>python-evas</Name>
         <RuntimeDependencies>
             <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.99">evas</Dependency>
+            <Dependency versionFrom="1.7.0">evas</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

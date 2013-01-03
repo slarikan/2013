@@ -12,9 +12,9 @@
         <IsA>app:gui</IsA>
         <Summary>A graph theory IDE</Summary>
         <Description>Rocs aims to be a graph theory IDE for helping professors to show the results of a graph algorithm and also helping students to do the algorithms.</Description>
-        <Archive sha1sum="8aa774ebd1515f57a1322c76633d843d42e3c5cb" type="tarxz">mirrors://kde/unstable/4.9.90/src/rocs-4.9.90.tar.xz</Archive>
+        <Archive sha1sum="6358268fa2e4472da70c14c01a4081e3087f51aa" type="tarxz">mirrors://kde/unstable/4.9.95/src/rocs-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>rocs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -48,75 +48,12 @@
     </Package>
 
     <History>
-        <Update release="10">
-            <Date>2012-12-15</Date>
-            <Version>4.9.90</Version>
-            <Comment>Version bump to 4.9.90</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
-        <Update release="9">
-            <Date>2012-11-10</Date>
-            <Version>4.9.3</Version>
-            <Comment>Version bump to 4.9.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
-        <Update release="8">
-            <Date>2012-06-08</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="7">
-            <Date>2012-05-07</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2012-04-11</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-03-08</Date>
-            <Version>4.8.1</Version>
-            <Comment>Version bump to 4.8.1</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-02-12</Date>
-            <Version>4.8.0</Version>
-            <Comment>Version bump to 4.8.0</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-11-03</Date>
-            <Version>4.7.3</Version>
-            <Comment>Version bump to 4.7.3</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-10-09</Date>
-            <Version>4.7.2</Version>
-            <Comment>Version bump to 4.7.2</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2011-09-27</Date>
-            <Version>4.7.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Bertan Gündoğdu</Name>
-            <Email>bertan@pardus.org.tr</Email>
+            <Date>2012-12-23</Date>
+            <Version>4.9.95</Version>
+            <Comment>Version bump to 4.9.95</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>
     </History>
 </PISI>

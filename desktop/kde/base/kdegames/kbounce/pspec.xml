@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kbounce</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Ball bouncing game</Summary>
+        <Description>KBounce is a single player arcade game with the elements of puzzle. It is played on a field, surrounded by walls, with two or more balls that move about in the field bouncing off of walls. The player can build new walls, decreasing the size of the active field. The goal of the game is to fill at least 75% of the field and advance to the next level.</Description>
+        <Archive sha1sum="36da8dde75cc83c092854ed1f5f6015078825b70" type="tarxz">mirrors://kde/unstable/4.9.95/src/kbounce-4.9.95.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kbounce</Name>
+        <Icon>kbounce</Icon>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History> 
+        <Update release="1">
+            <Date>2013-01-02</Date>
+            <Version>4.9.95</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+    </History>
+</PISI>

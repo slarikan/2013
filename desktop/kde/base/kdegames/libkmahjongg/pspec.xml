@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libkmahjongg</Name>
+        <Homepage>http://games.kde.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Library used for loading and rendering of Mahjongg tilesets</Summary>
+        <Description>Library used for loading and rendering of Mahjongg tilesets.</Description>
+        <Archive sha1sum="e46f8778c8ed2334a973d65c9bd37c9eb4247deb" type="tarxz">mirrors://kde/unstable/4.9.95/src/libkmahjongg-4.9.95.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>libkmahjongg</Name>
+        <Icon>libkmahjongg</Icon>
+        <RuntimeDependencies>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path> 
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libkmahjongg-devel</Name>
+        <Summary>Development files for libkmahjongg</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libkmahjongg</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>>
+        </Files>
+    </Package>        
+
+    <History> 
+        <Update release="1">
+            <Date>2013-01-02</Date>
+            <Version>4.9.95</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+    </History>
+</PISI>

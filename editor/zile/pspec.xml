@@ -16,7 +16,7 @@
         <!--<Patches>
             <Patch level="0">about_splash.patch</Patch>
         </Patches>-->
-	<BuildDependencies>
+        <BuildDependencies>
             <Dependency>gc-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -40,7 +40,7 @@
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
-       <Update release="15">
+        <Update release="15">
             <Date>2011-06-07</Date>
             <Version>2.3.24</Version>
             <Comment>
@@ -50,7 +50,7 @@
             <Name>David Stegbauer</Name>
             <Email>daaste@gmail.com</Email>
         </Update>
-       <Update release="14">
+        <Update release="14">
             <Date>2011-04-06</Date>
             <Version>2.3.23</Version>
             <Comment>
@@ -60,7 +60,7 @@
             <Name>David Stegbauer</Name>
             <Email>daaste@gmail.com</Email>
         </Update>
-       <Update release="13">
+        <Update release="13">
             <Date>2011-03-14</Date>
             <Version>2.3.22</Version>
             <Comment>
@@ -70,7 +70,7 @@
             <Name>David Stegbauer</Name>
             <Email>daaste@gmail.com</Email>
         </Update>
-       <Update release="12">
+        <Update release="12">
             <Date>2010-11-30</Date>
             <Version>2.3.21</Version>
             <Comment>
@@ -79,7 +79,7 @@
             <Name>David Stegbauer</Name>
             <Email>daaste@gmail.com</Email>
         </Update>
-       <Update release="11">
+        <Update release="11">
             <Date>2010-10-17</Date>
             <Version>2.3.20</Version>
             <Comment>
@@ -97,7 +97,7 @@
             <Name>Gökcen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
         </Update>
-       <Update release="9">
+        <Update release="9">
             <Date>2010-09-06</Date>
             <Version>2.3.19</Version>
             <Comment>

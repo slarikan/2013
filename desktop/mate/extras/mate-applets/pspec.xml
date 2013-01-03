@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>Applets for MATE panel</Summary>
         <Description>Applets for the MATE Desktop and Panel</Description>
-        <Archive sha1sum="384129d53ab8ed195310aa0772ac48144137987c" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-applets-1.5.0.tar.xz</Archive>
+        <Archive sha1sum="3edb5dd482b2e0a06e9a24b21f081bc71200da64" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-applets-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>glib2-devel</Dependency>
@@ -73,13 +73,13 @@
     </Package>
 
     <History>
-      <Update release="2">
+      <!--<Update release="2">
             <Date>2012-12-16</Date>
             <Version>1.5.0</Version>
             <Comment>Güncellendi.</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
       <Update release="1">
             <Date>2012-08-22</Date>
             <Version>1.4.0</Version>

@@ -15,6 +15,7 @@
         <Archive sha1sum="1689896fb91e9135f266c496816ff68041962fde" type="tarxz">http://people.freedesktop.org/~hughsient/releases/libgusb-0.1.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>glib2-devel</Dependency>
+            <Dependency>vala-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
 	    <Dependency>libusbx-devel</Dependency>
@@ -26,6 +27,7 @@
         <Name>libgusb</Name>
         <RuntimeDependencies>
             <Dependency>glib2</Dependency>
+            <Dependency>vala</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libxml2</Dependency>
 	    <Dependency>libusbx</Dependency>

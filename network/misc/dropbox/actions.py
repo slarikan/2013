@@ -15,7 +15,7 @@ def install():
     pisitools.insinto("/opt/dropbox", "*")
 
     # Arch removes this lib, Pardus libgcc package provides libstdc++.so.6
-    pisitools.remove("/opt/dropbox/libstdc++.so.6")
+    #pisitools.remove("/opt/dropbox/libstdc++.so.6")
 
     pisitools.dodoc("ACKNOWLEDGEMENTS", "README", "VERSION")
     pisitools.remove("/opt/dropbox/ACKNOWLEDGEMENTS")

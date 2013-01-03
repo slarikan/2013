@@ -17,6 +17,7 @@
             <Dependency>perl-MailTools</Dependency>
             <Dependency>perl-IO-stringy</Dependency>
             <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl-Test-Deep</Dependency>
         </BuildDependencies>
     </Source>
 

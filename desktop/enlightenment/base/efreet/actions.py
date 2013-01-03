@@ -13,9 +13,10 @@ shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
 shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
-    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
-                         --enable-icon-cache")
+                         --disable-tests \
+                         --disable-coverage \
+                         --disable-doc")
 
 def build():
     autotools.make()

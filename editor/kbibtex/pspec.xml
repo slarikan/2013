@@ -40,7 +40,7 @@
 
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/kde4/kbibtex.desktop">kbibtex.desktop</AdditionalFile>
-	</AdditionalFiles>
+        </AdditionalFiles>
     </Package>
     <History>
         <Update release="1">

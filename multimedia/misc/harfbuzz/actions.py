@@ -8,7 +8,7 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.configure("--prefix=/usr")
+    autotools.configure("--disable-static")
 
 def build():
     autotools.make()

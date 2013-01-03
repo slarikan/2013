@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>3D billard game</Summary>
         <Description>FooBillard is a 3D 8ball, 9ball, snooker and carambol game.</Description>
-	<Archive sha1sum="1caa51a201b55883640b5c5b1e9fde20fc71a095" type="targz">http://sourceforge.net/projects/foobillard/files/FooBillard-Sources/foobillard-3.0a.tar.gz</Archive>
+        <Archive sha1sum="1caa51a201b55883640b5c5b1e9fde20fc71a095" type="targz">http://sourceforge.net/projects/foobillard/files/FooBillard-Sources/foobillard-3.0a.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -53,7 +53,7 @@
             <Comment>
 	      Tidy up dependencies for 2011
 	      Change of archive address
-	    </Comment>
+            </Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
         </Update>

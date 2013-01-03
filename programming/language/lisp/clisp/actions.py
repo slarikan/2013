@@ -11,6 +11,9 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
+shelltools.export("CFLAGS", "%s -Wa,--noexecstack" % get.CFLAGS())
+shelltools.export("LDFLAGS", "%s -Wl,-z,noexecstack" % get.LDFLAGS())
+
 def setup():
     autotools.rawConfigure("--prefix=/usr \
                             --fsstnd=Pardus \
@@ -23,7 +26,6 @@ def setup():
                             --with-module=gdbm \
                             --with-module=gtk2 \
                             --with-module=i18n \
-                            --with-module=pari \
                             --with-module=pcre \
                             --with-module=postgresql \
                             --with-module=rawsock \

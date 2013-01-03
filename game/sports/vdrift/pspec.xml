@@ -87,7 +87,7 @@
         <Update release="10">
             <Date>2010-08-10</Date>
             <Version>0.0_20100630</Version>
-            <Comment> 
+            <Comment>
                 Add mising dependencies
                 Version bump
                 Fix two header files from vdrift temporary

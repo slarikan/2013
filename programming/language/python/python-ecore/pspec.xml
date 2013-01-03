@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>Ecore Python binding</Summary>
         <Description>python-ecore is the Python binding of Ecore X abstraction library.</Description>
-        <Archive sha1sum="d0a7620c2ac78aae0c12c8c33dcbda7a5cb60670" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/py-bind/python-ecore.tar.gz</Archive>
+        <Archive sha1sum="70f3e7a98cd43738cff3a9d31f38ac4c80c838c5" type="tarbz2">http://download.enlightenment.org/releases/BINDINGS/python/python-ecore-1.7.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
             <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
             <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>python-ecore</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.99">evas-devel</Dependency>
+            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
             <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
             <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
         </RuntimeDependencies>

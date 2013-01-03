@@ -1,15 +1,3 @@
-Index: partitionmanager-1.0.3/src/partitionmanager.desktop
-===================================================================
---- partitionmanager-1.0.3.orig/src/partitionmanager.desktop
-+++ partitionmanager-1.0.3/src/partitionmanager.desktop
-@@ -27,6 +27,7 @@ Name[pt_BR]=Gerenciador de partições d
- Name[ro]=Gestionarul de partiții KDE
- Name[ru]=Управление разделами KDE
- Name[sv]=KDE:s partitionshanterare
-+Name[tr]=KDE Disk Bölümü Yöneticisi
- Name[uk]=Керування розділами диска KDE
- Name[x-test]=xxKDE Partition Managerxx
- Name[zh_CN]=KDE 分区管理器
 Index: partitionmanager-1.0.3/src/kcm/kcm_partitionmanager.desktop
 ===================================================================
 --- partitionmanager-1.0.3.orig/src/kcm/kcm_partitionmanager.desktop

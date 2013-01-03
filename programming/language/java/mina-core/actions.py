@@ -12,6 +12,8 @@ from pisi.actionsapi import get
 
 WorkDir = "mina-%s" % get.srcVERSION()
 
+shelltools.export("JAVA_HOME","/opt/sun-jdk")
+
 def setup():
     shelltools.unlinkDir("%s/mina-%s/core/src/test" % (get.workDIR(), get.srcVERSION()))
 

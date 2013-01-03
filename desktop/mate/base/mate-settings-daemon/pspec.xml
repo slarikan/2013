@@ -12,13 +12,14 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for GNOME desktop</Summary>
         <Description>gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
-	<Archive sha1sum="14ff793c32c1469ec23750a5bfee50fad700f960" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-settings-daemon-1.5.2.tar.xz</Archive>
+	<!--<Archive sha1sum="14ff793c32c1469ec23750a5bfee50fad700f960" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-settings-daemon-1.5.2.tar.xz</Archive>-->
+	<Archive sha1sum="9a49a0ea87553f749343036a1f735594bda4f62d" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-settings-daemon-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>icon-naming-utils</Dependency>
 	    <Dependency>mate-common</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
 	    <Dependency>mate-corba-devel</Dependency>
-	    <Dependency versionFrom="1.5.0">mate-desktop-devel</Dependency>
+	    <Dependency>mate-desktop-devel</Dependency>
 	    <Dependency>dbus-glib-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>libSM-devel</Dependency>
@@ -30,10 +31,12 @@
 	    <Dependency>mate-polkit-devel</Dependency>
 	 </BuildDependencies>
 	 <Patches>
-	    <Patch level="1">c6a6cbde72489a0055ba63341a153fe365058072.patch</Patch>
+	    <!--<Patch level="1">c6a6cbde72489a0055ba63341a153fe365058072.patch</Patch>
+	    <Patch level="1">7e6d4ef02b5d8d7ae8c9dcc27a37e9f844b09b90.patch</Patch>
 	    <Patch level="1">e6ed635e07bd485c6518894bd9883ae9df64f63f.patch</Patch>
 	    <Patch level="1">9f7b884490f27d70d12c2f378be4fba143d653e1.patch</Patch>
-	    <Patch level="1">7e6d4ef02b5d8d7ae8c9dcc27a37e9f844b09b90.patch</Patch>
+	    <Patch level="1">91f651c6f6f0ee7fdff1d49e36161d4e76e16e02.patch</Patch>
+	    <Patch level="1">03478b4d1d9fdc5f2f2fdbf9c41d963dabc0d00b.patch</Patch>-->
 	 </Patches>
     </Source>
 
@@ -44,7 +47,7 @@
 	    <Dependency>mate-common</Dependency>
 	    <Dependency>mate-conf</Dependency>
 	    <Dependency>mate-corba</Dependency>
-	    <Dependency versionFrom="1.5.0">mate-desktop</Dependency>
+	    <Dependency>mate-desktop</Dependency>
 	    <Dependency>dbus-glib</Dependency>
 	    <Dependency>gtk2</Dependency>
 	    <Dependency>libSM</Dependency>
@@ -75,13 +78,13 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-12-16</Date>
             <Version>1.5.2</Version>
             <Comment>v.bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
             <Date>2012-10-23</Date>
             <Version>1.4.0</Version>

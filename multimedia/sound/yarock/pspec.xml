@@ -15,7 +15,7 @@
 collection browser based on cover art.</Summary>
         <Description>Yarock is Qt4 Modern Music Player designed to provide an easy and pretty music
 collection browser based on cover art.</Description>
-        <Archive sha1sum="01cf8dff3df509ba86ea02379fcfd5805073f0f7" type="targz">https://launchpad.net/yarock/trunk/0.0.58/+download/Yarock_0.0.58_source.tar.gz</Archive>
+        <Archive sha1sum="aa5d4c3a28f28cb0abcaaaaba74bf106a13bd682" type="targz">https://launchpad.net/yarock/trunk/0.0.59/+download/Yarock_0.0.59_source.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
@@ -36,6 +36,13 @@ collection browser based on cover art.</Description>
         </Files>
     </Package>
     <History>
+       <Update release="4">
+            <Date>2012-12-30</Date>
+            <Version>0.0.59</Version>
+            <Comment>Version bump</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
        <Update release="3">
             <Date>2012-08-28</Date>
             <Version>0.0.58</Version>

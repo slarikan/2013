@@ -13,31 +13,31 @@
 	<PartOf>desktop.enlightenment.addon</PartOf>
         <Summary>Exebuf Program Launcher</Summary>
         <Description>Exebuf is a module that quick launch programs, for E17.</Description>
-        <Archive sha1sum="9e50f307f4382581d43539ab9c24d6886cc957d0" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/addons/exebuf-1.0.tar.gz</Archive>
+        <Archive sha1sum="803cb8e839a36b5cfe8543ea2e5c28436a90138b" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/exebuf-20121228.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.2.0">eeze-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
+            <Dependency releaseFrom="12">eeze-devel</Dependency>
+            <Dependency releaseFrom="22">eina-devel</Dependency>
+            <Dependency releaseFrom="28">eet-devel</Dependency>
+            <Dependency releaseFrom="26">evas-devel</Dependency>
+            <Dependency releaseFrom="23">ecore-devel</Dependency>
+            <Dependency releaseFrom="23">edje-devel</Dependency>
+            <Dependency releaseFrom="17">efreet-devel</Dependency>
+            <Dependency releaseFrom="17">e_dbus-devel</Dependency>
+            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>e-module-exebuf</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
-            <Dependency versionFrom="1.7.0">eet</Dependency>
-            <Dependency versionFrom="1.7.0">edje</Dependency>
-            <Dependency versionFrom="1.7.0">evas</Dependency>
-            <Dependency versionFrom="1.2.0">eeze</Dependency>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.0">ecore</Dependency>
-            <Dependency versionFrom="1.7.0">efreet</Dependency>
-            <Dependency versionFrom="1.7.0">e_dbus</Dependency>
+            <Dependency releaseFrom="12">eeze</Dependency>
+            <Dependency releaseFrom="22">eina</Dependency>
+            <Dependency releaseFrom="28">eet</Dependency>
+            <Dependency releaseFrom="26">evas</Dependency>
+            <Dependency releaseFrom="23">ecore</Dependency>
+            <Dependency releaseFrom="23">edje</Dependency>
+            <Dependency releaseFrom="17">efreet</Dependency>
+            <Dependency releaseFrom="17">e_dbus</Dependency>
+            <Dependency releaseFrom="30">enlightenment</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/enlightenment/modules/exebuf/</Path>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2012-12-31</Date>
+            <Version>20121228</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="2">
             <Date>2012-07-12</Date>
             <Version>1.0</Version>

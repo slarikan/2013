@@ -16,12 +16,7 @@ def setup():
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \
 				    --libexecdir=/usr/bin \
-				    --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
-				    --disable-static \
-				    --enable-gstreamer \
-				    --enable-profiling \
-				    --with-x \
-				    --with-nssdb")
+				    --disable-static ")
     autotools.configure()
 
 

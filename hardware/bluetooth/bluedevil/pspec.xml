@@ -13,14 +13,14 @@
         <IsA>app:gui</IsA>
         <Summary>KDE Bluetooth stack</Summary>
         <Description>bluedevil is a set of components which integrates bluetooth within the KDE SC.</Description>
-        <Archive sha1sum="1a6ba7ec03764430540bd37298b0ff9ae1162d6b" type="tarbz2">mirrors://kde/stable/bluedevil/1.2/src/bluedevil-1.2.tar.bz2</Archive>
+        <Archive sha1sum="3f832a94359a5f61275bd1d07f5b9cd68d2738fd" type="tarbz2"> http://download.kde.org/stable/bluedevil/1.2.4/src/bluedevil-1.2.4.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr/bluedevil.po">tr.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency versionFrom="1.8.1_20110918">libbluedevil-devel</Dependency>
+            <Dependency releaseFrom="7">libbluedevil-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +31,7 @@
             <Dependency>obexd</Dependency>
             <Dependency>bluez</Dependency>
             <Dependency>kdelibs</Dependency>
-            <Dependency versionFrom="1.8.1_20110918">libbluedevil</Dependency>
+            <Dependency releaseFrom="7">libbluedevil</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -53,6 +53,20 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2012-12-30</Date>
+            <Version>1.2.4</Version>
+            <Comment>change dep rule</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
+        <Update release="11">
+            <Date>2012-12-30</Date>
+            <Version>1.2.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="10">
             <Date>2011-09-23</Date>
             <Version>1.2</Version>

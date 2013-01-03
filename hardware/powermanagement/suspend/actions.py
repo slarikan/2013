@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 
 
 def setup():
-    autotools.autoreconf("-vif")
+    #autotools.autoreconf("-vif")
     autotools.configure("--enable-threads \
                          --enable-compress \
                          --enable-plymouth \

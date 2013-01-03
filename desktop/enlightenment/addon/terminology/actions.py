@@ -9,13 +9,14 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="terminology-0.1.0"
+WorkDir="terminology-%s" % get.srcVERSION()
 
 def setup():
     shelltools.export("AUTOPOINT", "/bin/true")
-
     shelltools.system("./autogen.sh")
-    autotools.configure("--disable-static")
+    autotools.autoreconf("-vfi")
+    autotools.rawConfigure("--libdir=/usr/lib \
+                            --prefix=/usr")
 
 def build():
     autotools.make()

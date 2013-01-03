@@ -45,6 +45,6 @@ def install():
     pisitools.dosym("/usr/lib/X11/xinit/Xsession", "/usr/share/kde4/config/kdm/Xsession")
 
     #remove buggy .upd file which causes cursor theme not set and ksplash being locked
-    pisitools.remove("/usr/share/kde4/apps/kconf_update/mouse_cursor_theme.upd")
+    #pisitools.remove("/usr/share/kde4/apps/kconf_update/mouse_cursor_theme.upd")
 
     # pisitools.dodoc("COPYING*", "README*")

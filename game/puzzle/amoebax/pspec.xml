@@ -28,13 +28,13 @@
 
     <Package>
         <Name>amoebax</Name>
-       <RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency versionFrom="1.2.11">libsdl</Dependency>
             <Dependency versionFrom="1.2.5">sdl-image</Dependency>
             <Dependency versionFrom="1.2.7">sdl-mixer</Dependency>
             <Dependency>libvorbis</Dependency>
         </RuntimeDependencies>
-         <Files>
+        <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/amoebax</Path>
             <Path fileType="data">/usr/share/applications</Path>

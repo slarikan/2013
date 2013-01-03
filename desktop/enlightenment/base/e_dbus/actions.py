@@ -13,18 +13,19 @@ shelltools.export("CFLAGS", "%s -fvisibility=hidden" % get.CFLAGS())
 shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 
 def setup():
-    autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --enable-ebluez \
+                         --enable-econnman0_7x \
+                         --disable-ehal \
+                         --enable-enotify \
+                         --enable-eofono \
                          --enable-eukit \
-                         --disable-ehal")
+                         --disable-doc")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
-    pisitools.removeDir("/usr/share")
 
     pisitools.dodoc("AUTHORS", "COPYING", "README")

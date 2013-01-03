@@ -12,6 +12,9 @@ from pisi.actionsapi import get
 
 WorkDir="apache-tomcat-%s-src/servletapi" % get.srcVERSION()
 
+shelltools.export("JAVAC","/opt/sun-jdk/bin/javac")
+shelltools.export("JAVA_HOME","/opt/sun-jdk")
+
 def setup():
     shelltools.export("LC_ALL", "C")
     shelltools.system("ant -f jsr154/build.xml dist")

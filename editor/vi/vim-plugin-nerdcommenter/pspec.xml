@@ -29,7 +29,7 @@
         </Files>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
-         </Provides>
+        </Provides>
     </Package>
 
     <History>

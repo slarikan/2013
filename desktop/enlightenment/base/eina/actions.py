@@ -15,7 +15,25 @@ shelltools.export("LDFLAGS", "%s -fvisibility=hidden" % get.LDFLAGS())
 def setup():
     autotools.autoreconf("-vfi")
     autotools.configure("--enable-amalgamation \
-                         --enable-valgrind")
+                         --enable-valgrind \
+                         --with-internal-maximum-log-level=3 \
+                         --disable-static \
+                         --disable-benchmark \
+                         --disable-install-examples \
+                         --disable-build-examples \
+                         --disable-doc \
+                         --disable-tests \
+                         --enable-default-mempool \
+                         --enable-mempool-chained-pool \
+                         --enable-mempool-pass-through \
+                         --disable-mempool-buddy \
+                         --disable-mempool-ememoa-fixed \
+                         --disable-mempool-ememoa-unknown \
+                         --disable-mempool-fixed-bitmap \
+                         --disable-assert \
+                         --disable-ememoa \
+                         --enable-magic-debug \
+                         --enable-safety-checks")
 
 def build():
     autotools.make()

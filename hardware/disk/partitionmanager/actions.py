@@ -8,7 +8,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import kde4
 from pisi.actionsapi import get
 
-WorkDir = "partitionmanager-%s" % get.srcVERSION().replace("_", "-").upper()
+#WorkDir = "partitionmanager-%s" % get.srcVERSION().replace("_", "-").upper()
 
 def setup():
     shelltools.export("HOME", get.curDIR())

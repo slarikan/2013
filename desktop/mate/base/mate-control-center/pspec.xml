@@ -12,7 +12,8 @@
         <IsA>app:gui</IsA>
         <Summary>The MATE Desktop configuration tool</Summary>
         <Description>mate-control-center is Mate's main interface for configuration of various aspects of your Mate desktop.</Description>
-        <Archive sha1sum="63d1a9bad837a10aa490027c58f1b4bf9b16a470" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-control-center-1.5.1.tar.xz</Archive>
+        <!--<Archive sha1sum="63d1a9bad837a10aa490027c58f1b4bf9b16a470" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-control-center-1.5.1.tar.xz</Archive>-->
+	<Archive sha1sum="0c3c7e22e4dd7c3e41938ae7a2e67232fc37ace5" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-control-center-1.4.0.tar.xz</Archive>
 	<BuildDependencies>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>desktop-file-utils</Dependency>
@@ -30,8 +31,8 @@
 	    <Dependency>nss-devel</Dependency>
 	    <Dependency>polkit-devel</Dependency>
 	    <Dependency>libunique-devel</Dependency>
-	    <Dependency versionFrom="1.5.0">mate-window-manager-devel</Dependency>
-	    <Dependency versionFrom="1.5.2">mate-settings-daemon-devel</Dependency>
+	    <Dependency>mate-window-manager-devel</Dependency>
+	    <Dependency>mate-settings-daemon-devel</Dependency>
 	    <Dependency>librsvg-devel</Dependency>
 	    <Dependency>libICE-devel</Dependency>
 	    <Dependency>libXScrnSaver-devel</Dependency>
@@ -65,8 +66,8 @@
 	    <Dependency>nss</Dependency>
 	    <Dependency>polkit</Dependency>
 	    <Dependency>libunique</Dependency>
-	    <Dependency versionFrom="1.5.0">mate-window-manager</Dependency>
-	    <Dependency versionFrom="1.5.2">mate-settings-daemon</Dependency>
+	    <Dependency>mate-window-manager</Dependency>
+	    <Dependency>mate-settings-daemon</Dependency>
 	    <Dependency>librsvg</Dependency>
 	    <Dependency>libICE</Dependency>
 	    <Dependency>libXScrnSaver</Dependency>
@@ -97,13 +98,13 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <!--<Update release="3">
             <Date>2012-12-16</Date>
             <Version>1.5.1</Version>
             <Comment>güncellendi.</Comment>
             <Name>Osman Erkan</Name>
             <Email>nams0-01@hotmail.it</Email>
-        </Update>
+        </Update>-->
         <Update release="2">
             <Date>2012-10-23</Date>
             <Version>1.4.0</Version>

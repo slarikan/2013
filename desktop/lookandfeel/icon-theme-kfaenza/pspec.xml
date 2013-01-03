@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>icon-theme-kfaenza</Name>
+        <Homepage>http://kde-look.org</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>data</IsA>
+        <Summary>Kfaenza icon theme</Summary>
+        <Description>Alternative KDE4 icon theme.</Description>
+	<Archive sha1sum="0146194a6d4f0d9beec8528f6c18c953c7de61cd" type="targz">http://omploader.org//vYjR0NQ/kfaenza-icon-theme-0.8.9.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>icon-theme-kfaenza</Name>
+        <Files>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2012-12-25</Date>
+            <Version>0.8.9</Version>
+            <Comment>First release</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
