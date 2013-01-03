@@ -11,8 +11,10 @@ from pisi.actionsapi import get
 def setup():
     shelltools.export("CFLAGS", "%s -DNDEBUG" % get.CFLAGS())
     options = "--disable-static \
-               --disable-xevie \
-               --disable-xprint \
+               --enable-xevie \
+               --enable-xprint \
+               --enable-xinput \
+               --enable-xkb \
                --without-doxygen"
 
     if get.buildTYPE() == "emul32":
