@@ -94,6 +94,11 @@
             <Dependency>libgomp</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>pangomm</Dependency>
+            <Dependency>libgcc</Dependency>
+            <Dependency>libwpd</Dependency>
+            <Dependency>atkmm</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>poppler</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
