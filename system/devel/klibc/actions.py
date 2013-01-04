@@ -116,3 +116,6 @@ def install():
     for f in docs:
         pisitools.newdoc(f, docs[f])
 
+    pisitools.insinto("/usr/lib/klibc/include/linux", "linux/include/linux/*")
+    pisitools.insinto("/usr/lib/klibc/include/asm", "linux/include/asm/*")
+    pisitools.insinto("/usr/lib/klibc/include/asm-generic", "linux/include/asm-generic/*")
