@@ -50,16 +50,23 @@ def setup():
     # shelltools.sym("/lib/modules/%s/build" % KDIR, "linux")
     #~ shelltools.copytree("/lib/modules/%s/build" % KDIR, "linux")
 
+    shelltools.makedirs("linux/include")
+    shelltools.system("ln -s /usr/include/linux linux/include/")
+    shelltools.system("ln -s /usr/include/asm linux/include/")
+    shelltools.system("ln -s /usr/include/asm-generic linux/include/")
+    # don't install kernel headers
+    pisitools.dosed("scripts/Kbuild.install", ".*headers_install")
+
     # set the build directory
     #~ shelltools.echo("MCONFIG", "KRNLOBJ = /lib/modules/%s/build" % KDIR)
-    shelltools.sym("../linux-3.2.31","linux")
+    #shelltools.sym("../linux-3.7","linux")
 
     # Workaround for prelink warnings
     shelltools.echo("70klibc", 'PRELINK_PATH_MASK="/usr/lib/klibc"')
 
     pisitools.dosed("Makefile", "/man", "/share/man")
 
-    shelltools.echo("linux/include/linux/config.h", configh)
+#    shelltools.echo("linux/include/linux/config.h", configh)
 
 def build():
     shelltools.export("ARCH", "")
