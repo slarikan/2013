@@ -9,7 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <Icon>amarok2</Icon>
+        <Icon>amarok</Icon>
         <IsA>app:gui</IsA>
         <Summary>Amarok audio player</Summary>
         <Description>Amarok is a feature-rich audio player for the KDE desktop.</Description>
