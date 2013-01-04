@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>International dictionary written for GNOME2</Summary>
         <Description>A GNOME2 international dictionary supporting fuzzy and glob style matching.</Description>
-        <Archive sha1sum="a0357e88105eaf7d6a4aa4803bf8617759bf0315" type="tarbz2">mirrors://sourceforge/stardict/stardict-3.0.1.tar.bz2</Archive>
+        <Archive sha1sum="e56e9231589cb78eaab8e449ae9f8d5d77083fe2" type="tarbz2">http://stardict-3.googlecode.com/files/stardict-3.0.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>enchant-devel</Dependency>
             <Dependency>libgnome-devel</Dependency>
@@ -26,17 +26,11 @@
             <Dependency>orbit2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fedora/stardict-3.0.1.gcc43.patch</Patch>
-            <Patch level="1">fedora/transparent_trayicon.patch</Patch>
-            <Patch level="1">fedora/stardict-3.0.1-10.gucharmap.patch</Patch>
-            <Patch level="1">fedora/stardict-3.0.1-13.bz441209.patch</Patch>
-            <Patch>fedora/stardict-3.0.1.gcc44.patch</Patch>
-            <Patch level="1">fedora/stardict-3.0.1-20.security.patch</Patch>
-            <Patch level="1">use-system-sigc++.patch</Patch>
-            <Patch level="1">debian/01_festival-tts-plugin.patch</Patch>
-            <Patch level="1">debian/02_makefile.patch</Patch>
-            <Patch level="1">debian/03_license-updates.patch</Patch>
-            <Patch level="1">debian/04_changelog-minor-typo-fixes.patch</Patch>
+<!--             <Patch level="1">stardict-3.0.3-compositelookup_cpp.patch </Patch> -->
+<!--             <Patch level="1">stardict-3.0.3-entry.patch</Patch> -->
+<!--             <Patch level="1">stardict-3.0.3-gcc46.patch</Patch> -->
+<!--             <Patch level="1">stardict-3.0.3-overflow.patch</Patch> -->
+            <Patch level="1">stardict-3.0.3-zlib-1.2.5.2.patch</Patch>
         </Patches>
     </Source>
 
@@ -77,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="6">
+            <Date>2013-01-04</Date>
+            <Version>3.0.4</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="5">
             <Date>2011-01-08</Date>
             <Version>3.0.1</Version>

@@ -1,6 +1,8 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-·
 #
+# Copyleft 2012 Pardus ANKA Community
+# Copyright 2005-2011 TUBITAK/UEAKE
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
@@ -12,21 +14,11 @@ from pisi.actionsapi import shelltools
 def setup():
     shelltools.export("PKG_CONFIG", "/usr/bin/pkg-config")
     autotools.autoreconf("-fiv")
-    # shelltools.export("LDFLAGS", "%s -Wl,-z,defs" % get.LDFLAGS())
-    shelltools.system("./autogen.sh")
-
     autotools.configure("--disable-spell \
                          --disable-espeak \
                          --disable-festival \
-                         --disable-gucharmap") # \
-                         #--disable-schemas-install")
-
+                         --disable-gucharmap")
 def build():
-    # a workaround for ldflags. will be fixed.
-    import os
-    makefiles=os.popen('find . -name Makefile').read().split()
-    for m in makefiles:
-        pisitools.dosed(m, r'(^LDFLAGS\s*=.*)', '\\1 -lglib-2.0 -lgtk-x11-2.0 -lpango-1.0 -lORBit-2')
     autotools.make()
 
 def install():
@@ -37,4 +29,4 @@ def install():
     pisitools.remove("usr/share/stardict/pixmaps/docklet_stop.png")
     pisitools.remove("usr/share/stardict/pixmaps/docklet_normal.png")
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README", "TODO","doc/HowToCreateDictionary")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "NEWS", "README")
