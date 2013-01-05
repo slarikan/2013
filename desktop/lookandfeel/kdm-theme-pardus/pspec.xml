@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>KDM login theme for Pardus</Summary>
         <Description>kdm-theme-pardus contains a modified and polished KDM login theme for Pardus.</Description>
-        <Archive sha1sum="612879fba7ad9c2733f9cfe37f93c2d136a76653" type="tarlzma">http://cekirdek.pardus.org.tr/~gokcen/files/kdm-theme-pardus-20110111.tar.lzma</Archive>
+        <Archive sha1sum="5e7ca82f2c5399846c8f708a71045aeb7c66e154" type="targz">http://pardus-anka.org/pub/source/kdm-theme-pardus.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -23,6 +23,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2013-01-06</Date>
+            <Version>1.3</Version>
+            <Comment>New Pardus Anka KDM theme tulliana</Comment>
+            <Name>Demiray Muhterem</Name>
+            <Email>bilgi@bilgegunluk.com</Email>
+        </Update>
         <Update release="11">
             <Date>2011-01-11</Date>
             <Version>1.2</Version>
