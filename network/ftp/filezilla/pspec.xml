@@ -18,6 +18,7 @@
             <Dependency versionFrom="2.8.9">wxGTK-devel</Dependency>
             <Dependency versionFrom="2.8.3">gnutls-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
+            <Dependency>xdg-utils</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>i18n-filezilla.desktop.patch</Patch>
@@ -29,6 +30,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="2.8.9">wxGTK</Dependency>
             <Dependency versionFrom="2.8.3">gnutls</Dependency>
+            <Dependency>xdg-utils</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -12,7 +12,11 @@
         <IsA>service</IsA>
         <Summary>A fast and secure drop-in replacement for sendmail</Summary>
         <Description>Postfix is Wietse Venema's mailer that started life as an alternative to the widely-used Sendmail program.</Description>
+<<<<<<< HEAD
         <Archive sha1sum="8602cd54e63b1af02a8f994b5da69d01d73ec8cc" type="targz">http://anka.pardus-linux.org/2013/source/postfix-2.9.5.tar.gz</Archive>
+=======
+        <Archive sha1sum="ac53c2c6e15b642d5d06eb0fc092d6a35ab7eec7" type="targz">http://anka.pardus-linux.org/2013/source/postfix-2.9.5.tar.gz</Archive>
+>>>>>>> 451339ae890167044ac58aeba8dbe29dccfe626d
         <BuildDependencies>
             <Dependency>mysql-lib</Dependency>
             <Dependency>cyrus-sasl-devel</Dependency>
