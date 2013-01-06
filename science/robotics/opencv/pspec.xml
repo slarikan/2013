@@ -40,7 +40,7 @@
             <Dependency>ilmbase</Dependency>
             <Dependency>openexr</Dependency>
             <Dependency>openexr-libs</Dependency>
-            <Dependency>xine-lib</Dependency>
+            <!--Dependency>xine-lib</Dependency--><!-- disabled for circular dependency workaround -->
             <Dependency>libdc1394</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>libv4l</Dependency>
