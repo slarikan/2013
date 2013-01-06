@@ -19,6 +19,7 @@
             <Dependency>openbox-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+	    <Dependency>imlib2-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>libSM-devel</Dependency>
@@ -37,6 +38,7 @@
             <Dependency>openbox</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+	    <Dependency>imlib2</Dependency>
             <Dependency>libglade</Dependency>
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>libSM</Dependency>
