@@ -4,6 +4,7 @@
     <Source>
         <Name>v86d</Name>
         <Homepage>http://dev.gentoo.org/~spock/projects/uvesafb/</Homepage>
+        <!--<Homepage>ftp://143.106.60.118/pub/gentoo/distfiles</Homepage>-->
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -12,7 +13,8 @@
         <IsA>service</IsA>
         <Summary>Userspace helper for uvesafb</Summary>
         <Description>v86d is a userspace helper that runs x86 code in an emulated environment. It is used by the kernel framebuffer driver uvesafb.</Description>
-        <Archive sha1sum="ee9f7e63b44c30e909ffda421848d26601e9bf21" type="tarbz2">http://dev.gentoo.org/~spock/projects/uvesafb/archive/v86d-0.1.10.tar.bz2</Archive>
+        <!--<Archive sha1sum="ee9f7e63b44c30e909ffda421848d26601e9bf21" type="tarbz2">http://dev.gentoo.org/~spock/projects/uvesafb/archive/v86d-0.1.10.tar.bz2</Archive>-->
+        <Archive sha1sum="ee9f7e63b44c30e909ffda421848d26601e9bf21" type="tarbz2">http://anka.pardus-linux.org/2013/source/v86d-0.1.10.tar.bz2</Archive>
         <Patches>
         </Patches>
     </Source>
