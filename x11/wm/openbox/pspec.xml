@@ -14,19 +14,19 @@
         <Description>Openbox is a window manager for the X11 windowing system.</Description>
         <Archive sha1sum="3c3b8d2bc4f4e229871254e92d6b18639be00302" type="targz">http://openbox.org/dist/openbox/openbox-3.5.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>fontconfig-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency>libXft-devel</Dependency>
-	    <Dependency>imlib2-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>libXrandr-devel</Dependency>
-            <Dependency>libXrender-devel</Dependency>
-            <Dependency>libXt-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
-            <Dependency>libXinerama-devel</Dependency>
+            <Dependency>libXft-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>	    
+            <Dependency>imlib2-devel</Dependency>	    
             <Dependency>libXext-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>	    
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
+            <Dependency>libXrender-devel</Dependency>
+            <Dependency>libXinerama-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>openbox-gnome-session-3.4.9.patch</Patch>
@@ -40,15 +40,18 @@
         <Name>openbox</Name>
         <RuntimeDependencies>
             <Dependency>pango</Dependency>
-	    <Dependency>imlib2</Dependency>
-            <Dependency>libXft</Dependency>
-            <Dependency>libICE</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>startup-notification</Dependency>
-            <Dependency>libXinerama</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libICE</Dependency>	    
+            <Dependency>imlib2</Dependency>	    
             <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>	    
+            <Dependency>libXrandr</Dependency>
+            <Dependency>fontconfig</Dependency>
             <Dependency>libXcursor</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>startup-notification</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -82,7 +85,7 @@
 
      <History>
           <Update release="9">
-             <Date>2012-11-24</Date>
+             <Date>2013-01-06</Date>
              <Version>3.5.0</Version>
              <Comment>dep +</Comment>
              <Name>Osman Erkan</Name>
