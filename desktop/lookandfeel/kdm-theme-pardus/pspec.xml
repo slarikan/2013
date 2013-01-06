@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>KDM login theme for Pardus</Summary>
         <Description>kdm-theme-pardus contains a modified and polished KDM login theme for Pardus.</Description>
-        <Archive sha1sum="5e7ca82f2c5399846c8f708a71045aeb7c66e154" type="targz">http://pardus-anka.org/pub/source/kdm-theme-pardus.tar.gz</Archive>
+        <Archive sha1sum="723c6d7fb67476055f4d21e9258b3d37c778f5f2" type="targz">http://pardus-anka.org/pub/source/kdm-theme-pardus.tar.gz</Archive>
     </Source>
 
     <Package>
