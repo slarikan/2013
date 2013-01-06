@@ -9,14 +9,15 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fi")
-    autotools.configure("--enable-vapigen")
+    autotools.autoreconf("-vfi")
+    autotools.configure("--enable-vapigen \
+                         --with-pic")
 
 def build():
     autotools.make()
 
-def check():
-    autotools.make("check")
+#def check():
+    #autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
