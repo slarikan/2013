@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>pardofont</Name>
-        <Summary xml:lang="tr">Pardus yazı tipi</Summary>
-        <Description xml:lang="tr">pardofont is a font that looks like the famous Pardus font.</Description>
+        <Summary xml:lang="tr">Pardus benzeri yazı tipi</Summary>
+        <Description xml:lang="tr">pardofont, Pardus yazı karekterlerine benzer bir yazı tipidir.</Description>
     </Source>
 </PISI>
