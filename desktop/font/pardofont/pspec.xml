@@ -10,8 +10,8 @@
         </Packager>
         <License>GPL</License>
         <IsA>data</IsA>
-        <Summary>Pardus yazı fontu</Summary>
-        <Description>Pardus yazı karekterlerini içeren font.</Description>
+        <Summary>Pardus yazı tipi</Summary>
+        <Description>Pardus yazı karekterlerini içeren yazı tipi.</Description>
         <Archive sha1sum="8db746b27e4a1ff35bb057c019b0292500666ea0" type="tarxz">http://anka.pardus-linux.org/2013/source/pardofont-1.0.tar.xz</Archive>
     </Source>
 
