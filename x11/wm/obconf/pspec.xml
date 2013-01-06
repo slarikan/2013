@@ -29,13 +29,11 @@
     <Package>
         <Name>obconf</Name>
         <RuntimeDependencies>
-        <BuildDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>openbox</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>startup-notification</Dependency>
-        </BuildDependencies>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
