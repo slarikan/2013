@@ -11,6 +11,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+
+shelltools.export("HOME", get.workDIR())
 WorkDir = "vim73"
 
 def setup():
@@ -44,8 +46,17 @@ def setup():
               --enable-rubyinterp \
               --enable-gui=no \
               --with-tlib=ncurses \
+              --prefix=/usr \
+              --localstatedir=/var/lib/vim \
+              --with-features=big \
               --disable-acl \
               --with-compiledby=Pardus \
+              --enable-gpm \
+              --enable-acl \
+              --enable-cscope \
+              --disable-netbeans \
+              --enable-perlinterp \
+              --disable-luainterp \
               --with-modified-by=Pardus"
 
     if get.buildTYPE() == "gui":
