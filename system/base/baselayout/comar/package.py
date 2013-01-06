@@ -119,7 +119,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
                 (22,  "sshd"),
                 (30,  "squid"),
                 (32,  "rpc"),
-                (46,  "plugdev"),
+                #(46,  "plugdev"),
                 (50,  "named"),
                 # For systemd/var-lock.mount
                 (54,  "lock"),
