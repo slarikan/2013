@@ -9,6 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>audiocd-kio</Icon>
         <IsA>library</IsA>
         <Summary>Multi-purpose KDE library for Audio CD operations</Summary>
         <Description>Multi-purpose KDE library for Audio CD operations.</Description>

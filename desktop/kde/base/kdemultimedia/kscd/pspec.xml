@@ -9,6 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>kscd</Icon>
         <IsA>app:gui</IsA>
         <Summary>KSCD: KDE Audio Player</Summary>
         <Description>KSCD: KDE Audio Player</Description>

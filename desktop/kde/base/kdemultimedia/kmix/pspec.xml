@@ -9,6 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>kmix</Icon>
         <IsA>app:gui</IsA>
         <Summary>KMix: KDE Digital Mixer</Summary>
         <Description>KMix: KDE Digital Mixer</Description>

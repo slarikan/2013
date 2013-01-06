@@ -9,7 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <Icon>konsole</Icon>
+        <Icon>utulities-terminal</Icon>
         <IsA>app:gui</IsA>
         <Summary>KDE4 terminal application</Summary>
         <Description>Konsole KDE4 terminal emulator.</Description>

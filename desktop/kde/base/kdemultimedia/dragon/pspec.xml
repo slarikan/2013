@@ -9,6 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>dragon</Icon>
         <IsA>app:gui</IsA>
         <Summary>Dragon Player: Simple video player for KDE 4</Summary>
         <Description>A multimedia player where the focus is on simplicity, instead of.</Description>

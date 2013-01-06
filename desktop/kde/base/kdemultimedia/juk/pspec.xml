@@ -9,6 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>juk</Icon>
         <IsA>app:gui</IsA>
         <Summary>A jukebox, tagger and music collection manager</Summary>
         <Description>A jukebox, tagger and music collection manager</Description>
