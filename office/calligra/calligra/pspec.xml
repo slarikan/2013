@@ -14,8 +14,8 @@
         <PartOf>office.calligra.base</PartOf>
         <IsA>app:gui</IsA>
         <Summary>An integrated office suite for KDE</Summary>
-        <Description>calligra is a free, integrated office suite for KDE. The application suite consists of a word-processor, a spreadsheet application, a presentation creator and viewer application, an organizer and more.</Description>
-	<Archive sha1sum="9d90775707b3e59e02d8adfb88dc93dd29b727ce" type="tarbz2">http://download.kde.org/stable/calligra-2.5.0/calligra-2.5.0.tar.bz2</Archive>
+        <Description>Calligra is a free, integrated office suite for KDE. The application suite consists of a word-processor, a spreadsheet application, a presentation creator and viewer application, an organizer and more.</Description>
+        <Archive sha1sum="9d90775707b3e59e02d8adfb88dc93dd29b727ce" type="tarbz2">http://download.kde.org/stable/calligra-2.5.0/calligra-2.5.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>boost-devel</Dependency>
             <Dependency>doxygen</Dependency>
@@ -68,16 +68,16 @@
     <Package>
         <Name>calligra-devel</Name>
         <IsA>library</IsA>
-        <Summary>calligra için geliştirme dosyaları.</Summary>
+        <Summary>calligra için geliştirme dosyaları</Summary>
         <Files>
-            <Path fileType="header">/usr/include/kde4/</Path>
+            <Path fileType="header">/usr/include/kde4</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>calligra-base</Name>
         <IsA>library</IsA>
-        <Summary>calligra için taban dosyaları.</Summary>
+        <Summary>calligra için taban dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency>boost</Dependency>
             <Dependency>doxygen</Dependency>
@@ -129,7 +129,6 @@
             <Dependency>qimageblitz</Dependency>
             <Dependency>okular</Dependency>
         </RuntimeDependencies>
-        
         <Conflicts>
             <Package>koffice-devel</Package>
             <Package>koffice-data</Package>
@@ -148,23 +147,22 @@
             <Package>kexi-plugin-mysql</Package>
             <Package>kexi-plugin-postresgl</Package>
         </Conflicts>
-        
         <Files>
             <Path fileType="data">/usr/share/templates/</Path>
             <Path fileType="data">/usr/share/kde4/</Path>
             <Path fileType="data">/usr/share/icons/</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-docs</Name>
         <IsA>library</IsA>
-        <Summary>calligra için döküman dosyaları.</Summary>
+        <Summary>calligra için döküman dosyaları</Summary>
         <Files>
             <Path fileType="doc">/usr/share/doc/</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-libs</Name>
         <IsA>library</IsA>
@@ -173,7 +171,7 @@
             <Path fileType="library">/usr/lib/</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-servicetypes</Name>
         <Icon>servicetypes</Icon>
@@ -208,13 +206,12 @@
             <Path fileType="data">/usr/share/applications/kde4/braindump.desktop</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-kexi</Name>
         <Icon>kexi</Icon>
         <IsA>app:gui</IsA>
         <Summary>Develop desktop database applications</Summary>
-
         <RuntimeDependencies>
             <Dependency version="current">calligra-libs</Dependency>
             <Dependency version="current">calligra-devel</Dependency>
@@ -314,9 +311,9 @@
             <Path fileType="data">/usr/share/kde4/config/planworkrc</Path>
             <Path fileType="data">/usr/share/applications/kde4/plan*.desktop</Path>
             <Path fileType="executable">/usr/bin/calligraplan</Path>
-            <Path fileType="executable">/usr/bin/calligraplanwork</Path>            
+            <Path fileType="executable">/usr/bin/calligraplanwork</Path>
             <Path fileType="data>">/usr/share/color/icc/pigment/CMY.icm</Path>
-            <Path fileType="data>">/usr/share/color/icc/pigment/fogra27l.icm</Path> 
+            <Path fileType="data>">/usr/share/color/icc/pigment/fogra27l.icm</Path>
         </Files>
     </Package>
 
@@ -337,7 +334,7 @@
             <Path fileType="executable">/usr/bin/cstester</Path>
             <Path fileType="executable">/usr/bin/visualimagecompare</Path>
             <Path fileType="executable">/usr/bin/cstrunner</Path>
-            <Path fileType="executable">/usr/bin/calligra</Path>            
+            <Path fileType="executable">/usr/bin/calligra</Path>
             <Path fileType="data">/usr/share/applications/kde4/calligra.desktop</Path>
             <Path fileType="data">/usr/share/applications/kde4/KThesaurus.desktop</Path>
             <Path fileType="data">/usr/share/applications/kde4/okularApplication_odp.desktop</Path>
@@ -398,7 +395,7 @@
             <Dependency version="current">calligra-tools</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/calligrawords</Path>          
+            <Path fileType="executable">/usr/bin/calligrawords</Path>
             <Path fileType="library">/usr/lib/libwordsprivate*</Path>
             <Path fileType="library">/usr/lib/libkdeinit4_calligrawords.so</Path>
             <Path fileType="library">/usr/lib/kde4/wordspart.so</Path>
@@ -411,7 +408,7 @@
         <Update release="1">
             <Date>2012-08-08</Date>
             <Version>2.5.0</Version>
-            <Comment>First Release.</Comment>
+            <Comment>First release.</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
