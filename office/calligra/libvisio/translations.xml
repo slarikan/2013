@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>libvisio</Name>
-        <Summary xml:lang="en">A C++ library for parsing binary Microsoft Visio documents.</Summary>
-        <Description xml:lang="en">A C++ library for parsing binary Microsoft Visio documents (.vsd). Includes a converter to XHTML with embedded SVG files.</Description>
+        <Summary xml:lang="tr">A C++ library for parsing binary Microsoft Visio documents.</Summary>
+        <Description xml:lang="tr">A C++ library for parsing binary Microsoft Visio documents (.vsd). Includes a converter to XHTML with embedded SVG files.</Description>
     </Source>
 </PISI>

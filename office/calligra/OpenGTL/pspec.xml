@@ -17,7 +17,7 @@
             <Dependency>libpng-devel</Dependency>
         </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>OpenGTL</Name>
         <RunTimeDependencies>
@@ -25,23 +25,23 @@
             <Dependency>libpng</Dependency>
         </RunTimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/OpenGTL</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>OpenGTL-devel</Name>
         <RunTimeDependencies>
             <Dependency version="current">OpenGTL</Dependency>
         </RunTimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
-    
+
     <History>
         <Update release="1">
             <Date>2012-08-15</Date>

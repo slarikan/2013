@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>calligra-l10n</Name>
-        <Homepage>http://www.calligra.org/</Homepage>
+        <Homepage>http://www.calligra.org</Homepage>
         <Packager>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
@@ -79,7 +79,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/ca.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-da</Name>
         <Summary>Calligra için Danca yerelleştirme paketi.</Summary>
@@ -90,7 +90,7 @@
             <Path fileType="localedata">/usr/share/locale/da</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-de</Name>
         <Summary>Calligra için Almanca yerelleştirme paketi.</Summary>
@@ -103,7 +103,7 @@
             <Path fileType="data">/usr/share/kde4/apps/calligra/autocorrect/de_DE.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-el</Name>
         <Summary>Calligra için Yunanca yerelleştirme paketi.</Summary>
@@ -114,7 +114,7 @@
             <Path fileType="localedata">/usr/share/locale/el</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-en_GB</Name>
         <Summary>Calligra için İngilizce yerelleştirme paketi.</Summary>
@@ -126,7 +126,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-es</Name>
         <Summary>Calligra için İsponyolca yerelleştirme paketi.</Summary>
@@ -139,7 +139,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/es.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-et</Name>
         <Summary>Calligra için Estonyaca yerelleştirme paketi.</Summary>
@@ -151,7 +151,7 @@
             <Path fileType="localedata">/usr/share/locale/et</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-fi</Name>
         <Summary>Calligra için Fince yerelleştirme paketi.</Summary>
@@ -163,7 +163,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/fi.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-fr</Name>
         <Summary>Calligra için Fransızca yerelleştirme paketi.</Summary>
@@ -176,7 +176,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/fr.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-gl</Name>
         <Summary>Calligra için Galiçyaca yerelleştirme paketi.</Summary>
@@ -188,7 +188,7 @@
             <Path fileType="localedata">/usr/share/locale/gl</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-hu</Name>
         <Summary>Calligra için Macarca yerelleştirme paketi.</Summary>
@@ -200,7 +200,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/hu.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-it</Name>
         <Summary>Calligra için İtalyanca yerelleştirme paketi.</Summary>
@@ -213,7 +213,7 @@
             <Path fileType="data">/usr/share/kde4/apps/calligra/autocorrect/it_IT.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-ja</Name>
         <Summary>Calligra için Japonca yerelleştirme paketi.</Summary>
@@ -224,7 +224,7 @@
             <Path fileType="localedata">/usr/share/locale/ja</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-kk</Name>
         <Summary>Calligra için Kazakça yerelleştirme paketi.</Summary>
@@ -235,7 +235,7 @@
             <Path fileType="localedata">/usr/share/locale/kk</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-nb</Name>
         <Summary>Calligra için Norveççe yerelleştirme paketi.</Summary>
@@ -247,7 +247,7 @@
             <Path fileType="data">/usr/share/kde4/apps/calligra/autocorrect/nb.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-nds</Name>
         <Summary>Calligra için Saksonca yerelleştirme paketi.</Summary>
@@ -259,7 +259,7 @@
             <Path fileType="data">/usr/share/kde4/apps/koffice/autocorrect/nds.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-nl</Name>
         <Summary>Calligra için Felemenkçe yerelleştirme paketi.</Summary>
@@ -271,7 +271,7 @@
             <Path fileType="localedata">/usr/share/locale/nl</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-pl</Name>
         <Summary>Calligra için Lehçe yerelleştirme paketi.</Summary>
@@ -282,7 +282,7 @@
             <Path fileType="localedata">/usr/share/locale/pl</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-pt</Name>
         <Summary>Calligra için Portekizce yerelleştirme paketi.</Summary>
@@ -294,7 +294,7 @@
             <Path fileType="localedata">/usr/share/locale/pt</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-pt_BR</Name>
         <Summary>Calligra için Brazilya Portekizcesi yerelleştirme paketi.</Summary>
@@ -306,7 +306,7 @@
             <Path fileType="localedata">/usr/share/locale/pt_BR</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-ru</Name>
         <Summary>Calligra için Rusça yerelleştirme paketi.</Summary>
@@ -319,7 +319,7 @@
             <Path fileType="data">/usr/share/kde4/apps/calligra/autocorrect/ru_RU.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-sk</Name>
         <Summary>Calligra için Slovakça yerelleştirme paketi.</Summary>
@@ -330,7 +330,7 @@
             <Path fileType="localedata">/usr/share/locale/sk</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-sv</Name>
         <Summary>Calligra için İsveççe yerelleştirme paketi.</Summary>
@@ -342,7 +342,7 @@
             <Path fileType="localedata">/usr/share/locale/sv</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-tr</Name>
         <Summary>Calligra için Türkçe yerelleştirme paketi.</Summary>
@@ -353,7 +353,7 @@
             <Path fileType="localedata">/usr/share/locale/tr</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-uk</Name>
         <Summary>Calligra için Ukraynaca yerelleştirme paketi.</Summary>
@@ -366,7 +366,7 @@
             <Path fileType="data">/usr/share/kde4/apps/calligra/autocorrect/uk_UA.xml</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-zh_CN</Name>
         <Summary>Calligra için Çince yerelleştirme paketi.</Summary>
@@ -377,7 +377,7 @@
             <Path fileType="localedata">/usr/share/locale/zh_CN</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>calligra-l10n-zh_TW</Name>
         <Summary>Calligra için Taiwan Çincesi yerelleştirme paketi.</Summary>
@@ -388,7 +388,7 @@
             <Path fileType="localedata">/usr/share/locale/zh_TW</Path>
         </Files>
     </Package>
-   
+
     <History>
         <Update release="1">
             <Date>2012-08-15</Date>

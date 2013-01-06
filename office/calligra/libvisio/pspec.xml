@@ -18,7 +18,7 @@
             <Dependency>libwpg-devel</Dependency>
         </BuildDependencies>
     </Source>
-    
+
     <Package>
         <Name>libvisio</Name>
         <RuntimeDependencies>
@@ -26,23 +26,23 @@
             <Dependency>libwpg</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="doc">/usr/share/doc/libvisio</Path>
         </Files>
     </Package>
-    
+
     <Package>
         <Name>libvisio-devel</Name>
         <RuntimeDependencies>
             <Dependency version="current">libvisio</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/libvisio-0.0/libvisio/</Path>
+            <Path fileType="header">/usr/include/libvisio-0.0/libvisio</Path>
         </Files>
     </Package>
-    
+
     <History>
         <Update release="1">
             <Date>2012-08-15</Date>

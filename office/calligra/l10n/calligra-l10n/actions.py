@@ -65,7 +65,7 @@ def setup():
     kde4.configure()
     shelltools.cd("../calligra-l10n-zh_TW-2.5.0")
     kde4.configure()
-    
+
 def build():
     shelltools.cd("calligra-l10n-ca-2.5.0")
     kde4.make()
@@ -121,7 +121,7 @@ def build():
     kde4.make()
     shelltools.cd("../calligra-l10n-zh_TW-2.5.0")
     kde4.make()
-    
+
 def install():
     shelltools.cd("calligra-l10n-ca-2.5.0")
     kde4.install("DESTDIR=%s" % get.installDIR())
