@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>An implementation of the OBEX protocol used for transferring data to mobile devices</Summary>
         <Description>openobex is an open source implementation of the Object Exchange (OBEX) protocol. OBEX is a session protocol and can best be described as a binary HTTP protocol.</Description>
-        <Archive sha1sum="c6e226434981fc016bb7fc037cd839206c19e30a" type="targz">http://sourceforge.net/projects/openobex/files/openobex/1.6/openobex-1.6-Source.tar.gz</Archive>
+        <Archive sha1sum="5332ef95bc8b321bda675cdb74379804c6c1a83f" type="zip">http://sourceforge.net/projects/openobex/files/openobex/1.5/openobex-1.5.0-Source.zip</Archive>
         <BuildDependencies>
             <Dependency>bluez-libs-devel</Dependency>
         </BuildDependencies>
@@ -59,13 +59,6 @@
     </Package>
 
     <History>
-        <Update release="11">
-            <Date>2013-01-08</Date>
-            <Version>1.6</Version>
-            <Comment>New version bump to 1.6</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>yaralikurt15@hotmail.com</Email>
-        </Update>
         <Update release="10">
             <Date>2010-10-13</Date>
             <Version>1.5</Version>
