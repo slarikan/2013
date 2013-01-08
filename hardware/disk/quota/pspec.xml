@@ -28,8 +28,8 @@
             <Patch level="1">quota-3.16-quotaoffhelp.patch</Patch>
             <Patch level="1">quota-3.17-quotactlmanpage.patch</Patch>-->
             <Patch level="1">quota-3.17-ftbfs.patch</Patch>
-	    <Patch level="1">quota-4.01-warnquota.patch</Patch>
-	    <Patch level="1">quota-4.01-Make-group-warning-message-more-official.patch</Patch>
+            <Patch level="1">quota-4.01-warnquota.patch</Patch>
+            <Patch level="1">quota-4.01-Make-group-warning-message-more-official.patch</Patch>
             <!--<Patch level="1">quota-3.17-quotactl_null_corruption.patch</Patch>
             <Patch level="1">quota-3.17-add-gfs2-support.patch</Patch>-->
         </Patches>

@@ -14,9 +14,9 @@
         <Description>LibXxf86misc is the client library for the XFree86-misc extension.</Description>
         <Archive sha1sum="8bed53f728e646e8c216dd0840a9e41a66c44845" type="targz">http://anka.pardus-linux.org/2013/source/libXxf86misc-1.0.3.tar.gz</Archive>
         <BuildDependencies>
-	     <Dependency>libXext-devel</Dependency>
-	     <Dependency>libXxf86miscproto-devel</Dependency>
-	     <Dependency>xorg-proto</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXxf86miscproto-devel</Dependency>
+            <Dependency>xorg-proto</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +24,7 @@
         <Name>libXxf86misc</Name>
         <RuntimeDependencies>
             <Dependency>libXext</Dependency>
-	    <Dependency>libXxf86miscproto</Dependency>
+            <Dependency>libXxf86miscproto</Dependency>
         </RuntimeDependencies>
         <Conflicts>
             <Package releaseTo="25">xorg-proto</Package>
@@ -67,7 +67,7 @@
         </Files>
     </Package>
     <History>
-	<Update release="1">
+        <Update release="1">
             <Date>2012-10-23</Date>
             <Version>1.0.3</Version>
             <Comment>ilk sürüm</Comment>

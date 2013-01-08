@@ -6,23 +6,33 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-from pisi.actionsapi import autotools
+from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
+from pisi.actionsapi import get
 
 def setup():
-    shelltools.export("CXXFLAGS", "%s -lcrypto -lpthread" % get.CXXFLAGS())
-    shelltools.export("CFLAGS", get.CFLAGS())
-    autotools.configure("--sysconfdir=/etc/dcmtk \
-                         --with-private-tags")
+    #shelltools.export("CXXFLAGS", "%s -lcrypto -lpthread -lssh -lz" % get.CXXFLAGS())
+    #shelltools.export("CFLAGS", get.CFLAGS())
+    shelltools.export("LDFLAGS", "%s -lcrypto -lssh -ljpeg -lz -lpthread" % get.LDFLAGS())
+    shelltools.unlink("dcmjpls/libcharls")
+    cmaketools.configure("-DCMAKE_BUILD_TYPE=Release \
+                          -DCMAKE_SKIP_RPATH=OFF \
+                          -DBUILD_SHARED_LIBS=ON \
+                          -DDCMTK_WITH_OPENSSL=ON \
+                          -DDCMTK_WITH_PNG=ON \
+                          -DDCMTK_WITH_PRIVATE_TAGS=ON \
+                          -DDCMTK_WITH_TIFF=ON \
+                          -DDCMTK_WITH_XML=ON \
+                          -DDCMTK_WITH_CHARLS=ON \
+                          -DDCMTK_WITH_ZLIB=ON \
+                          -DCMAKE_INSTALL_PREFIX=/usr")
 
 def build():
-    autotools.make("-j1")
+    cmaketools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR(), "install-lib")
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR(), "install-include")
-
-    pisitools.dodoc("CHANGES.354")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
+    pisitools.domove("/usr/etc/*" ,"/etc")
+    pisitools.removeDir("/usr/etc")

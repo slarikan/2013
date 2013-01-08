@@ -14,7 +14,7 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>E file chunk reading/writing library</Summary>
         <Description>Eet is a tiny library designed to write an arbitary set of chunks of data to a file and optionally compress each chunk (very much like a zip file) and allow fast random-access reading of the file later on.</Description>
-        <Archive sha1sum="ce4f05e180ce4a833d019fc618c7acd5aceca96d" type="targz">http://download.enlightenment.org/releases/eet-1.7.4.tar.gz</Archive>
+        <Archive sha1sum="ec40ad6e11cdeccea3397548e73809e511941d1e" type="tarbz2">http://download.enlightenment.org/releases/eet-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.3">eina-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -54,6 +54,13 @@
     </Package>
 
     <History>
+        <Update release="29">
+            <Date>2013-01-08</Date>
+            <Version>1.7.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="28">
             <Date>2012-12-22</Date>
             <Version>1.7.4</Version>

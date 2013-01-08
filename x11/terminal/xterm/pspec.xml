@@ -126,7 +126,7 @@
             <Comment>
                 New release. Changes:
                 - An indexing error when saving to the circular buffer was fixed.
-              </Comment>
+            </Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
         </Update>
@@ -138,7 +138,7 @@
                 - Refactored storage of line data to allow handling the
                   saved-line array as a circular buffer, improving performance.
                 - Several other bugfixes and improvements.
-              </Comment>
+            </Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
         </Update>

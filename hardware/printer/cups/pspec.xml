@@ -28,8 +28,8 @@
             <Dependency>jpeg-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>php-devel</Dependency>
-	    <Dependency>libusb-compat-devel</Dependency>
-	    <Dependency>libusbx-devel</Dependency>
+            <Dependency>libusb-compat-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Fedora patches -->
@@ -77,7 +77,7 @@
             <!-- Simplify the DNSSD parts so they can build using the compat library. -->
             <Patch level="1">fedora/cups-build.patch</Patch>
 	    
-	    <Patch level="1">fedora/cups-banners.patch</Patch>
+            <Patch level="1">fedora/cups-banners.patch</Patch>
 
             <!-- Re-initialise the resolver on failure in httpAddrGetList(). -->
             <Patch level="1">fedora/cups-res_init.patch</Patch>
@@ -91,7 +91,7 @@
             <!-- Fix support for older CUPS servers in cupsGetDests. -->
             <Patch level="1">fedora/cups-cups-get-classes.patch</Patch>
 	    
-	    <!-- Support extra liblarys -->
+            <!-- Support extra liblarys -->
             <Patch level="1">fedora/cups-multilib.patch</Patch>
 
 
@@ -127,11 +127,11 @@
 
             <!-- One USB backend for both libusb-based and usblp-based accesses -->
             <Patch level="1">ubuntu/tests-ignore-usb-crash.patch</Patch>
-	    <!--<Patch level="1">ubuntu/usb-backend-busy-loop-fix.patch</Patch>
-	    <Patch level="1">ubuntu/usb-backend-detach-usblp-earlier-crash-guards.patch</Patch>-->
-	    <Patch level="1">ubuntu/usb-backend-initialize-usblp-attached-state.patch</Patch>
+            <!--<Patch level="1">ubuntu/usb-backend-busy-loop-fix.patch</Patch>
+            <Patch level="1">ubuntu/usb-backend-detach-usblp-earlier-crash-guards.patch</Patch>-->
+            <Patch level="1">ubuntu/usb-backend-initialize-usblp-attached-state.patch</Patch>
 
-             <!--Retry job when it's failed instead of stopping -->
+            <!--Retry job when it's failed instead of stopping -->
             <Patch level="1">ubuntu/ubuntu-default-error-policy-retry-job.patch</Patch>
 
             <!-- Poppler fixes -->
@@ -139,7 +139,7 @@
 
             <!-- ipp-backend -->
             <Patch level="1">ubuntu/add-ipp-backend-of-cups-1.4.patch</Patch>
-	    <!--<Patch level="1">ubuntu/ipp-backend-cups-1.5.4-fixes.patch</Patch>-->
+            <!--<Patch level="1">ubuntu/ipp-backend-cups-1.5.4-fixes.patch</Patch>-->
 	    
 
             <!-- Don't mess with cupsd.conf permission -->
@@ -154,10 +154,10 @@
             <!-- Don't write timestamps in conf files to keep them unchanged between releases -->
             <Patch level="1">ubuntu/no-conffile-timestamp.patch</Patch>
 	    
-	          <!-- Supporting-->
+            <!-- Supporting-->
             <Patch level="1">ubuntu/airprint-support.patch</Patch>
             <Patch level="1">ubuntu/colord-support.patch</Patch>
-	    <Patch level="1">ubuntu/snmp-dont-stop-without-ipv6.patch</Patch>
+            <Patch level="1">ubuntu/snmp-dont-stop-without-ipv6.patch</Patch>
 	    
 
 
@@ -297,14 +297,14 @@
     </Package>
 
     <History>
-       <Update release="91">
+        <Update release="91">
             <Date>2012-10-18</Date>
             <Version>1.5.4</Version>
             <Comment>Version bump</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-       <Update release="90">
+        <Update release="90">
             <Date>2011-08-02</Date>
             <Version>1.5.3</Version>
             <Comment>Version bump</Comment>

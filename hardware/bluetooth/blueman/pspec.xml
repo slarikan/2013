@@ -28,9 +28,9 @@
             <!--<Patch level="1">PulsePatch.patch</Patch>
             <Patch level="1">fix-unmatched-icons.patch</Patch>
             <Patch level="1">tr.patch</Patch>-->
-	    <Patch level="1">blueman-1.23-statusicon.patch</Patch>
-	    <Patch level="1">blueman-1.23-plugins-conf-file.patch</Patch>
-	    <Patch level="1">blueman-1.23-set-codeset-for-gettext-to-UTF-8-always.patch</Patch>
+            <Patch level="1">blueman-1.23-statusicon.patch</Patch>
+            <Patch level="1">blueman-1.23-plugins-conf-file.patch</Patch>
+            <Patch level="1">blueman-1.23-set-codeset-for-gettext-to-UTF-8-always.patch</Patch>
             <Patch level="1">notshowin-kde.patch</Patch>
         </Patches>
     </Source>
@@ -49,7 +49,7 @@
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="library">/usr/lib/python2*</Path>
-	    <Path fileType="library">/usr/lib/nautilus-sendto/</Path>
+            <Path fileType="library">/usr/lib/nautilus-sendto/</Path>
             <Path fileType="data">/usr/share</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
             <Path fileType="doc">/usr/share/doc</Path>

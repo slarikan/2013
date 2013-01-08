@@ -63,7 +63,7 @@
         </AdditionalFiles>
         <!-- seems we don't need comar script longer -->
         <!--Provides>
-            <COMAR script="package.py">System.Package</COMAR>
+        <COMAR script="package.py">System.Package</COMAR>
         </Provides-->
     </Package>
 
@@ -118,7 +118,7 @@
             <Path fileType="library">/usr/lib32</Path>
         </Files>
         <!--Provides>
-            <COMAR script="package-emul32.py">System.Package</COMAR>
+        <COMAR script="package-emul32.py">System.Package</COMAR>
         </Provides-->
     </Package>
     <History>

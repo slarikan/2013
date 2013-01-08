@@ -21,13 +21,13 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-	    <Patch level="1">rxvt-unicode-9.05_no-MOTIF-WM-INFO.patch</Patch>
-	    <Patch level="1">rxvt-unicode-9.06-font-width.patch</Patch>
-	    <Patch level="1">rxvt-unicode-9.06-no-urgency-if-focused.diff</Patch>
-	    <Patch level="1">rxvt-unicode-9.06-popups-hangs.patch</Patch>
-	    <Patch level="1">rxvt-unicode-9.09-sattvik-colours.patch</Patch>
-	    <Patch level="1">rxvt-unicode-9.14-clear.patch</Patch>
-	    <Patch level="1">rxvt-unicode-9.14-secondary-wheel.patch</Patch>
+            <Patch level="1">rxvt-unicode-9.05_no-MOTIF-WM-INFO.patch</Patch>
+            <Patch level="1">rxvt-unicode-9.06-font-width.patch</Patch>
+            <Patch level="1">rxvt-unicode-9.06-no-urgency-if-focused.diff</Patch>
+            <Patch level="1">rxvt-unicode-9.06-popups-hangs.patch</Patch>
+            <Patch level="1">rxvt-unicode-9.09-sattvik-colours.patch</Patch>
+            <Patch level="1">rxvt-unicode-9.14-clear.patch</Patch>
+            <Patch level="1">rxvt-unicode-9.14-secondary-wheel.patch</Patch>
             <!--<Patch level="1">CVE-2008-1142.patch</Patch>
             <Patch level="1">fix_destdir.patch</Patch>
             <Patch level="1">rxvt-unicode-scroll-modupdown.patch</Patch>
@@ -45,13 +45,13 @@
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
-          <Path fileType="config">/etc</Path>
-          <Path fileType="executable">/usr/bin</Path>
-          <Path fileType="library">/usr/lib</Path>
-          <Path fileType="config">/usr/share/terminfo</Path>
-          <Path fileType="data">/usr/share/applications</Path>
-          <Path fileType="man">/usr/share/man</Path>
-          <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/usr/share/terminfo</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/rxvt.desktop">rxvt.desktop</AdditionalFile>

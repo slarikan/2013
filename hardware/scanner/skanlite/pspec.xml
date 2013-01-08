@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
             <Dependency>sane-backends-devel</Dependency>
-	    <Dependency>libksane-devel</Dependency>
+            <Dependency>libksane-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,7 +26,7 @@
         <RuntimeDependencies>
             <Dependency versionFrom="4.9.3">kdelibs</Dependency>
             <Dependency>sane-backends</Dependency>
-	    <Dependency>libksane</Dependency>
+            <Dependency>libksane</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -95,26 +95,26 @@
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>
-       <Update release="3">
+        <Update release="3">
             <Date>2009-05-12</Date>
             <Version>0.3</Version>
             <Comment>Version bump.</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-       </Update>
-       <Update release="2">
+        </Update>
+        <Update release="2">
             <Date>2009-02-16</Date>
             <Version>0.2</Version>
             <Comment>Archive update</Comment>
             <Name>Gökmen Göksel</Name>
             <Email>gokmen@pardus.org.tr</Email>
-       </Update>
-       <Update release="1">
+        </Update>
+        <Update release="1">
             <Date>2008-09-05</Date>
             <Version>0.2</Version>
             <Comment>First release</Comment>
             <Name>Gökmen Göksel</Name>
             <Email>gokmen@pardus.org.tr</Email>
         </Update>
-     </History>
+    </History>
 </PISI>

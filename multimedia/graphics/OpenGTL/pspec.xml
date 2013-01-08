@@ -11,11 +11,15 @@
         <IsA>app:console</IsA>
         <Summary>The Graphics Transformation Languages is a set of library</Summary>
         <Description>The Graphics Transformation Languages is a set of library for using and integrating transformation algorithms (such as filter or color conversion) in graphics applications.</Description>
-        <Archive sha1sum="b6beea4086a0907dcdb326d421d253f368689b45" type="tarbz2">http://download.opengtl.org/OpenGTL-0.9.15.2.tar.bz2</Archive>
+        <Archive sha1sum="10369bd11109312466389b3b050469dd69e54d2b" type="tarbz2">http://download.opengtl.org/OpenGTL-0.9.17.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>llvm</Dependency>
             <Dependency>libpng-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">opengtl-0.9.17-gcc-4.7.patch</Patch>
+            <Patch level="0">opengtl-0.9.17-ldflags.patch</Patch>
+	  </Patches>
     </Source>
 
     <Package>
@@ -43,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-08</Date>
+            <Version>0.9.17</Version>
+            <Comment>Bump, compile using llvm 3x.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-15</Date>
             <Version>0.9.15.2</Version>

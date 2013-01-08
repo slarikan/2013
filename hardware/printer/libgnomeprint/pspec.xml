@@ -24,7 +24,7 @@
             <Dependency>cups-devel</Dependency>
         </BuildDependencies>
         <Patches>
-		    <Patch level="1">libgnomeprint-2.18.8-stdio-include.patch</Patch>
+            <Patch level="1">libgnomeprint-2.18.8-stdio-include.patch</Patch>
         </Patches>
     </Source>
 

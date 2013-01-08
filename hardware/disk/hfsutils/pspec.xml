@@ -5,7 +5,7 @@
         <Name>hfsutils</Name>
         <Homepage>http://www.mars.org/home/rob/proj/hfs/</Homepage>
         <Packager>
-	    <Name>Pardus ANKA Admins</Name>
+            <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>

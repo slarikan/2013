@@ -21,7 +21,7 @@
         <Patches>
             <Patch level="1">openobex-apps-flush.patch</Patch>
             <Patch level="1">openobex-1.3-push.patch</Patch>
-	    <Patch level="1">openobex-1.3-autoconf.patch</Patch>
+            <Patch level="1">openobex-1.3-autoconf.patch</Patch>
         </Patches>
     </Source>
 
@@ -34,7 +34,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="executable">/usr/sbin/obex-check-device</Path>
+            <Path fileType="executable">/usr/sbin/obex-check-device</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>

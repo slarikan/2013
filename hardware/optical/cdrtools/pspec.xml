@@ -103,7 +103,7 @@
                 - Fixed a bug (writing to stdout instead of stderr) recently introduced for better RR recognition,
                 - Fixed a bug in the firmware from drives developed by Pioneer in November 2009 which affects
                   Pioneer, Plextor and TEAC drives.
-                </Comment>
+            </Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>

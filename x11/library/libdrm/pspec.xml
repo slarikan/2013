@@ -20,7 +20,7 @@
 
     <Package>
         <Name>libdrm</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency versionFrom="0.10.0">libpciaccess</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -101,8 +101,8 @@
         <Summary>32-bit shared libraries for libdrm</Summary>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
-             <Dependency>cairo-32bit</Dependency>
-             <Dependency>libpciaccess-32bit</Dependency>
+            <Dependency>cairo-32bit</Dependency>
+            <Dependency>libpciaccess-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">libdrm</Dependency>

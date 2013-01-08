@@ -36,7 +36,7 @@
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/etc/X11/Xsession.d/25-x11-ssh-askpass.sh">x11-ssh-askpass.sh</AdditionalFile>
         </AdditionalFiles>
-   </Package>
+    </Package>
 
     <History>
         <Update release="4">
@@ -72,4 +72,3 @@
         </Update>
     </History>
 </PISI>
-

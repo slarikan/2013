@@ -47,7 +47,7 @@
         <Provides>
             <COMAR script="service.py">System.Service</COMAR>
         </Provides>
-   </Package>
+    </Package>
 
     <History>
         <Update release="13">
@@ -146,4 +146,3 @@
         </Update>
     </History>
 </PISI>
-

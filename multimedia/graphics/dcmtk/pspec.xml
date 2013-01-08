@@ -13,16 +13,22 @@
         <IsA>app:console</IsA>
         <Summary>The OFFIS DICOM toolkit</Summary>
         <Description>DCMTK includes a collection of libraries and applications for examining, constructing and converting DICOM image files, handling offline media, sending and receiving images over a network connection, as well as demonstrative image storage and worklist servers.</Description>
-        <Archive sha1sum="169056874947083e68eb941fcd53faaebc862ae5" type="targz">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk354/dcmtk-3.5.4.tar.gz</Archive>
+        <Archive sha1sum="469e017cffc56f36e834aa19c8612111f964f757" type="targz">ftp://dicom.offis.de/pub/dicom/offis/software/dcmtk/dcmtk360/dcmtk-3.6.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>doxygen</Dependency>
             <Dependency>tiff-devel</Dependency>
+            <Dependency>charls-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">debianpatchset.diff</Patch>
-            <Patch level="1">dcmtk-3.5.4_shared.patch</Patch>
-            <Patch>patchesfromsite.diff</Patch>
-            <Patch>opensslfix.diff</Patch>
+            <Patch level="1">dcmtk-3.6.0-0001-Added-soname-information-for-all-targets.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0002-Install-libs-in-the-correct-arch-dir.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0003-Removed-bundled-libcharl-reference-in-dcmjpls.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0004-Use-system-charls.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0005-Fixed-includes-for-CharLS-1.0.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0006-Added-optional-support-for-building-shared-libraries.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0007-Add-soname-generation-for-modules-which-are-not-in-D.patch</Patch>
+            <Patch level="1">dcmtk-3.6.0-0008-Compiler-Fixes.patch</Patch>
+            <Patch>dcmtk-asneeded.patch</Patch>
         </Patches>
     </Source>
 
@@ -30,6 +36,7 @@
         <Name>dcmtk</Name>
         <RuntimeDependencies>
             <Dependency>tiff</Dependency>
+	    <Dependency>charls</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -52,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-01-07</Date>
+            <Version>3.6.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="3">
             <Date>2010-11-24</Date>
             <Version>3.5.4</Version>

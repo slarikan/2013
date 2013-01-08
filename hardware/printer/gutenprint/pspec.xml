@@ -18,7 +18,7 @@
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
-	    <Dependency>ijs-devel</Dependency>
+            <Dependency>ijs-devel</Dependency>
             <Dependency>foomatic-db</Dependency>
             <Dependency>ghostscript-devel</Dependency>
         </BuildDependencies>
@@ -40,7 +40,7 @@
             <Dependency>python-cups</Dependency>
             <Dependency>ghostscript</Dependency>
             <Dependency>foomatic-db</Dependency>
-	    <Dependency>ijs</Dependency>
+            <Dependency>ijs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/lib/cups</Path>

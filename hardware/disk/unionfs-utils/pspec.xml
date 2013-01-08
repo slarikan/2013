@@ -46,7 +46,7 @@
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
         </Update>
-            <Update release="1">
+        <Update release="1">
             <Date>2010-09-28</Date>
             <Version>0.2.1</Version>
             <Comment>Initial release.</Comment>

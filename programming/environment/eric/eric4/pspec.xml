@@ -18,21 +18,21 @@
         Scintilla editor control. It is designed to be usable as everdays' quick and dirty
         editor as well as being usable as a professional project management tool integrating
         many advanced features Python offers the professional coder.</Description>
-        <Archive sha1sum="a19e85e56128129a955c13667f77335f33d29fcb" type="targz">mirrors://sourceforge/eric-ide/eric4-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="aa30180bb101b9185ad9388ec6e5c1b8ae49f5b0" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-cs-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="ff07ba139387ac21f517e0a22292477660d33599" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-de-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="7875da9a280ec5612c48063484954af11ad3d72e" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-es-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="4976cc6bde32e556d3094d0cfea315a0a9d3d864" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-fr-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="ab6fd4dbdea1a6fbfe1f4bca4c3116c2a2d18a8c" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-it-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="4fb390a0fd2c53fbe1d0a11076219199d7e5bdea" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-ru-4.5.7.tar.gz</Archive>
-        <Archive sha1sum="93d785662d65ad46b7e83cfe4e1218ebc0677f7e" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-tr-4.5.7.tar.gz</Archive>
+        <Archive sha1sum="b3cc8651c8a028805f8862143d22d1134f39c4a4" type="targz">mirrors://sourceforge/eric-ide/eric4-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="19b40386febc0cf7e194d881565a86863f8a6da3" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-cs-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="5eb7fd8a35303367d7982132901083a75c1be79b" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-de-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="5e872e984d2d7aaf34f66decbdf03b3414fe4f7e" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-es-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="d4b13abdbdc2956f5ebf4b92bf5adb973e083682" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-fr-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="21b568d51be69e2e0b2c8dfa7b5c7a5528bd4ab1" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-it-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="575734ccf60ed8bd2dd69cc2ba354ce6df37d91a" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-ru-4.5.8.tar.gz</Archive>
+        <Archive sha1sum="87d7e2895d70e82972f90758f9bd7fcc2fe68fa9" type="targz">mirrors://sourceforge/eric-ide/eric4-i18n-tr-4.5.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>qscintilla2-python</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch level="1">paths.patch</Patch-->
             <Patch level="1">shebang.patch</Patch>
-            <!--Patch level="1">hideUpgradeMenus.patch</Patch-->
+            <Patch level="0">hideUpgradeMenus.patch</Patch>
         </Patches>
     </Source>
 
@@ -126,6 +126,13 @@
     </Package>
 
     <History>
+        <Update release="24">
+            <Date>2013-01-07</Date>
+            <Version>4.5.8</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="23">
             <Date>2012-11-10</Date>
             <Version>4.5.7</Version>

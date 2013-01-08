@@ -4,10 +4,10 @@
     <Source>
         <Name>libisofs</Name>
         <Homepage>http://libburnia-project.org</Homepage>
-	 <License>GPLv2</License>
+        <License>GPLv2</License>
         <Packager>
-        <Name>Mete Bilgin</Name>
-        <Email>metebilgin48@gmail.com</Email>
+            <Name>Mete Bilgin</Name>
+            <Email>metebilgin48@gmail.com</Email>
         </Packager>
         <PartOf>hardware.optical</PartOf>
         <IsA>library</IsA>
@@ -48,14 +48,14 @@
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
-         <Update release="9">
+        <Update release="9">
             <Date>2012-06-10</Date>
             <Version>1.2.2</Version>
             <Comment>Version bump.</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-         <Update release="9">
+        <Update release="9">
             <Date>2011-01-27</Date>
             <Version>1.0.0</Version>
             <Comment>Version bump.</Comment>

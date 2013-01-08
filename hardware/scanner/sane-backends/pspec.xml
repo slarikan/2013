@@ -26,11 +26,11 @@
         <Patches>
             <!-- fixes too small arrays in backend/niash.c -->
             <Patch>fix-buffer-overflow.patch</Patch>
-            <Patch level="1">sane-backends-1.0.20-open-macro.patch</Patch> 
-            <Patch level="1">sane-backends-1.0.23-sane-config-multilib.patch</Patch> 
+            <Patch level="1">sane-backends-1.0.20-open-macro.patch</Patch>
+            <Patch level="1">sane-backends-1.0.23-sane-config-multilib.patch</Patch>
             <Patch level="1">sane-backends-1.0.23-soname.patch</Patch>
             <Patch level="1">sane-backends-1.0.21-epson-expression800.patch</Patch>
-            <Patch level="1">sane-backends-1.0.23-udev.patch</Patch> 
+            <Patch level="1">sane-backends-1.0.23-udev.patch</Patch>
 
             <!-- Suse fixes from post 1.0.20 -->
 
@@ -72,7 +72,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/sane.png">sane.png</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/env.d/30sane">30sane</AdditionalFile>
         </AdditionalFiles>
-   </Package>
+    </Package>
 
     <Package>
         <Name>sane-backends-devel</Name>
@@ -96,14 +96,14 @@
         </Files>
     </Package>
 
-   <History>
+    <History>
         <Update release="22">
             <Date>2012-10-25</Date>
             <Version>1.0.23</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>     
+        </Update>
         <Update release="21">
             <Date>2011-02-24</Date>
             <Version>1.0.22</Version>

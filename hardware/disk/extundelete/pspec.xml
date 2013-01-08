@@ -13,11 +13,11 @@
         <Summary>File recovery tool</Summary>
         <Description>extundelete is a utility to undelete files from an ext3 or ext4 filesystem.</Description>
         <Archive sha1sum="f37fe490c002baed795ff01e9fa1659332811f0c" type="tarbz2">mirrors://sourceforge/extundelete/extundelete-0.2.0.tar.bz2</Archive>
-	<Patches>
-	    <Patch level="1">01_output_dir.patch</Patch>
-	    <Patch level="0">extundelete-0.2.0-build.patch</Patch>
-	    <Patch level="1">03_fix_opaque_ext2_group_desc_compile_error.patch</Patch>
-	</Patches>
+        <Patches>
+            <Patch level="1">01_output_dir.patch</Patch>
+            <Patch level="0">extundelete-0.2.0-build.patch</Patch>
+            <Patch level="1">03_fix_opaque_ext2_group_desc_compile_error.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

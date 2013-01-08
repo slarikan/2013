@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Sony Playstation emulator with good compatibility</Summary>
         <Description>PCSX-Reloaded is a PlayStation Emulator based on PCSX-df 1.9, with support for Windows, GNU/Linux and Mac OS X as well as many bugfixes and improvements.</Description>
-       <Archive sha1sum="d0f336f49cdc2edbec23e75a01d10c8d5406ed58" type="tarbz2">http://packages.pcdomain.com/source-files/pcsxr-1.9.92.tar.bz2</Archive>
+        <Archive sha1sum="d0f336f49cdc2edbec23e75a01d10c8d5406ed58" type="tarbz2">http://packages.pcdomain.com/source-files/pcsxr-1.9.92.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -69,5 +69,5 @@
             <Name>Aaron Johnson</Name>
             <Email>acjohnson@pcdomain.com</Email>
         </Update>
-     </History>
+    </History>
 </PISI>

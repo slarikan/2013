@@ -32,9 +32,9 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
-   </Package>
+    </Package>
 
-   <History>
+    <History>
         <Update release="5">
             <Date>2010-10-13</Date>
             <Version>1.1</Version>

@@ -24,7 +24,7 @@
 
     <Package>
         <Name>ijs-devel</Name>
-	<Summary>ijs için geliştirme dosyaları</Summary>
+        <Summary>ijs için geliştirme dosyaları</Summary>
         <Files>
             <Path fileType="header">/usr/include</Path>
         </Files>

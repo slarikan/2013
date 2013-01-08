@@ -15,9 +15,9 @@
         <Archive sha1sum="b1d82ef40301d563943132877d821e3c6e0f92b0" type="tarxz">ftp://ftp.archlinux.org/other/btrfs-progs/btrfs-progs-0.19.20121005.tar.xz</Archive>
         <Patches>
             <Patch level="1">btrfs-progs-fix-labels.patch</Patch>
-	    <Patch level="1">Btrfs-progs-add-btrfs-device-ready-command.patch</Patch>
-	    <Patch level="1">Btrfs-progs-detect-if-the-disk-we-are-formatting-is-.patch</Patch>
-	    <Patch level="1">btrfs-init-dev-list.patch</Patch>
+            <Patch level="1">Btrfs-progs-add-btrfs-device-ready-command.patch</Patch>
+            <Patch level="1">Btrfs-progs-detect-if-the-disk-we-are-formatting-is-.patch</Patch>
+            <Patch level="1">btrfs-init-dev-list.patch</Patch>
             <!--<Patch level="1">btrfs-progs-valgrind.patch</Patch>-->
             <!--<Patch level="1">btrfs-progs-fix-return-value.patch</Patch>-->
             <Patch level="1">btrfs-progs-build-fixes.patch</Patch>

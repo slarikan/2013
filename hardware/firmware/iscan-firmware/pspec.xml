@@ -32,7 +32,7 @@
     </Package>
 
     <History>
-      <Update release="5">
+        <Update release="5">
             <Date>2012-11-15</Date>
             <Version>2.26</Version>
             <Comment>Bağlandı yenilendi.</Comment>

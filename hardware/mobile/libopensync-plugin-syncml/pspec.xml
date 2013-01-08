@@ -49,14 +49,14 @@
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>
-       <Update release="2">
+        <Update release="2">
             <Date>2008-03-14</Date>
             <Version>0.22</Version>
             <Comment>Disable HTTP support to avoid libsoup API breakage.</Comment>
             <Name>Eren Türkay</Name>
             <Email>turkay.eren@gmail.com</Email>
         </Update>
-       <Update release="1">
+        <Update release="1">
             <Date>2007-09-19</Date>
             <Version>0.22</Version>
             <Comment>First release</Comment>

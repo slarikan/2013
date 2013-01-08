@@ -12,12 +12,16 @@
         <IsA>library</IsA>
         <Summary>WebKit-gtk bindings for Mono</Summary>
         <Description>Webkit-sharp is a Mono bindings for WebKit libraries. It is made to be embedded in other applications, such as mail readers, or web browsers.</Description>
-        <Archive sha1sum="c3a5d219da2e70a37c34b981064a63dbdbd91e1c" type="tarbz2">http://ftp.novell.com/pub/mono/sources/webkit-sharp/webkit-sharp-0.3.tar.bz2</Archive>
+        <Archive sha1sum="c3a5d219da2e70a37c34b981064a63dbdbd91e1c" type="tarbz2">http://download.mono-project.com/sources/webkit-sharp/webkit-sharp-0.3.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk-sharp</Dependency>
             <Dependency>mono-devel</Dependency>
             <Dependency>webkit-gtk2-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">ipna.patch</Patch>
+            <Patch level="1">ipna2.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

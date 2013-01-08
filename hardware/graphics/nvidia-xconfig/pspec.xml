@@ -27,7 +27,7 @@
     </Package>
 
     <History>
-      <Update release="10">
+        <Update release="10">
             <Date>2012-11-15</Date>
             <Version>310.19</Version>
             <Comment>Güncellendi.</Comment>

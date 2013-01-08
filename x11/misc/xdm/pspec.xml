@@ -64,7 +64,7 @@
             <AdditionalFile owner="root" permission="0644" target="/usr/share/X11/xorg-safe-vesa.conf">xorg-safe-vesa.conf</AdditionalFile>
         </AdditionalFiles>
         <Provides>
-             <COMAR script="service.py">System.Service</COMAR>
+            <COMAR script="service.py">System.Service</COMAR>
         </Provides>
     </Package>
 
