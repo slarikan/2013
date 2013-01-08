@@ -17,7 +17,7 @@
             <Patch>libopensync-linkage_fix.diff</Patch>
             <Patch>libopensync-wrapper-err.patch</Patch>
             <Patch level="1">libopensync-swig-fix.patch</Patch>
-	    <Patch level="1">libopensync-0.22-pythonpath.patch</Patch>
+            <Patch level="1">libopensync-0.22-pythonpath.patch</Patch>
         </Patches>
     </Source>
 
@@ -28,7 +28,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="data">/usr/share/libopensync1</Path>
+            <Path fileType="data">/usr/share/libopensync1</Path>
         </Files>
     </Package>
 
@@ -45,7 +45,7 @@
     </Package>
 
     <History>
-	<Update release="4">
+        <Update release="4">
             <Date>2012-10-21</Date>
             <Version>0.22</Version>
             <Comment>Rebuild for ANKA</Comment>
@@ -66,7 +66,7 @@
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
         </Update>
-       <Update release="1">
+        <Update release="1">
             <Date>2007-09-19</Date>
             <Version>0.22</Version>
             <Comment>First release</Comment>

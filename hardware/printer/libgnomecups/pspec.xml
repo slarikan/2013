@@ -27,7 +27,7 @@
             <Patch level="1">libgnomecups-0.2.3-glib.h.patch</Patch>
             <Patch level="1">libgnomecups-0.2.3-g_list_find_custom.patch</Patch>
             <Patch level="0">libgnomecups-0.2.3-pkgconfig.patch</Patch>
-           </Patches>
+        </Patches>
     </Source>
 
     <Package>
@@ -60,7 +60,7 @@
     </Package>
 
     <History>
-	    <Update release="3">
+        <Update release="3">
             <Date>2012-11-15</Date>
             <Version>0.2.3</Version>
             <Comment>Add some new patches.</Comment>

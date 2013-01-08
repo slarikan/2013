@@ -35,9 +35,9 @@
             <Path fileType="doc">/usr/share/doc/sane-frontends</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
-   </Package>
+    </Package>
 
-   <History>
+    <History>
         <Update release="1">
             <Date>2011-02-28</Date>
             <Version>1.0.14</Version>

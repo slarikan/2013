@@ -20,18 +20,18 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">nut-2.2.1-conf.patch</Patch>
-	    <Patch level="1">nut-2.6.5-quickfix.patch</Patch>
-	    <Patch level="1">nut-2.6.5-pthreadfix.patch</Patch>
-	    <Patch level="1">nut-2.6.5-ipmifix.patch</Patch>
-	    <!--<Patch level="1">nut-2.6.5-dlfix.patch</Patch>-->
-	    <Patch level="1">nut-2.6.3-tmpfiles.patch</Patch>
+            <Patch level="1">nut-2.6.5-quickfix.patch</Patch>
+            <Patch level="1">nut-2.6.5-pthreadfix.patch</Patch>
+            <Patch level="1">nut-2.6.5-ipmifix.patch</Patch>
+            <!--<Patch level="1">nut-2.6.5-dlfix.patch</Patch>-->
+            <Patch level="1">nut-2.6.3-tmpfiles.patch</Patch>
             <!--<Patch level="1">nut-2.2.2-halpath.patch</Patch>
             <Patch level="1">nut-2.4.3-bz575334.patch</Patch>
             <Patch level="1">nut-2.4.3-portcrash.patch</Patch>
             <Patch level="1">nut-2.4.3-udev.patch</Patch>
             <Patch>nut-2.4.3-asneeded.patch</Patch>-->
             <Patch level="1">upsstats-upsset-link-2.0.5.patch</Patch>
-	    <!--
+            <!--
             <Patch level="1">libwrap-definitions.patch</Patch>
             -->
             <Patch level="1">nut-2.4.1-no-libdummy.patch</Patch>

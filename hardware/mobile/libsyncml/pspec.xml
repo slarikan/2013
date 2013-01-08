@@ -21,11 +21,11 @@
             <Dependency>libsoup-devel</Dependency>
             <Dependency>check-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-	    <Patch level="1">libsyncml-0.4.6-gobject.patch</Patch>
-	    <Patch level="0">libsyncml-libsoup24.diff</Patch>
-	    <Patch level="0">sml_wbxml_internals.h.OSmanOS.patch</Patch>
-	</Patches>
+        <Patches>
+            <Patch level="1">libsyncml-0.4.6-gobject.patch</Patch>
+            <Patch level="0">libsyncml-libsoup24.diff</Patch>
+            <Patch level="0">sml_wbxml_internals.h.OSmanOS.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

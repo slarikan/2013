@@ -24,7 +24,7 @@
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="config">/etc</Path>
         </Files>
-   </Package>
+    </Package>
 
     <History>
         <Update release="2">
@@ -43,4 +43,3 @@
         </Update>
     </History>
 </PISI>
-

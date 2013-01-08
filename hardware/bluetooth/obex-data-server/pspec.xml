@@ -18,9 +18,9 @@
             <Dependency>bluez-libs-devel</Dependency>
             <Dependency>imagemagick-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-	  <Patch>obex-data-server-0.4.6-build-fixes-1.patch</Patch>
-	</Patches>
+        <Patches>
+            <Patch>obex-data-server-0.4.6-build-fixes-1.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

@@ -19,7 +19,7 @@
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">foomatic-filters-libdir.patch</Patch>-->
-	    <Patch level="1">foomatic-filters-4.0.9-multilib.patch</Patch>
+            <Patch level="1">foomatic-filters-4.0.9-multilib.patch</Patch>
             <!-- Use mkstemp() instead of mktemp()
             <Patch level="1">foomatic-mkstemp.patch</Patch>-->
         </Patches>

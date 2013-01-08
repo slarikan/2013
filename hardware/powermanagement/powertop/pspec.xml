@@ -25,7 +25,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/sbin</Path>
-	    <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/var/cache/powertop</Path>
             <Path fileType="man">/usr/share/man</Path>

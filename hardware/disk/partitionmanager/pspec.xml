@@ -17,16 +17,16 @@
         <BuildDependencies>
             <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.3">qt-devel</Dependency>
-	    <Dependency>libblkid-devel</Dependency>
-	    <Dependency>libatasmart-devel</Dependency>
+            <Dependency>libblkid-devel</Dependency>
+            <Dependency>libatasmart-devel</Dependency>
             <Dependency>automoc4</Dependency>
             <Dependency versionFrom="3.1">parted-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">desktop-file.patch</Patch>
             <Patch level="1">device-list-texts.patch</Patch>-->
-	    <Patch>partitionmanager-1.0.60-parted3.patch</Patch>
-	    <Patch level="0">001-desktop-file.patch</Patch>
+            <Patch>partitionmanager-1.0.60-parted3.patch</Patch>
+            <Patch level="0">001-desktop-file.patch</Patch>
         </Patches>
     </Source>
 
@@ -35,8 +35,8 @@
         <RuntimeDependencies>
             <Dependency versionFrom="4.9.95">kdelibs</Dependency>
             <Dependency versionFrom="4.8.3">qt</Dependency>
-	    <Dependency>libblkid</Dependency>
-	    <Dependency>libatasmart</Dependency>
+            <Dependency>libblkid</Dependency>
+            <Dependency>libatasmart</Dependency>
             <Dependency versionFrom="3.1">parted</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -166,5 +166,5 @@
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
         </Update>
-     </History>
+    </History>
 </PISI>

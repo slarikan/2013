@@ -37,7 +37,7 @@
     </Package>
 
     <History>
-         <Update release="25">
+        <Update release="25">
             <Date>2013-01-08</Date>
             <Version>0.48</Version>
             <Comment>Version bump</Comment>

@@ -17,7 +17,7 @@
         <Patches>
             <Patch level="1">nouseradd.patch</Patch>
             <Patch level="1">trousers-no-werror.patch</Patch>
-	    <!--<Patch>trousers-gcc.patch</Patch>-->
+            <!--<Patch>trousers-gcc.patch</Patch>-->
         </Patches>
     </Source>
 

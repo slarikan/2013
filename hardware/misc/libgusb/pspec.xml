@@ -18,7 +18,7 @@
             <Dependency>vala-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
-	    <Dependency>libusbx-devel</Dependency>
+            <Dependency>libusbx-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -30,13 +30,13 @@
             <Dependency>vala</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libxml2</Dependency>
-	    <Dependency>libusbx</Dependency>
+            <Dependency>libusbx</Dependency>
             <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
             <Path fileType="data">/usr/share/vala</Path>
             <Path fileType="data">/usr/share/gir-1.0</Path>
         </Files>

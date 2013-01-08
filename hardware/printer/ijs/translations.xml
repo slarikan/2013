@@ -8,6 +8,6 @@
 
     <Package>
         <Name>ijs-devel</Name>
-	<Summary xml:lang="tr">ijs için geliştirme dosyaları</Summary>
+        <Summary xml:lang="tr">ijs için geliştirme dosyaları</Summary>
     </Package>
 </PISI>

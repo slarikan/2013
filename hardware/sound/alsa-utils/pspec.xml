@@ -54,11 +54,11 @@
         <Update release="48">
             <Date>2012-10-13</Date>
             <Version>1.0.26.20121013</Version>
-            <Comment>version bump frome git snapshot</Comment> 
+            <Comment>version bump frome git snapshot</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-      <Update release="47">
+        <Update release="47">
             <Date>2012-01-29</Date>
             <Version>1.0.25</Version>
             <Comment>Version bump</Comment>

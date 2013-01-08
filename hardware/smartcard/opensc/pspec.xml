@@ -20,9 +20,9 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">fix-pthread.patch</Patch>
-	    <Patch level="1">opensc-0.12.2-dl.patch</Patch>
-	    <Patch>opensc-0.12.1-crossbuild.patch</Patch>
-	    <Patch level="1">opensc-0.12.2-parallelinstall.patch</Patch>
+            <Patch level="1">opensc-0.12.2-dl.patch</Patch>
+            <Patch>opensc-0.12.1-crossbuild.patch</Patch>
+            <Patch level="1">opensc-0.12.2-parallelinstall.patch</Patch>
         </Patches>
     </Source>
 

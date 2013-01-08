@@ -52,7 +52,7 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/alsa/pcm/samplerate.conf">samplerate.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/alsa/pcm/upmix.conf">upmix.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/alsa/pcm/vdownmix.conf">vdownmix.conf</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/etc/alsa/pcm/50-alsa.conf">50-alsa.conf</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/alsa/pcm/50-alsa.conf">50-alsa.conf</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
@@ -68,7 +68,7 @@
         <Files>
             <Path fileType="data">/etc/asound.conf</Path>
             <Path fileType="config">/etc/alsa/pulse-default.conf</Path>
-	    <Path fileType="config">/usr/share/alsa/alsa.conf.d</Path>
+            <Path fileType="config">/usr/share/alsa/alsa.conf.d</Path>
             <Path fileType="library">/usr/lib/alsa-lib/libasound_module_*_pulse.so</Path>
         </Files>
         <AdditionalFiles>
@@ -86,7 +86,7 @@
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-      <Update release="51">
+        <Update release="51">
             <Date>2012-10-05</Date>
             <Version>1.0.26</Version>
             <Comment>version bump</Comment>

@@ -30,7 +30,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
             <Path fileType="doc">/usr/share/doc/ifuse</Path>
         </Files>
     </Package>
@@ -94,4 +94,3 @@
         </Update>
     </History>
 </PISI>
-

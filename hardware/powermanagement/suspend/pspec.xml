@@ -62,14 +62,14 @@
             <Comment>Düzenlendi.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>   
+        </Update>
         <Update release="17">
             <Date>2012-09-23</Date>
             <Version>1.0</Version>
             <Comment>Version bump</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="16">
             <Date>2011-01-24</Date>
             <Version>0.8_20100831</Version>

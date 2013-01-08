@@ -22,11 +22,11 @@
         <Patches>
             <Patch level="1">obexftp-norpath.patch</Patch>
             <Patch level="1">obexftp-perl.patch</Patch>
-	    <Patch level="1">obexftp-0.23-fixruby.patch</Patch>
-	    <Patch level="1">obexftp-0.23-gentoo.patch</Patch>
-	    <Patch level="1">obexftp-0.22-include.patch</Patch>
-	    <Patch level="1">obexftp-0.22-literal.patch</Patch>
-	    <Patch level="1">b19cf4f6aa6133568f96aaeb17cf428a9e847cb2.patch</Patch>
+            <Patch level="1">obexftp-0.23-fixruby.patch</Patch>
+            <Patch level="1">obexftp-0.23-gentoo.patch</Patch>
+            <Patch level="1">obexftp-0.22-include.patch</Patch>
+            <Patch level="1">obexftp-0.22-literal.patch</Patch>
+            <Patch level="1">b19cf4f6aa6133568f96aaeb17cf428a9e847cb2.patch</Patch>
         </Patches>
     </Source>
 

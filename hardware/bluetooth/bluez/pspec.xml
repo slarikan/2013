@@ -47,11 +47,11 @@
             <Path fileType="executable">/usr/sbin</Path>
             <Path fileType="executable">/lib/udev</Path>
             <Path fileType="executable">/lib/bluetooth/obexd</Path>
-	        <Path fileType="executable">/lib/bluetooth/bluetoothd</Path>
+            <Path fileType="executable">/lib/bluetooth/bluetoothd</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/var/lib/bluetooth</Path>
-	    <Path fileType="data">/usr/share/alsa/bluetooth.conf</Path>
+            <Path fileType="data">/usr/share/alsa/bluetooth.conf</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="config">/etc</Path>
         </Files>

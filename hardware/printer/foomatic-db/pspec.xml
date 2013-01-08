@@ -25,7 +25,7 @@
             <!--<Patch level="1">foomatic-db-bad-margins.patch</Patch>-->
             <Patch level="1">fedora/foomatic-db-device-id-C3170.patch</Patch>
             <!--<Patch level="1">fedora/foomatic-db-device-ids-20100416.patch</Patch>-->
-	    <Patch level="1">foomatic-db-device-ids-20120103.patch</Patch>
+            <Patch level="1">foomatic-db-device-ids-20120103.patch</Patch>
             <Patch level="1">fedora/foomatic-db-device-ids-20100506.patch</Patch>
         </Patches>
     </Source>
@@ -49,21 +49,21 @@
             <Comment>Version bump.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update> 
+        </Update>
         <Update release="29">
             <Date>2012-12-30</Date>
             <Version>4.0_20121230</Version>
             <Comment>Version bump.</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="28">
             <Date>2012-12-14</Date>
             <Version>4.0_20121214</Version>
             <Comment>Version bump.</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>
         <Update release="27">
             <Date>2012-11-19</Date>
             <Version>4.0_20121120</Version>
@@ -270,4 +270,3 @@
         </Update>
     </History>
 </PISI>
-
