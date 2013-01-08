@@ -12,41 +12,42 @@
         <IsA>app:gui</IsA>
         <Summary>A modern simple media player</Summary>
         <Description>Parole is a modern simple media player based on the GStreamer framework and written to fit well in the Xfce desktop. Parole is designed with simplicity, speed and resource usage in mind.</Description>
-        <Archive sha1sum="72f6bd8f20ce62586553a653fe6d698d424179c4" type="tarbz2">http://archive.xfce.org/src/apps/parole/0.2/parole-0.2.0.6.tar.bz2</Archive>
+        <Archive sha1sum="0ed1fd9b60b93facc8adb018789fb4b4c3bccc9d" type="tarbz2">http://git.xfce.org/apps/parole/snapshot/parole-0.4.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.16">gtk2-devel</Dependency>
-            <Dependency versionFrom="2.16">glib2-devel</Dependency>
-            <Dependency versionFrom="0.10.32.4">gstreamer-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
-            <Dependency versionFrom="0.4.1">libnotify-devel</Dependency>
-            <Dependency versionFrom="0.70">dbus-glib-devel</Dependency>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base-devel</Dependency>
+            <Dependency>xfce4-dev-tools</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>libxfce4ui-devel</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>xfconf-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">parole-0.2.0.6-underlinking.patch</Patch>
+            <!--Patch level="1">parole-0.2.0.6-underlinking.patch</Patch-->
         </Patches>
     </Source>
 
     <Package>
         <Name>parole</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base</Dependency>
-            <Dependency versionFrom="0.10.28.4">gst-plugins-good</Dependency>
-            <Dependency versionFrom="0.10.21.4">gst-plugins-bad</Dependency>
-            <Dependency versionFrom="0.10.17.4">gst-plugins-ugly</Dependency>
-            <Dependency>atk</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>gst-plugins-good</Dependency>
+            <Dependency>gst-plugins-bad</Dependency>
+            <Dependency>gst-plugins-ugly</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>pango</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency versionFrom="0.10.32.4">gstreamer</Dependency>
+            <Dependency>gstreamer</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfce4ui</Dependency>
+            <Dependency>libxfce4util</Dependency>
             <Dependency>taglib</Dependency>
+            <Dependency>xfconf</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -70,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-01-08</Date>
+            <Version>0.4.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="3">
             <Date>2011-06-19</Date>
             <Version>0.2.0.6</Version>
@@ -93,4 +101,3 @@
         </Update>
     </History>
 </PISI>
-

@@ -10,10 +10,12 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.export("LDFLAGS", "%s -lX11" % get.LDFLAGS())
+#    shelltools.export("LDFLAGS", "%s -lX11" % get.LDFLAGS())
+    shelltools.makedirs("m4")
+    shelltools.system("/usr/bin/xdt-autogen")
     autotools.configure("--disable-dependency-tracking \
-                        --enable-libnotify \
-                        --enable-taglib")
+                         --enable-libnotify \
+                         --enable-taglib")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
 
