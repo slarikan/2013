@@ -18,14 +18,14 @@
         Scintilla editor control. It is designed to be usable as everdays' quick and dirty
         editor as well as being usable as a professional project management tool integrating
         many advanced features Python offers the professional coder.</Description>
-        <Archive sha1sum="ef4ae755c2f87c7e7ff4df416328e46d904eccf6" type="targz">mirrors://sourceforge/eric-ide/eric5-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="82ee12eaec51c703280dd49dc8bb442a45d86f7e" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-cs-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="fc622c8ffcc5da7e1e96f7d27b2b9dbad9ed19eb" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-de-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="f94c5b62f41785eb3948b3a72a7dc9c25c7537d0" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-es-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="002d9c046c9a74429c52750da1c600c9581e29ba" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-fr-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="5c5b33534505a208a2d13c8cb0688fd799cc7e0b" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-it-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="6a4ead5900086fb0cfd0214756ee7ab0462623c1" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-ru-5.2.6.tar.gz</Archive>
-        <Archive sha1sum="ebc62631f6dd79e27a85ccee87659851c72ba463" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-tr-5.2.6.tar.gz</Archive>
+        <Archive sha1sum="c9df62c763a26aabf6816171efa785910560eda6" type="targz">mirrors://sourceforge/eric-ide/eric5-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="c5c8f0497c3c9e61a0fb29bc929ba3be69d0c000" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-cs-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="a9f9257281c5178ca006a5f5cba72f2e28f86f5e" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-de-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="74e9d1b2d2f832898dc6ee0154c4dcc51fff14fb" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-es-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="47901082ddb958876bed8f2097852064f383a265" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-fr-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="bbb8e6bf7412d289e643610de8ac95ec090a946d" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-it-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="6e66dfd3b74c26c62fd31200c7830b9bb979c73f" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-ru-5.2.7.tar.gz</Archive>
+        <Archive sha1sum="e51748864afdcce7a24b6b9ddd4850e8fe4f57e8" type="targz">mirrors://sourceforge/eric-ide/eric5-i18n-tr-5.2.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python3</Dependency>
             <Dependency>python3-qt</Dependency>
@@ -127,6 +127,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-07</Date>
+            <Version>5.2.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-11-11</Date>
             <Version>5.2.6</Version>
