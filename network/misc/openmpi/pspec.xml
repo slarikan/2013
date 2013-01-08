@@ -12,7 +12,10 @@
         <IsA>library</IsA>
         <Summary>A High Performance Message Passing Library</Summary>
         <Description>Open MPI is a project combining technologies and resources from several other projects (FT-MPI, LA-MPI, LAM/MPI, and PACX-MPI) in order to build the best MPI library available. A completely new MPI-2 compliant implementation, Open MPI offers advantages for system and software vendors, application developers and computer science researchers.</Description>
-        <Archive sha1sum="c1dcd72bdad6db4c590aa08f44ecb36af032c61d" type="targz">http://www.open-mpi.org/software/ompi/v1.6/downloads/openmpi-1.6.1.tar.gz</Archive>
+        <Archive sha1sum="80e859dee8f2fa13f5eb511c9062e9a2fc14c488" type="targz">http://www.open-mpi.org/software/ompi/v1.6/downloads/openmpi-1.6.3.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>numactl</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>
@@ -45,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="12">
+            <Date>2013-01-07</Date>
+            <Version>1.6.3</Version>
+            <Comment>v.bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="11">
             <Date>2012-09-03</Date>
             <Version>1.6.1</Version>
