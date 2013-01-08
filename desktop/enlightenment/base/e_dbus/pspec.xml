@@ -14,7 +14,7 @@
         <PartOf>desktop.enlightenment.base</PartOf>
         <Summary>A D-Bus wrapper for EFL based applications</Summary>
         <Description>e_dbus is a basic convenience wrapper around D-Bus.</Description>
-        <Archive sha1sum="ac55a258255e40b74ad7671a468da632fc01b3c7" type="tarbz2">http://download.enlightenment.org/releases/e_dbus-1.7.4.tar.bz2</Archive>
+        <Archive sha1sum="d859ecd54269c54e335d836f745081aaeb40fecf" type="tarbz2">http://download.enlightenment.org/releases/e_dbus-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="1.7.4">eina-devel</Dependency>
             <Dependency versionFrom="1.7.4">evas-devel</Dependency>
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="18">
+            <Date>2013-01-08</Date>
+            <Version>1.7.5</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="17">
             <Date>2012-12-23</Date>
             <Version>1.7.4</Version>
