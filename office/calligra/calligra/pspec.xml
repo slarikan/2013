@@ -6,7 +6,7 @@
         <Homepage>http://www.calligra-suite.org</Homepage>
         <Packager>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPL</License>
@@ -15,7 +15,7 @@
         <IsA>app:gui</IsA>
         <Summary>An integrated office suite for KDE</Summary>
         <Description>Calligra is a free, integrated office suite for KDE. The application suite consists of a word-processor, a spreadsheet application, a presentation creator and viewer application, an organizer and more.</Description>
-        <Archive sha1sum="9d90775707b3e59e02d8adfb88dc93dd29b727ce" type="tarbz2">http://download.kde.org/stable/calligra-2.5.0/calligra-2.5.0.tar.bz2</Archive>
+        <Archive sha1sum="8d49b23ae3f91dab33d6bb0a381319d047c5d04b" type="tarbz2">http://download.kde.org/stable/calligra-2.5.4/calligra-2.5.4.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>boost-devel</Dependency>
             <Dependency>doxygen</Dependency>
@@ -92,9 +92,9 @@
             <Dependency versionFrom="0.3.0">attica</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>qt-webkit</Dependency>
-            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.2">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.8.2">kdebase-runtime</Dependency>
+            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.95">kdepimlibs</Dependency>
+            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
             <Dependency>libwpd</Dependency>
             <Dependency>libwpg</Dependency>
             <Dependency>libwps</Dependency>
@@ -372,7 +372,7 @@
             <Dependency version="current">calligra-base</Dependency>
             <Dependency version="current">calligra-devel</Dependency>
             <Dependency version="current">calligra-servicetypes</Dependency>
-            <Dependency version="4.8.2">kdebase-runtime</Dependency>
+            <Dependency version="4.9.95">kde-runtime</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/calligrastage</Path>
@@ -405,12 +405,19 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-08</Date>
+            <Version>2.5.4</Version>
+	    <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-08</Date>
             <Version>2.5.0</Version>
             <Comment>First release.</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
      </History>
 </PISI>
