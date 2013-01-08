@@ -25,4 +25,4 @@ def build():
 def install():
     shelltools.export("MONO_SHARED_DIR", get.workDIR())
     autotools.install()
-    pisitools.dodoc("NEWS", "README*")
+    pisitools.dodoc("ChangeLog", "README*")
