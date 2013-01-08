@@ -23,7 +23,7 @@
         <Patches>
             <Patch level="1">gtkmathview-0.8.0-cond-t1.patch</Patch>
             <Patch level="1">gtkmathview-0.8.0-fix-template.patch</Patch>
-	    <Patch level="1">gtkmathview-0.8.0-gcc47.patch</Patch>
+            <Patch level="1">gtkmathview-0.8.0-gcc47.patch</Patch>
             <Patch level="1">gtkmathview-0.8.0-gcc43.patch</Patch>
             <Patch level="0">gtkmathview-0.8.0-gcc44.patch</Patch>
         </Patches>

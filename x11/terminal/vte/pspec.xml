@@ -15,17 +15,17 @@
         <BuildDependencies>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
-	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>pango-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
         <Patches>
-	    <Patch level="1">vte-0.28.2-limit-arguments.patch</Patch>
-	    <Patch level="1">vte-alt-meta-confusion.patch</Patch>
-	    <Patch level="1">vte-python-bugfixes.patch</Patch>
-	    <Patch level="1">vte-0.28.0-link.patch</Patch>
-	    <Patch level="1">vte-0.28.2-scale.patch</Patch>
+            <Patch level="1">vte-0.28.2-limit-arguments.patch</Patch>
+            <Patch level="1">vte-alt-meta-confusion.patch</Patch>
+            <Patch level="1">vte-python-bugfixes.patch</Patch>
+            <Patch level="1">vte-0.28.0-link.patch</Patch>
+            <Patch level="1">vte-0.28.2-scale.patch</Patch>
         </Patches>
     </Source>
 
@@ -35,8 +35,8 @@
         <RuntimeDependencies>
             <Dependency>python-gtk</Dependency>
             <Dependency>fontconfig</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>pango</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>pango</Dependency>
             <Dependency>libXft</Dependency>
         </RuntimeDependencies>
         <Files>

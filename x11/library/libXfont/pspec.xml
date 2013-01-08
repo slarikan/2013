@@ -123,7 +123,7 @@
                 Bump to latest stable. Changes:
                 - Make sure font names/font alias names are null terminated
                 - Always scan catalogue dirs at startup, even if their mtime is less than 0
-             </Comment>
+            </Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
         </Update>
@@ -134,7 +134,7 @@
                 - Sync with upstream's master branch
                 - Add a visibility patch from Fedora
                 - Drop Type1 support (see http://lists.freedesktop.org/archives/xorg/2007-August/027215.html)
-             </Comment>
+            </Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
         </Update>
