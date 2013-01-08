@@ -58,7 +58,7 @@
     </Package>
 
     <History>
-        <Update release="14">
+       <Update release="14">
             <Date>2012-10-20</Date>
             <Version>1.1.4</Version>
             <Comment>Bump.</Comment>
@@ -160,8 +160,5 @@
             <Email>inancyildirgan@gmail.com</Email>
         </Update>
     </History>
-<<<<<<< HEAD
 </PISI>
-=======
-</PISI>
->>>>>>> 39e5415bf7b95357f1dbfed7e975e5e358f40b3a
+
