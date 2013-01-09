@@ -12,10 +12,10 @@
         <IsA>library</IsA>
         <Summary>KDE4 PIM libraries</Summary>
         <Description>Contains KDE4 PIM (Personal Information Management) base libraries.</Description>
-        <Archive sha1sum="1a88826f75143ad2f2ab76d1c434a643ba1db5be" type="tarxz">mirrors://kde/unstable/4.9.95/src/kdepimlibs-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="7d1f7acc8132950c3e5b5e0939eedeb2759efe44" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdepimlibs-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.4">qt-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <Dependency versionFrom="1.8.80">akonadi-devel</Dependency>
             <Dependency>boost-devel</Dependency>
@@ -34,7 +34,7 @@
     <Package>
         <Name>kdepimlibs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
             <Dependency versionFrom="1.8.80">akonadi</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
             <Dependency>prison</Dependency>
@@ -65,7 +65,7 @@
         <Description>Contains development tools and header files for KDE4 PIM (Personal Information Management) base libraries.</Description>
         <RuntimeDependencies>
             <Dependency release="current">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency>boost-devel</Dependency>
         </RuntimeDependencies>
@@ -78,6 +78,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-09</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>
