@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>xerces-c-devel</Dependency>
             <Dependency>boost-devel</Dependency>
-            <Dependency>xsd</Dependency>
+            <Dependency>xsd-devel</Dependency>
         </BuildDependencies>
     </Source>
 
