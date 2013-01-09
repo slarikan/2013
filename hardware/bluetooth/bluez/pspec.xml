@@ -84,7 +84,7 @@
         <Name>bluez-libs</Name>
         <Summary>Libraries for use in Bluetooth applications</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">libical</Dependency>
+            <Dependency>libical</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libbluetooth.so*</Path>
