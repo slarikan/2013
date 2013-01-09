@@ -23,6 +23,7 @@
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>libsndfile-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>libical-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Gentoo -->
@@ -98,6 +99,9 @@
     <Package>
         <Name>bluez-libs</Name>
         <Summary>Libraries for use in Bluetooth applications</Summary>
+        <RuntimeDependencies>
+            <Dependency>libical</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libbluetooth.so*</Path>
             <Path fileType="doc">/usr/share/doc</Path>
