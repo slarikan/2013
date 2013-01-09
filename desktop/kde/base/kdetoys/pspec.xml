@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 toys and amusements</Summary>
         <Description>Contains KDE4 toys (small applications to make your desktop a more enjoyable environment).</Description>
-        <Archive sha1sum="da600b77ed84507f0e5de11e1d9e0b51be817c95" type="tarxz">mirrors://kde/unstable/4.9.95/src/kdetoys-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="7a5e9acb9462f2236a8ba038364634348aaf1edb" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdetoys-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-workspace-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-workspace-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -26,8 +26,8 @@
     <Package>
         <Name>kdetoys</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.95">kde-workspace</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -37,6 +37,13 @@
         </Files>
     </Package>
     <History>
+        <Update release="52">
+            <Date>2013-01-09</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
         <Update release="51">
             <Date>2012-11-07</Date>
             <Version>4.9.95</Version>
