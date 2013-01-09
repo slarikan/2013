@@ -8,7 +8,7 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import pythonmodules
 
-WorkDir="pinard-Pymacs-5989046"
+#WorkDir="pinard-Pymacs-5989046"
 
 def install():
     pythonmodules.install()
