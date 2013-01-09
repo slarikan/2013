@@ -11,7 +11,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-tools = ["sha1pass", "md5pass", "mkdiskimage", "keytab-lilo.pl", "syslinux2ansi.pl"]
+tools = ["sha1pass", "md5pass", "mkdiskimage", "keytab-lilo", "syslinux2ansi", "lss16toppm","pxelinux-options"]
 datadir = "/usr/lib/syslinux"
 
 NoStrip = ["/sbin", "/usr/lib"]
@@ -34,8 +34,8 @@ def build():
 
 def install():
     autotools.rawInstall('INSTALLROOT=%s MANDIR="/usr/share/man" AUXDIR="/usr/lib/syslinux"' % get.installDIR())
-    #for f in tools:
-    #    pisitools.insinto(datadir, f)
+    for f in tools:
+        pisitools.insinto(datadir, "utils/"+f)
 
     pisitools.dodoc("README", "NEWS", "doc/*.txt", "doc/logo/LICENSE")
-
+    pisitools.remove("/usr/bin/gethostip")
