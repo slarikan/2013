@@ -16,7 +16,7 @@
             <Dependency>openconnect-devel</Dependency>
             <Dependency>openvpn</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="e925a5fae309e9a55173bc66ba8ae95d52081c93" type="tarxz">http://www.kernel.org/pub/linux/network/connman/connman-1.9.tar.xz</Archive>
+        <Archive sha1sum="4744216d4fe328d5c797e54d7797cecdf2f4c35d" type="tarxz">http://www.kernel.org/pub/linux/network/connman/connman-1.10.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -28,11 +28,12 @@
             <Dependency>openvpn</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc/dbus-1/system.d/connman.conf</Path>
+            <Path fileType="config">/etc/dbus-1/system.d/connman*conf</Path>
             <Path fileType="library">/usr/lib/connman/*</Path>
-            <Path fileType="executable">/usr/sbin/connmand</Path>
+            <Path fileType="executable">/usr/sbin/connman*</Path>
             <Path fileType="doc">/usr/share/doc/connman/*</Path>
-            <Path fileType="data">/usr/share/polkit-1/actions/net.connman.policy</Path>
+            <Path fileType="data">/usr/share/dbus-1/system-services/net.connman.vpn.service</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/net.connman*policy</Path>
         </Files>
         <!--Provides>
             <COMAR script="service.py">System.Service</COMAR>
@@ -52,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-09</Date>
+            <Version>1.10</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-12-21</Date>
             <Version>1.9</Version>

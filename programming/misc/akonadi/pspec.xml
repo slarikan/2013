@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>PIM (Personal Information Management) Storage Service</Summary>
         <Description>akonadi is an extensible cross-desktop storage service for PIM data and meta data providing concurrent read, write, and query access.</Description>
-        <Archive sha1sum="29f6591d58712939b5e396028d26527f35036aaf" type="tarbz2">http://download.kde.org/stable/akonadi/src/akonadi-1.9.0.tar.bz2</Archive>
+        <Archive sha1sum="29f6591d58712939b5e396028d26527f35036aaf" type="tarbz2">mirrors://kde/stable/akonadi/src/akonadi-1.9.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency versionFrom="4.8.0">qt-sql-mysql</Dependency>

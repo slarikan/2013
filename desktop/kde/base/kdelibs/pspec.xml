@@ -16,16 +16,16 @@
         <IsA>library</IsA>
         <Summary>KDE4 core libraries</Summary>
         <Description>Contains base KDE4 libraries needed by almost all KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="c770a1752fb0c7cb9e2df0e424051eef57c0c9ee">mirrors://kde/unstable/4.9.95/src/kdelibs-4.9.95.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="ebd5cf1dcae6f93d9e6983c61a26bb816d805c01">mirrors://kde/unstable/4.9.97/src/kdelibs-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.8.2">qt-devel</Dependency>
             <Dependency versionFrom="4.8.2">qt-webkit-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
-            <Dependency versionFrom="2.7.5">soprano-plugin-redland</Dependency>
+            <Dependency versionFrom="2.9.0">soprano-devel</Dependency>
+            <Dependency versionFrom="2.9.0">soprano-plugin-redland</Dependency>
             <Dependency versionFrom="0.99.0">polkit-qt_1-devel</Dependency>
             <Dependency versionFrom="0.2.0">attica-devel</Dependency>
-            <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
+            <Dependency versionFrom="0.10.0">shared-desktop-ontologies</Dependency>
             <Dependency versionFrom="0.70">shared-mime-info</Dependency>
             <Dependency versionFrom="0.2.0">grantlee-devel</Dependency>
             <Dependency versionFrom="7.10.2">mesa-devel</Dependency>
@@ -64,7 +64,6 @@
             <Dependency>openexr-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">fedora/kdelibs-4.9.1-FindKipi-libkipi2.patch</Patch>
             <Patch level="1">fedora/kdelibs-4.9.2-FindSamba_samba4.patch</Patch>           
             <!-- Pardus patches-->
             <Patch level="1">pardus/default-useragent.diff</Patch>
@@ -99,10 +98,10 @@
             <Dependency versionFrom="4.8.2">qt</Dependency>
             <Dependency versionFrom="4.8.2">qt-webkit</Dependency>
             <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="2.7.5">soprano</Dependency>
+            <Dependency versionFrom="2.9.0">soprano</Dependency>
             <Dependency versionFrom="0.99.0">polkit-qt_1</Dependency>
             <Dependency versionFrom="0.2.0">attica</Dependency>
-            <Dependency versionFrom="0.6.0">shared-desktop-ontologies</Dependency>
+            <Dependency versionFrom="0.10.0">shared-desktop-ontologies</Dependency>
             <Dependency versionFrom="0.70">shared-mime-info</Dependency>
             <Dependency versionFrom="7.10.2">mesa</Dependency>
             <Dependency versionFrom="2011.2">artwork-pardus-release</Dependency>
@@ -183,6 +182,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-09</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-12-11</Date>
             <Version>4.9.95</Version>
