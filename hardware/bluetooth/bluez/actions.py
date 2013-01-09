@@ -16,7 +16,7 @@ def setup():
     # Enable hid2hci in next releases as udev dropped that again
     autotools.configure("--enable-network \
                          --disable-systemd \
-                         --enable-udevrules \
+                         --enable-hid2hci \
                          --enable-serial \
                          --enable-input \
                          --enable-audio \
@@ -44,24 +44,23 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # Install conf files
-    #for i in ["audio", "input", "network"]:
-    pisitools.insinto("/etc/bluetooth", "./profiles/audio/*.conf")
-    pisitools.insinto("/etc/bluetooth", "./profiles/input/*.conf")
-    pisitools.insinto("/etc/bluetooth", "./profiles/network/*.conf")
+    for i in ["audio", "input", "network"]:
+        pisitools.insinto("/etc/bluetooth", "%s/%s.conf" % (i,i))
 
     # Simple test tools
-    for i in ["test-adapter", "test-alert", "test-discovery", 
-              "test-cyclingspeed", "test-device", "test-discovery", 
-              "test-health", "test-health-sink", "test-heartrate", 
-              "test-hfp", "test-manager", "test-nap", "test-network", 
-              "test-profile", "test-proximity", "test-sap-server", 
-              "test-thermometer", "monitor-bluetooth", "simple-agent", 
-              "simple-endpoint", "simple-player", "simple-service", "list-devices"]:
+    for i in ["test-adapter", "test-audio", "test-discovery",
+              "test-health-sink", "test-manager", "test-network",
+              "test-proximity", "test-serial", "test-service",
+              "test-attrib", "test-device", "test-health", "test-input",
+              "test-nap", "test-oob", "test-sap-server", "test-serial-proxy",
+              "test-telephony", "test-thermometer", "monitor-bluetooth",
+              "simple-agent", "simple-endpoint", "simple-player",
+              "simple-service", "sap-client", "list-devices", "hsplay", "hsmicro"]:
         pisitools.dobin("test/%s" % i)
 
     # Additional tools
-     # pisitools.dosbin("tools/hcisecfilter")
-     # pisitools.dosbin("tools/ppporc")
+    pisitools.dosbin("tools/hcisecfilter")
+    pisitools.dosbin("tools/ppporc")
 
     # Install documents
     pisitools.dodoc("AUTHORS", "ChangeLog", "README")
