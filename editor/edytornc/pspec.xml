@@ -14,8 +14,10 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
+	<Patches>
+	    <Patch level="1">edytornc_unix_getuid.patch</Patch>
+	</Patches>
         <Archive sha1sum="807770dee0912f7153d4c96e7321865bc38f12bb" type="targz">http://downloads.sourceforge.net/project/edytornc/edytornc/EdytorNC%202010.03/edytornc-2010.03.tar.gz</Archive>
-        <Patches/>
     </Source>
     <Package>
         <Name>edytornc</Name>
@@ -29,7 +31,6 @@
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/edytornc</Path>
         </Files>
-
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/pixmaps/edytornc.png">edytornc.png</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/edytornc.desktop">edytornc.desktop</AdditionalFile>
