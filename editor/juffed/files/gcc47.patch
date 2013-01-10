@@ -1,0 +1,10 @@
+--- juffed-0.9.1137.orig/src/3rd_party/qtsingleapplication/qtlocalpeer.cpp
++++ juffed-0.9.1137/src/3rd_party/qtsingleapplication/qtlocalpeer.cpp
+@@ -57,6 +57,7 @@ static PProcessIdToSessionId pProcessIdT
+ #endif
+ #if defined(Q_OS_UNIX)
+ #include <time.h>
++#include <unistd.h>
+ #endif
+ 
+ namespace QtLP_Private {

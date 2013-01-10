@@ -13,24 +13,28 @@
         <IsA>app:gui</IsA>
         <Summary>Simple tabbed text editor</Summary>
         <Description>Juffed is simple tabbed text editor with syntax highlighting for Bash, Batch, C++, C#, CSS, D, Diff, HTML, IDL, Java, JavaScript, Lua, Makefile, Perl, Python, Ruby, SQL, XML.</Description>
-        <Archive sha1sum="baf3fec625131bbb9f6fb8cc14d590af6afe92ca" type="tarbz2">http://geraldine.fjfi.cvut.cz/~dstegbauer/pardus/source/juffed-0.9.1095.tar.bz2</Archive>
+        <Archive sha1sum="ab96b8b9ff81f09de168a6ee168f9d4879c95de6" type="tarbz2">http://sourceforge.net/projects/juffed/files/Development%20versions/0.9.1137/juffed-0.9.1137-1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
             <Dependency versionFrom="2.5.1">qscintilla2-devel</Dependency>
             <Dependency>qtermwidget-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="0">pardus-build.patch</Patch>
-            <Patch level="0">version.patch</Patch>
+            <!--<Patch level="0">pardus-build.patch</Patch>
+            <Patch level="0">version.patch</Patch>-->
             <Patch level="0">desktop-file-translation.patch</Patch>
-            <Patch level="0">debug_just_errors.patch</Patch>
+	    <Patch level="0">pardus-build-01.patch</Patch>
+	    <Patch level="0">pardus-build-02.patch</Patch>
+	    <Patch level="1">dereference.patch</Patch>
+	    <!--<Patch level="1">gcc47.patch</Patch>-->
+            <!--<Patch level="0">debug_just_errors.patch</Patch>-->
         </Patches>
     </Source>
 
     <Package>
         <Name>juffed</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency versionFrom="4.8.3">qt</Dependency>
             <Dependency versionFrom="2.5.1">qscintilla2</Dependency>
             <Dependency>qtermwidget</Dependency>
         </RuntimeDependencies>
@@ -55,6 +59,13 @@
     </Package>
 
     <History>
+        <Update release="13">
+            <Date>2013-01-09</Date>
+	    <Version>0.9.1137</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="12">
             <Date>2011-05-22</Date>
             <Version>0.9.1095</Version>
