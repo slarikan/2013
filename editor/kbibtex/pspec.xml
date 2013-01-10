@@ -11,15 +11,15 @@
         <IsA>app:gui</IsA>
         <Summary>Latex ile kullanılan bir KDE bibTex editörüdür.</Summary>
         <Description>Kbibtex, bilimsel makale arşivlerini düzenlemek, kapsamlı arama yapmak ve bib dosyaları oluşturma ve düzenlemede büyük kolaylık sağlayabilecek bir programdır.</Description>
-
-        <Archive sha1sum="8fc4bee65880a9d7a2552630001b1a4767622105" type="tarbz2">http://download.gna.org/kbibtex/0.4/kbibtex-0.4.1-rc1.tar.bz2</Archive>
-
+        <Archive sha1sum="0c2f9a9acee9ad9acd3b0a2f52529439fd9bb64a" type="tarbz2">http://download.gna.org/kbibtex/0.4/kbibtex-0.4.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libXpm-devel</Dependency>
             <Dependency>poppler-qt-devel</Dependency>
+	    <Dependency>qt-webkit-devel</Dependency>
+	    <Dependency>qt-devel</Dependency>
+	    <Dependency>libxslt-devel</Dependency>
         </BuildDependencies>
-
     </Source>
     <Package>
         <Name>kbibtex</Name>
@@ -27,6 +27,9 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>libXpm</Dependency>
             <Dependency>poppler-qt</Dependency>
+	    <Dependency>qt-webkit</Dependency>
+	    <Dependency>qt</Dependency>
+	    <Dependency>libxslt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -37,12 +40,19 @@
             <Path fileType="data">/usr/share/mime</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
-
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/kde4/kbibtex.desktop">kbibtex.desktop</AdditionalFile>
         </AdditionalFiles>
     </Package>
+
     <History>
+        <Update release="2">
+            <Date>2013-01-10</Date>
+	    <Version>0.4.1</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-08-11</Date>
             <Version>0.4.1</Version>
