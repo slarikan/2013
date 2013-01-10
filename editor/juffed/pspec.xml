@@ -23,10 +23,11 @@
             <!--<Patch level="0">pardus-build.patch</Patch>
             <Patch level="0">version.patch</Patch>-->
             <Patch level="0">desktop-file-translation.patch</Patch>
-	    <Patch level="0">pardus-build-01.patch</Patch>
-	    <Patch level="0">pardus-build-02.patch</Patch>
-	    <Patch level="1">dereference.patch</Patch>
-	    <!--<Patch level="1">gcc47.patch</Patch>-->
+            <Patch level="0">pardus-build-01.patch</Patch>
+            <Patch level="0">pardus-build-02.patch</Patch>
+            <Patch level="1">dereference.patch</Patch>
+            <Patch level="0">gcc47.patch</Patch>
+            <Patch level="0">fix_build_TerminalPlugin.patch</Patch>
             <!--<Patch level="0">debug_just_errors.patch</Patch>-->
         </Patches>
     </Source>
@@ -61,7 +62,7 @@
     <History>
         <Update release="13">
             <Date>2013-01-09</Date>
-	    <Version>0.9.1137</Version>
+            <Version>0.9.1137</Version>
             <Comment>Güncellendi.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

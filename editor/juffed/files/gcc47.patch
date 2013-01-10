@@ -1,6 +1,6 @@
---- juffed-0.9.1137.orig/src/3rd_party/qtsingleapplication/qtlocalpeer.cpp
-+++ juffed-0.9.1137/src/3rd_party/qtsingleapplication/qtlocalpeer.cpp
-@@ -57,6 +57,7 @@ static PProcessIdToSessionId pProcessIdT
+--- src/3rd_party/qtsingleapplication/qtlocalpeer.cpp~	2013-01-10 21:27:37.854486763 +0100
++++ src/3rd_party/qtsingleapplication/qtlocalpeer.cpp	2013-01-10 21:28:17.870485300 +0100
+@@ -57,6 +57,7 @@
  #endif
  #if defined(Q_OS_UNIX)
  #include <time.h>
