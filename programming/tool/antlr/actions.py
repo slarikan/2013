@@ -9,6 +9,9 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
 
+shelltools.export("JAVAC","/opt/sun-jdk/bin/javac")
+shelltools.export("JAVA_HOME","/opt/sun-jdk")
+
 def setup():
     shelltools.system('find . -name "*.jar" -exec rm -f {} \;')
 
@@ -19,7 +22,7 @@ def setup():
 
     autotools.configure("--enable-java \
                          --enable-python \
-                         --disable-mono \
+                         --disable-csharp \
                          --enable-cxx \
                          --disable-examples \
                          --with-jar=/opt/sun-jdk/bin/jar \
