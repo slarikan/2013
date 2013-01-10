@@ -35,9 +35,9 @@
             <Path fileType="data">/usr/share/dbus-1/system-services/net.connman.vpn.service</Path>
             <Path fileType="data">/usr/share/polkit-1/actions/net.connman*policy</Path>
         </Files>
-        <!--Provides>
+        <Provides>
             <COMAR script="service.py">System.Service</COMAR>
-        </Provides-->
+        </Provides>
     </Package>
 
     <Package>
