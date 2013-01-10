@@ -23,7 +23,7 @@
             <Dependency versionFrom="4.9.4">nspr-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">include-fix.patch</Patch>
+            <!--<Patch level="1">include-fix.patch</Patch> -->
             <Patch>cflags.patch</Patch>
             <Patch>char.patch</Patch>
             <Patch>system-nspr.patch</Patch>
