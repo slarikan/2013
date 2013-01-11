@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>Voice files for The Ur-Quan Masters</Summary>
         <Description>Contains voice files (speeches) for Ur-Quan Masters.</Description>
-        <Archive sha1sum="57d80fa068e812e8c5a415251000e870ff87d215" type="binary">mirrors://sourceforge/sc2/uqm-0.6.0-voice.uqm</Archive>
+        <Archive sha1sum="700145d023d10c9aaa7bbf8c51aaca75254453c5" type="binary">mirrors://sourceforge/sc2/uqm-0.7.0-voice.uqm</Archive>
     </Source>
 
     <Package>
@@ -23,6 +23,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-11</Date>
+            <Version>0.7.0</Version>
+            <Comment>Güncellendi.</Comment>
+	    <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2007-02-02</Date>
             <Version>0.6.0</Version>
