@@ -9,18 +9,17 @@ from pisi.actionsapi import get
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 
-#WorkDir = "%s-%s" % (get.srcNAME(), get.srcVERSION())
+WorkDir = "%s-%s/sc2" % (get.srcNAME(), get.srcVERSION())
 
 def setup():
     pisitools.dosed("build.vars", "pardusCFLAGS", get.CFLAGS())
     pisitools.dosed("build.vars", "pardusLDFLAGS", get.LDFLAGS())
 
 def build():
-    shelltools.system("sh build.sh uqm reprocess_config")
+    shelltools.system("sh build.sh uqm")
 
 def install():
-    #shelltools.system("sh build.sh uqm install")
-    #pisitools.dobin("uqm", "/usr/share/uqm")
+    pisitools.dobin("uqm", "/usr/share/uqm")
     pisitools.insinto("/usr/share/uqm/content", "content/version")
     pisitools.dodoc("README", "COPYING", "AUTHORS", "doc/users/manual.txt")
 
