@@ -1,6 +1,14 @@
---- pisi/archive.py~    2013-01-11 14:54:24.889672988 +0100
-+++ pisi/archive.py 2013-01-11 14:59:32.233661759 +0100
-@@ -321,9 +321,35 @@
+--- pisi/archive.py~	2011-07-15 15:19:49.000000000 +0200
++++ pisi/archive.py	2013-01-11 16:33:45.659395944 +0100
+@@ -301,6 +301,7 @@
+             if callback:
+                 callback(tarinfo, extracted=False)
+ 
++            dbusstart = False
+             if tarinfo.issym() and \
+                     os.path.isdir(tarinfo.name) and \
+                     not os.path.islink(tarinfo.name):
+@@ -321,9 +322,36 @@
                                  os.remove(old_path)
                              continue
  
@@ -29,13 +37,22 @@
 +                    except OSError, e:
 +                        # hmmm, not empty dir? try rename it adding .old extension.
 +                        if e.errno == errno.ENOTEMPTY:
++                            # if directory with dbus/pid file was moved we have to restart dbus
++                            for (path, dirs, files) in os.walk(tarinfo.name):
++                                if path.endswith("dbus") and "pid" in files:
++                                    os.system("service dbus stop")
++                                    dbusstart = True
 +                            os.system("mv -f %s %s.old" % (tarinfo.name, tarinfo.name))
-+                            # if directory with dbus/pid file was moved we have to restart dbus, but not in this place
-+#                            for (path, dirs, files) in os.walk("%s.old" % tarinfo.name):
-+#                                if path.endswith("dbus") and "pid" in files:
-+#                                    os.system("service dbus restart")
 +                        else:
 +                            raise
  
                  elif not os.path.lexists(tarinfo.linkname):
                      # Symlink target does not exist. Assume the old
+@@ -342,6 +370,7 @@
+ 
+             try:
+                 self.tar.extract(tarinfo)
++                if dbusstart: os.system("service dbus start")
+             except OSError, e:
+                 # Handle the case where an upper directory cannot
+                 # be created because of a conflict with an existing
