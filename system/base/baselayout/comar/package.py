@@ -219,7 +219,7 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
                 (70,  "postgres", "PostgreSQL", "/var/lib/postgresql", "/bin/false", "", ["postgres"], [], []),
                 (80,  "apache", "Apache", "/dev/null", "/bin/false", "", ["apache", "svn"], [], []),
                 (90,  "dovecot", "Dovecot", "/dev/null", "/bin/false", "", ["dovecot"], [], []),
-                (102, "hal", "HAL", "/dev/null", "/bin/false", "", ["hal"], [], []),
+                (102, "hal", "HAL", "/dev/null", "/var/lib/polkit-1", "", ["hal"], [], []),
                 (103, "polkitd", "PolicyKit", "/dev/null", "/bin/false", "", ["polkitd"], [], []),
                 (104, "postfix", "Postfix", "/var/spool/postfix", "/bin/false", "", ["postfix"], [], []),
                 (106, "smmsp", "smmsp", "/var/spool/mqueue", "/bin/false", "", ["smmsp"], [], []),

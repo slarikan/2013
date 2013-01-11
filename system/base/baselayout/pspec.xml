@@ -14,7 +14,7 @@
         <IsA>data</IsA>
         <Summary>Filesystem baselayout</Summary>
         <Description>baselayout creates the Pardus Linux main filesystem hierarchy.</Description>
-        <Archive sha1sum="da6e773740140450601490269b772bd1098291c4" type="targz">http://anka.pardus-linux.org/2013/source/baselayout-3.7.1.tar.gz</Archive>
+        <Archive sha1sum="7a51df39a71c9b11c57ee677dd80c4be852aebce" type="targz">http://anka.pardus-linux.org/2013/source/baselayout-3.7.1.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -64,6 +64,13 @@
     </Package>
 
     <History>
+        <Update release="180">
+            <Date>2013-01-11</Date>
+            <Version>3.7.1</Version>
+	    <Comment>New archive, use /var/lib/polkit-1 instead of /dev/null.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="179">
             <Date>2013-01-05</Date>
             <Version>3.7.1</Version>
