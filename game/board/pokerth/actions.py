@@ -28,8 +28,8 @@ def install():
     pisitools.insinto("/usr/share/applications", "pokerth.desktop")
 
     # Remove bundled fonts
-    pisitools.remove("/usr/share/pokerth/data/fonts/VeraBd.ttf")
-    pisitools.remove("/usr/share/pokerth/data/fonts/c059013l.pfb")
+    #pisitools.remove("/usr/share/pokerth/data/fonts/VeraBd.ttf")
+    #pisitools.remove("/usr/share/pokerth/data/fonts/c059013l.pfb")
     pisitools.remove("/usr/share/pokerth/data/fonts/n019003l.pfb")
 
     # and replace them with symlinks
@@ -37,4 +37,4 @@ def install():
     shelltools.sym("/usr/share/fonts/Type1/n019003l.pfb", "%s/usr/share/pokerth/data/fonts/n019003l.pfb" % get.installDIR())
     shelltools.sym("/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf", "%s/usr/share/pokerth/data/fonts/VeraBd.ttf" % get.installDIR())
 
-    pisitools.dodoc("ChangeLog", "COPYING", "TODO", "docs/net_protocol.txt")
+    pisitools.dodoc("ChangeLog", "COPYING", "TODO")
