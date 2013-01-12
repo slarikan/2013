@@ -9,22 +9,22 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>granatier</Icon>
         <IsA>app:gui</IsA>
         <Summary>A Bomberman game</Summary>
         <Description>Granatier is a clone of the classic Bomberman game, inspired by the work of the Clanbomber clone.</Description>
-        <Archive sha1sum="536e9e50b7e1b87189787667479172a060f30cd3" type="tarxz">mirrors://kde/unstable/4.9.95/src/granatier-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="4b1135bc59a06e6ddb763b10cdf94a945189c478" type="tarxz">mirrors://kde/unstable/4.9.97/src/granatier-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
             <Dependency versionFrom="1.14">openal-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>granatier</Name>
-        <Icon>granatier</Icon>
+        <Name>granatier</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
             <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
             <Dependency versionFrom="1.14">openal</Dependency>    
         </RuntimeDependencies>
@@ -36,7 +36,14 @@
         </Files>
     </Package>
 
-    <History> 
+    <History>
+        <Update release="2">
+            <Date>2012-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="1">
             <Date>2012-12-20</Date>
             <Version>4.9.95</Version>
