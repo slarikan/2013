@@ -24,6 +24,7 @@
             <Dependency>libgsasl-devel</Dependency>
 	    <Dependency>tinyxml-devel</Dependency>
 	    <Dependency>libircclient-devel</Dependency>
+	    <Dependency>protobuf-devel</Dependency>
         </BuildDependencies>
 	<Patches>
 	  <Patch level="1">pokerth-disable_no_dead_strip_inits_and_terms.patch</Patch>
@@ -45,6 +46,7 @@
             <Dependency>urw-fonts</Dependency>
 	    <Dependency>tinyxml</Dependency>
 	    <Dependency>libircclient</Dependency>
+	    <Dependency>protobuf</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
