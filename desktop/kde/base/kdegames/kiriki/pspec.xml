@@ -9,22 +9,22 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>kiriki</Icon>
         <IsA>app:gui</IsA>
         <Summary>Yahtzee like dice game</Summary>
         <Description>Kiriki is an addictive and fun dice game for KDE, designed to be played by as many as six players.</Description>
-        <Archive sha1sum="49c1716d233b91c968beeeae381ee28ffa66749e" type="tarxz">mirrors://kde/unstable/4.9.95/src/kiriki-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="64fc668e2f0335f71854c9c3bad2039dfe4f619e" type="tarxz">mirrors://kde/unstable/4.9.97/src/kiriki-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>kiriki</Name>
-        <Icon>kiriki</Icon>
+        <Name>kiriki</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,6 +35,13 @@
     </Package>
 
     <History> 
+        <Update release="2">
+            <Date>2013-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
