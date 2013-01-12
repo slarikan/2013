@@ -13,7 +13,7 @@ from pisi.actionsapi import shelltools
 def setup():
     shelltools.export("AUTOPOINT", "true")
 
-    autotools.autoreconf("-fi")
+    #autotools.autoreconf("-fi")
     autotools.configure("--disable-static")
 
 def build():
