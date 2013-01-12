@@ -9,13 +9,14 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>ktouch</Icon>
         <IsA>app:gui</IsA>
         <Summary>A touch typing tutor</Summary>
         <Description>KTouch is a program for learning to touch type. It provides you with text to train on and adjusts to different levels depending on how good you are. It also displays which key to press next and the correct finger to use. You learn typing with all fingers, step by step, without having to look down at the keyboard all the time to find your keys (which slows you down a lot). It is convenient for all ages and the perfect typing tutor for schools, universities and individuals.</Description>
-        <Archive sha1sum="cc077ce192792492cb1438540c6d4e2da8bda42c" type="tarxz">mirrors://kde/unstable/4.9.95/src/ktouch-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="2b3439c6cea0fe3a5c91b2b77ce507aa95ae02c2" type="tarxz">mirrors://kde/unstable/4.9.97/src/ktouch-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">libkdeedu-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,8 +24,8 @@
     <Package>
         <Name>ktouch</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.95">libkdeedu</Dependency>    
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -40,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>
