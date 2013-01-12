@@ -17,23 +17,23 @@
         <!-- upstream did not release a tarball again
         <Archive sha1sum="7b0ad8c1c3960eed59a14b22aa25d40afe080275" type="tarbz2">mirrors://sourceforge/actiongame/AssaultCube_v1.0.2.tar.bz2</Archive>
         -->
-        <Archive sha1sum="ec53a7d839bab01bcdb8a4e6d013d44c2d084e2b" type="tarbz2">http://cekirdek.pardus.org.tr/~onur/distfiles/AssaultCube_v1.1.0.3.tar.bz2</Archive>
-        <Archive sha1sum="6ea5a3163a85d0638d87151e11786354c4dc70fa" type="tarbz2">http://cekirdek.pardus.org.tr/~onur/distfiles/AssaultCube_v1.1.0.3.source.rebased.tar.bz2</Archive>
+        <Archive sha1sum="e6c292b7594d5aa4528f4d4fc0e8e2d4275a97bd" type="tarbz2">http://sourceforge.net/projects/actiongame/files/AssaultCube%20Version%201.1.0.4/AssaultCube_v1.1.0.4.tar.bz2</Archive>
+        <Archive sha1sum="ef944b8ab45908cfdf3da6d5b6d9639aaba419d5" type="tarbz2">http://sourceforge.net/projects/actiongame/files/AssaultCube%20Version%201.1.0.4/AssaultCube_v1.1.0.4_source.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>freealut-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>sdl-image-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
+	    <Dependency>enet-devel</Dependency>
         </BuildDependencies>
         <Patches>
+	    <Patch level="0">Makefile.patch</Patch>
             <Patch level="1">default-clients.patch</Patch>
             <!-- FIXME: Comes with internal and modified enet, make sure system enet is good enough
             <Patch level="1">external_enet.patch</Patch>
             -->
-            <Patch level="1">asneeded.patch</Patch>
-            <!-- not needed anymore
-            <Patch level="1">enetconflict.patch</Patch>
-            -->
+            <!--<Patch level="1">asneeded.patch</Patch>-->
+            <!--<Patch level="1">enetconflict.patch</Patch>-->
             <Patch level="1">enet_nowin32.patch</Patch>
         </Patches>
     </Source>
@@ -45,6 +45,7 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>sdl-image</Dependency>
             <Dependency>sdl-mixer</Dependency>
+	    <Dependency>enet</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>AssaultCube-maps</Package>
@@ -65,6 +66,13 @@
     </Package>
 
     <History>
+        <Update release="8">
+            <Date>2013-01-12</Date>
+            <Version>1.1.0.4</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="7">
             <Date>2011-01-11</Date>
             <Version>1.1.0.3</Version>
