@@ -23,6 +23,6 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.rename("/usr/bin/crx", "alienarena")
-    pisitools.rename("/usr/bin/crx-ded", "alienarena-server")
+    #pisitools.rename("/usr/bin/crx", "alienarena")
+    #pisitools.rename("/usr/bin/crx-ded", "alienarena-server")
 

@@ -1,20 +1,18 @@
-Index: knights-2.2.0/src/knights.desktop
-===================================================================
---- knights-2.2.0.orig/src/knights.desktop
-+++ knights-2.2.0/src/knights.desktop
-@@ -13,6 +13,7 @@ Name[pt]=Knights
- Name[pt_BR]=Knights
- Name[ru]=Knights
+--- src/knights.desktop.OSmanOS	2012-08-15 16:59:40.000000000 +0300
++++ src/knights.desktop		2013-01-12 10:28:41.249880380 +0200
+@@ -36,6 +36,7 @@
+ Name[sr@ijekavianlatin]=Konji
+ Name[sr@latin]=Konji
  Name[sv]=Knights
 +Name[tr]=Knights
+ Name[ug]=Knights
  Name[uk]=Knights
  Name[x-test]=xxKnightsxx
- Name[zh_TW]=Knights
-@@ -35,6 +36,7 @@ GenericName[pt]=Jogo de xadrez
- GenericName[pt_BR]=Jogo de Xadrez
- GenericName[ru]=Игра в шахматы
+@@ -83,6 +84,7 @@
+ GenericName[sr@ijekavianlatin]=Šahovska igra
+ GenericName[sr@latin]=Šahovska igra
  GenericName[sv]=Schackspel
 +GenericName[tr]=Satranç
+ GenericName[ug]=شاھمات ئويۇنى
  GenericName[uk]=Гра у шахи
  GenericName[x-test]=xxChess gamexx
- GenericName[zh_TW]=西洋棋遊戲

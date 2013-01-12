@@ -1,9 +1,8 @@
-Index: knights-2.3.2/po/CMakeLists.txt
-===================================================================
---- knights-2.3.2.orig/po/CMakeLists.txt
-+++ knights-2.3.2/po/CMakeLists.txt
-@@ -37,3 +37,4 @@ add_subdirectory(sr@ijekavianlatin)
+--- po/CMakeLists.txt.OSmanOS	2012-08-15 17:01:44.000000000 +0300
++++ po/CMakeLists.txt	2013-01-12 10:25:25.767813118 +0200
+@@ -37,3 +37,4 @@
+ add_subdirectory(sr@ijekavianlatin)
+ add_subdirectory(ga)
  add_subdirectory(ru)
- add_subdirectory(en_GB)
- add_subdirectory(eo)
 +add_subdirectory(tr)
+\ Dosya sonunda yenisatır yok.

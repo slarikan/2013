@@ -12,10 +12,10 @@ from pisi.actionsapi import get
 
 import os
 
-#WorkDir = "AssaultCube_v%s" % get.srcVERSION()
-WorkDir = "AC%s" % get.srcVERSION()
+WorkDir = "AssaultCube_v%s" % get.srcVERSION()
+WorkDir = "%s" % get.srcVERSION()
 
-datasources = ["bot", "config", "packages"]
+datasources = ["config", "packages"]
 src = "source/src"
 datadir = "/usr/share/AssaultCube"
 mapdir = "%s/packages/maps" % datadir
@@ -36,7 +36,7 @@ def setup():
         fixperms(d)
 
     fixperms("docs")
-
+    shelltools.export("LDFLAGS", "%s -lX11" % get.LDFLAGS())
     # for nowin32 patch
     shelltools.cd("source/enet")
     autotools.autoreconf("-vfi")
@@ -60,6 +60,6 @@ def install():
     pisitools.removeDir("%s/official" % mapdir)
     pisitools.dosym("./", "%s/official" % mapdir)
 
-    pisitools.dodoc("source/*.txt", "README.html", "icon.ico")
+    pisitools.dodoc("source/*.txt", "README.html")
     shelltools.copytree("docs", "%s/%s/%s" % (get.installDIR(), get.docDIR(), get.srcNAME()))
 

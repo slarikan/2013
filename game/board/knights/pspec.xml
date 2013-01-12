@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>knights</Name>
-        <Homepage>http://noughmad.eu/knights</Homepage>
+        <Homepage>http://kde-apps.org/content/show.php/Knights?content=122046</Homepage>
         <Packager>
             <Name>Mehmet Özdemir</Name>
             <Email>mehmet@pardus.org.tr</Email>
@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE Chess Interface</Summary>
         <Description>Knights aims to be the ultimate chess resource on your computer. Written for the K Desktop Environment, it's designed to be both friendly to new chess players and functional for grand masters.</Description>
-        <Archive sha1sum="88fa4971fc1da5614b67123942dd48698ef740a7" type="tarbz2">http://dl.dropbox.com/u/2888238/Knights/knights-2.3.2.tar.bz2</Archive>
+        <Archive sha1sum="f7baef28f8c1c2d6e382774dd1b4ea53ac504676" type="tarbz2">http://dl.dropbox.com/u/2888238/Knights/knights-2.5.0.tar.bz2</Archive>
         <AdditionalFiles>
             <AdditionalFile target="po/tr/knights.po">knights.po</AdditionalFile>
             <AdditionalFile target="po/tr/CMakeLists.txt">CMakeLists.txt</AdditionalFile>
@@ -20,11 +20,10 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency>kdegames-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">add-tr-to-list.diff</Patch>
-            <Patch level="1">desktop-translations.diff</Patch>
+            <Patch level="0">add-tr-to-list.diff</Patch>
+	    <Patch level="0">desktop-translations.diff</Patch>
         </Patches>
     </Source>
 
@@ -33,7 +32,6 @@
         <RuntimeDependencies>
             <Dependency>kdelibs</Dependency>
             <Dependency>qt</Dependency>
-            <Dependency>kdegames-core</Dependency>
             <Dependency>gnuchess</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -43,8 +41,33 @@
             <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
-
     <History>
+        <Update release="13">
+            <Date>2013-01-12</Date>
+            <Version>2.5.0</Version>
+            <Comment>
+                - Version bump to 2.5.0.
+                - Version 2.5.0: Port to new KDEGames library, compatible with KDE 4.9
+		- Version 2.4.2: A handful of usability fixes
+		- Version 2.4.1 introduces support for the UCI protocol, setting the difficulty level of chess engines, game history display, and loading and saving PGN files.
+		- Version 2.4.0 brings voice support, possibility of external control by dbus, and a couple of bug fixes.
+		- Version 2.3.2 is a bugfix release with several fixes, mostly by Dave Kaye. It fixes drag-coused freezes, dropping pieces outside of the board, and a theme appearing twice in the selection dialog.
+		- Version 2.3.1 fixed exactly one bug; the peace captured by en-passant is now properly removed.
+		- The changelog since the last stable release (2.2.0) includes:
+		- Watching two engines play
+		- Improved time control support for chess engines
+		- Better support for the XBoard protocol means Knights can play with more engines, including Crafty, Sloppy, Sjeng and Phalanx.
+		- Players can now make and receive offer for draw, pause, undo, adjourn and abort. All except Draw are only used when playing on the chess server.
+		- Players can now undo their moves.
+		- Improved game dialog, with more game options.
+		- Improved server dialog, with a seek graph.
+		- Ability to interact with a chess server or a computer engine via a text console.
+		- Simple chat widget for talking to your remote opponent.
+		- Selecting and moving pieces by clicking, without dragging.
+            </Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="12">
             <Date>2011-06-15</Date>
             <Version>2.3.2</Version>
