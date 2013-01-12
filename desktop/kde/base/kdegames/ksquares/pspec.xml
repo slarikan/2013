@@ -9,22 +9,22 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>ksquares</Icon>
         <IsA>app:gui</IsA>
         <Summary>Connect the dots to create squares</Summary>
         <Description>KSquares is a fun and exciting game that modeled after the well known pen and paper based game of Dots and Boxes.</Description>
-        <Archive sha1sum="860d5b17ed376c1451ee1aefecfc515ab6181032" type="tarxz">mirrors://kde/unstable/4.9.95/src/ksquares-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="84290308631e7a78b89bdecc8be8524194ee0644" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksquares-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>ksquares</Name>
-        <Icon>ksquares</Icon>
+        <Name>ksquares</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,6 +35,13 @@
     </Package>
 
     <History> 
+        <Update release="2">
+            <Date>2013-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
