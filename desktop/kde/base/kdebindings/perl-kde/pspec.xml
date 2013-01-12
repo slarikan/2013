@@ -12,11 +12,11 @@
         <IsA>library</IsA>
         <Summary>KDE4 Perl bindings</Summary>
         <Description>Contains KDE4 language bindings for Perl.</Description>
-        <Archive sha1sum="302c590c9388a178fa68fe50ac1eed20913f3c1c" type="tarxz">mirrors://kde/unstable/4.9.95/src/perlkde-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="3f075e67492ceb40158d9ccb8eb05f1cc5249a5f" type="tarxz">mirrors://kde/unstable/4.9.97/src/perlkde-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>okular-devel</Dependency>
-            <Dependency versionFrom="4.9.95">smoke-kde</Dependency>
-            <Dependency versionFrom="4.9.95">perl-qt-devel</Dependency>
+            <Dependency versionFrom="4.9.97">smoke-kde</Dependency>
+            <Dependency versionFrom="4.9.97">perl-qt-devel</Dependency>
             <Dependency>attica-devel</Dependency>    
             <Dependency>kdepimlibs</Dependency>
             <Dependency>kate-devel</Dependency>
@@ -26,10 +26,10 @@
     <Package>
         <Name>perl-kde</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">perl-qt</Dependency>
-            <Dependency versionFrom="4.9.95">smoke-kde</Dependency>
-            <Dependency versionFrom="4.9.95">smoke-qt</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">perl-qt</Dependency>
+            <Dependency versionFrom="4.9.97">smoke-kde</Dependency>
+            <Dependency versionFrom="4.9.97">smoke-qt</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -37,6 +37,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>
