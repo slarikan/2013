@@ -9,13 +9,14 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>kig</Icon>
         <IsA>app:gui</IsA>
         <Summary>An interactive geometry application</Summary>
         <Description>Kig is an application for interactive geometry.</Description>
-        <Archive sha1sum="414b9d1dba8c25685ffcd6867bfe6a0b0c8066a4" type="tarxz">mirrors://kde/unstable/4.9.95/src/kig-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="dd3fa6fdb41e995a534a0efd7f884f9258a98e4a" type="tarxz">mirrors://kde/unstable/4.9.97/src/kig-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">libkdeedu-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,8 +24,8 @@
     <Package>
         <Name>kig</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.95">libkdeedu</Dependency>    
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Replaces>
@@ -42,6 +43,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>
