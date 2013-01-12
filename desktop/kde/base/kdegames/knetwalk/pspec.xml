@@ -9,22 +9,22 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>knetwalk</Icon>
         <IsA>app:gui</IsA>
         <Summary>Network construction game</Summary>
         <Description>KNetWalk is a single player logic game. The object of the game is to start the LAN, connecting all the terminals to the server, in as few turns as possible.</Description>
-        <Archive sha1sum="d5b6d4ef3502f3de541dc1e05a6096945c2932a4" type="tarxz">mirrors://kde/unstable/4.9.95/src/knetwalk-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="44a047b80c497bfa454e9677eb38ac48d0baf417" type="tarxz">mirrors://kde/unstable/4.9.97/src/knetwalk-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
-        <Name>knetwalk</Name>
-        <Icon>knetwalk</Icon>
+        <Name>knetwalk</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -34,7 +34,14 @@
         </Files>
     </Package>
 
-    <History> 
+    <History>
+        <Update release="2">
+            <Date>2013-01-06</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>       
         <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
