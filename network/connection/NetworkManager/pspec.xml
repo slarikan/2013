@@ -20,6 +20,7 @@
             <Dependency>nss-devel</Dependency>
             <Dependency>nspr-devel</Dependency>
             <Dependency>libnl-devel</Dependency>
+	    <Dependency>libsoup-devel</Dependency>
             <Dependency versionFrom="1.4.12">iptables-devel</Dependency>
             <Dependency>wpa_supplicant</Dependency>
             <Dependency versionFrom="2.4.5">ppp-devel</Dependency>
@@ -36,6 +37,7 @@
             <Dependency>nss</Dependency>
             <Dependency>nspr</Dependency>
             <Dependency>libnl</Dependency>
+	    <Dependency>libsoup</Dependency>
             <Dependency>dhcpcd</Dependency>
             <Dependency>iproute2</Dependency>
             <Dependency versionFrom="1.4.12">iptables</Dependency>
@@ -92,6 +94,13 @@
     </Package>
 
     <History>
+      <Update release="25">
+            <Date>2013-01-13</Date>
+            <Version>0.9.6.4</Version>
+            <Comment>Dep +</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+      </Update>  
       <Update release="24">
             <Date>2012-11-26</Date>
             <Version>0.9.6.4</Version>
