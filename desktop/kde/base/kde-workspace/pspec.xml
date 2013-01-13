@@ -316,9 +316,9 @@
         <Summary>KDE4 Login Manager</Summary>
         <Description>kdm provides the graphical login screen, shown shortly after boot up, log out, and when user switching.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">kde-workspace</Dependency>
-            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.4">qt</Dependency>
             <Dependency>liblazy</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>qimageblitz</Dependency>
