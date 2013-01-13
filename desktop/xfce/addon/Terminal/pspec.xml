@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Icon>terminal</Icon>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+<PartOf>desktop.xfce.addon</PartOf>
         <Summary>Terminal for Xfce</Summary>
         <Description>Terminal is a modern, lightweight, and low memory cost terminal emulator with tabs and multiple windows for the Xfce desktop environment. It offers full-customization for the key bindings, the aspect, the colors, and more.</Description>
         <Archive sha1sum="2f12c3a0fffad18976d47e531d404ee308cb2f05" type="tarbz2">http://archive.xfce.org/src/apps/terminal/0.4/Terminal-0.4.8.tar.bz2</Archive>

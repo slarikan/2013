@@ -94,11 +94,19 @@
 
     <History>
         <Update release="18">
+<<<<<<< HEAD
+            <Date>2013-01-13</Date>
+            <Version>3.8.3</Version>
+            <Comment>New version</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>guven.ertan@gmail.com</Email>
+=======
             <Date>2012-11-03</Date>
             <Version>3.8.2</Version>
             <Comment>Fix doc linking</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
+>>>>>>> ffb1ae68e0ce4040e9debe052ba2b498cb593076
         </Update>
         <Update release="17">
             <Date>2012-08-25</Date>
