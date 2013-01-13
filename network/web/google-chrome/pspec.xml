@@ -51,7 +51,7 @@
             <Dependency>libvpx</Dependency>
             <Dependency>flac</Dependency>
             <Dependency>libpng</Dependency>
-            <Dependency>libpng12-pardususerde</Dependency>
+            <Dependency>libpng</Dependency>
             <Dependency>bzip2</Dependency>
         </RuntimeDependencies>
         <Files>
