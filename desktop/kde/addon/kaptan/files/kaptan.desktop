@@ -2,7 +2,11 @@
 Version=1.0
 Encoding=UTF-8
 GenericName=Kaptan Desktop Choice
-Comment=Your desktop preferences 
+GenericName[tr]=Kaptan Masaüstü Tercihleri
+GenericName[de]=Kaptan Desktop Einstellungen
+Comment=Your desktop preferences
+Comment[de]=Ihre Desktop-Einstellungen 
+Comment[tr]=Sizin Masaüstü Tercihleriniz
 Name=Kaptan
 Exec=kaptan
 Icon=kaptan.png
