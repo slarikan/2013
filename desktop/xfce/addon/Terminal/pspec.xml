@@ -11,10 +11,10 @@
         <License>GPLv2</License>
         <Icon>terminal</Icon>
         <IsA>app:gui</IsA>
-	<PartOf>desktop.xfce.addon</PartOf>
+<PartOf>desktop.xfce.addon</PartOf>
         <Summary>Terminal for Xfce</Summary>
         <Description>Terminal is a modern, lightweight, and low memory cost terminal emulator with tabs and multiple windows for the Xfce desktop environment. It offers full-customization for the key bindings, the aspect, the colors, and more.</Description>
-	<Archive sha1sum="fc56b9b4ff7b735065c7ca132a8c64e98ce007b9" type="tarbz2">http://archive.xfce.org/src/apps/xfce4-terminal/0.6/xfce4-terminal-0.6.1.tar.bz2</Archive>
+        <Archive sha1sum="2f12c3a0fffad18976d47e531d404ee308cb2f05" type="tarbz2">http://archive.xfce.org/src/apps/terminal/0.4/Terminal-0.4.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="0.8.0">exo-devel</Dependency>
             <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
@@ -57,7 +57,7 @@
     <History>
         <Update release="26">
             <Date>2012-05-04</Date>
-            <Version>0.6.1</Version>
+            <Version>0.4.8</Version>
             <Comment>
                 * rebuild for xfce 10.4.0
             </Comment>
