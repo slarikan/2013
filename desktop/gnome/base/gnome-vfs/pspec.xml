@@ -19,9 +19,7 @@
             <Dependency>gamin-devel</Dependency>
             <Dependency>avahi-glib-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency>orbit2-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
-            <Dependency>samba-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">fedora/gnome-vfs-2.9.90-modules-conf.patch</Patch>
@@ -72,7 +70,6 @@
             <Dependency>mit-kerberos</Dependency>
             <Dependency>avahi-glib</Dependency>
             <Dependency>avahi-libs</Dependency>
-            <Dependency>orbit2</Dependency>
             <Dependency>gconf</Dependency>
         </RuntimeDependencies>
         <Files>
