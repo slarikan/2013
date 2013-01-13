@@ -13,11 +13,8 @@
         <IsA>library</IsA>
         <Summary>An elegant API for accessing audio files</Summary>
         <Description>audiofile provides a uniform and elegant API for accessing a variety of audio file formats, such as AIFF/AIFF-C, WAVE, NeXT/Sun .snd/.au, Berkeley/IRCAM/CARL Sound File, Audio Visual Research, Amiga IFF/8SVX, and NIST SPHERE.</Description>
-        <Archive sha1sum="1d8a5bb0ca63c7047436f136fb1fb98ea886e920" type="targz">http://www.68k.org/~michael/audiofile/audiofile-0.2.7.tar.gz</Archive>
-        <Patches>
-            <Patch>audiofile-largefile.patch</Patch>
-        </Patches>
-    </Source>
+        <Archive sha1sum="e6f664b0d551df35ce0c10e38e5617bcd4605335" type="targz">http://audiofile.68k.org/audiofile-0.3.4.tar.gz</Archive>
+      </Source>
 
     <Package>
         <Name>audiofile</Name>
@@ -25,6 +22,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="doc">/usr/share/man</Path>
         </Files>
     </Package>
 
@@ -57,7 +55,14 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="9">
+            <Date>2012-01-14</Date>
+            <Version>0.3.4</Version>
+            <Comment>Version bump</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@gmail.com</Email>
+        </Update>
+      <Update release="8">
             <Date>2011-08-01</Date>
             <Version>0.2.7</Version>
             <Comment>Add lib32 package for audiofile, fixes pb#18836</Comment>
