@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+GenericName=Kaptan Desktop Choice
+Comment=Your desktop preferences 
+Name=Kaptan
+Exec=kaptan
+Icon=kaptan.png
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;
+
