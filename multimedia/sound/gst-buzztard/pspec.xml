@@ -13,7 +13,7 @@
         <Icon>buzztard</Icon>
         <IsA>app:gui</IsA>
         <PartOf>multimedia.sound</PartOf>
-        <Summary>Gstreamer plugins and shared libraries for Buzztard.</Summary>
+        <Summary>Buzztard gstreamer extensions.</Summary>
         <Description>Gstreamer plugins and shared libraries for Buzztard.</Description>
         <Archive sha1sum="ac32e0bb96c6225d6354c9fc1eccb98921ae768f" type="targz">http://garr.dl.sourceforge.net/project/buzztard/buzztard%20gstreamer%20extensions/0.6.0/gst-buzztard-0.6.0.tar.gz</Archive>
         <BuildDependencies>
@@ -22,8 +22,7 @@
 	    <Dependency>gstreamer-devel</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
 	    <Dependency>libgnomecanvas-devel</Dependency>
-	    <Dependency>pango-devel</Dependency>
-	    
+	    <Dependency>pango-devel</Dependency>	    
 	</BuildDependencies>
     </Source>
     
@@ -44,6 +43,7 @@
     
     <Package>
         <Name>gst-buzztard-doc</Name>
+	<Summary>gst-buzzard için doc dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gst-buzztard</Dependency>
         </RuntimeDependencies>
@@ -51,22 +51,24 @@
 	    <Path fileType="doc">/usr/share/doc/gstreamer0.10-buzztard-doc</Path>
 	    <Path fileType="doc">/usr/share/gtk-doc/html/gst-buzztard</Path>
 	    <Path fileType="doc">/usr/share/doc</Path>
-	    </Files>
+	</Files>
     </Package>
     
     <Package>
         <Name>libgst-buzztard</Name>
+	<Summary>gst-buzzard için libgst-buzztard dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gst-buzztard</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="doc">/usr/share/doc/libgstbuzztard0</Path>
-	    </Files>
+	</Files>
     </Package>
     
     <Package>
         <Name>libgst-buzztard-devel</Name>
+	<Summary>libgst-buzztard için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gst-buzztard</Dependency>
         </RuntimeDependencies>
@@ -74,9 +76,8 @@
 	    <Path fileType="header">/usr/include/libgstbuzztard</Path>
 	    <Path fileType="doc">/usr/share/doc/libgstbuzztard-dev</Path>
 	    <Path fileType="library">/usr/lib/pkgconfig</Path>
-	    </Files>
-    </Package>
-    
+	</Files>
+    </Package>    
     
     <History>
         <Update release="1">
