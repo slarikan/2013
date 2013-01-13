@@ -61,8 +61,6 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/pisi/sandbox.conf">sandbox.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile>
 	    <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/lib/pardus/pisi/actionsapi/gnome3.py">gnome3.py</AdditionalFile>
-
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
