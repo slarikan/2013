@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ Form Designer</Summary>
         <Description>Glade is a RAD tool to enable quick and easy development of user interfaces for the GTK+ toolkit and the GNOME desktop environment.</Description>
-        <Archive sha1sum="ef1b1243a0da1ddd22d3f7ac799608f53bf4f50f" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="bdc2320bf226b52a55496e2823880be5762081b8" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/glade3/3.8/glade3-3.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -94,11 +94,19 @@
 
     <History>
         <Update release="18">
+<<<<<<< HEAD
             <Date>2013-01-13</Date>
             <Version>3.8.3</Version>
             <Comment>New version</Comment>
             <Name>Ertan Güven</Name>
             <Email>guven.ertan@gmail.com</Email>
+=======
+            <Date>2012-11-03</Date>
+            <Version>3.8.2</Version>
+            <Comment>Fix doc linking</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>erdem@pardus-linux.org</Email>
+>>>>>>> ffb1ae68e0ce4040e9debe052ba2b498cb593076
         </Update>
         <Update release="17">
             <Date>2012-08-25</Date>
