@@ -13,9 +13,9 @@
         <IsA>app:gui</IsA>
         <Summary>An engine for cool desktop eyecandy</Summary>
         <Description>SuperKaramba is a tool that allows you to easily create interactive widgets on your KDE desktop. Such modules are interactive programs written in Python, Ruby or KDE JavaScript that are usually embedded directly into the background and do not disturb the normal view of the desktop.</Description>
-        <Archive sha1sum="7a614af0d67628515a98de206c36003c595bc977" type="tarxz">mirrors://kde/unstable/4.9.95/src/superkaramba-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="33091c968fda7e038c210a4b64f2db93db77b80e" type="tarxz">mirrors://kde/unstable/4.9.97/src/superkaramba-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
         </BuildDependencies>
@@ -27,7 +27,7 @@
     <Package>
         <Name>superkaramba</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
             <Dependency>qimageblitz</Dependency>
             <Dependency>libXrender</Dependency>
         </RuntimeDependencies>
@@ -43,7 +43,14 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>
             <Comment>Version bump to 4.9.95</Comment>
