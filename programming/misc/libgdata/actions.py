@@ -15,7 +15,7 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-fiv")
-    autotools.configure("--disable-static")
+    autotools.configure("--disable-static --includedir=/usr/include/gdata")
 
 def build():
     autotools.make()
