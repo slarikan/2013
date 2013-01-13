@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Run for your life</Summary>
         <Description>Killbots is a simple game of evading killer robots. Who created the robots and why they have been programmed to destroy, no one knows. All that is known is that the robots are numerous and their sole objective is to destroy you.</Description>
-        <Archive sha1sum="9f1d66933163d3da44f1803a987a72607d4e7443" type="tarxz">mirrors://kde/unstable/4.9.95/src/killbots-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="526be3e244b78fe638b6ccf9d7031c7763a8ebc7" type="tarxz">mirrors://kde/unstable/4.9.97/src/killbots-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
@@ -23,8 +23,8 @@
         <Name>killbots</Name>
         <Icon>killbots</Icon>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,7 +35,14 @@
     </Package>
 
     <History> 
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
             <Comment>First release</Comment>

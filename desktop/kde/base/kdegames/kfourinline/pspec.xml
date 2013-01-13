@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Four in a row board game</Summary>
         <Description>KFourInLine is a board game for two players based on the Connect-Four game.</Description>
-        <Archive sha1sum="d77fcaa4108db159c6b6db962cc3f6636ce3462b" type="tarxz">mirrors://kde/unstable/4.9.95/src/kfourinline-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="8d48ec313d7f6cb8b617991188320e5ba23949e1" type="tarxz">mirrors://kde/unstable/4.9.97/src/kfourinline-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
@@ -23,8 +23,8 @@
         <Name>kfourinline</Name>
         <Icon>kfourinline</Icon>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,7 +35,14 @@
     </Package>
 
     <History> 
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
             <Comment>First release</Comment>

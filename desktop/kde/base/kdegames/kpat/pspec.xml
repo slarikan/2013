@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Patience card game</Summary>
         <Description>To play KPatience you need, as the name suggests, patience. For simple games, where the way the game goes depends only upon how the cards fall, your patience might be the only thing you need.</Description>
-        <Archive sha1sum="90f78664276ee8cfe4503a8f6f71f9e15ffabacc" type="tarxz">mirrors://kde/unstable/4.9.95/src/kpat-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="8f8d9e6010cf55b1f8ddf3ddd67dbc084d4ea7b8" type="tarxz">mirrors://kde/unstable/4.9.97/src/kpat-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>    
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
@@ -23,8 +23,8 @@
         <Name>kpat</Name>
         <Icon>kpat</Icon>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>  
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,7 +35,14 @@
     </Package>
 
     <History> 
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
             <Comment>First release</Comment>

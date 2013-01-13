@@ -13,16 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>A screen ruler and color measurement tool</Summary>
         <Description>KRuler is a screen ruler and color measurement tool.</Description>
-        <Archive sha1sum="4cc104c7e6852989b12e76b6c725f27ca135cd3c" type="tarxz">mirrors://kde/unstable/4.9.95/src/kruler-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="2dcbdde12f792f2b26d43fadb86045e933c08096" type="tarxz">mirrors://kde/unstable/4.9.97/src/kruler-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kruler</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -34,7 +34,14 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>
             <Comment>Version bump to 4.9.95</Comment>

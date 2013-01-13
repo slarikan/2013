@@ -12,10 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Hunt gold, dodge enemies and solve puzzles</Summary>
         <Description>KGoldrunner is an action game where the hero runs through a maze and dodges enemies. You must guide the hero with the mouse or keyboard and collect all the gold nuggets, then you can climb up into the next level. Your enemies are also after the gold. Worse still, they are after you.</Description>
-        <Archive sha1sum="d011a28a5d894ffa0056bbd51a57bbab28bb6921" type="tarxz">mirrors://kde/unstable/4.9.95/src/kgoldrunner-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="61ef5d087a2d7af39fab0b9cb2d8ab96fdcb5075" type="tarxz">mirrors://kde/unstable/4.9.97/src/kgoldrunner-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime-devel</Dependency>
+            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
             <Dependency versionFrom="1.14">openal-devel</Dependency>    
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
         <Name>kgoldrunner</Name>
         <Icon>kgoldrunner</Icon>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
+            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
+            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
             <Dependency versionFrom="1.14">openal</Dependency>    
         </RuntimeDependencies>
         <Files>
@@ -37,7 +37,14 @@
     </Package>
 
     <History> 
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
             <Comment>First release</Comment>

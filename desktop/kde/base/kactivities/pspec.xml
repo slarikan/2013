@@ -12,9 +12,9 @@
         <IsA>library</IsA>
         <Summary>API for using and interacting with Activities</Summary>
         <Description>kactivities is an API for using and interacting with Activities as a consumer, application adding information to them or as an activity manager.</Description>
-        <Archive sha1sum="2f908ab040f124bd054aff29fbe838378761a696" type="tarxz">mirrors://kde/unstable/4.9.95/src/kactivities-4.9.95.tar.xz</Archive>
+        <Archive sha1sum="272f86d9d37cca411d74c4e567acb6b7875d016a" type="tarxz">mirrors://kde/unstable/4.9.97/src/kactivities-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kactivities</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
             <Dependency>soprano</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -40,7 +40,7 @@
         <Summary>Development files for kactivities</Summary>
         <RuntimeDependencies>
             <Dependency release="current">kactivities</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
         </RuntimeDependencies>
@@ -52,7 +52,14 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="2">
+            <Date>2013-01-13</Date>
+            <Version>4.9.97</Version>
+            <Comment>Version bump to 4.9.97</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2012-12-20</Date>
             <Version>4.9.95</Version>
             <Comment>Version bump to 4.9.95</Comment>
