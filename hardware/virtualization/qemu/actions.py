@@ -11,7 +11,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir="qemu-kvm-%s" % get.srcVERSION()
 NoStrip = ["/usr/share/qemu"]
 
 shelltools.export("LC_ALL", "C")
@@ -114,7 +113,7 @@ def install():
     # Install kvm-tools
     #pisitools.dobin("kvm/test/kvmtrace")
     #pisitools.dobin("kvm/test/kvmtrace_format")
-    pisitools.dobin("kvm/kvm_stat")
+    #pisitools.dobin("kvm/kvm_stat")
     pisitools.dobin("qemu-kvm")
 
     pisitools.insinto("/etc/sasl2/", "qemu.sasl", "qemu.conf")
