@@ -18,8 +18,8 @@ def setup():
 
 def build():
     shelltools.export("HOME", get.workDIR())
-    autotools.make("X11LIBS=/usr/lib")
-    autotools.make("doc")
+    autotools.make()
+    autotools.make("-j1 doc")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

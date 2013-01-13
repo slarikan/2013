@@ -1,12 +1,12 @@
-diff -Nur gfxboot-4.0.14-old/bin/help2txt gfxboot-4.0.14/bin/help2txt
---- gfxboot-4.0.14-old/bin/help2txt	2008-06-02 17:45:38.000000000 +0300
-+++ gfxboot-4.0.14/bin/help2txt	2008-06-02 17:48:46.000000000 +0300
+diff -ur bin/help2txt~ bin/help2txt
+--- bin/help2txt~	2012-10-01 11:52:39.000000000 +0300
++++ bin/help2txt	2013-01-13 20:54:56.977178803 +0200
 @@ -12,7 +12,7 @@
  sub find_tag;
  sub nospaces;
  
 -$opt_product = "openSUSE";
-+$opt_product = "Pardus";
++$opt_product = "Pardus Anka";
  
  %help_key_rename = (
    'F2' => 'F3',

@@ -13,14 +13,14 @@
         <IsA>app:console</IsA>
         <Summary>Tools to create graphical boot logos</Summary>
         <Description>Set of tools to create graphical boot logos, for grub, lilo and syslinux. It supports arch-specific boot menus, advanced help menus, multiple keymaps, animated images, and more graphical pretty things.</Description>
-        <Archive sha1sum="10733db596ef5b0f4b0a983a81357ab720bf99c5" type="tarbz2">http://cekirdek.pardus.org.tr/~onur/distfiles/gfxboot-4.1.41.tar.bz2</Archive>
+	<Archive sha1sum="0e14938d4d5aa0dc245932919fb666e1aa0f9738" type="tarxz">file:///home/kullanici/deneme/gfxboot-4.5.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>links</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">productname.patch</Patch>
-            <Patch level="1">notheme.patch</Patch>
+            <Patch level="0">productname.patch</Patch>
+            <Patch level="0">no-theme-no-git.patch</Patch>
         </Patches>
     </Source>
 
@@ -38,6 +38,13 @@
     </Package>
 
     <History>
+        <Update release="9">
+            <Date>2013-01-13</Date>
+            <Version>4.5.1</Version>
+            <Comment>New release.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>tulliana@gmail.com</Email>
+        </Update>
         <Update release="8">
             <Date>2010-10-12</Date>
             <Version>4.1.41</Version>
