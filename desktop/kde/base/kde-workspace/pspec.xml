@@ -13,14 +13,14 @@
         <Description>kde-workspace contains the main KDE components like kdm (the login manager of KDE), khotkeys (a hotkey daemon), klipper (a cut paste history utility), kmenuedit (the menu editor), krandrtray (resize and rotate X screens), krunner (a command run interface), ksysguard (a performance monitor), kwin (the window manager of KDE), kxkb (a utility to switch keyboard maps), plasma (the KDE desktop, panels and widgets workspace application) and systemsettings (the configuration editor).</Description>
         <Archive sha1sum="3711825b3f14f69a0f6e76cda99998203c0ae382" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-workspace-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.3">qt-webkit-devel</Dependency>
+            <Dependency versionFrom="4.8.4">qt-webkit-devel</Dependency>
             <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
             <Dependency versionFrom="4.9.97">kdepim-runtime</Dependency>    
             <Dependency versionFrom="4.9.97">kactivities-devel</Dependency>
             <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
             <!-- Needed by calendar and akonadi dataengines -->
-            <Dependency versionFrom="1.8.80">akonadi-devel</Dependency>
+            <Dependency versionFrom="1.9.0">akonadi-devel</Dependency>
             <Dependency versionFrom="2.9.0">soprano-devel</Dependency>
             <Dependency versionFrom="4.8.4">python-kde-devel</Dependency>
             <Dependency versionFrom="0.99.0">polkit-qt_1-devel</Dependency>
@@ -316,9 +316,9 @@
         <Summary>KDE4 Login Manager</Summary>
         <Description>kdm provides the graphical login screen, shown shortly after boot up, log out, and when user switching.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.3">qt</Dependency>
+            <Dependency versionFrom="4.8.2">kde-workspace</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
+            <Dependency versionFrom="4.8.1">qt</Dependency>
             <Dependency>liblazy</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>qimageblitz</Dependency>
@@ -366,17 +366,6 @@
     </Package>
 
     <Package>
-        <Name>cursor-theme-oxygen-black-big</Name>
-        <IsA>data</IsA>
-        <PartOf>desktop.lookandfeel</PartOf>
-        <Summary>KDE4 Oxygen Black Cursor Theme (big size)</Summary>
-        <Description>cursor-theme-oxygen-black-big contains Big Oxygen Black mouse cursor theme of KDE4.</Description>
-        <Files>
-            <Path fileType="data">/usr/share/icons/Oxygen_Black_Big</Path>
-        </Files>
-    </Package>
-
-    <Package>
         <Name>cursor-theme-oxygen-blue</Name>
         <IsA>data</IsA>
         <PartOf>desktop.lookandfeel</PartOf>
@@ -384,17 +373,6 @@
         <Description>cursor-theme-oxygen-blue contains Oxygen Blue mouse cursor theme of KDE4.</Description>
         <Files>
             <Path fileType="data">/usr/share/icons/Oxygen_Blue</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cursor-theme-oxygen-blue-big</Name>
-        <IsA>data</IsA>
-        <PartOf>desktop.lookandfeel</PartOf>
-        <Summary>KDE4 Oxygen Blue Cursor Theme (big size)</Summary>
-        <Description>cursor-theme-oxygen-blue-big contains Big Oxygen Blue mouse cursor theme of KDE4.</Description>
-        <Files>
-            <Path fileType="data">/usr/share/icons/Oxygen_Blue_Big</Path>
         </Files>
     </Package>
 
@@ -410,17 +388,6 @@
     </Package>
 
     <Package>
-        <Name>cursor-theme-oxygen-white-big</Name>
-        <IsA>data</IsA>
-        <PartOf>desktop.lookandfeel</PartOf>
-        <Summary>KDE4 Oxygen White Cursor Theme (big size)</Summary>
-        <Description>cursor-theme-oxygen-white-big contains Big Oxygen White mouse cursor theme of KDE4.</Description>
-        <Files>
-            <Path fileType="data">/usr/share/icons/Oxygen_White_Big</Path>
-        </Files>
-    </Package>
-
-    <Package>
         <Name>cursor-theme-oxygen-yellow</Name>
         <IsA>data</IsA>
         <PartOf>desktop.lookandfeel</PartOf>
@@ -428,17 +395,6 @@
         <Description>cursor-theme-oxygen-yellow contains Oxygen Yellow mouse cursor theme of KDE4.</Description>
         <Files>
             <Path fileType="data">/usr/share/icons/Oxygen_Yellow</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cursor-theme-oxygen-yellow-big</Name>
-        <IsA>data</IsA>
-        <PartOf>desktop.lookandfeel</PartOf>
-        <Summary>KDE4 Oxygen Yellow Cursor Theme (big size)</Summary>
-        <Description>cursor-theme-oxygen-yellow-big contains Big Oxygen Yellow mouse cursor theme of KDE4.</Description>
-        <Files>
-            <Path fileType="data">/usr/share/icons/Oxygen_Yellow_Big</Path>
         </Files>
     </Package>
 
@@ -452,31 +408,6 @@
             <Path fileType="data">/usr/share/icons/Oxygen_Zion</Path>
         </Files>
     </Package>
-
-    <Package>
-        <Name>cursor-theme-oxygen-zion-big</Name>
-        <IsA>data</IsA>
-        <PartOf>desktop.lookandfeel</PartOf>
-        <Summary>KDE4 Oxygen Zion Cursor Theme (big size)</Summary>
-        <Description>cursor-theme-oxygen-zion-big contains Big Oxygen Zion mouse cursor theme of KDE4.</Description>
-        <Files>
-            <Path fileType="data">/usr/share/icons/Oxygen_Zion_Big</Path>
-        </Files>
-    </Package>
-
-    <!--
-    <Package>
-        <Name>kwin-aurorae-style</Name>
-        <IsA>library</IsA>
-        <PartOf>desktop.kde.addon</PartOf>
-        <Summary>KDE4 Aurorae Window Decoration</Summary>
-        <Files>
-            <Path fileType="library">/usr/kde/4/lib/kde4/*aurorae*</Path>
-            <Path fileType="data">/usr/kde/4/share/apps/kwin/*aurorae*</Path>
-            <Path fileType="data">/usr/kde/4/share/config/*aurorae*</Path>
-        </Files>
-    </Package>
-    -->
 
     <Package>
         <Name>kde-wallpapers</Name>
@@ -519,14 +450,14 @@
     </Package>
 
     <History>
-         <Update release="2">
-            <Date>2013-01-13</Date>
+        <Update release="2">
+            <Date>2013-01-06</Date>
             <Version>4.9.97</Version>
             <Comment>Version bump to 4.9.97</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>yaralikurt15@hotmail.com</Email>
-        </Update>
-      <Update release="1">
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+         <Update release="1">
             <Date>2012-12-07</Date>
             <Version>4.9.95</Version>
             <Comment>Version bump to 4.9.95</Comment>

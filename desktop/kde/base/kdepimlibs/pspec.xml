@@ -65,7 +65,7 @@
         <Description>Contains development tools and header files for KDE4 PIM (Personal Information Management) base libraries.</Description>
         <RuntimeDependencies>
             <Dependency release="current">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
             <Dependency versionFrom="4.8.1">qt-devel</Dependency>
             <Dependency>boost-devel</Dependency>
         </RuntimeDependencies>
@@ -79,12 +79,12 @@
 
     <History>
         <Update release="2">
-            <Date>2013-01-09</Date>
+            <Date>2012-01-06</Date>
             <Version>4.9.97</Version>
             <Comment>Version bump to 4.9.97</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>yaralikurt15@hotmail.com</Email>
-        </Update>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
         <Update release="1">
             <Date>2012-12-23</Date>
             <Version>4.9.95</Version>

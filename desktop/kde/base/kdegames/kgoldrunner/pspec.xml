@@ -9,6 +9,7 @@
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>kgoldrunner</Icon>
         <IsA>app:gui</IsA>
         <Summary>Hunt gold, dodge enemies and solve puzzles</Summary>
         <Description>KGoldrunner is an action game where the hero runs through a maze and dodges enemies. You must guide the hero with the mouse or keyboard and collect all the gold nuggets, then you can climb up into the next level. Your enemies are also after the gold. Worse still, they are after you.</Description>
@@ -21,8 +22,7 @@
     </Source>
 
     <Package>
-        <Name>kgoldrunner</Name>
-        <Icon>kgoldrunner</Icon>
+        <Name>kgoldrunner</Name>        
         <RuntimeDependencies>
             <Dependency versionFrom="4.9.97">libkdegames</Dependency>
             <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
@@ -36,15 +36,15 @@
         </Files>
     </Package>
 
-    <History> 
+    <History>
         <Update release="2">
-            <Date>2013-01-13</Date>
+            <Date>2013-01-06</Date>
             <Version>4.9.97</Version>
             <Comment>Version bump to 4.9.97</Comment>
-            <Name>Idris Kalp</Name>
-            <Email>yaralikurt15@hotmail.com</Email>
-        </Update>
-      <Update release="1">
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>      
+        <Update release="1">
             <Date>2013-01-02</Date>
             <Version>4.9.95</Version>
             <Comment>First release</Comment>
