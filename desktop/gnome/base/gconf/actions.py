@@ -13,8 +13,9 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     autotools.autoreconf("-fiv")
-    autotools.configure("--disable-static\
-                         --enable-silent-rules")
+    autotools.configure("--disable-static \
+                         --enable-silent-rules \
+                         --with-gtk=2.0")
 
 def build():
     autotools.make()
