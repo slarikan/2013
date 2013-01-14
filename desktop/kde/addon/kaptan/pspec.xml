@@ -22,6 +22,7 @@
             <Patch>fix-cameras-with-hypen-symbol.diff</Patch>
             <Patch>fix-tr-translation.patch</Patch>
             <Patch level="1">fix-update-interval.patch</Patch>
+            <Patch level="1">newline.patch</Patch>
         </Patches>
     </Source>
 
