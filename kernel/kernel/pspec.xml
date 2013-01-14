@@ -322,7 +322,7 @@
 
     <History>
         <Update release="175">
-            <Date>2012-12-11</Date>
+            <Date>2013-01-15</Date>
             <Version>3.7.2</Version>
             <Comment>bump to 3.7.2 with linux patch</Comment>
             <Type package="kernel">security</Type>
