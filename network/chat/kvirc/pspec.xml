@@ -12,19 +12,17 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 port of kvirc IRC client</Summary>
         <Description>Kvirc is an excellent IRC client written with Qt toolkit.</Description>
-        <Archive type="tarbz2" sha1sum="dec8b3eeef5af6c86e8e1b2148ac3a6780286ec3">ftp://ftp.kvirc.de/pub/kvirc/snapshots/source/kvirc-4.0rc3.tar.bz2</Archive>
+        <Archive type="tarbz2" sha1sum="a754759a36ba2a77b08518a624f126d4a7dbe336">ftp://ftp.kvirc.de/pub/kvirc/4.2.0/source/kvirc-4.2.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
             <Dependency>kernel-headers</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
+            <Dependency>audiofile-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>desktop.patch</Patch>
-            <Patch>nouse_subversion_revision.patch</Patch>
             <Patch level="1">use-icon-install-dir.patch</Patch>
-            <Patch level="3">CVE-2010-2785-remote-ctcp.patch</Patch>
         </Patches>
     </Source>
 
@@ -35,6 +33,7 @@
             <Dependency>qt</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>qt-webkit</Dependency>
+            <Dependency>audiofile</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -59,6 +58,13 @@
     </Package>
 
     <History>
+        <Update release="16">
+            <Date>2013-01-14</Date>
+            <Version>4.2.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="15">
             <Date>2011-02-10</Date>
             <Version>4.0_rc3</Version>
