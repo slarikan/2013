@@ -14,7 +14,7 @@
         <Summary>Graphical Boot Animation and Logger</Summary>
         <Description>plymouth provides an attractive graphical boot animation in place of the text messages that normally get shown. Text messages are instead redirected to a log file for viewing after boot.</Description>
         <Archive sha1sum="17abf57cde8cfb7c702809f89fa45b417b813f50" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/plymouth-0.8.3_20110421git3f14f27.tar.bz2</Archive>
-        <Archive sha1sum="d906848eb03907bb5601c3d8313a732fe16d897e" type="tarxz" target="plymouth-0.8.3_20110421/themes">http://anka.pardus-linux.org/2013/source/plymouth-theme-pardus-2013.tar.xz</Archive>
+        <Archive sha1sum="c5bece8a71c6d59f336410991de0b614eed42e48" type="targz" target="plymouth-0.8.3_20110421/themes">http://pardus-anka.org/pub/source/plymouth-theme-pardus-master.tar.gz</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0755" target="generate-flist">pardus/generate-flist.py</AdditionalFile>
         </AdditionalFiles>
