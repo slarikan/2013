@@ -9,16 +9,19 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    pisitools.dosed("test/Makefile.am", "noinst_PROGRAMS", "check_PROGRAMS")
+    # Don't build examples
+    pisitools.dosed("Makefile.am", "^(SRC_SUBDIRS.*?) examples", r"\1")
 
     autotools.autoreconf("-vfi")
-
-    options = "--disable-werror \
-               --enable-largefile"
-    autotools.configure(options)
+    autotools.configure("--disable-static \
+                         --disable-werror \
+                         --enable-largefile")
 
 def build():
     autotools.make()
+
+def check():
+    autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
