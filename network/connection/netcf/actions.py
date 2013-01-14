@@ -12,12 +12,15 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-fi")
-    autotools.configure("--disable-static")
+    autotools.configure("--disable-static \
+                         --with-init-script=none \
+                         --with-driver=redhat")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    pisitools.removeDir("/etc")
 
     pisitools.dodoc("AUTHORS", "COPYING", "NEWS")
