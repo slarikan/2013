@@ -54,13 +54,13 @@ def setup():
 def build():
     autotools.make()
 
-#def check():
+def check():
 #    # Disable broken tests
 #    for test in ("daemon-conf",):
 #        shelltools.unlink("tests/%s" % test)
 #        shelltools.echo("tests/%s" % test, "#!/bin/sh\nexit 0\n")
 #        shelltools.chmod("tests/%s" % test, 0755)
-#        autotools.make("check")
+    autotools.make("check")
 
 
 def install():
