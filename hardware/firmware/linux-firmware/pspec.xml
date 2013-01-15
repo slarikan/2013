@@ -32,16 +32,9 @@
         <Archive sha1sum="042a9b8f715d96a17f807604541bd60ca5a3101d" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-rlc-firmware-1.tar.bz2/189be8ab60025bf81f8841ab53175665/radeon-rlc-firmware-1.tar.bz2</Archive>
         <Archive sha1sum="b7ec67544c7343a9e64500e2aee3a7afc54b8f79" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-ni-fw.tar.bz2/268e466b70f48ddf01297b18c99beb30/radeon-ni-fw.tar.bz2</Archive>
         <Archive sha1sum="de5eefac7856cd0c701527f613a2ccc7ca34b513" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-firmware-2.tar.bz2/ee8574e13b60be59b6b18b21e20d9e3a/radeon-firmware-2.tar.bz2</Archive>
-        <Archive sha1sum="b93d14d2a690597b159cc2e27b06d417fe3c6313" type="targz" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/aic94xx-firmware/aic94xx-seq-30-1.tar.gz/1fed6c024581ee84f57db8aad51b7fb3/aic94xx-seq-30-1.tar.gz</Archive>
-	
+        <Archive sha1sum="b93d14d2a690597b159cc2e27b06d417fe3c6313" type="targz" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/aic94xx-firmware/aic94xx-seq-30-1.tar.gz/1fed6c024581ee84f57db8aad51b7fb3/aic94xx-seq-30-1.tar.gz</Archive>	
         <Archive sha1sum="0e53846a25b9ec5f6f56559f6cc0778227e5564c" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-3945-ucode-15.32.2.9.tgz</Archive>
-        <Archive sha1sum="6b2d9e0fe18ffa98c8335f989833ef12a2f4604b" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-1000-ucode-39.31.5.1.tgz</Archive>
-        <Archive sha1sum="1b8a34a6d73f7e18ca4ea6c7d46877350f12a54a" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-105-ucode-18.168.6.1.tgz</Archive>
-        <Archive sha1sum="b68e43d2d2a2fbf1550efd2bf95021b567088452" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-135-ucode-18.168.6.1.tgz</Archive>
-        <Archive sha1sum="76ad76700ee85c05ff3d5161f0fa1aaefd9a1be8" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-2000-ucode-18.168.6.1.tgz</Archive>
-        <Archive sha1sum="7440e4454d7c9295ad3393188a18bcf115455121" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-2030-ucode-18.168.6.1.tgz</Archive>
-        <Archive sha1sum="f4c72b75ae8415661182d63154234dc0a55bc3db" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-6000g2b-ucode-18.168.6.1.tgz</Archive>
-        <Archive sha1sum="a542c82dba96e0bfb1b0e01817a59575c5c87fc4" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-6000g2a-ucode-18.168.6.1.tgz</Archive>
+
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
         </BuildDependencies>
@@ -56,15 +49,6 @@
     </Package>
 
     <History>
-        <Update release="11">
-            <Date>2013-01-15</Date>
-            <Version>20121212</Version>
-            <Comment>
-               * add iwlwifi fws
-            </Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
         <Update release="10">
             <Date>2012-12-12</Date>
             <Version>20121212</Version>
