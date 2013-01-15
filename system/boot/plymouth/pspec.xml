@@ -13,8 +13,8 @@
         <IsA>library</IsA>
         <Summary>Graphical Boot Animation and Logger</Summary>
         <Description>plymouth provides an attractive graphical boot animation in place of the text messages that normally get shown. Text messages are instead redirected to a log file for viewing after boot.</Description>
-        <Archive sha1sum="17abf57cde8cfb7c702809f89fa45b417b813f50" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/plymouth-0.8.3_20110421git3f14f27.tar.bz2</Archive>
-        <Archive sha1sum="c5bece8a71c6d59f336410991de0b614eed42e48" type="targz" target="plymouth-0.8.3_20110421/themes">http://pardus-anka.org/pub/source/plymouth-theme-pardus-master.tar.gz</Archive>
+        <Archive sha1sum="c55a16de38cc8bdac246bb98561d3dc72c026c21" type="targz">http://cgit.freedesktop.org/plymouth/snapshot/plymouth-0.8.8.tar.gz</Archive>
+	<Archive sha1sum="d906848eb03907bb5601c3d8313a732fe16d897e" type="tarxz" target="plymouth-0.8.8/themes/">http://anka.pardus-linux.org/2013/source/plymouth-theme-pardus-2013.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0755" target="generate-flist">pardus/generate-flist.py</AdditionalFile>
         </AdditionalFiles>
@@ -28,12 +28,14 @@
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Pardus patches -->
-            <Patch level="1">pardus/fix-fbdev-path.patch</Patch>
+	  <!-- Pardus patches--> 
+            <!--<Patch level="1">pardus/fix-fbdev-path.patch</Patch>-->
             <Patch level="1">pardus/disable-source-code-tracing.patch</Patch>
             <Patch level="1">pardus/adapt-theme-script.patch</Patch>
             <Patch level="1">pardus/add-pardus-theme.patch</Patch>
             <!--<Patch level="1">pardus/implement-suspend-modes.patch</Patch>-->
+                              <!--MaGeia patches-->
+            <Patch level="1">mageia/plymouth-restore-suspend.patch</Patch>
         </Patches>
     </Source>
 
@@ -312,6 +314,13 @@
     -->
 
     <History>
+        <Update release="17">
+            <Date>2013-01-16</Date>
+            <Version>0.8.8</Version>
+            <Comment>Bump to source</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="16">
             <Date>2011-04-21</Date>
             <Version>0.8.3_20110421</Version>
