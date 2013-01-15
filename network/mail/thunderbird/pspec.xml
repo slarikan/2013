@@ -16,8 +16,8 @@
         <PartOf>network.mail</PartOf>
         <Summary>The Stand-Alone Mozilla Mail Component</Summary>
         <Description>Thunderbird is a redesign of the Mozilla Mail Component. It is written using the XUL user interface language and designed to be cross-platform.</Description>
-        <Archive sha1sum="ccc5f2e155364948945abf6fd27bebeb4d797aa8" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/17.0/source/thunderbird-17.0.source.tar.bz2</Archive>
-        <Archive sha1sum="e42800e7e6dfa63c7468df37b438f4cd7795ddaa" type="tarbz2" target="comm-release">https://github.com/downloads/circass/pisi-work/thunderbird-l10n-17.0.tar.bz2</Archive>	
+        <Archive sha1sum="37fc07ea77d76946b3ed4735a33807590ae09c96" type="tarbz2">ftp://ftp.mozilla.org/pub/mozilla.org/thunderbird/releases/17.0.2/source/thunderbird-17.0.2.source.tar.bz2</Archive>
+	<Archive sha1sum="58666183a9cb8dcecb99d5e9d5c4b5edec6d2558" type="tarxz" target="comm-release">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/thunderbird-l10n-17.0.2.tar.xz</Archive>	
         <AdditionalFiles>
             <AdditionalFile target=".mozconfig">pardus/mozconfig</AdditionalFile>
             <AdditionalFile target=".pardus-default-prefs.js">pardus/pardus-default-prefs.js</AdditionalFile>
@@ -144,6 +144,13 @@
     </Package>
 
     <History>
+        <Update release="76">
+            <Date>2012-11-26</Date>
+            <Version>17.0.2</Version>
+            <Comment>Version bump, change langpack system</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="75">
             <Date>2012-11-26</Date>
             <Version>17.0</Version>
