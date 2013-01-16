@@ -16,7 +16,7 @@
         <Archive sha1sum="b1749ba806499f4c2780dbd1cbb363aaf1f41e78" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/pygobject/2.28/pygobject-2.28.6.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cairo-devel</Dependency>
-            <Dependency versionFrom="0.9.5">gobject-introspection-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libffi-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -28,7 +28,7 @@
         <Name>python-pygobject</Name>
         <RuntimeDependencies>
             <Dependency>cairo</Dependency>
-            <Dependency versionFrom="0.9.5">gobject-introspection</Dependency>
+            <Dependency>gobject-introspection</Dependency>
             <Dependency>libffi</Dependency>
         </RuntimeDependencies>
         <Files>

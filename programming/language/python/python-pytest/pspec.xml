@@ -23,7 +23,7 @@
     <Package>
         <Name>python-pytest</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.4.1">python-py</Dependency>
+            <Dependency>python-py</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

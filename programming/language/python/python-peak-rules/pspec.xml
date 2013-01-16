@@ -20,7 +20,7 @@
     <Package>
         <Name>python-peak-rules</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.6">python-bytecodeassembler</Dependency>
+            <Dependency>python-bytecodeassembler</Dependency>
             <Dependency>python-decoratortools</Dependency>
             <Dependency>python-addons</Dependency>
             <Dependency>python-extremes</Dependency>

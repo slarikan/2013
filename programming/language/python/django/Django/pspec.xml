@@ -39,7 +39,7 @@
         <Summary>Documentation files for Django</Summary>
         <Description>This package contains documantation files for Django.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="current">Django</Dependency>
+            <Dependency release="current">Django</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc/Django/html</Path>

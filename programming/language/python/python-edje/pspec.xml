@@ -15,30 +15,30 @@
         <Description>python-edje is the Python binding of Edje layout library.</Description>
         <Archive sha1sum="62427539fa53ac2bc7c9bb5440268b99c0483c1d" type="tarbz2">http://download.enlightenment.org/releases/BINDINGS/python/python-edje-1.7.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.0">embryo-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-e_dbus</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>embryo-devel</Dependency>
+            <Dependency>python-evas-devel</Dependency>
+            <Dependency>python-ecore-devel</Dependency>
+            <Dependency>python-e_dbus</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>python-edje</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.00">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.0">embryo-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-e_dbus</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>embryo-devel</Dependency>
+            <Dependency>python-evas-devel</Dependency>
+            <Dependency>python-ecore-devel</Dependency>
+            <Dependency>python-e_dbus</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

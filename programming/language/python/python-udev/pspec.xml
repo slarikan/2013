@@ -32,7 +32,7 @@
         <Description>These bindings provide udev capability for Python programs where Qt is used.</Description>
         <RuntimeDependencies>
             <Dependency>python-udev</Dependency>
-            <Dependency versionFrom="4.0">python-qt</Dependency>
+            <Dependency>python-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python2*/site-packages/pyudev/pyqt4.py</Path>

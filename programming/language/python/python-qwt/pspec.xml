@@ -19,8 +19,8 @@
             <Dependency>python-qt-devel</Dependency>
             <Dependency>python-numpy</Dependency>
             <Dependency>python-numeric</Dependency>
-            <Dependency versionFrom="5.2">qwt-devel</Dependency>
-            <Dependency versionFrom="4.12.2">sip-devel</Dependency>
+            <Dependency>qwt-devel</Dependency>
+            <Dependency>sip-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,8 +31,8 @@
             <Dependency>python-qt</Dependency>
             <Dependency>python-numpy</Dependency>
             <Dependency>python-numeric</Dependency>
-            <Dependency versionFrom="5.2">qwt</Dependency>
-            <Dependency versionFrom="4.12.2">sip</Dependency>
+            <Dependency>qwt</Dependency>
+            <Dependency>sip</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python2*/site-packages/PyQt4/Qwt5</Path>

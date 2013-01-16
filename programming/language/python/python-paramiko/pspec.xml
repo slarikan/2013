@@ -19,7 +19,7 @@
     <Package>
         <Name>python-paramiko</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.6">python-pycrypto</Dependency>
+            <Dependency>python-pycrypto</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

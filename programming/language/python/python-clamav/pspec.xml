@@ -25,7 +25,7 @@
     <Package>
         <Name>python-clamav</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.96.2">clamav</Dependency>
+            <Dependency>clamav</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

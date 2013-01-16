@@ -20,7 +20,7 @@
             <Dependency>lapack-devel</Dependency>
             <Dependency>blas-devel</Dependency>
             <Dependency>fftw3-devel</Dependency>
-            <Dependency versionFrom="3.5.0">SuiteSparse-devel</Dependency>
+            <Dependency>SuiteSparse-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">handle-docs.patch</Patch>
@@ -36,7 +36,7 @@
             <Dependency>lapack</Dependency>
             <Dependency>blas</Dependency>
             <Dependency>fftw3</Dependency>
-            <Dependency versionFrom="3.5.0">SuiteSparse</Dependency>
+            <Dependency>SuiteSparse</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -17,8 +17,8 @@
         <BuildDependencies>
             <Dependency>python-gtk-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
-            <Dependency versionFrom="0.10.32.4">gstreamer-devel</Dependency>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,8 +27,8 @@
         <RuntimeDependencies>
             <Dependency>python-gtk</Dependency>
             <Dependency>python-pygobject</Dependency>
-            <Dependency versionFrom="0.10.32.4">gstreamer</Dependency>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

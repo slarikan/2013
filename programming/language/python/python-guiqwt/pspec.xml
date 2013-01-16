@@ -18,7 +18,7 @@
             <Dependency>python-qt</Dependency>
             <Dependency>python-qwt</Dependency>
             <Dependency>python-numpy</Dependency>
-            <Dependency versionFrom="1.5.1">python-guidata</Dependency>
+            <Dependency>python-guidata</Dependency>
             <Dependency>python-imaging</Dependency>
             <Dependency>python-sphinx</Dependency>
         </BuildDependencies>
@@ -32,7 +32,7 @@
             <Dependency>python-numpy</Dependency>
             <Dependency>python-scipy</Dependency>
             <Dependency>python-imaging</Dependency>
-            <Dependency versionFrom="1.5.1">python-guidata</Dependency>
+            <Dependency>python-guidata</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
