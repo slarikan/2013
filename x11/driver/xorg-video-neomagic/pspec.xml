@@ -15,14 +15,14 @@
         <Description>xorg-video-neomagic contains the X.Org driver for NeoMagic cards.</Description>
         <Archive sha1sum="a139f8c56b159c398c0b28111ad35628f9726ee9" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-neomagic-1.2.7.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-neomagic</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
