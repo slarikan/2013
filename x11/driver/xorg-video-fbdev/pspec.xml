@@ -15,7 +15,7 @@
         <Description>xorg-video-fbdev contains the X.Org driver for Linux framebuffer device.</Description>
         <Archive sha1sum="1c0c4ab498010baf1e55b9fb5c7bb23c8d2353d1" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-fbdev-0.4.3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--causes problem with version 0.4.3 -->
@@ -26,7 +26,7 @@
     <Package>
         <Name>xorg-video-fbdev</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

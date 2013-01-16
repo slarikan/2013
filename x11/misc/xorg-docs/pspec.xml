@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>docbook-sgml4_3</Dependency>
             <Dependency>docbook-utils</Dependency>
-            <Dependency versionFrom="1.6">xorg-sgml-doctools</Dependency>
+            <Dependency>xorg-sgml-doctools</Dependency>
         </BuildDependencies>
     </Source>
 

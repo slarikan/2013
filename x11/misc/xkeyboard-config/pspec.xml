@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>xorg-app</Dependency>
             <Dependency>libxslt</Dependency>
-            <Dependency versionFrom="1.4.3">libX11</Dependency>
+            <Dependency>libX11</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">xkeyboard-config-1.4-jp-tilde.patch</Patch>

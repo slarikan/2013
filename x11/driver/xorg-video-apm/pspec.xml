@@ -15,14 +15,14 @@
         <Description>xorg-video-apm contains the X.Org driver for Alliance Promotion cards.</Description>
         <Archive sha1sum="a4cdb587f94c0fd28bea92b2469ea1e55d6d6589" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-apm-1.2.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-apm</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

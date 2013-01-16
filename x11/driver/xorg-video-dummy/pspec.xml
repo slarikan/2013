@@ -15,14 +15,14 @@
         <Description>xorg-video-dummy is a dummy video driver for X.Org.</Description>
         <Archive sha1sum="9a73abc1444dd3034e5724b16d7101696219665b" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-dummy-0.3.6.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-dummy</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

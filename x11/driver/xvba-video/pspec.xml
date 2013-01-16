@@ -20,7 +20,7 @@
     <Package>
         <Name>xvba-video</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="9">libva</Dependency>
+            <Dependency>libva</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
@@ -36,13 +36,13 @@
         <Summary>32-bit shared libraries for xvba-video</Summary>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
-            <Dependency releaseFrom="9">libva-32bit</Dependency>
+            <Dependency>libva-32bit</Dependency>
             <Dependency>libXext-32bit</Dependency>
             <Dependency>mesa-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">xvba-video</Dependency>
-            <Dependency releaseFrom="9">libva-32bit</Dependency>
+            <Dependency release="current">libva-32bit</Dependency>
             <Dependency>libXext-32bit</Dependency>
             <Dependency>mesa-32bit</Dependency>
         </RuntimeDependencies>

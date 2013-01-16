@@ -15,7 +15,7 @@
         <Description>xorg-input-mouse contains the X.Org driver for mice.</Description>
         <Archive sha1sum="e00e825c9506b7b9c31bf4b8a3a609df8ef408c1" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-mouse-1.8.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-Don-t-disable-3-button-emulation-if-third-mouse-butt.patch</Patch>
@@ -25,7 +25,7 @@
     <Package>
         <Name>xorg-input-mouse</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

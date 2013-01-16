@@ -97,7 +97,7 @@
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency versionFrom="current">xscreensaver</Dependency>
+            <Dependency release="current">xscreensaver</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/xscreensaver-demo</Path>
