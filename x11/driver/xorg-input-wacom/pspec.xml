@@ -18,17 +18,17 @@
             <Dependency>libXi-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>libudev-devel</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-input-wacom</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.3">libXi</Dependency>
+            <Dependency>libXi</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>libudev</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/lib/udev</Path>

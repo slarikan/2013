@@ -16,10 +16,10 @@
         <Description>The name comes from Yet Another Kuake (thus YaKuake). Its behaviour is similar to the console of the Quake game.</Description>
         <Archive sha1sum="5bb9e9b6799642dee5684267e5baddc59eaa7214" type="tarxz">mirrors://kde/stable/yakuake/2.9.9/src/yakuake-2.9.9.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>automoc4</Dependency>
-            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">plasma-oxygen-panel.patch</Patch>-->
@@ -38,9 +38,9 @@
     <Package>
         <Name>yakuake</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency versionFrom="4.8.3">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>konsole</Dependency>
         </RuntimeDependencies>
         <Files>

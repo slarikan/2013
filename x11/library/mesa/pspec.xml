@@ -22,8 +22,8 @@
             <Dependency>libXxf86vm-devel</Dependency>
             <Dependency>libdrm-devel</Dependency>
             <Dependency>libtalloc-devel</Dependency>
-            <Dependency versionFrom="2.9">llvm</Dependency>
-            <Dependency releaseFrom="27">xorg-proto</Dependency>
+            <Dependency>llvm</Dependency>
+            <Dependency>xorg-proto</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">git_fixes.diff</Patch>
@@ -46,13 +46,6 @@
             <Dependency>libdrm-nouveau</Dependency>
             <Dependency>libtalloc</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="48">xorg-server</Package>
-            <Package versionTo="7.3">xorg-proto</Package>
-        </Conflicts>
-        <Replaces>
-            <Package>mesa-experimental</Package>
-        </Replaces>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
