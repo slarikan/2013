@@ -36,7 +36,7 @@
             <Dependency>libXv-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <!--xorg-server 1.10.1 need at least pixman 0.21.8-->
-            <Dependency versionFrom="0.20.0">pixman-devel</Dependency>
+            <Dependency>pixman-devel</Dependency>
             <Dependency>xorg-app</Dependency>
         </BuildDependencies>
         <Patches>
@@ -98,7 +98,7 @@
             <Dependency>libgcrypt</Dependency>
             <Dependency>libpciaccess</Dependency>
             <Dependency>libXfont</Dependency>
-            <Dependency versionFrom="0.20.0">pixman</Dependency>
+            <Dependency>pixman</Dependency>
             <Dependency>xorg-app</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -133,17 +133,17 @@
         <Summary>Distributed Multihead X Server</Summary>
         <RuntimeDependencies>
             <Dependency>xorg-server-common</Dependency>
-            <Dependency versionFrom="1.1.0">libdmx</Dependency>
+            <Dependency>libdmx</Dependency>
             <Dependency>libgcrypt</Dependency>
             <Dependency>libXaw</Dependency>
-            <Dependency versionFrom="1.1.1">libXext</Dependency>
+            <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXfont</Dependency>
-            <Dependency versionFrom="1.3">libXi</Dependency>
+            <Dependency>libXi</Dependency>
             <Dependency>libXmu</Dependency>
             <Dependency>libXrender</Dependency>
             <Dependency>libXt</Dependency>
-            <Dependency versionFrom="0.20.0">pixman</Dependency>
+            <Dependency>pixman</Dependency>
             <Dependency>xorg-app</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -159,11 +159,11 @@
         <RuntimeDependencies>
             <Dependency>xorg-server-common</Dependency>
             <Dependency>libgcrypt</Dependency>
-            <Dependency versionFrom="1.1.1">libXext</Dependency>
+            <Dependency>libXext</Dependency>
             <Dependency>libXfont</Dependency>
             <Dependency>libXv</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency versionFrom="0.20.0">pixman</Dependency>
+            <Dependency>pixman</Dependency>
             <Dependency>xorg-app</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -182,7 +182,7 @@
             <Dependency>xorg-server-common</Dependency>
             <Dependency>libgcrypt</Dependency>
             <Dependency>libXfont</Dependency>
-            <Dependency versionFrom="0.20.0">pixman</Dependency>
+            <Dependency>pixman</Dependency>
             <Dependency>xorg-app</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -203,7 +203,7 @@
             <Dependency>jpeg</Dependency>
             <Dependency>libgcrypt</Dependency>
             <Dependency>libXfont</Dependency>
-            <Dependency versionFrom="0.20.0">pixman</Dependency>
+            <Dependency>pixman</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/Xvnc</Path>
