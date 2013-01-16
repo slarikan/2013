@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>gimp-lqr-plugin</Name>
@@ -36,7 +37,7 @@
         <Update release="1">
             <Date>2012-08-14</Date>
             <Version>0.7.1</Version>
-            <Comment>First release for Anka</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>

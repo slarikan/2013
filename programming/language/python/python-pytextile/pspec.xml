@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -24,40 +25,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-11-16</Date>
             <Version>2.1.5</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-04-05</Date>
-            <Version>2.1.4</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-02-24</Date>
-            <Version>2.1.3</Version>
-            <Comment>Version bump and package takeover.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-03-24</Date>
-            <Version>2.0.11</Version>
-            <Comment>Added missing dep</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-11-14</Date>
-            <Version>2.0.11</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

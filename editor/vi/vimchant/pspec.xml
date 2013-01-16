@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -26,7 +27,7 @@
         <Name>vimchant</Name>
         <RuntimeDependencies>
             <Dependency>enchant</Dependency>
-            <Dependency versionFrom="7.0">vim</Dependency>
+            <Dependency>vim</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/vim</Path>
@@ -38,31 +39,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-02-02</Date>
             <Version>1.1</Version>
-            <Comment>
-                * Made a workaround for enchants segmentation fault
-                * Add package.py to iniatate help inside Vim
-                * Takeover of package
-                * Ready for 2011
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-29</Date>
-            <Version>1.1</Version>
-            <Comment>Change runtime vim dir to $VIMRUNTIME dir</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-03-22</Date>
-            <Version>1.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

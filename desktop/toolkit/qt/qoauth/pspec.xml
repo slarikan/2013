@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -49,33 +50,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>1.0.1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-08-19</Date>
-            <Version>1.0.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-05-13</Date>
-            <Version>1.0</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-       <Update release="1">
-            <Date>2009-10-02</Date>
-            <Version>1.0</Version>
-            <Comment>First release.</Comment>
-            <Name>David Stegbauer</Name>
-            <Email>daaste@gmail.com</Email>
         </Update>
     </History>
 </PISI>

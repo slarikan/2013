@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -42,43 +43,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2013-01-12</Date>
             <Version>0.2.2</Version>
-            <Comment>Ready for 2013</Comment>
+            <Comment>First release</Comment>
             <Name>Ertan Güven</Name>
             <Email>guven.ertan@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-12-21</Date>
-            <Version>0.2.1</Version>
-            <Comment>Ready for 2011</Comment>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-08-13</Date>
-            <Version>0.2.1</Version>
-            <Comment>
-                - Disable KWin shadows,
-                - Quit if we can't register as the notification handler.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-08-05</Date>
-            <Version>0.2.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-05-18</Date>
-            <Version>0.1.1_20100518</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

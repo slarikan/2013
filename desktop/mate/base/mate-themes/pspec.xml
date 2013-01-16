@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -46,19 +47,12 @@
     </Package>
 
     <History>
-        <!--<Update release="2">
+        <!--<Update release="1">
             <Date>2012-12-16</Date>
             <Version>1.5.0</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>-->
-	<Update release="1">
-            <Date>2012-10-24</Date>
-            <Version>1.4.0</Version>
-            <Comment>İlk Sürüm</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
     </History>
 </PISI>

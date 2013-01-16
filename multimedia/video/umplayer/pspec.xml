@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <PISI>
     <Source>
@@ -57,19 +58,12 @@
     </Package>
 
     <History>
-      <Update release="2">
+      <Update release="1">
             <Date>2012-07-08</Date>
             <Version>0.6.8</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-08-29</Date>
-            <Version>0.0_180</Version>
-            <Comment>First release</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

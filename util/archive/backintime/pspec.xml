@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -41,8 +42,8 @@
         <Summary>Simple backup system for KDE4 Desktop</Summary>
         <Description>backintime-kde4 is a KDE4 GUI frontend for backintime-common.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.1">kdebase-runtime</Dependency>
-            <Dependency versionFrom="4.1">python-kde</Dependency>            
+            <Dependency>kdebase-runtime</Dependency>
+            <Dependency>python-kde</Dependency>            
             <Dependency version="current">backintime-common</Dependency>
         </RuntimeDependencies>
         <Files>

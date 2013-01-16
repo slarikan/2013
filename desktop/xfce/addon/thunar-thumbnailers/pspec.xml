@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -41,51 +42,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-11-15</Date>
             <Version>0.4.1</Version>
-            <Comment>rebuild thunar</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-05-03</Date>
-            <Version>0.4.1</Version>
-            <Comment>rebuild for xfce 4.10.0</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-06-25</Date>
-            <Version>0.4.1</Version>
-            <Comment>
-                * Add description.
-                * Update license.
-                * Enable tex support.
-            </Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-01-08</Date>
-            <Version>0.4.1</Version>
-            <Comment>Add ffmpeg thumbnail support.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-11-15</Date>
-            <Version>0.4.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-24</Date>
-            <Version>0.1.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
         </Update>
     </History>
 </PISI>

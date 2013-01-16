@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -100,42 +101,9 @@
         <Update release="1">
             <Date>2012-09-12</Date>
             <Version>2.7</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="2">
-            <Date>2011-01-27</Date>
-            <Version>2.5</Version>
-            <Comment>
-                * New stable release, changes up to 2.5 are:
-                    * Add de.po to MANIFEST
-                    * Add menu hide option.
-                    * Only set title attribute in HTMl if alt text is set.
-                    * Changed tabs to spaces in the specfile xsl
-                    * Fix broken version splash page icon.
-                    * Add web_formats option.
-                    * Add Lohit Devanagari to Marathi font list.
-                    * Stop publican setting imagedata format.
-                    * Fix DocBook 5 DTD string format change.
-                    * Add dt_requires and menu_category options.
-                    * Remove web PDF from Indic + ar-SA,fa-IR,he-IL.
-                    * Fix publish breaking UTF8 file names.
-                    * Fix non-en lang breaking website strings.
-                    * Fix IE8 javascript and layout issues.
-                    * Remove Red elements from interactive.css.
-                    * Added support for home page site_overrides.css file.
-            </Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-10-25</Date>
-            <Version>2.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
     </History>
 </PISI>
-

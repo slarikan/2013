@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -38,26 +39,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-11-23</Date>
             <Version>4</Version>
-            <Comment>Correct linking order and remove unused direct dependencies.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-23</Date>
-            <Version>0.3.4</Version>
-            <Comment>Add two patches and some sed fixes for Pardus 2009.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-03-14</Date>
-            <Version>0.3.4</Version>
-            <Comment>First release. And thanks Gökçen for his previous efforts on the package.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
         </Update>
     </History>
 </PISI>

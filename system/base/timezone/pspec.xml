@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -56,64 +57,12 @@
     </Package>
 
     <History>
-        <Update release="7" type="critical">
+        <Update release="1" type="critical">
             <Date>2012-09-27</Date>
             <Version>0.0_20120927</Version>
-            <Comment>New versions of tzdata and tzcode</Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="6" type="critical">
-            <Date>2011-03-26</Date>
-            <Version>0.0_20110315</Version>
-            <Comment>Add a workaround in case timezone data read fails</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5" type="critical">
-            <Date>2011-03-15</Date>
-            <Version>0.0_20110315</Version>
-            <Comment>
-                Update tzdata to 2011d
-                Update tzcode to 2011d
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-11</Date>
-            <Version>0.0_20100902</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-09-02</Date>
-            <Version>0.0_20100902</Version>
-            <Comment>
-                Update tzdata to 2010l
-                Update tzcode to 2010l
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-03-09</Date>
-            <Version>0.0_20100309</Version>
-            <Comment>
-                Update tzdata to 2010c
-                Update tzcode to 2010c
-                Switch to using multisource archive in pspec
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-12-14</Date>
-            <Version>0.0_20091214</Version>
-            <Comment>First release, fixes bug (#11462)</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

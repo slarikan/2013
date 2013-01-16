@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -55,117 +56,12 @@
     </Package>
 
     <History>
-        <Update release="16">
+        <Update release="1">
             <Date>2010-10-11</Date>
             <Version>4.1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="15">
-            <Date>2007-05-28</Date>
-            <Version>4.1</Version>
-            <Comment>From now on its' default is on.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="14">
-            <Date>2007-05-23</Date>
-            <Version>4.1</Version>
-            <Comment>Updated Service script.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="13" type="security">
-            <Date>2007-04-19</Date>
-            <Version>4.1</Version>
-            <Comment>Fixed crontab ownerships and permissions</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="12" type="security">
-            <Date>2007-04-16</Date>
-            <Version>4.1</Version>
-            <Comment>Fix CVE-2007-1856</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2007-02-05</Date>
-            <Version>4.1</Version>
-            <Comment>A little cleanup.</Comment>
-            <Name>Ahmet AYGÜN</Name>
-            <Email>ahmet@zion.gen.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2006-11-20</Date>
-            <Version>4.1</Version>
-            <Comment>Service script localized.</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2006-10-09</Date>
-            <Version>4.1</Version>
-            <Comment>Service script updated.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2006-07-11</Date>
-            <Version>4.1</Version>
-            <Comment>Service script updated.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="7" type="security">
-            <Date>2006-05-26</Date>
-            <Version>4.1</Version>
-            <Comment>Fix CVE-2006-2607</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2006-03-29</Date>
-            <Version>4.1</Version>
-            <Comment>Service script and small bugfix</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2006-01-12</Date>
-            <Version>4.1</Version>
-            <Comment>Fixed bug #1849</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="4" type="security">
-            <Date>2005-10-27</Date>
-            <Version>4.1</Version>
-            <Comment>Fix CAN-2005-1038</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2005-10-16</Date>
-            <Version>4.1</Version>
-            <Comment>Added COMAR script to set file mods.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2005-10-13</Date>
-            <Version>4.1</Version>
-            <Comment>Fixed wrong file mod.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-13</Date>
-            <Version>4.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

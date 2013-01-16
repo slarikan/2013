@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -25,47 +26,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2011-04-11</Date>
             <Version>1.7</Version>
-            <Comment>New stable release 1.7. For changes see included Changelog</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-02-09</Date>
-            <Version>1.6</Version>
-            <Comment>New stable release. For changes see included Changelog</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-12</Date>
-            <Version>1.5</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-08-20</Date>
-            <Version>1.5</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-09</Date>
-            <Version>1.3</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-06-13</Date>
-            <Version>1.2</Version>
             <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

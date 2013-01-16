@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PSPEC SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -47,7 +48,7 @@
         <Update release="1">
             <Date>2011-02-28</Date>
             <Version>1.4.1</Version>
-            <Comment>Fix dependencies. Change archive address to upstream's address.</Comment>
+            <Comment>First release</Comment>
             <Name>Mesutcan Kurt</Name>
             <Email>mesutcank@gmail.com</Email>
         </Update>

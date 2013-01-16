@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -34,61 +35,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2011-08-26</Date>
             <Version>0.5.6</Version>
-            <Comment>New stable release</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-08-26</Date>
-            <Version>0.5.5</Version>
-            <Comment>New stable release. New softwares like Emesene depends on this new release</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-12-27</Date>
-            <Version>0.5.2</Version>
-            <Comment>python-papyon replaces papyon.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-21</Date>
-            <Version>0.5.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-07-14</Date>
-            <Version>0.4.9</Version>
-            <Comment>
-                Version bump:
-                  Fixes:
-                    * Deal with Location and Friendly being missing from MSNObjects (fd.o#28854)
-                    * ...and more miscellaneous fixes too specific for here.
-                  Enhancements:
-                    * Added file transfer support (switchboard only).
-            </Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-06-22</Date>
-            <Version>0.4.8</Version>
-            <Comment>Version bump. Add new pycrypto dependency.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-03-10</Date>
-            <Version>0.4.6</Version>
-            <Comment>First release</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

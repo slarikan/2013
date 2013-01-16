@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -41,134 +42,12 @@
    </Package>
 
    <History>
-       <Update release="15">
+       <Update release="1">
            <Date>2010-12-14</Date>
            <Version>1.2.8</Version>
-           <Comment>Add bash_completion support.</Comment>
+            <Comment>First release</Comment>
            <Name>Fethican Coşkuner</Name>
            <Email>fethicanc@gmail.com</Email>
-       </Update>
-       <Update release="14">
-           <Date>2010-05-17</Date>
-           <Version>1.2.8</Version>
-           <Comment>Fix abandoned files in package build.</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="13">
-           <Date>2009-04-29</Date>
-           <Version>1.2.8</Version>
-           <Comment>Update doc path and remove strict deps for 2009.</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="12">
-           <Date>2009-03-16</Date>
-           <Version>1.2.8</Version>
-           <Comment>Version bump :
-            * Improve handling of incorrect permissions on backup repository during restore operation.
-            * Don't crash on zlib errors.
-            * Make sticky bit warnings quieter while determining file system abilities.
-            * Fix situation where destination file cannot be opened because of an access error.
-           </Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="11">
-           <Date>2009-03-04</Date>
-           <Version>1.2.7</Version>
-           <Comment>Version bump : Don't crash when filesystem can't set ACL.</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="10">
-           <Date>2009-01-28</Date>
-           <Version>1.2.6</Version>
-           <Comment>Version bump :
-             * Fix --override-chars-to-quote option
-             * Fix --test-server option when used with remote Windows clients.
-             * Print more helpful error messages when the remote Windows client command cannot be started.
-           </Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="9">
-           <Date>2009-01-07</Date>
-           <Version>1.2.5</Version>
-           <Comment>Version bump : Fix error tracebacks.</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="8">
-           <Date>2009-01-01</Date>
-           <Version>1.2.4</Version>
-           <Comment>Version bump : Fix remote restores.</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="7">
-           <Date>2008-12-29</Date>
-           <Version>1.2.3</Version>
-           <Comment>Version bump :
-            * The epoch is now a valid date.
-            * Report that connection has dropped if filesystem operation returns ENOTCONN.
-            * Print a more helpful error message if we get an error while reading an old current_mirror marker.
-            * Support comments in rdiff-backup's ACL files and quote the quoting character properly if user changed it.
-            * Print a more helpful error message if we cannot write to the backup destination.
-            * Add ETIMEDOUT to the list of recoverable errors; when irrecoverable, a ConnectionError is raised.
-            * Test for symlink permissions now produces a functioning symlink.
-            * Throttle verbosity of listattr() warning messages from 3 to 4.
-            * Escape trailing spaces and periods on systems which require it, such as FAT32.
-            * Print nicer error messages in rdiff-backup-statistics (without tracebacks).
-            * Properly handle EINVAL "Invalid argument" errors when setting extended attributes.
-            * Add "Stale NFS file handle" (ESTALE) to the list of recoverable errors.
-            * Handle ELOOP ("Too many levels of symbolic links") error when reading extended attributes from symlinks.
-            * Inform the user of which file has failed if an exception occurs during a rename operation.
-           </Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="6">
-           <Date>2008-10-20</Date>
-           <Version>1.2.2</Version>
-           <Comment>Automatically resume after a failed initial backup. Improve compatibility between Unix and remote native Windows client. Print more informative error messages. Support extended attributes on symbolic links. --exclude-if-present option now supports directories, symlinks, devices. Small bugfixes.</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="5">
-           <Date>2008-08-25</Date>
-           <Version>1.2.1</Version>
-           <Comment>Version bump</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="4">
-           <Date>2008-07-27</Date>
-           <Version>1.2.0</Version>
-           <Comment>Version bump</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="3">
-           <Date>2008-07-19</Date>
-           <Version>1.1.17</Version>
-           <Comment>Version bump</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="2">
-           <Date>2008-03-16</Date>
-           <Version>1.1.15</Version>
-           <Comment>Version bump, add missing build dependency</Comment>
-           <Name>Doruk Fişek</Name>
-           <Email>dfisek@fisek.com.tr</Email>
-       </Update>
-       <Update release="1">
-           <Date>2005-05-28</Date>
-           <Version>1.1.5</Version>
-           <Comment>First release</Comment>
-           <Name>Mert Uzbaşlı</Name>
-           <Email>mert@bunalmis.com</Email>
        </Update>
    </History>
 </PISI>

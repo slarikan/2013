@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -38,15 +39,8 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2010-12-22</Date>
-            <Version>2.3h</Version>
-            <Comment>Port to 2011 toolchain</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2008-03-21</Date>
+            <Date>2010-12-22</Date>
             <Version>2.3h</Version>
             <Comment>First release</Comment>
             <Name>Onur Küçük</Name>

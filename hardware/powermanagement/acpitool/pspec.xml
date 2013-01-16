@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -25,47 +26,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-11-25</Date>
             <Version>0.5.1</Version>
-            <Comment>
-                * Move to Pardus 2011
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Aşkın Yollu</Name>
             <Email>askin@askin.ws</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-08-29</Date>
-            <Version>0.5.1</Version>
-            <Comment>
-                * Takeover
-                * Version bump
-                * Fix License tag
-            </Comment>
-            <Name>Aşkın Yollu</Name>
-            <Email>askin@askin.ws</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-04-08</Date>
-            <Version>0.4.7</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Uğur Çetin</Name>
-            <Email>jnmbk@users.sourceforge.net</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-08-12</Date>
-            <Version>0.4.6</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Uğur Çetin</Name>
-            <Email>jnmbk@users.sourceforge.net</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-06-23</Date>
-            <Version>0.4.5</Version>
-            <Comment>First release.</Comment>
-            <Name>Uğur Çetin</Name>
-            <Email>jnmbk@users.sourceforge.net</Email>
         </Update>
     </History>
 </PISI>
-

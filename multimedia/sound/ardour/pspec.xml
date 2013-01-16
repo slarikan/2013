@@ -1,3 +1,4 @@
+
 <?xml version="1.0"?>
 <!DOCTYPE PSPEC SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -15,7 +16,7 @@
         <Archive sha1sum="e04f0d9aacd929565386f8027807d881bdf8fca6" type="tarbz2">http://cekirdek.pardus.org.tr/~gokcen/files/ardour-2.8.11.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>jack-audio-connection-kit-devel</Dependency>
-            <Dependency versionFrom="1.3.0">scons</Dependency>
+            <Dependency>scons</Dependency>
             <Dependency>libgnomecanvasmm-devel</Dependency>
             <Dependency>libgnomecanvas-devel</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
@@ -103,61 +104,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2010-12-30</Date>
             <Version>2.8.11</Version>
-            <Comment>Version bump to 2.8.11</Comment>
+            <Comment>First release</Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-12-30</Date>
-            <Version>2.8.9</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-06-03</Date>
-            <Version>2.8.9</Version>
-            <Comment>Version bump to 2.8.9</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-09-24</Date>
-            <Version>2.8.2</Version>
-            <Comment>Add a new patch to use our LDFLAGS.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-07-28</Date>
-            <Version>2.8.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-06-23</Date>
-            <Version>2.4.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-02-29</Date>
-            <Version>2.3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-29</Date>
-            <Version>2.1</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

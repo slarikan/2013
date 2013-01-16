@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -90,78 +91,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2011-10-17</Date>
             <Version>1.9.6</Version>
-            <Comment>Version bump with new features and bug-fixes.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2011-05-12</Date>
-            <Version>1.9.5</Version>
-            <Comment>Version bump and split devel package, make the package ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-02-10</Date>
-            <Version>1.8.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-10-28</Date>
-            <Version>1.7.9</Version>
-            <Comment>Stable bump
-            * New dep latex-unicode added for unicode support
-            * Turkish tranlsation added
-            * Depend on specific gnuplot release.</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-08-06</Date>
-            <Version>1.7.6</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-07-19</Date>
-            <Version>1.7.5</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-01-21</Date>
-            <Version>1.7.1</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-11-28</Date>
-            <Version>1.7.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-09-22</Date>
-            <Version>1.6.5_20070922</Version>
-            <Comment>New snapshot</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-09-21</Date>
-            <Version>1.6.5</Version>
             <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

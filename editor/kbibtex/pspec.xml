@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>kbibtex</Name>
@@ -46,19 +47,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2013-01-10</Date>
 	    <Version>0.4.1</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-08-11</Date>
-            <Version>0.4.1</Version>
-            <Comment>First Release</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

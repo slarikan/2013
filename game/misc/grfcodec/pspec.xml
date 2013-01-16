@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>grfcodec</Name>
@@ -28,7 +29,7 @@
         <Update release="1">
             <Date>2012-09-01</Date>
             <Version>6.0.0</Version>
-            <Comment>First release for anka.</Comment>
+            <Comment>First release</Comment>
         </Update>
     </History>
 </PISI>

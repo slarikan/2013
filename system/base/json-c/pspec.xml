@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -47,20 +48,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-04-02</Date>
             <Version>0.9</Version>
-            <Comment>Add lib32 package for json-c.</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="1">
-            <Date>2011-01-16</Date>
-            <Version>0.9</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
     </History>
 </PISI>
-

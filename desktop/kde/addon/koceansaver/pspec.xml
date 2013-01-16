@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>KOceanSaver</Name>
@@ -38,17 +39,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2013-01-11</Date>
             <Version>0.71</Version>
-            <Comment>version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-01-11</Date>
-            <Version>0.6</Version>
-            <Comment>first relaese</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>

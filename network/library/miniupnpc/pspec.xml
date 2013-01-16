@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -50,7 +51,7 @@
         <Update release="1">
             <Date>2012-12-24</Date>
             <Version>1.7</Version>
-            <Comment>first release</Comment>
+            <Comment>First release</Comment>
             <Name>canatan</Name>
             <Email>q66690@gmail.com</Email>
         </Update>

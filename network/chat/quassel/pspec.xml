@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -113,117 +114,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2012-10-05</Date>
             <Version>0.8.0</Version>
-            <Comment>systemd service file</Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="7" type="security">
-            <Date>2012-09-01</Date>
-            <Version>0.8.0</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="13" type="security">
-            <Date>2011-09-11</Date>
-            <Version>0.7.3</Version>
-            <Comment>Fix CTCP handling that would cause the core to crash when processing a specially crafted CTCP message (CVE-2011-3354) (pb#19106).</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2011-06-06</Date>
-            <Version>0.7.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-10-13</Date>
-            <Version>0.7.1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökcen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="10" type="security">
-            <Date>2010-09-27</Date>
-            <Version>0.7.1</Version>
-            <Comment>Version bump, fix multiple CTCP DoS issue, CVE-2010-3443 (#15073).</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-05-21</Date>
-            <Version>0.6.1</Version>
-            <Comment>Version bump. Turkish translation update.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-05-13</Date>
-            <Version>0.5.2</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-02-27</Date>
-            <Version>0.5.2</Version>
-            <Comment>New stable release, fix mpris alias.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-05-29</Date>
-            <Version>0.4.2_20090529</Version>
-            <Comment>Switch to master branch aka scripts are back, add missing dependencies, a simple bug search script and new languages (hungarian and italian)</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-03-28</Date>
-            <Version>0.4.1</Version>
-            <Comment>Fix RealName encoding problem thanks to Gökçen.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-03-20</Date>
-            <Version>0.4.1</Version>
-            <Comment>Postgres backend, Sysinfo and NowPlaying support, updated Turkish translation</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-02-17</Date>
-            <Version>0.4.0_20090311</Version>
-            <Comment>
-                * New snapshot supports knotify, phonon, webkit, coloured nicknames
-                * Core-client build is back, with mono build and package splitted into 4 pieces as core, client, core+client and data packages
-                * New icons in query/nick/channel lists and an animated systray icon
-                * Paste protection warns if you try to paste many lines
-                * Improved mouse handling, a wizard for setting up identity and networks on first run
-                * Make dependencies strict, add kdebase4-runtime dependency, add manageusers script
-            </Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-12-22</Date>
-            <Version>0.3.1</Version>
-            <Comment>Add qt4 sqlite dependency to fix crash as it can't find a storage backend.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-12-01</Date>
-            <Version>0.3.1</Version>
-            <Comment>First release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

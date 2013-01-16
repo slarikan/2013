@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -52,47 +53,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2010-01-03</Date>
             <Version>2.25.3</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Burak Çalışkan</Name>
             <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-04-09</Date>
-            <Version>2.19.1</Version>
-            <Comment>Add missing dependency, libgksu</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-09-03</Date>
-            <Version>2.19.1</Version>
-            <Comment>Patch for latest Xulrunner</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-06-08</Date>
-            <Version>2.19.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-03-16</Date>
-            <Version>2.14.3</Version>
-            <Comment>Remove compiled python files.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-07-09</Date>
-            <Version>2.14.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
         </Update>
     </History>
 </PISI>

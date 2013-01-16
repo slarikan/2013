@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -24,34 +25,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-04-05</Date>
             <Version>1.9.4</Version>
-            <Comment>Version bump:
-                * Added a 'raise_on_no_answer' parameter to resolver query methods.
-                * A few bug fixed.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Çağlar Kilimci</Name>
             <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-05</Date>
-            <Version>1.9.2</Version>
-            <Comment>Rename package, version bump:
-                * Now uses poll() instrad of select() when available.
-                * Added key_id() to the DNSSEC module, which computes the DNSSEC key id of a DNSKEY rdata.
-                * dnspython now raises an exception if HMAC-SHA284 or HMAC-SHA512 are used with a Python older than 2.5.2.  (Older Pythons do not compute the correct value.)
-                * Symbolic constants are now available for TSIG algorithm names.
-            </Comment>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-06-07</Date>
-            <Version>1.8.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

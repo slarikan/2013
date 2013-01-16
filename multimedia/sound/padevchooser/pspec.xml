@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -53,27 +54,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-12-20</Date>
             <Version>0.9.4_20070925</Version>
-            <Comment>Rebuild with the new gnome-desktop</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-26</Date>
-            <Version>0.9.4_20070925</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-10-26</Date>
-            <Version>0.9.4_20070925</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>
-

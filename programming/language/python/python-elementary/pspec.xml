@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -15,22 +16,22 @@
         <!--<Archive sha1sum="b50813a3cc910b704f2ff712dd96ace84e353c9f" type="tarbz2">http://cekirdek.pardus.org.tr/~ibrahim/dist/efl/python-elementary-0.5.0_49588.tar.bz2</Archive>-->
         <Archive sha1sum="b11e249fb7496aa5a680de1bfe9bc311850de888" type="tarbz2">http://download.enlightenment.org/releases/BINDINGS/python/python-elementary-1.7.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">elementary-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>elementary-devel</Dependency>
+            <Dependency>python-evas-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>python-elementary</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.0">evas</Dependency>
-            <Dependency versionFrom="1.7.0">ecore</Dependency>
-            <Dependency versionFrom="1.7.0">elementary</Dependency>
-            <Dependency versionFrom="1.7.0">python-evas</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>elementary</Dependency>
+            <Dependency>python-evas</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -41,47 +42,12 @@
     </Package>
 
     <History>
-         <Update release="6">
+         <Update release="1">
             <Date>2012-09-26</Date>
             <Version>1.7.0</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültein</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-12-09</Date>
-            <Version>0.7.3_54504</Version>
-            <Comment>Recompile for ABI breakage in elementary package.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-11-13</Date>
-            <Version>0.7.3_54504</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-13</Date>
-            <Version>0.7.3</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-04</Date>
-            <Version>0.7.3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-06-09</Date>
-            <Version>0.5.0_49588</Version>
-            <Comment>First release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

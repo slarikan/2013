@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>xfce4-sensors-plugin</Name>
@@ -35,7 +36,7 @@
         <Update release="1">
             <Date>2012-09-08</Date>
             <Version>1.2.5</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Utku Berberoglu</Name>
             <Email>utku.berber@gmail.com</Email>
         </Update>

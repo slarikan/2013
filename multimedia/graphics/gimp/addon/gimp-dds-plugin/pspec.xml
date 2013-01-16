@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>gimp-dds-plugin</Name>
@@ -37,7 +38,7 @@
         <Update release="1">
             <Date>2012-07-07</Date>
             <Version>2.2.1</Version>
-            <Comment>First release for Anka</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>

@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>perl-CGI-Application</Name>
@@ -36,17 +37,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>4.50</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-12</Date>
-            <Version>4.50</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

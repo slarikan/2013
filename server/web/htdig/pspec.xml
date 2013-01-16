@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -63,61 +64,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2010-11-08</Date>
             <Version>3.2.0_beta6</Version>
-            <Comment>Fix htsearch command symlink.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-10-27</Date>
-            <Version>3.2.0_beta6</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-04-15</Date>
-            <Version>3.2.0_beta6</Version>
-            <Comment>Beta6, as needed patch.</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="5" type="security">
-            <Date>2007-11-28</Date>
-            <Version>3.2.0_beta6</Version>
-            <Comment>Fix CVE-2007-6110</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-08-03</Date>
-            <Version>3.2.0_beta6</Version>
-            <Comment>Don't let htstats crash when the word count is zero</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="3" type="security">
-            <Date>2007-05-21</Date>
-            <Version>3.2.0_beta6</Version>
-            <Comment>Version bump to fix multiple vulnerabilities</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-07-26</Date>
-            <Version>3.1.6</Version>
-            <Comment>Fix #2794</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-12-01</Date>
-            <Version>3.1.6</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

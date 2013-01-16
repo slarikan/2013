@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -50,40 +51,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-06-08</Date>
             <Version>1.0</Version>
-            <Comment>Ready for 2009, add Turkish translation</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-05-13</Date>
-            <Version>1.0</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-03-14</Date>
-            <Version>1.0</Version>
-            <Comment>Version bump, make translations work. fix document path and showing in help menu.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-01-13</Date>
-            <Version>0.8.9</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Türker Sezer</Name>
-            <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-07-16</Date>
-            <Version>0.7.0</Version>
-            <Comment>First release</Comment>
-            <Name>Kenan Pelit</Name>
-            <Email>kpelit@gmail.com</Email>
         </Update>
     </History>
 </PISI>

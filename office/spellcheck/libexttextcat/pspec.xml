@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>libexttextcat</Name>
@@ -43,7 +44,7 @@
         <Update release="1">
             <Date>2012-12-28</Date>
             <Version>3.4.0</Version>
-            <Comment>İlk Sürüm</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>

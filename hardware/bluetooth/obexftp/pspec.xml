@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -57,40 +58,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-12-28</Date>
             <Version>0.23</Version>
-            <Comment>Ready for 2011.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-02-19</Date>
-            <Version>0.23</Version>
-            <Comment>Use get.ARCH in actions.py</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-12-07</Date>
-            <Version>0.23</Version>
-            <Comment>Depend on new perl.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-03-24</Date>
-            <Version>0.23</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-06-13</Date>
-            <Version>0.20</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

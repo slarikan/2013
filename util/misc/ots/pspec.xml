@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -54,26 +55,12 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2012-09-25</Date>
-            <Version>0.5.0</Version>
-            <Comment>Split package</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-06-01</Date>
-            <Version>0.5.0</Version>
-            <Comment>Rebuild for Pardus ANKA</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2011-10-25</Date>
+            <Date>2012-09-25</Date>
             <Version>0.5.0</Version>
             <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
+            <Email>erdem@pardus-linux.org</Email>
         </Update>
     </History>
 </PISI>

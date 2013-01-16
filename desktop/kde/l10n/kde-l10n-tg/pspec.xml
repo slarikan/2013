@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -36,33 +37,12 @@
     </Package>
 
     <History>
-        <Update release="43">
+        <Update release="1">
             <Date>2012-06-05</Date>
             <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="42">
-            <Date>2012-05-25</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="41">
-            <Date>2012-04-09</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="40">
-            <Date>2012-03-08</Date>
-            <Version>4.8.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>>
     </History>
 </PISI>

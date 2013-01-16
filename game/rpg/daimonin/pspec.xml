@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -44,26 +45,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2009-10-20</Date>
             <Version>0.9.7.1</Version>
-            <Comment>Stable bump</Comment>
+            <Comment>First release</Comment>
             <Name>Onur Küçük</Name>
             <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-11-11</Date>
-            <Version>0.9.7</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-06-24</Date>
-            <Version>0.9.7</Version>
-            <Comment>First release</Comment>
-            <Name>Kenan Pelit</Name>
-            <Email>kpelit@gmail.com</Email>
         </Update>
     </History>
 </PISI>

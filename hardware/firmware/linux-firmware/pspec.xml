@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -49,81 +50,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-12-12</Date>
             <Version>20121212</Version>
-            <Comment>bump
-               * brcm: new firmware version for brcmsmac
-               * linux-firmware: add Marvell USB8797-B0 firmware image
-               * s5p-mfc: Adding firmware files for Samsung MFC device driver
-               * ar5523: Add firmware for new driver
-               * Update patch and syscfg files for QCA9564
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2012-12-11</Date>
-            <Version>20121016</Version>
-            <Comment>add tp-link firmvare carl9170-1.fw</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2012-10-17</Date>
-            <Version>20121016</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2012-09-20</Date>
-            <Version>20120720</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-02-28</Date>
-            <Version>0.0_20110128</Version>
-            <Comment>Version bump and fix RTL8192SE firmware path (#15534).</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-01-31</Date>
-            <Version>0.0_20110128</Version>
-            <Comment>Fix ar9170.fw which was actually bzip2 compressed license file. I don't know how this happened at all.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-01-30</Date>
-            <Version>0.0_20110128</Version>
-            <Comment>Add new firmwares</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-01-12</Date>
-            <Version>0.0_20110110</Version>
-            <Comment>Add radeon NI firmwares</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-29</Date>
-            <Version>0.0_20101221</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-01</Date>
-            <Version>0.0_20101113</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

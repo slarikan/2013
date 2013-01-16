@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -50,95 +51,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2010-11-01</Date>
             <Version>7.6</Version>
-            <Comment>
-                New releases:
-                - encodings-1.0.4
-                - font-alias-1.0.3
-                - font-cursor-misc-1.0.2
-                - font-misc-misc-1.1.1
-                - font-adobe-100dpi-1.0.2
-                - font-adobe-75dpi-1.0.2
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-10-12</Date>
-            <Version>7.5</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-04-24</Date>
-            <Version>7.5</Version>
-            <Comment>
-                New releases:
-                - encodings-1.0.3
-                - font-alias-1.0.2
-                - font-cursor-misc-1.0.1
-                - font-misc-misc-1.1.0
-                - font-adobe-100dpi-1.0.1
-                - font-adobe-75dpi-1.0.1
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-12-06</Date>
-            <Version>7.2</Version>
-            <Comment>Create encodings.dir scanning only installed files</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-12-06</Date>
-            <Version>7.2</Version>
-            <Comment>
-                - Create symbolic links for the catalogue font install mechanism
-                - Remove fonts.dir and fonts.scale files; depend on xorg-app to
-                  generate them with package handler
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-05-31</Date>
-            <Version>7.2</Version>
-            <Comment>Split package into 2 different one (xorg-font/xorg-font-extra)</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-05-21</Date>
-            <Version>7.2</Version>
-            <Comment>Fix #5711</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-11-06</Date>
-            <Version>7.2_rc1</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-10-09</Date>
-            <Version>7.1</Version>
-            <Comment>Disable -bDirect</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-09-19</Date>
-            <Version>7.1</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

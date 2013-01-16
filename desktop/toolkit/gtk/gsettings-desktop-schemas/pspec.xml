@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -39,7 +40,7 @@
         <Update release="1">
             <Date>2011-03-21</Date>
             <Version>0.1.7</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Aydan Taşdemir</Name>
             <Email>aydantasdemir@gmail.com</Email>
         </Update>

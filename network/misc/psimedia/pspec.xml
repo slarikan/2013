@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -40,26 +41,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-11-26</Date>
             <Version>1.0.3</Version>
-            <Comment>Reorganize dependencies for Pardus 2011 and force -j1 in make</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-05-13</Date>
-            <Version>1.0.3</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-09-03</Date>
-            <Version>1.0.3</Version>
-            <Comment>First release</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
         </Update>
     </History>
 </PISI>

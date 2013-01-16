@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -93,49 +94,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-10-22</Date>
             <Version>1.0.4</Version>
-            <Comment>Güncellendi</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-05-10</Date>
-            <Version>1.0.2</Version>
-            <Comment>Fix ntfs-3g mounting issue (pb#18034)</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-05-05</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                - CVE-2010-4661: Arbitrary kernel module load (pb#18025).
-                - Mark Realtek PCI flash card reader as such.
-            </Comment>
-            <Type package="udisks">security</Type>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-03-27</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                - Add Turkish translations for Policy file,
-                - Hide recovery partitions on on newer Lenovo laptops,
-                - Ignore broken directory permissions on UDF media (pb#7048),
-                - Add missing rule for identifying SD card readers.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-02</Date>
-            <Version>1.0.2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

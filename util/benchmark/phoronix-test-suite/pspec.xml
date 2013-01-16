@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -39,51 +40,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2011-03-16</Date>
             <Version>3.0.1</Version>
-            <Comment>New stable release. There is no gui anymore.</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-12-30</Date>
-            <Version>2.8.2</Version>
-            <Comment>Change old Qt path to the new one</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-12-30</Date>
-            <Version>2.8.2</Version>
-            <Comment>
-                * Version bump
-                * New Analytics Capabilities
-                * New Installation and External Dependency Management Support
-            </Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-06-04</Date>
-            <Version>2.6.1</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-05-25</Date>
-            <Version>2.6.0</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-02-04</Date>
-            <Version>2.4.0</Version>
             <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -14,7 +15,7 @@
         <Description>kradio is a comfortable KDE4 radio application with lirc support, mp3/ogg recording, etc.</Description>
         <Archive sha1sum="26c3f8e1e9cd0e656ed6915d805807afe6d942fb" type="targz">http://sourceforge.net/projects/kradio/files/kradio/4.0.6/kradio4-4.0.6.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libsndfile-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
@@ -35,7 +36,7 @@
     <Package>
         <Name>kradio</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libsndfile</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>alsa-lib</Dependency>
@@ -46,9 +47,6 @@
             <Dependency>lame</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kradio-kde4</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -62,57 +60,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-08-29</Date>
             <Version>4.0.6</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-09-06</Date>
-            <Version>4.0.2</Version>
-            <Comment>
-                - Version bump (pb#19054),
-                - Fix doc directory (pb#19055).
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-11-24</Date>
-            <Version>4.0.1</Version>
-            <Comment>Version bump to 4.0.1</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-05-13</Date>
-            <Version>4.0.0</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-11-16</Date>
-            <Version>4.0.0</Version>
-            <Comment>Replace kradio-kde4.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-03</Date>
-            <Version>4.0.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-03-16</Date>
-            <Version>4.0.0_beta2</Version>
-            <Comment>Initial KDE4 release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -89,19 +90,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-02-08</Date>
             <Version>1.2.3</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>H. İbrahim Güngör</Name>
             <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-02-24</Date>
-            <Version>1.1.7</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -44,20 +45,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-03-18</Date>
             <Version>0.31a</Version>
-            <Comment>Fix rev-dep problem that causes to remove this package from repo</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
         </Update>
-        <Update release="1">
-            <Date>2010-05-30</Date>
-            <Version>0.31a</Version>
-            <Comment>First release.</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

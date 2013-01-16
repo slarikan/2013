@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -28,10 +29,9 @@
         <Update release="1">
             <Date>2009-06-30</Date>
             <Version>1.0.1</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>İşbaran Akçayır</Name>
             <Email>isbaran@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

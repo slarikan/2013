@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -57,19 +58,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2007-02-07</Date>
             <Version>0.6.2</Version>
-            <Comment>Use build system CFLAGS/LDFLAGS</Comment>
+            <Comment>First release</Comment>
             <Name>Onur Küçük</Name>
             <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-02</Date>
-            <Version>0.6.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Uğur Çetin</Name>
-            <Email>jnmbk@users.sourceforge.net</Email>
         </Update>
     </History>
 </PISI>

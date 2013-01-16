@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -51,26 +52,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-04-17</Date>
             <Version>3.8.3</Version>
-            <Comment>Fix stack smashing when reading VBR MP3 files lp#444466, pb#17115. Thanks Gökçen for finding out that fix.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-28</Date>
-            <Version>3.8.3</Version>
-            <Comment>Split devel package and takeover id3lib. Thanks to Mehmet Nur Olcay for his previous efforts ;)</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-04-26</Date>
-            <Version>3.8.3</Version>
-            <Comment>First Release.</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
         </Update>
     </History>
 </PISI>

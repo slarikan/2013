@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -85,109 +86,12 @@
     </Package>
 
     <History>
-        <Update release="12">
+        <Update release="1">
             <Date>2012-10-30</Date>
             <Version>1.1.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="12">
-            <Date>2011-05-20</Date>
-            <Version>1.0.3</Version>
-            <Comment>Add forgotten desktop file patch</Comment>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2011-05-20</Date>
-            <Version>1.0.3</Version>
-            <Comment>
-                * Takeover package
-                * Version bump to bugfix release.
-                * Remove already applied patches which are fixed by upstream
-                * Remove dosed for Python version handling, already included by upstream
-                * Add patches for fixing mkspecs dir and disabling strip in linkage stage
-                * Fix translations file and -libs subpackage summary
-            </Comment>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-10-13</Date>
-            <Version>1.0.1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökcen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-09-22</Date>
-            <Version>1.0.1</Version>
-            <Comment>Use PyCapsule instead of deprecated PyCObject API, fixes #14391</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-09-21</Date>
-            <Version>1.0.1</Version>
-            <Comment>Add missing libraries avogadro libs and recompile.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-08-31</Date>
-            <Version>1.0.1</Version>
-            <Comment>Split libraries into seperate package and add a patch to compile with new SIP.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-08-31</Date>
-            <Version>1.0.1</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-07-13</Date>
-            <Version>1.0.1</Version>
-            <Comment>Version bump with bug fixes and supplementary files.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-05-13</Date>
-            <Version>1.0.0</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-10-27</Date>
-            <Version>1.0.0</Version>
-            <Comment>* Major Version bump to 1.0.0 release,
-                * Fix typo in symlinking.
-                * Add missing dependencies: glew, boost, numpy and sip.
-                * Correct Paths in Files tag
-                * Various cosmetic fixes for translations.
-                * Package takeover and make the package ready for 2009
-                * Merge the package to Pardus 2009 main repository from contrib.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-10-24</Date>
-            <Version>0.2.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ahmet Erdoğan</Name>
-            <Email>tuxposta@gmail.com</Email>
-        </Update>
-        <Update release="1">
-        <Date>2007-06-12</Date>
-        <Version>0.1.0</Version>
-        <Comment>First release.</Comment>
-        <Name>Ahmet Erdoğan</Name>
-        <Email>tuxposta@gmail.com</Email>
-        </Update>
     </History>
 </PISI>

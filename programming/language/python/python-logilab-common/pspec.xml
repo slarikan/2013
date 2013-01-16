@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -25,47 +26,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-11-13</Date>
             <Version>0.58.2</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-12-17</Date>
-            <Version>0.53</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-13</Date>
-            <Version>0.52</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-13</Date>
-            <Version>0.52</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-07-04</Date>
-            <Version>0.50.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-04-09</Date>
-            <Version>0.49.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

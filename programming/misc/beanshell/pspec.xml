@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>beanshell</Name>
@@ -26,7 +27,7 @@
         <Update release="1">
             <Date>2012-07-22</Date>
             <Version>2.04</Version>
-            <Comment>First Package</Comment>
+            <Comment>First release</Comment>
             <Name>Ramazan Utku</Name>
             <Email>ramazanutku@gmail.com</Email>
         </Update>

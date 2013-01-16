@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>rep-gtk</Name>
@@ -45,7 +46,7 @@
         <Update release="1">
             <Date>2012-10-08</Date>
             <Version>0.90.2</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

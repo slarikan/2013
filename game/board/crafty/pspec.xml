@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -39,23 +40,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-12-17</Date>
             <Version>23.4</Version>
-            <Comment>
-                * Version bump.
-                * Takeover package.
-                * Books were added.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Mehmet Özdemir</Name>
             <Email>mehmet@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-10-30</Date>
-            <Version>23.3</Version>
-            <Comment>First release</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
         </Update>
     </History>
 </PISI>

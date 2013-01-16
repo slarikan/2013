@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -46,52 +47,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-08-27</Date>
             <Version>2.1</Version>
-            <Comment>Version Bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-08-23</Date>
-            <Version>2.0.1</Version>
-            <Comment>Version bump to 2.0.1</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-01-31</Date>
-            <Version>2.0</Version>
-            <Comment>Version bump to 2.0:
-                * New Info View that provides helpful information about your media when you need it and integrated metadata editing and drilling.
-                * Info fetchers to help lookup additional media information for Artists, Movies, TV Shows, Actors, etc.
-                * Support for Audio and Video feeds
-                * Organize and browse media using (nepomuk) tags.
-                * Improved DVD support including support for subtitles, chapters, audio channels and angles.
-                * Embedded and external subtitle support
-                * Improved audio and video settings
-                * Bookmarks support
-                * Revamped Files and Folders support
-                * MPRIS and system tray support
-                * Shortcuts support
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-11-10</Date>
-            <Version>1.0.1</Version>
-            <Comment>Fix volume slider, backport patch from 2.0 series.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-11-07</Date>
-            <Version>1.0.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -22,7 +23,7 @@
     <Package>
         <Name>zpspell</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.7">zemberek-server</Dependency>
+            <Dependency>zemberek-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -31,82 +32,12 @@
     </Package>
 
     <History>
-        <Update release="11">
+        <Update release="1">
             <Date>2011-02-14</Date>
             <Version>0.4.3</Version>
-            <Comment>Explicitly link to gobject, #11566</Comment>
+            <Comment>First release</Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-10-13</Date>
-            <Version>0.4.3</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-05-09</Date>
-            <Version>0.4.3</Version>
-            <Comment>new release with gcc-4.4 patch</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-12-03</Date>
-            <Version>0.4.2</Version>
-            <Comment>new release with gcc-4.3 patch, also update the homepage</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-03-18</Date>
-            <Version>0.4.1</Version>
-            <Comment>gcc-4.3 patch added</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2007-04-12</Date>
-            <Version>0.4.1</Version>
-            <Comment>Update archive for a CMake fix.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-04-12</Date>
-            <Version>0.4.1</Version>
-            <Comment>New bugfix release.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-03-06</Date>
-            <Version>0.4</Version>
-            <Comment>New version with D-BUS support.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-05-20</Date>
-            <Version>0.3</Version>
-            <Comment>New (bugfix) version.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2005-11-28</Date>
-            <Version>0.2</Version>
-            <Comment>New version.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-11-26</Date>
-            <Version>0.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

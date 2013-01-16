@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -50,121 +51,12 @@
     </Package>
 
     <History>
-        <Update release="12">
+        <Update release="1">
             <Date>2013-01-02</Date>
             <Version>1.0.60</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="11">
-            <Date>2011-01-16</Date>
-            <Version>1.0.3</Version>
-            <Comment>Make device list more user friendly. Fixes #15027.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-10-13</Date>
-            <Version>1.0.3</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-09-02</Date>
-            <Version>1.0.3</Version>
-            <Comment>
-                - Bump to the new stable release
-                - Fix systemsettings category for KDE >= 4.5.0
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-08-25</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                - Use new kde4 module in actions.py
-                - Use new prefixes for 2011
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-05-13</Date>
-            <Version>1.0.2</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-04-24</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                New stable release.
-
-                Changes:
-                - Fixed some minor bugs and small GUI inconsistencies.
-                - Fixed a crash when adding operations to first resize
-                  extended partitions and then delete them were fixed.
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-01-10</Date>
-            <Version>1.0.1</Version>
-            <Comment>
-                New stable release.
-
-                Changes:
-                - A bug that made it impossible to activate or deactivate
-                  a swap file system was fixed.
-                - An administrator's password is requested on startup so that
-                  non-KDE users can run the application... from their launcher.
-                - The program no longer crashes when using the Oxygen style
-                  under KDE SC 4.4, or when the user clicks in the partition
-                  widget with newer g++ versions.
-                - Updates for the partition widget are no longer disabled
-                  while applying operations.
-                - Fixed a LibParted segmentation fault when the Linux Device
-                  Mapper is used.
-                - Hang when no floppy is present is now worked around.
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-08-18</Date>
-            <Version>1.0.0</Version>
-            <Comment>First stable release nearly identical to the release candidate. Includes translation updates.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-10</Date>
-            <Version>1.0.0_rc1</Version>
-            <Comment>New release fixing some minor bugs on the way to 1.0</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-04</Date>
-            <Version>1.0.0_beta3</Version>
-            <Comment>
-                - New beta release
-                - Add fix to detect ext4 partitions
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-01-14</Date>
-            <Version>1.0.0_beta2</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

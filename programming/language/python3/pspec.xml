@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>python3</Name>
@@ -42,19 +43,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-11-11</Date>
             <Version>3.3.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-20</Date>
-            <Version>3.2.3</Version>
-            <Comment>First Package</Comment>
-            <Name>Ramazan Utku</Name>
-            <Email>ramazanutku@gmail.com</Email>
         </Update>
     </History>
 </PISI>

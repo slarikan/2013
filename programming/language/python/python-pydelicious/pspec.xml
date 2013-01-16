@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM 'http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd'>
 
@@ -32,33 +33,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-02-04</Date>
             <Version>0.6</Version>
-            <Comment>New stable release</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-26</Date>
-            <Version>0.5.0</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-01-10</Date>
-            <Version>0.5.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-03-27</Date>
-            <Version>0.3.2</Version>
-            <Comment>First release, fix #2404</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

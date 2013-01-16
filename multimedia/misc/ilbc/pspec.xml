@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -35,36 +36,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-12-30</Date>
             <Version>1.3</Version>
-            <Comment>Change homepage and split devel package, ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-02</Date>
-            <Version>1.3</Version>
-            <Comment>
-                - Fix underlinking
-                - Do not add useless doc files
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-09-04</Date>
-            <Version>1.3</Version>
-            <Comment>Version bump, doc files added.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-01-13</Date>
-            <Version>1.0</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

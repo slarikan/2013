@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -33,51 +34,12 @@
     </Package>
 
     <History>
-       <Update release="6">
+       <Update release="1">
             <Date>2012-11-13</Date>
             <Version>0.9.3</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-02-10</Date>
-            <Version>0.9.1</Version>
-            <Comment>Make python-inotify ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-04-05</Date>
-            <Version>0.8.9</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-23</Date>
-            <Version>0.8.6</Version>
-            <Comment>* A Major Version bump bringing some backward incompatibilities.
-                * New Homepage.
-                * Cosmetic doc path fix.
-                * Seperate the api documentation into a new package.
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-06-08</Date>
-            <Version>0.7.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-07-07</Date>
-            <Version>0.7.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Nicolas E. Lara G.</Name>
-            <Email>nicolaslara@gmail.com</Email>
         </Update>
     </History>
 </PISI>

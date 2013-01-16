@@ -1,3 +1,4 @@
+
 <?xml version="1.0"?>
 <!DOCTYPE PSPEC SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -80,74 +81,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2012-08-31</Date>
             <Version>1.10.1</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="8">
-            <Date>2011-08-02</Date>
-            <Version>1.9.0</Version>
-            <Comment>Version bump (pb#18744)</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-02-09</Date>
-            <Version>1.7.2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-05-13</Date>
-            <Version>1.7.0</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-02-10</Date>
-            <Version>1.7.0</Version>
-            <Comment>
-                Depend on new faad
-                Change dependency of mpeg4ip to libmp4v2
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-09-15</Date>
-            <Version>1.7.0</Version>
-            <Comment>
-                - Version bump to the new version,
-                - Enable libdjconsole, gpod and portmidi support.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-05-21</Date>
-            <Version>1.5.0</Version>
-            <Comment>Version bump to new stable</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-03-09</Date>
-            <Version>1.4.2</Version>
-            <Comment>Depend on new libsndfile.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-10-01</Date>
-            <Version>1.4.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

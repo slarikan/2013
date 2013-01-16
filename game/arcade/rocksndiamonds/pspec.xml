@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -50,47 +51,10 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-06-09</Date>
             <Version>3.3.0.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-05-28</Date>
-            <Version>3.3.0.0</Version>
-            <Comment>
-                Version bump:
-                - added native Supaplex game engine
-                - added support for native Supaplex levels in MPX level file format
-                - added support for native Sokoban levels in XSB level file format
-                - added saving read-only levels from editor into personal level set
-                - added configurable key shortcuts for the tape recorder buttons
-                - fixed potential crash bug in quickload and quicksave functionality
-                - fixed some bugs with single step mode (and added it to native engines)
-            </Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-07-04</Date>
-            <Version>3.2.6.1</Version>
-            <Comment>Critical bugfix release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-05-04</Date>
-            <Version>3.2.6.0</Version>
-            <Comment>Add missing dependencies</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-11-29</Date>
-            <Version>3.2.6.0</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>H. İbrahim Güngör</Name>
             <Email>ibrahim@pardus.org.tr</Email>
         </Update>

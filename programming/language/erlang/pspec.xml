@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -1150,87 +1151,12 @@
     </Package>
 
     <History>
-        <Update release="11">
+        <Update release="1">
             <Date>2010-10-26</Date>
             <Version>13.4</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-07-14</Date>
-            <Version>13.4</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-06-11</Date>
-            <Version>13.4</Version>
-            <Comment>
-                - Bump to 13B04,
-                - Fix JAVAC detection,
-                - Enable wxGTK support,
-                - Assign the package to ejabberd maintainer as discussed in gelistirici mailing list.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-05-19</Date>
-            <Version>11.2.5</Version>
-            <Comment>-j1 make job number added to build script</Comment>
-            <Name>Taner Taş</Name>
-            <Email>taner@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2009-05-15</Date>
-            <Version>11.2.5</Version>
-            <Comment>Reverted due to stability issues with 12x versions</Comment>
-            <Name>Taner Taş</Name>
-            <Email>taner@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-04-16</Date>
-            <Version>12.5</Version>
-            <Comment>Stable update</Comment>
-            <Name>Taner Taş</Name>
-            <Email>taner@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-07-12</Date>
-            <Version>12.3</Version>
-            <Comment>Stable update, add erlang-12.3-glibc28.patch</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-12-27</Date>
-            <Version>12.0</Version>
-            <Comment>stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-07-02</Date>
-            <Version>11.2.5</Version>
-            <Comment>New OTP fix release</Comment>
-            <Name>Jonas Pfenniger</Name>
-            <Email>zimbatm@oree.ch</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-04-26</Date>
-            <Version>11.2.4</Version>
-            <Comment>Fix path definitions in all files and install Emacs mode.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-04-23</Date>
-            <Version>11.2.4</Version>
-            <Comment>First release.</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

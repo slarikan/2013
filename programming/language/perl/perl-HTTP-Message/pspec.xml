@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>perl-HTTP-Message</Name>
@@ -37,26 +38,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-11-16</Date>
             <Version>6.03</Version>
-            <Comment>Dep add</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-09-07</Date>
-            <Version>6.03</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-09</Date>
-            <Version>6.03</Version>
-            <Comment>First-Release</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

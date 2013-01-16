@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -69,135 +70,12 @@
     </Package>
 
     <History>
-        <Update release="17">
+        <Update release="1">
             <Date>2012-10-04</Date>
             <Version>1.1.11</Version>
-            <Comment>* Version Bump
-                     * systemd service file
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="16">
-            <Date>2010-11-25</Date>
-            <Version>1.1.10</Version>
-            <Comment>Parse yali.conf correctly</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="15">
-            <Date>2010-11-10</Date>
-            <Version>1.1.10</Version>
-            <Comment>Start first boot wizard of YALI if needed</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="14">
-            <Date>2010-10-23</Date>
-            <Version>1.1.10</Version>
-            <Comment>Remove xorg.conf when xorg=probe option is provided in kernel command line</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2010-10-23</Date>
-            <Version>1.1.10</Version>
-            <Comment>Add safe configs for X server and use the appropriate one when needed</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2010-10-23</Date>
-            <Version>1.1.10</Version>
-            <Comment>Terminate Plymouth daemon if the display manager does not support transition</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-10-12</Date>
-            <Version>1.1.10</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-09-21</Date>
-            <Version>1.1.10</Version>
-            <Comment>
-                - Rewrite start-dm with bash
-                - Trigger events for keyboard devices before the execution of display managers
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-09-16</Date>
-            <Version>1.1.10</Version>
-            <Comment>Do not call zorg's ready method in start-dm</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-04-13</Date>
-            <Version>1.1.10</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2009-12-18</Date>
-            <Version>1.1.9</Version>
-            <Comment>Revert "Setup keymap on live media" as zorg handles this now</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-12-10</Date>
-            <Version>1.1.9</Version>
-            <Comment>Setup keymap on live media</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-10-19</Date>
-            <Version>1.1.9</Version>
-            <Comment>Fix resources patch to include system resources</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-10-19</Date>
-            <Version>1.1.9</Version>
-            <Comment>
-                - Bump to new stable release
-                - Include /etc/X11/Xresources in xdm's Xresources file.
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-16</Date>
-            <Version>1.1.8_20090308</Version>
-            <Comment>
-                - Export LC_ALL in start-dm script
-                - Do not look for /etc/conf.d/installer as it is not used
-            </Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-04-23</Date>
-            <Version>1.1.8_20090308</Version>
-            <Comment>Dependency fixes</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-03-08</Date>
-            <Version>1.1.8_20090308</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -24,54 +25,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-05-24</Date>
             <Version>4.110</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Sezai Yeniay</Name>
             <Email>sezaiyeniay@ozgurlukicin.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-01-13</Date>
-            <Version>4.104</Version>
-            <Comment>Build for 2011</Comment>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-04-15</Date>
-            <Version>4.104</Version>
-            <Comment>Remove old replaces.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-09-08</Date>
-            <Version>4.104</Version>
-            <Comment>Fix package name.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-06-14</Date>
-            <Version>4.104</Version>
-            <Comment>Remove xorg-server and fontconfig dependency.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-06-10</Date>
-            <Version>4.104</Version>
-            <Comment>Version bump.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-18</Date>
-            <Version>4.100</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

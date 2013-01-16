@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>perl-File-Listing</Name>
@@ -33,17 +34,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-07</Date>
             <Version>6.0.4</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-09</Date>
-            <Version>6.0.4</Version>
-            <Comment>First-Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -15,16 +16,16 @@
         <Description>digikam is an advanced digital photo management application for KDE4, which makes importing and organizing digital photos a "snap". The photos can be organized in albums which can be sorted chronologically, by directory layout or by custom collections.</Description>
         <Archive sha1sum="7c8dac61dc344221ce829527be7dcfeddf4d524e" type="tarbz2">http://download.kde.org/unstable/digikam/digikam-3.0.0-rc.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency> <!-- Trash protocol -->
-            <Dependency versionFrom="4.9.95">marble-devel</Dependency> <!-- marble devel files are needed -->
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
-            <Dependency versionFrom="4.9.95">libkipi-devel</Dependency>
-            <Dependency versionFrom="0.7.1">libqjson-devel</Dependency>
-	    <Dependency versionFrom="0.22">exiv2-devel</Dependency>
-	    <Dependency versionFrom="4.9.95">libkdcraw-devel</Dependency>
-	    <Dependency versionFrom="4.9.95">libkexiv2-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>kde-runtime</Dependency> <!-- Trash protocol -->
+            <Dependency>marble-devel</Dependency> <!-- marble devel files are needed -->
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>libkipi-devel</Dependency>
+            <Dependency>libqjson-devel</Dependency>
+	    <Dependency>exiv2-devel</Dependency>
+	    <Dependency>libkdcraw-devel</Dependency>
+	    <Dependency>libkexiv2-devel</Dependency>
             <Dependency>atlas-devel</Dependency>    
             <Dependency>libgphoto2-devel</Dependency>
 	    <Dependency>libpng-devel</Dependency>
@@ -38,7 +39,7 @@
             <Dependency>tiff-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>lcms2-devel</Dependency>
-            <Dependency releaseFrom="3">libpgf-devel</Dependency>
+            <Dependency>libpgf-devel</Dependency>
             <Dependency>mysql-server</Dependency> <!-- digikam looks for mysqld and mysql_install_db -->
             <Dependency>qca2-devel</Dependency>
             <Dependency>opencv-devel</Dependency>
@@ -57,22 +58,22 @@
     <Package>
         <Name>digikam</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">libkipi</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.95">marble</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.95">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.95">libkdcraw</Dependency>
-            <Dependency versionFrom="4.9.95">libkexiv2</Dependency>    
-            <Dependency versionFrom="4.8.3">qt-sql-sqlite</Dependency> <!-- digikam uses mysqld by default but also works with sqlite -->
-            <Dependency versionFrom="4.8.3">qt</Dependency>
-            <Dependency versionFrom="0.7.1">libqjson</Dependency>
+            <Dependency>libkipi</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>marble</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>libkdcraw</Dependency>
+            <Dependency>libkexiv2</Dependency>    
+            <Dependency>qt-sql-sqlite</Dependency> <!-- digikam uses mysqld by default but also works with sqlite -->
+            <Dependency>qt</Dependency>
+            <Dependency>libqjson</Dependency>
             <Dependency>libgphoto2</Dependency>
             <Dependency>lensfun</Dependency>
             <Dependency>soprano</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>liblqr</Dependency>
-            <Dependency releaseFrom="3">libpgf</Dependency>
+            <Dependency>libpgf</Dependency>
             <Dependency>jasper</Dependency>
             <Dependency>tiff</Dependency>
             <Dependency>jpeg</Dependency>
@@ -82,7 +83,7 @@
             <Dependency>libgomp</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libksane</Dependency>
-            <Dependency versionFrom="4.8.1">libkdcraw</Dependency>
+            <Dependency>libkdcraw</Dependency>
             <Dependency>libkexiv2</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>qt-webkit</Dependency>
@@ -117,237 +118,12 @@
     </Package>
 
     <History>
-        <Update release="33">
+        <Update release="1">
             <Date>2012-12-30</Date>
             <Version>3.0</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>
-        <Update release="32">
-            <Date>2012-06-05</Date>
-            <Version>2.6.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="31">
-            <Date>2012-03-05</Date>
-            <Version>2.6.0_beta2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="30">
-            <Date>2011-03-25</Date>
-            <Version>1.9.0</Version>
-            <Comment>Fix KDE runtime dep versions.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="29">
-            <Date>2011-03-25</Date>
-            <Version>1.9.0</Version>
-            <Comment>Recompile for kipi API breakage.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="28">
-            <Date>2011-03-14</Date>
-            <Version>1.9.0</Version>
-            <Comment>Version bump to 1.9.0</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="27">
-            <Date>2011-01-26</Date>
-            <Version>1.8.0</Version>
-            <Comment>Version bump to 1.8.0</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="26">
-            <Date>2011-01-13</Date>
-            <Version>1.7.0</Version>
-            <Comment>Add new splashes by Renan and Gökmen</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="25">
-            <Date>2010-12-23</Date>
-            <Version>1.7.0</Version>
-            <Comment>Version bump to 1.7.0</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="24">
-            <Date>2010-11-30</Date>
-            <Version>1.6.0</Version>
-            <Comment>Use internal clapack since libclapack from atlas is not real clapack library.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="23">
-            <Date>2010-11-30</Date>
-            <Version>1.6.0</Version>
-            <Comment>Version bump to 1.6.0</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="22">
-            <Date>2010-11-16</Date>
-            <Version>1.5.0</Version>
-            <Comment>Version bump to 1.5.0</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="21">
-            <Date>2010-06-11</Date>
-            <Version>1.3.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="20">
-            <Date>2010-06-02</Date>
-            <Version>1.2.0</Version>
-            <Comment>Add crash fix for Digikam kde#232628</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="19">
-            <Date>2010-05-04</Date>
-            <Version>1.2.0</Version>
-            <Comment>Rebuild for KDE 4.4</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="18">
-            <Date>2010-04-01</Date>
-            <Version>1.2.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="17">
-            <Date>2010-02-02</Date>
-            <Version>1.1.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="16">
-            <Date>2009-12-25</Date>
-            <Version>1.0.0</Version>
-            <Comment>Bump to final version.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="15">
-            <Date>2009-12-04</Date>
-            <Version>1.0.0_rc</Version>
-            <Comment>Bump to the latest release candidate containing 22 bug fixes.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="14">
-            <Date>2009-11-16</Date>
-            <Version>1.0.0_beta6</Version>
-            <Comment>Replace kde4 counterpart.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2009-11-13</Date>
-            <Version>1.0.0_beta6</Version>
-            <Comment>Bump to the new beta</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2009-10-10</Date>
-            <Version>1.0.0_beta5</Version>
-            <Comment>Version bump to the latest beta</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2009-09-02</Date>
-            <Version>1.0.0_beta4</Version>
-            <Comment>Version bump to the latest beta</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2009-07-09</Date>
-            <Version>1.0.0_beta2</Version>
-            <Comment>Version bump, update splash screens.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-06-11</Date>
-            <Version>1.0.0_beta1</Version>
-            <Comment>Version bump, enable liquid rescale plugin.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-05-26</Date>
-            <Version>0.10.0</Version>
-            <Comment>Add new splash for digikam.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2009-05-08</Date>
-            <Version>0.10.0</Version>
-            <Comment>Change kdeedu dep to kdeedu-marble, marble is a seperate package now.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-05-08</Date>
-            <Version>0.10.0</Version>
-            <Comment>Version bump, add digikam handbook.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-02-18</Date>
-            <Version>0.10.0_rc2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-02-09</Date>
-            <Version>0.10.0_rc1</Version>
-            <Comment>kdelibs4 dep changed to kdelibs4-devel. kdebase4-runtime dep added. kdepim4 dep is changed to kdepimlibs</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-02-05</Date>
-            <Version>0.10.0_rc1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-11-28</Date>
-            <Version>0.10.0_beta6</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-09-10</Date>
-            <Version>0.10.0_pre859144</Version>
-            <Comment>First release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
     </History>
 </PISI>
-

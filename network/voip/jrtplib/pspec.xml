@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -46,33 +47,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-09-04</Date>
             <Version>3.9.1</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-13</Date>
-            <Version>3.7.1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökcen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-09-01</Date>
-            <Version>3.7.1</Version>
-            <Comment>Fix build, split devel package.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-07-04</Date>
-            <Version>3.7.1</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

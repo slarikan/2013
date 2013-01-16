@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -42,68 +43,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2012-08-23</Date>
             <Version>1.0.8</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-10-11</Date>
-            <Version>1.0.7s</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-09-15</Date>
-            <Version>1.0.7s</Version>
-            <Comment>Update archive address and add a new patch from openSUSE.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-07-30</Date>
-            <Version>1.0.7s</Version>
-            <Comment>Fixes #5856</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-01-31</Date>
-            <Version>1.0.7s</Version>
-            <Comment>Bump to SuSE version.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2006-05-05</Date>
-            <Version>1.0</Version>
-            <Comment>Get rid of issue magic (\033%G)</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-05-03</Date>
-            <Version>1.0</Version>
-            <Comment>Permit autologin from all consoles and all the time while autologin selected (for LiveCD and InstallationCD)</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-04-05</Date>
-            <Version>1.0</Version>
-            <Comment>Get default locale from /etc/env.d/03locale</Comment>
-            <Name>Barış Metin</Name>
-            <Email>baris@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-08-02</Date>
-            <Version>1.0</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

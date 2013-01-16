@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -61,40 +62,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-03-20</Date>
             <Version>0.6.2</Version>
-            <Comment>Bugfix release. Split doc files.</Comment>
+            <Comment>First release</Comment>
             <Name>Türker Sezer</Name>
             <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-08-22</Date>
-            <Version>0.6.1</Version>
-            <Comment>Bugfix release</Comment>
-            <Name>Türker Sezer</Name>
-            <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-08-08</Date>
-            <Version>0.6.0</Version>
-            <Comment>Version bump and gui support added</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-12-09</Date>
-            <Version>0.4.0</Version>
-            <Comment>fix application type</Comment>
-            <Name>Türker Sezer</Name>
-            <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-04-10</Date>
-            <Version>0.4.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

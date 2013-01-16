@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>leptonica</Name>
@@ -34,7 +35,7 @@
         <Update release="1">
             <Date>2012-08-29</Date>
             <Version>1.69</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

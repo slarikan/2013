@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -46,33 +47,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-11-11</Date>
             <Version>1.0.3</Version>
-            <Comment>ver bump</Comment>
+            <Comment>First release</Comment>
             <Name>canatan</Name>
             <Email>qazsew@gmail.com</Email>
         </Update>
-        <Update release="3">
-            <Date>2011-01-28</Date>
-            <Version>1.0.2</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-08-04</Date>
-            <Version>1.0.2</Version>
-            <Comment>Update archive URL, ready for 2009</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-29</Date>
-            <Version>1.0.2</Version>
-            <Comment>First release</Comment>
-            <Name>Ahmet Erdoğan</Name>
-            <Email>tuxposta@gmail.com</Email>
-        </Update>
     </History>
-</PISI> 
+</PISI>

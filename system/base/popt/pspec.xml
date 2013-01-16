@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 
@@ -45,51 +46,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2010-10-11</Date>
             <Version>1.16</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-09-01</Date>
-            <Version>1.16</Version>
-            <Comment>
-                Version bump
-                Disable rpath
-                Split devel package
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-09-24</Date>
-            <Version>1.15</Version>
-            <Comment>Bug fixes, code refactorings and more test coverage</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-08-18</Date>
-            <Version>1.14</Version>
-            <Comment>Version bump</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-01-13</Date>
-            <Version>1.7</Version>
-            <Comment>Package owner change</Comment>
-            <Name>Koray Löker</Name>
-            <Email>loker@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-06-14</Date>
-            <Version>1.7</Version>
-            <Comment>First release.</Comment>
-            <Name>Kırmızı kafalar</Name>
-            <Email>hotmail@redhat.com</Email>
         </Update>
     </History>
 </PISI>

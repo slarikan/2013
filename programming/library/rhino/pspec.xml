@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>rhino</Name>
@@ -23,7 +24,7 @@
         <Update release="1">
             <Date>2012-07-23</Date>
             <Version>1.7</Version>
-            <Comment>First package</Comment>
+            <Comment>First release</Comment>
             <Name>Ramazan Utku</Name>
             <Email>ramazanutku@gmail.com</Email>
         </Update>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -26,10 +27,9 @@
         <Update release="1">
             <Date>2010-07-12</Date>
             <Version>0.9</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Sezai Yeniay</Name>
         <Email>sezaiyeniay@ozgurlukicin.com</Email>
         </Update>
-
     </History>
 </PISI>

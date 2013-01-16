@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -23,7 +24,7 @@
        <BuildDependencies>
 	  <Dependency>dbus-glib-devel</Dependency>
           <Dependency>libmcs-devel</Dependency>
-          <Dependency versionFrom="0.9">libmowgli-devel</Dependency>
+          <Dependency>libmowgli-devel</Dependency>
 	  <Dependency>libxml2-devel</Dependency>
 	  <Dependency>cairo-devel</Dependency>
 	  <Dependency>gtk2-devel</Dependency>
@@ -38,7 +39,7 @@
         <RuntimeDependencies>
            <Dependency>dbus-glib</Dependency>
 	   <Dependency>libmcs</Dependency>
-           <Dependency versionFrom="0.9">libmowgli</Dependency>
+           <Dependency>libmowgli</Dependency>
            <Dependency>libxml2</Dependency>
            <Dependency>cairo</Dependency>
            <Dependency>gtk2</Dependency>
@@ -71,70 +72,12 @@
         </Files>
     </Package>
     <History>
-	    <Update release="9">
+	    <Update release="1">
             <Date>2012-10-11</Date>
             <Version>3.3.2</Version>
-            <Comment>Version Bump to new release</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Soytetir</Name>
 	        <Email>tulliana@gmail.com</Email>
        </Update>
-        <Update release="8">
-            <Date>2012-08-28</Date>
-            <Version>3.3</Version>
-            <Comment>Version Bump to new release</Comment>
-            <Name>Osman Erkan</Name>
-	        <Email>namso-01@hotmail.it</Email>
-       </Update>
-       <Update release="7">
-           <Date>2012-01-10</Date>
-           <Version>3.2</Version>
-           <Comment>Version Bump to new release</Comment>
-           <Name>Erdinç Gültekin</Name>
-	       <Email>erdincgultekin@gmail.com</Email>
-       </Update>
-       <Update release="6">
-           <Date>2012-01-10</Date>
-           <Version>3.2.02</Version>
-           <Comment>Version Bump to beta release</Comment>
-           <Name>Erdinç Gültekin</Name>
-	       <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-11-22</Date>
-            <Version>3.1</Version>
-            <Comment>Version Bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
-        </Update>
-        <Update release="4">
-            <Date>2010-09-23</Date>
-            <Version>3.0.3</Version>
-            <Comment>Version Bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
-        </Update>
-        <Update release="3">
-            <Date>2010-07-13</Date>
-            <Version>2.5.3</Version>
-            <Comment>Version Bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
-        </Update>
-        <Update release="2">
-            <Date>2010-04-23</Date>
-            <Version>2.5.0</Version>
-            <Comment>Version Bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
-        </Update>
-        <Update release="1">
-            <Date>2010-04-10</Date>
-            <Version>2.4.4</Version>
-            <Comment>Initial</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
-        </Update>
     </History>
 </PISI>
- 
- 

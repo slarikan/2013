@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -48,53 +49,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2011-02-09</Date>
             <Version>0.0_20101123</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-09-24</Date>
-            <Version>20071009</Version>
-            <Comment>
-                - Grab patches from debian,
-                - Refine prelink.conf in order to suit our needs,
-                - Grab prelink.confd sourced by the cron script from Gentoo,
-                - Add Gentoo's cron script,
-                - Add Debian's prelink wrapper which checks the available disk space before launching prelink,
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-09-01</Date>
-            <Version>20071009</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-07-15</Date>
-            <Version>20060213</Version>
-            <Comment>Depend new elfutils</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-04-01</Date>
-            <Version>20060213</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-20</Date>
-            <Version>20050610</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

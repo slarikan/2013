@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -49,10 +50,9 @@
         <Update release="1">
             <Date>2012-07-15</Date>
             <Version>4.6.1</Version>
-            <Comment>first realese</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

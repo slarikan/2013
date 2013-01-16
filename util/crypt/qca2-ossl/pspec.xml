@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -36,40 +37,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>2.0.0_beta3</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-10-13</Date>
-            <Version>2.0.0_beta3</Version>
-            <Comment>Sync with qca2-ossl of KDE SVN.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-04-29</Date>
-            <Version>2.0.0_beta3</Version>
-            <Comment>Fixed build with new OpenSSL</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-05-12</Date>
-            <Version>2.0.0_beta3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-11-16</Date>
-            <Version>0.1_20070904</Version>
-            <Comment>First release.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
         </Update>
     </History>
 </PISI>

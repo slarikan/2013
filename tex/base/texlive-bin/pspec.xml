@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -73,61 +74,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2012-10-29</Date>
             <Version>0.0_20120623</Version>
-            <Comment>Güncelelndi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-11-18</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>Fix broken symlinks (#pb19514). Kudos to Gökçen</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-03-26</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>Remove ps2eps man files</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-03-23</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>Strictly depend on the new poppler</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-03-20</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>Add more packages that causes conflicts</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-03-18</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>Add another file for the package dvipdfm</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-03-18</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>Add conflict with texlive-core up to release 5</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-01-24</Date>
-            <Version>0.0_20110121</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

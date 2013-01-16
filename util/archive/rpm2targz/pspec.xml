@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -30,68 +31,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>9.0.0.4g</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-08-25</Date>
-            <Version>9.0.0.4g</Version>
-            <Comment>
-                Add back tar* links
-                Switch to a modular lzma patch
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-08-05</Date>
-            <Version>9.0.0.4g</Version>
-            <Comment>
-                Remove some unnecessary symlinks
-                Allow extraction of many lzma rpms
-                Depend on xz
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-07-14</Date>
-            <Version>9.0.0.4g</Version>
-            <Comment>Minor version bump, enable decompressing some of lzma rpms</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-11-06</Date>
-            <Version>9.0.0.3g</Version>
-            <Comment>Update to tarball that has all the patches merged</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-04-04</Date>
-            <Version>9.0</Version>
-            <Comment>Add more fixes</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2" type="security">
-            <Date>2005-11-19</Date>
-            <Version>9.0</Version>
-            <Comment>Add rpm2targz-9.0-secure_temp_handling.patch</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-07-15</Date>
-            <Version>9.0</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

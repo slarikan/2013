@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>libpwquality</Name>
@@ -49,7 +50,7 @@
         <Update release="1">
             <Date>2012-10-01</Date>
             <Version>1.2.0</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

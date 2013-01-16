@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -32,19 +33,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-07-06</Date>
             <Version>0.2_20090916</Version>
-            <Comment>Move to 2011. Takeover of package</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-06-30</Date>
-            <Version>0.2_20090916</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
         </Update>
     </History>
 </PISI>

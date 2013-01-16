@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -49,112 +50,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-09-01</Date>
             <Version>4.3.7</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="9">
-            <Date>2011-08-12</Date>
-            <Version>4.3.1</Version>
-            <Comment>
-                - New stable release
-                - man pages, linkage warnings and other small stuff is fixed
-            </Comment>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
-        </Update>
-        <Update release="8" type="security">
-            <Date>2011-04-18</Date>
-            <Version>4.2.2</Version>
-            <Comment>New stable release, also fixes bug #16993, #16994, #16995, #16996</Comment>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-02-14</Date>
-            <Version>4.1.3</Version>
-            <Comment>New stable Release</Comment>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-11-28</Date>
-            <Version>4.1.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-10-18</Date>
-            <Version>4.0.10</Version>
-            <Comment>Version bump</Comment>
-            <Name>Mehmet Emre Atasever</Name>
-            <Email>memre@fisek.com.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-06-20</Date>
-            <Version>4.0.9</Version>
-            <Comment>Version bump:
-             * torrent: don't try to re-download invalid piece from the same peer.
-             * added a short lftp.conf(5) man page.
-             * fixed a problem with zeroed errno.
-             * fixed status of mget from file: schema.
-             * fixed get/mget -c when xfer:clobber is off.
-             * fixed file verification in pget.
-             * fixed ftp encoding for servers with LANG but without UTF8 feature.
-            </Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-04-30</Date>
-            <Version>4.0.7</Version>
-            <Comment>Version bump:
-             * make xfer:clobber off by default.
-             * use O_EXCL flag when xfer:clobber is off.
-             * better validation of server-provided file name.
-             * new setting xfer:auto-rename (off by default).
-             * new setting ftp:ssl-copy-sid (for some broken servers).
-             * fixed CCC ftp command to shutdown SSL connection properly.
-             * fixed `pget -c' on complete files.
-             * limit number of attempts to upload a file (net:max-retries).
-             * handle 426 ftp reply to STOR specially.
-             * retry FEAT after login even after non-standard 5xx reply.
-            </Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-01-17</Date>
-            <Version>4.0.5</Version>
-            <Comment>Version bump:
-             * added support for lighttpd listings.
-             * added dnssec support.
-             * added torrent client.
-             * automatically set time precision on FAT-like FS.
-             * Update Czech translation.
-             * new setting cmd:stifle-rl-history to limit command history size. 
-             * fixed sftp rename.
-             * fixed a core dump on `kill all' with pget.
-             * fixed interrupting of a torrent with unresponsive tracker.
-             * fixed exit code of mget/mput.
-             * ignore `Status of' line in STAT output (ftp).
-             * fixed handling of files starting with a tilde in ftp.
-             * fixed an infinite bind-loop in ftp.
-             * fixed timestamps in `mirror --ignore-time'. 
-            </Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-07-29</Date>
-            <Version>3.7.15</Version>
-            <Comment>First release</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
         </Update>
     </History>
 </PISI>

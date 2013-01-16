@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -72,71 +73,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>1.0.2</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-09-02</Date>
-            <Version>1.0.2</Version>
-            <Comment>
-                Fix build on 32bit
-                Add saving matte support
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-09-01</Date>
-            <Version>1.0.2</Version>
-            <Comment>Fix build with glibc >= 2.10</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-05-03</Date>
-            <Version>1.0.2</Version>
-            <Comment>Fix dependencies and enable xinerama</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-04-02</Date>
-            <Version>1.0.2</Version>
-            <Comment>Added supc patch</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-07-08</Date>
-            <Version>1.0.2</Version>
-            <Comment>Improve V4L2 support</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-04-19</Date>
-            <Version>1.0.2</Version>
-            <Comment>Add Turkish translation by Server Acim</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-03-01</Date>
-            <Version>1.0.2</Version>
-            <Comment>New version</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-28</Date>
-            <Version>1.0.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

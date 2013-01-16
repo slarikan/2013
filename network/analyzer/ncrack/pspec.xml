@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -26,22 +27,9 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-05-09</Date>
             <Version>0.4</Version>
-            <Comment>
-                Version bump
-                Added the VNC module
-                Fixed critical bug in RDP module
-                Added a mechanism (MODULE_ERR)
-                Ncrack can now print the nsock EID (unique connection ID) in debug mode
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-09-12</Date>
-            <Version>0.3</Version>
             <Comment>First release</Comment>
             <Name>Onur Küçük</Name>
             <Email>onur@pardus.org.tr</Email>

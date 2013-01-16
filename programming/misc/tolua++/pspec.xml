@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -45,36 +46,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-09-23</Date>
             <Version>1.0.93</Version>
-            <Comment>Split devel package.</Comment>
+            <Comment>First release</Comment>
             <Name>Metin Akdere</Name>
             <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-03-29</Date>
-            <Version>1.0.93</Version>
-            <Comment>
-                - Now building without static libraries
-                - Updated licence to MIT
-            </Comment>
-            <Name>Metin Akdere</Name>
-            <Email>metinakdere@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-01</Date>
-            <Version>1.0.93</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-07-24</Date>
-            <Version>1.0.92</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

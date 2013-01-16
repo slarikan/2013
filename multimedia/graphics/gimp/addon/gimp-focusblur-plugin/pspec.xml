@@ -1,3 +1,4 @@
+
 <PISI>
     <Source>
         <Name>gimp-focusblur-plugin</Name>
@@ -34,7 +35,7 @@
         <Update release="1">
             <Date>2012-08-10</Date>
             <Version>3.2.6</Version>
-            <Comment>First release for Anka</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>

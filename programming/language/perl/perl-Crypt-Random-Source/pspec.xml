@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -15,7 +16,7 @@
         <Description>perl-Crypt-Random-Source provides implementations for a number of byte oriented sources of random data.</Description>
         <Archive sha1sum="af0cbe75382607b2e530aa795e284ad2e9a75d3a" type="targz">mirrors://cpan/authors/id/N/NU/NUFFIN/Crypt-Random-Source-0.07.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-namespace-clean</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
@@ -30,7 +31,7 @@
     <Package>
         <Name>perl-Crypt-Random-Source</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-namespace-clean</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
             <Dependency>perl-Capture-Tiny</Dependency>
@@ -47,26 +48,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-01</Date>
             <Version>0.07</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-01</Date>
-            <Version>0.07</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-08</Date>
-            <Version>0.07</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

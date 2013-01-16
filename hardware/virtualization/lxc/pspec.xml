@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -52,40 +53,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-11-21</Date>
             <Version>0.7.3</Version>
-            <Comment>Düzenlendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-27</Date>
-            <Version>0.7.3</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erdem Bayer</Name>
-            <Email>ebayer@bayer.gen.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-21</Date>
-            <Version>0.7.2</Version>
-            <Comment>Add management tools</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-09-28</Date>
-            <Version>0.7.2</Version>
-            <Comment>Fix unused direct dependencies</Comment>
-            <Name>Mete Alpaslan Katırcıoğlu</Name>
-            <Email>mete@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-09-27</Date>
-            <Version>0.7.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Erdem Bayer</Name>
-            <Email>ebayer@bayer.gen.tr</Email>
         </Update>
     </History>
 </PISI>

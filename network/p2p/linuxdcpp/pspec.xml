@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE PISI SYSTEM "http://www.uludag.org.tr/projeler/pisi/pisi-spec.dtd">
 
@@ -42,16 +43,9 @@
    </Package>
 
    <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2009-09-06</Date>
             <Version>1.0.3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Fahri Tuğrul Gürkaynak</Name>
-            <Email>tugrul@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-11-06</Date>
-            <Version>1.0.2</Version>
             <Comment>First release</Comment>
             <Name>Fahri Tuğrul Gürkaynak</Name>
             <Email>tugrul@pardus.org.tr</Email>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -47,65 +48,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>1.13</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-08-25</Date>
-            <Version>1.13</Version>
-            <Comment>Split devel package</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-05-13</Date>
-            <Version>1.13</Version>
-            <Comment>Fix asneeded.patch to fix all undefined symbol errors</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-04-25</Date>
-            <Version>1.13</Version>
-            <Comment>
-                Fix as-needed usage
-                Disable tests
-                Cleanup actions.py
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-04-04</Date>
-            <Version>1.13</Version>
-            <Comment>Make it compile</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-11-23</Date>
-            <Version>1.13</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-08-01</Date>
-            <Version>1.12</Version>
-            <Comment>ladspa.h softlink added</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-03-04</Date>
-            <Version>1.12</Version>
-            <Comment>First release.</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

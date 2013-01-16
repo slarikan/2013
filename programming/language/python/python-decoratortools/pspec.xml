@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM 'http://www.uludag.org.tr/projeler/pisi/pisi-spec.dtd'>
 <PISI>
@@ -25,24 +26,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
              <Date>2010-09-05</Date>
              <Version>1.8</Version>
-             <Comment>
-                 Version bump;
-                 * The ``@template_function`` decorator now supports using a return value instead of a docstring, in order to work with the "-OO" option to Python.
-                 * Fixed metaclass collisions in ``classy`` subclasses that mix in abstract classes in Python 2.6+.
-             </Comment>
+            <Comment>First release</Comment>
              <Name>Fethican Coşkuner</Name>
              <Email>fethicanc@gmail.com</Email>
         </Update>
-        <Update release="1">
-             <Date>2008-07-10</Date>
-             <Version>1.7</Version>
-             <Comment>First release.</Comment>
-             <Name>Ediz Türkoğlu</Name>
-             <Email>ediz.turkoglu@yahoo.com</Email>
-         </Update>
      </History>
 </PISI>
-

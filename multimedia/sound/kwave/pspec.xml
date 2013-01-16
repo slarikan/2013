@@ -1,4 +1,4 @@
- 
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -23,7 +23,7 @@
 	    <Dependency>fftw3-devel</Dependency>
 	    <Dependency>libmad-devel</Dependency>
 	    <Dependency>id3lib-devel</Dependency>
-	    <Dependency versionFrom="0.3.0">audiofile-devel</Dependency>
+	    <Dependency>audiofile-devel</Dependency>
 	    <Dependency>imagemagick-devel</Dependency>
 	    <Dependency>gettext-devel</Dependency>
         </BuildDependencies>
@@ -39,7 +39,7 @@
 	    <Dependency>fftw3</Dependency>
 	    <Dependency>libmad</Dependency>
 	    <Dependency>id3lib</Dependency>
-	    <Dependency versionFrom="0.3.0">audiofile</Dependency>
+	    <Dependency>audiofile</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -54,7 +54,7 @@
         <Update release="1">
             <Date>2013-01-14</Date>
             <Version>0.8.9</Version>
-            <Comment>First Release.</Comment>
+            <Comment>First release</Comment>
             <Name>Idris Kalp</Name>
             <Email>yaralikurt15@gmail.com</Email>
         </Update>      

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -39,26 +40,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-09-13</Date>
             <Version>2.2.0.0</Version>
-            <Comment>Split headers</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-09-01</Date>
-            <Version>2.2.0.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-02-01</Date>
-            <Version>2.0.4.8</Version>
             <Comment>First release</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
+            <Name>Necdet Yücel</Name>
+            <Email>necdetyucel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

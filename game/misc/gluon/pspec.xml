@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -66,29 +67,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-10-25</Date>
             <Version>0.70.0</Version>
-            <Comment>Fix isA tag and translations.</Comment>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-11</Date>
-            <Version>0.70.0</Version>
-            <Comment>
-                - Fix dependencies.
-                - Update download URL.
-            </Comment>
-            <Name>Metin Akdere</Name>
-            <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-04-23</Date>
-            <Version>0.7</Version>
             <Comment>First release</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
+            <Name>Metin Akdere</Name>
+            <Email>metin@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -28,10 +29,9 @@
         <Update release="1">
             <Date>2011-03-03</Date>
             <Version>0.3.1</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Uğur Çetin</Name>
             <Email>jnmbk@users.sourceforge.net</Email>
         </Update>
     </History>
 </PISI>
-

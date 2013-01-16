@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <PISI>
     <Source>
@@ -170,75 +171,12 @@
         </Provides>
     </Package>
     <History>
-      <Update release="10">
+      <Update release="1">
             <Date>2012-03-29</Date>
             <Version>11.0</Version>
-            <Comment>version update (http://ftp.cc.uoc.gr/mirrors/xbmc/releases/11.0-Eden-changelog.txt)</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-10-15</Date>
-            <Version>10.1</Version>
-            <Comment>Add XBMC Service</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-10-13</Date>
-            <Version>10.1</Version>
-            <Comment>Adding missing dependencies</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-05-08</Date>
-            <Version>10.1</Version>
-            <Comment>FiX</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-03-11</Date>
-            <Version>10.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-02-04</Date>
-            <Version>10.0</Version>
-            <Comment>P2011 Release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-02-04</Date>
-            <Version>10.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-09-20</Date>
-            <Version>10.1_beta2</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-		<Update release="2">
-            <Date>2010-09-20</Date>
-            <Version>10.1_beta2</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-09-02</Date>
-            <Version>10.1_beta1</Version>
-            <Comment>First release.</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -52,54 +53,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-06-01</Date>
             <Version>1.6.2</Version>
-            <Comment>New stable release from FreeDesktop</Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-12</Date>
-            <Version>1.5E</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-08-18</Date>
-            <Version>1.5E</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-06-26</Date>
-            <Version>1.5E</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-04-20</Date>
-            <Version>1.5</Version>
-            <Comment>Remove libXp dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-03-10</Date>
-            <Version>1.5</Version>
-            <Comment>xorg-server dep removed, X libraries added instead</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-11-01</Date>
-            <Version>1.5</Version>
-            <Comment>First release.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih.asici@gmail.com</Email>
         </Update>
     </History>
 </PISI>

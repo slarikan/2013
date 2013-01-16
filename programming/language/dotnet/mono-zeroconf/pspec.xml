@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -46,39 +47,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-02-18</Date>
             <Version>0.9.0</Version>
-            <Comment>Disable msdnsresponder</Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Göksel</Name>
             <Email>gokmen@pardus.org.tr</Email>
         </Update>
-        <Update release="3">
-            <Date>2010-02-21</Date>
-            <Version>0.9.0</Version>
-            <Comment>
-                * Update dependencies.
-                * Install developer docs.
-                * Enable mDNSResponder support.
-                * Split docs.
-            </Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-11-29</Date>
-            <Version>0.9.0</Version>
-            <Comment>Disable mDNSResponder support. It still not in repository.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-10-30</Date>
-            <Version>0.9.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

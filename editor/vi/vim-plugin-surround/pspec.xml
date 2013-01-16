@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -21,7 +22,7 @@
     <Package>
         <Name>vim-plugin-surround</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="7.0">vim</Dependency>
+            <Dependency>vim</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/vim/vimfiles</Path>

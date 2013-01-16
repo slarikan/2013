@@ -1,3 +1,4 @@
+
 <?xml version="1.0" ?>
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
@@ -24,20 +25,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-01-09</Date>
             <Version>2.1</Version>
-            <Comment>Version bump and package takeover. Make the package ready for Pardus 2011.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
         </Update>
-        <Update release="1">
-            <Date>2010-01-08</Date>
-            <Version>2.0.12</Version>
-            <Comment>First release.</Comment>
-            <Name>Bulak Arpat</Name>
-            <Email>bulak.arpat@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-
