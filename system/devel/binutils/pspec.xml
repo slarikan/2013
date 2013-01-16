@@ -14,8 +14,6 @@
         <Description>Contains commands like as, ld, nm, objdump, ar, ranlib for compiling assembly code to the machine language, and for linking and manipulating the binary object files.</Description>
         <Archive sha1sum="d4a62c749c8a27702ee5b8c51398c96387e7b225" type="tarxz">http://www.kernel.org/pub/linux/devel/binutils/binutils-2.23.51.0.8.tar.xz</Archive>
         <Patches>
-            <!-- Install 32bit libs into /lib32 in an ABI setup with amd64/x86-->
-            <Patch level="1">gentoo/65_all_binutils-2.20-amd64-32bit-path.patch</Patch>
             <!-- Enable dtags -->
             <Patch level="1">ld-dtags.diff</Patch>
 
