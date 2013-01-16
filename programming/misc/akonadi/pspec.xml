@@ -16,11 +16,11 @@
         <Description>akonadi is an extensible cross-desktop storage service for PIM data and meta data providing concurrent read, write, and query access.</Description>
         <Archive sha1sum="29f6591d58712939b5e396028d26527f35036aaf" type="tarbz2">mirrors://kde/stable/akonadi/src/akonadi-1.9.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.0">qt-sql-mysql</Dependency>
-            <Dependency versionFrom="2.8.0">soprano-devel</Dependency>
-            <Dependency versionFrom="0.90">shared-mime-info</Dependency>
-            <Dependency releaseFrom="47">mysql-client</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>qt-sql-mysql</Dependency>
+            <Dependency>soprano-devel</Dependency>
+            <Dependency>shared-mime-info</Dependency>
+            <Dependency>mysql-client</Dependency>
             <Dependency>mysql-server</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>automoc4</Dependency>
@@ -35,17 +35,17 @@
         <Name>akonadi</Name>
         <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
-            <Dependency versionFrom="4.8.0">qt-sql-mysql</Dependency>
-            <Dependency versionFrom="0.90">shared-mime-info</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-sql-mysql</Dependency>
+            <Dependency>shared-mime-info</Dependency>
             <!-- 
             http://techbase.kde.org/Projects/PIM/Akonadi#Can_Akonadi_use_a_normal_MySQL_server_running_on_my_system.3F
             http://dot.kde.org/1209500572/1209540984/
             -->
             <Dependency>mysql-server</Dependency>
             <!-- mysql_upgrade is needed -->
-            <Dependency releaseFrom="47">mysql-client</Dependency>
-            <Dependency versionFrom="2.8.0">soprano</Dependency>
+            <Dependency>mysql-client</Dependency>
+            <Dependency>soprano</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>libxslt</Dependency>
         </RuntimeDependencies>

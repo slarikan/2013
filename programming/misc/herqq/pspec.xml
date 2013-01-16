@@ -15,7 +15,7 @@
         <Description>Herqq UPnP (HUPnP) is a software library for building UPnP devices and control points conforming to the UPnP Device Architecture version 1.1.</Description>
         <Archive type="zip" sha1sum="543a67802c37c66c29c8527522b1630c42756545">mirrors://sourceforge/hupnp/hupnp/herqq-1.0.0.zip</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>desktop-file-utils</Dependency>
             <Dependency>qtsoap-devel</Dependency>
         </BuildDependencies>
@@ -28,7 +28,7 @@
         <Name>herqq</Name>
         <RuntimeDependencies>
             <Dependency>qtsoap</Dependency>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

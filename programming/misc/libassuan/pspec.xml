@@ -15,7 +15,7 @@
         <Description>This is the IPC library used by GnuPG 2, GPGME and a few other packages.</Description>
         <Archive sha1sum="2bf4eba3b588758e349976a7eb9e8a509960c3b5" type="tarbz2">ftp://ftp.gnupg.org/gcrypt/libassuan/libassuan-2.0.3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.0.7">pth</Dependency>
+            <Dependency>pth</Dependency>
             <Dependency>libgpg-error</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>libassuan</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.0.7">pth</Dependency>
+            <Dependency>pth</Dependency>
             <Dependency>libgpg-error</Dependency>
         </RuntimeDependencies>
         <Files>

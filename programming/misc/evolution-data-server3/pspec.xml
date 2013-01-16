@@ -33,7 +33,7 @@
             <Dependency>nspr-devel</Dependency>
             <Dependency>nss-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency versionFrom="1.9.2">xulrunner-devel</Dependency>
+            <Dependency>xulrunner-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -53,7 +53,7 @@
             <Dependency>libical</Dependency>
             <Dependency>libgnome-keyring</Dependency>
             <Dependency>openldap-client</Dependency>
-            <Dependency versionFrom="1.9.2">xulrunner</Dependency>
+            <Dependency>xulrunner</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>

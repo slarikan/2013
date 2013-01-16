@@ -15,7 +15,7 @@
         <Description>QSvn is a Qt based graphical Subversion client for Linux, Windows and Mac OS X.</Description>
         <Archive sha1sum="21291e9c91f2765485f06832ea61affe1c2091c0" type="targz">http://www.anrichter.net/projects/qsvn/chrome/site/qsvn-0.8.3-src.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
@@ -31,7 +31,7 @@
         <Name>qsvn</Name>
         <IsA>app:gui</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>qt-sql-sqlite</Dependency>
             <Dependency>apr</Dependency>
@@ -52,7 +52,7 @@
         <Summary>Qt wrapper for subversion library</Summary>
         <Description>libsvnqt is pure Qt wrapper of subversion C-Api.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>qt-sql-sqlite</Dependency>
             <Dependency>apr</Dependency>

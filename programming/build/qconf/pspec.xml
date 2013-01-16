@@ -15,14 +15,14 @@
         <Description>QConf allows you to have a nice configure script for qmake-based projects. It is intended for developers who don’t need (or want) to use GNU autotools. With qconf/qmake, it is easy to maintain a cross-platform project that uses a familiar configuration interface on UNIX.</Description>
         <Archive sha1sum="ebc3c505a1afc9308c306fca6a6c2c206b8aedf8" type="tarbz2">http://delta.affinix.com/download/qconf-1.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>qconf</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

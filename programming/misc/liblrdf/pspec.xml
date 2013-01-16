@@ -15,7 +15,7 @@
         <Description>A lightweight RDF library with special support for LADSPA plugins.</Description>
         <Archive sha1sum="4c48b8a2413220f79d94f65f073faf28fa7fd3a5" type="targz">https://github.com/swh/LRDF/archive/master.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="2">ladspa-sdk</Dependency>
+            <Dependency>ladspa-sdk</Dependency>
             <Dependency>raptor2-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -26,8 +26,8 @@
     <Package>
         <Name>liblrdf</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="2">ladspa-sdk</Dependency>
-            <Dependency versionFrom="1.4.12">raptor2</Dependency>
+            <Dependency>ladspa-sdk</Dependency>
+            <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

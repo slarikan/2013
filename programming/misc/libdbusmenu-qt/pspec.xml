@@ -17,7 +17,7 @@
         <BuildDependencies>
             <!-- required to build test application -->
             <Dependency>libqjson-devel</Dependency>
-            <Dependency versionFrom="4.7.0_beta2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">add-qt-library-dir.diff</Patch>
@@ -27,7 +27,7 @@
     <Package>
         <Name>libdbusmenu-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.0_beta2">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

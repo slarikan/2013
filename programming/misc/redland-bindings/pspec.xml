@@ -16,12 +16,12 @@
         <Description>redland-bindings provides Redland RDF language bindings for Perl, Python, Php and Ruby.</Description>
         <Archive sha1sum="b7e137498c190ba49409a7b91fbd3962b7ebcbef" type="targz">http://download.librdf.org/source/redland-bindings-1.0.14.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.0.14">redland-devel</Dependency>
-            <Dependency versionFrom="2.7">python-tk</Dependency>
-            <Dependency versionFrom="1.8.7_p302">ruby</Dependency>
-            <Dependency versionFrom="5.2.14">php-cli</Dependency>
+            <Dependency>redland-devel</Dependency>
+            <Dependency>python-tk</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>php-cli</Dependency>
             <Dependency>php-devel</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal-devel</Dependency>
+            <Dependency>rasqal-devel</Dependency>
             <Dependency>raptor2-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -40,9 +40,9 @@
         <PartOf>programming.language.php</PartOf>
         <Summary>Php bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
+            <Dependency>redland</Dependency>
             <Dependency>raptor2</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>php-cli</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -55,8 +55,8 @@
         <PartOf>programming.language.python</PartOf>
         <Summary>Python bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -69,8 +69,8 @@
         <PartOf>programming.language.ruby</PartOf>
         <Summary>Ruby bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>raptor2</Dependency>
             <Dependency>ruby</Dependency>
         </RuntimeDependencies>
@@ -84,8 +84,8 @@
         <PartOf>programming.language.perl</PartOf>
         <Summary>Perl bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>

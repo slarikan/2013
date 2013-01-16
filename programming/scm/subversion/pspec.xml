@@ -16,8 +16,8 @@
         <Description>SVN is a version controlling system to store files and control their change history in a repository.</Description>
         <Archive sha1sum="c9fc0c5992eda36ba9affd93a15929e25958a951" type="tarbz2">http://archive.apache.org/dist/subversion/subversion-1.7.7.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.28.4">neon-devel</Dependency>
-            <Dependency releaseFrom="14">apr</Dependency>
+            <Dependency>neon-devel</Dependency>
+            <Dependency>apr</Dependency>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>apache</Dependency>
@@ -43,9 +43,9 @@
     <Package>
         <Name>subversion</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.28.4">neon</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
-            <Dependency releaseFrom="14">apr</Dependency>
+            <Dependency>neon</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>apr</Dependency>
             <Dependency>cyrus-sasl</Dependency>
             <Dependency>apr-util</Dependency>
         </RuntimeDependencies>
@@ -99,8 +99,8 @@
         <Name>mod_dav_svn</Name>
         <PartOf>server.web</PartOf>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.25.4">neon</Dependency>
-            <Dependency versionFrom="2.2">apache</Dependency>
+            <Dependency>neon</Dependency>
+            <Dependency>apache</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
@@ -119,7 +119,7 @@
     </Package>
 
     <History>
-        <Update release="1" type="security">
+        <Update release="1">
             <Date>2012-10-24</Date>
             <Version>1.7.7</Version>
             <Comment>First release</Comment>

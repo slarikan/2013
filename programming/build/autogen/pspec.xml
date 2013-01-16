@@ -15,7 +15,7 @@
         <Description>autogen is a tool designed to simplify the creation and maintenance of programs that contain large amounts of repetitious text.</Description>
         <Archive sha1sum="748bd9a3ebbad6f529bf2040ad9059e2b5412dc7" type="tarxz">ftp://ftp.gnu.org/gnu/autogen/rel5.16.2/autogen-5.16.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.1">guile-devel</Dependency>
+            <Dependency>guile-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>autogen-setfilename.patch</Patch>
@@ -26,7 +26,7 @@
     <Package>
         <Name>autogen</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.1">guile</Dependency>
+            <Dependency>guile</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

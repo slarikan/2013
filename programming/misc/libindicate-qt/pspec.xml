@@ -16,7 +16,7 @@
         <Description>Qt bindings for libindicate which is a small library for applications to raise "flags" on DBus for other components of the desktop to pick up and visualize.</Description>
         <Archive sha1sum="835fecef2d95eb54bd086c3ad3e5ea35602f54a7" type="tarbz2">https://launchpad.net/libindicate-qt/libindicate-0.5/0.2.5.91/+download/libindicate-qt-0.2.5.91.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>libindicate-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,7 +24,7 @@
     <Package>
         <Name>libindicate-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>libindicate</Dependency>
         </RuntimeDependencies>
         <Files>

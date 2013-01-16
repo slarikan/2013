@@ -18,19 +18,19 @@
             <AdditionalFile target=".mozconfig" permission="0644">pardus/mozconfig</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="3.14">nss-devel</Dependency>
-            <Dependency versionFrom="4.9.4">nspr-devel</Dependency>
-            <Dependency versionFrom="3.6.22">sqlite-devel</Dependency>
-            <Dependency versionFrom="1.8.8">cairo-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
+            <Dependency>nspr-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libIDL-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>hunspell-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
             <Dependency>gnome-vfs</Dependency>
             <Dependency>libgnomeui</Dependency>
-            <Dependency versionFrom="0.4.0">libproxy-devel</Dependency>
+            <Dependency>libproxy-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -80,12 +80,12 @@
     <Package>
         <Name>xulrunner</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.14">nss</Dependency>
-            <Dependency versionFrom="4.9.4">nspr</Dependency>
-            <Dependency versionFrom="0.4.0">libproxy</Dependency>
-            <Dependency versionFrom="1.8.8">cairo</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
-            <Dependency versionFrom="3.6.22">sqlite</Dependency>
+            <Dependency>nss</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>libproxy</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>sqlite</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -106,14 +106,10 @@
             <Dependency>pixman</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>libevent</Dependency>
-        </RuntimeDependencies>
-         <Conflicts>
-           <!--We have moved sdk libraries to base package-->
-            <Package releaseTo="56">xulrunner-devel</Package>
-        </Conflicts> 
+        </RuntimeDependencies>      
         <Files>
-	    <Path fileType="data">/usr/lib/pkgconfig</Path>
-	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/etc/gre.d</Path>
             <Path fileType="data">/etc/ld.so.conf.d</Path>
             <Path fileType="executable">/usr/bin</Path>
