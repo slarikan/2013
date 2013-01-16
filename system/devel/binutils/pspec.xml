@@ -22,11 +22,6 @@
             <Patch>binutils-skip-rpaths.patch</Patch>
             -->
 
-            <!-- Force as-needed at linker level when PARDUS_ASNEEDED is set, note Bsymbolic also enables as-needed so this may not be necessary -->
-            <!--
-            <Patch level="1">binutils-build-as-needed.diff</Patch>
-            -->
-
             <!--Patch>unit-at-a-time.patch</Patch-->
 
             <!-- Enable -z relro globally, see http://people.redhat.com/drepper/nonselsec.pdf -->
