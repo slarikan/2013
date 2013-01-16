@@ -16,20 +16,20 @@
         <Description>xfce4-datetime-plugin shows the date and time in the panel, and a calendar appears when you left-click on it.</Description>
         <Archive sha1sum="7ad64f68787446e8daf5102fc0691bd8e4cc2fa6" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-datetime-plugin/0.6/xfce4-datetime-plugin-0.6.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-datetime-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency>xfce4-panel</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

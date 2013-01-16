@@ -18,22 +18,22 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
-            <Dependency version="4.10.0">libxfce4util-devel</Dependency>
+	    <Dependency>libxfce4util-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-gvfs-mount</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.12">gtk2</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libxfce4util</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
+            <Dependency>xfce4-panel</Dependency>
+            <Dependency>libxfcegui4</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>cairo</Dependency>
         </RuntimeDependencies>

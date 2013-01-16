@@ -16,19 +16,19 @@
         <Description>A battery monitor panel plugin for Xfce4, compatible with APM and ACPI, for Linux and *BSD.</Description>
         <Archive sha1sum="d94780200bf81f2b891aa7f2d1ace48dfe7eff00" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-battery-plugin/1.0/xfce4-battery-plugin-1.0.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-battery-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency>xfce4-panel</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
