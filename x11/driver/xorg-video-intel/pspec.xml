@@ -17,11 +17,11 @@
         <BuildDependencies>
             <Dependency>libXv-devel</Dependency>
             <Dependency>libXvMC-devel</Dependency>
-            <Dependency versionFrom="2.4.23">libdrm-devel</Dependency>
+            <Dependency>libdrm-devel</Dependency>
             <Dependency>libpciaccess-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>xcb-util-devel</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,11 +30,11 @@
         <RuntimeDependencies>
             <Dependency>libXv</Dependency>
             <Dependency>libXvMC</Dependency>
-            <Dependency versionFrom="2.4.23">libdrm</Dependency>
-            <Dependency versionFrom="2.4.23">libdrm-intel</Dependency>
+            <Dependency>libdrm</Dependency>
+            <Dependency>libdrm-intel</Dependency>
             <Dependency>libpciaccess</Dependency>
             <Dependency>xcb-util</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -15,14 +15,14 @@
         <Description>xorg-input-aiptek contains the X.Org driver for Aiptek HyperPen USB-based tablet devices.</Description>
         <Archive sha1sum="55ea7d12d3e24fd72eacc966a59262864dce7769" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-aiptek-1.4.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-input-aiptek</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

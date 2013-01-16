@@ -15,7 +15,7 @@
         <Description>xorg-input-fpit contains the X.Org driver for Fujitsu Stylistic Tablet PCs.</Description>
         <Archive sha1sum="9305d30ae22d37c6b5bb975adc8ecda9b1d6c5e6" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-fpit-1.4.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch level="1"></Patch-->
@@ -25,7 +25,7 @@
     <Package>
         <Name>xorg-input-fpit</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

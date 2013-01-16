@@ -20,7 +20,7 @@
         <Archive sha1sum="f35f79b09044c5179dea00cdf15c77e8ebd963b3" type="tarbz2">mirrors://xorg/individual/font/font-adobe-100dpi-1.0.2.tar.bz2</Archive>
         <Archive sha1sum="64419679816358fe9295004430f1f3e58b2bf085" type="tarbz2">mirrors://xorg/individual/font/font-adobe-75dpi-1.0.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.0">font-util</Dependency>
+            <Dependency>font-util</Dependency>
             <Dependency>xorg-app</Dependency>
         </BuildDependencies>
     </Source>

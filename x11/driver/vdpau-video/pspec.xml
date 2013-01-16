@@ -27,7 +27,7 @@
     <Package>
         <Name>vdpau-video</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="9">libva</Dependency>
+            <Dependency>libva</Dependency>
             <Dependency>libvdpau</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>

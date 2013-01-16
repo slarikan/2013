@@ -15,19 +15,19 @@
         <Description>xorg-video-nouveau contains the X.Org driver for NVIDIA cards.</Description>
         <Archive sha1sum="602f47934f303e5b93ac25d91987d7519c6d80ab" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-nouveau-1.0.6.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.4.25">libdrm-nouveau</Dependency>
+            <Dependency>libdrm-nouveau</Dependency>
             <Dependency>libpciaccess-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-nouveau</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.4.25">libdrm-nouveau</Dependency>
+            <Dependency>libdrm-nouveau</Dependency>
             <Dependency>libpciaccess</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

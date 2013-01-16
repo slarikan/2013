@@ -15,14 +15,14 @@
         <Description>xorg-video-newport contains the X.Org driver for SGI Indy's and Indigo2's Newport video cards.</Description>
         <Archive sha1sum="666d3794833281bea24cb8015d9464753ba9885c" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-newport-0.2.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-newport</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>

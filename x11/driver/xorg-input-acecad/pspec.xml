@@ -15,14 +15,14 @@
         <Description>xorg-input-acecad contains the X.Org driver for Acecad Flair devices.</Description>
         <Archive sha1sum="410cee68e4435dc95774fb389fcefae1b2ffe3d1" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-acecad-1.5.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-input-acecad</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
