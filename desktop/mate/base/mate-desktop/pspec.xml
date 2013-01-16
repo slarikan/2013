@@ -60,7 +60,7 @@
         <Name>mate-desktop-devel</Name>
         <summary>mate-desktop için geliştirme dosyaları</summary>
 	 <RuntimeDependencies>
-	    <Dependency versionFrom="current">mate-desktop</Dependency>
+	    <Dependency release="current">mate-desktop</Dependency>
 	 </RuntimeDependencies>
         <Files>
 	    <Path fileType="header">/usr/include</Path>
@@ -68,12 +68,12 @@
     </Package>
 
     <History>
-        <!--<Update release="1">
+        <Update release="1">
             <Date>2012-12-16</Date>
             <Version>1.5.5</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>-->
+        </Update>
     </History>
 </PISI>

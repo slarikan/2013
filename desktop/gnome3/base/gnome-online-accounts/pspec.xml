@@ -15,11 +15,11 @@
         <Description>The GNOME Online Accounts package contains a framework used to access the user's online accounts.</Description>
         <Archive sha1sum="ac8f886f97c65d898c76a428f004d1beaf0702dc" type="tarxz">mirrors://gnome/gnome-online-accounts/3.5/gnome-online-accounts-3.5.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="3.6.2">gcr-devel</Dependency>
+            <Dependency>gcr-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
-            <Dependency versionFrom="0.7">libnotify-devel</Dependency>
-	    <Dependency versionFrom="0.7">librest-devel</Dependency>
-            <Dependency versionFrom="0.11">libsecret-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
+	    <Dependency>librest-devel</Dependency>
+            <Dependency>libsecret-devel</Dependency>
             <Dependency>json-glib-devel</Dependency>
             <Dependency>webkit-gtk2-devel</Dependency>
 	    <Dependency>libsoup-devel</Dependency>
@@ -34,11 +34,11 @@
     <Package>
         <Name>gnome-online-accounts</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.6.2">gcr</Dependency>
+            <Dependency>gcr</Dependency>
             <Dependency>libgnome-keyring</Dependency>
-            <Dependency versionFrom="0.7">libnotify</Dependency>
-	    <Dependency versionFrom="0.7">librest</Dependency>
-            <Dependency versionFrom="0.11">libsecret</Dependency>
+            <Dependency>libnotify</Dependency>
+	    <Dependency>librest</Dependency>
+            <Dependency>libsecret</Dependency>
             <Dependency>json-glib</Dependency>
             <Dependency>webkit-gtk2</Dependency>
 	    <Dependency>libsoup</Dependency>

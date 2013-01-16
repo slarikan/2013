@@ -16,7 +16,7 @@
         <Archive sha1sum="cb5ce1458260bce4587f68a65d346d8106700be7" type="tarxz">mirrors://gnome/libpeas/1.6/libpeas-1.6.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>python-pygobject3-devel</Dependency>
-            <Dependency versionFrom="0.10.1">gobject-introspection-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>seed-devel</Dependency>
 	    <Dependency>gjs-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -35,7 +35,7 @@
     <Package>
         <Name>libpeas</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.10.1">gobject-introspection</Dependency>
+            <Dependency>gobject-introspection</Dependency>
 	    <Dependency>python-pygobject3</Dependency>
             <Dependency>seed</Dependency>
 	    <Dependency>gjs</Dependency>
@@ -59,7 +59,7 @@
     <Package>
         <Name>libpeas-devel</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="current">libpeas</Dependency>
+            <Dependency release="current">libpeas</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
         </RuntimeDependencies>

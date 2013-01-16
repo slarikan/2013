@@ -91,7 +91,7 @@
         <Name>mate-control-center-devel</Name>
         <summary>mate-control-center için geliştirme dosyaları</summary>
 	 <RuntimeDependencies>
-	    <Dependency versionFrom="current">mate-control-center</Dependency>
+	    <Dependency release="current">mate-control-center</Dependency>
 	 </RuntimeDependencies>
         <Files>
 	    <Path fileType="header">/usr/include</Path>
@@ -99,12 +99,12 @@
     </Package>
 
     <History>
-        <!--<Update release="1">
+        <Update release="1">
             <Date>2012-12-16</Date>
             <Version>1.5.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>nams0-01@hotmail.it</Email>
-        </Update>-->
+        </Update>
     </History>
 </PISI>

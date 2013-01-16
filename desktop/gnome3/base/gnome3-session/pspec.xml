@@ -15,7 +15,7 @@
         <Description>gnome-session manages X11-compliant sessions with ConsoleKit daemon and starts GNOME core services</Description>
         <Archive sha1sum="b3fd30fcd8a7d9a97d5b763a1740a6aeaae57c93" type="tarxz">mirrors://gnome/gnome-session/3.7/gnome-session-3.7.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="3.7.2">gnome3-desktop-devel</Dependency>  
+            <Dependency>gnome3-desktop-devel</Dependency>  
             <Dependency>gtk3-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>cairo-devel</Dependency>

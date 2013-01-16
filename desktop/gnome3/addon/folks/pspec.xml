@@ -15,7 +15,7 @@
         <Description>folks is a library that aggregates people from multiple sources.</Description>
         <Archive sha1sum="0c9dcd4db046e7b7a35cf35679d6107653b750d9" type="tarxz">mirrors://gnome/folks/0.8/folks-0.8.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.20.1">telepathy-glib</Dependency>
+            <Dependency>telepathy-glib</Dependency>
             <Dependency>vala</Dependency>
             <Dependency>libgee-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
@@ -29,7 +29,7 @@
     <Package>
         <Name>folks</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.20.1">telepathy-glib</Dependency>
+            <Dependency>telepathy-glib</Dependency>
             <Dependency>libgee</Dependency>
             <Dependency>gconf</Dependency>
 	    <Dependency>libzeitgeist</Dependency>
