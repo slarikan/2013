@@ -14,11 +14,11 @@
         <Description>Editje is a visual editor for edje files.</Description>
         <Archive sha1sum="5400f0be873f02a0fd990ad0decf5719f0db1f0a" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/editje-20121228.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-e_dbus</Dependency>
-            <Dependency versionFrom="1.7.0">python-edje-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-elementary</Dependency>
+            <Dependency>python-evas-devel</Dependency>
+            <Dependency>python-ecore-devel</Dependency>
+            <Dependency>python-e_dbus</Dependency>
+            <Dependency>python-edje-devel</Dependency>
+            <Dependency>python-elementary</Dependency>
 
         </BuildDependencies>
         <Patches>
@@ -29,11 +29,11 @@
     <Package>
         <Name>editje</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.0">python-evas</Dependency>
-            <Dependency versionFrom="1.7.0">python-ecore</Dependency>
-            <Dependency versionFrom="1.7.0">python-e_dbus</Dependency>
-            <Dependency versionFrom="1.7.0">python-edje</Dependency>
-            <Dependency versionFrom="1.7.0">python-elementary</Dependency>
+            <Dependency>python-evas</Dependency>
+            <Dependency>python-ecore</Dependency>
+            <Dependency>python-e_dbus</Dependency>
+            <Dependency>python-edje</Dependency>
+            <Dependency>python-elementary</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

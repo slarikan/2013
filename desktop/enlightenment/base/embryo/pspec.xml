@@ -15,14 +15,14 @@
         <Description>Embryo is a tiny library designed as a virtual machine to interpret a limited set of small compiled programs.</Description>
         <Archive sha1sum="ad25a7a1c6a4a07fed8297262bebb628c3ea2331" type="tarbz2">http://download.enlightenment.org/releases/embryo-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>embryo</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
+            <Dependency>eina</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -36,7 +36,7 @@
         <Summary>Development files for embryo</Summary>
         <RuntimeDependencies>
             <Dependency release="current">embryo</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

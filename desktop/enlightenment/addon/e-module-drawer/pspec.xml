@@ -15,13 +15,13 @@
         <Description>e-module-drawer is a simple drawer module for Enlightenment17 desktop shell.</Description>
         <Archive sha1sum="392c366e23d002e66a846020b26b3313376d7453" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/drawer-20121228.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="22">eina-devel</Dependency>
-            <Dependency releaseFrom="28">eet-devel</Dependency>
-            <Dependency releaseFrom="26">evas-devel</Dependency>
-            <Dependency releaseFrom="23">ecore-devel</Dependency>
-            <Dependency releaseFrom="23">edje-devel</Dependency>
-            <Dependency releaseFrom="9">ethumb-devel</Dependency>
-            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>ethumb-devel</Dependency>
+            <Dependency>enlightenment-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Path level="1">add-tr-to-desktop.patch</Path>
@@ -31,13 +31,13 @@
     <Package>
         <Name>e-module-drawer</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="22">eina</Dependency>
-            <Dependency releaseFrom="28">eet</Dependency>
-            <Dependency releaseFrom="26">evas</Dependency>
-            <Dependency releaseFrom="23">ecore</Dependency>
-            <Dependency releaseFrom="23">edje</Dependency>
-            <Dependency releaseFrom="9">ethumb</Dependency>
-            <Dependency releaseFrom="30">enlightenment</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>ethumb</Dependency>
+            <Dependency>enlightenment</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/enlightenment/modules/drawer/*.so</Path>

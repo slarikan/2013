@@ -19,18 +19,18 @@
         <Archive sha1sum="540dfcccd9785021adde851a640c3f86e7d346cc" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/Nitrous0.2_E17.edj</Archive>
         <Archive sha1sum="351b0ee32a04bae844905f54912d25010777e861" type="binary">https://github.com/circass/pisi-work/raw/master/e17-source/themes/ANKA-brotherhood.edj</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.4">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.4">embryo-devel</Dependency>
-            <Dependency versionFrom="1.7.4">efreet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">e_dbus-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eio-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eeze-devel</Dependency>
-            <Dependency versionFrom="1.7.4">emotion-devel</Dependency>
-            <Dependency versionFrom="1.7.4">elementary-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>embryo-devel</Dependency>
+            <Dependency>efreet-devel</Dependency>
+            <Dependency>e_dbus-devel</Dependency>
+            <Dependency>eio-devel</Dependency>
+            <Dependency>eeze-devel</Dependency>
+            <Dependency>emotion-devel</Dependency>
+            <Dependency>elementary-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>xcb-util-keysyms-devel</Dependency>
             <!--mixer module's dependency-->
@@ -42,18 +42,18 @@
     <Package>
         <Name>enlightenment</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">evas</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
-            <Dependency versionFrom="1.7.4">edje</Dependency>
-            <Dependency versionFrom="1.7.4">embryo</Dependency>
-            <Dependency versionFrom="1.7.4">efreet</Dependency>
-            <Dependency versionFrom="1.7.4">e_dbus</Dependency>
-            <Dependency versionFrom="1.7.4">eio</Dependency>
-            <Dependency versionFrom="1.7.4">eeze</Dependency>
-            <Dependency versionFrom="1.7.4">emotion</Dependency>
-            <Dependency versionFrom="1.7.4">elementary</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>embryo</Dependency>
+            <Dependency>efreet</Dependency>
+            <Dependency>e_dbus</Dependency>
+            <Dependency>eio</Dependency>
+            <Dependency>eeze</Dependency>
+            <Dependency>emotion</Dependency>
+            <Dependency>elementary</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>xcb-util-keysyms</Dependency>
             <!--mixer module's dependency-->
@@ -82,15 +82,15 @@
         <Summary>Development files for enlightenment</Summary>
         <RuntimeDependencies>
             <Dependency release="current">enlightenment</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.4">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.4">embryo-devel</Dependency>
-            <Dependency versionFrom="1.7.4">efreet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">e_dbus-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eio-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>embryo-devel</Dependency>
+            <Dependency>efreet-devel</Dependency>
+            <Dependency>e_dbus-devel</Dependency>
+            <Dependency>eio-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

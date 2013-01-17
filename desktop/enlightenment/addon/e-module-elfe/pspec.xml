@@ -15,24 +15,24 @@
         <Description>e-module-elfe its a Enlightenment Launcher Module for embedded devices</Description>
         <Archive sha1sum="b42428f5559313ef7a64742fd4dcdcb6527f8867" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/elfe-20121228.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="22">eina-devel</Dependency>
-            <Dependency releaseFrom="28">eet-devel</Dependency>
-            <Dependency releaseFrom="26">evas-devel</Dependency>
-            <Dependency releaseFrom="23">ecore-devel</Dependency>
-            <Dependency releaseFrom="23">edje-devel</Dependency>
-            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>enlightenment-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>e-module-elfe</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="22">eina</Dependency>
-            <Dependency releaseFrom="28">eet</Dependency>
-            <Dependency releaseFrom="26">evas</Dependency>
-            <Dependency releaseFrom="23">ecore</Dependency>
-            <Dependency releaseFrom="23">edje</Dependency>
-            <Dependency releaseFrom="30">enlightenment</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>enlightenment</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/enlightenment/modules/elfe/*.so</Path>

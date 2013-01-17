@@ -15,24 +15,24 @@
         <Description>Aspell module for everything: checks spelling of words,requires aspell installed</Description>
         <Archive sha1sum="fea052c913662e14fcfc576a7e6898f7d7713456" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/everything-aspell-20121228.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="22">eina-devel</Dependency>
-            <Dependency releaseFrom="28">eet-devel</Dependency>
-            <Dependency releaseFrom="26">evas-devel</Dependency>
-            <Dependency releaseFrom="23">ecore-devel</Dependency>
-            <Dependency releaseFrom="23">edje-devel</Dependency>
-            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>enlightenment-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>e-module-everything-aspell</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="22">eina</Dependency>
-            <Dependency releaseFrom="28">eet</Dependency>
-            <Dependency releaseFrom="26">evas</Dependency>
-            <Dependency releaseFrom="23">ecore</Dependency>
-            <Dependency releaseFrom="23">edje</Dependency>
-            <Dependency releaseFrom="30">enlightenment</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>enlightenment</Dependency>
 	    <Dependency>aspell</Dependency>
         </RuntimeDependencies>
         <Files>

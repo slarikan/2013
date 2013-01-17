@@ -16,18 +16,18 @@
         <Description>e_dbus is a basic convenience wrapper around D-Bus.</Description>
         <Archive sha1sum="d859ecd54269c54e335d836f745081aaeb40fecf" type="tarbz2">http://download.enlightenment.org/releases/e_dbus-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>e_dbus</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">evas</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,9 +42,9 @@
         <Summary>Development files for e_dbus</Summary>
         <RuntimeDependencies>
             <Dependency release="current">e_dbus</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
