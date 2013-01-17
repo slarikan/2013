@@ -22,7 +22,7 @@
             <Dependency>perl-XML-SAX-Writer</Dependency>
             <Dependency>perl-IO-stringy</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,7 +30,7 @@
         <Name>perl-XML-Twig</Name>
         <RuntimeDependencies>
             <Dependency>perl-XML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

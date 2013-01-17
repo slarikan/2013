@@ -40,7 +40,7 @@
         <Summary>Development files for python-webkit-gtk</Summary>
         <RuntimeDependencies>
             <Dependency release="current">python-webkit-gtk</Dependency>
-            <Dependency releaseFrom="11">webkit-gtk2-devel</Dependency>
+            <Dependency>webkit-gtk2-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/lib/pkgconfig</Path>

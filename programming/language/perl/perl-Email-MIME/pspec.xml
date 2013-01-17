@@ -14,7 +14,7 @@
         <Description>This is an extension of the Email::Simple module, to handle MIME encoded messages. It takes a message as a string, splits it up into its constituent parts, and allows you access to various parts of the message. Headers are decoded from MIME encoding.</Description>
         <Archive sha1sum="ec2240641759075e223f61cb407019bde93294c1" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-MIME-1.910.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Email-Simple-Creator</Dependency>
             <Dependency>perl-Email-MessageID</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>perl-Email-MIME</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Email-Simple-Creator</Dependency>
             <Dependency>perl-Email-MessageID</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>

@@ -15,14 +15,14 @@
         <Archive sha1sum="57412021ae07bed9ff4955523cec58a7560e46fb" type="targz">mirrors://cpan/authors/id/R/RC/RCLAMP/Devel-Caller-2.05.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-PadWalker</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Devel-Caller</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

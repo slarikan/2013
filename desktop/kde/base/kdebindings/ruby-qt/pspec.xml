@@ -14,25 +14,25 @@
         <Description>ruby-qt contains KDE4 language bindings for Ruby.</Description>
         <Archive sha1sum="f4bb5060c731fe6b7baf81de49d6b1ca0bfdb78f" type="tarxz">mirrors://kde/unstable/4.9.97/src/qtruby-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-kde-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-qt-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.8.4">qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.12.2">sip-devel</Dependency>
-            <Dependency versionFrom="0.2.0">attica-devel</Dependency>
-            <Dependency versionFrom="4.8.3">python-qt-devel</Dependency>
-            <Dependency versionFrom="1.9.0">akonadi-devel</Dependency>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="0.9.0">shared-desktop-ontologies</Dependency>
-            <Dependency versionFrom="2.9.0">soprano-devel</Dependency>
-            <Dependency versionFrom="0.99.0">polkit-qt_1-devel</Dependency>
+            <Dependency>smoke-gen-devel</Dependency>
+            <Dependency>smoke-kde-devel</Dependency>
+            <Dependency>smoke-qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>qt-webkit-devel</Dependency>
+            <Dependency>sip-devel</Dependency>
+            <Dependency>attica-devel</Dependency>
+            <Dependency>python-qt-devel</Dependency>
+            <Dependency>akonadi-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>shared-desktop-ontologies</Dependency>
+            <Dependency>soprano-devel</Dependency>
+            <Dependency>polkit-qt_1-devel</Dependency>
             <Dependency>ruby</Dependency>
             <Dependency>php-devel</Dependency>
             <Dependency>qscintilla2-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
-            <Dependency releaseFrom="15">qwt-devel</Dependency>
+            <Dependency>qwt-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -40,11 +40,11 @@
     <Package>
         <Name>ruby-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.7">ruby</Dependency>
-            <Dependency versionFrom="4.8.4">qt</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-qt</Dependency>
-            <Dependency versionFrom="4.8.4">qt-webkit</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>smoke-qt</Dependency>
+            <Dependency>qt-webkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -15,9 +15,9 @@
         <Description>kdeadmin contains administration related applications of KDE4. In this package, kcron (Task Scheduler module in System Settings), ksystemlog (system log viewer) and system-config-printer-kde (printer configuration application) applications are included.</Description>
         <Archive sha1sum="61dcc48413009c2d2e1706793de1dded3915840c" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdeadmin-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
-            <Dependency releaseFrom="30">system-config-printer</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>system-config-printer</Dependency>
             <Dependency>python-cups</Dependency>
         </BuildDependencies>
         <Patches>
@@ -34,10 +34,10 @@
     <Package>
         <Name>kdeadmin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
             <!-- needed by printer configuration GUI system-config-printer-kde -->
-            <Dependency releaseFrom="30">system-config-printer</Dependency>
+            <Dependency>system-config-printer</Dependency>
             <Dependency>python-cups</Dependency>
         </RuntimeDependencies>
         <Files>

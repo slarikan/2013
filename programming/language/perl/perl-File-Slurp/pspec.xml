@@ -14,14 +14,14 @@
         <Description>Efficient Reading/Writing of Complete Files. It provides subroutines to read or write entire files with as simple call.</Description>
         <Archive sha1sum="e734e5d93a82fbd179d33db35d1f98c5e5934bf1" type="targz">mirrors://cpan/authors/id/U/UR/URI/File-Slurp-9999.19.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-File-Slurp</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

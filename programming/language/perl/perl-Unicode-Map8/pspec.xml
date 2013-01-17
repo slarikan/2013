@@ -16,7 +16,7 @@
         <Archive sha1sum="ad8dad5e9741ff02b94dec62cb9b5926078a226a" type="targz">mirrors://cpan/authors/id/G/GA/GAAS/Unicode-Map8-0.13.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Unicode-String</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +24,7 @@
         <Name>perl-Unicode-Map8</Name>
         <RuntimeDependencies>
             <Dependency>perl-Unicode-String</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

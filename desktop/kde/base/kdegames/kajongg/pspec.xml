@@ -15,20 +15,20 @@
         <Description>Kajongg is the ancient Chinese board game for 4 players. Kajongg can be used in two different ways: Scoring a manual game where you play as always and use Kajongg for the computation of scores and for bookkeeping.</Description>
         <Archive sha1sum="7083f4ef418637cd53ff4b18a368f912d0da3c49" type="tarxz">mirrors://kde/unstable/4.9.97/src/kajongg-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkmahjongg-devel</Dependency>
-            <Dependency versionFrom="4.9.97">python-kde-devel</Dependency>
-            <Dependency versionFrom="12.2.0">python-Twisted</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>libkmahjongg-devel</Dependency>
+            <Dependency>python-kde-devel</Dependency>
+            <Dependency>python-Twisted</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kajongg</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">libkmahjongg</Dependency>
-            <Dependency versionFrom="4.9.97">python-kde</Dependency>
-            <Dependency versionFrom="12.2.0">python-Twisted</Dependency>    
+            <Dependency>libkdegames</Dependency>
+            <Dependency>libkmahjongg</Dependency>
+            <Dependency>python-kde</Dependency>
+            <Dependency>python-Twisted</Dependency>    
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

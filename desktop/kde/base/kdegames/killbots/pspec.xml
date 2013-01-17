@@ -15,16 +15,16 @@
         <Description>Killbots is a simple game of evading killer robots. Who created the robots and why they have been programmed to destroy, no one knows. All that is known is that the robots are numerous and their sole objective is to destroy you.</Description>
         <Archive sha1sum="526be3e244b78fe638b6ccf9d7031c7763a8ebc7" type="tarxz">mirrors://kde/unstable/4.9.97/src/killbots-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>killbots</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

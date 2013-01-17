@@ -15,8 +15,8 @@
         <Description>Kig is an application for interactive geometry.</Description>
         <Archive sha1sum="dd3fa6fdb41e995a534a0efd7f884f9258a98e4a" type="tarxz">mirrors://kde/unstable/4.9.97/src/kig-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
             <Dependency>boost-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>kig</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Replaces>

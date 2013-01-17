@@ -15,7 +15,7 @@
         <Description>The librep package contains a Lisp system. This is useful for scripting or for applications that may use the Lisp interpreter as an extension language.</Description>
         <Archive sha1sum="4835b0bcc79f5728d0824159eb4c294eef55ef61" type="tarxz">http://download.tuxfamily.org/librep/librep-0.92.2.tar.xz</Archive>
 	<BuildDependencies>
-            <Dependency versionFrom="3.0.11">libffi-devel</Dependency>
+            <Dependency>libffi-devel</Dependency>
 	    <Dependency>readline-devel</Dependency>
 	    <Dependency>gdbm-devel</Dependency>
 	    <Dependency>gmp-devel</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>librep</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.0.11">libffi</Dependency>
+            <Dependency>libffi</Dependency>
 	    <Dependency>readline-devel</Dependency>
 	    <Dependency>gdbm-devel</Dependency>
 	    <Dependency>gmp-devel</Dependency>

@@ -24,7 +24,7 @@
             <Dependency>sdl-ttf-devel</Dependency>
             <Dependency>lua-devel</Dependency>
             <Dependency>xerces-c-devel</Dependency>
-            <Dependency versionFrom="1.3.0">enet-devel</Dependency>
+            <Dependency>enet-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">autotools.patch</Patch>

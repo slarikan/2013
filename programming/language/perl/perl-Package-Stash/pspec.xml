@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>perl-Package-DeprecationManager</Dependency>
             <Dependency>perl-Dist-CheckConflicts</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Package-Stash-XS</Dependency>
             <Dependency>perl-Test-Requires</Dependency>
         </BuildDependencies>
@@ -28,7 +28,7 @@
         <RuntimeDependencies>
             <Dependency>perl-Package-DeprecationManager</Dependency>
             <Dependency>perl-Dist-CheckConflicts</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Package-Stash-XS</Dependency>
             <Dependency>perl-Test-Requires</Dependency>
         </RuntimeDependencies>

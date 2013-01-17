@@ -15,7 +15,7 @@
         <Description>perl-Mouse is a Perl module providing a subset of Moose's functionality in a faster way.</Description>
         <Archive sha1sum="12d785e2c8821c52ee0714c94cc3614112cfe7a2" type="targz">mirrors://cpan/authors/id/G/GF/GFUJI/Mouse-0.97.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
 
             <!-- For testing -->
             <Dependency>perl-Test-Deep</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-Mouse</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

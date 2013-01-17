@@ -23,7 +23,7 @@
             <Dependency>libsexy</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>php-cli</Dependency>
-            <Dependency releaseFrom="27">xulrunner-devel</Dependency>
+            <Dependency>xulrunner-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">php-gtk-2.0.1-gtkhtml314.patch</Patch>
@@ -42,7 +42,7 @@
             <Dependency>libsexy</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>php-cli</Dependency>
-            <Dependency releaseFrom="27">xulrunner</Dependency>
+            <Dependency>xulrunner</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/php</Path>

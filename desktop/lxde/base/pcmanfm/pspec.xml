@@ -20,7 +20,7 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency releaseFrom="7">libfm-devel</Dependency>
+            <Dependency>libfm-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +31,7 @@
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency releaseFrom="7">libfm</Dependency>  
+            <Dependency>libfm</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

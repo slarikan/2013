@@ -15,14 +15,14 @@
         <Description>At some point or another, most programmers find they need to compare floating-point numbers for equality. The typical idiom is to test if the absolute value of the difference of the numbers is within a desired tolerance, usually called epsilon.</Description>
         <Archive sha1sum="f7693a1cb856a9ab441a1ea2c9f8c14fc0e561b6" type="targz">mirrors://cpan/authors/id/D/DA/DAGOLDEN/Test-Number-Delta-1.03.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Test-Number-Delta</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

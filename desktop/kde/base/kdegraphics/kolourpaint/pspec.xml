@@ -15,7 +15,7 @@
         <Description>KolourPaint is a simple painting program to quickly create raster images. It is useful as a touch-up tool and simple image editing tasks.</Description>
         <Archive sha1sum="887748ae6be3032cf7476293e0e830765e6dc55c" type="tarxz">mirrors://kde/unstable/4.9.97/src/kolourpaint-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kolourpaint</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>qimageblitz</Dependency>
         </RuntimeDependencies>
         <Files>

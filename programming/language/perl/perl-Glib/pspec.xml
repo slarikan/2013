@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <!--<Patches>
             <Patch>Glib-1.210-exception-trapping.patch</Patch>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-Glib</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>glib2-perl</Package>

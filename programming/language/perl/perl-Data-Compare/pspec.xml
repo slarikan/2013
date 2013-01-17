@@ -14,13 +14,13 @@
         <Description>Compare two perl data structures recursively. Returns 0 if the structures differ, else returns 1.</Description>
         <Archive sha1sum="00079776bf7481a4c9a76163a269dbd4e40c2bea" type="targz">http://search.cpan.org/CPAN/authors/id/D/DC/DCANTRELL/Data-Compare-1.22.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Data-Compare</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

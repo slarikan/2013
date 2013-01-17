@@ -15,8 +15,8 @@
         <Description>KLettres is an application specially designed to help the user to learn alphabet in a new language and then to learn to read simple syllables. The user can be a young child aged from two and a half or an adult that wants to learn the basics of a foreign language.</Description>
         <Archive sha1sum="6256115b7c7df37ca37668ee254de4aeff6114e2" type="tarxz">mirrors://kde/unstable/4.9.97/src/klettres-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>klettres</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
         <Files>

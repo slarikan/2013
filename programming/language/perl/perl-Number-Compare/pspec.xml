@@ -14,14 +14,14 @@
         <Description>Number::Compare compiles a simple comparison to an anonymous subroutine, which you can call with a value to be tested again.</Description>
         <Archive sha1sum="8c3f2744486ae0732f96415deafad1229d1325df" type="targz">http://search.cpan.org/CPAN/authors/id/R/RC/RCLAMP/Number-Compare-0.03.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Number-Compare</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

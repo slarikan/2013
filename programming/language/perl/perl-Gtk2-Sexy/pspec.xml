@@ -18,7 +18,7 @@
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,7 +27,7 @@
         <RuntimeDependencies>
             <Dependency>libsexy</Dependency>
             <Dependency>perl-Gtk2</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

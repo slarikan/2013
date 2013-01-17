@@ -15,14 +15,14 @@
         <Description>perl-Config-Tiny is a perl class to read and write .ini style configuration files with as little code as possible, reducing load time and memory overhead.</Description>
         <Archive sha1sum="c41b3cdff37cdc3204932ae66d7fa98b24d80afe" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/Config-Tiny-2.14.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Config-Tiny</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>Config-Tidy</Package>

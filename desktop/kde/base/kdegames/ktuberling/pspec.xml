@@ -15,16 +15,16 @@
         <Description>KTuberling a simple constructor game suitable for children and adults alike. The idea of the game is based around a once popular doll making concept.</Description>
         <Archive sha1sum="be66854b4d090ca0f958bb1350defdd55e590f02" type="tarxz">mirrors://kde/unstable/4.9.97/src/ktuberling-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ktuberling</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

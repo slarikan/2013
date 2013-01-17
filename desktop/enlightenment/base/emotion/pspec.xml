@@ -15,13 +15,13 @@
         <Description>Emotion is a video and media object library designed to interface with Evas and Ecore to provide autonomous "video" and "audio" objects that can be moved, resized and positioned like any normal object, but instead they can play video and audio and can be controlled from a high-level control API allowing the programmer to quickly piece together a multi-media system with minimal work.</Description>
         <Archive sha1sum="99739e7865e5fc217162f1ae70770af62af09c6b" type="tarbz2">http://download.enlightenment.org/releases/emotion-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eio-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eeze-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.4">edje-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eio-devel</Dependency>
+            <Dependency>eeze-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
             <Dependency>xine-lib-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
@@ -31,13 +31,13 @@
     <Package>
         <Name>emotion</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">eio</Dependency>
-            <Dependency versionFrom="1.7.4">eeze</Dependency>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">evas</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
-            <Dependency versionFrom="1.7.4">edje</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>eio</Dependency>
+            <Dependency>eeze</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>edje</Dependency>
             <Dependency>xine-lib</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>gst-plugins-base</Dependency>
@@ -55,12 +55,12 @@
         <Summary>Development files for emotion</Summary>
         <RuntimeDependencies>
             <Dependency release="current">emotion</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eio-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eeze-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eio-devel</Dependency>
+            <Dependency>eeze-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

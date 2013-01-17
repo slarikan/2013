@@ -15,7 +15,7 @@
         <Description>perl-Package-Stash-XS is a faster and more correct implementation of the Package::Stash stash manipulation Perl module.</Description>
         <Archive sha1sum="e4b131c03792108a87289289bc9ab75ea555c2e1" type="targz">http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Package-Stash-XS-0.25.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Fatal</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Package-Stash-XS</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Fatal</Dependency>
         </RuntimeDependencies>
         <Files>

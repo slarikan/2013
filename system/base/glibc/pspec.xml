@@ -15,9 +15,9 @@
         <Description>The GNU C library is used as the C library in the GNU system and most systems with the Linux kernel. It defines the system calls and other basic C programming language facilities.</Description>
         <Archive sha1sum="9d4fffc9c4ac93e7919e124fa38bb51dcaff5216" type="tarxz">http://ftp.gnu.org/gnu/glibc/glibc-2.16.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="3.2.5">kernel-headers</Dependency>
+            <Dependency>kernel-headers</Dependency>
             <Dependency>gettext</Dependency>
-            <Dependency versionFrom="2.22.52.0.4">binutils</Dependency>
+            <Dependency>binutils</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">sandbox.patch</Patch>

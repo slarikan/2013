@@ -17,7 +17,7 @@
             <Dependency>psi</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>speex-devel</Dependency>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>liboil-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
         </BuildDependencies>
@@ -29,7 +29,7 @@
             <Dependency>psi</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>speex</Dependency>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>liboil</Dependency>
             <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>

@@ -16,9 +16,9 @@
         <Description>Ecore is the core event abstraction layer and X abstraction layer that makes doing selections, Xdnd, general X stuff, and event loops, timeouts and idle handlers fast, optimized, and convenient.</Description>
         <Archive sha1sum="11e001972d5f8f4fd3fe2f525b34156affb331ce" type="tarbz2">http://download.enlightenment.org/releases/ecore-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
@@ -37,9 +37,9 @@
     <Package>
         <Name>ecore</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">evas</Dependency>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>eet</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>libXdamage</Dependency>
             <Dependency>libXcomposite</Dependency>
@@ -67,9 +67,9 @@
         <Summary>Development files for ecore</Summary>
         <RuntimeDependencies>
             <Dependency release="current">ecore</Dependency>
-            <Dependency versionFrom="1.7.3">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.3">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
             <Dependency>DirectFB-devel</Dependency>
         </RuntimeDependencies>
         <Files>

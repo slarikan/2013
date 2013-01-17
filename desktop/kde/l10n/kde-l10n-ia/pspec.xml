@@ -14,7 +14,7 @@
         <Description>kde-l10n-ia is the KDE4 internationalization package that provides Interlingua translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="8445b88a1711a9213ae08407efd4c107ab384941">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ia-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

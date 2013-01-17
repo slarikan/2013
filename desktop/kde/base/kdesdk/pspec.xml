@@ -15,9 +15,9 @@
         <Description>kdesdk is a collection of applications and tools used by developers. In package, cervisia (CVS frontend), kompare (diff tool), lokalize (computer-aided translation system), umbrello (UML modeller and diagram tool), okteta (binary/hex editor) and kcachegrind (a browser for data produced by profiling tools e.g. cachegrind) applications are included.</Description>
         <Archive sha1sum="1c75ae655e7c68ac557be5597f2159f2c4daa51b" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdesdk-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-baseapps-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>subversion</Dependency>
@@ -34,10 +34,10 @@
     <Package>
         <Name>kdesdk</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">qt-sql-sqlite</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
+            <Dependency>qt-sql-sqlite</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-baseapps</Dependency>
+            <Dependency>kdepimlibs</Dependency>
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -52,7 +52,7 @@
         <Summary>Development files for kdesdk</Summary>
         <RuntimeDependencies>
             <Dependency release="current">kdesdk</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

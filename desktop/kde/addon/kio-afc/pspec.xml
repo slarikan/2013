@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
-            <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
+            <Dependency>libimobiledevice-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>kdelibs</Dependency>
-            <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
+            <Dependency>libimobiledevice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/kde4</Path>

@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
-            <Dependency versionFrom="1.11.1">libgadu-devel</Dependency>
+            <Dependency>libgadu-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>qt-devel</Dependency>
@@ -36,7 +36,7 @@
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
-            <Dependency versionFrom="1.11.1">libgadu</Dependency>
+            <Dependency>libgadu</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>qca2</Dependency>
             <Dependency>qt</Dependency>

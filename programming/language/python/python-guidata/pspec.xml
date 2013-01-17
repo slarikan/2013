@@ -15,7 +15,7 @@
         <Archive sha1sum="75d5d6c8d50553727fcc807cca86c2a3f92f824a" type="zip">http://guidata.googlecode.com/files/guidata-1.5.1.zip</Archive>
         <BuildDependencies>
             <Dependency>python-qt</Dependency>
-            <Dependency releaseFrom="16">qscintilla2-python</Dependency>
+            <Dependency>qscintilla2-python</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>python-guidata</Name>
         <RuntimeDependencies>
             <Dependency>python-qt</Dependency>
-            <Dependency releaseFrom="16">qscintilla2-python</Dependency>
+            <Dependency>qscintilla2-python</Dependency>
             <Dependency>python-h5py</Dependency>
             <Dependency>python-numpy</Dependency>
         </RuntimeDependencies>

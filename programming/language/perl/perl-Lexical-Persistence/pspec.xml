@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>perl-PadWalker</Dependency>
             <Dependency>perl-Devel-LexAlias</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>perl-PadWalker</Dependency>
             <Dependency>perl-Devel-LexAlias</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

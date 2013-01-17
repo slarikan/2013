@@ -15,9 +15,9 @@
         <Description>KAlgebra is a fully featured calculator that lets you plot different types of 2D and 3D functions and to calculate easy and not so easy calculations, such as addition, trigonometric functions or derivatives.</Description>
         <Archive sha1sum="08fd23a65365f987340883b4afd05415ccff0c6c" type="tarxz">mirrors://kde/unstable/4.9.97/src/kalgebra-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
-            <Dependency versionFrom="4.9.97">analitza-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
+            <Dependency>analitza-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,9 +25,9 @@
     <Package>
         <Name>kalgebra</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
-            <Dependency versionFrom="4.9.97">analitza</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
+            <Dependency>analitza</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>

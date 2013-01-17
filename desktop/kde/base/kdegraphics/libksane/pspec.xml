@@ -14,7 +14,7 @@
         <Description>libksane is a SANE library interface for KDE.</Description>
         <Archive sha1sum="d9c772a577a78b3707195c0461d33940956c2b16" type="tarxz">mirrors://kde/unstable/4.9.97/src/libksane-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>sane-backends-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>libksane</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>sane-backends</Dependency>
         </RuntimeDependencies>
         <Files>

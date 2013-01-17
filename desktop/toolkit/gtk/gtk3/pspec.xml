@@ -26,12 +26,12 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXinerama-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
-            <Dependency versionFrom="2.2.0">atk-devel</Dependency>
-            <Dependency versionFrom="2.32.0">glib2-devel</Dependency>
-            <Dependency versionFrom="1.10.0">cairo-devel</Dependency>
-            <Dependency versionFrom="1.30">pango-devel</Dependency>
-            <Dependency versionFrom="2.26.0">gdk-pixbuf-devel</Dependency>
-            <Dependency versionFrom="1.32.0">gobject-introspection-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>at-spi2-atk</Dependency>
         </BuildDependencies>
         <Patches>
@@ -64,9 +64,9 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>libXinerama</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency versionFrom="2.2.0">atk</Dependency>
-            <Dependency versionFrom="1.30">pango</Dependency>
-            <Dependency versionFrom="2.26.0">gdk-pixbuf</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>at-spi2-atk</Dependency>
         </RuntimeDependencies>
         <Files>

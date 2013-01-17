@@ -14,9 +14,9 @@
         <Description>This package contains artwork for a basic KDE Workspace installation.</Description>
         <Archive sha1sum="c96ef60c3ae475b59906ef106fa56d416e1fa253" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-base-artwork-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-	    <Dependency versionFrom="4.9.97">kde-baseapps</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-runtime</Dependency>
+	    <Dependency>kde-baseapps</Dependency>
            
         </BuildDependencies>
      </Source>
@@ -24,10 +24,10 @@
      <Package>
         <Name>kdebase-artwork</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
             <!-- needed by printer configuration GUI system-config-printer-kde -->
-            <Dependency releaseFrom="30">system-config-printer</Dependency>
+            <Dependency>system-config-printer</Dependency>
             <Dependency>python-cups</Dependency>
         </RuntimeDependencies>
 	<Files>            

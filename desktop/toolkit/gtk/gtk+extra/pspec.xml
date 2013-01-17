@@ -14,7 +14,7 @@
         <Description>GtkExtra is a useful set of widgets for creating GUI's using GTK+.</Description>
         <Archive sha1sum="1b6cccbf89a79c8fe551d77c84dbf21a82c69f07" type="targz">http://sourceforge.net/projects/gtkextra/files/2.1.2/gtk%2Bextra-2.1.2.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gtk-doc</Dependency>
@@ -32,7 +32,7 @@
     <Package>
         <Name>gtk+extra</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>pango</Dependency>
         </RuntimeDependencies>
@@ -47,7 +47,7 @@
         <IsA>data:doc</IsA>
         <Summary>Development files for gtk+extra library</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.1.2">gtk+extra</Dependency>
+            <Dependency>gtk+extra</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

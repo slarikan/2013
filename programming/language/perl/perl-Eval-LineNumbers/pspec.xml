@@ -14,14 +14,14 @@
         <Description>Eval::LineNumbers - Add line numbers to hereis blocks that contain perl source code.</Description>
         <Archive sha1sum="e8a253ce672da0392e64ceee50f3de2f573d8d16" type="targz">http://search.cpan.org/CPAN/authors/id/M/MU/MUIR/modules/Eval-LineNumbers-0.31.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Eval-LineNumbers</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

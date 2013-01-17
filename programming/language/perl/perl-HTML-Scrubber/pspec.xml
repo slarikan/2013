@@ -15,7 +15,7 @@
         <Archive sha1sum="90592c569b4ff611ff2d6a1815be058160530487" type="targz">http://search.cpan.org/CPAN/authors/id/N/NI/NIGELM/HTML-Scrubber-0.09.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-HTML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-HTML-Scrubber</Name>
         <RuntimeDependencies>
             <Dependency>perl-HTML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

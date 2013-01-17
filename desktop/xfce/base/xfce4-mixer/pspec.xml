@@ -19,12 +19,12 @@
             <Dependency>cairo-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4ui-devel</Dependency>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf-devel</Dependency>
-            <Dependency versionFrom="0.10.36">gstreamer-devel</Dependency>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base-devel</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
+            <Dependency>libxfce4ui-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
+            <Dependency>xfconf-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -34,12 +34,12 @@
             <Dependency>cairo</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4ui</Dependency>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf</Dependency>
-            <Dependency versionFrom="0.10.36">gstreamer</Dependency>
-            <Dependency versionFrom="0.10.32.4">gst-plugins-base</Dependency>
+            <Dependency>libxfce4util</Dependency>
+            <Dependency>libxfce4ui</Dependency>
+            <Dependency>xfce4-panel</Dependency>
+            <Dependency>xfconf</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>
         <Files>
            <Path fileType="executable">/usr/bin</Path>

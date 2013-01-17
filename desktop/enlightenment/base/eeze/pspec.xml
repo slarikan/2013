@@ -16,9 +16,9 @@
         <Description>Eeze is the library used by Enlightenment to be integrated to the devices via udev.</Description>
         <Archive sha1sum="46ff28b92ff0d4dd52d45c9ede751843c15a414d" type="tarbz2">http://download.enlightenment.org/releases/eeze-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
             <Dependency>libudev-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,9 +26,9 @@
     <Package>
         <Name>eeze</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>ecore</Dependency>
             <Dependency>libudev</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -43,9 +43,9 @@
         <Summary>Development files for eeze</Summary>
         <RuntimeDependencies>
             <Dependency release="current">eeze</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
             <Dependency>libudev-devel</Dependency>
         </RuntimeDependencies>
         <Files>

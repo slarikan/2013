@@ -14,14 +14,14 @@
         <Description>perl-Data-UUID provides a framework for generating v3 UUIDs (Universally Unique Identifiers, also known as GUIDs (Globally Unique Identifiers).</Description>
         <Archive sha1sum="c3e96f469d11a99bc84d1f3b069711c8c5d3a636" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-UUID-1.217.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Data-UUID</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

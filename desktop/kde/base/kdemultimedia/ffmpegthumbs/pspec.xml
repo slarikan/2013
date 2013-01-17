@@ -14,7 +14,7 @@
         <Description>FFmpeg-based thumbnail creator for video files</Description>
         <Archive sha1sum="fdde5060938235983b3e0e7737acd80fa3ea406d" type="tarxz">mirrors://kde/unstable/4.9.97/src/ffmpegthumbs-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>ffmpegthumbs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>ffmpeg</Dependency>
         </RuntimeDependencies>
         <Files>

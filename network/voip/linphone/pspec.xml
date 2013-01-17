@@ -23,7 +23,7 @@
             <Dependency>gsm-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
-            <Dependency versionFrom="0.20.0">ortp-devel</Dependency>
+            <Dependency>ortp-devel</Dependency>
             <Dependency>libosip2-devel</Dependency>
             <Dependency>libeXosip2-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
@@ -53,7 +53,7 @@
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="0.20.0">ortp</Dependency>
+            <Dependency>ortp</Dependency>
             <Dependency>libosip2</Dependency>
             <Dependency>libeXosip2</Dependency>
             <Dependency>libXv</Dependency>
@@ -90,7 +90,7 @@
         <Summary>Development files for linphone</Summary>
         <RuntimeDependencies>
             <Dependency release="current">linphone</Dependency>
-            <Dependency versionFrom="0.16.3">ortp-devel</Dependency>
+            <Dependency>ortp-devel</Dependency>
             <Dependency release="current">mediastreamer2-devel</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -110,7 +110,7 @@
             <Dependency>alsa-lib</Dependency>
             <Dependency>gsm</Dependency>
             <Dependency>ffmpeg</Dependency>
-            <Dependency versionFrom="0.16.3">ortp</Dependency>
+            <Dependency>ortp</Dependency>
             <Dependency>libv4l</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libXv</Dependency>
@@ -129,7 +129,7 @@
         <Summary>Development files for mediastreamer2</Summary>
         <RuntimeDependencies>
             <Dependency release="current">mediastreamer2</Dependency>
-            <Dependency versionFrom="0.16.3">ortp-devel</Dependency>
+            <Dependency>ortp-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/mediastreamer2</Path>

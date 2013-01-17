@@ -15,16 +15,16 @@
         <Description>Ksudoku is a logic-based symbol placement puzzle.</Description>
         <Archive sha1sum="2cdd71e3299fac7b7e598fe2ce1aeed9144d2b84" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksudoku-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ksudoku</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -21,7 +21,7 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
-            <Dependency versionFrom="0.9.6.0">NetworkManager-devel</Dependency>
+            <Dependency>NetworkManager-devel</Dependency>
         </BuildDependencies>
         <!--<Patches>
             <Patch level="1">add-gettext-tag.patch</Patch>
@@ -38,7 +38,7 @@
             <Dependency>vpnc</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>libgnome-keyring</Dependency>
-            <Dependency versionFrom="0.9.6.0">NetworkManager</Dependency>
+            <Dependency>NetworkManager</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>

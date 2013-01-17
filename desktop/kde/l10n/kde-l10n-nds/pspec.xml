@@ -14,7 +14,7 @@
         <Description>kde-l10n-nds is the KDE4 internationalization package that provides Low Saxon translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="c1f02d71c445294be5966d931b33ac7317202f6a">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-nds-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

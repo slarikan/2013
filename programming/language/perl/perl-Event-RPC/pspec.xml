@@ -17,14 +17,14 @@
         <BuildDependencies>
             <Dependency>perl-IO-Socket-SSL</Dependency>
             <Dependency>perl-Event</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Event-RPC</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Event</Dependency>
             <Dependency>perl-IO-Socket-SSL</Dependency>
         </RuntimeDependencies>

@@ -15,8 +15,8 @@
         <Description>Bespin is a mac-like style for KDE4, refers to Cloud City in Star Wars - Episode V "The Empire Strikes Back".</Description>
         <Archive sha1sum="cbe623578f41f86158a65ca2a764509ad230b8aa" type="tarxz">https://github.com/downloads/pardus-anka/2013/cloudcity.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.5.3">kde-workspace-devel</Dependency>
-            <Dependency versionFrom="4.5.3">kdelibs-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>automoc4</Dependency>
         </BuildDependencies>
         <Patches>
@@ -27,7 +27,7 @@
     <Package>
         <Name>bespin-kde4-theme</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.3">kde-workspace</Dependency>
+            <Dependency>kde-workspace</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

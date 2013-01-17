@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-net-devel</Dependency>
-            <Dependency releaseFrom="14">wxGTK-devel</Dependency>
+            <Dependency>wxGTK-devel</Dependency>
             <Dependency>openal-devel</Dependency>
             <Dependency>freealut-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
@@ -42,7 +42,7 @@
         <RuntimeDependencies>
             <Dependency>libsdl</Dependency>
             <Dependency>sdl-net</Dependency>
-            <Dependency releaseFrom="14">wxGTK</Dependency>
+            <Dependency>wxGTK</Dependency>
             <Dependency>openal</Dependency>
             <Dependency>freealut</Dependency>
             <Dependency>libogg</Dependency>

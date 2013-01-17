@@ -15,16 +15,16 @@
         <Description>KBreakout is a Breakout like game. The object of the game is to destroy as many bricks as possible without losing the ball.</Description>
         <Archive sha1sum="b2925402fb7d53a4f393e4862d9ea932cd2d50a9" type="tarxz">mirrors://kde/unstable/4.9.97/src/kbreakout-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kbreakout</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

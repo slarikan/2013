@@ -14,7 +14,7 @@
         <Description>kde-l10n-bs is the KDE4 internationalization package that provides Bosnian translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="2806f1c1d918c6c66e8557d73280693a63f51980">mirrors://kde/unstable/4.9.90/src/kde-l10n/kde-l10n-bs-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -14,7 +14,7 @@
         <Description>telepathy-butterfly is an MSN connection manager that handles presence, personal messages and conversations.</Description>
         <Archive sha1sum="73c9dba9f97ae5a6d981485e5f51c5930168f8ce" type="targz">http://telepathy.freedesktop.org/releases/telepathy-butterfly/telepathy-butterfly-0.5.15.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.4.9">python-papyon</Dependency>
+            <Dependency>python-papyon</Dependency>
             <Dependency>telepathy-python</Dependency>
         </BuildDependencies>
         <Patches>
@@ -25,7 +25,7 @@
     <Package>
         <Name>telepathy-butterfly</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.9">python-papyon</Dependency>
+            <Dependency>python-papyon</Dependency>
             <Dependency>telepathy-python</Dependency>
         </RuntimeDependencies>
         <Files>

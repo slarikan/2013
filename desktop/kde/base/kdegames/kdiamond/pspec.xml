@@ -15,16 +15,16 @@
         <Description>KDiamond is a single player puzzle game. The object of the game is to build lines of three similar diamonds.</Description>
         <Archive sha1sum="315cdd35d1b92f2534533ed19fc2b2067d82ad56" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdiamond-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kdiamond</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

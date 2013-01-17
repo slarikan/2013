@@ -14,10 +14,10 @@
         <Description>KDE bindings for korundum</Description>
         <Archive sha1sum="4d5ca7085411e1daa16c0519abc3566c73bf8507" type="tarxz">mirrors://kde/unstable/4.9.97/src/korundum-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">ruby-qt-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-kde-devel</Dependency>
-            <Dependency versionFrom="4.9.97">okular-devel</Dependency>
-            <Dependency versionFrom="2.9.0">soprano</Dependency>
+            <Dependency>ruby-qt-devel</Dependency>
+            <Dependency>smoke-kde-devel</Dependency>
+            <Dependency>okular-devel</Dependency>
+            <Dependency>soprano</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">/arch/korundum-4.8.0-ruby19.patch</Patch>
@@ -27,8 +27,8 @@
     <Package>
         <Name>korundum</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">ruby-qt</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-kde</Dependency>
+            <Dependency>ruby-qt</Dependency>
+            <Dependency>smoke-kde</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>kdebindings</Package>

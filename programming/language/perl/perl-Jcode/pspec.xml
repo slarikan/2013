@@ -14,14 +14,14 @@
         <Description>Perl extension interface to convert Japanese text.</Description>
         <Archive sha1sum="1d0a695235f46c759f90a0c5e4cd196027b63f1b" type="targz">mirrors://cpan/authors/id/D/DA/DANKOGAI/Jcode-2.07.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Jcode</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -16,15 +16,15 @@
         <Archive sha1sum="191f420981e2f5566d16b146b73bf31d5efd34b4" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdeplasma-addons-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-workspace-devel</Dependency>
-            <Dependency versionFrom="4.9.97">marble</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="2.0.10">eigen</Dependency>
-            <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
-            <Dependency versionFrom="2.7.1">soprano-devel</Dependency>
+            <Dependency>kde-baseapps-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
+            <Dependency>marble</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>eigen</Dependency>
+            <Dependency>shared-desktop-ontologies</Dependency>
+            <Dependency>soprano-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
             <Dependency>libqalculate-devel</Dependency>
             <Dependency>attica-devel</Dependency>
@@ -46,15 +46,15 @@
         <Name>kdeplasma-addons</Name>
         <RuntimeDependencies>
             <Dependency>qt-webkit</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps</Dependency>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
+            <Dependency>kde-baseapps</Dependency>
+            <Dependency>kde-workspace</Dependency>
             <!-- kexiv2 is needed -->
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.97">marble</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
-            <Dependency versionFrom="2.7.1">soprano</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>marble</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>shared-desktop-ontologies</Dependency>
+            <Dependency>soprano</Dependency>
             <Dependency>qimageblitz</Dependency>
             <Dependency>libqalculate</Dependency>
             <Dependency>qca2</Dependency>

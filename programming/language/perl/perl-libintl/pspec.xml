@@ -14,14 +14,14 @@
         <Description>This is a simple, respectively stupid Perl package that shows how the complete internationalization process for a Perl package *could* be done.</Description>
         <Archive sha1sum="883237efa86c617550f1b0bed1adea2885213ce5" type="targz">mirrors://cpan/authors/id/G/GU/GUIDO/libintl-perl-1.20.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-libintl</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

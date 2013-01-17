@@ -20,11 +20,11 @@
             <Dependency>mesa-devel</Dependency>
             <Dependency>tinyxml-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
-            <Dependency versionFrom="1.7.3">ogre-devel</Dependency>
-            <Dependency versionFrom="5.1.4">lua-devel</Dependency>
-            <Dependency versionFrom="3.0.1">xerces-c-devel</Dependency>
-            <Dependency versionFrom="1.5.1">glew-devel</Dependency>
-            <Dependency versionFrom="3.15.0">FreeImage-devel</Dependency>
+            <Dependency>ogre-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>xerces-c-devel</Dependency>
+            <Dependency>glew-devel</Dependency>
+            <Dependency>FreeImage-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>cegui-tinyxml.patch</Patch>
@@ -40,11 +40,11 @@
             <Dependency>mesa</Dependency>
             <Dependency>tinyxml</Dependency>
             <Dependency>freeglut</Dependency>
-            <Dependency versionFrom="1.7.3">ogre</Dependency>
-            <Dependency versionFrom="5.1.4">lua</Dependency>
-            <Dependency versionFrom="3.0.1">xerces-c</Dependency>
-            <Dependency versionFrom="1.5.1">glew</Dependency>
-            <Dependency versionFrom="3.15.0">FreeImage</Dependency>
+            <Dependency>ogre</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>xerces-c</Dependency>
+            <Dependency>glew</Dependency>
+            <Dependency>FreeImage</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

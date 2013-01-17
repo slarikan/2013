@@ -21,7 +21,7 @@
             <Dependency>libffi-devel</Dependency>
 
             <!-- Use new plugin-api.h header file from binutils to enable LLVM gold plugin -->
-            <Dependency releaseFrom="40">binutils</Dependency>
+            <Dependency>binutils</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">enable-lto.patch</Patch>

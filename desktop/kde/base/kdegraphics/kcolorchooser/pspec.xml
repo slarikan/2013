@@ -15,14 +15,14 @@
         <Description>KColorChooser is a simple color chooser application.</Description>
         <Archive sha1sum="07e3145508697c6037a9f48c3db8ef48e160ebc9" type="tarxz">mirrors://kde/unstable/4.9.97/src/kcolorchooser-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kcolorchooser</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

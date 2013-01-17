@@ -14,7 +14,7 @@
         <Description>kde-l10n-fi is the KDE4 internationalization package that provides Finnish translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="72b0dd1aa1d6e8c7869c25bca1d29f1af901fb73">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-fi-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -16,7 +16,7 @@
         <Archive sha1sum="6f29fe96232cb87dd18b90eac3d8ee6ac82ee411" type="targz">http://search.cpan.org/CPAN/authors/id/R/RI/RIBASUSHI/namespace-clean-0.23.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-B-Hooks-EndOfScope</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Package-Stash</Dependency>
             <Dependency>perl-Sub-Identify</Dependency>
             <Dependency>perl-Sub-Name</Dependency>
@@ -27,7 +27,7 @@
         <Name>perl-namespace-clean</Name>
         <RuntimeDependencies>
             <Dependency>perl-B-Hooks-EndOfScope</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Package-Stash</Dependency>
             <Dependency>perl-Sub-Identify</Dependency>
             <Dependency>perl-Sub-Name</Dependency>

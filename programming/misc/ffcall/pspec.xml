@@ -27,7 +27,7 @@
         <Name>ffcall-devel</Name>
         <Summary>Development files for ffcall</Summary>
         <RuntimeDependencies>
-            <Dependency release="3">ffcall</Dependency>
+            <Dependency>ffcall</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

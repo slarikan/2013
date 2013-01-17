@@ -63,7 +63,7 @@
         <IsA>app:gui</IsA>
         <Summary>Wicd's user interface client that is written in GTK+</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="10">wicd</Dependency>
+            <Dependency>wicd</Dependency>
             <Dependency>python-gtk</Dependency>
             <Dependency>notify-python</Dependency>
             <Dependency>libgksu</Dependency>
@@ -90,7 +90,7 @@
         <IsA>app:console</IsA>
         <Summary>Wicd's user interface client that is written in Urwid</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="10">wicd</Dependency>
+            <Dependency>wicd</Dependency>
             <Dependency>python-urwid</Dependency>
         </RuntimeDependencies>
         <Files>

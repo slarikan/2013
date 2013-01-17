@@ -19,7 +19,7 @@
             <Dependency>gsl-devel</Dependency>
             <Dependency>libdc1394-devel</Dependency>
             <Dependency>libraw1394-devel</Dependency>
-            <Dependency versionFrom="2.3.1">opencv-devel</Dependency>
+            <Dependency>opencv-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libgnomecanvas-devel</Dependency>
             <Dependency>imagemagick-devel</Dependency>
@@ -53,7 +53,7 @@
             <Dependency>boost</Dependency>
             <Dependency>gsl</Dependency>
             <Dependency>libdc1394</Dependency>
-            <Dependency versionFrom="2.3.1">opencv</Dependency>
+            <Dependency>opencv</Dependency>
             <Dependency>alsa-lib</Dependency>
             <Dependency>libgnomecanvas</Dependency>
             <Dependency>ruby</Dependency>

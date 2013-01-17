@@ -15,24 +15,24 @@
         <Description>e-module-eooorg, preloads the openoffice process to save stsrt time with the costs of some memory.</Description>
         <Archive sha1sum="db452e9ec9dd5e5f766d91b0d75ba12cee9a1702" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/eooorg-20121228.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="22">eina-devel</Dependency>
-            <Dependency releaseFrom="28">eet-devel</Dependency>
-            <Dependency releaseFrom="26">evas-devel</Dependency>
-            <Dependency releaseFrom="23">ecore-devel</Dependency>
-            <Dependency releaseFrom="23">edje-devel</Dependency>
-            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>enlightenment-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>e-module-eooorg</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="22">eina</Dependency>
-            <Dependency releaseFrom="28">eet</Dependency>
-            <Dependency releaseFrom="26">evas</Dependency>
-            <Dependency releaseFrom="23">ecore</Dependency>
-            <Dependency releaseFrom="23">edje</Dependency>
-            <Dependency releaseFrom="30">enlightenment</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>enlightenment</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/enlightenment/modules/eooorg/*/module.so</Path>

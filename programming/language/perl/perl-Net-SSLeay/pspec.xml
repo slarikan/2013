@@ -15,7 +15,7 @@
         <Description>Net::SMPP is an implementation of Short Message Peer to Peer protocol over TCP. This protocol is frequently used in the telecoms and mobile operator world to pass short messages between systems that implement the short message service (SMS).</Description>
         <Archive sha1sum="1d7b3d2136c52e45ea2b54abc66845ce23073966" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIKEM/Net-SSLeay-1.48.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Net-SSLeay</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>Net-SSLeay</Package>

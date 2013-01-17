@@ -15,7 +15,7 @@
         <Description>perl-Net-DBus-GLib provides an extension to the perl-Net-DBus module allowing integration with the GLib mainloop. To integrate with the main loop, simply get a connection to the bus via the methods in Net::DBus::GLib rather than the usual Net::DBus module. That's it - every other API remains the same.</Description>
         <Archive sha1sum="42e243e09f7406da276c73d91579bf4a3df3fc78" type="targz">mirrors://cpan/authors/id/D/DA/DANBERR/Net-DBus-GLib-0.33.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Glib</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
             <Dependency>perl-Pod-Coverage</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-Net-DBus-GLib</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Net-DBus</Dependency>
         </RuntimeDependencies>
         <Files>

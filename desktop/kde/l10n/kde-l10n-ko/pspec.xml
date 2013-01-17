@@ -14,7 +14,7 @@
         <Description>kde-l10n-ko is the KDE4 internationalization package that provides Korean translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="e5adc55eb510905c6cac1ffa0e5922ec958b5619">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ko-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

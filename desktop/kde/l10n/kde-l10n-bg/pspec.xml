@@ -14,7 +14,7 @@
         <Description>kde-l10n-bg is the KDE4 internationalization package that provides Bulgarian translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="9c4b60957e5aa390c9dc94c6181b95af3d04d893">mirrors://kde/unstable/4.9.90/src/kde-l10n/kde-l10n-bg-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -16,7 +16,7 @@
         <Archive sha1sum="70743052ef88ddd94e2789f79257b8b67bffa3c1" type="targz">http://abstrakraft.org/cwiid/downloads/cwiid-0.6.00.tgz</Archive>
         <BuildDependencies>
             <Dependency>bluez-libs-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
@@ -33,7 +33,7 @@
         <IsA>app:gui</IsA>
         <RuntimeDependencies>
             <Dependency>bluez-libs</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>

@@ -15,16 +15,16 @@
         <Description>In KSpaceDuel, each of two possible players controls a satellite spaceship orbiting the sun. As the game progresses players have to eliminate opponent's spacecraft. As soon as the opponent's satellite is destroyed, the remaining player wins the round.</Description>
         <Archive sha1sum="ad97df98fdf15a76a64fc4ea51299c7444ea95af" type="tarxz">mirrors://kde/unstable/4.9.97/src/kspaceduel-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kspaceduel</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

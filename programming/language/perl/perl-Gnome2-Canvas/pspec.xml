@@ -14,7 +14,7 @@
         <Description>perl-Gnome2-Canvas module allows you to use the GnomeCanvas widget with perl-Gtk2.</Description>
         <Archive sha1sum="8c9373132fabc7bc93eb1bcee743255978f5b72c" type="targz">mirrors://cpan/authors/id/T/TS/TSCH/Gnome2-Canvas-1.002.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libgnomecanvas-devel</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>perl-Gnome2-Canvas</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>libgnomecanvas</Dependency>
             <Dependency>perl-Gtk2</Dependency>

@@ -15,7 +15,7 @@
         <Archive sha1sum="c857485532e92e266a75b56ed247284f94b2d3d4" type="targz">mirrors://cpan/authors/id/A/AG/AGROLMS/GSSAPI-0.28.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
 	<Patches>
 	    <Patch level="0">disable_failing_test.patch</Patch>
@@ -26,7 +26,7 @@
         <Name>perl-GSSAPI</Name>
         <RuntimeDependencies>
             <Dependency>mit-kerberos</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

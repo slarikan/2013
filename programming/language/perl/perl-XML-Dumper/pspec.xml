@@ -14,13 +14,13 @@
         <Description>XML::Dumper can also read XML data that was previously dumped by the module and convert it back to Perl. You can use the module read the XML from a file and write the XML to a file.</Description>
         <Archive sha1sum="df5091d8c45ab1a95a630c089c545fdb71d1f5d7" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIKEWONG/XML-Dumper-0.81.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-XML-Dumper</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

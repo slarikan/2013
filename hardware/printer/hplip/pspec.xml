@@ -27,7 +27,7 @@
             <Dependency>foomatic-db</Dependency>
             <Dependency>net-snmp-devel</Dependency>
             <Dependency>sane-backends-devel</Dependency>
-            <Dependency versionFrom="1.4.2">cups-devel</Dependency>
+            <Dependency>cups-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Fedora patches -->
@@ -65,7 +65,7 @@
             <Dependency>net-snmp</Dependency>
             <Dependency>foomatic-db</Dependency>
             <Dependency>sane-backends</Dependency>
-            <Dependency versionFrom="1.4.2">cups</Dependency>
+            <Dependency>cups</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/etc/sane.d/dll.d</Path>

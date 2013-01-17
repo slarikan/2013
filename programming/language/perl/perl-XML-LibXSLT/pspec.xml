@@ -14,7 +14,7 @@
         <Description>Interface to the gnome libxslt library. It's based on the fast Gnome libxslt engine.</Description>
         <Archive sha1sum="776a31dfb0a049f6986e76643dc01af1d158bae9" type="targz">http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/XML-LibXSLT-1.77.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libgcrypt</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>perl-XML-LibXSLT</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-XML-LibXML</Dependency>
             <Dependency>libxslt</Dependency>
             <Dependency>libgcrypt</Dependency>

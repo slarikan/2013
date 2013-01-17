@@ -17,8 +17,8 @@
         <BuildDependencies>
              <Dependency>kdelibs-devel</Dependency>
              <Dependency>kde-runtime</Dependency>
-             <Dependency versionFrom="4.6">qt-devel</Dependency>
-             <Dependency versionFrom="1.2">libXi-devel</Dependency>
+             <Dependency>qt-devel</Dependency>
+             <Dependency>libXi-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">synaptiks-0.8.1-templatesfix.patch</Patch>
@@ -31,7 +31,7 @@
              <Dependency>kdelibs</Dependency>
              <Dependency>kde-runtime</Dependency>
              <Dependency>qt</Dependency>
-             <Dependency versionFrom="1.2">libXi</Dependency>
+             <Dependency>libXi</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="bin">/usr/bin</Path>          

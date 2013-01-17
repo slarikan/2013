@@ -15,10 +15,10 @@
         <Description>KSCD: KDE Audio Player</Description>
         <Archive sha1sum="a18dbe17ddf97902476c45180fd4a106b2ab0a29" type="tarxz">mirrors://kde/unstable/4.9.97/src/kscd-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkcddb</Dependency>
-            <Dependency versionFrom="4.9.97">libkcompactdisc</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>
+            <Dependency>libkcddb</Dependency>
+            <Dependency>libkcompactdisc</Dependency>
             <Dependency>musicbrainz3-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,10 +26,10 @@
     <Package>
         <Name>kscd</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.97">libkcddb</Dependency>
-            <Dependency versionFrom="4.9.97">libkcompactdisc</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>libkcddb</Dependency>
+            <Dependency>libkcompactdisc</Dependency>
             <Dependency>musicbrainz3</Dependency>
         </RuntimeDependencies>
         <Files>

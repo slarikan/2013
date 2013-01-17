@@ -23,7 +23,7 @@
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>perl-Authen-SASL</Dependency>
             <Dependency>perl-GSSAPI</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -39,7 +39,7 @@
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>perl-Authen-SASL</Dependency>
             <Dependency>perl-GSSAPI</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

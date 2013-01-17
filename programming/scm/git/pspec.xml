@@ -17,7 +17,7 @@
             <Dependency>xmlto</Dependency>
             <Dependency>asciidoc</Dependency>
             <Dependency>perl-Error</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <!--Needed for emacs-Git package-->
             <Dependency>emacs</Dependency>
         </BuildDependencies>
@@ -84,7 +84,7 @@
         <Summary>Perl interface to GIT</Summary>
         <RuntimeDependencies>
             <Dependency>perl-Error</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/perl5</Path>

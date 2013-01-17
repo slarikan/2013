@@ -15,7 +15,7 @@
         <Archive sha1sum="32ada41fb4d8843c1e587945279535e5cbf44cf1" type="targz">mirrors://cpan/authors/id/R/RB/RBERJON/XML-Filter-BufferText-1.01.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-XML-SAX</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-XML-Filter-BufferText</Name>
         <RuntimeDependencies>
             <Dependency>perl-XML-SAX</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

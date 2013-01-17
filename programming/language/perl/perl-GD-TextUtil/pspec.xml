@@ -15,7 +15,7 @@
         <Archive sha1sum="7f2132e64e07149997180ff71c0b3356480145ac" type="targz">mirrors://cpan/authors/id/M/MV/MVERB/GDTextUtil-0.86.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-GD</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-GD-TextUtil</Name>
         <RuntimeDependencies>
             <Dependency>perl-GD</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

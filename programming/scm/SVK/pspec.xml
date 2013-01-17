@@ -50,7 +50,7 @@
             <Dependency>perl-YAML-Syck</Dependency>
             <Dependency>perl-libwww</Dependency>
             <Dependency>perl-version</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">SVK-v2.0.1-SVKMERGE-with-Emacs.patch</Patch>
@@ -96,7 +96,7 @@
             <Dependency>perl-YAML-Syck</Dependency>
             <Dependency>perl-libwww</Dependency>
             <Dependency>perl-version</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

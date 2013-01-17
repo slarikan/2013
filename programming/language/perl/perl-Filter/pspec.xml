@@ -14,13 +14,13 @@
         <Description>This module provides you with the framework to write Source Filters in Perl.</Description>
         <Archive sha1sum="1dc32b88f9881f63d4363be299c6c62e1cbb44f1" type="targz">http://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/Filter-1.45.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Filter</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

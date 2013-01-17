@@ -15,8 +15,8 @@
         <Description>kfax is a fax file viewer for KDE 4 capable of displaying and printing all common fax file formats. (G3, G32, G4).</Description>
         <Archive sha1sum="3fe3db326eba2ced8d9dd3f73dc35d6ba60f66d8" type="tarbz2">ftp://ftp.pardus.org.tr/pub/source/2009/kfax-3.3.6-kde4.3.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">category-is-graphics.diff</Patch>
@@ -27,8 +27,8 @@
     <Package>
         <Name>kfax</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

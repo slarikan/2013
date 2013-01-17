@@ -14,13 +14,13 @@
         <Description>This module is for web application framework developers who currently uses CGI to handle query parameters, and would like for the frameworks to comply with the PSGI protocol.</Description>
         <Archive sha1sum="2d208922e1b3dd10d7461cbcd81b7b34bbed8684" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/CGI-PSGI-0.15.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-CGI-PSGI</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -14,14 +14,14 @@
         <Description>This package provides the kernel support for VirtualBox.</Description>
         <Archive sha1sum="4fc2cbd15a31018f430b616face24c84593de128" type="targz">http://cekirdek.pardus.org.tr/~farslan/dist/virtualbox/module-virtualbox-4.1.2.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="2.6.37.6">kernel-module-headers</Dependency>
+            <Dependency>kernel-module-headers</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>module-virtualbox</Name>
         <RuntimeDependencies>
-            <Dependency version="2.6.37.6">kernel</Dependency>
+            <Dependency>kernel</Dependency>
             <Dependency version="current">module-virtualbox-userspace</Dependency>
         </RuntimeDependencies>
         <Files>

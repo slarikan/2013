@@ -15,16 +15,16 @@
         <Description>KBlocks is the classic falling blocks game. The idea is stack the falling blocks in a way that lines are completely filled. When a line is completed it is removed, and more space is available in the play area. When there is not enough space for blocks to fall, the game is over.</Description>
         <Archive sha1sum="05b20479867e772c0d2de19a41d6a306b3ee8a3f" type="tarxz">mirrors://kde/unstable/4.9.97/src/kblocks-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kblocks</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

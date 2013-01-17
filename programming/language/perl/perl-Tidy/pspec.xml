@@ -16,13 +16,13 @@
         <Description>perl-Tidy a Perl module that parses and beautifies perl source.</Description>
         <Archive sha1sum="f48e983371821d6a32d999d0864b9eaca7e42c50" type="targz">http://search.cpan.org/CPAN/authors/id/S/SH/SHANCOCK/Perl-Tidy-20120619.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Tidy</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

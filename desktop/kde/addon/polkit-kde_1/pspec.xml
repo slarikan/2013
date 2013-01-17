@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
-            <Dependency versionFrom="0.99.0">polkit-qt_1-devel</Dependency>
+            <Dependency>polkit-qt_1-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>fix-focus.diff</Patch>
@@ -34,7 +34,7 @@
         <Name>polkit-kde_1</Name>
         <RuntimeDependencies>
             <Dependency>kdelibs</Dependency>
-            <Dependency versionFrom="0.99.0">polkit-qt_1</Dependency>
+            <Dependency>polkit-qt_1</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>

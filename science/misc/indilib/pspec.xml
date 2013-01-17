@@ -16,7 +16,7 @@
         <Archive sha1sum="2f05ff714a605a47dc9395c39a84113bab51cf62" type="targz">http://sourceforge.net/projects/indi/files/indilib/0.9/libindi_0.9.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libnova-devel</Dependency>
-            <Dependency versionFrom="3.250">cfitsio-devel</Dependency>
+            <Dependency>cfitsio-devel</Dependency>
             <Dependency>libfli-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -30,7 +30,7 @@
         <Name>indilib</Name>
         <RuntimeDependencies>
             <Dependency>libnova</Dependency>
-            <Dependency versionFrom="3.250">cfitsio</Dependency>
+            <Dependency>cfitsio</Dependency>
             <Dependency>libfli</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -15,14 +15,14 @@
         <Description>perl-Image-Size is a Perl module that read the dimensions of an image in several popular formats</Description>
         <Archive sha1sum="d37c27247099414b1d1fc8a85a3da768ba59569e" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJRAY/Image-Size-3.232.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Image-Size</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

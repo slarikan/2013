@@ -14,14 +14,14 @@
         <Description>perl-File-pushd is a Perl module that change directory temporarily for a limited scope</Description>
         <Archive sha1sum="8df3b2de25adebf5947f047a7aae8fe4028e4f05" type="targz">http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/File-pushd-1.002.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-File-pushd</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

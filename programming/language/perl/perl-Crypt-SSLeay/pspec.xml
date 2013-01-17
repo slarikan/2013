@@ -14,14 +14,14 @@
         <Description>This perl module provides support for the https protocol under LWP, so that a LWP::UserAgent can make https GET POST requests.</Description>
         <Archive sha1sum="62f31de72a1ccd9608d70ac967ba888bd48054ca" type="targz">http://search.cpan.org/CPAN/authors/id/N/NA/NANIS/Crypt-SSLeay-0.58.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Crypt-SSLeay</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

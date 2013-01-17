@@ -14,7 +14,7 @@
         <Description>kde-l10n-tg is the KDE4 internationalization package that provides Tajik translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="407d97f239b92de4d9c325b8a419e13e1a604f99">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-tg-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

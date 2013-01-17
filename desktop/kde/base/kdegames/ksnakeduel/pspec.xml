@@ -15,16 +15,16 @@
         <Description>KSnake is a simple Snake-like game for the K Desktop Environment. The aim of KSnake is to survive as long as possible and eat as many fruits as you can.</Description>
         <Archive sha1sum="c218e7b01ea21d7b1b5ad3b9cf6319a931a7d157" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksnakeduel-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ksnakeduel</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

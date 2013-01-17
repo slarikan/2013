@@ -14,7 +14,7 @@
         <Description>perl-Linux-Smaps is a Perl module to easily interface the /proc/PID/smaps memory map.</Description>
         <Archive sha1sum="7461271d8495ba288c93e8e121f7f85dbc1acfb4" type="targz">mirrors://cpan/authors/id/O/OP/OPI/Linux-Smaps-0.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Class-Member</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-Linux-Smaps</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Class-Member</Dependency>
         </RuntimeDependencies>
         <Files>

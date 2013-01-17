@@ -15,8 +15,8 @@
         <Description>qTwitter is a simple application allowing to use twitter.com social networking website.</Description>
         <Archive sha1sum="d5d8fc85b0ffe55b5f10a9362d8f4fb5ac90d5ce" type="targz">http://files.ayoy.net/qtwitter/release/0.10.0/src/qtwitter-0.10.0-src.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
-            <Dependency versionFrom="1.0">qoauth-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>qoauth-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
 			<Dependency>libXrender-devel</Dependency>
 			<Dependency>fontconfig-devel</Dependency>
@@ -31,8 +31,8 @@
     <Package>
         <Name>qtwitter</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
-            <Dependency versionFrom="1.0">qoauth</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>qoauth</Dependency>
             <Dependency>qca2</Dependency>
             <Dependency>qca2-ossl</Dependency>
 			<Dependency>libXrender</Dependency>

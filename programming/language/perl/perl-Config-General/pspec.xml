@@ -14,14 +14,14 @@
         <Description>perl-Config-General module opens a config file and parses its contents for you.</Description>
         <Archive sha1sum="6e246d22e9840a4da2572f24a2a0c9976f3ceb25" type="targz">mirrors://cpan/authors/id/T/TL/TLINDEN/Config-General-2.50.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Config-General</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

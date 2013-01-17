@@ -18,7 +18,7 @@
             <Dependency>gawk</Dependency>
             <Dependency>openssl-devel</Dependency>
             <Dependency>openldap-client</Dependency>
-            <Dependency versionFrom="2.6.7">ptlib</Dependency>
+            <Dependency>ptlib</Dependency>
             <Dependency>speex-devel</Dependency>
             <Dependency>libtheora-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
@@ -31,7 +31,7 @@
 	    <Dependency>x264</Dependency>
             <Dependency>openssl</Dependency>
             <Dependency>openldap-client</Dependency>
-            <Dependency versionFrom="2.6.7">ptlib</Dependency>
+            <Dependency>ptlib</Dependency>
             <Dependency>speex</Dependency>
             <Dependency>libtheora</Dependency>
             <Dependency>ffmpeg</Dependency>

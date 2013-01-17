@@ -14,14 +14,14 @@
         <Description>Svgpart (SVG KPart) is a KPart for viewing SVG files.</Description>
         <Archive sha1sum="0136ea4026c6251fd83dc51cd60c1e56a22889ac" type="tarxz">mirrors://kde/unstable/4.9.97/src/svgpart-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>svgpart</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/kde4</Path>

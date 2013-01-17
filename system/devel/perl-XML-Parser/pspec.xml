@@ -15,7 +15,7 @@
         <Archive sha1sum="68c7ee61b413c2e8255699b1987fca598e0a39d8" type="targz">mirrors://cpan/authors/id/T/TO/TODDR/XML-Parser-2.41.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>expat-devel</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-XML-Parser</Name>
         <RuntimeDependencies>
             <Dependency>expat</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

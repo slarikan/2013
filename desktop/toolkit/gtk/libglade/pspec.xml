@@ -49,7 +49,7 @@
         <IsA>data:doc</IsA>
         <Summary>Libglade reference documents</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="7">libglade</Dependency>
+            <Dependency>libglade</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>

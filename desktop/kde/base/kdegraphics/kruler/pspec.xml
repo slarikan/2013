@@ -15,14 +15,14 @@
         <Description>KRuler is a screen ruler and color measurement tool.</Description>
         <Archive sha1sum="2dcbdde12f792f2b26d43fadb86045e933c08096" type="tarxz">mirrors://kde/unstable/4.9.97/src/kruler-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kruler</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

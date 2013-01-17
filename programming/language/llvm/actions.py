@@ -9,7 +9,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 from pisi.actionsapi import kde4
-from pisi.actionsapi import pkgconfig
 
 WorkDir = "%s-%s.src" % (get.srcNAME(), get.srcVERSION())
 libdir = "/usr/lib/llvm"

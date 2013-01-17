@@ -15,8 +15,8 @@
         <Description>FlightGear is an opensource multiplatform flight simulator project.</Description>
         <Archive sha1sum="779d89433e2ffb11ebd4743855bce7376d388731" type="tarbz2">http://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Source/flightgear-2.4.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.4.0">simgear-devel</Dependency>
-            <Dependency versionFrom="2.8.5">OpenSceneGraph-devel</Dependency>
+            <Dependency>simgear-devel</Dependency>
+            <Dependency>OpenSceneGraph-devel</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>freealut-devel</Dependency>
@@ -31,15 +31,15 @@
     <Package>
         <Name>flightgear</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.4.0">simgear</Dependency>
-            <Dependency versionFrom="2.8.5">OpenSceneGraph</Dependency>
+            <Dependency>simgear</Dependency>
+            <Dependency>OpenSceneGraph</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>freealut</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>openal</Dependency>
             <Dependency>plib</Dependency>
-            <Dependency versionFrom="2.4.0">flightgear-data-base</Dependency>
+            <Dependency>flightgear-data-base</Dependency>
             <Dependency>jpeg</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -14,7 +14,7 @@
         <Description>smoke-gen is Scripting Meta Object Kompiler Engine.</Description>
         <Archive sha1sum="d0a68f4033be70570c010bebfc35510ccd12b853" type="tarxz">mirrors://kde/unstable/4.9.97/src/smokegen-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -22,7 +22,7 @@
         <Name>smoke-gen</Name>
         <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/smoke*</Path>

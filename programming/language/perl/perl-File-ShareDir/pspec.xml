@@ -14,13 +14,13 @@
         <Description>The intent of File::ShareDir is to provide a companion to Class::Inspector and File::HomeDir, modules that take a process that is well-known by advanced Perl developers but gets a little tricky, and make it more available to the larger Perl community.</Description>
         <Archive sha1sum="45ff393e20da1062d2f2cfb2e6dea1edf4e1db46" type="targz">http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/File-ShareDir-1.03.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-File-ShareDir</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

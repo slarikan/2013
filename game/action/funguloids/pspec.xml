@@ -22,8 +22,8 @@
             <Dependency>libogg-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>openal-devel</Dependency>
-            <Dependency versionFrom="1.3">ois-devel</Dependency>
-            <Dependency versionFrom="1.7.3">ogre-devel</Dependency>
+            <Dependency>ois-devel</Dependency>
+            <Dependency>ogre-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">lua.patch</Patch>
@@ -49,8 +49,8 @@
             <Dependency>libogg</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>openal</Dependency>
-            <Dependency versionFrom="1.3">ois</Dependency>
-            <Dependency versionFrom="1.7.3">ogre</Dependency>
+            <Dependency>ois</Dependency>
+            <Dependency>ogre</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

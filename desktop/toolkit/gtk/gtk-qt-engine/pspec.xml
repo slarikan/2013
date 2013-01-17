@@ -16,8 +16,8 @@
         <Description>This engine is for use by GTK applications running in KDE4. It applies all Qt settings to the GTK application and uses Qt style plugins directly.</Description>
         <Archive sha1sum="25cf693945948a22d3d51e0528f7d30a18d3c711" type="tarbz2">http://gtk-qt-engine.googlecode.com/files/gtk-qt-engine-1.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
-            <Dependency versionFrom="2.24.7">gtk2</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>automoc4</Dependency>
         </BuildDependencies>
     <Patches>
@@ -28,8 +28,8 @@
     <Package>
         <Name>gtk-qt-engine</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
-            <Dependency versionFrom="2.24.7">gtk2</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>gtk-qt-engine-kde4</Package>

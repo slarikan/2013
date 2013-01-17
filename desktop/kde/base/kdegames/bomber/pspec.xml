@@ -15,16 +15,16 @@
         <Description>Bomber is a single player arcade game. The player is invading various cities in a plane that is decreasing in height.</Description>
         <Archive sha1sum="30f8d9f1a81c31283379e988c2a7542fa5c68ab9" type="tarxz">mirrors://kde/unstable/4.9.97/src/bomber-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>bomber</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>    
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>    
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

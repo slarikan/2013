@@ -14,9 +14,9 @@
         <Description>librsvg is a component used within software applications to enable support for SVG-format scalable vector graphics.</Description>
         <Archive sha1sum="8ac22591c9db273355cf895f7e87aac149f64437" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/librsvg/2.36/librsvg-2.36.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.6.1">libcroco-devel</Dependency>
-            <Dependency versionFrom="1.14.11">libgsf-devel</Dependency>
-            <Dependency versionFrom="2.16">gtk2-devel</Dependency>
+            <Dependency>libcroco-devel</Dependency>
+            <Dependency>libgsf-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -34,11 +34,11 @@
     <Package>
         <Name>librsvg</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.6.1">libcroco</Dependency>
+            <Dependency>libcroco</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency versionFrom="1.14.11">libgsf</Dependency>
-            <Dependency versionFrom="2.16">gtk2</Dependency>
+            <Dependency>libgsf</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -18,7 +18,7 @@
             <Dependency>qca2-devel</Dependency>
             <Dependency>qca2-ossl</Dependency>
             <Dependency>enchant-devel</Dependency>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>libXScrnSaver</Dependency>
         </BuildDependencies>
     </Source>
@@ -29,7 +29,7 @@
             <Dependency>qca2</Dependency>
             <Dependency>qca2-ossl</Dependency>
             <Dependency>enchant</Dependency>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>libXScrnSaver</Dependency>
         </RuntimeDependencies>
         <Files>

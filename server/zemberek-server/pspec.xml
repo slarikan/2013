@@ -26,7 +26,7 @@
         <Name>zemberek-server</Name>
         <RuntimeDependencies>
             <Dependency>sun-jre</Dependency>
-            <Dependency releaseFrom="17">comar-api</Dependency>
+            <Dependency>comar-api</Dependency>
             <Dependency>zemberek</Dependency>
             <Dependency>mina-core</Dependency>
             <Dependency>dbus-java</Dependency>

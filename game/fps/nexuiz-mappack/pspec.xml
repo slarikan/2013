@@ -19,7 +19,7 @@
     <Package>
         <Name>nexuiz-mappack</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.3">nexuiz</Dependency>
+            <Dependency>nexuiz</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

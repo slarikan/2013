@@ -14,7 +14,7 @@
         <Description>perl-Email-Simple parses mails according to the RFC2822 message format.</Description>
         <Archive sha1sum="0e37a1ce0607725f3d759d269f6aaab13f4fd497" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Simple-2.101.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
             <Dependency>perl-Test-Pod-Coverage</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Email-Simple</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

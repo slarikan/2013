@@ -14,7 +14,7 @@
         <Description>perl-Gtk2-Ex-Simple-List is a simple interface to the powerful but complex Gtk2::TreeView and Gtk2::ListStore combination, implementing using tied arrays to make thing simple and easy.</Description>
         <Archive sha1sum="0bf571ef6bac747a83a3a696981dba27b10ce109" type="targz">mirrors://cpan/authors/id/R/RM/RMCFARLA/Gtk2-Perl-Ex/Gtk2-Ex-Simple-List-0.50.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Glib</Dependency>
             <Dependency>perl-Gtk2</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Gtk2-Ex-Simple-List</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Glib</Dependency>
             <Dependency>perl-Gtk2</Dependency>
         </RuntimeDependencies>

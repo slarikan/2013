@@ -19,7 +19,7 @@
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>sdl-image-devel</Dependency>
             <Dependency>sdl-ttf-devel</Dependency>
-            <Dependency versionFrom="1.8">guile-devel</Dependency>
+            <Dependency>guile-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
@@ -35,7 +35,7 @@
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>sdl-image-devel</Dependency>
             <Dependency>sdl-ttf-devel</Dependency>
-            <Dependency versionFrom="1.8">guile-devel</Dependency>
+            <Dependency>guile-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>trackballs-music</Dependency>

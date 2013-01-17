@@ -22,7 +22,7 @@
     <Package>
         <Name>xmoto-edit</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.47">inkscape</Dependency>
+            <Dependency>inkscape</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/inkscape/extensions</Path>

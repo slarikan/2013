@@ -15,7 +15,7 @@
         <Archive sha1sum="98e865f16c76bddb3f6969c733042677e306d63c" type="targz">http://llvm.org/releases/3.1/dragonegg-3.1.src.tar.gz</Archive>
         <BuildDependencies>
             <!-- Uses static LLVM archives -->
-            <Dependency versionFrom="3.1">llvm</Dependency>
+            <Dependency>llvm</Dependency>
             <Dependency>libgcc</Dependency>
         </BuildDependencies>
         <Patches>

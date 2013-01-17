@@ -27,7 +27,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libgpg-error-devel</Dependency>
             <Dependency>geoip-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">wireshark-1.2.4-enable_lua.patch</Patch>
@@ -56,7 +56,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libgpg-error</Dependency>
             <Dependency>geoip</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/etc/pam.d</Path>

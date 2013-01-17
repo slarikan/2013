@@ -15,7 +15,7 @@
         <Description>Qt is a cross platform GUI toolkit.</Description>
         <Archive sha1sum="f5880f11c139d7d8d01ecb8d874535f7d9553198" type="targz">http://releases.qt-project.org/qt4/source/qt-everywhere-opensource-src-4.8.4.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="3.4.1">sqlite-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
             <Dependency>firebird-superserver</Dependency>
             <Dependency>firebird-devel</Dependency>
             <Dependency>postgresql-server</Dependency>
@@ -346,7 +346,7 @@
         <Name>qt-sql-sqlite</Name>
         <RuntimeDependencies>
             <Dependency version="current">qt</Dependency>
-            <Dependency versionFrom="3.4.1">sqlite</Dependency>
+            <Dependency>sqlite</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>qt4-sql-sqlite</Package>

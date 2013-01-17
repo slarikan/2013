@@ -14,14 +14,14 @@
         <Description>Converts data to/from stringified form, appropriate for saving-to/reading-from permanent storage.</Description>
         <Archive sha1sum="73a175385ab15bc8ca860eee769305488a881ab3" type="targz">mirrors://cpan/authors/id/I/IL/ILYAZ/modules/FreezeThaw-0.5001.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-FreezeThaw</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

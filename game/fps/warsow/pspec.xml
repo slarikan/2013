@@ -54,7 +54,7 @@
             <Dependency>libXinerama</Dependency>
             <Dependency>libXxf86vm</Dependency>
             <Dependency>jpeg</Dependency>
-            <Dependency versionFrom="0.6.1">warsow-data</Dependency>
+            <Dependency>warsow-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

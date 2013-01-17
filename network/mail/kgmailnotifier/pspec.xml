@@ -28,7 +28,7 @@
         <Name>kgmailnotifier</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency versionFrom="4.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
         <Files>

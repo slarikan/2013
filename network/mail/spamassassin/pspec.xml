@@ -14,7 +14,7 @@
         <Description>SpamAssassin is a very powerful and fully configurable spam filter with numerous features.</Description>
         <Archive sha1sum="de954f69e190496eff4a796a9bab61747f03072b" type="targz">http://ftp.itu.edu.tr/Mirror/Apache//spamassassin/source/Mail-SpamAssassin-3.3.2.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.12.2">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Digest-SHA1</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
             <Dependency>perl-IP-Country</Dependency>
@@ -40,7 +40,7 @@
     <Package>
         <Name>spamassassin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.12.2">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Digest-SHA1</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
             <Dependency>perl-IP-Country</Dependency>
@@ -72,9 +72,9 @@
     <Package>
         <Name>spamd</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.10.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency releaseFrom="current">spamassassin</Dependency>
-            <Dependency releaseFrom="116">baselayout</Dependency>
+            <Dependency>baselayout</Dependency>
        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/spamc</Path>

@@ -18,15 +18,15 @@
         <BuildDependencies>
             <Dependency>git</Dependency>
             <Dependency>lightmediascanner-devel</Dependency>
-            <Dependency versionFrom="1.7.0">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.0">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.0">e_dbus-devel</Dependency>
-            <Dependency versionFrom="1.7.0">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.0">efreet-devel</Dependency>
-            <Dependency versionFrom="1.7.0">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">elementary-devel</Dependency>
-            <Dependency versionFrom="1.7.0">emotion-devel</Dependency>
-        <Dependency versionFrom="0.16.999.76819">enlightenment-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>e_dbus-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>efreet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>elementary-devel</Dependency>
+            <Dependency>emotion-devel</Dependency>
+        <Dependency>enlightenment-devel</Dependency>
 
         </BuildDependencies>
     </Source>
@@ -35,15 +35,15 @@
         <Name>enjoy</Name>
         <RuntimeDependencies>
             <Dependency>lightmediascanner</Dependency>
-            <Dependency versionFrom="1.7.0">eina</Dependency>
-            <Dependency versionFrom="1.7.0">ecore</Dependency>
-            <Dependency versionFrom="1.7.0">e_dbus</Dependency>
-            <Dependency versionFrom="1.7.0">edje</Dependency>
-            <Dependency versionFrom="1.7.0">efreet</Dependency>
-            <Dependency versionFrom="1.7.0">evas</Dependency>
-            <Dependency versionFrom="1.7.0">elementary</Dependency>
-            <Dependency versionFrom="1.7.0">emotion</Dependency>
-        <Dependency versionFrom="0.16.999.76819">enlightenment</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>e_dbus</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>efreet</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>elementary</Dependency>
+            <Dependency>emotion</Dependency>
+        <Dependency>enlightenment</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

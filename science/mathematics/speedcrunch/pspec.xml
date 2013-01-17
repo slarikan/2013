@@ -14,14 +14,14 @@
         <Description>SpeedCrunch is keyboard friendly desktop calculator. It has high presicion up to 50 digits.It supports functions with autocompletion, variable assignment, syntax highlihting and history.</Description>
         <Archive sha1sum="385828ae8900dd4caee7fa437a2fb35f224d540a" type="targz">http://speedcrunch.googlecode.com/files/speedcrunch-0.10.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.7.1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>speedcrunch</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.7.1">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -30,7 +30,7 @@
         <Name>loki-devel</Name>
         <Summary>Development headers for loki</Summary>
         <RuntimeDependencies>
-            <Dependency release="2">loki</Dependency>
+            <Dependency>loki</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -42,7 +42,7 @@
         <IsA>data:doc</IsA>
         <Summary>Document files for loki</Summary>
         <RuntimeDependencies>
-            <Dependency release="2">loki</Dependency>
+            <Dependency>loki</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc/loki/html/</Path>

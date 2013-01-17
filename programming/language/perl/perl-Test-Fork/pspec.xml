@@ -14,13 +14,13 @@
         <Description>Because each test has a number associated with it, testing code which forks is problematic. Coordinating the test number amongst the parent and child processes is complicated. Test::Fork provides a function to smooth over the complications.</Description>
         <Archive sha1sum="9c6d3bd701cd993171ff8aaf1777ede2dfa92965" type="targz">http://search.cpan.org/CPAN/authors/id/M/MS/MSCHWERN/Test-Fork-0.02.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Test-Fork</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

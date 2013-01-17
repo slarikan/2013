@@ -14,9 +14,9 @@
         <Description>kdegraphics-mobipocket contains a collection of plugins to handle mobipocket files.</Description>
         <Archive sha1sum="f8cc915c3009feaf4ad07387e687878e7e61e6a1" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdegraphics-mobipocket-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">okular-devel</Dependency>
-            <Dependency versionFrom="0.7.7">libstreamanalyzer-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>okular-devel</Dependency>
+            <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>libkdcraw-devel</Dependency>
             <Dependency>libkexiv2-devel</Dependency>
         </BuildDependencies>
@@ -25,9 +25,9 @@
     <Package>
         <Name>kdegraphics-mobipocket</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">okular</Dependency>
-            <Dependency versionFrom="0.7.7">libstreamanalyzer</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>okular</Dependency>
+            <Dependency>libstreamanalyzer</Dependency>
             <Dependency>libkdcraw</Dependency>
             <Dependency>libkexiv2</Dependency>
         </RuntimeDependencies>

@@ -29,7 +29,7 @@
         <Name>smolt</Name>
         <RuntimeDependencies>
             <Dependency>python-simplejson</Dependency>
-            <Dependency releaseFrom="162">baselayout</Dependency>
+            <Dependency>baselayout</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="man">/usr/share/man</Path>

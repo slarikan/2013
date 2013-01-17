@@ -16,9 +16,9 @@
         <Description>Due to an awful mutation, some amoeba's have started to multiply and they will take hold of the world if you can't stop them. Fortunately the mutation made them too unstable and lining up four or more will kill them.</Description>
         <Archive type="tarbz2" sha1sum="0d0e38dac1280bed3a16f5bc4e60b69ba513180e">http://www.emma-soft.com/games/amoebax/download/amoebax-0.2.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.11">libsdl-devel</Dependency>
-            <Dependency versionFrom="1.2.5">sdl-image-devel</Dependency>
-            <Dependency versionFrom="1.2.7">sdl-mixer-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -29,9 +29,9 @@
     <Package>
         <Name>amoebax</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.2.11">libsdl</Dependency>
-            <Dependency versionFrom="1.2.5">sdl-image</Dependency>
-            <Dependency versionFrom="1.2.7">sdl-mixer</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
             <Dependency>libvorbis</Dependency>
         </RuntimeDependencies>
         <Files>

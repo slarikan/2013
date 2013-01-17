@@ -13,13 +13,13 @@
         <Description>This module has a very simple task - to be a base class for PerlSAX drivers and filters. It's default behaviour is to pass the input directly to the output unchanged. It can be useful to use this module as a base class so you don't have to, for example, implement the characters() callback.</Description>
         <Archive sha1sum="5ae6a06e465daa65e1a69d1a6977299084fe9aef" type="targz">http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-Base-1.08.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>Perl-XML-SAX-BASE</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/perl5/vendor_perl</Path>

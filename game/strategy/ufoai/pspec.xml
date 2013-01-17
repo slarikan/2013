@@ -51,7 +51,7 @@
             <Dependency>libtheora</Dependency>
             <Dependency>xvid</Dependency>
             <Dependency>jpeg</Dependency>
-            <Dependency versionFrom="2.3.1">ufoai-data</Dependency>
+            <Dependency>ufoai-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

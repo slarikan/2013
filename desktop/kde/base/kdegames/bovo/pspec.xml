@@ -15,16 +15,16 @@
         <Description>Bovo is a Gomoku like game for two players, where the opponents alternate in placing their respective pictogram on the game board..</Description>
         <Archive sha1sum="22f8672c5672a7aaa680e6708f63187f6e3d5c78" type="tarxz">mirrors://kde/unstable/4.9.97/src/bovo-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>bovo</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.95">kde-runtime</Dependency>    
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>    
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

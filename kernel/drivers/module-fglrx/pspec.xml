@@ -108,7 +108,7 @@
                 <Dependency version="current">module-fglrx</Dependency>
                 <Dependency version="current">module-pae-fglrx</Dependency>
             </AnyDependency>
-            <Dependency releaseFrom="80">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
             <Dependency>xvba-video</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>freetype</Dependency>

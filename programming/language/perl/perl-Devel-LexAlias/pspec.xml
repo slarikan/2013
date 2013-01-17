@@ -15,7 +15,7 @@
         <Archive sha1sum="8075bc5efa95247c293f5fc9568f17c961bb7965" type="targz">mirrors://cpan/authors/id/R/RC/RCLAMP/Devel-LexAlias-0.04.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Devel-Caller</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Devel-LexAlias</Name>
         <RuntimeDependencies>
             <Dependency>perl-Devel-Caller</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

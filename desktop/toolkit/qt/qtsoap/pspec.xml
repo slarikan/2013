@@ -14,7 +14,7 @@
         <Description>The Qt SOAP project provides basic web service support with version 1.1 of the SOAP protocol.</Description>
         <Archive type="targz" sha1sum="59946d8f841f36b1fb8a6aa8cdf47b478c44b958">http://get.qt.nokia.com/qt/solutions/lgpl/qtsoap-2.7_1-opensource.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">install-pub-headers.patch</Patch>
@@ -37,7 +37,7 @@
         <Name>qtsoap-devel</Name>
         <Summary>Development files for qtsoap</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency release="current">qtsoap</Dependency>
         </RuntimeDependencies>
         <Files>

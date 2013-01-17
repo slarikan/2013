@@ -16,7 +16,7 @@
         <Archive sha1sum="5506e3471e4893fe9b3fbb83d4d42fb77a641a7a" type="tarbz2">http://alioth.debian.org/frs/download.php/3768/ccid-1.4.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>libusbx-devel</Dependency>
-            <Dependency versionFrom="1.8.3">pcsc-lite-devel</Dependency>
+            <Dependency>pcsc-lite-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +24,7 @@
         <Name>ccid</Name>
         <RuntimeDependencies>
             <Dependency>libusbx</Dependency>
-            <Dependency versionFrom="1.8.3">pcsc-lite</Dependency>
+            <Dependency>pcsc-lite</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/reader.conf.d</Path>

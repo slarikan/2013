@@ -38,7 +38,7 @@
             <Dependency>lua</Dependency>
             <Dependency>fribidi</Dependency>
             <Dependency>smpeg</Dependency>
-            <Dependency version="1.0.0">fish-fillets-data</Dependency>
+            <Dependency>fish-fillets-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -15,7 +15,7 @@
         <Description>perl-Makefile-Parser is a simple parsing perl module for Makefiles.</Description>
         <Archive sha1sum="f9cb82ed7fb39ab07f8c2f644973f4e62d938bf8" type="targz">http://search.cpan.org/CPAN/authors/id/A/AG/AGENT/Makefile-Parser-0.215.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
             <Dependency>perl-IPC-Run3</Dependency>
             <Dependency>perl-Class-Accessor</Dependency>
@@ -30,7 +30,7 @@
     <Package>
         <Name>perl-Makefile-Parser</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
             <Dependency>perl-IPC-Run3</Dependency>
             <Dependency>perl-Class-Accessor</Dependency>

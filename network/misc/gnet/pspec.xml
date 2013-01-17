@@ -31,7 +31,7 @@
         <Summary>Development headers for gnet</Summary>
         <Description>gnet-devel provides development headers for gnet.</Description>
         <RuntimeDependencies>
-            <Dependency release="3">gnet</Dependency>
+            <Dependency>gnet</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

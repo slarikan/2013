@@ -15,8 +15,8 @@
         <Description>A jukebox, tagger and music collection manager</Description>
         <Archive sha1sum="d7c6492508bfc100bf343b830a922b41f7a2dae6" type="tarxz">mirrors://kde/unstable/4.9.97/src/juk-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>
             <Dependency>taglib-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>juk</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>
             <Dependency>taglib</Dependency>
         </RuntimeDependencies>
         <Files>

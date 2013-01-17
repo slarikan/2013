@@ -14,7 +14,7 @@
         <Description>libkdcraw is a C++ interface around LibRaw library used to decode RAW picture files.</Description>
         <Archive sha1sum="b267c1b81da6e4089160a1ccf6847b7a6682c234" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkdcraw-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>lcms-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>libkdcraw</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>lcms</Dependency>
             <Dependency>libgomp</Dependency>
         </RuntimeDependencies>

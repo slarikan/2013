@@ -15,7 +15,7 @@
         <Description>plugins for audacious</Description>
         <Archive sha1sum="869d3820263ff35609bfc6f2e69885a00d660513" type="tarbz2">http://distfiles.audacious-media-player.org/audacious-plugins-3.3.2.tar.bz2</Archive>
 	<BuildDependencies>
-	  <Dependency version="3.3.2">audacious-devel</Dependency>
+	  <Dependency>audacious-devel</Dependency>
 	  <Dependency>unzip</Dependency>  
 	  <Dependency>dbus-glib-devel</Dependency>  
 	  <Dependency>libxml2-devel</Dependency>    

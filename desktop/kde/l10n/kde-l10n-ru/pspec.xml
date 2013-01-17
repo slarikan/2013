@@ -14,7 +14,7 @@
         <Description>kde-l10n-ru is the KDE4 internationalization package that provides Russian translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="62bfc63e2485545aa4e8032bdc0915ec17583b9c">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ru-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -14,7 +14,7 @@
         <Description>Perl Console is a small program that lets you evaluate Perl code interactively.</Description>
         <Archive sha1sum="96722582df6763eeb6eecc5086064835edcf560e" type="targz">mirrors://cpan/authors/id/S/SU/SUKRIA/perlconsole-0.4.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Lexical-Persistence</Dependency>
             <Dependency>perl-Term-ReadLine-Perl</Dependency>
             <Dependency>perl-Module-Refresh</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perlconsole</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-YAML</Dependency>
             <Dependency>perl-B-Keywords</Dependency>
             <Dependency>perl-Data-Dumper</Dependency>

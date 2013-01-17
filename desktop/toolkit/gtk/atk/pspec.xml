@@ -14,7 +14,7 @@
         <Description>These libraries provide tools for making software for people with disabilities.</Description>
         <Archive sha1sum="c4f359106ef30d1073bfa4062eb70ec58235f414" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/atk/2.7/atk-2.7.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.9.12">gobject-introspection-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
 

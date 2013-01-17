@@ -14,11 +14,11 @@
         <Description>.NET/Mono bindings for the KDE libraries</Description>
         <Archive sha1sum="e5aaea4152ceab7f1cab5e8b429575f7f6257cbb" type="tarxz">mirrors://kde/unstable/4.9.97/src/kimono-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">qyoto-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-kde-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
+            <Dependency>qyoto-devel</Dependency>
+            <Dependency>smoke-gen-devel</Dependency>
+            <Dependency>smoke-kde-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
             <Dependency>mono-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,8 +26,8 @@
     <Package>
         <Name>kimono</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">qyoto</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-kde</Dependency>
+            <Dependency>qyoto</Dependency>
+            <Dependency>smoke-kde</Dependency>
             <Dependency>mono-devel</Dependency>
         </RuntimeDependencies>
         <Replaces>

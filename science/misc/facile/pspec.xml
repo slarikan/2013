@@ -14,7 +14,7 @@
         <Description>facile allows as well to build easily user-defined constraints and goals (including recursive ones), making pervasive use of OCaml higher-order functionals to provide a simple and flexible interface for the user.</Description>
         <Archive sha1sum="31dea6e19542292c9ccb41515b0ec7ecd103bb80" type="targz">http://www.recherche.enac.fr/opti/facile/distrib/facile-1.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="3.12.0">ocaml</Dependency>
+            <Dependency>ocaml</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">destdir.patch</Patch>
@@ -26,7 +26,7 @@
     <Package>
         <Name>facile</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.12.0">ocaml</Dependency>
+            <Dependency>ocaml</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

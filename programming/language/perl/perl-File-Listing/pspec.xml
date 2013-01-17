@@ -14,7 +14,7 @@
         <Description>This module exports a single function called parse_dir(), which can be used to parse directory listings.</Description>
         <Archive sha1sum="02a41fe1b91f3f198712965360192f31d6d8d74e" type="targz">http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-HTTP-Date</Dependency>
         </BuildDependencies>
 
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-File-Listing</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-HTTP-Date</Dependency>
         </RuntimeDependencies>
         <Files>

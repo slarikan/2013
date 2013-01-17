@@ -34,7 +34,7 @@
             <Dependency>ffmpegthumbnailer</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>poppler</Dependency>
-            <Dependency version="1.5.0">Thunar</Dependency>
+            <Dependency>Thunar</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>

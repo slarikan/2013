@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>dbus</Dependency>
             <!-- New dbus uses GVariant data structure. We need glib2 >= 2.24 -->
-            <Dependency versionFrom="2.24">glib2</Dependency>
+            <Dependency>glib2</Dependency>
             <Dependency>expat</Dependency>
             <Dependency>libxml2</Dependency>
         </BuildDependencies>
@@ -28,7 +28,7 @@
         <RuntimeDependencies>
             <Dependency>dbus</Dependency>
             <!-- New dbus uses GVariant data structure. We need glib2 >= 2.24 -->
-            <Dependency versionFrom="2.24">glib2</Dependency>
+            <Dependency>glib2</Dependency>
             <Dependency>expat</Dependency>
             <Dependency>libxml2</Dependency>
         </RuntimeDependencies>

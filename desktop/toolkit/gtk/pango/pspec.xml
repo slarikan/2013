@@ -20,7 +20,7 @@
             <Dependency>gtk-doc</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
-            <Dependency versionFrom="0.9.12">gobject-introspection-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--Patch level="1">CVE-2011-0020.patch</Patch-->

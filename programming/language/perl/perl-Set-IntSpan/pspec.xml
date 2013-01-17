@@ -14,14 +14,14 @@
         <Description>perl-Set-IntSpan is a perl module that manages sets of integers. It is optimized for sets that have long runs of consecutive integers. These arise, for example, in .newsrc files, which maintain lists of articles.</Description>
         <Archive sha1sum="1e5b17b31940b21ede89fcd16ea61b26c808fdf3" type="targz">mirrors://cpan/authors/id/S/SW/SWMCD/Set-IntSpan-1.16.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Set-IntSpan</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

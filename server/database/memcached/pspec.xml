@@ -14,7 +14,7 @@
         <Description>memcached is a high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.</Description>
         <Archive sha1sum="c7d6517764b82d23ae2de76b56c2494343c53f02" type="targz">http://memcached.googlecode.com/files/memcached-1.4.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.0.12">libevent-devel</Dependency>
+            <Dependency>libevent-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">memcached-1.2.2-fbsd.patch</Patch>
@@ -26,7 +26,7 @@
     <Package>
         <Name>memcached</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.0.12">libevent</Dependency>
+            <Dependency>libevent</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

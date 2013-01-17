@@ -17,7 +17,7 @@
             <Dependency>perl-Socket6</Dependency>
             <Dependency>perl-Test-Pod</Dependency>
             <Dependency>perl-Test-Pod-Coverage</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <Name>perl-IO-Socket-INET6</Name>
         <RuntimeDependencies>
             <Dependency>perl-Socket6</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

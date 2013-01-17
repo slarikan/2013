@@ -19,7 +19,7 @@
             <Dependency>qt-devel</Dependency>
             <Dependency>automoc4</Dependency>
             <Dependency>taglib-devel</Dependency>
-            <Dependency versionFrom="0.8.4">podofo-devel</Dependency>
+            <Dependency>podofo-devel</Dependency>
             <Dependency>exiv2-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
@@ -28,10 +28,10 @@
     <Package>
         <Name>krename</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>taglib</Dependency>
-            <Dependency versionFrom="0.8.4">podofo</Dependency>
+            <Dependency>podofo</Dependency>
             <Dependency>exiv2-libs</Dependency>
             <Dependency>freetype</Dependency>
         </RuntimeDependencies>

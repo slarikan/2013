@@ -14,7 +14,7 @@
         <Description>kde-l10n-ca@valencia is the KDE4 internationalization package that provides Catalan Valencian translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="11177880c2ae22aaaabfbf7ce2f38c9fffb99671">mirrors://kde/unstable/4.9.90/src/kde-l10n/kde-l10n-ca@valencia-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

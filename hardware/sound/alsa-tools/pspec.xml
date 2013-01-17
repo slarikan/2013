@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>fltk-devel</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">usx2yloader_udev.patch</Patch>
@@ -31,7 +31,7 @@
         <Summary>ALSA console tools</Summary>
         <Description>alsa-tools is a collection of console applications for controlling sound cards like EchoAudio, Envy24, etc.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
+            <Dependency>alsa-lib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -54,9 +54,9 @@
         <Summary>Graphical frontends for some ALSA tools</Summary>
         <Description>alsa-tools-gui is a collection of GUI based ALSA tools for controlling sound cards like EchoAudio, Envy24, Hammerfall HDSP, RMedigicontrol.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.26.20121013">python-alsa</Dependency>
+            <Dependency>python-alsa</Dependency>
             <Dependency>python-gtk</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
+            <Dependency>alsa-lib</Dependency>
             <Dependency>fltk</Dependency>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
@@ -89,7 +89,7 @@
         <Name>alsa-tools-devel</Name>
         <Summary>Development files for alsa-tools</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.26.20121013">alsa-tools</Dependency>
+            <Dependency>alsa-tools</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

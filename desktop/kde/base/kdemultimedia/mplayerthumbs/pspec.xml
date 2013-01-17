@@ -14,7 +14,7 @@
         <Description>MPlayer based thumbnail generator for video files</Description>
         <Archive sha1sum="fcd5115ba9aa12cad672efd77f5e1a64369214fc" type="tarxz">mirrors://kde/unstable/4.9.97/src/mplayerthumbs-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>
             <Dependency>mplayer</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>mplayerthumbs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
+            <Dependency>kde-runtime</Dependency>
             <Dependency>mplayer</Dependency>
         </RuntimeDependencies>
         <Files>

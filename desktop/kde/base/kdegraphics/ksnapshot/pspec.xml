@@ -15,8 +15,8 @@
         <Description>ksnapshot is a screen capture utility.</Description>
         <Archive sha1sum="8081da8c2f321841e4dd5390b89cf8933bc2ca89" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksnapshot-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkipi-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkipi-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
         </BuildDependencies>
@@ -25,8 +25,8 @@
     <Package>
         <Name>ksnapshot</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkipi</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkipi</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
         </RuntimeDependencies>

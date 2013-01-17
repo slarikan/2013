@@ -14,7 +14,7 @@
         <Description>kde-l10n-vi is the KDE4 internationalization package that provides Vietnamese translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="f4144350581f862affebf3650d2a338e7d566555">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-vi-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

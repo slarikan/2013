@@ -14,7 +14,7 @@
         <Description>perl-Template-Toolkit is a collection of modules which implement a fast, flexible, powerful and extensible template processing system.</Description>
         <Archive sha1sum="c72288348a64ed4eb540b4c35648857d62da3a29" type="targz">http://cpan.org/modules/by-module/Template/Template-Toolkit-2.24.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-File-HomeDir</Dependency>
             <Dependency>perl-AppConfig</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Template-Toolkit</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-File-HomeDir</Dependency>
             <Dependency>perl-AppConfig</Dependency>
         </RuntimeDependencies>

@@ -19,7 +19,7 @@
     <Package>
         <Name>WoP-padpack</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.1">WoP-data</Dependency>
+            <Dependency>WoP-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

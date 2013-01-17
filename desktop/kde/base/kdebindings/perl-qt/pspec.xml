@@ -14,9 +14,9 @@
         <Description>perl-qt is the Perl bindings for Qt4.</Description>
         <Archive sha1sum="3b8b265a277d535be9c0ef91d74431e28d850ca2" type="tarxz">mirrors://kde/unstable/4.9.97/src/perlqt-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qt-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>smoke-gen-devel</Dependency>
+            <Dependency>smoke-qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,9 +24,9 @@
         <Name>perl-qt</Name>
         <IsA>app:console</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">qt</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-gen</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-qt</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>smoke-gen</Dependency>
+            <Dependency>smoke-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/puic4</Path>

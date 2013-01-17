@@ -15,7 +15,7 @@
         <Description>perl-Crypt-OpenSSL-RSA is an XS perl module designed to provide basic RSA functionality.</Description>
         <Archive sha1sum="9978e5fcac15ea691030181d2d12564fa3902e5e" type="targz">http://search.cpan.org/CPAN/authors/id/P/PE/PERLER/Crypt-OpenSSL-RSA-0.28.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Bignum</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Random</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Crypt-OpenSSL-RSA</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Bignum</Dependency>
             <Dependency>perl-Crypt-OpenSSL-Random</Dependency>
         </RuntimeDependencies>

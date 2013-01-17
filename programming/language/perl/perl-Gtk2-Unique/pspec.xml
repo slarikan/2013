@@ -15,7 +15,7 @@
         <Description>perl-Gtk2-Unique is a Perl binding for the C library libunique which provides a way for writing single instance application.</Description>
         <Archive sha1sum="f99293536d1e95dd92cd0d2eb2f2468d38e1d5eb" type="targz">mirrors://cpan/authors/id/P/PO/POTYL/Gtk2-Unique-0.05.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libunique-devel</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Gtk2-Unique</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>libunique</Dependency>
         </RuntimeDependencies>

@@ -14,7 +14,7 @@
         <Description>KDE library for CDDB (Compact Disc Database).</Description>
         <Archive sha1sum="455b8a47cc95d354bd9a7cce95748a85578cc5da" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkcddb-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>musicbrainz-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>libkcddb</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>musicbrainz</Dependency>
         </RuntimeDependencies>
         <Files>

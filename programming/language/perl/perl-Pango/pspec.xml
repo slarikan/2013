@@ -19,7 +19,7 @@
             <Dependency>perl-Cairo</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,7 +29,7 @@
             <Dependency>perl-Glib</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>perl-Cairo</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

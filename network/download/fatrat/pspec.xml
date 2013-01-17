@@ -18,8 +18,8 @@
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
-            <Dependency versionFrom="0.16.0">libtorrent-devel</Dependency>
-            <Dependency versionFrom="0.9">gloox-devel</Dependency>
+            <Dependency>libtorrent-devel</Dependency>
+            <Dependency>gloox-devel</Dependency>
             <Dependency>boost-devel</Dependency>
             <Dependency>pion-net-devel</Dependency>
         </BuildDependencies>
@@ -33,8 +33,8 @@
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
             <Dependency>qt-webkit</Dependency>
-            <Dependency versionFrom="0.16.0">libtorrent</Dependency>
-            <Dependency versionFrom="0.9">gloox</Dependency>
+            <Dependency>libtorrent</Dependency>
+            <Dependency>gloox</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>pion-net</Dependency>
             <Dependency>log4cxx</Dependency>

@@ -19,10 +19,10 @@
             <Dependency>lua-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency versionFrom="2.8">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>wxGTK-devel</Dependency>
             <Dependency>wxBase-devel</Dependency>
-            <Dependency versionFrom="21.2">emacs</Dependency>
+            <Dependency>emacs</Dependency>
             <Dependency>texlive-latexextra</Dependency>
         </BuildDependencies>
         <Patches>
@@ -38,7 +38,7 @@
             <Dependency>lua</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency versionFrom="2.8">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>gd</Dependency>
             <Dependency>texlive-core</Dependency>
             <Dependency>wxGTK</Dependency>
@@ -73,7 +73,7 @@
         <PartOf>editor.emacs</PartOf>
         <Summary>Emacs bindings for the gnuplot main application</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="21.2">emacs</Dependency>
+            <Dependency>emacs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/emacs/site-lisp</Path>

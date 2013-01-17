@@ -14,14 +14,14 @@
         <Description>perl-SVN-Dump module lets you manage SVN dumps with Perl.</Description>
         <Archive sha1sum="d2e92a47fb67267e3f83dc87e2f37ead5f5c10cc" type="targz">mirrors://cpan/authors/id/B/BO/BOOK/SVN-Dump-0.05.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-SVN-Dump</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

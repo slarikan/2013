@@ -15,13 +15,13 @@
         <Description>Ethumb is an advanced thumbnail generation library optimized for Enlightenment.</Description>
         <Archive sha1sum="1ce848a05482922369578f649fce2fd6ede9c7ae" type="tarbz2">http://download.enlightenment.org/releases/ethumb-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
-            <Dependency versionFrom="1.7.4">e_dbus-devel</Dependency>
-            <Dependency versionFrom="1.7.4">emotion-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>e_dbus-devel</Dependency>
+            <Dependency>emotion-devel</Dependency>
             <Dependency>epdf-devel</Dependency>
             <Dependency>libexif-devel</Dependency>
         </BuildDependencies>
@@ -30,13 +30,13 @@
     <Package>
         <Name>ethumb</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">edje</Dependency>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">evas</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
-            <Dependency versionFrom="1.7.4">e_dbus</Dependency>
-            <Dependency versionFrom="1.7.4">emotion</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
+            <Dependency>e_dbus</Dependency>
+            <Dependency>emotion</Dependency>
             <Dependency>epdf</Dependency>
             <Dependency>libexif</Dependency>
         </RuntimeDependencies>

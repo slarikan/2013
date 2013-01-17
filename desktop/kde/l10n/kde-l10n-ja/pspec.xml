@@ -14,7 +14,7 @@
         <Description>kde-l10n-ja is the KDE4 internationalization package that provides Japanese translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="d7f7b88546ffe5392db651d32cf11a2abb69897d">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ja-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -19,7 +19,7 @@
             <Dependency>libxslt-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
             <Dependency>libusbx-devel</Dependency>
-            <Dependency versionFrom="1.29">gobject-introspection-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,7 +31,7 @@
             <Dependency>libxslt</Dependency>
             <Dependency>libxml2</Dependency>
             <Dependency>libusbx</Dependency>
-            <Dependency versionFrom="1.29">gobject-introspection</Dependency>
+            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

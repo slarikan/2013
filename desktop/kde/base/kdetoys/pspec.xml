@@ -14,8 +14,8 @@
         <Description>Contains KDE4 toys (small applications to make your desktop a more enjoyable environment).</Description>
         <Archive sha1sum="da600b77ed84507f0e5de11e1d9e0b51be817c95" type="tarxz">mirrors://kde/unstable/4.9.95/src/kdetoys-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kde-workspace-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -26,8 +26,8 @@
     <Package>
         <Name>kdetoys</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.95">kde-workspace</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-workspace</Dependency>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>

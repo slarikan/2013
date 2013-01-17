@@ -53,7 +53,7 @@
             <Dependency>mesa</Dependency>
             <Dependency>lua</Dependency>
             <Dependency>libX11</Dependency>
-            <Dependency versionFrom="3.2.1">glest-data</Dependency>
+            <Dependency>glest-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

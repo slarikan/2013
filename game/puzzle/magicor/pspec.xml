@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>pygame</Dependency>
             <Dependency>python-gtk</Dependency>
-            <Dependency versionFrom="1.1">magicor-data</Dependency>
+            <Dependency>magicor-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

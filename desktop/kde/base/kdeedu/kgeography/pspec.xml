@@ -15,16 +15,16 @@
         <Description>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</Description>
         <Archive sha1sum="b4e48c9551f29b53d620e81527cbf6a6e8516435" type="tarxz">mirrors://kde/unstable/4.9.97/src/kgeography-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kgeography</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
         </RuntimeDependencies>
         <Replaces>
             <Package>kdeedu</Package>

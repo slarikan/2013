@@ -14,14 +14,14 @@
         <Description>App::CLI dispatches CLI (command line interface) based commands into command classes. It also supports subcommand and per-command options.</Description>
         <Archive sha1sum="28e0870a570ae9180b1ca891da79669903aa2ed2" type="targz">mirrors://cpan/authors/id/A/AL/ALEXMV/App-CLI-0.08.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-App-CLI</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

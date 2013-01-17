@@ -14,7 +14,7 @@
         <Description>Plack is a set of tools for using the PSGI stack. It contains middleware components, a reference server and utilities for Web application frameworks. Plack is like Ruby's Rack or Python's Paste for WSGI.</Description>
         <Archive sha1sum="d640e237ab90520bcaf5f46e09051def3517b8a3" type="targz">http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/Plack-0.9989.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Devel-StackTrace-AsHTML</Dependency>
             <Dependency>perl-ExtUtils-MakeMaker</Dependency>
             <Dependency>perl-File-ShareDir</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>perl-Plack</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Devel-StackTrace-AsHTML</Dependency>
             <Dependency>perl-ExtUtils-MakeMaker</Dependency>
             <Dependency>perl-File-ShareDir</Dependency>

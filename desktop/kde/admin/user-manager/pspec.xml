@@ -27,7 +27,7 @@
     <Package>
         <Name>user-manager</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="164">baselayout</Dependency>
+            <Dependency>baselayout</Dependency>
             <Dependency>python-qt</Dependency>
             <Dependency>python-kde</Dependency>
         </RuntimeDependencies>

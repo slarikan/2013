@@ -15,9 +15,9 @@
         <Description>Multi-purpose KDE library for Audio CD operations.</Description>
         <Archive sha1sum="b555865e7675c9413bff92dee9c2bd379fbf7b8a" type="tarxz">mirrors://kde/unstable/4.9.97/src/audiocd-kio-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkcddb</Dependency>
-            <Dependency versionFrom="4.9.97">libkcompactdisc</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkcddb</Dependency>
+            <Dependency>libkcompactdisc</Dependency>
             <Dependency>lame-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,11 +25,11 @@
     <Package>
         <Name>audiocd-kio</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>    
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="4.9.97">libkcddb</Dependency>  
-            <Dependency versionFrom="4.9.97">libkcompactdisc</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>    
+            <Dependency>phonon</Dependency>
+            <Dependency>libkcddb</Dependency>  
+            <Dependency>libkcompactdisc</Dependency>
             <Dependency>lame-devel</Dependency>    
             <Dependency>xine-lib</Dependency>
         </RuntimeDependencies>

@@ -15,7 +15,7 @@
         <Description>eboard is a chess interface for Unix-like systems based on the GTK+ GUI toolkit.</Description>
         <Archive sha1sum="029cf1e7503fc2a862b9880da9ea6ab91e5614cd" type="tarbz2">mirrors://sourceforge/eboard/eboard-1.1.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>libstdc++</Dependency>
             <Dependency>pango-devel</Dependency>
         </BuildDependencies>
@@ -30,7 +30,7 @@
     <Package>
         <Name>eboard</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>libstdc++</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gnuchess</Dependency>

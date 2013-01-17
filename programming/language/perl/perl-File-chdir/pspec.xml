@@ -14,14 +14,14 @@
         <Description>Perl's chdir() has the unfortunate problem of being very, very, very global. If any part of your program calls chdir() or if any library you use calls chdir(), it changes the current working directory for the whole program.</Description>
         <Archive sha1sum="e1379a748c46d7f97fb48f062e202cc4ddef3bc1" type="targz">http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/File-chdir-0.1006.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-File-chdir</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

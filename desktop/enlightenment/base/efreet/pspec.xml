@@ -16,18 +16,18 @@
         <Description>efreet implements the FreeDesktop.Org application and MIME-handling standards.</Description>
         <Archive sha1sum="c5ead89bbc9073259447b5495b8ee0a2e2b263df" type="tarbz2">http://download.enlightenment.org/releases/efreet-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>efreet</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>ecore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -43,9 +43,9 @@
         <Summary>Development files for efreet</Summary>
         <RuntimeDependencies>
             <Dependency release="current">efreet</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

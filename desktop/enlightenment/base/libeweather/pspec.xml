@@ -15,16 +15,16 @@
         <Description>libeweather is a weather library that provides weather widgets for Enlightenment.</Description>
         <Archive sha1sum="2c4b4df79bf89ce630164624a62a5dadf26a8f89" type="targz">http://anka.pardus-linux.org/2013/source/E17/libeweather-0.2.0_09152012.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.3">edje-devel</Dependency>
-            <Dependency versionFrom="1.7.3">ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libeweather</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.3">edje</Dependency>
-            <Dependency versionFrom="1.7.3">ecore</Dependency>
+            <Dependency>edje</Dependency>
+            <Dependency>ecore</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="executable">/usr/bin/eweather_test</Path>

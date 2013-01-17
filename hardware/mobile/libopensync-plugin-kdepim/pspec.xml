@@ -14,7 +14,7 @@
         <Description>KDE PIM Synchronization Plug-In allows using OpenSync in KDE PIM applications (Kontact, Kmail, ..).</Description>
         <Archive sha1sum="591fa5ebdaa87bb75fe557156bb09d8bbffd2ebd" type="tarbz2">http://www.opensync.org/download/releases/0.22/libopensync-plugin-kdepim-0.22.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.5.5">kdepimlibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
             <Dependency>libopensync-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -28,7 +28,7 @@
     <Package>
         <Name>libopensync-plugin-kdepim</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.5.5">kdepimlibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
             <Dependency>libopensync</Dependency>
         </RuntimeDependencies>
         <Files>

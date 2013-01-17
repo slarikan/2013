@@ -18,14 +18,14 @@
             <Patch level="1">disable-test-qcdm-serial-port.patch</Patch>
         </Patches>
         <BuildDependencies>
-            <Dependency versionFrom="2.4.5">ppp-devel</Dependency>
+            <Dependency>ppp-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ModemManager</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.4.5">ppp</Dependency>
+            <Dependency>ppp</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/sbin</Path>

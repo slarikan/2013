@@ -43,7 +43,7 @@
         <IsA>library</IsA>
         <Summary>GTK+ frontend for Aiksaurus, an English thesaurus</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="3">aiksaurus</Dependency>
+            <Dependency>aiksaurus</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>

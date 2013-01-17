@@ -18,7 +18,7 @@
             <Dependency>perl-Unicode-Map8</Dependency>
             <Dependency>perl-Jcode</Dependency>
             <Dependency>perl-Unicode-String</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,7 +29,7 @@
             <Dependency>perl-Unicode-Map8</Dependency>
             <Dependency>perl-Jcode</Dependency>
             <Dependency>perl-Unicode-String</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

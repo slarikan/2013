@@ -15,8 +15,8 @@
         <Description>Filelight allows you to quickly understand exactly where your diskspace is being used by graphically representing your file system as a set of concentric segmented-rings.</Description>
         <Archive sha1sum="508ee12c7c774f6b3a34a5fdcd329a89b608b177" type="tarxz">mirrors://kde/unstable/4.9.97/src/filelight-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>
             <Dependency>desktop-file-utils</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>filelight</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>
             <Dependency>desktop-file-utils</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -14,14 +14,14 @@
         <Description>X11::Protocol is a client-side interface to the X11 Protocol (see X(1) for information about X11), allowing perl programs to display windows and graphics on X11 servers.</Description>
         <Archive sha1sum="412dc81c44e6521b9c8bbaa6bade33898e0aad7d" type="targz">mirrors://cpan/authors/id/S/SM/SMCCAM/X11-Protocol-0.56.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-X11-Protocol</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

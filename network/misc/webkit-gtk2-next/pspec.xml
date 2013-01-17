@@ -30,8 +30,8 @@
             <Dependency>enchant-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>gnome-keyring-devel</Dependency>
-            <Dependency versionFrom="1.0.2">gst-plugins-base-next-devel</Dependency>
-            <Dependency versionFrom="1.0.2">gstreamer-next-devel</Dependency>
+            <Dependency>gst-plugins-base-next-devel</Dependency>
+            <Dependency>gstreamer-next-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -63,8 +63,8 @@
             <Dependency>libXrender</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="1.0.2">gst-plugins-base-next</Dependency>
-            <Dependency versionFrom="1.0.2">gstreamer-next</Dependency>
+            <Dependency>gst-plugins-base-next</Dependency>
+            <Dependency>gstreamer-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -14,7 +14,7 @@
         <Description>perl-Gnome2-Wnck allows a Perl developer to use the Window Navigator Construction Kit library (libwnck for short) to write tasklists and pagers.</Description>
         <Archive sha1sum="9a9a9876871d5192e7e04db4e65633cf02f75ff0" type="targz">mirrors://cpan/authors/id/T/TS/TSCH/Gnome2-Wnck-0.16.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Glib</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>perl-Gnome2-Wnck</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>libwnck2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>

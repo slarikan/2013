@@ -14,8 +14,8 @@
         <Description>mod_perl incorporates a Perl interpreter into the Apache web server, so that the Apache web server can directly execute Perl code.</Description>
         <Archive sha1sum="e749e2d7236273217f33cbe7fcd704a662e532d1" type="targz">http://perl.apache.org/dist/mod_perl-2.0.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.2">apache</Dependency>
-            <Dependency versionFrom="5.12.2">perl</Dependency>
+            <Dependency>apache</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
             <Dependency>openldap-client</Dependency>
@@ -30,8 +30,8 @@
     <Package>
         <Name>mod_perl</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.2">apache</Dependency>
-            <Dependency versionFrom="5.12.2">perl</Dependency>
+            <Dependency>apache</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>apr-util</Dependency>
             <Dependency>openldap-client</Dependency>

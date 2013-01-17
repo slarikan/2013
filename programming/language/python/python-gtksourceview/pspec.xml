@@ -19,7 +19,7 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gtksourceview3-devel</Dependency>
             <Dependency>docbook-xml</Dependency>
-            <Dependency releaseFrom="16">python-pygobject-devel</Dependency>
+            <Dependency>python-pygobject-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">python-underlinking.patch</Patch>
@@ -32,7 +32,7 @@
             <Dependency>python-gtk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtksourceview3</Dependency>
-            <Dependency releaseFrom="16">python-pygobject</Dependency>
+            <Dependency>python-pygobject</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

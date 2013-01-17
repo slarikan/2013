@@ -15,7 +15,7 @@
         <Description>perl-PPIx-Utilities is a collection of functions for dealing with PPI objects, many of which originated in Perl::Critic.</Description>
         <Archive sha1sum="f38d357bcf24c1ad9062b38a77fba1c0f7a787f3" type="targz">mirrors://cpan/authors/id/E/EL/ELLIOTJS/PPIx-Utilities-1.001000.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Exception-Class</Dependency>
             <Dependency>perl-Task-Weaken</Dependency>
             <Dependency>perl-Test-Deep</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-PPIx-Utilities</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Exception-Class</Dependency>
             <Dependency>perl-Task-Weaken</Dependency>
             <Dependency>perl-PPI</Dependency>

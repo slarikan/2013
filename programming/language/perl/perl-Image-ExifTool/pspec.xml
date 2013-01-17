@@ -15,14 +15,14 @@
         <Description>ExifTool is a platform-independent Perl library plus a command-line application for reading, writing and editing meta information in image, audio and video files.</Description>
         <Archive sha1sum="75344fcd125cf53690f71e9ed2f36b0187a76f30" type="targz">http://search.cpan.org/CPAN/authors/id/E/EX/EXIFTOOL/Image-ExifTool-8.90.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Image-ExifTool</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

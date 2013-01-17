@@ -17,18 +17,18 @@
         <Archive sha1sum="705591a78d87f595a1014281886f83ed4c1fde28" type="tarxz">http://anka.pardus-linux.org/2013/source/E17/enlil-20121228.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>git</Dependency>
-            <Dependency releaseFrom="22">eina-devel</Dependency>
-            <Dependency releaseFrom="28">eet-devel</Dependency>
-            <Dependency releaseFrom="26">evas-devel</Dependency>
-            <Dependency releaseFrom="23">ecore-devel</Dependency>
-            <Dependency releaseFrom="23">edje-devel</Dependency>
-            <Dependency releaseFrom="17">efreet-devel</Dependency>
-            <Dependency releaseFrom="17">e_dbus-devel</Dependency>
-            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
-            <Dependency releaseFrom="9">ethumb-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-evas-devel</Dependency>
-            <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
-            <Dependency versionFrom="1.2.3">flickcurl-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>efreet-devel</Dependency>
+            <Dependency>e_dbus-devel</Dependency>
+            <Dependency>enlightenment-devel</Dependency>
+            <Dependency>ethumb-devel</Dependency>
+            <Dependency>python-evas-devel</Dependency>
+            <Dependency>python-ethumb</Dependency>
+            <Dependency>flickcurl-devel</Dependency>
             <Dependency>libiptcdata-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
 	    <!--<Dependency>libkexiv2-devel</Dependency>-->
@@ -38,18 +38,18 @@
     <Package>
         <Name>enlil</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="22">eina-devel</Dependency>
-            <Dependency releaseFrom="28">eet-devel</Dependency>
-            <Dependency releaseFrom="26">evas-devel</Dependency>
-            <Dependency releaseFrom="23">ecore-devel</Dependency>
-            <Dependency releaseFrom="23">edje-devel</Dependency>
-            <Dependency releaseFrom="17">efreet-devel</Dependency>
-            <Dependency releaseFrom="17">e_dbus-devel</Dependency>
-            <Dependency releaseFrom="30">enlightenment-devel</Dependency>
-            <Dependency releaseFrom="9">ethumb</Dependency>
-            <Dependency versionFrom="1.7.0">python-evas</Dependency>
-            <Dependency versionFrom="1.7.0">python-ethumb</Dependency>
-            <Dependency versionFrom="1.2.3">flickcurl</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
+            <Dependency>edje-devel</Dependency>
+            <Dependency>efreet-devel</Dependency>
+            <Dependency>e_dbus-devel</Dependency>
+            <Dependency>enlightenment-devel</Dependency>
+            <Dependency>ethumb</Dependency>
+            <Dependency>python-evas</Dependency>
+            <Dependency>python-ethumb</Dependency>
+            <Dependency>flickcurl</Dependency>
             <Dependency>libxml2</Dependency>
             <!--<Dependency>libkexiv2</Dependency>-->
             <Dependency>libiptcdata</Dependency>

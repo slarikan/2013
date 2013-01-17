@@ -14,7 +14,7 @@
         <Description>Crypt::Simple module to encrypt stuff simply.</Description>
         <Archive sha1sum="12cd1419656855c10bd4b957235bf69ebde0e1e8" type="targz">mirrors://cpan/authors/id/K/KA/KASEI/Crypt-Simple-0.06.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Crypt-Blowfish</Dependency>
             <Dependency>perl-FreezeThaw</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Crypt-Simple</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Crypt-Blowfish</Dependency>
             <Dependency>perl-FreezeThaw</Dependency>
         </RuntimeDependencies>

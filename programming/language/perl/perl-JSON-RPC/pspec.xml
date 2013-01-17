@@ -15,7 +15,7 @@
         <Description>perl-JSON-RPC is an implementation for JSON RPC 1.1 protocol for Perl.</Description>
         <Archive sha1sum="543ec9e674c28612f420bd71847e97dd7270fcfe" type="targz">http://search.cpan.org/CPAN/authors/id/D/DM/DMAKI/JSON-RPC-1.03.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-libwww</Dependency>
             <Dependency>perl-JSON</Dependency>
             <Dependency>perl-Class-Accessor-Lite</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>perl-JSON-RPC</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-libwww</Dependency>
             <Dependency>perl-JSON</Dependency>
             <Dependency>perl-Class-Accessor-Lite</Dependency>

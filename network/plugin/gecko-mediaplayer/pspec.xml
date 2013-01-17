@@ -15,17 +15,17 @@
         <Description>Browser plugin that uses GNOME MPlayer to play media in a browser. It should work with all browsers on Unix-ish systems (Mozilla, Firefox, Opera etc.).</Description>
         <Archive sha1sum="e5a3d9722bbaa5578cb8b0365c5ded41d94634af" type="targz">https://gecko-mediaplayer.googlecode.com/files/gecko-mediaplayer-1.0.7.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.0.7">gnome-mplayer</Dependency>
-            <Dependency versionFrom="17.0">xulrunner-devel</Dependency>
-            <Dependency versionFrom="1.0.7">gmtk-devel</Dependency>
+            <Dependency>gnome-mplayer</Dependency>
+            <Dependency>xulrunner-devel</Dependency>
+            <Dependency>gmtk-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>gecko-mediaplayer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.7">gnome-mplayer</Dependency>
-            <Dependency versionFrom="17.0">xulrunner</Dependency>
+            <Dependency>gnome-mplayer</Dependency>
+            <Dependency>xulrunner</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

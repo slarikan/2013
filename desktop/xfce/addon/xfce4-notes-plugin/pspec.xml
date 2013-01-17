@@ -15,22 +15,22 @@
         <Description>The notes plugin provides you a quick way to paste text, to write down a list of things, to leave a note to your friend, or whatever you had do with Post-It's.</Description>
         <Archive sha1sum="8a8ab252a65aee386849ddd589c552c2e2a20148" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-notes-plugin/1.7/xfce4-notes-plugin-1.7.7.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency version="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-notes-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency>xfce4-panel</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libunique</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf</Dependency>
+            <Dependency>xfconf</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

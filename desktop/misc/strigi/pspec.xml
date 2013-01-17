@@ -15,7 +15,7 @@
         <Description>Strigi is a daemon that indexes data on your harddrive.</Description>
         <Archive sha1sum="5bd09b8f0585b64d529525b7a2eabb6873b178ce" type="tarbz2">http://sources.pardus-linux.org/strigi-0.7.7.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>clucene-devel</Dependency>
             <Dependency>exiv2-devel</Dependency>
             <Dependency>libstreams-devel</Dependency>
@@ -31,7 +31,7 @@
     <Package>
         <Name>strigi</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>clucene</Dependency>
             <Dependency>gamin</Dependency>
             <Dependency>exiv2-libs</Dependency>
@@ -51,7 +51,7 @@
         <Name>strigi-libs</Name>
         <Summary>strigi library files</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>clucene</Dependency>
             <Dependency>exiv2-libs</Dependency>
             <Dependency>strigi-common</Dependency>

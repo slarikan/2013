@@ -15,8 +15,8 @@
         <Description>KMouseTool is a Linux-based KDE program. It clicks the mouse for you, so you don't have to. KMouseTool works with any mouse or pointing device.</Description>
         <Archive sha1sum="2ea451f657251811e234c4712132883c8c30797d" type="tarxz">mirrors://kde/unstable/4.9.97/src/kmousetool-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>kmousetool</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libXtst</Dependency>
         </RuntimeDependencies>
         <Replaces>

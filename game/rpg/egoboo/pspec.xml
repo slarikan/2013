@@ -43,7 +43,7 @@
             <Dependency>mesa</Dependency>
             <Dependency>physfs</Dependency>
             <Dependency>enet</Dependency>
-            <Dependency versionFrom="2.8.1">egoboo-data</Dependency>
+            <Dependency>egoboo-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

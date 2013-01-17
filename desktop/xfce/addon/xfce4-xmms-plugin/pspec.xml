@@ -15,20 +15,20 @@
         <Description>This plugin is quite easy to use.Lets to user control XMMS, Beep or Audacious players </Description>
         <Archive sha1sum="30bebf95c09aa57d77453209b0bf2d429307d7f2" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-xmms-plugin/0.5/xfce4-xmms-plugin-0.5.3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-xmms-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency>xfce4-panel</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>

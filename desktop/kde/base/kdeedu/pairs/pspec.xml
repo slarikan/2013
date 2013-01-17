@@ -14,8 +14,8 @@
         <Description>Pairs is a pairs-matching game for kids on KDE4</Description>
         <Archive sha1sum="a8e8def433f5a0e6d84491ced9f8c2c93b6f0559" type="tarxz">http://download.kde.org/unstable/4.9.97/src/pairs-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,8 +23,8 @@
     <Package>
         <Name>pairs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -14,7 +14,7 @@
         <Description>perl-File-HomeDir is a perl module for locating the directories that are "owned" by a user (typicaly your user) and to solve the various issues that arise trying to find them consistently across a wide variety of platforms.</Description>
         <Archive sha1sum="45124efe2b17ba44ef13390b34e1d0095dafa503" type="targz">http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/File-HomeDir-0.99.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-File-Which</Dependency>
 
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-File-HomeDir</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>File-HomeDir</Package>

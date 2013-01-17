@@ -14,7 +14,7 @@
         <Description>Crypt::Blowfish is an XS-based implementation of the Blowfish cryptography algorithm.</Description>
         <Archive sha1sum="d4712fc05559f8b6aef9d901e115bba2cd368a5f" type="targz">mirrors://cpan/authors/id/D/DP/DPARIS/Crypt-Blowfish-2.12.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
 <!--        <Dependency>perl-Crypt-CBC</Dependency> -->
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-Crypt-Blowfish</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
 <!--        <Dependency>perl-Crypt-CBC</Dependency> -->
         </RuntimeDependencies>
         <Files>

@@ -15,16 +15,16 @@
         <Description>KNetWalk is a single player logic game. The object of the game is to start the LAN, connecting all the terminals to the server, in as few turns as possible.</Description>
         <Archive sha1sum="44a047b80c497bfa454e9677eb38ac48d0baf417" type="tarxz">mirrors://kde/unstable/4.9.97/src/knetwalk-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>knetwalk</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
