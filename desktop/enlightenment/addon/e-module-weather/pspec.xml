@@ -24,7 +24,7 @@
             <Dependency>efreet-devel</Dependency>
             <Dependency>e_dbus-devel</Dependency>
             <Dependency>enlightenment-devel</Dependency>
-            <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
+            <Dependency>libeweather-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -39,7 +39,7 @@
             <Dependency>efreet</Dependency>
             <Dependency>e_dbus</Dependency>
             <Dependency>enlightenment</Dependency>
-	    <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
+	    <Dependency>libeweather-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/lib/enlightenment/modules/weather/</Path>
