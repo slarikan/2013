@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>Pardus gfxboot theme</Summary>
         <Description>Gfxtheme boot and install packages for Pardus</Description>
-        <Archive sha1sum="3a2c6945e157e1ba980019207cd0e3d942ccf3c2" type="tarbz2">http://pardus-anka.org/pub/source/gfxtheme-pardus-0.11.4.tar.bz2</Archive>
+        <Archive sha1sum="fe74598a5acba9c2103e46c58fbcb54facb6c415" type="targz">http://pardus-anka.org/pub/source/gfxtheme-pardus-0.11.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gfxboot</Dependency>
             <Dependency>fribidi-devel</Dependency>
