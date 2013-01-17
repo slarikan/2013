@@ -23,7 +23,7 @@
     <Package>
         <Name>boot-manager</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom='0.4.8'>pardus-python</Dependency>
+            <Dependency>pardus-python</Dependency>
             <Dependency>python-qt</Dependency>
             <Dependency>python-kde</Dependency>
         </RuntimeDependencies>

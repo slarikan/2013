@@ -23,7 +23,7 @@
             <Dependency>edje-devel</Dependency>
             <Dependency>efreet-devel</Dependency>
             <Dependency>enlightenment-devel</Dependency>
-	    <Dependency versionFrom="0.2.0_09152012">libeweather-devel</Dependency>
+	    <Dependency>libeweather-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -37,7 +37,7 @@
             <Dependency>edje</Dependency>
             <Dependency>efreet</Dependency>
             <Dependency>enlightenment</Dependency>
-	    <Dependency versionFrom="0.2.0_09152012">libeweather</Dependency>
+	    <Dependency>libeweather</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="library">/usr/lib/enlightenment/modules/eweather/*/module.so</Path>
