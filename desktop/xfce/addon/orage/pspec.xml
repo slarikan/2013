@@ -16,9 +16,9 @@
         <Description>Orage is a time-managing application for the Xfce desktop environment.</Description>
         <Archive sha1sum="f4f89ea1f301514c419e7643661b510132ebb012" type="tarbz2">http://archive.xfce.org/src/apps/orage/4.8/orage-4.8.3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
+            <Dependency>libxfcegui4-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>libical-devel</Dependency>
         </BuildDependencies>
@@ -27,9 +27,9 @@
     <Package>
         <Name>orage</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>xfce4-panel</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libxfce4util</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libical</Dependency>
             <Dependency>gtk2</Dependency>

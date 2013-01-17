@@ -15,8 +15,8 @@
         <Description>The Thunar Archive Plugin allows you to create and extract archive files using the file context menus in the Thunar file manager.</Description>
         <Archive sha1sum="79a008709c61f1c4b4c35b6393abfd24bc60309b" type="tarbz2">http://archive.xfce.org/src/thunar-plugins/thunar-archive-plugin/0.3/thunar-archive-plugin-0.3.0.tar.bz2</Archive>
         <BuildDependencies>
-	    <Dependency versionFrom="1.5.0">Thunar-devel</Dependency>
-	    <Dependency versionFrom="1.2.0">thunar-vfs-devel</Dependency>
+	    <Dependency>Thunar-devel</Dependency>
+	    <Dependency>thunar-vfs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

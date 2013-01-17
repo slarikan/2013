@@ -15,11 +15,11 @@
         <Description>Xfburn is a simple CD/DVD burning tool based on libburnia libraries.</Description>
         <Archive sha1sum="52d33e56b7ce9774fba680f50723eaf1a7215091" type="tarbz2">http://archive.xfce.org/src/apps/xfburn/0.4/xfburn-0.4.3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.2">libburn-devel</Dependency>
-            <Dependency versionFrom="1.2.2">libisofs-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4-devel</Dependency>
-            <Dependency versionFrom="1.2.0">thunar-vfs-devel</Dependency>
-            <Dependency versionFrom="0.9.1">exo</Dependency>
+            <Dependency>libburn-devel</Dependency>
+            <Dependency>libisofs-devel</Dependency>
+            <Dependency>libxfcegui4-devel</Dependency>
+            <Dependency>thunar-vfs-devel</Dependency>
+            <Dependency>exo</Dependency>
             <Dependency>librsvg-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
         </BuildDependencies>
@@ -31,16 +31,16 @@
     <Package>
         <Name>xfburn</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.2.2">libburn</Dependency>
+            <Dependency>libburn</Dependency>
             <Dependency>desktop-file-utils</Dependency>
             <Dependency>gstreamer</Dependency>
-            <Dependency versionFrom="1.2.0">thunar-vfs</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="1.2.2">libisofs</Dependency>
+            <Dependency>thunar-vfs</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libisofs</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency versionFrom="0.9.1">exo</Dependency>
+            <Dependency>exo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfce4util</Dependency>
             <Dependency>gst-plugins-base</Dependency>
         </RuntimeDependencies>
         <Files>

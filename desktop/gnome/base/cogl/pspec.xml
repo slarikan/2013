@@ -48,7 +48,7 @@
     <Package>
         <Name>cogl-devel</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="current">cogl</Dependency>
+            <Dependency release="current">cogl</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>pango-devel</Dependency>

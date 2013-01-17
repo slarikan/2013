@@ -30,7 +30,7 @@
             <Dependency>udisks2-devel</Dependency>
             <Dependency>libbluray-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>  
-            <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
+            <Dependency>libimobiledevice-devel</Dependency>
         </BuildDependencies>
         <Patches>
 	  <!--<Patch level="1">gvfs-1.5.1-gphoto2-no-storageinfo-support.patch</Patch>-->
@@ -131,7 +131,7 @@
         <Summary>AFC(Apple File Control) backend for GVFS</Summary>
         <RuntimeDependencies>
             <Dependency>gvfs-common</Dependency>
-            <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
+            <Dependency>libimobiledevice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec/gvfs-afc-volume-monitor</Path>

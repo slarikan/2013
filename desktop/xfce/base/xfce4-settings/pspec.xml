@@ -21,13 +21,13 @@
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency>xfconf-devel</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency versionFrom="0.9.1">exo-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4ui-devel</Dependency>
+            <Dependency>exo-devel</Dependency>
+            <Dependency>libxfce4ui-devel</Dependency>
             <Dependency>libwnck2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -49,22 +49,18 @@
             <Dependency>libXrandr</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>xfconf</Dependency>
+            <Dependency>libxfce4util</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="0.9.1">exo</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4ui</Dependency>
+            <Dependency>exo</Dependency>
+            <Dependency>libxfce4ui</Dependency>
             <Dependency>libwnck2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>xfce-mcs-manager</Package>
-            <Package>xfce-mcs-plugins</Package>
-            <Package>libxfce4mcs</Package>
-        </Replaces>
+
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
