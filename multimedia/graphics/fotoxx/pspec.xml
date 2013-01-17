@@ -26,7 +26,7 @@
             <Dependency>freetype-devel</Dependency>
             <Dependency>perl-Image-ExifTool</Dependency>
             <Dependency>xdg-utils</Dependency>
-            <Dependency releaseFrom="5">FreeImage-devel</Dependency>
+            <Dependency>FreeImage-devel</Dependency>
             <Dependency>ufraw</Dependency>
         </BuildDependencies>
         <Patches>
@@ -50,7 +50,7 @@
             <Dependency>freetype</Dependency>
             <Dependency>perl-Image-ExifTool</Dependency>
             <Dependency>xdg-utils</Dependency>
-            <Dependency releaseFrom="5">FreeImage</Dependency>
+            <Dependency>FreeImage</Dependency>
             <Dependency>ufraw</Dependency>
         </RuntimeDependencies>
         <Files>

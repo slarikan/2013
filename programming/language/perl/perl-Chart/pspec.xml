@@ -15,7 +15,7 @@
         <Archive sha1sum="201442a2445c0c50c67fb532be5d7d0f0c26f67a" type="targz">mirrors://cpan/authors/id/C/CH/CHARTGRP/Chart-2.4.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-GD</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Chart</Name>
         <RuntimeDependencies>
             <Dependency>perl-GD</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

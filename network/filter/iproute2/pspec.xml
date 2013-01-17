@@ -14,7 +14,7 @@
         <Description>Iproute2 is a collection of utilites for controlling TCP/IP networking and traffic control in Linux.</Description>
         <Archive sha1sum="461f3e97d84264a597176de3ba94633114959df5" type="tarxz">http://kernel.org/pub/linux/utils/net/iproute2/iproute2-3.5.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.4.12">iptables-devel</Dependency>
+            <Dependency>iptables-devel</Dependency>
             <Dependency>linux-atm-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -35,7 +35,7 @@
         <Name>iproute2</Name>
         <RuntimeDependencies>
             <Dependency>linux-atm</Dependency>
-            <Dependency versionFrom="1.4.12">iptables</Dependency>
+            <Dependency>iptables</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

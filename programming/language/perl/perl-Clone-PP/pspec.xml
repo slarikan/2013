@@ -14,13 +14,13 @@
         <Description>This module provides a general-purpose clone function to make deep copies of Perl data structures. It calls itself recursively to copy nested hash, array, scalar and reference types, including tied variables and objects.</Description>
         <Archive sha1sum="d95fa761ff30803c876b4711a147416a943acabd" type="targz">http://search.cpan.org/CPAN/authors/id/E/EV/EVO/Clone-PP-1.02.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Clone-PP</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

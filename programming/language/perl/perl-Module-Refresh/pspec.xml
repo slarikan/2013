@@ -14,14 +14,14 @@
         <Description>It's designed to make it easy to do simple iterative development when working in a persistent environment.</Description>
         <Archive sha1sum="4bf652127661d1c8f11ff3334bfc75ecc5ab2cfa" type="targz">http://search.cpan.org/CPAN/authors/id/A/AL/ALEXMV/Module-Refresh-0.17.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Module-Refresh</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

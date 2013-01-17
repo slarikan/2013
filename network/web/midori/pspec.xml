@@ -25,7 +25,7 @@
             <Dependency>libunique-devel</Dependency>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency versionFrom="0.14">vala</Dependency>
+            <Dependency>vala</Dependency>
             <Dependency>webkit-gtk2-devel</Dependency>
             <Dependency>libzeitgeist-devel</Dependency>
         </BuildDependencies>

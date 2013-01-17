@@ -15,7 +15,7 @@
         <Archive sha1sum="2fa36d9e6ef661876f5433e56c3803212a13a838" type="targz">mirrors://cpan/authors/id/B/BJ/BJKUIT/Crypt-SmbHash-0.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Digest-MD4</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Crypt-SmbHash</Name>
         <RuntimeDependencies>
             <Dependency>perl-Digest-MD4</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

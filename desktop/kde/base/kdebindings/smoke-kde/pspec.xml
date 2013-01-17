@@ -14,12 +14,12 @@
         <Description>Language independent library for KDE bindings</Description>
         <Archive sha1sum="051e0c1228507c407581b248f38562bf0fb07ccf" type="tarxz">mirrors://kde/unstable/4.9.97/src/smokekde-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-qt-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kate</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">okular</Dependency>
+            <Dependency>smoke-gen-devel</Dependency>
+            <Dependency>smoke-qt-devel</Dependency>
+            <Dependency>kate</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>okular</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -28,9 +28,9 @@
         <RuntimeDependencies>
             <Dependency version="current">smoke-qt</Dependency>
             <Dependency>attica</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="2.9.0">soprano</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>soprano</Dependency>
+            <Dependency>kdepimlibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/</Path>

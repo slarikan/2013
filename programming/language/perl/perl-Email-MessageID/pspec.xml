@@ -15,7 +15,7 @@
         <Archive sha1sum="00c6d5a661d9338e3984168dfbff8f2e0a3a1176" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Email-MessageID-1.402.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Email-Address</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Email-MessageID</Name>
         <RuntimeDependencies>
             <Dependency>perl-Email-Address</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

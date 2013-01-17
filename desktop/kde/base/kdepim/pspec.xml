@@ -16,14 +16,14 @@
         <Description>Contains KDE4 Personal Information Management applications. In package KMail (e-mail client), KNode (newsreader), and KOrganizer (organize journals, events, appointments), akregator (RSS feed aggregator), knotes (sticky notes for desktop) applications are included.</Description>
         <Archive sha1sum="830065e06b077f7c97d15aad9a2495f4d6cb46a2" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdepim-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">nepomuk-widgets-devel</Dependency>  
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="1.9.0">akonadi-devel</Dependency>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="2.0.0">libassuan-devel</Dependency>
-            <Dependency versionFrom="2.9.0">soprano-devel</Dependency>
-            <Dependency versionFrom="0.1.9">grantlee-devel</Dependency>
+            <Dependency>nepomuk-widgets-devel</Dependency>  
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>akonadi-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>libassuan-devel</Dependency>
+            <Dependency>soprano-devel</Dependency>
+            <Dependency>grantlee-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>libstreams-devel</Dependency>
 <!--             <Dependency>libindicate-qt-devel</Dependency> -->
@@ -53,15 +53,15 @@
     <Package>
         <Name>kdepim</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">nepomuk-widgets</Dependency>  
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdepim-runtime</Dependency>
-            <Dependency versionFrom="1.9.0">akonadi</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="2.0.0">libassuan</Dependency>
-            <Dependency versionFrom="2.9.0">soprano</Dependency>
-            <Dependency versionFrom="0.1.9">grantlee</Dependency>
+            <Dependency>nepomuk-widgets</Dependency>  
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>kdepim-runtime</Dependency>
+            <Dependency>akonadi</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>libassuan</Dependency>
+            <Dependency>soprano</Dependency>
+            <Dependency>grantlee</Dependency>
             <Dependency>libstreamanalyzer</Dependency>
             <Dependency>libstreams</Dependency>
             <Dependency>boost</Dependency>

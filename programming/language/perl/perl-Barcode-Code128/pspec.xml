@@ -14,14 +14,14 @@
         <Description>perl-Barcode-Code128 generates bar codes using the CODE 128 symbology. It can generate images in PNG format using the GD package, or it can generate a text string representing the barcode that you can render using some other technology if desired.</Description>
         <Archive sha1sum="aa08a87236998d8bc475e669a635c1e654b02073" type="targz">mirrors://cpan/authors/id/W/WR/WRW/Barcode-Code128-2.01.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Barcode-Code128</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

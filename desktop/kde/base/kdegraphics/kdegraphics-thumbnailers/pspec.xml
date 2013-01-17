@@ -14,7 +14,7 @@
         <Description>kdegraphics-thumbnailers contains thumbnail-related libraries.</Description>
         <Archive sha1sum="de376cad20b7739cea8ca3a50535f1a92b67a749" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdegraphics-thumbnailers-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdcraw-devel</Dependency>
             <Dependency>libkexiv2-devel</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kdegraphics-thumbnailers</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libkdcraw</Dependency>
             <Dependency>libkexiv2</Dependency>
         </RuntimeDependencies>

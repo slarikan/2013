@@ -14,8 +14,8 @@
         <Description>Multiplatform game developement library.</Description>
         <Archive sha1sum="d3a8558c1f8b652742636e4712b5b9911f74e4d8" type="targz">http://www.clanlib.org/download/legacy/ClanLib-0.6.5-1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.3.3">hermes-devel</Dependency>
-            <Dependency versionFrom="3.1.9">libmikmod-devel</Dependency>
+            <Dependency>hermes-devel</Dependency>
+            <Dependency>libmikmod-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>libogg-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -24,7 +24,7 @@
             <Dependency>freetype-devel</Dependency>
             <Dependency>libXxf86vm-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
-            <Dependency versionFrom="1.1.1">DirectFB-devel</Dependency>
+            <Dependency>DirectFB-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="0">ClanLib-0.6.5-display-compilation.patch</Patch>
@@ -51,10 +51,10 @@
     <Package>
         <Name>clanlib</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.3.3">hermes</Dependency>
-            <Dependency versionFrom="3.1.9">libmikmod</Dependency>
+            <Dependency>hermes</Dependency>
+            <Dependency>libmikmod</Dependency>
             <Dependency>libvorbis</Dependency>
-            <Dependency versionFrom="1.1.1">DirectFB</Dependency>
+            <Dependency>DirectFB</Dependency>
             <Dependency>libogg</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>mesa</Dependency>

@@ -15,13 +15,13 @@
         <Description>perl-Devel-StackTrace is a Perl module for stack trace and stack trace frame objects.</Description>
         <Archive sha1sum="2be3206443832bab6a8cd3ea995cdec983e16d7c" type="targz">mirrors://cpan/authors/id/D/DR/DROLSKY/Devel-StackTrace-1.27.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Devel-StackTrace</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

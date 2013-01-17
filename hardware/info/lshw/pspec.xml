@@ -15,7 +15,7 @@
         <Description>lshw (Hardware Lister) is a small tool to provide detailed information on the hardware configuration of the machine. It can report exact memory configuration, firmware version, mainboard configuration, CPU version and speed, cache configuration, bus speed, etc. It has both console and graphical user interface.</Description>
         <Archive sha1sum="d2359c79c28568d8b717060314422542b7fd813c" type="targz">http://ezix.org/software/files/lshw-B.02.16.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>
@@ -27,7 +27,7 @@
     <Package>
         <Name>lshw</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>

@@ -24,7 +24,7 @@
     <Package>
         <Name>xinit</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="32">xorg-app</Dependency>
+            <Dependency>xorg-app</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/X11/Xresources</Path>

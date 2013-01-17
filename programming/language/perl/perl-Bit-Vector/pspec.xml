@@ -15,7 +15,7 @@
         <Archive sha1sum="15457183739bd41ac4bb913ffb3094dbedb1c122" type="targz">mirrors://cpan/authors/id/S/ST/STBEY/Bit-Vector-7.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Carp-Clan</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Bit-Vector</Name>
         <RuntimeDependencies>
             <Dependency>perl-Carp-Clan</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/perl5</Path>

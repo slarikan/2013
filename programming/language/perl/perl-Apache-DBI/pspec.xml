@@ -14,7 +14,7 @@
         <Description>perl-Apache-DBI contains a Perl module for initiating a persistent database connection.</Description>
         <Archive sha1sum="d787276bf8e2b939bb78af2f59c2369673ed8e57" type="targz">mirrors://cpan/authors/id/A/AB/ABH/Apache-DBI-1.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>perl-Digest-SHA1</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Apache-DBI</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>perl-Digest-SHA1</Dependency>
         </RuntimeDependencies>

@@ -15,10 +15,10 @@
         <Description>OpenCity is a city simulator game project written in standard C++ with OpenGL and SDL from scratch.</Description>
         <Archive sha1sum="332b2f9975262e98e461839267930f271733cacc" type="tarbz2">mirrors://sourceforge/opencity/opencity-0.0.6.3stable.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.13">libsdl-devel</Dependency>
-            <Dependency versionFrom="1.2.8">sdl-mixer-devel</Dependency>
-            <Dependency versionFrom="1.2.7">sdl-image-devel</Dependency>
-            <Dependency versionFrom="1.2.7">sdl-net-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-net-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>desktop.patch</Patch>
@@ -30,9 +30,9 @@
     <Package>
         <Name>opencity</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.2.13">libsdl</Dependency>
-            <Dependency versionFrom="1.2.7">sdl-image</Dependency>
-            <Dependency versionFrom="1.2.7">sdl-net</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-net</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>

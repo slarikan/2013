@@ -37,7 +37,7 @@
         <Name>webkit-sharp-docs</Name>
         <Summary>webkit-sharp docs</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="2">webkit-sharp</Dependency>
+            <Dependency>webkit-sharp</Dependency>
             <Dependency>monodoc-core</Dependency>
         </RuntimeDependencies>
         <Files>

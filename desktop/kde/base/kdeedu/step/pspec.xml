@@ -15,8 +15,8 @@
         <Description>Step is an interactive physical simulator. It allows you to explore the physical world through simulations.</Description>
         <Archive sha1sum="cab73b8b2a41cdde03935554f1bedf7c2a16ccb5" type="tarxz">mirrors://kde/unstable/4.9.97/src/step-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="2.0.15">eigen</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>eigen</Dependency>
             <Dependency>cln-devel</Dependency>
             <Dependency>gsl-devel</Dependency>
             <Dependency>libqalculate-devel</Dependency>
@@ -26,8 +26,8 @@
     <Package>
         <Name>step</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="2.0.15">eigen</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>eigen</Dependency>
             <Dependency>cln</Dependency>
             <Dependency>gsl</Dependency>
             <Dependency>libqalculate</Dependency>

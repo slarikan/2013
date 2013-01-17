@@ -15,7 +15,7 @@
         <Description>perl-Net-DBus provides a Perl API for the DBus message system.</Description>
         <Archive sha1sum="87afae86669f0a7963d7b5542afbd0ac767bc7ab" type="targz">http://search.cpan.org/CPAN/authors/id/D/DA/DANBERR/Net-DBus-1.0.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-XML-Twig</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>perl-Net-DBus</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-XML-Twig</Dependency>
         </RuntimeDependencies>
         <Files>

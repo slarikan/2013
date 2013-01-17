@@ -17,7 +17,7 @@
             <Dependency>glew-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
-            <Dependency releaseFrom="25">mesa-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
             <Dependency>mesa-glu-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -28,7 +28,7 @@
             <Dependency>glew</Dependency>
             <Dependency>freeglut</Dependency>
             <Dependency>libXext</Dependency>
-            <Dependency releaseFrom="25">mesa</Dependency>
+            <Dependency>mesa</Dependency>
             <Dependency>mesa-glu</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -41,7 +41,7 @@
         <PartOf>x11.util</PartOf>
         <Summary>Mesa utilities</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="25">mesa</Dependency>
+            <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

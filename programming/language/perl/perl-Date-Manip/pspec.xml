@@ -14,7 +14,7 @@
         <Description>Date::Manip is a set of routines designed to make any common date/time manipulation easy to do.</Description>
         <Archive sha1sum="79ac425a4974b7fa1d6b904bb38d5388c9088763" type="targz">http://fossies.org/unix/privat/Date-Manip-6.37.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-YAML-Syck</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>perl-Date-Manip</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-YAML-Syck</Dependency>
         </RuntimeDependencies>
         <Files>

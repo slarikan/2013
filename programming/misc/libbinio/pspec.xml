@@ -34,7 +34,7 @@
         <Summary>Development headers for libbinio</Summary>
         <Description>libbinio-devel provides development headers for libbinio.</Description>
         <RuntimeDependencies>
-            <Dependency release="4">libbinio</Dependency>
+            <Dependency>libbinio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

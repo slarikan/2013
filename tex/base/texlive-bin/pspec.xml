@@ -23,7 +23,7 @@
             <Dependency>gd-devel</Dependency>
             <Dependency>libsigsegv</Dependency>
             <Dependency>libXaw-devel</Dependency>
-            <Dependency versionFrom="0.16.3">poppler-devel</Dependency>
+            <Dependency>poppler-devel</Dependency>
 <!--            <Dependency>silgraphite-devel</Dependency>-->
             <Dependency>t1lib-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
@@ -42,7 +42,7 @@
             <Dependency>gd</Dependency>
             <Dependency>libsigsegv</Dependency>
             <Dependency>libXaw</Dependency>
-            <Dependency versionFrom="0.16.3">poppler</Dependency>
+            <Dependency>poppler</Dependency>
 <!--            <Dependency>silgraphite</Dependency>-->
             <Dependency>t1lib</Dependency>
         </RuntimeDependencies>

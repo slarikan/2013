@@ -31,7 +31,7 @@
         <Name>dxflib-devel</Name>
         <Summary>Development headers for dxflib</Summary>
         <RuntimeDependencies>
-            <Dependency release="3">dxflib</Dependency>
+            <Dependency>dxflib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

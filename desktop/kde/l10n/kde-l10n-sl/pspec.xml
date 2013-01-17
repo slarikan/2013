@@ -14,7 +14,7 @@
         <Description>kde-l10n-sl is the KDE4 internationalization package that provides Slovenian translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="ac723fbea382c84b70d101af21dd69d5e7b6895b">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-sl-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

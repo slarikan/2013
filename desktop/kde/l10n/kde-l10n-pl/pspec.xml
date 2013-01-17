@@ -14,7 +14,7 @@
         <Description>kde-l10n-pl is the KDE4 internationalization package that provides Polish translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="a52d2e780307c76bf02b5aa31a6592c1fdd2c9b1">mirrors://kde/unstable/4.9.90/src/kde-l10n/kde-l10n-pl-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

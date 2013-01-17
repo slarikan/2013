@@ -15,7 +15,7 @@
         <Description>perl-Data-Section is Perl module reads multiple hunks of data out of your DATA section.</Description>
         <Archive sha1sum="0cae2fe42bb3fbe5132591a4019584e44aff6dc8" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Data-Section-0.101621.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-MRO-Compat</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
         </BuildDependencies>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Data-Section</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-MRO-Compat</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
         </RuntimeDependencies>

@@ -15,7 +15,7 @@
         <Archive sha1sum="2ececb0960deb51296916186000c63d55cc53092" type="targz">mirrors://cpan/authors/id/G/GR/GRANTM/XML-Simple-2.20.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-XML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-XML-Simple</Name>
         <RuntimeDependencies>
             <Dependency>perl-XML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>XML-Simple</Package>

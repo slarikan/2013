@@ -15,8 +15,8 @@
         <Description>Easy-to-use FTP Client which also supports SFTP.</Description>
         <Archive sha1sum="fb385a103a32ccd59b1e2f5f0ef23d18afec77d4" type="tarbz2">mirrors://sourceforge/filezilla/FileZilla_3.6.0.2_src.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.8.9">wxGTK-devel</Dependency>
-            <Dependency versionFrom="2.8.3">gnutls-devel</Dependency>
+            <Dependency>wxGTK-devel</Dependency>
+            <Dependency>gnutls-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>xdg-utils</Dependency>
         </BuildDependencies>
@@ -28,8 +28,8 @@
     <Package>
         <Name>filezilla</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.8.9">wxGTK</Dependency>
-            <Dependency versionFrom="2.8.3">gnutls</Dependency>
+            <Dependency>wxGTK</Dependency>
+            <Dependency>gnutls</Dependency>
             <Dependency>xdg-utils</Dependency>
         </RuntimeDependencies>
         <Files>

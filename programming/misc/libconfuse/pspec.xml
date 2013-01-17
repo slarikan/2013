@@ -29,7 +29,7 @@
         <Summary>Development headers for libconfuse</Summary>
         <Description>libconfuse-devel provides development headers for libconfuse.</Description>
         <RuntimeDependencies>
-            <Dependency release="3">libconfuse</Dependency>
+            <Dependency>libconfuse</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

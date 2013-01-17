@@ -14,14 +14,14 @@
         <Description>File-Next is lightweight, taint-safe file-finding module.</Description>
         <Archive sha1sum="b66ec15236a5857a86f5f961b154f5b4e8ee188a" type="targz">http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/File-Next-1.10.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-File-Next</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

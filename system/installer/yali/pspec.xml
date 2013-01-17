@@ -33,7 +33,7 @@
         <Name>yali</Name>
         <RuntimeDependencies>
             <Dependency>python-qt</Dependency>
-            <Dependency versionFrom="2.22">util-linux</Dependency>
+            <Dependency>util-linux</Dependency>
             <!--
             <Dependency>gptsync</Dependency>
             -->
@@ -51,7 +51,7 @@
             <Dependency>syslinux</Dependency>
             <Dependency>pyqtermwidget</Dependency>
             <Dependency>gfxtheme-pardus-install</Dependency>
-            <Dependency versionFrom="2.2">pyparted</Dependency>
+            <Dependency>pyparted</Dependency>
             <Dependency>python-pyblock</Dependency>
             <Dependency>yali-branding-pardus</Dependency>
             <Dependency>yali-theme-pardus</Dependency>

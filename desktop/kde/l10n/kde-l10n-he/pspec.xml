@@ -14,7 +14,7 @@
         <Description>kde-l10n-he is the KDE4 internationalization package that provides Hebrew translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="881d75f58b1361b605c91efcc9658046339d9d4b">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-he-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

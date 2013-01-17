@@ -15,8 +15,8 @@
         <Description>Avogadro is an advanced molecular editor designed for cross-platform use in computational chemistry, molecular modeling, bioinformatics, materials science, and related areas. It offers a flexible rendering engine and a powerful plugin architecture.</Description>
         <Archive sha1sum="e5900f9a47147fff64c8c54a281f02715574dc0d" type="tarbz2">mirrors://sourceforge/project/avogadro/avogadro/1.1.0/avogadro-1.1.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.11">sip-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>sip-devel</Dependency>
             <Dependency>openbabel-devel</Dependency>
             <Dependency>eigen</Dependency>
             <Dependency>glew-devel</Dependency>
@@ -32,8 +32,8 @@
     <Package>
         <Name>avogadro</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
-            <Dependency versionFrom="4.11">sip</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>sip</Dependency>
             <Dependency release="current">avogadro-libs</Dependency>
             <Dependency>openbabel</Dependency>
             <Dependency>eigen</Dependency>
@@ -57,7 +57,7 @@
         <Name>avogadro-libs</Name>
         <Summary>Contains base avogadro libraries</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>openbabel</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>boost</Dependency>

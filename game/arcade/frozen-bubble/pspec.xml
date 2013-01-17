@@ -25,7 +25,7 @@
             <Dependency>sdl-pango-devel</Dependency>
             <Dependency>perl-Locale-gettext</Dependency>
             <Dependency>smpeg-devel</Dependency>
-            <Dependency version="5.12.2">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -42,7 +42,7 @@
             <Dependency>sdl-pango</Dependency>
             <Dependency>perl-Locale-gettext</Dependency>
             <Dependency>smpeg</Dependency>
-            <Dependency versionFrom="5.12.2">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

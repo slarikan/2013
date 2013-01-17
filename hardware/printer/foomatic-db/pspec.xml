@@ -17,8 +17,8 @@
             <AdditionalFile permission="0755" target="cleanup-conflicts">cleanup-script</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="4.0.5">foomatic-filters</Dependency>
-            <Dependency versionFrom="4.0.5">foomatic-db-engine</Dependency>
+            <Dependency>foomatic-filters</Dependency>
+            <Dependency>foomatic-db-engine</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Fedora patches -->
@@ -33,8 +33,8 @@
     <Package>
         <Name>foomatic-db</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.0.5">foomatic-db-engine</Dependency>
-            <Dependency versionFrom="4.0.5">foomatic-filters</Dependency>
+            <Dependency>foomatic-db-engine</Dependency>
+            <Dependency>foomatic-filters</Dependency>
             <Dependency>pnm2ppa</Dependency>
         </RuntimeDependencies>
         <Files>

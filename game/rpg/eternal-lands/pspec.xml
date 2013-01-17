@@ -39,8 +39,8 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>cal3d</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency versionFrom="1.91">eternal-lands-data</Dependency>
-            <Dependency versionFrom="1.50">eternal-lands-music</Dependency>
+            <Dependency>eternal-lands-data</Dependency>
+            <Dependency>eternal-lands-music</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

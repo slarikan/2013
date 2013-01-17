@@ -14,14 +14,14 @@
         <Description>perlmod can install perl modules and all dependent modules, uninstall perl modules, list all perl modules in system, search for a perl module in cpan.org and system, list all files of a perl module and show details of a perl module.</Description>
         <Archive sha1sum="e49aefe318f532921bb936b7d0334b1d508a31f6" type="zip">http://downloads.sourceforge.net/project/perlmod/v2.2.0/perlmod.v.1.2.0.zip</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perlmod</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -15,15 +15,15 @@
         <Description>aMSN is a free and open source MSN Messenger clone, with features like conferencing support, full-speed file transfers, webcam and audio-call support.</Description>
         <Archive sha1sum="3ef8c136c16839f1edd392c25069bdc2b718f367" type="targz">mirrors://sourceforge/amsn/amsn-0.98.9-src.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="8.5.7">tcl</Dependency>
+            <Dependency>tcl</Dependency>
             <Dependency>tcl-devel</Dependency>
-            <Dependency versionFrom="8.5.7">tcltk</Dependency>
+            <Dependency>tcltk</Dependency>
             <Dependency>tcltk-devel</Dependency>
-            <Dependency versionFrom="0.0.17">farsight2</Dependency>
-            <Dependency versionFrom="0.6.4">libv4l</Dependency>
-            <Dependency versionFrom="0.10.28">gstreamer</Dependency>
-            <Dependency versionFrom="0.10.28">gst-plugins-base</Dependency>
-            <Dependency versionFrom="0.1.4">gupnp-igd</Dependency>
+            <Dependency>farsight2</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>gupnp-igd</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -43,17 +43,17 @@
     <Package>
         <Name>amsn</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="8.5.7">tcl</Dependency>
-            <Dependency versionFrom="8.5.7">tcltk</Dependency>
-            <Dependency versionFrom="0.0.17">farsight2</Dependency>
-            <Dependency versionFrom="0.6.4">libv4l</Dependency>
-            <Dependency versionFrom="2.2.10">snack</Dependency>
-            <Dependency versionFrom="1.6">tls</Dependency>
-            <Dependency versionFrom="0.10.28">gstreamer</Dependency>
-            <Dependency versionFrom="0.10.28">gst-plugins-base</Dependency>
-            <Dependency versionFrom="0.10.21">gst-plugins-good</Dependency>
-            <Dependency versionFrom="0.10.18">gst-plugins-bad</Dependency>
-            <Dependency versionFrom="0.1.4">gupnp-igd</Dependency>
+            <Dependency>tcl</Dependency>
+            <Dependency>tcltk</Dependency>
+            <Dependency>farsight2</Dependency>
+            <Dependency>libv4l</Dependency>
+            <Dependency>snack</Dependency>
+            <Dependency>tls</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>gst-plugins-base</Dependency>
+            <Dependency>gst-plugins-good</Dependency>
+            <Dependency>gst-plugins-bad</Dependency>
+            <Dependency>gupnp-igd</Dependency>
             <Dependency>xdg-utils</Dependency>
             <Dependency>alsa-utils</Dependency>
             <Dependency>jpeg</Dependency>
@@ -76,7 +76,7 @@
         <IsA>data</IsA>
         <Summary>Various aMSN plugins</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="30">amsn</Dependency>
+            <Dependency>amsn</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>amsn-kde</Package>
@@ -92,7 +92,7 @@
         <IsA>data</IsA>
         <Summary>Dark Matter skin for aMSN</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="30">amsn</Dependency>
+            <Dependency>amsn</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/amsn/skins/Dark*</Path>

@@ -56,7 +56,7 @@
         <Name>uClibc-devel</Name>
         <Summary>Development files for uClibc</Summary>
         <RuntimeDependencies>
-            <Dependency release="2">uClibc</Dependency>
+            <Dependency>uClibc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/lib/uClibc/usr/include</Path>

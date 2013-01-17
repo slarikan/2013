@@ -15,7 +15,7 @@
         <Archive sha1sum="646079d0d5cbe93f8004b6fad5bc632cc38e09a7" type="targz">mirrors://cpan/authors/id/A/AR/ARJEN/PerlIO-via-Bzip2-0.02.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Compress-Bzip2</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-IO-via-Bzip2</Name>
         <RuntimeDependencies>
             <Dependency>perl-Compress-Bzip2</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -23,7 +23,7 @@
             <AdditionalFile permission="0755" target="update_configs">scripts/update_configs</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency releaseFrom="217">pisi</Dependency>
+            <Dependency>pisi</Dependency>
             <Dependency>gtk2-devel</Dependency><!-- For perf gtk2 support-->
             <Dependency>cpio</Dependency>
             <Dependency>unifdef</Dependency>
@@ -231,7 +231,7 @@
         <Name>kernel</Name>
         <RuntimeDependencies>
             <!-- FIXME: Should be replaced by dracut -->
-            <Dependency releaseFrom="217">pisi</Dependency>
+            <Dependency>pisi</Dependency>
             <Dependency>mkinitramfs</Dependency>
             <Dependency>linux-firmware</Dependency>
         </RuntimeDependencies>

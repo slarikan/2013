@@ -14,14 +14,14 @@
         <Description>perl-Font-TTF is a Perl module that allows you to do almost anything to a TrueType/OpenType Font including modifying and inspecting nearly all tables.</Description>
         <Archive sha1sum="46ec752c031a269602ca09f3bb16d7727b731bdb" type="targz">http://search.cpan.org/CPAN/authors/id/M/MH/MHOSKEN/Font-TTF-0.48.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Font-TTF</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -14,7 +14,7 @@
         <Description>Kvirc is an excellent IRC client written with Qt toolkit.</Description>
         <Archive type="tarbz2" sha1sum="a754759a36ba2a77b08518a624f126d4a7dbe336">ftp://ftp.kvirc.de/pub/kvirc/4.2.0/source/kvirc-4.2.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>kernel-headers</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
@@ -29,7 +29,7 @@
     <Package>
         <Name>kvirc</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>qt-webkit</Dependency>

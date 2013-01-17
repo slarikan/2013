@@ -14,7 +14,7 @@
         <Description>Perl için switch modülü.</Description>
         <Archive sha1sum="2737a2b5e64a9d715528fa50a8d967710106220e" type="targz">http://search.cpan.org/CPAN/authors/id/R/RG/RGARCIA/Switch-2.16.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
 	<Patches>
 	    <Patch level="1">Switch-2.16-perl514.patch</Patch>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-switch</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -16,7 +16,7 @@
         <Description>In the beginning, there was ed. Ed is the standard text editor. Then there was vi, and it was good. Then came emacs, and a dearth of RAM. Your mission is to traverse core memory and rid the host of emacs. It will not be an easy mission, as there are many emacs friendly processes.</Description>
         <Archive sha1sum="4d686074a20d2734c83228ef6f94419f1c2b481c" type="targz">mirrors://sourceforge/wordwarvi/wordwarvi-1.00.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>vorbis-tools</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>portaudio-devel</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>wordwarvi</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>vorbis-tools</Dependency>
             <Dependency>portaudio</Dependency>
         </RuntimeDependencies>

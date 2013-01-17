@@ -14,13 +14,13 @@
         <Description>KDE Base Applications consists of what runs on the desktop. This module isn't a complete collection of essential applications that a user would expect on a desktop (such as e-mail and calculator). This packages is the basic set of applications beyond the workspace that KDE applications can assume are installed. These applications should have no problem running on Windows, OS X, Gnome, etc as stand alone applications if the user wanted to use them there.</Description>
         <Archive sha1sum="18e90d67ccb96e38afe63ffe835421ada3f1170f" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-baseapps-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.97">kde-workspace-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="2.7.5">soprano-devel</Dependency>
-            <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>soprano-devel</Dependency>
+            <Dependency>shared-desktop-ontologies</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
             <Dependency>libraw1394-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -50,13 +50,13 @@
     <Package>
         <Name>kde-baseapps</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="0.8.0">shared-desktop-ontologies</Dependency>
-            <Dependency versionFrom="2.7.5">soprano</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>shared-desktop-ontologies</Dependency>
+            <Dependency>soprano</Dependency>
             <Dependency>qimageblitz</Dependency>
             <Dependency>libraw1394</Dependency>
             <Dependency>mesa</Dependency>

@@ -42,7 +42,7 @@
             <Dependency>sdl-ttf</Dependency>
             <Dependency>sdl-image</Dependency>
             <Dependency>wxGTK</Dependency>
-            <Dependency versionFrom="0.21.1">scourge-data</Dependency>
+            <Dependency>scourge-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

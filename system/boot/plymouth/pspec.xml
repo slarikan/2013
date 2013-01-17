@@ -48,7 +48,7 @@
             <Dependency>libdrm-radeon</Dependency>
             <Dependency>libdrm-nouveau</Dependency>
             <Dependency>plymouth-core-libs</Dependency>
-            <Dependency releaseFrom="84">mkinitramfs</Dependency>
+            <Dependency>mkinitramfs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/bin</Path>

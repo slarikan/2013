@@ -15,13 +15,13 @@
         <Description>Drive a tank, pick up weapons, and blast enemies. While this doesn't sound like a particularly original concept, it's the implementation that makes the game so much fun to play.</Description>
         <Archive sha1sum="e3f76e7cbda0a90a606e8358c6aa686cebba02d6" type="tarbz2">mirrors://sourceforge/btanks/btanks-0.9.8083.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.2.2">libsigc++-devel</Dependency>
-            <Dependency versionFrom="1.2.0">libvorbis-devel</Dependency>
-            <Dependency versionFrom="1.2.13">libsdl-devel</Dependency>
-            <Dependency versionFrom="1.2.6">sdl-image-devel</Dependency>
-            <Dependency versionFrom="0.0.8">openal-devel</Dependency>
-            <Dependency versionFrom="5.1.4">lua-devel</Dependency>
-            <Dependency versionFrom="0.4.4">smpeg-devel</Dependency>
+            <Dependency>libsigc++-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>openal-devel</Dependency>
+            <Dependency>lua-devel</Dependency>
+            <Dependency>smpeg-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- <Patch>scons-blows.patch</Patch> -->
@@ -32,13 +32,13 @@
     <Package>
         <Name>btanks</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.2.2">libsigc++</Dependency>
-            <Dependency versionFrom="1.2.0">libvorbis</Dependency>
-            <Dependency versionFrom="1.2.13">libsdl</Dependency>
-            <Dependency versionFrom="1.2.6">sdl-image</Dependency>
-            <Dependency versionFrom="0.0.8">openal</Dependency>
-            <Dependency versionFrom="5.1.4">lua</Dependency>
-            <Dependency versionFrom="0.4.4">smpeg</Dependency>
+            <Dependency>libsigc++</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>openal</Dependency>
+            <Dependency>lua</Dependency>
+            <Dependency>smpeg</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

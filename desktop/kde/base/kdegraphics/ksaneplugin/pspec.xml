@@ -14,7 +14,7 @@
         <Description>ksaneplugin is a plugin needed for KDE sane service.</Description>
         <Archive sha1sum="a1f259055a0b504bda90b1764fb260c752fca1af" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksaneplugin-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libksane-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>ksaneplugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libksane</Dependency>
         </RuntimeDependencies>
         <Files>

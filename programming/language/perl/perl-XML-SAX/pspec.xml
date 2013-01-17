@@ -14,7 +14,7 @@
         <Description>This module consists of several framework classes for using and building Perl SAX2 XML parsers, filters, and drivers.</Description>
         <Archive sha1sum="9685c417627d75ae18ab0be3b1562608ee093d5c" type="targz">http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-0.99.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
             <Dependency>libxml2-devel</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-XML-SAX</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
             <Dependency>libxml2</Dependency>
         </RuntimeDependencies>

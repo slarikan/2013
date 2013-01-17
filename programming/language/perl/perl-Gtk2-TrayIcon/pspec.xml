@@ -18,7 +18,7 @@
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>glitz</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
@@ -26,7 +26,7 @@
         <RuntimeDependencies>
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>glitz</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

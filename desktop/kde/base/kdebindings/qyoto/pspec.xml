@@ -14,7 +14,7 @@
         <Description>.NET/Mono bindings for the Qt libraries</Description>
         <Archive sha1sum="472d502f3eae0ba66e256101f2cffc1808ae2a81" type="tarxz">mirrors://kde/unstable/4.9.97/src/qyoto-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">smoke-qt-devel</Dependency>
+            <Dependency>smoke-qt-devel</Dependency>
             <Dependency>mono-devel</Dependency>
         </BuildDependencies>
     </Source>

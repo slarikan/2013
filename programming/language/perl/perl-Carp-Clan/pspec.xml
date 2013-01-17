@@ -15,7 +15,7 @@
         <Archive sha1sum="c280f20b15ec960af16e1b23d01864a9597332e0" type="targz">mirrors://cpan/authors/id/S/ST/STBEY/Carp-Clan-6.04.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Test-Exception</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Carp-Clan</Name>
         <RuntimeDependencies>
             <Dependency>perl-Test-Exception</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -32,7 +32,7 @@
         <Summary>Development headers for libtommath</Summary>
         <Description>libtommath-devel provides development headers for libtommath.</Description>
         <RuntimeDependencies>
-            <Dependency release="2">libtommath</Dependency>
+            <Dependency>libtommath</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -45,7 +45,7 @@
         <Summary>Documentation files for libtommath</Summary>
         <Description>libtommath-docs provides documentation files for libtommath.</Description>
         <RuntimeDependencies>
-            <Dependency release="2">libtommath</Dependency>
+            <Dependency>libtommath</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

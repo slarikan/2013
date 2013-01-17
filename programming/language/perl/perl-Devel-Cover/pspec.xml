@@ -15,7 +15,7 @@
         <Description>perl-Devel-Cover is a perl module that provide code covarage metrics for Perl</Description>
         <Archive sha1sum="3e20dbddbdc27b22b9b643599f4261c865dce8d0" type="targz">http://search.cpan.org/CPAN/authors/id/P/PJ/PJCJ/Devel-Cover-0.89.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Warn</Dependency>
             <Dependency>perl-Test-Pod-Coverage</Dependency>
             <Dependency>perl-Template-Toolkit</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>perl-Devel-Cover</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Template-Toolkit</Dependency>
             <Dependency>perl-Tidy</Dependency>
             <Dependency>perl-Pod-Coverage</Dependency>

@@ -16,7 +16,7 @@
         <Description>hunspell-dict-de includes German, Switzerland, etc. hunspell dictionaries.</Description>
         <Archive sha1sum="df478cbe3dbbe1d3732a025642677ed18e0ae8bc" type="tarbz2">http://www.j3e.de/ispell/igerman98/dict/igerman98-20090107.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="2">hunspell</Dependency>
+            <Dependency>hunspell</Dependency>
             <Dependency>aspell-en</Dependency>
         </BuildDependencies>
         <Patches>

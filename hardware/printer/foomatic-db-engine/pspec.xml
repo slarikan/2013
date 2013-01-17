@@ -14,8 +14,8 @@
         <Description>foomatic-db-engine is the layer that provides the database engine to Foomatic.</Description>
         <Archive sha1sum="e47f5ee9b9256077f70b5ecf2481dfbce416d97a" type="targz">http://www.openprinting.org/download/foomatic/foomatic-db-engine-4.0.8.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
-            <Dependency versionFrom="4.0.17">foomatic-filters</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>foomatic-filters</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">foomatic-db-engine-libdir.patch</Patch>
@@ -31,8 +31,8 @@
     <Package>
         <Name>foomatic-db-engine</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
-            <Dependency versionFrom="4.0.17">foomatic-filters</Dependency>
+            <Dependency>perl</Dependency>
+            <Dependency>foomatic-filters</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

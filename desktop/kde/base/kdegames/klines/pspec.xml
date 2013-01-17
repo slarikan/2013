@@ -15,16 +15,16 @@
         <Description>Kolor Lines is a simple but highly addictive, one player game for KDE. Kolor Lines has been inspired by well known game of Color Lines. The goal of Kolor Lines is quite plain. The player has to move the colored balls around the game board, gathering them into the lines of the same color by five.</Description>
         <Archive sha1sum="4ee4c1a4508e55968e58a6d78d27029de3dcc383" type="tarxz">mirrors://kde/unstable/4.9.97/src/klines-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>klines</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

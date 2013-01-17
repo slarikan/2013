@@ -42,7 +42,7 @@
             <Dependency>libXpm</Dependency>
             <Dependency>libXxf86dga</Dependency>
             <Dependency>libXxf86vm</Dependency>
-            <Dependency versionFrom="2.5.2">nexuiz-data</Dependency>
+            <Dependency>nexuiz-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

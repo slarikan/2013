@@ -78,7 +78,7 @@
     <Package>
         <Name>postgresql-pl</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="8.4">postgresql-lib</Dependency>
+            <Dependency>postgresql-lib</Dependency>
             <Dependency>tcl</Dependency>
         </RuntimeDependencies>
         <Files>

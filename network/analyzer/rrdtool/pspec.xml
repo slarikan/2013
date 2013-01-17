@@ -18,11 +18,11 @@
             <Dependency>lua-devel</Dependency>
             <Dependency>tcl-devel</Dependency>
             <Dependency>ruby</Dependency>
-            <Dependency versionFrom="1.8.8">cairo-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libart_lgpl</Dependency>
             <Dependency>dejavu-fonts</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001_rrdtool-1.4.7-configure.ac.patch</Patch>
@@ -36,11 +36,11 @@
             <Dependency>lua</Dependency>
             <Dependency>tcl</Dependency>
             <Dependency>ruby</Dependency>
-            <Dependency versionFrom="1.8.8">cairo</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libart_lgpl</Dependency>
             <Dependency>dejavu-fonts</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

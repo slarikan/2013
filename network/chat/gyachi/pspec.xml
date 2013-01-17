@@ -28,7 +28,7 @@
             <Dependency>pango-devel</Dependency>
             <Dependency>jasper-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
-            <Dependency versionFrom="0.5.2">libnotify-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libgpg-error-devel</Dependency>
             <!-- disable wine for now, for the 64 bit issues.
@@ -62,7 +62,7 @@
             <Dependency>pango</Dependency>
             <Dependency>jasper</Dependency>
             <Dependency>alsa-lib</Dependency>
-            <Dependency versionFrom="0.5.2">libnotify</Dependency>
+            <Dependency>libnotify</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libgpg-error</Dependency>
             <!-- disable wine for now, for the 64 bit issues.

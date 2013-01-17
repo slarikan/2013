@@ -15,14 +15,14 @@
         <Description>perl-Test-Requires is a Perl module to check if the module can be loaded.</Description>
         <Archive sha1sum="5a7b580fbc6c1e8c6493ceeffc5645ab08f3afd5" type="targz">mirrors://cpan/authors/id/T/TO/TOKUHIROM/Test-Requires-0.06.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Test-Requires</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

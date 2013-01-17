@@ -15,7 +15,7 @@
         <Description>This module converts Perl data structures to JSON and vice versa. Its primary goal is to be correct and its secondary goal is to be *fast*. To reach the latter goal it was written in C.</Description>
         <Archive sha1sum="8aabec648367c5edd6ec81155a7e9593c6a4d421" type="targz">http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/JSON-XS-2.32.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-common-sense</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-JSON-XS</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-common-sense</Dependency>
         </RuntimeDependencies>
         <Files>

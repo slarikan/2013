@@ -15,7 +15,7 @@
         <Archive sha1sum="cd05cd4205a00d01a6da821660cff386788e9be3" type="targz">mirrors://sourceforge/e2fsprogs/e2fsprogs-1.42.6.tar.gz</Archive>
         <BuildDependencies>
             <!-- The first release shipped within util-linux -->
-            <Dependency releaseFrom="36">libuuid</Dependency>
+            <Dependency>libuuid</Dependency>
 
             <Dependency>gettext</Dependency>
 
@@ -33,7 +33,7 @@
         <Name>e2fsprogs</Name>
         <RuntimeDependencies>
             <!-- The first release shipped within util-linux -->
-            <Dependency releaseFrom="36">libuuid</Dependency>
+            <Dependency>libuuid</Dependency>
 
             <!-- For libblkid -->
             <Dependency>util-linux</Dependency>

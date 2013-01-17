@@ -14,14 +14,14 @@
         <Description>The Telepathy project is about building a unified framework for many different kinds of real-time communications. telepathy-qt contains Qt-based base and proxy classes for use in connection managers and clients.</Description>
         <Archive sha1sum="d26a30a76c6536daa4a4b0dbdbee21dc1d8773bf" type="targz">http://telepathy.freedesktop.org/releases/telepathy-qt/telepathy-qt-0.9.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>telepathy-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

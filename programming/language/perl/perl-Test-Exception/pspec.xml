@@ -15,7 +15,7 @@
         <Archive sha1sum="47f541efca1c3f34cac141edeac7fdf5e147e1a4" type="targz">mirrors://cpan/authors/id/A/AD/ADIE/Test-Exception-0.31.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Sub-Uplevel</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Test-Exception</Name>
         <RuntimeDependencies>
             <Dependency>perl-Sub-Uplevel</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

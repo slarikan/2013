@@ -15,7 +15,7 @@
         <Archive sha1sum="1d42ad798a16efb212d984b3d38b630a8bf1cdb3" type="targz">http://search.cpan.org/CPAN/authors/id/J/JR/JRED/Gtk2-Ex-FormFactory-0.67.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Gtk2</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Gtk2-Ex-FormFactory</Name>
         <RuntimeDependencies>
             <Dependency>perl-Gtk2</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -15,7 +15,7 @@
         <Description>SuiteSparse is a single archive that contains sparse matrix libraries.</Description>
         <Archive sha1sum="46b24a28eef4b040ea5a02d2c43e82e28b7d6195" type="targz">http://www.cise.ufl.edu/research/sparse/SuiteSparse/SuiteSparse-4.0.2.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="4">metis-devel</Dependency>
+            <Dependency>metis-devel</Dependency>
             <Dependency>lapack-devel</Dependency>
             <Dependency>blas-devel</Dependency>
             <Dependency>atlas</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>SuiteSparse</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="4">metis</Dependency>
+            <Dependency>metis</Dependency>
             <Dependency>lapack</Dependency>
             <Dependency>blas</Dependency>
         </RuntimeDependencies>

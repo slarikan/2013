@@ -14,7 +14,7 @@
         <Description>TAP LADSPA plugins package contains DeEsser, Dynamics, Equalizer, Reverb, Stereo Echo, Tremolo.</Description>
         <Archive sha1sum="f3f9da0c7141f222bd964ada1b6b709e02052d89" type="targz">http://sourceforge.net/projects/tap-plugins/files/tap-plugins/0.7.2/tap-plugins-0.7.2.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="2">ladspa-sdk-devel</Dependency>
+            <Dependency>ladspa-sdk-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">tap-plugins-0.7.0-cflags-ldflags.patch</Patch>
@@ -24,7 +24,7 @@
     <Package>
         <Name>tap-plugins</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="2">ladspa-sdk</Dependency>
+            <Dependency>ladspa-sdk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -16,7 +16,7 @@
         <Description>A program to monitor system status, and to collect system information such as memory usage, cpu temperature etc.</Description>
         <Archive sha1sum="bcfc2efb5fd3f27e9bb703bda73f6a1d96b080df" type="targz">http://members.dslextreme.com/users/billw/gkrellm/gkrellm-2.3.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.12.3">gnutls-devel</Dependency>
+            <Dependency>gnutls-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>lm_sensors</Dependency>
@@ -32,7 +32,7 @@
     <Package>
         <Name>gkrellm</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.12.3">gnutls</Dependency>
+            <Dependency>gnutls</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>lm_sensors</Dependency>

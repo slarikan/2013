@@ -14,7 +14,7 @@
         <Description>QCA2-OSSL is a plugin for QCA, providing features based on OpenSSL.</Description>
         <Archive sha1sum="dd925e8732ff76f24f9f90f4094abaf2f0ac27bf" type="tarbz2">http://delta.affinix.com/download/qca/2.0/plugins/qca-ossl-2.0.0-beta3.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="7">qca2-devel</Dependency>
+            <Dependency>qca2-devel</Dependency>
             <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -26,7 +26,7 @@
     <Package>
         <Name>qca2-ossl</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="7">qca2</Dependency>
+            <Dependency>qca2</Dependency>
             <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -17,7 +17,7 @@
     <Package>
         <Name>torsocks</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="17">tor</Dependency>
+            <Dependency>tor</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/torsocks</Path>

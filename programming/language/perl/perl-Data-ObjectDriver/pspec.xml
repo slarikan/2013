@@ -15,7 +15,7 @@
         <Description>perl-Data-ObjectDriver provides a simple and generic abstraction to databases (DBI and otherwise), along with support for partitioning and caching.</Description>
         <Archive sha1sum="516031f61f1674934c747e763eb229155f196503" type="targz">http://search.cpan.org/CPAN/authors/id/S/SI/SIXAPART/Data-ObjectDriver-0.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>perl-DBD-SQLite</Dependency>
             <Dependency>perl-Class-Trigger</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>perl-Data-ObjectDriver</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-DBI</Dependency>
             <Dependency>perl-DBD-SQLite</Dependency>
             <Dependency>perl-Class-Trigger</Dependency>

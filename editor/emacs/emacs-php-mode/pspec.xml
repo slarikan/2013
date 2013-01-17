@@ -21,7 +21,7 @@
     <Package>
         <Name>emacs-php-mode</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="4">emacs</Dependency>
+            <Dependency>emacs</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>php-mode</Package>

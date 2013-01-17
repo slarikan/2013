@@ -14,13 +14,13 @@
         <Description>First you make a template - this is just a normal HTML file with a few extra tags, the simplest being &lt;TMPL_VAR></Description>
         <Archive sha1sum="ec150a8f8b4995ace219876af8eb8db380bedee3" type="targz">http://search.cpan.org/CPAN/authors/id/W/WO/WONKO/HTML-Template-2.91.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-HTML-Template</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

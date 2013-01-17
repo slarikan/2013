@@ -19,7 +19,7 @@
             <Dependency>perl-Parse-Yapp</Dependency>
             <Dependency>perl-Date-Manip</Dependency>
             <Dependency>perl-libwww</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,7 +30,7 @@
             <Dependency>perl-Parse-Yapp</Dependency>
             <Dependency>perl-Date-Manip</Dependency>
             <Dependency>perl-libwww</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

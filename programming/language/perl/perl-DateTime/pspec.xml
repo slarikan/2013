@@ -15,7 +15,7 @@
         <Description>perl-DateTime module is the Perl distribution DateTime.</Description>
         <Archive sha1sum="967e9f89d1c71ad1803598bd52d36680e574238c" type="targz">http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/DateTime-0.65.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
             <Dependency>perl-DateTime-Locale</Dependency>
             <Dependency>perl-Params-Validate</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-DateTime</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-DateTime-Locale</Dependency>
             <Dependency>perl-Params-Validate</Dependency>
             <Dependency>perl-DateTime-TimeZone</Dependency>

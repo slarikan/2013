@@ -25,7 +25,7 @@
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>perl-Task-Weaken</Dependency>
             <Dependency>perl-SOAP-Transport-Ftp</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">SOAP-Lite-0.710.08.patch</Patch>
@@ -45,7 +45,7 @@
             <Dependency>perl-IO-Socket-SSL</Dependency>
             <Dependency>perl-XML-Parser</Dependency>
             <Dependency>perl-Task-Weaken</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

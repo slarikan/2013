@@ -36,7 +36,7 @@
         <Summary>Documentation files for python-EasyGui</Summary>
         <Description>python-EasyGui-docs has documentation files for python-EasyGui.</Description>
         <RuntimeDependencies>
-            <Dependency release="1">python-EasyGui</Dependency>
+            <Dependency>python-EasyGui</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

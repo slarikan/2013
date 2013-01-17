@@ -15,8 +15,8 @@
         <Archive sha1sum="bf652ee4ad0fd8a83645a93ab3de28b297b12cbd" type="targz">https://github.com/downloads/obsoleteman/notobs/libX11-d14b6a250f004fa405179db7020f6953001d17b9.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxcb-devel</Dependency>
-            <Dependency releaseFrom="35">xorg-proto</Dependency>
-            <Dependency versionFrom="1.2.5">xtrans</Dependency>
+            <Dependency>xorg-proto</Dependency>
+            <Dependency>xtrans</Dependency>
         </BuildDependencies>
     </Source>
 

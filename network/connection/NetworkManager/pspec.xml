@@ -21,9 +21,9 @@
             <Dependency>nspr-devel</Dependency>
             <Dependency>libnl-devel</Dependency>
 	    <Dependency>libsoup-devel</Dependency>
-            <Dependency versionFrom="1.4.12">iptables-devel</Dependency>
+            <Dependency>iptables-devel</Dependency>
             <Dependency>wpa_supplicant</Dependency>
-            <Dependency versionFrom="2.4.5">ppp-devel</Dependency>
+            <Dependency>ppp-devel</Dependency>
             <Dependency>intltool</Dependency>
             <Dependency>dhclient</Dependency>
             <Dependency>gobject-introspection</Dependency>  
@@ -40,11 +40,11 @@
 	    <Dependency>libsoup</Dependency>
             <Dependency>dhcpcd</Dependency>
             <Dependency>iproute2</Dependency>
-            <Dependency versionFrom="1.4.12">iptables</Dependency>
+            <Dependency>iptables</Dependency>
             <Dependency>ModemManager</Dependency>
             <Dependency>avahi-autoipd</Dependency>
             <Dependency>wpa_supplicant</Dependency>
-            <Dependency versionFrom="2.4.5">ppp</Dependency>
+            <Dependency>ppp</Dependency>
             <Dependency>mobile-broadband-provider-info</Dependency>
             <Dependency>polkit</Dependency>
             <Dependency>udev</Dependency>

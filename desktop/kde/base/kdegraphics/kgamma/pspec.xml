@@ -14,7 +14,7 @@
         <Description>KGamma is a monitor calibration module for KDE.</Description>
         <Archive sha1sum="67873b61857cde5c3a3613c6a92081a7a0e0be07" type="tarxz">mirrors://kde/unstable/4.9.97/src/kgamma-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libXxf86vm-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>kgamma</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libXxf86vm</Dependency>
         </RuntimeDependencies>
         <Files>

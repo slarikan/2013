@@ -19,7 +19,7 @@
     <Package>
         <Name>queen</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.12">scummvm</Dependency>
+            <Dependency>scummvm</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

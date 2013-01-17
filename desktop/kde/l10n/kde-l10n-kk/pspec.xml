@@ -14,7 +14,7 @@
         <Description>kde-l10n-kk is the KDE4 internationalization package that provides Kazakh translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="784453e6e8ecdf8e850f19d3ad9fbd9aef876b4b">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-kk-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

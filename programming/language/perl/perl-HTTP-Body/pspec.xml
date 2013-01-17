@@ -14,13 +14,13 @@
         <Description>HTTP::Body parses chunks of HTTP POST data and supports application/octet-stream, application/x-www-form-urlencoded, and multipart/form-data.</Description>
         <Archive sha1sum="c78a19386d8b7edfc219a6092192abdf6214621c" type="targz">http://search.cpan.org/CPAN/authors/id/G/GE/GETTY/HTTP-Body-1.15.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-HTTP-Body</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

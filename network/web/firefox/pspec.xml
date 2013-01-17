@@ -24,20 +24,20 @@
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="17.0">xulrunner-devel</Dependency>
+            <Dependency>xulrunner-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency versionFrom="1.8.8">cairo-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>libIDL-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>dbus-glib-devel</Dependency>
             <Dependency>hunspell-devel</Dependency>
-            <Dependency versionFrom="0.4.0">libproxy-devel</Dependency>
-            <Dependency versionFrom="4.9.4">nspr-devel</Dependency>
-            <Dependency versionFrom="3.14">nss-devel</Dependency>
+            <Dependency>libproxy-devel</Dependency>
+            <Dependency>nspr-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
             <Dependency>libevent-devel</Dependency>
             <Dependency>libvpx-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -91,18 +91,18 @@
     <Package>
         <Name>firefox</Name>
         <RuntimeDependencies>
-	    <Dependency versionFrom="17.0">xulrunner</Dependency>
+	    <Dependency>xulrunner</Dependency>
             <Dependency>fontconfig</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency versionFrom="1.8.8">cairo</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>libIDL</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>dbus-glib</Dependency>
             <Dependency>hunspell</Dependency>
-            <Dependency versionFrom="0.4.0">libproxy</Dependency>
-            <Dependency versionFrom="4.9.4">nspr</Dependency>
-            <Dependency versionFrom="3.14">nss</Dependency>
+            <Dependency>libproxy</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
             <Dependency>libevent</Dependency>
             <Dependency>libvpx</Dependency>
             <Dependency>atk</Dependency>

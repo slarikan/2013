@@ -15,14 +15,14 @@
         <Description>The Archive::Zip module allows a Perl program to create, manipulate, read, and write Zip archive files. This module uses the Compress::Zlib library to read and write the compressed streams inside the files.</Description>
         <Archive sha1sum="8171b3e9706d74c1bdf5ed5eb2b3b0142dc3503e" type="targz">http://www.cpan.org/authors/id/A/AD/ADAMK/Archive-Zip-1.31_04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Archive-Zip</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/perl5</Path>

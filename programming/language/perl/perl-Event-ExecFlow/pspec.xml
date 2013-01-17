@@ -18,7 +18,7 @@
         <BuildDependencies>
             <Dependency>perl-AnyEvent</Dependency>
             <Dependency>perl-libintl</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,7 +27,7 @@
         <RuntimeDependencies>
             <Dependency>perl-AnyEvent</Dependency>
             <Dependency>perl-libintl</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

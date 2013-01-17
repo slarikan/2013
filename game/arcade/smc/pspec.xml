@@ -38,7 +38,7 @@
             <Dependency>boost</Dependency>
             <Dependency>cegui</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency version="4.1">smc-music</Dependency>
+            <Dependency>smc-music</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

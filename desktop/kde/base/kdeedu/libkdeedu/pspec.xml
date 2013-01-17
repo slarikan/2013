@@ -13,7 +13,7 @@
         <Description>libkdeedu provides libraries used by KDE Education applications.</Description>
         <Archive sha1sum="522858ac8bd44dfb78301bd397b8349c7f658bac" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkdeedu-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -21,7 +21,7 @@
         <Name>libkdeedu</Name>
         <IsA>library</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>kdeedu</Package>
@@ -38,8 +38,8 @@
         <IsA>library</IsA>
         <Summary>Development files for libkdeedu</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>libkdeedu</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

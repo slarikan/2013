@@ -14,7 +14,7 @@
         <Description>perl-Test-Deep is a Perl module that gives you lots of flexibility when testing deep structures.</Description>
         <Archive sha1sum="b74b060e46d6179bc9ca208afd1dbe198962662e" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Test-Deep-0.110.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Tester</Dependency>
             <Dependency>perl-Test-NoWarnings</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Test-Deep</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

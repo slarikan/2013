@@ -15,8 +15,8 @@
         <Description>Kalzium is an application which will show you some information about the periodic system of the elements. Therefore you could use it as an information database.</Description>
         <Archive sha1sum="d5126f7b1301b85eb37adfe3cf53807e3ff3a568" type="tarxz">mirrors://kde/unstable/4.9.97/src/kalzium-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
             <Dependency>eigen</Dependency>
             <Dependency>avogadro-devel</Dependency>
             <Dependency>openbabel-devel</Dependency>
@@ -31,8 +31,8 @@
     <Package>
         <Name>kalzium</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
             <Dependency>eigen</Dependency>
             <Dependency>avogadro-libs</Dependency>
             <Dependency>openbabel</Dependency>

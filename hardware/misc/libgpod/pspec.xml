@@ -20,7 +20,7 @@
             <Dependency>libplist-devel</Dependency>
             <Dependency>sg3_utils-devel</Dependency>
             <Dependency>docbook-xml</Dependency>
-            <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
+            <Dependency>libimobiledevice-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
@@ -36,7 +36,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libplist</Dependency>
             <Dependency>sg3_utils</Dependency>
-            <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
+            <Dependency>libimobiledevice</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

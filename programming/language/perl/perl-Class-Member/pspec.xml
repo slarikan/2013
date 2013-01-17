@@ -15,14 +15,14 @@
         <Description>perl-Class-Member is a Perl module which offers easy Perl module development.</Description>
         <Archive sha1sum="8f0fc2ad4d7e0665b744473bc3bc1d9cca5c60ea" type="targz">mirrors://cpan/authors/id/O/OP/OPI/Class-Member-1.6.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Class-Member</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

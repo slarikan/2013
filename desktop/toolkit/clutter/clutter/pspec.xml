@@ -24,7 +24,7 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXdamage</Dependency>
-            <Dependency versionFrom="0.4.0">libXcomposite</Dependency>
+            <Dependency>libXcomposite</Dependency>
             <Dependency>glitz</Dependency>
             <Dependency>xcb-util</Dependency>
             <Dependency>json-glib-devel</Dependency>
@@ -46,7 +46,7 @@
             <Dependency>libXrender</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libXdamage</Dependency>
-            <Dependency versionFrom="0.4.0">libXcomposite</Dependency>
+            <Dependency>libXcomposite</Dependency>
             <Dependency>glitz</Dependency>
             <Dependency>xcb-util</Dependency>
             <Dependency>json-glib-devel</Dependency>

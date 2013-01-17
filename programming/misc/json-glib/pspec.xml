@@ -14,14 +14,14 @@
         <Description>json-glib is a library providing serialization and deserialization support for the JavaScript Object Notation (JSON) format.</Description>
         <Archive sha1sum="a93144f6d5fced52ad115a1927c7ec5ad8e1ecf4" type="tarxz">mirrors://gnome/json-glib/0.15/json-glib-0.15.2.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="6">gobject-introspection-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>json-glib</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="6">gobject-introspection</Dependency>
+            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -14,7 +14,7 @@
         <Description>PSmisc is a collection of small utilities using /proc file system, and providing the system administrator with some help in common tasks.</Description>
         <Archive sha1sum="4c8fb774449f966f78c4c6e1d77d1a24b4187410" type="targz">http://sourceforge.net/projects/psmisc/files/psmisc/psmisc-22.19.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="5.2">ncurses</Dependency>
+            <Dependency>ncurses</Dependency>
             <Dependency>gettext</Dependency>
         </BuildDependencies>
     </Source>
@@ -22,7 +22,7 @@
     <Package>
         <Name>psmisc</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="5.2">ncurses</Dependency>
+            <Dependency>ncurses</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/bin</Path>

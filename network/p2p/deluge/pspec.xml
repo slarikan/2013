@@ -20,7 +20,7 @@
             <Dependency>python-Twisted</Dependency>
             <Dependency>pyopenssl</Dependency>
             <Dependency>python-chardet</Dependency>
-            <Dependency versionFrom="0.15.4">libtorrent-devel</Dependency>
+            <Dependency>libtorrent-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">do-not-check-update.patch</Patch>
@@ -38,7 +38,7 @@
             <Dependency>python-Twisted</Dependency>
             <Dependency>pyopenssl</Dependency>
             <Dependency>python-chardet</Dependency>
-            <Dependency versionFrom="0.15.4">libtorrent</Dependency>
+            <Dependency>libtorrent</Dependency>
             <Dependency>python-mako</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -15,8 +15,8 @@
         <Description>analitza is a library to add mathematical features to programs.</Description>
         <Archive sha1sum="1736132e6a54fd7a5ffcafc6bed1ac32043125a4" type="tarxz">mirrors://kde/unstable/4.9.97/src/analitza-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
             <Dependency>readline-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>analitza</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
             <Dependency>readline</Dependency>
         </RuntimeDependencies>
         <Files>

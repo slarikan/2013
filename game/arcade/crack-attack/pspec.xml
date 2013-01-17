@@ -20,7 +20,7 @@
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>crack-attack-1.1.14-glut.patch</Patch>
@@ -38,7 +38,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libsdl</Dependency>
             <Dependency>sdl-mixer</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>crack-attack-sounds</Dependency>
             <Dependency>crack-attack-music</Dependency>
         </RuntimeDependencies>

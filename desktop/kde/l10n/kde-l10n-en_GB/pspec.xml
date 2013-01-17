@@ -14,7 +14,7 @@
         <Description>kde-l10n-en_GB is the KDE4 internationalization package that provides British English translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="7e65bb4aaaa99105c3f007ce6e65b45216369662">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-en_GB-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

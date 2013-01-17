@@ -35,7 +35,7 @@
             <Dependency>freetype</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>timidity</Dependency>
-            <Dependency versionFrom="0.4.4">openttd-opengfx</Dependency>
+            <Dependency>openttd-opengfx</Dependency>
             <Dependency>openttd-openmsx</Dependency>
             <Dependency>openttd-opensfx</Dependency>
         </RuntimeDependencies>

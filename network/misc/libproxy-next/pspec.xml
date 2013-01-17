@@ -14,11 +14,11 @@
         <Description>libproxy is a library that provides automatic proxy configuration management.</Description>
         <Archive sha1sum="c37c852faea26fa54b0e1700862534fbdf77a529" type="targz">http://libproxy.googlecode.com/files/libproxy-0.4.10.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.2">kdelibs-devel</Dependency>
-            <Dependency releaseFrom="18">gconf-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
             <Dependency>libXmu-devel</Dependency>
-            <Dependency versionFrom="1.11.1">webkit-gtk2-next-devel</Dependency>
+            <Dependency>webkit-gtk2-next-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">libproxy-libexecpath.patch</Patch>
@@ -33,7 +33,7 @@
     <Package>
         <Name>libproxy-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.11.1">webkit-gtk2-next</Dependency>
+            <Dependency>webkit-gtk2-next</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -46,7 +46,7 @@
     <Package>
         <Name>libproxy-gnome-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.10">libproxy-next</Dependency>
+            <Dependency>libproxy-next</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>libXmu</Dependency>
         </RuntimeDependencies>
@@ -60,9 +60,9 @@
     <Package>
         <Name>libproxy-kde-next</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.10">libproxy-next</Dependency>
-            <Dependency versionFrom="4.8.2">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.2">qt</Dependency>
+            <Dependency>libproxy-next</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libproxy/*/modules/config_kde*</Path>
@@ -73,7 +73,7 @@
     <Package>
         <Name>libproxy-webkit-gtk</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.6">libproxy</Dependency>
+            <Dependency>libproxy</Dependency>
             <Dependency>webkit-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -84,7 +84,7 @@
     <Package>
         <Name>libproxy-mozjs</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.4.6">libproxy</Dependency>
+            <Dependency>libproxy</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/libproxy/*/modules/pacrunner_mozjs*</Path>

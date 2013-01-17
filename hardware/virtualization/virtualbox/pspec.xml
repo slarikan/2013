@@ -28,11 +28,11 @@
             <Dependency>libsdl-devel</Dependency>
             <Dependency>libxslt-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>acpica</Dependency>
             <Dependency>dev86</Dependency>
-            <Dependency versionFrom="0.9.15">pulseaudio-libs-devel</Dependency>
-            <Dependency versionFrom="1.9">xorg-server-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--
@@ -90,8 +90,8 @@
             <Dependency>libXt</Dependency>
             <Dependency>libsdl</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
-            <Dependency releaseFrom="2">virt-wrapper</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>virt-wrapper</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/etc/vbox</Path>
@@ -125,7 +125,7 @@
             <Dependency>libXmu</Dependency>
             <Dependency>libXrandr</Dependency>
             <Dependency>libXt</Dependency>
-            <Dependency versionFrom="1.9">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/etc/X11/Xsession.d</Path>

@@ -25,10 +25,10 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>libXinerama-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
-            <Dependency releaseFrom="17">atk-devel</Dependency>
-            <Dependency releaseFrom="38">pango-devel</Dependency>
-            <Dependency releaseFrom="3">gdk-pixbuf-devel</Dependency>
-            <Dependency versionFrom="0.10.8">gobject-introspection-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Upstream added a warning message for XID collisions for being able
@@ -61,9 +61,9 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>libXinerama</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency releaseFrom="17">atk</Dependency>
-            <Dependency releaseFrom="38">pango</Dependency>
-            <Dependency releaseFrom="3">gdk-pixbuf</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

@@ -15,7 +15,7 @@
         <Description>perl-YAML-Tiny is Read/Write YAML files with as little code as possible.</Description>
         <Archive sha1sum="d466b2e62bd90f9a10d21a714825faa0fb86d9d3" type="targz">http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/YAML-Tiny-1.51.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-YAML</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-YAML-Tiny</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -29,7 +29,7 @@
     <Package>
         <Name>docbook-xsl</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="3">docbook-xml</Dependency>
+            <Dependency>docbook-xml</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc/docbook-xsl</Path>

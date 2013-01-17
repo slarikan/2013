@@ -14,13 +14,13 @@
         <Description>Hash::MultiValue is an object (and a plain hash reference) that may contain multiple values per key, inspired by MultiDict of WebOb.</Description>
         <Archive sha1sum="ace7989d53598e4dc502ab738b0ce342f1f89934" type="targz">http://search.cpan.org/CPAN/authors/id/A/AR/ARISTOTLE/Hash-MultiValue-0.12.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Hash-MultiValue</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

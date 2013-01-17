@@ -14,7 +14,7 @@
         <Description>Skanlite, provides to use scanner device plugged in your system with Sane backend.</Description>
         <Archive sha1sum="d70dfd0b6038c8ac3d0533d428abb8b13377ffb5" type="tarbz2">http://sourceforge.net/projects/sanewidget/files/Skanlite/skanlite-0.9.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>sane-backends-devel</Dependency>
             <Dependency>libksane-devel</Dependency>
             <Dependency>qt-devel</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>skanlite</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>sane-backends</Dependency>
             <Dependency>libksane</Dependency>
             <Dependency>qt</Dependency>

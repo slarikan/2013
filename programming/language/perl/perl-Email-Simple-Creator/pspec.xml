@@ -14,7 +14,7 @@
         <Description>perl-Email-Simple-Creator provides a constructor to Email::Simple for creating messages from scratch.</Description>
         <Archive sha1sum="9c77f86e9da950632a26a65161993a272219ad71" type="targz">mirrors://cpan/authors/id/R/RJ/RJBS/Email-Simple-Creator-1.424.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Email-Date</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>
             <Dependency>perl-Email-Simple</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Email-Simple-Creator</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Email-Date</Dependency>
             <Dependency>perl-Email-Date-Format</Dependency>
             <Dependency>perl-Email-Simple</Dependency>

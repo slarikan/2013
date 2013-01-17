@@ -14,14 +14,14 @@
         <Description>Test::TCP is test utilities for TCP/IP programs.</Description>
         <Archive sha1sum="0453b12186a8cfa58e1e190cda38a79040a4eee8" type="targz">http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Test-TCP-1.16.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-SharedFork</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Test-TCP</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-SharedFork</Dependency>
         </RuntimeDependencies>
         <Files>

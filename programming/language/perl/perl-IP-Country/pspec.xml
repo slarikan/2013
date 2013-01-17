@@ -15,14 +15,14 @@
         <Description>This module comes bundled with a database of countries where various IP addresses have been assigned.</Description>
         <Archive sha1sum="889644a7c49714fa6968a0d78f5dfc091f4b0181" type="targz">mirrors://cpan/authors/id/N/NW/NWETTERS/IP-Country-2.27.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-IP-Country</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

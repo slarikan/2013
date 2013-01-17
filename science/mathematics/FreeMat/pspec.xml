@@ -36,7 +36,7 @@
     <Package>
         <Name>FreeMat</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>fftw3</Dependency>
             <Dependency>libXext</Dependency>

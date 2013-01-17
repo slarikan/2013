@@ -28,7 +28,7 @@
         <Summary>Development headers for libmowgli</Summary>
         <Description>libmowgli-devel provides development headers for libmowgli.</Description>
         <RuntimeDependencies>
-            <Dependency version="0.9.50">libmowgli</Dependency>
+            <Dependency>libmowgli</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

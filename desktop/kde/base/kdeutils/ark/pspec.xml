@@ -15,11 +15,11 @@
         <Description>Ark is a program for managing various archive formats within the KDE environment.</Description>
         <Archive sha1sum="dfc1958da94310f0964e48b03d38216b8a5fe821" type="tarxz">mirrors://kde/unstable/4.9.97/src/ark-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="2.8.3">libarchive-devel</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kde-baseapps</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libarchive-devel</Dependency>
             <Dependency>libzip-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -30,11 +30,11 @@
     <Package>
         <Name>ark</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="2.8.3">libarchive</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kde-baseapps</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libarchive</Dependency>
             <Dependency>libzip-devel</Dependency>
         </RuntimeDependencies>
         <Files>

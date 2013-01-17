@@ -15,7 +15,7 @@
         <Description>perl-TheSchwartz is a reliable job queue system. Your application can put jobs into the system, and your worker processes can pull jobs from the queue atomically to perform.</Description>
         <Archive sha1sum="43e789cc7cbef0da74bfe7355523857cafbe953a" type="targz">mirrors://cpan/authors/id/S/SI/SIXAPART/TheSchwartz-1.10.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Data-ObjectDriver</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-TheSchwartz</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Data-ObjectDriver</Dependency>
         </RuntimeDependencies>
         <Files>

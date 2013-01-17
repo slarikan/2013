@@ -15,16 +15,16 @@
         <Description>Kubrick is based on the famous Rubik's Cube™ puzzle, invented by Professor Erno Rubik in Hungary in the 1970s.</Description>
         <Archive sha1sum="156f9e9cfeafca3903a1f62a28d2250a6174eb8d" type="tarxz">mirrors://kde/unstable/4.9.97/src/kubrick-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kubrick</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

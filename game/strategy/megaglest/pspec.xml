@@ -41,7 +41,7 @@
             <Dependency>libsdl</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>lua</Dependency>
-            <Dependency version="3.5.2">megaglest-data</Dependency>
+            <Dependency>megaglest-data</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>openal</Dependency>
             <Dependency>wxBase</Dependency>

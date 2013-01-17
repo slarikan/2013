@@ -14,9 +14,9 @@
         <Description>K3b provides a comfortable user interface to perform most CD/DVD burning tasks. While the experienced user can take influence in all steps of the burning process the beginner may find comfort in the automatic settings and the reasonable k3b defaults which allow a quick start.</Description>
         <Archive sha1sum="8b30a4d07942e82559b01bc07dea6bcf2defd532" type="tarbz2">mirrors://sourceforge/k3b/k3b/2.0.2/k3b-2.0.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
-            <Dependency versionFrom="4.8.3">qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>qt-webkit-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
             <Dependency>musicbrainz-devel</Dependency>
             <Dependency>cdparanoia-devel</Dependency>
@@ -61,9 +61,9 @@
     <Package>
         <Name>k3b</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.3">qt</Dependency>
-            <Dependency versionFrom="4.8.3">qt-webkit</Dependency>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-webkit</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libkcddb</Dependency>
             <Dependency>libsamplerate</Dependency>
             <Dependency>dvd+rw-tools</Dependency>

@@ -16,14 +16,14 @@
         <Description>This module has two interfaces, one through color() and colored() and the other through constants. It also offers the utility functions uncolor(), colorstrip(), and colorvalid(), which have to be explicitly imported to be used</Description>
         <Archive sha1sum="76e792c3c7edfd250f0a74d185be566c3a6c9c2e" type="targz">http://search.cpan.org/CPAN/authors/id/R/RR/RRA/Term-ANSIColor-3.02.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Term-ANSIColor</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

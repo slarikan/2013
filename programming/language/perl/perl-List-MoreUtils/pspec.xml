@@ -15,14 +15,14 @@
         <Description>perl-List-MoreUtils provides the stuff missing in List::Util.</Description>
         <Archive sha1sum="9297076d45279468f4779be80304fa89de03a4ed" type="targz">mirrors://cpan/authors/id/V/VP/VPARSEVAL/List-MoreUtils-0.33.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-List-MoreUtils</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Replaces>
             <Package>List-MoreUtils</Package>

@@ -50,7 +50,7 @@
             <Dependency>ftgl</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>speex</Dependency>
-            <Dependency versionFrom="4.1">urbanterror-data</Dependency>
+            <Dependency>urbanterror-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

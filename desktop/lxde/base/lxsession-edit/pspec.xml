@@ -17,8 +17,8 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency releaseFrom="3">lxde-common</Dependency>
-            <Dependency releaseFrom="5">lxsession</Dependency>
+            <Dependency>lxde-common</Dependency>
+            <Dependency>lxsession</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">lxsession-edit-0.1.1-icon.patch</Patch>
@@ -30,8 +30,8 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency releaseFrom="3">lxde-common</Dependency>
-            <Dependency releaseFrom="5">lxsession</Dependency>
+            <Dependency>lxde-common</Dependency>
+            <Dependency>lxsession</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

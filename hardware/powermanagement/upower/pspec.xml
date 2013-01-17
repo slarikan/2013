@@ -18,7 +18,7 @@
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
+            <Dependency>libimobiledevice-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libplist-devel</Dependency>
         </BuildDependencies>
@@ -30,7 +30,7 @@
     <Package>
         <Name>upower</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
+            <Dependency>libimobiledevice</Dependency>
             <Dependency>libplist</Dependency>
             <Dependency>pm-utils</Dependency>
         </RuntimeDependencies>

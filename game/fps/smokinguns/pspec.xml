@@ -32,7 +32,7 @@
             <Dependency>openal</Dependency>
             <Dependency>freealut</Dependency>
             <Dependency>libvorbis</Dependency>
-            <Dependency versionFrom="1.0">smokinguns-data</Dependency>
+            <Dependency>smokinguns-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

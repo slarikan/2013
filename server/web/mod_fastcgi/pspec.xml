@@ -14,7 +14,7 @@
         <Description>Language independent, scalable, open extension to CGI that provides high performance without the limitations of server specific APIs.</Description>
         <Archive sha1sum="69c56548bf97040a61903b32679fe3e3b7d3c2d4" type="targz">http://fastcgi.com/dist/mod_fastcgi-2.4.6.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.2">apache</Dependency>
+            <Dependency>apache</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>2.4.6-graceful.patch</Patch>
@@ -24,7 +24,7 @@
     <Package>
         <Name>mod_fastcgi</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.2">apache</Dependency>
+            <Dependency>apache</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/apache2/modules.d</Path>

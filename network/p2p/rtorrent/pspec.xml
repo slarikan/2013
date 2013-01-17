@@ -15,7 +15,7 @@
         <Archive sha1sum="2a642d722745091265037ed8929a23c237a3b99f" type="targz">http://libtorrent.rakshasa.no/downloads/rtorrent-0.9.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libsigc++-devel</Dependency>
-            <Dependency versionFrom="0.12.9">libtorrent-rakshasa-devel</Dependency>
+            <Dependency>libtorrent-rakshasa-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>rtorrent</Name>
         <RuntimeDependencies>
             <Dependency>libsigc++</Dependency>
-            <Dependency versionFrom="0.12.9">libtorrent-rakshasa</Dependency>
+            <Dependency>libtorrent-rakshasa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

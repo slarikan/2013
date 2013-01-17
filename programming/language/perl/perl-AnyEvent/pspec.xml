@@ -16,7 +16,7 @@
         <Archive sha1sum="a6b2171824eef980a1fb2174d128de38fb91f5eb" type="targz">mirrors://cpan/authors/id/M/ML/MLEHMANN/AnyEvent-7.01.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Event</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -24,7 +24,7 @@
         <Name>perl-AnyEvent</Name>
         <RuntimeDependencies>
             <Dependency>perl-Event</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

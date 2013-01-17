@@ -31,7 +31,7 @@
     <Package>
         <Name>trigger</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.5.2">trigger-data</Dependency>
+            <Dependency>trigger-data</Dependency>
             <Dependency>libsdl</Dependency>
             <Dependency>sdl-image</Dependency>
             <Dependency>openal</Dependency>

@@ -15,14 +15,14 @@
         <Description>perl-File-Flock is a Perl module for locking using flock() call.</Description>
         <Archive sha1sum="ff3dcdb9426afc18867c8bfc615e25d325947ac7" type="targz">mirrors://cpan/authors/id/M/MU/MUIR/modules/File-Flock-2008.01.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-File-Flock</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

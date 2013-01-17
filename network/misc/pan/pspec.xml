@@ -17,7 +17,7 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency versionFrom="2.4">gmime-devel</Dependency>
+            <Dependency>gmime-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gtkspell-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -29,7 +29,7 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency versionFrom="2.4">gmime</Dependency>
+            <Dependency>gmime</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gtkspell</Dependency>
             <Dependency>gdk-pixbuf</Dependency>

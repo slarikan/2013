@@ -14,9 +14,9 @@
         <Description>libsoup is an HTTP client/server library for GNOME.</Description>
         <Archive sha1sum="223e9243ab5434c5bdf7ce31032c27be3bda4400" type="tarxz">ftp://ftp.gnome.org/pub/gnome/sources/libsoup/2.40/libsoup-2.40.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="12">libgcrypt-devel</Dependency>
+            <Dependency>libgcrypt-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
-            <Dependency releaseFrom="21">gconf-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
             <Dependency>tls-devel</Dependency>
@@ -32,8 +32,8 @@
         <RuntimeDependencies>
             <Dependency>gnutls</Dependency>
             <Dependency>tls</Dependency>
-            <Dependency releaseFrom="12">libgcrypt</Dependency>
-            <Dependency releaseFrom="21">gconf</Dependency>
+            <Dependency>libgcrypt</Dependency>
+            <Dependency>gconf</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -63,7 +63,7 @@
         <IsA>data:doc</IsA>
         <Summary>libsoup reference documents</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="13">libsoup</Dependency>
+            <Dependency>libsoup</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>

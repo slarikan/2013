@@ -42,7 +42,7 @@
         <IsA>data:doc</IsA>
         <Summary>Development files for gtk+extra library</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.0.1">gtk+extra3</Dependency>
+            <Dependency>gtk+extra3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

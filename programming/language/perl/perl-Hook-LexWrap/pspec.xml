@@ -15,13 +15,13 @@
         <Description>perl-Hook-LexWrap is a Perl module that allows you to install a pre- or post-wrapper (or both) around an existing subroutine.</Description>
         <Archive sha1sum="66988174944e4db5163057bc0f576426a834f0ec" type="targz">mirrors://cpan/authors/id/C/CH/CHORNY/Hook-LexWrap-0.24.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Hook-LexWrap</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

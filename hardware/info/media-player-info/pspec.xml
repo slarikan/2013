@@ -14,7 +14,7 @@
         <Archive sha1sum="f81b1ba8662109b5d9ef420201d2221d5e453d6b" type="targz">http://www.freedesktop.org/software/media-player-info/media-player-info-15.tar.gz</Archive>
         <BuildDependencies>
             <!-- For pkgconfig fixes in udev -->
-            <Dependency releaseFrom="77">udev</Dependency>
+            <Dependency>udev</Dependency>
         </BuildDependencies>
     </Source>
 

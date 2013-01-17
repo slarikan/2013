@@ -14,14 +14,14 @@
         <Description>perl-Data-Dump is a perl module which provides a few functions that traverse their argument and produces a string as its result.</Description>
         <Archive sha1sum="472688c9c109d200f9b401e8230c39a56d7f7bf6" type="targz">http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Data-Dump-1.21.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Data-Dump</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

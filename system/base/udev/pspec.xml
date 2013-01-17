@@ -39,7 +39,7 @@
             <Dependency>usbutils</Dependency>
             <Dependency>pciutils</Dependency>
             <Dependency>util-linux</Dependency> <!-- Only for a /sbin/blkid call from a rules file -->
-            <Dependency versionFrom="0.4.1">ConsoleKit</Dependency>
+            <Dependency>ConsoleKit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/bin</Path>

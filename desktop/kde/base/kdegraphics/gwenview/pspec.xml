@@ -16,12 +16,12 @@
         <Description>Gwenview is an easy to use image viewer.</Description>
         <Archive sha1sum="8b7f522b707db712c5d57bfce569ddcbba8251a1" type="tarxz">mirrors://kde/unstable/4.9.97/src/gwenview-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkipi-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkexiv2-devel</Dependency>    
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="0.22">exiv2-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-baseapps-devel</Dependency>
+            <Dependency>libkipi-devel</Dependency>
+            <Dependency>libkexiv2-devel</Dependency>    
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>exiv2-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -29,13 +29,13 @@
     <Package>
         <Name>gwenview</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-baseapps</Dependency>
-            <Dependency versionFrom="4.9.97">libkipi</Dependency>
-            <Dependency versionFrom="4.9.97">libkexiv2</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="0.22">exiv2-libs</Dependency>
-            <Dependency versionFrom="0.22">exiv2</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-baseapps</Dependency>
+            <Dependency>libkipi</Dependency>
+            <Dependency>libkexiv2</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>exiv2-libs</Dependency>
+            <Dependency>exiv2</Dependency>
             <Dependency>jpeg</Dependency>
         </RuntimeDependencies>
         <Files>

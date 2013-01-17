@@ -15,18 +15,18 @@
         <Description>KGoldrunner is an action game where the hero runs through a maze and dodges enemies. You must guide the hero with the mouse or keyboard and collect all the gold nuggets, then you can climb up into the next level. Your enemies are also after the gold. Worse still, they are after you.</Description>
         <Archive sha1sum="61ef5d087a2d7af39fab0b9cb2d8ab96fdcb5075" type="tarxz">mirrors://kde/unstable/4.9.97/src/kgoldrunner-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
-            <Dependency versionFrom="1.14">openal-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>
+            <Dependency>openal-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kgoldrunner</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="1.14">openal</Dependency>    
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>openal</Dependency>    
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

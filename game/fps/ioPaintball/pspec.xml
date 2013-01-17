@@ -35,7 +35,7 @@
             <Dependency>freealut</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>libogg</Dependency>
-            <Dependency versionFrom="1.0">ioPaintball-data</Dependency>
+            <Dependency>ioPaintball-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

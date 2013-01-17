@@ -25,7 +25,7 @@
             <Dependency>boost-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>cg-devel</Dependency>
-            <Dependency versionFrom="3.15.0">FreeImage-devel</Dependency>
+            <Dependency>FreeImage-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -40,7 +40,7 @@
             <Dependency>boost</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>cg</Dependency>
-            <Dependency versionFrom="3.15.0">FreeImage</Dependency>
+            <Dependency>FreeImage</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -65,7 +65,7 @@
         <Summary>Ogre documents</Summary>
         <Description>Additional documentation for Ogre</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.3">ogre</Dependency>
+            <Dependency>ogre</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

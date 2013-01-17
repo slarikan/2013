@@ -14,7 +14,7 @@
         <Description>kde-l10n-sv is the KDE4 internationalization package that provides Swedish translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="41ef394cd93b79b513d4bee3502a98e98e133e01">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-sv-4.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

@@ -16,8 +16,8 @@
         <Archive sha1sum="26749cbdc22c45d273fef2ecb7fc1223ae4b4c8c" type="targz">mirrors://sourceforge/lxde/lxpanel-0.5.12.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency releaseFrom="3">lxmenu-data</Dependency>
-            <Dependency releaseFrom="4">lxde-menu-cache-devel</Dependency>
+            <Dependency>lxmenu-data</Dependency>
+            <Dependency>lxde-menu-cache-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
 	    <Dependency>libwnck2-devel</Dependency>
@@ -38,8 +38,8 @@
             <Dependency>gtk2</Dependency>
             <Dependency>libXmu</Dependency>
             <Dependency>libXpm</Dependency>
-            <Dependency releaseFrom="3">lxmenu-data</Dependency>
-            <Dependency releaseFrom="4">lxde-menu-cache</Dependency>
+            <Dependency>lxmenu-data</Dependency>
+            <Dependency>lxde-menu-cache</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
 	    <Dependency>libwnck2</Dependency>
             <Dependency>network-manager-applet</Dependency>

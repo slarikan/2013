@@ -37,7 +37,7 @@
         <Name>phoebe-lib-devel</Name>
         <Summary>Development headers for phoebe-lib</Summary>
         <RuntimeDependencies>
-            <Dependency release="2">phoebe-lib</Dependency>
+            <Dependency>phoebe-lib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

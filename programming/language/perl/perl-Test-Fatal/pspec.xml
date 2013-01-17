@@ -15,7 +15,7 @@
         <Description>perl-Test-Fatal provides incredible simple helpers for testing Perl code with exceptions.</Description>
         <Archive sha1sum="0814e1dc9bc81d0f909ec2610fb97ffad7b8a868" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Test-Fatal-0.010.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Try-Tiny</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Test-Fatal</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Try-Tiny</Dependency>
         </RuntimeDependencies>
         <Files>

@@ -39,7 +39,7 @@
             <Dependency>python-gtk</Dependency>
             <Dependency>gnome-python</Dependency>
             <Dependency>x11-ssh-askpass</Dependency>
-            <Dependency versionFrom="0.500.6">virtinst</Dependency>
+            <Dependency>virtinst</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

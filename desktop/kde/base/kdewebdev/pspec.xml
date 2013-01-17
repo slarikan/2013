@@ -14,8 +14,8 @@
         <Description>Contains web development applications that ship with KDE4.</Description>
         <Archive sha1sum="104f936fbaf9c882343db61acfcde26d762db954" type="tarxz">mirrors://kde/unstable/4.9.95/src/kdewebdev-4.9.95.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.95">kdepimlibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
             <Dependency>tidy-devel</Dependency>
             <Dependency>ruby</Dependency>
             <Dependency>libxml2-devel</Dependency>
@@ -26,8 +26,8 @@
     <Package>
         <Name>kdewebdev</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.95">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.95">kdepimlibs</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
             <Dependency>tidy</Dependency>
             <Dependency>ruby</Dependency>
             <Dependency>libxslt</Dependency>

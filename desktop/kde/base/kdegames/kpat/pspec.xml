@@ -15,16 +15,16 @@
         <Description>To play KPatience you need, as the name suggests, patience. For simple games, where the way the game goes depends only upon how the cards fall, your patience might be the only thing you need.</Description>
         <Archive sha1sum="8f8d9e6010cf55b1f8ddf3ddd67dbc084d4ea7b8" type="tarxz">mirrors://kde/unstable/4.9.97/src/kpat-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kpat</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

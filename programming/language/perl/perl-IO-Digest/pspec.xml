@@ -15,7 +15,7 @@
         <Archive sha1sum="8e70b0b3b403283548d66906af4e04eb2da38e43" type="targz">mirrors://cpan/authors/id/C/CL/CLKAO/IO-Digest-0.10.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-IO-via-dynamic</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-IO-Digest</Name>
         <RuntimeDependencies>
             <Dependency>perl-IO-via-dynamic</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -14,13 +14,13 @@
         <Description>Router::Simple is a simple router class.</Description>
         <Archive sha1sum="2def3774ad1a280b8cdac9885a92a53e8444decf" type="targz">http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Router-Simple-0.09.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Router-Simple</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

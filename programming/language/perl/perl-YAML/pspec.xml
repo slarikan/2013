@@ -14,14 +14,14 @@
         <Description>YAML is a generic data serialization language that is optimized for human readability. It can be used to express the data structures of most modern programming languages.</Description>
         <Archive sha1sum="520e4595393006502a5f16b96d0e18f598971f1e" type="targz">http://search.cpan.org/CPAN/authors/id/I/IN/INGY/YAML-0.81.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-YAML</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

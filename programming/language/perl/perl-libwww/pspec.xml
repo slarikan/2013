@@ -26,7 +26,7 @@
 	    <Dependency>perl-HTTP-Negotiate</Dependency>
 	    <Dependency>perl-NET-HTTP</Dependency>
 	    <Dependency>perl-WWW-Robotrules</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -45,7 +45,7 @@
 	    <Dependency>perl-HTTP-Negotiate</Dependency>
 	    <Dependency>perl-NET-HTTP</Dependency>
 	    <Dependency>perl-WWW-Robotrules</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

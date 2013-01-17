@@ -15,7 +15,7 @@
         <Description>GUPnP implements the UPnP specification: resource announcement and discovery, description, control, event notification, and presentation (GUPnP includes basic web server functionality through libsoup).</Description>
         <Archive sha1sum="566edab2038eb886475cf984ee6809d6598bacb1" type="tarxz">mirrors://gnome/gupnp/0.19/gupnp-0.19.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.13.0">gssdp-devel</Dependency>
+            <Dependency>gssdp-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>vala</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>gupnp</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.13.0">gssdp</Dependency>
+            <Dependency>gssdp</Dependency>
             <Dependency>libsoup</Dependency>
         </RuntimeDependencies>
         <Files>

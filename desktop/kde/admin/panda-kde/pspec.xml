@@ -29,7 +29,7 @@
             <Dependency>qt</Dependency>
             <Dependency>package-manager</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency versionFrom="0.1.5">panda</Dependency>
+            <Dependency>panda</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/kde4/services</Path>

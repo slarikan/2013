@@ -20,9 +20,9 @@
             <AdditionalFile target="po/tr/solidcontrolnm09.po">solidcontrolnm09.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qt-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -30,8 +30,8 @@
     <Package>
         <Name>networkmanagement</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>NetworkManager</Dependency>
         </RuntimeDependencies>

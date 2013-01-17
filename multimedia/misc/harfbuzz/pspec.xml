@@ -17,7 +17,7 @@
             <Dependency>glib2-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency releaseFrom="17">icu4c-devel</Dependency>
+            <Dependency>icu4c-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -28,7 +28,7 @@
             <Dependency>glib2</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency releaseFrom="17">icu4c</Dependency>
+            <Dependency>icu4c</Dependency>
             <Dependency>freetype</Dependency>
         </RuntimeDependencies>
         <Files>

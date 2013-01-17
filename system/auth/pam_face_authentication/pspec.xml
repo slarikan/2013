@@ -16,7 +16,7 @@
         <Description>PAM Face Authentication is a pluggable authentication module designed for facial authentication.You can use this module for any service that requires authentication, internally handled by the PAM library.</Description>
         <Archive sha1sum="e341462a2b4dee9bf1d731250096a1f57c033147" type="targz">http://pam-face-authentication.googlecode.com/files/pam-face-authentication-0.3.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.3.1">opencv-devel</Dependency>
+            <Dependency>opencv-devel</Dependency>
             <Dependency>qt-devel</Dependency>
             <Dependency>gsl-devel</Dependency>
         </BuildDependencies>
@@ -32,7 +32,7 @@
     <Package>
         <Name>pam_face_authentication</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.3.1">opencv</Dependency>
+            <Dependency>opencv</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>gsl</Dependency>
         </RuntimeDependencies>

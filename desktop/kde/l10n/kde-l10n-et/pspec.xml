@@ -14,7 +14,7 @@
         <Description>kde-l10n-et is the KDE4 internationalization package that provides Estonian translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="1d21343b01a02fccc031a49b81c911b60d82724a">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-et-4.9.3.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

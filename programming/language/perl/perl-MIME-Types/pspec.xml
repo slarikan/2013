@@ -15,14 +15,14 @@
         <Archive sha1sum="36dae668941fea3cf002be20e069a7e91ad9d9a4" type="targz">http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/MIME-Types-1.35.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-Test-Pod</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-MIME-Types</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

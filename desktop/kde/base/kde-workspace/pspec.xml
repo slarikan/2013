@@ -13,17 +13,17 @@
         <Description>kde-workspace contains the main KDE components like kdm (the login manager of KDE), khotkeys (a hotkey daemon), klipper (a cut paste history utility), kmenuedit (the menu editor), krandrtray (resize and rotate X screens), krunner (a command run interface), ksysguard (a performance monitor), kwin (the window manager of KDE), kxkb (a utility to switch keyboard maps), plasma (the KDE desktop, panels and widgets workspace application) and systemsettings (the configuration editor).</Description>
         <Archive sha1sum="3711825b3f14f69a0f6e76cda99998203c0ae382" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-workspace-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qt-webkit-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdepim-runtime</Dependency>    
-            <Dependency versionFrom="4.9.97">kactivities-devel</Dependency>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
+            <Dependency>qt-webkit-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kdepimlibs-devel</Dependency>
+            <Dependency>kdepim-runtime</Dependency>    
+            <Dependency>kactivities-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
             <!-- Needed by calendar and akonadi dataengines -->
-            <Dependency versionFrom="1.9.0">akonadi-devel</Dependency>
-            <Dependency versionFrom="2.9.0">soprano-devel</Dependency>
-            <Dependency versionFrom="4.8.4">python-kde-devel</Dependency>
-            <Dependency versionFrom="0.99.0">polkit-qt_1-devel</Dependency>
+            <Dependency>akonadi-devel</Dependency>
+            <Dependency>soprano-devel</Dependency>
+            <Dependency>python-kde-devel</Dependency>
+            <Dependency>polkit-qt_1-devel</Dependency>
             <Dependency>libqjson-devel</Dependency>    
             <Dependency>nepomuk-core-devel</Dependency>    
             <Dependency>prison-devel</Dependency>
@@ -53,8 +53,8 @@
             <Dependency>libdbusmenu-qt-devel</Dependency>
             <Dependency>libxkbfile-devel</Dependency>
             <Dependency>libxklavier-devel</Dependency>    
-            <Dependency versionFrom="7.10.2">mesa-devel</Dependency>
-            <Dependency versionFrom="7.10.2">mesa-glu-devel</Dependency>    
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>mesa-glu-devel</Dependency>    
             <Dependency>cln-devel</Dependency>
             <Dependency>libqalculate-devel</Dependency>
             <Dependency>freetype-devel</Dependency>
@@ -197,14 +197,14 @@
         <Name>kde-workspace</Name>
         <IsA>app:gui</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.3">qt-webkit</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kdepimlibs</Dependency>
-            <Dependency versionFrom="4.9.97">kactivities</Dependency>
+            <Dependency>qt-webkit</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kdepimlibs</Dependency>
+            <Dependency>kactivities</Dependency>
             <Dependency>polkit-qt_1</Dependency>
-            <Dependency versionFrom="2.9.0">soprano</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="4.6.2">phonon-backend-gstreamer</Dependency>    
+            <Dependency>soprano</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>phonon-backend-gstreamer</Dependency>    
             <Dependency>nepomuk-core</Dependency>     
             <Dependency>libqjson</Dependency>    
             <Dependency>xcb-util-image</Dependency>
@@ -230,8 +230,8 @@
             <Dependency>libdbusmenu-qt</Dependency>
             <Dependency>libxkbfile</Dependency>
             <Dependency>libxklavier</Dependency>    
-            <Dependency versionFrom="7.10.2">mesa</Dependency>
-            <Dependency versionFrom="7.10.2">mesa-glu</Dependency>    
+            <Dependency>mesa</Dependency>
+            <Dependency>mesa-glu</Dependency>    
             <Dependency>cln</Dependency>
             <Dependency>libqalculate</Dependency>
             <Dependency>freetype</Dependency>
@@ -316,13 +316,13 @@
         <Summary>KDE4 Login Manager</Summary>
         <Description>kdm provides the graphical login screen, shown shortly after boot up, log out, and when user switching.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.8.4">qt</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>liblazy</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>qimageblitz</Dependency>
-            <Dependency releaseFrom="3">kdm-theme-pardus</Dependency>
+            <Dependency>kdm-theme-pardus</Dependency>
             <Dependency>xinit</Dependency>
         </RuntimeDependencies>
         <Files>

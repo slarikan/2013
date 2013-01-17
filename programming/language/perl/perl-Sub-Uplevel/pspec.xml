@@ -14,14 +14,14 @@
         <Description>Like Tcl's uplevel() function, but not quite so dangerous. The idea is just to fool caller(). All the really naughty bits of Tcl's uplevel() are avoided.</Description>
         <Archive sha1sum="08291d556929c75e5861a030f877323b60131694" type="targz">mirrors://cpan/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.24.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Sub-Uplevel</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

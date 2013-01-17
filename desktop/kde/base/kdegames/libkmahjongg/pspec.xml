@@ -15,14 +15,14 @@
         <Description>Library used for loading and rendering of Mahjongg tilesets.</Description>
         <Archive sha1sum="5f2f252b7928e87a2b5f1c807ea703b74e5b5070" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkmahjongg-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libkmahjongg</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

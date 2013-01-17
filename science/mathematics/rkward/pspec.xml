@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>R-devel</Dependency>
             <Dependency versionFrom="4.7.0_rc1">qt-devel</Dependency>
-            <Dependency versionFrom="4.5.1">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>R</Dependency>
             <Dependency versionFrom="4.7.0_rc1">qt</Dependency>
-            <Dependency versionFrom="4.5.1">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

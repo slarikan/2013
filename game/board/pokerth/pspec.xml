@@ -15,8 +15,8 @@
         <Description>PokerTH is a poker game written in C++/QT4. You can play the popular "Texas Hold'em" poker variant against up to ten computer-opponents or play network games with people all over the world.</Description>
         <Archive sha1sum="1b8e878c4f47a241ae270fd2d7fa7d18f176dec3" type="tarbz2">https://sourceforge.net/projects/pokerth/files/pokerth/1.0/PokerTH-1.0-src.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
-            <Dependency versionFrom="2.12.3">gnutls-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>gnutls-devel</Dependency>
             <Dependency>boost-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
             <Dependency>libsdl-devel</Dependency>
@@ -35,8 +35,8 @@
     <Package>
         <Name>pokerth</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.3">qt</Dependency>
-            <Dependency versionFrom="2.12.3">gnutls</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>gnutls</Dependency>
             <Dependency>boost</Dependency>
             <Dependency>sdl-mixer</Dependency>
             <Dependency>libsdl</Dependency>

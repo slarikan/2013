@@ -23,12 +23,12 @@
             <AdditionalFile target=".pardus-default-prefs.js">pardus/pardus-default-prefs.js</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="16.0">xulrunner-devel</Dependency>
-            <Dependency versionFrom="1.8.8">cairo-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
-            <Dependency versionFrom="4.9.4">nspr-devel</Dependency>
-            <Dependency versionFrom="3.14">nss-devel</Dependency>
-            <Dependency versionFrom="3.7.6.2">sqlite-devel</Dependency>
+            <Dependency>xulrunner-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>nspr-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
+            <Dependency>sqlite-devel</Dependency>
             <Dependency>xdg-utils</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -82,12 +82,12 @@
     <Package>
         <Name>thunderbird</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="17.0">xulrunner</Dependency>
-            <Dependency versionFrom="3.7.6.2">sqlite</Dependency>
-            <Dependency versionFrom="1.8.8">cairo</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
-            <Dependency versionFrom="4.9.4">nspr</Dependency>
-            <Dependency versionFrom="3.14">nss</Dependency>
+            <Dependency>xulrunner</Dependency>
+            <Dependency>sqlite</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>nspr</Dependency>
+            <Dependency>nss</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>libXt</Dependency>

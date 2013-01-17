@@ -14,7 +14,7 @@
         <Description>ifuse, a fuse filesystem for mounting iPhone and iPod touch devices.</Description>
         <Archive sha1sum="885d88b45edb85c38b0ce9863f0d45fd378b5614" type="tarbz2">http://www.libimobiledevice.org/downloads/ifuse-1.1.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
+            <Dependency>libimobiledevice-devel</Dependency>
             <Dependency>fuse-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -25,7 +25,7 @@
     <Package>
         <Name>ifuse</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
+            <Dependency>libimobiledevice</Dependency>
             <Dependency>fuse</Dependency>
         </RuntimeDependencies>
         <Files>

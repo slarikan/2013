@@ -14,7 +14,7 @@
         <Description>Strigi analyzers for various graphic types.</Description>
         <Archive sha1sum="b8821daa70f4218a27051b9dff6223a0a7e3a659" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdegraphics-strigi-analyzer-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>kdegraphics-strigi-analyzer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libstreamanalyzer</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>

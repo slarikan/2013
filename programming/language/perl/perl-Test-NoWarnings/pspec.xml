@@ -14,14 +14,14 @@
         <Description>perl-Test-NoWarnings is a Perl module that makes sure you didn't emit any warnings while testing.</Description>
         <Archive sha1sum="2b8840b199d30812b6abc24f2b86289e0a3811f3" type="targz">mirrors://cpan/authors/id/A/AD/ADAMK/Test-NoWarnings-1.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Tester</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Test-NoWarnings</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Test-Tester</Dependency>
         </RuntimeDependencies>
         <Files>

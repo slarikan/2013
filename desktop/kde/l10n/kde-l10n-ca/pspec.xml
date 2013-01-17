@@ -14,7 +14,7 @@
         <Description>kde-l10n-ca is the KDE4 internationalization package that provides Catalan translations for KDE4 applications.</Description>
         <Archive type="tarxz" sha1sum="de7061c1e12cd98aab064945095177c1b1fb88f9">mirrors://kde/unstable/4.9.90/src/kde-l10n/kde-l10n-ca-4.9.90.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.90">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 

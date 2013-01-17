@@ -18,7 +18,7 @@
         <BuildDependencies>
             <Dependency>unixODBC</Dependency>
             <Dependency>libglade-devel</Dependency>
-            <Dependency releaseFrom="10">libgnomeui-devel</Dependency>
+            <Dependency>libgnomeui-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>mdbtools-0.6_pre1-as-needed.patch</Patch>

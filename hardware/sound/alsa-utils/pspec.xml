@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>xmlto</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>dialog</Dependency>
             <Dependency>libsamplerate</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
+            <Dependency>alsa-lib</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>

@@ -14,14 +14,14 @@
         <Description>perl-B-Keywords module consists of the lists of reserved barewords and symbol names.</Description>
         <Archive sha1sum="a48ed0202a26c105bbe704bb97bf11d4ff7e807c" type="targz">mirrors://cpan/authors/id/F/FL/FLORA/B-Keywords-1.11.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-B-Keywords</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

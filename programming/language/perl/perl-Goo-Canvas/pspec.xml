@@ -14,7 +14,7 @@
         <Description>perl-Goo-Canvas is a perl module to create items in canvas with GooCanvas.</Description>
         <Archive sha1sum="55696d3d81f9f268ebbb60142d3973d11727a500" type="targz">mirrors://cpan/authors/id/Y/YE/YEWENBIN/Goo-Canvas-0.06.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Glib</Dependency>
@@ -32,7 +32,7 @@
     <Package>
         <Name>perl-Goo-Canvas</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Glib</Dependency>

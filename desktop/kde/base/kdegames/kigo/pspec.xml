@@ -15,16 +15,16 @@
         <Description>Kigo is an open-source implementation of the popular Go game. Go is a strategic board game for two players.</Description>
         <Archive sha1sum="9246458a78ac1c707badbd8e75a9024968d78dd4" type="tarxz">mirrors://kde/unstable/4.9.97/src/kigo-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>  
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>  
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kigo</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>   
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>   
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

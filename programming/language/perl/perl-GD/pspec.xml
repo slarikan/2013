@@ -20,7 +20,7 @@
             <Dependency>freetype-devel</Dependency>
             <Dependency>jpeg-devel</Dependency>
 	    <Dependency>libpng-devel</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
 	<Patches>
 	    <Patch level="1">perl-GD-skip-3.patch</Patch>
@@ -36,7 +36,7 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>jpeg</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

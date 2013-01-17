@@ -19,7 +19,7 @@
             <Dependency>gupnp-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>gst-python-devel</Dependency>
-            <Dependency versionFrom="0.1.0">libnice-devel</Dependency>
+            <Dependency>libnice-devel</Dependency>
             <Dependency>python-pygobject-devel</Dependency>
         </BuildDependencies>
         <!--<Patches>
@@ -32,7 +32,7 @@
         <Name>farsight2</Name>
         <RuntimeDependencies>
             <Dependency>gst-plugins-base</Dependency>
-            <Dependency versionFrom="0.1.0">libnice</Dependency>
+            <Dependency>libnice</Dependency>
             <Dependency>gupnp-igd</Dependency>
             <Dependency>gupnp</Dependency>
             <Dependency>gstreamer</Dependency>

@@ -15,14 +15,14 @@
         <Description>Perl bindings for ncurses, bringing terminal-independent character handling capabilities to Perl.</Description>
         <Archive sha1sum="1f778ad08f5e2668e2457a61fca9b5d2a1e30d7e" type="targz">http://search.cpan.org/CPAN/authors/id/G/GI/GIRAFFED/Curses-1.28.tgz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Curses</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

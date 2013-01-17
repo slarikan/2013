@@ -15,8 +15,8 @@
         <Archive sha1sum="42722de4a151d57c9252293c9c913a901ecad779" type="targz">https://fedorahosted.org/releases/x/m/xmlto/xmlto-0.0.25.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>libxslt</Dependency>
-            <Dependency releaseFrom="9">docbook-xsl</Dependency>
-            <Dependency releaseFrom="3">docbook-xml</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>docbook-xml</Dependency>
         </BuildDependencies>
         <Patches>
            <!--Patch level="1">xmlto-0.0.22-format_fo_passivetex_check.patch</Patch-->
@@ -27,8 +27,8 @@
     <Package>
         <Name>xmlto</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="9">docbook-xsl</Dependency>
-            <Dependency releaseFrom="3">docbook-xml</Dependency>
+            <Dependency>docbook-xsl</Dependency>
+            <Dependency>docbook-xml</Dependency>
             <!-- FIXME: Disabled for now as it brings whole texlive
             <Dependency>latex-passivetex</Dependency>
             -->

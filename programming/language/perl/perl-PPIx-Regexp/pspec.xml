@@ -15,7 +15,7 @@
         <Description>perl-PPIx-Regexp is a Perl module that represents a regular expression of some sort.</Description>
         <Archive sha1sum="7a675e323fef2e4cc61df813f4c2e2eafad5c512" type="targz">http://search.cpan.org/CPAN/authors/id/W/WY/WYANT/PPIx-Regexp-0.028.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
             <Dependency>perl-Readonly</Dependency>
             <Dependency>perl-PPI</Dependency>
@@ -27,7 +27,7 @@
     <Package>
         <Name>perl-PPIx-Regexp</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
             <Dependency>perl-Readonly</Dependency>
             <Dependency>perl-PPI</Dependency>

@@ -11,7 +11,7 @@
         <Summary>Next generation of the python high-level scripting language</Summary>
         <Description>Next generation of the python high-level scripting language</Description>
         <BuildDependencies>
-            <Dependency releaseFrom="215">pisi</Dependency>
+            <Dependency>pisi</Dependency>
             <Dependency>expat-devel</Dependency>
             <Dependency>sqlite-devel</Dependency>
             <Dependency>tcltk-devel</Dependency>

@@ -15,9 +15,9 @@
         <Description>Cantor is an application that lets you use your favorite mathematical applications from within a nice KDE-integrated Worksheet Interface. It offers assistant dialogs for common tasks and allows you to share your worksheets with others.</Description>
         <Archive sha1sum="17fc8f536b20212a5b884bb75a67f4a306894da6" type="tarxz">mirrors://kde/unstable/4.9.97/src/cantor-4.9.97.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu-devel</Dependency>    
-            <Dependency versionFrom="4.9.97">analitza-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>libkdeedu-devel</Dependency>    
+            <Dependency>analitza-devel</Dependency>
             <Dependency>libspectre-devel</Dependency>
             <Dependency>libqalculate-devel</Dependency>
             <Dependency>R-devel</Dependency>
@@ -28,9 +28,9 @@
     <Package>
         <Name>cantor</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>    
-            <Dependency versionFrom="4.9.97">analitza</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>libkdeedu</Dependency>    
+            <Dependency>analitza</Dependency>
             <Dependency>libspectre</Dependency>
             <Dependency>libqalculate</Dependency>
             <Dependency>cln</Dependency>

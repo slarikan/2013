@@ -15,14 +15,14 @@
         <Description>perl-Sub-Identify is a Perl module allowing you to retrieve the real name of code references through the introspection mechanism.</Description>
         <Archive sha1sum="08a1de8fc1dedf41d89f6b504d82e520c2018eff" type="targz">mirrors://cpan/authors/id/R/RG/RGARCIA/Sub-Identify-0.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Sub-Identify</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

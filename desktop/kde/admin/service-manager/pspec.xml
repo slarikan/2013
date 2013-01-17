@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>python-qt</Dependency>
             <Dependency>python-kde</Dependency>
-            <Dependency versionFrom="1.2.1">pardus-desktop-services</Dependency>
+            <Dependency>pardus-desktop-services</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

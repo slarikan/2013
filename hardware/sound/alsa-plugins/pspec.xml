@@ -17,7 +17,7 @@
             <Dependency>jack-audio-connection-kit-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libsamplerate-devel</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib-devel</Dependency>
+            <Dependency>alsa-lib-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
             <Dependency>speex-devel</Dependency>
         </BuildDependencies>
@@ -36,7 +36,7 @@
             <Dependency>jack-audio-connection-kit</Dependency>
             <Dependency>libsamplerate</Dependency>
             <Dependency>alsa-utils</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
+            <Dependency>alsa-lib</Dependency>
             <Dependency>ffmpeg</Dependency>
             <Dependency>speex</Dependency>
         </RuntimeDependencies>
@@ -61,8 +61,8 @@
         <Name>alsa-plugins-pulseaudio</Name>
         <Summary>alsa-plugins-pulseaudio allows any program that uses the ALSA API to access a PulseAudio daemon</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.26.20121013">alsa-lib</Dependency>
-            <Dependency versionFrom="1.0.26.20121013">alsa-utils</Dependency>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>alsa-utils</Dependency>
             <Dependency>pulseaudio</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
         </RuntimeDependencies>

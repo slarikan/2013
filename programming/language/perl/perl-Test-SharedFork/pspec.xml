@@ -14,13 +14,13 @@
         <Description>Test::SharedFork is utility module for Test::Builder.</Description>
         <Archive sha1sum="faeddaa6f90ccf5d0f4b693deba34a1550f3bae3" type="targz">http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Test-SharedFork-0.20.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Test-SharedFork</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
