@@ -39,7 +39,7 @@
             <Dependency>jpeg</Dependency>
             <Dependency>speex</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency versionFrom="1.2.0_beta1">tremulous-data</Dependency>
+            <Dependency>tremulous-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

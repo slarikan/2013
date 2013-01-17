@@ -48,7 +48,7 @@
             <Dependency>freeglut</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>tinyxml</Dependency>
-            <Dependency versionFrom="0.4.0_pre3376">dangerdeep-data</Dependency>
+            <Dependency>dangerdeep-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

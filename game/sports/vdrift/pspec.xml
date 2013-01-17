@@ -55,7 +55,7 @@
             <Dependency>asio</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>boost</Dependency>
-            <Dependency versionFrom="0.0_20100630">vdrift-data-full</Dependency>
+            <Dependency>vdrift-data-full</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

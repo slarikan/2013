@@ -31,7 +31,7 @@
             <Dependency>libsdl-devel</Dependency>
             <Dependency>libvorbis-devel</Dependency>
             <Dependency>enet-devel</Dependency>
-            <Dependency versionFrom="1.8.0_pre20110415">irrlicht-devel</Dependency>
+            <Dependency>irrlicht-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--
@@ -52,7 +52,7 @@
             <Dependency>libsdl</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>enet</Dependency>
-            <Dependency versionFrom="1.8.0_pre20110415">irrlicht</Dependency>
+            <Dependency>irrlicht</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

@@ -15,7 +15,7 @@
         <Archive sha1sum="726867ae59673ae287f2ab86321e1f0961b81971" type="targz">mirrors://sourceforge/rkward/rkward-0.5.6.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>R-devel</Dependency>
-            <Dependency versionFrom="4.7.0_rc1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,7 +24,7 @@
         <Name>rkward</Name>
         <RuntimeDependencies>
             <Dependency>R</Dependency>
-            <Dependency versionFrom="4.7.0_rc1">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>

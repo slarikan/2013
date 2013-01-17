@@ -37,7 +37,7 @@
             <Dependency>libogg</Dependency>
             <Dependency>libvorbis</Dependency>
             <Dependency>mesa</Dependency>
-            <Dependency versionFrom="1.6_070717">memonix-data</Dependency>
+            <Dependency>memonix-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

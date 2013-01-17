@@ -30,7 +30,7 @@
         <RuntimeDependencies>
             <Dependency>libsdl-devel</Dependency>
             <Dependency>sdl-mixer-devel</Dependency>
-            <Dependency versionFrom="0.0_20070706">cdogs-sdl-data</Dependency>
+            <Dependency>cdogs-sdl-data</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
