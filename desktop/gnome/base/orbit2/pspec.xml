@@ -15,14 +15,14 @@
         <Description>Orbit2 allows to communication between two programs objects.</Description>
         <Archive sha1sum="e7c26aa4b82c146b3ec08d490e3469b4913e4e2f" type="tarbz2">mirrors://gnome/ORBit2/2.14/ORBit2-2.14.19.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="0.8.14">libIDL-devel</Dependency>
+            <Dependency>libIDL-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>orbit2</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.8.14">libIDL</Dependency>
+            <Dependency>libIDL</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

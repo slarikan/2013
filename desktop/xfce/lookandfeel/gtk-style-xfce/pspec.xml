@@ -15,7 +15,7 @@
         <Description>Gtk2-engines-xfce is a GTK+ engine for Xfce desktop environment.</Description>
         <Archive sha1sum="bc35a26fc3723908e264234f12e384175779d18c" type="tarbz2">http://archive.xfce.org/src/xfce/gtk-xfce-engine/3.0/gtk-xfce-engine-3.0.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-dev-tools</Dependency>
+            <Dependency>xfce4-dev-tools</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
     </Source>

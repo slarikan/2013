@@ -15,10 +15,10 @@
         <Description>thunarx-python is Python binding for Thunar</Description>
         <Archive sha1sum="aaf22be806f46bf0b4a9e2aa88593eac1ea9a02e" type="tarbz2">http://archive.xfce.org/src/bindings/thunarx-python/0.3/thunarx-python-0.3.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.5.0">Thunar-devel</Dependency>
-            <Dependency versionFrom="2.28.1">gnome-python-devel</Dependency>
-            <Dependency versionFrom="2.22.0">python-gtk-devel</Dependency>
-            <Dependency versionFrom="2.26.0">python-pygobject-devel</Dependency>
+            <Dependency>Thunar-devel</Dependency>
+            <Dependency>gnome-python-devel</Dependency>
+            <Dependency>python-gtk-devel</Dependency>
+            <Dependency>python-pygobject-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,7 +26,7 @@
     <Package>
         <Name>thunarx-python</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.5.0">Thunar</Dependency>
+            <Dependency>Thunar</Dependency>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
