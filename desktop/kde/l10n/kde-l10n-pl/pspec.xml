@@ -12,7 +12,7 @@
         <IsA>locale:pl</IsA>
         <Summary>Polish KDE4 internationalization package</Summary>
         <Description>kde-l10n-pl is the KDE4 internationalization package that provides Polish translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="a52d2e780307c76bf02b5aa31a6592c1fdd2c9b1">mirrors://kde/unstable/4.9.90/src/kde-l10n/kde-l10n-pl-4.9.90.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="717993c32f9baa7f68235576e95de919bb42df9d">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-pl-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,11 +37,11 @@
 
     <History>
         <Update release="1">
-            <Date>2012-12-15</Date>
-            <Version>4.9.90</Version>
+            <Date>2013-01-17</Date>
+            <Version>4.9.97</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
+        </Update>        
     </History>
 </PISI>

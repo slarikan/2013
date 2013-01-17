@@ -12,7 +12,7 @@
         <IsA>locale:hr</IsA>
         <Summary>Croatian KDE4 internationalization package</Summary>
         <Description>kde-l10n-hr is the KDE4 internationalization package that provides Croatian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="2a94811713fadd9e97febbcdcc9d84e70bf2c63b">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-hr-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="41e6d5329eafa74833c7800ae4dd4c6a29de7d60">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-hr-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
+            <Date>2013-01-17</Date>
+            <Version>4.9.97</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
