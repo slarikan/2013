@@ -3,7 +3,7 @@
 <PISI>
     <Source>
         <Name>kaptan</Name>
-        <Homepage>http://www.pardus.org.tr</Homepage>
+        <Homepage>https://github.com/circass/pisi-work/tree/master/kaptan-5.0.5.1</Homepage>
         <Packager>
             <Name>Renan Çakırerk</Name>
             <Email>renan@pardus.org.tr</Email>
