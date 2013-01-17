@@ -15,7 +15,7 @@
         <Description>xfce4-datetime-plugin shows the date and time in the panel, and a calendar appears when you left-click on it.</Description>
         <Archive sha1sum="7ad64f68787446e8daf5102fc0691bd8e4cc2fa6" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-datetime-plugin/0.6/xfce4-datetime-plugin-0.6.1.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency>xfce4-panel-devel</Dependency>
+            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
