@@ -12,7 +12,7 @@
         <IsA>locale:wa</IsA>
         <Summary>Walloon KDE4 internationalization package</Summary>
         <Description>kde-l10n-wa is the KDE4 internationalization package that provides Walloon translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="a7cb53c18329e9514a5c8222fda8a902b5b496ec">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-wa-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="a2d5e101a53973562964b66ff6b7f13b8ed025f1">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-wa-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

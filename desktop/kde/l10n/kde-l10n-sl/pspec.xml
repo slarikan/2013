@@ -12,7 +12,7 @@
         <IsA>locale:sl</IsA>
         <Summary>Slovenian KDE4 internationalization package</Summary>
         <Description>kde-l10n-sl is the KDE4 internationalization package that provides Slovenian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="ac723fbea382c84b70d101af21dd69d5e7b6895b">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-sl-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="f1e3946b423d89cdccebfeb9e803c02e44268fa9">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-sl-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

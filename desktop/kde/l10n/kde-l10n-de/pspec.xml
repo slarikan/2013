@@ -12,7 +12,7 @@
         <IsA>locale:de</IsA>
         <Summary>German KDE4 internationalization package</Summary>
         <Description>kde-l10n-de is the KDE4 internationalization package that provides German translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="4413c8d077c73e5e6a46d2acaa985fedba9c4bc9">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-de-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="4413c8d077c73e5e6a46d2acaa985fedba9c4bc9">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-de-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

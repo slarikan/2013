@@ -12,7 +12,7 @@
         <IsA>locale:gl</IsA>
         <Summary>Galician KDE4 internationalization package</Summary>
         <Description>kde-l10n-gl is the KDE4 internationalization package that provides Galician translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="9f6df1fd79a7899c064cd5c5ab905597a1798a09">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-gl-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="9f6df1fd79a7899c064cd5c5ab905597a1798a09">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-gl-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

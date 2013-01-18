@@ -12,7 +12,7 @@
         <IsA>locale:it</IsA>
         <Summary>Italian KDE4 internationalization package</Summary>
         <Description>kde-l10n-it is the KDE4 internationalization package that provides Italian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="9a3a00bd3cee394c586e96826517a6c3888ca6f6">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-it-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="9a3a00bd3cee394c586e96826517a6c3888ca6f6">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-it-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

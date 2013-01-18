@@ -12,7 +12,7 @@
         <IsA>locale:el</IsA>
         <Summary>Greek KDE4 internationalization package</Summary>
         <Description>kde-l10n-el is the KDE4 internationalization package that provides Greek translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="d813429a50423185b704f2ed5da0ec2dfd5ef068">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-el-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="d813429a50423185b704f2ed5da0ec2dfd5ef068">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-el-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

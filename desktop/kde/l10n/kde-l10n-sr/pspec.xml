@@ -12,7 +12,7 @@
         <IsA>locale:sr</IsA>
         <Summary>Serbian KDE4 internationalization package</Summary>
         <Description>kde-l10n-sr is the KDE4 internationalization package that provides Serbian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="865c86a8c39e639b11a729df32246c13a82f6f44">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-sr-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="4facc740d4dc9d974e3dc13534a5af0ea2a3e864">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-sr-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

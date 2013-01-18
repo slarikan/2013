@@ -12,7 +12,7 @@
         <IsA>locale:km</IsA>
         <Summary>Khmer KDE4 internationalization package</Summary>
         <Description>kde-l10n-km is the KDE4 internationalization package that provides Khmer translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="10825a3d466a1c4f1b030a5652a3ecec559aadfb">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-km-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="10825a3d466a1c4f1b030a5652a3ecec559aadfb">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-km-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

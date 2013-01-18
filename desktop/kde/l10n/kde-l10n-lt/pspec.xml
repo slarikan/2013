@@ -12,7 +12,7 @@
         <IsA>locale:lt</IsA>
         <Summary>Lithuanian KDE4 internationalization package</Summary>
         <Description>kde-l10n-lt is the KDE4 internationalization package that provides Lithuanian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="41d3cd9655fa8a4e6fdde2c8725c0f856ce2e32c">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-lt-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="41d3cd9655fa8a4e6fdde2c8725c0f856ce2e32c">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-lt-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

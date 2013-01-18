@@ -12,7 +12,7 @@
         <IsA>locale:ru</IsA>
         <Summary>Russian KDE4 internationalization package</Summary>
         <Description>kde-l10n-ru is the KDE4 internationalization package that provides Russian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="62bfc63e2485545aa4e8032bdc0915ec17583b9c">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ru-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="aa2a6b7c3d409d7fc18168a68b0d27684cc04b87">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-ru-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

@@ -12,7 +12,7 @@
         <IsA>locale:sv</IsA>
         <Summary>Swedish KDE4 internationalization package</Summary>
         <Description>kde-l10n-sv is the KDE4 internationalization package that provides Swedish translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="41ef394cd93b79b513d4bee3502a98e98e133e01">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-sv-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="9ec76f00e20f83d365a72a258a578cf70593d0ec">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-sv-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>

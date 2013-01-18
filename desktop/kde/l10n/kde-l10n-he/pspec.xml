@@ -12,7 +12,7 @@
         <IsA>locale:he</IsA>
         <Summary>Hebrew KDE4 internationalization package</Summary>
         <Description>kde-l10n-he is the KDE4 internationalization package that provides Hebrew translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="d7c0b5620b1929e5a9c536b2a0eeeccea4b2abf8">mirrors://kde/stable/4.9.97/src/kde-l10n/kde-l10n-he-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="d7c0b5620b1929e5a9c536b2a0eeeccea4b2abf8">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-he-4.9.97.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
