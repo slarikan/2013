@@ -30,6 +30,7 @@
             <Patch level="1">add_python3_support.diff</Patch>
             <Patch level="0">WorkDir.patch</Patch>
             <Patch level="0">preinstall-issues.patch</Patch>
+            <Patch level="0">verbose-index.patch</Patch>
         </Patches>
     </Source>
 
@@ -60,7 +61,7 @@
             <AdditionalFile owner="root" permission="0644" target="/etc/pisi/mirrors.conf">mirrors.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/etc/pisi/sandbox.conf">sandbox.conf</AdditionalFile>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile>
-	    <AdditionalFile owner="root" permission="0644" target="/usr/share/mime/packages/pisi.xml">pisi.xml</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/usr/lib/pardus/pisi/actionsapi/pkgconfig.py">pkgconfig.py</AdditionalFile>
         </AdditionalFiles>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
@@ -70,11 +71,11 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-12</Date>
+            <Date>2013-01-18</Date>
             <Version>2.4</Version>
-            <Comment>First release</Comment>
-            <Name>Ertan Güven</Name>
-            <Email>guven.ertan@gmail.com</Email>
+            <Comment>First release.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
     </History>
 </PISI>
