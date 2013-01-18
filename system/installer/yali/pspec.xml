@@ -12,20 +12,15 @@
         <IsA>app:gui</IsA>
         <Summary>Yet Another Linux Installer</Summary>
         <Description>YALI is the graphical installer for Pardus distribution which is written using the Qt framework.</Description>
-        <Archive sha1sum="9af98a7c3c079cbf1afa6fbe1a995684708b39b0" type="tarbz2">http://cekirdek.pardus.org.tr/~mete/dist/sources/yali-2.4.1_pre20110530gitb6686c4.tar.bz2</Archive>
+        <Archive sha1sum="35065da687db20b7e5810c44cca57d767a7e6c43" type="tarxz">http://anka.pardus-linux.org/2013/source/yali-2.4.1_pre20110705git.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>python-qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">repo-uri.patch</Patch>
-            <Patch level="1">conf.patch</Patch>
-            <Patch level="1">0001-Fix-adding-resume-kernel-parameter-if-no-swap-device.patch</Patch>
-            <Patch level="1">0002-Fix-importing-other-linux-systems-boot-loader-conf.patch</Patch>
-            <Patch level="1">0003-Allow-passing-screen-if-only-disk-layout-warning-rai.patch</Patch>
-            <Patch level="1">0004-add-padding-on-help-screen.patch</Patch>
-            <Patch level="1">fix-progress-panel.patch</Patch>
             <Patch level="1">fix-find-libudev.patch</Patch>
             <Patch level="0">grub2-install.patch</Patch>
+            <Patch level="0">disable-installPartition.patch</Patch>
         </Patches>
     </Source>
 
@@ -90,8 +85,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-12-30</Date>
-            <Version>2.4.1_pre20110530</Version>
+            <Date>2013-01-18</Date>
+            <Version>2.4.1_pre20110705</Version>
             <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
