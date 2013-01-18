@@ -18,6 +18,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">repo-uri.patch</Patch>
+            <Patch level="1">conf.patch</Patch>
             <Patch level="1">fix-find-libudev.patch</Patch>
             <Patch level="0">grub2-install.patch</Patch>
             <Patch level="0">disable-installPartition.patch</Patch>
