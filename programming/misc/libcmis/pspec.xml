@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>libcmis</Name>
@@ -18,6 +20,7 @@
         <Archive sha1sum="9cc8d29cc129d1aca1a1f24e799eebd6f2f1b93d" type="targz">mirrors://sourceforge/libcmis/libcmis-0.2.3.tar.gz</Archive>
         <Patches/>
     </Source>
+
     <Package>
         <Name>libcmis</Name>
         <RuntimeDependencies>
@@ -30,6 +33,7 @@
             <Path fileType="all" permanent="0">/</Path>
         </Files>
     </Package>
+
     <History>
         <Update release="1">
             <Date>2012-07-20</Date>
