@@ -73,12 +73,12 @@
     </Package>
 
     <History>
-      <Update release="1">
-            <Date>2013-01-15</Date>
-            <Version>0.5.12</Version>
+         <Update release="1">
+            <Date>2012-06-17</Date>
+            <Version>0.1.2</Version>
             <Comment>First release</Comment>
-            <Name>Ertan Güven</Name>
-            <Email>guven.ertan@gmail.com</Email>
-        </Update>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update> 
     </History>
 </PISI>
