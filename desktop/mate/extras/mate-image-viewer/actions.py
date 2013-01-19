@@ -13,6 +13,7 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
+    shelltools.export("LDFLAGS", "%s -lgmodule-2.0" % get.LDFLAGS())
     shelltools.system("./autogen.sh --prefix=/usr \
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \

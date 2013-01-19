@@ -15,6 +15,7 @@
         <Summary>Mate için resim görüntüleyicisi</Summary>
         <Description>mate-image-viewer, resim görüntüleyicisidir.</Description>
         <Archive sha1sum="535e25523034f18d08e96405ed74d0ceefcbbcaa" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-image-viewer-1.4.0.tar.xz</Archive>
+	<!--<Archive sha1sum="99b89670715c20afeb0473bbd8d9e2ded807978e" type="tarxz">http://pub.mate-desktop.org/releases/1.2/mate-image-viewer-1.2.0.tar.xz</Archive>-->
 	<BuildDependencies>
 	    <Dependency>dbus-glib-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -28,7 +29,6 @@
 	    <Dependency>lcms2-devel</Dependency>
 	    <Dependency>gsettings-desktop-schemas</Dependency>
 	    <Dependency>mate-conf-devel</Dependency>
-	    <Dependency>openjpeg-devel</Dependency>
 	</BuildDependencies>
     </Source>
 
@@ -47,7 +47,6 @@
 	    <Dependency>lcms2</Dependency>
 	    <Dependency>gsettings-desktop-schemas</Dependency>
 	    <Dependency>mate-conf</Dependency>
-	    <Dependency>openjpeg</Dependency>
 	</RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share/</Path>
