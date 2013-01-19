@@ -5,33 +5,18 @@
         <Name>mate-common</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Packager>
         <License>GPLv3.0</License>
         <PartOf>desktop.mate.base</PartOf>
         <IsA>library</IsA>
         <Summary>Common files for development of Mate packages</Summary>
-        <Description>maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>
-	<!--<Archive sha1sum="954c5341704ffdc4671e0cdec076601fa9dda220" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-common-1.5.0.tar.xz</Archive>-->	
+        <Description>maate-common package contains aclocal macros, makefile headers and documents tools in order to build Mate sources.</Description>	
 	<Archive sha1sum="b351bddb8e9e6674c3f004808e5c64766a17f3f6" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-common-1.4.0.tar.xz</Archive>
-        <BuildDependencies>
-            <Dependency>gettext-devel</Dependency>
-	    <Dependency>glib2-devel</Dependency>
-	    <Dependency>gtk-doc</Dependency>
-        </BuildDependencies>
-        <Patches>
-	    <Patch>pardus/always-copy.patch</Patch>
-	    <Patch>pardus/do-not-update-scrollkeeper.patch</Patch>
-        </Patches>
     </Source>
     <Package>
         <Name>mate-common</Name>
-	<RuntimeDependencies>
-            <Dependency>gettext-devel</Dependency>
-	    <Dependency>glib2-devel</Dependency>
-	    <Dependency>gtk-doc</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="data">/usr/share/</Path>
@@ -41,7 +26,7 @@
     <History>
         <Update release="1">
             <Date>2012-10-21</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
