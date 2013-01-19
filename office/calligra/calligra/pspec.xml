@@ -62,6 +62,7 @@
             <Dependency>OpenGTL-devel</Dependency>
             <Dependency>qimageblitz-devel</Dependency>
             <Dependency>okular-devel</Dependency>
+	    <Dependency>freeglut-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -128,6 +129,7 @@
             <Dependency>perl-DBD-SQLite</Dependency>
             <Dependency>qimageblitz</Dependency>
             <Dependency>okular</Dependency>
+	    <Dependency>freeglut</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/templates/</Path>
