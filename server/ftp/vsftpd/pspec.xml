@@ -12,22 +12,9 @@
         <IsA>service</IsA>
         <Summary>Very Secure FTP Daemon written with speed, size and security in mind</Summary>
         <Description>Vsftpd is a ftp server, mostly focuses on security.</Description>
-        <Archive sha1sum="d525974514ecf61cbbf9cb51066aa68d5a52033b" type="targz">ftp://vsftpd.beasts.org/users/cevans/vsftpd-2.3.2.tar.gz</Archive>
+        <Archive sha1sum="f36976bb1c5df25ac236d8a29e965ba2b825ccd0" type="targz">https://security.appspot.com/downloads/vsftpd-3.0.2.tar.gz</Archive>
         <Patches>
             <Patch level="1">vsftpd-pardus.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-build_ssl.patch</Patch>
-            <Patch level="1">vsftpd-2.1.1-daemonize_plus.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-userlist_log.patch</Patch>
-            <Patch level="1">vsftpd-close-std-fds.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-trim.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-pam_hostname.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-tcp_wrappers.patch</Patch>
-            <Patch level="1">vsftpd-2.2.2-clone.patch</Patch>
-            <Patch level="1">vsftpd-2.2.2-v6only.patch</Patch>
-            <Patch level="1">vsftpd-2.2.0-wildchar.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-libs.patch</Patch>
-            <Patch level="1">vsftpd-2.1.0-filter.patch</Patch>
-            <Patch level="1">vsftpd-2.2.0-openssl.patch</Patch>
         </Patches>
     </Source>
 
@@ -54,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-19</Date>
+            <Version>3.0.2</Version>
+            <Comment>New version</Comment>
+	    <Name>Emre Fırat</Name>
+            <Email>emrefirat93@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-02-07</Date>
             <Version>2.3.2</Version>
