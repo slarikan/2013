@@ -5,14 +5,13 @@
         <Name>mate-desktop</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Fatih Turgel</Name>
-            <Email>turgelfatih@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>Basic Mate libraries and dialogs</Summary>
         <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
-        <!--<Archive sha1sum="a244ef9413068b04a9430e70d31730b043d7694d" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-desktop-1.5.5.tar.xz</Archive>-->
 	<Archive sha1sum="2ceb4082619d5f375f1b6bd37cea5a5da84f039d" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-desktop-1.4.2.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>mate-common</Dependency>
@@ -69,10 +68,10 @@
     <History>
         <Update release="1">
             <Date>2012-12-16</Date>
-            <Version>1.5.5</Version>
+            <Version>1.4.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>

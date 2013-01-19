@@ -5,8 +5,8 @@
         <Name>libmatekbd</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre FIRAT</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
         <PartOf>desktop.mate</PartOf>
@@ -14,7 +14,6 @@
         <Summary>GNOME keybord configration library</Summary>
         <Description>libgnomekbd contains a GNOME library that manages keyboard layout settings and its panel applet.</Description>
 	<Archive sha1sum="cf6c2845fc5318c4adc980d097b6642b9f1ea6c8" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatekbd-1.4.0.tar.xz</Archive>
-        <!--<Archive sha1sum="8fcf02eb9cbb3ea0dd799480067cb5ed1b646040" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatekbd-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
@@ -54,7 +53,7 @@
     <History>
         <Update release="1">
             <Date>2012-10-21</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>

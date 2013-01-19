@@ -5,15 +5,14 @@
         <Name>mate-file-manager</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Fatih Turgel</Name>
-            <Email>turgelfatih@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPLv2</License>
         <Icon>caja</Icon>
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the Mate desktop.</Summary>
         <Description>Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
-	<!--<Archive sha1sum="7aa7d1da0d2706713432bc9a7317d88160791665" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-file-manager-1.5.2.tar.xz</Archive>-->
 	<Archive sha1sum="26b2723e757ddee579d1feaab8b450fecd39df15" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-file-manager-1.4.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>mate-desktop-devel</Dependency>
@@ -86,10 +85,10 @@
     <History>
         <Update release="1">
             <Date>2012-12-16</Date>
-            <Version>1.5.2</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>

@@ -5,8 +5,8 @@
         <Name>mate-themes</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Fatih Turgel</Name>
-            <Email>turgelfatih@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2</License>
@@ -14,7 +14,6 @@
         <IsA>library</IsA>
         <Summary>MATE Desktop themes</Summary>
         <Description>mate-themes, mate masaüstü temalarını barındırır.</Description>
-        <!--<Archive sha1sum="045641d586895c793290b6bf68428060d952f69b" type="tarxz">http://pub.mate-desktop.org/releases/1.5/mate-themes-1.5.0.tar.xz</Archive>-->
 	<Archive sha1sum="203f86ba25ac5c9824174c17e1112df77df7078b" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-themes-1.4.0.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>icon-naming-utils</Dependency>
@@ -48,10 +47,10 @@
     <History>
         <Update release="1">
             <Date>2012-12-16</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>

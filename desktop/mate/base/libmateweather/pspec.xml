@@ -8,12 +8,11 @@
             <Name>Emre FIRAT</Name>
             <Email>emrefirat93@gmail.com</Email>
         </Packager>
-        <License>GPL-2.0</License>
+        <License>GPLv2.0</License>
         <IsA>library</IsA>
         <Summary>libmateweather</Summary>
         <Description>libmateweather is a collection of documentation utilities for the Mate project.</Description>
 	<Archive sha1sum="067cded2ab7285b570722575fd7bb32056f78e39" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmateweather-1.4.0.tar.xz</Archive>
-        <!--<Archive sha1sum="c19a3344cf35b618de8af9eadb929003beffd1a5" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmateweather-1.5.0.tar.xz</Archive>-->
         <BuildDependencies>
 	    <Dependency>libsoup-devel</Dependency>
 	    <Dependency>mate-common</Dependency>
@@ -57,10 +56,10 @@
     <History>
         <Update release="1">
             <Date>2012-10-21</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
