@@ -11,15 +11,15 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-  
-    shelltools.system("./autogen.sh --prefix=/usr\
+    #shelltools.export("LDFLAGS", "%s -lm" % get.LDFLAGS())
+    shelltools.system("./autogen.sh --prefix=/usr \
 				    --sysconfdir=/etc \
 				    --localstatedir=/var \
 				    --disable-static \
 				    --disable-scrollkeeper \
-				    --with-mate-distributor=Pardus")
-    autotools.configure()
-    
+				    --enable-gnucat \
+				    --disable-startup-notification \
+				    --enable-unique ")    
     
 
 def build():
