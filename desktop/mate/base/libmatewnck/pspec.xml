@@ -13,7 +13,6 @@
         <IsA>app:console</IsA>
         <Summary>Window Navigator Construction Kit for MATE</Summary>
         <Description>libmatewnck is Window Navigator Construction Kit, i.e. a library to use for writing pagers and taskslists and stuff.</Description>
-        <!--<Archive sha1sum="933365db605ed6b467220e4ae1da9eb326fe7726" type="tarxz">http://pub.mate-desktop.org/releases/1.5/libmatewnck-1.5.0.tar.xz</Archive>-->
 	<Archive sha1sum="080fe3bb3ffbe67581dc3e6a34e87a38e4b5c385" type="tarxz">http://pub.mate-desktop.org/releases/1.4/libmatewnck-1.4.0.tar.xz</Archive>
         <BuildDependencies>
 	    <Dependency>cairo-devel</Dependency>
@@ -59,10 +58,10 @@
     <History>
         <Update release="1">
             <Date>2012-10-21</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>

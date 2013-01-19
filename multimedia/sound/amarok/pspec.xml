@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Amarok audio player</Summary>
         <Description>Amarok is a feature-rich audio player for the KDE desktop.</Description>
-        <Archive sha1sum="c3fc7770a9ddaaa09923d67ee8023cd5a2b61100" type="tarbz2">mirrors://kde/unstable/amarok/2.6.90/src/amarok-2.6.90.tar.bz2</Archive>
+        <Archive sha1sum="d0ae4a2cb81a54ae94ca24fdb3aed88d7f3a921e" type="tarbz2">mirrors://kde/stable/amarok/2.7.0/src/amarok-2.7.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>googlemock-devel</Dependency>
@@ -39,8 +39,9 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">flac_mimetype_bnc671581.diff</Patch>
-            <Patch level="1">amarok-2.6.90-onlinedoc.patch</Patch>
-            <Patch level="1">amarok-2.6.90-ipod_dso.patch</Patch>    
+            <!--<Patch level="1">amarok-2.6.90-onlinedoc.patch</Patch>-->
+	    <Patch level="1">amarok-2.7.0-onlinedoc.patch</Patch>
+            <!--<Patch level="1">amarok-2.6.90-ipod_dso.patch</Patch>  -->  
         </Patches>
     </Source>
 
@@ -86,6 +87,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2013-01-19</Date>
+            <Version>2.7.0</Version>
+            <Comment>Cosmetics Fixed.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-01-19</Date>
+            <Version>2.7.0</Version>
+            <Comment>Bump to new stable version.</Comment>
+            <Name>Idris Kalp</Name>
+            <Email>yaralikurt15@hotmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-12-30</Date>
             <Version>2.6.90</Version>
