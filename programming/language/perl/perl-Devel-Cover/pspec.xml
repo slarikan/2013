@@ -5,15 +5,15 @@
         <Name>perl-Devel-Cover</Name>
         <Homepage>http://search.cpan.org/dist/Devel-Cover/</Homepage>
         <Packager>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>library</IsA>
         <IsA>app:console</IsA>
         <Summary>Code coverage metrics for Perl</Summary>
         <Description>perl-Devel-Cover is a perl module that provide code covarage metrics for Perl</Description>
-        <Archive sha1sum="3e20dbddbdc27b22b9b643599f4261c865dce8d0" type="targz">http://search.cpan.org/CPAN/authors/id/P/PJ/PJCJ/Devel-Cover-0.89.tar.gz</Archive>
+        <Archive sha1sum="01a7500f2383d545e93426ad71b8eadd1b706a36" type="targz">http://mirror.vit.com.tr/mirror/CPAN/authors/id/P/PJ/PJCJ/Devel-Cover-0.99.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl</Dependency>
             <Dependency>perl-Test-Warn</Dependency>
@@ -41,12 +41,19 @@
     </Package>
 
     <History>
+      <Update release="2">
+            <Date>2013-01-18</Date>
+            <Version>0.99</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-07</Date>
             <Version>0.89</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
