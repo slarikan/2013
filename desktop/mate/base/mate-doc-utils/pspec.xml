@@ -5,8 +5,8 @@
         <Name>mate-doc-utils</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Fatih Turgel</Name>
-            <Email>turgelfatih@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
         <License>LGPLv2.1</License>
@@ -52,7 +52,7 @@
     <History>
       <Update release="1">
             <Date>2012-12-16</Date>
-            <Version>1.5.0</Version>
+            <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
