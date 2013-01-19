@@ -39,8 +39,9 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">flac_mimetype_bnc671581.diff</Patch>
-            <Patch level="1">amarok-2.6.90-onlinedoc.patch</Patch>
-            <Patch level="1">amarok-2.6.90-ipod_dso.patch</Patch>    
+            <!--<Patch level="1">amarok-2.6.90-onlinedoc.patch</Patch>-->
+	    <Patch level="1">amarok-2.7.0-onlinedoc.patch</Patch>
+            <!--<Patch level="1">amarok-2.6.90-ipod_dso.patch</Patch>  -->  
         </Patches>
     </Source>
 
