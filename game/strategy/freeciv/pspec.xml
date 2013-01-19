@@ -41,9 +41,6 @@
             <Dependency>freetype</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>freeciv-stdsounds</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>

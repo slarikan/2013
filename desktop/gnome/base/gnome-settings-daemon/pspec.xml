@@ -49,10 +49,6 @@
             <Dependency>libnotify</Dependency>
             <Dependency>libcanberra</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>gtk-qt-engine</Package>
-            <Package>gtk-qt-engine-kde4</Package>
-        </Conflicts>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib</Path>

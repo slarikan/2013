@@ -33,9 +33,6 @@
             <Dependency>pm-utils</Dependency>
             <Dependency>wpa_supplicant</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="9">wicd-client</Package>
-        </Conflicts>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin/wicd-cli*</Path>
@@ -68,12 +65,6 @@
             <Dependency>notify-python</Dependency>
             <Dependency>libgksu</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="4">wicd</Package>
-        </Conflicts>
-        <Replaces>
-            <Package>wicd-client</Package>
-        </Replaces>
         <Files>
             <Path fileType="config">/etc/xdg</Path>
             <Path fileType="executable">/usr/bin/wicd-gtk</Path>

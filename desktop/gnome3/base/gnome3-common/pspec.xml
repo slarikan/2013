@@ -23,9 +23,6 @@
             <Path fileType="data">/usr/share/gnome-common</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <Conflicts>
-	    <Package>gnome-common</Package>
-        </Conflicts>
     </Package>
 
     <History>

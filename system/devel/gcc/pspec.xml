@@ -169,9 +169,6 @@
             <Dependency>cloog</Dependency>
             <Dependency>elfutils</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="62">libgomp</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/lib</Path>
             <Path fileType="executable">/usr/bin</Path>

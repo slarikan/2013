@@ -75,10 +75,6 @@
             <Dependency>libetpan</Dependency>
             <Dependency>libdbusmenu-glib</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-        </Conflicts>
-        <Replaces>
-        </Replaces>
         <Files>
             <Path fileType="data">/usr/share/cairo-dock</Path>
             <Path fileType="data">/usr/share/vala-0.18</Path>

@@ -19,11 +19,7 @@
         <Name>libstreams</Name>
         <Files>
             <Path fileType="library">/usr/lib</Path>
-        </Files>
-        <Conflicts>
-            <Package versionTo="0.7.2">strigi-libs</Package>
-            <Package versionTo="0.7.2">strigi-devel</Package>    
-        </Conflicts>   
+        </Files>  
     </Package>
 
     <Package>

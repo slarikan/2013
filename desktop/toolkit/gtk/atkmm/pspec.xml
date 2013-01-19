@@ -27,9 +27,6 @@
             <Dependency>glibmm</Dependency>
             <Dependency>libsigc++</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="2.20.3">gtkmm</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -44,9 +41,6 @@
             <Dependency>atk-devel</Dependency>
             <Dependency>glibmm-devel</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="2.20.3">gtkmm</Package>
-        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="header">/usr/lib/atkmm-1.6/include</Path>

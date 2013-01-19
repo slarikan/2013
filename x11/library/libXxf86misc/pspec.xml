@@ -26,9 +26,6 @@
             <Dependency>libXext</Dependency>
             <Dependency>libXxf86miscproto</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="25">xorg-proto</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>

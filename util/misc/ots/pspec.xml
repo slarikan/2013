@@ -20,9 +20,6 @@
 
     <Package>
         <Name>ots</Name>
-        <Conflicts>
-            <Package releaseTo="2">libots</Package>
-        </Conflicts>
         <RuntimeDependencies>
             <Dependency>libxml2</Dependency>
             <Dependency version="current">libots</Dependency>
@@ -41,9 +38,6 @@
     </Package>
     <Package>
         <Name>libots-devel</Name>
-        <Conflicts>
-            <Package releaseTo="2">libots</Package>
-        </Conflicts>
         <RuntimeDependencies>
             <Dependency version="current">libots</Dependency>
         </RuntimeDependencies>

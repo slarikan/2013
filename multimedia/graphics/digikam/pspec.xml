@@ -87,12 +87,6 @@
             <Dependency>libXrandr</Dependency>
             <Dependency>qt-webkit</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>kipi-plugins</Package>
-        </Conflicts>
-        <Replaces>
-            <Package>digikam-kde4</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>

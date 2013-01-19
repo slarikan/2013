@@ -16,9 +16,9 @@
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
-	<Patches>
-	    <Patch level="1">glib-timer.patch</Patch>
-	</Patches>
+        <Patches>
+            <Patch level="1">glib-timer.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -26,9 +26,6 @@
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>clearlooks</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>

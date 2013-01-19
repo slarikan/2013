@@ -129,24 +129,6 @@
             <Dependency>qimageblitz</Dependency>
             <Dependency>okular</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>koffice-devel</Package>
-            <Package>koffice-data</Package>
-            <Package>koffice-karbon</Package>
-            <Package>koffice-kexi</Package>
-            <Package>koffice-kformula</Package>
-            <Package>koffice-kplato</Package>
-            <Package>koffice-kpresenter</Package>
-            <Package>koffice-kspread</Package>
-            <Package>koffice-krita</Package>
-            <Package>koffice-kthesaurus</Package>
-            <Package>koffice-kword</Package>
-            <Package>koffice-libs</Package>
-            <Package>okular-odpgenerator</Package>
-            <Package>kexi-plugin-kpsread</Package>
-            <Package>kexi-plugin-mysql</Package>
-            <Package>kexi-plugin-postresgl</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/usr/share/templates/</Path>
             <Path fileType="data">/usr/share/kde4/</Path>

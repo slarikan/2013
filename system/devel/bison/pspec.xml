@@ -26,13 +26,10 @@
     <Package>
         <Name>bison</Name>
         <RuntimeDependencies>
-	  <!-- m4 1.4.16 required?-->
+            <!-- m4 1.4.16 required?-->
             <Dependency>m4</Dependency>
             <Dependency>gettext</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>pccts</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>

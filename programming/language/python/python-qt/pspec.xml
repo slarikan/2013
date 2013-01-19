@@ -50,10 +50,6 @@
             <Dependency>qt</Dependency>
             <Dependency>sip</Dependency>
         </RuntimeDependencies>
-         <Conflicts>
-            <Package releaseTo="60">python-qt-devel</Package>
-            <Package releaseTo="60">python-qt</Package>
-        </Conflicts>
     <Files>
             <Path fileType="executable">/usr/bin/pylupdate4</Path>
             <Path fileType="executable">/usr/bin/pyrcc4</Path>
@@ -71,9 +67,6 @@
             <Dependency>qt</Dependency>
             <Dependency>sip</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="60">python-qt-devel</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin/pyuic4</Path>
             <Path fileType="library">/usr/lib/python2*</Path>

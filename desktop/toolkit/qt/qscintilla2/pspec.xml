@@ -51,10 +51,7 @@
         <Summary>Common python qscintilla bindings files shared between qscintilla2-python and qscintilla2-python3</Summary>
         <RuntimeDependencies>
             <Dependency version="current">qscintilla2</Dependency>
-        </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="16">qscintilla2-python</Package>
-        </Conflicts>
+        </RuntimeDependencies>>
         <Files>
             <Path fileType="data">/usr/share/sip</Path>
             <Path fileType="data">/usr/share/qt4/qsci</Path>

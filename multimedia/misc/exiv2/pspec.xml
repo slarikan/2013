@@ -37,9 +37,6 @@
 
     <Package>
         <Name>exiv2-libs</Name>
-        <Conflicts>
-            <Package releaseTo="14">exiv2</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
         </Files>
