@@ -13,10 +13,12 @@ from pisi.actionsapi import get
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    shelltools.system("./autogen.sh")
-    autotools.configure("--enable-introspection=yes \
-			 --disable-schemas-compile \
-			 --disable-scrollkeeper")
+    shelltools.system("./autogen.sh --prefix=/usr \
+				    --sysconfdir=/etc \
+				    --localstatedir=/var \
+				    --enable-introspection=yes \
+				    --disable-schemas-compile \
+				    --disable-scrollkeeper")
 
 def build():
     autotools.make()
