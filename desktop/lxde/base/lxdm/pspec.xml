@@ -23,7 +23,7 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">lxdm-0.4.0-gnome-start.patch</Patch>
-	    <Patch level="1">lxdm-0.4.1-background-12.1.patch</Patch>
+	    <Patch level="1">lxdm-0.4.1-high-cpu.patch</Patch>
 	    <Patch level="1">lxdm-0.4.0-use-sysconfig.patch</Patch>
 	    <Patch level="1">lxdm-0.4.0-fix-null-pointer-dereference.patch</Patch>
 	    <Patch level="1">lxdm-0.4.0-common.patch</Patch>
