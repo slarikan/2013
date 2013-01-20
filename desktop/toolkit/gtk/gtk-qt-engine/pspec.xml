@@ -31,9 +31,6 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>gtk-qt-engine-kde4</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/kde/4</Path>
             <Path fileType="config">/etc/X11/Xsession.d</Path>
