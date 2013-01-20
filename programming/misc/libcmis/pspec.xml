@@ -8,33 +8,63 @@
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
         </Packager>
-        <License>GPL-2</License>
+        <License>GPLv2</License>
+        <License>LGPLv2.1+</License>
+        <License>MPLv1.1</License>
         <PartOf>programming.misc</PartOf>
         <IsA>app:console</IsA>
         <Summary>C++ client library for the CMIS interface</Summary>
-        <Description>C++ client library for the CMIS interface</Description>
+        <Description>LibCMIS is a C++ client library for the CMIS interface. This allows C++ applications to connect to any ECM behaving as a CMIS server like Alfresco, Nuxeo for the open source ones.</Description>
+        <Archive sha1sum="b571f9d94e379edd18b4b5b87291262c63313962" type="targz">mirrors://sourceforge/libcmis/libcmis-0.3.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cppunit-devel</Dependency>
-            <Dependency>pkgconfig</Dependency>
+            <Dependency>curl-devel</Dependency>
+	    <Dependency>boost-devel</Dependency>
+	    <Dependency>cppunit-devel</Dependency>
+	    <Dependency>libxml2-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="9cc8d29cc129d1aca1a1f24e799eebd6f2f1b93d" type="targz">mirrors://sourceforge/libcmis/libcmis-0.2.3.tar.gz</Archive>
-        <Patches/>
+	<Patches>
+	    <Patch level="1">fix-build.diff</Patch>
+	</Patches>
     </Source>
 
     <Package>
         <Name>libcmis</Name>
         <RuntimeDependencies>
-            <Dependency>boost</Dependency>
             <Dependency>cppunit</Dependency>
             <Dependency>curl</Dependency>
-            <Dependency>libxml2</Dependency>
+	    <Dependency>boost</Dependency>
+	    <Dependency>cppunit</Dependency>
+	    <Dependency>libxml2</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="all" permanent="0">/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+	    <Path fileType="library">/usr/lib</Path>
+	    <Path fileType="doc">/usr/share/doc</Path>
+	    <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libcmis-devel</Name>
+	<Summary>libcmis için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libcmis</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="header">/usr/include</Path>
+	    <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-20</Date>
+            <Version>0.3.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-07-20</Date>
             <Version>0.2.3</Version>
