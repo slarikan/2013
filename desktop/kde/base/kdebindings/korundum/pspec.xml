@@ -30,9 +30,6 @@
             <Dependency>ruby-qt</Dependency>
             <Dependency>smoke-kde</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdebindings</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
