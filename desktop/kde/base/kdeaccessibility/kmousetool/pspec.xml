@@ -28,9 +28,6 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>libXtst</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeaccessibility</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
