@@ -59,9 +59,6 @@
     <Package>
         <Name>python-pycryptsetup</Name>
         <Summary>Python backend for cryptsetup</Summary>
-        <Replaces>
-            <Package>python-cryptsetup</Package>
-        </Replaces>
         <RuntimeDependencies>
             <Dependency version="current">libcryptsetup</Dependency>
         </RuntimeDependencies>

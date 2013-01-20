@@ -29,9 +29,6 @@
             <Dependency>libee</Dependency>
             <Dependency>json-c</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>sysklogd</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/sbin/rsyslogd</Path>
             <Path fileType="library">/usr/lib/rsyslog</Path>
