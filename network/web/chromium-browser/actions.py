@@ -64,9 +64,12 @@ def install():
 
     pisitools.insinto("/usr/lib/chromium-browser", "chrome.pak")
     pisitools.insinto("/usr/lib/chromium-browser", "resources.pak")
+    pisitools.insinto("/usr/lib/chromium-browser", "chrome_100_percent.pak")
+    pisitools.insinto("/usr/lib/chromium-browser", "content_resources.pak")
+    pisitools.insinto("/usr/lib/chromium-browser", "chrome_remote_desktop.pak")
     pisitools.insinto("/usr/lib/chromium-browser", "chrome", "chromium-browser")
     pisitools.insinto("/usr/lib/chromium-browser", "chrome_sandbox", "chromium-sandbox")
-
+    
     # We need to set SUID otherwise it will not run
     shelltools.chmod("%s/usr/lib/chromium-browser/chromium-sandbox" % get.installDIR(), 04755)
 
