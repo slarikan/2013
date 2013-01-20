@@ -12,14 +12,10 @@
         <IsA>library</IsA>
         <Summary>SGML and NSGML parsers' output postprocessor</Summary>
         <Description>perl-SGMLSpm is a class to postprocess the output of SGML and NSGML parsers.</Description>
-        <Archive sha1sum="1ff07104fd70a1d1bf05f3523b94413049c1fc95" type="targz">http://search.cpan.org/CPAN/authors/id/D/DM/DMEGG/SGMLSpm-1.03ii.tar.gz</Archive>
+        <Archive sha1sum="31d4199d71d5d809f5847bac594c03348c82e2e2" type="targz">http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz</Archive>
         <BuildDependencies>
              <Dependency>perl</Dependency>
-        </BuildDependencies>
-	<Patches>
-	    <Patch level="0">Makefile.PL.patch</Patch>
-	    <Patch level="1">sgmlspl.patch</Patch>
-	</Patches>
+         </BuildDependencies>
     </Source>
 
     <Package>
@@ -39,13 +35,6 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-20</Date>
-            <Version>1.03</Version>
-            <Comment>Güncellendi.</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
         <Update release="1">
             <Date>2012-09-12</Date>
             <Version>1.1</Version>
