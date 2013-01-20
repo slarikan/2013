@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Message indicator for KDE</Summary>
         <Description>plasma-applet-message-indicator is a Plasma widget which displays messages from message-indicator enabled applications.</Description>
-        <Archive sha1sum="939658d8ecbfaceeb32b7745ddaccaa594afdd44" type="tarbz2">http://launchpad.net/plasma-widget-message-indicator/trunk/0.5.6/+download/plasma-widget-message-indicator-0.5.6.tar.bz2</Archive>
+        <Archive sha1sum="2bd2a670be498fcf3d237353a355503e6a76e45c" type="tarbz2">https://launchpad.net/plasma-widget-message-indicator/trunk/0.5.8/+download/plasma-widget-message-indicator-0.5.8.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
@@ -23,6 +23,8 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">tr-translations-for-desktop.diff</Patch>
+            <Patch level="1">non-check.patch</Patch>
+            <Patch level="1">linking.patch</Patch>
         </Patches>
     </Source>
 
@@ -42,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-20</Date>
+            <Version>0.5.8</Version>
+            <Comment>bump,fixing build</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-01-29</Date>
             <Version>0.5.6</Version>
