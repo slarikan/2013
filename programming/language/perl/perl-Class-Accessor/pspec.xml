@@ -23,9 +23,6 @@
         <RuntimeDependencies>
             <Dependency>perl</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>Class-Accessor</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
