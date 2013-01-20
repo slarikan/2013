@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>lmms</Name>
+        <Homepage>http://lmms.sourceforge.net</Homepage>
+        <Packager>
+            <Name>Ertan Güven</Name>
+            <Email>guven.ertan@gmail.com</Email>
+        </Packager>
+        <License>GPLv2+</License>
+        <License>GPLv3+</License>
+        <License>LGPLv2+</License>
+        <Icon>lmms</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Linux Multimedia Studio</Summary>
+        <Description>LMMS is a free alternative to popular programs like FruityLoops/FL Studio, Cubase and Logic allowing you to produce music with your computer. This includes creation of loops, synthesizing and mixing sounds, arranging samples, having fun with your MIDI-keyboard and much more.</Description>
+        <Archive sha1sum="fbb2232d0cca2751f4395243a474287eb2b5bd2d" type="tarbz2">mirrors://sourceforge/lmms/lmms/0.4.13/lmms-0.4.13.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>alsa-lib-devel</Dependency>
+            <Dependency>fftw3-devel</Dependency>
+            <Dependency>fltk-devel</Dependency>
+            <Dependency>fluidsynth-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>jack-audio-connection-kit-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXft-devel</Dependency>
+            <Dependency>libXinerama-devel</Dependency>
+            <Dependency>libogg-devel</Dependency>
+            <Dependency>libsamplerate-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>libsndfile-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>sdl-sound-devel</Dependency>
+            <Dependency>wine-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="0">libdir.diff</Patch>
+            <Patch level="1">lmms-0.4.13-vst-nowine.patch</Patch>
+            <Patch level="1">lmms-0.4.13-gcc47.patch</Patch>
+            <!--Patch level="1">lmms-0.4.13-libexecdir.patch</Patch>
+            <Patch level="1">lmms-0.4.13-system-fltk.patch</Patch-->
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>lmms</Name>
+        <RuntimeDependencies>
+            <Dependency>alsa-lib</Dependency>
+            <Dependency>fftw3</Dependency>
+            <Dependency>fltk</Dependency>
+            <Dependency>fluidsynth</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>jack-audio-connection-kit</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXft</Dependency>
+            <Dependency>libXinerama</Dependency>
+            <Dependency>libogg</Dependency>
+            <Dependency>libsamplerate</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>libsndfile</Dependency>
+            <Dependency>libvorbis</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>sdl-sound</Dependency>
+            <Dependency>wine</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/lmms</Path>
+            <Path fileType="data">/usr/share/lmms</Path>
+            <Path fileType="data">/usr/share/menu</Path>
+            <Path fileType="data">/usr/share/mime</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="localedata">/usr/share/lmms/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>lmms-devel</Name>
+        <Summary>Development files for lmms</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">lmms</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/lmms</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-01-20</Date>
+            <Version>0.4.13</Version>
+            <Comment>First release.</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>guven.ertan@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
