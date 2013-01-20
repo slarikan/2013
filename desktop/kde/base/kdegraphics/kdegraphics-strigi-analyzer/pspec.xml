@@ -27,9 +27,6 @@
             <Dependency>libstreamanalyzer</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdegraphics</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
