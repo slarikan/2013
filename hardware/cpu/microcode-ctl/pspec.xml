@@ -26,9 +26,6 @@
                 <Dependency>amd-ucode</Dependency>
             </AnyDependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>microcode-data</Package>
-        </Replaces>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="config">/etc/modules-load.d</Path>
