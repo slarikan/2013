@@ -26,9 +26,6 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>libkdeedu</Dependency>    
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
