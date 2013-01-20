@@ -10,14 +10,22 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+
 def setup():
-    shelltools.export("LDFLAGS", "%s -lm -lgmodule-2.0" % get.LDFLAGS())
-    shelltools.system("./autogen.sh --prefix=/usr \
-				    --sysconfdir=/etc \
-				    --localstatedir=/var \
-				    --disable-static \
-				    --disable-update-mimedb   \
-				    --disable-scrollkeeper")
+
+    shelltools.system("./autogen.sh")
+    autotools.configure(" --prefix=/usr \
+			  --sysconfdir=/etc \
+			  --localstatedir=/var \
+			  --disable-static \
+			  --disable-update-mimedb \
+			  --disable-appindicator \
+			  --disable-schemas-install \
+			  --disable-scrollkeeper  \
+			  --with-mateconf-source='xml::/etc/mateconf/mateconf.xml.defaults' \
+			  --disable-schemas-install")
+
+
 
 def build():
     autotools.make()
