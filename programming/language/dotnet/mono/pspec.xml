@@ -31,9 +31,6 @@
         <RuntimeDependencies>
             <Dependency>libgdiplus</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>mono</Package>
-        </Replaces>
         <Files>
             <Path fileType="config">/etc/mono</Path>
             <Path fileType="executable">/usr/bin/mono</Path>
