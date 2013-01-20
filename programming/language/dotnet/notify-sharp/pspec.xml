@@ -21,7 +21,6 @@
 	    <Dependency>ndesk-dbus</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">01_pkg-config-path.patch</Patch>
             <Patch level="1">02_reverse_cap_check.patch</Patch>
             <Patch level="1">04-fix-app-name-derivation.patch</Patch>
         </Patches>	
