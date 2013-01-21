@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>libjpeg-turbo</Name>
@@ -17,6 +19,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Dependency>jpeg-devel</Dependency>
         </BuildDependencies>
     </Source>
+
     <Package>
         <Name>libjpeg-turbo</Name>
         <RuntimeDependencies>
@@ -30,6 +33,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
+
     <Package>
         <Name>libjpeg-turbo-devel</Name>
         <Summary>Development files for libjpeg-turbo</Summary>
@@ -40,6 +44,7 @@ uses SIMD instructions (MMX, SSE2, etc.) to accelerate baseline JPEG compression
             <Path fileType="data">/usr/include/*</Path>
         </Files>
     </Package>
+
     <History>
         <Update release="1">
             <Date>2012-07-31</Date>
