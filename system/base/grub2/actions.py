@@ -11,9 +11,14 @@ from pisi.actionsapi import pisitools
 unifontfile_path="/usr/share/fonts/unifont/unifont-5.1.20080820.pcf"
 pf2_fonts=["dejavu_10.pf2","dejavu_12.pf2","dejavu_14.pf2","dejavu_16.pf2","dejavu_bold_14.pf2"]
 
+grub_bios = "%s/grub_bios-%s/" % (get.workDIR(), get.srcVERSION())
+
+
 def setup():
-    CFLAGS = get.CFLAGS()
-    shelltools.export("CFLAGS",CFLAGS.replace(" -fstack-protector",""))
+    shelltools.export("GRUB_CONTRIB", "%s/grub-%s/grub-extras" % (get.workDIR(), get.srcVERSION()))
+    CFLAGS = get.CFLAGS().replace(" -fstack-protector","").replace(" -fasynchronous-unwind-tables","").replace(" -O2", "")
+    shelltools.export("CFLAGS", CFLAGS)
+    shelltools.system("./autogen.sh")
     autotools.configure("--disable-werror \
                          --with-grubdir=grub2 \
                          --program-transform-name='s,grub,grub2,'\

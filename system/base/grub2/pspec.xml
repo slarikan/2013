@@ -14,9 +14,9 @@
         <Summary>GNU GRUB is a Multiboot boot loader.</Summary>
         <Description>GNU GRUB (short for GNU GRand Unified Bootloader) is a boot loader package from the GNU Project.</Description>
         <Archive sha1sum="274d91e96b56a5b9dd0a07accff69dbb6dfb596b" type="tarxz">ftp://ftp.gnu.org/gnu/grub/grub-2.00.tar.xz</Archive>
-        <!--Archive sha1sum="d5ae2efec25616028a9d89e98b6e454f1c4c415f" type="tarxz" target="grub-2.00">ftp://ftp.archlinux.org/other/grub2/grub2_extras_915resolution_r9.tar.xz</Archive-->
-        <!-- packager help needed for 915resolution :) -->
+        <Archive sha1sum="d5ae2efec25616028a9d89e98b6e454f1c4c415f" type="tarxz" target="grub-2.00/grub-extras">ftp://ftp.archlinux.org/other/grub2/grub2_extras_915resolution_r9.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency>autogen</Dependency>
             <Dependency>binutils</Dependency>
             <Dependency>bison</Dependency>
             <Dependency>flex</Dependency>
