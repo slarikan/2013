@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Implementations of common encoders and decoders</Summary>
         <Description>Commons Codec is an attempt to provide definitive implementations of commonly used encoders and decoders. Examples include Base64, Hex, Phonetic and URLs.</Description>
-        <Archive sha1sum="d490a9bb30ea9e8b95c250f4d96842e0ce0c60d7" type="targz">http://anka.pardus-linux.org/2013/source/commons-codec-1.3-src.tar.gz</Archive>
+        <Archive sha1sum="7f73dde3c56bc41aa2871babcc05dcab5ac7ffad" type="targz">http://archive.apache.org/dist/commons/codec/source/commons-codec-1.6-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sun-jdk</Dependency>
             <Dependency>ant</Dependency>
@@ -31,6 +31,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-21</Date>
+            <Version>1.6</Version>
+            <Comment>Güncellendi.</Comment>
+	    <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2013-01-20</Date>
             <Version>1.3</Version>

@@ -16,4 +16,6 @@ def setup():
     shelltools.system("touch LICENSE.txt")
     
 def install():
-    pisitools.insinto("/usr/share/java","dist/commons-codec-1.3.jar","commons-codec.jar")
+    pisitools.insinto("/usr/share/java","dist/commons-codec-1.6-SNAPSHOT.jar","commons-codec.jar")
+    
+    pisitools.dodoc("LICENSE*", "RELEASE*", "TODO")
