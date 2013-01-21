@@ -27,9 +27,6 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>speech-dispatcher</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeaccessibility</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>

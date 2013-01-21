@@ -26,9 +26,6 @@
             <Dependency>qt</Dependency>
             <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeaccessibility</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>

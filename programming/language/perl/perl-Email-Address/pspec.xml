@@ -23,9 +23,6 @@
         <RuntimeDependencies>
             <Dependency>perl</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>Email-Address</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>

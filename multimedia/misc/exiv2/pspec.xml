@@ -24,9 +24,6 @@
         <RuntimeDependencies>
             <Dependency>exiv2-libs</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>exiv2-docs</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>

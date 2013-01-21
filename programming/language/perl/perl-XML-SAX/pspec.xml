@@ -17,6 +17,7 @@
             <Dependency>perl</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
             <Dependency>libxml2-devel</Dependency>
+	    <Dependency>Perl-XML-SAX-BASE</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,6 +27,7 @@
             <Dependency>perl</Dependency>
             <Dependency>perl-XML-NamespaceSupport</Dependency>
             <Dependency>libxml2</Dependency>
+	    <Dependency>Perl-XML-SAX-BASE</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -39,6 +41,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-20</Date>
+            <Version>0.99</Version>
+            <Comment>Dep +</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-07</Date>
             <Version>0.99</Version>

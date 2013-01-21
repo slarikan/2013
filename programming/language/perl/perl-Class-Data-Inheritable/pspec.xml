@@ -23,9 +23,6 @@
         <RuntimeDependencies>
             <Dependency>perl</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>Class-Data-Inheritable</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/perl</Path>

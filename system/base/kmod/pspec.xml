@@ -23,9 +23,6 @@
         <RuntimeDependencies>
             <Dependency version="current">libkmod</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>module-init-tools</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/bin</Path>

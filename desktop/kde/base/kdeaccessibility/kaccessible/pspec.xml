@@ -29,9 +29,6 @@
             <Dependency>kmousetool</Dependency>
             <Dependency>kmouth</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeaccessibility</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>

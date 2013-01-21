@@ -21,9 +21,6 @@
 
     <Package>
         <Name>libusb-compat</Name>
-        <Replaces>
-            <Package>libusb</Package>
-        </Replaces>
         <RuntimeDependencies>
             <Dependency>libusbx</Dependency>
         </RuntimeDependencies>
@@ -37,9 +34,6 @@
         <Name>libusb-compat-devel</Name>
         <PartOf>system.devel</PartOf>
         <Summary>Development files for libusb</Summary>
-        <Replaces>
-            <Package>libusb</Package>
-        </Replaces>
         <RuntimeDependencies>
             <Dependency release="current">libusb-compat</Dependency>
         </RuntimeDependencies>
@@ -55,9 +49,6 @@
         <Name>libusb-compat-32bit</Name>
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libXt</Summary>
-        <Replaces>
-            <Package>libusb-32bit</Package>
-        </Replaces>
         <BuildType>emul32</BuildType>
         <BuildDependencies>
             <Dependency>libusbx-32bit</Dependency>

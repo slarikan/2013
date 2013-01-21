@@ -157,9 +157,6 @@
             <Dependency release="current">avahi-glib</Dependency>
             <Dependency release="current">avahi-libs</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>python-avahi</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib/python*/site-packages</Path>
             <Path fileType="executable">/usr/bin/b*</Path>

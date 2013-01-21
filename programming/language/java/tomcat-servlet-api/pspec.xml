@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Java Servlet API Reference Implementation</Summary>
         <Description>tomcat-servlet-api contains Tomcat's Servlet API 2.5/JSP API 2.1 implementation.</Description>
-        <Archive sha1sum="465bf20c80b2a39c9baa9b31f21ee5b14530d72e" type="targz">http://www.apache.org/dist/tomcat/tomcat-5/v5.5.36/src/apache-tomcat-5.5.36-src.tar.gz</Archive>
+        <Archive sha1sum="465bf20c80b2a39c9baa9b31f21ee5b14530d72e" type="targz">http://ooo-extras.apache-extras.org.codespot.com/files/63574e3ada44f473892a61a2da433a59-apache-tomcat-5.5.36-src.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>sun-jdk</Dependency>
             <Dependency>ant</Dependency>

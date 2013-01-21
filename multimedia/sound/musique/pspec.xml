@@ -32,9 +32,6 @@
              <Dependency>phonon</Dependency>
              <Dependency>taglib</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>minitunes</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/musique/locale</Path>
