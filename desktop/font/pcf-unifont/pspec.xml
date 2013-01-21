@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>bdf-unifont</Name>
+        <Name>pcf-unifont</Name>
         <Homepage>http://unifoundry.com/unifont.html</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
@@ -13,13 +13,13 @@
         <IsA>data:font</IsA>
         <Summary>GNU Unifont Glyphs</Summary>
         <Description>GNU Unifont Glyphs.</Description>
-        <Archive sha1sum="b24f1e662daabaa33928de2d3b31114259911e5f" type="gz">http://unifoundry.com/unifont-5.1.20080820.bdf.gz</Archive>
+        <Archive sha1sum="87f8600ba24e521b5d20bdf6c4b71af8ae861e3a" type="gz">http://unifoundry.com/unifont-5.1.20080820.pcf.gz</Archive>
     </Source>
 
     <Package>
-        <Name>bdf-unifont</Name>
+        <Name>pcf-unifont</Name>
         <Files>
-            <Path fileType="data">/usr/share/fonts/misc</Path>
+            <Path fileType="data">/usr/share/fonts/unifont</Path>
         </Files>
     </Package>
 

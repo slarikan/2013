@@ -9,5 +9,5 @@ from pisi.actionsapi import pisitools
 WorkDir="."
 
 def install():
-    pisitools.insinto("/usr/share/fonts/misc/","*.bdf")
+    pisitools.insinto("/usr/share/fonts/unifont/","*.pcf")
 
