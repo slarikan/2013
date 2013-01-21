@@ -14,6 +14,8 @@
         <Summary>GNU GRUB is a Multiboot boot loader.</Summary>
         <Description>GNU GRUB (short for GNU GRand Unified Bootloader) is a boot loader package from the GNU Project.</Description>
         <Archive sha1sum="274d91e96b56a5b9dd0a07accff69dbb6dfb596b" type="tarxz">ftp://ftp.gnu.org/gnu/grub/grub-2.00.tar.xz</Archive>
+        <!--Archive sha1sum="d5ae2efec25616028a9d89e98b6e454f1c4c415f" type="tarxz" target="grub-2.00">ftp://ftp.archlinux.org/other/grub2/grub2_extras_915resolution_r9.tar.xz</Archive-->
+        <!-- packager help needed for 915resolution :) -->
         <BuildDependencies>
             <Dependency>binutils</Dependency>
             <Dependency>bison</Dependency>
@@ -29,10 +31,16 @@
             <Dependency>lvm2-devel</Dependency>
             <Dependency>device-mapper-devel</Dependency>
             <Dependency>gettext-devel</Dependency>
+            <Dependency>pcf-unifont</Dependency>
+            <Dependency>dejavu-fonts</Dependency>
         </BuildDependencies>
+        <Replaces>
+            <Package>grub</Package>
+        </Replaces>
         <Patches>
             <Patch level="1">anka_name_and_initramfs.patch</Patch>
             <Patch level="0">stdio.patch</Patch>
+            <Patch level="1">mkconfig-fix.patch</Patch>
         </Patches>
     </Source>
 
@@ -59,13 +67,18 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/grub</Path>
             <Path fileType="data">/usr/share/info</Path>
+            <Path fileType="data">/boot/grub2</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man/man1</Path>
             <Path fileType="man">/usr/share/man/man8</Path>
             <Path fileType="config">/etc/bash_completion.d</Path>
             <Path fileType="config">/etc/grub.d</Path>
-            <Path fileType="config">/boot/grub2</Path>
+            <Path fileType="config">/etc/default</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/boot/grub2/anka-grub-bg.png">anka-grub-bg.png</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/default/grub">grub-defaults</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
