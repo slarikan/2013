@@ -8,10 +8,11 @@ from pisi.actionsapi import cmaketools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-
-
 def setup():
-    cmaketools.configure()
+    cmaketools.configure("-DENABLE_ASCII_MODE=OFF \
+			  -DENABLE_PACKAGING=OFF \
+			  -DDISABLE_MULTITHREADING=OFF \
+			  -DBUILD_CONTRIBS_LIB=ON")
 
 def build():
     cmaketools.make()
