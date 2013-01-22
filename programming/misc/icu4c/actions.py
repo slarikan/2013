@@ -13,14 +13,25 @@ WorkDir="icu/source"
 
 def setup():
     autotools.autoconf("-f")
-    autotools.configure("--with-data-packaging=library --disable-samples")
+    options = "--with-data-packaging=library --disable-samples"
+    if get.buildTYPE() == "_emul32":
+        options += " --libdir=/usr/lib32 \
+                     --bindir=/_emul32/bin \
+                     --sbindir=/_emul32/sbin"
+    autotools.configure(options)
     pisitools.dosed("config/mh-linux", "-nodefaultlibs -nostdlib")
 
 def build():
     autotools.make()
 
-def install():
-    autotools.install()
+def check():
+    autotools.make("check")
 
-    pisitools.move("%s/usr/sbin/*" % get.installDIR(),"%s/usr/bin" % get.installDIR())
-    pisitools.removeDir("/usr/sbin")
+def install():
+    autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
+    if get.buildTYPE() == "_emul32":
+        pisitools.domove("/_emul32/bin/icu-config", "/usr/bin", "icu-config-32")
+        pisitools.removeDir("/_emul32")
+        return
+    
+    pisitools.dohtml("../*.html")
