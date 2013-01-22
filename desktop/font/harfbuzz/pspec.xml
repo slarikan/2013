@@ -60,12 +60,14 @@
             <Dependency>cairo-32bit</Dependency>
             <Dependency>freetype-32bit</Dependency>
             <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>icu4c-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">harfbuzz</Dependency>
             <Dependency>cairo-32bit</Dependency>
             <Dependency>freetype-32bit</Dependency>
             <Dependency>fontconfig-32bit</Dependency>
+            <Dependency>icu4c-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
