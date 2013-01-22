@@ -9,11 +9,9 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pythonmodules
 from pisi.actionsapi import get
 
-WorkDir = "VirtualBox-%s_OSE" % get.srcVERSION()
-
 VBoxLibDir = "/usr/lib/virtualbox"
 VBoxDataDir = "/usr/share/virtualbox"
-XorgVersion = "19"
+XorgVersion = "113"
 
 def setup():
     pisitools.dosed("LocalConfig.kmk", "__VBOXLIBDIR__", VBoxLibDir)
@@ -37,9 +35,9 @@ def install():
     pisitools.insinto("/etc/vbox", "vbox.cfg")
     shelltools.chmod("src/VBox/Additions/x11/Installer/98vboxadd-xclient", 0755)
     pisitools.insinto("/usr/bin", "src/VBox/Additions/x11/Installer/98vboxadd-xclient", "VBoxClient-all")
-    pisitools.insinto("/lib/udev/rules.d", "src/VBox/Additions/linux/installer/70-xorg-vboxmouse.rules")
+    #pisitools.insinto("/lib/udev/rules.d", "src/VBox/Additions/linux/installer/70-xorg-vboxmouse.rules")
     pisitools.insinto("/usr/share/X11/pci", "src/VBox/Additions/x11/Installer/vboxvideo.ids")
-    pisitools.insinto("/usr/share/X11/xorg.conf.d", "src/VBox/Additions/x11/Installer/50-vboxmouse.conf")
+    #pisitools.insinto("/usr/share/X11/xorg.conf.d", "src/VBox/Additions/x11/Installer/50-vboxmouse.conf")
 
     arch = "amd64" if get.ARCH() == "x86_64" else "x86"
     shelltools.cd("out/linux.%s/release/bin" % arch)
@@ -90,7 +88,7 @@ def install():
     pisitools.dosym("../../../VBoxOGL.so", "/usr/lib/xorg/modules/dri/vboxvideo_dri.so")
 
     pisitools.insinto("/usr/lib/xorg/modules/drivers", "additions/vboxvideo_drv_%s.so" % XorgVersion, "vboxvideo_drv.so")
-    pisitools.insinto("/usr/lib/xorg/modules/input",   "additions/vboxmouse_drv_%s.so" % XorgVersion, "vboxmouse_drv.so")
+    #pisitools.insinto("/usr/lib/xorg/modules/input",   "additions/vboxmouse_drv_%s.so" % XorgVersion, "vboxmouse_drv.so")
 
     # Python bindings
     pisitools.insinto("%s/sdk/bindings/xpcom" % VBoxLibDir, "sdk/bindings/xpcom/python")
