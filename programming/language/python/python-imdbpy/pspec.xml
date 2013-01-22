@@ -36,7 +36,7 @@
     <Package>
         <Name>python-imdbpy-doc</Name>
         <RuntimeDependencies>
-            <Dependency version="current">>python-imdbpy</Dependency>
+            <Dependency version="current">python-imdbpy</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="doc">/usr/share/doc/python-imdbpy</Path>
