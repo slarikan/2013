@@ -18,13 +18,13 @@ def setup():
                --enable-xlib-xrender \
                --enable-xcb \
                --enable-ft \
-               --enable-ps \
+               --enable-gl \
                --enable-pdf \
-               --enable-svg \
+               --disable-svg \
                --enable-tee \
                --enable-png \
                --with-x"
-
+    options += " --disable-ps" if get.buildTYPE() == "emul32" else " --enable-ps"
     autotools.autoreconf("-vfi")
     autotools.configure(options)
 
