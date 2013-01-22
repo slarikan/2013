@@ -30,7 +30,7 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
-            <Path fileType="library">/usr/lib/lib*</Path>
+            <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc/icu4c/html</Path>
         </Files>
