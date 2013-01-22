@@ -20,11 +20,11 @@ def setup():
                --enable-ft \
                --enable-gl \
                --enable-pdf \
+               --disable-ps \
                --disable-svg \
                --enable-tee \
                --enable-png \
                --with-x"
-    options += " --disable-ps" if get.buildTYPE() == "emul32" else " --enable-ps"
     autotools.autoreconf("-vfi")
     autotools.configure(options)
 
