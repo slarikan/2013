@@ -22,6 +22,7 @@
             <Dependency>pixman-devel</Dependency>
             <Dependency>xcb-util-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Mozilla patches from Firefox 3.1 beta 2 -->
@@ -51,6 +52,7 @@
             <Dependency>libpng</Dependency>
             <Dependency>freetype</Dependency>
             <Dependency>libXext</Dependency>
+            <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
