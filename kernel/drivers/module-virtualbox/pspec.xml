@@ -12,7 +12,7 @@
         <IsA>driver</IsA>
         <Summary>Kernel modules for VirtualBox</Summary>
         <Description>This package provides the kernel support for VirtualBox.</Description>
-        <Archive sha1sum="4fc2cbd15a31018f430b616face24c84593de128" type="targz">http://cekirdek.pardus.org.tr/~farslan/dist/virtualbox/module-virtualbox-4.1.2.tar.gz</Archive>
+        <Archive sha1sum="103b0728e42e33600d41f8754dd4e6a43e1a6f4b" type="tarxz">http://anka.pardus-linux.org/2013/source/module-virtualbox-4.2.6.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kernel-module-headers</Dependency>
         </BuildDependencies>
@@ -43,11 +43,11 @@
 
     <History>
         <Update release="1">
-            <Date>2011-09-20</Date>
-            <Version>4.1.2</Version>
+            <Date>2013-01-22</Date>
+            <Version>4.2.6</Version>
             <Comment>First release</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
     </History>
 </PISI>
