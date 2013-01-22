@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A WebKit powered web browser</Summary>
         <Description>Chromium-browser is an open-source web browser, powered by WebKit.</Description>
-        <Archive sha1sum="bf4d64e9659f238017168c717ea816dee463606a" type="tarbz2">http://gsdview.appspot.com/chromium-browser-official/chromium-26.0.1370.0.tar.bz2</Archive>
+        <Archive sha1sum="adad8ed92e1317b8ec50d6f627121472e2c6351e" type="tarxz">http://gsdview.appspot.com/chromium-browser-official/chromium-26.0.1390.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
             <Dependency>libstdc++</Dependency>
@@ -96,12 +96,19 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-22</Date>
+            <Version>26.0.1390.0</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update> 
         <Update release="1">
             <Date>2012-12-25</Date>
             <Version>26.0.1370.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>  
     </History>
 </PISI>
