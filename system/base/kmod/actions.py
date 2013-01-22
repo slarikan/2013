@@ -10,14 +10,9 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    options = "--sysconfdir=/etc \
-               --with-zlib \
-               --with-xz"
-    
-    if get.buildTYPE() == "emul32":
-        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
-
-    autotools.configure(options)
+    autotools.configure("--sysconfdir=/etc \
+                         --with-zlib \
+                         --with-xz")
 
 def build():
     autotools.make()
@@ -27,7 +22,7 @@ def check():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
+
     if get.buildTYPE() == "emul32": return
 
     pisitools.dosym("modprobe.d.5.gz","/usr/share/man/man5/modprobe.conf.5.gz")
