@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A small library for rendering Postscript documents</Summary>
         <Description>libspectre is a small library for rendering Postscript documents. It provides a convenient easy to use API for handling and rendering Postscript documents.</Description>
-        <Archive sha1sum="819475c7e34a1e9bc2e876110fee530b42aecabd" type="targz">http://libspectre.freedesktop.org/releases/libspectre-0.2.6.tar.gz</Archive>
+        <Archive sha1sum="a7efd97b82b84ff1bb7a0d88c7e35ad10cc84ea8" type="targz">http://libspectre.freedesktop.org/releases/libspectre-0.2.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>ghostscript-devel</Dependency>
             <!-- Cairo is needed in tests only! -->
@@ -44,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-22</Date>
+            <Version>0.2.7</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2010-10-14</Date>
             <Version>0.2.6</Version>
