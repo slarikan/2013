@@ -13,15 +13,11 @@ from pisi.actionsapi import get
 
 def build():
     shelltools.export("CFLAGS", "%s -fno-strict-aliasing" % get.CFLAGS())
-    pisitools.dosed("tools/acpiexec/Makefile", "CFLAGS\+= -Wall -g", "CFLAGS+= -Wall")
-
-    for i in ["tools/acpisrc", "tools/acpixtract", "tools/acpiexec", "compiler/ clean", "compiler/"]:
-        autotools.make("-j1 -C %s" % i)
+    if get.ARCH() == "x86_64":
+        autotools.make("BITS=64")
+    else:
+        autotools.make("BITS=32")
 
 def install():
-    pisitools.dobin("compiler/iasl")
-
-    for i in ["acpisrc", "acpiexec", "acpixtract"]:
-        pisitools.dosbin("tools/%s/%s" % (i, i))
-
-    pisitools.dodoc("changes.txt", "README")
+    autotools.rawInstall('DESTDIR="%s"' % get.installDIR())
+    pisitools.dodoc("changes.txt")
