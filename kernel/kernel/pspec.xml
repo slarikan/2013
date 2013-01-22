@@ -36,7 +36,7 @@
         </BuildDependencies>
         <Patches>
             <!-- linux patches -->
-            <Patch level="1">patches/linux/patch-3.7.3.patch</Patch>
+            <Patch level="1">patches/linux/patch-3.7.4.patch</Patch>
 
             <!-- Mandriva patches -->
             <Patch level="1">patches/mandriva/acpi-processor-M720SR-limit-to-C2.patch</Patch>
@@ -312,8 +312,8 @@
     <History>
         <Update release="2">
             <Date>2013-01-18</Date>
-            <Version>3.7.3</Version>
-            <Comment>http://www.kernel.org/pub/linux/kernel/v3.0/ChangeLog-3.7.3</Comment>
+            <Version>3.7.4</Version>
+            <Comment>http://www.kernel.org/pub/linux/kernel/v3.0/ChangeLog-3.7.4</Comment>
             <Type package="kernel">security</Type>
             <Requires>
                 <Action package="kernel">systemRestart</Action>
