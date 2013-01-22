@@ -1,6 +1,39 @@
 <PISI>
     <Components>
         <Component>
+            <Name>desktop.lxde.addon</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>lxde.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.lxde.base</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>lxde.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.lxde</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>lxde.desktop</Group>
+            <Maintainer>
+                <Name>Pardus ANKA Admins</Name>
+                <Email>pisiciftligi@pardus-linux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
             <Name>emul32</Name>
             <LocalName xml:lang="en">emul32</LocalName>
             <Summary xml:lang="en">32-bit packages for use on amd64 and ia64 systems</Summary>
