@@ -24,6 +24,7 @@ def setup():
                --enable-svg \
                --enable-tee \
                --enable-png \
+               --disable-xlib-xcb \
                --with-x"
     autotools.autoreconf("-vfi")
     autotools.configure(options)
