@@ -13,7 +13,8 @@ from pisi.actionsapi import pisitools
 def setup():
     autotools.configure("--disable-static \
                          --enable-test \
-                         --disable-dependency-tracking")
+                         --disable-dependency-tracking \
+                         --with-gnu-ld")
 
 def build():
     autotools.make()
