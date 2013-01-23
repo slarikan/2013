@@ -43,11 +43,28 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>libspectre-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libspectre</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>ghostscript-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">libspectre</Dependency>
+            <Dependency>ghostscript-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
     <History>
         <Update release="2">
             <Date>2013-01-22</Date>
             <Version>0.2.7</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>Version bump, add emul32</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>
