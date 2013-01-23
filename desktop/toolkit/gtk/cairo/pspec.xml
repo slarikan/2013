@@ -24,6 +24,7 @@
             <Dependency>libXext-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>libspectre-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Mozilla patches from Firefox 3.1 beta 2 -->
@@ -104,6 +105,7 @@
             <Dependency>mesa-32bit</Dependency>
             <Dependency>libXext-32bit</Dependency>
             <Dependency>libspectre-32bit</Dependency>
+            <Dependency>librsvg-32bit</Dependency>
         </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">cairo</Dependency>

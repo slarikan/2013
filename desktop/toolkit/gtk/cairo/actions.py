@@ -21,7 +21,7 @@ def setup():
                --enable-gl \
                --enable-pdf \
                --enable-ps \
-               --disable-svg \
+               --enable-svg \
                --enable-tee \
                --enable-png \
                --with-x"
