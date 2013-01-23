@@ -11,7 +11,7 @@
         <License>LGPLv2.1</License>
         <Summary>The GIMP Toolkit version 2</Summary>
         <Description>GTK+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, GTK+ is suitable for projects ranging from small one-off projects to complete application suites.</Description>
-        <Archive sha1sum="8091fc47f8ea7f05af3400e683662068b1ef4d7b" type="tarxz">http://ftp.gnome.org/pub/gnome/sources/gtk+/2.24/gtk+-2.24.13.tar.xz</Archive>
+        <Archive sha1sum="dc42bce70aa438c8c225b4d16b2cd6e26d462cc7" type="tarxz">mirrors://gnome/gtk+/2.24/gtk+-2.24.14.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>cups-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
@@ -43,6 +43,11 @@
             <Patch level="1">ayatana/043_ubuntu_menu_proxy.patch</Patch>
             <Patch level="1">ayatana/012_ubuntu-set-grab-add.patch</Patch>
             -->
+            
+            <Patch level="1">gtk2-fixdso.patch</Patch>
+            <Patch level="1">icon-padding.patch</Patch>
+            <Patch level="1">system-python.patch</Patch>
+            <Patch level="1">window-dragging.patch</Patch>
         </Patches>
     </Source>
 
@@ -178,6 +183,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-23</Date>
+            <Version>2.24.14</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-25</Date>
             <Version>2.24.13</Version>

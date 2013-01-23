@@ -40,9 +40,10 @@ def setup():
         shelltools.export("LDFLAGS", "%s -m32" % get.LDFLAGS())
 
     #    shelltools.system("./autogen.sh")
+    autotools.autoreconf("-fiv")
     autotools.configure(options)
 
-    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
+    pisitools.dosed("libtool"," -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()
