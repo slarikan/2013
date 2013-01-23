@@ -20,7 +20,7 @@ def setup():
                --enable-ft \
                --enable-gl \
                --enable-pdf \
-               --disable-ps \
+               --enable-ps \
                --disable-svg \
                --enable-tee \
                --enable-png \
