@@ -15,11 +15,12 @@
         <Description>libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.</Description>
         <Archive sha1sum="7753165ca685a0c78735fa0db25b815d9576b1fe" type="targz">ftp://ftp.archlinux.org/other/libcap/libcap-2.22.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>attr-devel</Dependency>
             <Dependency>pam</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>libcap-2.16-linkage_fix.diff</Patch>
-            <!--<Patch level="1">flags.patch</Patch>-->
+            <Patch level="0">libcap-2.21-include.patch</Patch>
+            <Patch level="1">libcap-2.22-build-system-fixes.patch</Patch>
         </Patches>
     </Source>
 
@@ -27,6 +28,7 @@
         <Name>libcap</Name>
         <RuntimeDependencies>
             <Dependency>pam</Dependency>
+            <Dependency>attr</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/sbin</Path>
@@ -56,8 +58,12 @@
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libcap</Summary>
         <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>attr-32bit</Dependency>
+        </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">libcap</Dependency>
+            <Dependency>attr-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -65,6 +71,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-24</Date>
+            <Version>2.22</Version>
+            <Comment>Use flags form pisi.conf, fix emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-01</Date>
             <Version>2.22</Version>
