@@ -48,7 +48,27 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>attr-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for attr</Summary>
+        <BuildType>emul32</BuildType>
+        <RuntimeDependencies>
+            <Dependency release="current">attr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/lib32</Path>
+        </Files>
+    </Package>
+
     <History>
+        <Update release="2">
+            <Date>2013-01-24</Date>
+            <Version>2.4.46</Version>
+            <Comment>Add emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-06-04</Date>
             <Version>2.4.46</Version>
