@@ -14,7 +14,6 @@
         <Summary>GTK+ based window manager</Summary>
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
 	<Archive sha1sum="9bd00e10d04e4246649d11dec02ffb2fea7a6542" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-window-manager-1.4.1.tar.xz</Archive>
-	<!--<Archive sha1sum="e2a20dae26025d6ef7690d34bf401e389abaa674" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-window-manager-1.4.0.tar.xz</Archive>-->
         <BuildDependencies>
 	    <Dependency>desktop-file-utils</Dependency>
 	    <Dependency>gtk2-devel</Dependency>
