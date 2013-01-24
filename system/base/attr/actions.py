@@ -10,17 +10,16 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-suffix = "32" if get.buildTYPE() == "emul32" else ""
-
 def setup():
-    autotools.rawConfigure("--libdir=/lib%s \
+    autotools.rawConfigure("--libdir=/lib \
                             --mandir=/usr/share/man \
-                            --libexecdir=/lib%s \
-                            --bindir=/bin%s" % ((suffix,)*3))
+                            --libexecdir=/lib \
+                            --bindir=/bin")
 def build():
     autotools.make()
 
 def install():
     autotools.make("DESTDIR=%s install install-lib install-dev" % get.installDIR())
-    if get.buildTYPE() == "emul32": pisitools.removeDir("/bin32")
-    pisitools.remove("/lib%s/*.a" % suffix)
+
+    pisitools.remove("/lib/*.a")
+    shelltools.chmod("%s/lib/libattr.so.*.*.*" % get.installDIR(), 0755)

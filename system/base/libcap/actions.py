@@ -6,29 +6,36 @@
 # Licensed under the GNU General Public License, version 2.
 # See the file http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
-from pisi.actionsapi import get
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
 def setup():
-    if get.buildTYPE() == "emul32": pisitools.dosed("Make.Rules", "^(PAM_CAP\s:=).*", r"\1 no")
+    if get.buildTYPE() == "emul32":
+        shelltools.export("CFLAGS", "%s -m32" % get.CFLAGS())
+
+    pisitools.dosed("Make.Rules", "pardusCFLAGS", get.CFLAGS())
+    pisitools.dosed("Make.Rules", "pardusLDFLAGS", get.LDFLAGS())
 
 def build():
-    autotools.make()
+    args = "emul32=1" if get.buildTYPE() == "emul32" else ""
+    autotools.make('CC="%s" %s' % (get.CC(), args))
 
 def install():
     if get.buildTYPE() == "emul32":
-        autotools.rawInstall("prefix=/emul32 lib=../usr/lib32 DESTDIR=%s" % get.installDIR())
+        autotools.rawInstall("FAKEROOT=%s \
+                              LIBDIR=%s/usr/lib32 \
+                              SBINDIR=%s/emul32/sbin \
+                              emul32=1" % ((get.installDIR(),)*3))
         pisitools.remove("/usr/lib32/*.a")
-        shelltools.chmod("%s/usr/lib32/%s.so.%s" % (get.installDIR(), get.srcNAME(), get.srcVERSION()))
         return
 
-    autotools.rawInstall("prefix=/usr DESTDIR=%s SBINDIR=%s/sbin RAISE_SETFCAP=no" % ((get.installDIR(),)*2))
+    autotools.rawInstall("FAKEROOT=%s" % get.installDIR())
 
     pisitools.insinto("/etc/security", "pam_cap/capability.conf")
 
-    pisitools.remove("/usr/lib/libcap.a")
-    shelltools.chmod("%s/usr/lib/%s.so.%s" % (get.installDIR(), get.srcNAME(), get.srcVERSION()))
+    # we should not need this static
+    pisitools.remove("/lib/libcap.a")
 
     pisitools.dodoc("CHANGELOG", "README", "doc/capability.notes")
