@@ -20,7 +20,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
             <Dependency>gnome-common</Dependency>
-            <Dependency>nome-doc-utils</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -33,7 +33,7 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXcursor</Dependency>
             <Dependency>gnome-common</Dependency>
-            <Dependency>nome-doc-utils</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/xdg/menus</Path>
