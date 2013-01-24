@@ -139,7 +139,7 @@
       <LocalName xml:lang="sv">Skrivbord, GNOME</LocalName>
       <LocalName xml:lang="tr">Gnome Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Gnome</LocalName>
-      <LocalName xml:lang="es">Gnome</LocalName>
+      <LocalName xml:lang="es">Escritorio Gnome</LocalName>
       <LocalName xml:lang="de">Gnome</LocalName>
       <LocalName xml:lang="it">Gnome</LocalName>
       <Icon>preferences-desktop</Icon> <!-- FIXME: Gnome Desktop Icon -->
@@ -151,7 +151,7 @@
       <LocalName xml:lang="sv">Skrivbord, GNOME</LocalName>
       <LocalName xml:lang="tr">Gnome Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Gnome</LocalName>
-      <LocalName xml:lang="es">Gnome</LocalName>
+      <LocalName xml:lang="es">Escritorio Gnome</LocalName>
       <LocalName xml:lang="de">Gnome</LocalName>
       <LocalName xml:lang="it">Gnome</LocalName>
       <Icon>preferences-desktop</Icon> <!-- FIXME: Gnome Desktop Icon -->
@@ -163,7 +163,7 @@
       <LocalName xml:lang="sv">Skrivbord, KDE</LocalName>
       <LocalName xml:lang="tr">KDE Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau KDE</LocalName>
-      <LocalName xml:lang="es">KDE</LocalName>
+      <LocalName xml:lang="es">Escritorio KDE</LocalName>
       <LocalName xml:lang="de">KDE</LocalName>
       <LocalName xml:lang="it">KDE</LocalName>
       <Icon>kde</Icon>
@@ -183,7 +183,7 @@
       <LocalName xml:lang="sv">Skrivbord, Enlightenment</LocalName>
       <LocalName xml:lang="tr">Enlightenment Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Enlightenment</LocalName>
-      <LocalName xml:lang="es">escritorio Enlightenment</LocalName>
+      <LocalName xml:lang="es">Escritorio Enlightenment</LocalName>
       <Icon>e17</Icon>
     </Group>
     <Group>
