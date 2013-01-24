@@ -7,7 +7,7 @@
       <LocalName xml:lang="sv">Handikappstöd</LocalName>
       <LocalName xml:lang="tr">Erişilebilirlik</LocalName>
       <LocalName xml:lang="fr">Accessibilité</LocalName>
-      <LocalName xml:lang="es">Acesibilidad</LocalName>
+      <LocalName xml:lang="es">Accesibilidad</LocalName>
       <LocalName xml:lang="de">Eingabehilfen</LocalName>
       <LocalName xml:lang="it">Accessibilità</LocalName>
       <Icon>preferences-desktop-accessibility</Icon>
@@ -19,7 +19,7 @@
       <LocalName xml:lang="sv">Tillbehör</LocalName>
       <LocalName xml:lang="tr">Donatılar</LocalName>
       <LocalName xml:lang="fr">Accessoires</LocalName>
-      <LocalName xml:lang="es">Acesorios</LocalName>
+      <LocalName xml:lang="es">Accesorios</LocalName>
       <LocalName xml:lang="de">Zubehör</LocalName>
       <LocalName xml:lang="it">Accessori</LocalName>
       <Icon>applications-accessories</Icon>
@@ -31,7 +31,7 @@
       <LocalName xml:lang="sv">Utbildning</LocalName>
       <LocalName xml:lang="tr">Eğitim</LocalName>
       <LocalName xml:lang="fr">Éducation</LocalName>
-      <LocalName xml:lang="es">Educativos</LocalName>
+      <LocalName xml:lang="es">Educación</LocalName>
       <LocalName xml:lang="de">Lernen</LocalName>
       <LocalName xml:lang="it">Educazione</LocalName>
       <Icon>applications-education</Icon>
@@ -173,6 +173,7 @@
       <LocalName xml:lang="en">KDE Games</LocalName>
       <LocalName xml:lang="nl">KDE Games</LocalName>
       <LocalName xml:lang="tr">KDE Oyunları</LocalName>
+      <LocalName xml:lang="es">KDE Juegos</LocalName>
       <Icon>kde</Icon>
     </Group>
     <Group>
@@ -182,6 +183,7 @@
       <LocalName xml:lang="sv">Skrivbord, Enlightenment</LocalName>
       <LocalName xml:lang="tr">Enlightenment Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Enlightenment</LocalName>
+      <LocalName xml:lang="es">escritorio Enlightenment</LocalName>
       <Icon>e17</Icon>
     </Group>
     <Group>
@@ -191,6 +193,7 @@
       <LocalName xml:lang="sv">Skrivbord, Xfce</LocalName>
       <LocalName xml:lang="tr">Xfce Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Xfce</LocalName>
+      <LocalName xml:lang="es">Escritorio Xfce</LocalName>
       <Icon>xfce</Icon>
     </Group>
     <Group>
@@ -199,6 +202,7 @@
       <LocalName xml:lang="sv">Skrivbord, Cinnamon</LocalName>
       <LocalName xml:lang="tr">Cinnamon Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Cinnamon</LocalName>
+      <LocalName xml:lang="es">Escritorio Cinnamon</LocalName>
       <Icon>cinnamon</Icon>
     </Group>
     <Group>
@@ -208,6 +212,7 @@
       <LocalName xml:lang="sv">Skrivbord, Mate</LocalName>
       <LocalName xml:lang="tr">Mate Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Mate</LocalName>
+      <LocalName xml:lang="es">Escritorio Mate</LocalName>
       <Icon>mate</Icon>
     </Group>
     <Group>
@@ -217,6 +222,7 @@
       <LocalName xml:lang="sv">Skrivbord, Razor-qt</LocalName>
       <LocalName xml:lang="tr">Razor-qt Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau Razor-qt</LocalName>
+      <LocalName xml:lang="es">Escritorio Razor-qt</LocalName>
       <Icon>razor-qt</Icon>
     </Group>
     <Group>
@@ -226,6 +232,7 @@
       <LocalName xml:lang="sv">Skrivbord, lxde</LocalName>
       <LocalName xml:lang="tr">lxde Masaüstü</LocalName>
       <LocalName xml:lang="fr">Bureau lxde</LocalName>
+      <LocalName xml:lang="es">Escritorio lxde</LocalName>
       <Icon>lxde</Icon>
     </Group>
     <Group>
@@ -295,6 +302,7 @@
       <LocalName xml:lang="tr">Uyumluluk</LocalName>
       <LocalName xml:lang="fr">Anciens</LocalName>
       <LocalName xml:lang="it">Obsoleti/in disuso</LocalName>
+      <LocalName xml:lang="es">Legacy</LocalName>
       <Icon>media-floppy</Icon>
     </Group>
     <Group>
