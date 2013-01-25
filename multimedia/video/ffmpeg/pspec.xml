@@ -45,8 +45,8 @@
             <Dependency>celt-devel</Dependency>
             <Dependency>openjpeg-devel</Dependency>
             <Dependency>opencore-amr-devel</Dependency>
-            <Dependency>libvo-aacenc-devel</Dependency>
-            <Dependency>libvo-amrwbenc-devel</Dependency>
+            <Dependency>vo-aacenc-devel</Dependency>
+            <Dependency>vo-amrwbenc-devel</Dependency>
             <Dependency>rtmpdump-devel</Dependency>
             <Dependency>libcdio-devel</Dependency>
             <Dependency>gnutls-devel</Dependency>
