@@ -13,7 +13,7 @@
         <PartOf>desktop.xfce</PartOf>
         <Summary>GTK+ Xfce theme engine</Summary>
         <Description>Gtk2-engines-xfce is a GTK+ engine for Xfce desktop environment.</Description>
-        <Archive sha1sum="bc35a26fc3723908e264234f12e384175779d18c" type="tarbz2">http://archive.xfce.org/src/xfce/gtk-xfce-engine/3.0/gtk-xfce-engine-3.0.0.tar.bz2</Archive>
+        <Archive sha1sum="39418dd5747f45834d9ec11fd628566f20294172" type="tarbz2">http://archive.xfce.org/src/xfce/gtk-xfce-engine/3.0/gtk-xfce-engine-3.0.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>xfce4-dev-tools</Dependency>
             <Dependency>gtk2-devel</Dependency>
