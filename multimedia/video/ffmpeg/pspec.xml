@@ -91,8 +91,8 @@
             <Dependency>celt</Dependency>
             <Dependency>openjpeg</Dependency>
             <Dependency>opencore-amr</Dependency>
-            <Dependency>libvo-aacenc</Dependency>
-            <Dependency>libvo-amrwbenc</Dependency>
+            <Dependency>vo-aacenc</Dependency>
+            <Dependency>vo-amrwbenc</Dependency>
             <Dependency>rtmpdump</Dependency>
             <Dependency>libcdio</Dependency>
             <Dependency>gnutls</Dependency>
