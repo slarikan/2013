@@ -56,7 +56,6 @@
             <Dependency>libv4l-devel</Dependency>
             <Dependency>xvid-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>libv4l-devel</Dependency>
         </BuildDependencies>
     </Source>
 
