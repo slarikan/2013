@@ -13,7 +13,7 @@
         <IsA>app:console</IsA>
         <Summary>GStreamer streaming media framework runtime</Summary>
         <Description>GStreamer is a streaming media framework, based on graphs of filters which operate on media data. Applications using this library can do anything from real-time sound processing to playing videos, and just about anything else media-related.</Description>
-        <Archive sha1sum="9bf31a7dfa388ba17a388edf688621ebc3a35d6d" type="tarxz">http://ftp.acc.umu.se/pub/gnome/sources/gstreamer/1.0/gstreamer-1.0.2.tar.xz</Archive>
+        <Archive sha1sum="195fea857b103701495570a361128634ce6c02b4" type="tarxz">http://ftp.acc.umu.se/pub/gnome/sources/gstreamer/1.0/gstreamer-1.0.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>check</Dependency>
             <Dependency>valgrind</Dependency>
@@ -87,6 +87,13 @@
 
 
     <History>
+      <Update release="2">
+            <Date>2013-01-25</Date>
+            <Version>1.0.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2012-10-24</Date>
             <Version>1.0.2</Version>
