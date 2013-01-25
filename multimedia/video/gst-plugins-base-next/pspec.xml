@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Basepack of plugins for gstreamer</Summary>
         <Description>GStreamer base plugins are a well-groomed and well-maintained collection of GStreamer plugins and elements, spanning the range of possible types of elements one would want to write for GStreamer. It also contains helper libraries and base classes useful for writing elements. A wide range of video and audio decoders, encoders, and filters are included.</Description>
-        <Archive sha1sum="a4539c78820ad764b666385ae312f7a2e5eb60d6" type="tarxz">http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.0.2.tar.xz</Archive>
+        <Archive sha1sum="86fd7d5db88cdb7e089adf0822f4bdca86881530" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gst-plugins-base/1.0/gst-plugins-base-1.0.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gstreamer-next-devel</Dependency>
             <Dependency>cdparanoia</Dependency>
@@ -27,6 +27,7 @@
             <Dependency>libtheora-devel</Dependency>
             <Dependency>libvisual-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>orc-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">gstpb-0.10.15-cd-speed.patch</Patch>
@@ -49,6 +50,7 @@
             <Dependency>libvorbis</Dependency>
             <Dependency>libvisual</Dependency>
             <Dependency>libtheora</Dependency>
+            <Dependency>orc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -77,6 +79,13 @@
     </Package>
 
     <History>
+	<Update release="2">
+            <Date>2013-01-25</Date>
+            <Version>1.0.5</Version>
+            <Comment>Güncellendi.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="1">
             <Date>2011-05-03</Date>
             <Version>1.0.2</Version>
