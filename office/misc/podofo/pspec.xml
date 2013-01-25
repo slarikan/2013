@@ -14,7 +14,7 @@
         <IsA>app:console</IsA>
         <Summary>A library to work with the PDF file format</Summary>
         <Description>The PoDoFo library is a free, portable C++ library which includes classes to parse PDF files and modify their contents into memory. The changes can be written back to disk easily. The parser can also be used to extract information from a PDF file (for example the parser could be used in a PDF viewer). Besides parsing PoDoFo includes also very simple classes to create your own PDF files. All classes are documented so it is easy to start writing your own application using PoDoFo.</Description>
-        <Archive sha1sum="e5d9ada941a0f9ea5fcac2cd9bc000478d515cfa" type="targz">mirrors://sourceforge/podofo/podofo-0.8.4.tar.gz</Archive>
+        <Archive sha1sum="d04c26b93dcf5f82a8dd90e02df6de95fb98ef47" type="targz">mirrors://sourceforge/podofo/podofo-0.9.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>lua-devel</Dependency>
             <Dependency>stlport-devel</Dependency>
@@ -41,6 +41,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
@@ -58,14 +59,14 @@
 
     <History>
         <Update release="1">
-            <Date>2011-02-01</Date>
-            <Version>0.8.4</Version>
-            <Comment>First release</Comment>
+            <Date>2013-01-25</Date>
+            <Version>0.9.1</Version>
+            <Comment>Version bump.</Comment>
             <Requires>
                 <Action>reverseDependencyUpdate</Action>
             </Requires>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
     </History>
 </PISI>
