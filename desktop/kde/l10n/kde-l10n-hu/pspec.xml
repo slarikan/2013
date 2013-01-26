@@ -12,7 +12,7 @@
         <IsA>locale:hu</IsA>
         <Summary>Hungarian KDE4 internationalization package</Summary>
         <Description>kde-l10n-hu is the KDE4 internationalization package that provides Hungarian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="9c41c96f2e2c4688fe7755894cab4528753a0f91">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-hu-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="1b66bea18e62b3bf00c0777fdafe87dce09648f7">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-hu-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-17</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

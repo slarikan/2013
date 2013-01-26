@@ -12,13 +12,17 @@
         <IsA>locale:hi</IsA>
         <Summary>Hindi KDE4 internationalization package</Summary>
         <Description>kde-l10n-hi is the KDE4 internationalization package that provides Hindi translations for KDE4 applications.</Description>
-        <Archive type="tarbz2" sha1sum="73075071a375aad5b67d177870bb5ae683ad66c0">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-hi-4.9.97.tar.xz</Archive>
+        <Archive type="tarbz2" sha1sum="1e28858938d8235de01b1a626cc39ca3a765207d">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-hi-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>kde-l10n-hi</Name>
+        <Replaces>
+            <Package>kde4-i18n-hi</Package>
+            <Package>kde-i18n-hi</Package>
+        </Replaces>
         <Files>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/kde4</Path>
@@ -28,8 +32,8 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2013-01-17</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

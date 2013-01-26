@@ -12,7 +12,7 @@
         <IsA>locale:tr</IsA>
         <Summary>Turkish KDE4 internationalization package</Summary>
         <Description>kde-l10n-tr is the KDE4 internationalization package that provides Turkish translations for KDE4 applications.</Description>
-        <Archive sha1sum="a31088fd601d2bb1ca5dc078ad66c72f8833d645" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-tr-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="b98e56c3fed526df225eabf4712d4623caab1ad1" type="tarxz">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-tr-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -62,7 +62,7 @@
     <History>
         <Update release="1">
             <Date>2013-01-13</Date>
-            <Version>4.9.97</Version>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

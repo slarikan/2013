@@ -12,7 +12,7 @@
         <IsA>locale:es</IsA>
         <Summary>Spanish KDE4 internationalization package</Summary>
         <Description>kde-l10n-es is the KDE4 internationalization package that provides Spanish translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="4010e520f2291219ea6b5ef16f3a47cbc0459d1d">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-es-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="66959302e7e8443fb9cd10f3355ab3cc92aac1db">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-es-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-17</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

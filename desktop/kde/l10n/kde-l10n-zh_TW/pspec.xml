@@ -12,7 +12,7 @@
         <IsA>locale:zh_TW</IsA>
         <Summary>Chinese Traditional KDE4 internationalization package</Summary>
         <Description>kde-l10n-zh_TW is the KDE4 internationalization package that provides Chinese Traditional translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="fde6c4c4ec5dec5b66ebc4b8aafaa7a21abaf6f8">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-zh_TW-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="80f71ee40dc80b5bed0d9447416666668d19e4db">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-zh_TW-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

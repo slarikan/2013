@@ -12,7 +12,7 @@
         <IsA>locale:nb</IsA>
         <Summary>Norwegian Bookmal KDE4 internationalization package</Summary>
         <Description>kde-l10n-nb is the KDE4 internationalization package that provides Norwegian Bookmal translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="7a5330d674c6a88934a0770e314465b33e13dcdd">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-nb-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="904a0ed2b2c86de4d05f13a634bb70eecce74e54">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-nb-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-17</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

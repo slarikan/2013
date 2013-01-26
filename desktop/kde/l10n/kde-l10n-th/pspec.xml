@@ -12,7 +12,7 @@
         <IsA>locale:th</IsA>
         <Summary>Thai KDE4 internationalization package</Summary>
         <Description>kde-l10n-ku is the KDE4 internationalization package that provides Thai translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="ccc9ecac52aa322e119eaddd789912b26a8d279b">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-th-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="747a05f0ab6935e75b253e47f0d081d4ec07681a">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-th-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

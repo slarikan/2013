@@ -12,7 +12,7 @@
         <IsA>locale:ja</IsA>
         <Summary>Japanese KDE4 internationalization package</Summary>
         <Description>kde-l10n-ja is the KDE4 internationalization package that provides Japanese translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="9a7a0c347c2bc6e1a16821b369e43a35379953fc">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-ja-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="c529324f7a2d8ac81eaa4dbcac61d6f70ad3fca8">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-ja-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-17</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -12,7 +12,7 @@
         <IsA>locale:zh_CN</IsA>
         <Summary>Chinese Simplified KDE4 internationalization package</Summary>
         <Description>kde-l10n-zh_CN is the KDE4 internationalization package that provides Chinese Simplified translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="f43cdbba64c3c8ed41d1bc61d04f29c278ed0ba0">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-zh_CN-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="686c125eba098719977e9d63c51e1f6fc40718d8">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-zh_CN-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,11 +37,11 @@
 
     <History>
         <Update release="1">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>    
+        </Update>  
     </History>
 </PISI>

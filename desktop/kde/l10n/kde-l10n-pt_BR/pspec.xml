@@ -12,7 +12,7 @@
         <IsA>locale:pt_BR</IsA>
         <Summary>Brasilian Portuguese KDE4 internationalization package</Summary>
         <Description>kde-l10n-pt-BR is the KDE4 internationalization package that provides Brasilian Portuguese translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="b07a40b4d14520f4dcd6c46a6405f383cada1a8f">mirrors://kde/unstable/4.9.97/src/kde-l10n/kde-l10n-pt_BR-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="06b0c58f918017ea0892f927b6c5ed0897122f88">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-pt_BR-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-17</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
