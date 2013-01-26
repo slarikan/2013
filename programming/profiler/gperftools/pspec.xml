@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gperftools</Name>
+        <Homepage>http://code.google.com/p/google-perftools/</Homepage>
+        <Packager>
+            <Name>Pardus ANKA Admins</Name>
+            <Email>pisiciftligi@pardus-linux.org</Email>
+        </Packager>
+        <License>BSD</License>
+        <IsA>library</IsA>
+        <IsA>app:console</IsA>
+        <Summary>Google Performance Tools</Summary>
+        <Description>Perf Tools is a collection of a high-performance multi-threaded malloc() implementation, plus some pretty nifty performance analysis tools.</Description>
+        <Archive sha1sum="e3a65f71aee9270572f7aafa421858e39da1a9a8" type="targz">http://google-perftools.googlecode.com/files/google-perftools-1.7.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gv</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <!-- Do not bork bork after autoreconf-->
+            <Patch>google-perftools-1.5-antibork.diff</Patch>
+
+            <!-- malloc_hook_c.h has C++ style comment; fails to compile as C -->
+            <Patch level="1">google-perftools-1.7-broken-comment-style.patch</Patch>
+
+            <Patch level="1">docdir.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gperftools</Name>
+        <RuntimeDependencies>
+            <Dependency>libunwind</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc/gperftools/COPYING</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gperftools-devel</Name>
+        <IsA>library</IsA>
+        <Summary>Development headers for gperftools</Summary>
+        <Description>gperftools-devel provides development headers for gperftools.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">gperftools</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gperftools-docs</Name>
+        <IsA>data:doc</IsA>
+        <Summary>Documentation files for gperftools</Summary>
+        <Description>gperftools-docs provides documentation files for gperftools.</Description>
+        <RuntimeDependencies>
+            <Dependency release="current">gperftools</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/gperftools</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2011-02-20</Date>
+            <Version>1.7</Version>
+            <Comment>First release</Comment>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
+        </Update>
+    </History>
+</PISI>
