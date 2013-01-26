@@ -12,7 +12,7 @@
         <IsA>app:console</IsA>
         <Summary>Powerful free data recovery software</Summary>
         <Description>TestDisk is a multi-platform tool to check and undelete partitions; supports reiserfs, ntfs, fat32, ext2/3 and many others. Also includes PhotoRec to recover pictures from digital camera memory.</Description>
-        <Archive sha1sum="60b399bda5e1894da30c9ee8edec5053a09439ff" type="tarbz2">http://www.cgsecurity.org/testdisk-6.14-WIP.tar.bz2</Archive>
+        <Archive sha1sum="824311fa17335176160235b18b9773fb0b07869f" type="tarbz2">http://www.cgsecurity.org/testdisk-6.14-WIP.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>jpeg-devel</Dependency>
             <Dependency>ntfsprogs-devel</Dependency>
