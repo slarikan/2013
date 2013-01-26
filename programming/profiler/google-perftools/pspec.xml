@@ -2,8 +2,8 @@
 <!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>google-perftools</Name>
-        <Homepage>http://code.google.com/p/google-perftools/</Homepage>
+        <Name>gperftools</Name>
+        <Homepage>http://code.google.com/p/gperftools/</Homepage>
         <Packager>
             <Name>Pardus ANKA Admins</Name>
             <Email>pisiciftligi@pardus-linux.org</Email>
@@ -13,41 +13,41 @@
         <IsA>app:console</IsA>
         <Summary>Google Performance Tools</Summary>
         <Description>Perf Tools is a collection of a high-performance multi-threaded malloc() implementation, plus some pretty nifty performance analysis tools.</Description>
-        <Archive sha1sum="e3a65f71aee9270572f7aafa421858e39da1a9a8" type="targz">http://google-perftools.googlecode.com/files/google-perftools-1.7.tar.gz</Archive>
+        <Archive sha1sum="e3a65f71aee9270572f7aafa421858e39da1a9a8" type="targz">http://gperftools.googlecode.com/files/gperftools-1.7.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gv</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- Do not bork bork after autoreconf-->
-            <Patch>google-perftools-1.5-antibork.diff</Patch>
+            <Patch>gperftools-1.5-antibork.diff</Patch>
 
             <!-- malloc_hook_c.h has C++ style comment; fails to compile as C -->
-            <Patch level="1">google-perftools-1.7-broken-comment-style.patch</Patch>
+            <Patch level="1">gperftools-1.7-broken-comment-style.patch</Patch>
 
             <Patch level="1">docdir.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
-        <Name>google-perftools</Name>
+        <Name>gperftools</Name>
         <RuntimeDependencies>
             <Dependency>libunwind</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="doc">/usr/share/doc/google-perftools/COPYING</Path>
+            <Path fileType="doc">/usr/share/doc/gperftools/COPYING</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>google-perftools-devel</Name>
+        <Name>gperftools-devel</Name>
         <IsA>library</IsA>
-        <Summary>Development headers for google-perftools</Summary>
-        <Description>google-perftools-devel provides development headers for google-perftools.</Description>
+        <Summary>Development headers for gperftools</Summary>
+        <Description>gperftools-devel provides development headers for gperftools.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">google-perftools</Dependency>
+            <Dependency release="current">gperftools</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -56,15 +56,15 @@
     </Package>
 
     <Package>
-        <Name>google-perftools-docs</Name>
+        <Name>gperftools-docs</Name>
         <IsA>data:doc</IsA>
-        <Summary>Documentation files for google-perftools</Summary>
-        <Description>google-perftools-docs provides documentation files for google-perftools.</Description>
+        <Summary>Documentation files for gperftools</Summary>
+        <Description>gperftools-docs provides documentation files for gperftools.</Description>
         <RuntimeDependencies>
-            <Dependency release="current">google-perftools</Dependency>
+            <Dependency release="current">gperftools</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="doc">/usr/share/doc/google-perftools</Path>
+            <Path fileType="doc">/usr/share/doc/gperftools</Path>
         </Files>
     </Package>
 
