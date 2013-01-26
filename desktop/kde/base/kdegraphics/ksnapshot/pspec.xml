@@ -30,9 +30,6 @@
             <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdegraphics</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>

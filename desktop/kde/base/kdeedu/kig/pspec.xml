@@ -28,9 +28,6 @@
             <Dependency>libkdeedu</Dependency>    
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
