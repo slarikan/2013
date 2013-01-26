@@ -64,7 +64,6 @@
         <Name>ffmpeg</Name>
         <RuntimeDependencies>
             <Dependency>pulseaudio-libs</Dependency>
-            <Dependency>frei0r-plugins</Dependency>
             <Dependency>faac</Dependency>
             <Dependency>imlib2</Dependency>
             <Dependency>lame</Dependency>
