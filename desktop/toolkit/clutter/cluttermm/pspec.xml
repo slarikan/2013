@@ -33,7 +33,6 @@
             <Dependency>cairomm</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
             <Path fileType="library">/usr/lib</Path>
 	    <Path fileType="data">/usr/share/cluttermm-1.0/</Path>
 	    <Path fileType="doc">/usr/share/doc/cluttermm-1.0</Path>
@@ -41,6 +40,17 @@
 	    <Path fileType="data">/usr/share/devhelp</Path>
         </Files>
     </Package>
+
+    <Package>
+        <Name>cluttermm-devel</Name>
+	<Summary>cluttermm için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">cluttermm</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>   
 
     <History>
 	<Update release="2">
