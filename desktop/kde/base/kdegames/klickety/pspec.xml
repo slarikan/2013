@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A kind of solitary game</Summary>
         <Description>Klickety is a kind of solitary game that takes place on a Tetris-like board.</Description>
-        <Archive sha1sum="8906940c7a22c27cb6270f740f2bdb9395216b79" type="tarxz">mirrors://kde/unstable/4.9.97/src/klickety-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="bf6ce5673274e7364f30fd3ace08f46bced6b4f3" type="tarxz">mirrors://kde/unstable/4.9.98/src/klickety-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

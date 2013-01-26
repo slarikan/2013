@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>KDE bindings for korundum</Summary>
         <Description>KDE bindings for korundum</Description>
-        <Archive sha1sum="4d5ca7085411e1daa16c0519abc3566c73bf8507" type="tarxz">mirrors://kde/unstable/4.9.97/src/korundum-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="0725ec88324a921b307a896b077d95534340dd26" type="tarxz">mirrors://kde/unstable/4.9.98/src/korundum-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>ruby-qt-devel</Dependency>
             <Dependency>smoke-kde-devel</Dependency>
@@ -30,6 +30,9 @@
             <Dependency>ruby-qt</Dependency>
             <Dependency>smoke-kde</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdebindings</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -40,8 +43,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>3-D game based on Rubik's Cube</Summary>
         <Description>Kubrick is based on the famous Rubik's Cube™ puzzle, invented by Professor Erno Rubik in Hungary in the 1970s.</Description>
-        <Archive sha1sum="156f9e9cfeafca3903a1f62a28d2250a6174eb8d" type="tarxz">mirrors://kde/unstable/4.9.97/src/kubrick-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="dc49d03158fe324ea861ef9d60071a516feba2fe" type="tarxz">mirrors://kde/unstable/4.9.98/src/kubrick-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

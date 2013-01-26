@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Language independent library for Qt bindings</Summary>
         <Description>Language independent library for Qt bindings.</Description>
-        <Archive sha1sum="9f243293da679ca50a32f226070e471f52931761" type="tarxz">mirrors://kde/unstable/4.9.97/src/smokeqt-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="768672c453d651adc05c613626a61266a39e458a" type="tarxz">mirrors://kde/unstable/4.9.98/src/smokeqt-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qwt-devel</Dependency>
@@ -55,8 +55,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

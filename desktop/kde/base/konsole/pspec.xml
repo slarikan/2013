@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 terminal application</Summary>
         <Description>Konsole KDE4 terminal emulator.</Description>
-        <Archive type="tarxz" sha1sum="20b9cf988e877052a01072d36839438574d75d3c">mirrors://kde/unstable/4.9.97/src/konsole-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="9f02005d23db65839408be8a226fb5b86f7539b7">mirrors://kde/unstable/4.9.98/src/konsole-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-baseapps-devel</Dependency>
@@ -40,8 +40,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

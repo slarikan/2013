@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 Software Development Kit</Summary>
         <Description>kdesdk is a collection of applications and tools used by developers. In package, cervisia (CVS frontend), kompare (diff tool), lokalize (computer-aided translation system), umbrello (UML modeller and diagram tool), okteta (binary/hex editor) and kcachegrind (a browser for data produced by profiling tools e.g. cachegrind) applications are included.</Description>
-        <Archive sha1sum="1c75ae655e7c68ac557be5597f2159f2c4daa51b" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdesdk-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="c9a8845e3c949896df7ebeccf9bf30ca28fe2d00" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdesdk-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-baseapps-devel</Dependency>
@@ -61,8 +61,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

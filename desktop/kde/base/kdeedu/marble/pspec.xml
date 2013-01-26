@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Virtual globe and eorld atlas</Summary>
         <Description>Marble is a virtual globe and world atlas that you can use to learn more about the Earth.</Description>
-        <Archive sha1sum="f6a98355b51a3583d15d9cf01505c1d7e2cc7804" type="tarxz">mirrors://kde/unstable/4.9.97/src/marble-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="de7649064844e8d86f316937f9807d9c338b1d87" type="tarxz">mirrors://kde/unstable/4.9.98/src/marble-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>gpsd-devel</Dependency>
@@ -59,8 +59,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

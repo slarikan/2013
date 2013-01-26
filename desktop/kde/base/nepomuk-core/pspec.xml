@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Contains the central Nepomuk services like file indexing, file system monitoring, query, storage, client libraries</Summary>
         <Description>This package contains all the core libraries for nepomuk.</Description>
-        <Archive sha1sum="769e91df42af2456b0143718739738fd69101b79" type="tarxz">mirrors://kde/unstable/4.9.97/src/nepomuk-core-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="4f6ffd6ecaea5bde2c031b71168756793f957011" type="tarxz">mirrors://kde/unstable/4.9.98/src/nepomuk-core-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>soprano-devel</Dependency>
@@ -51,8 +51,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

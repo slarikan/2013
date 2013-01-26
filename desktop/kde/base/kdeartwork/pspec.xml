@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Additional KDE4 Artwork</Summary>
         <Description>kdeartwork contains additional KDE4 Artwork (window decorations, widget styles, wallpapers and the like).</Description>
-        <Archive sha1sum="91e3160d5773be57a1ecf12bacfffb128e6e13af" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdeartwork-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="ef0f7dd633586e7788693ca7246593ac5642c8bf" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdeartwork-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-workspace-devel</Dependency>
@@ -116,8 +116,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

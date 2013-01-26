@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A C++ interface around LibRaw library</Summary>
         <Description>libkdcraw is a C++ interface around LibRaw library used to decode RAW picture files.</Description>
-        <Archive sha1sum="b267c1b81da6e4089160a1ccf6847b7a6682c234" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkdcraw-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="36d7660543b799936d33badb626413eb3c7a6d9d" type="tarxz">mirrors://kde/unstable/4.9.98/src/libkdcraw-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>lcms-devel</Dependency>
@@ -50,8 +50,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

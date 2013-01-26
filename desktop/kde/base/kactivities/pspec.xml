@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>API for using and interacting with Activities</Summary>
         <Description>kactivities is an API for using and interacting with Activities as a consumer, application adding information to them or as an activity manager.</Description>
-        <Archive sha1sum="272f86d9d37cca411d74c4e567acb6b7875d016a" type="tarxz">mirrors://kde/unstable/4.9.97/src/kactivities-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="004cf0e7d90fd113f1334d337db1fccb90135139" type="tarxz">mirrors://kde/unstable/4.9.98/src/kactivities-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>qt-devel</Dependency>
@@ -53,8 +53,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

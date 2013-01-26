@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>KDE4 Workspace consists of what is the desktop of the KDE4</Summary>
         <Description>kde-workspace contains the main KDE components like kdm (the login manager of KDE), khotkeys (a hotkey daemon), klipper (a cut paste history utility), kmenuedit (the menu editor), krandrtray (resize and rotate X screens), krunner (a command run interface), ksysguard (a performance monitor), kwin (the window manager of KDE), kxkb (a utility to switch keyboard maps), plasma (the KDE desktop, panels and widgets workspace application) and systemsettings (the configuration editor).</Description>
-        <Archive sha1sum="3711825b3f14f69a0f6e76cda99998203c0ae382" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-workspace-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="e3fca63a2a37e78b5a6505af2329558284f9c5da" type="tarxz">mirrors://kde/unstable/4.9.98/src/kde-workspace-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-webkit-devel</Dependency>
             <Dependency>kdelibs-devel</Dependency>
@@ -69,7 +69,8 @@
             <!-- For klipper QRCode support -->
             <Dependency>prison-devel</Dependency>
         </BuildDependencies>
-        <Patches>
+ <Patches>
+           <Patch level="1">dsolinker_Anka.patch</Patch>   
             <!-- SuSE -->
             <!-- Those should be rebased
             <Patch>suse/plasma-new-default-panel.diff</Patch>
@@ -451,8 +452,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

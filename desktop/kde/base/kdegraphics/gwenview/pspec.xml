@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>An image viewer</Summary>
         <Description>Gwenview is an easy to use image viewer.</Description>
-        <Archive sha1sum="8b7f522b707db712c5d57bfce569ddcbba8251a1" type="tarxz">mirrors://kde/unstable/4.9.97/src/gwenview-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="4736f36c9ed7665fd18d240384c74d2718757497" type="tarxz">mirrors://kde/unstable/4.9.98/src/gwenview-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-baseapps-devel</Dependency>
@@ -50,8 +50,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

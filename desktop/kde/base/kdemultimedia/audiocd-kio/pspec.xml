@@ -13,12 +13,16 @@
         <IsA>library</IsA>
         <Summary>Multi-purpose KDE library for Audio CD operations</Summary>
         <Description>Multi-purpose KDE library for Audio CD operations.</Description>
-        <Archive sha1sum="b555865e7675c9413bff92dee9c2bd379fbf7b8a" type="tarxz">mirrors://kde/unstable/4.9.97/src/audiocd-kio-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="b26636c1b559fef01352a806d6eccb0ab9f301e6" type="tarxz">mirrors://kde/unstable/4.9.98/src/audiocd-kio-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkcddb</Dependency>
             <Dependency>libkcompactdisc</Dependency>
             <Dependency>lame-devel</Dependency>
+            <Dependency>flac-devel</Dependency>
+            <Dependency>libvorbis-devel</Dependency> 
+            <Dependency>libogg-devel</Dependency> 
+            <Dependency>cdparanoia-devel</Dependency>     
         </BuildDependencies>
     </Source>
 
@@ -44,8 +48,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

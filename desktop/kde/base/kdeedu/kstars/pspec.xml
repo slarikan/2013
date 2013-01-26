@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A desktop planetarium for KDE</Summary>
         <Description>KStars is a Desktop Planetarium for KDE. It provides an accurate graphical simulation of the night sky, from any location on Earth, at any date and time. The display includes up to 100 million stars, 13,000 deep-sky objects, all 8 planets, the Sun and Moon, and thousands of comets and asteroids.</Description>
-        <Archive sha1sum="2d71367fc5b19412fb06004fc3b6c100e2e675d7" type="tarxz">mirrors://kde/unstable/4.9.97/src/kstars-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="b2f3110bb0ba5c5bfb1ec7171baeaebe8bc461a7" type="tarxz">mirrors://kde/unstable/4.9.98/src/kstars-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -46,8 +46,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A letter order game</Summary>
         <Description>Kanagram is a game based on anagrams of words: the puzzle is solved when the letters of the scrambled word are put back in the correct order. There is no limit on either time taken, or the amount of attempts to solve the word.</Description>
-        <Archive sha1sum="0ee3d23879cd574b588be29dca9d820f3cbc3817" type="tarxz">mirrors://kde/unstable/4.9.97/src/kanagram-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="50a756a63d01b4216168fc6bed22b77fb8024ab8" type="tarxz">mirrors://kde/unstable/4.9.98/src/kanagram-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>
@@ -50,8 +50,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

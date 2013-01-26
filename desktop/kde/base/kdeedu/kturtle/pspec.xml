@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An educational programming environment</Summary>
         <Description>KTurtle is an educational programming environment that aims to make learning how to program as easily as possible. To achieve this KTurtle makes all programming tools available from the user interface. The programming language used is TurtleScript which allows its commands to be translated.</Description>
-        <Archive sha1sum="ffc3aff242c9525deff1f7f4177789cbd39ece85" type="tarxz">mirrors://kde/unstable/4.9.97/src/kturtle-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="3c9ce6101a04df6efc9d1596aea5592fae043e3d" type="tarxz">mirrors://kde/unstable/4.9.98/src/kturtle-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Naval Battle game</Summary>
         <Description>knavalbattle is a Battle Ship game for KDE. Ships are placed on a board which represents the sea. Players try to hit each others ships in turns without knowing where they are placed. The first player to destroy all ships wins the game.</Description>
-        <Archive sha1sum="63f0107740c76d78b4328e9a86f1065def7e74dc" type="tarxz">mirrors://kde/unstable/4.9.97/src/knavalbattle-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="e30a63065270e241ba4f7732fc5faa1644f83874" type="tarxz">mirrors://kde/unstable/4.9.98/src/knavalbattle-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

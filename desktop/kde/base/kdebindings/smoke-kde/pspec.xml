@@ -12,7 +12,7 @@
         <IsA>desktop.kde.base</IsA>
         <Summary>sLanguage independent library for KDE bindings.</Summary>
         <Description>Language independent library for KDE bindings</Description>
-        <Archive sha1sum="051e0c1228507c407581b248f38562bf0fb07ccf" type="tarxz">mirrors://kde/unstable/4.9.97/src/smokekde-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="d5cd85a9836cbb8abc35d20d5cf13535a01d2ea0" type="tarxz">mirrors://kde/unstable/4.9.98/src/smokekde-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>smoke-gen-devel</Dependency>
             <Dependency>smoke-qt-devel</Dependency>
@@ -53,7 +53,7 @@
     <History>
         <Update release="1">
             <Date>2012-01-06</Date>
-            <Version>4.9.97</Version>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

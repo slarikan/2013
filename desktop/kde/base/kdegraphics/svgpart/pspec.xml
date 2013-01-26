@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>SVG plugin for KDE</Summary>
         <Description>Svgpart (SVG KPart) is a KPart for viewing SVG files.</Description>
-        <Archive sha1sum="0136ea4026c6251fd83dc51cd60c1e56a22889ac" type="tarxz">mirrors://kde/unstable/4.9.97/src/svgpart-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="d3d76edd5a77edda0e22a4fa51176f4c64b6d60b" type="tarxz">mirrors://kde/unstable/4.9.98/src/svgpart-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -32,8 +32,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

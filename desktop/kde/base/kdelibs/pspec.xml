@@ -16,7 +16,7 @@
         <IsA>library</IsA>
         <Summary>KDE4 core libraries</Summary>
         <Description>Contains base KDE4 libraries needed by almost all KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="ebd5cf1dcae6f93d9e6983c61a26bb816d805c01">mirrors://kde/unstable/4.9.97/src/kdelibs-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="5ee02b6316664f3d33d8e510b2bb249de89b487a">mirrors://kde/unstable/4.9.98/src/kdelibs-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>qt-webkit-devel</Dependency>
@@ -185,7 +185,7 @@
     <History>
         <Update release="1">
             <Date>2012-01-06</Date>
-            <Version>4.9.97</Version>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

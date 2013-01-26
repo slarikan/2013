@@ -13,7 +13,7 @@
         <Summary>Various addons for KDE4 Plasma desktop</Summary>
         <Description>kdeplasma-addons package is a compilation of Plasma items (like Lancelot KDE menu, various plasmoids and Plasma themes) for KDE4.</Description>
         <!-- FIXME: Split this package, at least weather wallpaper plugin. It should depend on kdeartwork-wallpapers to work. TODO: Fix in 2011 -->
-        <Archive sha1sum="191f420981e2f5566d16b146b73bf31d5efd34b4" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdeplasma-addons-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="4ff05e540cda1d74023fc86dc18bbff3c651fa7d" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdeplasma-addons-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-webkit-devel</Dependency>
             <Dependency>kde-baseapps-devel</Dependency>
@@ -89,7 +89,7 @@
     <History>
         <Update release="1">
             <Date>2012-01-06</Date>
-            <Version>4.9.97</Version>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

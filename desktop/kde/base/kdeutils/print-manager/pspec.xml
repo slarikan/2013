@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A KDE tool for managing print jobs and printers</Summary>
         <Description>A KDE tool for managing print jobs and printers</Description>
-        <Archive sha1sum="92cdbaa5394492e23ac67547eb159124257b1fec" type="tarxz">mirrors://kde/unstable/4.9.97/src/print-manager-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="4a3d143b3d192efc747958b5d4fd214937005f4a" type="tarxz">mirrors://kde/unstable/4.9.98/src/print-manager-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>python-kde-devel</Dependency>
@@ -39,7 +39,7 @@
     <History>
         <Update release="1">
             <Date>2012-01-06</Date>
-            <Version>4.9.97</Version>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

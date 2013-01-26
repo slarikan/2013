@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A jigsaw puzzle game</Summary>
         <Description>Palapeli is a single-player jigsaw puzzle game. Unlike other games in that genre, you are not limited to aligning pieces on imaginary grids.</Description>
-        <Archive sha1sum="0dc5bc32469f9ae93acdcf11bc4a7e84bc43c62f" type="tarxz">mirrors://kde/unstable/4.9.97/src/palapeli-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="b5e1dc72b2fbf4913bcafd6332166c0fa1410c4f" type="tarxz">mirrors://kde/unstable/4.9.98/src/palapeli-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -38,8 +38,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

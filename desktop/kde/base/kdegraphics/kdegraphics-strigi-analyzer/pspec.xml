@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Strigi analyzers for various graphic types</Summary>
         <Description>Strigi analyzers for various graphic types.</Description>
-        <Archive sha1sum="b8821daa70f4218a27051b9dff6223a0a7e3a659" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdegraphics-strigi-analyzer-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="f57b0edd2f5b52bb8e7d5f55d603d34f06158489" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdegraphics-strigi-analyzer-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libstreamanalyzer-devel</Dependency>
@@ -27,6 +27,9 @@
             <Dependency>libstreamanalyzer</Dependency>
             <Dependency>tiff</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegraphics</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -36,8 +39,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

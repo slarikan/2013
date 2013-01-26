@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A screen capture utility</Summary>
         <Description>ksnapshot is a screen capture utility.</Description>
-        <Archive sha1sum="8081da8c2f321841e4dd5390b89cf8933bc2ca89" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksnapshot-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="4fccff95c091bec925fc3429e86f6a0d8ada0127" type="tarxz">mirrors://kde/unstable/4.9.98/src/ksnapshot-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkipi-devel</Dependency>
@@ -30,6 +30,9 @@
             <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdegraphics</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -41,8 +44,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>library</IsA>
         <Summary>KDE4 network applications</Summary>
         <Description>Contains KDE4 network applications. In package, kget (downloader manager), kopete (chat client), kppp (dialer and front end for pppd), krdc (a client for Desktop Sharing and other VNC servers), krfb (Desktop Sharing server, allow others to access your desktop via VNC) applications are included.</Description>
-        <Archive sha1sum="01fbf3b8403a2dda158afa27dfd086f95a792916" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdenetwork-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="18b5a408998980f27cfe2522ea03afb765230965" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdenetwork-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-workspace</Dependency>
@@ -114,8 +114,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

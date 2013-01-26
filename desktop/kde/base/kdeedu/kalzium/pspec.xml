@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An application presenting the periodic table of elements</Summary>
         <Description>Kalzium is an application which will show you some information about the periodic system of the elements. Therefore you could use it as an information database.</Description>
-        <Archive sha1sum="d5126f7b1301b85eb37adfe3cf53807e3ff3a568" type="tarxz">mirrors://kde/unstable/4.9.97/src/kalzium-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="4a28a453b667d607cde60f8be1a226f6403294bb" type="tarxz">mirrors://kde/unstable/4.9.98/src/kalzium-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -65,8 +65,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

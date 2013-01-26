@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>ffmpeg based thumbnailer for KDE</Summary>
         <Description>FFmpeg-based thumbnail creator for video files</Description>
-        <Archive sha1sum="fdde5060938235983b3e0e7737acd80fa3ea406d" type="tarxz">mirrors://kde/unstable/4.9.97/src/ffmpegthumbs-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="41903821ea8583174a3f35e8d28259bef30e8abd" type="tarxz">mirrors://kde/unstable/4.9.98/src/ffmpegthumbs-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>ffmpeg-devel</Dependency>
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

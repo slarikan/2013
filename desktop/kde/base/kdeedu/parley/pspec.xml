@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Parley is a program to help you memorize things.</Summary>
         <Description>Parley is a program to help you memorize things. Parley supports many language specific features but can be used for other learning tasks just as well. It uses the spaced repetition learning method, also known as flash cards. Creating new vocabulary collections with Parley is easy, but of course it is even better if you can use some of our premade files. Have a look at the KDE-Files.org page or use the "Download New Collections" feature directly in Parley.</Description>
-        <Archive sha1sum="5ae76ef7fe56c3155bb5f794e06b9b429ce6e4e5" type="tarxz">mirrors://kde/unstable/4.9.97/src/parley-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="c6791057e2c8127f30dbbf064897dd74a4faa61a" type="tarxz">mirrors://kde/unstable/4.9.98/src/parley-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>
@@ -45,8 +45,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

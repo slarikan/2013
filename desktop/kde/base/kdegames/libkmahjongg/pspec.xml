@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Library used for loading and rendering of Mahjongg tilesets</Summary>
         <Description>Library used for loading and rendering of Mahjongg tilesets.</Description>
-        <Archive sha1sum="5f2f252b7928e87a2b5f1c807ea703b74e5b5070" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkmahjongg-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="8258efe1ae49f54d1a9464c040a5e07ed02bec0f" type="tarxz">mirrors://kde/unstable/4.9.98/src/libkmahjongg-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -45,8 +45,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

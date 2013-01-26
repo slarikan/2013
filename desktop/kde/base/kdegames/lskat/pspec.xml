@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A card game</Summary>
         <Description>Lieutnant Skat is a fun and engaging card game for two players, where the second player is either live opponent, or built in artificial intelligence.</Description>
-        <Archive sha1sum="b16601bc7e338c7e7bf9cff61e9b38a2fabd2dbe" type="tarxz">mirrors://kde/unstable/4.9.97/src/lskat-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="491d056ff8c1cb4dbe787fac5b3bcc4040581ffe" type="tarxz">mirrors://kde/unstable/4.9.98/src/lskat-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

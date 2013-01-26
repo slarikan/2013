@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A graph calculator</Summary>
         <Description>KAlgebra is a fully featured calculator that lets you plot different types of 2D and 3D functions and to calculate easy and not so easy calculations, such as addition, trigonometric functions or derivatives.</Description>
-        <Archive sha1sum="08fd23a65365f987340883b4afd05415ccff0c6c" type="tarxz">mirrors://kde/unstable/4.9.97/src/kalgebra-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="2a64b29c602014572af79f4193f61c51dec7fcff" type="tarxz">mirrors://kde/unstable/4.9.98/src/kalgebra-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -42,8 +42,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A simple ball dodging game</Summary>
         <Description>Kollision is ball dodging game. Click on the empty field to start a game: a blue ball immediately replaces your mouse cursor, and a number of red balls start to fade into the field.</Description>
-        <Archive sha1sum="5e872740909cec0c7ab39f7c11e84e1db2fae115" type="tarxz">mirrors://kde/unstable/4.9.97/src/kollision-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="52fe88ff682466ae7703d3ffbfd58f9b61925715" type="tarxz">mirrors://kde/unstable/4.9.98/src/kollision-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

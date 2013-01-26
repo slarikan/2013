@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Webcam support for KDE</Summary>
         <Description>Kamera is a plugin for KDE to use webcam.</Description>
-        <Archive sha1sum="f42e3fd0df8f96c030f214ffd7eb9433c91763f0" type="tarxz">mirrors://kde/unstable/4.9.97/src/kamera-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="35aee894c13dd5c764fb8961688b9e798989f088" type="tarxz">mirrors://kde/unstable/4.9.98/src/kamera-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libgphoto2-devel</Dependency>
@@ -34,8 +34,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Shared libraries for KDE games</Summary>
         <Description>Shared libraries for KDE games</Description>
-        <Archive sha1sum="3a56a5216a5c6610b620107093197cde4be4df88" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkdegames-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="bbebdafd5d1dafddf8cf354cb757ba186716ecc1" type="tarxz">mirrors://kde/unstable/4.9.98/src/libkdegames-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -47,8 +47,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

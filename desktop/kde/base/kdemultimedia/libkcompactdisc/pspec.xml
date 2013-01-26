@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A CD drive interface for the KDE Project</Summary>
         <Description>KA CD drive interface for the KDE Project.</Description>
-        <Archive sha1sum="061a596a4a1bb205e83cd2c9f371ea79a19eb283" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkcompactdisc-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="2cf2d94139f6c852d8abedcfd89fa4009207fe31" type="tarxz">mirrors://kde/unstable/4.9.98/src/libkcompactdisc-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>musicbrainz-devel</Dependency>
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

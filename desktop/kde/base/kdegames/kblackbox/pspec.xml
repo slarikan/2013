@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Blackbox logic game</Summary>
         <Description>KBlackBox is a game of hide and seek played on a grid of boxes. The computer has hidden several balls within this box. By shooting beams into the box and observing where they emerge it is possible to deduce the positions of the hidden balls.</Description>
-        <Archive sha1sum="dd6f5a610b069c7da766ef12d9bc9543e5b60ddb" type="tarxz">mirrors://kde/unstable/4.9.97/src/kblackbox-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="351c6e0041c432a9bb156a6f790200fafa73f000" type="tarxz">mirrors://kde/unstable/4.9.98/src/kblackbox-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KGeography is a geography learning tool</Summary>
         <Description>KGeography is a geography learning tool, which allows you to learn about the political divisions of some countries (divisions, capitals of those divisions and their associated flags if there are some).</Description>
-        <Archive sha1sum="b4e48c9551f29b53d620e81527cbf6a6e8516435" type="tarxz">mirrors://kde/unstable/4.9.97/src/kgeography-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="1b37a2874a172e1fecbc46e7b248a4603ed31176" type="tarxz">mirrors://kde/unstable/4.9.98/src/kgeography-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -26,6 +26,9 @@
             <Dependency>kdelibs</Dependency>
             <Dependency>libkdeedu</Dependency>    
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdeedu</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -38,8 +41,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A powerful way to master new vocabularies</Summary>
         <Description>KWordQuiz is a tool that gives you a powerful way to master new vocabularies. It may be a language or any other kind of terminology.</Description>
-        <Archive sha1sum="254471c423924fbec75c57b514947298ee322cfa" type="tarxz">mirrors://kde/unstable/4.9.97/src/kwordquiz-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="ba852a1edf088ad4d81cddf79c890de370d3418e" type="tarxz">mirrors://kde/unstable/4.9.98/src/kwordquiz-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>
@@ -40,8 +40,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

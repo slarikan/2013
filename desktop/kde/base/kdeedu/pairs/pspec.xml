@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A pairs matching game.</Summary>
         <Description>Pairs is a pairs-matching game for kids on KDE4</Description>
-        <Archive sha1sum="a8e8def433f5a0e6d84491ced9f8c2c93b6f0559" type="tarxz">http://download.kde.org/unstable/4.9.97/src/pairs-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="a4c411eb2b0deb7214cf39b01f257e472e1519a2" type="tarxz">http://download.kde.org/unstable/4.9.98/src/pairs-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>
@@ -43,7 +43,7 @@
     <History>
         <Update release="1">
             <Date>2012-12-12</Date>
-            <Version>4.9.97</Version>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Idris Kalp</Name>
             <Email>yaralikurt15@hotmail.com</Email>

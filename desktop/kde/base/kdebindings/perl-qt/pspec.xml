@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Perl bindings for Qt4</Summary>
         <Description>perl-qt is the Perl bindings for Qt4.</Description>
-        <Archive sha1sum="3b8b265a277d535be9c0ef91d74431e28d850ca2" type="tarxz">mirrors://kde/unstable/4.9.97/src/perlqt-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="7f8ba40f848f54fd0b55c99c01a87608c1050a0e" type="tarxz">mirrors://kde/unstable/4.9.98/src/perlqt-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
             <Dependency>smoke-gen-devel</Dependency>
@@ -50,8 +50,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Run for your life</Summary>
         <Description>Killbots is a simple game of evading killer robots. Who created the robots and why they have been programmed to destroy, no one knows. All that is known is that the robots are numerous and their sole objective is to destroy you.</Description>
-        <Archive sha1sum="526be3e244b78fe638b6ccf9d7031c7763a8ebc7" type="tarxz">mirrors://kde/unstable/4.9.97/src/killbots-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="5a4ee7c1ba3a626078886533b4029568163a9509" type="tarxz">mirrors://kde/unstable/4.9.98/src/killbots-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History>     
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

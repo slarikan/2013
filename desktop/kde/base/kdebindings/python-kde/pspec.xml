@@ -11,7 +11,7 @@
         <License>GPLv2</License>
         <Summary>Python bindings for KDE4</Summary>
         <Description>python-kde is the Python bindings for KDE4.</Description>
-        <Archive sha1sum="3e8aef059de39184be505718094e67aa0d84273e" type="tarxz">mirrors://kde/unstable/4.9.97/src/pykde4-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="0d3558e6fb79f7be8b5c07dabc891f5a1d58fb78" type="tarxz">mirrors://kde/unstable/4.9.98/src/pykde4-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kdepimlibs-devel</Dependency>
@@ -41,6 +41,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/pykdeuic4-2.7</Path>    
             <Path fileType="library">/usr/lib/kde4</Path>
             <Path fileType="library">/usr/lib/python*</Path>
             <Path fileType="data">/usr/share/kde4</Path>
@@ -73,8 +74,8 @@
 
     <History>
         <Update release="1">
-            <Date>2012-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

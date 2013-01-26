@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>A collection of plugins to handle mobipocket files</Summary>
         <Description>kdegraphics-mobipocket contains a collection of plugins to handle mobipocket files.</Description>
-        <Archive sha1sum="f8cc915c3009feaf4ad07387e687878e7e61e6a1" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdegraphics-mobipocket-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="21a80569e5cbc29114665cdd08f71ac8322d2856" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdegraphics-mobipocket-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>okular-devel</Dependency>
@@ -39,8 +39,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

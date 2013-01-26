@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A screen magnifier</Summary>
         <Description>KMag is a small utility for Linux to magnify a part of the screen. KMag is very useful for people with visual disabilities and for those working in the fields of image analysis, web development etc.</Description>
-        <Archive sha1sum="be3bb005c30de339589081de0856a1d63e4184ce" type="tarxz">mirrors://kde/unstable/4.9.97/src/kmag-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="bbb81867ec312abc1a4cc231e2ef20ff81468f8a" type="tarxz">mirrors://kde/unstable/4.9.98/src/kmag-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

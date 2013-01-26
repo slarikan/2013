@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A touch typing tutor</Summary>
         <Description>KTouch is a program for learning to touch type. It provides you with text to train on and adjusts to different levels depending on how good you are. It also displays which key to press next and the correct finger to use. You learn typing with all fingers, step by step, without having to look down at the keyboard all the time to find your keys (which slows you down a lot). It is convenient for all ages and the perfect typing tutor for schools, universities and individuals.</Description>
-        <Archive sha1sum="2b3439c6cea0fe3a5c91b2b77ce507aa95ae02c2" type="tarxz">mirrors://kde/unstable/4.9.97/src/ktouch-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="1aae34a2539b40e0675804ce96616e6c4985b36a" type="tarxz">mirrors://kde/unstable/4.9.98/src/ktouch-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -42,8 +42,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

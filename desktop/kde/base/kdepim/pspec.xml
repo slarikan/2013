@@ -14,7 +14,7 @@
         <IsA>library</IsA>
         <Summary>KDE4 PIM (Personal Information Managemant) applications</Summary>
         <Description>Contains KDE4 Personal Information Management applications. In package KMail (e-mail client), KNode (newsreader), and KOrganizer (organize journals, events, appointments), akregator (RSS feed aggregator), knotes (sticky notes for desktop) applications are included.</Description>
-        <Archive sha1sum="830065e06b077f7c97d15aad9a2495f4d6cb46a2" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdepim-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="06fecc555fee40ccc22fff54400d0b40e248e328" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdepim-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>nepomuk-widgets-devel</Dependency>  
             <Dependency>kdelibs-devel</Dependency>
@@ -93,8 +93,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

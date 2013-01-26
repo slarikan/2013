@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KSCD: KDE Audio Player</Summary>
         <Description>KSCD: KDE Audio Player</Description>
-        <Archive sha1sum="a18dbe17ddf97902476c45180fd4a106b2ab0a29" type="tarxz">mirrors://kde/unstable/4.9.97/src/kscd-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="c50993d57416d00b54a7a68cc8daf214c0cfbcef" type="tarxz">mirrors://kde/unstable/4.9.98/src/kscd-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>
@@ -43,8 +43,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

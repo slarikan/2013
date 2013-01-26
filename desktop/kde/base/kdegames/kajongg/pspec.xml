@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Mah Jongg</Summary>
         <Description>Kajongg is the ancient Chinese board game for 4 players. Kajongg can be used in two different ways: Scoring a manual game where you play as always and use Kajongg for the computation of scores and for bookkeeping.</Description>
-        <Archive sha1sum="7083f4ef418637cd53ff4b18a368f912d0da3c49" type="tarxz">mirrors://kde/unstable/4.9.97/src/kajongg-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="9c278ab73e72626f5e168c6c1e7dc307d0ac804d" type="tarxz">mirrors://kde/unstable/4.9.98/src/kajongg-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>libkmahjongg-devel</Dependency>
@@ -40,8 +40,8 @@
 
     <History> 
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

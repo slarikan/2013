@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 Administration Applications</Summary>
         <Description>kdeadmin contains administration related applications of KDE4. In this package, kcron (Task Scheduler module in System Settings), ksystemlog (system log viewer) and system-config-printer-kde (printer configuration application) applications are included.</Description>
-        <Archive sha1sum="61dcc48413009c2d2e1706793de1dded3915840c" type="tarxz">mirrors://kde/unstable/4.9.97/src/kdeadmin-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="eb42c73d2230c0046b0eec997855a06c124987b1" type="tarxz">mirrors://kde/unstable/4.9.98/src/kdeadmin-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kdepimlibs-devel</Dependency>
@@ -53,8 +53,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

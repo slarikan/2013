@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Common plugin infrastructure for KDE image applications</Summary>
         <Description>Kipi (KDE Image Plugin Interface) is an effort to develop a common plugin structure (for Digikam, Gwenview, etc.). Its aim is to share image plugins among graphic applications.</Description>
-        <Archive sha1sum="f1ee4515a3d91168d5fb57330e8d7eb5103be1ae" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkipi-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="f5e7b1a7f001d36496b1e69bab61b7332e882acf" type="tarxz">mirrors://kde/unstable/4.9.98/src/libkipi-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -45,8 +45,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

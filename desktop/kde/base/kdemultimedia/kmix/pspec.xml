@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KMix: KDE Digital Mixer</Summary>
         <Description>KMix: KDE Digital Mixer</Description>
-        <Archive sha1sum="41bb143a3394b6dd4cc259e95f9087b3819769e0" type="tarxz">mirrors://kde/unstable/4.9.97/src/kmix-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="6488e6ac7b2fbd4cad2a5b5efc0bd71a308ca5e8" type="tarxz">mirrors://kde/unstable/4.9.98/src/kmix-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>
@@ -37,8 +37,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

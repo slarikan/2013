@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>A set of wallpapers for KDE</Summary>
         <Description>kde-wallpapers provides a set of wallpapers for KDE.</Description>
-        <Archive sha1sum="ccdf41a51bfc2e45f6ddd6cfefb2909d51c1aacb" type="tarxz">mirrors://kde/unstable/4.9.97/src/kde-wallpapers-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="2f86466c742a1cae0567fae95fd41cd129b8b733" type="tarxz">mirrors://kde/unstable/4.9.98/src/kde-wallpapers-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -31,8 +31,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

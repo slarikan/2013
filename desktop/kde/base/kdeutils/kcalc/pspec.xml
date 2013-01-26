@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A scientific calculator</Summary>
         <Description>KCalc is a calculator which offers many more mathematical functions than meet the eye on a first glance.</Description>
-        <Archive sha1sum="8c788adb809970464f8824865194da4cceea817b" type="tarxz">mirrors://kde/unstable/4.9.97/src/kcalc-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="3b3e73c25046db2c899fa0a3fb10293f82ff8af5" type="tarxz">mirrors://kde/unstable/4.9.98/src/kcalc-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>gmp-devel</Dependency>
@@ -38,8 +38,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

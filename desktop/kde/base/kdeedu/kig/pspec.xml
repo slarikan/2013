@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An interactive geometry application</Summary>
         <Description>Kig is an application for interactive geometry.</Description>
-        <Archive sha1sum="dd3fa6fdb41e995a534a0efd7f884f9258a98e4a" type="tarxz">mirrors://kde/unstable/4.9.97/src/kig-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="13bb31e22634677000bc451bb205158a33b25fae" type="tarxz">mirrors://kde/unstable/4.9.98/src/kig-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -28,6 +28,9 @@
             <Dependency>libkdeedu</Dependency>    
             <Dependency>boost</Dependency>
         </RuntimeDependencies>
+        <Replaces>
+            <Package>kdeedu</Package>
+        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -41,8 +44,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A simple color chooser application</Summary>
         <Description>KColorChooser is a simple color chooser application.</Description>
-        <Archive sha1sum="07e3145508697c6037a9f48c3db8ef48e160ebc9" type="tarxz">mirrors://kde/unstable/4.9.97/src/kcolorchooser-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="2d24b4ac68804524272c00c1e9edcc21135bd7b3" type="tarxz">mirrors://kde/unstable/4.9.98/src/kcolorchooser-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -33,8 +33,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

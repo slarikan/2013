@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Sokoban like logic game</Summary>
         <Description>KAtomic is both fun and educational game built around molecular geometry.</Description>
-        <Archive sha1sum="cc271ac2906db1f37cf95420ade5f1eb253fcc86" type="tarxz">mirrors://kde/unstable/4.9.97/src/katomic-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="77a414f2f04ef4f58bc5c5cbea82c3bd9f6db022" type="tarxz">mirrors://kde/unstable/4.9.98/src/katomic-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

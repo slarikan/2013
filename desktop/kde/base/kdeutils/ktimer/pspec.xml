@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A countdown launcher</Summary>
         <Description>KTimer is a little tool to execute programs after some time. It allows you to enter several tasks and to set a timer for each of them. The timers for each task can be started, stopped, changed, or looped.</Description>
-        <Archive sha1sum="71c689bc76d341d7f80be2f9b18be00ac6e3be76" type="tarxz">mirrors://kde/unstable/4.9.97/src/ktimer-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="fa2e4054d66327b4609346d204dd9361171e9b17" type="tarxz">mirrors://kde/unstable/4.9.98/src/ktimer-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -34,8 +34,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Five in a row board game</Summary>
         <Description>Bovo is a Gomoku like game for two players, where the opponents alternate in placing their respective pictogram on the game board..</Description>
-        <Archive sha1sum="22f8672c5672a7aaa680e6708f63187f6e3d5c78" type="tarxz">mirrors://kde/unstable/4.9.97/src/bovo-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="43d384092785312db6c40b3d2feb7990eac41220" type="tarxz">mirrors://kde/unstable/4.9.98/src/bovo-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libkdegames-devel</Dependency>
             <Dependency>kde-runtime-devel</Dependency>    
@@ -36,8 +36,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

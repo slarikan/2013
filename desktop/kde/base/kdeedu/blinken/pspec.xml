@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>A memory enhancement game</Summary>
         <Description>Blinken is the KDE version of the well-known game Simon Says. Follow the pattern of sounds and lights as long as you can! Press the start game button to begin. Watch the computer and copy the pattern it makes. Complete the sequence in the right order to win.</Description>
-        <Archive sha1sum="099c55ac93f1955dcefeda162cd751a46a67acdd" type="tarxz">mirrors://kde/unstable/4.9.97/src/blinken-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="ec0bb1d0ce14f5962d9683fca0b9eb0c4bc10657" type="tarxz">mirrors://kde/unstable/4.9.98/src/blinken-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
             <Dependency>libkdeedu-devel</Dependency>    
@@ -40,8 +40,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

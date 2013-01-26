@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>An archiving tool</Summary>
         <Description>Ark is a program for managing various archive formats within the KDE environment.</Description>
-        <Archive sha1sum="dfc1958da94310f0964e48b03d38216b8a5fe821" type="tarxz">mirrors://kde/unstable/4.9.97/src/ark-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="36d266b03475b5264cd2fed0d45dd037e73316ca" type="tarxz">mirrors://kde/unstable/4.9.98/src/ark-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kde-workspace</Dependency>
             <Dependency>kde-baseapps</Dependency>
@@ -50,8 +50,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

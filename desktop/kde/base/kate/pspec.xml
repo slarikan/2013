@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 text editor</Summary>
         <Description>Kate is a multi-document, multi-view text editor for KDE. It features stuff like codefolding, syntaxhighlighting, dynamic word wrap, an embedded console, an extensive plugin interface and some prelimentary scripting support.</Description>
-        <Archive type="tarxz" sha1sum="d0577bef64b09eadd4792c4371c127c7c4db5fff">mirrors://kde/unstable/4.9.97/src/kate-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="906280b4c88bcd6ee97c95a5cf457f0edaf4f4f9">mirrors://kde/unstable/4.9.98/src/kate-4.9.98.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
@@ -74,8 +74,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
