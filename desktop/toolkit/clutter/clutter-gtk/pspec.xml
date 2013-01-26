@@ -18,12 +18,6 @@
             <Dependency>gtk3-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
-        <!--
-        <Patches>
-            <Patch level="1">clutter-gtk-0.10.2-new-gobject-introspection.patch</Patch>
-            <Patch level="1">headers.patch</Patch>
-        </Patches>
-        -->
     </Source>
 
     <Package>
