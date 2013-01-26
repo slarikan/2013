@@ -10,8 +10,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "clutter-gtk-1.4.0"
-
 def setup():
     # guess we should update to new autoconf
     shelltools.export("HOME", "%s" %get.workDIR())
