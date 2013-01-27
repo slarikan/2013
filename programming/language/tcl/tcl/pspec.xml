@@ -12,9 +12,8 @@
         <IsA>app:console</IsA>
         <Summary>Tcl programming language</Summary>
         <Description>Tcl provides a powerful platform for creating integration applications that tie together diverse applications, protocols, devices, and frameworks.</Description>
-        <Archive sha1sum="0ea293d27b1368cb5865e552ece348d02ff55adc" type="targz">mirrors://sourceforge/tcl/tcl8.5.12-src.tar.gz</Archive>
+        <Archive sha1sum="fc57fc08ab113740a702bb67d4f350f8ec85ef58" type="targz">mirrors://sourceforge/tcl/tcl8.6.0-src.tar.gz</Archive>
         <Patches>
-            <Patch level="1">thread_storage_init.patch</Patch>
             <Patch level="1">tclm4_soname.patch</Patch>
         </Patches>
     </Source>
@@ -45,6 +44,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-01-26</Date>
+            <Version>8.6.0</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
+        </Update>
        <Update release="1">
             <Date>2012-09-15</Date>
             <Version>8.5.12</Version>
