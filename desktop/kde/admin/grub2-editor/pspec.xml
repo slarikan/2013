@@ -14,7 +14,7 @@
         <Description>Smoothly integrated in KDE System Settings, it is the central place for managing your GRUB2 configuration. Supports many GRUB2 configuration options, most notably.</Description>
         <Archive sha1sum="01b389d23d4ec2733ed78b859a4e1d27c4530c68" type="targz">mirrors://sourceforge/project/kcm-grub2/0.5.8/kcm-grub2-0.5.8.tar.gz</Archive>
         <BuildDependencies>
-<!--             <Dependency></Dependency> -->
+            <Dependency>imagemagick-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -22,7 +22,7 @@
         <Name>grub2-editor</Name>
         <Icon>grub2-editor</Icon>
         <RuntimeDependencies>
-<!--             <Dependency></Dependency> -->
+            <Dependency>imagemagick</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
