@@ -7,6 +7,6 @@
 
     <Package>
         <Name>openimageio-devel</Name>
-        <Summary xml:lang="tr">libbluedevil için geliştirme başlıkları</Summary>
+        <Summary xml:lang="tr">openimageio için geliştirme başlıkları</Summary>
     </Package>
 </PISI>
