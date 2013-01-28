@@ -47,10 +47,10 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2012-11-23</Date>
             <Version>3.4.3</Version>
-            <Comment>ilk Sürüm</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

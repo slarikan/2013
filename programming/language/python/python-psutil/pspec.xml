@@ -27,26 +27,9 @@
         <Update release="1">
             <Date>2012-11-16</Date>
             <Version>0.6.1</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-07-12</Date>
-            <Version>0.3.0</Version>
-            <Comment>
-                - Version bump.
-                - Here are some enhancements that are made in this release: disk usage, mounted disk partitions, system per-cpu percentage utilization and times, per-process terminal, physical and virtual memory usage including percentage.
-            </Comment>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-22</Date>
-            <Version>0.2.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -14,16 +14,12 @@ from pisi.actionsapi import get
 
 def setup():
     cflags = "%s -fPIC" % get.CFLAGS()
-    options = "--disable-static"
-
-    if get.buildTYPE() == "emul32":
-        cflags += " -m32"
-
     shelltools.export("CFLAGS", cflags)
-    autotools.configure(options)
+
+    autotools.configure("--disable-static")
 
 def build():
-    autotools.make("-j1")
+    autotools.make()
 
 def check():
     autotools.make("check")

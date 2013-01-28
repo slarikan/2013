@@ -13,19 +13,19 @@
         <IsA>app:gui</IsA>
         <Summary>Dragon Player: Simple video player for KDE 4</Summary>
         <Description>A multimedia player where the focus is on simplicity, instead of.</Description>
-        <Archive sha1sum="3d55ed0cd2a2ddd32a359b570c46f0356d565d68" type="tarxz">mirrors://kde/unstable/4.9.97/src/dragon-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="db6a7ec21f8edf93e27744d8ae0409365cc8bec1" type="tarxz">mirrors://kde/unstable/4.9.98/src/dragon-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>dragon</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kde-runtime</Dependency>
+            <Dependency>phonon</Dependency>
             <Dependency>xine-lib</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -37,17 +37,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
         <Update release="1">
-            <Date>2012-12-23</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      

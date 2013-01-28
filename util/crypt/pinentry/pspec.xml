@@ -14,7 +14,7 @@
         <Description>Pinentry is a collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol as described by the aegypten project.</Description>
         <Archive sha1sum="eeee9e80ea02f63bdac1cb03eb1785ab2cd57f90" type="tarbz2">ftp://ftp.gnupg.org/gcrypt/pinentry/pinentry-0.8.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.2">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
         </BuildDependencies>
@@ -71,103 +71,12 @@
     </Package>
 
     <History>
-        <Update release="14">
+        <Update release="1">
             <Date>2012-10-04</Date>
             <Version>0.8.2</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-0"@hotmail.it</Email>
-        </Update>
-        <Update release="13">
-            <Date>2010-10-12</Date>
-            <Version>0.8.0</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2010-08-24</Date>
-            <Version>0.8.0</Version>
-            <Comment>Version bump to 0.8.0</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-01-07</Date>
-            <Version>0.7.6</Version>
-            <Comment>Fix wrapper</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-01-05</Date>
-            <Version>0.7.6</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-11-05</Date>
-            <Version>0.7.5</Version>
-            <Comment>qt dep changed to qt3 for corporate repo.</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-04-04</Date>
-            <Version>0.7.5</Version>
-            <Comment>Version bump</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-01-16</Date>
-            <Version>0.7.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2007-10-25</Date>
-            <Version>0.7.3</Version>
-            <Comment>Fix various UTF-8 problems</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-07-09</Date>
-            <Version>0.7.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-07-06</Date>
-            <Version>0.7.2</Version>
-            <Comment>Fallback to curses gui, if no X session present.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-09-26</Date>
-            <Version>0.7.2</Version>
-            <Comment>Pinentry-qt patches added</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-05-16</Date>
-            <Version>0.7.2</Version>
-            <Comment>missing libcap dep. added</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-12-02</Date>
-            <Version>0.7.2</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

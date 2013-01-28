@@ -16,7 +16,7 @@ pref("browser.display.show_image_placeholders", false);
 pref("browser.display.use_document_fonts", 1);
 pref("browser.link.open_external", 3);
 pref("browser.startup.homepage_override.mstone", "ignore");
-pref("browser.startup.page", 3);
+pref("browser.startup.page", 1);
 pref("browser.startup.homepage", "chrome://browserconfig.properties");
 pref("browser.tabs.autoHide", false);
 pref("browser.shell.checkDefaultBrowser", false);

@@ -5,19 +5,15 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
-#from pisi.actionsapi import pisitools
-
-# You can use these as variables, they will replace GUI values before build.
-# Package Name : libcmis
-# Version : 0.2.3
-# Summary : C++ client library for the CMIS interface
-
-# If the project that you are tying to compile is in a sub directory in the 
-# source archive, than you can define working directory. For example; 
-# WorkDir="libcmis-"+ get.srcVERSION() +"/sub_project_dir/"
+from pisi.actionsapi import pisitools
 
 def setup():
-    autotools.configure("--disable-werror --enable-static --enable-client")
+    autotools.configure("--disable-werror \
+			 --disable-static \
+			 --with-man=no \
+			 --program-suffix=.pl \
+			 --docdir=/usr/share/doc \
+			 --disable-tests ")
 
 def build():
     autotools.make()
@@ -25,8 +21,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-# Take a look at the source folder for these file as documentation.
-#    pisitools.dodoc("AUTHORS", "BUGS", "ChangeLog", "COPYING", "README")
-# If there is no install rule for a runnable binary, you can 
-# install it to binary directory.
-#    pisitools.dobin("libcmis")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "NEWS", "README")

@@ -66,42 +66,12 @@
    </Package>
 
    <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-06-28</Date>
             <Version>2.4.3</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>
-        <Update release="3">
-            <Date>2011-08-08</Date>
-            <Version>2.4.2</Version>
-            <Comment>Version bump:
-                - view_save(): use correct playlist filename
-                - id3: recognize TP2 frame as albumartist
-                - fix compile error for new versions of ffmpeg
-                - id3: fix parsing xing for mp3s with CRC protection
-                - fix relative path handling in playlists
-                - Map unicode punctation/quotation characters to ASCII ones
-                - Fix segfault caused by too late initialization of UI
-                - Update RoarAudio output plugin
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-06-28</Date>
-            <Version>2.4.1</Version>
-            <Comment>Version bump and make the package ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-       <Update release="1">
-            <Date>2008-09-09</Date>
-            <Version>2.2.0</Version>
-            <Comment>First Release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
-       </Update>
     </History>
 </PISI>

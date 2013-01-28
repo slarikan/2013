@@ -14,14 +14,14 @@
         <Description>perl-Internals module allows to write-protect and write-enable Perl variables, objects and data structures.</Description>
         <Archive sha1sum="b3c0567f00fee3a72ecf52ea11ba3a362b407eb6" type="targz">mirrors://cpan/authors/id/S/ST/STBEY/Internals-1.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Internals</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,40 +31,12 @@
     </Package>
 
     <History>
-        <Update release="6">
-            <Date>2012-07-04</Date>
-            <Version>1.1</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-07-04</Date>
-            <Version>1.1</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-12-04</Date>
-            <Version>1.1</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-03</Date>
-            <Version>1.1</Version>
-            <Comment>Add perl dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2008-12-17</Date>
+            <Date>2012-07-04</Date>
             <Version>1.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

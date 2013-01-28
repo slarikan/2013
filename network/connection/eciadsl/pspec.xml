@@ -38,68 +38,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2011-01-26</Date>
             <Version>0.12</Version>
-            <Comment>Ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-04-16</Date>
-            <Version>0.12</Version>
-            <Comment>Moved from kernel/drivers to here as it's not a kernel module.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-06-23</Date>
-            <Version>0.12</Version>
-            <Comment>Fix compilation with 2.6.25</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2007-10-25</Date>
-            <Version>0.12</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-05-23</Date>
-            <Version>0.11</Version>
-            <Comment>Updated Service script.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2006-11-20</Date>
-            <Version>0.11</Version>
-            <Comment>Service script localized</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-10-09</Date>
-            <Version>0.11</Version>
-            <Comment>Service script updated.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-08-19</Date>
-            <Version>0.11</Version>
-            <Comment>Version bump and init comarization</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-01-04</Date>
-            <Version>0.10</Version>
-            <Comment>First release.</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

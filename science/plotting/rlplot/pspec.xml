@@ -14,7 +14,7 @@
         <Description>RLPlot is is a plotting program to create high quality graphs from data. Based on values stored in a spreadsheet several menus help you to create graphs of your choice. The Graphs are displayed as you get them (Wysiwyg).</Description>
         <Archive sha1sum="9f6d3ae9f3e023cf20134105d5460fb597be6cc8" type="targz">mirrors://sourceforge/rlplot/rlplot_1.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.3">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch level="1">Makefile-for-2011.patch</Patch>
@@ -26,7 +26,7 @@
     <Package>
         <Name>rlplot</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.3">qt</Dependency>
+            <Dependency>qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -41,54 +41,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-11-12</Date>
             <Version>1.5</Version>
-            <Comment>Yamalandı.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-01-07</Date>
-            <Version>1.5</Version>
-            <Comment>Added patches to build Pardus 2011</Comment>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-05-13</Date>
-            <Version>1.5</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-01-29</Date>
-            <Version>1.5</Version>
-            <Comment>Make the package ready for Pardus 2009</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-09-07</Date>
-            <Version>1.5</Version>
-            <Comment>Stable update and package takeover</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-02-25</Date>
-            <Version>1.3</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-01-11</Date>
-            <Version>1.2</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

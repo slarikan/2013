@@ -36,10 +36,9 @@
         <Update release="1">
             <Date>2011-08-09</Date>
             <Version>1.50</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Mehmet Özdemir</Name>
             <Email>mehmet@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>
-

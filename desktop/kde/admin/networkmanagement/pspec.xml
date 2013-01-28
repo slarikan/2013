@@ -20,9 +20,9 @@
             <AdditionalFile target="po/tr/solidcontrolnm09.po">solidcontrolnm09.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qt-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.9.3">kde-workspace-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -30,8 +30,8 @@
     <Package>
         <Name>networkmanagement</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.3">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.3">kdelibs</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>qt</Dependency>
             <Dependency>NetworkManager</Dependency>
         </RuntimeDependencies>
@@ -47,283 +47,12 @@
     </Package>
 
     <History>
-        <Update release="35">
+        <Update release="1">
             <Date>2013-01-08</Date>
             <Version>0.9.0.6</Version>
-            <Comment>Version bump to 0.9.0.6</Comment>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="34">
-            <Date>2012-12-01</Date>
-            <Version>0.9.0.5</Version>
-            <Comment>Version bump to 0.9.0.5</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="33">
-            <Date>2012-02-17</Date>
-            <Version>0.9.0.1</Version>
-            <Comment>Version bump to 0.9.0.1</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="32">
-            <Date>2012-02-17</Date>
-            <Version>0.9.0</Version>
-            <Comment>version bump</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="32">
-            <Date>2012-02-17</Date>
-            <Version>0.8.99</Version>
-            <Comment>new version.</Comment>
-            <Name>Ramazan Utku</Name>
-            <Email>ramazanutku@gmail.com</Email>
-        </Update>
-        <Update release="31">
-            <Date>2011-09-21</Date>
-            <Version>0.0_20110804</Version>
-            <Comment>Do not set band setting in wireless connection unless it's explicity set by user.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="30">
-            <Date>2011-09-14</Date>
-            <Version>0.0_20110804</Version>
-            <Comment>
-                * Revert ugly shared connection patch.
-                * Sync with upstream git.
-                * Prefer system connections by default.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="29">
-            <Date>2011-08-11</Date>
-            <Version>0.0_20110804</Version>
-            <Comment>Remove obsolete user-name insertion from OpenVPN widget.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="28">
-            <Date>2011-08-10</Date>
-            <Version>0.0_20110804</Version>
-            <Comment>Fix loading and saving vpn connections and sync with upstream git. pb#16436 pb#16659</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="27">
-            <Date>2011-08-04</Date>
-            <Version>0.0_20110804</Version>
-            <Comment>Sync with latest upstream release.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="26">
-            <Date>2011-05-15</Date>
-            <Version>1.9_20110504</Version>
-            <Comment>Thinko fix from https://git.reviewboard.kde.org/r/101366/</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="25">
-            <Date>2011-05-13</Date>
-            <Version>1.9_20110504</Version>
-            <Comment>Sync with latest git and add patch to i18n System and User words.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="24">
-            <Date>2011-05-07</Date>
-            <Version>1.9_20110504</Version>
-            <Comment>Sync with git and update translations.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="23">
-            <Date>2011-05-04</Date>
-            <Version>1.9_20110504</Version>
-            <Comment>Switch to upstream git. Most of mt patches are in upstream now.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="22">
-            <Date>2011-02-03</Date>
-            <Version>1.9_20110203</Version>
-            <Comment>
-                * Enable autoconnection by default as in NM Settings Spec.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="21">
-            <Date>2011-02-02</Date>
-            <Version>1.9_20110129</Version>
-            <Comment>
-                * Add NetworkManager as runtime dep, even if kdebase-workspace has one.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="20">
-            <Date>2011-02-01</Date>
-            <Version>1.9_20110129</Version>
-            <Comment>
-                * Replace our own NM plasmoid to ease 2009 transition.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="19">
-            <Date>2011-01-29</Date>
-            <Version>1.9_20110129</Version>
-            <Comment>
-                * Fix "Use system certs" being showed checked all the time.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="18">
-            <Date>2011-01-27</Date>
-            <Version>1.9_20110127</Version>
-            <Comment>
-                * Cosmetic fix for latest patch.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="17">
-            <Date>2011-01-27</Date>
-            <Version>1.9_20110127</Version>
-            <Comment>
-                * Fix showing empty IP address fields in manually set secure connections.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="16">
-            <Date>2011-01-23</Date>
-            <Version>1.9_20101202</Version>
-            <Comment>
-                * Fix reading DNS settings to Ipv4Widget when connection has secrets.
-                * Fix "Limit connection to interface" option.
-                * Totally remove Defaults, Help and Apply buttons from KCModule.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="15">
-            <Date>2011-01-20</Date>
-            <Version>1.9_20110120</Version>
-            <Comment>Add locale files of 9 languages and make Turkish translations almost complete.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="14">
-            <Date>2011-01-18</Date>
-            <Version>1.9_20101202</Version>
-            <Comment>
-                * Fix all authentication mechanisms including WPA-EAP, 8021x in wired and wireless and all combinations of inner authentication mechanisms 
-                like Tunnelled-TLS, TLS, PEAP, LEAP etc.
-                * Fix DNS problems in mobile broadband connections, use DHCP by default instead of choosing DNS IPs from mobile-broadband-providers-info.
-                * Show GSM connection window after GSM connection wizard, this may help users to check connections details and enter PIN codes.
-                * Merge changes from user-based KNM: Fixes about Mobile Connection wizard.
-            </Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2011-01-15</Date>
-            <Version>1.9_20101202</Version>
-            <Comment>Switch to system-wide branch of KNM.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2010-12-08</Date>
-            <Version>1.9_20101202</Version>
-            <Comment>Fix some activation/deactivation problems about Auto eth0 default profile.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-12-02</Date>
-            <Version>0.9_20101202</Version>
-            <Comment>Sync with SVN.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-11-29</Date>
-            <Version>0.9_20101113</Version>
-            <Comment>Fix dynamic-wep connections, #14918.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-11-29</Date>
-            <Version>0.9_20101113</Version>
-            <Comment>Add workaround for pppoe connections diplayed in applet #15374</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-11-23</Date>
-            <Version>0.9_20101113</Version>
-            <Comment>Fix displaying system-wide wireless connections in plasma applet</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-11-18</Date>
-            <Version>0.9_20101113</Version>
-            <Comment>Connections in systemsettings and plasma widget settings must be in sync.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-11-13</Date>
-            <Version>0.9_20101113</Version>
-            <Comment>Sync with KDE svn. Here comes the Mobile Broadband Connection Wizard.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-10-12</Date>
-            <Version>0.9_20100923</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-09-30</Date>
-            <Version>0.9_20100923</Version>
-            <Comment>Remove monolithic and outdated knetwork manager GUI and make this a single package.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-09-23</Date>
-            <Version>0.9_20100923</Version>
-            <Comment>Add little UI fixes from Sebas.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-08-25</Date>
-            <Version>0.9_20100824</Version>
-            <Comment>Update tarball from KDE SVN.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-07-07</Date>
-            <Version>0.9_20100707</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
     </History>
 </PISI>

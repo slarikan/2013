@@ -15,14 +15,14 @@
         <Description>perl-Linux-Pid is a Perl module which allows to get the native PID and PPID on Linux.</Description>
         <Archive sha1sum="e68a0bc749a0db1052483b8455178cb4fc1842dc" type="targz">mirrors://cpan/authors/id/R/RG/RGARCIA/Linux-Pid-0.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Linux-Pid</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,26 +32,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-07</Date>
             <Version>0.08</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-05</Date>
-            <Version>0.08</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-09</Date>
-            <Version>0.04</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

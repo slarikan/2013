@@ -34,33 +34,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-03-18</Date>
             <Version>1.8</Version>
-            <Comment>Fix rev-dep problem that causes to remove this package from repo</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-08-05</Date>
-            <Version>1.8</Version>
-            <Comment>Stable update</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-01-26</Date>
-            <Version>1.7</Version>
-            <Comment>Use numpy instead of numeric</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-20</Date>
-            <Version>1.7</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

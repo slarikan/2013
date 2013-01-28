@@ -14,7 +14,7 @@
         <Description>libqzeitgeist is the Qt wrapper for libzeitgeist. zeitgeist is a service which logs the users’ activities and events, anywhere from files opened to websites visited and conversations had. It makes this information readily available for other applications to use. libzeitgeist is the client library for applications to interact with the Zeitgeist deamon.</Description>
         <Archive sha1sum="5113beed182607697a7ac193a9a6311e7343eaa3" type="tarbz2">mirrors://kde/stable/libqzeitgeist/0.8.0/src/libqzeitgeist-0.8.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.1">qt-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
             <Dependency>libzeitgeist-devel</Dependency>
             <Dependency>zeitgeist</Dependency>
             <Dependency>automoc4</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>libqzeitgeist</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.1">qt</Dependency>
+            <Dependency>qt</Dependency>
             <Dependency>libzeitgeist</Dependency>
             <Dependency>zeitgeist</Dependency>
         </RuntimeDependencies>
@@ -56,16 +56,9 @@
         <Update release="1">
             <Date>2012-03-08</Date>
             <Version>0.8.0</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Bertan Gündoğdu</Name>
             <Email>bertan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-04-18</Date>
-            <Version>0.3.10</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

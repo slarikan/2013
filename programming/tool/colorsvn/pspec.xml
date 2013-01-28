@@ -37,21 +37,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-08-01</Date>
             <Version>0.3.2</Version>
-            <Comment>
-                * Add a patch from Gentoo.
-                * Do not colorize copy command. When svn cp is used with remote repos, it gets vim stuck. So prevent colorizing cp command like Gentoo did for mkdir command.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-04-29</Date>
-            <Version>0.3.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

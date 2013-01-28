@@ -36,26 +36,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-10-13</Date>
             <Version>3.0</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Gökcen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-03</Date>
-            <Version>3.0</Version>
-            <Comment>Add description tag</Comment>
-            <Name>Aşkın Yollu</Name>
-            <Email>askin@askin.ws</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-06-29</Date>
-            <Version>3.0</Version>
-            <Comment>First release</Comment>
-            <Name>Kenan Pelit</Name>
-            <Email>kpelit@gmail.com</Email>
         </Update>
     </History>
 </PISI>

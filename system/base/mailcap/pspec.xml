@@ -22,10 +22,6 @@
 
     <Package>
         <Name>mailcap</Name>
-        <Conflicts>
-            <Package releaseTo="167">baselayout</Package>
-            <Package releaseTo="2">metamail</Package>
-        </Conflicts>
         <Files>
             <Path fileType="data">/etc</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -37,7 +33,7 @@
         <Update release="1">
             <Date>2011-06-01</Date>
             <Version>2.1.37</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>

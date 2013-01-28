@@ -42,32 +42,8 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2010-12-28</Date>
-            <Version>0.040126</Version>
-            <Comment>
-                Adapt to 2011
-                Exclude x86_64 until there is a port
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-11-11</Date>
-            <Version>0.040126</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-09-01</Date>
-            <Version>0.040126</Version>
-            <Comment>Fix destkop category</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2006-08-20</Date>
+            <Date>2010-12-28</Date>
             <Version>0.040126</Version>
             <Comment>First release</Comment>
             <Name>Onur Küçük</Name>

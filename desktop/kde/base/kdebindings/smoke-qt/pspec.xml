@@ -12,28 +12,28 @@
         <IsA>library</IsA>
         <Summary>Language independent library for Qt bindings</Summary>
         <Description>Language independent library for Qt bindings.</Description>
-        <Archive sha1sum="9f243293da679ca50a32f226070e471f52931761" type="tarxz">mirrors://kde/unstable/4.9.97/src/smokeqt-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="768672c453d651adc05c613626a61266a39e458a" type="tarxz">mirrors://kde/unstable/4.9.98/src/smokeqt-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">qt-devel</Dependency>
-            <Dependency releaseFrom="19">qwt-devel</Dependency>
-            <Dependency versionFrom="4.6.0">phonon-devel</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-gen-devel</Dependency>
-            <Dependency versionFrom="2.5.1">qscintilla2-devel</Dependency>
-            <Dependency versionFrom="0.0.6">qimageblitz-devel</Dependency>
-            <Dependency versionFrom="4.8.2">qt-webkit-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
+            <Dependency>qwt-devel</Dependency>
+            <Dependency>phonon-devel</Dependency>
+            <Dependency>smoke-gen-devel</Dependency>
+            <Dependency>qscintilla2-devel</Dependency>
+            <Dependency>qimageblitz-devel</Dependency>
+            <Dependency>qt-webkit-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>smoke-qt</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">qt</Dependency>
-            <Dependency releaseFrom="19">qwt</Dependency>
-            <Dependency versionFrom="4.6.0">phonon</Dependency>
-            <Dependency versionFrom="4.9.97">smoke-gen</Dependency>
-            <Dependency versionFrom="2.5.1">qscintilla2</Dependency>
-            <Dependency versionFrom="0.0.6">qimageblitz</Dependency>
-            <Dependency versionFrom="4.8.2">qt-webkit</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>qwt</Dependency>
+            <Dependency>phonon</Dependency>
+            <Dependency>smoke-gen</Dependency>
+            <Dependency>qscintilla2</Dependency>
+            <Dependency>qimageblitz</Dependency>
+            <Dependency>qt-webkit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -54,19 +54,12 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
+        <Update release="1">
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="1">
-            <Date>2012-12-23</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update> 
     </History>
 </PISI>

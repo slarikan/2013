@@ -5,13 +5,13 @@
         <Name>mate-conf</Name>
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPLv3</License>
         <Icon>mate-conf</Icon>
-        <PartOf>desktop.mate</PartOf>
-        <IsA>library</IsA>
+        <PartOf>desktop.mate.base</PartOf>
+        <IsA>app:gui</IsA>
         <Summary>Mate Configuration System</Summary>
         <Description>gconf is a Mate Configuration System.</Description>
         <Archive sha1sum="07a0c599b4eee4a305a0fe8f59be5aa215520249" type="tarxz">http://pub.mate-desktop.org/releases/1.4/mate-conf-1.4.0.tar.xz</Archive>
@@ -64,34 +64,19 @@
     </Package>
 
     <History>
-      <Update release="4">
+      <Update release="2">
+            <Date>2013-01-19</Date>
+            <Version>1.4.0</Version>
+            <Comment>Fixed</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
+      <Update release="1">
             <Date>2012-08-22</Date>
             <Version>1.4.0</Version>
-            <Comment>v.bump</Comment>
-            <Name>OSman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2012-07-23</Date>
-            <Version>1.2.1</Version>
-            <Comment>Delete schema</Comment>
-            <Name>Fatih Turgel</Name>
-            <Email>turgelfatih@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-21</Date>
-            <Version>1.2.1</Version>
-            <Comment>Fixes</Comment>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-19</Date>
-            <Version>1.4.0</Version>
             <Comment>First release</Comment>
-            <Name>Emre Fırat</Name>
-            <Email>emrefirat93@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
-

@@ -14,7 +14,7 @@
         <Description>perl-Proc-ProcessTable is a perl extension to access the unix process table.</Description>
         <Archive sha1sum="5847884be64b110aaf68d20592ea8cc226f59e76" type="targz">mirrors://cpan/authors/id/D/DU/DURIST/Proc-ProcessTable-0.45.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">Proc-ProcessTable-0.45-fix-format-errors.patch</Patch>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-Proc-ProcessTable</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -36,26 +36,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-12</Date>
             <Version>0.45</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-09</Date>
-            <Version>0.45</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-01</Date>
-            <Version>0.45</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

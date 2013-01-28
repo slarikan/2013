@@ -29,17 +29,10 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-11-04</Date>
             <Version>0.1.4</Version>
-            <Comment>Güncellendi..</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-29</Date>
-            <Version>0.0.11</Version>
-            <Comment>Initial release.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>

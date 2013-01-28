@@ -30,7 +30,7 @@
         <Name>loki-devel</Name>
         <Summary>Development headers for loki</Summary>
         <RuntimeDependencies>
-            <Dependency release="2">loki</Dependency>
+            <Dependency>loki</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -42,7 +42,7 @@
         <IsA>data:doc</IsA>
         <Summary>Document files for loki</Summary>
         <RuntimeDependencies>
-            <Dependency release="2">loki</Dependency>
+            <Dependency>loki</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc/loki/html/</Path>
@@ -50,19 +50,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-09-01</Date>
             <Version>0.1.7</Version>
-            <Comment>Version bump, split headers and docs</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-07-25</Date>
-            <Version>0.1.6</Version>
-            <Comment>First Release</Comment>
-            <Name>Recep Kırmızı</Name>
-            <Email>rkirmizi@gmail.com</Email>
         </Update>
     </History>
 </PISI>

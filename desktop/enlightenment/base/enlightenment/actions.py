@@ -21,6 +21,7 @@ def setup():
                          --disable-rpath \
                          --disable-device-hal \
                          --disable-mount-hal \
+                         --enable-device-udev \
                          --enable-mount-udisks \
                          --enable-mount-eeze \
                          --enable-elementary \

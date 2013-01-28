@@ -25,9 +25,6 @@
         <RuntimeDependencies>
             <Dependency>libgcrypt</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="2.29.1">gnome-keyring</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -60,7 +57,7 @@
         <Update release="1">
             <Date>2012-11-21</Date>
             <Version>3.7.2</Version>
-            <Comment>Yeni paket.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

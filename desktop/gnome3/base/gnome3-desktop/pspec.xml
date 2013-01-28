@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency versionFrom="2.23.3">gdk-pixbuf-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
 	    <Dependency>gnome3-common</Dependency>
             <Dependency>gconf-devel</Dependency>
 	    <Dependency>libXrandr-devel</Dependency>
@@ -31,7 +31,7 @@
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency versionFrom="2.23.3">gdk-pixbuf</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>libXrandr</Dependency>
@@ -82,7 +82,7 @@
         <Update release="1">
             <Date>2012-11-24</Date>
             <Version>3.7.2</Version>
-            <Comment>İlk Sürüm.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>

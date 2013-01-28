@@ -40,33 +40,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-09-03</Date>
             <Version>2.4.1</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-06-21</Date>
-            <Version>2.3.0</Version>
-            <Comment>Put vim syntax files to a version-independent directory.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-11-04</Date>
-            <Version>2.3.0</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-02-22</Date>
-            <Version>2.3.0</Version>
-            <Comment>First release, thanks to Kenan Pelit for his previous efforts.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

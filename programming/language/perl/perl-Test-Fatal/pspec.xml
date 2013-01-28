@@ -15,7 +15,7 @@
         <Description>perl-Test-Fatal provides incredible simple helpers for testing Perl code with exceptions.</Description>
         <Archive sha1sum="0814e1dc9bc81d0f909ec2610fb97ffad7b8a868" type="targz">http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Test-Fatal-0.010.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Try-Tiny</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Test-Fatal</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Try-Tiny</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -34,26 +34,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>0.10</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-01</Date>
-            <Version>0.10</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-10</Date>
-            <Version>0.003</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

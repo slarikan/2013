@@ -34,26 +34,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-03-13</Date>
             <Version>2.24.2</Version>
-            <Comment>Fix dependency</Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Göksel</Name>
             <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-31</Date>
-            <Version>2.24.2</Version>
-            <Comment>Version bump to build with Mono 2.8</Comment>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-04-24</Date>
-            <Version>2.24.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
         </Update>
     </History>
 </PISI>

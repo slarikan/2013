@@ -15,8 +15,8 @@
         <Description>KDE thumbnail-plugin that generates small images (thumbnails) for ODF (OpenDocument Format) files, to be displayed, for example, on Konqueror and Dolphin file managers.</Description>
         <Archive sha1sum="b8304d0719be703a48f46ad4ce061cf93ff990b6" type="targz">http://kenai.com/downloads/kde-odf-thumbnail/1.0.0/kde-odf-thumbnail-1.0.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.4.3">kdelibs-devel</Dependency>
-            <Dependency versionFrom="4.6.2">qt-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
+            <Dependency>qt-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch>desktopFile.patch</Patch>
@@ -26,8 +26,8 @@
     <Package>
         <Name>kde-thumbnailer-odf</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.6.2">qt</Dependency>
-            <Dependency versionFrom="4.4.3">kdelibs</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share</Path>

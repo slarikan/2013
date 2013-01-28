@@ -35,10 +35,9 @@
         <Update release="1">
             <Date>2012-10-23</Date>
             <Version>0.5.3</Version>
-            <Comment>firt release</Comment>
+            <Comment>First release</Comment>
             <Name>canatan</Name>
             <Email>qazsew@mynet.com</Email>
         </Update>
     </History>
 </PISI>
- 

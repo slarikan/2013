@@ -15,10 +15,10 @@
         <Description>A mixture of Sokoban and Kula-World in 3D. You control a nanobot to repair the botmaker, who has gone crazy beacuse of a parasite.</Description>
         <Archive sha1sum="57f8583f7dfd3557524c98131e56e35251fdcc07" type="targz">mirrors://sourceforge/kiki/kiki-1.0.2-src.tgz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.13">libsdl-devel</Dependency>
-            <Dependency versionFrom="1.2.6">sdl-image-devel</Dependency>
-            <Dependency versionFrom="1.2.8">sdl-mixer-devel</Dependency>
-            <Dependency versionFrom="2.6.0">freeglut-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
+            <Dependency>sdl-image-devel</Dependency>
+            <Dependency>sdl-mixer-devel</Dependency>
+            <Dependency>freeglut-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">kiki-1.0.2-class.patch</Patch>
@@ -40,11 +40,11 @@
     <Package>
         <Name>kiki</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.2.13">libsdl</Dependency>
-            <Dependency versionFrom="1.2.6">sdl-image</Dependency>
-            <Dependency versionFrom="1.2.8">sdl-mixer</Dependency>
-            <Dependency versionFrom="2.6.0">freeglut</Dependency>
-            <Dependency versionFrom="0.1">kiki-extra</Dependency>
+            <Dependency>libsdl</Dependency>
+            <Dependency>sdl-image</Dependency>
+            <Dependency>sdl-mixer</Dependency>
+            <Dependency>freeglut</Dependency>
+            <Dependency>kiki-extra</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -61,51 +61,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2010-12-15</Date>
             <Version>1.0.2</Version>
-            <Comment>
-                Tidy up dependencies for 2011
-                Added patch for 64-bit
-                Added patch for freeglut
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-11-11</Date>
-            <Version>1.0.2</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2006-11-20</Date>
-            <Version>1.0.2</Version>
-            <Comment>Icon added</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-11-18</Date>
-            <Version>1.0.2</Version>
-            <Comment>Make it work with non-nvidia cards, fixing alpha text. Switch getwd->getcwd for security reasons</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-11-16</Date>
-            <Version>1.0.2</Version>
-            <Comment>Turkish patch added</Comment>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-09-02</Date>
-            <Version>1.0.2</Version>
-            <Comment>First release</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

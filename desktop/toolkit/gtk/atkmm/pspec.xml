@@ -27,9 +27,6 @@
             <Dependency>glibmm</Dependency>
             <Dependency>libsigc++</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="2.20.3">gtkmm</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -44,9 +41,6 @@
             <Dependency>atk-devel</Dependency>
             <Dependency>glibmm-devel</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="2.20.3">gtkmm</Package>
-        </Conflicts>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="header">/usr/lib/atkmm-1.6/include</Path>
@@ -57,26 +51,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-08-26</Date>
             <Version>2.22.6</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-03-21</Date>
-            <Version>2.22.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Aydan Taşdemir</Name>
-            <Email>aydantasdemir@comu.edu.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-21</Date>
-            <Version>2.22.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

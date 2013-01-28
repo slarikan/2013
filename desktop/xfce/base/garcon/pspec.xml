@@ -15,8 +15,8 @@
         <Description>garcon is an implementation of the freedesktop.org menu specification replacing the former Xfce menu library libxfce4menu. It is based on GLib/GIO only and aims at covering the entire specification except for legacy menus.</Description>
         <Archive sha1sum="31225a278f391441c8d8bf50aabb85a264b76c2f" type="tarbz2">http://archive.xfce.org/src/xfce/garcon/0.2/garcon-0.2.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-dev-tools</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency>xfce4-dev-tools</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
             <Dependency>gtk-doc</Dependency>
         </BuildDependencies>
     </Source>
@@ -24,8 +24,8 @@
     <Package>
         <Name>garcon</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-dev-tools</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency>xfce4-dev-tools</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -62,26 +62,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-05-02</Date>
             <Version>0.2.0</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-09-13</Date>
-            <Version>0.1.9</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-01-20</Date>
-            <Version>0.1.5</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
         </Update>
     </History>
 </PISI>

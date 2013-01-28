@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>xfce4-sensors-plugin</Name>
@@ -12,7 +14,7 @@
         <Summary>Sensors plugin for Xfce4 Panel</Summary>
         <Description>Reads your hardware sensor values and displays them in your panel</Description>
         <BuildDependencies>
-            <Dependency versionFrom="2.0">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>libxfce4ui-devel</Dependency>
             <Dependency>libxfce4util-devel</Dependency>
             <Dependency>xfce4-panel-devel</Dependency>
@@ -22,7 +24,7 @@
     <Package>
         <Name>xfce4-sensors-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.0">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>libxfce4ui</Dependency>
             <Dependency>libxfce4util</Dependency>
             <Dependency>xfce4-panel</Dependency>
@@ -35,7 +37,7 @@
         <Update release="1">
             <Date>2012-09-08</Date>
             <Version>1.2.5</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Utku Berberoglu</Name>
             <Email>utku.berber@gmail.com</Email>
         </Update>

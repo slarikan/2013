@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>grive</Name>
@@ -13,7 +15,7 @@
         <Description>grive, Açık kaynak kodlu Google Drive hasabınızı kontrol etmenizi sağlayan bir uygulamadır.</Description>
         <Archive sha1sum="04ef91b3c6e7dfeb5dda5abdde0bb71e2c8e34b0" type="targz">http://www.lbreda.com/grive/_media/packages/0.2.0/grive-0.2.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.48">boost-devel</Dependency>
+            <Dependency>boost-devel</Dependency>
             <Dependency>json-c-devel</Dependency>
             <Dependency>libgcrypt-devel</Dependency>
             <Dependency>zlib-devel</Dependency>
@@ -28,7 +30,7 @@
     <Package>
         <Name>grive</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.48">boost</Dependency>
+            <Dependency>boost</Dependency>
             <Dependency>json-c</Dependency>
             <Dependency>libgcrypt</Dependency>
             <Dependency>zlib</Dependency>
@@ -49,7 +51,7 @@
         <Update release="1">
             <Date>2012-08-20</Date>
             <Version>0.2.0</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

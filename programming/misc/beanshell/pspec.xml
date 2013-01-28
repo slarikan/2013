@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>beanshell</Name>
@@ -13,6 +15,7 @@
         <Archive sha1sum="a05f0a0feefa8d8467ac80e16e7de071489f0d9c" type="binary">http://www.beanshell.org/bsh-2.0b4.jar</Archive>
         <Patches/>
     </Source>
+
     <Package>
         <Name>beanshell</Name>
         <RuntimeDependencies>
@@ -22,11 +25,12 @@
             <Path fileType="library" permanent="0">/usr/share/java/*</Path>
         </Files>
     </Package>
+
     <History>
         <Update release="1">
             <Date>2012-07-22</Date>
             <Version>2.04</Version>
-            <Comment>First Package</Comment>
+            <Comment>First release</Comment>
             <Name>Ramazan Utku</Name>
             <Email>ramazanutku@gmail.com</Email>
         </Update>

@@ -33,10 +33,9 @@
         <Update release="1">
             <Date>2010-02-23</Date>
             <Version>0.1.8</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>
-

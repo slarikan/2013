@@ -14,14 +14,14 @@
         <Description>perlmod can install perl modules and all dependent modules, uninstall perl modules, list all perl modules in system, search for a perl module in cpan.org and system, list all files of a perl module and show details of a perl module.</Description>
         <Archive sha1sum="e49aefe318f532921bb936b7d0334b1d508a31f6" type="zip">http://downloads.sourceforge.net/project/perlmod/v2.2.0/perlmod.v.1.2.0.zip</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perlmod</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -30,26 +30,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>1.2.0</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-06-28</Date>
-            <Version>1.2.0</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-01-14</Date>
-            <Version>1.1.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

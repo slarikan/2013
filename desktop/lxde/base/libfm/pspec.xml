@@ -15,7 +15,7 @@
         <Description>libfm is a LXDE library for file management.</Description>
         <Archive sha1sum="552cc85bb50aae7d5620419694c6d566015bde10" type="targz">mirrors://sourceforge/pcmanfm/libfm-1.1.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency releaseFrom="4">lxde-menu-cache-devel</Dependency>
+            <Dependency>lxde-menu-cache-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -33,7 +33,7 @@
     <Package>
         <Name>libfm</Name>
         <RuntimeDependencies>
-            <Dependency releaseFrom="4">lxde-menu-cache</Dependency>
+            <Dependency>lxde-menu-cache</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -66,57 +66,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-11-21</Date>
             <Version>1.1.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2012-09-28</Date>
-            <Version>1.0.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-06-13</Date>
-            <Version>0.1.17</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-06-13</Date>
-            <Version>0.1.14_20110613</Version>
-            <Comment>Version bump to git HEAD.</Comment>
-            <Name>Engin Manap</Name>
-            <Email>engin@comu.edu.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-05-20</Date>
-            <Version>0.1.14_20110510</Version>
-            <Comment>Version bump to git HEAD.
-                     Remove translations due they are in officially now.
-            </Comment>
-            <Name>Engin Manap</Name>
-            <Email>engin@comu.edu.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-03-21</Date>
-            <Version>0.1.14_20110202</Version>
-            <Comment>New translations Added.</Comment>
-            <Name>Engin Manap</Name>
-            <Email>engin@comu.edu.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-03</Date>
-            <Version>0.1.14_20110202</Version>
-            <Comment>First release.</Comment>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

@@ -99,6 +99,9 @@ def install():
     pisitools.remove("%s/pkgconfig/phonon*" % qt4.libdir)
     # Phonon 4.5 provides libphononwidgets.so file
     pisitools.remove("%s/designer/libphononwidgets.so" % qt4.plugindir)
+    
+    #Remove lost /usr/tests directory
+    pisitools.removeDir("usr/tests")
 
     # Turkish translations
     shelltools.export("LD_LIBRARY_PATH", "%s%s" % (get.installDIR(), qt4.libdir))

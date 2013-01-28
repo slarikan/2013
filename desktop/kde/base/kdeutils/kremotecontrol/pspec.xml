@@ -13,10 +13,10 @@
         <IsA>app:gui</IsA>
         <Summary>A KDE frontend for the Linux Infrared Remote Control system</Summary>
         <Description>KRemoteControl is a KDE frontend for the Linux Infrared Remote Control system (LIRC). It consist of two parts: a systemtray applet and a configuration module.</Description>
-        <Archive sha1sum="864d48b76b73e94d1046e983b759b1e68edc7a8b" type="tarxz">mirrors://kde/unstable/4.9.97/src/kremotecontrol-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="aef352c6d2f884ffa0fa3c795020e9d3651e0626" type="tarxz">mirrors://kde/unstable/4.9.98/src/kremotecontrol-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kde-workspace-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kde-workspace-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -27,8 +27,8 @@
     <Package>
         <Name>kremotecontrol</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kde-workspace</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kde-workspace</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>libXext</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -42,17 +42,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
         <Update release="1">
-            <Date>2012-12-23</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      

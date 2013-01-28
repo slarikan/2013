@@ -62,89 +62,12 @@
     </Package>
 
     <History>
-        <Update release="11">
+        <Update release="1">
             <Date>2012-08-29</Date>
             <Version>3.15.3</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="10">
-            <Date>2011-04-25</Date>
-            <Version>3.15.0</Version>
-            <Comment>Missing system headers added</Comment>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2011-04-15</Date>
-            <Version>3.15.0</Version>
-            <Comment>Added patches to use system headers and libs</Comment>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2011-04-11</Date>
-            <Version>3.15.0</Version>
-            <Comment>Fix for using system libs</Comment>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-04-11</Date>
-            <Version>3.15.0</Version>
-            <Comment>
-                Version bump
-                Removed unused patches
-                Added missing dependencies
-            </Comment>
-            <Requires>
-                <Action>reverseDependencyUpdate</Action>
-            </Requires>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-11-05</Date>
-            <Version>3.13.1</Version>
-            <Comment>Version bump, reorganize patches and split devel package.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-12-27</Date>
-            <Version>3.12.0</Version>
-            <Comment>Make sure to use system jpeg, was using internal one causing segfault on struct siz comparison, bug (#11529)</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-06-01</Date>
-            <Version>3.12.0</Version>
-            <Comment>Stable bump and also fix for using system libs.</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-09-02</Date>
-            <Version>3.11.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-11-28</Date>
-            <Version>3.10.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-06-24</Date>
-            <Version>3.9.3</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

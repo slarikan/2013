@@ -14,14 +14,14 @@
         <Description>Contains regular expressions for the following XML tokens: BaseChar, Ideographic, Letter, Digit, Extender, CombiningChar, NameChar, EntityRef, CharRef, Reference, Name, NmToken, and AttValue.</Description>
         <Archive sha1sum="94da8c1448259d7463525dd8c8203e811fe4f4d1" type="targz">http://search.cpan.org/CPAN/authors/id/T/TJ/TJMATHER/XML-RegExp-0.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-XML-RegExp</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,47 +31,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>0.04</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-07-09</Date>
-            <Version>0.04</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-28</Date>
-            <Version>0.03</Version>
-            <Comment>Make the package ready for 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-12-04</Date>
-            <Version>0.03</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-02</Date>
-            <Version>0.03</Version>
-            <Comment>Add perl dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-11-29</Date>
-            <Version>0.03</Version>
-            <Comment>First release.</Comment>
-            <Name>A. Murat Eren</Name>
-            <Email>meren@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

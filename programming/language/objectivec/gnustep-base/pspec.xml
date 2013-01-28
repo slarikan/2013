@@ -60,30 +60,15 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-05-09</Date>
             <Version>1.22.0</Version>
-            <Comment>Reverse dependency update.</Comment>
+            <Comment>First release</Comment>
             <Requires>
                 <Action>reverseDependencyUpdate</Action>
             </Requires>
             <Name>Meltem Parmaksız</Name>
             <Email>meltem@pardus.org.tr</Email>
         </Update>
-        <Update release="2">
-            <Date>2011-05-06</Date>
-            <Version>1.22.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Meltem Parmaksız</Name>
-            <Email>meltem@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-09-11</Date>
-            <Version>1.20.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

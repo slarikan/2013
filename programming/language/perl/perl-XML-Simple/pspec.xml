@@ -15,7 +15,7 @@
         <Archive sha1sum="2ececb0960deb51296916186000c63d55cc53092" type="targz">mirrors://cpan/authors/id/G/GR/GRANTM/XML-Simple-2.20.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-XML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,11 +23,8 @@
         <Name>perl-XML-Simple</Name>
         <RuntimeDependencies>
             <Dependency>perl-XML-Parser</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>XML-Simple</Package>
-        </Replaces>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="man">/usr/share/man</Path>
@@ -35,51 +32,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>2.20</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-07-09</Date>
-            <Version>2.20</Version>
-            <Comment>Depend on new perl 5.14.1 and. v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-12-04</Date>
-            <Version>2.18</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-12-02</Date>
-            <Version>2.18</Version>
-            <Comment>Add perl dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-04</Date>
-            <Version>2.18</Version>
-            <Comment>
-                * Version bump.
-                * Package takeover.
-                * Fix dependencies.
-            </Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-06-15</Date>
-            <Version>2.14</Version>
-            <Comment>First release.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
         </Update>
     </History>
 </PISI>

@@ -31,20 +31,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-06-23</Date>
             <Version>0.9.9</Version>
-            <Comment>Update package</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-02-12</Date>
-            <Version>0.9.4</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>İşbaran Akçayır</Name>
             <Email>isbaran@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

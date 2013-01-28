@@ -31,7 +31,7 @@
     <Package>
         <Name>trigger</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.5.2">trigger-data</Dependency>
+            <Dependency>trigger-data</Dependency>
             <Dependency>libsdl</Dependency>
             <Dependency>sdl-image</Dependency>
             <Dependency>openal</Dependency>
@@ -52,40 +52,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2009-09-23</Date>
             <Version>0.5.2.1</Version>
-            <Comment>Fix wrong glDrawRangeElements index, patch by Fatih</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-06-10</Date>
-            <Version>0.5.2.1</Version>
-            <Comment>Remove unneeded sdl-mixer dependency</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-11-11</Date>
-            <Version>0.5.2.1</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-03-13</Date>
-            <Version>0.5.2.1</Version>
-            <Comment>Fix sum/desc and icon tag</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-01-05</Date>
-            <Version>0.5.2.1</Version>
             <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
+            <Name>Onur Küçük</Name>
+            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

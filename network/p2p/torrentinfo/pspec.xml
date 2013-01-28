@@ -24,19 +24,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-06-23</Date>
             <Version>1.0.2</Version>
-            <Comment>Use pythonmodules instead of plain dobin, make the package ready for Pardus 2011.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-01-16</Date>
-            <Version>1.0.2</Version>
-            <Comment>First release</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
         </Update>
     </History>
 </PISI>

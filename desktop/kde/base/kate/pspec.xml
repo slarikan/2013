@@ -13,16 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>KDE4 text editor</Summary>
         <Description>Kate is a multi-document, multi-view text editor for KDE. It features stuff like codefolding, syntaxhighlighting, dynamic word wrap, an embedded console, an extensive plugin interface and some prelimentary scripting support.</Description>
-        <Archive type="tarxz" sha1sum="d0577bef64b09eadd4792c4371c127c7c4db5fff">mirrors://kde/unstable/4.9.97/src/kate-4.9.97.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="906280b4c88bcd6ee97c95a5cf457f0edaf4f4f9">mirrors://kde/unstable/4.9.98/src/kate-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kate</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/kate</Path>
@@ -48,8 +48,8 @@
         <Summary>A text editor for KDE</Summary>
         <Description>KWrite is a text editor for KDE, based on the Kate's editor component.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kate</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kate</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/kwrite</Path>
@@ -64,8 +64,8 @@
         <Name>kate-devel</Name>
         <Summary>Development files for kate</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="4.9.97">kate</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>kate</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -73,17 +73,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
         <Update release="1">
-            <Date>2012-12-20</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>       

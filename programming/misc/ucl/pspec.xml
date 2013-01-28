@@ -34,29 +34,12 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-01-19</Date>
             <Version>1.03</Version>
-            <Comment>
-                Adapt to 2011.
-                Split devel package.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-04-09</Date>
-            <Version>1.03</Version>
-            <Comment>New release</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-09-07</Date>
-            <Version>1.01</Version>
-            <Comment>First release.</Comment>
-            <Name>Timu EREN</Name>
-            <Email>selamtux@gmail.com</Email>
         </Update>
     </History>
 </PISI>

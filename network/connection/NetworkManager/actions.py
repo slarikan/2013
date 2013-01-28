@@ -9,23 +9,23 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
+shelltools.export("HOME", get.workDIR())
+
 def setup():
     # autotools.autoreconf("-vfi")
     autotools.configure("--disable-static \
                          --disable-wimax \
                          --enable-more-warnings=yes \
                          --with-crypto=nss \
-                         --with-distro=pardus \
                          --with-resolvconf=/etc/resolv.conf \
                          --with-iptables=/usr/sbin/iptables \
                          --with-systemdsystemunitdir=/lib/systemd/system")
 
 def build():
-    shelltools.export("HOME", get.workDIR())
     autotools.make()
 
-def check():
-    autotools.make("check")
+#def check():
+#    autotools.make("check")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

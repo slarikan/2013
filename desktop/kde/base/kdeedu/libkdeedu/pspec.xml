@@ -11,9 +11,9 @@
         <License>GPLv2+</License>
         <Summary>Libraries used by KDE Education applications</Summary>
         <Description>libkdeedu provides libraries used by KDE Education applications.</Description>
-        <Archive sha1sum="522858ac8bd44dfb78301bd397b8349c7f658bac" type="tarxz">mirrors://kde/unstable/4.9.97/src/libkdeedu-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="d5efc154a88908d8607e81552a92552cd1255c06" type="tarxz">mirrors://kde/unstable/4.9.98/src/libkdeedu-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -21,11 +21,8 @@
         <Name>libkdeedu</Name>
         <IsA>library</IsA>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>kdeedu</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -38,8 +35,8 @@
         <IsA>library</IsA>
         <Summary>Development files for libkdeedu</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdeedu</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>libkdeedu</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -49,19 +46,12 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
+        <Update release="1">
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="1">
-            <Date>2012-12-20</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
     </History>
 </PISI>

@@ -38,11 +38,6 @@
             <Dependency>freeglut</Dependency>
             <Dependency>tcl</Dependency>
         </RuntimeDependencies>
-        <!-- one day, probably on next distro release
-        <Replaces>
-            <Package>ppracer</Package>
-        </Replaces>
-        -->
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -58,22 +53,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-12-14</Date>
             <Version>0.5_beta1</Version>
-            <Comment>
-                Tidy up dependencies for 2011.
-                Adapt to libpng1.4
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-11-23</Date>
-            <Version>0.5_beta1</Version>
-            <Comment>First release, will fix bug #11561 and probably some more</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

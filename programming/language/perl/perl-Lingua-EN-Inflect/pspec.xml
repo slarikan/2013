@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-Lingua-EN-Inflect</Name>
@@ -14,13 +16,13 @@
         <Description>The exportable subroutines of Lingua::EN::Inflect provide plural inflections, "a"/"an" selection for English words, and manipulation of numbers as words Plural forms of all nouns, most verbs, and some adjectives are provided. Where appropriate, "classical" variants (for example: "brother" -> "brethren", "dogma" -> "dogmata", etc.) are also provided.</Description>
         <Archive sha1sum="06614c4f9d95805ef9c802041b67f0a8f685c2a5" type="targz">http://search.cpan.org/CPAN/authors/id/D/DC/DCONWAY/Lingua-EN-Inflect-1.894.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Lingua-EN-Inflect</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,17 +32,10 @@
         </Files>
     </Package>
      <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>1.894</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-12</Date>
-            <Version>1.894</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

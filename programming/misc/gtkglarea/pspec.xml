@@ -57,27 +57,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-10-13</Date>
             <Version>2.0.1</Version>
-            <Comment>added missing dependencies</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>
-        <Update release="2">
-            <Date>2011-01-26</Date>
-            <Version>2.0.1</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-11-13</Date>
-            <Version>2.0.1</Version>
-            <Comment>First release.</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

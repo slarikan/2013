@@ -14,14 +14,14 @@
         <Description>X.Org X11 modesetting video driver - basic modesetting fallback driver</Description>
         <Archive sha1sum="c253af87acaa8405f93e3fec357071a2763a1855" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-modesetting-0.4.0.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-modesetting</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
@@ -31,19 +31,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-10-11</Date>
             <Version>0.4.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-05-30</Date>
-            <Version>0.3.0</Version>
-            <Comment>First release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
         </Update>
     </History>
 </PISI>

@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>kadu</Name>
@@ -15,7 +17,7 @@
         <BuildDependencies>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
-            <Dependency versionFrom="1.11.1">libgadu-devel</Dependency>
+            <Dependency>libgadu-devel</Dependency>
             <Dependency>phonon-devel</Dependency>
             <Dependency>qca2-devel</Dependency>
             <Dependency>qt-devel</Dependency>
@@ -34,7 +36,7 @@
             <Dependency>libXScrnSaver</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>libXfixes</Dependency>
-            <Dependency versionFrom="1.11.1">libgadu</Dependency>
+            <Dependency>libgadu</Dependency>
             <Dependency>phonon</Dependency>
             <Dependency>qca2</Dependency>
             <Dependency>qt</Dependency>
@@ -68,7 +70,7 @@
         <Update release="1">
             <Date>2012-11-11</Date>
             <Version>0.12.3</Version>
-            <Comment>First release for Anka.</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
         </Update>

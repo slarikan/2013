@@ -16,7 +16,7 @@
         <BuildDependencies>
             <Dependency>gconf-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency versionFrom="5.1">libxklavier-devel</Dependency>
+            <Dependency>libxklavier-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +25,7 @@
         <RuntimeDependencies>
             <Dependency>gconf</Dependency>
             <Dependency>gtk3</Dependency>
-            <Dependency versionFrom="5.1">libxklavier</Dependency>
+            <Dependency>libxklavier</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
@@ -60,10 +60,10 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-11-21</Date>
             <Version>3.6.0</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

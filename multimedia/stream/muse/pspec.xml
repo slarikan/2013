@@ -51,26 +51,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-01-18</Date>
             <Version>0.9.2</Version>
-            <Comment>Adapt to 2011.</Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-06-23</Date>
-            <Version>0.9.2</Version>
-            <Comment>Build with new toolchain</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-06-27</Date>
-            <Version>0.9.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Koray Löker</Name>
-            <Email>loker@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

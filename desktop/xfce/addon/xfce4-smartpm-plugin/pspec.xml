@@ -15,19 +15,19 @@
         <Description>This plugin checks for package updates using the Smart Package Manager.</Description>
         <Archive sha1sum="c52cab6137fffd913e33097010ace4580b7a456e" type="targz">http://archive.xfce.org/src/panel-plugins/xfce4-smartpm-plugin/0.4/xfce4-smartpm-plugin-0.4.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-smartpm-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency>xfce4-panel</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">libxfcegui4</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfcegui4</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -43,19 +43,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-05-03</Date>
             <Version>0.4.0</Version>
-            <Comment>rebuild for xfce 4.10.0</Comment>
+            <Comment>First release</Comment>
             <Name>erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-14</Date>
-            <Version>0.4.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Mesutcan Kurt</Name>
-            <Email>mesutcank@gmail.com</Email>
         </Update>
     </History>
 </PISI>

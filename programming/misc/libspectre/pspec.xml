@@ -12,18 +12,18 @@
         <IsA>library</IsA>
         <Summary>A small library for rendering Postscript documents</Summary>
         <Description>libspectre is a small library for rendering Postscript documents. It provides a convenient easy to use API for handling and rendering Postscript documents.</Description>
-        <Archive sha1sum="819475c7e34a1e9bc2e876110fee530b42aecabd" type="targz">http://libspectre.freedesktop.org/releases/libspectre-0.2.6.tar.gz</Archive>
+        <Archive sha1sum="a7efd97b82b84ff1bb7a0d88c7e35ad10cc84ea8" type="targz">http://libspectre.freedesktop.org/releases/libspectre-0.2.7.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="9.00">ghostscript-devel</Dependency>
+            <Dependency>ghostscript-devel</Dependency>
             <!-- Cairo is needed in tests only! -->
-            <Dependency versionFrom="1.8.10">cairo</Dependency>
+            <Dependency>cairo</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libspectre</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="9.00">ghostscript</Dependency>
+            <Dependency>ghostscript</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -43,55 +43,37 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>libspectre-32bit</Name>
+        <PartOf>emul32</PartOf>
+        <Summary>32-bit shared libraries for libspectre</Summary>
+        <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>ghostscript-32bit</Dependency>
+        </BuildDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">libspectre</Dependency>
+            <Dependency>ghostscript-32bit</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib32</Path>
+        </Files>
+    </Package>
+
     <History>
-        <Update release="7">
-            <Date>2010-10-14</Date>
-            <Version>0.2.6</Version>
-            <Comment>Rebuild with the new ghostscript</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-12</Date>
-            <Version>0.2.6</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-08-18</Date>
-            <Version>0.2.6</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-06-29</Date>
-            <Version>0.2.6</Version>
-            <Comment>Version bump to 0.2.6</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-11-05</Date>
-            <Version>0.2.3</Version>
-            <Comment>Version bump to bugfix release.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
         <Update release="2">
-            <Date>2009-04-27</Date>
-            <Version>0.2.2</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
+            <Date>2013-01-22</Date>
+            <Version>0.2.7</Version>
+            <Comment>Version bump, add emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
         <Update release="1">
-            <Date>2008-01-10</Date>
-            <Version>0.2.0</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
+            <Date>2010-10-14</Date>
+            <Version>0.2.6</Version>
+            <Comment>First release</Comment>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

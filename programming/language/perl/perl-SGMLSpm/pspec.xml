@@ -14,18 +14,15 @@
         <Description>perl-SGMLSpm is a class to postprocess the output of SGML and NSGML parsers.</Description>
         <Archive sha1sum="31d4199d71d5d809f5847bac594c03348c82e2e2" type="targz">http://search.cpan.org/CPAN/authors/id/R/RA/RAAB/SGMLSpm-1.1.tar.gz</Archive>
         <BuildDependencies>
-             <Dependency version="5.16.1">perl</Dependency>
+             <Dependency>perl</Dependency>
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-SGMLSpm</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>SGMLSpm</Package>
-        </Replaces>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -35,47 +32,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-09-12</Date>
             <Version>1.1</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-07-10</Date>
-            <Version>1.1</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-13</Date>
-            <Version>1.03</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-08-22</Date>
-            <Version>1.03</Version>
-            <Comment>Change name to perl-SGMLSpm</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-07</Date>
-            <Version>1.03</Version>
-            <Comment>Depend on new perl.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-16</Date>
-            <Version>1.03</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

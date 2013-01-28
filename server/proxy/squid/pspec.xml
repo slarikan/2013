@@ -70,127 +70,12 @@
     </Package>
 
     <History>
-        <Update release="16" type="security">
+        <Update release="1" type="security">
             <Date>2012-11-06</Date>
             <Version>3.2.3</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="15" type="security">
-            <Date>2011-11-10</Date>
-            <Version>3.1.12</Version>
-            <Comment>Fix CVE-2011-4096;
-                - Invalid free by processing CNAME DNS record pointing to another CNAME record pointing to an empty A-record (pb#19487).
-            </Comment>
-            <Name>Kaan Özdinçer</Name>
-            <Email>kozdincer@pardus.org.tr</Email>
-        </Update>
-        <Update release="14">
-            <Date>2011-05-19</Date>
-            <Version>3.1.12</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2010-11-23</Date>
-            <Version>3.1.9</Version>
-            <Comment>Fix dependency name.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2010-10-27</Date>
-            <Version>3.1.9</Version>
-            <Comment>
-                * Version bump,
-                * Grab some patches, overhaul configure parameters,
-                * Fix subprocess.call usage,
-            </Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-10-27</Date>
-            <Version>3.1.3</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-05-13</Date>
-            <Version>3.1.3</Version>
-            <Comment>Version bump. Update patches, add missing dependencies. Remove deprecated parameter in service script.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2008-09-12</Date>
-            <Version>3.0.19</Version>
-            <Comment>
-                3.x branch (with patches from gentoo)
-                Add missing dependencies
-                Add translation file
-            </Comment>
-            <Name>Taner Taş</Name>
-            <Email>taner@pardus.org.tr</Email>
-        </Update>
-        <Update release="8" type="security">
-            <Date>2008-07-17</Date>
-            <Version>2.6.18</Version>
-            <Comment>Stable update to fix SQUID-2007:2 advisory</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="7" type="security">
-            <Date>2007-12-04</Date>
-            <Version>2.6.17</Version>
-            <Comment>Stable update to fix CVE-2007-6239</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2007-10-25</Date>
-            <Version>2.6.16</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-08-03</Date>
-            <Version>2.6.14</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-05-25</Date>
-            <Version>2.6.13</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-05-23</Date>
-            <Version>2.6.12</Version>
-            <Comment>Updated Service script.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2" type="security">
-            <Date>2007-03-21</Date>
-            <Version>2.6.12</Version>
-            <Comment>Security update to fix CVE-2007-1560</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-26</Date>
-            <Version>2.6.9</Version>
-            <Comment>First release.</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

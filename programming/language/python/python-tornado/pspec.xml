@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Friendfeed python web framework</Summary>
         <Description>Tornado is an open source version of the scalable, non-blocking web server and and tools that power FriendFeed.</Description>
-        <Archive sha1sum="36ca4cd4b15e422a92586389f88762b39b8ac12b" type="targz">https://github.com/downloads/facebook/tornado/tornado-2.4.tar.gz</Archive>
+        <Archive sha1sum="9e985efa61137ed96bad08fa222b1216358b2f9c" type="targz">https://github.com/downloads/facebook/tornado/tornado-2.4.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>python-simplejson</Dependency>
             <Dependency>pycurl</Dependency>
@@ -32,47 +32,19 @@
     </Package>
 
     <History>
-        <Update release="6">
-            <Date>2012-11-17</Date>
-            <Version>2.4</Version>
-            <Comment>version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-02-10</Date>
-            <Version>1.2.1</Version>
-            <Comment>New release</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-02-10</Date>
-            <Version>1.1.1</Version>
-            <Comment>Update.</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-01-10</Date>
-            <Version>1.1</Version>
-            <Comment>Take package.</Comment>
-            <Name>İşbaran Akçayır</Name>
-            <Email>isbaran@gmail.com</Email>
-        </Update>
         <Update release="2">
-            <Date>2010-09-24</Date>
-            <Version>1.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
+            <Date>2013-01-24</Date>
+            <Version>2.4.1</Version>
+            <Comment>New version</Comment>
+            <Name>Ertan Güven</Name>
+            <Email>guven.ertan@gmail.com</Email>
         </Update>
         <Update release="1">
-            <Date>2009-11-07</Date>
-            <Version>0.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
+            <Date>2012-11-17</Date>
+            <Version>2.4</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Update>
     </History>
 </PISI>

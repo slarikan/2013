@@ -14,7 +14,7 @@
         <Description>perl-Mail-SPF-Test is a Perl module that is SPF test-suite class in Perl.</Description>
         <Archive sha1sum="031becf1ea03bdefd19e2393662625dc172a8ce0" type="targz">mirrors://cpan/authors/id/J/JM/JMEHNLE/mail-spf-test/Mail-SPF-Test-v1.001.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Net-DNS</Dependency>
             <Dependency>perl-YAML</Dependency>
             <Dependency>perl-version</Dependency>
@@ -24,7 +24,7 @@
     <Package>
         <Name>perl-Mail-SPF-Test</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-NetAddr-IP</Dependency>
             <Dependency>perl-Net-DNS</Dependency>
             <Dependency>perl-YAML</Dependency>
@@ -38,34 +38,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>1.001</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2012-07-05</Date>
-            <Version>1.001</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-11-11</Date>
-            <Version>1.001</Version>
-            <Comment>Enable perl-version dependency</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-05-28</Date>
-            <Version>1.001</Version>
-            <Comment>First release.</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

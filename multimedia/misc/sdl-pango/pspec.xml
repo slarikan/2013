@@ -49,33 +49,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-09-28</Date>
             <Version>0.1.2</Version>
-            <Comment>Split devel package.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-06</Date>
-            <Version>0.1.2</Version>
-            <Comment>Update doc path and remove strict deps for 2009, add more docs.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-12-31</Date>
-            <Version>0.1.2</Version>
-            <Comment>Disable static libs</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-10-29</Date>
-            <Version>0.1.2</Version>
-            <Comment>First release</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

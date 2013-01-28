@@ -13,18 +13,18 @@
         <IsA>app:gui</IsA>
         <Summary>3-D game based on Rubik's Cube</Summary>
         <Description>Kubrick is based on the famous Rubik's Cube™ puzzle, invented by Professor Erno Rubik in Hungary in the 1970s.</Description>
-        <Archive sha1sum="156f9e9cfeafca3903a1f62a28d2250a6174eb8d" type="tarxz">mirrors://kde/unstable/4.9.97/src/kubrick-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="dc49d03158fe324ea861ef9d60071a516feba2fe" type="tarxz">mirrors://kde/unstable/4.9.98/src/kubrick-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kubrick</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,19 +35,12 @@
     </Package>
 
     <History> 
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
         <Update release="1">
-            <Date>2013-01-02</Date>
-            <Version>4.9.95</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>       
     </History>
 </PISI>

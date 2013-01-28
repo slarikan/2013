@@ -50,22 +50,8 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2010-01-15</Date>
-            <Version>1.25</Version>
-            <Comment>Add icon tag, change icon type to png.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-05-06</Date>
-            <Version>1.25</Version>
-            <Comment>Update doc path, remove strict deps for 2009.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2005-12-29</Date>
+            <Date>2010-01-15</Date>
             <Version>1.25</Version>
             <Comment>First release</Comment>
             <Name>Doruk Fişek</Name>

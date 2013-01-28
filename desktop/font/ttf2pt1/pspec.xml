@@ -36,26 +36,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-21</Date>
             <Version>3.4.4</Version>
-            <Comment>Build for pardus-anka.</Comment>
+            <Comment>First release</Comment>
             <Name>Sezai Yeniay</Name>
             <Email>sezaiyeniay@ozgurlukicin.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-05-02</Date>
-            <Version>3.4.4</Version>
-            <Comment>ttf2gs added</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-05-01</Date>
-            <Version>3.4.4</Version>
-            <Comment>First release</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -40,67 +40,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2011-01-19</Date>
             <Version>1.1.0.1</Version>
-            <Comment>Version bump and make the package ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-06-14</Date>
-            <Version>1.1.0.0</Version>
-            <Comment>Version bump:
-                ·   translation tool split off from main code
-                ·   pl language added
-                ·   italian card rules added
-                ·   3 dice to defend option added
-                ·   in the map editor, if a new image is loaded with a different size to the imgmap, it asks if you want to update the size of the imgmap
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-08-15</Date>
-            <Version>1.0.9.8</Version>
-            <Comment>Remove unneeded ant build in actions.py, make the package ready for Pardus 2009.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-10-03</Date>
-            <Version>1.0.9.8</Version>
-            <Comment>Stable bump, fix license and package takeover.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-10-13</Date>
-            <Version>1.0.9.3</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-08-23</Date>
-            <Version>1.0.9.2</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-07-12</Date>
-            <Version>1.0.9.1</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-31</Date>
-            <Version>1.0.8.9</Version>
             <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

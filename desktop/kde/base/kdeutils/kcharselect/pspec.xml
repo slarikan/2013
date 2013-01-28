@@ -13,16 +13,16 @@
         <IsA>app:gui</IsA>
         <Summary>A character selector</Summary>
         <Description>KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.</Description>
-        <Archive sha1sum="ebcde5b01bf0c883ddbee233d419c9964f6cc289" type="tarxz">mirrors://kde/unstable/4.9.97/src/kcharselect-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="c6383073a2e5dfed6aa6c5bafd7e1707f7f701dc" type="tarxz">mirrors://kde/unstable/4.9.98/src/kcharselect-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kcharselect</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,17 +33,10 @@
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
         <Update release="1">
-            <Date>2012-12-23</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      

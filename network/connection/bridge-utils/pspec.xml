@@ -33,54 +33,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-08-28</Date>
             <Version>1.5</Version>
-            <Comment>V.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-21</Date>
-            <Version>1.4</Version>
-            <Comment>Add some fedora patches</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-01-09</Date>
-            <Version>1.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2006-10-28</Date>
-            <Version>1.2</Version>
-            <Comment>define HZ to sysconf(_SC_CLK_TCK) if not defined</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-09-23</Date>
-            <Version>1.2</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-09-10</Date>
-            <Version>1.1</Version>
-            <Comment>Fix setting port priority</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-06-17</Date>
-            <Version>1.1</Version>
-            <Comment>First release</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

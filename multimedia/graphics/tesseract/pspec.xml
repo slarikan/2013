@@ -78,47 +78,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-08-29</Date>
             <Version>3.01</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-10-18</Date>
-            <Version>3.00</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-08-10</Date>
-            <Version>2.04</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-07-15</Date>
-            <Version>2.03</Version>
-            <Comment>Stable update, Portuguese (Brazilian) data files added to tarball, disabled java due to install problems.</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-08-31</Date>
-            <Version>2.01</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-07-22</Date>
-            <Version>2.00</Version>
-            <Comment>First release</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

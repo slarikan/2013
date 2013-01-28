@@ -19,7 +19,7 @@
             <Dependency>gtk2-devel</Dependency>
             <Dependency>gtksourceview3-devel</Dependency>
             <Dependency>docbook-xml</Dependency>
-            <Dependency releaseFrom="16">python-pygobject-devel</Dependency>
+            <Dependency>python-pygobject-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">python-underlinking.patch</Patch>
@@ -32,7 +32,7 @@
             <Dependency>python-gtk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>gtksourceview3</Dependency>
-            <Dependency releaseFrom="16">python-pygobject</Dependency>
+            <Dependency>python-pygobject</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -42,57 +42,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2010-11-28</Date>
             <Version>2.10.0</Version>
-            <Comment>
-                * Update package name of pygtk.
-                * Add missing dependency.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Görgen</Name>
             <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-30</Date>
-            <Version>2.10.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-08-22</Date>
-            <Version>2.6.0</Version>
-            <Comment>package rename, add translations.xml</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-06-04</Date>
-            <Version>2.6.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-03-10</Date>
-            <Version>2.2.0</Version>
-            <Comment>Version bump to new stable release.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-02-03</Date>
-            <Version>2.1.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-01-26</Date>
-            <Version>2.0.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
         </Update>
     </History>
 </PISI>

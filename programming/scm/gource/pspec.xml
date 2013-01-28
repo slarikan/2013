@@ -46,26 +46,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-09-19</Date>
             <Version>0.37</Version>
-            <Comment>Version bump:
-                Gource 0.37: fixing a few bugs with timestamps and directory deletion.
-                Gource 0.35: This release fixes a few bugs and handles truncation on the file extension key display (enabled with --key or pressing K).
-                Gource 0.34:
-                * Gource now features an OpenGL 2.0 rendering pipeline which dramatically improves performance on large repositories, while still maintaining legacy support for older graphics cards.
-                * A significant visual improvement in this version is the elimination of banding artifacts in bloom via use of shaders where OpenGL 2.0 support is available (you can toggle the older render with P-key to see the difference).
-                * This release no longer depends on FTGL and uses a custom font library that calls freetype2 directly.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-25</Date>
-            <Version>0.32</Version>
-            <Comment>First release</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

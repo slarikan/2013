@@ -14,7 +14,7 @@
         <Description>Rdate displays and sets the local date and time from the host name or address given as the argument.</Description>
         <Archive sha1sum="bad85e74a1523f8548105d7700ed63e9886b9979" type="targz">ftp://ftp.pardus.org.tr/pub/source/2009/rdate-1.4.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4">sed</Dependency>
+            <Dependency>sed</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -27,37 +27,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>1.4</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-04</Date>
-            <Version>1.4</Version>
-            <Comment>Make the package ready for Pardus-2009:
-                * LDFLAGS usage is added.
-                * Translations are fixed.
-                * unnecessary /usr/share/doc Path is removed.
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-01-09</Date>
-            <Version>1.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-09-16</Date>
-            <Version>0.990821</Version>
-            <Comment>First release.</Comment>
-            <Name>Ahmet AYGÜN</Name>
-            <Email>ahmet@zion.gen.tr</Email>
         </Update>
     </History>
 </PISI>

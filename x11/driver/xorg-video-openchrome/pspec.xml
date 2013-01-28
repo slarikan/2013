@@ -18,7 +18,7 @@
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXv-devel</Dependency>
             <Dependency>libXvMC-devel</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -29,7 +29,7 @@
             <Dependency>libXext</Dependency>
             <Dependency>libXv</Dependency>
             <Dependency>libXvMC</Dependency>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -40,68 +40,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2012-10-11</Date>
             <Version>0.3.1</Version>
-            <Comment>New stable release</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2012-05-30</Date>
-            <Version>0.2.906</Version>
-            <Comment>New stable release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-09-16</Date>
-            <Version>0.2.904_980</Version>
-            <Comment>Sync with upstream trunk revision 980. Includes bugfixes and support for various new VIA cards</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-25</Date>
-            <Version>0.2.904_860</Version>
-            <Comment>Sync with upstream trunk and add some experimental Fedora patches</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-10-12</Date>
-            <Version>0.2.904</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-10-21</Date>
-            <Version>0.2.904</Version>
-            <Comment>New release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-07-13</Date>
-            <Version>0.2.903_755</Version>
-            <Comment>Sync with upstream trunk</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-29</Date>
-            <Version>0.2.903</Version>
-            <Comment>Grab Fedora patches</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-04-30</Date>
-            <Version>0.2.903</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

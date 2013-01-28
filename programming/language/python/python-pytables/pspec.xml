@@ -49,17 +49,10 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-11-23</Date>
             <Version>2.2.1</Version>
-            <Comment>Version bump and make the package ready for 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-07-07</Date>
-            <Version>2.2</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
         </Update>

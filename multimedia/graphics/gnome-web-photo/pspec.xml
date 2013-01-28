@@ -44,19 +44,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-08-28</Date>
             <Version>0.10.6</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-07-04</Date>
-            <Version>0.10.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

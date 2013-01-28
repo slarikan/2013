@@ -44,13 +44,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-07-13</Date>
             <Version>1.22</Version>
-            <Comment>first relaese</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

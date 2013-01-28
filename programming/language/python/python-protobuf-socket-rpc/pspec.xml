@@ -30,10 +30,9 @@
         <Update release="1">
             <Date>2011-03-09</Date>
             <Version>1.3.2</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Alper Tekinalp</Name>
             <Email>alper.tekinalp@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

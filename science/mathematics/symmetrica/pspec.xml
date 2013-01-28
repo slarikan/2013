@@ -39,33 +39,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-01-29</Date>
             <Version>2.0</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-07-25</Date>
-            <Version>2.0</Version>
-            <Comment>Ready for 2009</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-09-12</Date>
-            <Version>2.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-23</Date>
-            <Version>0.0_19991123</Version>
             <Comment>First release</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -55,20 +55,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-02-11</Date>
             <Version>0.5.1</Version>
-            <Comment>Fix dependencies, add libmtdev dependency.</Comment>
+            <Comment>First release</Comment>
             <Name>Mesutcan Kurt</Name>
             <Email>mesutcank@gmail.com</Email>
         </Update>
-        <Update release="1">
-            <Date>2010-09-09</Date>
-            <Version>0.5.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

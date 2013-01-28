@@ -27,19 +27,12 @@
 </Package>
 
 <History>
-    <Update release="2">
+    <Update release="1">
         <Date>2011-05-30</Date>
         <Version>0.6.3</Version>
-        <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
         <Name>Gökhan Özbulak</Name>
         <Email>gozbulak@pardus.org.tr</Email>
-    </Update>
-    <Update release="1">
-        <Date>2010-12-29</Date>
-        <Version>0.6.2</Version>
-        <Comment>Initial release.</Comment>
-        <Name>İlker Kesen</Name>
-        <Email>ikesen92@gmail.com</Email>
     </Update>
 </History>
 </PISI>

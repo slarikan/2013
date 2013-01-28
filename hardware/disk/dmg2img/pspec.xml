@@ -24,19 +24,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-11-13</Date>
             <Version>1.6.4</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-10-05</Date>
-            <Version>1.6.2</Version>
-            <Comment>First release</Comment>
-            <Name>Kaan Akşit</Name>
-            <Email>kunguz@gmail.com</Email>
         </Update>
     </History>
 </PISI>

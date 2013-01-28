@@ -15,7 +15,7 @@
         <Description>RapidMiner is the world leading open source system for data mining. It's available as a standalone application for data analysis and as a data mining engine. It's used for research, education, training, rapid prototyping, application development and industrial applications.</Description>
         <Archive sha1sum="3d6a1fcd5a6aba2fa4c50086dbd820ec0486ae0e" type="zip">mirrors://sourceforge/rapidminer/1.%20RapidMiner/5.1/rapidminer-5.1.008.zip</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.6">sun-jdk</Dependency>
+            <Dependency>sun-jdk</Dependency>
             <Dependency>ant</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>rapidminer</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.6">sun-jre</Dependency>
+            <Dependency>sun-jre</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,7 +42,7 @@
         <Update release="1">
             <Date>2011-08-05</Date>
             <Version>5.1.008</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökhan Özbulak</Name>
             <Email>gozbulak@pardus.org.tr</Email>
         </Update>

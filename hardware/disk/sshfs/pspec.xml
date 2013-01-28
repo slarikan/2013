@@ -32,85 +32,12 @@
     </Package>
 
     <History>
-        <Update release="11">
+        <Update release="1">
             <Date>2012-11-14</Date>
             <Version>2.4</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="10">
-            <Date>2011-07-08</Date>
-            <Version>2.3</Version>
-            <Comment>Version bump to 2.3</Comment>
-            <Name>Renan Çakırerk</Name>
-            <Email>renan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-10-13</Date>
-            <Version>2.2</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-05-05</Date>
-            <Version>2.2</Version>
-            <Comment>Add man page</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-11-05</Date>
-            <Version>2.2</Version>
-            <Comment>
-              * Fix error if username contains a comma character
-              * Fix harmless glib assertations with "cache=no"
-            </Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-08-26</Date>
-            <Version>2.1</Version>
-            <Comment>Stable update</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-12-17</Date>
-            <Version>1.9</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-05-17</Date>
-            <Version>1.8</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-10-29</Date>
-            <Version>1.7</Version>
-            <Comment>Add docs to package</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-09-29</Date>
-            <Version>1.7</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-01-20</Date>
-            <Version>1.4</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

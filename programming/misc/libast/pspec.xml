@@ -48,26 +48,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-03-03</Date>
             <Version>0.7</Version>
-            <Comment>Split headers, ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Kaan Özdinçer</Name>
             <Email>kaanozdincer@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-07-30</Date>
-            <Version>0.7</Version>
-            <Comment>sync</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-06-10</Date>
-            <Version>0.7</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

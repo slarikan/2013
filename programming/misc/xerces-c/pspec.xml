@@ -53,50 +53,12 @@
 
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2010-10-21</Date>
             <Version>3.1.1</Version>
-            <Comment>
-                - Split devel package and docs.
-                - Version dump
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Mete Bilgin</Name>
             <Email>metebilgin48@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-03-15</Date>
-            <Version>3.1.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Mete Bilgin</Name>
-            <Email>metebilgin48@gmail.com</Email>
-        </Update>
-        <Update release="4" type="security">
-            <Date>2009-08-10</Date>
-            <Version>3.0.1</Version>
-            <Comment>Fix Codenomicon Malformed XML input DoS (CVE-2009-2625), #10817</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-01</Date>
-            <Version>3.0.1</Version>
-            <Comment>Stable bump and package take over.</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-04-09</Date>
-            <Version>2.8.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-26</Date>
-            <Version>2.7.0</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

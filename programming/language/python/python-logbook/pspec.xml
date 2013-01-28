@@ -24,20 +24,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-11-13</Date>
             <Version>0.4</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="1">
-            <Date>2010-10-22</Date>
-            <Version>0.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

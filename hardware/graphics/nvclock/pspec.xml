@@ -32,30 +32,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2009-06-30</Date>
             <Version>0.8</Version>
-            <Comment>Add missing libXext dependency.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-04-05</Date>
-            <Version>0.8</Version>
-            <Comment>
-                Version bump which offers support for the latest cards and improves functionality
-                for current models like smartdimmer support for Geforce 8/9 boards and fanspeed
-                adjustment/temperature monitoring on most Geforce 8/9/GT200 cards.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-10-18</Date>
-            <Version>0.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Gürer Özen</Name>
-            <Email>gurer@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

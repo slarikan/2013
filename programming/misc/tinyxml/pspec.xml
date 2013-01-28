@@ -40,26 +40,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-01-19</Date>
             <Version>2.6.1</Version>
-            <Comment>Adapt to 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-08</Date>
-            <Version>2.6.1</Version>
-            <Comment>Workaround dolib not caring for symlinks</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-08-19</Date>
-            <Version>2.6.1</Version>
-            <Comment>First release. (Initial release by Anıl Özbek)</Comment>
-            <Name>Ertan Argüden</Name>
-            <Email>ert976@gmail.com</Email>
         </Update>
     </History>
 </PISI>

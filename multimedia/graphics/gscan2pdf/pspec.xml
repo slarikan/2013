@@ -15,15 +15,15 @@
         <Description>gscan2pdf is a GUI to ease the process of producing a multipage PDF from a scan. Scanning is handled with SANE via scanimage. PDF conversion is done by perl-PDF-API2 module. TIFF export is handled by tiff (faster and smaller memory footprint for multipage files).</Description>
         <Archive sha1sum="f7fb6d1491e178787c6b0a6976863e01f2f80a3c" type="targz">http://sourceforge.net/projects/gscan2pdf/files/gscan2pdf/1.1.0/gscan2pdf-1.1.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>perl-Sane</Dependency>
             <Dependency>perl-Gtk2-Ex-Simple-List</Dependency>
             <Dependency>perl-Gtk2-ImageView</Dependency>
             <Dependency>perl-Locale-gettext</Dependency>
-            <Dependency versionFrom="2.40">perl-Config-General</Dependency>
+            <Dependency>perl-Config-General</Dependency>
             <Dependency>perl-PDF-API2</Dependency>
-            <Dependency versionFrom="1.10">perl-Set-IntSpan</Dependency>
+            <Dependency>perl-Set-IntSpan</Dependency>
             <Dependency>perl-XML-Simple</Dependency>
             <Dependency>perl-Goo-Canvas</Dependency>
             <Dependency>perl-Readonly</Dependency>
@@ -44,15 +44,15 @@
     <Package>
         <Name>gscan2pdf</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Gtk2</Dependency>
             <Dependency>perl-Sane</Dependency>
             <Dependency>perl-Gtk2-Ex-Simple-List</Dependency>
             <Dependency>perl-Gtk2-ImageView</Dependency>
             <Dependency>perl-Locale-gettext</Dependency>
-            <Dependency versionFrom="2.40">perl-Config-General</Dependency>
+	    <Dependency>perl-Config-General</Dependency>
             <Dependency>perl-PDF-API2</Dependency>
-            <Dependency versionFrom="1.10">perl-Set-IntSpan</Dependency>
+            <Dependency>perl-Set-IntSpan</Dependency>
             <Dependency>perl-XML-Simple</Dependency>
             <Dependency>perl-Goo-Canvas</Dependency>
             <Dependency>perl-Readonly</Dependency>
@@ -81,43 +81,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-11-18</Date>
             <Version>1.1.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-08-28</Date>
-            <Version>1.0.6</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update> 
-        <Update release="3">
-            <Date>2011-09-22</Date>
-            <Version>0.9.32</Version>
-            <Comment>
-                - Add perl-Gtk2-Ex-PodViewer dependency in order to display help window
-                - Update Turkish translation
-            </Comment>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-03-29</Date>
-            <Version>0.9.32</Version>
-            <Comment>Add missing unpaper runtime dependency, thanks to David Deaderick. pb#17513</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-22</Date>
-            <Version>0.9.32</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

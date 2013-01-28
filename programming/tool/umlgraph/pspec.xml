@@ -48,10 +48,9 @@
         <Update release="1">
             <Date>2011-04-04</Date>
             <Version>5.4</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Bertan Gündoğdu</Name>
             <Email>bertan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>
-

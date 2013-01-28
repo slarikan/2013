@@ -18,7 +18,7 @@
             <Dependency>ffcall-devel</Dependency>
             <Dependency>libglade-devel</Dependency>
             <Dependency>fcgi-devel</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>postgresql-lib</Dependency>
             <Dependency>pcre++-devel</Dependency>
             <!--Dependency>pari</Dependency-->
@@ -48,7 +48,7 @@
             <Dependency>ffcall</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>fcgi</Dependency>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>postgresql-lib</Dependency>
             <Dependency>pcre++</Dependency>
             <!--Dependency>pari</Dependency-->
@@ -86,95 +86,12 @@
 
 
     <History>
-        <Update release="12">
+        <Update release="1">
             <Date>2010-12-30</Date>
             <Version>2.49</Version>
-            <Comment>Build for 2011, new patches added, split devel package</Comment>
+            <Comment>First release</Comment>
             <Name>Çağlar Kilimci</Name>
             <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-12-21</Date>
-            <Version>2.49</Version>
-            <Comment>Version bump:
-                * Function RENAME-FILE now accepts.
-                * Module pcre 8.01 and previous versions now supports.
-                * Module berkeley-db 4.8 and previous versions now supports.
-                * Module postgresql 8.4 and previous versions now supports.
-                Look for more information: http://clisp.cvs.sourceforge.net/viewvc/clisp/clisp/src/NEWS?revision=clisp_2_49-2010-07-07
-            </Comment>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2009-08-15</Date>
-            <Version>2.48</Version>
-            <Comment>Version bump, many bugfixes and compile new modules.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-05-27</Date>
-            <Version>2.47</Version>
-            <Comment>Set execute bit of clisp-link script, remove system.base dependencies.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-04-26</Date>
-            <Version>2.47</Version>
-            <Comment>Remove tetex dep and emacs package.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-11-27</Date>
-            <Version>2.47</Version>
-            <Comment>Add missing man file into the package (Fixes #8555).</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-10-24</Date>
-            <Version>2.47</Version>
-            <Comment>Stable update.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-10-07</Date>
-            <Version>2.46</Version>
-            <Comment>Add missing deps, remove unneeded deps</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-09-18</Date>
-            <Version>2.46</Version>
-            <Comment>Version bump</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-03-05</Date>
-            <Version>2.43.1</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-12-17</Date>
-            <Version>2.43</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-03-02</Date>
-            <Version>2.38</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

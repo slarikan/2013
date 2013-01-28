@@ -18,7 +18,7 @@
             <AdditionalFile target="po/tr.po">tr.po</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency versionFrom="1.1.0">libimobiledevice-devel</Dependency>
+            <Dependency>libimobiledevice-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libplist-devel</Dependency>
         </BuildDependencies>
@@ -30,7 +30,7 @@
     <Package>
         <Name>upower</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.1.0">libimobiledevice</Dependency>
+            <Dependency>libimobiledevice</Dependency>
             <Dependency>libplist</Dependency>
             <Dependency>pm-utils</Dependency>
         </RuntimeDependencies>
@@ -66,75 +66,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2012-10-20</Date>
             <Version>0.9.18</Version>
-            <Comment>Bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Soytetir</Name>
             <Email>tulliana@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-07-05</Date>
-            <Version>0.9.12</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-05-04</Date>
-            <Version>0.9.10</Version>
-            <Comment>
-                 - Add a config option 'IgnoreLid' for users with broken lid switches (Richard Hughes)
-                 - Add integration test suite for Linux (Martin Pitt)
-                 - Add option to run daemon on the session bus for testing (Martin Pitt)
-                 - Add OpenBSD backend which uses the APM_IOC_GETPOWER ioctl() (Landry Breuil)
-                 - Support virtual UPS devices for testing (Martin Pitt)
-                 - Consider a discharging UPS as "on battery" (Martin Pitt)
-                 - Do not overwrite aclocal flags in autogen, fixes b.fd.o #35261 (Tobias Mueller)
-                 - Fix "unknown" battery status guessing to not be recursive (Martin Pitt)
-                 - Respect $UPOWER_CONF_FILE_NAME in up_config_init (Martin Pitt)
-                 - Support batteries that report both energy and charge (Benson Leung)
-                 - upower needs -pthread (Landry Breuil)
-                 - Use the new threadsafe signal handling support in GLib (Richard Hughes)
-                 - Wuninitialized needs -O (Landry Breuil)
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-03-27</Date>
-            <Version>0.9.9</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-02-02</Date>
-            <Version>0.9.8</Version>
-            <Comment>Depend new libimobiledevice</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-01-10</Date>
-            <Version>0.9.8</Version>
-            <Comment>Disable animation</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-11-10</Date>
-            <Version>0.9.7</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-10-21</Date>
-            <Version>0.9.6</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

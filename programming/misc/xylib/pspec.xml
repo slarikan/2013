@@ -42,33 +42,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-02-08</Date>
             <Version>0.8</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-17</Date>
-            <Version>0.7</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-09-02</Date>
-            <Version>0.6</Version>
-            <Comment>Version bump, split headers</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-04-16</Date>
-            <Version>0.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
         </Update>
     </History>
 </PISI>

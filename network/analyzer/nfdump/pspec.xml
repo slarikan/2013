@@ -25,40 +25,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-09-01</Date>
             .<Version>1.6.6</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-12-30</Date>
-            <Version>1.6.1</Version>
-            <Comment>Version bump to the latest stable, ready for 2011</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-02</Date>
-            <Version>1.5.8</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-07-17</Date>
-            <Version>1.5.7</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-06-06</Date>
-            <Version>1.5.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih.asici@gmail.com</Email>
         </Update>
     </History>
 </PISI>

@@ -38,21 +38,12 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2010-04-10</Date>
-            <Version>2.3</Version>
-            <Comment>Added missing dependency: fuseiso</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>    
-        </Update>
         <Update release="1">
             <Date>2010-04-10</Date>
             <Version>2.3</Version>
-            <Comment>Initial</Comment>
+            <Comment>First release</Comment>
             <Email>baDibere@gmail.com</Email>
             <Name>Erdem Artan</Name>    
         </Update>
     </History>
 </PISI>
- 
- 

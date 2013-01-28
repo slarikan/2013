@@ -60,10 +60,10 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2013-01-13</Date>
             <Version>0.6.3</Version>
-            <Comment>İlk Sürüm</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>

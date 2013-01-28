@@ -12,9 +12,9 @@
         <Icon>kross-interpreters</Icon>
         <Summary>KDE4 interpreters</Summary>
         <Description>kross-interpreters consists of several interpreters for KDE4.</Description>
-        <Archive sha1sum="93831d2c9f4586e18bc3f5a68777d54c54742dbc" type="tarxz">mirrors://kde/unstable/4.9.97/src/kross-interpreters-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="8751192075ce13f5e72d659c82ac4087a95b1486" type="tarxz">mirrors://kde/unstable/4.9.98/src/kross-interpreters-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
             <Dependency>sun-jdk</Dependency>
             <Dependency>ruby-devel</Dependency>    
         </BuildDependencies>
@@ -43,8 +43,8 @@
         <Summary>KDE4 kross Python bindings</Summary>
         <Description>Python-kross contains KDE4 kross bindings for Python.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.8.4">qt</Dependency>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>qt</Dependency>
+            <Dependency>kdelibs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/kde4/krosspython.so</Path>
@@ -58,8 +58,8 @@
         <Summary>KDE4 kross Ruby bindings</Summary>
         <Description>Ruby-kross contains KDE4 kross bindings for Ruby.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
-            <Dependency versionFrom="1.8.7">ruby</Dependency>
+            <Dependency>kdelibs</Dependency>
+            <Dependency>ruby</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/kde4/krossruby.so</Path>
@@ -73,7 +73,7 @@
         <Summary>KDE4 kross Java bindings</Summary>
         <Description>Java-kross contains KDE4 kross bindings for Java.</Description>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>sun-jre</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -83,17 +83,10 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
         <Update release="1">
-            <Date>2012-12-23</Date>
-            <Version>4.9.95</Version>
-            <Comment>Version bump to 4.9.95</Comment>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      

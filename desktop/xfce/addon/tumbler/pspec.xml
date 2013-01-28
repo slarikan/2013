@@ -34,7 +34,7 @@
             <Dependency>ffmpegthumbnailer</Dependency>
             <Dependency>jpeg</Dependency>
             <Dependency>poppler</Dependency>
-            <Dependency version="1.5.0">Thunar</Dependency>
+            <Dependency>Thunar</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
@@ -63,27 +63,12 @@
 
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-11-13</Date>
             <Version>0.1.25</Version>
-            <Comment>rebuild</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-05-03</Date>
-            <Version>0.1.25</Version>
-            <Comment>version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-30</Date>
-            <Version>0.1.21</Version>
-            <Comment>First release.</Comment>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

@@ -33,9 +33,6 @@
             <Dependency>exiv2-libs</Dependency>
             <Dependency>libstreams</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package versionTo="0.7.2">strigi</Package>
-        </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
@@ -51,7 +48,7 @@
         <Summary>Development files for libstreamanalyzer</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libstreamanalyzer</Dependency>
-            <Dependency versionFrom="0.7.7">libstreams-devel</Dependency>
+            <Dependency>libstreams-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>

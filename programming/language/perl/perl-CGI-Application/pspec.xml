@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-CGI-Application</Name>
@@ -14,7 +16,7 @@
         <Description>CGI::Application makes it easier to create sophisticated, high-performance, reusable web-based applications. CGI::Application helps makes your web applications easier to design, write, and evolve.</Description>
         <Archive sha1sum="3e1fe7c6e09392e44a04082175926ee49857a9da" type="targz">http://search.cpan.org/CPAN/authors/id/M/MA/MARKSTOS/CGI-Application-4.50.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-CGI-PSGI</Dependency>
             <Dependency>perl-Class-ISA</Dependency>
             <Dependency>perl-HTML-Template</Dependency>
@@ -23,7 +25,7 @@
     <Package>
         <Name>perl-CGI-Application</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-CGI-PSGI</Dependency>
             <Dependency>perl-Class-ISA</Dependency>
             <Dependency>perl-HTML-Template</Dependency>
@@ -36,17 +38,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>4.50</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-12</Date>
-            <Version>4.50</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

@@ -32,8 +32,9 @@
         <Archive sha1sum="042a9b8f715d96a17f807604541bd60ca5a3101d" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-rlc-firmware-1.tar.bz2/189be8ab60025bf81f8841ab53175665/radeon-rlc-firmware-1.tar.bz2</Archive>
         <Archive sha1sum="b7ec67544c7343a9e64500e2aee3a7afc54b8f79" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-ni-fw.tar.bz2/268e466b70f48ddf01297b18c99beb30/radeon-ni-fw.tar.bz2</Archive>
         <Archive sha1sum="de5eefac7856cd0c701527f613a2ccc7ca34b513" type="tarbz2" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/linux-firmware/radeon-firmware-2.tar.bz2/ee8574e13b60be59b6b18b21e20d9e3a/radeon-firmware-2.tar.bz2</Archive>
-        <Archive sha1sum="0e53846a25b9ec5f6f56559f6cc0778227e5564c" type="targz" target="linux-firmware-20121212">http://intellinuxwireless.org/iwlwifi/downloads/iwlwifi-3945-ucode-15.32.2.9.tgz</Archive>
-        <Archive sha1sum="b93d14d2a690597b159cc2e27b06d417fe3c6313" type="targz" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/aic94xx-firmware/aic94xx-seq-30-1.tar.gz/1fed6c024581ee84f57db8aad51b7fb3/aic94xx-seq-30-1.tar.gz</Archive>
+        <Archive sha1sum="b93d14d2a690597b159cc2e27b06d417fe3c6313" type="targz" target="linux-firmware-20121212">http://pkgs.fedoraproject.org/repo/pkgs/aic94xx-firmware/aic94xx-seq-30-1.tar.gz/1fed6c024581ee84f57db8aad51b7fb3/aic94xx-seq-30-1.tar.gz</Archive>	
+        <Archive sha1sum="0e53846a25b9ec5f6f56559f6cc0778227e5564c" type="targz" target="linux-firmware-20121212">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/firmware/iwlwifi-3945-ucode-15.32.2.9.tgz</Archive>
+
         <BuildDependencies>
             <Dependency>rpm2targz</Dependency>
         </BuildDependencies>
@@ -48,81 +49,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-12-12</Date>
             <Version>20121212</Version>
-            <Comment>bump
-               * brcm: new firmware version for brcmsmac
-               * linux-firmware: add Marvell USB8797-B0 firmware image
-               * s5p-mfc: Adding firmware files for Samsung MFC device driver
-               * ar5523: Add firmware for new driver
-               * Update patch and syscfg files for QCA9564
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2012-12-11</Date>
-            <Version>20121016</Version>
-            <Comment>add tp-link firmvare carl9170-1.fw</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2012-10-17</Date>
-            <Version>20121016</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2012-09-20</Date>
-            <Version>20120720</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-02-28</Date>
-            <Version>0.0_20110128</Version>
-            <Comment>Version bump and fix RTL8192SE firmware path (#15534).</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-01-31</Date>
-            <Version>0.0_20110128</Version>
-            <Comment>Fix ar9170.fw which was actually bzip2 compressed license file. I don't know how this happened at all.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-01-30</Date>
-            <Version>0.0_20110128</Version>
-            <Comment>Add new firmwares</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-01-12</Date>
-            <Version>0.0_20110110</Version>
-            <Comment>Add radeon NI firmwares</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-29</Date>
-            <Version>0.0_20101221</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-01</Date>
-            <Version>0.0_20101113</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

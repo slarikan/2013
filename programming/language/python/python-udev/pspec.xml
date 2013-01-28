@@ -31,7 +31,7 @@
         <Description>These bindings provide udev capability for Python programs where Qt is used.</Description>
         <RuntimeDependencies>
             <Dependency>python-udev</Dependency>
-            <Dependency versionFrom="4.0">python-qt</Dependency>
+            <Dependency>python-qt</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/python2*/site-packages/pyudev/pyqt4.py</Path>
@@ -39,34 +39,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-07-11</Date>
             <Version>0.11</Version>
-            <Comment>Version bump:
-                - Add `pyudev.Device.sys_number` and 'pyudev.Device.device_number` attributes
-                - Add `pyudev.Device.from_device_number` method
-                - Official support for PyPy
-            </Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-05-26</Date>
-            <Version>0.10</Version>
-            <Comment>Version bump:
-                - Improve error reporting, if libudev is missing
-                - Add some attributes about version info, device type, run path and log priority
-            </Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-18</Date>
-            <Version>0.8</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökhan Özbulak</Name>
             <Email>gozbulak@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>
-

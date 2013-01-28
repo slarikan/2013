@@ -47,33 +47,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2009-06-29</Date>
             <Version>0.98</Version>
-            <Comment>Adding build dependency libpaper.</Comment>
+            <Comment>First release</Comment>
             <Name>Semen Cirit</Name>
             <Email>scirit@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-04-30</Date>
-            <Version>0.98</Version>
-            <Comment>Adding build dependency.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-04-13</Date>
-            <Version>0.98</Version>
-            <Comment>Changing archive tag.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-01-11</Date>
-            <Version>0.98</Version>
-            <Comment>First release</Comment>
-            <Name>Furkan Duman</Name>
-            <Email>coderlord@gmail.com</Email>
         </Update>
     </History>
 </PISI>

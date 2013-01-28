@@ -21,5 +21,3 @@ def install():
     cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("CONTRIBUTORS", "ChangeLog", "COPYING.*", "README")
-
-# By PiSiDo 2.0.0

@@ -14,14 +14,14 @@
         <Description>Provides shell-like regular expressions. The wildcards provided are ?, * and **, where ** is like * but matches /. See compile_shellish for details.</Description>
         <Archive sha1sum="f89f99055da423a5dfd79717483a9be567ed36f3" type="targz">mirrors://cpan/authors/id/R/RB/RBS/Regexp-Shellish-0.93.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Regexp-Shellish</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -33,47 +33,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-09-12</Date>
             <Version>0.93</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-07-09</Date>
-            <Version>0.93</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-12-04</Date>
-            <Version>0.93</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-12-03</Date>
-            <Version>0.93</Version>
-            <Comment>Add perl dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-07-20</Date>
-            <Version>0.93</Version>
-            <Comment>Ready for 2009</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-02</Date>
-            <Version>0.93</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

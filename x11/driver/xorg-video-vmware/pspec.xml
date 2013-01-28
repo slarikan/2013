@@ -14,7 +14,7 @@
         <Description>xorg-video-vmware contains the X.Org driver for VMWare virtual machines.</Description>
         <Archive sha1sum="efa47f365d88da245804a9934719ff860ed04f95" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-vmware-12.0.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">xf86-video-vmware-12.0.2-xorg-server-1.13.patch</Patch>
@@ -24,7 +24,7 @@
     <Package>
         <Name>xorg-video-vmware</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,75 +35,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-10-12</Date>
             <Version>12.0.2</Version>
-            <Comment>fixed issue with xorg-server-1.13</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2012-05-31</Date>
-            <Version>12.0.2</Version>
-            <Comment>New stable release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-10-12</Date>
-            <Version>11.0.2</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-08-20</Date>
-            <Version>11.0.2</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-03-19</Date>
-            <Version>11.0.1</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-03-17</Date>
-            <Version>11.0.0</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-12-16</Date>
-            <Version>10.16.8</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-01</Date>
-            <Version>10.16.7</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-05</Date>
-            <Version>10.16.6</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-04-30</Date>
-            <Version>10.16.5</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

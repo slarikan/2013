@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-Net-HTTPServer</Name>
@@ -14,13 +16,13 @@
         <Description>Net::HTTPServer basically turns a CGI script into a stand alone server. Useful for temporary services, mobile/local servers, or embedding an HTTP server into another program.</Description>
         <Archive sha1sum="2bd379fae579d5b1e16de374b06d44cacdd900d7" type="targz">http://search.cpan.org/CPAN/authors/id/R/RE/REATMON/Net-HTTPServer-1.1.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-Net-HTTPServer</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,17 +32,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>1.1.1</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-12</Date>
-            <Version>1.1.1</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

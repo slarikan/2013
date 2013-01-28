@@ -15,7 +15,7 @@
         <Description>perl-TheSchwartz is a reliable job queue system. Your application can put jobs into the system, and your worker processes can pull jobs from the queue atomically to perform.</Description>
         <Archive sha1sum="43e789cc7cbef0da74bfe7355523857cafbe953a" type="targz">mirrors://cpan/authors/id/S/SI/SIXAPART/TheSchwartz-1.10.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Data-ObjectDriver</Dependency>
         </BuildDependencies>
     </Source>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-TheSchwartz</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Data-ObjectDriver</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -35,26 +35,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>1.10</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-10</Date>
-            <Version>1.10</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-01-26</Date>
-            <Version>1.10</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

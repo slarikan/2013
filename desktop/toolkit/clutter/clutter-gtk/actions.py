@@ -10,8 +10,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "clutter-gtk-1.4.0"
-
 def setup():
     # guess we should update to new autoconf
     shelltools.export("HOME", "%s" %get.workDIR())
@@ -24,11 +22,10 @@ def build():
     autotools.make()
 
 def install():
-    #shelltools.export("HOME", "%s" %get.workDIR())
     autotools.rawInstall('DESTDIR=%s INSTALL="install -p"'% get.installDIR())
     pisitools.removeDir("/usr/share/locale")
     for i in shelltools.ls("examples"):
         if i.endswith(".png") or i.endswith(".c"):
             pisitools.insinto("/%s/%s/examples/" % (get.docDIR(), get.srcNAME()), "examples/%s" % i)
 
-    #pisitools.dodoc("AUTHORS", "ChangeLog", "README*", "NEWS", "COPYING")
+    pisitools.dodoc("ABOUT-NLS", "README*", "NEWS", "COPYING")

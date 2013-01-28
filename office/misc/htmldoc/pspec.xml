@@ -42,59 +42,12 @@
     </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2011-02-08</Date>
             <Version>1.8.27</Version>
-            <Comment>Add patches from fedora. Change destdir patch. Ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6" type="security">
-            <Date>2009-08-06</Date>
-            <Version>1.8.27.1_20070228</Version>
-            <Comment>
-                - Patch is added for sscanf unsafe call.
-                - S3 for severity
-                - Q4 for quality
-                - BUG:COMMENT:10769
-            </Comment>
-            <Name>Semen Cirit</Name>
-            <Email>scirit@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-05-06</Date>
-            <Version>1.8.27.1_20070228</Version>
-            <Comment>Desktop file added.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-04-13</Date>
-            <Version>1.8.27.1_20070228</Version>
-            <Comment>Changing archive tag.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-04-26</Date>
-            <Version>1.8.27.1_20070228</Version>
-            <Comment>Fix deps</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-02-28</Date>
-            <Version>1.8.27.1_20070228</Version>
-            <Comment>Version bump</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-27</Date>
-            <Version>1.8.24</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

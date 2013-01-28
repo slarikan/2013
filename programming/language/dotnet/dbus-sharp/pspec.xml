@@ -29,20 +29,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-06-25</Date>
             <Version>0.7.21</Version>
-            <Comment>version bump, change build factor</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>      
-        <Update release="1">
-            <Date>2011-03-23</Date>
-            <Version>0.7.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

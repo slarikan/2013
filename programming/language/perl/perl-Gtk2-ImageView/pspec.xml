@@ -14,7 +14,7 @@
         <Description>The perl-Gtk2-ImageView module allows a Perl developer to use the GtkImageView image viewer widget.</Description>
         <Archive sha1sum="cc8506e717cd4f30483ff5e78ca9ef634deac7b7" type="targz">mirrors://cpan/authors/id/R/RA/RATCLIFFE/Gtk2-ImageView-0.05.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Glib</Dependency>
@@ -28,7 +28,7 @@
     <Package>
         <Name>perl-Gtk2-ImageView</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-ExtUtils-Depends</Dependency>
             <Dependency>perl-ExtUtils-PkgConfig</Dependency>
             <Dependency>perl-Glib</Dependency>
@@ -45,26 +45,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-07</Date>
             <Version>0.05</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-06-28</Date>
-            <Version>0.05</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-23</Date>
-            <Version>0.05</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

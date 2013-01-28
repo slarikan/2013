@@ -40,17 +40,10 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-12-01</Date>
             <Version>2.2.4</Version>
-            <Comment>Split devel package.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-06-23</Date>
-            <Version>2.2.4</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
         </Update>

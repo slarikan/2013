@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-SOAP-Transport-Ftp</Name>
@@ -14,13 +16,13 @@
         <Description>The SOAP::Transport::FTP module is automatically loaded by the SOAP::Transport portion of the client structure. It is brought in when an endpoint is specified via the proxy method that starts with the characters, ftp://. This module provides only a client class.</Description>
         <Archive sha1sum="a9f44a4776d0059373db69df6e74f26e4391c83a" type="targz">http://search.cpan.org/CPAN/authors/id/M/MK/MKUTTER/SOAP-Transport-FTP-0.711.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-SOAP-Transport-Ftp</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,17 +32,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-12</Date>
             <Version>0.711</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-10</Date>
-            <Version>0.711</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

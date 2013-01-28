@@ -16,14 +16,14 @@
         <Description>With this plugin you can add timers (alarm or countdown) to your Xfce panel. You can display a warning window and/or run a custom command when alarm rings, repeat alarms etc.</Description>
         <Archive sha1sum="ea0dcf507f2b40f036476f2578cf2075639149e1" type="tarbz2">http://archive.xfce.org/src/panel-plugins/xfce4-timer-plugin/0.6/xfce4-timer-plugin-0.6.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xfce4-timer-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
+            <Dependency>xfce4-panel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/libexec</Path>
@@ -35,31 +35,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-06-10</Date>
             <Version>0.6.4</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-06-25</Date>
-            <Version>0.6.1</Version>
-            <Comment>
-                * Fix dependencies.
-                * Fix summary.
-                * Add missing doc files.
-                * Disable static.
-            </Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-04-06</Date>
-            <Version>0.6.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Cihan Okyay</Name>
-            <Email>okyaycihan@gmail.com</Email>
         </Update>
     </History>
 </PISI>

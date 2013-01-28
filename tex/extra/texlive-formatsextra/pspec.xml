@@ -34,33 +34,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-03-14</Date>
             <Version>0.0_20110314</Version>
-            <Comment>Texlive 2011 packaging from the sratch</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-12</Date>
-            <Version>0.0_20091107</Version>
-            <Comment>Ready for 2011</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-02-11</Date>
-            <Version>0.0_20080816</Version>
-            <Comment>Adding texlive-core dependency.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>scirit@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-02-11</Date>
-            <Version>0.0_20080816</Version>
-            <Comment>First release.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

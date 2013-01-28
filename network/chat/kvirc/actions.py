@@ -11,7 +11,6 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
-WorkDir = "kvirc-4.0rc3"
 NoStrip = "/usr/kde/4/share"
 shelltools.export("HOME", get.workDIR())
 

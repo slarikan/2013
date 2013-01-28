@@ -41,29 +41,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-01-29</Date>
             <Version>2.2.5</Version>
-            <Comment>Bump to new version 2.2.5: 
-                * Updated deprecated symbols in GTK+ 2.16. 
-                * Updated Makefile and spec file, contributed by Jussi Lehtola. 
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-11-07</Date>
-            <Version>2.2.4</Version>
-            <Comment>Remove unnecessary dependency imlib.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-09-29</Date>
-            <Version>2.2.4</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
         </Update>
     </History>
 </PISI>

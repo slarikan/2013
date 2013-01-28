@@ -10,10 +10,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-WorkDir = "cluttermm-%s" % get.srcVERSION().split("_")[0]
-
 def setup():
-    autotools.autoreconf("-fiv")
     autotools.configure("--disable-dependency-tracking \
                          --enable-shared \
                          --disable-static")
@@ -25,5 +22,5 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     # it is said code generation stuff is not necessary, so we remove
-    pisitools.removeDir("/usr/lib/cluttermm-0.9")
+    #pisitools.removeDir("/usr/lib/cluttermm-0.9")
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README*", "NEWS")

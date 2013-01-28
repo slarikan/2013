@@ -93,92 +93,12 @@
     </Package>
 
     <History>
-        <Update release="12">
+        <Update release="1">
             <Date>2013-01-10</Date>
             <Version>2.30.4</Version>
-            <Comment>Gedit Düzenlendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-11-23</Date>
-            <Version>2.30.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="10">
-            <Date>2009-06-14</Date>
-            <Version>2.26.2</Version>
-            <Comment>
-                - Version bump.
-                - Enable spell-checker plugin.
-            </Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2008-09-16</Date>
-            <Version>2.22.3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-04-08</Date>
-            <Version>2.22.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-03-11</Date>
-            <Version>2.22.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-01-25</Date>
-            <Version>2.20.4</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-07-06</Date>
-            <Version>2.18.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-05-06</Date>
-            <Version>2.18.1</Version>
-            <Comment>Fix KDE menu duplicate. Bug #5608</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-04-10</Date>
-            <Version>2.18.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-03-11</Date>
-            <Version>2.18.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-15</Date>
-            <Version>2.16.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>turkay.eren@gmail.com</Email>
         </Update>
     </History>
 </PISI>

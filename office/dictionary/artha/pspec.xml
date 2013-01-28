@@ -40,19 +40,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-11-14</Date>
             <Version>1.0.2</Version>
-            <Comment>Rebuild for anka.</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-05-12</Date>
-            <Version>1.0.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Aydan Taşdemir</Name>
-            <Email>aydantasdemir@gmail.com</Email>
         </Update>
     </History>
 </PISI>

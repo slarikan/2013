@@ -48,7 +48,7 @@
     <Package>
         <Name>cogl-devel</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="current">cogl</Dependency>
+            <Dependency release="current">cogl</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>pango-devel</Dependency>
@@ -69,20 +69,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-10-24</Date>
             <Version>1.12.0</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
         </Update>      
-        <Update release="1">
-            <Date>2011-06-23</Date>
-            <Version>1.7.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

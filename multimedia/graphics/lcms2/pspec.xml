@@ -70,19 +70,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-10-31</Date>
             <Version>2.3</Version>
-            <Comment>Version bump, added emul32</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-03-13</Date>
-            <Version>2.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>
     </History>
 </PISI>

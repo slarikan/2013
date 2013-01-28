@@ -43,26 +43,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-10-12</Date>
             <Version>0.99.12</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Aşıcı</Name>
             <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2" type="security">
-            <Date>2008-11-05</Date>
-            <Version>0.99.12</Version>
-            <Comment>Fix remotely exploitable buffer overflow. (bug#8587)</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-10-15</Date>
-            <Version>0.99.12</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
         </Update>
     </History>
 </PISI>

@@ -23,16 +23,13 @@
             <Path fileType="data">/usr/share/gnome-common</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
-        <Conflicts>
-	    <Package>gnome-common</Package>
-        </Conflicts>
     </Package>
 
     <History>
         <Update release="1">
             <Date>2012-11-23</Date>
             <Version>3.6.0</Version>
-            <Comment>İlk Sürüm.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>

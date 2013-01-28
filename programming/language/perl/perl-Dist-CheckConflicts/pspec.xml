@@ -15,7 +15,7 @@
         <Description>perl-Dist-CheckConflicts is a Perl module which allows you to specify conflicting versions of modules separately, and deal with them after the module is installed.</Description>
         <Archive sha1sum="d9c7366073e558a682f22271cceb24e46e37bcc4" type="targz">mirrors://cpan/authors/id/D/DO/DOY/Dist-CheckConflicts-0.02.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
             <Dependency>perl-Test-Fatal</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>perl-Dist-CheckConflicts</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-List-MoreUtils</Dependency>
             <Dependency>perl-Sub-Exporter</Dependency>
         </RuntimeDependencies>
@@ -37,26 +37,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>0.02</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-01</Date>
-            <Version>0.02</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-16</Date>
-            <Version>0.02</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

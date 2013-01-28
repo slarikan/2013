@@ -26,89 +26,12 @@
     </Package>
 
     <History>
-        <Update release="12">
+        <Update release="1">
             <Date>2011-01-19</Date>
             <Version>5.2.6</Version>
-            <Comment>Adapt to 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-04-17</Date>
-            <Version>5.2.6</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-02-14</Date>
-            <Version>5.2.5</Version>
-            <Comment>Version bump: Handle ANSI codes in logfiles more gracefully when using the 'scrollback' functionality</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2008-05-19</Date>
-            <Version>5.2.2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-02-21</Date>
-            <Version>5.2.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2007-07-09</Date>
-            <Version>5.2.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2007-06-08</Date>
-            <Version>5.0.5</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-06-02</Date>
-            <Version>5.0.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-05-10</Date>
-            <Version>5.0.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-05-03</Date>
-            <Version>5.0.2</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-01-30</Date>
-            <Version>4.2.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-08-09</Date>
-            <Version>4.0.6</Version>
-            <Comment>First release</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

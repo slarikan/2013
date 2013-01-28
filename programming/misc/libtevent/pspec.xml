@@ -14,7 +14,7 @@
         <Description>libtevent is an event system based on the talloc memory management library. It is the core event system used in Samba. Tevent has support for many event types, including timers, signals, and the classic file descriptor events.</Description>
         <Archive sha1sum="03461fa121189f253e3a1b48b60ab35bb9d33600" type="targz">http://samba.org/ftp/tevent/tevent-0.9.8.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.0.1">libtalloc-devel</Dependency>
+            <Dependency>libtalloc-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">tevent_signal_segfault.patch</Patch>
@@ -25,7 +25,7 @@
     <Package>
         <Name>libtevent</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.0.1">libtalloc</Dependency>
+            <Dependency>libtalloc</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -45,26 +45,12 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2010-10-26</Date>
-            <Version>0.9.8</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-26</Date>
-            <Version>0.9.8</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2010-02-01</Date>
+            <Date>2010-10-26</Date>
             <Version>0.9.8</Version>
-            <Comment>First release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
+            <Comment>First release</Comment>
+            <Name>Ozan Çağlayan</Name>
+            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

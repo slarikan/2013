@@ -13,18 +13,18 @@
         <IsA>app:gui</IsA>
         <Summary>Reversi board game</Summary>
         <Description>KReversi is a simple one player strategy game played against the computer.</Description>
-        <Archive sha1sum="8d5fdb2acf8fbe328d8fd7e6ad470c56bf1f0c3f" type="tarxz">mirrors://kde/unstable/4.9.97/src/kreversi-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="d2a1c94b015f3b341ae68bec3fc93859dc8320e2" type="tarxz">mirrors://kde/unstable/4.9.98/src/kreversi-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kreversi</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,19 +35,12 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
         <Update release="1">
-            <Date>2013-01-02</Date>
-            <Version>4.9.95</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>       
     </History>
 </PISI>

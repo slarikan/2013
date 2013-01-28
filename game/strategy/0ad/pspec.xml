@@ -75,106 +75,12 @@
         </AdditionalFiles>
     </Package>
     <History>
-        <Update release="13">
+        <Update release="1">
             <Date>2012-02-14</Date>
             <Version>10803_alpha8</Version>
-            <Comment>
-                * Bartering system
-                * Single-player games can be saved and reloaded
-                * Multiplayer reconnection support
-                * 45° Field of View (FOV)
-                * An all-new and unique Persian civilization, including
-                * A brand-new building set. Monumental and eclectic, it reflects the cosmopolitan nature of the Achaemenid Empire
-                * New units, from chariots and hoplites to rams and biremes, from Xerxes to Cyrus to skirmishers and archers
-                * Music and Sound: Several new tracks, all composed and directed by Omri Lahav. They feature live percussion, as well as a flute segment by a professional musician
-                * Eastern Dreams: Persia's early peace track. A dreamy yet minimal, traditional-sounding arrangement, without orchestral strings
-                * New map: Zagros Mountains
-                * Bug fixes
-            </Comment>
+            <Comment>First release</Comment>
             <Email>erdincgultekin@gmail.com</Email>
             <Name>Erdinç Gültekin</Name>
-        </Update>
-        <Update release="12">
-            <Date>2011-09-17</Date>
-            <Version>10288_alpha7</Version>
-            <Comment>version bump
-                     no more patch
-                     new setup function (thanks to s.dalgic)
-            </Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="11">
-            <Date>2011-07-13</Date>
-            <Version>09786_alpha6</Version>
-            <Comment>version bump
-                     no more enet 1.2
-            </Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="9">
-            <Date>2011-05-10</Date>
-            <Version>09530_alpha5</Version>
-            <Comment>version bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="8">
-            <Date>2011-05-10</Date>
-            <Version>09049_alpha4</Version>
-            <Comment>rebuild</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="7">
-            <Date>2011-03-15</Date>
-            <Version>09049_alpha4</Version>
-            <Comment>desktop fix</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="6">
-            <Date>2011-03-13</Date>
-            <Version>09049_alpha4</Version>
-            <Comment>Version Bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="5">
-            <Date>2011-03-07</Date>
-            <Version>08832_alpha3</Version>
-            <Comment>Pardus 2011</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="4">
-            <Date>2011-01-23</Date>
-            <Version>08832_alpha3</Version>
-            <Comment>Version Bump</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-26</Date>
-            <Version>08413_alpha2</Version>
-            <Comment>First release</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-26</Date>
-            <Version>08413_alpha2</Version>
-            <Comment>First release</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
-        </Update>
-        <Update release="1">
-            <Date>2010-08-30</Date>
-            <Version>07970_alpha1</Version>
-            <Comment>First release</Comment>
-            <Email>baDibere@gmail.com</Email>
-            <Name>Erdem Artan</Name>
         </Update>
     </History>
 </PISI>

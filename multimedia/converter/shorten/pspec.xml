@@ -25,24 +25,10 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2009-04-30</Date>
             <Version>3.6.1</Version>
-            <Comment>Update doc path for 2009.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-03-29</Date>
-            <Version>3.6.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-10</Date>
-            <Version>3.6.0</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Doruk Fişek</Name>
             <Email>dfisek@fisek.com.tr</Email>
         </Update>

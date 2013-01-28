@@ -26,39 +26,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-11-18</Date>
             <Version>0.8.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="3">
-            <Date>2011-02-01</Date>
-            <Version>0.7.1</Version>
-            <Comment>Version bump to Support for Excel 2007 .xlsx files.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-15</Date>
-            <Version>0.6.1</Version>
-            <Comment>* Package takeover,
-                * add pythonmodules.compile,
-                * reorganize package
-                * add translations.xml
-                And move the package to Pardus repository.
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-04-22</Date>
-            <Version>0.6.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Ekrem SEREN</Name>
-            <Email>ekrem.seren@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

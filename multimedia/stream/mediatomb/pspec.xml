@@ -58,19 +58,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-02-16</Date>
             <Version>0.12.1</Version>
-            <Comment>Bump to release 0.12.1, ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-01-08</Date>
-            <Version>0.11.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Emre Erenoglu</Name>
-            <Email>paketci@erenoglu.com</Email>
         </Update>
     </History>
 </PISI>

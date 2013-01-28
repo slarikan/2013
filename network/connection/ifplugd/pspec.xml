@@ -43,40 +43,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2010-10-13</Date>
             <Version>0.28</Version>
-            <Comment>Ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-08-18</Date>
-            <Version>0.28</Version>
-            <Comment>Do not enable interface automatically.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-17</Date>
-            <Version>0.28</Version>
-            <Comment>Don't beep upon interface activation.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-05-21</Date>
-            <Version>0.28</Version>
-            <Comment>Fixed marking inactive connections as unplugged.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-05-20</Date>
-            <Version>0.28</Version>
-            <Comment>First release</Comment>
-            <Name>Nihat Ciddi</Name>
-            <Email>nakof@zig.gen.tr</Email>
         </Update>
     </History>
 </PISI>

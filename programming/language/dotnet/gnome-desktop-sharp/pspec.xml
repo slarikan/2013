@@ -133,28 +133,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-03-13</Date>
             <Version>2.26.0</Version>
-            <Comment>Fix circular deps</Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Göksel</Name>
             <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-02-21</Date>
-            <Version>2.26.0</Version>
-            <Comment>
-                * Update dependencies.
-            </Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-02-01</Date>
-            <Version>2.26.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
         </Update>
     </History>
 </PISI>

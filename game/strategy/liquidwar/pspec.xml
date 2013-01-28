@@ -71,58 +71,9 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2011-08-03</Date>
             <Version>5.9.9_20110730</Version>
-            <Comment>Bump to latest beta, fixes pb#18851</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-06-24</Date>
-            <Version>5.9.9_20100823</Version>
-            <Comment>Fix Turkish translation display, fixes pb#18492</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-01-17</Date>
-            <Version>5.9.9_20100823</Version>
-            <Comment>Adapt to 2011 libraries</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-01-02</Date>
-            <Version>5.9.9_20100823</Version>
-            <Comment>Bump to 0.0.9 beta, that is 23 of August</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-07-07</Date>
-            <Version>5.9.9_20100619</Version>
-            <Comment>Correct icon name in desktop file, fixes bug #13707</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-05-12</Date>
-            <Version>5.9.9_20100619</Version>
-            <Comment>Bump to new branch, fixes bug #12910</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-07-30</Date>
-            <Version>5.6.4</Version>
-            <Comment>Fix allegro linking</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-10-30</Date>
-            <Version>5.6.4</Version>
             <Comment>First release</Comment>
             <Name>Onur Küçük</Name>
             <Email>onur@pardus.org.tr</Email>

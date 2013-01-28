@@ -26,15 +26,6 @@
             <Dependency>sgml-common</Dependency>
             <Dependency>libxml2</Dependency>
         </RuntimeDependencies>
-        <Replaces>
-            <Package>docbook-xml4_1</Package>
-            <Package>docbook-xml4_1_2</Package>
-            <Package>docbook-xml4_2</Package>
-            <Package>docbook-xml4_3</Package>
-            <Package>docbook-xml4_4</Package>
-            <Package>docbook-xml4_5</Package>
-            <Package>build-docbook-catalog</Package>
-        </Replaces>
         <Files>
             <Path fileType="doc">/usr/share/doc/</Path>
             <Path fileType="data">/usr/share/xml</Path>
@@ -48,36 +39,8 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2011-09-16</Date>
-            <Version>4.5</Version>
-            <Comment>Increlease release to get back the catalog file that was purged due to libxml2 security update.</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-06-09</Date>
-            <Version>4.5</Version>
-            <Comment>Add missing docbook xml 4.1 package</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-06-01</Date>
-            <Version>4.5</Version>
-            <Comment>Add docbook-xsl entries and change path to match the new catalog entries</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-06-01</Date>
-            <Version>4.5</Version>
-            <Comment>Fix dependency. Docbook don't need docbook-xsl, but the opposite is true</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2011-05-30</Date>
+            <Date>2011-09-16</Date>
             <Version>4.5</Version>
             <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>

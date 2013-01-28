@@ -36,38 +36,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-08-29</Date>
             <Version>0.6.21</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-08-08</Date>
-            <Version>0.6.20</Version>
-            <Comment>- Add a patch to fix wformat.
-                - Version bump to stability/bugfix release:
-                * New translation: ro
-                * Updated translations: it, lv, sk
-                * --no-fixup now honoured during --create-exif to not create default tags
-                * Fixed crash when not enough components were given to --set-value
-                * Made --set-value more forgiving of whitespace
-                * Allow --set-value on UNDEFINED tags (treating them as byte arrays)
-                * Honour --machine-readable with --show-mnote and --show-description
-                * Turned on the --enable-silent-rules configure option
-                * Adding or removing a thumbnail can be done simultaneously with other options
-                * Allow --create-exif to be used in place of an input file
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-            <Update release="1">
-            <Date>2011-04-28</Date>
-            <Version>0.6.19</Version>
-            <Comment>First release</Comment>
-            <Name>Stefan Wilhelm</Name>
-            <Email>sw@pardususer.de</Email>
         </Update>
     </History>
 </PISI>

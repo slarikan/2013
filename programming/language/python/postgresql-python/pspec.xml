@@ -32,40 +32,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2009-09-13</Date>
             <Version>4.0</Version>
-            <Comment>4.0 release, update dependencies</Comment>
+            <Comment>First release</Comment>
             <Name>Taner Taş</Name>
             <Email>taner@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-07-12</Date>
-            <Version>3.8.1</Version>
-            <Comment>Compilation needs pg_config, hence the postgresql-server package</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-03-23</Date>
-            <Version>3.8.1</Version>
-            <Comment>Do not hardcode python dir, use get.curPYTHON() instead</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-10-26</Date>
-            <Version>3.8.1</Version>
-            <Comment>Dependency fixes</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-09-29</Date>
-            <Version>8.1.4</Version>
-            <Comment>First release</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

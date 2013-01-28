@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-XML-Generator</Name>
@@ -14,13 +16,13 @@
         <Description>XML::Generator can also arrange for undefined subroutines in the caller's package to generate the corresponding XML, by exporting an AUTOLOAD subroutine to your package. Just supply an ':import' argument to your use XML::Generator; call. If you already have an AUTOLOAD defined then XML::Generator can be configured to cooperate with it.</Description>
         <Archive sha1sum="011f29f5f433a8e234bb94605b6808f3f5869141" type="targz">http://search.cpan.org/CPAN/authors/id/B/BH/BHOLZMAN/XML-Generator-1.04.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
     <Package>
         <Name>perl-XML-Generator</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,17 +32,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>1.04</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-12</Date>
-            <Version>1.04</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

@@ -15,7 +15,7 @@
         <Description>Build and scan parse-trees of HTML. It allows to represent,create and extract information from HTML syntax trees.</Description>
         <Archive sha1sum="899bc572de36456c04d9b7a7b2f980dedf387324" type="targz">http://search.cpan.org/CPAN/authors/id/C/CJ/CJM/HTML-Tree-5.02.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-HTML-Tagset</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-HTML-Tree</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-HTML-Tagset</Dependency>
             <Dependency>perl-HTML-Parser</Dependency>
             <Dependency>perl-Test-Exception</Dependency>
@@ -41,47 +41,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-09-07</Date>
             <Version>5.02</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-07-04</Date>
-            <Version>5.02</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-06-08</Date>
-            <Version>4.2</Version>
-            <Comment>New stable release. Look for the included Changes file for more information</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-12-08</Date>
-            <Version>4.1</Version>
-            <Comment>Bump to newest version</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-13</Date>
-            <Version>4.0</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-10-04</Date>
-            <Version>4.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

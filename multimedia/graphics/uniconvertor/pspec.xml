@@ -35,24 +35,10 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-11-09</Date>
             <Version>1.1.5</Version>
-            <Comment>Change reportlab dep to python-reportlab</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-27</Date>
-            <Version>1.1.5</Version>
-            <Comment>Version bump to 1.1.5</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-02-05</Date>
-            <Version>1.1.4</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
         </Update>

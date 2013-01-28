@@ -15,9 +15,9 @@
         <Description>Eio integrates with EFL (Ecore, Eina) to provide efficient filesystem Input/Output? (I/O). It use the best techniques to achieve such purpose, like using at-variants, splice, properly handling errors and doing it in an asynchronous fashion by means of worker threads. It is also ported to Windows, so multi-platform.</Description>
         <Archive sha1sum="8b2e18b6aaaf0e1ad75c9b8bdb797d9028d1cd40" type="tarbz2">http://download.enlightenment.org/releases/eio-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
             <Dependency>doxygen</Dependency>
         </BuildDependencies>
     </Source>
@@ -25,9 +25,9 @@
     <Package>
         <Name>eio</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>ecore</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -41,9 +41,9 @@
         <Summary>Development files for eio</Summary>
         <RuntimeDependencies>
         <Dependency release="current">eio</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -52,47 +52,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2013-01-08</Date>
             <Version>1.7.5</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-12-23</Date>
-            <Version>1.7.4</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-12-12</Date>
-            <Version>1.7.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2012-09-15</Date>
-            <Version>1.7.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-15</Date>
-            <Version>1.0.1</Version>
-            <Comment>version bump, bug fixes</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-06-08</Date>
-            <Version>1.0.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Richard de Bruin</Name>
-            <Email>rr.debruin@gmail.com</Email>
         </Update>
     </History>
 </PISI>

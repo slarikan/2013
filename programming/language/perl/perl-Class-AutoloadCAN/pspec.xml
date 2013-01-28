@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-Class-AutoloadCAN</Name>
@@ -13,14 +15,14 @@
         <Summary>Make AUTOLOAD, can and inheritance cooperate.</Summary>
         <Description>This module solves a fundamental conflict between AUTOLOAD, can and inheritance. The problem is that while you can implement anything in AUTOLOAD, UNIVERSAL::can is not aware that it is there.</Description>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <Archive sha1sum="e402fe18ba20c1dc7bc5252f65dda03e384ef69e" type="targz">http://search.cpan.org/CPAN/authors/id/T/TI/TILLY/Class-AutoloadCAN-0.03.tar.gz</Archive>
     </Source>
     <Package>
         <Name>perl-Class-AutoloadCAN</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -30,17 +32,10 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>0.03</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-12</Date>
-            <Version>0.03</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

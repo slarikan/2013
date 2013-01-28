@@ -107,9 +107,6 @@
             <Dependency>freeglut</Dependency>
             <Dependency>ilmbase</Dependency>
         </RuntimeDependencies>
-         <Conflicts>
-             <Package releaseTo="15">hugin</Package>
-         </Conflicts>
         <Files>
             <Path fileType="executable">/usr/bin/align_image_stack</Path>
             <Path fileType="executable">/usr/bin/autooptimiser</Path>
@@ -160,9 +157,6 @@
             <Dependency>lapack</Dependency>
             <Dependency>jpeg</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="15">hugin</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib/hugin/libceleste.*</Path>
             <Path fileType="library">/usr/lib/hugin/libflann_cpp.*</Path>
@@ -182,147 +176,12 @@
     </Package>
 
     <History>
-        <Update release="19">
+        <Update release="1">
             <Date>2012-08-28</Date>
             <Version>2012.0.0</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update> 
-        <Update release="18">
-            <Date>2011-06-13</Date>
-            <Version>2011.0.0</Version>
-            <Comment>
-                * Version Bump.
-                * fix deps.
-            </Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="17">
-            <Date>2011-04-14</Date>
-            <Version>2010.4.0</Version>
-            <Comment>
-                * Version Bump
-                * new tools added.
-            </Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="16">
-            <Date>2010-11-22</Date>
-            <Version>2010.2.0</Version>
-            <Comment>
-             * package separed.
-             * fix runtime dependency.
-            </Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="15">
-            <Date>2010-11-12</Date>
-            <Version>2010.2.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="14">
-            <Date>2010-04-13</Date>
-            <Version>2010.0.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2010-02-09</Date>
-            <Version>2009.4.0</Version>
-            <Comment>Version bump, brought from contrib.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2009-09-03</Date>
-            <Version>0.8.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="11">
-            <Date>2009-06-26</Date>
-            <Version>0.7.0</Version>
-            <Comment>fix build dep.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="10">
-            <Date>2009-01-25</Date>
-            <Version>0.7.0</Version>
-            <Comment>upstream release tarball</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2008-07-17</Date>
-            <Version>0.7.0</Version>
-            <Comment>Version bump to rev 3197, tidy up, fix compiling with new libraries</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-07-04</Date>
-            <Version>0.7_beta4</Version>
-            <Comment>compile with new toolchain</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="7" type="security">
-            <Date>2007-11-18</Date>
-            <Version>0.7_beta4</Version>
-            <Comment>Also fix insecure temporary file usage in src/hugin/AutoCtrlPointCreator.cpp</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2007-11-13</Date>
-            <Version>0.7_beta4</Version>
-            <Comment>Use libpano13 deps.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="5" type="security">
-            <Date>2007-10-13</Date>
-            <Version>0.7_beta4</Version>
-            <Comment>Fix CVE-2007-5200</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-03-07</Date>
-            <Version>0.7_beta4</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-01-27</Date>
-            <Version>0.7_beta3</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-12-31</Date>
-            <Version>0.7_beta1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-12-04</Date>
-            <Version>0.6.1</Version>
-            <Comment>First release</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
     </History>
 </PISI>

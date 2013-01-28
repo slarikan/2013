@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>perl-HTTP-Message</Name>
@@ -14,7 +16,7 @@
         <Description>The HTTP::Headers class encapsulates HTTP-style message headers.</Description>
         <Archive sha1sum="ffd90daf91d07b0c58a3ec4544c79416d4968ebc" type="targz">http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTTP-Message-6.03.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-LWP-Mediatypes</Dependency>
 	    <Dependency>perl-HTTP-Date</Dependency>
 	    <Dependency>perl-HTML-Parser</Dependency>
@@ -23,7 +25,7 @@
     <Package>
         <Name>perl-HTTP-Message</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-LWP-Mediatypes</Dependency>
 	    <Dependency>perl-HTTP-Date</Dependency>
 	    <Dependency>perl-HTML-Parser</Dependency>
@@ -37,26 +39,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-11-16</Date>
             <Version>6.03</Version>
-            <Comment>Dep add</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-09-07</Date>
-            <Version>6.03</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-07-09</Date>
-            <Version>6.03</Version>
-            <Comment>First-Release</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

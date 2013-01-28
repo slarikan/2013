@@ -49,26 +49,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-08-29</Date>
             <Version>0.7.3</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-11-24</Date>
-            <Version>0.6</Version>
-            <Comment>Split devel package, version bump and autoreconf.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-10-30</Date>
-            <Version>0.5.7a</Version>
-            <Comment>First release</Comment>
-            <Name>Cihan Okyay</Name>
-            <Email>okyaycihan@gmail.com</Email>
         </Update>
     </History>
 </PISI>

@@ -60,47 +60,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2011-03-18</Date>
             <Version>3.3.12</Version>
-            <Comment>Fix rev-dep problem that causes to remove this package from repo</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-12-22</Date>
-            <Version>3.3.12</Version>
-            <Comment>Port to 2011 toolchain</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-07-06</Date>
-            <Version>3.3.12</Version>
-            <Comment>Add missing dependencies</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-07</Date>
-            <Version>3.3.12</Version>
-            <Comment>Fix actionsapi errors</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-05-02</Date>
-            <Version>3.3.12</Version>
-            <Comment>First release, fixes bug #8659</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-11-17</Date>
-            <Version>3.3.11</Version>
-            <Comment>First release, fixes bug #8659</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

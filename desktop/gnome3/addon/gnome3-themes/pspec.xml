@@ -15,7 +15,7 @@
         <Archive sha1sum="3e1cde45a1d9e8a92445e7646735e7c64137440a" type="tarbz2">mirrors://gnome/gnome-themes/3.0/gnome-themes-3.0.0.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>icon-naming-utils</Dependency>
-            <Dependency versionFrom="2.91.1">gtk-engines3</Dependency>
+            <Dependency>gtk-engines3</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -38,10 +38,9 @@
         <Update release="1">
             <Date>2012-11-24</Date>
             <Version>3.7.2</Version>
-            <Comment>İlk Sürüm.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>
-

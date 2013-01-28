@@ -26,9 +26,6 @@
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>clearlooks</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -39,10 +36,10 @@
     </Package>
 
     <History>
-        <Update release="17">
+        <Update release="1">
             <Date>2012-08-26</Date>
             <Version>2.91.1</Version>
-            <Comment>İlk Sürüm</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

@@ -14,14 +14,14 @@
         <Description>App::CLI dispatches CLI (command line interface) based commands into command classes. It also supports subcommand and per-command options.</Description>
         <Archive sha1sum="28e0870a570ae9180b1ca891da79669903aa2ed2" type="targz">mirrors://cpan/authors/id/A/AL/ALEXMV/App-CLI-0.08.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-App-CLI</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,47 +32,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>0.08</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-06-28</Date>
-            <Version>0.08</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-12-04</Date>
-            <Version>0.08</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-11-23</Date>
-            <Version>0.08</Version>
-            <Comment>Added perl as runtime dep</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-07-20</Date>
-            <Version>0.08</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-02</Date>
-            <Version>0.07</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

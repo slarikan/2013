@@ -16,11 +16,11 @@
         <Archive sha1sum="31888132d949cc7b47d12889b8aaf5dabc546d8b" type="tarbz2">http://archive.xfce.org/src/apps/xfce4-notifyd/0.2/xfce4-notifyd-0.2.2.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4ui-devel</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
+            <Dependency>libxfce4ui-devel</Dependency>
             <Dependency>dbus-devel</Dependency>
             <Dependency>dbus-glib-devel</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf-devel</Dependency>
+            <Dependency>xfconf-devel</Dependency>
         </BuildDependencies>
         <Patches>
         <Patch level="1">settings-manager.patch</Patch>
@@ -32,12 +32,12 @@
         <Name>xfce4-notifyd</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4ui</Dependency>
+            <Dependency>libxfce4util</Dependency>
+            <Dependency>libxfce4ui</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency versionFrom="4.10.0">xfconf</Dependency>
+            <Dependency>xfconf</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -50,37 +50,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-09-07</Date>
             <Version>4.10.0</Version>
-            <Comment>
-                * Updated tr translations.
-                * Notification Settings added the Xfce Settings Manager Window with system-settings.patch
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Utku Berberoğlu</Name>
             <Email>utku.berber@gmail.com</Email>
         </Update>
-        <Update release="3">
-            <Date>2012-08-31</Date>
-            <Version>0.2.2</Version>
-            <Comment>Settings Manager Visible Patch</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-06-10</Date>
-            <Version>0.2.2</Version>
-            <Comment>version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-28</Date>
-            <Version>0.2.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

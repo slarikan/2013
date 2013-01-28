@@ -15,12 +15,12 @@
         <Description>redland-bindings provides Redland RDF language bindings for Perl, Python, Php and Ruby.</Description>
         <Archive sha1sum="b7e137498c190ba49409a7b91fbd3962b7ebcbef" type="targz">http://download.librdf.org/source/redland-bindings-1.0.14.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.0.14">redland-devel</Dependency>
-            <Dependency versionFrom="2.7">python-tk</Dependency>
-            <Dependency versionFrom="1.8.7_p302">ruby</Dependency>
-            <Dependency versionFrom="5.2.14">php-cli</Dependency>
+            <Dependency>redland-devel</Dependency>
+            <Dependency>python-tk</Dependency>
+            <Dependency>ruby</Dependency>
+            <Dependency>php-cli</Dependency>
             <Dependency>php-devel</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal-devel</Dependency>
+            <Dependency>rasqal-devel</Dependency>
             <Dependency>raptor2-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -39,9 +39,9 @@
         <PartOf>programming.language.php</PartOf>
         <Summary>Php bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
+            <Dependency>redland</Dependency>
             <Dependency>raptor2</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>php-cli</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -54,8 +54,8 @@
         <PartOf>programming.language.python</PartOf>
         <Summary>Python bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -68,8 +68,8 @@
         <PartOf>programming.language.ruby</PartOf>
         <Summary>Ruby bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>raptor2</Dependency>
             <Dependency>ruby</Dependency>
         </RuntimeDependencies>
@@ -83,8 +83,8 @@
         <PartOf>programming.language.perl</PartOf>
         <Summary>Perl bindings for redland</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.0.14">redland</Dependency>
-            <Dependency versionFrom="0.9.27">rasqal</Dependency>
+            <Dependency>redland</Dependency>
+            <Dependency>rasqal</Dependency>
             <Dependency>raptor2</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -93,44 +93,9 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-01-28</Date>
             <Version>1.0.14.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-10-28</Date>
-            <Version>1.0.11.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-09-05</Date>
-            <Version>1.0.10.1</Version>
-            <Comment>Rename packages, version bump, add translations.xml, split headers</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-05-08</Date>
-            <Version>1.0.6.1</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-04-23</Date>
-            <Version>1.0.5.1</Version>
-            <Comment>fixLocalPod</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-04-19</Date>
-            <Version>1.0.5.1</Version>
             <Comment>First release</Comment>
             <Name>Murat Şenel</Name>
             <Email>muratasenel@gmail.com</Email>

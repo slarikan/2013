@@ -62,33 +62,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2013-01-11</Date>
             <Version>20130111</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
 	    <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-02-18</Date>
-            <Version>0.9.0</Version>
-            <Comment>Pixmap fix.</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-02-18</Date>
-            <Version>0.9.0</Version>
-            <Comment>Some fixes.</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-18</Date>
-            <Version>0.9.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem.artan@linux.org.tr</Email>
         </Update>
     </History>
 </PISI>

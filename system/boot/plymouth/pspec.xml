@@ -13,8 +13,8 @@
         <IsA>library</IsA>
         <Summary>Graphical Boot Animation and Logger</Summary>
         <Description>plymouth provides an attractive graphical boot animation in place of the text messages that normally get shown. Text messages are instead redirected to a log file for viewing after boot.</Description>
-        <Archive sha1sum="17abf57cde8cfb7c702809f89fa45b417b813f50" type="tarbz2">http://cekirdek.pardus.org.tr/~ozan/dist/sources/plymouth-0.8.3_20110421git3f14f27.tar.bz2</Archive>
-        <Archive sha1sum="d906848eb03907bb5601c3d8313a732fe16d897e" type="tarxz" target="plymouth-0.8.3_20110421/themes">http://anka.pardus-linux.org/2013/source/plymouth-theme-pardus-2013.tar.xz</Archive>
+        <Archive sha1sum="d0b70929bc47899e03019c3fcd681dd043d7fb8c" type="targz">http://anka.pardus-linux.org/2013/source/plymouth-0.8.8.tar.gz</Archive>
+        <Archive sha1sum="1c2d71ee2c31dbdff0d9c478ab7c86199d55dec7" type="tarxz" target="plymouth-0.8.8/themes">http://pardus-anka.org/pub/source/plymouth-theme-pardus-master.tar.xz</Archive>
         <AdditionalFiles>
             <AdditionalFile permission="0755" target="generate-flist">pardus/generate-flist.py</AdditionalFile>
         </AdditionalFiles>
@@ -28,12 +28,14 @@
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!-- Pardus patches -->
-            <Patch level="1">pardus/fix-fbdev-path.patch</Patch>
+	  <!-- Pardus patches--> 
+            <!--<Patch level="1">pardus/fix-fbdev-path.patch</Patch>-->
             <Patch level="1">pardus/disable-source-code-tracing.patch</Patch>
             <Patch level="1">pardus/adapt-theme-script.patch</Patch>
             <Patch level="1">pardus/add-pardus-theme.patch</Patch>
             <!--<Patch level="1">pardus/implement-suspend-modes.patch</Patch>-->
+                              <!--MaGeia patches-->
+            <Patch level="1">mageia/plymouth-restore-suspend.patch</Patch>
         </Patches>
     </Source>
 
@@ -46,7 +48,7 @@
             <Dependency>libdrm-radeon</Dependency>
             <Dependency>libdrm-nouveau</Dependency>
             <Dependency>plymouth-core-libs</Dependency>
-            <Dependency releaseFrom="84">mkinitramfs</Dependency>
+            <Dependency>mkinitramfs</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/bin</Path>
@@ -312,122 +314,12 @@
     -->
 
     <History>
-        <Update release="16">
-            <Date>2011-04-21</Date>
-            <Version>0.8.3_20110421</Version>
-            <Comment>Bump to git head, disable nouveau renderer during configure.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="15">
-            <Date>2011-01-20</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>Update theme to its final version.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="14">
-            <Date>2011-01-18</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>Fix lzo2 soname in initramfs file list.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2011-01-17</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>Update theme</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2011-01-14</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>Add lzo2 to file list for suspend.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2011-01-14</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>Fix dependencies, drop buggy mandriva patch</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-12-29</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>Disable progress bar, enable flashing.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-11-25</Date>
-            <Version>0.8.3_20101125</Version>
-            <Comment>
-                - Bump to the latest git,
-                - Put the file list in /lib/initramfs to trigger mkinitramfs
-                  package handler,
-                - Suppress broken pipe warnings.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-10-25</Date>
-            <Version>0.8.3_20101018</Version>
-            <Comment>Disable nouveau drm renderer as it causes hangs when starting X server</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-10-22</Date>
-            <Version>0.8.3_20101018</Version>
-            <Comment>Drop mandriva patch</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-21</Date>
-            <Version>0.8.3_20101018</Version>
-            <Comment>Fix 32-bit loading problem.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-10-19</Date>
-            <Version>0.8.3_20101018</Version>
-            <Comment>Add pardus theme</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-18</Date>
-            <Version>0.8.3_20101018</Version>
-            <Comment>Bump snapshot</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-12</Date>
-            <Version>0.8.3_20100929</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-09-29</Date>
-            <Version>0.8.3_20100929</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2010-06-09</Date>
-            <Version>0.8.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
+            <Date>2013-01-16</Date>
+            <Version>0.8.8</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Update>
     </History>
 </PISI>

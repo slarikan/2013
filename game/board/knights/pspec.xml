@@ -42,127 +42,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="13">
+        <Update release="1">
             <Date>2013-01-12</Date>
             <Version>2.5.0</Version>
-            <Comment>
-                - Version bump to 2.5.0.
-                - Version 2.5.0: Port to new KDEGames library, compatible with KDE 4.9
-		- Version 2.4.2: A handful of usability fixes
-		- Version 2.4.1 introduces support for the UCI protocol, setting the difficulty level of chess engines, game history display, and loading and saving PGN files.
-		- Version 2.4.0 brings voice support, possibility of external control by dbus, and a couple of bug fixes.
-		- Version 2.3.2 is a bugfix release with several fixes, mostly by Dave Kaye. It fixes drag-coused freezes, dropping pieces outside of the board, and a theme appearing twice in the selection dialog.
-		- Version 2.3.1 fixed exactly one bug; the peace captured by en-passant is now properly removed.
-		- The changelog since the last stable release (2.2.0) includes:
-		- Watching two engines play
-		- Improved time control support for chess engines
-		- Better support for the XBoard protocol means Knights can play with more engines, including Crafty, Sloppy, Sjeng and Phalanx.
-		- Players can now make and receive offer for draw, pause, undo, adjourn and abort. All except Draw are only used when playing on the chess server.
-		- Players can now undo their moves.
-		- Improved game dialog, with more game options.
-		- Improved server dialog, with a seek graph.
-		- Ability to interact with a chess server or a computer engine via a text console.
-		- Simple chat widget for talking to your remote opponent.
-		- Selecting and moving pieces by clicking, without dragging.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="12">
-            <Date>2011-06-15</Date>
-            <Version>2.3.2</Version>
-            <Comment>
-                - Version bump to 2.3.2.
-                - Watching two engines play
-                - Improved time control support for chess engines
-                - Better support for the XBoard protocol means Knights can play with more engines, including Crafty, Sloppy, Sjeng and Phalanx.
-                - Players can now make and receive offer for draw, pause, undo, adjourn and abort. All except Draw are only used when playing on the chess server.
-                - Players can now undo their moves.
-                - Improved game dialog, with more game options.
-                - Improved server dialog, with a seek graph.
-                - Ability to interact with a chess server or a computer engine via a text console.
-                - Simple chat widget for talking to your remote opponent.
-                - Selecting and moving pieces by clicking, without dragging.
-            </Comment>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-12-16</Date>
-            <Version>2.2.0</Version>
-            <Comment>Version bump to 2.2.0.</Comment>
-            <Name>Mehmet Özdemir</Name>
-            <Email>mehmet@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-12-02</Date>
-            <Version>2.1.2_20101202</Version>
-            <Comment>Sync with git.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2010-11-23</Date>
-            <Version>2.1.2_20101114</Version>
-            <Comment>Depend on newly splitted kdegames-core</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-11-16</Date>
-            <Version>2.1.2_20101114</Version>
-            <Comment>Do not crash if kwallet is not available</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-11-16</Date>
-            <Version>2.1.2_20101114</Version>
-            <Comment>Some translation fixes</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-11-14</Date>
-            <Version>2.1.2_20101114</Version>
-            <Comment>Use KDE4 port of Knights</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2005-12-26</Date>
-            <Version>0.6.4_beta1</Version>
-            <Comment>Fix #1521</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2005-11-21</Date>
-            <Version>0.6.4_beta1</Version>
-            <Comment>3.4 to 3.5</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2005-11-18</Date>
-            <Version>0.6.4_beta1</Version>
-            <Comment>fix #558</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2005-11-09</Date>
-            <Version>0.6.4_beta1</Version>
-            <Comment>Gcc 3.4 fix</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-07</Date>
-            <Version>0.6.4_beta1</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

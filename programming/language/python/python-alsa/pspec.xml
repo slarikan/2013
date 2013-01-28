@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Python binding for the ALSA library</Summary>
         <Description>python-alsa contains Python bindings for the ALSA library.</Description>
-        <Archive sha1sum="71aba97d715308bfeffab09775cc0415ab9f6f3b" type="tarbz2">https://github.com/circass/pisi-work/raw/master/cekirdek/pyalsa-1.0.26.0.g6485f.tar.bz2</Archive>
+        <Archive sha1sum="71aba97d715308bfeffab09775cc0415ab9f6f3b" type="tarbz2">http://anka.pardus-linux.org/2013/erdinc/sourcefiles/alsa/pyalsa-1.0.26.0.g6485f.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>alsa-lib-devel</Dependency>
         </BuildDependencies>
@@ -30,33 +30,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-10-13</Date>
             <Version>1.0.26.20121013</Version>
-            <Comment>version bump frome git snapshot</Comment> 
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-01-15</Date>
-            <Version>1.0.22</Version>
-            <Comment>Add two patches from GIT</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-26</Date>
-            <Version>1.0.22</Version>
-            <Comment>Mass rebuild for Pardus Corporate 2 Alpha 3</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-05-20</Date>
-            <Version>1.0.22</Version>
-            <Comment>First release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -24,48 +24,10 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2009-04-29</Date>
             <Version>0.2.4</Version>
-            <Comment>Update doc path for 2009.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-12-10</Date>
-            <Version>0.2.4</Version>
-            <Comment>Version bump :
-             - If the input is not a regular file, give up immediately.
-             - Updated help output.
-            </Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-08-06</Date>
-            <Version>0.2.3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-03-29</Date>
-            <Version>0.2.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-11-01</Date>
-            <Version>0.1.1</Version>
-            <Comment>Support >= 2GB files</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-07</Date>
-            <Version>0.1.1</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Doruk Fişek</Name>
             <Email>dfisek@fisek.com.tr</Email>
         </Update>

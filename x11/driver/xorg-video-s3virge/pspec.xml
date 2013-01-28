@@ -14,14 +14,14 @@
         <Description>xorg-video-s3virge contains the X.Org driver for S3 Virge cards.</Description>
         <Archive sha1sum="c99ee4bd6253890a5be3cf246d535be4579c1b80" type="tarbz2">mirrors://xorg/individual/driver/xf86-video-s3virge-1.10.6.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-video-s3virge</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
@@ -31,47 +31,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-10-11</Date>
             <Version>1.10.6</Version>
-            <Comment>New stable release</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-05-31</Date>
-            <Version>1.10.5</Version>
-            <Comment>New stable release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-10-12</Date>
-            <Version>1.10.4</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-08-01</Date>
-            <Version>1.10.4</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-07-05</Date>
-            <Version>1.10.3</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-05-01</Date>
-            <Version>1.10.2</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

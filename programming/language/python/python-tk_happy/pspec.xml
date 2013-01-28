@@ -30,19 +30,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-08-16</Date>
             <Version>0.3</Version>
-            <Comment>rename package, add translations.xml</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-08-28</Date>
-            <Version>0.3</Version>
-            <Comment>First Release</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
         </Update>
     </History>
 </PISI>

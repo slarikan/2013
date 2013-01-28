@@ -24,40 +24,12 @@
    </Package>
 
    <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-09-20</Date>
             <Version>1.10</Version>
-            <Comment>Build for pardus-anka.</Comment>
+            <Comment>First release</Comment>
             <Name>Sezai Yeniay</Name>
             <Email>sezaiyeniay@ozgurlukicin.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-04-15</Date>
-            <Version>1.10</Version>
-            <Comment>Delete old replaces tag.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-12-28</Date>
-            <Version>1.10</Version>
-            <Comment>Fix permissions.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-09-08</Date>
-            <Version>1.10</Version>
-            <Comment>Fix package name.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-06-14</Date>
-            <Version>1.10</Version>
-            <Comment>First release.</Comment>
-            <Name>İnanç Yıldırgan</Name>
-            <Email>inancyildirgan@gmail.com</Email>
         </Update>
     </History>
 </PISI>

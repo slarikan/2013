@@ -18,13 +18,14 @@ def setup():
                --enable-xlib-xrender \
                --enable-xcb \
                --enable-ft \
-               --enable-ps \
+               --enable-gl \
                --enable-pdf \
+               --enable-ps \
                --enable-svg \
                --enable-tee \
                --enable-png \
+               --disable-xlib-xcb \
                --with-x"
-
     autotools.autoreconf("-vfi")
     autotools.configure(options)
 

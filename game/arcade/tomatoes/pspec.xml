@@ -46,26 +46,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-12-15</Date>
             <Version>1.55</Version>
-            <Comment>Tidy up dependencies for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-11-11</Date>
-            <Version>1.55</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-08-23</Date>
-            <Version>1.55</Version>
-            <Comment>First release</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

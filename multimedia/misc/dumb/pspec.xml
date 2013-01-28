@@ -52,19 +52,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-10-14</Date>
             <Version>0.9.3</Version>
-            <Comment>Add license-clarification patch from Fedora, and change the license to zlib</Comment>
+            <Comment>First release</Comment>
             <Name>Metin Akdere</Name>
             <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-05-30</Date>
-            <Version>0.9.3</Version>
-            <Comment>First release</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
         </Update>
     </History>
 </PISI>

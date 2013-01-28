@@ -12,9 +12,9 @@
         <IsA>locale:tg</IsA>
         <Summary>Tajik KDE4 internationalization package</Summary>
         <Description>kde-l10n-tg is the KDE4 internationalization package that provides Tajik translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="407d97f239b92de4d9c325b8a419e13e1a604f99">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-tg-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="3216d643df6039c5caf9652b47dff08ab9cf05d6">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-tg-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,33 +36,12 @@
     </Package>
 
     <History>
-        <Update release="43">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
+        <Update release="1">
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="42">
-            <Date>2012-05-25</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="41">
-            <Date>2012-04-09</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="40">
-            <Date>2012-03-08</Date>
-            <Version>4.8.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>>
     </History>
 </PISI>

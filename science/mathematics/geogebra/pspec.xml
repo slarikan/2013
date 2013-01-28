@@ -40,21 +40,10 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-02-01</Date>
             <Version>3.2.46.0</Version>
-            <Comment>
-                * New release
-                * Desktop, xml and png files comes now within the package
-                * Ready for 2011
-            </Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-08-12</Date>
-            <Version>3.2.44.0</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
         </Update>

@@ -27,5 +27,5 @@ def install():
         if i.endswith(".h") or i.endswith(".cc"):
             pisitools.insinto("/%s/%s/examples/" % (get.docDIR(), get.srcNAME()), "examples/events/%s" % i)
 
-    pisitools.removeDir("/usr/lib/clutter-gtkmm-0.9")
+    #pisitools.removeDir("/usr/lib/clutter-gtkmm-0.9")
     pisitools.dodoc("AUTHORS", "ChangeLog", "README*", "NEWS", "examples/redhand.png")

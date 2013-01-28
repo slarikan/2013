@@ -18,7 +18,7 @@
             <AdditionalFile target="ati-powermode.patch">ati-powermode.patch</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency version="3.5.6">kernel-module-headers</Dependency>
+            <Dependency>kernel-module-headers</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -30,7 +30,7 @@
         <IsA>driver</IsA>
         <Summary>Kernel module for ATI display drivers</Summary>
         <RuntimeDependencies>
-            <Dependency version="3.5.5">kernel</Dependency>
+            <Dependency>kernel</Dependency>
             <Dependency version="current">module-fglrx-legacy-userspace</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -108,7 +108,7 @@
                 <Dependency version="current">module-fglrx-legacy</Dependency>
                 <Dependency version="current">module-pae-fglrx-legacy</Dependency>
             </AnyDependency>
-            <Dependency releaseFrom="80">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
             <Dependency>xvba-video</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>freetype</Dependency>
@@ -195,7 +195,7 @@
         <Update release="1">
             <Date>2012-10-08</Date>
             <Version>12.6</Version>
-            <Comment>Legacy driver first release, source copied from module-fglrx package</Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
         </Update>

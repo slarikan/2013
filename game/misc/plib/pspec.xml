@@ -14,7 +14,7 @@
         <Description>Multimedia and 3D library used mostly by games.</Description>
         <Archive sha1sum="c2cf7e3e1e58f7b63dae4bb21e4fa82c3e4d4cfc" type="targz">http://plib.sourceforge.net/dist/plib-1.8.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.2.13">libsdl-devel</Dependency>
+            <Dependency>libsdl-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
         </BuildDependencies>
         <Patches>
@@ -26,7 +26,7 @@
     <Package>
         <Name>plib</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.2.13">libsdl</Dependency>
+            <Dependency>libsdl</Dependency>
             <Dependency>freeglut</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -47,40 +47,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-11-12</Date>
             <Version>1.8.5</Version>
-            <Comment>Split devel package, autoreconf and disable static.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-01-11</Date>
-            <Version>1.8.5</Version>
-            <Comment>* Obsolete widgets removed
-                     * Several fixes and improvements
-                     * puInputText scrolling fixed
-                     * Fixed netSocket
-                     * Fixed mem leak in ssgVertSplitter
-                     * Fixed misc bugs
-                     * Handle linux joysticks with a lot of axes
-                     * And the package taken over.</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-04-03</Date>
-            <Version>1.8.4</Version>
-            <Comment>Remove xorg-server dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-08-21</Date>
-            <Version>1.8.4</Version>
-            <Comment>First release.</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

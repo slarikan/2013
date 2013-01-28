@@ -16,9 +16,9 @@
         <Description>Pdf reader for Enlightenment.</Description>
         <Archive sha1sum="08ddcca5756a4f47e6eb0608b8612f4f20c73485" type="targz">https://github.com/circass/pisi-work/raw/master/e17-source/base/epdf-0.0.1_09152012.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.3">evas-devel</Dependency>
-            <Dependency versionFrom="1.7.3">eina</Dependency>
-            <Dependency versionFrom="1.7.3">ecore-devel</Dependency>
+            <Dependency>evas-devel</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>ecore-devel</Dependency>
             <Dependency>poppler-glib-devel</Dependency>
             <Dependency>doxygen</Dependency>
             <Dependency>jpeg-devel</Dependency>
@@ -29,11 +29,11 @@
     <Package>
         <Name>epdf</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.3">evas</Dependency>
-            <Dependency versionFrom="1.7.3">ecore</Dependency>
+            <Dependency>evas</Dependency>
+            <Dependency>ecore</Dependency>
             <Dependency>poppler-glib</Dependency>
             <Dependency>freetype</Dependency>
-            <Dependency versionFrom="1.7.3">eina</Dependency>
+            <Dependency>eina</Dependency>
         </RuntimeDependencies>
 
         <Files>
@@ -56,27 +56,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-12-12</Date>
             <Version>0.0.1_09152012</Version>
-            <Comment>rebuild</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-09-15</Date>
-            <Version>0.0.1_09152012</Version>
-            <Comment>version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-08</Date>
-            <Version>0.0.1_55225</Version>
             <Comment>First release</Comment>
-            <Name>Özge Barbaros</Name>
-            <Email>ozgebarbaros@gmail.com</Email>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

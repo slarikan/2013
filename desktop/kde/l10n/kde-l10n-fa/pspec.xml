@@ -12,9 +12,9 @@
         <IsA>locale:fa</IsA>
         <Summary>Persian KDE4 internationalization package</Summary>
         <Description>kde-l10n-fa is the KDE4 internationalization package that provides Persian translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="616f36c2590e630244cd3045918ef24c410e57aa">mirrors://kde/stable/4.9.3/src/kde-l10n/kde-l10n-fa-4.9.3.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="3ca9f8fc84e3a089a996f2c02b46bda61d200b61">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-fa-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.3">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -26,33 +26,12 @@
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2012-11-13</Date>
-            <Version>4.9.3</Version>
-            <Comment>Version bump to 4.9.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="3">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="2">
-            <Date>2012-05-25</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-04-09</Date>
-            <Version>4.8.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
-        </Update>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
     </History>
 </PISI>

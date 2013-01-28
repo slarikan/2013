@@ -30,26 +30,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-08-10</Date>
             <Version>1.6.5</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>H. İbrahim Güngör</Name>
             <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-14</Date>
-            <Version>1.6.3</Version>
-            <Comment>New version</Comment>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-06-10</Date>
-            <Version>1.6.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -45,33 +45,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-08-18</Date>
             <Version>0.35_2009.12.07</Version>
-            <Comment>Version bump to the latest development release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-07-11</Date>
-            <Version>0.35</Version>
-            <Comment>Reorganize dependencies, split docs package make the package ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-09-05</Date>
-            <Version>0.35</Version>
-            <Comment>Replace texlive with tetex, add Description</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-05-25</Date>
-            <Version>0.35</Version>
             <Comment>First release</Comment>
-            <Name>Türker Sezer</Name>
-            <Email>turkersezer@tsdesign.info</Email>
+            <Name>Serdar Dalgıç</Name>
+            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

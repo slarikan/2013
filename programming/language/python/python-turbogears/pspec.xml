@@ -41,80 +41,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2012-11-18</Date>
             <Version>2.2.0</Version>
-            <Comment>version bump to new line:
-                * TurboGears 2 is a reinvention of TurboGears and a return to TurboGears’ roots.
-                * http://www.turbogears.org/2.2/docs/main/TG2Philosophy.html
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2011-03-21</Date>
-            <Version>1.1.2</Version>
-            <Comment>
-                Bugfix release;
-                - Translation with Google in the admi18n tool was broken. Switched to a more official and stable Google API.
-                - Fixed race condition issue with user login.
-                - Fixed logging problems with multiple config files.
-            </Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-01-09</Date>
-            <Version>1.1.1</Version>
-            <Comment>Update to stable 1.1.1 branch that brings many small improvements and fixes and uses most of the same defaults as TG2 while being 100 percent compatible with TG1 applications.</Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-05-15</Date>
-            <Version>1.0.9</Version>
-            <Comment>Write cherrypy2 dep as 2.3.0 not as 2.3, will look into it later</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-03-05</Date>
-            <Version>1.0.9</Version>
-            <Comment>Add runtime dependency setuptools, thanks to Semen.</Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-02-05</Date>
-            <Version>1.0.9</Version>
-            <Comment>Bugfix release.</Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-03-18</Date>
-            <Version>1.0.8</Version>
-            <Comment>
-                * TurboGears 1.0.8 now additionally includes MochiKit version 1.4.2
-                * The required version of SQLObject was bumped up to 0.10.1
-                * Use "text/html" again instead of "application/xhtml+xml" for XHTML format.
-            </Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-08-27</Date>
-            <Version>1.0.5</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-07-10</Date>
-            <Version>1.0.4.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Ediz Türkoğlu</Name>
-            <Email>ediz.turkoglu@yahoo.com</Email>
         </Update>
     </History>
 </PISI>

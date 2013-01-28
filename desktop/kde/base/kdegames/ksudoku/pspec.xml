@@ -13,18 +13,18 @@
         <IsA>app:gui</IsA>
         <Summary>Sudoku game</Summary>
         <Description>Ksudoku is a logic-based symbol placement puzzle.</Description>
-        <Archive sha1sum="2cdd71e3299fac7b7e598fe2ce1aeed9144d2b84" type="tarxz">mirrors://kde/unstable/4.9.97/src/ksudoku-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="406ba7429974813f26a2c7a2165f622b568c7feb" type="tarxz">mirrors://kde/unstable/4.9.98/src/ksudoku-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>    
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>    
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>ksudoku</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>  
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>  
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,19 +35,12 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>       
         <Update release="1">
-            <Date>2013-01-02</Date>
-            <Version>4.9.95</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
+        </Update>       
     </History>
 </PISI>

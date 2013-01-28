@@ -47,33 +47,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2011-01-30</Date>
             <Version>0.9.9.9</Version>
-            <Comment>Split devel package.</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-05-14</Date>
-            <Version>0.9.9.9</Version>
-            <Comment>Fix multiple segmentation faults and memory leaks.</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-04-09</Date>
-            <Version>0.9.9</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-20</Date>
-            <Version>0.9.8.1</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

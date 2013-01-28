@@ -17,7 +17,7 @@
             <Dependency>python-qt</Dependency>
             <Dependency>python-qwt</Dependency>
             <Dependency>python-numpy</Dependency>
-            <Dependency versionFrom="1.5.1">python-guidata</Dependency>
+            <Dependency>python-guidata</Dependency>
             <Dependency>python-imaging</Dependency>
             <Dependency>python-sphinx</Dependency>
         </BuildDependencies>
@@ -31,7 +31,7 @@
             <Dependency>python-numpy</Dependency>
             <Dependency>python-scipy</Dependency>
             <Dependency>python-imaging</Dependency>
-            <Dependency versionFrom="1.5.1">python-guidata</Dependency>
+            <Dependency>python-guidata</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -41,38 +41,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-11-12</Date>
             <Version>2.1.1</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>
-        <Update release="3">
-            <Date>2011-04-21</Date>
-            <Version>2.1.1</Version>
-            <Comment>Version bump:
-                * added support for NaNs in image plot items (default behaviour: NaN pixels are transparents)
-                * added "oblique averaged cross section" feature
-                * bugfixes
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-04-06</Date>
-            <Version>2.1.0</Version>
-            <Comment>Version bump to latest tarball, a new demo application based on python-guidata and python-guiqwt is introduced: sift.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-10</Date>
-            <Version>2.0.8.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Merve Yübaşıoğlu</Name>
-            <Email>merveyuzbasioglu89@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

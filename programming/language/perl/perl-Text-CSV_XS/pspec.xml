@@ -14,14 +14,14 @@
         <Description>perl-Text-CSV_XS provides facilities for the composition and decomposition of comma-separated values. An instance of the Text::CSV_XS class can combine fields into a CSV string and parse a CSV string into fields.</Description>
         <Archive sha1sum="5d7167fb31b18dbeaa51a786017619fd27a646ac" type="targz">mirrors://cpan/authors/id/H/HM/HMBRAND/Text-CSV_XS-0.90.tgz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>perl-Text-CSV_XS</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -31,36 +31,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>0.90</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2012-07-10</Date>
-            <Version>0.90</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-12-30</Date>
-            <Version>0.80</Version>
-            <Comment>Version bump:
-                * Implement getline_all () and getaline_hr_all ()
-                * Fixed another parsing for eol = \r (RT#61525)
-            </Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-20</Date>
-            <Version>0.79</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

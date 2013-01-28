@@ -24,4 +24,4 @@ def install():
 
     pisitools.insinto("/usr/share/redeclipse", "data/*")
 
-    pisitools.dodoc("cc-by-sa.txt", "changelog.txt", "license.txt", "readme.txt", "trademark.txt")
+    pisitools.dodoc("readme.txt")

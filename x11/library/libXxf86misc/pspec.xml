@@ -26,9 +26,6 @@
             <Dependency>libXext</Dependency>
             <Dependency>libXxf86miscproto</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package releaseTo="25">xorg-proto</Package>
-        </Conflicts>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
@@ -70,7 +67,7 @@
         <Update release="1">
             <Date>2012-10-23</Date>
             <Version>1.0.3</Version>
-            <Comment>ilk sürüm</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

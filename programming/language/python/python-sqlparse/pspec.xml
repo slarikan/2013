@@ -26,17 +26,10 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2012-11-17</Date>
             <Version>0.1.5</Version>
-            <Comment>version bump</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-12-17</Date>
-            <Version>0.1.2</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Dalgıç</Name>
             <Email>serdar@pardus.org.tr</Email>
         </Update>

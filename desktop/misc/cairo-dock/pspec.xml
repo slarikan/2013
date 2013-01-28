@@ -80,47 +80,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2013-01-13</Date>
             <Version>3.1.2.1</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-11-11</Date>
-            <Version>3.1.1</Version>
-            <Comment>version bump</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-10-07</Date>
-            <Version>2.4.0</Version>
-            <Comment>version bump from 2.4.0~1 to 2.4.0~2</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-10-03</Date>
-            <Version>2.4.0</Version>
-            <Comment>version bump</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-07-28</Date>
-            <Version>2.3.0</Version>
-            <Comment>version bump</Comment>
-            <Name>Stefan Wilhelm</Name>
-            <Email>sw@pardususer.de</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-22</Date>
-            <Version>2.2.0</Version>
-            <Comment>cairo-dock is now glx-dock</Comment>
-            <Name>Stefan Wilhelm</Name>
-            <Email>sw@pardususer.de</Email>
         </Update>
     </History>
 </PISI>

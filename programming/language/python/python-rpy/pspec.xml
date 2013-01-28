@@ -33,75 +33,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-11-16</Date>
             <Version>2.2.7</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2011-03-18</Date>
-            <Version>2.1.9</Version>
-            <Comment>Fix rev-dep problem that causes to remove this package from repo</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-11-30</Date>
-            <Version>2.1.9</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-11-10</Date>
-            <Version>2.1.8</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-10-26</Date>
-            <Version>2.1.7</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-08-22</Date>
-            <Version>2.1.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-08-03</Date>
-            <Version>1.0.3</Version>
-            <Comment>Version bump,external lapack patch added.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-12-25</Date>
-            <Version>1.0.1</Version>
-            <Comment>Version bump, added docs</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-07-03</Date>
-            <Version>1.0_rc3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-01-20</Date>
-            <Version>1.0_rc2</Version>
-            <Comment>First release.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
         </Update>
     </History>
 </PISI>

@@ -17,7 +17,7 @@
             <Dependency>glew-devel</Dependency>
             <Dependency>freeglut-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
-            <Dependency releaseFrom="25">mesa-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
             <Dependency>mesa-glu-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -28,7 +28,7 @@
             <Dependency>glew</Dependency>
             <Dependency>freeglut</Dependency>
             <Dependency>libXext</Dependency>
-            <Dependency releaseFrom="25">mesa</Dependency>
+            <Dependency>mesa</Dependency>
             <Dependency>mesa-glu</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -41,7 +41,7 @@
         <PartOf>x11.util</PartOf>
         <Summary>Mesa utilities</Summary>
         <RuntimeDependencies>
-            <Dependency releaseFrom="25">mesa</Dependency>
+            <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -74,33 +74,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-10-13</Date>
             <Version>8.0.1</Version>
-            <Comment>fixed missing dependencies</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-04-26</Date>
-            <Version>8.0.1</Version>
-            <Comment>Create demos for lib32 libraries. It's a handy tool to test mesa-32bit</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-12</Date>
-            <Version>8.0.1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-08-24</Date>
-            <Version>8.0.1</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

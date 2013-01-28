@@ -42,7 +42,7 @@
         <IsA>data:doc</IsA>
         <Summary>Development files for gtk+extra library</Summary>
         <RuntimeDependencies>
-            <Dependency versionFrom="3.0.1">gtk+extra3</Dependency>
+            <Dependency>gtk+extra3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -55,7 +55,7 @@
         <Update release="1">
             <Date>2012-08-26</Date>
             <Version>3.0.1</Version>
-            <Comment>Yeni paket</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
         </Update>

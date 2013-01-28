@@ -64,33 +64,12 @@ port but this never eventuated</Description>
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-09-01</Date>
             <Version>2.10.2</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-11-27</Date>
-            <Version>2.6.7</Version>
-            <Comment>v_up</Comment>
-            <Name>Bahadir Ozdemir</Name>
-            <Email>baho888@hotmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-02-02</Date>
-            <Version>2.4.4</Version>
-            <Comment>v_up</Comment>
-            <Name>Bahadir Ozdemir</Name>
-            <Email>baho888@hotmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-12-05</Date>
-            <Version>2.4.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadir Ozdemir</Name>
-            <Email>baho888@hotmail.com</Email>
         </Update>
     </History>
 </PISI>

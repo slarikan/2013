@@ -28,7 +28,7 @@
         <Name>kgmailnotifier</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency versionFrom="4.3">kdelibs</Dependency>
+            <Dependency>kdelibs</Dependency>
             <Dependency>phonon</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -43,58 +43,12 @@
     </Package>
 
      <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2012-09-03</Date>
             <Version>0.5.2</Version>
-            <Comment>v.bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-01-23</Date>
-            <Version>0.5.1</Version>
-            <Comment>Correct File Paths, use kde actionsapi module for Pardus 2011 and make the package ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-12-05</Date>
-            <Version>0.5.1</Version>
-            <Comment>Version bump: Improved KDE wallet handling</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-12-02</Date>
-            <Version>0.5.0.2</Version>
-            <Comment>Version bump: translation updates</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-09-11</Date>
-            <Version>0.5.0.1</Version>
-            <Comment>Bugfix release</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-09-11</Date>
-            <Version>0.5.0</Version>
-            <Comment>Stable bump:
-                - Ported to KDE4
-                - Turkish translation is in now
-                - Add icon tag and desktop patch, fix home page, dependencies and some cosmetics
-            </Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-04-13</Date>
-            <Version>0.4_beta2</Version>
-            <Comment>First release.</Comment>
-            <Name>Samed Beyribey</Name>
-            <Email>ras0ir@eventualis.org</Email>
         </Update>
     </History>
 </PISI>

@@ -30,19 +30,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-11-26</Date>
             <Version>0.9</Version>
-            <Comment>Takeover of package, add Debian patches.</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-10</Date>
-            <Version>0.9</Version>
-            <Comment>First release</Comment>
-            <Name>Kenan Pelit</Name>
-            <Email>kpelit@gmail.com</Email>
         </Update>
     </History>
 </PISI>

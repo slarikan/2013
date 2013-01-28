@@ -35,59 +35,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-02-21</Date>
             <Version>0.9.3.3457</Version>
-            <Comment>
-                * Update dependencies.
-                * Remove empty files from package.
-                * Version bump:
-                    - Allow 'of' to be omitted in type references when [] are used
-                    - Missing PatternMatching patterns, plus regex pattern
-                    - Language change: remove 'continue' and 'break' special meaning from 'or' blocks
-                * Bugfixes at this version:
-                    - compiler error referencing base class members of a generic subclass of a generic class
-                    - Overriden explicit interface implementation crashes compiler
-                    - Duplicate explicit interfaces cause emit error
-                    - List comprehension cannot be used inside array constructor
-                    - Subclassing containing class causes compiler stack overflow
-                    - Abstract subclassing turns methods public
-                    - Callable cannot declare variable parameters
-                    - for/or bug in generator
-                    - booish crashes after /help, /globals, /load and /save
-                    - Any autocompletion on an array crashes Boo interpreter
-                    - No type safety at all if LHS or RHS of expression is an interface
-                    - Compiler falsely considers any member of the same name to fulfill an external interface.
-                    - Not all overloads of external implementations searched
-                    - Most of the links on the Boo home page are dead
-                    - Overflowing calculations with constants are compiled to invalid code
-                    - System.InvalidOperationException with void/bool comparison
-                    - System.InvalidOperationException with void function in hash literal
-                    - Boo compiler fails on certain file names
-                    - Boo compiler fails on empty files
-                    - Class not found after importing two similar namespaces
-                    - inheritance generic class with abstract parameter causes error
-                    - cross-namespace inheritance from an interface fails
-                    - The white space agnostic parser is not preserving file names
-                    - Parser fails on literal -9223372036854775808L (long.MinValue)
-            </Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-11-29</Date>
-            <Version>0.9.2.3383</Version>
-            <Comment>Fix libdir path.</Comment>
-            <Name>Gökmen Görgen</Name>
-            <Email>gkmngrgn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-10-30</Date>
-            <Version>0.9.2.3383</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Görgen</Name>
             <Email>gkmngrgn@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

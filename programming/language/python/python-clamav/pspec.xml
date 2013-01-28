@@ -24,7 +24,7 @@
     <Package>
         <Name>python-clamav</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.96.2">clamav</Dependency>
+            <Dependency>clamav</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -36,10 +36,9 @@
         <Update release="1">
             <Date>2010-09-08</Date>
             <Version>0.4.1</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
         </Update>
     </History>
 </PISI>
-

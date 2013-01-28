@@ -33,19 +33,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-08-21</Date>
             <Version>1.2.0_p20100322</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-05-01</Date>
-            <Version>1.2.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Ertuğrul Erata</Name>
-            <Email>ertugrulerata@gmail.com</Email>
         </Update>
     </History>
 </PISI>

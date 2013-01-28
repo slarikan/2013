@@ -37,7 +37,7 @@
         <Update release="1">
             <Date>2012-10-21</Date>
             <Version>5.0.0</Version>
-            <Comment>test beta so clear history temporarily</Comment>
+            <Comment>First release</Comment>
             <Name>canatan</Name>
             <Email>qazsew@mynet.com</Email>
         </Update>

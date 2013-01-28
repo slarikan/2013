@@ -30,9 +30,9 @@
         <Update release="1">
             <Date>2008-08-26</Date>
             <Version>1.0</Version>
-            <Comment>First Release</Comment>
+            <Comment>First release</Comment>
             <Name>Fethican Coşkuner</Name>
             <Email>fethicanc@gmail.com</Email>
         </Update>
     </History>
-</PISI> 
+</PISI>

@@ -15,11 +15,12 @@
         <Description>libcap is a library for getting and setting POSIX.1e (formerly POSIX 6) draft 15 capabilities.</Description>
         <Archive sha1sum="7753165ca685a0c78735fa0db25b815d9576b1fe" type="targz">ftp://ftp.archlinux.org/other/libcap/libcap-2.22.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>attr-devel</Dependency>
             <Dependency>pam</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch>libcap-2.16-linkage_fix.diff</Patch>
-            <!--<Patch level="1">flags.patch</Patch>-->
+            <Patch level="0">libcap-2.21-include.patch</Patch>
+            <Patch level="1">libcap-2.22-build-system-fixes.patch</Patch>
         </Patches>
     </Source>
 
@@ -27,6 +28,7 @@
         <Name>libcap</Name>
         <RuntimeDependencies>
             <Dependency>pam</Dependency>
+            <Dependency>attr</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/sbin</Path>
@@ -56,8 +58,12 @@
         <PartOf>emul32</PartOf>
         <Summary>32-bit shared libraries for libcap</Summary>
         <BuildType>emul32</BuildType>
+        <BuildDependencies>
+            <Dependency>attr-32bit</Dependency>
+        </BuildDependencies>
         <RuntimeDependencies>
             <Dependency release="current">libcap</Dependency>
+            <Dependency>attr-32bit</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib32</Path>
@@ -65,115 +71,19 @@
     </Package>
 
     <History>
-        <Update release="15">
-            <Date>2012-10-01</Date>
-            <Version>2.22</Version>
-            <Comment>Version bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="14">
-            <Date>2011-03-02</Date>
-            <Version>2.19</Version>
-            <Comment>Prevent override of 64-bit executables</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="13">
-            <Date>2011-03-01</Date>
-            <Version>2.19</Version>
-            <Comment>Add main package as dep for 32-bit package</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="12">
-            <Date>2011-02-28</Date>
-            <Version>2.19</Version>
-            <Comment>Add lib32 package for libcap</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-10-11</Date>
-            <Version>2.19</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-08-18</Date>
-            <Version>2.19</Version>
-            <Comment>Version bump and split devel package.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-04-29</Date>
-            <Version>2.16</Version>
-            <Comment>
-                Fix building with new kernels
-                Correctly link with pam to fix unresolved symbols
-                Fix FLAGS
-                Remove static library
-            </Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-01-19</Date>
-            <Version>2.16</Version>
-            <Comment>New release</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-06-22</Date>
-            <Version>2.10</Version>
-            <Comment>Stable update</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-05-15</Date>
-            <Version>2.08</Version>
-            <Comment>Stable update</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-02-03</Date>
-            <Version>2.05</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-12-28</Date>
-            <Version>2.03</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-12-01</Date>
-            <Version>2.02</Version>
-            <Comment>Version bump</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
         <Update release="2">
-            <Date>2007-10-21</Date>
-            <Version>1.10</Version>
-            <Comment>Sync with audit package</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
+            <Date>2013-01-24</Date>
+            <Version>2.22</Version>
+            <Comment>Use flags form pisi.conf, fix emul32</Comment>
+            <Name>Marcin Bojara</Name>
+            <Email>marcin.bojara@gmail.com</Email>
         </Update>
         <Update release="1">
-            <Date>2005-10-15</Date>
-            <Version>1.10</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
+            <Date>2012-10-01</Date>
+            <Version>2.22</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

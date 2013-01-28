@@ -38,44 +38,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2012-08-31</Date>
             <Version>2.4.2</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-11-24</Date>
-            <Version>2.9</Version>
-            <Comment>Version bump and make the package ready for Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-10-28</Date>
-            <Version>2.2.6a</Version>
-            <Comment>
-                * Version bump
-                * multiple files split : split recursively files from directories
-                * added patch for output format variables @u, @U, @l, @L (libmp3splt)
-                * added support to output both ID3v1 and ID3v2 tags
-                * fixed important bug when detecting the total time : the last split file was shorter (libmp3splt)
-                * by default, output tags 12 when using -g and no tags in input files
-                * fixed compilation bug for libmp3splt detection to look for 'libmp3splt/mp3splt.h' instead of mp3splt.h (libmp3splt)
-                * fixed uninstall hook for ogg symlinks
-                * added oggsplt symlink to doc
-                * Take over.
-            </Comment>
-            <Name>Cihan Okyay</Name>
-            <Email>okyaycihan@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-04-15</Date>
-            <Version>2.1c</Version>
-            <Comment>First release.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
         </Update>
     </History>
 </PISI>

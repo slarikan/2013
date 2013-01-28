@@ -101,71 +101,12 @@
     </Package>
 
     <History>
-        <Update release="9">
+        <Update release="1">
             <Date>2013-01-13</Date>
             <Version>2.32.1</Version>
-            <Comment>Yamalandı.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2010-12-09</Date>
-            <Version>2.32.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2010-10-28</Date>
-            <Version>2.32.0.2</Version>
-            <Comment>
-                - Version bump.
-                - Split devel package.    
-            </Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-06-02</Date>
-            <Version>2.26.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-03-17</Date>
-            <Version>2.26.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-10-24</Date>
-            <Version>2.24.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-09-24</Date>
-            <Version>2.24.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-06-01</Date>
-            <Version>2.22.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-05-03</Date>
-            <Version>2.22.1.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Burak Çalışkan</Name>
-            <Email>burakclskn@gmail.com</Email>
         </Update>
     </History>
 </PISI>

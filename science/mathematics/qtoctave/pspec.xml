@@ -16,7 +16,7 @@
         <Archive sha1sum="1d18058c7549a3f25cd648183db3d99ef755257e" type="tarbz2">http://forja.rediris.es/frs/download.php/1760/qtoctave-0.10.1.tar.bz2</Archive>
         <BuildDependencies>
             <Dependency>qt-devel</Dependency>
-            <Dependency versionFrom="3.4.2">octave</Dependency>
+            <Dependency>octave</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">desktop-file.patch</Patch>
@@ -30,7 +30,7 @@
         <Name>qtoctave</Name>
         <RuntimeDependencies>
             <Dependency>qt</Dependency>
-            <Dependency versionFrom="3.4.2">octave</Dependency>
+            <Dependency>octave</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -42,40 +42,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2011-08-23</Date>
             <Version>0.10.1</Version>
-            <Comment>Add strict dependency to new version of octave</Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-05-25</Date>
-            <Version>0.10.1</Version>
-            <Comment>Add strict dependency to new version of octave</Comment>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-03-18</Date>
-            <Version>0.10.1</Version>
-            <Comment>Fix rev-dep problem that causes to remove this package from repo</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-01-15</Date>
-            <Version>0.10.1</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-03-26</Date>
-            <Version>0.9.1</Version>
-            <Comment>First release (#8505).</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

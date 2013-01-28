@@ -15,10 +15,10 @@
         <Description>The Thunar VCS Plugin adds Subversion and GIT actions to the context menu of thunar. This gives a SVN integration and GIT integration to Thunar.</Description>
         <Archive sha1sum="221c633ec2bdf7c0d9d008ad9cd5094ddbc90ce1" type="tarbz2">http://archive.xfce.org/src/thunar-plugins/thunar-vcs-plugin/0.1/thunar-vcs-plugin-0.1.4.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency versionFrom="4.10.0">libxfce4util-devel</Dependency>
+            <Dependency>libxfce4util-devel</Dependency>
         </BuildDependencies>
         <!--
         <Patches>
@@ -30,14 +30,14 @@
     <Package>
         <Name>thunar-vcs-plugin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="4.10.0">xfce4-panel</Dependency>
-            <Dependency versionFrom="1.4.0">Thunar</Dependency>
+            <Dependency>xfce4-panel</Dependency>
+            <Dependency>Thunar</Dependency>
             <Dependency>git</Dependency>
             <Dependency>subversion</Dependency>
             <Dependency>apr</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency version="4.10.0">libxfce4util</Dependency>
+            <Dependency>libxfce4util</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -54,26 +54,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-05-03</Date>
             <Version>0.1.4</Version>
-            <Comment>rebuild for xfce 4.10.0</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-03-27</Date>
-            <Version>0.1.4</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Alper Tekinalp</Name>
-            <Email>alper.tekinalp@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-03-17</Date>
-            <Version>0.1.2</Version>
-            <Comment>First release.</Comment>
-            <Name>Mesutcan Kurt</Name>
-            <Email>mesutcank@gmail.com</Email>
         </Update>
     </History>
 </PISI>

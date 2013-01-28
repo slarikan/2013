@@ -19,7 +19,7 @@
     <Package>
         <Name>queen</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.12">scummvm</Dependency>
+            <Dependency>scummvm</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -36,33 +36,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-12-13</Date>
             <Version>1.1</Version>
-            <Comment>Adapt to  2011</Comment>
+            <Comment>First release</Comment>
             <Name>Beyza Ermis</Name>
             <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-11-11</Date>
-            <Version>1.1</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-09-27</Date>
-            <Version>1.1</Version>
-            <Comment>Bump to fix some sound glitches, switch to mp3 based sounds which is supported by scummvm, added icon tag to pspec</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-09-17</Date>
-            <Version>0.1</Version>
-            <Comment>First release</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

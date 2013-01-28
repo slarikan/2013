@@ -20,6 +20,7 @@ def setup():
     autotools.configure("--prefix=/usr \
                          --with-json=system \
                          --enable-introspection \
+                         --disable-static \
                          --enable-shared ")
 
 def build():

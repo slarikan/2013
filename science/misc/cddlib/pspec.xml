@@ -35,61 +35,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-11-11</Date>
             <Version>0.94g</Version>
-            <Comment>Güncellendi.</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-12-17</Date>
-            <Version>094f</Version>
-            <Comment>Rebuild for Pardus 2011</Comment>
-            <Name>Çağlar Kilimci</Name>
-            <Email>ckilimci@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-09-03</Date>
-            <Version>094f</Version>
-            <Comment>revert changes</Comment>
-            <Requires>
-                <Action>reverseDependencyUpdate</Action>
-            </Requires>
-            <Name>Cihan Okyay</Name>
-            <Email>okyaycihan@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-09-03</Date>
-            <Version>094f</Version>
-            <Comment>
-                * purged unused direct dependencies
-                * fixed files tag
-                * take over
-            </Comment>
-            <Name>Cihan Okyay</Name>
-            <Email>okyaycihan@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-08-10</Date>
-            <Version>094f</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-12-21</Date>
-            <Version>094d</Version>
-            <Comment>Make it shared</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-04</Date>
-            <Version>094d</Version>
-            <Comment>First release</Comment>
-            <Name>Ahmet Erdoğan</Name>
-            <Email>tuxposta@gmail.com</Email>
         </Update>
     </History>
 </PISI>

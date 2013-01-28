@@ -35,26 +35,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-06-01</Date>
             <Version>2.7.54</Version>
-            <Comment>Remove mailcap man files since they conflict with mailcap package.</Comment>
+            <Comment>First release</Comment>
             <Name>H. İbrahim Güngör</Name>
             <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-07-12</Date>
-            <Version>2.7.54</Version>
-            <Comment>Update to latest patchset from Debian.</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-01-11</Date>
-            <Version>2.7.45.3</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

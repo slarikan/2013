@@ -48,16 +48,9 @@
         <Update release="1">
             <Date>2012-04-05</Date>
             <Version>3.3.1</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="1">
-            <Date>2012-04-05</Date>
-            <Version>3.2.1</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
     </History>
 </PISI>

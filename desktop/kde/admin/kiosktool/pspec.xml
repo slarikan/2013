@@ -36,19 +36,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-02-15</Date>
             <Version>1.99_20100215</Version>
-            <Comment>Bump to KDE4 release.</Comment>
+            <Comment>First release</Comment>
             <Name>Gökçen Eraslan</Name>
             <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-06-26</Date>
-            <Version>1.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Uğur Çetin</Name>
-            <Email>jnmbk@users.sourceforge.net</Email>
         </Update>
     </History>
 </PISI>

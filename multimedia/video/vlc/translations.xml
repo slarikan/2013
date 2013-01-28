@@ -4,8 +4,10 @@
         <Name>vlc</Name>
         <Summary xml:lang="tr">VLC çoklu ortam oynatıcısı</Summary>
         <Summary xml:lang="pl">Odtwarzacz plików multimedialnych i serwer strumieni </Summary>
+        <Summary xml:lang="es">VLC reproductor multimedia</Summary>
         <Description xml:lang="tr">Media oynatıcısı ve yayın dinleyici</Description>
         <Description xml:lang="pl">VLC jest odtwarzaczem multimediów projektu VideoLAN. Odtwarza pliki MPEG, MPEG2, MPEG4, DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis, płyty DVD, VCD, podkasty oraz strumienie multimedialne z różnych źródeł w sieci.</Description>
+        <Description xml:lang="es">VLC es un poderoso reproductor de medios para todo tipo de formatos multimedia</Description>
     </Source>
 
     <Package>

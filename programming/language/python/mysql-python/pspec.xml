@@ -30,60 +30,12 @@
   </Package>
 
     <History>
-        <Update release="7">
+        <Update release="1">
             <Date>2010-10-11</Date>
             <Version>1.2.3</Version>
-            <Comment>
-                - ez_setup.py has been update to include various fixes that affect the build.
-                - Better Python version and dependency detection as well as eliminate exception warnings under Python 2.6.
-                - Eliminated memory leaks related to Unicode and failed connections.
-                - Corrected connection .escape() functionality.
-                - Miscellaneous cleanups and and expanded testing suite to ensure ongoing release quality.
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Renan Çakırerk</Name>
             <Email>renan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-11-23</Date>
-            <Version>1.2.3</Version>
-            <Comment>Fix format mismatch that can cause problems with 64-bit big-endian systems.</Comment>
-            <Name>Eren Türkay</Name>
-            <Email>eren@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-05-13</Date>
-            <Version>1.2.3</Version>
-            <Comment>New release.</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-05-16</Date>
-            <Version>1.2.2</Version>
-            <Comment>New release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-07-10</Date>
-            <Version>1.2.1_beta8</Version>
-            <Comment>Use MySQL-5.0.22.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-04-03</Date>
-            <Version>1.2.1_beta8</Version>
-            <Comment>Version bump</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-01-16</Date>
-            <Version>1.2.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

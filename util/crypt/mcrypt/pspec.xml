@@ -36,40 +36,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2009-09-07</Date>
             <Version>2.6.8</Version>
-            <Comment>Add translations.xml file.</Comment>
+            <Comment>First release</Comment>
             <Name>Pınar Yanardağ</Name>
             <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2009-05-14</Date>
-            <Version>2.6.8</Version>
-            <Comment>Stable update</Comment>
-            <Name>Pınar Yanardağ</Name>
-            <Email>pinar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2008-01-18</Date>
-            <Version>2.6.7</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-07-22</Date>
-            <Version>2.6.6</Version>
-            <Comment>Stable update</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-20</Date>
-            <Version>2.6.5</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

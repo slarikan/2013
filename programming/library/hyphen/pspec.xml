@@ -1,3 +1,5 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>hyphen</Name>
@@ -17,6 +19,7 @@
         <Archive sha1sum="4481ed35d147d2d67dccf49cb483ec8744e17ab7" type="targz">mirrors://sourceforge/hunspell/hyphen-2.8.4.tar.gz</Archive>
         <Patches/>
     </Source>
+
     <Package>
         <Name>hyphen</Name>
         <RuntimeDependencies>
@@ -29,11 +32,12 @@
             <Path fileType="data" permanent="0">/usr/share/hyphen/*</Path>
         </Files>
     </Package>
+
     <History>
         <Update release="1">
             <Date>2012-07-20</Date>
             <Version>2.8.4</Version>
-            <Comment>First package</Comment>
+            <Comment>First release</Comment>
             <Name>Ramazan Utku</Name>
             <Email>ramazanutku@gmail.com</Email>
         </Update>

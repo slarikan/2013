@@ -17,8 +17,8 @@
         <BuildDependencies>
              <Dependency>kdelibs-devel</Dependency>
              <Dependency>kde-runtime</Dependency>
-             <Dependency versionFrom="4.6">qt-devel</Dependency>
-             <Dependency versionFrom="1.2">libXi-devel</Dependency>
+             <Dependency>qt-devel</Dependency>
+             <Dependency>libXi-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">synaptiks-0.8.1-templatesfix.patch</Patch>
@@ -31,7 +31,7 @@
              <Dependency>kdelibs</Dependency>
              <Dependency>kde-runtime</Dependency>
              <Dependency>qt</Dependency>
-             <Dependency versionFrom="1.2">libXi</Dependency>
+             <Dependency>libXi</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="bin">/usr/bin</Path>          
@@ -60,40 +60,12 @@
 -->
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-11-20</Date>
             <Version>0.8.1</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>
         </Update>      
-        <Update release="4">
-            <Date>2010-10-12</Date>
-            <Version>0.5.0_pre1182832</Version>
-            <Comment>Add missing dependencies for applet package</Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-12</Date>
-            <Version>0.5.0_pre1182832</Version>
-            <Comment>Splitting the package into sub-packages </Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-07</Date>
-            <Version>0.4.0</Version>
-            <Comment>Portage to 2011</Comment>
-            <Name>Gökhan Özbulak</Name>
-            <Email>gozbulak@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-05-06</Date>
-            <Version>0.4.0</Version>
-            <Comment>First Release</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
     </History>
 </PISI>

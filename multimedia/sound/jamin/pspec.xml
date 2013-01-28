@@ -15,7 +15,7 @@
         <Description>JAMin is the JACK Audio Connection Kit (JACK) Audio Mastering Interface.</Description>
         <Archive sha1sum="d991da3fa6f531a1c8b7f6ef764aa13e7e9acbd3" type="targz">mirrors://sourceforge/jamin/jamin-0.95.0.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="2.18.5">gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>fftw3-devel</Dependency>
@@ -34,7 +34,7 @@
     <Package>
         <Name>jamin</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="2.18.5">gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>fftw3</Dependency>
@@ -58,33 +58,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2009-08-22</Date>
             <Version>0.95.0</Version>
-            <Comment>Add missing dependency</Comment>
+            <Comment>First release</Comment>
             <Name>Türker Sezer</Name>
             <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-07-29</Date>
-            <Version>0.95.0</Version>
-            <Comment>Ready for 2009</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-06-23</Date>
-            <Version>0.95.0</Version>
-            <Comment>Strict to one libdir</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-30</Date>
-            <Version>0.95.0</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

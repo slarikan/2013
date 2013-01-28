@@ -44,34 +44,12 @@
     </Package>
 
     <History>
-       <Update release="4">
+       <Update release="1">
             <Date>2012-08-29</Date>
             <Version>0.7</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Turgeş</Name>
             <Email>turgelfatih@gmail.com</Email>
         </Update>
-        <Update release="3">
-            <Date>2011-03-11</Date>
-            <Version>0.4</Version>
-            <Comment>Version bump</Comment>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-03-11</Date>
-            <Version>0.3.1</Version>
-            <Comment>Fix makefile</Comment>
-            <Name>Kaan Özdinçer</Name>
-            <Email>kaanozdincer@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-03</Date>
-            <Version>0.3.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Kaan Özdinçer</Name>
-            <Email>kaanozdincer@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

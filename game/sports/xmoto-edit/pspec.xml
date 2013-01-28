@@ -22,7 +22,7 @@
     <Package>
         <Name>xmoto-edit</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="0.47">inkscape</Dependency>
+            <Dependency>inkscape</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/inkscape/extensions</Path>
@@ -31,47 +31,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2010-06-15</Date>
             <Version>0.7.0</Version>
-            <Comment>new release</Comment>
-            <Name>Türker Sezer</Name>
-            <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-02-03</Date>
-            <Version>0.5.0</Version>
-            <Comment>new release</Comment>
-            <Name>Türker Sezer</Name>
-            <Email>turkersezer@tsdesign.info</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-11-11</Date>
-            <Version>0.2.4</Version>
-            <Comment>Fix desktop files to make them XDG compliant</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-04-05</Date>
-            <Version>0.2.4</Version>
-            <Comment>Depend on new xmoto</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-03-23</Date>
-            <Version>0.2.4</Version>
-            <Comment>Add man page</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-05</Date>
-            <Version>0.2.4</Version>
             <Comment>First release</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
+            <Name>Türker Sezer</Name>
+            <Email>turkersezer@tsdesign.info</Email>
         </Update>
     </History>
 </PISI>

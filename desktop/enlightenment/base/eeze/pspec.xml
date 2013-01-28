@@ -16,9 +16,9 @@
         <Description>Eeze is the library used by Enlightenment to be integrated to the devices via udev.</Description>
         <Archive sha1sum="46ff28b92ff0d4dd52d45c9ede751843c15a414d" type="tarbz2">http://download.enlightenment.org/releases/eeze-1.7.5.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
             <Dependency>libudev-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -26,9 +26,9 @@
     <Package>
         <Name>eeze</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.7.4">eet</Dependency>
-            <Dependency versionFrom="1.7.4">eina</Dependency>
-            <Dependency versionFrom="1.7.4">ecore</Dependency>
+            <Dependency>eet</Dependency>
+            <Dependency>eina</Dependency>
+            <Dependency>ecore</Dependency>
             <Dependency>libudev</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -43,9 +43,9 @@
         <Summary>Development files for eeze</Summary>
         <RuntimeDependencies>
             <Dependency release="current">eeze</Dependency>
-            <Dependency versionFrom="1.7.4">eet-devel</Dependency>
-            <Dependency versionFrom="1.7.4">eina-devel</Dependency>
-            <Dependency versionFrom="1.7.4">ecore-devel</Dependency>
+            <Dependency>eet-devel</Dependency>
+            <Dependency>eina-devel</Dependency>
+            <Dependency>ecore-devel</Dependency>
             <Dependency>libudev-devel</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -55,99 +55,12 @@
     </Package>
 
     <History>
-        <Update release="13">
+        <Update release="1">
             <Date>2013-01-08</Date>
             <Version>1.7.5</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="12">
-            <Date>2012-12-23</Date>
-            <Version>1.7.4</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Marcin Bojara</Name>
-            <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="11">
-            <Date>2012-12-12</Date>
-            <Version>1.7.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="10">
-            <Date>2012-09-15</Date>
-            <Version>1.2.0</Version>
-            <Comment>rebuild</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2012-06-08</Date>
-            <Version>1.2.0</Version>
-            <Comment>Version bump</Comment>
-            <Name>Richard de Bruin</Name>
-            <Email>rr.debruin@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2011-05-25</Date>
-            <Version>1.0.1</Version>
-            <Comment>Rebuild for the latest EFL.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-03-23</Date>
-            <Version>1.0.1</Version>
-            <Comment>Version bump to bugfix release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2011-01-29</Date>
-            <Version>1.0.0</Version>
-            <Comment>Version bump to the long awaited stable version.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2010-12-09</Date>
-            <Version>1.0.0_beta3</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-11-13</Date>
-            <Version>1.0.0_beta2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-12</Date>
-            <Version>1.0.0_beta1</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-03</Date>
-            <Version>1.0.0_beta1</Version>
-            <Comment>Version bump.</Comment>
-            <Requires>
-                <Action>reverseDependencyUpdate</Action>
-            </Requires>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-08-07</Date>
-            <Version>0.2.0_50887</Version>
-            <Comment>First release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

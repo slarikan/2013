@@ -35,65 +35,12 @@
     </Package>
 
     <History>
-        <Update release="8">
+        <Update release="1">
             <Date>2012-10-04</Date>
             <Version>4.11.1</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="7">
-            <Date>2011-01-19</Date>
-            <Version>4.7</Version>
-            <Comment>Adapt to 2011.</Comment>
-            <Name>Beyza Ermis</Name>
-            <Email>beyza@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2010-04-30</Date>
-            <Version>4.9</Version>
-            <Comment>
-             * uudecode will not create output file names with trailing white space
-             * Fix quoting in the shar script messages.
-             * Don't autodetect mailer, just use the sendmail binary (bug #7479)
-            </Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-04-30</Date>
-            <Version>4.7</Version>
-            <Comment>Update doc path for 2009.</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-06-20</Date>
-            <Version>4.7</Version>
-            <Comment>Version bump, clean-up actions.py</Comment>
-            <Name>Doruk Fişek</Name>
-            <Email>dfisek@fisek.com.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-12-27</Date>
-            <Version>4.6.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-03-28</Date>
-            <Version>4.6.1</Version>
-            <Comment>Version bump</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-07-15</Date>
-            <Version>4.2.1</Version>
-            <Comment>First release.</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

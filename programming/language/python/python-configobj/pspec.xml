@@ -34,41 +34,12 @@
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2010-09-05</Date>
             <Version>4.7.2</Version>
-            <Comment>Improves performance adds features for validation and fixes some bugs.</Comment>
+            <Comment>First release</Comment>
             <Name>Fethican Coşkuner</Name>
             <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-10-02</Date>
-            <Version>4.6.0</Version>
-            <Comment>
-                - Pickling of ConfigObj instances now supported.
-                - Replaced use of hasattr (which can swallow exceptions) with getattr.
-                - You can now create an empty ConfigObj with a configspec, programmatically set values and then validate.
-                - Added as_list method.
-                - Removed the deprecated istrue, encode and decode methods.
-                - Running test_configobj.py now also runs the doctests in the configobj module.
-            </Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2008-08-27</Date>
-            <Version>4.5.3</Version>
-            <Comment>Version Bump.</Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-07-10</Date>
-            <Version>4.0.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Ediz Türkoğlu</Name>
-            <Email>ediz.turkoglu@yahoo.com</Email>
         </Update>
     </History>
 </PISI>
-

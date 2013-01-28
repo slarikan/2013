@@ -25,82 +25,12 @@
     </Package>
 
     <History>
-        <Update release="11">
+        <Update release="1">
             <Date>2012-11-11</Date>
             <Version>3.2.2</Version>
-            <Comment>version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-12-10</Date>
-            <Version>3.1.2</Version>
-            <Comment>Conflicted cherrypy2 renamed as python-cherrypy2.</Comment>
-            <Name>Fethican Coşkuner</Name>
-            <Email>fethicanc@gmail.com</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-05-22</Date>
-            <Version>3.1.2</Version>
-            <Comment>Version bump and make the package ready for 2009.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-03-08</Date>
-            <Version>3.1.0</Version>
-            <Comment>Add cherrypy2 as Conflict and change IsA tag.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>dalgic.srdr@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-08-23</Date>
-            <Version>3.1.0</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-05-30</Date>
-            <Version>3.0.3</Version>
-            <Comment>Remove system.base deps</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2008-02-27</Date>
-            <Version>3.0.3</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Alper Somuncu</Name>
-            <Email>alpersomuncu@gmail.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-08-28</Date>
-            <Version>3.0.2</Version>
-            <Comment>Stable bump</Comment>
-            <Name>Alper Somuncu</Name>
-            <Email>alpersomuncu@gmail.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-05-16</Date>
-            <Version>3.0.1</Version>
-            <Comment>New release</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-01-08</Date>
-            <Version>3.0.0</Version>
-            <Comment>New release</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-04-03</Date>
-            <Version>2.2.0_rc1</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

@@ -14,14 +14,14 @@
         <Description>xorg-input-kbd contains the X.Org driver for keyboards.</Description>
         <Archive sha1sum="8a4f75076231b941011b7c129bd66afe8f261b9a" type="tarbz2">mirrors://xorg/individual/driver/xf86-input-keyboard-1.6.2.tar.bz2</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server-devel</Dependency>
+            <Dependency>xorg-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>xorg-input-kbd</Name>
         <RuntimeDependencies>
-            <Dependency versionFrom="1.8.99">xorg-server</Dependency>
+            <Dependency>xorg-server</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/xorg</Path>
@@ -31,47 +31,12 @@
     </Package>
 
     <History>
-        <Update release="6">
+        <Update release="1">
             <Date>2012-10-11</Date>
             <Version>1.6.2</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Marcin Bojara</Name>
             <Email>marcin.bojara@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-05-30</Date>
-            <Version>1.6.1</Version>
-            <Comment>New stable release</Comment>
-            <Name>Erdem Artan</Name>
-            <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="4">
-            <Date>2011-01-07</Date>
-            <Version>1.5.0</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-10-12</Date>
-            <Version>1.4.0</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-12-15</Date>
-            <Version>1.4.0</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-04-11</Date>
-            <Version>1.3.2</Version>
-            <Comment>First release</Comment>
-            <Name>Fatih Aşıcı</Name>
-            <Email>fatih@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

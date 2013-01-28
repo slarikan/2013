@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
         <Name>python-pyasn1</Name>
@@ -29,7 +30,7 @@ based on ASN.1 specification.</Description>
         <Update release="1">
             <Date>2012-11-18</Date>
             <Version>0.1.4</Version>
-            <Comment>First release.</Comment>
+            <Comment>First release</Comment>
             <Name>Erdinç Gültekin</Name>
             <Email>erdincgultekin@gmail.com</Email>
         </Update>

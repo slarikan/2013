@@ -56,40 +56,12 @@
     </Package>
 
     <History>
-        <Update release="5">
-            <Date>2010-12-30</Date>
-            <Version>0.31.1</Version>
-            <Comment>Split devel package. Add Debian patches</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-12-30</Date>
-            <Version>0.31.1</Version>
-            <Comment>Takeover of package, ready for 2011</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-09-07</Date>
-            <Version>0.31.1</Version>
-            <Comment>translation.xml file added.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>scirit@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2009-05-06</Date>
-            <Version>0.31.1</Version>
-            <Comment>A parameter is added to disable static library.</Comment>
-            <Name>Semen Cirit</Name>
-            <Email>semen@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2006-10-19</Date>
+            <Date>2010-12-30</Date>
             <Version>0.31.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
+            <Comment>First release</Comment>
+            <Name>Fatih Arslan</Name>
+            <Email>farslan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

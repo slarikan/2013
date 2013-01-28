@@ -41,75 +41,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2011-01-04</Date>
             <Version>0.3.8</Version>
-            <Comment>Fix deps for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Göksel</Name>
             <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-08-10</Date>
-            <Version>0.3.8</Version>
-            <Comment>Fix dependencies for 2009</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="8">
-            <Date>2008-12-15</Date>
-            <Version>0.3.8</Version>
-            <Comment>New version with Oxygen icons and license update, separated translations.xml</Comment>
-            <Name>Mehmet Nur Olcay</Name>
-            <Email>mnurolcay@gmail.com</Email>
-        </Update>
-        <Update release="7">
-            <Date>2008-09-20</Date>
-            <Version>0.3.7.2</Version>
-            <Comment>Version bump, fix licence, remove PyQt4.patch, add no-compiled-py.patch and package takeover</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@cclub.metu.edu.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-01-12</Date>
-            <Version>0.3.7</Version>
-            <Comment>Version bump</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-10-14</Date>
-            <Version>0.3.6</Version>
-            <Comment>Desktop-tr patch added</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-08-18</Date>
-            <Version>0.3.6</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
-        </Update>
-        <Update release="3">
-            <Date>2007-07-30</Date>
-            <Version>0.1</Version>
-            <Comment>Version downgrade, recordmydesktop version 0.3.5.X broken, segmentation errors, no apparent way to fix the problem</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-07-17</Date>
-            <Version>0.2</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-06-18</Date>
-            <Version>0.1</Version>
-            <Comment>First release</Comment>
-            <Name>Mustafa Günay</Name>
-            <Email>mgunay@pardusman.org</Email>
         </Update>
     </History>
 </PISI>

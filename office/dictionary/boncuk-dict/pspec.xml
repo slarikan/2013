@@ -24,19 +24,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-11-27</Date>
             <Version>0.1.1</Version>
-            <Comment>Update for 2011 after a lot of years</Comment>
+            <Comment>First release</Comment>
             <Name>İşbaran Akçayır</Name>
             <Email>isbaran@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-12-22</Date>
-            <Version>0.1.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Uğur Çetin</Name>
-            <Email>jnmbk@users.sourceforge.net</Email>
         </Update>
     </History>
 </PISI>

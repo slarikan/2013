@@ -32,26 +32,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2010-12-02</Date>
             <Version>2.12</Version>
-            <Comment>Version bump.</Comment>
+            <Comment>First release</Comment>
             <Name>H. İbrahim Güngör</Name>
             <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-05-28</Date>
-            <Version>2.10</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2006-04-06</Date>
-            <Version>2.9</Version>
-            <Comment>First release.</Comment>
-            <Name>Bahadır Kandemir</Name>
-            <Email>bahadir@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

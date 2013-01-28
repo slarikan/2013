@@ -49,47 +49,12 @@
     </Package>
 
     <History>
-       <Update release="6">
+       <Update release="1">
             <Date>2012-12-25</Date>
             <Version>1.0.1_20121225</Version>
-            <Comment>New snapshot, build using gcc-4.7.x</Comment>
+            <Comment>First release</Comment>
             <Name>Serdar Soytetir</Name>
             <Email>tulliana@gmail.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2011-02-04</Date>
-            <Version>1.0.1</Version>
-            <Comment>New stable release</Comment>
-            <Name>Fatih Arslan</Name>
-            <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2010-06-22</Date>
-            <Version>0.9.0_20100622</Version>
-            <Comment>Switch to git tarball which includes several important bug fixes.</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2010-05-13</Date>
-            <Version>0.9.0</Version>
-            <Comment>Write strict dependency to new version of kdepimlibs,qt,kdebase,kdebase-runtime,kdebase-workspace,kdelibs,kdelibs-devel,kdepimlibs-devel</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-01-17</Date>
-            <Version>0.9.0</Version>
-            <Comment>Fix translations.xml</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-10-01</Date>
-            <Version>0.9.0</Version>
-            <Comment>First release.</Comment>
-            <Name>Renan Çakırerk</Name>
-            <Email>pardus@cakirerk.org</Email>
         </Update>
     </History>
 </PISI>

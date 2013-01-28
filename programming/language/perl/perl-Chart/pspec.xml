@@ -15,7 +15,7 @@
         <Archive sha1sum="201442a2445c0c50c67fb532be5d7d0f0c26f67a" type="targz">mirrors://cpan/authors/id/C/CH/CHARTGRP/Chart-2.4.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>perl-GD</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -23,7 +23,7 @@
         <Name>perl-Chart</Name>
         <RuntimeDependencies>
             <Dependency>perl-GD</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -32,40 +32,12 @@
     </Package>
 
     <History>
-        <Update release="5">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>2.4.1</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-06-29</Date>
-            <Version>2.4.1</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="3">
-            <Date>2009-12-04</Date>
-            <Version>2.4.1</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-      <Update release="2">
-            <Date>2009-11-23</Date>
-            <Version>2.4.1</Version>
-            <Comment>Add perl deps</Comment>
-            <Name>Faik Uygur</Name>
-            <Email>faik@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-03-14</Date>
-            <Version>2.4.1</Version>
-            <Comment>First release.</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

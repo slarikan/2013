@@ -13,18 +13,18 @@
         <IsA>app:gui</IsA>
         <Summary>A go board game</Summary>
         <Description>Kigo is an open-source implementation of the popular Go game. Go is a strategic board game for two players.</Description>
-        <Archive sha1sum="9246458a78ac1c707badbd8e75a9024968d78dd4" type="tarxz">mirrors://kde/unstable/4.9.97/src/kigo-4.9.97.tar.xz</Archive>
+        <Archive sha1sum="f083b49961f683009e083dd04027c3591292554d" type="tarxz">mirrors://kde/unstable/4.9.98/src/kigo-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames-devel</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime-devel</Dependency>  
+            <Dependency>libkdegames-devel</Dependency>
+            <Dependency>kde-runtime-devel</Dependency>  
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>kigo</Name>        
         <RuntimeDependencies>
-            <Dependency versionFrom="4.9.97">libkdegames</Dependency>
-            <Dependency versionFrom="4.9.97">kde-runtime</Dependency>   
+            <Dependency>libkdegames</Dependency>
+            <Dependency>kde-runtime</Dependency>   
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -35,16 +35,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-01-06</Date>
-            <Version>4.9.97</Version>
-            <Comment>Version bump to 4.9.97</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
         <Update release="1">
-            <Date>2013-01-02</Date>
-            <Version>4.9.95</Version>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
             <Comment>First release</Comment>
             <Name>Yusuf Aydemir</Name>
             <Email>yusuf.aydemir@istanbul.com</Email>

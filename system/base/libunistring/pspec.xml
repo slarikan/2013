@@ -37,19 +37,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-02-10</Date>
             <Version>0.9.3</Version>
-            <Comment>New stable release.Split library package. Ready for 2011</Comment>
+            <Comment>First release</Comment>
             <Name>Fatih Arslan</Name>
             <Email>farslan@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-09-19</Date>
-            <Version>0.9.1.1</Version>
-            <Comment>First release.</Comment>
-            <Name>Güngör Erseymen</Name>
-            <Email>gelurine@gmail.com</Email>
         </Update>
     </History>
 </PISI>

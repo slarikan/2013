@@ -12,9 +12,9 @@
         <IsA>locale:ia</IsA>
         <Summary>Interlingua KDE4 internationalization package</Summary>
         <Description>kde-l10n-ia is the KDE4 internationalization package that provides Interlingua translations for KDE4 applications.</Description>
-        <Archive type="tarxz" sha1sum="8445b88a1711a9213ae08407efd4c107ab384941">mirrors://kde/stable/4.8.4/src/kde-l10n/kde-l10n-ia-4.8.4.tar.xz</Archive>
+        <Archive type="tarxz" sha1sum="db6ac9b5ccba5e300c7776b96be42d4dcff3406f">mirrors://kde/unstable/4.9.98/src/kde-l10n/kde-l10n-ia-4.9.98.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency versionFrom="4.8.4">kdelibs-devel</Dependency>
+            <Dependency>kdelibs-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,61 +36,12 @@
     </Package>
 
     <History>
-        <Update release="8">
-            <Date>2012-06-05</Date>
-            <Version>4.8.4</Version>
-            <Comment>Version bump to 4.8.4</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>      
-        <Update release="7">
-            <Date>2012-05-25</Date>
-            <Version>4.8.3</Version>
-            <Comment>Version bump to 4.8.3</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="6">
-            <Date>2012-04-09</Date>
-            <Version>4.8.2</Version>
-            <Comment>Version bump to 4.8.2</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="5">
-            <Date>2012-03-08</Date>
-            <Version>4.8.1</Version>
-            <Comment>Version bump to 4.8.1</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="4">
-            <Date>2012-02-06</Date>
-            <Version>4.8.0</Version>
-            <Comment>Version bump to 4.8.0</Comment>
-            <Name>Yusuf Aydemir</Name>
-            <Email>yusuf.aydemir@istanbul.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2011-11-03</Date>
-            <Version>4.7.3</Version>
-            <Comment>Version bump to 4.7.3</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2011-10-09</Date>
-            <Version>4.7.2</Version>
-            <Comment>Version bump to 4.7.2</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
         <Update release="1">
-            <Date>2011-09-23</Date>
-            <Version>4.7.1</Version>
-            <Comment>First release.</Comment>
-            <Name>H. İbrahim Güngör</Name>
-            <Email>ibrahim@pardus.org.tr</Email>
-        </Update>
+            <Date>2013-01-19</Date>
+            <Version>4.9.98</Version>
+            <Comment>First release</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@istanbul.com</Email>
+        </Update>     
     </History>
 </PISI>

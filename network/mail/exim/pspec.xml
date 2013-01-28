@@ -52,10 +52,9 @@
         <Update release="1">
             <Date>2012-11-11</Date>
             <Version>4.80.1</Version>
-            <Comment>firt release</Comment>
+            <Comment>First release</Comment>
             <Name>can</Name>
             <Email>qazsew@mynet.com</Email>
         </Update>
     </History>
 </PISI>
- 

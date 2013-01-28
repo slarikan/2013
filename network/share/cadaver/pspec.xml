@@ -33,19 +33,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2011-01-11</Date>
             <Version>0.23.3</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Metin Akdere</Name>
             <Email>metin@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2009-02-05</Date>
-            <Version>0.23.2</Version>
-            <Comment>First release</Comment>
-            <Name>Taner Taş</Name>
-            <Email>taner@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

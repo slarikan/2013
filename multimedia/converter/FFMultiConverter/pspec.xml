@@ -38,33 +38,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-008-27</Date>
             <Version>1.4.0</Version>
-            <Comment>v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-         <Update release="2">
-            <Date>2012-02-05</Date>
-            <Version>1.3.0</Version>
-            <Comment>
-	    *	Extra audio, video and image file extensions.
-	    *	Common conversion options for each file type.
-	    *	Automatic file extension recognition.
-	    *	Options for existing files.
-	    *	Progress dialog's modality issue solved.
-	    *	Turkish translation.
-	    </Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-01-02</Date>
-            <Version>1.2.0</Version>
             <Comment>First release</Comment>
-            <Name>Anıl Özbek</Name>
-            <Email>ozbekanil@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

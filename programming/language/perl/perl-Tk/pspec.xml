@@ -16,7 +16,7 @@
         <Archive sha1sum="f5a85cee56de9679e49260e6e80d6dc384e60a5e" type="targz">mirrors://cpan/authors/id/S/SR/SREZIC/Tk-804.030.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>tcltk-devel</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </BuildDependencies>
         <Patches>
             <!-- modified version of http://ftp.de.debian.org/debian/pool/main/p/perl-tk/perl-tk_804.027-8.diff.gz -->
@@ -33,7 +33,7 @@
         <Name>perl-Tk</Name>
         <RuntimeDependencies>
             <Dependency>tcltk</Dependency>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -44,75 +44,12 @@
     </Package>
 
     <History>
-        <Update release="10">
+        <Update release="1">
             <Date>2012-09-11</Date>
             <Version>804.030</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="9">
-            <Date>2012-07-10</Date>
-            <Version>804.030</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="8">
-            <Date>2011-02-08</Date>
-            <Version>804.029</Version>
-            <Comment>Version bump to latest stable release and merge the package to Pardus 2011.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2009-12-04</Date>
-            <Version>804.028</Version>
-            <Comment>Depend on new perl</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2009-12-02</Date>
-            <Version>804.028</Version>
-            <Comment>Add perl dependency</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2009-07-20</Date>
-            <Version>804.028</Version>
-            <Comment>Ready for 2009</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2008-06-24</Date>
-            <Version>804.028</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Ekin Meroğlu</Name>
-            <Email>ekin@pardus.org.tr</Email>
-        </Update>
-        <Update release="3" type="security">
-            <Date>2008-02-06</Date>
-            <Version>804.027_500</Version>
-            <Comment>Fix CVE-2008-0553</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2007-02-28</Date>
-            <Version>804.027_500</Version>
-            <Comment>Fix dependency</Comment>
-            <Name>İlker Kesen</Name>
-            <Email>ikesen92@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2007-02-25</Date>
-            <Version>804.027_500</Version>
-            <Comment>First release.</Comment>
-            <Name>İlker Kesen</Name>
-            <Email>ikesen92@gmail.com</Email>
         </Update>
     </History>
 </PISI>

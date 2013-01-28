@@ -13,27 +13,32 @@ from pisi.actionsapi import get
 
 def setup():
     # Remove local copies for system libs
-    for directory in ["jpeg", "libpng", "zlib", "jasper", "expat"]:
+    for directory in ["expat", "freetype", "jasper", "jpeg", "lcms", "lcms2", "libpng", "openjpeg", "tiff", "zlib"]:
         shelltools.unlinkDir(directory)
 
     shelltools.export("CFLAGS", "%s -fno-strict-aliasing" % get.CFLAGS())
 
     autotools.autoreconf("-fi")
+    
+    options = "--disable-compile-inits \
+               --disable-gtk \
+               --enable-dynamic \
+               --with-system-libtiff \
+               --with-ijs \
+               --with-drivers=ALL \
+               --with-libpaper \
+               --with-jbig2dec \
+               --with-jasper \
+               --enable-fontconfig \
+               --enable-freetype \
+               --without-luratech \
+               --with-system-libtiff \
+               --with-omni \
+               --with-x \
+               --with-fontpath=/usr/share/fonts:/usr/share/fonts/default/ghostscript:/usr/share/cups/fonts:/usr/share/fonts/TTF:/usr/share/fonts/Type1:/usr/share/poppler/cMap/*"
+    options += " --disable-cups" if get.buildTYPE() == "emul32" else " --enable-cups"
 
-    autotools.configure("--disable-compile-inits \
-                         --disable-gtk \
-                         --enable-dynamic \
-                         --enable-cups \
-                         --with-system-libtiff \
-                         --with-ijs \
-                         --with-drivers=ALL \
-                         --with-libpaper \
-                         --with-jbig2dec \
-                         --with-jasper \
-                         --with-system-libtiff \
-                         --with-omni \
-                         --with-x \
-                         --with-fontpath=/usr/share/fonts:/usr/share/fonts/default/ghostscript:/usr/share/cups/fonts:/usr/share/fonts/TTF:/usr/share/fonts/Type1:/usr/share/poppler/cMap/*")
+    autotools.configure(options)
 
     shelltools.cd("ijs/")
     shelltools.system("./autogen.sh \
@@ -45,8 +50,8 @@ def setup():
 def build():
     autotools.make("-C ijs")
     autotools.make("so")
-    autotools.make()
-    autotools.make("cups")
+    autotools.make("-j1")
+    if not get.buildTYPE() == "emul32": autotools.make("cups")
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())

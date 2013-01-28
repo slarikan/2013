@@ -40,100 +40,12 @@
     </Package>
 
     <History>
-        <Update release="13">
+        <Update release="1">
             <Date>2012-10-01</Date>
             <Version>1.0.4</Version>
-            <Comment>Version bump</Comment>
+            <Comment>First release</Comment>
             <Name>Erdem Artan</Name>
             <Email>erdem@pardus-linux.org</Email>
-        </Update>
-        <Update release="12">
-            <Date>2012-01-19</Date>
-            <Version>1.0.3</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="11">
-            <Date>2010-10-13</Date>
-            <Version>0.56</Version>
-            <Comment>Mass rebuild for Pardus 2011 Beta</Comment>
-            <Name>Gökçen Eraslan</Name>
-            <Email>gokcen@pardus.org.tr</Email>
-        </Update>
-        <Update release="10">
-            <Date>2010-09-04</Date>
-            <Version>0.56</Version>
-            <Comment>Version bump</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="9">
-            <Date>2009-12-14</Date>
-            <Version>0.55</Version>
-            <Comment>Use libcap-ng</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="8">
-            <Date>2009-05-02</Date>
-            <Version>0.55</Version>
-            <Comment>Switch to pie patch for build</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="7">
-            <Date>2009-03-05</Date>
-            <Version>0.55</Version>
-            <Comment>
-                - Improve service script,
-                - Add pidfile support,
-                - Add makefile.patch to break its somewhat odd xorg-util dependency.
-            </Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
-        </Update>
-        <Update release="6">
-            <Date>2008-09-10</Date>
-            <Version>0.55</Version>
-            <Comment>Remove syncronized from status in service script, to prevent causing infinite loop locking in Comar. Add conditional support to service.</Comment>
-            <Name>Onur Küçük</Name>
-            <Email>onur@pardus.org.tr</Email>
-        </Update>
-        <Update release="5">
-            <Date>2007-10-14</Date>
-            <Version>0.55</Version>
-            <Comment>Overhaul the package</Comment>
-            <Name>İsmail Dönmez</Name>
-            <Email>ismail@pardus.org.tr</Email>
-        </Update>
-        <Update release="4">
-            <Date>2007-02-08</Date>
-            <Version>0.55</Version>
-            <Comment>Version bump</Comment>
-            <Name>S.Çağlar Onur</Name>
-            <Email>caglar@pardus.org.tr</Email>
-        </Update>
-        <Update release="3">
-            <Date>2006-11-10</Date>
-            <Version>0.13</Version>
-            <Comment>Fixed irqbalance to detect multicore and bumping up MAX_INTERRUPTS to support xen kernels</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2006-09-21</Date>
-            <Version>0.13</Version>
-            <Comment>Version bump</Comment>
-            <Name>Ali Erdinç Köroğlu</Name>
-            <Email>erdinc@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2005-10-05</Date>
-            <Version>0.12</Version>
-            <Comment>First release.</Comment>
-            <Name>Timu EREN</Name>
-            <Email>selamtux@gmail.com</Email>
         </Update>
     </History>
 </PISI>

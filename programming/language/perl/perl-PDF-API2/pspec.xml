@@ -14,7 +14,7 @@
         <Description>perl-PDF-API2 is a Perl module chain to facilitate the Creation and Modification of High-Quality PDF Files.</Description>
         <Archive sha1sum="794de9d6d83e8d0ae04b6c1c314238411d151aa8" type="targz">http://search.cpan.org/CPAN/authors/id/S/SS/SSIMMS/PDF-API2-2.019.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Font-TTF</Dependency>
             <Dependency>dejavu-fonts</Dependency>
         </BuildDependencies>
@@ -26,7 +26,7 @@
     <Package>
         <Name>perl-PDF-API2</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Font-TTF</Dependency>
             <Dependency>dejavu-fonts</Dependency>
         </RuntimeDependencies>
@@ -38,26 +38,12 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2012-07-09</Date>
-            <Version>2.019</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-09</Date>
-            <Version>2.019</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
         <Update release="1">
-            <Date>2011-02-23</Date>
-            <Version>2.017</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
+            <Date>2012-07-09</Date>
+            <Version>2.019</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
         </Update>
     </History>
 </PISI>

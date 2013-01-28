@@ -34,20 +34,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2009-12-25</Date>
             <Version>0.16</Version>
-            <Comment>Ready for 2009</Comment>
+            <Comment>First release</Comment>
             <Name>Ozan Çağlayan</Name>
             <Email>ozan@pardus.org.tr</Email>
         </Update>
-        <Update release="1">
-            <Date>2006-10-15</Date>
-            <Version>0.16</Version>
-            <Comment>First release</Comment>
-            <Name>Murat Şenel</Name>
-            <Email>muratasenel@gmail.com</Email>
-        </Update>
     </History>
 </PISI>
-

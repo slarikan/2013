@@ -15,7 +15,7 @@
         <Description>perl-Daemon-Generic is framework for starting, stopping and reloading daemon-like programs.</Description>
         <Archive sha1sum="acf8457dfca860ef9dfd750e2c63b3b68bf9783d" type="targz">http://search.cpan.org/CPAN/authors/id/M/MU/MUIR/modules/Daemon-Generic-0.82.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-File-Flock</Dependency>
             <Dependency>perl-File-Slurp</Dependency>
 	    <Dependency>perl-Eval-LineNumbers</Dependency>
@@ -25,7 +25,7 @@
     <Package>
         <Name>perl-Daemon-Generic</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-File-Flock</Dependency>
             <Dependency>perl-File-Slurp</Dependency>
 	    <Dependency>perl-Eval-LineNumbers</Dependency>
@@ -38,26 +38,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-06</Date>
             <Version>0.82</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-07-01</Date>
-            <Version>0.82</Version>
-            <Comment>Depend on new perl 5.14.1 and v.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-01-26</Date>
-            <Version>0.71</Version>
-            <Comment>Initial release.</Comment>
-            <Name>Ozan Çağlayan</Name>
-            <Email>ozan@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

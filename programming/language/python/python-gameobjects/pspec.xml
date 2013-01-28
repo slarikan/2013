@@ -24,19 +24,12 @@
     </Package>
 
     <History>
-        <Update release="2">
+        <Update release="1">
             <Date>2010-08-22</Date>
             <Version>0.0.3</Version>
-            <Comment>Add translations.xml</Comment>
+            <Comment>First release</Comment>
             <Name>Necdet Yücel</Name>
             <Email>necdetyucel@gmail.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2008-09-20</Date>
-            <Version>0.0.3</Version>
-            <Comment>First release.</Comment>
-            <Name>Tim Miller</Name>
-            <Email>dev@lashni.net</Email>
         </Update>
     </History>
 </PISI>

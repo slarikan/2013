@@ -14,7 +14,7 @@
         <Description>perl-Gtk2-Ex-Simple-List is a simple interface to the powerful but complex Gtk2::TreeView and Gtk2::ListStore combination, implementing using tied arrays to make thing simple and easy.</Description>
         <Archive sha1sum="0bf571ef6bac747a83a3a696981dba27b10ce109" type="targz">mirrors://cpan/authors/id/R/RM/RMCFARLA/Gtk2-Perl-Ex/Gtk2-Ex-Simple-List-0.50.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Glib</Dependency>
             <Dependency>perl-Gtk2</Dependency>
         </BuildDependencies>
@@ -23,7 +23,7 @@
     <Package>
         <Name>perl-Gtk2-Ex-Simple-List</Name>
         <RuntimeDependencies>
-            <Dependency version="5.16.1">perl</Dependency>
+            <Dependency>perl</Dependency>
             <Dependency>perl-Glib</Dependency>
             <Dependency>perl-Gtk2</Dependency>
         </RuntimeDependencies>
@@ -35,26 +35,12 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2012-09-07</Date>
             <Version>0.50</Version>
-            <Comment>Depend on new perl 5.16.1</Comment>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="2">
-            <Date>2012-06-28</Date>
-            <Version>0.50</Version>
-            <Comment>Depend on new perl 5.14.1</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
-        </Update>
-        <Update release="1">
-            <Date>2011-02-23</Date>
-            <Version>0.50</Version>
-            <Comment>First release.</Comment>
-            <Name>Serdar Dalgıç</Name>
-            <Email>serdar@pardus.org.tr</Email>
         </Update>
     </History>
 </PISI>

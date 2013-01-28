@@ -26,29 +26,11 @@
     </Package>
 
     <History>
-        <Update release="3">
+        <Update release="1">
             <Date>2011-01-24</Date>
             <Version>0.2</Version>
-            <Comment>
-                - Version bump
-                - Uses hashlib instead of md5sum commandline-tool
-                - Bug fixed at http://bugs.pardus.org.tr/16374
-            </Comment>
+            <Comment>First release</Comment>
             <Name>Gökmen Göksel</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="2">
-            <Date>2010-10-20</Date>
-            <Version>0.1</Version>
-            <Comment>Table consistency check added</Comment>
-            <Name>Gökmen GÖKSEL</Name>
-            <Email>gokmen@pardus.org.tr</Email>
-        </Update>
-        <Update release="1">
-            <Date>2010-10-20</Date>
-            <Version>0.1</Version>
-            <Comment>First version</Comment>
-            <Name>Gökmen GÖKSEL</Name>
             <Email>gokmen@pardus.org.tr</Email>
         </Update>
     </History>
