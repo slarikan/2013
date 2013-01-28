@@ -45,6 +45,6 @@ def install():
     pisitools.dosed("%s/usr/lib/tkConfig.sh" % get.installDIR(), "%s/unix" % get.curDIR(), "/usr/lib/")
     pisitools.dosed("%s/usr/lib/tkConfig.sh" % get.installDIR(), get.curDIR(), "/usr/include/tk-private")
 
-    pisitools.dosym("/usr/bin/wish8.5", "/usr/bin/wish")
+    pisitools.dosym("/usr/bin/wish8.6", "/usr/bin/wish")
 
     pisitools.dodoc("ChangeLog", "changes", "license.terms", "README")
