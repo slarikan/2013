@@ -52,6 +52,6 @@ def install():
     pisitools.dodir("/usr/include/tcl-private/compat")
     shelltools.copy("compat/*.h", "%s/usr/include/tcl-private/compat" % get.installDIR())
 
-    pisitools.dosym("/usr/bin/tclsh8.5","/usr/bin/tclsh")
+    pisitools.dosym("/usr/bin/tclsh8.6","/usr/bin/tclsh")
 
     pisitools.dodoc("ChangeLog","changes","license.terms","README")
